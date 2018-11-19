@@ -12,3 +12,4 @@
 
 #now we must extract the websites
 cd htmlExtraction
+scrapy crawl htmlExtractor
