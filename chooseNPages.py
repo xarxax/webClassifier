@@ -1,10 +1,11 @@
 import sys
 from random import randint
+#print(sys.argv)
 currWebs = int(sys.argv[1])
 N = int(sys.argv[3])
 
-print(currWebs)
-print(N)
+print('Number total of webs: ' + str(currWebs))
+print('Maximum to extract: ' + str(N))
 
 file = open('catAndUrl.txt','r')
 outfile=open('catAndUrlChosen.txt','wr')
