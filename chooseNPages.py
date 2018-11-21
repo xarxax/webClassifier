@@ -25,3 +25,7 @@ for line in file:
     if i in chosenWebs:
         outfile.write(line)
     i+= 1
+
+
+if not os.path.exists('dataset'):
+    os.makedirs('dataset')

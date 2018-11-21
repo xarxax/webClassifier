@@ -1,4 +1,4 @@
-import glob
+import glob,os
 from bs4 import BeautifulSoup
 
 #gets property property from the soup's meta
@@ -22,15 +22,45 @@ def addMetas(soup,text):
     text+=  getMetaContent(soup,'image:alt')
     return text
 
-i = 0
-for filepath in glob.iglob('dataset/*'):
-    print(filepath)
-    file = open(filepath,'r')
+i = 1000
+####MAIN SCRIPT
+#we create the folder where we will have our features
+#text.txt images and urls.txt
+if not os.path.exists('datasetFeatures'):
+    os.makedirs('datasetFeatures')
+
+
+
+
+for filePath in glob.iglob('dataset/*'):
+    print(filePath)
+    file = open(filePath,'r')
     #split the 3 important informations
     [cat,url,htmlDoc] = file.read().split('\n',2)
     soup = BeautifulSoup(htmlDoc, 'html.parser')
     relevantText = addMetas(soup,'')
-    print(relevantText)
-    if i < 1:
+    #add actual text from the body
+
+    #remove all text of scripts and style
+    map(lambda x: x.clear(),soup.select('script'))
+    map(lambda x: x.clear(),soup.select('style'))
+
+    if soup.body != None:
+        relevantText += soup.body.get_text()
+
+    if relevantText=='':
+        print('UNABLE TO EXTRACT ANY TEXT')
+        continue
+    #saving text now
+    #we create a folder for the web features
+    newFilePath = filePath.replace('dataset/','datasetFeatures/',1)
+    if not os.path.exists(newFilePath):
+        os.makedirs(newFilePath)
+    #write text
+    relevantText =relevantText.encode('utf8')
+    with open(newFilePath+'/text.txt', 'w') as f:
+        f.write(relevantText)
+
+    if i <=0:
         break
     i-=1
