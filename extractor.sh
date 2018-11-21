@@ -10,6 +10,9 @@
 
 
 
+echo '----------------RANDOMLY PICKING SITES----------------'
+
+
 #this limits our results to the final dataset we will work onto
 total=$(wc -l catAndUrl.txt) #get the total number of lines (websites)
 python chooseNPages.py  $total 1000 # last parameter is number of webs we want
@@ -18,4 +21,4 @@ echo '----------------BEGINNING WEBSITE EXTRACTION----------------'
 #now we must extract the websites
 rm -rf ./dataset/*    #clean previously extracted
 cd htmlExtraction
-scrapy crawl htmlExtractor
+scrapy crawl htmlExtractor#this does the whole scraping process
