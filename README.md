@@ -26,7 +26,7 @@ First it gets their text and generates the folder for each web.
 
 
 
-## issues
+## Issues
 This pages html was badly parsed.
 Business
 http://www.alaturfgrass.org/
