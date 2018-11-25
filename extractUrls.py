@@ -1,64 +1,89 @@
-import glob,os
+import glob
+import os
+import sys
 from bs4 import BeautifulSoup
 
-#gets property property from the soup's meta
-def getMetaContent(soup,property):
-    cssQuery='meta ["property"="og:' + property+'"]'
+# gets property property from the soup's meta
+
+
+def getMetaContent(soup, property):
+    cssQuery = 'meta ["property"="og:' + property + '"]'
     content = soup.select(cssQuery)
-    if len(content)>0 :
-        return content[0].get('content') + '\n'
+    if len(content) > 0:
+        return content[0].get('content').encode('utf8')
     return ''
 
-#extracts all metas information from the soup'
-#tags obtained from http://ogp.me/
-def addMetas(soup,urls):
+# extracts all metas information from the soup'
+# tags obtained from http://ogp.me/
+
+
+def addMetas(soup, urls):
     #title= soup.select('meta ["property"="og:title"]')[0].get('content')
-    urls+=  [getMetaContent(soup,'url')]
-    urls+=  [getMetaContent(soup,'image')]
-    urls+=  [getMetaContent(soup,'image:secure_url')]
-    urls+=  [getMetaContent(soup,'video')]
-    urls+=  [getMetaContent(soup,'video:secure_url')]
-    urls+=  [getMetaContent(soup,'video')]
-    urls+=  [getMetaContent(soup,'video')]
+    urls += [getMetaContent(soup, 'url')]
+    urls += [getMetaContent(soup, 'image')]
+    urls += [getMetaContent(soup, 'image:secure_url')]
+    urls += [getMetaContent(soup, 'video')]
+    urls += [getMetaContent(soup, 'video:secure_url')]
+    urls += [getMetaContent(soup, 'video')]
+    urls += [getMetaContent(soup, 'video')]
 
     return urls
 
 
-
-
-
-
-i = 1000
+i = int(sys.argv[1])
 
 for filePath in glob.iglob('dataset/*'):
-    print(filePath)
-    file = open(filePath,'r')
-    #split the 3 important informations
-    [cat,url,htmlDoc] = file.read().split('\n',2)
-    soup = BeautifulSoup(htmlDoc, 'html.parser')
-    relevantText = addMetas(soup,[url])
-    #add actual text from the body
-
-    #remove all text of scripts and style
-    map(lambda x: x.clear(),soup.select('script'))
-    map(lambda x: x.clear(),soup.select('style'))
-
-
-
-    if relevantText=='':
-        print('UNABLE TO EXTRACT ANY TEXT')
-        continue
-    #saving urls now
-
-    #we open the folder at dataset features
-    newFilePath = filePath.replace('dataset/','datasetFeatures/',1)
-    if not os.path.exists(newFilePath):
-        continue#if we didnt find any text, page is not eligible
-    #write text
-    relevantText =relevantText.encode('utf8')
-    with open(newFilePath+'/ur.txt', 'w') as f:
-        f.write(relevantText)
-        
-    if i <=0:
+    if i <= 0:
+        print 'Reached limit established'
         break
-    i-=1
+    i -= 1
+    print(filePath)
+
+    file = open(filePath, 'r')
+    # split the 3 important informations
+    [cat, url, htmlDoc] = file.read().split('\n', 2)
+    soup = BeautifulSoup(htmlDoc, 'html.parser')  # parse html
+    relevantUrls = addMetas(soup, [url])
+
+    # links will not be included in the encode
+    # mainly contain  urls for styles, fonts
+    #print 'links:'
+    #print map(lambda x: x.get('href').encode('utf8'),soup.select('link[href]'))
+    # obtain all urls from a's in the page
+    relevantUrls += map(lambda x: x.get('href').encode('utf8'),
+                        soup.select('a[href]'))
+    relevantUrls = map(
+        lambda x: x.replace(
+            url,
+            ''),
+        relevantUrls)  # unify all pages in domain
+    # print(relevantUrls)
+
+    relevantUrls[0] = url  # we want the original url still
+    # print(relevantUrls)
+
+    # remove first and last / if there are
+    relevantUrls = map(lambda x: x[1:] if len(
+        x) > 0 and x[0] == '/' else x, relevantUrls)
+    relevantUrls = map(lambda x: x[:-1] if len(x)
+                       > 0 and x[-1] == '/' else x, relevantUrls)
+    # print(relevantUrls)
+
+    # remove these
+    # they were originally the page url in the html
+    relevantUrls = filter(lambda x: x != '#', relevantUrls)
+    relevantUrls = filter(lambda x: x != '', relevantUrls)
+    # remove duplicates
+    relevantUrls = [ii for n, ii in enumerate(
+        relevantUrls) if ii not in relevantUrls[:n]]
+    # saving urls now
+    # print(relevantUrls)
+
+    # we open the folder at dataset features
+    newFilePath = filePath.replace('dataset/', 'datasetFeatures/', 1)
+    if not os.path.exists(newFilePath):
+        continue  # if we didnt find any text, page is not eligible
+    # write text
+    with open(newFilePath + '/url.txt', 'w') as f:
+        for url in relevantUrls:
+            f.write(url + '\n')

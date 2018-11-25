@@ -1,4 +1,4 @@
-import glob,os
+import glob,os,sys
 from bs4 import BeautifulSoup
 
 #gets property property from the soup's meta
@@ -22,17 +22,19 @@ def addMetas(soup,text):
     text+=  getMetaContent(soup,'image:alt')
     return text
 
-i = 1000
 ####MAIN SCRIPT
 #we create the folder where we will have our features
 #text.txt images and urls.txt
 if not os.path.exists('datasetFeatures'):
     os.makedirs('datasetFeatures')
 
-
-
+i = int(sys.argv[1])
 
 for filePath in glob.iglob('dataset/*'):
+    if i <=0:
+        print 'Reached limit established'
+        break
+    i-=1
     print(filePath)
     file = open(filePath,'r')
     #split the 3 important informations
@@ -60,7 +62,3 @@ for filePath in glob.iglob('dataset/*'):
     relevantText =relevantText.encode('utf8')
     with open(newFilePath+'/text.txt', 'w') as f:
         f.write(relevantText)
-
-    if i <=0:
-        break
-    i-=1
