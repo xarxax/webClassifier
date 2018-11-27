@@ -30,7 +30,8 @@ def getSrc(tag):
 
 def separateImg(tag):
     #print tag
-    src= tag.get('src').encode('utf8')
+    src= getSrc(tag)
+    if src : src= src.encode('utf8')
     height= tag.get('height')#.encode('utf8')
     width= tag.get('width')#.encode('utf8')
     return (src,height,width)
@@ -38,18 +39,21 @@ def separateImg(tag):
 
 def downloadAndSave(img,url,path,filename):
     print '******downloadAndSave******'
-    if img[:3] != 'http':
-        img=url +img
+    if img[0]=='/' and img[1]=='/': img= 'https:'+img
+    if img[0]=='/':img= img[1:]
+    if img[:4] != 'http': img=url +img
     print(img)
     print(path)
     try:
         imgWeb= urllib.URLopener()
-        content= imgWeb.retrieve(img)
-        f =  open(path +str(filename),'w')
+        extension = img.split('.')[-1]
+        if len(extension) > 5 : extension= 'jpg'
+        content= imgWeb.retrieve(img,path+str(filename)+'.'+extension)
+        #f =  open(path +str(filename),'w')
         filename +=1
-        buf= imgWeb.read()
-        f.write(content)
-        f.close()
+        #buf= imgWeb.read()
+        #f.write(content)
+        #f.close()
         print '******downloadAndSave******'
     except:
         return filename
@@ -79,6 +83,7 @@ for filePath in glob.iglob('dataset/*'):
     relevantImgs = getMetaImg(soup)
 
     relevantImgs+= map(lambda x: separateImg(x),soup.select('img'))
+    relevantImgs= filter(lambda x:x,relevantImgs)
     relevantImgs= filter( lambda x:x[0].find('googleads')<0,relevantImgs)
 
 
