@@ -65,7 +65,7 @@ def downloadAndSave(img,url,path,filename):
 
 i = int(sys.argv[1])
 filename = 1
-i=9
+#i=9
 for filePath in glob.iglob('dataset/*'):
     print(filePath)
     if i <=0:

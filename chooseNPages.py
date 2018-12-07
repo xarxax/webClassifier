@@ -1,4 +1,4 @@
-import sys
+import sys,os
 from random import randint
 #print(sys.argv)
 currWebs = int(sys.argv[1])
@@ -10,6 +10,17 @@ print('Maximum to extract: ' + str(N))
 file = open('catAndUrl.txt','r')
 outfile=open('catAndUrlChosen.txt','wr')
 
+#creates the folder for our next step
+if not os.path.exists('dataset'):
+    os.makedirs('dataset')
+
+#if we are asked for more webs than we have we just put them all
+if N >= currWebs:
+    for line in file:
+        print line.replace('\n','')
+        outfile.write(line)
+    print 'Chose all websites.'    
+    sys.exit
 
 
 #we choose which webs we will evaluate
@@ -27,5 +38,4 @@ for line in file:
     i+= 1
 
 
-if not os.path.exists('dataset'):
-    os.makedirs('dataset')
+

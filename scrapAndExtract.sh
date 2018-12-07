@@ -6,7 +6,7 @@
 
 
 #this will turn our rdf to a simpler file format
-#python rdfToPairs.py
+python rdfToPairs.py
 
 
 
@@ -15,10 +15,10 @@ echo '----------------RANDOMLY PICKING SITES----------------'
 
 #this limits our results to the final dataset we will work onto
 total=$(wc -l catAndUrl.txt) #get the total number of lines (websites)
-python chooseNPages.py  $total 1000 # last parameter is number of webs we want
+python chooseNPages.py  $total $total # last parameter is number of webs we want
 
 echo '----------------BEGINNING WEBSITE EXTRACTION----------------'
 #now we must extract the websites
-rm -rf ./dataset/*    #clean previously extracted
+#rm -rf ./dataset/*    #clean previously extracted
 cd htmlExtraction
-scrapy crawl htmlExtractor#this does the whole scraping process
+scrapy crawl htmlExtractor #this does the whole scraping process
