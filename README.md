@@ -5,6 +5,13 @@ The dataset used for this project can be found in https://web.archive.org/web/20
 
 To test the files to run remember to use 'chmod 755 filetorun.sh'
 
+
+##Important notes
+Since I have set the spider to open up to 10k files concurrently, remember to change the amount of files your system can open if you want to use this.
+Alternatively just lower it in htmlExtraction/htmlExtraction/spider/htmlExtractor.py
+
+otherwise many webs will be skipped
+
 ## Files to run
 
 ### scrapAndExtract.sh

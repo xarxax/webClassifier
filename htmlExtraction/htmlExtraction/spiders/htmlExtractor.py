@@ -8,7 +8,7 @@ class htmlExtractor(scrapy.Spider):
     name = 'htmlExtractor'
     custom_settings = {
         'DOWNLOAD_DELAY': 2,
-        'CONCURRENT_REQUESTS' :100,
+        'CONCURRENT_REQUESTS' :10000,
         'REACTOR_THREADPOOL_MAXSIZE' : 20,
         'LOG_LEVEL' : 'INFO',
         'COOKIES_ENABLED' : False,

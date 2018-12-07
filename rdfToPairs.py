@@ -1,10 +1,12 @@
 import xml.etree.ElementTree as ET
+import sys
 
 __author__ = 'guillem.gili.bueno'
 
 
 urlDMOZ = 'https://dmoztools.net'
-categories = ['Computers']
+categories = sys.argv[1]
+
 
 # ['Arts' ,'Business','Computers','Games','Health','Home','News','Recreation'
 #,'Reference','Science','Shopping','Society','Sports']
