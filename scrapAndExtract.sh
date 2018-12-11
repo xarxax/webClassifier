@@ -3,6 +3,7 @@
 
 # we extract info from the rdf base file
 
+#cateogries Arts Business Computers Games Health Home News Recreation Reference Science Shopping Society Sports
 for Category in Arts Business Computers Games Health Home News Recreation Reference Science Shopping Society Sports
 do
     #this will turn our rdf to a simpler file format
@@ -22,4 +23,5 @@ do
     #rm -rf ./dataset/*    #clean previously extracted
     cd htmlExtraction
     scrapy crawl htmlExtractor #this does the whole scraping process
+    cd ..
 done
