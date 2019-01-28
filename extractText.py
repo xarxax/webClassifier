@@ -32,13 +32,17 @@ i = int(sys.argv[1])
 
 for filePath in glob.iglob('dataset/*'):
     if i <=0:
-        print 'Reached limit established'
+        print('Reached limit established')
         break
     i-=1
     print(filePath)
     file = open(filePath,'r')
     #split the 3 important informations
-    [cat,url,htmlDoc] = file.read().split('\n',2)
+    try:
+        [cat,url,htmlDoc] = file.read().split('\n',2)
+    except:
+        print('Page containing non utf8 characters, will be skipped')
+        continue
     soup = BeautifulSoup(htmlDoc, 'html.parser')
     relevantText = addMetas(soup,'')
     #add actual text from the body
@@ -61,4 +65,4 @@ for filePath in glob.iglob('dataset/*'):
     #write text
     relevantText =relevantText.encode('utf8')
     with open(newFilePath+'/text.txt', 'w') as f:
-        f.write(relevantText)
+        f.write(str(relevantText))
