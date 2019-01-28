@@ -2,26 +2,21 @@
 
 
 # we extract info from the rdf base file
-
-#cateogries Arts Business Computers Games Health Home News Recreation Reference Science Shopping Society Sports
-for Category in Arts Business Computers Games Health Home News Recreation Reference Science Shopping Society Sports
+for entry in $`ls urlSplit`
 do
-    #this will turn our rdf to a simpler file format
-    python rdfToPairs.py $Category
-
-
-
-    echo '----------------RANDOMLY PICKING SITES----------------'
-
-
-    #this limits our results to the final dataset we will work onto
-    total=$(wc -l catAndUrl.txt) #get the total number of lines (websites)
-    python chooseNPages.py  $total $total # last parameter is number of webs we want
-
-    echo '----------------BEGINNING WEBSITE EXTRACTION----------------'
-    #now we must extract the websites
-    #rm -rf ./dataset/*    #clean previously extracted
-    cd htmlExtraction
-    scrapy crawl htmlExtractor #this does the whole scraping process
-    cd ..
+  echo "File " $entry
+  cd htmlExtraction
+  scrapy crawl -a parameter=$entry htmlExtractor #this does the whole scraping process
+  ps -a| grep scrapy
+  #echo $?
+  #echo $(`ps -a| grep scrapy`)
+  #echo 'done'
+  #while $`ps -a| grep scrapy` !=''
+  #do
+  #echo 'waiting'
+  #sleep 2
+  #done
+  cd ..
+  #echo 'first loop'
+  #break
 done

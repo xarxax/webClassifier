@@ -5,11 +5,11 @@ __author__ = 'guillem.gili.bueno'
 
 
 urlDMOZ = 'https://dmoztools.net'
-categories = sys.argv[1]
+#categories = sys.argv[1]
 
 
-# ['Arts' ,'Business','Computers','Games','Health','Home','News','Recreation'
-#,'Reference','Science','Shopping','Society','Sports']
+categories = ['Arts' ,'Business','Computers','Games','Health','Home','News','Recreation'
+,'Reference','Science','Shopping','Society','Sports']
 
 file = open('content.rdf.u8','r')
 
