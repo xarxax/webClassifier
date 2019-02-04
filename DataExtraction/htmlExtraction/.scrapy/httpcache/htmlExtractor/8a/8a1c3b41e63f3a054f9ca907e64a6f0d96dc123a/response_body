@@ -1,0 +1,41 @@
+Sitemap: https://www.bluecorona.com/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /comments/
+Disallow: /category/*/*
+Disallow: */trackback/
+Disallow: */feed/
+Disallow: */comments/
+Disallow: /test/
+Disallow: /plesk-stat/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: HubSpot Links Crawler 1.0
+Disallow: /
+
+User-agent: HubSpot Webcrawler
+Disallow: /
+
+User-agent: HubSpot
+Disallow: /
+
+User-agent: HubSpot Crawler 1.0 http://www.hubspot.com/
+Disallow: /
+
+User-agent: HubSpot Links Crawler 1.0 http://www.hubspot.com/
+Disallow: /

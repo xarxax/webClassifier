@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+         
+dP                                                                         
+88                                                                         
+88 .d8888b. .d8888b. .d8888b. .d8888b. .d8888b. dP    dP .d8888b. .d8888b. 
+88 88'  `88 88'  `88 88'  `88 Y8ooooo. 88'  `88 88    88 88'  `"" 88ooood8 
+88 88.  .88 88.  .88 88.  .88       88 88.  .88 88.  .88 88.  ... 88.  ... 
+dP `88888P' `8888P88 `88888P' `88888P' `88888P8 `88888P' `88888P' `88888P' 
+                 .88                                                       
+             d8888P    
+-->
+<html>
+  <head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c53fb255d9","applicationID":"2353892","transactionName":"d1pcR0QKXw5cRhdCWkBQHVtZCFY=","queueTime":4,"applicationTime":101,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+		<meta name="description" content="Logosauce is a crowdsourcing site for crowd sourced logo design. Featuring hundreds and thousands of logos and designers, logo design portfolios, stock logos for sale, logo design contests and logo design competitions. Oozing logo goodness since 2006." />
+		<meta name="ROBOTS" content="INDEX, FOLLOW">
+		<link rel="canonical" href="http://app.logosauce.com">
+    <link href="http://app.logosauce.com/favicon.ico" rel="shortcut icon">
+    
+       <title>Home | Stock Logos | Logo Design Contests | Portfolios | Logosauce</title>
+
+    <link href="/assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/assets/application.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="MG53fB5Hgr1RSHo5XnyS4iCHajTF3DeVekm1CySIlCs=" name="csrf-token" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-196120-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="root">      
+  
+      <div id="ad">
+         <a href="http://e-see.com/marketing/logosauce/corner_ad.html" rel="shadowbox" title="Click to view a special offer for Logosauce users">
+    <img alt="Corner_ad" id="curl" src="http://e-see.com/marketing/logosauce/corner_ad.png" title="Click to view a special offer for Logosauce users" />
+</a>
+      </div>
+      
+      <div id="global-nav">
+        <div class="container">
+    
+    <div class="row">
+        
+        <div id="site-logo" class="span6 columns">
+            <a href="/"><span>Logosauce</span></a>
+        </div>
+        
+        <div class="span6 columns menu">
+            
+            <div id="login">
+                <a href="/people/sign_in" class="public">Sign In</a>
+                <a href="/people/sign_up" class="public">Sign Up</a> 
+            </div>
+
+            <ul id="tabs">
+               <li class="circle help"><a href="http://e-see.com/help/logosauce/index.html" id="help-trigger" rel="shadowbox" title="Logosauce Help">?</a></li>
+               <li class="circle info"><a href="#" id="about-trigger" title="Information about Logosauce">i</a></li>
+               
+               <li><a href="/profiles">People</a></li>
+               <li><a href="/competitions">Comps</a></li>
+               <li><a href="/logos">Logos</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    
+</div>
+
+    
+
+      </div>
+      
+      
+      <div id="about-drawer">
+          <div class="container">
+            <div id="about"><div class="row">
+    <div class="span12 columns">
+        <h1>What can you do here ?</h1>
+    </div>
+</div>        
+<div class="row">
+    <!--div class="span3 columns">
+        <img src="/assets/about/oozing.gif" alt="oozing" width="190" height="100" style="margin-bottom:10px;" />
+        <h3>Just watch</h3>
+        <p>Logosauce is all about Logos. There's so much logo goodness in here it's just oozing out. If you like you can just watch.</p>
+        <p>Best of all it's free to <a href="/people/sign_up">join</a>. Enjoy.</p>
+        <p><a href="/about">Learn more ...</a></p>
+    </div-->
+    <div class="span3 columns">
+        <img src="/assets/about/oozing.gif" alt="oozing logo goodness Logosauce bottle avatar" width="190" height="100" style="margin-bottom:10px;" />
+        <h3>Buy a stock logo</h3>
+        <p>Royalty-free stock logos. Simple pricing. Download immediatley or have the artwork customised.</p>
+        <p><a href="http://app.logosauce.com/logos?by=date&filter=for_sale#" title="Browse stock logos for sale">Browse stock logos ...</a></p>
+    </div>
+    <div class="span3 columns">
+        <img src="/assets/about/logodesigners.gif" alt="logo designers avatar" width="190" height="100" style="margin-bottom:10px;"/>
+        <h3>Find a designer</h3>
+        <p>Need a logo designer? We have thousands from all around the globe to choose from.</p>
+        <p><a href="/findadesigner">Find a designer...</a></p>
+    </div>
+    <div class="span3 columns">
+        <img src="/assets/about/runlogo.gif" alt="run a logo design contest avatar" width="190" height="100" style="margin-bottom:10px;"/>
+        <h3>Run a design contest</h3>
+        <p>Want a new logo? It's easy and fun to run a  design contest or competition. Guaranteed results.</p>
+        <p><a href="/getalogo">Run a design contest...</a></p>
+    </div>
+    <div class="span3 columns">
+        <img src="/assets/about/findaclient.gif" alt="find a design client avatar" width="190px" height="100" style="margin-bottom:10px;"/>
+        <h3>Find design clients</h3>
+        <p>Are you a designer? Love logos? Want more design work?</p>
+        <p><a href="/findaclient">Find design clients...</a></p>
+    </div>
+    <div class="span12 columns">
+        <p style="text-align:center; margin-top:20px;">Best of all it's free to <a href="/people/sign_up">join</a>. Enjoy.</p>
+        <p style="text-align:center;"><a href="/about">Learn more ...</a></p>
+    </div>
+    <div class="span12 columns">
+        <p class="links">
+            <a href="#" id="close-about">Close info panel <img alt="Arrow_up" src="/assets/help/arrow_up.png" /></a>
+        </p> 
+    </div>
+</div>
+
+
+</div>
+          </div>
+      </div>
+      
+      <div id="content" class="container">
+        
+
+<div id="home">
+  <div id="logos">
+      
+      <div class="row header">
+          
+          <div id="filters" class="span6 columns">
+              <ul>
+                  <li>Latest Logos <small><a href="/logos">More</a> &rarr;</small></li>
+              </ul>
+          </div>
+  
+          <div id="search-form" class="span6 columns">
+            <form accept-charset="UTF-8" action="/search/logos" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+              <input id="query" name="query" placeholder="Search Logos" type="text" />
+              <input class="btn" type="submit" value="Go" />
+</form>          </div>  
+      </div>
+      
+      <div class="row content">
+            <div class="span2 columns logo-container uploaded designer37019">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151417" data-preview="http://s3.amazonaws.com/ls2_production/logos/151417/medium_Skin_Tag_Remover__www.supplementcyclopedia.com_2.jpg?1549269276" title="JosephLealXWX | https://www.supplementcyclopedia.com/skin-tag-remover/">
+            <img alt="151417" src="http://s3.amazonaws.com/ls2_production/logos/151417/thumb_Skin_Tag_Remover__www.supplementcyclopedia.com_2.jpg?1549269276" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer33484">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151416" data-preview="http://s3.amazonaws.com/ls2_production/logos/151416/medium_TREADMILL_5.jpg?1549251986" title="Agusuga | Entry #151416">
+            <img alt="151416" src="http://s3.amazonaws.com/ls2_production/logos/151416/thumb_TREADMILL_5.jpg?1549251986" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer8408">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151415" data-preview="http://s3.amazonaws.com/ls2_production/logos/151415/medium_2.jpg?1549225408" title="aaso | Entry #151415">
+            <img alt="151415" src="http://s3.amazonaws.com/ls2_production/logos/151415/thumb_2.jpg?1549225408" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer8408">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151414" data-preview="http://s3.amazonaws.com/ls2_production/logos/151414/medium_1.jpg?1549225379" title="aaso | Entry #151414">
+            <img alt="151414" src="http://s3.amazonaws.com/ls2_production/logos/151414/thumb_1.jpg?1549225379" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer8408">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151413" data-preview="http://s3.amazonaws.com/ls2_production/logos/151413/medium_1.jpg?1549214735" title="aaso | Entry #151413">
+            <img alt="151413" src="http://s3.amazonaws.com/ls2_production/logos/151413/thumb_1.jpg?1549214735" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer31481">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151412" data-preview="http://s3.amazonaws.com/ls2_production/logos/151412/medium_Treadmill-Touchscreen-UI-RPE-View-V5.jpg?1549199450" title="Jay15 | Entry #151412">
+            <img alt="151412" src="http://s3.amazonaws.com/ls2_production/logos/151412/thumb_Treadmill-Touchscreen-UI-RPE-View-V5.jpg?1549199450" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer31481">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151411" data-preview="http://s3.amazonaws.com/ls2_production/logos/151411/medium_Treadmill-Touchscreen-UI-RPE-View-V4.jpg?1549199424" title="Jay15 | Entry #151411">
+            <img alt="151411" src="http://s3.amazonaws.com/ls2_production/logos/151411/thumb_Treadmill-Touchscreen-UI-RPE-View-V4.jpg?1549199424" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151410" data-preview="http://s3.amazonaws.com/ls2_production/logos/151410/medium_kidlogotype.png?1549197443" title="peter xanthakis | kidlogo">
+            <img alt="151410" src="http://s3.amazonaws.com/ls2_production/logos/151410/thumb_kidlogotype.png?1549197443" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151409" data-preview="http://s3.amazonaws.com/ls2_production/logos/151409/medium_bearfootlogo.png?1549192327" title="peter xanthakis | bearfoot">
+            <img alt="151409" src="http://s3.amazonaws.com/ls2_production/logos/151409/thumb_bearfootlogo.png?1549192327" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer770">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151408" data-preview="http://s3.amazonaws.com/ls2_production/logos/151408/medium_UI-V3-SMALL.png?1549150454" title="Santi | Entry #151408">
+            <img alt="151408" src="http://s3.amazonaws.com/ls2_production/logos/151408/thumb_UI-V3-SMALL.png?1549150454" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer8408">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151407" data-preview="http://s3.amazonaws.com/ls2_production/logos/151407/medium_3.jpg?1549141276" title="aaso | Entry #151407">
+            <img alt="151407" src="http://s3.amazonaws.com/ls2_production/logos/151407/thumb_3.jpg?1549141276" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container entered designer17419">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151406" data-preview="http://s3.amazonaws.com/ls2_production/logos/151406/medium_SteelBridge2-01.jpg?1549110770" title="putul1950 | Entry #151406">
+            <img alt="151406" src="http://s3.amazonaws.com/ls2_production/logos/151406/thumb_SteelBridge2-01.jpg?1549110770" />
+        </a>
+
+    </div>
+    
+</div>
+
+
+      </div>
+       
+  </div>
+
+  <div id="competitions">
+      <div class="row header">
+          <div id="filters" class="span6 columns">
+              <ul>
+                  <li>Latest Competitions <small><a href="/competitions">More</a> &rarr;</small></li>
+              </ul>
+          </div>
+          <div id="search-form" class="span6 columns">
+              <form accept-charset="UTF-8" action="/search/competitions" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="query" name="query" placeholder="Search Competitions" type="text" />
+    <input class="btn" type="submit" value="Go" />
+</form>    
+            </div>
+      </div>
+      <div class="row content">
+        <div class="competition span12">
+    
+    <div class="row">
+        <div class="span2 columns">
+            <div class="logo">
+                <a href="/competitions/2066" class="active live"><span>Live</span></a>&nbsp;
+            </div>
+        </div>
+
+        <div class="span8 columns">
+            <div class="details">
+                <a href="/competitions/2066">Steelbridge Solutions</a>
+                $220.00 - 
+                <em>Close Date: 20 February 2019</em>
+                <p>Steelbridge is a consulting company that provides Human Resources and Business Management consulting.  We provide HR project management and change management for corporate and government clients.  See current branding and colors at &quot;www.steelbridg...</p>
+            </div>
+        </div>
+
+        <div class="span2 columns">
+            <div class="winner">
+                <span class="pending">Closes in: 17 days</span>&nbsp;
+            </div>
+        </div>
+    </div>
+  
+</div><div class="competition span12">
+    
+    <div class="row">
+        <div class="span2 columns">
+            <div class="logo">
+                <a href="/competitions/2065" class="active live"><span>Live</span></a>&nbsp;
+            </div>
+        </div>
+
+        <div class="span8 columns">
+            <div class="details">
+                <a href="/competitions/2065">Coddiwomple</a>
+                $220.00 - 
+                <em>Close Date: 05 February 2019</em>
+                <p>Logo for new boat - Coddiwomple
+
+HI, we need a great logo design for our new boat. 
+
+The boat name is _Coddiwomple_. The definition of coddiwomple is “to travel in a purposeful manner towards a vague destination”. 
+
+The boat  is a caribbean ...</p>
+            </div>
+        </div>
+
+        <div class="span2 columns">
+            <div class="winner">
+                <span class="pending">Closes in: 1 day</span>&nbsp;
+            </div>
+        </div>
+    </div>
+  
+</div>
+      </div>
+  </div>
+  
+  <div id="for-sale">
+      <div class="row header">
+          <div id="filters" class="span6 columns">
+              <ul>
+                  <li>Latest Stock Logos for Sale<small><a href="/logos?filter=for_sale">More</a> &rarr;</small></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row content">
+            <div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151410" data-preview="http://s3.amazonaws.com/ls2_production/logos/151410/medium_kidlogotype.png?1549197443" title="peter xanthakis | kidlogo">
+            <img alt="151410" src="http://s3.amazonaws.com/ls2_production/logos/151410/thumb_kidlogotype.png?1549197443" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151409" data-preview="http://s3.amazonaws.com/ls2_production/logos/151409/medium_bearfootlogo.png?1549192327" title="peter xanthakis | bearfoot">
+            <img alt="151409" src="http://s3.amazonaws.com/ls2_production/logos/151409/thumb_bearfootlogo.png?1549192327" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151358" data-preview="http://s3.amazonaws.com/ls2_production/logos/151358/medium_face.png?1548698306" title="peter xanthakis | face">
+            <img alt="151358" src="http://s3.amazonaws.com/ls2_production/logos/151358/thumb_face.png?1548698306" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151353" data-preview="http://s3.amazonaws.com/ls2_production/logos/151353/medium_greekcoffeshoplogo.png?1548519366" title="peter xanthakis | greekcoffeshop">
+            <img alt="151353" src="http://s3.amazonaws.com/ls2_production/logos/151353/thumb_greekcoffeshoplogo.png?1548519366" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151341" data-preview="http://s3.amazonaws.com/ls2_production/logos/151341/medium_horses_logo.png?1548358446" title="peter xanthakis | horses">
+            <img alt="151341" src="http://s3.amazonaws.com/ls2_production/logos/151341/thumb_horses_logo.png?1548358446" />
+        </a>
+
+    </div>
+    
+</div>
+
+<div class="span2 columns logo-container for_sale designer35761">
+    
+    <div class="logo revealable">
+        
+        <a class="preview" href="/logos/151340" data-preview="http://s3.amazonaws.com/ls2_production/logos/151340/medium_president_logo.png?1548357803" title="peter xanthakis | president logo">
+            <img alt="151340" src="http://s3.amazonaws.com/ls2_production/logos/151340/thumb_president_logo.png?1548357803" />
+        </a>
+
+    </div>
+    
+</div>
+
+
+      </div>
+       
+  </div>
+
+  <div id="comments">
+      <div class="row header">
+          <div id="filters" class="span6 columns">
+              <ul>
+                  <li>Latest Comments</li>
+              </ul>
+          </div>
+      </div>
+    <div class="row content">
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151330">
+              <p>Congratulations!</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/33484"><img alt="Agusuga" src="http://s3.amazonaws.com/ls2_production/avatars/33484/mini/a2.jpg?1516127257" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/33484">Agusuga</a>
+              <em class="timeago" title="2019-02-04T03:43:48Z">2019-02-04 03:43:48 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151330">
+              <p>Congratulations!</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/35748"><img alt="Nick&#x27;s Comic Strip" src="/assets/avatars/client_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/35748">Nick&#x27;s Comic Strip</a>
+              <em class="timeago" title="2019-02-04T03:12:00Z">2019-02-04 03:12:00 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151390">
+              <p>thankyou</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/32269"><img alt="Vhalenk" src="/assets/avatars/default_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/32269">Vhalenk</a>
+              <em class="timeago" title="2019-02-04T03:00:57Z">2019-02-04 03:00:57 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151378">
+              <p>Thank you very much ?</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/33484"><img alt="Agusuga" src="http://s3.amazonaws.com/ls2_production/avatars/33484/mini/a2.jpg?1516127257" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/33484">Agusuga</a>
+              <em class="timeago" title="2019-02-04T00:36:02Z">2019-02-04 00:36:02 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151377">
+              <p>Thank you very much albertcox15 :)</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/33484"><img alt="Agusuga" src="http://s3.amazonaws.com/ls2_production/avatars/33484/mini/a2.jpg?1516127257" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/33484">Agusuga</a>
+              <em class="timeago" title="2019-02-04T00:34:40Z">2019-02-04 00:34:40 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151390">
+              <p>Nice one</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/14753"><img alt="Hilton" src="http://s3.amazonaws.com/ls2_production/avatars/14753/mini/HM_LOGO-01(01).jpg?1530517826" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/14753">Hilton</a>
+              <em class="timeago" title="2019-02-03T17:50:57Z">2019-02-03 17:50:57 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/competitions/2062">
+              <p>Thank you for the entries. I like the dark scheme but wonder if anyone can re-imagine it to a lig&#8230;</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/34930"><img alt="Chelcla" src="/assets/avatars/client_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/34930">Chelcla</a>
+              <em class="timeago" title="2019-02-02T22:38:44Z">2019-02-02 22:38:44 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151375">
+              <p>thanks Albert</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/5432"><img alt="EstweenOnFire" src="http://s3.amazonaws.com/ls2_production/avatars/5432/mini/703b2c1c1fcd5e8d2995124409406eb8.gif?1480793309" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/5432">EstweenOnFire</a>
+              <em class="timeago" title="2019-02-02T19:40:49Z">2019-02-02 19:40:49 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151374">
+              <p>Hi sir, did you like my new entry with solutions ?</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/30977"><img alt="moroccodesign" src="/assets/avatars/default_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/30977">moroccodesign</a>
+              <em class="timeago" title="2019-02-02T18:23:32Z">2019-02-02 18:23:32 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/competitions/2066">
+              <p>This consulting firm is woman owned and focused on helping people.</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/32189"><img alt="AE-Christopher" src="/assets/avatars/client_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/32189">AE-Christopher</a>
+              <em class="timeago" title="2019-02-02T17:15:20Z">2019-02-02 17:15:20 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/logos/151385">
+              <p>Pretty good.</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/32189"><img alt="AE-Christopher" src="/assets/avatars/client_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/32189">AE-Christopher</a>
+              <em class="timeago" title="2019-02-02T16:55:12Z">2019-02-02 16:55:12 UTC</em>
+          </span>
+      </div>
+  </div>
+
+            <div class="comment lite span3 columns">
+  
+      <div class="bubble">
+          <a href="/competitions/2066">
+              <p>&#8220;Bridge&#8221; should not be the focus, rather &#8220;Steel&#8221; &#8211; It is a versatile and effective material that &#8230;</p>
+          </a>
+          <span class="arrow"></span>
+      </div>
+      
+      <div class="avatar">
+          <a href="/profiles/32189"><img alt="AE-Christopher" src="/assets/avatars/client_mini.jpg" width="50" /></a>
+          <span class="links">
+              <a href="/profiles/32189">AE-Christopher</a>
+              <em class="timeago" title="2019-02-02T16:54:20Z">2019-02-02 16:54:20 UTC</em>
+          </span>
+      </div>
+  </div>
+
+    </div>
+  </div>
+</div
+
+      </div>
+      
+    </div>
+    <div id="footer">
+          <div class="container">
+	         
+	         <a href="/contact" title="Visit the Logosauce contact page">Contact us</a> |
+             <a href="/about">About</a> |
+             <a href="http://e-see.com/help/logosauce/index.html" rel="shadowbox">FAQ/Help</a> |
+             <a href="/pricing">Pricing</a> |
+             <a href="/thebottle">About the bottle</a> |  
+             <a href="/advertising">Advertising</a> |
+             <a href="http://e-see.com/help/logosauce/terms.html" rel="shadowbox">Terms of Use</a> | 
+             <a href="http://e-see.com/help/logosauce/privacy.html" rel="shadowbox">Privacy Policy</a> |
+             <a href="/getnews" title="Subscribe to get Logosauce news by email">News</a> |
+             <a href="http://e-see.tumblr.com/tagged/Logosauce" title="Visit the Logosauce blog">Blog</a> |
+             <a href="http://twitter.com/logosauce" title="Follow us on Twitter @logosauce">Follow us</a> |
+             <a href="/ip">&copy; &amp; IP</a>
+               <a href="http://e-see.com" title="An e-see&reg; service" class="logo"><span>An e-see service</span></a>
+          </div>
+    </div>
+  </body>
+</html>

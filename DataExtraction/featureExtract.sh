@@ -1,7 +1,7 @@
 #creates folder and creates text
 #rm -rf datasetFeatures/*
 
-numberToExtract=112000
+numberToExtract=1112222
 echo 'extracting '$numberToExtract
 echo '----------------EXTRACTING TEXT FEATURES----------------'
 python3 extractText.py $numberToExtract

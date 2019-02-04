@@ -1,5 +1,180 @@
-[INFO  - 2019-02-04T02:26:47.901Z] GhostDriver - Main - running on port 47783
-[INFO  - 2019-02-04T02:26:48.868Z] Session [530ac820-2824-11e9-9220-cd1bcb888df6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-02-04T02:26:48.868Z] Session [530ac820-2824-11e9-9220-cd1bcb888df6] - page.customHeaders:  - {}
-[INFO  - 2019-02-04T02:26:48.868Z] Session [530ac820-2824-11e9-9220-cd1bcb888df6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-02-04T02:26:48.868Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 530ac820-2824-11e9-9220-cd1bcb888df6
+[INFO  - 2019-02-04T13:47:16.825Z] GhostDriver - Main - running on port 37557
+[INFO  - 2019-02-04T13:47:17.797Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-04T13:47:17.798Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.customHeaders:  - {}
+[INFO  - 2019-02-04T13:47:17.798Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-02-04T13:47:17.798Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 62f9ddc0-2883-11e9-bd59-7d014ab03d5b
+[ERROR - 2019-02-04T13:47:20.979Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.attachEvent('onload',pngfix)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:20.979Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://ashleymarketinggroup.com/js/unitpngfix.js:4)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:46.152Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.call')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:46.152Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  b (http://ephpsolutions.com/wp-content/themes/CherryFramework/js/jquery.isotope.js?ver=1.5.25:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:46.152Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.call')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:46.152Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  b (http://ephpsolutions.com/wp-content/themes/CherryFramework/js/jquery.isotope.js?ver=1.5.25:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:54.253Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not a function (evaluating '$("a[class^='fancyBox']").fancybox()')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:54.253Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  (anonymous function) (https://www.avazilla.com/wp-content/themes/alterna/js/jquery.theme.js?ver=4.9.4:1)
+  i (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  fireWith (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  ready (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  K (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:54.507Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not a function (evaluating 'jQuery('.portfolio-isotope').isotope('layout')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:47:54.507Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  refreshIsotope (https://www.avazilla.com/wp-content/themes/alterna/js/jquery.theme.js?ver=4.9.4:1)
+  (anonymous function) (https://www.avazilla.com/wp-content/themes/alterna/js/jquery.theme.js?ver=4.9.4:1)
+  dispatch (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:3)
+  handle (https://www.avazilla.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:3)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:12.825Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: null is not an object (evaluating 'document.getElementById('Map').getElementsByTagName')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:12.825Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  initDemos (http://www.mysti.com/:82)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.968Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: MSFPhover
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.968Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:694)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.969Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: MSFPhover
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.969Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:698)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.969Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: MSFPhover
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.969Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:702)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.970Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: MSFPhover
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.970Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:706)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.970Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: MSFPhover
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.971Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:710)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.971Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: Begin
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.972Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:718)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.974Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: Begin
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:15.974Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.e-brainstormtech.com/:767)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-04T13:48:16.231Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-04T13:48:16.231Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.customHeaders:  - {}
+[ERROR - 2019-02-04T13:48:40.206Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:40.207Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.gapent.com/:867)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.793Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.793Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.barrystein.org/:90)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.797Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.797Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.barrystein.org/:384)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.800Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:48.800Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  global code (http://www.barrystein.org/:746)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:57.133Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-04T13:48:57.133Z] Session [62f9ddc0-2883-11e9-bd59-7d014ab03d5b] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/w.js?59:2)
+  view (https://stats.wp.com/w.js?59:2)
+  push (https://stats.wp.com/w.js?59:2)
+  STQ (https://stats.wp.com/w.js?59:2)
+  initQueue (https://stats.wp.com/w.js?59:2)
+  (anonymous function) (https://stats.wp.com/w.js?59:6)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-04T13:52:16.824Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T13:57:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:02:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:07:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:12:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:17:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:22:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:27:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:32:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:37:16.825Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:42:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:47:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:52:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T14:57:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:02:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:07:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:12:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:17:16.836Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:22:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:27:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:32:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:37:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:42:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:47:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:52:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T15:57:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:02:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:07:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:12:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:17:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:22:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:27:16.843Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:32:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:37:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-04T16:42:16.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

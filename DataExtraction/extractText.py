@@ -7,6 +7,11 @@ def getMetaContent(soup,property):
     content = soup.select(cssQuery)
     if len(content)>0 and not(content[0].get('content') is None) :
         return content[0].get('content') + '\n'
+    cssQuery='meta ["name"="' + property+'"]'
+    content = soup.select(cssQuery)
+    if len(content)>0 and not(content[0].get('content') is None) :
+        return content[0].get('content') + '\n'
+
     return ''
 
 #extracts all metas information from the soup'
@@ -46,10 +51,9 @@ for filePath in glob.iglob('dataset/*'):
     soup = BeautifulSoup(htmlDoc, 'html.parser')
     relevantText = addMetas(soup,'')
     #add actual text from the body
-
     #remove all text of scripts and style
-    map(lambda x: x.clear(),soup.select('script'))
-    map(lambda x: x.clear(),soup.select('style'))
+    for script in soup(["script", "style"]):
+        script.decompose()    # rip it out
 
     if soup.body != None:
         relevantText += soup.body.get_text()
@@ -63,6 +67,6 @@ for filePath in glob.iglob('dataset/*'):
     if not os.path.exists(newFilePath):
         os.makedirs(newFilePath)
     #write text
-    relevantText =relevantText.encode('utf8')
+    relevantText =relevantText
     with open(newFilePath+'/text.txt', 'w') as f:
         f.write(str(relevantText))
