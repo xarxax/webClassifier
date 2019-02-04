@@ -1,0 +1,16 @@
+# robots.txt for dingsmagnets.com
+
+Sitemap: http://www.dingsmagnets.com/sitemap.xml
+
+User-agent: *
+
+disallow: /js/
+disallow: /obsolete-html-pages/
+disallow: /scripts/
+
+User-agent: Googlebot
+ Allow:/css/
+ Allow:/js/
+
+User-Agent: MJ12bot
+Disallow:

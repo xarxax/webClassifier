@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.location = "http://www.hidesigns.com/incompatible.html";
+    </script>
+<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+        <meta charset="utf-8">       
+        <title>HID - HID: Your Independent, Objective Clinical Experts</title>
+
+		<!--Define keywords for search engines:-->
+		<meta name="keywords" content="We are an independent, objective clinical services company dedicated to providing solutions that focus on maximizing quality of care while limiting financial or regulatory risk. ">
+
+		<!--Define a description of your web page:-->
+		<meta name="description" content="We are an independent, objective clinical services company dedicated to providing solutions that focus on maximizing quality of care while limiting financial or regulatory risk. ">
+
+		<!--Define the author of a page:-->
+		<meta name="author" content="">
+
+		<!--Refresh document every 30 seconds:-->
+		<!-- <meta http-equiv="refresh" content="30"> -->
+		
+		<!--Define viewport for Mobile:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="http://hidesigns.com/favicon.ico" />
+       
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://hidesigns.com/assets/css/normalize.css">
+		<link rel="stylesheet" href="http://hidesigns.com/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://hidesigns.com/assets/css/main.css">
+        <link rel="stylesheet" href="http://hidesigns.com/assets/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="http://hidesigns.com/assets/css/flexslider.css" type="text/css" media="screen" />
+		<script src="http://hidesigns.com/assets/js/modernizr.custom.js"></script>
+        <script src="http://hidesigns.com/assets/js/vendor/modernizr-2.6.2.min.js"></script>       	
+        
+           <!-- pixel-script -->
+<script src="//assets.adobedtm.com/c876840ac68fc41c08a580a3fb1869c51ca83380/satelliteLib-cc4c2c9318cc49acf07627d47def224c6a16036b.js"></script>
+
+    <link rel="stylesheet" href="/assets//components/slideshowmanager/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+<style type="text/css">
+#slider-wrapper {
+    width:1600px;
+    height:650px;
+}
+
+#slider {
+  position:relative;
+    width:1600px;
+    height:590px;
+  background:url(/assets//components/slideshowmanager/nivo-slider/demo/images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+#slider a {
+  border:0;
+  display:block;
+}
+.nivo-controlNav {
+  position:absolute;
+  left:20px;
+  bottom:-42px;
+}
+.nivo-controlNav a {
+  display:block;
+  width:22px;
+  height:22px;
+  background:url(/assets//components/slideshowmanager/nivo-slider/demo/images/bullets.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+  margin-right:3px;
+  float:left;
+}
+.nivo-controlNav a.active {
+  background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+  display:block;
+  width:30px;
+  height:30px;
+  background:url(/assets//components/slideshowmanager/nivo-slider/demo/images/arrows.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+}
+a.nivo-nextNav {
+  background-position:-30px 0;
+  right:15px;
+}
+a.nivo-prevNav {
+  left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#efe9d1;
+    text-decoration:underline;
+}
+</style>
+<!-- jQuery -->
+<script type="text/javascript" src="/assets/components/slideshowmanager/nivo-slider/demo/scripts/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="/assets/components/slideshowmanager/nivo-slider/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+$j(window).load(function() {
+    $j('#slider').nivoSlider({
+        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 9000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        directionNavHide: true, // Only show on hover
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        controlNavThumbsFromRel: false, // Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', // Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+        keyboardNav: true, // Use left & right arrows
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        captionOpacity: 0.8, // Universal caption opacity
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+   });
+});
+</script>
+</head>
+
+<body>
+<div class="container-fluid overlap_head">
+			<div class="container padding">
+				<header>
+					<div class="col-sm-4 col-lg-4 col-md-4 logo padding">
+						<a href="http://www.hidesigns.com/"><img src="http://hidesigns.com/assets/img/logo.png" alt="x" width="280" height="52"/></a>
+					</div>
+					<nav class="col-sm-7 col-lg-7 col-md-7 nav padding-right">	
+
+	
+<ul><li class="current current"><a href="solutions.html" title="Solutions" >Solutions</a></li>
+<li class="current"><a href="http://blog.hidesigns.com" title="Blog" target="_blank">Blog</a></li>
+<li class="current"><a href="media.html" title="Media" >Media</a></li>
+<li class="current"><a href="support.html" title="Support" >Support</a></li>
+<li class="current last"><a href="contact.html" title="Contact" >Contact</a></li>
+</ul>
+	
+		</nav>		
+<span class="col-sm-1 col-lg-1 col-md-1 search_head">
+<form action="http://www.hidesigns.com/search.html" method="GET" class="headSearch">
+<input class="hidden_search" placeholder="Enter your search term..." type="search" value="" name="search">
+<input type="hidden" value="17" name="id">
+<span class="icon-search"></span>
+</form>
+</span>
+
+
+<!--<form class="sisea-search-form" action="http://www.hidesigns.com/" method="get">
+  <fieldset>
+    <label for="search">Search</label>
+
+    <input type="text" name="search" id="search" value="" />
+    <input type="hidden" name="id" value="1" /> 
+
+    <input type="submit" value="Search" />
+  </fieldset>
+</form>
+-->
+<!--<a href="#"><input class="hidden_search" placeholder="Enter your search term..." type="search" value="">
+<span class="icon-search"></span></a>-->
+						
+					
+				</header>
+			</div>
+		</div>
+<div class="container-fluid overlap-slider padding">
+			<!--<img src="assets/img/slider_image.png" alt="x"/>-->
+
+<div class="mainSlider">
+<div id="slider" class="nivoSlider">
+  
+            <img height="590" width="1600" src="/assets/components/slideshowmanager/uploads/album_1_slide_1415899086.png" alt="We're your clinical experts." title="<p class='slidertitle'>We're your clinical experts.</p> We're independent. We're objective.<br>Put our expertise to work for you.<div class='readMore'><a href='http://resources.hidesigns.com/coverage-determination-consultation' target='_blank'>Learn More</a></div>">
+<!--<a href="http://resources.hidesigns.com/coverage-determination-consultation"><img src="/assets/components/slideshowmanager/uploads/album_1_slide_1415899086.png" alt="We're your clinical experts." title="We're your clinical experts. <br /> We're independent. We're objective.<br>Put our expertise to work for you. <span class="readMore"></span>" /></a>-->
+</div>
+  
+</div>
+</div>
+
+		<div class="container-fluid home_tabs">
+			<div class="container padding">
+				<div class="col-sm-4 col-md-4 col-lg-4 testi padding text-center">
+					<a href="about.html">
+						<img class="bubble" src="http://hidesigns.com/assets/img/news.png" alt="x" width="83" height="83"/>
+						<p>About Us</p>
+						<span class="testi_over"></span>
+					</a>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 solution padding text-center">
+					<a href="solutions.html">
+						<img class="growing_t" src="http://hidesigns.com/assets/img/growing.png" alt="x" width="83" height="83"/>
+						<p>Solutions</p>
+						<span class="testi_over"></span>
+					</a>
+				</div>	
+				<div class="col-sm-4 col-md-4 col-lg-4 mediatab padding text-center">
+					<a href="http://blog.hidesigns.com">
+						<img class="news_t" src="http://hidesigns.com/assets/img/bubble.png" alt="x" width="83" height="83"/>
+						<p>Blog</p>
+						<span class="testi_over"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+<div class="container-fluid home_content_wrap">
+<div class="container padding home_content">
+<div class="col-sm-7 col-md-7 col-lg-7 content_left">
+<h1>Expertise when you need it most.</h1>
+<p><span class="para_one">The healthcare landscape is constantly changing. You need independent, objective clinical services, powered by compliant technologies, to help you stand strong against the financial and regulatory waves of the future. You need a partner with an inherent understanding of the evolution of pharmacy management to help you find the right path for your pharmacy program. <em>You need HID.</em> <br /><br /> <span class="para_one"><span style="line-height: 1.5em;">At HID, our focus is on improving the clinical and economic value of health care at its earliest point to help you be proactive in identifying and overcoming your organization's challenges?UR"all while keeping quality of care first. And that's value we can all be proud of. </span><span class="para_one"><span style="line-height: 1.5em;">Our prior authorization, data analysis and clinical advisory services are second to none, providing the health care outcomes you need to stay ahead and ensure your members receive the highest quality of care. </span><br /><br /> <span style="line-height: 1.5em;">Our prior authorization and drug utilization review solutions simplify the logistics of clinical care to produce efficient and compliant health management. In other words, we're creating healthier communities from coast-to-coast.<br /><br /> </span></span></span></span></p>
+</div>
+<div class="col-sm-5 col-md-5 col-lg-5">
+<div class="slider">
+<div class="flexslider">
+<ul class="slides">
+<li class="home-slide"><img class="invertedOpen" src="http://hidesigns.com/assets/img/inverted_open.png" alt="x" width="20" height="15"/>
+<p class="home-slide-content">I was personally impressed with your ability and willingness to exert a “demand pull” to help implement the new PMIX Architecture. At times, it seemed that you had a better understanding of how to accomplish things than we did. Your skill and diligence have made an extremely valuable contribution to the national effort to stem the tide of prescription drug abuse epidemic.</p>
+<img class="invertedClose" src="http://hidesigns.com/assets/img/inverted_close.png" alt="x" width="20" height="15"/>
+<div class="profile_info"><img class="left" draggable="false" alt="img" src="http://hidesigns.com/assets/img/Testimonials/scott-serich.png" width="100" height="100">
+<p class="pro_name">Scott Serich, PhD, JD</p>
+<p class="pro_desc">Lead Technical Architect, IJIS Institute</p>
+<div class="clearfix"> </div>
+</div>
+</li>
+
+
+
+<li class="home-slide"><img class="invertedOpen" src="http://hidesigns.com/assets/img/inverted_open.png" alt="x" width="20" height="15"/>
+<p class="home-slide-content">HID's knowledgeable clinical and professional staff works hard to make sure we are able to navigate challenges to our program and any legislative changes that come to pass.</p>
+<img class="invertedClose" src="http://hidesigns.com/assets/img/inverted_close.png" alt="x" width="20" height="15"/>
+<div class="profile_info"><img class="left" draggable="false" alt="img" src="http://hidesigns.com/assets/img/Testimonials/Poston.png" width="100" height="100">
+<p class="pro_name">Rebecca Poston, MHL</p>
+<p class="pro_desc">Program Manager, E-FORCSE</p>
+<div class="clearfix"> </div>
+</div>
+</li>
+
+
+
+ 
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid social_wrap">
+			<div class="container padding social_content">
+				<div class="col-sm-4 col-md-4 col-lg-4 padding-left social_container twitts">
+					<h2>Twitter</h2>
+                                        <a class="twitter-timeline" data-theme="light" Width="100%"  data-chrome="nofooter transparent noheader noscrollbar noborders"   data-dnt="true" href="https://twitter.com/thePAexperts" data-widget-id="529948715667046402">Tweets by @thePAexperts</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>					
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 padding-left social_container news">
+					<h2>Latest News</h2>
+
+                                        
+
+
+					
+					<p class="read_more"><a href="media.html">Read More <img src="http://hidesigns.com/assets/img/readmore.png" alt="x" width="16" height="9"/></a></p>
+				</div>			
+<div class="col-sm-3 col-md-3 col-lg-3 padding-left social_container network"><a href="https://accreditnet2.urac.org/UracPortal/Directory/CompanyView/2378/827/59c5d28a-8846-4425-8d57-3caaf32bb75a">
+<div class="col-sm-4 col-md-4 col-lg-4 uracAcc" style="padding-top:14%;margin-left: -17px;margin-right: 10px;">
+<img src="http://hidesigns.com/assets/img/acc.png" alt="x" width="67" height="70"/> 
+</div>	</a>
+<div class="col-sm-8 col-md-8 col-lg-8 tw">
+					<h2>Social Networking</h2>
+					<a class="twitter" href="https://twitter.com/thePAexperts" target="_blank"><span class="icon-twitter"></span></a>
+					<a class="linked" href="https://www.linkedin.com/company/1350558?trk=vsrp_companies_cluster_name&trkInfo=VSRPsearchId%3A681785641415121269458%2CVSRPtargetId%3A1350558%2CVSRPcmpt%3Acompanies_cluster" target="_blank"><span class="icon-linkedin"></span></a></div>
+					<!--<h2>Newsletter</h2>-->
+                                         <h2>Newsletter</h2>
+<p> </p>
+<p></p>
+<form action="http://www.hidesigns.com/" method="post">
+<!--<input type="hidden" name="listId" value="92690759ef">-->
+<input type="text" value="" name="EMAIL" placeholder="E-mail">
+<input type="submit" name="mmc_subscribe" value="Submit" />
+</form>
+					<!--<input type="text" placeholder="E-mail"/>
+					<input type="submit" value="Submit">-->
+				</div>
+			</div>
+			
+		</div>
+		<div class="container-fluid footer_wrap">
+			<div class="container padding footer_container">
+				<p>© 2015 Health Information Designs, LLC. All rights reserved.</p>
+			</div>
+		</div>
+
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1775679.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="http://hidesigns.com/assets/js/plugins.js"></script>
+		<script src="http://hidesigns.com/assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+<script src="http://hidesigns.com/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script>
+$(document).ready(function(){
+	        $(".ross").bind('click', function(){                              
+                 $(".hidden_ross").empty(); 
+                $(".closeProfile").css('display', 'block');
+                var id = $(this).attr("data-attr");
+                var rowsid = $(this).attr("rows-attr");               
+                $( ".hiddenLeader-"+id).clone(true).appendTo(".rows-"+rowsid);
+                //$(".hidden_ross").css('display','block');
+                $(".hidden_ross .hiddenLeader-"+id).css('display','block');
+                $(".hidden_ross").slideDown("slow","swing");
+				
+				var self = $(".first_block");
+				 var top = $(".second_block")
+				 
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+               });   
+               $(".closeProfile").bind('click', function(){                                         
+                    $(".hidden_ross").slideUp("slow","swing");				
+                    var self = $(".first_block");
+                      var top = $(".second_block")
+                          if (self.hasClass("slide_margin_bottom")) {
+                        self.removeClass("slide_margin_bottom");
+                             } else {
+                              self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                                 }
+                                  if (top.hasClass("slide_margin_top")) {
+                            top.removeClass("slide_margin_top");
+                                } else {
+                           top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                               }
+                  });
+               
+});            
+
+		</script>
+ <script>
+			(function($){
+				$(window).load(function(){
+					
+					$(".customscroll").mCustomScrollbar({
+						theme:"minimal"
+					});
+					
+				});
+			})(jQuery);
+</script>
+<script>
+$(".newspaginate").click(function(){
+     var rows = $(this).attr('data-attr');
+      $('.newspaginate').removeClass('activepage');
+     $('.number-'+rows).addClass('activepage');     
+     $('.newsdetails').css('display', 'none');
+     $('.newsdisplay-'+rows).css('display','block');
+     
+})	
+
+$(".presspaginate").click(function(){
+     var rows = $(this).attr('data-attr');
+      $('.presspaginate').removeClass('activepress');
+     $('.pressnumber-'+rows).addClass('activepress');     
+     $('.pressdetails').css('display', 'none');
+     $('.pressdisplay-'+rows).css('display','block');
+     
+})		
+
+$(".one_open").bind('click', function(){				
+                          $(".onehidden_wrap").empty();
+                          var id = $(this).attr("data-attr");
+                          var rowsid = $(this).attr("rows-attr");       
+                          $( ".hiddennews-"+id).clone(true).appendTo(".news-"+rowsid);
+                           $(".onehidden_wrap .hiddennews-"+id).css('display','block');
+
+                         $(".onehidden_wrap").slideDown("slow","swing");
+				
+				 var self = $(".first_news_block");
+				 var top = $(".second_news_block")
+				 
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			$(".onehidden_wrap_close").bind('click', function(){
+				$(".onehidden_wrap").slideUp("slow","swing");
+				
+				var self = $(".first_news_block");
+				 var top = $(".second_news_block")
+				 
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			
+			$(".press_open").bind('click',function(){
+
+                          $(".onePresshidden_wrap").empty();
+                          var id = $(this).attr("data-attr");
+                          var rowsid = $(this).attr("rows-attr");       
+                          $( ".hiddenpress-"+id).clone(true).appendTo(".press-"+rowsid);
+                           $(".onePresshidden_wrap .hiddenpress-"+id).css('display','block');
+
+				$(".onePresshidden_wrap").slideDown("slow","swing");
+				 var self = $(".first_press_block");
+				 var top = $(".second_press_block")
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			
+			$(".onePresshidden_wrap_close").bind('click', function(){
+				$(".onePresshidden_wrap").slideUp("slow","swing");
+				 var self = $(".first_press_block");
+				 var top = $(".second_press_block")
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			
+			$(".paper_one").bind('click', function(){
+                                $(".onePaperhidden_wrap").empty();
+                                 var id = $(this).attr("data-attr");                                 
+                                 var rowsid = $(this).attr("rows-attr"); 
+                                 $( ".hiddenWhitepaper-"+id).clone(true).appendTo(".whitepap-"+rowsid);
+                                $(".onePaperhidden_wrap .hiddenWhitepaper-"+id).css('display','block');
+				$(".onePaperhidden_wrap").slideDown("slow","swing");
+				 var self = $(".firstWhite_block");
+				 var top = $(".secondWhite_block")
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			
+			$(".onePaperhidden_wrap_close").bind('click', function(){                             
+				$(".onePaperhidden_wrap").slideUp("slow","swing");
+				 var self = $(".firstWhite_block");
+				 var top = $(".secondWhite_block")
+				 if (self.hasClass("slide_margin_bottom")) {
+                     self.removeClass("slide_margin_bottom");
+                 } else {
+                     self.removeClass("slide_margin_bottom").addClass("slide_margin_bottom");
+                 }
+				 
+				 if (top.hasClass("slide_margin_top")) {
+                     top.removeClass("slide_margin_top");
+                 } else {
+                     top.removeClass("slide_margin_top").addClass("slide_margin_top");
+                 }
+			});
+			
+			$(function() {
+				$("#one").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"mediaAjax.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_data').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					
+					$("#one").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#two,#three,#four").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+			
+			$(function() {
+				$("#two").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"mediaAjaxtwo.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_data').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#two").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#one,#three,#four").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+			$(function() {
+				$("#three").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"mediaAjaxthree.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_data').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#three").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#one,#two,#four").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+				$(function() {
+				$("#four").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"mediaAjaxfour.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_data').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#four").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#one,#two,#three").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+				$(function() {
+				$("#pressOne").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"pressAjax.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_Press').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#pressOne").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#pressTwo,#pressThree,#pressFour").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+				$(function() {
+				$("#pressTwo").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"pressAjaxtwo.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_Press').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#pressTwo").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#pressOne,#pressThree,#pressFour").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+				$(function() {
+				$("#pressThree").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"pressAjaxthree.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_Press').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#pressThree").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#pressOne,#pressTwo,#pressFour").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+				$(function() {
+				$("#pressFour").click(function(){
+					$.ajax({
+						type:"POST",
+						url:"pressAjaxfour.html",
+						dataType:"html",
+						success:function(data) {
+							
+							 $('.ajax_Press').html(data);
+						},
+						error:function() {
+							alert("Error");
+						}
+					})
+					$("#pressFour").css({"background-color":"#3462b7","color":"#ffffff"});
+					$("#pressOne,#pressTwo,#pressThree").css({"background-color":"transparent","color":"#3462b7"});
+					});
+				});
+		  </script>
+<!--<script type="text/javascript" src="http://hidesigns.com/assets/js/ammap.js"></script>
+		<script type="text/javascript" src="http://hidesigns.com/assets/js/usaLow.js"></script>
+		<script type="text/javascript" src="http://hidesigns.com/assets/js/light.js"></script>-->		
+		 <script defer src="http://hidesigns.com/assets/js/jquery.flexslider.js"></script>
+
+		
+	<!-- FlexSlider -->	 
+
+	  <script type="text/javascript">
+		$(function(){
+		  //SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+                        slideshowSpeed:20000,
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	  </script>
+	 <script>
+		  $(".search_head span").click(function(){
+		     var self = $(this);
+			$(".hidden_search").toggle("slide");
+			  if (self.hasClass("search_span_back")) {
+                     self.removeClass("search_span_back");
+                 } else {
+                     self.removeClass("search_span_back").addClass("search_span_back");
+                 }
+				return false;
+		  });
+		  $('body').click(function(e){
+			e.stopPropagation();
+			$(".hidden_search").hide("slide");
+			var self = $(".search_head span");
+			if (self.hasClass("search_span_back")) {
+                     self.removeClass("search_span_back");
+                 }
+		  });
+		  $(".hidden_search").click(function(){
+			return false;
+		  });
+		</script>
+         <script type="text/javascript">	
+		function IsEmail(email) {
+				var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				return regex.test(email);
+		}
+		
+		function validate(){			
+				   var firstrequired = $(".firstrequired").val();	
+				   var lastrequired = $(".lastrequired").val();
+				   var emailrequired = $(".emailrequired").val();
+				   var phonerequired = $(".phonerequired").val();
+				   var msgrequired = $(".msgrequired").val();                  
+                   var error = false;						
+				   if(firstrequired==''){
+				       $(".firstrequired").addClass('error');
+						error = true;						
+				   }
+				  else if(lastrequired==''){
+				       $(".lastrequired").addClass('error');
+					   error = true;
+						                                                                                          $(".errormessage").css('display','block');					
+				   }	
+                   else if(IsEmail($(".emailrequired").val()) == false || emailrequired==''){                                       
+				       $(".emailrequired").addClass('error');
+			      error=true;										
+				   }	
+				  else if(phonerequired==''){
+				       $(".phonerequired").addClass('error');
+					   error = true;									
+				   }	
+				  else if(msgrequired==''){
+				       $(".msgrequired").addClass('error');
+					   error = true;
+											
+				   }			   
+				   else{				   
+					 error = false;
+				   }	
+					
+					if(error == true)
+					{
+						return false;
+						$(".errormessage").css('display','block');		
+					}
+					else{						
+					   return true;
+					}
+				   
+		}
+		</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39072263-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">_satellite.pageBottom();</script> 
+</body>
+</html>

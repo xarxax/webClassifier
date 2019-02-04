@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Troppman Prosthetics is private prosthetic clinic that services Edmonton and its surrounding area, as well as Grande Prairie." />
+	<meta name="keywords" content="troppman,prothetics,troppman grip,amputee" />
+	<meta name="author" content="Jason Lee" />
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans|Carrois+Gothic+SC' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" media="all" href="inland-hembygd.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<title>Troppman Prosthetics</title>	
+<style>
+.video-popups {
+    max-width: 100%;
+    width: 960px;
+    margin: 0px auto;
+    display: block;
+    height: 250px;
+    background-color:#2b2b2b;
+}
+.videos{
+  position:relative;
+  display:inline-block;
+  width:100%; 
+  overflow:hidden;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:45px;
+}
+.t-placeholder{
+  max-width: 260px;
+}
+.box {
+  width: inherit;
+  max-width: 260px;
+  background: rgba(255,255,255,0.2);
+  background-clip: padding-box;
+  text-align: center;
+  float:left;
+  padding: 10px;
+  margin-right:15px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 960px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+    </style>
+</head>
+
+<body>
+<div id="fb-root">&nbsp;</div>
+<script>// <![CDATA[
+window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '{your-app-id}',
+			  status     : true,
+			  xfbml      : true
+			});
+		  };
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+<div id="wrapper960" class="clearfix">
+<div id="header" class="clearfix shadow">
+<div id="sitetitle" class="clearfix"><br /><center><a href="Home.html"> <img src="images/troppman logo.JPG" alt="" width="370" height="300" /></a></center></div>
+<div id="nav" class="clearfix">
+<ul>
+<li><a class="current" href="Home.html">Home</a></li>
+<li><a href="Team.html">Team</a></li>
+<li><a href="Our Services.html">Our Services</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Troppman Grip.html">Troppman Grip</a></li>
+<li><a href="Links.html">Links</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="slider-wrapper">
+<div id="slider" class="nivoSlider"><img src="images/troppman prosthetics front x.jpg" alt="troppman grip promo" height="500" /> <img src="images/troppman prosthetics front 1.JPG" alt="troppman prosthetics transtibial amputee" height="500" /> <img src="images/troppman prosthetics front 2.JPG" alt="troppman prosthetics" height="500" /> <img src="images/troppman prosthetics front 3.jpg" alt="troppman prosthetics" height="500" /> <img src="images/troppman prosthetics front 4.JPG" alt="transfemoral above knee prostheses" height="500" /> <img src="images/troppman prosthetics front 5.JPG" alt="transtibial transradial troppman golfer" height="500" /> <img src="images/troppman prosthetics front 6.JPG" alt="prosthetic feet" height="500" /></div>
+</div>
+</div>
+<div class="video-popups">
+<div class="videos">
+<div class="box"><a href="#popup1"><img style="max-width: 260px;" src="https://i.vimeocdn.com/video/680877528_780x439.jpg" alt="" /></a></div>
+<div id="popup1" class="overlay">
+<div class="popup"><iframe src="https://player.vimeo.com/video/253870301?title=0&amp;byline=0&amp;portrait=0" width="960" height="408" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <a class="close" href="#">&times;</a>
+<div class="content">&nbsp;</div>
+</div>
+</div>
+<div class="box"><a href="#popup2"><img style="max-width: 260px;" src="https://i.vimeocdn.com/video/680647062_780x439.jpg" alt="" /></a></div>
+<div id="popup2" class="overlay">
+<div class="popup"><iframe src="https://player.vimeo.com/video/252597821?title=0&amp;byline=0&amp;portrait=0" width="960" height="408" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <a class="close" href="#">&times;</a>
+<div class="content">&nbsp;</div>
+</div>
+</div>
+<div class="box"><a class="t-placeholder" href="#popup3"><img style="max-width: 260px;" src="https://i.vimeocdn.com/video/679275596_780x439.jpg" alt="" /></a></div>
+<div id="popup3" class="overlay">
+<div class="popup"><iframe src="https://player.vimeo.com/video/252597384?title=0&amp;byline=0&amp;portrait=0" width="960" height="408" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <a class="close" href="#">&times;</a>
+<div class="content">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content" class="clearfix shadow">
+<h4>Our mission:</h4>
+<h4>"To serve the community by providing the highest quality professional prosthetic services to improve health, function, productivity, and overall quality of life."</h4>
+<br />
+<h3>About Us</h3>
+<p>Troppman Prosthetics Ltd. has been providing prosthetic treatment within Edmonton for over 40 years. We are a private clinic that specializes in designing artificial limbs, or prostheses, for amputees so that they can function at the highest level they can potentially achieve. We also provide prosthetic services at our satellite office in Grande Prairie every month, as well as regular clinics in Daysland and Camrose.</p>
+<br />
+<h3>News and Events</h3>
+<a href="https://www.facebook.com/TroppmanProstheticsEdmonton" target="_blank"> <img src="images/troppman facebook logo button.jpg" alt="" width="140" height="40" /></a>
+<p>Follow and Like us on Facebook for all your up-to-date news, events, and much more!</p>
+</div>
+<div id="extended" class="clearfix shadow">
+<div id="trio1">
+<div class="inner"><center>
+<h4><a href="Our Services.html">OUR SERVICES<br /><br /><img src="images/tile prosthetic feet.JPG" alt="prosthetic feet" width="200" height="150" /></a></h4>
+<p>Find out more about what we offer</p>
+</center></div>
+</div>
+<div id="trio2">
+<div class="inner"><center>
+<h4><a href="Team.html">OUR TEAM<br /><br /><img src="images/tile prosthetic team.JPG" alt="troppman prosthetics" width="200" height="150" /></a></h4>
+<p>Get to know us</p>
+</center></div>
+</div>
+<div id="trio3">
+<div class="inner"><center>
+<h4><a href="Contact Us.html">CONTACT US<br /><br /><img src="images/tile map.gif" alt="troppman prosthetics" width="200" height="150" /></a></h4>
+<p>Find us in your community</p>
+</center></div>
+</div>
+</div>
+<div id="footer" class="shadow"><center>
+<p><a class="backtotop">Back to Top</a></p>
+</center>
+<p>&copy; 2016 Troppman Prosthetics | Hosted and powered by <a href="http://www.ipower.com">www.ipower.com</a></p>
+</div>
+<script type="text/javascript">// <![CDATA[
+$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+// ]]></script>
+<script type="text/javascript">// <![CDATA[
+jQuery('.backtotop').click(function(){
+	jQuery('html, body').animate({scrollTop:0}, 'slow');
+	});
+// ]]></script>
+</body>
+</html>

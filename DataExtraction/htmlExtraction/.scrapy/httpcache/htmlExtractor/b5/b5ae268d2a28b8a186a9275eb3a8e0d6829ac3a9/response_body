@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html  lang="en-US">
+<head id="Head"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><meta content="text/javascript" http-equiv="Content-Script-Type" /><meta content="text/css" http-equiv="Content-Style-Type" /><meta id="MetaCopyright" name="COPYRIGHT" content="Copyright © 2017 IES Systems, Inc. All Rights Reserved." /><meta id="MetaAuthor" name="AUTHOR" content="IES Systems" /><meta name="RESOURCE-TYPE" content="DOCUMENT" /><meta name="DISTRIBUTION" content="GLOBAL" /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><meta name="REVISIT-AFTER" content="1 DAYS" /><meta name="RATING" content="GENERAL" /><meta http-equiv="PAGE-ENTER" content="RevealTrans(Duration=0,Transition=1)" /><style id="StylePlaceholder" type="text/css"></style><link href="/Portals/_default/default.css?cdv=69" type="text/css" rel="stylesheet"/><link href="/Portals/IES/Skins/IES/skin.css?cdv=69" type="text/css" rel="stylesheet"/><link href="/Portals/IES/portal.css?cdv=69" type="text/css" rel="stylesheet"/><script src="/Resources/Shared/Scripts/jquery/jquery.min.js?cdv=69" type="text/javascript"></script><title>
+	IES Systems > Home
+</title></head>
+<body id="Body">
+    
+    <form method="post" action="/" onsubmit="javascript:return WebForm_OnSubmit();" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwOTkyMDQ2OTQPZBYIZg8WAh4EVGV4dAU+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwvL0VOIj5kAgIPFgIfAAUNIGxhbmc9ImVuLVVTImQCBA9kFg4CBA8WAh4HVmlzaWJsZWhkAgUPFgQeB2NvbnRlbnRkHwFoZAIGDxYEHwJkHwFoZAIHDxYCHwIFOENvcHlyaWdodCDCqSAyMDE3IElFUyBTeXN0ZW1zLCBJbmMuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuZAIIDxYEHwJkHwFoZAIJDxYCHwIFC0lFUyBTeXN0ZW1zZAIMDxYCHwIFDUlOREVYLCBGT0xMT1dkAgYPZBYCAgEPZBYEZg9kFgJmDxYCHwFoFgJmD2QWAmYPZBYGAgMPEGRkFgBkAg8PZBYCZg8PFgYeCEltYWdlVXJsBRQvaW1hZ2VzL2NvbGxhcHNlLmdpZh4NQWx0ZXJuYXRlVGV4dAUITWluaW1pemUeB1Rvb2xUaXAFCE1pbmltaXplFgoeB3VzZXJjdHIFCVVzYWJpbGl0eR4HdXNlcmtleQUUQ29udHJvbFBhbmVsVmlzaWJsZTkeB29uY2xpY2sFTWlmIChfX2Rubl9TZWN0aW9uTWF4TWluKHRoaXMsICAnSWNvbkJhci5hc2N4X3Jvd0NvbnRyb2xQYW5lbCcpKSByZXR1cm4gZmFsc2U7HghtYXhfaWNvbgUSL2ltYWdlcy9leHBhbmQuZ2lmHghtaW5faWNvbgUUL2ltYWdlcy9jb2xsYXBzZS5naWZkAhEPZBYCAgEPZBYCAgEPZBYQAgEPEGRkFgBkAgUPEGRkFgBkAgcPEGRkFgBkAgsPEGRkFgBkAg8PEGRkFgBkAhUPEGRkFgBkAhkPEGRkFgFmZAIdDxBkZBYAZAIID2QWAmYPZBYcZg9kFgRmD2QWBgIBDxAPFgYeCENzc0NsYXNzBQZzZWFyY2geBF8hU0ICAh8BaGRkZGQCAw8QDxYGHwsFBnNlYXJjaB8MAgIfAWhkZGRkAgcPDxYGHwsFBnNlYXJjaB8ABQZTZWFyY2gfDAICZGQCAg9kFgICAg8PFgYfCwUGc2VhcmNoHwAFBlNlYXJjaB8MAgJkZAICDxYCHgVjbGFzcwUMRE5ORW1wdHlQYW5lZAIDD2QWAmYPFgIfDQUsRG5uTW9kdWxlIERubk1vZHVsZS1ETk5fSUZyYW1lIERubk1vZHVsZS05ODYWAgIBD2QWAmYPZBYCAgEPD2QWAh8NBR5ETk5Nb2R1bGVDb250ZW50IE1vZEROTklGcmFtZUMWAgIBD2QWAmYPFg4eA3NyYwUbL1BvcnRhbHMvSUVTL3NsaWRlc2hvdy5odG1sHglpbm5lcmh0bWwFK1lvdXIgYnJvd3NlciBkb2VzIG5vdCBzdXBwb3J0IGlubGluZSBmcmFtZXMeC2ZyYW1lYm9yZGVyBQEwHgZoZWlnaHQFAzI3OR4RYWxsb3d0cmFuc3BhcmVuY3kFBHRydWUeCXNjcm9sbGluZwUCbm8eBXdpZHRoBQM0NjBkAgQPZBYCZg8WAh8NBSpEbm5Nb2R1bGUgRG5uTW9kdWxlLUROTl9IVE1MIERubk1vZHVsZS05NzcWAgIBD2QWAmYPZBYCAgEPD2QWAh8NBRxETk5Nb2R1bGVDb250ZW50IE1vZEROTkhUTUxDZAIFDxYCHw0FDEROTkVtcHR5UGFuZWQCBg8WAh8NBQxETk5FbXB0eVBhbmVkAgcPFgIfDQUMRE5ORW1wdHlQYW5lZAIIDxYCHw0FDEROTkVtcHR5UGFuZWQCCQ8WAh8NBQxETk5FbXB0eVBhbmVkAgoPFgIfDQUMRE5ORW1wdHlQYW5lZAILDxYCHw0FDEROTkVtcHR5UGFuZWQCDA9kFgJmDxYCHw0FKkRubk1vZHVsZSBEbm5Nb2R1bGUtRE5OX0hUTUwgRG5uTW9kdWxlLTk4NBYCAgEPZBYCZg9kFgICAQ8PZBYCHw0FHEROTk1vZHVsZUNvbnRlbnQgTW9kRE5OSFRNTENkAg0PFgIfDQUYb3Vyd29ya3RleHQgRE5ORW1wdHlQYW5lZAIRD2QWAmYPDxYIHwsFBmZvb3Rlch8ABQVMb2dpbh4LTmF2aWdhdGVVcmwFSWh0dHA6Ly93d3cuaWVzLXVzLmNvbS9Ib21lL3RhYmlkLzQxMC9jdGwvTG9naW4vRGVmYXVsdC5hc3B4P3JldHVybnVybD0lMmYfDAICZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFFGRubiRkbm5OQVYkY3RsZG5uTkFW+tLlk1hRwf74vRfxIYYod31Z//U=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form'];
+if (!theForm) {
+    theForm = document.Form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=bdeFAlZDFs0C8lf4CWuePkh-zy7AqDv1UTxEl-sj-XnPYq46VyaWbiZD-ooVReGDtvzH3iWa3zlqQDXa0&amp;t=635944474005848192" type="text/javascript"></script>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a50b12c66-1dd3-4ebf-87e6-55014086ad94%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script src="/js/dnn.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+dnn.controls.submitComp.onsubmit();
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKO6tyeDALDqsLUAgLs1ZiABAL+5PGyAgLR9YnYDiN0AGJWg8H/Hgv4+CjyOP3Yz26N" />
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        <script src="/js/dnn.xml.js?cdv=69" type="text/javascript"></script><script src="/js/dnn.xmlhttp.js?cdv=69" type="text/javascript"></script><script src="/js/dnn.controls.js?cdv=69" type="text/javascript"></script><script src="/js/dnn.controls.dnnmenu.js?cdv=69" type="text/javascript"></script><script src="/js/dnncore.js?cdv=69" type="text/javascript"></script><script src="/js/dnn.dom.positioning.js?cdv=69" type="text/javascript"></script>
+        
+        
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+-->
+</style>
+
+<div align="center">
+<div id="wrapper">
+<div id="logo"></div>
+<div id="search"><div class="search"><span id="dnn_dnnSEARCH_ClassicSearch">
+  
+  
+  <input name="dnn$dnnSEARCH$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="NormalTextBox" onkeydown="return __dnn_KeyDown(&#39;13&#39;, &#39;javascript:__doPostBack(%27dnn$dnnSEARCH$cmdSearch%27,%27%27)&#39;, event);" />&nbsp;
+  <a id="dnn_dnnSEARCH_cmdSearch" class="search" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH$cmdSearch&#39;,&#39;&#39;)">Search</a>
+</span>
+
+
+</div></div>
+<div id="nav"><div class="navleft"></div><div class="clearfloat"></div>
+  <div class="navcenter">
+    <span><span class="" id="dnn_dnnNAV_ctldnnNAV"></span></span>
+  </div>
+  <div class="navright"></div></div>
+
+<div id="content"><div id="content2">
+<table width="100%" border="0" cellpadding="0" cellspacing="9" align="center">
+		<tr>
+			<td id="dnn_ContentPane" colspan="4" valign="top" class="DNNEmptyPane"></td>
+
+		</tr>
+		
+		
+        <tr>
+			<td id="dnn_TwoPanesLeft" colspan="2" valign="top"><div class="DnnModule DnnModule-DNN_IFrame DnnModule-986"><a name="986"></a><div id="dnn_ctr986_ContentPane"><!-- Start_Module_986 --><div id="dnn_ctr986_ModuleContent" class="DNNModuleContent ModDNNIFrameC">
+	<iframe id="dnn_ctr986_IFrame_htmIFrame" src="/Portals/IES/slideshow.html" frameborder="0" height="279" allowtransparency="true" scrolling="no" width="460">Your browser does not support inline frames</iframe>
+
+</div><!-- End_Module_986 --></div>
+</div></td>
+
+			<td id="dnn_TwoPanesRight" colspan="2" valign="top"><div class="DnnModule DnnModule-DNN_HTML DnnModule-977"><a name="977"></a><div id="dnn_ctr977_ContentPane"><!-- Start_Module_977 --><div id="dnn_ctr977_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr977_HtmlModule_lblContent" class="Normal">
+	<h1 style="text-align: left; margin-top: 0pt; unicode-bidi: embed; direction: ltr; margin-bottom: 0pt; vertical-align: baseline; language: en-US">IES Systems, Inc. is a global supplier of factory automation and test equipment</h1>
+<p><span style="font-size: 20px"><span style="font-family: Arial">We provide cost-effective solutions to manufacturing and engineering&#160;professionals, finding ways to meet production quotas and exceed quality standards.</span></span></p>
+<p>&#160;</p>
+<p style="text-align: right"><span style="font-size: 22px"><span style="font-family: Arial"><a href="/LinkClick.aspx?fileticket=Hd2PGg5L1s0%3d&amp;tabid=410"><img border="0" alt="View E-Catalog" width="155" height="36" src="/portals/ies/Images/ecatalog.jpg" /></a>&#160;&#160; </span></span></p>
+</div>
+
+</div><!-- End_Module_977 --></div>
+</div></td>
+
+		</tr>
+        <tr>
+			<td id="dnn_ThreePanesLeft" valign="top" class="DNNEmptyPane"></td>
+
+			<td id="dnn_ThreePanesCenter" colspan="2" valign="top" class="DNNEmptyPane"></td>
+
+			<td id="dnn_ThreePanesRight" valign="top" class="DNNEmptyPane"></td>
+
+		</tr>
+		<tr>
+			<td id="dnn_MiniPaneLeft" valign="top" class="DNNEmptyPane"></td>
+
+			<td id="dnn_LargePaneRight" colspan="3" valign="top" class="DNNEmptyPane"></td>
+
+		</tr>
+		<tr>
+			<td id="dnn_LargePaneLeft" colspan="3" valign="top" class="DNNEmptyPane"></td>
+
+			<td id="dnn_MiniPaneRight" valign="top" class="DNNEmptyPane"></td>
+
+		</tr>
+        
+		<tr>
+			<td id="dnn_BottomPane" colspan="4" valign="top"><div class="DnnModule DnnModule-DNN_HTML DnnModule-984"><a name="984"></a><div id="dnn_ctr984_ContentPane"><!-- Start_Module_984 --><div id="dnn_ctr984_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr984_HtmlModule_lblContent" class="Normal">
+	<table border="0" cellpadding="1" cellspacing="5" width="100%">
+<tbody>
+<tr>
+<td height="266" style="text-align: center" valign="bottom"><img alt="" height="252" src="/portals/ies/Images/missles and aircraft/hass and ess.png" width="252" /></td>
+<td height="266" style="text-align: center" valign="bottom" width="33%"><img alt="" src="/portals/ies/Images/robotics/robo assembly cell.jpg" style="width: 324px; height: 251px" /></td>
+<td style="text-align: center" valign="bottom"><img alt="" src="/portals/ies/Images/switch gear/bqd auto.jpg" style="width: 257px; height: 249px" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="33%">
+<p><span style="font-size: 20px"><span style="font-family: Arial">Missile and Avionics Testing Solutions</span></span></p>
+<p style="text-align: left"><span style="font-size: 14px"><span style="font-family: Arial">IES Systems designs and fabricates fully automated electronic and electro-mechanical test systems for missile systems and avionics.</span></span></p>
+</td>
+<td align="left" valign="top" width="33%">
+<p><span style="font-size: 20px"><span style="font-family: Arial">Robotic Automation and Assembly Systems</span></span></p>
+<p><span style="font-size: 14px"><span style="font-family: Arial">IES Systems designs and manufactures a wide variety of robotic assembly cell and assembly systems</span></span></p>
+</td>
+<td align="left" valign="top" width="33%"><span style="font-size: 20px"><span style="font-family: Arial">Circuit Breaker and Switchgear Testing Solutions</span>&nbsp; </span>
+<p><span style="font-size: 14px"><span style="font-family: Arial">IES Systems is a world leader in the manufacturing of automated test systems for the switchgear industry.</span></span></p>
+</td>
+</tr>
+<tr>
+<td style="text-align: right"><a href="/SystemsProducts/AvionicsTestingSolutions.aspx"><img alt="Read More" border="0" height="34" src="/portals/ies/Images/readmore.jpg" width="138" /></a></td>
+<td style="text-align: right"><a href="/SystemsProducts/automatedassemblysolutions.aspx"><img alt="Read More" border="0" height="34" src="/portals/ies/Images/readmore.jpg" width="138" /></a></td>
+<td colspan="2">
+<p style="text-align: right; margin-left: 40px"><span style="font-size: 16px"><span style="font-family: Arial"><a href="/SystemsProducts/SwitchGearTestingSolutions.aspx"><img alt="Read More" border="0" height="34" src="/portals/ies/Images/readmore.jpg" width="138" /></a></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+</div>
+
+</div><!-- End_Module_984 --></div>
+</div></td>
+
+		</tr>
+       <tr>
+			<td width="248"><img src="/Portals/IES/Skins/IES/images/spacer.gif" width=248 height=1 alt="" border="0"></td>
+			<td width="138"><img src="/Portals/IES/Skins/IES/images/spacer.gif" width=138 height=1 alt="" border="0"></td>
+			<td width="138"><img src="/Portals/IES/Skins/IES/images/spacer.gif" width=138 height=1 alt="" border="0"></td>
+			<td width="248"><img src="/Portals/IES/Skins/IES/images/spacer.gif" width=248 height=1 alt="" border="0"></td>
+		</tr>
+   	</table>
+    </div>
+  </div>
+    <div id="ourwork">
+      <div id="dnn_WorkPane" class="ourworktext DNNEmptyPane"></div>
+    </div>
+    <div id="footer">
+  <div id="copyright"><div id="copymargin"><span id="dnn_dnnCOPYRIGHT_lblCopyright" class="copyright">Copyright © 2017 IES Systems, Inc. All Rights Reserved.</span>
+<span class="copyright">Powered by <a href="http://www.cbossinternet.com">CBOSS</a></span></div></div><div id="privacy"><div id="privacymargin"><a id="dnn_dnnPRIVACY_hypPrivacy" class="footer" rel="nofollow" href="http://www.ies-us.com/Home/tabid/410/ctl/Privacy/Default.aspx">Privacy Statement</a> 
+      <span class="style1">|</span> 
+      <a id="dnn_dnnTERMS_hypTerms" class="footer" rel="nofollow" href="http://www.ies-us.com/Home/tabid/410/ctl/Terms/Default.aspx">Terms Of Use</a></div></div></div>
+<a id="dnn_dnnLOGIN_loginLink" class="footer" href="http://www.ies-us.com/Home/tabid/410/ctl/Login/Default.aspx?returnurl=%2f">Login</a> 
+</div>
+</div>
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`dnn_dnnNAV_ctldnnNAV_json`:`{nodes:[{bcrumb:\`1\`,selected:\`1\`,id:\`410\`,key:\`410\`,txt:\`Home\`,ca:\`3\`,url:\`http://www.ies-us.com/Home.aspx\`,css:\`main_topmenu_rootitem_selected\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,cssSel:\`main_topmenu_rootitem_selected\`,nodes:[]},{id:\`428\`,key:\`428\`,txt:\`About Us\`,ca:\`3\`,url:\`http://www.ies-us.com/AboutUs.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[{id:\`436\`,key:\`436\`,txt:\`Our Location\`,ca:\`3\`,url:\`http://www.ies-us.com/ABOUTUS/OurLocation.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`524\`,key:\`524\`,txt:\`Our Quality\`,ca:\`3\`,url:\`http://www.ies-us.com/AboutUs/OurQuality.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`437\`,key:\`437\`,txt:\`Our Customers\`,ca:\`3\`,url:\`http://www.ies-us.com/AboutUs/OurCustomers.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`438\`,key:\`438\`,txt:\`Global Installation\`,ca:\`3\`,url:\`http://www.ies-us.com/ABOUTUS/GlobalInstallation.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`435\`,key:\`435\`,txt:\`Company Information\`,ca:\`3\`,url:\`http://www.ies-us.com/AboutUs/CompanyInformation.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]}]},{id:\`431\`,key:\`431\`,txt:\`Systems &amp; Products\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[{id:\`439\`,key:\`439\`,txt:\`Switchgear Testing Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/SwitchgearTestingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`525\`,key:\`525\`,txt:\`Avionics Testing Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/AvionicsTestingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`444\`,key:\`444\`,txt:\`Missile Systems Testing Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/MissileSystemsTestingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`442\`,key:\`442\`,txt:\`Assembly Fixtures and Tooling\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/AssemblyFixturesandTooling.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`440\`,key:\`440\`,txt:\`Motor Testing Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/MotorTestingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`445\`,key:\`445\`,txt:\`PC Board Testing Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/PCBoardTestingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`441\`,key:\`441\`,txt:\`Laser Marking and Welding Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/LaserMarkingandWeldingSolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]},{id:\`531\`,key:\`531\`,txt:\`Automated Assembly Solutions\`,ca:\`3\`,url:\`http://www.ies-us.com/SystemsProducts/AutomatedAssemblySolutions.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]}]},{id:\`432\`,key:\`432\`,txt:\`Case Studies\`,ca:\`3\`,url:\`http://www.ies-us.com/CaseStudies.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[{id:\`535\`,key:\`535\`,txt:\`Wire Basket Automation\`,ca:\`3\`,url:\`http://www.ies-us.com/CaseStudies/WireBasketAutomation.aspx\`,cssHover:\`main_topmenu_itemhover\`,nodes:[]}]},{id:\`433\`,key:\`433\`,txt:\`Careers\`,ca:\`3\`,url:\`http://www.ies-us.com/Careers.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[]},{id:\`430\`,key:\`430\`,txt:\`Contact Us\`,ca:\`3\`,url:\`http://www.ies-us.com/ContactUs.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[]},{id:\`446\`,key:\`446\`,txt:\`Consulting Services\`,ca:\`3\`,url:\`http://www.ies-us.com/ConsultingServices.aspx\`,css:\`main_topmenu_rootitem\`,cssHover:\`main_topmenu_rootitem_hover\`,cssIcon:\` \`,nodes:[]}]}`}" />
+        
+    
+<script type="text/javascript" src="/Resources/Shared/scripts/initWidgets.js" ></script><script type="text/javascript">dnn.setVar('dnn_dnnNAV_ctldnnNAV_p', '{callback:\'dnn.xmlhttp.doCallBack(\\\'ctldnnNAV dnn_dnnNAV_ctldnnNAV\\\',\\\'[NODEXML]\\\',this.callBackSuccess,mNode,this.callBackFail,this.callBackStatus,null,null,0);\',sysimgpath:\'/images/\',mbcss:\'main_topmenu_bar\',rmode:\'0\',mcss:\'main_topmenu_submenu\',anim:\'0\',orient:\'0\',postback:\'__doPostBack(\\\'dnn$dnnNAV$ctldnnNAV\\\',\\\'[NODEID]~|~Click\\\')\',easeDir:\'0\',easeType:\'3\',suborient:\'1\'}');dnn.controls.initMenu($get('dnn_dnnNAV_ctldnnNAV'));</script></form>
+    
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        
+        //This code is to force a refresh of browser cache
+        //in case an old version of dnn.js is loaded
+        //It should be removed as soon as .js versioning is added
+        jQuery(document).ready(function () {
+            if (navigator.userAgent.indexOf(" Chrome/") == -1) {
+                if ((typeof dnnJscriptVersion === 'undefined' || dnnJscriptVersion !== "6.0.0") && typeof dnn !== 'undefined') {
+                    window.location.reload(true);
+                }
+            }
+        });
+         //]]>
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>ガスコンプレッサ・バイオガス（バイオマス） プラント・真空ポンプ・ノンリーク圧縮機の製造開発｜堀技研工業株式会社</title>
+<meta name="Description" content="堀技研工業はバイオガス（消化ガス）昇圧用のガスコンプレッサを全国各種自治体を含め多くの納入実績があります。コージェネ装置（熱電併給装置）の自家発電機に使用されるガスエンジン及び燃料電池の燃料ガスの昇圧に使用されます。" />
+<meta name="Keywords" content="バイオガス,バイオマス,バイオガス プラント,燃料電池,ガス発電,発電機ガス,ガスエンジン,有機性廃棄物,廃棄物処理,下水汚泥,コージェネ装置,生ゴミ,リサイクル,食品廃棄物,省エネルギー,エネルギーコスト削減" />
+<meta name="abstract" content="ガス圧縮機・真空ポンプ・バイオガス　プラント・消化ガス昇圧用ガスコンプレッサ・ガスコンプレッサ・ノンリーク圧縮機・バイオガスの堀技研工業株式会社" />
+<meta name="classification" content="ガス圧縮機・真空ポンプ・バイオガス（バイオマス）　プラント・消化ガス昇圧用ガスコンプレッサ・ガスコンプレッサ・ノンリーク圧縮機・バイオガスの製造会社" />
+<meta name="Author" content="ガス圧縮機・真空ポンプ・バイオガス（バイオマス）　プラント・消化ガス昇圧用ガスコンプレッサ・ガスコンプレッサ・ノンリーク圧縮機・バイオガスの堀技研工業株式会社" />
+<link rel="stylesheet" type="text/css" href="common/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common/css/print/import.css" media="print" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 「id="jQueryBox"」を非表示
+    $("#jQueryBox").css("display", "none");
+ 
+    // 「id="jQueryPush"」がクリックされた場合
+    $("#jQueryPush").click(function(){
+        // 「id="jQueryBox"」の表示、非表示を切り替える
+        $("#jQueryBox").toggle();
+    });
+});
+</script>
+	
+<!-- write your code here -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="js/JP_201804.js?1525936708520"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("F0954991264647F8AAE8E110EAF1FDE4");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.JP_201804();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body id="index" onload="init();">
+
+<!-- 全体 -->
+<div id="container">
+  <!-- 全体背景用 -->
+  <div id="containerInner">
+    <!-- コンテンツ -->
+    <div id="wrapper">
+      <!-- グローバルナビ　梱包 -->
+      <div id="wrapperNav">
+        <h1 id="siteId"><img src="j/img/common/siteId.gif" alt="ガスコンプレッサ・真空ポンプ・バイオガス（バイオマス）・ノンリーク圧縮機の堀技研工業株式会社" width="220" height="73" /></h1>
+        <!-- グローバルナビ -->
+        <ul id="globalNav">
+          <li><a href="index.html"><img src="j/img/common/navi-toppage.gif" alt="トップページ" width="220" height="89" border="0"  class="swap" /></a></li>
+          <li><a href="j/products/index.html"><img src="j/img/common/navi-products.gif" alt="製品案内［ガス圧縮機・真空ポンプ・コンプレッサ周辺機器などの紹介］" width="220" height="89" border="0" class="swap" /></a></li>
+          <li><a href="j/profile/index.html"><img src="j/img/common/navi-company.gif" alt="会社案内" width="220" height="89" border="0" class="swap" /></a></li>
+          <li><a href="j/words/index.html"><img src="j/img/common/navi-words.gif" alt="工業分野用語集" width="220" height="89" border="0" class="swap" /></a></li>
+        </ul>
+        <!-- お問い合わせ -->
+        <ul id="inquiry">
+          <li><img src="j/img/common/inquiry-tel.gif" alt="お電話でのお問い合わせ　0466-47-1000" width="220" height="97" class="swap" /></li>
+          <li><a href="/cgi-bin/catalog/index.html"><img src="j/img/common/inquiry-mail.gif" alt="インターネットでのお問い合わせ" width="220" height="80" border="0" class="swap" /></a></li>
+        </ul>
+        <!-- ISO -->
+        <div id="iso">
+          <p><a href="j/profile/iso.html"><img src="j/img/profile/iso/img_iso2017-mini.gif" alt="ISO" width="125" height="45" border="0" /></a></p>
+          <p>国際品質保証規格<strong class="font-bigger">「ISO9001」</strong>取得</p>
+          <p>当社はブロワ、コンプレッサ、真空ポンプ等の空気、特殊ガス圧縮機械の開発、製造会社として国際的な品質管理および品質保証の規格である<strong class="font-bigger">ISO9001</strong>の認証を取得いたしました。</p>
+        </div>
+		  <!-- bnner -->
+        <div id="bnner">
+			<ul>
+				<li><a href="https://premium.ipros.jp/horieng/" target="_blank"><img src="j/img/common/bn_ipros.jpg" alt=""/></a></li>
+			</ul>
+        </div>
+      </div>
+      <!-- グローバルナビ梱包　閉じ -->
+      <!-- メインコンテンツ　梱包 -->
+      <div id="wrapperCont">
+        <!-- トップヘッダメニュー -->
+        <div id="header"><!-- #BeginLibraryItem "/Library/subNav.lbi" -->
+<ul id="headerNav">
+            <li><a href="j/recruit/index.html" target="_blank">採用情報</a></li>
+			<li class="othesLink"><a href="j/profile/access.html" target="_blank">アクセス</a></li>
+            <li><a href="j/sitemap/index.html">サイトマップ</a></li>
+            <li><a href="j/link/index.html">リンク</a></li>
+            <li class="eng"><a href="e/index.html"><img src="j/img/common/link-eng.gif" width="77" height="21" alt="English" class="swap" /></a></li>
+          </ul><!-- #EndLibraryItem --><ul id="topicPath">
+            <li class="right">ガスコンプレッサ・真空ポンプ・ノンリーク圧縮機の堀技研工業株式会社</li>
+            
+          </ul>
+        </div>
+        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:580px; height:340px">
+		<canvas id="canvas" width="580" height="340" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:580px; height:340px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+        <div id="contents"><br />
+      <!-- infocomment
+		<div id="infoComment" class="sympathy">
+			<h3 class="center">タイトル</h3>
+			<p>コメント</p>
+		</div>
+      //infocomment -->
+          <!-- lead -->
+          <h2>ガスコンプレッサ・真空ポンプ・バイオガス（バイオマス）・ノンリーク圧縮機の堀技研工業株式会社</h2>
+          <p>堀技研工業の最大の特徴は、完全独自開発メーカーである事です。<br />
+          その象徴が『ウィング・コンプレッサ』、性能面で他の機種に比べて高効率・低振動・コンパクト化を高次元で達成、
+            他企業で対応不可能な特殊ガスの分野においては他社の追従を許しません。特に『粉体運搬車用コンプレッサ』に関しては国内市場はもとより海外市場でも圧倒的なシェアと実績を誇ります。<br />
+            納入実積数Over 2,300件、そのマシンのすべてを独自開発。これからもお客様のニーズとオーダーメイドで養ってきた独自技術を生かし応えてまいります。 </p>
+
+          
+          <!-- インフォメーション -->
+          <div id="information">
+            <h3><img src="j/img/index/t-information.gif" alt="インフォメーション" width="530" height="38" /></h3>
+            <ul class="top">
+              <li class="link"><a href="j/information/example.html">弊社独自の技術を<br />
+              生かした様々な納入例</a></li>
+              <li class="imgR"><a href="j/information/example.html"><img name="" src="j/img/index/img-info04.jpg" width="100" height="75" alt="弊社独自の技術を生かした様々な納入例" style="" /></a></li>
+              <li>
+              
+             <!-- 内部でのリンク　-->
+             <ul>
+              <li><a href="j/information/example.html#A">ガスエンジン用コンプレッサ</a></li>
+              <li><a href="j/information/example.html#B">粉体圧送車用コンプレッサ</a></li>
+              <li><a href="j/information/example.html#C">カーボンピストンを用いた小型レシプロ式コンプレッサ</a></li>
+              <li><a href="j/information/example.html#D">中圧減圧車に使用されたコンプレッサ</a></li>
+            </ul>
+            <!-- //内部でのリンク　-->
+              
+              </li>
+            </ul>
+            
+            <ul>
+              <li class="link"><a href="j/products/pump.html">真空ポンプ</a></li>
+              <li class="imgR"><a href="j/products/pump.html"><img name="" src="j/img/index/img-info03.jpg" width="100" height="75" alt="バイオガス（消化ガス）昇圧用ガスコンプレッサ" /></a></li>
+              <li>炭化水素ガス回収装置用真空ポンプでは国内市場の約８０％のシェアを誇る当社の真空ポンプ。</li>
+            </ul>
+            <ul class="top">
+              <li class="link"><a href="j/recruit/index.html">採用募集案内</a></li>
+              <li class="imgR"><a href="j/recruit/index.html"><img name="" src="j/img/index/img-info02.jpg" width="100" height="75" alt="堀技研工業　2009年度　採用募集案内" /></a></li>
+              <li></li>
+            </ul>
+            <ul class="right">
+              <li class="link"><a href="j/products/biogas.html">バイオガス（消化ガス）昇圧用ガスコンプレッサ</a></li>
+              <li class="imgR"><a href="j/products/biogas.html"><img name="" src="j/img/index/img-info01.jpg" width="100" height="75" alt="バイオガス（消化ガス）昇圧用ガスコンプレッサ" /></a></li>
+              <li>当社はバイオガス（消化ガス）昇圧用のガスコンプレッサに多くの納入実績があります。</li>
+            </ul>
+          </div>
+          
+         
+          
+          
+                    <!-- ニュース -->
+          <div id="news">
+            <h3><img src="j/img/index/t-news.gif" alt="新着情報" width="530" height="38" /></h3>
+            <dl>
+			<dt>2018.3.23</dt>
+              <dd><a href="j/profile/access.html" target="_blank">アクセスページ追加</a> <img src="j/img/common/icon-new.gif" alt="New" width="24" height="10" align="absmiddle" class="new" /></dd>
+            <dt>2017.3.2</dt>
+              <dd><a href="j/profile/iso.html">品質方針｜UKAS追加</a></dd>
+            
+			</dl>
+			<div id="jQueryPush">▼過去の新着情報</div>
+            
+            <dl id="jQueryBox">
+           <dt>2014.5.7</dt>
+              <dd><a href="j/products/pump.html#ex">製品案内｜真空ポンプ納入例更新</a></dd>
+             <dt>2013.8.28</dt>
+              <dd><a href="j/words/index.html">工業分野用語集｜ページをオープしました。</a></dd>
+            
+            <dt>2013.7.31</dt>
+              <dd><a href="j/products/download.html">カタログダウンロード｜会社案内・ガスコンプレッサ製品カタログ追加</a></dd>
+           
+            <dt>2012.8.26</dt>
+              <dd><a href="j/topics/topics.html">（社）日本ガス協会
+              平成24年度　技術賞受賞</a><a href="j/topics/topics.html"><img src="j/img/index/prize_mini.jpg" alt="" name="" width="175" height="82" border="0" /></a></dd>
+            <dt>2012.7.2</dt>
+              <dd><a href="j/products/biogas.html#sample03">バイオガス｜納入例追加</a></dd>
+            <dt>2009.12.16</dt>
+              <dd><a href="j/information/example.html#B2">導入例｜液体圧送車用コンプレッサ追加</a></dd>
+            <dt>2009.10.30</dt>
+              <dd><a href="j/information/example.html">様々な導入例追加</a></dd>
+            <dt>2009.10.19</dt>
+              <dd><a href="j/products/pump.html#new">新型二段型真空ポンプ追加</a></dd>
+            <dt>2009.10.2</dt>
+              <dd><a href="j/products/pump.html">真空ポンプを追加しました。</a></dd>
+			<dt>2008.10.14</dt>
+              <dd><a href="j/products/download.html">OilFree Wing Compressor for Pneumatic Bulk Traile（英語版）を更新しました。</a></dd>
+              <dt>2008.9.19</dt>
+              <dd class="none">ホームをページリニューアルしました。</dd>
+            </dl>
+            <!-- 営業バナー
+          <a href="j/recruit/index.html"><img src="j/img/index/bn_recruit.jpg" alt="" width="255" height="75" /></a>
+          --><!-- //pickup -->
+          
+          </div>
+          
+        </div>
+      </div>
+
+      
+      <!-- メインコンテンツ　梱包閉じ -->
+      <div id="footer">
+        <address>
+        Copyright &copy;1998-2018 <span class="appercase">hori engineering co., ltd.</span> All Rights Reserved.
+        </address>
+      </div>
+    </div>
+    <!-- コンテンツ閉じ -->
+  </div>
+</div>
+<!-- 全体閉じ -->
+<div id="footerImg"></div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3757810-1";
+urchinTracker();
+</script>
+</body>
+</html>

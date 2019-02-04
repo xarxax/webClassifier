@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+                <head>
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+
+                <link rel="icon" type="image/x-icon" href="https://sdsautomation.com/wp-content/uploads/2018/09/sds.png" />
+        
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://sdsautomation.com/xmlrpc.php" />
+    <title>EasyBender &#8211; sdsautomation</title>
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sdsautomation.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='https://sdsautomation.com/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://sdsautomation.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcdt-public-css-css'  href='https://sdsautomation.com/wp-content/plugins/countdown-timer-ultimate/assets/css/wpcdt-timecircles.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rokbox.css-css'  href='https://sdsautomation.com/wp-content/plugins/wp_rokbox/assets/styles/rokbox.css?ver=2.50.11' type='text/css' media='all' />
+<link rel='stylesheet' id='mc4wp-form-themes-css'  href='https://sdsautomation.com/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='lightcase-css'  href='https://sdsautomation.com/wp-content/plugins/gantry5/assets/css/lightcase.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome.min-css'  href='https://sdsautomation.com/wp-content/plugins/gantry5/assets/css/font-awesome.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='nucleus-css'  href='https://sdsautomation.com/wp-content/plugins/gantry5/engines/nucleus/css-compiled/nucleus.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='protean_easybender-css'  href='https://sdsautomation.com/wp-content/themes/rt_protean/custom/css-compiled/protean_easybender.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-css'  href='https://sdsautomation.com/wp-content/plugins/gantry5/engines/nucleus/css-compiled/wordpress.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://sdsautomation.com/wp-content/themes/rt_protean/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='protean-wordpress_easybender-css'  href='https://sdsautomation.com/wp-content/themes/rt_protean/custom/css-compiled/protean-wordpress_easybender.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_easybender-css'  href='https://sdsautomation.com/wp-content/themes/rt_protean/custom/css-compiled/custom_easybender.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://sdsautomation.com/wp-content/themes/rt_protean/css/animate.css?ver=5.0.3' type='text/css' media='all' />
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/wp_rokbox/assets/js/mootools.js?ver=1.4.5'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/wp_rokbox/assets/js/rokbox.js?ver=2.50.11'></script>
+<link rel='https://api.w.org/' href='https://sdsautomation.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sdsautomation.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sdsautomation.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.3" />
+<link rel="canonical" href="https://sdsautomation.com/die-making/easybender/" />
+<link rel='shortlink' href='https://sdsautomation.com/?p=145' />
+<link rel="alternate" type="application/json+oembed" href="https://sdsautomation.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsdsautomation.com%2Fdie-making%2Feasybender%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sdsautomation.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsdsautomation.com%2Fdie-making%2Feasybender%2F&#038;format=xml" />
+<script type="text/javascript">if (typeof RokBoxSettings == 'undefined') RokBoxSettings = {pc: '100'};</script>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<script type="text/javascript">    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-123090694-1', 'auto');
+            ga('send', 'pageview');
+    </script>
+
+    <!--[if (gte IE 8)&(lte IE 9)]>
+        <script type="text/javascript" src="https://sdsautomation.com/wp-content/plugins/gantry5/assets/js/html5shiv-printshiv.min.js"></script>
+        <link rel="stylesheet" href="https://sdsautomation.com/wp-content/plugins/gantry5/engines/nucleus/css/nucleus-ie9.css" type="text/css"/>
+        <script type="text/javascript" src="https://sdsautomation.com/wp-content/plugins/gantry5/assets/js/matchmedia.polyfill.js"></script>
+        <![endif]-->
+                        <script src='https://www.google.com/recaptcha/api.js?render=6LcBOYEUAAAAABd8tbj8jEH4IyX5dsQE9IiuBI5_'></script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6LcBOYEUAAAAABd8tbj8jEH4IyX5dsQE9IiuBI5_', {action: 'action_name'})
+.then(function(token) {
+// Verify the token on the server.
+});
+});
+</script>
+                
+</head>
+
+    
+    <body data-rsssl=1 class="gantry g-offcanvas-left g-fullwidth g-style-preset2 page-template-default page page-id-145 page-parent page-child parent-pageid-1816 site outline-easybender dir-ltr">
+        
+                    
+
+        <div id="g-offcanvas"  data-g-offcanvas-swipe="1" data-g-offcanvas-css3="1">
+                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div id="mobile-menu-3366-particle" class="g-content g-particle">            <div id="g-mobilemenu-container" data-g-menu-breakpoint="60rem"></div>
+            </div>
+        </div>
+            </div>
+    </div>
+        <div id="g-page-surround">
+            <div class="g-offcanvas-hide g-offcanvas-toggle" data-offcanvas-toggle aria-controls="g-offcanvas" aria-expanded="false"><i class="fa fa-fw fa-bars"></i></div>                        
+
+                                
+                <section id="g-top">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div class="g-system-messages">
+                                            <div id="system-message-container">
+    <div id="system-message">
+            </div>
+</div>
+            
+    </div>
+        </div>
+            </div>
+            
+    </section>
+                    
+                <section id="g-navigation">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-40 box6 nomarginall center">
+             <div id="logo-6637-particle" class="g-content g-particle">            <a href="https://sdsautomation.com/" target="_self" title="SDS AUTOMATION"  class="g-logo">
+                        <img src="https://sdsautomation.com/wp-content/uploads/2018/05/sds-auto-rev.png" alt="SDS AUTOMATION" />
+            </a>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-60 box1 center nomarginall">
+             <div id="menu-2630-particle" class="g-content g-particle">            <nav class="g-main-nav" role="navigation" data-g-mobile-target data-g-hover-expand="true">
+    <ul class="g-toplevel">
+                                                                                                    
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-25 g-standard   menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-25">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">HOME</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-custom g-menu-item-1807 g-parent active g-standard g-menu-item-link-parent  menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-1807 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/easybender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Die Making</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1808 g-parent active g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-145 current_page_item menu-item-1808 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/easybender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyBender</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-218   menu-item menu-item-type-post_type menu-item-object-page menu-item-218">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/easybender/easybender-s1/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyBender S1</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-217   menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/easybender/easybender-ns2/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyBender NS2</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-216   menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/easybender/easybender-r/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyBender R</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-215   menu-item menu-item-type-post_type menu-item-object-page menu-item-215">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/easybender/easybender-r-pro/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyBender R-Pro</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3623   menu-item menu-item-type-post_type menu-item-object-page menu-item-3623">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/open-house-die-making/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Open House</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-2964 g-parent g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page menu-item-2964 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/cutlite-penta/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Cutlite Penta</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-2965   menu-item menu-item-type-post_type menu-item-object-page menu-item-2965">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/cutlite-penta/ltf/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">LTF</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-2966   menu-item menu-item-type-post_type menu-item-object-page menu-item-2966">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/cutlite-penta/of/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">OF</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-2968   menu-item menu-item-type-post_type menu-item-object-page menu-item-2968">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/cutlite-penta/ofrl-rotary/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">OFRL Rotary</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-2967   menu-item menu-item-type-post_type menu-item-object-page menu-item-2967">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/cutlite-penta/ofprl-combo/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">OFPRL Combo</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3473 g-parent g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page menu-item-3473 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/delta-diemaking/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Delta Diemaking</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3472   menu-item menu-item-type-post_type menu-item-object-page menu-item-3472">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/delta-diemaking/lgt-1613/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">LGT 1613</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3471   menu-item menu-item-type-post_type menu-item-object-page menu-item-3471">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/delta-diemaking/rbr-500-hd/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">RBR 500 HD</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3470   menu-item menu-item-type-post_type menu-item-object-page menu-item-3470">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/delta-diemaking/rbr-1000-hd/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">RBR 1000 HD</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3469   menu-item menu-item-type-post_type menu-item-object-page menu-item-3469">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/delta-diemaking/sml-1316/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">SML 1316</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1901   menu-item menu-item-type-post_type menu-item-object-page menu-item-1901">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/die-making-news/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Die Making News</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3176   menu-item menu-item-type-post_type menu-item-object-page menu-item-3176">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/die-making/contact-die-making/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Contact Die Making</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-custom g-menu-item-1836 g-parent g-standard g-menu-item-link-parent  menu-item menu-item-type-custom menu-item-object-custom menu-item-1836 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Sign Making</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1841 g-parent g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page menu-item-1841 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">ChannelBender</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:225px;" data-g-item-width="225px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-182   menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/super-channelbender-xp/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Super ChannelBender XP</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-181   menu-item menu-item-type-post_type menu-item-object-page menu-item-181">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/super-channelbender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Super ChannelBender</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-180   menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/easychannelbender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Easy ChannelBender</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-179   menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/eco-channelbender/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Eco ChannelBender</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-178   menu-item menu-item-type-post_type menu-item-object-page menu-item-178">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/easytrimmer/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">EasyTrimmer</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-177   menu-item menu-item-type-post_type menu-item-object-page menu-item-177">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/channelbender/channelstitcher/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">ChannelStitcher</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1859 g-parent g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page menu-item-1859 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/trimless/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Trimless</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1860   menu-item menu-item-type-post_type menu-item-object-page menu-item-1860">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/trimless/letterform/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">LetterForm</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3537   menu-item menu-item-type-post_type menu-item-object-page menu-item-3537">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/trimless/liquiform/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">LiquiForm</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3607   menu-item menu-item-type-post_type menu-item-object-page menu-item-3607">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making-open-house/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Open House</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1862 g-parent g-menu-item-link-parent  menu-item menu-item-type-post_type menu-item-object-page menu-item-1862 menu-item-has-children" style="position: relative;">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/cutlite-penta/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Cutlite Penta</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                        <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:200px;" data-g-item-width="200px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1863   menu-item menu-item-type-post_type menu-item-object-page menu-item-1863">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/cutlite-penta/lts-cp-rf/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">LTS CP RF</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3199   menu-item menu-item-type-post_type menu-item-object-page menu-item-3199">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/cutlite-penta/plus-cp-rf/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Plus CP RF</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1900   menu-item menu-item-type-post_type menu-item-object-page menu-item-1900">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/sign-making-news/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Sign Making News</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-134   menu-item menu-item-type-post_type menu-item-object-page menu-item-134">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/sign-making/contact-james/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Contact James</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-2731 g-parent g-standard   menu-item menu-item-type-custom menu-item-object-custom menu-item-2731 menu-item-has-children">
+            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">Parts &amp; Service</span>
+            </span>
+                                            <span class="g-menu-parent-indicator"></span>                            </div>                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1893   menu-item menu-item-type-post_type menu-item-object-page menu-item-1893">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/parts-service/parts/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Parts</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1894   menu-item menu-item-type-post_type menu-item-object-page menu-item-1894">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/parts-service/service/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Service</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1895   menu-item menu-item-type-post_type menu-item-object-page menu-item-1895">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/parts-service/tech-support/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tech Support</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-1791 g-parent g-standard   menu-item menu-item-type-custom menu-item-object-custom menu-item-1791 menu-item-has-children">
+            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">Information</span>
+            </span>
+                                            <span class="g-menu-parent-indicator"></span>                            </div>                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-separator g-menu-item-3121 g-parent   menu-item menu-item-type-custom menu-item-object-custom menu-item-3121 menu-item-has-children" style="position: relative;">
+            <div class="g-menu-item-container" data-g-menuparent="">                                                                            <span class="g-separator g-menu-item-content">            <span class="g-menu-item-title">FAQ</span>
+            </span>
+                                            <span class="g-menu-parent-indicator"></span>                            </div>                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right" style="width:150px;" data-g-item-width="150px">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                            
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3120   menu-item menu-item-type-post_type menu-item-object-page menu-item-3120">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/faq/faq-die-making/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Die Making</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3119   menu-item menu-item-type-post_type menu-item-object-page menu-item-3119">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/faq/faq-sign-making/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Sign Making</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-3125   menu-item menu-item-type-post_type menu-item-object-page menu-item-3125">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/faq/faq-tech-support/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tech Support</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-1879   menu-item menu-item-type-post_type menu-item-object-page menu-item-1879">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/staff/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Staff</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-33   menu-item menu-item-type-post_type menu-item-object-page menu-item-33">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/about-us/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">About Us</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                        
+        <li class="g-menu-item g-menu-item-type-post_type g-menu-item-13   menu-item menu-item-type-post_type menu-item-object-page menu-item-13">
+            <a class="g-menu-item-container" href="https://sdsautomation.com/information/contact-info/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Contact Info</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+    
+    </ul>
+</nav>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+                    
+                <header id="g-header">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 nopaddingall">
+             <div id="simplecontent-8150-particle" class="g-content g-particle">            <div class="">
+        <div class="g-simplecontent">
+
+            
+                            <div class="g-simplecontent-item g-simplecontent-layout-standard">
+                    
+                    
+                    
+                    
+                                                                                            <div class="g-simplecontent-item-content-title">EasyBender</div>
+                                                                
+                                        
+                                    </div>
+            
+        </div>
+    </div>
+            </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 center">
+             <div id="custom-1925-particle" class="g-content g-particle">            <h2>Die Making Open House – 2/28/19</h2>
+		<div class="wpcdt-countdown-wrp wpcdt-clearfix">
+			<div id="wpcdt-datecount-1" class="wpcdt-countdown-timer" data-timer="2411919" style="max-width:px">
+							</div>
+			<div class="wpcdt-date-conf" data-conf="{&quot;date&quot;:&quot;2019-02-28 12:00:00&quot;,&quot;animation&quot;:&quot;smooth&quot;,&quot;circlewidth&quot;:&quot;0.03&quot;,&quot;backgroundwidth&quot;:&quot;1.4&quot;,&quot;backgroundcolor&quot;:&quot;#313131&quot;,&quot;is_days&quot;:&quot;1&quot;,&quot;daysbackgroundcolor&quot;:&quot;#e3be32&quot;,&quot;is_hours&quot;:&quot;1&quot;,&quot;hoursbackgroundcolor&quot;:&quot;#36b0e3&quot;,&quot;is_minutes&quot;:&quot;1&quot;,&quot;minutesbackgroundcolor&quot;:&quot;#75bf44&quot;,&quot;is_seconds&quot;:&quot;1&quot;,&quot;secondsbackgroundcolor&quot;:&quot;#66c5af&quot;,&quot;days_text&quot;:&quot;Days&quot;,&quot;hours_text&quot;:&quot;Hours&quot;,&quot;minutes_text&quot;:&quot;Minutes&quot;,&quot;seconds_text&quot;:&quot;Seconds&quot;}"></div>
+		</div>
+            </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 center">
+             <div id="simplecontent-4348-particle" class="g-content g-particle">            <div class="">
+        <div class="g-simplecontent">
+
+            
+                            <div class="g-simplecontent-item g-simplecontent-layout-standard">
+                    
+                    
+                    
+                    
+                                                                                            <div class="g-simplecontent-item-content-title">How About An ALL EXPENSES PAID Trip to Sunny California!</div>
+                                                                
+                                        
+                                            <div class="g-simplecontent-item-readmore-container">
+                            <a target="_self" href="https://sdsautomation.com/die-making/open-house-die-making/" class="g-simplecontent-item-readmore button small">
+                                <strong>Learn More</strong>
+                            </a>
+                        </div>
+                                    </div>
+            
+        </div>
+    </div>
+            </div>
+        </div>
+            </div>
+            
+    </header>
+                                
+                <section id="g-slideshow" class="g-flushed">
+                <div class="g-container">                                <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div id="owlcarousel-5957-particle" class="g-content g-particle">            <div class=" g-owlcarousel-layout-standard g-owlcarousel-1-items">
+        <div id="g-owlcarousel-owlcarousel-5957" data-owlcarousel-id="g-owlcarousel-owlcarousel-5957" class="g-owlcarousel owl-carousel g-owlcarousel-fullwidth">
+
+                <div class="item">
+                        <div class="image" style="background-image: url('https://sdsautomation.com/wp-content/uploads/2018/07/EB-S1.jpg');">
+                <img src="https://sdsautomation.com/wp-content/uploads/2018/07/EB-S1.jpg" alt="EasyBender S1" />
+            </div>
+            
+            
+            
+                                <div class="g-owlcarousel-content">
+                    <div class="g-owlcarousel-item-title">EasyBender S1</div>                    <div class="g-owlcarousel-item-subtitle">                                                <div class="g-owlcarousel-item-link">
+                            <a target="_self" class="g-owlcarousel-item-button button " href="https://sdsautomation.com/die-making/easybender/easybender-s1/">
+                                Learn More
+                            </a>
+                        </div>
+                                            </div>
+
+                    
+                                    </div>
+                            </div>
+                    <div class="item">
+                        <div class="image" style="background-image: url('https://sdsautomation.com/wp-content/uploads/2016/12/NS2.jpg');">
+                <img src="https://sdsautomation.com/wp-content/uploads/2016/12/NS2.jpg" alt="EasyBender NS2" />
+            </div>
+            
+            
+            
+                                <div class="g-owlcarousel-content">
+                    <div class="g-owlcarousel-item-title">EasyBender NS2</div>                    <div class="g-owlcarousel-item-subtitle">                                                <div class="g-owlcarousel-item-link">
+                            <a target="_self" class="g-owlcarousel-item-button button " href="https://sdsautomation.com/die-making/easybender/easybender-ns2/">
+                                Learn More
+                            </a>
+                        </div>
+                                            </div>
+
+                    
+                                    </div>
+                            </div>
+                    <div class="item">
+                        <div class="image" style="background-image: url('https://sdsautomation.com/wp-content/uploads/2018/07/R-bkg-owl.jpg');">
+                <img src="https://sdsautomation.com/wp-content/uploads/2018/07/R-bkg-owl.jpg" alt="EasyBender R" />
+            </div>
+            
+            
+            
+                                <div class="g-owlcarousel-content">
+                    <div class="g-owlcarousel-item-title">EasyBender R</div>                    <div class="g-owlcarousel-item-subtitle">                                                <div class="g-owlcarousel-item-link">
+                            <a target="_self" class="g-owlcarousel-item-button button " href="https://sdsautomation.com/die-making/easybender/easybender-r/">
+                                Learn More
+                            </a>
+                        </div>
+                                            </div>
+
+                    
+                                    </div>
+                            </div>
+                    <div class="item">
+                        <div class="image" style="background-image: url('https://sdsautomation.com/wp-content/uploads/2018/05/Rotary2.jpg');">
+                <img src="https://sdsautomation.com/wp-content/uploads/2018/05/Rotary2.jpg" alt="EasyBender R-Pro" />
+            </div>
+            
+            
+            
+                                <div class="g-owlcarousel-content">
+                    <div class="g-owlcarousel-item-title">EasyBender R-Pro</div>                    <div class="g-owlcarousel-item-subtitle">                                                <div class="g-owlcarousel-item-link">
+                            <a target="_self" class="g-owlcarousel-item-button button " href="https://sdsautomation.com/die-making/easybender/easybender-r-pro/">
+                                Learn More
+                            </a>
+                        </div>
+                                            </div>
+
+                    
+                                    </div>
+                            </div>
+                    </div>
+        <div class="g-container-wrapper-panel">
+            <div class="g-owlcarousel-panel-container" id="g-owlcarousel-panel-owlcarousel-5957">
+
+                                <div class="g-owlcarousel-panel selected" id="g-owlcarousel-panel-1">
+                    <div class="g-owlcarousel-panel-link">
+                        <span class="g-owlcarousel-panel-title">EasyBender S1</span>                        <i class="fa fa-chevron-left"></i>                    </div>
+                </div>
+                                <div class="g-owlcarousel-panel " id="g-owlcarousel-panel-2">
+                    <div class="g-owlcarousel-panel-link">
+                        <span class="g-owlcarousel-panel-title">EasyBender NS2</span>                        <i class="fa fa-chevron-left"></i>                    </div>
+                </div>
+                                <div class="g-owlcarousel-panel " id="g-owlcarousel-panel-3">
+                    <div class="g-owlcarousel-panel-link">
+                        <span class="g-owlcarousel-panel-title">EasyBender R</span>                        <i class="fa fa-chevron-left"></i>                    </div>
+                </div>
+                                <div class="g-owlcarousel-panel " id="g-owlcarousel-panel-4">
+                    <div class="g-owlcarousel-panel-link">
+                        <span class="g-owlcarousel-panel-title">EasyBender R-Pro</span>                        <i class="fa fa-chevron-left"></i>                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+            </div>
+            </div>
+        
+    </section>
+                
+                                
+    
+    
+                <section id="g-container-main" class="g-wrapper">
+                            <div class="g-grid">                        
+
+        <div class="g-block size-20 equal-height">
+             <section id="g-sidebar">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div class="spacer"></div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 center box3 mt50">
+             <div id="custom-7011-particle" class="g-content g-particle">            <h4>Die Making Sales Team</h4>
+<h5>Kyle Kermoade</h5>
+<p>Laser Sales & Tech<br/>
+303.798.7110 x210</p><h5>Andrew Park</h5>
+<p>Die Making Sales & Tech<br/>
+303.798.7110 x217</p><h5>Jake Clark</h5>
+<p>Die Making Sales & Tech<br/>
+303.798.7110 x218</p><h5>Tom McNichol</h5>
+<p>Die Making Sales Facilitator<br/>
+303.798.7110 x220</p><a href="https://sdsautomation.com/die-making/contact-die-making/">Get in touch</a>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+        </div>
+                    
+
+        <div class="g-block size-60 equal-height">
+             <section id="g-mainbar">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 box-grey mt50">
+             <div id="custom-5905-particle" class="g-content g-particle">            <h2>Building Exceptional Die Bending Machines For Over 20 Years</h2>
+            </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div class="g-content">
+                                                        
+    <div class="platform-content">
+        <div class="content-wrapper">
+            <section class="entry">
+
+                <article class="post-type-page post-145 page type-page status-publish hentry" id="post-145">
+
+    
+                <section class="entry-header">
+
+            
+                                    
+        </section>
+        
+                
+                        <section class="entry-content">
+
+                                                
+                                <h2>DIEMAKING EQUIPMENT FROM SDS AUTOMATION</h2>
+<h3>SDS Steel Rule Die AutoBenders and Penta Dieboard Lasers</h3>
+<h4>INNOVATIVE SOLUTIONS</h4>
+<p>SDS Automation exists to help you do things more efficiently. When we began the company in 1996, we had a vision to provide real solutions to our customers, not to just offer the same products available from other sources. We chose to be innovators, not imitators. In the tradition of the EasyBender, the greatest productivity tool ever to impact our industry, our latest solutions are higher tech, faster, and a better value than anything else available.</p>
+<h4>THE INSTALLATION</h4>
+<p>The price of all our equipment includes set-up, installation, and onsite training at your facility. Also included is lifetime phone and remote access tech support* from a U.S. – based technician, and a <em><strong>two</strong> <strong>year</strong></em>, full parts and labor warranty. There is no optional equipment and there are no hidden fees. By the conclusion of your comprehensive training, you will know how to competently operate and maintain your new machine.</p>
+<p>* some restrictions may apply</p>
+<h4>SERVICE &amp; SUPPORT</h4>
+<p>SDS Automation has the very best service and support infrastructure in this industry. Based in the USA, our headquarters, showroom, and replacement parts inventory are located in Boulder, Colorado. We also have regional service offices in every time zone. (<a href="https://sdsautomation.com/wp-content/uploads/2018/09/na-service-map.pdf" target="_blank" rel="noopener">See map</a>) SDS Automation&#8217;s years of experience, dedicated technicians, and worldwide customer base combine to create the very best service and support infrastructure available.</p>
+
+
+                
+                
+                                
+                
+            </section>
+            
+        
+    
+</article>
+
+            </section>
+        </div> <!-- /content-wrapper -->
+    </div>
+
+    
+            
+    </div>
+        </div>
+            </div>
+            
+    </section>
+        </div>
+                    
+
+        <div class="g-block size-20 equal-height">
+             <aside id="g-aside">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 center box2 mt50">
+             <div id="custom-1840-particle" class="g-content g-particle">            <img src="https://sdsautomation.com/wp-content/uploads/2018/09/IADD-LOGO-WH-ATsite.png
+"><h6>International Association of Diecutting & Diemaking</h6><br/><img src="https://sdsautomation.com/wp-content/uploads/2018/09/FSEA_FX_logo_white.png"><h6>Foil and Specialty Effects Association</h6>
+            </div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-100 center box3">
+             <div id="custom-9500-particle" class="g-content g-particle">            <a href="https://sdsautomation.com/easybender-offer/"><img src="https://sdsautomation.com/wp-content/uploads/2018/12/trybuy.gif"></a>
+            </div>
+        </div>
+            </div>
+            
+    </aside>
+        </div>
+            </div>
+    
+    </section>
+    
+                    
+                <section id="g-expanded" class="fp-expanded">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100 center">
+             <div id="infolist-9826-particle" class="g-content g-particle">            <h2 class="g-title g-infolist-title">Die Making Sales & Service Team</h2>
+    
+    <div class="g-infolist g-4cols ">
+
+                    <div class="g-infolist-item g-infolist-with-img center">
+
+                
+                
+                
+                
+                <div class="g-infolist-item-text  g-infolist-textstyle-compact">
+                    
+                                                                <div class="g-infolist-item-img g-block center avatar">
+                        
+                            <img src="https://sdsautomation.com/wp-content/uploads/2018/07/Kyle-headshot-150x150.jpg" alt="Kyle" />
+
+                                            </div>
+                
+                    
+                    
+                    <div class="g-infolist-item-title ">Kyle</div>
+                                            <div class="g-infolist-item-desc">
+                            
+                                Senior Laser Technician
+
+                                                    </div>
+                    
+                                    </div>
+
+                
+                            </div>
+                    <div class="g-infolist-item g-infolist-with-img center">
+
+                
+                
+                
+                
+                <div class="g-infolist-item-text  g-infolist-textstyle-compact">
+                    
+                                                                <div class="g-infolist-item-img g-block center avatar">
+                        
+                            <img src="https://sdsautomation.com/wp-content/uploads/2018/08/Andy-icon-150x150.jpg" alt="Andy" />
+
+                                            </div>
+                
+                    
+                    
+                    <div class="g-infolist-item-title ">Andy</div>
+                                            <div class="g-infolist-item-desc">
+                            
+                                Die Making Sales & Service
+
+                                                    </div>
+                    
+                                    </div>
+
+                
+                            </div>
+                    <div class="g-infolist-item g-infolist-with-img center">
+
+                
+                
+                
+                
+                <div class="g-infolist-item-text  g-infolist-textstyle-compact">
+                    
+                                                                <div class="g-infolist-item-img g-block center avatar">
+                        
+                            <img src="https://sdsautomation.com/wp-content/uploads/2018/08/Jake.jpg" alt="Jake" />
+
+                                            </div>
+                
+                    
+                    
+                    <div class="g-infolist-item-title ">Jake</div>
+                                            <div class="g-infolist-item-desc">
+                            
+                                Die Making Sales & Service
+
+                                                    </div>
+                    
+                                    </div>
+
+                
+                            </div>
+                    <div class="g-infolist-item g-infolist-with-img center">
+
+                
+                
+                
+                
+                <div class="g-infolist-item-text  g-infolist-textstyle-compact">
+                    
+                                                                <div class="g-infolist-item-img g-block center avatar">
+                        
+                            <img src="https://sdsautomation.com/wp-content/uploads/2018/07/Tom_Selfie.ds_-150x150.jpg" alt="Tom" />
+
+                                            </div>
+                
+                    
+                    
+                    <div class="g-infolist-item-title ">Tom</div>
+                                            <div class="g-infolist-item-desc">
+                            
+                                Die Making Sales Facilitator
+
+                                                    </div>
+                    
+                                    </div>
+
+                
+                            </div>
+        
+    </div>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+                    
+                <footer id="g-footer">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-25">
+             <div class="spacer"></div>
+        </div>
+                    
+
+        <div class="g-block size-50 center box1 nopaddingall">
+             <div id="custom-2629-particle" class="g-content g-particle">            <p>U.S. Patent Nos. 5475992, 5589090; 5787750; 5870919; 5966974; 5992485; 6128940; 6405574; 8327679; 7694543; 7441434; and 7878039.</p>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-25">
+             <div class="spacer"></div>
+        </div>
+            </div>
+            
+    </footer>
+                    
+                <section id="g-copyright" class="fp-copyright">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-45 box1 nomarginall equal-height fp-copyright-menu">
+             <div id="simplemenu-6826-particle" class="g-content g-particle">            <div class="g-simplemenu-particle ">
+    
+        <div class="g-simplemenu-container">
+        <h6>EasyBender</h6>
+        <ul class="g-simplemenu">
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/easybender/easybender-s1/" title="EasyBender S1">EasyBender S1</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/easybender/easybender-ns2/" title="EasyBender NS2">EasyBender NS2</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/easybender/easybender-r/" title="EasyBender R">EasyBender R</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/easybender/easybender-r-pro/" title="EasyBender R-Pro">EasyBender R-Pro</a>
+            </li>
+                    </ul>
+    </div>
+    <div class="g-simplemenu-container">
+        <h6>Cutlite Penta</h6>
+        <ul class="g-simplemenu">
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/cutlite-penta/ltf/" title="LTF">LTF</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/cutlite-penta/of/" title="OF">OF</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/cutlite-penta/ofrl-rotary/" title="OFRL Rotary">OFRL Rotary</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/cutlite-penta/ofprl-combo/" title="OFPRL Combo">OFPRL Combo</a>
+            </li>
+                    </ul>
+    </div>
+    <div class="g-simplemenu-container">
+        <h6>Delta Diemaking</h6>
+        <ul class="g-simplemenu">
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/delta-diemaking/lgt-1613/" title="LGT 1613">LGT 1613</a>
+            </li>
+                        <li>
+                                <a target="_blank" href="https://sdsautomation.com/die-making/delta-diemaking/rbr-500-hd/" title="RBR 500 HD">RBR 500 HD</a>
+            </li>
+                        <li>
+                                <a target="_blank" href="https://sdsautomation.com/die-making/delta-diemaking/rbr-1000-hd/" title="RBR 1000 HD">RBR 1000 HD</a>
+            </li>
+                        <li>
+                                <a target="_self" href="https://sdsautomation.com/die-making/delta-diemaking/sml-1316/" title="SML 1316">SML 1316</a>
+            </li>
+                    </ul>
+    </div>
+
+</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-35 center">
+             <div id="branding-9192-particle" class="g-content g-particle">            <div class="g-branding g-branding">
+    &copy; 2018 by <a href="https://sdsautomation.com/information/contact-info/" class="g-powered-by">SDS Automation</a>. All rights reserved.
+</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-10 center">
+             <div id="totop-6615-particle" class="g-content g-particle">            <div class="g-totop g-particle">
+    <div class="g-totop">
+        <a href="#" id="g-totop" rel="nofollow">
+            <i class="fa fa-angle-double-up fa-fw"></i>            To Top                    </a>
+    </div>
+</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-10 center">
+             <div id="custom-1772-particle" class="g-content g-particle">            <a href="https://sdsautomation.com/privacy-policy/">Privacy Policy</a>
+            </div>
+        </div>
+            </div>
+            
+    </section>
+            
+                        
+
+        </div>
+                    
+
+                    <link rel='stylesheet' id='rainmaker_form_style-css'  href='https://sdsautomation.com/wp-content/plugins/icegram-rainmaker/classes/../assets/css/form.css?ver=0.37' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/sdsautomation.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LcBOYEUAAAAABd8tbj8jEH4IyX5dsQE9IiuBI5_&#038;ver=3.0'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/countdown-timer-ultimate/assets/js/wpcdt-timecircles.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/countdown-timer-ultimate/assets/js/wpcdt-public-js.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/gantry5/assets/js/lightcase.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/themes/rt_protean/js/owlcarousel.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/themes/rt_protean/js/owlcarousel.video.init.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-includes/js/wp-embed.min.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/gantry5/assets/js/main.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rm_pre_data = {"ajax_url":"https:\/\/sdsautomation.com\/wp-admin\/admin-ajax.php","rm_nonce_field":"7c1932c839"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sdsautomation.com/wp-content/plugins/icegram-rainmaker/classes/../assets/js/main.js?ver=0.37'></script>
+<script type="text/javascript">
+( function( grecaptcha, sitekey ) {
+
+	var wpcf7recaptcha = {
+		execute: function() {
+			grecaptcha.execute(
+				sitekey,
+				{ action: 'homepage' }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		}
+	};
+
+	grecaptcha.ready( wpcf7recaptcha.execute );
+
+	document.addEventListener( 'wpcf7submit', wpcf7recaptcha.execute, false );
+
+} )( grecaptcha, '6LcBOYEUAAAAABd8tbj8jEH4IyX5dsQE9IiuBI5_' );
+</script>
+<script type="text/javascript">jQuery(document).ready(function($) { jQuery('[data-rel^=lightcase]').lightcase({maxWidth: '100%', maxHeight: '100%', video: {width: '1280', height: '720'}}); });</script>
+    <script type="text/javascript">
+    jQuery(window).load(function() {
+        var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+        owlowlcarousel_5957.owlCarousel({
+            items: 1,
+            rtl: false,
+                        animateOut: 'fadeOut',
+                                    animateIn: 'fadeIn',
+                                    nav: true,
+            navText: ['\x3Ci\x20class\x3D\x22fa\x20fa\x2Dchevron\x2Dleft\x22\x20aria\x2Dhidden\x3D\x22true\x22\x3E\x3C\x2Fi\x3E', '\x3Ci\x20class\x3D\x22fa\x20fa\x2Dchevron\x2Dright\x22\x20aria\x2Dhidden\x3D\x22true\x22\x3E\x3C\x2Fi\x3E'],
+                        video:true,
+            videoLoop: true,
+                        dots: false,
+                                    loop: false,
+                                    autoplay: true,
+            autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                                                responsive:{
+                0:{
+                    items:1,
+                },
+                750:{
+                    items:1,
+                },
+                1300:{
+                    items:1
+                }
+            },
+                                            })
+
+            });
+    </script>
+    <script type="text/javascript">
+jQuery(window).load(function() {
+    var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+    owlowlcarousel_5957.on('changed.owl.carousel', function(event) {
+        var currentItem = "#g-owlcarousel-panel-owlcarousel-5957 #g-owlcarousel-panel-" + (event.item.index + 1);
+        jQuery(currentItem).trigger("click");
+    })
+        jQuery('#g-owlcarousel-owlcarousel-5957-controls .owl-next').click(function() {
+        owlowlcarousel_5957.trigger('next.owl.carousel');
+    })
+    jQuery('#g-owlcarousel-owlcarousel-5957-controls .owl-prev').click(function() {
+        owlowlcarousel_5957.trigger('prev.owl.carousel');
+    })
+    });
+
+var owlPanelItemsowlcarousel_5957 = jQuery('#g-owlcarousel-panel-owlcarousel-5957 .g-owlcarousel-panel');
+jQuery("#g-owlcarousel-panel-owlcarousel-5957 #g-owlcarousel-panel-1").click(function(event) {
+    var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+    owlPanelItemsowlcarousel_5957.removeClass('selected');
+    var toIndex = 1 - 1;
+    owlowlcarousel_5957.trigger('to.owl.carousel', [toIndex, 1 - 1, true]);
+    jQuery(this).addClass('selected');
+});
+jQuery("#g-owlcarousel-panel-owlcarousel-5957 #g-owlcarousel-panel-2").click(function(event) {
+    var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+    owlPanelItemsowlcarousel_5957.removeClass('selected');
+    var toIndex = 2 - 1;
+    owlowlcarousel_5957.trigger('to.owl.carousel', [toIndex, 2 - 1, true]);
+    jQuery(this).addClass('selected');
+});
+jQuery("#g-owlcarousel-panel-owlcarousel-5957 #g-owlcarousel-panel-3").click(function(event) {
+    var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+    owlPanelItemsowlcarousel_5957.removeClass('selected');
+    var toIndex = 3 - 1;
+    owlowlcarousel_5957.trigger('to.owl.carousel', [toIndex, 3 - 1, true]);
+    jQuery(this).addClass('selected');
+});
+jQuery("#g-owlcarousel-panel-owlcarousel-5957 #g-owlcarousel-panel-4").click(function(event) {
+    var owlowlcarousel_5957 = jQuery('#g-owlcarousel-owlcarousel-5957');
+    owlPanelItemsowlcarousel_5957.removeClass('selected');
+    var toIndex = 4 - 1;
+    owlowlcarousel_5957.trigger('to.owl.carousel', [toIndex, 4 - 1, true]);
+    jQuery(this).addClass('selected');
+});
+</script>
+    <script type="text/javascript">jQuery(document).ready(function($) { jQuery('[data-rel^=lightcase]').lightcase({maxWidth: '100%', maxHeight: '100%', video: {width: '1280', height: '720'}}); });</script>
+
+
+    
+
+        
+    </body>
+</html>
+
+<!-- Dynamic page generated in 0.892 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-01-31 14:01:21 -->
+
+<!-- super cache -->

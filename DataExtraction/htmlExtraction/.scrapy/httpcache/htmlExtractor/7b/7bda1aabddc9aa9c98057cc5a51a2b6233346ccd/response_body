@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Darik Enterprises, Inc. - The Shrimp People</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="Reply-to" content="">
+	<meta name="author" content="www.OrangeYouGlad.com">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<script language="javascript" src="scripts/rollover.js"></script>
+	<link rel='stylesheet' href='nivo_default.css' type='text/css' media='all' />
+<link rel='stylesheet' href='nivo-slider.css' type='text/css' media='all' />
+<script type='text/javascript' src='scripts/jquery-1.6.1.min.js'></script>
+<script type='text/javascript' src='scripts/jquery.nivo.slider.pack1.js'></script>
+<script type="text/javascript">
+if (document.images) {
+    img1 = new Image();
+    img1.src = "images/gallery/image1.jpg";
+    img2 = new Image();
+    img2.src = "images/gallery/image2.jpg";
+	img3 = new Image();
+    img3.src = "images/gallery/image3.jpg";
+	img4 = new Image();
+    img4.src = "images/gallery/image4.jpg";
+	img5 = new Image();
+    img5.src = "images/gallery/image5.jpg";
+}
+</script>
+<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Use default settings
+			*/
+
+			$('.fancybox').fancybox();
+			
+		});
+	</script>
+	<script type="text/javascript">
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 980,
+		maxHeight	: 700,
+		fitToView	: false,
+		topRatio 	: .15,
+		width		: '85%',
+		height		: '85%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		helpers : {
+					overlay : {
+						opacity : 0.90
+					}
+				}
+	});
+});
+</script>
+	<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="scripts/pngfix.js"></script>
+<![endif]-->
+<script>
+<!--
+/* 
+No Right Click. Written by PerlScriptsJavaScripts.com
+Copyright http://www.perlscriptsjavascripts.com 
+Free and commercial Perl and JavaScripts     
+*/
+
+isNN = document.layers ? 1 : 0; 
+
+function noContext(){return false;}
+
+function noContextKey(e) {
+    if(isNN){
+        if (e.keyCode == 96){ return (false);}
+    } else {
+        if (event.keyCode == 96){ return (false);}
+    }
+}
+
+function noClick(e){
+    if(isNN){
+        if(e.which > 1) {return false;}
+    } else { 
+        if(event.button > 1){return false;}
+    }
+}
+
+if(isNN){ 
+    document.captureEvents(Event.MOUSEDOWN);
+}
+
+document.oncontextmenu = noContext;
+document.onkeypress    = noContextKey;
+document.onmousedown   = noClick;
+document.onmouseup     = noClick;
+
+// -->
+</script>
+</head>
+
+<body class="homebg">
+<!-- DO NOT MOVE! The following AllWebMenus linking code section must always be placed right AFTER the BODY tag-->
+<!-- ******** BEGIN ALLWEBMENUS CODE FOR homemenu ******** -->
+<script type="text/javascript">var MenuLinkedBy="AllWebMenus [4]",awmMenuName="homemenu",awmBN="894";</script><script charset="UTF-8" src="scripts/homemenu.js" type="text/javascript"></script><script type="text/javascript">awmBuildMenu();</script>
+<!-- ******** END ALLWEBMENUS CODE FOR homemenu ******** -->
+
+<div id="wrapper">
+	<div id="content">
+		<div id="topnav">
+			<div id="topnav-logo"><a href="index.html" onMouseover="document.logo.src=logoon.src;" onMouseout="document.logo.src=logooff.src;"><img src="images/logo_darik.gif" id="logo" name="logo" width="354" height="73" alt="Darik Enterprises Inc. - The Shrimp People" title="Darik Enterprises Inc. - The Shrimp People" border="0" /></a><img src="images/spacer.gif" width="195" height="1" alt="" border="0" /></div>
+<!-- START NAV -->
+			<div id="topnav-nav"><div class="menu">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li class="productLink"><a href="#" class="products">PRODUCTS</a>
+			<ul class="productType">
+				<li><a class="item1" href="#">SHRIMP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<ul class="productStyle">
+						<li><a class="item2" href="index.html">OCEAN WHITES</a>
+							<ul class="productBrand">
+								<li><a class="item3" href="pearlislands.html">PEARL ISLANDS</a></li>
+								<li><a class="item3" href="seadeli.html">SEA DELI</a></li>
+								<li><a class="item3" href="panamabay.html">PANAMA BAY</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">CULTIVATED VANNAMEI</a>
+							<ul class="productBrand3">
+								<li><a class="item3" href="farallon.html">FARALLON</a></li>
+								<li><a class="item3" href="harvestwhite.html">HARVEST</a></li>
+								<li><a class="item3" href="apaniewhite.html">APANIE</a></li>
+								<li><a class="item3" href="redsea.html">RED SEA</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">BLACK TIGERS</a>
+							<ul class="productBrand4">
+								<li><a class="item3" href="apanieblack.html">APANIE</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">AMBERS</a>
+							<ul class="productBrand5">
+								<li><a class="item3" href="pearlislands.html">PEARL ISLANDS</a></li>
+								<li><a class="item3" href="seadeli.html">SEA DELI</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">PINKS</a>
+							<ul class="productBrand6">
+								<li><a class="item3" href="pearlislands.html">PEARL ISLANDS</a></li>
+								<li><a class="item3" href="seadeli.html">SEA DELI</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">FIDELS</a>
+							<ul class="productBrand7">
+								<li><a class="item3" href="pearlislands.html">PEARL ISLANDS</a></li>
+								<li><a class="item3" href="seadeli.html">SEA DELI</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">BROWNS</a>
+							<ul class="productBrand8">
+								<li><a class="item3" href="pearlislands.html">PEARL ISLANDS</a></li>
+								<li><a class="item3" href="seadeli.html">SEA DELI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a class="item1" href="#">LOBSTER</a>
+					<ul class="productStyle2">
+						<li><a class="item2" href="#">ARGUS</a>
+							<ul class="productBrand2">
+								<li><a class="item3" href="cislandprime.html">C. ISLAND PRIME</a></li>
+								<li><a class="item3" href="diamonds.html">DIAMOND'S</a></li>
+								<li><a class="item3" href="marazul.html">MARAZUL</a></li>
+							</ul>
+						</li>
+						<li><a class="item2" href="#">GRACILLIS</a>
+							<ul class="productBrand3">
+								<li><a class="item3" href="diamonds.html">DIAMOND'S</a></li>
+							</ul>
+							</li>				
+					</ul>
+				</li>
+				
+				<li><a class="item1" href="#">FISH</a>
+					<ul class="productStyle3">
+						<li><a class="item2" href="#">BARRAMUNDI</a>
+							<ul class="productBrand3">
+								<li><a class="item3" href="akoona.html">AKOONA</a></li>
+							</ul>
+						</li>	
+						<li><a class="item2" href="#">SWAI</a>
+							<ul class="productBrand4">
+								<li><a class="item3" href="originalmekong.html">ORIGINAL MEKONG</a></li>
+							</ul>
+						</li>				
+					</ul>
+				</li>
+				
+			</ul>
+		</li>
+		<li><a class="fancybox various fancybox.iframe" href="lb_brands.html">BRANDS</a></li>
+		<li><a href="company.html">COMPANY</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	</ul>
+</div></div>
+<!-- END NAV -->
+		</div>
+<!-- END TOPNAV -->	
+<br class="clear" />
+	<div id="gallery">
+		<div class="slider-wrapper theme-default controlnav-nothumbs"><div id="nivoslider-577" class="nivoSlider" style="width:980px;height:401px;">
+			<img src="images/gallery/image1.jpg" alt="" />
+			<img src="images/gallery/image2.jpg" alt="" />
+			<img src="images/gallery/image3.jpg" alt="" />
+			<img src="images/gallery/image4.jpg" alt="" />
+			<img src="images/gallery/image5.jpg" alt="" />
+		</div></div>
+	</div>
+<!-- END GALLERY -->	
+<br class="clear" />
+	<div id="logoarea">
+		<div id="logos">
+		<h1 class="home">DISTRIBUTORS OF</h1>
+<a href="marazul.html" onMouseover="document.marazul.src=marazulon.src;" onMouseout="document.marazul.src=marazuloff.src;"><img src="images/nav_marazul.jpg" id="marazul" name="marazul" width="94" height="89" alt="marazul" title="marazul" border="0" /></a><a href="diamonds.html" onMouseover="document.diamonds.src=diamondson.src;" onMouseout="document.diamonds.src=diamondsoff.src;"><img src="images/nav_diamonds.jpg" id="diamonds" name="diamonds" width="124" height="89" alt="diamonds" title="diamonds" border="0" /></a><a href="akoona.html" onMouseover="document.akoona.src=akoonaon.src;" onMouseout="document.akoona.src=akoonaoff.src;"><img src="images/nav_akoona.jpg" id="akoona" name="akoona" width="119" height="89" alt="akoona" title="akoona" border="0" /></a><a href="panamabay.html" onMouseover="document.panamabay.src=panamabayon.src;" onMouseout="document.panamabay.src=panamabayoff.src;"><img src="images/nav_panamabay.jpg" id="panamabay" name="panamabay" width="129" height="89" alt="panama bay" title="panama bay" border="0" /></a><a href="cislandprime.html" onMouseover="document.islandprime.src=islandprimeon.src;" onMouseout="document.islandprime.src=islandprimeoff.src;"><img src="images/nav_islandprime.jpg" id="islandprime" name="islandprime" width="104" height="89" alt="c. island prime" title="c. island prime" border="0" /></a><img src="images/home_apanie_sp.jpg" width="115" height="89" alt="" border="0" /><br />
+<a href="farallon.html" onMouseover="document.farallon.src=farallonon.src;" onMouseout="document.farallon.src=farallonoff.src;"><img src="images/nav_farallon.jpg" id="farallon" name="farallon" width="94" height="98" alt="farallon" title="farallon" border="0" /></a><a href="harvestwhite.html" onMouseover="document.harvest.src=harveston.src;" onMouseout="document.harvest.src=harvestoff.src;"><img src="images/nav_harvest.jpg" id="harvest" name="harvest" width="124" height="98" alt="harvest" title="harvest" border="0" /></a><a href="pearlislands.html" onMouseover="document.pearlislands.src=pearlislandson.src;" onMouseout="document.pearlislands.src=pearlislandsoff.src;"><img src="images/nav_pearlislands.jpg" id="pearlislands" name="pearlislands" width="119" height="98" alt="pearl islands" title="pearl islands" border="0" /></a><a href="originalmekong.html" onMouseover="document.originalmekong.src=originalmekongon.src;" onMouseout="document.originalmekong.src=originalmekongoff.src;"><img src="images/nav_originalmekong.jpg" id="originalmekong" name="originalmekong" width="129" height="98" alt="original mekong" title="original mekong" border="0" /></a><a href="redsea.html" onMouseover="document.redsea.src=redseaon.src;" onMouseout="document.redsea.src=redseaoff.src;"><img src="images/nav_redsea.jpg" id="redsea" name="redsea" width="104" height="98" alt="red sea" title="red sea" border="0" /></a><a href="seadeli.html" onMouseover="document.seadeli.src=seadelion.src;" onMouseout="document.seadeli.src=seadelioff.src;"><img src="images/nav_seadeli.jpg" id="seadeli" name="seadeli" width="115" height="98" alt="sea deli" title="sea deli" border="0" /></a>
+		</div>
+		<div id="h-about">
+		<h1 class="home">ABOUT US</h1>
+		<p>Located in Long Island, New York, Darik Enterprises is an industry leader in the importation and wholesale distribution of frozen fish and shellfish products.</p><br />
+		<a href="company.html" onMouseover="document.seemore.src=seemoreon.src;" onMouseout="document.seemore.src=seemoreoff.src;"><img src="images/nav_seemore.gif" width="70" height="14" alt="see more" border="0" name="seemore" /></a>
+		</div>
+	</div>	
+<!-- END LOGO AREA -->	
+
+	</div>
+<!-- END CONTENT -->
+
+<br class="clear" /><p>&nbsp;</p><br class="clear" /><br class="clear" />
+<div id="footer">
+	<div id="footer-content"><p>&copy; 2014  <span class="bluetext">Darik</span>  |  <a href="http://www.orangeyouglad.com" target="_blank">Site by OrangeYouGlad</a></p></div>
+</div>
+
+</div>
+<!-- END WRAPPER -->
+<script type="text/javascript">
+jQuery(window).load(function(){
+    jQuery("#nivoslider-577").nivoSlider({
+        effect:"fade",
+        slices:15,
+        boxCols:8,
+        boxRows:4,
+        animSpeed:200,
+        pauseTime:4000,
+        startSlide:0,
+        directionNav:true,
+        directionNavHide:true,
+        pauseOnHover:true,
+        manualAdvance:false
+    });
+});
+</script>
+</body>
+</html>

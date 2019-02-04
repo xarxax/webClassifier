@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>FC2ホームページ - 無料ホームページスペース</title>
+<meta name="description" content="FC2ホームページは無料で簡単にホームページを作成できるホームページスペースサービスです。広告掲載なし!商用利用も可能!独自ドメインの設定もOK!" />
+<meta name="keywords" content="ホームページ,無料,hp,作成,広告なし,簡単,フリー,商用,レンタルサーバー" />
+<meta property="og:title" content="FC2ホームページ - 無料ホームページスペース" />
+<meta property="og:description" content="FC2ホームページは無料で簡単にホームページを作成できるホームページスペースサービスです。広告掲載なし!商用利用も可能!独自ドメインの設定もOK!" />
+<link rel="shortcut icon" type="image/ico" href="https://static.fc2.com/share/image/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://static.fc2.com/share/css/common.css?20151201" />
+<link rel="stylesheet" type="text/css" href="https://static.fc2.com/share/fc2parts/css/share.css?20151201" />
+<link rel="stylesheet" type="text/css" href="/fc2css/common.css?20151201" media="all" />
+<link rel="stylesheet" type="text/css" href="/fc2css/portal.css?20151201" media="all" />
+<link rel="stylesheet" type="text/css" href="/fc2css/public.css?20151201" media="all" />
+<script type="text/javascript" src="https://static.fc2.com/share/fc2parts/js/jquery.js?20151201"></script>
+<script type="text/javascript" src="https://static.fc2.com/share/fc2parts/js/common_design.js?20151201"></script>
+</head>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PX7C3L" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PX7C3L');</script>
+<!-- End Google Tag Manager -->
+<!-- sh_header_box -->
+<div id="sh_header_box" >
+	<div id="sh_header_col">
+		<div class="sh_langselect">
+			<select name="lang" onchange="javascript:location.replace(this.options[this.selectedIndex].value);">
+				<option value="/">Language</option>
+				<option value="/?lang=ja">日本語</option>
+				<option value="/?lang=en">English</option>
+			</select>
+		</div>
+		<div class="sh_header_nav">
+			<div id="switch_adt">
+				<a href="//x.fc2.com/?lang=ja"><img src="https://static.fc2.com/share/fc2footermenu/blank.gif" width="120" height="24" alt="アダルト" /></a>
+			</div>
+		</div>
+		<div class="sh_header_nav">
+			<ul>
+				<li><a href="https://fc2.com/?utm_source=fc2web&utm_medium=ownedmedia&utm_content=public_image_top_sidemenu&utm_campaign=fc2web">FC2トップ</a></li>
+				<li class="end"><a href="https://help.fc2.com/web/" target="_blank">ヘルプ</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- /sh_header_box -->
+
+<!-- container -->
+<div id="container">
+
+	<!-- sh_header -->
+	<div id="sh_header">
+		<h1>
+			<a title="FC2ホームページトップへ" href="/">
+				<img width="90" height="30" src="https://static.fc2.com/share/fc2parts/image/fc2logo.png" alt="FC2" /><span class="site-name">ホームページ</span>
+			</a>
+		</h1>
+	</div>
+	<!-- /sh_header -->
+
+	<!-- main -->
+	<div id="main">
+
+		<!-- content_body -->
+		<div class="content_body" id="point">
+			<a class="jpc" href="//web.fc2.com/c/domainEx/" onmousedown="_gaq.push(['_trackEvent','banner', 'click', 'kantan_index_general']);">
+				<img src="/fc2img/kantan/campaign_banner_d.png" border="0" width="660" height="197" alt="FC2ホームページが独自ドメインに対応！年間999円！会社・サークル・クラブ名のドメイン名でホームページ・メールが使える！" />
+			</a>
+			<h2>
+				「ホームページをすぐに作りたい！」というあなたにぴったり！<br />
+				FC2ホームページならすぐにあなただけのホームページが作成できます。<br />
+				無料でご利用頂けますので、是非お試し下さい！
+			</h2>
+			<div class="body_main">
+				<div class="feature-albummaker"><a href="/albummaker/"><img src="/fc2img/bnr-top-albummaker.png" alt="誰でもWEB漫画やフォトアルバムをつくれる新機能「アルバムメーカー」" width="680" height="160"></a></div>
+				<ul class="feature_list1">
+					<li class="feature01">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="広告表示なしで、即ホームページを開設できます！" />
+						</a>
+					</li><!--
+					--><li class="feature02">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="ご利用は無料!ディスク容量は1GB" />
+						</a>
+					</li><!--
+					--><li class="feature03">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="ブラウザで管理できるファイルマネージャ" />
+						</a>
+					</li><!--
+					--><li class="feature04">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="タグ検索、ランキングに自動登録でアクセスアップ" />
+						</a>
+					</li>
+				</ul><!--
+					--><ul class="feature_list2">
+					<li class="feature05">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="ここが違う!商用利用可能" />
+						</a>
+					</li><!--
+					--><li class="feature06">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="らくらくアップロード!FTPに対応!" />
+						</a>
+					</li><!--
+					--><li class="feature07">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="好きな名前やニックネームが使えます!サブドメイン" />
+						</a>
+					</li><!--
+					--><li class="feature08">
+						<a href="/fc2html/point.html">
+							<img src="https://static.fc2.com/share/fc2footermenu/blank.gif" border="0" width="335" height="60" alt="HTTPS（SSL暗号化通信）に対応" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="compBtn" href="/fc2html/point.html#compare"><img src="../fc2img/blank.gif" width="480" height="50" alt="無料ホームページスペース機能比較はこちら" /></a>
+		</div>
+		<!-- /content_body -->
+
+		<!-- content_body -->
+		<div class="content_body clear" id="favorite">
+            <h2 class="sh_heading_main_b"><span>特集</span></h2>
+			<div class="pickup_banner">
+				<a href="/manga/" title="【オススメWEB漫画】「FC2ホームページ」を使って公開された人気のWEB漫画を一部ご紹介！"><img src="/fc2img/manga/bnr-manga.png?20151201" alt="【オススメWEB漫画】「FC2ホームページ」を使って公開された人気のWEB漫画を一部ご紹介！" /></a>
+			</div>
+			<div class="pickup_link">
+				<a href="/recommend/" title="WEB漫画以外にも、いろいろあります！おすすめのホームページを見つけよう！" class="linkmark">WEB漫画以外にも、いろいろあります！おすすめのホームページを見つけよう！</a>
+			</div>
+		</div>
+		<!-- content_body -->
+
+		<!-- content_body -->
+		<div class="content_body clear" id="newhp">
+			<h2 class="sh_heading_main_b"><span>新着ホームページ</span></h2>
+			<div  class="body_main">
+				<ul class="hp_list">
+
+									<li>
+						<a href="http://katzone.web.fc2.com" title="" target="_blank">
+							<img src="/site_image/k/a/t/katzone.jpg" width="150" height="120" alt="Katzone" />
+						</a>
+						<strong>Katzone</strong>
+					</li>
+									<li>
+						<a href="http://trafficxabcx.web.fc2.com" title="神話を元にした創作サイトです。日記以外は滅多に更新無いです。" target="_blank">
+							<img src="/site_image/t/r/a/trafficxabcx.jpg" width="150" height="120" alt="どこへゆこうか" />
+						</a>
+						<strong>どこへゆこうか</strong>
+					</li>
+									<li>
+						<a href="http://houkigames.web.fc2.com" title="今期アニメの感想や最新ゲーム情報などを随時配信していきます。
+ゲーム配信もしています。" target="_blank">
+							<img src="/site_image/h/o/u/houkigames.jpg" width="150" height="120" alt="Houki_gamesのアニメ感想・ゲーム配信録" />
+						</a>
+						<strong>Houki_gamesのアニメ感想・ゲーム配信録</strong>
+					</li>
+									<li>
+						<a href="http://dousikairenmeisitoryu.web.fc2.com" title="糸東流空手道洋空会のホームページです。" target="_blank">
+							<img src="/site_image/d/o/u/dousikairenmeisitoryu.jpg" width="150" height="120" alt="糸東流空手道洋空会" />
+						</a>
+						<strong>糸東流空手道洋空会</strong>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<!-- /content_body -->
+
+		<!-- content_body -->
+		<div class="content_body clear" id="ranking">
+			<h2 class="sh_heading_main_b"><span>IT・デジタル</span></h2>
+			<div  class="body_main">
+				<ul>
+
+														<li class="cat_list_odd">
+											<strong class="ranking1">1位</strong>
+						<a href="http://newchuchan.web.fc2.com" target="_blank">ちゅうちゃんのホームページ</a>
+					</li>
+														<li class="cat_list_even">
+											<strong class="ranking2">2位</strong>
+						<a href="http://goodtrafficexchanges.web.fc2.com" target="_blank">オススメのトラフィックエクスチェンジ</a>
+					</li>
+														<li class="cat_list_odd">
+											<strong class="ranking3">3位</strong>
+						<a href="http://stone82.web.fc2.com" target="_blank">Yahoo!BBからホワイトBBへの乗り…</a>
+					</li>
+														<li class="cat_list_even">
+											<strong class="ranking4">4位</strong>
+						<a href="http://inkscapedesign.web.fc2.com" target="_blank">InkscapeでDesign</a>
+					</li>
+														<li class="cat_list_odd">
+											<strong class="ranking5">5位</strong>
+						<a href="http://irononamae.web.fc2.com" target="_blank">色の名前と色見本</a>
+					</li>
+				
+				</ul>
+				<p class="footerlink"><a href="/ranking/?category_id=102">IT・デジタルもっと見る</a></p>
+				<p class="ranking-at">※ランキングは毎朝更新しております。</p>
+			</div>
+		</div>
+
+		<div class="content_body" id="dailyranking">
+			<h2 class="sh_heading_main_b"><span>デイリーランキング</span></h2>
+			<div  class="body_main">
+				<ul>
+
+														<li class="daily_list_odd">
+											<strong class="ranking1">1位</strong>
+						<a href="http://kbw1127.web.fc2.com" target="_blank">??? ?????_グァクビョンワン 世…</a>
+					</li>
+														<li class="daily_list_even">
+											<strong class="ranking2">2位</strong>
+						<a href="http://dreamusic7.web.fc2.com" target="_blank">未弐の夢事典</a>
+					</li>
+														<li class="daily_list_odd">
+											<strong class="ranking3">3位</strong>
+						<a href="http://galaxyheavyblow.web.fc2.com" target="_blank">ワンパンマン</a>
+					</li>
+														<li class="daily_list_even">
+											<strong class="ranking4">4位</strong>
+						<a href="http://matiaisitupower.web.fc2.com" target="_blank">待合室で作られたエネルギー</a>
+					</li>
+														<li class="daily_list_odd">
+											<strong class="ranking5">5位</strong>
+						<a href="http://entamedata.web.fc2.com" target="_blank">PRiVATE LiFE エンタメデータ…</a>
+					</li>
+				
+				</ul>
+				<p class="footerlink"><a href="/ranking/">デイリーランキングもっと見る</a></p>
+				<p class="ranking-at">※ランキングは毎朝更新しております。</p>
+			</div>
+		</div>
+		<!-- /content_body -->
+
+		<!-- content_body -->
+		<div class="content_body clear" id="category">
+			<h2 class="sh_heading_main_b"><span>カテゴリ</span></h2>
+			<div  class="body_main">
+                <ul class="c_list_body">
+                    <li class="life"><a href="/category/?category_id=101">生活・ライフスタイル</a></li>
+                    <li class="digital"><a href="/category/?category_id=102">IT・デジタル</a></li>
+                    <li class="sports"><a href="/category/?category_id=103">スポーツ</a></li>
+                    <li class="culture"><a href="/category/?category_id=104">文化・教育</a></li>
+                    <li class="beauty"><a href="/category/?category_id=105">美容・健康</a></li>
+                </ul>
+                <ul class="c_list_body">
+                    <li class="pets"><a href="/category/?category_id=106">ペット・動物</a></li>
+                    <li class="cars"><a href="/category/?category_id=107">クルマ・バイク</a></li>
+                    <li class="outdoor"><a href="/category/?category_id=108">趣味（アウトドア系）</a></li>
+                    <li class="indoor"><a href="/category/?category_id=109">趣味（インドア系）</a></li>
+                    <li class="music"><a href="/category/?category_id=110">音楽・芸術</a></li>
+                </ul>
+                <ul class="c_list_body">
+                    <li class="photos"><a href="/category/?category_id=111">写真・映像</a></li>
+                    <li class="movies"><a href="/category/?category_id=112">映画・ドラマ</a></li>
+                    <li class="manga"><a href="/category/?category_id=113">漫画・イラスト・アニメ</a></li>
+                    <li class="novels"><a href="/category/?category_id=114">文学・小説</a></li>
+                    <li class="games"><a href="/category/?category_id=115">ゲーム</a></li>
+                </ul>
+                <ul class="c_list_body">
+                    <li class="bussiness"><a href="/category/?category_id=116">ショッピング・ビジネス</a></li>
+                    <li class="other"><a href="/category/?category_id=199">その他</a></li>
+                    <li class="adult"><a href="//x.fc2.com">アダルト</a></li>
+                </ul>
+			</div>
+		</div>
+		<!-- /content_body -->
+
+		<!-- content_body -->
+		<div class="content_body clear" id="tag_cloud">
+			<h2 class="sh_heading_main_b"><span>キーワードタグクラウド</span></h2>
+			<div class="body_main">
+				<div class="tag_list">
+					<span class="tag_3"><a href="/tag/?query=BL&c=UTF-8">BL</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%82%A2%E3%83%BC%E3%83%88&c=UTF-8">アート</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC&c=UTF-8">アクセサリー</a></span>
+<span class="tag_2"><a href="/tag/?query=%E3%82%A2%E3%83%8B%E3%83%A1&c=UTF-8">アニメ</a></span>
+<span class="tag_2"><a href="/tag/?query=%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88&c=UTF-8">アフィリエイト</a></span>
+<span class="tag_1"><a href="/tag/?query=%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88&c=UTF-8">イラスト</a></span>
+<span class="tag_1"><a href="/tag/?query=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB&c=UTF-8">オリジナル</a></span>
+<span class="tag_1"><a href="/tag/?query=%E3%82%B2%E3%83%BC%E3%83%A0&c=UTF-8">ゲーム</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%82%B3%E3%82%B9%E3%83%97%E3%83%AC&c=UTF-8">コスプレ</a></span>
+<span class="tag_2"><a href="/tag/?query=%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB&c=UTF-8">サークル</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC&c=UTF-8">サッカー</a></span>
+<span class="tag_2"><a href="/tag/?query=%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88&c=UTF-8">ダイエット</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3&c=UTF-8">デザイン</a></span>
+<span class="tag_2"><a href="/tag/?query=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%A1%E3%82%A4%E3%83%89&c=UTF-8">ハンドメイド</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%90%E3%82%A4%E3%82%AF&c=UTF-8">バイク</a></span>
+<span class="tag_1"><a href="/tag/?query=%E3%83%90%E3%83%B3%E3%83%89&c=UTF-8">バンド</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3&c=UTF-8">ファッション</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3&c=UTF-8">ポケモン</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8&c=UTF-8">マッサージ</a></span>
+<span class="tag_3"><a href="/tag/?query=%E3%83%AA%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0&c=UTF-8">リフォーム</a></span>
+<span class="tag_2"><a href="/tag/?query=%E9%9F%B3%E6%A5%BD&c=UTF-8">音楽</a></span>
+<span class="tag_3"><a href="/tag/?query=%E7%A8%BC%E3%81%90&c=UTF-8">稼ぐ</a></span>
+<span class="tag_2"><a href="/tag/?query=%E7%B5%B5&c=UTF-8">絵</a></span>
+<span class="tag_3"><a href="/tag/?query=%E4%BA%AC%E9%83%BD&c=UTF-8">京都</a></span>
+<span class="tag_3"><a href="/tag/?query=%E6%BF%80%E5%AE%89&c=UTF-8">激安</a></span>
+<span class="tag_2"><a href="/tag/?query=%E5%81%A5%E5%BA%B7&c=UTF-8">健康</a></span>
+<span class="tag_3"><a href="/tag/?query=%E7%8A%AC&c=UTF-8">犬</a></span>
+<span class="tag_3"><a href="/tag/?query=%E6%9C%AD%E5%B9%8C&c=UTF-8">札幌</a></span>
+<span class="tag_3"><a href="/tag/?query=%E9%9B%91%E8%B2%A8&c=UTF-8">雑貨</a></span>
+<span class="tag_1"><a href="/tag/?query=%E5%86%99%E7%9C%9F&c=UTF-8">写真</a></span>
+<span class="tag_3"><a href="/tag/?query=%E6%89%8B%E4%BD%9C%E3%82%8A&c=UTF-8">手作り</a></span>
+<span class="tag_3"><a href="/tag/?query=%E8%B6%A3%E5%91%B3&c=UTF-8">趣味</a></span>
+<span class="tag_3"><a href="/tag/?query=%E5%88%9D%E5%BF%83%E8%80%85&c=UTF-8">初心者</a></span>
+<span class="tag_1"><a href="/tag/?query=%E5%B0%8F%E8%AA%AC&c=UTF-8">小説</a></span>
+<span class="tag_3"><a href="/tag/?query=%E6%95%B4%E4%BD%93&c=UTF-8">整体</a></span>
+<span class="tag_3"><a href="/tag/?query=%E5%8D%A0%E3%81%84&c=UTF-8">占い</a></span>
+<span class="tag_1"><a href="/tag/?query=%E5%89%B5%E4%BD%9C&c=UTF-8">創作</a></span>
+<span class="tag_2"><a href="/tag/?query=%E5%A4%A7%E9%98%AA&c=UTF-8">大阪</a></span>
+<span class="tag_2"><a href="/tag/?query=%E9%80%9A%E8%B2%A9&c=UTF-8">通販</a></span>
+<span class="tag_2"><a href="/tag/?query=%E6%9D%B1%E6%96%B9&c=UTF-8">東方</a></span>
+<span class="tag_2"><a href="/tag/?query=%E5%90%8C%E4%BA%BA&c=UTF-8">同人</a></span>
+<span class="tag_2"><a href="/tag/?query=%E4%BA%8C%E6%AC%A1%E5%89%B5%E4%BD%9C&c=UTF-8">二次創作</a></span>
+<span class="tag_3"><a href="/tag/?query=%E6%97%A5%E8%A8%98&c=UTF-8">日記</a></span>
+<span class="tag_2"><a href="/tag/?query=%E7%BE%8E%E5%AE%B9&c=UTF-8">美容</a></span>
+<span class="tag_3"><a href="/tag/?query=%E7%BE%8E%E5%AE%B9%E5%AE%A4&c=UTF-8">美容室</a></span>
+<span class="tag_2"><a href="/tag/?query=%E5%89%AF%E6%A5%AD&c=UTF-8">副業</a></span>
+<span class="tag_3"><a href="/tag/?query=%E7%A6%8F%E5%B2%A1&c=UTF-8">福岡</a></span>
+<span class="tag_1"><a href="/tag/?query=%E6%BC%AB%E7%94%BB&c=UTF-8">漫画</a></span>
+<span class="tag_2"><a href="/tag/?query=%E7%84%A1%E6%96%99&c=UTF-8">無料</a></span>
+<span class="tag_2"><a href="/tag/?query=%E6%97%85%E8%A1%8C&c=UTF-8">旅行</a></span>
+
+				</div>
+				<p class="link">
+					<a href="/tag/">&raquo;キーワードタグ検索</a>
+				</p>
+			</div>
+		</div>
+		<!-- /content_body -->
+
+	</div>
+	<!-- /main -->
+		<!-- sidemenu -->
+	<div id="sidemenu">
+		<!-- side_login -->
+		<div id="side_login">
+			<h3 class="sh_regist_ja"><a href="https://id.fc2.com/signup.php?ref=web&switch_language=ja"><img width="200" height="47" alt="新規登録" src="https://static.fc2.com/share/fc2footermenu/blank.gif" /></a></h3>
+			<p class="sh_login_text" align="center">FC2ID登録で即ご利用できます！</p>
+
+			<h3 class="sh_login_ja"><a href="https://id.fc2.com/?done=web&switch_language=ja"><img width="200" height="47" alt="ログイン" src="https://static.fc2.com/share/fc2footermenu/blank.gif" /></a></h3>
+			<p class="sh_login_text" align="center">ご登録済みの方はこちらから</p>
+			<p class="oldweblogin">旧WEBをご利用の方は<br /><a href="http://www.fc2web.com/">コチラ</a>よりログイン</p>
+		</div>
+		<!-- /side_login -->
+
+		<!-- sh_menu -->
+		<div id="sh_menu">
+			<p class="sh_menu_list"><a href="/">FC2ホームページ</a></p>
+			<p class="sh_menu_list"><a href="/fc2html/point.html">特長・機能一覧</a></p>
+			<p class="sh_menu_list"><a href="/fc2html/point.html#compare">有料版</a></p>
+			<p class="sh_menu_list"><a href="/ranking/">デイリーランキング</a></p>
+			<p class="sh_menu_list"><a href="/tag/">キーワードタグ検索</a></p>
+
+				</div>
+		<!-- /sh_menu -->
+
+				<!-- side_info -->
+		<div id="side_info">
+			<h3 class="sh_info">お知らせ</h3>
+			<div class="menu_body">
+							<p>
+					2017年06月24日<br />
+					<a href='https://fc2information.blog.fc2.com/blog-entry-1860.html' target='_blank'>【ホームページ】 今だけ！JPドメインのホームページ・メールを「2年目まで年間999円（通常1年目のみ）」で使えます！</a>
+				</p>
+							<p>
+					2016年09月01日<br />
+					<a href='https://fc2information.blog.fc2.com/blog-entry-1789.html' target='_blank'>【ホームページ】セキュリティ強化のため、6か月以上FTPの接続がなければ、FTP接続を自動ロックする機能を追加</a>
+				</p>
+							<p>
+					2016年07月22日<br />
+					<a href='https://fc2information.blog.fc2.com/blog-entry-1782.html' target='_blank'>【ホームページ】アルバムメーカーが画像付きでツイート可能になりました！</a>
+				</p>
+						</div>
+		</div>
+		<!-- /side_info -->
+	
+		<div id="side_hostingbanner" class="content_body">
+			<h3>FC2ホスティング<br />サービス</h3>
+			<div class="menu_body">
+				<p class="bannercome">FC2ではホスティングサービスを<br />ご提供しております。</p>
+				<ul class="bannerlist">
+					<li><a href="/fc2html/point.html#compare"><img src="//web.fc2.com/fc2img/web_paybanner.png" width="120" height="60" alt="FC2ホームページ有料版" /></a></li>
+					<li><a href="http://fc2-rentalserver.com/?utm_source=fc2web&utm_medium=ownedmedia&utm_content=public_image_top_sidemenu&utm_campaign=fc2web" target="_blank"><img src="https://static.fc2.com/share/image/banner_RSLite/banner_rslite_120x60_01.gif" width="120" height="60" alt="FC2レンタルサーバーLite" /></a></li>
+					<li><a href="https://rentalserver.fc2.com/?utm_source=fc2web&utm_medium=ownedmedia&utm_content=public_image_top_sidemenu&utm_campaign=fc2web" target="_blank"><img src="https://static.fc2.com/share/image/banner_rentalserver/banner_rentalserver01_120x60.gif" width="120" height="60" alt="FC2レンタルサーバー" /></a></li>
+					<li><a href="http://fc2-vps.com/" target="_blank"><img src="https://static.fc2.com/share/image/banner_vps/banner_vps_120x60.gif" width="120" height="60" alt="FC2VPS" /></a></li>
+					<li><a href="http://fc2server.com/" target="_blank"><img src="https://static.fc2.com/share/image/banner_server/banner_server_120x60.gif" width="120" height="60" alt="FC2専用サーバー" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /sidemenu -->
+	<div id="ad_banner468x60">
+    <iframe src="//assys01.fc2.com/1302" style="width:468px;height:60px;border:none;" scrolling="no"></iframe>
+</div>
+<!-- FC2管理用 -->
+<img src="//media.fc2.com/counter_img.php?id=3761" width="1" height="1">
+<!-- FC2管理用 --></div>
+<!-- /container -->
+
+<!-- ja版共通フッタここから -->
+<div id="sh_fc2footer_fix">
+	<div id="sh_fc2footer_menu">
+		<div id="sh_fc2tooter_tab">
+			<div><span class="sh_footer_rnd5"></span><span class="sh_footer_rnd4"></span><span class="sh_footer_rnd3"></span><span class="sh_footer_rnd2"></span><span class="sh_footer_rnd1"></span></div>
+			<ul>
+				<li class="sh_request"><a href="https://request.fc2.com/search_wish.php?ct1=7" title="FC2リクエストへ">リクエスト</a></li>
+				<li class="sh_kiyaku"><a href="https://help.fc2.com/web/tos/ja#service_web" title="サービス利用規約へ">利用規約</a></li>
+				<li class="sh_shogai"><a href="https://fc2support.blog.fc2.com/">障害情報</a></li>
+				<li class="sh_pagetop"><a href="javascript:scroller(0);" title="このページの先頭へ">ページトップへ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="sh_fc2footer">
+		<div id="sh_fc2footermenu">
+			<ul>
+				<li><a href="https://fc2.com/" title="FC2ホームへ"><img src="https://static.fc2.com/share/fc2parts/image/fc2logo.png" alt="FC2ホームへ" class="fc2top" /></a></li>
+				<li>
+					<form action="https://help.fc2.com/search/qa" method="get" target="_blank">
+						<img src="https://static.fc2.com/share/fc2parts/image/sh_help_icon.gif" width="20" height="20" alt="" /><a href="https://help.fc2.com/web/" target="_blank">FC2ヘルプ</a>
+						<input type="text" name="q" class="help_form_tetarea" /><input type="hidden" name="service_id" value="4" /><input type="submit" value="ヘルプ検索" />
+					</form>
+				</li>
+				<li><a href="https://help.fc2.com/inquiry">お問い合わせ</a></li>
+				<li class="information"><a href="https://fc2.com/company.html" rel="nofollow">会社概要</a></li>
+				<li><a href="https://fc2.com/privacy.html" rel="nofollow">プライバシーポリシー</a></li>
+				<li><a href="https://help.fc2.com/copyrights/tos/ja" rel="nofollow">著作権ガイドライン</a></li>
+				<li><a href="https://fc2.com/ja/sales.html" rel="nofollow">広告掲載</a></li>
+			</ul>
+			<p class="copyright">Copyright(c)1999 FC2, Inc. All Rights Reserved.</p>
+		</div><!-- /sh_fc2footermenu -->
+	</div><!-- /sh_fc2footer -->
+</div><!-- /sh_fc2footer_fix -->
+<!-- /ja版共通フッタ -->
+<script type="text/javascript" src="https://static.fc2.com/share/js/gdpr/pp_agreement.pc.ja.20180518.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta NAME="keywords" CONTENT="Entrepia Ventures, venture capital"/>
+<meta NAME="description" CONTENT="Entrepia Ventures manages VC funds that invest in expansion-stage, technology-based, private companies."/>
+<meta name="robots" content="index, FOLLOW"/>
+<title>Entrepia Ventures :: manages VC funds that invest in expansion-stage, technology-based, private companies.</title>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script src="scripts/rollover.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+
+// ********** User Defining Area **********
+
+data=[
+["images/logos/ticker.gif","","portfolio.html"],
+["images/logos/ticker2.gif","","portfolio.html"] // no comma at end of last index
+]
+
+imgPlaces=1 // number of images visible
+imgWidth=800 // width of the images
+imgHeight=45 // height of the images
+imgSpacer=0 // space between the images
+
+dir=0 // 0 = left, 1 = right
+
+newWindow=0 // 0 = Open a new window for links 0 = no  1 = yes
+
+// ********** End User Defining Area **********
+
+moz=document.getElementById&&!document.all
+
+step=1
+timer=""
+speed=16
+nextPic=0
+initPos=new Array()
+nowDivPos=new Array()
+
+function initHIS3(){
+
+for(var i=0;i<imgPlaces+1;i++){ // create image holders
+newImg=document.createElement("IMG")
+newImg.setAttribute("id","pic_"+i)
+newImg.setAttribute("src","")
+newImg.style.position="absolute"
+newImg.style.width=imgWidth+"px"
+newImg.style.height=imgHeight+"px"
+newImg.style.border=0
+newImg.alt=""
+newImg.i=i
+newImg.onclick=function(){his3Win(data[this.i][2])}
+document.getElementById("display_area").appendChild(newImg)
+}
+
+containerEL=document.getElementById("his3container")
+displayArea=document.getElementById("display_area")
+pic0=document.getElementById("pic_0")
+
+containerBorder=(document.compatMode=="CSS1Compat"?0:parseInt(containerEL.style.borderWidth)*2)
+containerWidth=(imgPlaces*imgWidth)+((imgPlaces-1)*imgSpacer)
+containerEL.style.width=containerWidth+(!moz?containerBorder:"")+"px"
+containerEL.style.height=imgHeight+(!moz?containerBorder:"")+"px"
+
+displayArea.style.width=containerWidth+"px"
+displayArea.style.clip="rect(0,"+(containerWidth+"px")+","+(imgHeight+"px")+",0)"
+displayArea.onmouseover=function(){stopHIS3()}
+displayArea.onmouseout=function(){scrollHIS3()}
+
+imgPos= -pic0.width
+
+for(var i=0;i<imgPlaces+1;i++){
+currentImage=document.getElementById("pic_"+i)
+
+if(dir==0){imgPos+=pic0.width+imgSpacer} // if left
+
+initPos[i]=imgPos
+if(dir==0){currentImage.style.left=initPos[i]+"px"} // if left
+
+if(dir==1){ // if right
+document.getElementById("pic_"+[(imgPlaces-i)]).style.left=initPos[i]+"px"
+imgPos+=pic0.width+imgSpacer
+}
+
+if(nextPic==data.length){nextPic=0}
+
+currentImage.src=data[nextPic][0]
+currentImage.alt=data[nextPic][1]
+currentImage.i=nextPic
+currentImage.onclick=function(){his3Win(data[this.i][2])}
+nextPic++
+}
+
+scrollHIS3()
+}
+
+timer=""
+function scrollHIS3(){
+clearTimeout(timer)
+for(var i=0;i<imgPlaces+1;i++){
+currentImage=document.getElementById("pic_"+i)
+
+nowDivPos[i]=parseInt(currentImage.style.left)
+
+if(dir==0){nowDivPos[i]-=step}
+if(dir==1){nowDivPos[i]+=step}
+
+if(dir==0&&nowDivPos[i]<= -(pic0.width+imgSpacer) || dir==1&&nowDivPos[i]>containerWidth){
+
+if(dir==0){currentImage.style.left=containerWidth+imgSpacer+"px"}
+if(dir==1){currentImage.style.left= -pic0.width-(imgSpacer*2)+"px"}
+
+if(nextPic>data.length-1){nextPic=0}
+
+currentImage.src=data[nextPic][0]
+currentImage.alt=data[nextPic][1]
+currentImage.i=nextPic
+currentImage.onclick=function(){his3Win(data[this.i][2])}
+
+nextPic++
+
+}
+else{
+currentImage.style.left=nowDivPos[i]+"px"
+}
+
+}
+timer=setTimeout("scrollHIS3()",speed)
+
+}
+
+function stopHIS3(){
+clearTimeout(timer)
+}
+
+function his3Win(loc){
+if(loc==""){return}
+if(newWindow==0){
+location=loc
+}
+else{
+//window.open(loc)
+newin=window.open(loc,'win1','left=430,top=340,width=300,height=300') // use for specific size and positioned window
+newin.focus()
+}
+}
+
+// -->
+</script>
+
+</head>
+
+<body onload="initHIS3()">
+
+<table style="width: 800px" align="center">
+	<tr>
+		<td><!--webbot bot="Include" U-Include="nav.html" TAG="BODY" startspan -->
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a href="index.html"><img src="images/logo.gif" class="logo_hm"></a></td>
+    <td><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1a','','images/nav/home2.gif',1)">
+	<img src="images/nav/home1.gif" alt="HOME" name="Image1a" class="nav_top"></a></td>
+	<td><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','images/nav/about2.gif',1)">
+	<img src="images/nav/about1.gif" alt="ABOUT US" name="Image1" class="nav_top"></a></td>
+    <td><a href="team_srivastava.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/nav/team2.gif',1)">
+	<img src="images/nav/team1.gif" alt="TEAM" name="Image2" class="nav_top"></a></td>
+    <td><a href="invest.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/nav/invest2.gif',1)">
+	<img src="images/nav/invest1.gif" alt="INVESTMENT OPERATION" name="Image3" class="nav_top"></a></td>
+    <td><a href="portfolio.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/nav/port2.gif',1)">
+	<img src="images/nav/port1.gif" alt="PORTFOLIO COMPANIES" name="Image4" class="nav_top"></a></td>
+    <td><a href="news.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/nav/news2.gif',1)">
+	<img src="images/nav/news1.gif" alt="NEWS" name="Image6" class="nav_top"></a></td>
+	<td><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/nav/contact2.gif',1)">
+	<img src="images/nav/contact1.gif" alt="CONTACT US" name="Image5" class="nav_top2"></a></td>
+  </tr>
+</table>
+<!--webbot bot="Include" endspan i-checksum="23063" --></td>
+	</tr>
+	<tr>
+		<td>
+		<table>
+			<tr>
+				<td rowspan="2">
+				<img src="images/home_globe.jpg" /></td>
+				<td class="blue_dark">
+				<map name="FPMap0" id="FPMap0">
+				<area href="index.html" shape="rect" coords="64, 181, 105, 196" />
+				<area href="french/index.html" shape="rect" coords="210, 181, 255, 197" />
+				<area href="japanese/index.html" shape="rect" coords="144, 179, 185, 196" />
+				</map>
+				<img src="images/home_boxtop.gif" usemap="#FPMap0" /></td>
+			</tr>
+			<tr>
+				<td class="blue_med">
+				<table style="width: 100%">
+					<tr>
+						<td><img src="images/spacer.gif" width="1" height="212" /></td>
+						<td style="width: 320px">
+						<img src="images/home_news.gif" class="news_home" />
+						
+<marquee scrollamount="1" scrolldelay="1" direction="up" width="310" height="140" onmouseover="this.stop();" onmouseout="this.start();">
+<p class="news_home_article"><a target="_blank" href="http://www.bsearchtech.com/news/press/20130404.html">Business Search Technology released "Probo Data Feed" that helps increasing revenue and reduce data management cost by leveraging Big Data</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.vantrix.com/pdfs/NXT_Vantrix_27March2013_Final.pdf">Vantrix Obtains $4.5 Million in Venture Financing from NXT Capital Venture Finance</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.eejournal.com/archives/articles/20120222-fishfry">The New Chip in Town – Achronix Shakes Up The FPGA Scene (EE Journal)</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.achronix.com/wp-content/uploads/pr/2013_Feb_HD1000_Shipping.pdf">Achronix Now Shipping 22nm Speedster22i FPGAs to Customers</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.vantrix.com/pdfs/Vantrix%20Completes%20US$13.5%20Million%20Funding%20Round%20for%20Global%20Growth.pdf">Vantrix completes US$13.5 million funding round for global growth</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.vantrix.com/pdfs/Vantrix%20Announces%20New%20CEO%20Jim%20Knapik.pdf">Vantrix announces new CEO Jim Knapik</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.bsearchtech.com/news/press/20120703.html">Business Search Technology release "Photo-miru", a new social photo-album site for cerebrities</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.csaj.jp/release/">InventIt’s "MobiConnect" received "9th CSAJ Alliance Award" from Computer Software Association of Japan</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.vantrix.com/pdfs/Vantrix%20Recognized%20with%202012%20Mobile%20Merit%20Award.pdf">Vantrix Recognized with 2012 Mobile Merit Award</a></p>
+<p class="news_home_article"><a target="_blank" href="http://www.bsearchtech.com/news/press/20120420.html">Business Search Technology opened "Matomiru", a new website to search celebrities’ blog and tweet</a></p></marquee>
+					  </td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr><td>
+	<div class="ticker_div">
+		<p class="hm_logos">
+		<DIV id="his3container" style="position:relative; width:0px;height:0px; border:0px;overflow:hidden">
+		<div id="display_area" style="position:absolute; left:0; top:0; width:0px; height:0px; clip:rect(0,0,0,0)"></div>
+		</DIV>
+		</p>
+	</div>
+
+	</td></tr>
+	</table>
+
+
+
+
+
+</body>
+
+</html>

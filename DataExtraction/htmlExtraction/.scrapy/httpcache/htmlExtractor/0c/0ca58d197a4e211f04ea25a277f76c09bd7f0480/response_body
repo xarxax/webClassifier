@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Pinnacle Foods Inc.</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/css/mediaq.css">
+	<link rel="stylesheet" type="text/css" media="print" href="http://pinnaclefoodscorp.com/css/print.css">
+	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/js/modal/jquery.modal.css">
+	<!--[if gte IE 9]>
+    	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/css/ie9.css">		
+    <![endif]-->
+    <!--[if IE 8]>
+    	<link rel="stylesheet" type="text/css" href="http://pinnaclefoodscorp.com/css/ie8.css">		
+    <![endif]-->
+
+		
+	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+	<link rel="dns-prefetch" href="//use.typekit.net">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://pinnaclefoodscorp.com/js/common.js"></script>
+	<script src="http://pinnaclefoodscorp.com/js/plugins.js"></script>
+	<script src="http://pinnaclefoodscorp.com/js/modal/jquery.modal.js"></script>
+	
+	
+	<script src="http://pinnaclefoodscorp.com/js/backstage/underscore.js"></script>
+
+	<script src="https://use.typekit.net/qkx5upl.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<script type="text/javascript" src="http://pinnaclefoodscorp.com/js/noty/jquery.noty.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/noty/layouts/top.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/noty/layouts/center.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/noty/themes/default.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/tw_html5_upload.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/jquery.form.js"></script>
+    <script type="text/javascript" src="http://pinnaclefoodscorp.com/js/jquery.cookie.js"></script>
+
+    <script src="http://pinnaclefoodscorp.com/lib/tiny_mce/jquery.tinymce.js"></script>
+
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38785287-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+    
+
+	<script>
+
+		var base = '';
+        try {
+            base = 'http://pinnaclefoodscorp.com/';
+        } catch (e) {
+            base = '';
+        }
+        $(document).data( 'base_url', base );
+
+		var alert_status = true;
+		var alert_delay = 1600;
+
+		function hide_alert() {
+			$('div#site-alert ul').fadeOut(800);
+			setTimeout(function() {
+				$('#site-alert').slideUp();
+				if ($(window).width() < 940) {
+					$('nav.header-nav-bar').animate({ top: ($('.header-nav-bar').height() - $('#compact-nav').height()) * -1 +1 });
+				}
+				else {
+					$('.main-content').animate({ marginTop: 77 });
+				}
+				alert_status = false;
+				alert_delay = 0;
+			}, 800);
+
+		}
+		
+		$(function() {
+
+				
+
+
+			$('#hide-alert').click(function() {
+				hide_alert();
+			});
+
+			
+				// display random background on page load
+				var randomnumber = Math.floor(Math.random()*3+1)
+				var background_img = $(document).data('base_url') + 'css/images/bg-homepage-' + randomnumber + '.jpg';
+				$('img.bg-homepage').attr('src', background_img);
+
+
+			
+		});
+		
+
+		
+	</script>
+
+
+	        
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+         $.noty.consumeAlert({layout: 'center', type: 'success', timeout: 1000 });
+
+             });
+
+
+    </script>
+    </head>
+
+<body class="">
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=162368733865796";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div id="background"><img class="bg-homepage" src="http://pinnaclefoodscorp.com/css/images/bg-homepage-1.jpg" alt=""></div>
+	
+	<div id="print-header" style="height: 160px; overflow:hidden;">
+		<img src="http://pinnaclefoodscorp.com/assets/Pinnacle-Foods-Logo.jpg" alt="">
+	</div>
+
+	<header class="main">
+
+		
+		<div class="header-top-bar">
+			<div class="content">
+
+				<a href="http://pinnaclefoodscorp.com/"><h1 id="pinnacle-logo"></h1></a>
+
+				<div class="search-box f-right">
+					<form method="GET" action="http://pinnaclefoodscorp.com/search">
+						<input id="query" name="query" class="search fg-normal clean_me" type="text" onFocus="clean_input(this);" onBlur="unclean_input(this);" data-defaultvalue="SEARCH OUR SITE" value="SEARCH OUR SITE">
+						<input class="search-submit" type="image" src="http://pinnaclefoodscorp.com/css/images/icon-search-submit.gif" alt="Submit">
+					</form>
+				</div>
+
+				<ul class="horizontal gray-bullet fg-normal top-nav">
+					<!--<li><a href="http://pinnaclefoodscorp.com/recipes">Recipes</a></li>-->
+					<li><a href="http://pinnaclefoodscorp.com/products">Product Locator</a></li>
+				</ul>
+
+				<!--<ul class="horizontal social">
+					<li><a target="_blank" href="https://twitter.com/pinnaclefoods"><img src="http://pinnaclefoodscorp.com/css/images/logo-twitter.png" alt="Twitter"></a></li>
+					<li><a target="_blank" href="http://www.linkedin.com/company/917489?goback=%2Efcs_GLHD_pinnacle+foods_false_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&trk=ncsrch_hits"><img src="http://pinnaclefoodscorp.com/css/images/logo-linked-in.png" alt="Linked In"></a></li>
+				</ul>-->
+			</div>
+		</div>
+		<nav class="header-nav-bar">
+			<div class="content">
+				<ul class="horizontal main-nav">
+					<!--<li id="about"  ><a href="http://pinnaclefoodscorp.com/who-we-are">Who We Are</a></li>
+						<ul class="compact-sub-nav">
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-purpose">Our Purpose</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-history">Our History</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-leadership">Our Leadership</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#awards">Awards &amp; Accolades</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/responsibility">Responsibility</a></li>
+						</ul>				
+					<li id="brands"  ><a href="http://pinnaclefoodscorp.com/brands">Our Brands</a></li>-->
+					<li id="investors"  ><a href="http://investors.pinnaclefoods.com">Investor Center</a></li>
+						<ul class="compact-sub-nav">
+							<li><a href="http://investors.pinnaclefoods.com/investor-center/stock-information/stock-quote/">Stock Information</a></li>
+							<!--<li><a href="http://investors.pinnaclefoods.com/investor-center/financials/default.aspx">Financial Information</a></li>
+							<li><a href="http://investors.pinnaclefoods.com/investor-center/news-and-events/news-releases/default.aspx">News &amp; Events</a></li>
+							<li><a href="http://investors.pinnaclefoods.com/investor-center/corporate-governance/governance-documents/default.aspx">Corporate Governance</a></li>
+							<li><a href="http://investors.pinnaclefoods.com/investor-center/shareholder-information/information-request/default.aspx">Shareholder Information</a></li>-->
+													</ul>	
+
+					<!--<li id="media"  ><a href="http://pinnaclefoodscorp.com/media">Media</a></li>
+						<ul class="compact-sub-nav">
+							<li><a href="http://pinnaclefoodscorp.com/media/media-assets">Media Assets</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/media/press-releases">Press Releases</a></li>
+						</ul>-->	
+					<li id="careers-link"  ><a href="http://pinnaclefoodscorp.com/working-here">Careers</a></li>
+						<ul class="compact-sub-nav">
+							<li><a href="http://pinnaclefoodscorp.com/working-here#why-pinnacle">Why Pinnacle</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/working-here#work-here">Working Here</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/working-here#our-environment">Our Locations</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/working-here#careers">Career Opportunities</a></li>
+						</ul>	
+					<li id="contact"  ><a href="http://pinnaclefoodscorp.com/company/contact-us">Contact Us</a></li>
+				</ul>
+
+				<div id="compact-search">
+					<form method="GET" action="http://pinnaclefoodscorp.com/search">
+						<input id="query" name="query" class="search fg-normal clean_me" type="text" onFocus="clean_input(this);" onBlur="unclean_input(this);" data-defaultvalue="SEARCH OUR SITE" value="SEARCH OUR SITE">
+						<input class="search-submit" type="image" src="http://pinnaclefoodscorp.com/css/images/icon-search-submit.png" alt="Submit">
+					</form>
+				</div>
+
+				<div id="compact-nav">
+					<table>
+						<tr>
+							<td><img id="pulldown" src="http://pinnaclefoodscorp.com/css/images/nav-pulldown.png" alt=""></td>
+							<td><a href="http://pinnaclefoodscorp.com/"><img src="http://pinnaclefoodscorp.com/css/images/nav-logo-resp.png" alt=""></a></td>
+							<td><img id="search-glass" src="http://pinnaclefoodscorp.com/css/images/nav-search-glass.png" alt=""></td>
+						</tr>
+					</table>
+				</div>
+
+				<!--<div id="nav-about" class="nav-rollover">
+					<ul class="nav-submenu">
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-purpose">Our Purpose</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-history">Our History</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-leadership">Our Leadership</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/who-we-are#awards">Awards &amp; Accolades</a></li>
+							<li><a href="http://pinnaclefoodscorp.com/responsibility">Responsibility</a></li>
+					</ul>
+				</div>
+				<div id="nav-brands" class="nav-rollover">
+					<ul class="horizontal">
+																					<li><a href="http://pinnaclefoodscorp.com/brands/duncan-hines"><img src="http://pinnaclefoodscorp.com/images/brands/9650353df3cc3e008a056071fc582c3d.png" alt="Duncan Hines<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/vlasic"><img src="http://pinnaclefoodscorp.com/images/brands/2c2de7ebc255ec3bbd9bb613b2b8b562.png" alt="Vlasic<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/mrs-butterworths"><img src="http://pinnaclefoodscorp.com/images/brands/5449c3cbcd678f5d726240c57890e0bd.png" alt="Mrs. Butterworth's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye"><img src="http://pinnaclefoodscorp.com/images/brands/dbdd42ac19dae8e9e9b73f3be51f5892.jpg" alt="Birds Eye<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye-voila"><img src="http://pinnaclefoodscorp.com/images/brands/78d2399e35f52d9aca9221c0686cd320.png" alt="Birds Eye<sup>®</sup> Voila!<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/gardein"><img src="http://pinnaclefoodscorp.com/images/brands/fef4ca2c04a9ba064ec3bf06a44f926e.jpg" alt="gardein<sup>™</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/van-de-kamps"><img src="http://pinnaclefoodscorp.com/images/brands/c91fce95b80f1e5c85efc333db9a71ee.png" alt="Van de Kamp's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/log-cabin"><img src="http://pinnaclefoodscorp.com/images/brands/9ae79ea4ed11ca5e6720749e1522365a.png" alt="Log Cabin<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/wish-bone"><img src="http://pinnaclefoodscorp.com/images/brands/f4e5489088f4e799f53de7050a1bded9.png" alt="Wish-Bone<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/nalley"><img src="http://pinnaclefoodscorp.com/images/brands/b5c9a41b9ca3775c4784eaa7611499f0.png" alt="Nalley<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/lenders"><img src="http://pinnaclefoodscorp.com/images/brands/aa9af1846d6b6d982b14467d4373d11d.png" alt="Lender's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/celeste"><img src="http://pinnaclefoodscorp.com/images/brands/a3382f830253300f5d259274cf4e00da.png" alt="Celeste<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/mrs-pauls"><img src="http://pinnaclefoodscorp.com/images/brands/db8b660d7a232010204a37758d865d19.png" alt="Mrs. Paul's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/open-pit"><img src="http://pinnaclefoodscorp.com/images/brands/7c16e7a556a69e023ddb1804b9e3c992.png" alt="Open Pit<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/armour"><img src="http://pinnaclefoodscorp.com/images/brands/65d086bb2434b38d568042b2a28d40ac.png" alt="Armour<sup>®</sup>&reg;"></a></li>
+																																									<li><a href="http://pinnaclefoodscorp.com/brands/c-w"><img src="http://pinnaclefoodscorp.com/images/brands/e44c1cc59bb15953c900ab4f2a9b6296.png" alt="Birds Eye<sup>®</sup> C&W<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/hungry-man"><img src="http://pinnaclefoodscorp.com/images/brands/679c37b5b3e070dde1e01fc2391772ad.png" alt="Hungry-Man<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/aunt-jemima"><img src="http://pinnaclefoodscorp.com/images/brands/e7087df27ae26828458ec574d70dcd77.png" alt="Aunt Jemima<sup>®</sup> Frozen Breakfast&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/comstock"><img src="http://pinnaclefoodscorp.com/images/brands/f196b91c5aff2e642f66a9141aa74e6d.png" alt="Duncan Hines<sup>®</sup> Comstock<sup>®</sup> and Wilderness<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/husmans"><img src="http://pinnaclefoodscorp.com/images/brands/d7468c6ed81a92d0f9e0ddaa5a412b4d.png" alt="Husman's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/snyder-of-berlin"><img src="http://pinnaclefoodscorp.com/images/brands/d7319ecf30a88c40dd56a1cea456da77.png" alt="Snyder<sup>®</sup> of Berlin&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/tims-cascade-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/56e3673880edf230eaa70016513258cb.PNG" alt="Tim's<sup>®</sup> Cascade Snacks&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/erins"><img src="http://pinnaclefoodscorp.com/images/brands/1c4ddb6bb8fb06f57535cbfbe4b13f7f.PNG" alt="Erin's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/hawaiian-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/8d8a15f31ac91c83a6bed1886c63373c.png" alt="Hawaiian Kettle Style Potato Chips<sup>®</sup>&reg;"></a></li>
+																																									<li><a href="http://pinnaclefoodscorp.com/brands/bernsteins"><img src="http://pinnaclefoodscorp.com/images/brands/1e42f36817723227f3081297e5851b73.png" alt="Bernstein's<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/smart-balance"><img src="http://pinnaclefoodscorp.com/images/brands/049efdb3e36d318701f89dd910c05aa5.jpg" alt="Smart Balance<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/earth-balance"><img src="http://pinnaclefoodscorp.com/images/brands/ec3a757c535cc22a34549d39e2b6184a.jpg" alt="Earth Balance<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/udis"><img src="http://pinnaclefoodscorp.com/images/brands/4cbf76dc3c2532cd447c06ff6fa0d518.jpg" alt="Udi’s<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/glutino"><img src="http://pinnaclefoodscorp.com/images/brands/efe9bb0ec7d8a8404ba59e37e626cd2c.jpg" alt="Glutino<sup>®</sup>&reg;"></a></li>
+																												<li><a href="http://pinnaclefoodscorp.com/brands/evol"><img src="http://pinnaclefoodscorp.com/images/brands/cdd043b1a0c0c25c1993c956c17bbb7c.jpg" alt="EVOL<sup>®</sup>&reg;"></a></li>
+																		</ul>
+				</div>-->
+				<div id="nav-investors" class="nav-rollover">
+					<ul class="nav-submenu">
+						<li><a href="http://investors.pinnaclefoods.com/investor-center/stock-information/stock-quote/">Stock Information</a></li>
+						<!--<li><a href="http://investors.pinnaclefoods.com/investor-center/financials/default.aspx">Public Filings</a></li>
+						<li><a href="http://investors.pinnaclefoods.com/investor-center/news-and-events/news-releases/default.aspx">News &amp; Events</a></li>
+						<li><a href="http://investors.pinnaclefoods.com/investor-center/corporate-governance/governance-documents/default.aspx">Corporate Governance</a></li>
+						<li><a href="http://investors.pinnaclefoods.com/investor-center/shareholder-information/information-request/default.aspx">Shareholder Information</a></li>-->
+					</ul>
+				</div>
+				<!--<div id="nav-media" class="nav-rollover">
+					<ul class="nav-submenu">
+						<li><a href="http://pinnaclefoodscorp.com/media/media-assets">Media Assets</a></li>
+						<li><a href="http://pinnaclefoodscorp.com/media/press-releases">Press Releases</a></li>
+					</ul>
+				</div>-->
+				<div id="nav-careers-link" class="nav-rollover">
+					<ul class="nav-submenu">
+						<li><a href="http://pinnaclefoodscorp.com/working-here#why-pinnacle">Why Pinnacle</a></li>
+						<li><a href="http://pinnaclefoodscorp.com/working-here#work-here">Working Here</a></li>
+						<li><a href="http://pinnaclefoodscorp.com/working-here#our-environment">Our Locations</a></li>
+						<li><a href="http://pinnaclefoodscorp.com/working-here#careers">Career Opportunities</a></li>
+					</ul>
+				</div>
+				<div id="nav-contact" class="nav-rollover"></div>
+			</div>
+		</nav>
+
+	</header>
+
+	<section class="main-content content">
+
+		<script>
+			$(function() {
+				$('#our-purpose p.link a').attr('target','_blank');
+			});
+			</script>
+			
+		<style>
+			article.box2 {
+				width: 95%;
+				background: white;
+				border-radius: 4px;
+				margin: 15px auto;
+				box-shadow: 1px 1px 6px 1px #999;
+				padding: 2px 8px 2px 2px;
+			}
+			
+			.inner-border2 {
+				border: solid 1px #dadada;
+				border-radius: 4px;
+				width: 100%;
+				height: inherit;
+				min-height:inherit;
+				padding: 2px;
+				word-wrap: break-word;
+				overflow: hidden;
+			}
+			
+			article.box2 h1 {
+				font-family: "franklin-gothic-urw",sans-serif;
+				margin: 10px;
+				padding: 0;
+				color: #002d6b;
+				font-weight: 300;
+				font-size: 24px;
+				margin-bottom:-50px;
+			}
+			
+			article.box2 img.main {
+				width: 99%;
+				min-height: 50px;
+				margin-left:10px;
+			}
+
+			article#our-holiday {
+				width: 540px;
+				margin-left: 20px;
+				min-height: 70px;
+				float: left;
+			}
+		
+			article#our-holiday img.main {
+				width: 27%;
+				max-height: 80px;
+				float: left;
+			}
+		
+			article#our-holiday p {
+				width: 53%;
+				float: left;
+				padding-left: 10px;
+			}
+		
+			article#our-holiday h1 {
+				width: 60%;
+				float: left;
+				padding-left: 10px;
+			}
+			
+			article#our-holiday p.linkHol {
+				color: #002d6b;
+				text-align: right;
+				font-size: 11px;
+				line-height: 20px;
+				vertical-align:bottom;
+				padding-top:40px;
+			}
+			
+			article#our-holiday p.linkHol a {
+				color: #002d6b;
+				text-decoration: none;
+				cursor: pointer;
+				font-size: 11px;
+			}
+			
+			article#our-holiday p.linkHol a img.arrow {
+				position: relative;
+				top: 5px;
+				margin-left: 5px;
+			}
+		</style>
+
+		<!--<article id="our-company" class="box">
+			<div class="inner-border">
+				<img class="main editable_image" data-id="1" src="http://pinnaclefoodscorp.com/images/uploads/4a55534ea257648c8b41a84692381b36.png" alt="" />
+				<h1 class="editable_text" data-id="2">Latest News</h1>
+				<div class="editable_textarea" data-id="3"><p>Pinnacle Foods Declares Quarterly Dividend</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>				
+
+				<p class="link"><a data-id="4" class="editable_link" href="http://investors.pinnaclefoods.com/investor-center/news-and-events/news-releases/news-releases-details/2018/Pinnacle-Foods-Inc-Declares-Quarterly-Dividend-6ec2d0541/default.aspx ">Read more <img class="arrow" src="http://pinnaclefoodscorp.com/css/images/icon-blue-arrow.jpg" alt=""></a></p>
+			</div>
+		</article>-->
+
+
+		<article id="our-brands" class="box" style="position:relative;top:28px;left:100px;">
+			<div class="inner-border">
+				<img class="main editable_image" style="display:block;" data-id="5" src="http://pinnaclefoodscorp.com/images/uploads/53d1f3ea68c1d98d83d4d3382e65968b.jpg" alt="" />
+				<h1 class="editable_text" data-id="6">Conagra Brands Completes Acquisition of Pinnacle Foods</h1>
+				<div class="editable_textarea" data-id="7"><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p></div>
+				<p class="link" style="float:right;"><a data-id="8" class="editable_link" href="http://www.conagrabrands.com/news-room/news-conagra-brands-completes-acquisition-of-pinnacle-foods-prn-122653">Read more <img class="arrow" src="http://pinnaclefoodscorp.com/css/images/icon-blue-arrow.jpg" alt=""></a></p>
+			</div>
+		</article>
+		
+		<article id="our-brands" class="box" style="position:relative;top:50px;left:100px;">
+			<div class="inner-border">
+				<!---<img class="main editable_image" data-id="13" src="http://pinnaclefoodscorp.com/images/uploads/567b03ce99c789078a62ccfdf413a5bc.png" alt="" />-->
+				<div class="editable_text" data-id="9" style="font-size:18px;padding:10px;">Conagra Brands completed the acquisition of Pinnacle Foods. For more information and analyst/investor and media inquiries, visit <a href=http://www.conagrabrands.com/ style=color:#20387E;text-decoration:underline;>ConagraBrands.com</a>. For career opportunities, visit both the <a href=http://careers.conagrabrands.com/ style=color:#20387E;text-decoration:underline;>Conagra Brands careers page</a> and <a href=http://pinnaclefoods.com/working-here style=color:#20387E;text-decoration:underline;>Pinnacle Foods careers page</a>.</div>
+				<!--<div class="editable_textarea" data-id="10"><p></div>-->
+				<!--
+				<p class="link" style="float:right;"><a data-id="12" class="editable_link" href="media/detail/pinnacle-foods-vaynermedia-announce-game-changing-partnership-to-drive-brand-growth">Read more <img class="arrow" src="http://pinnaclefoodscorp.com/css/images/icon-blue-arrow.jpg" alt=""></a></p>
+				-->
+			</div>
+		</article>
+
+		<!--<article id="our-purpose" class="box" style="position:relative;top:50px;left:100px;">
+			<div class="inner-border">
+				<img class="main editable_image" data-id="13" src="http://pinnaclefoodscorp.com/images/uploads/567b03ce99c789078a62ccfdf413a5bc.png" alt="" />
+				<h1 class="editable_text" data-id="9">Conagra Brands completed the acquisition of Pinnacle Foods. For more information and analyst/investor and media inquiries, visit <a href=http://www.conagrabrands.com/ style=color:#20387E;text-decoration:underline;>ConagraBrands.com</a>. For career opportunities, visit both the <a href=http://careers.conagrabrands.com/ style=color:#20387E;text-decoration:underline;>Conagra Brands careers page</a> and <a href=http://pinnaclefoods.com/working-here style=color:#20387E;text-decoration:underline;>Pinnacle Foods careers page</a>.</h1>
+				<div class="editable_textarea" data-id="10"><p></div>
+
+				<p class="link" style="float:right;"><a data-id="12" class="editable_link" href="media/detail/pinnacle-foods-vaynermedia-announce-game-changing-partnership-to-drive-brand-growth">Read more <img class="arrow" src="http://pinnaclefoodscorp.com/css/images/icon-blue-arrow.jpg" alt=""></a></p>
+
+			</div>
+		</article>-->
+		
+		<!--need to move everything up 40 pixels-->
+
+		<!--<article id="our-holiday" class="box2" style="position:relative;top:-85px;left:310px;">
+			<div class="inner-border2">
+				<img class="main" src="http://pinnaclefoodscorp.com/images/family.gif" alt="" />
+				<h1>Sharing Healthy Holiday Tips</h1>
+				<p class="linkHol"><a href="http://pinnaclefoodscorp.com/responsibility/healthyHolidayTips.html">Read More <img class="arrow" src="http://pinnaclefoodscorp.com/css/images/icon-blue-arrow.jpg" alt=""></a></p>
+			</div>
+		</article>-->
+
+	</section> <script src="http://pinnaclefoodscorp.com/js/vendor/jquery.ui.widget.js"></script>
+<script src="http://pinnaclefoodscorp.com/js/jquery.iframe-transport.js"></script>
+<script src="http://pinnaclefoodscorp.com/js/jquery.fileupload.js"></script>
+            
+	<footer class="main clearfix">
+
+		<div class="content">
+
+			<img id="footer-top" src="http://pinnaclefoodscorp.com/css/images/border-footer-top.jpg" alt="">
+
+			<div id="brand-carousel-wrap" class="clearfix">
+
+				<img class="prev" src="http://pinnaclefoodscorp.com/css/images/icon-left-arrow.jpg" alt="">
+
+				<div class="brand-carousel clearfix">
+
+					<ul class="horizontal">
+													<li><a href="http://pinnaclefoodscorp.com/brands/duncan-hines"><img src="http://pinnaclefoodscorp.com/images/brands/9650353df3cc3e008a056071fc582c3d.png" alt="Duncan Hines<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/vlasic"><img src="http://pinnaclefoodscorp.com/images/brands/2c2de7ebc255ec3bbd9bb613b2b8b562.png" alt="Vlasic<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/mrs-butterworths"><img src="http://pinnaclefoodscorp.com/images/brands/5449c3cbcd678f5d726240c57890e0bd.png" alt="Mrs. Butterworth's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye"><img src="http://pinnaclefoodscorp.com/images/brands/dbdd42ac19dae8e9e9b73f3be51f5892.jpg" alt="Birds Eye<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye-voila"><img src="http://pinnaclefoodscorp.com/images/brands/78d2399e35f52d9aca9221c0686cd320.png" alt="Birds Eye<sup>®</sup> Voila!<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/gardein"><img src="http://pinnaclefoodscorp.com/images/brands/fef4ca2c04a9ba064ec3bf06a44f926e.jpg" alt="gardein<sup>™</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/van-de-kamps"><img src="http://pinnaclefoodscorp.com/images/brands/c91fce95b80f1e5c85efc333db9a71ee.png" alt="Van de Kamp's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/log-cabin"><img src="http://pinnaclefoodscorp.com/images/brands/9ae79ea4ed11ca5e6720749e1522365a.png" alt="Log Cabin<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/wish-bone"><img src="http://pinnaclefoodscorp.com/images/brands/f4e5489088f4e799f53de7050a1bded9.png" alt="Wish-Bone<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/nalley"><img src="http://pinnaclefoodscorp.com/images/brands/b5c9a41b9ca3775c4784eaa7611499f0.png" alt="Nalley<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/lenders"><img src="http://pinnaclefoodscorp.com/images/brands/aa9af1846d6b6d982b14467d4373d11d.png" alt="Lender's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/celeste"><img src="http://pinnaclefoodscorp.com/images/brands/a3382f830253300f5d259274cf4e00da.png" alt="Celeste<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/mrs-pauls"><img src="http://pinnaclefoodscorp.com/images/brands/db8b660d7a232010204a37758d865d19.png" alt="Mrs. Paul's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/open-pit"><img src="http://pinnaclefoodscorp.com/images/brands/7c16e7a556a69e023ddb1804b9e3c992.png" alt="Open Pit<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/armour"><img src="http://pinnaclefoodscorp.com/images/brands/65d086bb2434b38d568042b2a28d40ac.png" alt="Armour<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/brooks-beans"><img src="http://pinnaclefoodscorp.com/images/brands/cc9b57efff92871416064dd569923dbe.png" alt="Brooks<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/c-w"><img src="http://pinnaclefoodscorp.com/images/brands/e44c1cc59bb15953c900ab4f2a9b6296.png" alt="Birds Eye<sup>®</sup> C&W<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/hungry-man"><img src="http://pinnaclefoodscorp.com/images/brands/679c37b5b3e070dde1e01fc2391772ad.png" alt="Hungry-Man<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/aunt-jemima"><img src="http://pinnaclefoodscorp.com/images/brands/e7087df27ae26828458ec574d70dcd77.png" alt="Aunt Jemima<sup>®</sup> Frozen Breakfast&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/comstock"><img src="http://pinnaclefoodscorp.com/images/brands/f196b91c5aff2e642f66a9141aa74e6d.png" alt="Duncan Hines<sup>®</sup> Comstock<sup>®</sup> and Wilderness<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/husmans"><img src="http://pinnaclefoodscorp.com/images/brands/d7468c6ed81a92d0f9e0ddaa5a412b4d.png" alt="Husman's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/snyder-of-berlin"><img src="http://pinnaclefoodscorp.com/images/brands/d7319ecf30a88c40dd56a1cea456da77.png" alt="Snyder<sup>®</sup> of Berlin&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/tims-cascade-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/56e3673880edf230eaa70016513258cb.PNG" alt="Tim's<sup>®</sup> Cascade Snacks&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/erins"><img src="http://pinnaclefoodscorp.com/images/brands/1c4ddb6bb8fb06f57535cbfbe4b13f7f.PNG" alt="Erin's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/hawaiian-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/8d8a15f31ac91c83a6bed1886c63373c.png" alt="Hawaiian Kettle Style Potato Chips<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/el-restaurante"><img src="http://pinnaclefoodscorp.com/images/brands/754f7cf906dbead2018cb27da781538d.png" alt="El Restaurante<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/bernsteins"><img src="http://pinnaclefoodscorp.com/images/brands/1e42f36817723227f3081297e5851b73.png" alt="Bernstein's<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/smart-balance"><img src="http://pinnaclefoodscorp.com/images/brands/049efdb3e36d318701f89dd910c05aa5.jpg" alt="Smart Balance<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/earth-balance"><img src="http://pinnaclefoodscorp.com/images/brands/ec3a757c535cc22a34549d39e2b6184a.jpg" alt="Earth Balance<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/udis"><img src="http://pinnaclefoodscorp.com/images/brands/4cbf76dc3c2532cd447c06ff6fa0d518.jpg" alt="Udi’s<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/glutino"><img src="http://pinnaclefoodscorp.com/images/brands/efe9bb0ec7d8a8404ba59e37e626cd2c.jpg" alt="Glutino<sup>®</sup>&reg;"></a></li>
+													<li><a href="http://pinnaclefoodscorp.com/brands/evol"><img src="http://pinnaclefoodscorp.com/images/brands/cdd043b1a0c0c25c1993c956c17bbb7c.jpg" alt="EVOL<sup>®</sup>&reg;"></a></li>
+											</ul>
+					
+				</div>
+
+				<img class="next" src="http://pinnaclefoodscorp.com/css/images/icon-right-arrow.jpg" alt="">
+			</div>
+
+			<div class="footer-bar">
+				<p>Copyright &copy; 2019 Pinnacle Foods Inc. All Rights Reserved.</p>
+			</div>
+
+			<!--<ul class="gray-bullet"><a class="no-dec" href="http://pinnaclefoodscorp.com/who-we-are">WHO WE ARE</a>
+				<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-purpose">Our Purpose</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-history">Our History</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/who-we-are#our-leadership">Our Leadership</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/who-we-are#awards">Awards &amp; Accolades</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/who-we-are#citizenship">Citizenship</a></li>
+			</ul>
+
+			<ul class="gray-bullet"><a class="no-dec" href="http://pinnaclefoodscorp.com/brands">OUR BRANDS</a>
+				<li><a href="http://pinnaclefoodscorp.com/recipes">Recipes</a></li>
+			</ul> id="footer-investors"-->
+
+			<ul class="gray-bullet"><a class="no-dec" href="http://investors.pinnaclefoods.com">INVESTOR CENTER</a>
+				<li><a href="http://investors.pinnaclefoods.com/phoenix.zhtml?c=223400&p=irol-stockquote">Stock Information</a></li>
+				<!--<li><a href="http://investors.pinnaclefoods.com/phoenix.zhtml?c=223400&p=irol-sec">Financial Information</a></li>
+				<li><a href="http://investors.pinnaclefoods.com/phoenix.zhtml?c=223400&p=irol-news&nyo=0">News &amp; Events</a></li>
+				<li><a href="http://investors.pinnaclefoods.com/phoenix.zhtml?c=223400&p=irol-govhighlights">Corporate Governance</a></li>
+				<li><a href="http://investors.pinnaclefoods.com/phoenix.zhtml?c=223400&p=irol-faq">Shareholder Information</a></li>-->
+			</ul>
+
+			<!--
+			<ul class="gray-bullet"><a class="no-dec" href="http://pinnaclefoodscorp.com/media">MEDIA</a>
+				<!--<li><a href="http://pinnaclefoodscorp.com/who-we-are#awards">Awards &amp; Accolades</a></li>-->
+				<!--<li><a href="http://pinnaclefoodscorp.com/media/media-assets">Media Assets</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/media/press-releases">Press Releases</a></li>
+			</ul>
+			-->
+					
+							
+			<ul class="gray-bullet"><a class="no-dec" href="http://pinnaclefoodscorp.com/working-here/">CAREERS</a>
+				<li><a href="http://pinnaclefoodscorp.com/working-here#why-pinnacle">Why Pinnacle</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/working-here#work-here">Working Here</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/working-here#our-environment">Our Locations</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/working-here#careers">Career Opportunities</a></li>
+				
+				
+			</ul>
+
+			<ul class="horizontal footer-links">
+				<!--<li><a href="http://pinnaclefoodscorp.com/company/privacy">Privacy</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/company/terms-of-use">Terms of Use</a></li>-->
+				<li><a href="http://www.conagrabrands.com/privacy-policy">Privacy</a></li>
+				<li><a href="http://www.conagrabrands.com/legal-policy ">Terms of Use</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/company/contact-us">Contact Us</a></li>
+				<li class="last"><a href="https://www.mypantry.pinnaclefoods.com/" target="_blank">mypantry</a></li>
+			</ul>
+
+		</div>
+
+	</footer>
+
+	<footer class="mobile">
+
+		<div class="clearfix" style="margin: 0 auto; position: relative;">
+
+			<img class="prev-mob" src="http://pinnaclefoodscorp.com/css/images/icon-left-arrow.jpg" alt="">
+
+			<div class="brand-carousel-mobile clearfix">
+
+				<ul class="horizontal">
+
+					
+											<li><a href="http://pinnaclefoodscorp.com/brands/duncan-hines"><img src="http://pinnaclefoodscorp.com/images/brands/9650353df3cc3e008a056071fc582c3d.png" alt="Duncan Hines<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/vlasic"><img src="http://pinnaclefoodscorp.com/images/brands/2c2de7ebc255ec3bbd9bb613b2b8b562.png" alt="Vlasic<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/mrs-butterworths"><img src="http://pinnaclefoodscorp.com/images/brands/5449c3cbcd678f5d726240c57890e0bd.png" alt="Mrs. Butterworth's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye"><img src="http://pinnaclefoodscorp.com/images/brands/dbdd42ac19dae8e9e9b73f3be51f5892.jpg" alt="Birds Eye<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/birds-eye-voila"><img src="http://pinnaclefoodscorp.com/images/brands/78d2399e35f52d9aca9221c0686cd320.png" alt="Birds Eye<sup>®</sup> Voila!<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/gardein"><img src="http://pinnaclefoodscorp.com/images/brands/fef4ca2c04a9ba064ec3bf06a44f926e.jpg" alt="gardein<sup>™</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/van-de-kamps"><img src="http://pinnaclefoodscorp.com/images/brands/c91fce95b80f1e5c85efc333db9a71ee.png" alt="Van de Kamp's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/log-cabin"><img src="http://pinnaclefoodscorp.com/images/brands/9ae79ea4ed11ca5e6720749e1522365a.png" alt="Log Cabin<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/wish-bone"><img src="http://pinnaclefoodscorp.com/images/brands/f4e5489088f4e799f53de7050a1bded9.png" alt="Wish-Bone<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/nalley"><img src="http://pinnaclefoodscorp.com/images/brands/b5c9a41b9ca3775c4784eaa7611499f0.png" alt="Nalley<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/lenders"><img src="http://pinnaclefoodscorp.com/images/brands/aa9af1846d6b6d982b14467d4373d11d.png" alt="Lender's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/celeste"><img src="http://pinnaclefoodscorp.com/images/brands/a3382f830253300f5d259274cf4e00da.png" alt="Celeste<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/mrs-pauls"><img src="http://pinnaclefoodscorp.com/images/brands/db8b660d7a232010204a37758d865d19.png" alt="Mrs. Paul's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/open-pit"><img src="http://pinnaclefoodscorp.com/images/brands/7c16e7a556a69e023ddb1804b9e3c992.png" alt="Open Pit<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/armour"><img src="http://pinnaclefoodscorp.com/images/brands/65d086bb2434b38d568042b2a28d40ac.png" alt="Armour<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/brooks-beans"><img src="http://pinnaclefoodscorp.com/images/brands/cc9b57efff92871416064dd569923dbe.png" alt="Brooks<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/c-w"><img src="http://pinnaclefoodscorp.com/images/brands/e44c1cc59bb15953c900ab4f2a9b6296.png" alt="Birds Eye<sup>®</sup> C&W<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/hungry-man"><img src="http://pinnaclefoodscorp.com/images/brands/679c37b5b3e070dde1e01fc2391772ad.png" alt="Hungry-Man<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/aunt-jemima"><img src="http://pinnaclefoodscorp.com/images/brands/e7087df27ae26828458ec574d70dcd77.png" alt="Aunt Jemima<sup>®</sup> Frozen Breakfast&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/comstock"><img src="http://pinnaclefoodscorp.com/images/brands/f196b91c5aff2e642f66a9141aa74e6d.png" alt="Duncan Hines<sup>®</sup> Comstock<sup>®</sup> and Wilderness<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/husmans"><img src="http://pinnaclefoodscorp.com/images/brands/d7468c6ed81a92d0f9e0ddaa5a412b4d.png" alt="Husman's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/snyder-of-berlin"><img src="http://pinnaclefoodscorp.com/images/brands/d7319ecf30a88c40dd56a1cea456da77.png" alt="Snyder<sup>®</sup> of Berlin&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/tims-cascade-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/56e3673880edf230eaa70016513258cb.PNG" alt="Tim's<sup>®</sup> Cascade Snacks&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/erins"><img src="http://pinnaclefoodscorp.com/images/brands/1c4ddb6bb8fb06f57535cbfbe4b13f7f.PNG" alt="Erin's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/hawaiian-snacks"><img src="http://pinnaclefoodscorp.com/images/brands/8d8a15f31ac91c83a6bed1886c63373c.png" alt="Hawaiian Kettle Style Potato Chips<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/el-restaurante"><img src="http://pinnaclefoodscorp.com/images/brands/754f7cf906dbead2018cb27da781538d.png" alt="El Restaurante<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/bernsteins"><img src="http://pinnaclefoodscorp.com/images/brands/1e42f36817723227f3081297e5851b73.png" alt="Bernstein's<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/smart-balance"><img src="http://pinnaclefoodscorp.com/images/brands/049efdb3e36d318701f89dd910c05aa5.jpg" alt="Smart Balance<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/earth-balance"><img src="http://pinnaclefoodscorp.com/images/brands/ec3a757c535cc22a34549d39e2b6184a.jpg" alt="Earth Balance<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/udis"><img src="http://pinnaclefoodscorp.com/images/brands/4cbf76dc3c2532cd447c06ff6fa0d518.jpg" alt="Udi’s<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/glutino"><img src="http://pinnaclefoodscorp.com/images/brands/efe9bb0ec7d8a8404ba59e37e626cd2c.jpg" alt="Glutino<sup>®</sup>&reg;"></a></li>
+											<li><a href="http://pinnaclefoodscorp.com/brands/evol"><img src="http://pinnaclefoodscorp.com/images/brands/cdd043b1a0c0c25c1993c956c17bbb7c.jpg" alt="EVOL<sup>®</sup>&reg;"></a></li>
+					
+				</ul>
+				
+			</div>
+
+			<img class="next-mob" src="http://pinnaclefoodscorp.com/css/images/icon-right-arrow.jpg" alt="">
+		</div>
+
+		<div class="mobile-copyright">
+			<p>Copyright &copy; 2019 Pinnacle Foods Inc. All Rights Reserved.</p>
+
+			<ul class="horizontal">
+				<!--<li><a href="http://pinnaclefoodscorp.com/company/privacy">Privacy</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/company/termsofuse">Terms of Use</a></li>>-->
+				<li><a href="http://www.conagrabrands.com/privacy-policy">Privacy</a></li>
+				<li><a href="http://www.conagrabrands.com/legal-policy ">Terms of Use</a></li>
+				<li><a href="http://pinnaclefoodscorp.com/company/contactus">Contact Us</a></li>
+				<li><a href="https://www.mypantry.pinnaclefoods.com/" target="_blank">mypantry</a></li>
+			</ul>
+		</div>
+
+	</footer>
+
+	<map id="brands-map" name="brands-map">
+		<area shape="rect" coords="34,40,111,94" alt="Duncan Hines&reg;" href="http://pinnaclefoodscorp.com/brands/duncan-hines">
+		<area shape="rect" coords="131,40,207,94" alt="Vlasic&reg;" href="http://pinnaclefoodscorp.com/brands/vlasic">
+		<area shape="rect" coords="231,40,303,94" alt="Mrs. Butterworth's&reg;" href="http://pinnaclefoodscorp.com/brands/mrs-butterworths">
+		<area shape="rect" coords="322,40,396,94" alt="Log Cabin&reg;" href="http://pinnaclefoodscorp.com/brands/log-cabin">
+		<area shape="rect" coords="407,40,485,94" alt="Birds Eye&reg;" href="http://pinnaclefoodscorp.com/brands/birds-eye">
+		<area shape="rect" coords="499,40,563,94" alt="Birds Eye&reg; Voila!" href="http://pinnaclefoodscorp.com/brands/birds-eye-voila">
+		<area shape="rect" coords="589,40,686,94" alt="Van de Kamp's&reg;" href="http://pinnaclefoodscorp.com/brands/van-de-kamps">
+
+		<area shape="rect" coords="34,106,111,151" alt="Armour&reg;" href="http://pinnaclefoodscorp.com/brands/armour">
+		<area shape="rect" coords="131,106,207,151" alt="Nalley&reg;" href="http://pinnaclefoodscorp.com/brands/nalley">
+		<area shape="rect" coords="231,106,303,151" alt="Comstock-Wilderness&reg;" href="http://pinnaclefoodscorp.com/brands/comstock">
+		<area shape="rect" coords="322,106,396,151" alt="Open Pit&reg;" href="http://pinnaclefoodscorp.com/brands/open-pit">
+		<area shape="rect" coords="407,106,485,151" alt="Lender's&reg;" href="http://pinnaclefoodscorp.com/brands/lenders">
+		<area shape="rect" coords="499,106,563,151" alt="Celeste&reg;" href="http://pinnaclefoodscorp.com/brands/celeste">
+		<area shape="rect" coords="589,106,686,151" alt="Mrs. Paul's&reg;" href="http://pinnaclefoodscorp.com/brands/mrs-pauls">
+
+		<area shape="rect" coords="34,166,111,212" alt="Tim's Cascade Snacks&reg;" href="http://pinnaclefoodscorp.com/brands/tims-cascade-snacks">
+		<area shape="rect" coords="131,166,207,212" alt="Hawaiian Kettle Style Potato Chips" href="http://pinnaclefoodscorp.com/brands/hawaiian-snacks">
+		<area shape="rect" coords="231,166,303,212" alt="Husman's&reg;" href="http://pinnaclefoodscorp.com/brands/husmans">
+		<area shape="rect" coords="322,166,396,212" alt="Snyder&reg; of Berlin" href="http://pinnaclefoodscorp.com/brands/snyder-of-berlin">
+		<area shape="rect" coords="407,166,485,212" alt="Bird's Eye C&amp;W" href="http://pinnaclefoodscorp.com/brands/c-w">
+		<area shape="rect" coords="499,166,563,212" alt="Hungry-Man&reg;" href="http://pinnaclefoodscorp.com/brands/hungry-man">
+		<area shape="rect" coords="589,166,686,212" alt="Aunt Jemima&reg; Frozen Breakfast" href="http://pinnaclefoodscorp.com/brands/aunt-jemima">
+
+	</map>
+
+	
+	<script type="text/template" class="sec_signup">
+
+		<div class="secSignup">
+			<h1>Please fill this out.</h1>
+			<div class="formWrapper">
+				<label>First Name</label>
+				<input type="text" id="secfirstname" name="secfirstname" />
+			</div>
+			<div class="formWrapper">
+				<label>Last Name</label>
+				<input type="text" id="seclastname" name="seclastname" />
+			</div>
+			<div class="formWrapper">
+				<label>Email</label>
+				<input type="text" id="secemail" name="secemail" />
+			</div>
+			<input type="hidden" name="srcfile" value="<%- pn.srcfile %>" />
+			<br style="clear: both;" />
+			<button class="secsignup">Continue</button>
+
+		</div>
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="en" />
+
+        <link rel="stylesheet" type="text/css" href="/themes/vidrimolde/css/estilo.css" media="screen, projection" />
+        <!-- blueprint CSS framework -->
+        <!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/themes/vidrimolde/css/ie.css" media="screen, projection" />
+	<![endif]-->
+        <link href="/recursos/javascript/jquery_custom_scroller/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+
+<!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>-->
+        <script type="text/javascript" src="/recursos/javascript/jquery-ui-1.8.6.custom/js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="/recursos/javascript/jquery-ui-1.8.6.custom/js/jquery-ui-1.8.6.custom.min.js"></script>
+        <script type="text/javascript" src="/recursos/javascript/jquery_custom_scroller/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/recursos/javascript/jquery_custom_scroller/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="/recursos/javascript/ddaccordion.js"></script>
+
+        <title>Vidrimolde</title>
+    </head>
+
+    <body>        
+        <div id="site-wrapper">
+            <div id="site-login-wrapper">
+                <div id="site-login-form">
+                    <style>
+    #mensagem-login-form{
+        width: 220px;
+        float: left;
+        margin-left: 200px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+    #form-login-form{
+        width: 470px;
+        float: left;
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 24px;
+    }
+</style>
+<div id="site-login-form-container">
+    <div id="mensagem-login-form">
+        This area is being updated in order to add improvements to the site, providing to those who use it one experience more pleasant and productive. <br/>Because your opinion counts, help us improve our website by sending suggestions that in his view contribute to this end. <br/>We thank you for availability.
+    </div>
+    <div id="form-login-form">
+        <form id="login">
+            <table border="0px" cellspacing="0">
+                <tr>
+                    <td style="width: 240px;">
+                        Name*<br/>
+                        <input id="nome-login-form" name="LoginForm[nome-login-form]" style="width:230px;"/>
+                    </td>
+                    <td style="width: 230px;">
+                        Email*<br/>
+                        <input id="email-login-form" name="LoginForm[email-login-form]" style="width:230px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Suggestions*<br/>
+                        <textarea id="comentario-login-form" name="LoginForm[comentario-login-form]" cols="50" rows="6" style="width:470px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="margin-right: 120px; margin-top: 2px; display: inline; width: 220px;">*Required fields</span>
+                        <input type="submit" name="Enviar" value="Send" style="float: right; margin-left: 5px; margin-top: 2px;" class="button"/>
+                        <input type="reset" value="Clean" style="float: right; margin-top: 2px;" class="button"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id="success-login-form" style="display: none">
+            Thank you for coming into contact with Vidrimolde.        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){  
+    $("form#login").submit(function() {  
+    // we want to store the values from the form input box, then send via ajax below  
+    var nome = $('#nome-login-form').attr('value');  
+    var email = $('#email-login-form').attr('value');
+    var comment = $('#comentario-login-form').attr('value');
+    
+        $.ajax({  
+            type: "POST",  
+            url: "/en/co/view",
+            data: "LoginForm[nome-login-form]="+ nome +"& LoginForm[email-login-form]="+ email +"& LoginForm[comentario-login-form]="+ comment,  
+            success: function(){  
+                $('form#login').hide();
+                $('#success-login-form').show();
+            }  
+        });  
+    return false;  
+    });  
+});</script>                </div>
+                <div id="site-login-barra">
+                    &nbsp;
+                </div>
+                <div id="site-login-opener">
+                    <div id="texto-botao-area-reservada">ÁREA RESERVADA</div>
+                </div>
+                <script type="text/javascript">
+                    $('#site-login-opener').click(function() {
+                        if($(this).hasClass('expanded'))
+                        {
+                            $(this).addClass('collapsed').removeClass('expanded');
+                            $(this).css('backgroundImage','url(/themes/vidrimolde/css/imagens/botao_areareservada0.png)');
+                        }
+                        else
+                        {
+                            $(this).addClass('expanded').removeClass('collapsed');
+                            $(this).css('backgroundImage','url(/themes/vidrimolde/css/imagens/botao_areareservada1.png)');
+                        }
+                        $('#site-login-form').slideToggle('slow');
+                        $('#site-login-wrapper').css('background', 'none');
+                    });
+                </script>
+
+            </div>
+            <div id="site-login-lang">
+                <div id="site-login-lang-idioma">
+                    ï»¿
+<li><a href="/pt"><img src="/themes/vidrimolde/css/imagens/flags/pt2_inactive.png" alt="" /> <div>PT</div></a></li><li><img src="/themes/vidrimolde/css/imagens/flags/uk2.png" alt="" /> <div>EN</div></li>                </div>
+            </div>
+            <div id="site-header-wrapper">
+                <div id="main-logo">
+                    <a href="/pt"><img style="float: left; border: none; text-decoration: none;" src="/themes/vidrimolde/css/imagens/logo.png" alt="Logo" /></a>                </div>
+                <div id="banner">
+                                    </div>
+            </div>
+
+
+            <div class="clear"></div>
+            <div id="site-content-wrapper">
+                <div id="site-content-wrapper-left">
+
+                    
+<script language="javascript" type="text/javascript">
+    ddaccordion.init({
+        headerclass: "submenuheader", //Shared CSS class name of headers group
+        contentclass: "submenu", //Shared CSS class name of contents group
+        revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+        mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+        collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+        defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+        onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+        animatedefault: false, //Should contents open by default be animated into view?
+        persiststate: false, //persist state of opened contents within browser session?
+        toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+        //togglehtml: ["suffix", "<img src='plus.gif' class='statusicon' />", "<img src='minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+        animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+        oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+            //do nothing
+        },
+        onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+            //do nothing
+        }
+    })
+</script>
+<style type="text/css">
+    .glossymenu{
+        margin: 0px 35px;
+        padding: 0 30px;
+        width: 244px; /*width of menu*/
+        /*        font-weight: bold;*/
+        background-image: url(/themes/vidrimolde/css/imagens/fundo_menu.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        /*        background-size: contain;*/
+        background-color: #FFF;
+        font-size: 20px;
+    }
+
+    .glossymenu a.menuitem{
+        color: #8c8c8c;
+        display: block;
+        position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+        width: auto;
+        padding: 4px 0;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .glossymenu a.menuitem.submenuheader.openheader{ /*CSS class to apply to expandable header when it's expanded*/
+        color:#1A7A52;
+    }
+
+
+    .glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+        color: #8c8c8c;
+    }
+
+    .glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        border: none;
+    }
+
+    .glossymenu a.menuitem:hover{
+        color: #1A7A52;
+    }
+
+    .glossymenu a.menuitemselected{
+        color: #1A7A52;
+        display: block;
+        position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+        width: auto;
+        padding: 4px 0;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .glossymenu div.submenu{ /*DIV that contains each sub menu*/
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+
+    .glossymenu div.submenu ul{ /*UL of each sub menu*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0;
+    }
+
+    .glossymenu div.submenu ul li{
+        width: 175px;
+        border-top: 1px dotted #c8c8c8;
+    }
+
+    .glossymenu div.submenu ul li a{
+        display: block;
+        color: #8c8c8c;
+        text-decoration: none;
+        padding: 2px 0;
+        padding-left: 10px;
+    }
+
+    .glossymenu div.submenu ul li a:hover{
+        color: #1A7A52;
+    }
+
+    .glossymenu div.submenu .selected{
+        color: #1A7A52;
+    }
+
+</style>
+
+<div class="glossymenu"><a class="menuitem submenuheader" href="#" >Company</a><div class="submenu"><ul><li><a href="/en/tf/company/presentation">Presentation</a></li><li><a href="/en/tf/company/quality">Quality</a></li><li><a href="/en/no/company/news">News</a></li><li><a href="/en/tf/company/projects">Projects</a></li></ul></div><a class="menuitem submenuheader" href="#" >Products</a><div class="submenu"><ul><li><a href="/en/ca/products/moulds_and_accessories_for_is_machines">MOULDS AND ACCESSORIES FOR IS MACHINES</a></li><li><a href="/en/ca/products/moulds_and_accessories_for_tableware">MOULDS AND ACCESSORIES FOR TABLEWARE</a></li></ul></div><li><a class="menuitem" href="/en/tf/recruitment">Recruitment</a></li><li><a class="menuitem" href="/en/tf/location">Location</a></li><li><a class="menuitem" href="/en/co/contacts">Contacts</a></li><li><a class="menuitem" href="/en/tf/download">Download</a></li><a class="menuitem submenuheader" href="#" >&nbsp;</a></div><form action="/pt/search" method="POST"><div style="float: left; margin-left:100px;"><input id="procura-text" maxlenght="20" onFocus="setFocus();" onBlur="lostFocus();" type="text" value="Search" name="procura" /></div><div class="botaosearch"><input id="procura-button" type="submit" name="yt0" value="" /></div></form><style type="text/css"> .botaosearch{ float: left; width: 23px; margin-left: 0px; } </style><script type="text/javascript">
+    function setFocus(){
+        if (document.getElementById("procura-text").value=="Pesquisa"){
+            document.getElementById("procura-text").value="";
+        }
+        if (document.getElementById("procura-text").value=="Search"){
+            document.getElementById("procura-text").value="";
+        }
+    }
+    function lostFocus(){
+        if (document.getElementById("procura-text").value==""){
+            document.getElementById("procura-text").value="Search";
+        }
+    }
+    function setFocusIE8(){
+        if (document.getElementById("procura-text_ie8").value=="Pesquisa"){
+            document.getElementById("procura-text_ie8").value="";
+        }
+        if (document.getElementById("procura-text_ie8").value=="Search"){
+            document.getElementById("procura-text_ie8").value="";
+        }
+    }
+    function lostFocusIE8(){
+        if (document.getElementById("procura-text_ie8").value==""){
+            document.getElementById("procura-text_ie8").value="Search";
+        }
+    }
+</script><div class="clear"></div>
+    <style type="text/css">
+        /* rotator in-page placement */
+        div.rotatornoticia {
+            position:relative;
+            height:75px;
+            margin-left: -45px;
+            margin-top: -5px;
+            display: none;
+        }
+        /* rotator css */
+        div.rotatornoticia ul li {
+            float:left;
+            position:absolute;
+            list-style: none;
+            width: 150px;
+        }
+        /* rotator image style */
+        div.rotatornoticia ul li img {
+            padding: 4px;
+        }
+        div.rotatornoticia ul li.show {
+            z-index:500
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function theRotatorNoticia() {
+            //Set the opacity of all images to 0
+            $('div.rotatornoticia ul li').css({opacity: 0.0});
+            //Get the first image and display it (gets set to full opacity)
+            $('div.rotatornoticia ul li:first').css({opacity: 1.0});
+            //Call the rotator function to run the slideshow, 6000 = change to next image after 6 seconds
+            setInterval('rotateNoticia()',6000);
+        }
+
+        function rotateNoticia() {
+            //Get the first image
+            var current = ($('div.rotatornoticia ul li.show')?  $('div.rotatornoticia ul li.show') : $('div.rotatornoticia ul li:first'));
+            if ( current.length == 0 ) current = $('div.rotatornoticia ul li:first');
+            //Get next image, when it reaches the end, rotate it back to the first image
+            var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.rotatornoticia ul li:first') :current.next()) : $('div.rotatornoticia ul li:first'));
+            //Un-comment the 3 lines below to get the images in random order
+            //var sibs = current.siblings();
+            //var rndNum = Math.floor(Math.random() * sibs.length );
+            //var next = $( sibs[ rndNum ] );
+            //Set the fade in effect for the next image, the show class has higher z-index
+            next.css({opacity: 0.0})
+            .addClass('show')
+            .animate({opacity: 1.0}, 1000);
+            //Hide the current image
+            current.animate({opacity: 0.0}, 1000)
+            .removeClass('show');
+
+        };
+
+        $(document).ready(function() {
+            //Load the slideshow
+            theRotatorNoticia();
+            $('div.rotatornoticia').fadeIn(1000);
+            $('div.rotatornoticia ul li').fadeIn(1000); // tweek for IE
+        });
+    </script>
+
+    <div id="noticiamain">
+        <div class="rotatornoticia">
+            <ul>
+                <li class="show"><table><tr><td style="height: 75px; vertical-align: middle"><b>Glasstec 2018</b><br/><a href="/en/no/Company/News/glasstec_2018">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Intermolde Expansion Works completed</b><br/><a href="/en/no/Company/News/intermolde_expansion_works_completed">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde at Glasstec 2016</b><br/><a href="/en/no/Company/News/vidrimolde_at_glasstec_2016">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde at Glasstec 2014</b><br/><a href="/en/no/Company/News/vidrimolde_at_glasstec_2014">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde - SME EXCELLENCE 2012</b><br/><a href="/en/no/Company/News/vidrimolde__sme_excellence_2012">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>GLASSTEC 2012</b><br/><a href="/en/no/Company/News/glasstec_2012">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde at GLASSTEC 2012</b><br/><a href="/en/no/Company/News/vidrimolde_at_glasstec_2012">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>RDI Certification</b><br/><a href="/en/no/Company/News/rdi_certification">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde at Glasstec 2010</b><br/><a href="/en/no/Company/News/vidrimolde_at_glasstec_2010">more</a></td></tr></table></li><li><table><tr><td style="height: 75px; vertical-align: middle"><b>Vidrimolde Hosts Mego</b><br/><a href="/en/no/Company/News/vidrimolde_hosts_mego">more</a></td></tr></table></li>            </ul>
+        </div>       
+    </div>
+    
+    
+    
+<div class="clear"></div><a class="maillink" style="cursor:pointer;" href="/en/co/contacts"></a>                </div>
+                <div id="site-content-wrapper-right">
+                    <div class="container">
+	<div id="content">
+		
+<h2>Error 404</h2>
+
+<div class="error">
+Unable to resolve the request &quot;robots.txt&quot;.</div>	</div><!-- content -->
+</div>
+                </div>
+                <div class="clear" style="height: 90px"></div>
+            </div>
+
+
+            <div class="clear"></div>
+            <div id="site-footer-wrapper">
+                <div id="site-footer-wrapper-left">
+                    2011 Vidrimolde SA. &nbsp;&nbsp;&nbsp;<u><a href="/admin.php">Admin</a></u>
+                </div>
+                <div id="site-footer-wrapper-right">
+                    <div id="logoforadoras" style="float: right; height: 20px;"><a href="http://www.foradoras.com/"><img style="float: right; border: none; text-decoration: none; margin: 2px 0 0 3px" class="foradoras" onMouseOver="mostratextoforadoras()" onMouseOut="escondetextoforadoras()" src="/themes/vidrimolde/css/imagens/icon_foradoras.png" alt="Logo" /></a></div>
+                    <div id="textoforadoras" style="float: right; width: 200px; display: none; font-size: 9px">Made by Foradoras</div>
+                    <script type="text/javascript">
+                        function mostratextoforadoras(){
+                            $('#textoforadoras').show('slow');
+                        }
+                        function escondetextoforadoras(){
+                            $('#textoforadoras').hide('slow');
+                        }
+                    </script>
+                </div>
+                <div id="logos-qren" style="float: right; margin-top: 10px;">
+                    <img style="float: left; border: none; text-decoration: none;" src="/themes/vidrimolde/css/imagens/logo_competeQREN_230.png" alt="Logos-Qren" />                </div>
+            </div>            
+        </div>
+    </body>
+</html>
+
+
+
+

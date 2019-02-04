@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<title>JB's Sausage</title>
+<!--style-->
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<!--favicon-->
+<link href="favicon.ico" rel="shortcut icon" />
+<!--spry-->
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<!--forms-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/floforms.js"></script>
+<!--addthis-->
+
+<!--png fix-->
+<script type="text/javascript" src="scripts/belatedPng.js"></script>
+<script type = "text/javascript">
+	DD_belatedPNG.fix('.transparent, #footerWrap2');
+</script>
+
+<!--html 5 hack for ie-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/
+html5.js"></script>
+<![endif]-->
+
+<!--ie6 update-->
+
+<!--[if IE 6]>
+<script type="text/javascript"> 
+    /*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+    var IE6UPDATE_OPTIONS = {
+        icons_path: "scripts/ie6update/images/",
+        url: "http://www.mozilla.com/en-US/",
+        message: 'Your browser is outdated! To view this site in all of its intended glory click here to update to Mozilla Firefox.'
+    }
+</script>
+<script type="text/javascript" src="scripts/ie6update/ie6update.js"></script>
+
+<![endif]-->
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/jquery.textbox-hinter.min.js"></script>
+
+<!--################## CODA SLIDER FOR FEATURED CATEGORY ##############################-->
+<link rel="stylesheet" href="coda-slider/stylesheets/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="coda-slider/stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="coda-slider/javascripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="coda-slider/javascripts/jquery.coda-slider-2.0.js"></script>
+<script type="text/javascript">
+   $().ready(function() {
+	   $('#coda-slider-1').codaSlider({
+			autoHeight:false, dynamicArrows:false, dynamicTabs:false
+		});
+   });
+</script>
+
+<!--################## CODA SLIDER FOR FEATURED CATEGORY [END] #########################-->
+
+
+<script type="text/javascript" src="./fancybox/jquery.fancybox.js?v=2.0.6"></script>
+<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox.css?v=2.0.6" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('.fancybox').fancybox({ minHeight : '6', maxWidth : '7' });
+	});
+</script>
+<!--google analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24373730-41']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "ur-b001db16-a042-6adf-207e-182aa172d404", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+
+<body>
+	    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<div id="headerWrap">
+		<header>
+			<div id="loginWrap">
+				<form method="post" action="http://jbsausagesupplies.com/?page=Login" id="login">
+					
+										<input type="text" class="text" id="userLogin" name="userLogin"  value="" />
+					<input type="password" class="text" id="userPassword" name="userPassword" value="" />
+					<div class="btn1 left" id="btnLogin" >
+						<a href="#" id="doLogin" >Login</a>
+					</div>					<div class="clear"></div>
+					<label><a href="http://jbsausagesupplies.com/?page=ForgotPassword" class="fancybox fancybox.iframe">Forgot Password</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" >Create a new account</a></label>
+									</form>
+			</div>
+			<a href="http://jbsausagesupplies.com/"><img src="images/JBsSausageSupplies.png" width="270" height="160" alt="JB's Sausage Supplies" class="left transparent" /></a>
+			<nav style="position:relative;">
+				<ul id="MenuBar1" class="MenuBarHorizontal">
+				<li><a href="index.php?page=Home">Home</a></li><li><a href="index.php?page=Products">Products</a></li><li><a href="index.php?page=Blog">Blog</a></li><li><a href="index.php?page=About">About Us</a></li><li><a href="index.php?page=Contact">Contact Us</a></li>				</ul>
+				<a href="http://www.facebook.com/jbsausage/" target="_blanc">
+				<img src="images/fb.png" style="position: absolute; right: 0; margin-top: 35px; margin-right: 20px; height: 30px;">
+				</a>
+			</nav>
+			<div class="clear"></div>
+		</header>
+	</div>	<div id="featureWrap">
+		<div id="feature">
+			<div id="heading" class="transparent">Featured Categories</div>
+			
+										<div class="coda-slider-wrapper">
+						
+						<div id="coda-nav-left-1" class="coda-nav-left">
+							<a href="javascript:void(0)" title="Slide left">
+								<img src="images/scrollLeft.png" width="70" height="120" alt="Scroll Left" class="left transparent" />
+							</a>
+						</div>
+						
+						<div class="coda-slider preload" id="coda-slider-1">
+															
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+																<div class="panel">
+									<div class="panel-wrapper">
+																		<div class="item">
+											<a href="http://jbsausagesupplies.com/?page=Products&catid=192"><img width="165" height="110" alt="temp" src="http://jbsausagesupplies.com/uploads/category/c0ba0f45cacc46f29c1dfb676b014087.jpg"></a>
+											<h1><a href="http://jbsausagesupplies.com/?page=Products&catid=192">BBQ Wood Chunks</a></h1>
+										</div>
+										
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+															
+															
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+																		<div class="item">
+											<a href="http://jbsausagesupplies.com/?page=Products&catid=41"><img width="165" height="110" alt="temp" src="http://jbsausagesupplies.com/uploads/category/9d0324453a0a5bb773a8e37dd6ee7752.jpg"></a>
+											<h1><a href="http://jbsausagesupplies.com/?page=Products&catid=41">Gluten Free</a></h1>
+										</div>
+										
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+															
+															
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+																		<div class="item">
+											<a href="http://jbsausagesupplies.com/?page=Products&catid=181"><img width="165" height="110" alt="temp" src="http://jbsausagesupplies.com/uploads/category/4052f3623e0b11aa33f3d3b83e0c35f5.jpg"></a>
+											<h1><a href="http://jbsausagesupplies.com/?page=Products&catid=181">Seasoning & Shakers</a></h1>
+										</div>
+										
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+															
+															
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+																		<div class="item">
+											<a href="http://jbsausagesupplies.com/?page=Products&catid=39"><img width="165" height="110" alt="temp" src="http://jbsausagesupplies.com/uploads/category/ed89a847623422da174534db6f85cfbe.jpg"></a>
+											<h1><a href="http://jbsausagesupplies.com/?page=Products&catid=39">Spices</a></h1>
+										</div>
+										
+								<!--EXECUTE WHEN $panelStart is 4,8,12,16 etc-->
+																	</div>
+								</div>
+															
+							<!--WHERE LOOP-->
+							
+							<!--EXECUTE WHEN $panelStart is NOT 4,8,12,16 etc. simply if the last panel not having four images -->
+															
+						</div><!-- .coda-slider -->
+						
+						<div id="coda-nav-right-1" class="coda-nav-right">
+							<a href="javascript:void(0)" title="Slide right">
+								<img src="images/scrollRight.png" width="70" height="120" alt="Scroll Right" class="right transparent" />
+							</a>
+						</div>
+						
+					</div><!-- .coda-slider-wrapper -->
+			
+			
+			
+		</div>	</div>	
+
+	<div id="main">
+			<div id="colLeft">
+			<h1 class="blockTitle">Featured Products</h1>
+						<div class="block">
+				<div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1135"><img src="./uploads/productdata/thumbs/a17c715847ab24a6647d4e80aee3bfe4.jpg" width="180" alt="3 Pepper Rub" /></a></div>
+    <h2>3 Pepper Rub | PBL-51560</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1135">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=747"><img src="./uploads/productdata/thumbs/94de97e58afe0212d07e09974bf29f63.jpg" width="180" alt="Apron - Practice Safe Stuffing" /></a></div>
+    <h2>Apron - Practice Safe Stuffing | LEM-1139</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=747">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod ">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=999"><img src="./uploads/productdata/thumbs/c8aed8b79d0a50f35fb0d52ad123497a.jpg" width="180" alt="Butt Rub" /></a></div>
+    <h2>Butt Rub | FS-T6983-400gm</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=999">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1000"><img src="./uploads/productdata/thumbs/b089268fd38aca690421114de668dfff.jpg" width="180" alt="Chicken Rub" /></a></div>
+    <h2>Chicken Rub | PBL-51566</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1000">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1002"><img src="./uploads/productdata/thumbs/2206763e7296fd42b91ee97506a68b7e.jpg" width="180" alt="Fire Roasted Rub" /></a></div>
+    <h2>Fire Roasted Rub | PBL-51564-325gm</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1002">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod ">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1001"><img src="./uploads/productdata/thumbs/cb10501acfec86416036cdee81d4a469.jpeg" width="180" alt="Maple Rub" /></a></div>
+    <h2>Maple Rub | PBL-51561-400gm</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1001">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1007"><img src="./uploads/productdata/thumbs/4e8a61fed7757ee39def1158429f8bd1.jpg" width="180" alt="Prime Rib Rub" /></a></div>
+    <h2>Prime Rib Rub | WIB-C2645-500gm</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1007">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod  right25">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=997"><img src="./uploads/productdata/thumbs/34159531a02b42fc6d1c86f77c9d49e8.jpg" width="180" alt="Pulled Pork Rub" /></a></div>
+    <h2>Pulled Pork Rub | PBL-51562</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=997">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div><div class="prod ">
+    <div style="height:180px; margin-bottom:15px;" ><a href="http://jbsausagesupplies.com/?page=ProductDetail&id=996"><img src="./uploads/productdata/thumbs/7c15872461f5a3e37402810dd99cbcc3.jpg" width="180" alt="Smokey BBQ Rub" /></a></div>
+    <h2>Smokey BBQ Rub | PBL-51563</h2>
+    <a href="http://jbsausagesupplies.com/?page=ProductDetail&id=996">More info</a> | <a href="http://jbsausagesupplies.com/?page=CreateAccount" class="fancybox fancybox.iframe" ><span class="col">+</span> Add to my order</a>
+</div>				<div class="clear"></div>
+								<div class="btn1">
+					<a href="?page=Featured">Show All</a>
+				</div>							</div>		</div>		<div id="colRight">
+			<h1 class="blockTitle">Product Categories</h1>
+<div class="block">
+    
+        
+    
+	<ul class="cat">
+		<li><a href="index.php?page=Products&catid=169">A-MAZE-N Smokin' Products</a></li><li><a href="index.php?page=Products&catid=18">Additives</a></li><li class="parent"><a href="index.php?page=Products&catid=19">Apparel</a><ul><li class="child" ><a href="index.php?page=Products&catid=106">Aprons</a></li><li class="child" ><a href="index.php?page=Products&catid=109">Cut Resistant Gloves</a></li><li class="child" ><a href="index.php?page=Products&catid=110">Disposable Gloves</a></li><li class="child" ><a href="index.php?page=Products&catid=107">Luggars</a></li><li class="child" ><a href="index.php?page=Products&catid=108">Protective Sleeves</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=20">Bags</a><ul><li class="child" ><a href="index.php?page=Products&catid=105">Bone Bags</a></li><li class="child" ><a href="index.php?page=Products&catid=102">Hamburger Bags</a></li><li class="child" ><a href="index.php?page=Products&catid=101">Poly Bags</a></li><li class="child" ><a href="index.php?page=Products&catid=104">Turkey Bags</a></li><li class="child" ><a href="index.php?page=Products&catid=103">Vac Pac Bags</a></li></ul></li><li><a href="index.php?page=Products&catid=174">BBQ Accessories </a></li><li class="parent"><a href="index.php?page=Products&catid=38">BBQ Pellets</a><ul><li class="child" ><a href="index.php?page=Products&catid=76">Pellets</a></li><li class="child" ><a href="index.php?page=Products&catid=77">Sawdust</a></li><li class="child" ><a href="index.php?page=Products&catid=78">Wood Chips</a></li></ul></li><li><a href="index.php?page=Products&catid=192">BBQ Wood Chunks</a></li><li><a href="index.php?page=Products&catid=147">Books</a></li><li><a href="index.php?page=Products&catid=23">Box Liners</a></li><li><a href="index.php?page=Products&catid=22">Boxes</a></li><li class="parent"><a href="index.php?page=Products&catid=24">Breadings & Binders</a><ul><li class="child" ><a href="index.php?page=Products&catid=71">Binders</a></li><li class="child" ><a href="index.php?page=Products&catid=70">Breadings</a></li><li class="child" ><a href="index.php?page=Products&catid=72">Burger Binders</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=25">Casings</a><ul><li class="child" ><a href="index.php?page=Products&catid=65">Cellulose</a></li><li class="child" ><a href="index.php?page=Products&catid=66">Collagen</a></li><li class="child" ><a href="index.php?page=Products&catid=67">Fibrous for smoking </a></li><li class="child" ><a href="index.php?page=Products&catid=68">Fibrous for water cooking </a></li><li class="child" ><a href="index.php?page=Products&catid=69">Natural Casing </a></li><li class="child" ><a href="index.php?page=Products&catid=82">Specialty Casings </a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=26">Cures</a><ul><li class="child" ><a href="index.php?page=Products&catid=75">Brines & Seasonings for Curing</a></li><li class="child" ><a href="index.php?page=Products&catid=74">Cure for Ham & Bacon</a></li><li class="child" ><a href="index.php?page=Products&catid=73">Cure for Sausage</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=41">Gluten Free</a><ul><li class="child" ><a href="index.php?page=Products&catid=177">Burger Binder</a></li><li class="child" ><a href="index.php?page=Products&catid=155">Rub & Sauces Gluten Free</a></li><li class="child" ><a href="index.php?page=Products&catid=154">Sausage Premixes (Gluten Free)</a></li></ul></li><li><a href="index.php?page=Products&catid=185">Gravy</a></li><li class="parent"><a href="index.php?page=Products&catid=159">Grinder & Stuffer Accessories</a><ul><li class="child" ><a href="index.php?page=Products&catid=55">Grinder Accessories</a></li><li class="child" ><a href="index.php?page=Products&catid=27">Grinder Plates & Knives</a></li><li class="child" ><a href="index.php?page=Products&catid=28">Grinder Spouts</a></li><li class="child" ><a href="index.php?page=Products&catid=160">Stuffer Nozzles</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=30">Grinders & Home Use Equipment(STUFFERS)</a><ul><li class="child" ><a href="index.php?page=Products&catid=51">Electric Grinders</a></li><li class="child" ><a href="index.php?page=Products&catid=52">Hand Grinders</a></li><li class="child" ><a href="index.php?page=Products&catid=85">Mixers</a></li><li class="child" ><a href="index.php?page=Products&catid=47">Smokehouses</a></li><li class="child" ><a href="index.php?page=Products&catid=53">Stuffers</a></li><li class="child" ><a href="index.php?page=Products&catid=164">Vacuum Packagers</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=29">Hardware</a><ul><li class="child" ><a href="index.php?page=Products&catid=125">Bacon Hanger</a></li><li class="child" ><a href="index.php?page=Products&catid=139">Bag Sealer</a></li><li class="child" ><a href="index.php?page=Products&catid=127">Boning Hook</a></li><li class="child" ><a href="index.php?page=Products&catid=136">Burger Press</a></li><li class="child" ><a href="index.php?page=Products&catid=128">Gambrel</a></li><li class="child" ><a href="index.php?page=Products&catid=161">Grilling Accessories</a></li><li class="child" ><a href="index.php?page=Products&catid=138">Hog Ring Pliers</a></li><li class="child" ><a href="index.php?page=Products&catid=137">Injector</a></li><li class="child" ><a href="index.php?page=Products&catid=140">Kitchen Tools</a></li><li class="child" ><a href="index.php?page=Products&catid=129">Meat Hammer</a></li><li class="child" ><a href="index.php?page=Products&catid=130">Tenderizer - Manual</a></li><li class="child" ><a href="index.php?page=Products&catid=56">Thermometers</a></li></ul></li><li><a href="index.php?page=Products&catid=80">House of Q</a></li><li class="parent"><a href="index.php?page=Products&catid=88">Industrial Food Equipment</a><ul><li class="child" ><a href="index.php?page=Products&catid=92">Bandsaws</a></li><li class="child" ><a href="index.php?page=Products&catid=97">Brine Pumps</a></li><li class="child" ><a href="index.php?page=Products&catid=150">Cheese Cutters</a></li><li class="child" ><a href="index.php?page=Products&catid=157">Clipper</a></li><li class="child" ><a href="index.php?page=Products&catid=153">Dispensing Systems</a></li><li class="child" ><a href="index.php?page=Products&catid=151">Food Processors</a></li><li class="child" ><a href="index.php?page=Products&catid=89">Grinders</a></li><li class="child" ><a href="index.php?page=Products&catid=95">Hydrolic Stuffers</a></li><li class="child" ><a href="index.php?page=Products&catid=90">Mixers</a></li><li class="child" ><a href="index.php?page=Products&catid=98">Patty Machines</a></li><li class="child" ><a href="index.php?page=Products&catid=162">Refrigeration</a></li><li class="child" ><a href="index.php?page=Products&catid=96">Slicers</a></li><li class="child" ><a href="index.php?page=Products&catid=94">Smokehouses</a></li><li class="child" ><a href="index.php?page=Products&catid=100">Tenderizers</a></li><li class="child" ><a href="index.php?page=Products&catid=99">Tumblers</a></li><li class="child" ><a href="index.php?page=Products&catid=91">Vaccum Packaging Machines</a></li><li class="child" ><a href="index.php?page=Products&catid=93">Wellsaws</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=33">Jerky </a><ul><li class="child" ><a href="index.php?page=Products&catid=57">Jerky Accessories</a></li><li class="child" ><a href="index.php?page=Products&catid=61">Jerky Premixes</a></li></ul></li><li><a href="index.php?page=Products&catid=165">Kitchen Tools</a></li><li class="parent"><a href="index.php?page=Products&catid=35">Knives, Knife Sharpeners & Accessories</a><ul><li class="child" ><a href="index.php?page=Products&catid=135">Knife Sanitizer</a></li><li class="child" ><a href="index.php?page=Products&catid=87">Knife Sharpeners</a></li><li class="child" ><a href="index.php?page=Products&catid=86">Knives</a></li><li class="child" ><a href="index.php?page=Products&catid=156">Magnetic Knife Bar</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=59">Louisiana Grills</a><ul><li class="child" ><a href="index.php?page=Products&catid=60">Accessories</a></li><li class="child" ><a href="index.php?page=Products&catid=115">Country Smoker Grills</a></li><li class="child" ><a href="index.php?page=Products&catid=122">LG Series BBQ's</a></li><li class="child" ><a href="index.php?page=Products&catid=158">Smokin Sale</a></li></ul></li><li><a href="index.php?page=Products&catid=175">Marinades </a></li><li class="parent"><a href="index.php?page=Products&catid=142">Material Handling</a><ul><li class="child" ><a href="index.php?page=Products&catid=143">Container Opener</a></li><li class="child" ><a href="index.php?page=Products&catid=145">Meat Tubs</a></li></ul></li><li><a href="index.php?page=Products&catid=148">Mustard's, Sauces & Oils</a></li><li><a href="index.php?page=Products&catid=36">Netting & Horns</a></li><li><a href="index.php?page=Products&catid=121">New Arrivals</a></li><li class="parent"><a href="index.php?page=Products&catid=37">Paper & Tape Products </a><ul><li class="child" ><a href="index.php?page=Products&catid=111">Butcher Paper</a></li><li class="child" ><a href="index.php?page=Products&catid=114">Paper Dispensers</a></li><li class="child" ><a href="index.php?page=Products&catid=152">Patty Paper</a></li><li class="child" ><a href="index.php?page=Products&catid=112">Tape</a></li><li class="child" ><a href="index.php?page=Products&catid=113">Tape Dispensers</a></li></ul></li><li class="parent"><a href="index.php?page=Products&catid=63">Rubs</a><ul><li class="child" ><a href="index.php?page=Products&catid=184">JB's Sausage Rubs</a></li><li class="child" ><a href="index.php?page=Products&catid=183">Prairie Smoke & Spice</a></li></ul></li><li><a href="index.php?page=Products&catid=42">Sausage Premixes (No Cure-Fresh)</a></li><li><a href="index.php?page=Products&catid=43">Sausage Premixes (W/Cure-For Smoking)</a></li><li class="parent"><a href="index.php?page=Products&catid=21">Saws & Saw Blades</a><ul><li class="child" ><a href="index.php?page=Products&catid=123">Band Saw Blades</a></li><li class="child" ><a href="index.php?page=Products&catid=146">Hand Saw</a></li><li class="child" ><a href="index.php?page=Products&catid=149">Wellsaw</a></li></ul></li><li><a href="index.php?page=Products&catid=45">Scabbards, Scrapers & Butcher Accessories</a></li><li><a href="index.php?page=Products&catid=144">Scales</a></li><li><a href="index.php?page=Products&catid=181">Seasoning & Shakers</a></li><li><a href="index.php?page=Products&catid=186">Smoking Wood Chips</a></li><li><a href="index.php?page=Products&catid=180">Snack Sticks</a></li><li><a href="index.php?page=Products&catid=46">Soup Bases</a></li><li><a href="index.php?page=Products&catid=39">Spices</a></li><li class="parent"><a href="index.php?page=Products&catid=131">Tables, Racks, Stands & Accessories</a><ul><li class="child" ><a href="index.php?page=Products&catid=133">Casters </a></li><li class="child" ><a href="index.php?page=Products&catid=134">Equipment Stand</a></li><li class="child" ><a href="index.php?page=Products&catid=141">Racks</a></li><li class="child" ><a href="index.php?page=Products&catid=132">Tables</a></li></ul></li><li><a href="index.php?page=Products&catid=190">Used Equipment</a></li>	</ul>
+	<div class="btn2">
+		<a href="?page=Products">Show All</a>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<script>
+	
+	$('.parent > a').click(function(){
+		
+	
+		if (!$(this).next().children().is(":visible")) {
+			$(this).next().children().slideDown();
+		} else {
+			$(this).next().children().slideUp();
+		}
+
+		//$(this).next().children().toggle();
+		return false;
+    });
+	
+</script>
+			<script type="text/javascript" src="scripts/jquery.textbox-hinter.min.js"></script>
+<script type="text/javascript" src="scripts/quickSearch.js"></script>
+<div class="block">
+	<img src="images/bgQuickSearch.jpg" width="248" height="77" alt="Quick Product Search" />
+	<form method="get" action="?page=Products" id="quickSearch">
+		<input type="hidden" name="page" value="Products" />
+		<input type="text" id="qs" name="qs" class="text" value="" />
+		<!--<label>Select a location/division</label>
+		<div class="select">
+			<select class="styled">
+				<option value="all">All Locations/Divisions</option>
+				<option value="1">Division 1</option>
+				<option value="2">Division 2</option>
+				<option value="3">Division 3</option>
+			</select>
+		</div>-->
+		<label>Select a category</label>
+		<div class="select">
+						<select class="styled" id="catid" name="catid">
+				<option value="0">All</option>
+								
+				<option value="169"  >A-MAZE-N Smokin' Products</option>
+								
+				<option value="60"  >Accessories</option>
+								
+				<option value="18"  >Additives</option>
+								
+				<option value="19"  >Apparel</option>
+								
+				<option value="106"  >Aprons</option>
+								
+				<option value="125"  >Bacon Hanger</option>
+								
+				<option value="139"  >Bag Sealer</option>
+								
+				<option value="20"  >Bags</option>
+								
+				<option value="123"  >Band Saw Blades</option>
+								
+				<option value="92"  >Bandsaws</option>
+								
+				<option value="174"  >BBQ Accessories </option>
+								
+				<option value="38"  >BBQ Pellets</option>
+								
+				<option value="192"  >BBQ Wood Chunks</option>
+								
+				<option value="71"  >Binders</option>
+								
+				<option value="105"  >Bone Bags</option>
+								
+				<option value="127"  >Boning Hook</option>
+								
+				<option value="147"  >Books</option>
+								
+				<option value="23"  >Box Liners</option>
+								
+				<option value="22"  >Boxes</option>
+								
+				<option value="70"  >Breadings</option>
+								
+				<option value="24"  >Breadings & Binders</option>
+								
+				<option value="97"  >Brine Pumps</option>
+								
+				<option value="75"  >Brines & Seasonings for Curing</option>
+								
+				<option value="177"  >Burger Binder</option>
+								
+				<option value="72"  >Burger Binders</option>
+								
+				<option value="136"  >Burger Press</option>
+								
+				<option value="111"  >Butcher Paper</option>
+								
+				<option value="116"  >Carbide Plates & Knives</option>
+								
+				<option value="25"  >Casings</option>
+								
+				<option value="133"  >Casters </option>
+								
+				<option value="65"  >Cellulose</option>
+								
+				<option value="150"  >Cheese Cutters</option>
+								
+				<option value="157"  >Clipper</option>
+								
+				<option value="66"  >Collagen</option>
+								
+				<option value="143"  >Container Opener</option>
+								
+				<option value="115"  >Country Smoker Grills</option>
+								
+				<option value="74"  >Cure for Ham & Bacon</option>
+								
+				<option value="73"  >Cure for Sausage</option>
+								
+				<option value="26"  >Cures</option>
+								
+				<option value="109"  >Cut Resistant Gloves</option>
+								
+				<option value="153"  >Dispensing Systems</option>
+								
+				<option value="110"  >Disposable Gloves</option>
+								
+				<option value="51"  >Electric Grinders</option>
+								
+				<option value="117"  >Electric Plates & Knives</option>
+								
+				<option value="134"  >Equipment Stand</option>
+								
+				<option value="67"  >Fibrous for smoking </option>
+								
+				<option value="68"  >Fibrous for water cooking </option>
+								
+				<option value="151"  >Food Processors</option>
+								
+				<option value="128"  >Gambrel</option>
+								
+				<option value="41"  >Gluten Free</option>
+								
+				<option value="185"  >Gravy</option>
+								
+				<option value="161"  >Grilling Accessories</option>
+								
+				<option value="159"  >Grinder & Stuffer Accessories</option>
+								
+				<option value="55"  >Grinder Accessories</option>
+								
+				<option value="27"  >Grinder Plates & Knives</option>
+								
+				<option value="28"  >Grinder Spouts</option>
+								
+				<option value="89"  >Grinders</option>
+								
+				<option value="30"  >Grinders & Home Use Equipment(STUFFERS)</option>
+								
+				<option value="102"  >Hamburger Bags</option>
+								
+				<option value="52"  >Hand Grinders</option>
+								
+				<option value="119"  >Hand Plates & Knives</option>
+								
+				<option value="146"  >Hand Saw</option>
+								
+				<option value="29"  >Hardware</option>
+								
+				<option value="138"  >Hog Ring Pliers</option>
+								
+				<option value="80"  >House of Q</option>
+								
+				<option value="95"  >Hydrolic Stuffers</option>
+								
+				<option value="88"  >Industrial Food Equipment</option>
+								
+				<option value="137"  >Injector</option>
+								
+				<option value="184"  >JB's Sausage Rubs</option>
+								
+				<option value="33"  >Jerky </option>
+								
+				<option value="57"  >Jerky Accessories</option>
+								
+				<option value="61"  >Jerky Premixes</option>
+								
+				<option value="140"  >Kitchen Tools</option>
+								
+				<option value="165"  >Kitchen Tools</option>
+								
+				<option value="135"  >Knife Sanitizer</option>
+								
+				<option value="87"  >Knife Sharpeners</option>
+								
+				<option value="86"  >Knives</option>
+								
+				<option value="35"  >Knives, Knife Sharpeners & Accessories</option>
+								
+				<option value="118"  >LEM Plates & Knives</option>
+								
+				<option value="122"  >LG Series BBQ's</option>
+								
+				<option value="59"  >Louisiana Grills</option>
+								
+				<option value="107"  >Luggars</option>
+								
+				<option value="156"  >Magnetic Knife Bar</option>
+								
+				<option value="175"  >Marinades </option>
+								
+				<option value="142"  >Material Handling</option>
+								
+				<option value="129"  >Meat Hammer</option>
+								
+				<option value="145"  >Meat Tubs</option>
+								
+				<option value="85"  >Mixers</option>
+								
+				<option value="90"  >Mixers</option>
+								
+				<option value="148"  >Mustard's, Sauces & Oils</option>
+								
+				<option value="69"  >Natural Casing </option>
+								
+				<option value="36"  >Netting & Horns</option>
+								
+				<option value="121"  >New Arrivals</option>
+								
+				<option value="37"  >Paper & Tape Products </option>
+								
+				<option value="114"  >Paper Dispensers</option>
+								
+				<option value="98"  >Patty Machines</option>
+								
+				<option value="152"  >Patty Paper</option>
+								
+				<option value="76"  >Pellets</option>
+								
+				<option value="101"  >Poly Bags</option>
+								
+				<option value="183"  >Prairie Smoke & Spice</option>
+								
+				<option value="108"  >Protective Sleeves</option>
+								
+				<option value="141"  >Racks</option>
+								
+				<option value="162"  >Refrigeration</option>
+								
+				<option value="187"  >Restaurant Equipment </option>
+								
+				<option value="189"  >Restaurant Equipment </option>
+								
+				<option value="155"  >Rub & Sauces Gluten Free</option>
+								
+				<option value="63"  >Rubs</option>
+								
+				<option value="154"  >Sausage Premixes (Gluten Free)</option>
+								
+				<option value="42"  >Sausage Premixes (No Cure-Fresh)</option>
+								
+				<option value="43"  >Sausage Premixes (W/Cure-For Smoking)</option>
+								
+				<option value="77"  >Sawdust</option>
+								
+				<option value="21"  >Saws & Saw Blades</option>
+								
+				<option value="45"  >Scabbards, Scrapers & Butcher Accessories</option>
+								
+				<option value="144"  >Scales</option>
+								
+				<option value="181"  >Seasoning & Shakers</option>
+								
+				<option value="96"  >Slicers</option>
+								
+				<option value="47"  >Smokehouses</option>
+								
+				<option value="94"  >Smokehouses</option>
+								
+				<option value="158"  >Smokin Sale</option>
+								
+				<option value="186"  >Smoking Wood Chips</option>
+								
+				<option value="180"  >Snack Sticks</option>
+								
+				<option value="46"  >Soup Bases</option>
+								
+				<option value="82"  >Specialty Casings </option>
+								
+				<option value="39"  >Spices</option>
+								
+				<option value="160"  >Stuffer Nozzles</option>
+								
+				<option value="53"  >Stuffers</option>
+								
+				<option value="132"  >Tables</option>
+								
+				<option value="131"  >Tables, Racks, Stands & Accessories</option>
+								
+				<option value="112"  >Tape</option>
+								
+				<option value="113"  >Tape Dispensers</option>
+								
+				<option value="130"  >Tenderizer - Manual</option>
+								
+				<option value="100"  >Tenderizers</option>
+								
+				<option value="56"  >Thermometers</option>
+								
+				<option value="99"  >Tumblers</option>
+								
+				<option value="104"  >Turkey Bags</option>
+								
+				<option value="188"  >Used Equipment</option>
+								
+				<option value="190"  >Used Equipment</option>
+								
+				<option value="103"  >Vac Pac Bags</option>
+								
+				<option value="91"  >Vaccum Packaging Machines</option>
+								
+				<option value="164"  >Vacuum Packagers</option>
+								
+				<option value="149"  >Wellsaw</option>
+								
+				<option value="93"  >Wellsaws</option>
+								
+				<option value="78"  >Wood Chips</option>
+							</select>
+		</div>
+		<div>
+			<div id="quickSearchMsg" class="left">
+				&nbsp;
+			</div>
+			<div class="btn1">
+				<a href="javascript:void(0)" id="qFind">Find</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<p>Can't find what you are lookin for? We're happy to assist you.<br>
+                Call <span class="col">306-359-6500</span></p>
+		<p style="font-size: 9px; line-height: 11px;">
+			*Prices Subject to Change<br>
+			*Product Subject to Availability<br>
+			*Product May Not Appear Exactly as Shown
+		</p>
+	</form>
+</div>		</div>		
+	<div class="clear"></div>
+	</div>	<div id="footerWrap">
+		<div id="footerWrap2">
+			<div id="footer">
+				<div class="item">
+					<h1>Pages</h1>
+					<ul>
+												<li><a href="http://jbsausagesupplies.com/index.php?page=Home" >Home</a></li>
+												<li><a href="http://jbsausagesupplies.com/index.php?page=Products" >Products</a></li>
+												<li><a href="http://jbsausagesupplies.com/index.php?page=Blog" >Blog</a></li>
+												<li><a href="http://jbsausagesupplies.com/index.php?page=About" >About Us</a></li>
+												<li><a href="http://jbsausagesupplies.com/index.php?page=Contact" >Contact Us</a></li>
+											</ul>
+				</div>				<div class="item" style="width:300px;">
+					<h1>Latest For Sale</h1>
+										<div class="post">
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1235"><img src="./uploads/productdata/thumbs/59e5322e5fa2a3d5b92314801f078ba8.jpg" width="50" height="50" alt="temp" /></a>
+						<h1 style="margin-bottom: 10px;">Andouille Snack Sticks</h1>
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1235">More info</a>						<div class="clear"></div>
+					</div>										<div class="post">
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1234"><img src="./uploads/productdata/thumbs/2aa7a91af8feab9e325e0d9a6ff50532.jpg" width="50" height="50" alt="temp" /></a>
+						<h1 style="margin-bottom: 10px;">Bacon Smokie</h1>
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1234">More info</a>						<div class="clear"></div>
+					</div>										<div class="post">
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1233"><img src="./uploads/productdata/thumbs/011f90c21032b2358b13a8ad91a65222.png" width="50" height="50" alt="temp" /></a>
+						<h1 style="margin-bottom: 10px;">Dill Pickle Snack Sticks</h1>
+						<a href="http://jbsausagesupplies.com/?page=ProductDetail&id=1233">More info</a>						<div class="clear"></div>
+					</div>									
+				</div>								<div class="item">
+					<h1>Main Office</h1>
+					<span class="lineheight">
+						425 Maxwell Crescent<br />												Regina<br />						SK<br />						S4N 5X9<br />					</span><br />
+					<a href="https://maps.google.com/?q=425 Maxwell Crescent++Regina+SK,+S4N 5X9" target="_blank" ><img src="images/btnShowMap.png" width="134" height="23" alt="Show on Google Map" class="transparent" /></a><br /><br />
+					
+					<div class="fb-follow" data-href="https://www.facebook.com/jbsausage" data-layout="button" data-size="large" data-show-faces="true"></div>
+					<br /><br />
+                    
+											<div class="visual">Call: <span class="col">306-359-6500</span><br /></div>
+										
+											<div class="visual">Fax: <span class="col">306-359-9929</span><br /></div>
+										
+											<div class="visual">Email: <a href="mailto:info@jbsausagesupplies.com">Click Here</a></div>
+										
+				</div>				<div class="item">
+				    <h1>Retail Outlet</h1>
+				    <span class="lineheight">
+    				    734  45th Street W.<br />
+    				    Saskatoon<br />
+    				    SK.<br />
+    				    S7L 5X1<br />
+				    </span>
+				    <br />
+					<a href="https://maps.google.com/?q=734+45th+Street+W+Saskatoon+SK+S7L+5X1" target="_blank" ><img src="images/btnShowMap.png" width="134" height="23" alt="Show on Google Map" class="transparent" /></a>
+					<br /><br /><br /><br />
+				    
+				    				    
+				    
+					<h1>Privacy Statement</h1>
+					<p>
+						We value your privacy.  We will use the information you have provided to provide you with a response.
+						We will not sell or divulge your information to any other party.
+						If you have questions about any of this, please direct them to info@jbsausagesupplies.com.
+					</p>
+					<p>
+						<a id="bbblink" class="ruvtbus" href="http://www.bbb.org/saskatchewan/business-reviews/meat-packers-equipment-and-supplies/jbs-sausage-maker-supplies-ltd-in-regina-sk-11210#bbbseal" title="J.B.'S Sausage Maker Supplies Ltd., Meat Packers Equipment & Supplies, Regina, SK" style="display: block;position: relative;overflow: hidden; width: 40px; height: 72px; margin: 0px; padding: 0px;"><img style="padding: 0px; border: none;" id="bbblinkimg" src="http://seal-sask.bbb.org/logo/ruvtbus/jbs-sausage-maker-supplies-ltd-11210.png" width="80" height="72" alt="J.B.'S Sausage Maker Supplies Ltd., Meat Packers Equipment & Supplies, Regina, SK" /></a><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-sask.bbb.org' + unescape('%2Flogo%2Fjbs-sausage-maker-supplies-ltd-11210.js') + "' type='text/javascript'%3E%3C/script%3E"));</script>
+					</p>
+
+				</div>
+				<div class="clear"></div>
+			</div>		</div>	</div><script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+	</script>
+</body>
+</html>

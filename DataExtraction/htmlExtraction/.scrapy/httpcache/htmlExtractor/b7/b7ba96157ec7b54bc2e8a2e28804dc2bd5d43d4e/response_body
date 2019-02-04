@@ -1,0 +1,370 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Biomerica</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-1.11.3.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+
+<body>
+
+<header>
+<div class="top-info">
+  <div class="container">
+    <a href="tel:19496452111" class="contact-link"><span class="glyphicon glyphicon-earphone red"></span>+1 949 645 2111</a>
+    <a href="mailto:info@biomerica.com" class="contact-link"><span class="glyphicon glyphicon-envelope red"></span>Email : info@biomerica.com</a>
+    <a href="http://biomerica.com/login/index.asp" class="login-link">LOGIN</a>  |  <a href="http://biomerica.com/login/register.asp">REGISTER</a>
+  </div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="index.asp"><img src="img/logo.png" alt="logo" id="logo" class="img-responsive"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://biomerica.com">Home</a></li>
+        <li><a href="http://biomerica.com/products/index.asp">Products</a></li>
+        <li><a href="http://biomerica.com/customer/index.asp">Customer Care</a></li>
+        <li><a href="http://biomerica.com/news/index.asp">News & Trade Shows</a></li>
+        <li><a href="http://biomerica.com/company/index.asp">Our Company</a></li>
+        <li><a href="http://biomerica.com/contact/index.asp">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header> 
+
+
+<div id="hero-carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#hero-carousel" data-slide-to="1"></li>
+    <li data-target="#hero-carousel" data-slide-to="2"></li>
+    <li data-target="#hero-carousel" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <div class="hero-slide slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <p class="main-header">A Passion</p>
+              <p class="main-subheader">For Life </p>
+              <p class="slider-text">Improving quality of life is instrumental to our success.  Biomerica designs and distributes products intended to enable prevention and early detection of disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="hero-slide slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <p class="main-header">A Passion</p>
+              <p class="main-subheader">For Discovery</p>
+              <p class="slider-text">Improving health is the driving force behind our purpose.  Biomerica’s R&D targets the diagnosis and treatment of unexplained conditions such as Irritable Bowel Syndrome.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="hero-slide slide-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <p class="main-header">A Passion</p>
+              <p class="main-subheader">For Health </p>
+              <p class="slider-text">Health is happiness.  Results really matter…that’s why we manufacture quality, accuracy and consistency into our products.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="hero-slide slide-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="main-header">A Passion</p>
+              <p class="main-subheader">For For A Better You</p>
+              <p class="slider-text">Self-improvement is one of our cornerstones.  Biomerica provides self-test products for the early diagnosis of cancer and other conditions as well as laboratory tests to improve your health.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#hero-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#hero-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+<div class="horizontal-section-large" id="our-products">
+  <div class="container">
+    <h3 class="std-header center-text">Our <span class="red">Products</span></h3>
+    <p class="center-text">Biomerica manufactures diagnostic tests that are used by hospitals, clinical laboratories, physician’s offices, and consumers around the world. Our testing kits detect medical problems ranging from allergies, ulcers, and cancer to infertility and diabetes. </p><br>
+
+    <div class="row">
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/product_listing.asp">
+          <div class="product-wrapper">
+            <div class="caption">Product Listing A-Z</div>
+            <img src="img/img1.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/clinical_lab_tests.asp">
+          <div class="product-wrapper">
+            <div class="caption">Clinical Lab Products</div>
+            <img src="img/img2.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/pop.asp">
+          <div class="product-wrapper">
+            <div class="caption">Physician’s Office Products</div>
+            <img src="img/img3.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/hdp.asp">
+          <div class="product-wrapper">
+            <div class="caption">Home Diagnostic Products</div>
+            <img src="img/img4.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/catalog.asp">
+          <div class="product-wrapper">
+            <div class="caption">Listing by Catalog Number</div>
+            <img src="img/img5.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-6">
+        <a href="http://biomerica.com/products/showcase.asp">
+          <div class="product-wrapper">
+            <div class="caption">Showcase</div>
+            <img src="img/img6.jpg" alt="" class="product-img center-block img-responsive">
+          </div>
+        </a>
+      </div>
+    </div><br><br>
+
+  </div>
+</div>
+
+
+
+<div class="horizontal-section-large" id="product-showcase">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-4">
+        <div class="white-box">
+          <h2>Product Showcase</h2>
+          <div class="row">
+            <div class="col-md-5" style="left: 0px; top: 0px">
+              <img src="images/products/ProductId_108.gif" class="inline-img center-block img-responsive">
+
+            </div>
+            <div class="col-md-7">
+<STRONG>Transglutaminase IgA ELISA - 7044</STRONG>
+<br>
+<p spellcheck="true">Biomerica&#39;s Transglutaminase IgA ELISA is a 1.5 hour quantitative test for the presence of&#160; transglutaminase IgA antibodies in human serum. Celiac disease (CD) or gluten-sensitive enteropathy is a chronic disease in whic....
+<br>
+<a href="/products/product_detail.asp?ProductID=108" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('more','','images/navigations/more_on.gif',1)"><img src="images/navigations/more_off.gif" alt="More..." name="more" width="73" height="22" border="0"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<div class="horizontal-section-large" id="features">
+  <div class="container">
+    <h3 class="std-header center-text">Enabling Health & Potential Around the World</h3>
+
+    <p class="center-text">Discover expert advice, tips and resources to help you achieve better health through every life stage. Arm yourself with knowledge on the power of diagnostics, science and innovation to make better health decisions.</p><br><br>
+  </div>
+
+  <div id="bg-box"></div>
+
+  <div class="container white-box">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <h4>Digestive Problems</h4>
+        <img src="img/1.jpg" alt="" class="center-block img-responsive">
+        <p>Irritable bowel syndrome (IBS, or spastic colon) is a symptom-based diagnosis characterized by chronic abdominal pain, discomfort, bloating, and alteration of bowel habits.</p>
+          <a class="btn btn-ba-transparent" href="http://www.infoodsibs.com" target="_blank">Learn More</a>
+      </div>
+
+      <div class="col-sm-4">
+        <h4>Gastrointestinal Disorders</h4>
+        <img src="img/2.jpg" alt="" class="center-block img-responsive">
+        <p>Helicobacter pylori (H. pylori) is a bacteria associated with gastrointestinal diseases such as peptic ulcer and gastric cancer.</p>
+          <a class="btn btn-ba-transparent" href="http://www.hpyloritests.com/" target="_blank">Learn More</a>
+      </div>
+
+      <div class="col-sm-4">
+        <h4>Diabetes Conditions </h4>
+        <img src="img/3.jpg" alt="" class="center-block img-responsive">
+        <p>Diabetes is a condition in which the body does not properly process food for use as energy. It is the seventh leading cause of death in the USA</p>
+          <a class="btn btn-ba-transparent" href="http://www.icatests.com/" target="_blank">Learn More</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="horizontal-section-large" id="distributors">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-5">
+     
+        <p><p spellcheck="true"><strong spellcheck="true">Interested in Distributing Biomerica&#39;s Products?</strong> 
+</p>
+<p spellcheck="true"><strong spellcheck="true">Please Contact our Marketing Department at:</strong> 
+</p>
+<p spellcheck="true"><a spellcheck="true" class="contact-link" href="mailto:info@biomerica.com">Email : info@biomerica.com</a> 
+</p>
+<p spellcheck="true"></p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true"><a spellcheck="true" href="/product_files/ProdID_141_FileID_1.pdf" color="#800080">Click here to download our Product Catalog<strong spellcheck="true">&#160;<span spellcheck="true" style="mso-tab-count: 1">&#160;&#160;&#160;&#160;</span></strong></a></span> 
+</p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true"></span>&#160; 
+</p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true"></span>
+</p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true"><span spellcheck="true"><a spellcheck="true" href="/customer/questions.asp" color="#800080">Looking for Technical Tips and FAQ&#39;s click here<strong spellcheck="true"><span spellcheck="true" style="mso-tab-count: 1">&#160;</span></strong></a></span></span> 
+</p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true">&#160;</span><span spellcheck="true"><strong spellcheck="true"><span spellcheck="true" style="mso-tab-count: 1">&#160;</span><o:p spellcheck="true"></o:p></strong></span> 
+</p>
+<p spellcheck="true"></p>
+<p spellcheck="true"></p>
+<p spellcheck="true"></p>
+<p spellcheck="true" class="MsoNormal" style="MARGIN: 0in 0in 0pt"><span spellcheck="true"><a spellcheck="true" href="/news/news_view.asp?NewsItem=166" color="#800080">Click here for NEWS - Biomerica Approved for Listing on the Nasdaq Capital Market<strong spellcheck="true"> <span spellcheck="true" style="mso-tab-count: 1">&#160;&#160;&#160;&#160; </span><o:p spellcheck="true"></o:p></strong></a></span>
+</p></p>
+        <!--Interested in Distributing Biomerica’s Products
+          <h6>Distributors</h6> <p>Please contact our Marketing Department at: <a href="mailto:info@biomerica.com">info@biomerica.com</a></p>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<table style="width: 1256px">
+	<tr>
+		<td style="width: 651px"> 
+    <div class="col-md-6 contact-info">
+      <h6>Contact Us </h6>
+      <p class="header-font"><b>Headquarters Address:</b></p>
+
+      <p class="address">17571 Von Karman Avenue<br>
+      Irvine, CA 92614 USA</p>
+
+      <p class="phone"><b>Telephone</b>: +1 (949) 645-2111<br>
+      Toll-Free (USA only): 800-854-3002</p>
+
+      <p class="fax"><b>Fax</b>: +1 (949) 553-1231</p>
+
+      <p class="mail"><b>Email</b>: <a href="mailto:info@biomerica.com">info@biomerica.com</a></p>
+    </div>
+</td>
+		<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.7681435710865!2d-117.84860368479451!3d33.689067280706325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcde96dce674af%3A0x39c0a5e926388875!2s17571+Von+Karman+Ave%2C+Irvine%2C+CA+92614!5e0!3m2!1sen!2sus!4v1536712262533" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</td>
+	</tr>
+</table>
+<footer>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-3">
+        <h6 class="footer-header">Quick Links </h6>
+        <ul class="footer-nav">
+          <li><a href="http://biomerica.com/products/index.asp">Products</a></li>
+          <li><a href="http://biomerica.com/news/index.asp">News & Trade Shows</a></li>
+          <li><a href="http://biomerica.com/company/index.asp">Our Company </a></li>
+          <li><a href="http://biomerica.com/contact/index.asp">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <h6 class="footer-header">Our Products</h6> 
+        <ul class="footer-nav">
+          <li><a href="http://biomerica.com/products/product_listing.asp">Product Listing A-Z</a></li>
+          <li><a href="http://biomerica.com/products/clinical_lab_tests.asp">Clinical Lab Products</a></li>
+          <li><a href="http://biomerica.com/products/pop.asp">Physician’s Office Products</a></li>
+          <li><a href="http://biomerica.com/products/hdp.asp">Home Diagnostics Products</a></li>
+          <li><a href="http://biomerica.com/products/catalog.asp">Listing by Catalog Number</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-sm-3">
+          <br>
+        <img src="img/logo.png" alt="logo" class="footer-logo center-block img-responsive">
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="bottom-footer">
+    <p class="copyrights">1999 – 2018 Biomerica, Inc. All rights reserved.  |  Terms of use. Biomerica is a registered trademark of Biomerica, Inc.</p>
+  </div>
+
+</footer>
+
+
+</body>
+</html>

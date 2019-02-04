@@ -1,0 +1,444 @@
+
+
+<!--
+******************************************************************************
+**** Program Title:   index.asp
+**** Developer: Web Site Advantage
+**** E-mail: office@wsadvantage.com
+**** Phone: (902) 628-6229
+**** Description: this is a dynamic page which has 2 dynamic sections: the most recent news item, and a random recipe.  
+****									
+**** TEST
+****
+**** Maintenance Log:
+****  #         Date [ccyy/mm/dd]     Initials    Short Description
+**** ====       =================     ========    ======================
+**** 0001       2004/1/7            VRC          V1.0
+****
+**** 
+****
+******************************************************************************
+-->
+
+
+<html>
+<head>
+<title>PEI Potatoes – WP Griffin Inc. – Prince Edward Island, Canada</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="KEYWORDS" content="potato, pei potatoes, prince edward island potatoes, potato recipes, wp griffin inc., pei potato specialists, Bud the Spud, russet potatoes, potato nutrition, healthy potatoes, pei table potatoes, potato packing, washed potatoes, unwashed potatoes, potato shipping, potato grower, potato producer, potato shipper, potato production, potato grading, elmsdale, canada, potato products, russet, round white, red norland, yukon gold, superior, restaurant style, baking, beef">
+<meta name="AUTHOR" content="Web Site Advantage">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="DESCRIPTION" content="W.P. Griffin Inc. is a family owned and operated farming business located in Elmsdale, Prince Edward Island.  We package both washed and unwashed table potatoes under three brand names.">
+<meta name="organization-email" content="office@wpgriffin.com">
+<meta name="copyright" content="WP Griffin Inc.">
+<meta name="coverage" content="Worldwide"> 
+<meta name="creation_date" content="Jan. 15, 2004">
+<meta name="revisit_after" content="7 days">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="title" content="Home"/>
+<meta name="identifier" content="www.wpgriffin.com">
+<meta http-equiv="expires" content="_">
+<!--W.P. Griffin Inc. is a family owned and operated farming business located in Elmsdale, Prince Edward Island.  The company is divided into three divisions: Farming Operation, Packaging Warehouse and Cattle Operation as well as a retail division called Bud the Spud Outlet-->
+<link rel="stylesheet" type="text/css" href="styles/styles2.css">
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<script language="JavaSCRIPT">
+function openMovieWindow(url) {
+	popupWin = window.open(url,"", "directories=no,status=yes,scrollbars=no,resize=no,menubar=no,width=400,height=300,top=30,left=80");
+}
+function openAudio(url) {
+	window.open(url,"", "directories=no,status=yes,scrollbars=no,resizable=yes,menubar=yes,width=450,height=220,top=0,left=0");
+}
+
+</script>
+
+
+
+<SCRIPT TYPE="text/javascript" SRC="include/slideshow.js"></script>
+
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+var ss
+// Create the slideshow object
+ss = new slideshow("ss");
+
+// Set the delay between slides, 1000 = 1 sec
+
+ ss.repeat = true;
+ ss.prefetch = -1;
+ ss.timeout = 4000;
+
+
+s = new slide(); s.src ="database/images/recipes/4-Cheesy Potato Casserole web.jpg"; s.text ="Cheesy Potato Casserole<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>April&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=498";s.width =250;s.height =151;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/2- Potato Chocolate cake web.jpg"; s.text ="Potato Chocolate Cake <font color=D61602> - 3rd Place Winner 2018</font><br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>February&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=4&id=527";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/6 -Big mac potato salad web.jpg"; s.text =" Big Mac Potato Salad -<font color=D61602>2nd Place Winner 2018</font><br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>June&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=3&id=502";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/7 -Potato Tacos web.jpg"; s.text ="Potato Tacos<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>July&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=506";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/1- Double stuffed Potatoes web.jpg"; s.text ="Double Stuffed Potatoes<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>January&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=510";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/8 -Potato Apple summer salad web.jpg"; s.text ="Potato-Apple Summer Salad<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>August&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=3&id=520";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/11-Seafood chowder web.jpg"; s.text ="Seafood Chowder<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>November&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=3&id=525";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/10- Cheesy Rolls web1.jpg"; s.text ="Cheddar Potato Rolls<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>October&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=1&id=526";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/9 -Grilled Potato skins web.jpg"; s.text ="Grilled Potato Skins<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>September&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=486";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/3 -Slow cooker mashed potatoes web.jpg"; s.text ="Slow Cooker Mashed Potatoes<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>March&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=487";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/12 -Loaded potato chicken casserole web.jpg"; s.text ="Loaded Potato Chicken Casserole<br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>December&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=489";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);s = new slide(); s.src ="database/images/recipes/5 -Seafood 2x baked potato with sauce web.jpg"; s.text ="Snow Crab and Lobster Twice Baked Potato with White Wine Lobster Cheese Sauce <font color=D61602> - Grand Prize Winner 2018</font><br><div align='center'><table border=0 cellspacing=0 cellpadding=0><tr><td class=tinyredhome align=center>May&nbsp;2018</td><td rowspan=2 valign=bottom><img src='images2/home/blueribbon.gif' style='margin-left:3px' border=0></td></tr><tr><td class=tinyredhome><b>MONTHLY WINNER</b></td></tr></table></div>";s.link ="recipe_details.asp?CategoryID=2&id=493";s.width =240;s.height =180;s.timeout =4000;s.filter = 'progid:DXImageTransform.Microsoft.Fade()';ss.add_slide(s);
+
+
+// The following loop sets an attribute for all of the slides.
+// This is easier than setting the attributes individually.
+
+for (var i=0; i < ss.slides.length; i++) {
+
+  s = ss.slides[i];
+  //s.target = "ss_popup";
+  //s.attr = "width=320,height=420,resizable=yes,scrollbars=yes";
+
+}
+
+//-->
+</SCRIPT>
+
+
+</head>
+
+<body style="background-image:url('images2/background.jpg');background-align:top;background-repeat:repeat-x;background-color:#202020;margin:22px 0px 0px 0px">
+<center>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+<div><map id="FPMap0" name="FPMap0">
+	<area coords="0, 0, 47, 29" href="index.asp" title="Home" shape="rect" />
+	<area coords="401, 6, 525, 89" href="index.asp" title="W.P.Griffin Inc. - Grower, Packer, Shipper" shape="rect" />
+	<area coords="909, 4, 932, 25" href="mailto:office@wpgriffin.com" title="Email" shape="rect" />
+	<area coords="881, 3, 905, 24" style="cursor:pointer" title="Phone: 902-853-2755" shape="rect" />
+	</map><img src="images2/header/header.jpg" border="0" usemap="#FPMap0"/></div>
+</body>
+
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+<script language='javascript'>
+	var loc
+	loc=document.location.href
+	loc=loc.split("/")
+	loc=loc[loc.length-1]
+	
+	function fMouseOver(butname,butswop){
+		document.images[butname].src="images2/menu/"+butswop
+	}
+	
+	function fMouseOut(butname,butswop){		
+		document.images[butname].src="images2/menu/"+butswop
+	}
+	
+</script>
+
+<div style="height:27px;width:940px;background-image:url('images2/menu/background.jpg');text-align:center;)">
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<script>
+  		if(loc=="aboutus.asp"){
+			document.write("<td style='padding-right:38px'><a href='aboutus.asp'><img src='images2/menu/about_sel.gif' border=0 alt='About Us'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='aboutus.asp' onMouseOver=javascript:fMouseOver('aboutus','about_mo.gif') onMouseOut=javascript:fMouseOut('aboutus','about.gif')><img name='aboutus' src='images2/menu/about.gif' border=0 alt='About Us'></a></td>")
+		}
+		
+		if(loc.substr(0,7)=="product"){
+			document.write("<td style='padding-right:38px'><a href='products.asp'><img src='images2/menu/products_sel.gif' border=0 alt='Our Products'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='products.asp' onMouseOver=javascript:fMouseOver('products','products_mo.gif') onMouseOut=javascript:fMouseOut('products','products.gif')><img name='products' src='images2/menu/products.gif' border=0 alt='Our Products'></a></td>")
+		}
+		
+		if(loc.substr(0,6)=="recipe" || loc=="rate_recipe_ty.asp" || loc=="submit_recipe.asp" || loc=="submit_ty.asp" || loc=="submit_guidelines.asp" || loc=="shareandwin.asp"){
+			document.write("<td style='padding-right:38px'><a href='recipes.asp'><img src='images2/menu/recipecorner_sel.gif' border=0 alt='Recipe Corner'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='recipes.asp' onMouseOver=javascript:fMouseOver('recipecorner','recipecorner_mo.gif') onMouseOut=javascript:fMouseOut('recipecorner','recipecorner.gif')><img name='recipecorner' src='images2/menu/recipecorner.gif' border=0 alt='Recipe Corner'></a></td>")
+		}
+		
+		if(loc.substr(0,16)=="farmingtradition"){
+			document.write("<td style='padding-right:38px'><a href='farmingtradition.asp'><img src='images2/menu/farmingtradition_sel.gif' border=0 alt='A Farming Tradition'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='farmingtradition.asp' onMouseOver=javascript:fMouseOver('farmingtradition','farmingtradition_mo.gif') onMouseOut=javascript:fMouseOut('farmingtradition','farmingtradition.gif')><img name='farmingtradition' src='images2/menu/farmingtradition.gif' border=0 alt='A Farming Tradition'></a></td>")
+		}
+		
+		if(loc.substr(0,8)=="whatsnew"){
+			document.write("<td style='padding-right:38px'><a href='whatsnew.asp'><img src='images2/menu/whatsnew_sel.gif' border=0 alt='What`s New'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='whatsnew.asp' onMouseOver=javascript:fMouseOver('whatsnew','whatsnew_mo.gif') onMouseOut=javascript:fMouseOut('whatsnew','whatsnew.gif')><img name='whatsnew' src='images2/menu/whatsnew.gif' border=0 alt='What`s New'></a></td>")
+		}
+		
+		if(loc.substr(0,9)=="guestbook"){
+			document.write("<td style='padding-right:38px'><a href='guestbook.asp'><img src='images2/menu/guestbook_sel.gif' border=0 alt='Guestbook'></a></td>")
+		}else{
+			document.write("<td style='padding-right:38px'><a href='guestbook.asp' onMouseOver=javascript:fMouseOver('guestbook','guestbook_mo.gif') onMouseOut=javascript:fMouseOut('guestbook','guestbook.gif')><img name='guestbook' src='images2/menu/guestbook.gif' border=0 alt='Guestbook'></a></td>")
+		}
+		
+		if(loc.substr(0,10)=="budthespud"){
+			document.write("<td><a href='budthespud.asp'><img src='images2/menu/budthespud_sel.gif' border=0 alt='Bud The Spud'></a></td>")
+		}else{
+			document.write("<td><a href='budthespud.asp' onMouseOver=javascript:fMouseOver('budthespud','budthespud_mo.gif') onMouseOut=javascript:fMouseOut('budthespud','budthespud.gif')><img name='budthespud' src='images2/menu/budthespud.gif' border=0 alt='Bud The Spud'></a></td>")
+		}
+
+
+
+
+
+
+		</script>
+	</tr>
+</table>
+</div>
+</body>
+
+</html>
+
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td style="background-image:url('images2/back_left.gif');width:11px">&nbsp;</td>
+		<td style="background-image:url('images2/content_top_back.gif');background-position:center top;background-repeat:repeat-x;background-color:#fbeac1;width:918px;height:200px">
+		
+		<div style="padding:20px">
+<!--begin content ------------------------------>
+				<div style="width:100%">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td style="vertical-align:top">
+
+						<img border="0" src="images2/home/brotherspic.jpg" alt="John and Peter Griffin"><br/><br/>
+
+						<table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:5px">
+								<tr>
+									<td style="padding-right:20px"><span class="h1">Welcome</span></td>
+									<td style="height:33px;width:56px">
+<script language="javascript">
+	if (AC_FL_RunContent == 0) {
+		alert("This page requires AC_RunActiveContent.js.");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', '56',
+			'height', '33',
+			'src', 'audio/welcomemessage3',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'welcomemessage3',
+			'bgcolor', '#fbeac1',
+			'name', 'welcomemessage3',
+			'menu', 'true',
+			'allowFullScreen', 'false',
+			'allowScriptAccess','sameDomain',
+			'movie', 'welcomemessage3',
+			'salign', ''
+			); //end AC code
+	}
+</script>
+<noscript>
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="56" height="33" id="welcomemessage3" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="welcomemessage3.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#fbeac1" />	<embed src="welcomemessage3.swf" quality="high" bgcolor="#fbeac1" width="56" height="33" name="welcomemessage3" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+</noscript>
+
+									</td>
+									<!--<td style="vertical-align:bottom;padding-bottom:4px;background-image:url('images2/home/play_back3.gif');background-repeat:no-repeat;width:34px;height:34px;text-align:center"><object>
+										<param name="src" value="audio/welcomemessage.wav">
+										<param name="autoplay" value="false">
+										<param name="controller" value="true">
+										<param name="height" value="16px">
+										<param name="width" value="18px">
+										<param name="bgcolor" value="#f5dda2">
+										<embed src="audio/welcomemessage.wav" bgcolor="#f5dda2" height="16px" width="18px" controller="true" autoplay="false" autostart="false" type="audio/wav" pluginspage="http://www.apple.com/quicktime/download/">
+										</object></td>-->
+								</tr>
+							</table>
+
+
+							<strong>On 
+							behalf of the Griffin Family we welcome you.</strong> 
+							Our family has been growing potatoes on beautiful 
+							Prince Edward Island for nearly <a href="farmingtradition.asp">60 years</a>. 
+							As Prince Edward Island Potato 
+							Specialists™ we take great pride in growing, 
+							packaging and shipping a wide variety of potatoes 
+							and convenient <a href="products.asp">product choices</a>. Our 
+							potato products are sold across Canada, the Eastern 
+							United States, and to international markets. Check 
+							out our delicious potato recipes and submit your <a href="recipes.asp">favourite recipes</a>.
+
+
+						</td>
+
+
+
+
+						<td style="padding-left:30px;vertical-align:bottom; width: 550px">
+							
+						<!--<strong>On behalf of the Griffin family, we welcome you to our site.</strong> Please take the time to familiarize yourself 
+						with our <a href="products.asp">potato products</a> and their best uses and cooking methods, take a look at our list of <a href="recipes.asp">tasty recipes</a> that 
+						are sure to tempt your taste buds, and while you're here why not visit our <a href="farmingtradition.asp">farming tradition</a> pages to see first-
+						hand what we Griffins are all about?<br><br>--> 
+
+							<video width="100%" controls="" poster="images2/home/videothumb.jpg">
+						  <source src="http://wpgriffin.com/video/GriffinShort2016LG.mp4" type="video/mp4">
+				
+						  Your browser does not support HTML5 video.
+						</video>
+
+
+							<!--<img alt="" style="margin-left:200px;margin-top:-7" align="right" height="42" src="images2/home/signatures.gif" width="184">--></td>
+					</tr>
+				</table>
+				<br>
+				<br>
+				<table style="background-color:#f5dda2;width:100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td style="width:33%;background-image:url('images2/home/h_background.gif');text-align:center"><img src="images2/home/h_recipecorner.gif" border="0"></td>
+						<td style="width:34%;background-image:url('images2/home/h_background.gif');text-align:center"><img src="images2/home/h_ourproducts.gif" border="0"></td>
+						<td style="width:33%;background-image:url('images2/home/h_background.gif');text-align:center"><img src="images2/home/h_whatsnew.gif" border="0"></td>
+					</tr>
+					<tr>
+						<td style="padding:0px 20px 20px 20px;vertical-align:top;text-align:center;height:370px">
+						
+							<DIV ID="ss_img_div"><A ID="ss_img_link" HREF="javascript:ss.hotlink()"><IMG ID="ss_img" NAME="ss_img" SRC="images2/spacer.gif" border="0" STYLE="filter:progid:DXImageTransform.Microsoft.Fade();border:1px #3f3b30 solid;margin-bottom:3px;width:245px"></A></DIV>
+						
+						<span class="recipelabel"><DIV ID="ss_text"></DIV></span><br>
+						
+						<div class="homesharewinbox" style="padding:5px 0px 10px 0px">
+						<img src="images2/home/sharewinlogo_bbq.gif" border="0"><br>						
+						<span class="browntext">Share your best potato recipe to win a<br>
+						chance to be published in our<br>
+						<strong>Annual Photo Calendar</strong>!</span>
+						</div>
+						</td>
+						<td style="padding:0px 25px 20px 25px;vertical-align:top">
+						<img alt="" height="133" src="images2/home/pic_products.jpg" style="border:1px #3f3b30 solid;margin-bottom:10px" width="245"><br>We strive to make your meal-time experience easy,
+                              convenient and tasty.&nbsp; We were the first to
+                              market Microwave-ready shrink wrap potatoes in
+                              Canada.&nbsp; Our family farm and packaging
+                              operation is proud to be the initial branding 
+                              partner of Dole<sup>TM</sup> for potatoes in Canada.&nbsp; W.P.
+                              Griffin Inc. packages many different types of 
+                              potatoes in various sizes of traditional paper, 
+                              poly, mesh, and poly-mesh bags under brand names 
+                              such as Griffin, Dole and Bud the Spud. We now 
+                              also provide size-specific count packs for the
+                              <a href="foodservice.asp">food service</a> 
+                              industry.</td>
+						<td style="padding:0px 20px 20px 20px;vertical-align:top"><a href='whatsnew_details.asp?id=190'><img src='database/images/news/rsz_1john_griffin_and_hubert_hutton_publisher.jpg' style='border:1px #3f3b30 solid;width:245px;margin-bottom:5px' border=0></a><br><span class=smaller>5/9/2018</span><br><b>ABM Hall Of Fame Award</b><br><br>On Wednesday, May 9th at the Atlantic Business Magazine (ABM) awards dinner in Halifax John Griffin was presented with the ABM Business Hall of Fame award by Hubert Hutton, publisher of the ABM.<br><br>In 2005, Atlantic Business Magazine launched its Top 50 CEO legacy program: the Hall of Fame awards. Induction to the prestigious Top 50 CEO Hall of... <a href='whatsnew_details.asp?id=190'>continued&#187;</a></td>
+					</tr>
+					<tr>
+						<td style="text-align:center;padding-bottom:10px"><a href="recipe_list.asp" onmouseover="javascript:document.images.raterecipebut.src='images2/home/b_raterecipe_mo.gif'" onmouseout="javascript:document.images.raterecipebut.src='images2/home/b_raterecipe.gif'"><img name="raterecipebut" alt="Rate our Recipes!" height="27" src="images2/home/b_raterecipe.gif" border="0" width="120"></a>&nbsp;&nbsp;<a href="shareandwin.asp" onmouseover="javascript:document.images.submitrecipebut.src='images2/home/b_submitrecipe_mo.gif'" onmouseout="javascript:document.images.submitrecipebut.src='images2/home/b_submitrecipe.gif'"><img name="submitrecipebut" alt="Submit a Recipe!" height="27" src="images2/home/b_submitrecipe.gif" border="0" width="120"></a></td>
+						<td style="text-align:center;padding-bottom:10px"><a href="products.asp" onmouseover="javascript:document.images.readmorebut.src='images2/home/b_readmore_mo.gif'" onmouseout="javascript:document.images.readmorebut.src='images2/home/b_readmore.gif'"><img name="readmorebut" alt="Read More" height="27" src="images2/home/b_readmore.gif" border="0"></a></td>
+						<td style="text-align:center;padding-bottom:10px"><a href='whatsnew.asp' onmouseover="javascript:document.images.morenewsbut.src='images2/home/b_morenews_mo.gif'" onmouseout="javascript:document.images.morenewsbut.src='images2/home/b_morenews.gif'"><img name="morenewsbut" alt="Read More" height="27" src="images2/home/b_morenews.gif" border="0"></a></td>
+					</tr>
+				</table>
+				
+				<br>				
+				<br>
+				<table border="0" cellspacing="0" cellpadding="0" style="width:100%">
+					<tr>
+						<td><a href="documents/2018_Calendar.pdf" target="_blank" onmouseover="javascript:document.images.calendarbut.src='images2/home/ban_calendar_mo.png'" onmouseout="javascript:document.images.calendarbut.src='images2/home/ban_calendar.png'"><img name="calendarbut" alt="2018 Calendar" src="images2/home/ban_calendar.png" border="0"></a></td>
+						<td style="text-align:right"><a href="http://www.annabellepotatoes.ca" target="_blank" onmouseover="javascript:document.images.annabellebut.src='images2/home/ban_annabelle_mo.jpg'" onmouseout="javascript:document.images.annabellebut.src='images2/home/ban_annabelle.jpg'"><img name="annabellebut" src="images2/home/ban_annabelle.jpg" border="0"></a></td>
+					</tr>
+				</table>
+				</div>
+
+<!--end content -------------------------------->
+		
+		</div>
+		
+		</td>
+		<td style="background-image:url('images2/back_right.gif');width:11px">&nbsp;</td>
+	</tr>
+</table>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+
+<script language="JavaSCRIPT">
+function openmap(url) {
+	popupWin = window.open(url,"", "directories=no,status=no,scrollbars=no,resize=no,menubar=no,width=475,height=320,top=0,left=0");
+}
+</script>
+
+<div style="background-image:url('images2/footer/slogan.jpg');height:204px;width:940px">&nbsp;</div>
+<table style="padding:20px 23px 30px 23px;width:940px" border=0 cellspacing="0" cellpadding="0">
+	<tr>
+		<td style="text-align:left; width: 260px;">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="contact" style="padding-right:20px;">
+				<span class="contactlarger"><strong>CONTACT W.P. GRIFFIN INC.</strong></span><br /><br/><img alt="Phone" src="images2/footer/contact_phone.jpg" />&nbsp;&nbsp;902-853-2755<br/>
+				<img style="margin-left:-10px;"alt="Fax" src="images2/footer/contact_fax.jpg" />&nbsp;&nbsp;902-853-3614<br/>
+				<img style="padding-right:5px;"border="0" alt="Email" src="images2/footer/contact_email.jpg" /><a href="mailto:office@wpgriffin.com">Email</a><a href="mailto:office@wpgriffin.com"></a><br/><br/>
+				<img style="margin-left:-10px; margin-bottom:-15px; "border="0" alt="Email" src="images2/footer/contact_location.jpg" />
+				Elmsdale, P.E.I,
+				Canada, C0B 1K0 <br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=javascript:openmap("map.html")>View Our Location</a>
+				</td>
+			</tr>
+			</table>
+		</td>
+		
+		<td style="text-align:left; width: 350px;">			
+			<img src="images2/footer/ernst&young-banner.jpg" style="margin-left:5px;"/>			
+		</td>
+
+		<td style="text-align:right;" class="copyright">
+			© 2019, W.P. Griffin Inc., <br/>All Rights Reserved<br>
+			Site by <a href="http://www.wsadvantage.com">Web Site Advantage</a><br>
+			<br>
+			<br>
+			<br>			
+			<a href="index.asp">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="privacy.asp">Privacy Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://mail.wpgriffin.com" target="_blank">Staff Login</a>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+</body>
+
+</html>
+
+</center>
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+if (document.images) {
+  // Tell the slideshow which image object to use
+  ss.image = document.images.ss_img;
+  
+  // Tell the slideshow the ID of the element
+  // that will contain the text for the slide
+  ss.textid = "ss_text";
+  
+  // Update the image and the text for the slideshow
+  ss.update();
+
+  // Auto-play the slideshow
+  ss.play();
+}
+
+//-->
+</SCRIPT>
+
+</body>
+
+</html>

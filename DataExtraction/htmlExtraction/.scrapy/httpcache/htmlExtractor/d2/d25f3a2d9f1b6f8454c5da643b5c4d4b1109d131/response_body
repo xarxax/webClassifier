@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv='expires' content='0'><link rel=stylesheet type='text/css' href='/domcfg.nsf/cssLogin?ReadForm'>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+var NN4 = (document.layers) ? true : false;// required for NN4 to reliably capture key eventsif (NN4) document.captureEvents(Event.KEYPRESS)document.onkeypress = function (event) {  checkEnter(event)  return true}function setFormFocus() {	document.forms[0].Username.focus(); 	document.forms[0].Username.select();}//submit the form if the user presses the ENTER keyfunction checkEnter(event){ 		var code = 0		if (NN4) {		code = event.which	} else {		code = window.event.keyCode	}			if (code==13)		document.forms[0].submit()}
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#686464" style="background-image:url(/domcfg.nsf/backgroundgrad.png?OpenImageResource); background-repeat: repeat-x; " onload="setFormFocus();">
+
+<form method="post" action="/names.nsf?Login" name="_CustomLoginForm">
+<input type="hidden" name="%%ModDate" value="B9E69B7800000FA0"><table border="0" width="100%" height="70%"><tr><td align="center">
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td style="background-image:url(/domcfg.nsf/login.png?OpenImageResource); background-repeat: no-repeat; background-position: center;" width="434"><img src="/domcfg.nsf/Blank.gif?OpenImageResource" width="8" height="8"><br>
+<img src="/domcfg.nsf/Blank.gif?OpenImageResource" width="8" height="8"><br>
+<img src="/domcfg.nsf/Blank.gif?OpenImageResource" width="8" height="8"><div align="right">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/><br/><br/><br/><br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/><br/><br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/><br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><b><font size="2" face="Arial">Please identify yourself:</font></b><br>
+<br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="1%" valign="middle"><img width="96" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+<div align="right"><b><font size="2" face="Arial">Username:</font></b></div></td><td width="1%" valign="middle"><img width="12" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+</td><td width="100%" valign="middle"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+<b><font size="2" face="Arial">
+<input name="Username" value="" size=20 maxlength=50 autocomplete=off></font></b></td></tr>
+
+<tr valign="top"><td width="1%" valign="middle"><img width="96" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+<div align="right"><b><font size="2" face="Arial">Password:</font></b></div></td><td width="1%" valign="middle"><img width="12" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+</td><td width="100%" valign="middle"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+<b><font size="2" face="Arial">
+<input name="Password" value="" type="password" size=20 maxlength=50 autocomplete=off></font></b></td></tr>
+
+<tr valign="top"><td height=50 width="0%"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="1%" valign="middle"><img width="12" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+</td><td width="100%" valign="middle"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""><br>
+<br>
+<input type="submit" value="Sign In"></td></tr>
+</table>
+</td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="53"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="299"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></td><td width="12"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+</table>
+</div><img src="/domcfg.nsf/Blank.gif?OpenImageResource" width="8" height="8"><br>
+<img src="/domcfg.nsf/Blank.gif?OpenImageResource" width="8" height="8"></td></tr>
+</table>
+</div><div align="center"><br>
+<font size="2">
+<input name="RedirectTo" value="/webframe.nsf/frames?OpenPage" type=hidden></font></td></tr></table>
+
+</div></form>
+</body>
+</html>

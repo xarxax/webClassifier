@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- test area begin -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- test area end -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="&lt;keywrods>" name="keywords" />
+    <meta content="Mon, 26 Jan 2009 13:32:58 -0320" name="date" />
+    <meta content="1 DAYS" name="REVISIT-AFTER" />
+    <meta content="INDEX,FOLLOW" name="ROBOTS" />
+    <meta content="NO-CACHE" http-equiv="CACHE-CONTROL" />
+    <meta content="NO-CACHE" http-equiv="PRAGMA" />
+    <meta content="NOARCHIVE" name="GOOGLEBOT" />
+    <title>Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+    <link href="/Content/CSS/slick.css" rel="stylesheet"/>
+<link href="/Content/CSS/slick-theme.css" rel="stylesheet"/>
+<link href="/Content/CSS/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/CSS/newStyles.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+
+    <script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+    <script src="/Scripts/moment-with-locales.js"></script>
+<script src="/Scripts/moment.js"></script>
+
+
+    
+    <script type="text/javascript">
+       
+        var sessionTimeout = 20;
+        var sessionExpiresAt = "1/28/2019 5:27:22 PM";
+        var sessionCartItemCount =  0;
+       // alert(sessionTimeout);
+        var approximateStart = new Date();
+        var timeoutWarning =  1;
+    var notifyAfter = new Date(approximateStart.getTime() + ((sessionTimeout - timeoutWarning)*60000)); //shows timeout warning at 1 minutes before timeout
+        //TO DO: timeout is not repeating?????
+
+        function countDown() {
+            //alert("in countdown");
+            setTimeout(function () {
+                var now = moment();
+               // alert(now + ":" + moment(sessionExpiresAt) + ":" + moment(now).isAfter(moment(sessionExpiresAt)));
+               // document.getElementById('countDown').style.display = 'inline';
+                document.getElementById('countDown').innerHTML = "Countdown: " + now;
+
+                if (moment(now).isAfter(moment(sessionExpiresAt))) {
+                   // alert("test1")
+                    window.location("/Home/SessionTimeout");
+                }
+               // else if (new Date(now) >= new Date(notifyAfter)) {
+                    //alert("test");
+                    //jQuery(function () {
+                    //    $('#myModalWarning').modal('show');
+                    //}); (jQuery);
+               // }
+
+                countDown();
+            }, 5000); //repeat every 5 seconds
+        }
+        if (sessionTimeout != null && sessionCartItemCount > 0) {
+
+            countDown();
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div id="countDown" style="display:none;"></div>
+    <div class="modal fade" id="myModalWarning" tabindex="-1" role="dialog" aria-labelledby="myModalWarningLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalWarningLabel">Warning: Your browser session is about to expire.</h4>
+                </div>
+                <div class="modal-body">
+                    Your session is about to expire. If your session expires, you will need to re-add the desired items to your shopping cart before proceeding to checkout.<br /><Br />Thank you.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-nav">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">          
+            <a href="/ShoppingCart/Index" class="cart-toggle cart-img">
+                <span class="badge badge-toggle">
+                    0
+                </span>
+            </a>
+            <button id="change-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div id="navbar-hamburger">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+                <div id="navbar-close" class="hidden">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </button>
+
+
+            <a class="navbar-brand" href="/SiteDefault">
+                <img src="/Content/images/header/Milliman_white_medium.png" height="25">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="odd"><a href="/SiteDefault"><container>Home</container></a></li>
+                <li class="even"><a href="/Home/About"><container>About Us</container></a></li>
+                <li class="dropdown dropdown-large odd">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><container>
+    Surveys <span class="caret"></span></container></a>
+
+                    <ul class="dropdown-menu dropdown-menu-large row">
+
+
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header">The Surveys</li>
+                                    <li>
+                                        <a href="/AlaskaCrossIndustrySurvey">
+                                            Alaska Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ArizonaCompensationSurvey">
+                                            Arizona Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestBenefitSurvey">
+                                            Northwest Benefits Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestBoardDirectorsCompensationSurvey">
+                                            Northwest Board of Directors Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/EngineeringScientificProjectManagementSurvey">
+                                            Northwest Engineering / Scientific / Project Management Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestExecutiveCompensation">
+                                            Northwest Executive Compensation Survey
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-blank"></li>
+                                    <li>
+                                        <a href="/NorthwestFinancialIndustrySurvey">
+                                            Northwest Financial Industry Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestHealthCareSurvey">
+                                            Northwest Healthcare Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestHealthCareExecutiveCompensationSurvey">
+                                            Northwest Healthcare Executive Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestHealthcareCompensationMidYearUpdate">
+                                            Northwest Healthcare Hot Jobs Update Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestManagementProfessionalSurvey">
+                                            Northwest Management &amp; Professional Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/NorthwestTechnologySurvey">
+                                            Northwest Technology Survey
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-blank"></li>
+                                    <li>
+                                        <a href="/NorthwestUtilitiesSalarySurvey">
+                                            Northwest Utilities Salary &amp; Wage Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/OregonPublicEmployersSalarySurvey">
+                                            Oregon Public Employers Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/PortlandAreaCrossIndustrySurvey">
+                                            Portland Area Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/PugetSoundRegionalSalarySurvey">
+                                            Puget Sound Area Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/SpokaneAreaCompensationAndBenefitsSurvey">
+                                            Spokane / Inland Northwest Compensation Survey
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/WashingtonPublicEmployersSalarySurvey">
+                                            Washington Public Employers Survey
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-3">
+                            <ul class="row">
+                                <li class="col-sm-6">
+                                    <ul>
+                                        <li class="dropdown-header">Resources</li>
+                                        <li><a target="_blank" href="/Content/Downloads/Home/Milliman Job Titles.xlsx">Jobs Surveyed (A-Z)</a></li>
+                                        <li><a target="_blank" href="/Content/Downloads/Home/Survey Methodology.pdf">Methodology</a></li>
+                                        <li><a target="_blank" href="/Content/Downloads/Home/Data_Sample.pdf">Results Samples</a></li>
+                                       
+                                        <li>
+                                            <a target="_blank" href="/Schedule/2019" title="2019 Survey Pricing and Schedule">2019 Pricing and Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="/Schedule/2018" title="2018 Survey Pricing and Schedule">
+                                               2018 Pricing and Schedule
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-6">
+                                    <ul>
+                                        <li class="dropdown-header">Sign-up/Order</li>
+                                        <li><a target="_blank" href="/Content/Downloads/Home/2019 Participant Order Form - WEB.pdf" title="" >
+                                    2019 Participant order form
+                                </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Content/Downloads/Home/2018 Non-Participant Order Form - WEB.pdf" title="" target="_blank">
+                                            2018 Non-participant order form
+                                        </a>
+                                    </li>
+                                    </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="even"><a href="http://us.milliman.com/Solutions/Services/Strategic-rewards/" title="Strategic Rewards" target="_blank">Strategic Rewards</a></li>
+    <li class="dropdown odd">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            
+                        <li>
+
+                            <a href="/Content/Downloads/Home/2019 Participant Order Form - WEB.pdf" title="" target="_blank">
+                                2019 Participant order form
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Content/Downloads/Home/2018 Non-Participant Order Form - WEB.pdf" title="" target="_blank">
+                                2018 Non-participant order form
+                            </a>
+                        </li>
+                        <!--<li>
+                            <a href="~/Content/Downloads/Home/2019 Participant Order Form - WEB.pdf" title="" target="_blank">
+                                2019 Participant order form
+                            </a>
+                        </li>-->
+                    </ul>
+                </li>
+                <li class="even"><a href="/Home/Contact/"><container>Contact Us</container></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="login-btn"><a href="/dataentry/websurveynew/selectsurvey.aspx" title="Data Input Login" target="_blank">Data Input Login</a></li>
+                <li class="login-btn"><a href="https://surveyresults.milliman.com/" title="Results Login" target="_blank">Results Login</a></li>  
+                <li class="cart-btn">
+                    <a href="/ShoppingCart/Index" class="cart-img">
+                        <span class="badge">
+                            0
+                        </span> 
+                    </a>
+                </li>                     
+            </ul>                        
+        </div>         
+    </div>
+</nav>
+
+<script>
+    $(function () {
+        $('#change-toggle').click(function () {
+            // Show/hide close button for menu collapse.
+            $('#navbar-hamburger').toggleClass('hidden');
+            $('#navbar-close').toggleClass('hidden');
+
+            // When collapse menu is open, add styles.
+            if ($(".navbar-collapse").hasClass("navbar-collapse collapse")) {
+                $(".container-fluid:first-child").css({
+                    'border-bottom': '1px solid #e6e6e6',
+                    'padding-bottom': '20px'
+                });
+            } else {
+                $(".container-fluid:first-child").css({
+                    'border-bottom': 'none',
+                    'padding-bottom': 'initial'
+                });
+            }
+        });
+    });
+</script>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">          
+            
+            
+<header class="container-fluid sub-header-container">
+    <div class="row hidden-xs">
+        <div class="col-lg-4 col-md-4 col-sm-4 sub-header-left">
+            <img class="home-title-img" src="/Content/images/header/homeTitle.png" />
+        </div>
+
+        <div class="survey-selection">
+            <div class="survey-slider">
+                            <div>
+                                <a href="/NorthwestBoardDirectorsCompensationSurvey" title="Board of Directors">
+                                    <img src="/Content/images/Icons/Board of Directors Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Board of Directors Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestExecutiveCompensation" title="Executive">
+                                    <img src="/Content/images/Icons/Executive Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestManagementProfessionalSurvey" title="Management &amp; Professional">
+                                    <img src="/Content/images/Icons/Management and Professional_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Management &amp; Professional</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/EngineeringScientificProjectManagementSurvey" title="Engineering/Scientific/Project Management">
+                                    <img src="/Content/images/Icons/Engineering Scientific Project Management_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Engineering / Scientific / Project Management</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestTechnologySurvey" title="Technology">
+                                    <img src="/Content/images/Icons/Technology_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Technology</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBenefitSurvey" title="Benefits">
+                                    <img src="/Content/images/Icons/Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Benefits</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AlaskaCrossIndustrySurvey" title="Alaska">
+                                    <img src="/Content/images/Icons/Alaska Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Alaska Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/ArizonaCompensationSurvey" title="Arizona">
+                                    <img src="/Content/images/Icons/Arizona Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Arizona Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PortlandAreaCrossIndustrySurvey" title="Portland Area">
+                                    <img src="/Content/images/Icons/Portland Area Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Portland Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PugetSoundRegionalSalarySurvey" title="Puget Sound Area">
+                                    <img src="/Content/images/Icons/Puget Sound Regional_Regular.png" width="93" />
+                                    <span class="img-text">Puget Sound Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/SpokaneAreaCompensationAndBenefitsSurvey" title="Spokane Area">
+                                    <img src="/Content/images/Icons/Spokane Area Compensation and Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Spokane / Inland Northwest Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestFinancialIndustrySurvey" title="Financial">
+                                    <img src="/Content/images/Icons/NW Financial Industry_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Financial Industry Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareSurvey" title="Healthcare">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthcareCompensationMidYearUpdate" title="Healthcare Hot Jobs Update">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Hot Jobs Update</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareExecutiveCompensationSurvey" title="Healthcare Executive">
+                                    <img src="/Content/images/Icons/NW Healthcare Executive_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/OregonPublicEmployersSalarySurvey" title="Oregon Public Employers">
+                                    <img src="/Content/images/Icons/Oregon Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Oregon Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/WashingtonPublicEmployersSalarySurvey" title="Washington Public Employer">
+                                    <img src="/Content/images/Icons/Washington Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Washington Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestUtilitiesSalarySurvey" title="Utilities">
+                                    <img src="/Content/images/Icons/NW Utilities Salary and Wage_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Utilities Salary &amp; Wage</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBoardDirectorsCompensationSurvey" title="Board of Directors">
+                                    <img src="/Content/images/Icons/Board of Directors Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Board of Directors Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestExecutiveCompensation" title="Executive">
+                                    <img src="/Content/images/Icons/Executive Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestManagementProfessionalSurvey" title="Management &amp; Professional">
+                                    <img src="/Content/images/Icons/Management and Professional_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Management &amp; Professional</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/EngineeringScientificProjectManagementSurvey" title="Engineering/Scientific/Project Management">
+                                    <img src="/Content/images/Icons/Engineering Scientific Project Management_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Engineering / Scientific / Project Management</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestTechnologySurvey" title="Technology">
+                                    <img src="/Content/images/Icons/Technology_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Technology</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBenefitSurvey" title="Benefits">
+                                    <img src="/Content/images/Icons/Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Benefits</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AlaskaCrossIndustrySurvey" title="Alaska">
+                                    <img src="/Content/images/Icons/Alaska Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Alaska Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/ArizonaCompensationSurvey" title="Arizona">
+                                    <img src="/Content/images/Icons/Arizona Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Arizona Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PortlandAreaCrossIndustrySurvey" title="Portland Area">
+                                    <img src="/Content/images/Icons/Portland Area Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Portland Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PugetSoundRegionalSalarySurvey" title="Puget Sound Area">
+                                    <img src="/Content/images/Icons/Puget Sound Regional_Regular.png" width="93" />
+                                    <span class="img-text">Puget Sound Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/SpokaneAreaCompensationAndBenefitsSurvey" title="Spokane Area">
+                                    <img src="/Content/images/Icons/Spokane Area Compensation and Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Spokane / Inland Northwest Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestFinancialIndustrySurvey" title="Financial">
+                                    <img src="/Content/images/Icons/NW Financial Industry_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Financial Industry Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareSurvey" title="Healthcare">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthcareCompensationMidYearUpdate" title="Healthcare Hot Jobs Update">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Hot Jobs Update</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareExecutiveCompensationSurvey" title="Healthcare Executive">
+                                    <img src="/Content/images/Icons/NW Healthcare Executive_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/OregonPublicEmployersSalarySurvey" title="Oregon Public Employers">
+                                    <img src="/Content/images/Icons/Oregon Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Oregon Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/WashingtonPublicEmployersSalarySurvey" title="Washington Public Employer">
+                                    <img src="/Content/images/Icons/Washington Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Washington Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestUtilitiesSalarySurvey" title="Utilities">
+                                    <img src="/Content/images/Icons/NW Utilities Salary and Wage_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Utilities Salary &amp; Wage</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBoardDirectorsCompensationSurvey" title="Board of Directors">
+                                    <img src="/Content/images/Icons/Board of Directors Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Board of Directors Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestExecutiveCompensation" title="Executive">
+                                    <img src="/Content/images/Icons/Executive Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestManagementProfessionalSurvey" title="Management &amp; Professional">
+                                    <img src="/Content/images/Icons/Management and Professional_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Management &amp; Professional</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/EngineeringScientificProjectManagementSurvey" title="Engineering/Scientific/Project Management">
+                                    <img src="/Content/images/Icons/Engineering Scientific Project Management_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Engineering / Scientific / Project Management</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestTechnologySurvey" title="Technology">
+                                    <img src="/Content/images/Icons/Technology_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Technology</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBenefitSurvey" title="Benefits">
+                                    <img src="/Content/images/Icons/Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Benefits</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AlaskaCrossIndustrySurvey" title="Alaska">
+                                    <img src="/Content/images/Icons/Alaska Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Alaska Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/ArizonaCompensationSurvey" title="Arizona">
+                                    <img src="/Content/images/Icons/Arizona Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Arizona Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PortlandAreaCrossIndustrySurvey" title="Portland Area">
+                                    <img src="/Content/images/Icons/Portland Area Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Portland Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PugetSoundRegionalSalarySurvey" title="Puget Sound Area">
+                                    <img src="/Content/images/Icons/Puget Sound Regional_Regular.png" width="93" />
+                                    <span class="img-text">Puget Sound Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/SpokaneAreaCompensationAndBenefitsSurvey" title="Spokane Area">
+                                    <img src="/Content/images/Icons/Spokane Area Compensation and Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Spokane / Inland Northwest Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestFinancialIndustrySurvey" title="Financial">
+                                    <img src="/Content/images/Icons/NW Financial Industry_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Financial Industry Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareSurvey" title="Healthcare">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthcareCompensationMidYearUpdate" title="Healthcare Hot Jobs Update">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Hot Jobs Update</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareExecutiveCompensationSurvey" title="Healthcare Executive">
+                                    <img src="/Content/images/Icons/NW Healthcare Executive_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/OregonPublicEmployersSalarySurvey" title="Oregon Public Employers">
+                                    <img src="/Content/images/Icons/Oregon Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Oregon Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/WashingtonPublicEmployersSalarySurvey" title="Washington Public Employer">
+                                    <img src="/Content/images/Icons/Washington Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Washington Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestUtilitiesSalarySurvey" title="Utilities">
+                                    <img src="/Content/images/Icons/NW Utilities Salary and Wage_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Utilities Salary &amp; Wage</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBoardDirectorsCompensationSurvey" title="Board of Directors">
+                                    <img src="/Content/images/Icons/Board of Directors Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Board of Directors Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestExecutiveCompensation" title="Executive">
+                                    <img src="/Content/images/Icons/Executive Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestManagementProfessionalSurvey" title="Management &amp; Professional">
+                                    <img src="/Content/images/Icons/Management and Professional_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Management &amp; Professional</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/EngineeringScientificProjectManagementSurvey" title="Engineering/Scientific/Project Management">
+                                    <img src="/Content/images/Icons/Engineering Scientific Project Management_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Engineering / Scientific / Project Management</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestTechnologySurvey" title="Technology">
+                                    <img src="/Content/images/Icons/Technology_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Technology</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestBenefitSurvey" title="Benefits">
+                                    <img src="/Content/images/Icons/Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Benefits</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/AlaskaCrossIndustrySurvey" title="Alaska">
+                                    <img src="/Content/images/Icons/Alaska Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Alaska Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/ArizonaCompensationSurvey" title="Arizona">
+                                    <img src="/Content/images/Icons/Arizona Compensation_Regular.png" width="93" />
+                                    <span class="img-text">Arizona Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PortlandAreaCrossIndustrySurvey" title="Portland Area">
+                                    <img src="/Content/images/Icons/Portland Area Cross-Industry_Regular.png" width="93" />
+                                    <span class="img-text">Portland Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/PugetSoundRegionalSalarySurvey" title="Puget Sound Area">
+                                    <img src="/Content/images/Icons/Puget Sound Regional_Regular.png" width="93" />
+                                    <span class="img-text">Puget Sound Area Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/SpokaneAreaCompensationAndBenefitsSurvey" title="Spokane Area">
+                                    <img src="/Content/images/Icons/Spokane Area Compensation and Benefits_Regular.png" width="93" />
+                                    <span class="img-text">Spokane / Inland Northwest Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestFinancialIndustrySurvey" title="Financial">
+                                    <img src="/Content/images/Icons/NW Financial Industry_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Financial Industry Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareSurvey" title="Healthcare">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthcareCompensationMidYearUpdate" title="Healthcare Hot Jobs Update">
+                                    <img src="/Content/images/Icons/NW Healthcare-Core_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Hot Jobs Update</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestHealthCareExecutiveCompensationSurvey" title="Healthcare Executive">
+                                    <img src="/Content/images/Icons/NW Healthcare Executive_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Healthcare Executive Compensation</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/OregonPublicEmployersSalarySurvey" title="Oregon Public Employers">
+                                    <img src="/Content/images/Icons/Oregon Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Oregon Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/WashingtonPublicEmployersSalarySurvey" title="Washington Public Employer">
+                                    <img src="/Content/images/Icons/Washington Public Employers_Regular.png" width="93" />
+                                    <span class="img-text">Washington Public Employers</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/NorthwestUtilitiesSalarySurvey" title="Utilities">
+                                    <img src="/Content/images/Icons/NW Utilities Salary and Wage_Regular.png" width="93" />
+                                    <span class="img-text">Northwest Utilities Salary &amp; Wage</span>
+                                </a>
+                            </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+            <div class="body-content">
+                
+
+
+
+
+<div id="content">
+    <div class="survey-accordion container-fluid">
+        <div class="row">
+            <!-- First column -->
+            <div class="col-md-4">
+                <div class="panel-group" id="col-one" role="tablist" aria-multiselectable="true">
+                    <div class="survey-collapse-header collapse-header-left">General Surveys</div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-17">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-17" aria-expanded="true" aria-controls="col-one-collapse-17">
+                                            Northwest Board of Directors Compensation <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-17" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-17">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Board of Directors Compensation_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    <span class='survey-accordion-results'>Results now available:</span> <span class='survey-accordion-publish'>Published December 20, 2016</span>
+                                                </div>
+                                                <p class="">Objective data on board compensation practices from various sized organizations and industries within the Northwest.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/NorthwestBoardDirectorsCompensationSurvey">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-20">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-20" aria-expanded="true" aria-controls="col-one-collapse-20">
+                                            Northwest Executive Compensation <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-20" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-20">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Executive Compensation_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    <span class='survey-accordion-results'>Results now available:</span> <span class='survey-accordion-publish'>Published November 28, 2018</span>
+                                                </div>
+                                                <p class="">Objective data on top executive positions from various sized privately held and publicly traded organizations within the Northwest.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/NorthwestExecutiveCompensation">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-12">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-12" aria-expanded="true" aria-controls="col-one-collapse-12">
+                                            Northwest Management &amp; Professional <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-12" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-12">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Management and Professional_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins April 22, 2019</span>
+                                                </div>
+                                                <p class="">Objective data on management, supervisory, and professional positions from organizations within Washington, Oregon, and Idaho.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/NorthwestManagementProfessionalSurvey">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-21">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-21" aria-expanded="true" aria-controls="col-one-collapse-21">
+                                            Northwest Engineering / Scientific / Project Management <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-21" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-21">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Engineering Scientific Project Management_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins April 10, 2019</span>
+                                                </div>
+                                                <p class="">Objective data on unique engineering positions, scientific positions, and project management positions from within Washington, Oregon, Idaho, and Alaska.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/EngineeringScientificProjectManagementSurvey">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-15">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-15" aria-expanded="true" aria-controls="col-one-collapse-15">
+                                            Northwest Technology <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-15" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-15">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Technology_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins June 3, 2019</span>
+                                                </div>
+                                                <p class="">Objective data on Technology/IT positions from organizations within the Northwest.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/NorthwestTechnologySurvey">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="col-one-heading-18">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#col-one-collapse-18" aria-expanded="true" aria-controls="col-one-collapse-18">
+                                            Northwest Benefits <span class="caret"></span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                <div id="col-one-collapse-18" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-one-heading-18">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                                <img src="/Content/images/Icons/Benefits_Small.png"/>
+                                            </div>
+                                            <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                                <div>
+                                                    
+                                                </div>
+                                                <p class="">Objective data on a comprehensive range of employee benefits including healthcare reforms, benefit trends, retirement plans, medical coverage, PTO, cost sharing, the most common supplemental benefits, and more.</p>
+                                            </div>                                            
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                               <a href="/NorthwestBenefitSurvey">LEARN MORE &gt;&gt;</a>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <!-- Second column -->
+            <div class="col-md-4">
+                <div class="panel-group" id="col-two" role="tablist" aria-multiselectable="true">
+                    <div class="survey-collapse-header collapse-header-middle">City / Regional Surveys</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-two-heading-11">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-two-collapse-11" aria-expanded="true" aria-controls="col-two-collapse-11">
+                                    Alaska Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-two-collapse-11" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-two-heading-11">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Alaska Cross-Industry_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins May 15, 2019</span>
+                                        </div>
+                                        <p class="">
+                                            Objective data on non-exempt through professional and management positions from organizations within Anchorage, Fairbanks, Southeast, and Bush.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/AlaskaCrossIndustrySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-two-heading-5">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-two-collapse-5" aria-expanded="true" aria-controls="col-two-collapse-5">
+                                    Arizona Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-two-collapse-5" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-two-heading-5">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Arizona Compensation_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins February 7, 2019</span>
+                                        </div>
+                                        <p class="">
+                                            Objective data on non-exempt through professional and management positions from public and private organizations within Arizona.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/ArizonaCompensationSurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-two-heading-3">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-two-collapse-3" aria-expanded="true" aria-controls="col-two-collapse-3">
+                                    Portland Area Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-two-collapse-3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-two-heading-3">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Portland Area Cross-Industry_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            
+                                        </div>
+                                        <p class="">
+                                            Objective data on non-exempt and selected exempt positions from organizations within the Portland metropolitan Area.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/PortlandAreaCrossIndustrySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-two-heading-6">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-two-collapse-6" aria-expanded="true" aria-controls="col-two-collapse-6">
+                                    Puget Sound Area Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-two-collapse-6" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-two-heading-6">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Puget Sound Regional_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins March 15, 2019</span>
+                                        </div>
+                                        <p class="">
+                                            Objective data on non-exempt and selected exempt positons from organizations within the King, Pierce, and Snohomish Counties.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/PugetSoundRegionalSalarySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-two-heading-10">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-two-collapse-10" aria-expanded="true" aria-controls="col-two-collapse-10">
+                                    Spokane / Inland Northwest Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-two-collapse-10" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-two-heading-10">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Spokane Area Compensation and Benefits_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins April 16, 2019</span>
+                                        </div>
+                                        <p class="">
+                                            Objective compensation and benefit data from organizations within Spokane, Kootenai, and other Inland Northwest counties.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/SpokaneAreaCompensationAndBenefitsSurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Third column -->
+            <div class="col-md-4">
+                <div class="panel-group" id="col-three" role="tablist" aria-multiselectable="true">
+                    <div class="survey-collapse-header collapse-header-right">Industry Surveys</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-9">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-9" aria-expanded="true" aria-controls="col-three-collapse-9">
+                                    Northwest Financial Industry Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-9" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-9">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/NW Financial Industry_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins May 1, 2019</span>
+                                        </div>
+                                        <p>
+                                            Objective data on financial industry positions from Teller through CEO, compiled from financial institutions including commercial banks, savings institutions, and credit unions within Washington, Oregon, Idaho, and Alaska.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/NorthwestFinancialIndustrySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-2">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-2" aria-expanded="true" aria-controls="col-three-collapse-2">
+                                    Northwest Healthcare Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-2" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-2">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/NW Healthcare-Core_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            
+                                        </div>
+                                        <p>
+                                            Objective data on hospital, clinic, home care and long-term care positions from healthcare organizations within Washington, Oregon, Idaho, and Alaska.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/NorthwestHealthCareSurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-16">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-16" aria-expanded="true" aria-controls="col-three-collapse-16">
+                                    Northwest Healthcare Hot Jobs Update <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-16" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-16">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/NW Healthcare-Core_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins July 10, 2019</span>
+                                        </div>
+                                        <p>
+                                            Mid-year update on 39 hot jobs within the healthcare industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/NorthwestHealthcareCompensationMidYearUpdate">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-13">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-13" aria-expanded="true" aria-controls="col-three-collapse-13">
+                                    Northwest Healthcare Executive Compensation <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-13" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-13">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/NW Healthcare Executive_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            
+                                        </div>
+                                        <p>
+                                            Objective data on executive and top management positions from healthcare organizations within Washington, Oregon, Idaho, and Alaska.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/NorthwestHealthCareExecutiveCompensationSurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-1">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-1" aria-expanded="true" aria-controls="col-three-collapse-1">
+                                    Oregon Public Employers <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-1" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-1">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Oregon Public Employers_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <strong>2019</strong><span class='survey-accordion-results'> Results available soon:</span> <span class='survey-accordion-publish'>Publication February 15, 2019</span>
+                                        </div>
+                                        <p>
+                                            Objective data on industry-specific positions from public sector employers within Oregon and southwest Washington.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/OregonPublicEmployersSalarySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-4">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-4" aria-expanded="true" aria-controls="col-three-collapse-4">
+                                    Washington Public Employers <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-4">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/Washington Public Employers_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins February 6, 2019</span>
+                                        </div>
+                                        <p>
+                                            Objective data on industry-specific positions from public sector employers within Washington.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/WashingtonPublicEmployersSalarySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="col-three-heading-14">
+                            <div class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#col-three-collapse-14" aria-expanded="true" aria-controls="col-three-collapse-14">
+                                    Northwest Utilities Salary &amp; Wage <span class="caret"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="col-three-collapse-14" class="panel-collapse collapse " role="tabpanel" aria-labelledby="col-three-heading-14">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 survey-accordion-img">
+                                        <img src="/Content/images/Icons/NW Utilities Salary and Wage_Small.png" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-9 survey-accordion-text">
+                                        <div>
+                                            <span class='survey-accordion-results'>Sign up for early participant discount:</span> <span class='survey-accordion-publish'>Data collection begins May 18, 2019</span>
+                                        </div>
+                                        <p>
+                                            Objective data on industry-specific salaried and hourly positions from public utility districts, investor-owned utilities, municipalities, and cooperatives within the Northwest.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 survey-accordion-link">
+                                        <a href="/NorthwestUtilitiesSalarySurvey">LEARN MORE &gt;&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/Scripts/slick.min.js"></script>
+    <script>
+        // Adds focus styles to currently selected accordion
+        $('.panel-default').on('show.bs.collapse', function () {
+            $(this).addClass('active');
+        });
+
+        $('.panel-default').on('hide.bs.collapse', function () {
+            $(this).removeClass('active');
+        });
+
+        noWrap(".panel-title .collapsed");
+
+        // Wraps element inner html with span tag which has a class that prevents
+        // word wrapping. This is used to prevent the caret icon from becoming an orphan.
+        function noWrap(elementSelector) {
+            $(elementSelector).each(function() {
+                var innerHtml = $(this).html();
+                var subString = innerHtml.match(/\S+\s<span class=\"caret\"><\/span>/g);
+                var newString = '<span class="no-wrap">' + subString + '</span>';
+                var result = innerHtml.replace(/\S+\s<span class=\"caret\"><\/span>/g, newString);
+                $(this).html(result);
+            });            
+        }
+    </script>    
+    <script>
+        $(document).on('ready', function () {
+            $(".survey-slider").slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 4,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                responsive: [
+                    {
+                        breakpoint: 1275,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 1159,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 920,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script>
+    // Adds current page styles to corresponding nav bar link.
+    $(".navbar-left li:contains('Home')").addClass("current-page");
+    </script>
+</div>
+
+            </div>
+        </div>
+        
+        <footer>
+            <div id="footer">
+                <div class="outer-footer">
+                    <div class="row top-footer footer-wrapper">
+                        <div class="col-xs-12 col-md-2 col-md-offset-1">
+                           
+                            <ul>
+                                <li>
+                                    <strong>Prices &amp; schedules</strong>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="/Schedule/2019" title="2019 Survey Pricing and Schedule">2019 Pricing and Schedule</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="/Schedule/2018" title="2018 Survey Pricing and Schedule">
+                                        2018 Pricing and Schedule
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-2">
+                            <ul>
+                                <li>
+                                    <strong>Sign up to participate</strong>
+                                </li>
+                                <li>
+                                    <a href="/Content/Downloads/Home/2019 Participant Order Form - WEB.pdf" title="" target="_blank">2019 Participant order form</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-2">
+                            <ul>
+                                <li>
+                                    <strong>
+                                        Order as a non&#45;participant
+                                    </strong>
+                                </li>
+                                <li>
+                                    <a href="/Content/Downloads/Home/2018 Non-Participant Order Form - WEB.pdf" title="" target="_blank">2018 Non-participant order form</a>
+                                </li>
+                                <!--<li>
+                                    <a href="~/Content/Downloads/Home/2019 Participant Order Form - WEB.pdf" title="" target="_blank">2019 Participant order form</a>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-2">
+                            <ul>
+                                <li>
+                                    <strong>
+                                        Videos
+                                    </strong>
+                                </li>
+                                <li>
+                                    <a href="https://youtu.be/kqLczF_RAYg?list=PLaZUphmeP0jhDAvUcDsGdVryGq_d0O1uC" title="How to sign up" target="_blank">How to sign up</a>
+                                </li>
+                                <li>
+                                    <a href="https://youtu.be/EmfLl7DynUM?list=PLaZUphmeP0jhDAvUcDsGdVryGq_d0O1uC" title="Accessing survey results" target="_blank">Accessing survey results</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-2">
+                            <ul>
+                                <li>
+                                    <strong>
+                                        Resources
+                                    </strong>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="/Content/Downloads/Home/Milliman Job Titles.xlsx">Jobs Surveyed</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="/Content/Downloads/Home/Survey Methodology.pdf">Methodology</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="/Content/Downloads/Home/Data_Sample.pdf">Results Samples</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="clearfix"></div>
+                <div class="sub-footer">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="http://us.milliman.com/" title="Milliman Worldwide" target="_blank">Milliman Worldwide</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="http://www.milliman.com/legal/terms/" title="Terms of Use" target="_blank">Terms of Use</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="http://www.milliman.com/legal/copyright/" title="Copyright Milliman, Inc. All rights reserved." target="_blank">Copyright &copy; Milliman, Inc. All rights reserved.</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="http://www.milliman.com/legal/privacy/" title="Privacy Policy" target="_blank">Privacy Policy</a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

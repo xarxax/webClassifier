@@ -1,0 +1,867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EMRConsultant.com</title>
+    <link rel="shortcut icon" href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="EMRConsultant RSS Feed"
+          href="http://www.emrconsultant.com/feed/"/>
+    <link rel="alternate" type="application/atom+xml" title="EMRConsultant Atom Feed"
+          href="http://www.emrconsultant.com/feed/atom/"/>
+    <link rel="pingback" href="http://www.emrconsultant.com/wordpress/xmlrpc.php"/>
+    <link type="text/css" href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/style.css?v=1.2" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/css/reveal.css">
+    <link rel="stylesheet" type="text/css"
+          href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/css/fonts/icomoon/iconstyle.css" media="screen">
+    <link href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/css/searchStyle.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+    <link href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/css/login.css" media="screen, projection" rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/css/animate-custom.css">
+    <link rel="stylesheet" type="text/css" href="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.powertip.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.easytabs.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript"
+            src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.meio.mask.js"></script>
+    <script type="text/javascript" language="javascript"
+            src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/main.js"></script>
+            <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" language="javascript"
+                src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.carouFredSel-5.5.0-packed.js"></script>
+        <script type="text/javascript" src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/hearts.js"></script>
+        <script type="text/javascript" src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.powertip-1.1.0.min.js"></script>
+
+        <script type="text/javascript" language="javascript" src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/front-page.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(function () {
+                $('#foo4 li img').fadeIn(2000);
+                $('#foo4').carouFredSel({
+                    responsive: true,
+                    width: '98%',
+                    scroll: 2,
+                    items: {
+                        width: 140,
+                        visible: {
+                            min: 3,
+                            max: 6
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+    </script>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/76329539/EMRC-FullBanner-Zone1', [468, 60], 'div-gpt-ad-1376678498400-0').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-FullBanner-Zone2', [468, 60], 'div-gpt-ad-1376678498400-1').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-FullBanner-Zone3', [468, 60], 'div-gpt-ad-1376678498400-2').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-HalfBanner-Zone1', [234, 60], 'div-gpt-ad-1376678498400-3').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-HalfBanner-Zone2', [234, 60], 'div-gpt-ad-1376678498400-4').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-Premium', [300, 250], 'div-gpt-ad-1376678498400-5').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallBox-Zone1', [145, 145], 'div-gpt-ad-1376678498400-6').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallBox-Zone2', [145, 145], 'div-gpt-ad-1376678498400-7').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallBox-Zone3', [145, 145], 'div-gpt-ad-1376678498400-8').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallBox-Zone4', [145, 145], 'div-gpt-ad-1376678498400-9').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallRectangle-Zone1', [300, 80], 'div-gpt-ad-1376678498400-10').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-SmallRectangle-Zone2', [300, 80], 'div-gpt-ad-1376678498400-11').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-Standard', [300, 250], 'div-gpt-ad-1376678498400-12').addService(googletag.pubads());
+            googletag.defineSlot('/76329539/EMRC-VIP', [300, 250], 'div-gpt-ad-1376678498400-13').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    
+	  		<script type="text/javascript">
+		var ajaxurl = 'http://www.emrconsultant.com/wordpress/wp-admin/admin-ajax.php';
+		</script>
+		
+<!-- This site is optimized with the Yoast SEO plugin v3.2.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Providing Electronic Medical Record (EMR) and Electronic Health Record (EHR) software recommendations, comparisons and consulting to physicians."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.emrconsultant.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EMRConsultant.com" />
+<meta property="og:description" content="Providing Electronic Medical Record (EMR) and Electronic Health Record (EHR) software recommendations, comparisons and consulting to physicians." />
+<meta property="og:url" content="http://www.emrconsultant.com/" />
+<meta property="og:site_name" content="EMRConsultant" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.emrconsultant.com\/","name":"EMRConsultant","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.emrconsultant.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="EMRConsultant &raquo; Home Comments Feed" href="http://www.emrconsultant.com/home/feed/" />
+<!-- This site is powered by Shareaholic - https://shareaholic.com -->
+<script type='text/javascript' data-cfasync='false'>
+  //<![CDATA[
+    _SHR_SETTINGS = {"endpoints":{"local_recs_url":"http:\/\/www.emrconsultant.com\/wordpress\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related"}};
+  //]]>
+</script>
+<script type='text/javascript' data-cfasync='false'
+        src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js'
+        data-shr-siteid='ff32910a9bd670b5ff918a11db1b0bc3' async='async' >
+</script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='EMRConsultant' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:site_id' content='ff32910a9bd670b5ff918a11db1b0bc3' />
+<meta name='shareaholic:wp_version' content='7.8.0.3' />
+
+<!-- Shareaholic Content Tags End -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.emrconsultant.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=75c97fa2811b89953cc36d6ae9def54b"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-lightbox-2.min.css-css'  href='http://www.emrconsultant.com/wordpress/wp-content/plugins/wp-lightbox-2/styles/lightbox.min.css?ver=1.3.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.emrconsultant.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.emrconsultant.com/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.emrconsultant.com/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.emrconsultant.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.emrconsultant.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.emrconsultant.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.emrconsultant.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.emrconsultant.com%2F&#038;format=xml" />
+<script type="text/javascript">
+  var __lc = {};
+  __lc.license = 3442502;
+
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script></head>
+
+<body>
+<!--<div id="powerTip" class="" style="left: 287px; top: 1426px; display: none;">Providing Upgrade Assurance for Dragon Medical Practice Edition</div>-->
+<div class="maincontainer">
+    <div class="logocont"><a href="http://www.emrconsultant.com"><img
+                src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/logo.png"/></a></div>
+    <div class="hdrbtn"><a href="http://www.ehrscope.com/compare-ehrs/" title="Analyzing 600+ EMR's"> </a></div>
+    <div class="hdrbtn2"><a href="tel:+18885193100" title="Call us now 888.519.3100">Call Us Now 888.519.3100</a></div>
+    <div style="clear:both;"></div>
+    <div id="nav-holder" class="nav-holder">
+        <ul id="menu-main-nav" class="nav"><li id="menu-item-19" class="home menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item"><a href="http://www.emrconsultant.com/"><span><strong>Home</strong></span></a></li>
+<li id="menu-item-184" class="blog menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.ehrscope.com/blog/"><span><strong>Blog</strong></span></a></li>
+<li id="menu-item-57" class="edu menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.emrconsultant.com/emr-education-center/"><span><strong>EMR Education Center</strong></span></a></li>
+</ul>
+
+        <div id="login" class="login">
+            <script src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.tipsy.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+                    $(".signin").click(function (e) {
+                        e.preventDefault();
+                        $("fieldset#signin_menu").toggle();
+                        $(".signin").toggleClass("menu-open");
+                    });
+
+                    $("fieldset#signin_menu").mouseup(function () {
+                        return false
+                    });
+                    $(document).mouseup(function (e) {
+                        if ($(e.target).parent("a.signin").length == 0) {
+                            $(".signin").removeClass("menu-open");
+                            $("fieldset#signin_menu").hide();
+                        }
+                    });
+
+                });
+            </script>
+            <div id="topnav" class="topnav">
+                                <a href="/login" class="signin">
+                    <span><strong><i class="icon-key-2"></i> Login</strong></span>
+                </a>
+                            </div>
+            <fieldset id="signin_menu">
+                <img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/loginarrow.png" class="loginarrow"/>
+
+
+                <form method="post" id="signin" action="#">
+
+                    <div class="header">
+                        <div class="text" style="float:left">Login Form</div>
+                        <div class="close" style="float:right;margin-right:20px;cursor:pointer;">x</div>
+                    </div>
+                    <div class="formbody">
+
+                        <p id="login-error"></p>
+                        <div id="login">
+                            <input type="text" onblur="if(this.value==&#39;&#39;)this.value=&#39;Username&#39;;"
+                                   onfocus="if(this.value==&#39;Username&#39;)this.value=&#39;&#39;;" value="Username"
+                                   class="login user" name="un" id="login-un">
+                            <input type="text" name="password" value="Password"
+                                   onfocus="if(this.value==&#39;&#39; || this.value == &#39;Password&#39;) {this.value=&#39;&#39;;this.type=&#39;password&#39;}"
+                                   onblur="if(this.value == &#39;&#39;) {this.type=&#39;text&#39;;this.value=this.defaultValue}"
+                                   class="login password" name="pwd" id="login-pwd">
+                        </div>
+                        <button class="button" id="submit" type="submit">
+                            <i class="icon-lock"></i> Login to your Account
+                        </button>
+                    </div>
+                </form>
+
+
+            </fieldset>
+        </div>
+
+        <div class="search">
+            <form>
+            <span>
+                    <input type="text" name="s" class="textBox" title="Search..." value="" />
+              </span>
+            </form>
+        </div>
+
+    </div>
+<div class="mainimg">
+    <p class="animated fadeInLeft">
+        The Most Trusted EMR/EHR Resource for
+        <br/>
+        Healthcare Providers since 2004!
+    </p>
+    <p class="bottomtext animated fadeInUp">
+        Over 17,500 Practices have used our exclusive EMR/EHR And Medical Billing Consulting Services!
+    </p>
+    <img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/sliderimg1.png" style="width:100%;"/>
+</div>
+        <div class="padform animated fadeIn no-slider ">
+        <div class="padtop">
+                        <img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/arrow.png" class="arrow"/>
+            <p>Free Consultation.  Get Started.</p>
+                    </div>
+        <div class="padmid" id="tab-container">
+
+            <form method="post" action="" id="v2form">
+                <style>
+    #page1 > .formleftcol > p:nth-child( 4 ) { position: absolute; display: none; }
+</style>
+<div id="page1">
+    <div class="formleftcol">
+        <div class="titleheader"><i class="EMRicon"></i>Tell Us About Yourself</div>
+        <p class="undertitle">
+            Complete the form below and EMRConsultant, at no charge to you, will provide recommendations regarding appropriate EMR &amp; Medical Billing Technology for your medical practice.
+        </p>
+        <p>
+            <label for="fname">First Name:</label>
+            <br/>
+            <input type="text" name="32" value="" id="fname" tabindex="1" class="idleField required" onblur="checkfield('fname');">
+        </p>
+        <p>
+            <label for="minitial">Middle Initial:</label>
+            <br/>
+            <input type="text" name="32.5" value="" id="minitial" class="idleField">
+        </p>
+        <p>
+            <label for="lname">Last Name:</label>
+            <br/>
+            <input type="text" name="147" value="" id="lname" tabindex="2" class="idleField required" onblur="checkfield('lname');">
+        </p>
+        <p>
+            <label for="title">Title:</label>
+            <br/>
+            <input type="text" name="266"  value="" id="title" tabindex="3" class="idleField fname required" onblur="checkfield('title');">
+        </p>
+        <p>
+            <label for="officephone">Office Phone:</label>
+            <br/>
+            <input type="text" name="office-phone" id="office-phone" class="phone-format idleField required" value="" tabindex="4" />
+            <input type="text" name="office-phone-ext" value="" id="ext" tabindex="5" maxlength="14" class="ext idleField" placeholder="Ext">
+            <input type="hidden" name="40" id="phone-data" value="" />
+        </p>
+        <p style="width:213px;">
+            <label for="email">Email</label>
+            <br/>
+            <input type="text" name="41" value="" id="email-email" tabindex="6" onblur="performMainEmailChecks(this.value, 0)" class="idleField fname required">
+            <span id="email-msg" style="display:none;"></span>
+        </p>
+        <p>
+            <label for="zip">Zip:</label>
+            <br/>
+            <input type="text" name="39" id="zip" value="" size="5" maxlength="10" tabindex="7" onblur="checkfield('zip');" class="idleField numbersonly-format required">
+        </p>
+        <div class="titleheader">
+            <i class="EMRicon"></i>Practice Information
+        </div>
+        <br/>
+        <p id="primaryInput">
+            <label for="specialty">
+                Choose a Main Specialty:
+            </label>
+            <select name="4" tabindex="8" id="specialty-select" class="specialty-select required" onblur="checkfield('specialty-select')"   ><option value=""  >- Please Select</option><option value="9050"  >Allergy</option><option value="9016"  >Bariatrics</option><option value="9003"  >Cardiology</option><option value="9004"  >Chiropractic</option><option value="9006"  >Dermatology</option><option value="9052"  >Endocrinology</option><option value="9010"  >Family Medicine</option><option value="9011"  >Gastroenterology</option><option value="9013"  >Geriatrics</option><option value="9056"  >Infectious Disease</option><option value="9045"  >Int Med Sub-Specialty/Nephrology</option><option value="9017"  >Internal Medicine</option><option value="9014"  >Mental &amp; Behavioral Health / Psychology</option><option value="9048"  >Multi-Specialty</option><option value="9200"  >Naturopathic/Alternative Medicine</option><option value="9020"  >Neurology</option><option value="9008"  >Neurosurgery</option><option value="9022"  >Obstetrics and Gynecology</option><option value="9059"  >Pain Management/Physiatry</option><option value="9018"  >Oncology - Medical/Hematology</option><option value="9026"  >Ophthalmology</option><option value="9027"  >Orthopedic Surgery</option><option value="9029"  >Otolaryngology</option><option value="9032"  >Pediatrics</option><option value="9012"  >Physical Therapy</option><option value="9061"  >Plastic Surgery</option><option value="9034"  >Podiatry</option><option value="9063"  >Psychiatry</option><option value="9064"  >Pulmonology</option><option value="9065"  >Rheumatology</option><option value="9019"  >Sleep Medicine</option><option value="9042"  >Surgery &amp; Surgical Specialties</option><option value="9002"  >SurgiCenter</option><option value="9051"  >Urgent Care</option><option value="9070"  >Urology</option><option value="9100"  >Not Listed</option></select>        </p>
+        <p id="specialtyInput">
+            <label for="specialty"><i class="icon-plus-sign" onclick="addSpecialty();"></i> Additional Specialties:</label>
+            <br/>
+                    </p>
+        <p>
+            <label for="number_of_physicians">Number of Physician:</label>
+            <br/>
+            <input type="text" name="1" value="" maxlength="5" id="physicians" tabindex="25" onblur="checkfield('physicians')" class="idleField numbersonly-format required">
+        </p>
+        <p>
+            <label for="non-physicians">Non-Physicians:</label>
+            <br/>
+            <input type="text" name="46" value="" size="5" maxlength="5" id="non-physicians" tabindex="26" class="idleField numbersonly-format">
+        </p>
+        <div class="titleheader">
+            <i class="EMRicon"></i>Additional Contacts
+        </div>
+        <p>
+            <label for="additional-contacts"><i class="create icon-plus-sign" onclick="addContact();"></i> Add Additional Contacts</label>
+                        <div id="primary-contact" class="contactscontainer">
+                <div class="negicon">
+                    <span id="contact-0-legend" style="float:left; font-weight: bold;">Contact 1</span>
+                </div>
+                <p>
+                    <label for="ac-name">Name:</label>
+                    <br/>
+                    <input name="270[0][name]" id="contact-0-name" class="fname" value="" onkeyup="moveText(this.value, 'contact-0-legend', 'Contact 1')">
+                </p>
+                <p>
+                    <label for="ac-title">Title:</label>
+                    <br/>
+                    <input name="270[0][title]" id="contact-0-title" class="cc-2col">
+                </p>
+                <p>
+                    <label for="ac-officephone">Office Phone:</label>
+                    <br/>
+                    <input name="270[0][phone]" id="contact-0-phone" class="phone-format office-phone"/>
+                    <input name="270[0][phone-ext]" id="contact-0-phone-ext" class="ext" value="" placeholder="Ext" onkeypress="return isNumeric(event);" style="margin-right:4px;">
+                </p>
+                <p>
+                    <label for="ac-email" class="email2">Email:</label>
+                    <br/>
+                    <input name="270[0][email]" id="contact-0-email" onblur="checkFormEmail(this.value, 'contact-0', true)" class="cc-2col" style="margin: 2px 0px 0px 4px;">
+                </p>
+            </div>
+                </p>
+    </div>
+    <div class="formrightcol">
+        <div class="titleheader">
+            <i class="EMRicon"></i>TELL US WHAT YOUR EMR SHOULD INCLUDE
+        </div>
+        <p class="undertitle">Select the features you desire in your EMR.<span style="color:red;">*</span> </p>
+        <div id="feat-legend">
+            <div class="column3">
+                <img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/checkbox-img.png" title="EMR Feature Check Box" alt="EMR Feature Check Box" width="19" height="15" align="left">
+                <p style="margin:0px;">&nbsp; = Would Like Feature</p>
+            </div>
+            <div class="column3">
+                <img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/emr-heart.png" title="EMR Feature Heart" alt="EMR Feature Heart" width="19" height="15" align="left">
+                <p style="margin:0px;">&nbsp; = Must Have Feature</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <table width="425" border="0" cellpadding="1" id="features">
+                    <tr>
+                <td class="south" title="Alerts - Notification of important issues, such as Drug Interactions or abnormal laboratory values.">
+        <input type="checkbox" id="feat-1" name="features[28614]" value="no_selection" class="south feat-check" title="Alerts - EMR Feature Check Box" onclick="checkMust('feat-1');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-1-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Alerts</span>
+    </td>
+    <td class="south" title="Appointments/Billing (PM) - Practice Management systems incorporate the appointment, scheduling and billing functionality.">
+        <input type="checkbox" id="feat-2" name="features[18801]" value="no_selection" class="south feat-check" title="Appointments/Billing (PM) - EMR Feature Check Box" onclick="checkMust('feat-2');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-2-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Appointments/Billing (PM)</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Customized Templates - Customizable, specialty specific medical content templates that are available during installation.">
+        <input type="checkbox" id="feat-3" name="features[13994]" value="no_selection" class="south feat-check" title="Customized Templates - EMR Feature Check Box" onclick="checkMust('feat-3');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-3-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Customized Templates</span>
+    </td>
+    <td class="south" title="Decision Support - A feature that suggests possible diagnoses based on the clinical content of a chart note.">
+        <input type="checkbox" id="feat-4" name="features[9501]" value="no_selection" class="south feat-check" title="Decision Support - EMR Feature Check Box" onclick="checkMust('feat-4');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-4-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Decision Support</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Document Management - The ability to automate the handling of scans, faxes, date stamps, reviews and priorities.">
+        <input type="checkbox" id="feat-5" name="features[5456]" value="no_selection" class="south feat-check" title="Document Management - EMR Feature Check Box" onclick="checkMust('feat-5');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-5-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Document Management</span>
+    </td>
+    <td class="south" title="Documentation Ease - A critical issue for many physicians is minimizing the time needed to document care.  This can be considered difficult to define and can be considered rather subjective.">
+        <input type="checkbox" id="feat-6" name="features[47339]" value="no_selection" class="south feat-check" title="Documentation Ease - EMR Feature Check Box" onclick="checkMust('feat-6');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-6-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Documentation Ease</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="e-Prescribing - e-Prescribing allows for electronic transmission of prescriptions to the pharmacy.">
+        <input type="checkbox" id="feat-7" name="features[11]" value="no_selection" class="south feat-check" title="e-Prescribing - EMR Feature Check Box" onclick="checkMust('feat-7');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-7-must" class="styled"  />
+        </div>
+        <span class="featuretitle">e-Prescribing</span>
+    </td>
+    <td class="south" title="E&amp;amp;M Coding - Evaluation and Management Coding provides automated recommendations concerning billing codes for office visits.">
+        <input type="checkbox" id="feat-8" name="features[8]" value="no_selection" class="south feat-check" title="E&amp;M Coding - EMR Feature Check Box" onclick="checkMust('feat-8');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-8-must" class="styled"  />
+        </div>
+        <span class="featuretitle">E&amp;M Coding</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Health Maintenance - Health Maintenance Guidelines allow physicians to truly provide better care by maintaining and analyzing the data concerning each individual patient, and comparing it to recommended treatment protocols.">
+        <input type="checkbox" id="feat-9" name="features[39131]" value="no_selection" class="south feat-check" title="Health Maintenance - EMR Feature Check Box" onclick="checkMust('feat-9');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-9-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Health Maintenance</span>
+    </td>
+    <td class="south" title="ICD-10 Training - The deadline for migrating from ICD-9 to ICD-10 is October 2014.  It is critical that your office be prepared for this transition.  Are you looking to have your EHR assist your practice, both by way of educating yourself and your staff, as well as in assisting with the actual migration itself?">
+        <input type="checkbox" id="feat-10" name="features[32545]" value="no_selection" class="south feat-check" title="ICD-10 Training - EMR Feature Check Box" onclick="checkMust('feat-10');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-10-must" class="styled"  />
+        </div>
+        <span class="featuretitle">ICD-10 Training</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Internal Messaging - Messaging allows physicians and other staff members to communicate with each other, and in some instances with the outside world, through the EHR.">
+        <input type="checkbox" id="feat-11" name="features[29783]" value="no_selection" class="south feat-check" title="Internal Messaging - EMR Feature Check Box" onclick="checkMust('feat-11');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-11-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Internal Messaging</span>
+    </td>
+    <td class="south" title="Interfaces - Interfaces allow information to flow to and from your office to a wide variety of outside locations.">
+        <input type="checkbox" id="feat-12" name="features[45826]" value="no_selection" class="south feat-check" title="Interfaces - EMR Feature Check Box" onclick="checkMust('feat-12');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-12-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Interfaces</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Mobility - The ability to interact with the EHR from outside of the office, such as via a smart phone.">
+        <input type="checkbox" id="feat-13" name="features[4404]" value="no_selection" class="south feat-check" title="Mobility - EMR Feature Check Box" onclick="checkMust('feat-13');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-13-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Mobility</span>
+    </td>
+    <td class="south" title="Outsourced Billing - Whether you are using sophisticated technology or not, you can perform all of your billing functions from your office, or you can outsource some or all of them.">
+        <input type="checkbox" id="feat-14" name="features[57699]" value="no_selection" class="south feat-check" title="Outsourced Billing - EMR Feature Check Box" onclick="checkMust('feat-14');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-14-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Outsourced Billing</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Patient Portal - Patient Portals allow for secure communication with your patients, permitting a variety of functions to occur, including appointment scheduling, bill paying, and most importantly communicating about medical care.">
+        <input type="checkbox" id="feat-15" name="features[86664]" value="no_selection" class="south feat-check" title="Patient Portal - EMR Feature Check Box" onclick="checkMust('feat-15');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-15-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Patient Portal</span>
+    </td>
+    <td class="south" title="Revenue Cycle Management - Administrative duties, clinical and financial, that facilitate the collection of all revenues for the provision of care.">
+        <input type="checkbox" id="feat-16" name="features[88888888]" value="no_selection" class="south feat-check" title="Revenue Cycle Management - EMR Feature Check Box" onclick="checkMust('feat-16');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-16-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Revenue Cycle Management</span>
+    </td>
+            </tr>
+                    <tr>
+                <td class="south" title="Robust Workflow - One size does not fit all when it comes to Electronic Health Record technology.  You &lt;strong&gt;MUST&lt;/strong&gt; purchase a program that has a workflow which is compatible with your own.">
+        <input type="checkbox" id="feat-17" name="features[66437]" value="no_selection" class="south feat-check" title="Robust Workflow - EMR Feature Check Box" onclick="checkMust('feat-17');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-17-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Robust Workflow</span>
+    </td>
+    <td class="south" title="Role-based Security - Different care providers inside and outside of your organization are entitled to view and modify various components of your patients' charts. Proper role-based security can ensure that you maintain compliance with various federal privacy statutes.">
+        <input type="checkbox" id="feat-18" name="features[41822]" value="no_selection" class="south feat-check" title="Role-based Security - EMR Feature Check Box" onclick="checkMust('feat-18');"  />
+        <div style="float:left;">
+            <input type="checkbox" id="feat-18-must" class="styled"  />
+        </div>
+        <span class="featuretitle">Role-based Security</span>
+    </td>
+            </tr>
+                </table>
+        <hr/>
+        <p>
+            <label>Place Additional Comments Below: </label>
+            <textarea cols="60" rows="3" name="31" class="idleField" style="width:420px;"></textarea>
+        </p>
+                <p>
+            <label>Spam Challenge: </label>
+            9 - 3 = <input type="text" maxlength="3" name="spamChallenge" id="spamChallenge" class="spamChallenge required" />
+        </p>
+                <p>
+            <input type="hidden" name="sess" value="oas518jt9ljjal3gj3ofpb9k97">
+            <input type="hidden" value="EMRC - Main Form" name="form_source"/>
+            <input type="hidden" name="ref_url" value="http://www.emrconsultant.com" />
+            <input type="hidden" name="is-human" value="" />
+                        <input type="hidden" name="scsolution" id="scsolution" value="6" />
+                        <input type="hidden" name="form-time" value="1548716890" />
+            <button id="continue" type="submit" class="button" name="next_page" value="two"><i class="icon-bended-arrow-right"></i> Continue</button>
+            <button id="submit" type="submit" class="button" name="next_page" value="complete"><i class="icon-user"></i> Submit Now</button>
+            <div style="clear:both;"></div>
+        </p>
+    </div>
+</div>                <p class="ac-best-contact-time">
+                    <label for="ac-contact-time">Best contact time:</label><br />
+                    <input type="text" name="ac-best-contact-time" id="contact-0-best-contact-time" value="Weekday evenings" />
+                </p>
+                <input type="hidden" name="form-nonce" value="ca30ad2c74" />
+            </form>
+
+            <div style="clear:both;"></div>
+        </div>
+        <div class="padbtm"></div>
+    </div>
+    
+     <div style="clear:both;"></div>
+    <div class="widgetarea">
+    <div class="widgetleft top">
+        <div class="iconarea"><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/timemoneyicon.png" /></div>
+        <div class="widgetcontent">
+        <h1>Save Time and Money</h1>
+        <h3>Let EMR Consultant Help Find<br />
+            Your EMR &amp; Medical Billing Solution!</h3>
+        <p>“I was searching for an EMR solution and came across EMR Consultant and the EMR consulting services they offer. Their site was easy-to-use and I promptly received 5 EMR software recommendations… It’s been three months and I’m about to sign a contract with one of the EMR systems that EMR Consultant provided. Thank you EMR Consultant!”</p>
+      </div>
+      </div>
+    <div class="widgetright top">
+        <div class="iconarea"><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/logoicon.png" /></div>
+        <div class="widgetcontent">
+        <h1>What We Do?</h1>
+        <h3>EMR Consultant Collects the Data from Hundreds of EMR &amp; Medical Billing Systems So You Don't Have To!</h3>
+        <p>Our technology will effectively compare your practice needs to the 600 electronic medical record (EMR) / electronic health record (EHR) solutions in our database. We will narrow down the search results and provide you with the most appropriate EHR recommendations for your practice.</p>
+      </div>
+      </div>
+    <div class="widgetright">
+        <div class="iconarea3"><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/freeicon.png" /></div>
+        <div class="widgetcontent3">
+        <h1>How We Do It At <u>NO CHARGE?</u></h1>
+        <h3>Advertisers on a variety of web sites pay us when you log into
+            their site.</h3>
+        <p>The individual consultation is impartial and at NO Charge to physicians or administrators!</p>
+      </div>
+      </div>
+    <div class="widgetleft" style="min-height:200px !important; border-bottom:none;">
+        <div class="iconarea2"><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/howwedoiticon.png"  /></div>
+        <div class="widgetcontent2">
+        <h1>How We Do It?</h1>
+        <h3>EMR Consultant is a Complimentary Service to Medical <br />
+            Practices that are Searching for an EMR &amp; Medical Billing System</h3>
+        <p>Simply complete your profile. EMRC analysts evaluate stated needs with an unbiased mind. Analysts use our proprietary technology, our comprehensive Health Care Technology Database and personal experience working with similar practices/facilities to select the best qualified recommendations that meet your specific needs. You will receive an email listing your recommendations. Would you prefer to briefly speak with an Analyst? This is the best way for the analyst to truly understand and ask appropriate questions. Think of it this way, do you have a more clear understanding of your patient after speaking with them or by reading the present issue? Complete the basic information on the form and an Analyst will contact you. You can also phone us directly at 888.519.3100!</p>
+      </div>
+      </div>
+    <div class="widgetright" style="border-bottom:none;">
+        <div class="iconarea3"><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/guideicon.png" /></div>
+        <div class="widgetcontent3">
+        <h1>Specialty-Specific EMR Reference Guide</h1>
+            <ul class="listitems">
+                    <li id="post-243" class="post-243 post type-post status-publish format-standard has-post-thumbnail hentry category-specialty-specific-emr-reference-guide tag-allergy">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/allergy-specific-emr-ehr-software/" title="Allergy Specific EMR / EHR Software">Allergy Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-254" class="post-254 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-anesthesiology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/anesthesiology-specific-emrehr-software/" title="Anesthesiology Specific EMR/EHR Software">Anesthesiology Specific EMR/EHR Software</a></h3>
+            </li>
+                    <li id="post-267" class="post-267 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-cardiology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/cardiology-specific-emr-ehr-software/" title="Cardiology Specific EMR / EHR Software">Cardiology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-278" class="post-278 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-chiropractic">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/chiropractic-specific-emr-ehr-software/" title="Chiropractic Specific EMR / EHR Software">Chiropractic Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-280" class="post-280 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-dentistry">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/dentistry-specific-emr-ehr-software/" title="Dentistry Specific EMR / EHR Software">Dentistry Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-282" class="post-282 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-dermatology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/dermatology-specific-emr-ehr-software/" title="Dermatology Specific EMR / EHR Software">Dermatology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-284" class="post-284 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-emergency-medicine">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/emergency-medicine-specific-emr-ehr-software/" title="Emergency Medicine Specific EMR / EHR Software">Emergency Medicine Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-287" class="post-287 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-endocrinology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/endocrinologists-guide-to-electronic-medical-records-systems/" title="Endocrinologists Guide to Electronic Medical Records Systems">Endocrinologists Guide to Electronic Medical Records Systems</a></h3>
+            </li>
+                    <li id="post-290" class="post-290 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-family-medicine">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/family-practice-emr-ehr-software/" title="Family Practice EMR / EHR Software">Family Practice EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-296" class="post-296 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-gastroenterology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/gastroenterology-specific-emr-ehr-software/" title="Gastroenterology Specific EMR / EHR Software">Gastroenterology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-297" class="post-297 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-surgery-surgical-specialties">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/general-surgery-specific-emr-ehr-software/" title="General Surgery Specific EMR / EHR Software">General Surgery Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-299" class="post-299 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-geriatrics">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/geriatric-specific-emr-ehr-software/" title="Geriatric Specific EMR / EHR Software">Geriatric Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-305" class="post-305 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-infectious-disease">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/infectious-disease-specific-emr-ehr-software/" title="Infectious Disease Specific EMR / EHR Software">Infectious Disease Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-307" class="post-307 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-internal-medicine">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/internal-medicine-specific-emr-ehr-software/" title="Internal Medicine Specific EMR / EHR Software">Internal Medicine Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-309" class="post-309 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-long-term-care">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/long-term-care-specific-emr-ehr-software/" title="Long-Term Care Specific EMR / EHR Software">Long-Term Care Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-312" class="post-312 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-int-med-sub-specialtynephrology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/nephrology-specific-emr-ehr-software/" title="Nephrology Specific EMR / EHR Software">Nephrology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-314" class="post-314 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-neurology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/neurologists-guide-to-electronic-medical-records-systems/" title="Neurologists Guide To Electronic Medical Records Systems">Neurologists Guide To Electronic Medical Records Systems</a></h3>
+            </li>
+                    <li id="post-316" class="post-316 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-neurosurgery">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/neurosurgery-specific-emr-ehr-software/" title="Neurosurgery Specific EMR / EHR Software">Neurosurgery Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-319" class="post-319 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-obstetrics-and-gynecology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/obgyn-specific-emr-ehr-software/" title="OBGYN Specific EMR / EHR Software">OBGYN Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-322" class="post-322 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-occ-medphysiatrypain-mgmt">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/occupational-therapy-specific-emr-ehr-software/" title="Occupational Therapy Specific EMR / EHR Software">Occupational Therapy Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-328" class="post-328 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-oncology-medicalhematology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/oncology-specific-emr-ehr-software/" title="Oncology Specific EMR / EHR Software">Oncology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-331" class="post-331 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-ophthalmology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/ophthalmology-specific-emr-ehr-software/" title="Ophthalmology Specific EMR / EHR Software">Ophthalmology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-333" class="post-333 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-optometry">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/optometry-specific-emr-ehr-software/" title="Optometry Specific EMR / EHR Software">Optometry Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-335" class="post-335 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-orthopedic-surgery">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/orthopedic-specific-emr-ehr-software/" title="Orthopedic Specific EMR / EHR Software">Orthopedic Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-337" class="post-337 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-otolaryngology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/otolaryngology-specific-emr-ehr-software/" title="Otolaryngology Specific EMR / EHR Software">Otolaryngology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-339" class="post-339 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-pediatrics">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/the-best-pediatric-specific-emr-ehr-software/" title="Pediatric Specific EMR / EHR Software">Pediatric Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-342" class="post-342 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-plastic-surgery">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/plastic-surgery-specific-emr-ehr-software/" title="Plastic Surgery Specific EMR / EHR Software">Plastic Surgery Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-344" class="post-344 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-podiatry">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/podiatry-specific-emr-ehr-software/" title="Podiatry Specific EMR / EHR Software">Podiatry Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-346" class="post-346 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-psychiatry">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/psychiatry-specific-emr-ehr-software/" title="Psychiatry Specific EMR / EHR Software">Psychiatry Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-348" class="post-348 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-pulmonology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/pulmonary-specific-emr-ehr-software/" title="Pulmonary Specific EMR / EHR Software">Pulmonary Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-350" class="post-350 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-oncology-medicalhematology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/radiation-oncology-specific-emr-ehr-software/" title="Radiation Oncology Specific EMR / EHR Software">Radiation Oncology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-352" class="post-352 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-rheumatology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/rheumatology-specific-emr-ehr-software/" title="Rheumatology Specific EMR / EHR Software">Rheumatology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-354" class="post-354 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-sleep-medicine">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/sleep-medicine-specific-emr-ehr-software/" title="Sleep Medicine Specific EMR / EHR Software">Sleep Medicine Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-356" class="post-356 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-urgent-care">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/urgent-care-specific-emr-ehr-software/" title="Urgent Care Specific EMR / EHR Software">Urgent Care Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-358" class="post-358 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide tag-urology">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/urology-specific-emr-ehr-software/" title="Urology Specific EMR / EHR Software">Urology Specific EMR / EHR Software</a></h3>
+            </li>
+                    <li id="post-360" class="post-360 post type-post status-publish format-standard hentry category-specialty-specific-emr-reference-guide">
+                <h3><a href="http://www.emrconsultant.com/specialty-specific-emr-reference-guide/veterinary-specific-emr-ehr-software/" title="Veterinary Specific EMR / EHR Software">Veterinary Specific EMR / EHR Software</a></h3>
+            </li>
+            </ul>
+          </div>
+      </div>
+    <div style="clear:both;"></div>
+  </div>
+    <p class="bottomtext2 animated fadeIn">Thank you for using EMR Consultant / EHR Scope, an EXCLUSIVE Health Information Technology Resource!</p>
+    <div style="clear:both;"></div>
+    <div class="productcont">
+    <div class="list_carousel responsive">
+        <ul id="foo4">
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/abel.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/aboveemr.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/abraxas.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/allscripts.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/altos.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/amkai.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/aprima.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/chart.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/doctorspartner.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/docutap.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/eclinicalworks.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/epic.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/exscribe.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/ge.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/ingenix.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/insync.png"/></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/lifechart.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/med3000.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/medinformatix.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/medios.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/meridianEMR.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/micromd.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/abraxas.png"/></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/nuesoft.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/patientnow.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/PBOmd.png" /></li>
+        <li><img  src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/perfectmed.png" /></li>
+        <li><img  src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/primesuite.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/prognocis.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/relware.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/sevocity.png" /></li>
+        <li><img  src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/soapcore.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/srssoft.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/suitemed.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/unifi.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/vericle.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/versaform.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/versasuite.png" /></li>
+        <li><img  src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/visionary.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/winmedstat.png" /></li>
+        <li><img src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/images/productlogos/wellsoft.png" /></li>
+      </ul>
+        <div class="clearfix"></div>
+      </div>
+  </div>
+    <div class="clearfix"></div>
+    <br />
+  </div>
+    <script type="text/javascript" src="http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/jquery.powertip.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // placement examples
+            $('.south').powerTip({placement:'s'});
+            $('.north').powerTip({placement:'n'});
+
+        });
+    </script>
+    
+    <style>
+        .ac-best-contact-time { position: absolute; display: none; }
+    </style>
+        <div id="footer">
+            <div class="f-box">
+                <div class="holder">
+                    <div class="frame">
+                        <div class="col-1">
+                                                    </div>
+                        <div class="col-2">
+                                                    </div>
+                        <div class="col-3 widgetcontent3">
+                            <h4 style="text-align:center; margin:0; font-size: 1.1em;">Specialty Specific EMR Searches</h4>
+                            <ul class="listitems">
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/int-med-nephrology" title="Internal Med/Nephrology" target="_blank">Internal Med/Nephrology</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/long-term-care" title="Long-Term Care" target="_blank">Long-Term Care</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/mental-health-psych" title="Mental Health/Psych" target="_blank">Mental Health/Psych</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/neurology" title="Neurology EMR" target="_blank">Neurology EMR</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/occupational-medicine" title="Occ Med/Physiatry" target="_blank">Occ Med/Physiatry</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/orthopedic_surgery" title="Orthopedic Surgery" target="_blank">Orthopedic Surgery</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/plastic-surgery" title="Plastic Surgery" target="_blank">Plastic Surgery</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/sleep-medicine" title="Sleep Medicine" target="_blank">Sleep Medicine</a></li>
+                                                                    <li><a href="http://www.ehrscope.com/emr-comparison/surgicenter" title="Surgicenter" target="_blank">Surgicenter</a></li>
+                                                            </ul>
+                        </div>
+                        <div class="menu-footer-about-container"><ul id="menu-footer-about" class="social"><li><a class="menu-item menu-item-type-custom menu-item-object-custom" href="/forum">Forum</a></li>
+<li><a class="menu-item menu-item-type-custom menu-item-object-custom" href="/emr">EMR List</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/manufacturer-signup/">Manufacturer Signup</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/request-more-information/">Request More Information</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/press-and-media/">Press &#038; Media</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/terms-and-conditions/">Terms &#038; Conditions</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/privacy-policy/">Privacy Policy</a></li>
+<li><a class="menu-item menu-item-type-post_type menu-item-object-page" href="http://www.emrconsultant.com/contact/">Contact</a></li>
+</ul></div>                    </div>
+                </div>
+            </div>
+            <ul class="copy">
+                <li>Copyright &copy; 2009-2019 EHR Scope LLC</li>
+                <li class="mail">
+                    <span id="feedback-link"></span>
+                    <noscript>
+                        <em>Email address protected by JavaScript. Activate javascript to see the email.</em>
+                    </noscript>
+                </li>
+                <li>
+                    Telephone Support: 888.519.3100
+                    <a style="display:none;" href="http://www.emrconsultant.com/supersecret/" rel="nofollow">Do NOT follow this link or you will be banned from the site!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"0","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"","linkTarget":"_self","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","jqlb_overlay_opacity":"80","jqlb_overlay_color":"#000000","jqlb_overlay_close":"1","jqlb_border_width":"10","jqlb_border_color":"#ffffff","jqlb_border_radius":"0","jqlb_image_info_background_transparency":"100","jqlb_image_info_bg_color":"#ffffff","jqlb_image_info_text_color":"#000000","jqlb_image_info_text_fontsize":"10","jqlb_show_text_for_image":"1","jqlb_next_image_title":"next image","jqlb_previous_image_title":"previous image","jqlb_next_button_image":"http:\/\/www.emrconsultant.com\/wordpress\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/next.gif","jqlb_previous_button_image":"http:\/\/www.emrconsultant.com\/wordpress\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/prev.gif","jqlb_maximum_width":"","jqlb_maximum_height":"","jqlb_show_close_button":"1","jqlb_close_image_title":"close image gallery","jqlb_close_image_max_heght":"22","jqlb_image_for_close_lightbox":"http:\/\/www.emrconsultant.com\/wordpress\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/closelabel.gif","jqlb_keyboard_navigation":"1","jqlb_popup_size_fix":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-content/plugins/wp-lightbox-2/wp-lightbox-2.min.js?ver=1.3.4.1'></script>
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/format-phone.js?ver=1.1.5'></script>
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-content/themes/EMRCv3/js/main.js?ver=1.0.1'></script>
+<script type='text/javascript' src='http://www.emrconsultant.com/wordpress/wp-includes/js/wp-embed.min.js?ver=75c97fa2811b89953cc36d6ae9def54b'></script>
+    <!--  Google Analytics  -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push([_setAccount, UA-1003473-1]);
+        _gaq.push([_trackPageview]);
+
+        (function() {
+            var ga = document.createElement(script); ga.type = text/javascript; ga.async = true;
+            ga.src = (https: == document.location.protocol ? https://ssl : http://www) + .google-analytics.com/ga.js;
+            var s = document.getElementsByTagName(script)[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    </body>
+</html>
+
+
+
+

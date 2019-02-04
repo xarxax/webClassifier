@@ -1,0 +1,122 @@
+<?
+$page = 'home';
+$noDemo = true;
+$page_title = 'Management Software for Music Festivals and Conferences';
+
+$header_include = '
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
+
+
+$task = addslashes(strip_tags($_REQUEST['task']));
+
+if (isset($_COOKIE['ckmsg'])) $isCookie = 1;
+
+if ($task == 'accept') {
+	$expires = time() + 60*60*24*365*5;
+	@setcookie('ckmsg', '1', $expires, '/'); 
+	@header("Location: http://www.festivalsystems.net");
+	exit;
+}
+
+include 'includes/header.html';
+
+
+// cookie thing for first time stuff
+
+if ($isCookie != 1) {
+	echo '<form action="index.html" method="post" class="formArea"><span style="width: 100px; float: left; text-align: center; padding-top:5px;"><input type="submit" name="task" value="accept" class="button" /></span> The Festival Systems site, and the main system, both use cookies. By visiting this site you agree to our use of cookies. <a href="cookie.policy.html">Read more</a></form><br /><br />';
+}
+?>
+	
+			<h2>Welcome</h2>
+			
+			<p><strong>Festival Systems</strong> provides web-based management software and support to festivals and conferences.</p>
+			
+			<p>Our Festival Management Software started life in 2001 to help co-ordinate artist liaison at one of the UK's larger music events. Since then the software has helped manage over 7500 performances. We've developed ways of managing guest lists, volunteers, accommodation, production, scheduling, conferences, delegates and more. In the process we've revolutionised both internal and external communications.</p>
+			
+			<p>Over the last ten years we've worked closely with many leaders in the festival industry; we've built to their specifications, and refined and improved based on their feedback. Now you can benefit from countless hours of hard work, without having to go through any of the painful software development processes. You know that what you're seeing works &ndash; it's been tried and tested in fields around the world.</p>
+			
+			<p>We've got a free version of the system so you can <a href="http://www.fms4.net/setup.html">set up a system for your event</a> and see how it works for yourself!</p>
+		
+			<p><a href="https://twitter.com/FestivalSystems" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large">Follow @FestivalSystems</a></p>
+
+	<br style="clear: both;" />
+			<img src="images/scheduler_grab_reflected.gif" height="220" width="200" alt="" align="right" hspace="4" style="border: none; background: none; padding-top: 60px; " /><h3>Latest Video</h3>
+				<p>We recently released the latest version of the Scheduler; our dynamic, graphical and mighty clever system to help programme your event. It is an integral part of the service we offer, and just another element of the ongoing improvements 'round these parts... <br /><br /><a href="http://www.festivalsystems.com/2010/11/festival-systems-scheduler/">Click here</a> to watch the video, or head over to our <a href="http://www.festivalsystems.com">News Page</a> to see everything we've been up to.</p>
+
+		</div>
+		
+		<!-- left-columns starts -->
+			<div id="left-columns" class="grid_4">
+			<br /><br /><br />
+			<span style="text-align: centre"><a href="http://www.fms4.net/setup.html"><img src="/images/try.gif" height="202" width="202" alt="free trial" /></a></span><br class="clear" />
+			<div class="box">
+			<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 218,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#f5f4f3',
+      color: '#666666'
+    },
+    tweets: {
+      background: '#f5f4f3',
+      color: '#666666',
+      links: '#b7845b'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('FestivalSystems').start();
+</script>
+			<? /*<h3>Project Management!</h3>
+			<p>We've added more cleverness to the system, enabling you to <a href="http://www.festivalsystems.com/">build your own tasks</a> into the fabric of the system and <a href="http://www.festivalsystems.com/2010/10/to-do/">create to-do lists</a> for you and the other members of your staff. Click on the links to watch a video of these in action.</p></div>
+			<div class="box">
+			<h3>Artist Applications!</h3>
+			<p>We've just completed a system for gathering applications from prospective performers, with reviewing and rating functionality. When it comes time to promote them to the main artist system, we carry all their details over with them so that their record is already populated with the information you require. You can find out more about this <a href="http://www.festivalsystems.com/">over here</a>.</p></div> */ ?>
+		<!-- end left-columns -->
+			</div>	
+<!-- contents end here -->	
+	</div>
+	
+	</div>
+<br class="clear" />
+	<!-- footer starts here -->	
+	<div id="footer-wrapper" class="container_16">
+	
+		<div id="footer-bottom">
+	
+			<p class="bottom-left">			
+			&copy; 2007-2013 <a href="http://www.midtempo.net">Midtempo Ltd</a>. &nbsp; &nbsp;<br />
+			<? if ($page == 'home' and $cc == 'GB') { ?>Registered in England and Wales No. 4377314. <br />Our Registered Office is 20 High Street, Shaftesbury, Dorset SP7 8JG<? }
+
+		 ?>
+			</p><p class="bottom-right" >
+				<a href="#header">Top</a> |
+				<a href="index.html">Home</a>
+			</p>
+		</div>	
+	</div>
+	<!-- footer ends here -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8186326-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

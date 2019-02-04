@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDT</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script type="text/javascript" src="./jquery.min.1.7.1.js"></script>
+    <script type="text/javascript" src="./jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="./jquery.backstretch.min.js"></script>
+
+    
+<script type="text/javascript">
+    
+function slideshow(){
+
+    if (siGo == 1){
+    				//numINVITACIONES
+            if (vez == 10){
+                vez = 1;
+            }
+            $("#invitacion").backstretch("./pics/portada/a" + vez + ".jpg", {speed: 800});
+            $("#portadaEnfrente").hide().attr("src", "./pics/portada/a" + vez + ".png").fadeIn(800);
+
+            $(".dotsitos").attr("src", "./pics/dot0.png");
+
+            $("#nav" + vez).attr("src", "./pics/dot1.png");
+
+
+            elTimeout=setTimeout(function(){
+                vez++;
+                slideshow();
+            },4500);
+
+            console.log(vez);
+            console.log("si camina");
+    }
+    else {
+        console.log("no camina ya funcion");
+    }
+
+
+}
+
+function fader(){
+    //$("#portadaEnfrente").fadeOut(500);
+    vez++;
+    var t=setTimeout(function(){
+		slideshow();
+	},500);
+}
+
+
+var vez = 1;
+var siGo = 1;
+var elTimeout;
+
+
+
+window.onload = function()
+{
+	slideshow();
+    
+    
+    
+    var jctest = $("#invitacion").height();
+    jctest = jctest + 80;
+    $("#navInvitacion").css('top', jctest + 'px').fadeIn();
+};
+
+</script>
+
+ 
+
+
+
+<script type="text/javascript">
+$("document").ready(function() {
+     
+     
+        $(window).scroll(function(){
+            if ($(window).scrollTop() > 0) {
+            		$("#espaciadorFixed").show();
+            		$("#tituloFixed").show();
+                $('#logoMenuBar').addClass('makeFixed');
+                
+                $('#insideTitulo').addClass('makeFixedb');
+               
+								$("#insideTitulo_container" ).animate({
+									fontSize: "18px",
+								}, 500 );                
+               
+             }
+             else {
+                 $('#logoMenuBar').removeClass('makeFixed');
+                 $('#insideTitulo').removeClass('makeFixedb');
+                 $("#espaciadorFixed").hide();
+                 $("#tituloFixed").hide();
+
+             }
+        });
+        
+        
+    
+    
+    
+    
+    $(".dotsitos").click(function() {
+            clearTimeout(elTimeout);
+            $(".dotsitos").attr("src", "./pics/dot0.png");
+            $(this).attr("src", "./pics/dot1.png");
+            var cualNow = $(this).attr("rel");
+
+            vez = cualNow;
+            $("#invitacion").backstretch("./pics/portada/a" + vez + ".jpg", {speed: 800});
+            $("#portadaEnfrente").hide().attr("src", "./pics/portada/a" + vez + ".png").fadeIn(800);
+        
+            siGo = 0;
+            console.log("no camina click");
+    
+            elTimeout=setTimeout(function(){
+            		console.log("gox");
+            		siGo = 1;
+                vez++;
+                slideshow();
+            },10000);
+            
+    });
+    
+    $("#portadaEnfrente").hide();
+    
+    screenAlto = $( window ).height();
+    areaAlto = screenAlto - 420;
+
+    if (areaAlto > 499){
+        prodShotAlto = areaAlto - 500;
+    }
+    else {
+        prodShotAlto = 0;
+    }
+
+
+    
+
+
+
+    $("#invitacion").css('height', areaAlto + 'px');
+
+
+    $("#invitacion-product").css('margin-top', prodShotAlto + 'px');
+
+
+
+
+
+    
+
+
+    
+
+    /*
+	$('#invitacion-container').cycle({ 
+	    fx:      'fade', 
+	    speed:    600, 
+	    timeout:  2000 
+	});	
+    */
+	         
+        
+        
+});  
+  
+</script>
+
+
+</head>
+<body>
+    
+    
+    
+    
+<div id="navInvitacion">
+    <img src="./pics/dot0.png" id="nav1" rel="1" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav2" rel="2" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav3" rel="3" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav4" rel="4" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav5" rel="5" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav6" rel="6" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav7" rel="7" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav8" rel="8" class="dotsitos">
+    <img src="./pics/dot0.png" id="nav9" rel="9" class="dotsitos">
+</div> 
+
+<div id="logoMenuBar">
+    <div id="logoMenuBar_container">
+    		<div id="langChange" style="background-image: url('./pics/langs.png'); background-position: 0px 0px; "><a href="./ESP"><img src="./pics/spacer.gif" width=170 height=25 border=0></a></div>
+        <div id="logo"><img src="./pics/edt.jpg" alt=""></div>
+        <div id="menu">
+              <a href="./contact_us/" class="menutop">CONTACT US</a>
+ 
+              <a href="./discover_edt/" class="menutop">DISCOVER EDT</a>
+              <a href="./products/" class="menutop">PRODUCTS</a>
+              <a href="./about_us/" class="menutop">ABOUT US</a>
+              <a href="./" class="menutop">HOME</A>
+        </div>
+    </div>    
+</div>   
+
+<div id="espaciadorFixed"></div>
+    
+         
+
+    
+                                          
+   	
+
+
+    
+   
+    
+<div id="invitacion">
+    <div id="invitacion-container">
+        <div id="invitacion-product"><img src="./pics/spacer.gif" id="portadaEnfrente"></div>
+    </div>
+</div> 
+    
+<div id="areaLogos">
+    <div id="areaLogos_container">
+        <a href="products/del_frutal"><img src="./pics/portada/l1.png" alt="" border=0></a>
+        <a href="products/marinero"><img src="./pics/portada/l2.png" alt="" border=0></a>
+        <a href="products/sipi"><img src="./pics/portada/l3.png" alt="" border=0></a>
+        <a href="products/raptor"><img src="./pics/portada/l4.png" alt="" border=0></a>
+        <a href="products/naturas"><img src="./pics/portada/l5.png" alt="" border=0></a>
+        <a href="products/gran_dia"><img src="./pics/portada/l6.png" alt="" border=0></a>
+        <a href="products/incaparina"><img src="./pics/portada/l7.png" alt="" border=0></a><br />
+        <a href="products/revive"><img src="./pics/portada/l8.png" alt="" border=0></a>
+        <a href="products/maravilla"><img src="./pics/portada/l9.png" alt="" border=0></a>
+        <a href="products/tortillitas"><img src="./pics/portada/l10.png" alt="" border=0></a>
+        
+        <a href="products/malta"><img src="./pics/portada/malta_gallo.png" alt="" border=0></a>
+       <a href="products/mayan"><img src="./pics/portada/mayan_water.png" alt="" border=0></a>
+        <a href="products/salvavidas"><img src="./pics/portada/salvavidas.png" alt="" border=0></a>
+        
+    </div>
+</div>  
+          
+          
+     
+    
+    
+<div id="loader">
+    <img src="./pics/portada/a1.jpg" height=1>
+    <img src="./pics/portada/a1.png" height=1>
+    <img src="./pics/portada/a2.jpg" height=1>
+    <img src="./pics/portada/a2.png" height=1>
+    <img src="./pics/portada/a3.jpg" height=1>
+    <img src="./pics/portada/a3.png" height=1>
+    <img src="./pics/portada/a4.jpg" height=1>
+    <img src="./pics/portada/a4.png" height=1>
+    
+    <img src="./pics/portada/a5.jpg" height=1>
+    <img src="./pics/portada/a5.png" height=1>
+    
+    <img src="./pics/portada/a6.jpg" height=1>
+    <img src="./pics/portada/a6.png" height=1>
+    
+    <img src="./pics/portada/a7.jpg" height=1>
+    <img src="./pics/portada/a7.png" height=1>
+    
+    <img src="./pics/portada/a8.jpg" height=1>
+    <img src="./pics/portada/a8.png" height=1>
+    
+    <img src="./pics/portada/a9.jpg" height=1>
+    <img src="./pics/portada/a9.png" height=1>
+
+</div>
+                        	
+    	
+
+    
+                                                                                                                         
+   
+    
+<div id="copy">
+    <a href="./term-us/" class="linkfooter">Terms of us</a> Copyright &copy; 2019 Export Development & Trade. All rights reserved.
+</div>                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    
+</body>
+</html>

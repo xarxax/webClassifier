@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Il Fornaio</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+<meta name="description" content="Founded in Italy in 1972, Il Fornaio offers lunch and dinner guests the most authentic Italian dining experience available at 21 restaurants across the US.">
+<meta name="keywords" content="local Italian restaurant, Italian, Italian food, Italian restaurants in, dining, catering, private party restaurants, private dining, banquet facilities">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="css/normalize.css" rel="stylesheet" type="text/css"  media="screen"/><!-- Sets base CSS -->
+<link href="css/style_v1-2.css" rel="stylesheet" type="text/css"  media="screen"/><!-- Custom CSS -->
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"  media="screen"/><!-- JQuery Styles -->
+<link rel="stylesheet" href="css/swipebox.css" type="text/css" media="screen" /> <!-- Pop up slide shows -->
+ <!-- icon -->
+ <!-- <link rel="shortcut icon" href="bakerman_icon.ico" type="image/x-icon"/ > -->
+<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="scripts/smooth_scroll.js"></script><!--Smooth scrolling -->
+<script type="text/javascript" src="scripts/waypoints.js"></script><!-- Creates stop points on page for style changes -->
+<script type="text/javascript" src="scripts/actions.js?v=4"></script><!-- Custom scripts -->
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery.swipebox.js"></script><!-- Pop up slide shows -->
+<script src="scripts/backstretch_NEW.js"></script><!-- hero background slide shows -->
+
+<style>
+#menus:before { 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden;
+  display: block;
+} 
+#banquet:before { 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden;
+  display: block; 
+}
+
+#home .hero {
+    background: #000;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div><!-- FB Script -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ </script>  
+
+<!-- HEADER GOES HERE -->
+<a href="#main-content" class="offscreen">Skip to Content</a>
+<header>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '386466631740120'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" alt=""
+    src="https://www.facebook.com/tr?id=386466631740120&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <div class="top_banner">
+        <div class="inner_container">
+            <div class="logo">
+                <a title="Il Fornaio - Cucina Italiana" href="/">
+                    <h1 title="Il Fornaio - Cucina Italiana">
+                        <span class="visually-hidden">Il Fornaio - Cucina Italiana</span>
+                    </h1>
+                </a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li class="fb">
+                        <a title="Ilfornaio Facebook" href="https://www.facebook.com/ILFornaio" target="_blank"><img src="images/icon-facebook.png" alt="Ilfornaio Facebook" /></a>
+                    </li>
+                    <li class="twitter">
+                        <a title="Ilfornaio Twitter" href="https://twitter.com/ilfornaionline" target="_blank"><img src="images/icon-twitter.png" alt="Ilfornaio Twitter" /></a>
+                    </li>
+                    <li class="instagram">
+                        <a title="Ilfornaio Instagram" href="http://instagram.com/ilfornaiorestaurants" target="_blank"><img src="images/icon-instagram.png" alt="Ilfornaio Instagram" /></a>
+                    </li>
+                    <li class="pinterest">
+                        <a title="Ilfornaio Pinterest" href="http://www.pinterest.com/ilfornaio/" target="_blank"><img src="images/icon-pinterest.png" alt="Ilfornaio Pinterest" /></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="inner_container">
+        <nav id="main_nav">
+            <ul>
+                <li class="nav-first">
+                    <a title="Reservations" href="javascript:void 0;" id="drop_menu6">Reservations</a>
+                    <div class="drop_hide" id="reservations">
+                        <div class="left">
+                            <p>Reservations</p>
+                            <script>
+                            function MM_openBrWindow(theURL, winName, features) { //v2.0
+                                window.open(theURL, winName, features);
+                            }
+
+                            function deskres(pid) {
+                                if ($('.DeskID').val() == "") {
+                                    alert("Please select a location");
+                                    return false;
+                                }
+                                var deskRev = $('#DeskID').val();
+                                $('.RestaurantReferralID').val(deskRev);
+                            }
+                            </script>
+                            <form name="ism" action="https://www.opentable.com/restaurant-search.aspx" target="_blank" onsubmit="return deskres(1)" class="clearfix">
+                                <ul class="clearfix">
+                                    <li>
+                                        <label for="DeskID" class="visually-hidden">Choose a restaurant location</label>
+                                        <select name="RestaurantID" id="DeskID" class="RestaurantID" onChange="updateDesk(this);">
+                                            <option value="">--Choose a Location--</option>
+                                            <option value="25870">Beverly Hills</option>
+                                            <option value="2862">Burlingame</option>
+                                            <option value="1158">Canaletto Las Vegas</option>
+                                            <option value="25867">Canaletto Newport Beach</option>
+                                            <option value="6095">Carmel</option>
+                                            <option value="3974">Coronado</option>
+                                            <option value="961">Corte Madera</option>
+                                            <option value="3973">Del Mar</option>
+                                            <option value="14224">Denver Tech Center - Greenwood Village</option>
+                                            <option value="3963">Irvine</option>
+                                            <option value="87403">Las Vegas</option>
+                                            <option value="3975">Manhattan Beach</option>
+                                            <option value="2863">Palo Alto</option>
+                                            <option value="3976">Pasadena</option>
+                                            <option value="6093">Roseville</option>
+                                            <option value="6094">Sacramento</option>
+                                            <option value="2864">San Jose</option>
+                                            <option value="271156">Santa Clara</option>
+                                            <option value="6039">Seattle</option>
+                                            <option value="2865">Walnut Creek</option>
+                                            <option value="186637">Woodland Hills</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="calendar_drop" class="visually-hidden">Select date</label>
+                                        <input type="text" name="startDate" id="calendar_drop" placeholder="mm/dd/yyyy" value="">
+                                    </li>
+                                    <li>
+                                        <label for="resTimeNav" class="visually-hidden">Choose reservation time</label>
+                                        <select name="resTime" id="resTimeNav">
+                                            <option value="12:00 AM">12:00 AM</option>
+                                            <option value="12:30 AM">12:30 AM</option>
+                                            <option value="1:00 AM">1:00 AM</option>
+                                            <option value="1:30 AM">1:30 AM</option>
+                                            <option value="2:00 AM">2:00 AM</option>
+                                            <option value="2:30 AM">2:30 AM</option>
+                                            <option value="3:00 AM">3:00 AM</option>
+                                            <option value="3:30 AM">3:30 AM</option>
+                                            <option value="4:00 AM">4:00 AM</option>
+                                            <option value="4:30 AM">4:30 AM</option>
+                                            <option value="5:00 AM">5:00 AM</option>
+                                            <option value="5:30 AM">5:30 AM</option>
+                                            <option value="6:00 AM">6:00 AM</option>
+                                            <option value="6:30 AM">6:30 AM</option>
+                                            <option value="7:00 AM">7:00 AM</option>
+                                            <option value="7:30 AM">7:30 AM</option>
+                                            <option value="8:00 AM">8:00 AM</option>
+                                            <option value="8:30 AM">8:30 AM</option>
+                                            <option value="9:00 AM">9:00 AM</option>
+                                            <option value="9:30 AM">9:30 AM</option>
+                                            <option value="10:00 AM">10:00 AM</option>
+                                            <option value="10:30 AM">10:30 AM</option>
+                                            <option value="11:00 AM">11:00 AM</option>
+                                            <option value="11:30 AM">11:30 AM</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="12:30 PM">12:30 PM</option>
+                                            <option value="1:00 PM">1:00 PM</option>
+                                            <option value="1:30 PM">1:30 PM</option>
+                                            <option value="2:00 PM">2:00 PM</option>
+                                            <option value="2:30 PM">2:30 PM</option>
+                                            <option value="3:00 PM">3:00 PM</option>
+                                            <option value="3:30 PM">3:30 PM</option>
+                                            <option value="4:00 PM">4:00 PM</option>
+                                            <option value="4:30 PM">4:30 PM</option>
+                                            <option value="5:00 PM">5:00 PM</option>
+                                            <option value="5:30 PM">5:30 PM</option>
+                                            <option value="6:00 PM">6:00 PM</option>
+                                            <option value="6:30 PM">6:30 PM</option>
+                                            <option value="7:00 PM" selected="selected">7:00 PM</option>
+                                            <option value="7:30 PM">7:30 PM</option>
+                                            <option value="8:00 PM">8:00 PM</option>
+                                            <option value="8:30 PM">8:30 PM</option>
+                                            <option value="9:00 PM">9:00 PM</option>
+                                            <option value="9:30 PM">9:30 PM</option>
+                                            <option value="10:00 PM">10:00 PM</option>
+                                            <option value="10:30 PM">10:30 PM</option>
+                                            <option value="11:00 PM">11:00 PM</option>
+                                            <option value="11:30 PM">11:30 PM</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="PartySizeNav" class="visually-hidden">Select party size</label>
+                                        <select name="PartySize" id="PartySizeNav">
+                                            <option value="1">1</option>
+                                            <option value="2" selected="selected">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="submitDesk" class="visually-hidden">Submit</label>
+                                        <button type="submit" id="submitDesk" name="submit">Search</button>
+                                    </li>
+                                </ul>
+                                <input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
+                                <input type="hidden" class="RestaurantReferralID" name="RestaurantReferralID" value="0">
+                            </form>
+                        </div>
+                        <div class="right">
+                            <div class="rbox">
+                                <div class="gc_bck">
+                                    
+
+	<ul>
+		<li><a href="store&amp;department_id=1">
+			<img src="images/gift_cards.png" alt="Il Fornaio Gift Card"></a>
+		</li>
+		<li>
+			<p><a href="https://ilfornaio.com/store&amp;department_id=1">Purchase <br> Il Fornaio Gift Cards</a></p>
+		</li>
+	</ul>
+
+	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-second">
+                    <a title="Menus" href="javascript:void 0;" id="drop_menu3">Menus</a>
+                    <div class="drop_hide" id="menu_desk">
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">California</a>
+                                <ul>
+                                    <li><a href="beverlyhills#menus">Beverly Hills</a></li>
+                                    <li><a href="burlingame#menus">Burlingame</a></li>
+                                    <li><a href="carmel#menus">Carmel</a></li>
+                                    <li><a href="coronado#menus">Coronado</a></li>
+                                    <li><a href="cortemadera#menus">Corte Madera</a></li>
+                                    <li><a href="delmar#menus">Del Mar</a></li>
+                                    <li><a href="irvine#menus">Irvine</a></li>
+                                    <li><a href="manhattanbeach#menus">Manhattan Beach</a></li>
+                                    <li><a href="paloalto#menus">Palo Alto</a></li>
+                                    <li><a href="pasadena#menus">Pasadena</a></li>
+                                    <li><a href="roseville#menus">Roseville</a></li>
+                                    <li><a href="sacramento#menus">Sacramento</a></li>
+                                    <li><a href="sanjose#menus">San Jose</a></li>
+                                    <li><a href="santaclara#menus">Santa Clara</a></li>
+                                    <li><a href="walnutcreek#menus">Walnut Creek</a></li>
+                                    <li><a href="woodlandhills#menus">Woodland Hills</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Colorado</a>
+                                <ul>
+                                    <li><a href="greenwoodvillage#menus">Denver</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Washington</a>
+                                <ul>
+                                    <li><a href="seattle#menus">Seattle</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Nevada</a>
+                                <ul>
+                                    <li><a href="lasvegas#menus">Las Vegas <span class="visually-hidden">Menu</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Canaletto</a>
+                                <ul>
+                                    <li><a href="canalettonewportbeach#menus">Newport Beach</a></li>
+                                    <li><a href="canalettolasvegas#menus"><span class="visually-hidden">Canaletto </span>Las Vegas<span class="visually-hidden"> Menu</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="super_nav">
+                            <div class="gc_bck">
+                                
+
+	<ul>
+		<li><a href="store&amp;department_id=1">
+			<img src="images/gift_cards.png" alt="Il Fornaio Gift Card"></a>
+		</li>
+		<li>
+			<p><a href="https://ilfornaio.com/store&amp;department_id=1">Purchase <br> Il Fornaio Gift Cards</a></p>
+		</li>
+	</ul>
+
+	
+                            </div>
+                        </div>
+                        <div class="button"><a href="festa" class="text_shadow">FESTA REGIONALE</a></div>
+                    </div>                    
+                </li>
+                <li class="nav-third">
+                    <a title="Locations" href="javascript:void 0;" id="drop_menu4"><span class="mobile-title">Menus &amp; </span>Locations</a>
+                    <div class="drop_hide" id="locations">
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">California</a>
+                                <ul>
+                                    <li><a href="beverlyhills">Beverly Hills</a></li>
+                                    <li><a href="burlingame">Burlingame</a></li>
+                                    <li><a href="carmel">Carmel</a></li>
+                                    <li><a href="coronado">Coronado</a></li>
+                                    <li><a href="cortemadera">Corte Madera</a></li>
+                                    <li><a href="delmar">Del Mar</a></li>
+                                    <li><a href="irvine">Irvine</a></li>
+                                    <li><a href="manhattanbeach">Manhattan Beach</a></li>
+                                    <li><a href="paloalto">Palo Alto</a></li>
+                                    <li><a href="pasadena">Pasadena</a></li>
+                                    <li><a href="roseville">Roseville</a></li>
+                                    <li><a href="sacramento">Sacramento</a></li>
+                                    <li><a href="sanjose">San Jose</a></li>
+                                    <li><a href="santaclara">Santa Clara</a></li>
+                                    <li><a href="walnutcreek">Walnut Creek</a></li>
+                                    <li><a href="woodlandhills">Woodland Hills</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Colorado</a>
+                                <ul>
+                                    <li><a href="greenwoodvillage">Denver</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Washington</a>
+                                <ul>
+                                    <li><a href="seattle">Seattle</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Nevada</a>
+                                <ul>
+                                    <li><a href="lasvegas">Las Vegas <span class="visually-hidden">Location</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Canaletto</a>
+                                <ul>
+                                    <li><a href="canalettonewportbeach">Newport Beach</a></li>
+                                    <li><a href="canalettolasvegas"><span class="visually-hidden">Canaletto </span>Las Vegas</a><span class="visually-hidden"> Location</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="super_nav">
+                            <div class="gc_bck">
+                                
+
+	<ul>
+		<li><a href="store&amp;department_id=1">
+			<img src="images/gift_cards.png" alt="Il Fornaio Gift Card"></a>
+		</li>
+		<li>
+			<p><a href="https://ilfornaio.com/store&amp;department_id=1">Purchase <br> Il Fornaio Gift Cards</a></p>
+		</li>
+	</ul>
+
+	
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-fourth">
+                    <a title="Catering" href="#" id="drop_menu5">Catering</a>
+                    <div class="drop_hide" id="catering">
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">California</a>
+                                <ul>
+                                    <li><a href="beverlyhills#banquet">Beverly Hills</a></li>
+                                    <li><a href="burlingame#banquet">Burlingame</a></li>
+                                    <li><a href="carmel#banquet">Carmel</a></li>
+                                    <li><a href="coronado#banquet">Coronado</a></li>
+                                    <li><a href="cortemadera#banquet">Corte Madera</a></li>
+                                    <li><a href="delmar#banquet">Del Mar</a></li>
+                                    <li><a href="irvine#banquet">Irvine</a></li>
+                                    <li><a href="manhattanbeach#banquet">Manhattan Beach</a></li>
+                                    <li><a href="paloalto#banquet">Palo Alto</a></li>
+                                    <li><a href="pasadena#banquet">Pasadena</a></li>
+                                    <li><a href="roseville#banquet">Roseville</a></li>
+                                    <li><a href="sacramento#banquet">Sacramento</a></li>
+                                    <li><a href="sanjose#banquet">San Jose</a></li>
+                                    <li><a href="santaclara#banquet">Santa Clara</a></li>
+                                    <li><a href="walnutcreek#banquet">Walnut Creek</a></li>
+                                    <li><a href="woodlandhills#banquet">Woodland Hills</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Colorado</a>
+                                <ul>
+                                    <li><a href="greenwoodvillage#banquet">Denver</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Washington</a>
+                                <ul>
+                                    <li><a href="seattle#banquet">Seattle</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="states">Nevada</a>
+                                <ul>
+                                    <li><a href="lasvegas#banquet">Las Vegas<span class="visually-hidden"> Catering</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="super_nav">
+                            <li><a href="#" class="states">Canaletto</a>
+                                <ul>
+                                    <li><a href="canalettonewportbeach#banquet">Newport Beach</a></li>
+                                    <li><a href="canalettolasvegas#banquet"><span class="visually-hidden">Canaletto </span>Las Vegas<span class="visually-hidden"> Catering</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="super_nav">
+                            <div class="gc_bck">
+                                
+
+	<ul>
+		<li><a href="store&amp;department_id=1">
+			<img src="images/gift_cards.png" alt="Il Fornaio Gift Card"></a>
+		</li>
+		<li>
+			<p><a href="https://ilfornaio.com/store&amp;department_id=1">Purchase <br> Il Fornaio Gift Cards</a></p>
+		</li>
+	</ul>
+
+	
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="catering" class="text_shadow">Full-Service & Off-Site Catering - Click Here</a>
+                        </div>
+                    </div>
+                </li>
+                <li title="Gift Cards" class="nav-fifth"><a href="https://ilfornaio.com/store&department_id=1">Gift Cards</a></li>
+                <li title="Connect" class="nav-last"><a href="connect">Connect</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTENT GOES HERE -->
+<!-- SCHEDULED start=Jan 21, 2019, 12:01am --><!-- SLIDER BLOCK -->
+<!-- SLIDES 01/21/2019 -->
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+<style>
+#home .hero {
+    /*background: url(images/homeslideshow/2017/Holiday-Comp1BDF95B.jpg) center no-repeat;*/
+    background: #000;
+}
+</style>
+
+<script>
+$(document).ready(function() {
+
+    datePick(); //Jquery datpepicker
+
+   $(".hero").backstretch([{
+        url: "images/homeslideshow/2017/Benvenuti-1-10.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'La Tua Famiglia- Join us for an Italian Thanksgiving Feast'  
+    }, {
+        
+        url: "festa/2019/Umbria-carousel-2.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'Festa Regionale Umbria February 4-17'
+    }, { 
+        url: "images/homeslideshow/2016/App-Italy-carousel-1-117.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'Win a trip for two to Italy. Download our app and collect all 6 stamps on your culinary journey.'
+    }, {
+        url: "images/homeslideshow/2018/New-App-carousel-1-7.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'Start Earning Credit towards rewarding rewards every time you Dine.'
+    }, {
+        url: "images/homeslideshow/2017/GIFT-CARD-carousel-8.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'Il Fornaio Gift Cards-Carta Regalo'
+    }, {
+        url: "images/homeslideshow/2018/WS-carousel-7.jpg",
+        duration: 5000,
+        fade: 500,
+        fadeFirstImage: false,
+        alt: 'Il Fornaio is Honored to Receive The Wine Spectator Award of Excellence Tutti i Ristoranti'
+
+    }]);
+
+    //Variabale to make whole slider swipeable
+    var next = document.getElementById("backHeroHome");
+
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc = new Hammer(next);
+
+    // Swipe left event
+    mc.on("swipeleft", function(ev) {
+       $(".hero").data('backstretch').next();
+    });
+
+    // Swipe right event
+    mc.on("swiperight", function(ev) {
+        $(".hero").data('backstretch').prev();
+
+    });
+    /*END NEW SLIDER CONTROLS*/
+
+    actions();
+
+    var forms = document.getElementsByTagName("form");
+    for (var i = 0; i < forms.length; i++) {
+        forms[i].noValidate = true;
+
+        forms[i].addEventListener("submit", function(event) {
+            //Prevent submission if checkValidity on the form returns false.
+            if (!event.target.checkValidity()) {
+                event.preventDefault();
+                alert("Please fill out all fields.");
+            }
+
+        }, false);
+    }
+});
+
+
+
+$(window).on("backstretch.before", function(e, instance, index) {
+    if (index == 0) {
+        $(".slide1").toggleClass("slide_reveal").children().toggleClass("slide_link");
+        $("div").not(".slide1").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");
+
+    } else if (index == 1) {
+        $(".slide2").addClass("slide_reveal").children().addClass("slide_link");
+        $("div").not(".slide2").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "url(images/homeslideshow/app-slide12302015.jpg) center no-repeat");
+
+    } else if (index == 2) {
+        $(".slide3").addClass("slide_reveal").children().addClass("slide_link");
+        $("div").not(".slide3").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");
+
+    } else if (index == 3) {
+        $(".slide4").addClass("slide_reveal").children().addClass("slide_link");
+        $("div").not(".slide4").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");
+
+    } else if (index == 4) {
+        $(".slide5").addClass("slide_reveal").children().addClass("slide_link");
+        $("div").not(".slide5").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");    
+
+    } else if (index == 5) {
+        $(".slide6").addClass("slide_reveal").children().addClass("slide_link");
+        $("div").not(".slide6").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");      
+
+    } else {
+        $("div").removeClass("slide_reveal").children().removeClass("slide_link");
+        $(".backstretch").css("background", "#000");
+    };
+});
+</script>
+<div id="home">
+    <div class="hero" role="banner" id="backHeroHome">
+        <div class="slide-controls clearfix">
+          <a title="Next Slide" href="#" class="next-slide">NEXT</a>
+          <a title="Previous Slide" href="#" class="prev-slide">PREV</a>
+          <a title="Pause Slideshow" href="#" class="pause-slide">PAUSE SLIDE</a>
+        </div>
+        <div class="inner_container">
+
+            <div class="hero_info hero_slide slide1">
+               <span class="visually-hidden">Ciao a Tutti e BENVENUTI</span>
+            </div>
+
+            <div class="hero_info hero_slide slide2">
+                <a title="Festa Regionale Umbria February 4-17" href="festa" onclick="MM_openBrWindow('https://ilfornaio.com/festa/2019/Umbria-menu-219.pdf','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,width=900,height=1000')" class="slide_link"><span class="visually-hidden">Festa Regionale Umbria February 4-17</span></a>
+            </div>
+
+            <div class="hero_info hero_slide slide3">
+                <a title="Plan Your Celebration at Il Fornaio-Private & Semi-Private Dining, Event Planning, Specialized Menus, Award-Winning Italian Cuisine"><span class="visually-hidden">Plan Your Celebration at Il Fornaio and You'll Receive more than a Perfect Event.</span></a>
+            </div>
+            <div class="hero_info hero_slide slide4">
+                <a href="https://itunes.apple.com/us/app/il-fornaio/id991912457?ls=1&mt=8" target="_blank" class="slide_link slide_link_button itunes"><img src="images/homeslideshow/iphone-app-store-test.png" alt="Available on the iPhone App Store" /></a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.akl.ilfo.activity&hl=en" target="_blank" class="slide_link slide_link_button android"><img src="images/homeslideshow/android-app-store.png" alt="Android App at Google Play" /></a>
+            </div>
+            <div class="hero_info hero_slide slide5">
+                <a title="Il Fornaio Gift Cards-Carta Regalo" href="https://ilfornaio.com/store&department_id=1" target="_blank"><span class="visually-hidden">Il Fornaio Gift Cards-Carta Regalo</span></a>
+            </div>
+
+            <div class="hero_info hero_slide slide6">
+               <span class="visually-hidden">Il Fornaio is Honored to Receive The Wine Spectator Award of Excellence Tutti i Ristoranti</span>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- SLIDES 1/21/2019 -->
+<!-- END SLIDER BLOCK -->
+
+
+
+<div class="inner_container" id="main-content">
+    <script>
+    function fullres(pid) { //Open Table script
+        if ($('.fullID').val() == "") {
+            alert("Please select a location");
+            return false;
+        }
+        var fullRev = $('#FullID').val();
+        $('.RestaurantReferralID').val(fullRev);
+    }
+    </script>
+    <div class="full reservations">
+        <form name="r" action="//opentable.com/restaurant-search.aspx" method="GET" onsubmit="return fullres(1)" target="_blank">
+            <fieldset>
+                <legend class="visually-hidden">Provide date and time details to book a reservation</legend>
+                <ul>
+                    <li>Reservations</li>
+                    <li>
+                        <label for="FullID" class="visually-hidden">Select restaurant location</label>
+                        <select name="RestaurantID" id="FullID" title="Select restaurant location" class="fullID" onChange="updateFull(this);">
+                            <option value="">Choose a Location</option>
+                            <option value="25870">Beverly Hills</option>
+                            <option value="2862">Burlingame</option>
+                            <option value="1158">Canaletto Las Vegas</option>
+                            <option value="25867">Canaletto Newport Beach</option>
+                            <option value="6095">Carmel</option>
+                            <option value="3974">Coronado</option>
+                            <option value="961">Corte Madera</option>
+                            <option value="3973">Del Mar</option>
+                            <option value="14224">Greenwood Village</option>
+                            <option value="3963">Irvine</option>
+                            <option value="87403">Las Vegas</option>
+                            <option value="3975">Manhattan Beach</option>
+                            <option value="2863">Palo Alto</option>
+                            <option value="3976">Pasadena</option>
+                            <option value="6093">Roseville</option>
+                            <option value="6094">Sacramento</option>
+                            <option value="2864">San Jose</option>
+                            <option value="271156">Santa Clara</option>
+                            <option value="6039">Seattle</option>
+                            <option value="2865">Walnut Creek</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="calendar" class="visually-hidden">Choose reservation date</label>
+                        <input type="text" name="startDate" title="Choose reservation date" id="calendar" placeholder="mm/dd/yyyy" value="">
+                    </li>
+                    <li>
+                        <label for="fulltime" class="visually-hidden">Choose time of reservation</label>
+                        <select name="resTime" title="Choose time of reservation" id="fulltime">
+                            <option value="12:00 AM">12:00 AM</option>
+                            <option value="12:30 AM">12:30 AM</option>
+                            <option value="1:00 AM">1:00 AM</option>
+                            <option value="1:30 AM">1:30 AM</option>
+                            <option value="2:00 AM">2:00 AM</option>
+                            <option value="2:30 AM">2:30 AM</option>
+                            <option value="3:00 AM">3:00 AM</option>
+                            <option value="3:30 AM">3:30 AM</option>
+                            <option value="4:00 AM">4:00 AM</option>
+                            <option value="4:30 AM">4:30 AM</option>
+                            <option value="5:00 AM">5:00 AM</option>
+                            <option value="5:30 AM">5:30 AM</option>
+                            <option value="6:00 AM">6:00 AM</option>
+                            <option value="6:30 AM">6:30 AM</option>
+                            <option value="7:00 AM">7:00 AM</option>
+                            <option value="7:30 AM">7:30 AM</option>
+                            <option value="8:00 AM">8:00 AM</option>
+                            <option value="8:30 AM">8:30 AM</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="9:30 AM">9:30 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="1:30 PM">1:30 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="2:30 PM">2:30 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="3:30 PM">3:30 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="4:30 PM">4:30 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM" selected="selected">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                            <option value="9:30 PM">9:30 PM</option>
+                            <option value="10:00 PM">10:00 PM</option>
+                            <option value="10:30 PM">10:30 PM</option>
+                            <option value="11:00 PM">11:00 PM</option>
+                            <option value="11:30 PM">11:30 PM</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="PartySize" class="visually-hidden">Choose how many in your party</label>
+                        <select name="PartySize" title="Choose how many in your party" id="PartySize">
+                            <option value="1">1 guest</option>
+                            <option value="2" selected="selected">2 guests </option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                            <option value="7">7 guests</option>
+                            <option value="8">8 guests</option>
+                            <option value="9">9 guests</option>
+                            <option value="10">10 guests</option>
+                            <option value="11">11 guests</option>
+                            <option value="12">12 guests</option>
+                            <option value="13">13 guests</option>
+                            <option value="14">14 guests</option>
+                            <option value="15">15 guests</option>
+                            <option value="16">16 guests</option>
+                            <option value="17">17 guests</option>
+                            <option value="18">18 guests</option>
+                            <option value="19">19 guests</option>
+                            <option value="20">20 guests</option>
+                            <option value="21">21 guests</option>
+                            <option value="22">22 guests</option>
+                            <option value="23">23 guests</option>
+                            <option value="24">24 guests</option>
+                            <option value="25">25 guests</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="submitFull" class="visually-hidden">Submit search form</label>
+                        <button title="Search for reservations" type="submit" id="submitFull" name="submit">Search</button>
+                    </li>
+                    <li>
+                        <input type="hidden" class="RestaurantReferralID" name="RestaurantReferralID" value="0">
+                        <input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="inner_container">
+        <div class="join_form">
+            <h2>JOIN THE IL FORNAIO FAMIGLIA!</h2>
+            <p>Sign up today to receive up-to-date information on Festa Regionale, Wine Dinners, Cooking Classes and special Community Events hosted by your new Il Fornaio Famiglia. Your exclusive invitations will be sent to you via email.</p>
+            <script>
+            function validateEmail(emailAddress) {
+                /* NOTE:  This regular expression is identical to the one used by Enterprise for e-mail address validation */
+                var regExp =
+                    /^s*[a-zA-Zd][a-zA-Zd.!#$%&'*+-/=?^_`{|}~]*@([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?.)+[a-zA-Z]{2,6}s*$/;
+                if (emailAddress.length <= 200 && regExp.test(emailAddress)) {
+                    return true;
+                } else {
+                    alert("Invalid e-mail address");
+                    return false;
+                }
+            }
+            </script>
+            <form action="https://ilfornaiosm.fbmta.com/members/subscribe.aspx" method="POST" onsubmit="return !!(validateEmail(this.EmailAddress.value) & required());" novalidate>
+                <fieldset>
+                    <legend class="visually-hidden">Personal Details to join the Il Fornaio <i>Famiglia</i></legend>
+                    <div class="form_left">
+                        <label for="FirstName" class="visually-hidden">Enter first name</label>
+                        <input name="FirstName" type="text" id="FirstName" title="Enter First Name" placeholder="First Name*" maxlength="100" class="required" required />
+                        <label for="LastName" class="visually-hidden">Enter last name</label>
+                        <input name="LastName" type="text" id="LastName" title="Enter Last Name" placeholder="Last Name*" maxlength="100" class="required" required />
+                        <label for="StoreCode" class="visually-hidden">Choose favorite location</label>
+                        <select name="StoreCode" id="StoreCode" title="Choose favorite location" class="required" required>
+                            <option value="">--Choose a Favorite Location--</option>
+                            <option value="3004">Beverly Hills</option>
+                            <option value="3049">Burlingame</option>
+                            <option value="3066">Canaletto Las Vegas</option>
+                            <option value="3091">Canaletto Newport Beach</option>
+                            <option value="3051">Carmel</option>
+                            <option value="3062">Coronado</option>
+                            <option value="3009">Corte Madera</option>
+                            <option value="3016">Del Mar</option>
+                            <option value="3076">Greenwood Village</option>
+                            <option value="3023">Irvine</option>
+                            <option value="3058">Las Vegas</option>
+                            <option value="3071">Manhattan Beach</option>
+                            <option value="3018">Palo Alto</option>
+                            <option value="3024">Pasadena</option>
+                            <option value="3073">Roseville</option>
+                            <option value="3032">Sacramento</option>
+                            <option value="3033">San Jose</option>
+                            <option value="3075">Santa Clara </option>
+                            <option value="3057">Seattle</option>
+                            <option value="3065">Walnut Creek</option>
+                            <option value="3072">Woodland Hills</option>
+                        </select>
+
+                        <style>
+                            .form-date,
+                            .join_form p.label {
+                                float: left;
+                                width: 25%;
+                            }
+                            /*.form-date.month {
+                                width: 50%;
+                                margin-right: 5%;
+                            }
+                            .form-date.day {
+                                width: 45%;
+                            }*/
+
+                            .form-date.month {
+                                margin-right: 5%;
+                            }
+
+                            .form-date.day {}
+
+                            .join_form p.label {
+                                width: 40%;
+                                margin-right: 5%;
+                                padding: 0;
+                                color: #cdcdcd;
+                            }
+
+                            .form-disclaimer {
+                                margin-top: 1em;
+                            }
+                        </style>
+
+                        <div class="clearfix">
+                            <p class="label">Enter Birthday</p>
+                            <label for="DOBM" class="visually-hidden">Enter Birthday month</label>
+                            <select name="DOBM" id="DOBM" class="form-date month">
+                                <option value="">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <label for="DOBD" class="visually-hidden">Enter Birthday day</label>
+                            <select name="DOBD" id="DOBD" class="form-date day">
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_right">
+                        <label for="EmailAddress" class="visually-hidden">Enter email address</label>
+                        <input type="text" name="EmailAddress" id="EmailAddress" title="Enter Email Address" placeholder="Email Address*" size="30" maxlength="200" class="required" required />
+                        <label for="Address" class="visually-hidden">Enter address</label>
+                        <input name="Address" type="text" id="Address" title="Enter Address" placeholder="Enter Address" maxlength="100" class="required" required />
+                        <label for="City" class="visually-hidden">Enter city</label>
+                        <input name="City" type="text" id="City" title="Enter City" placeholder="Enter City" maxlength="100" class="required" required />
+                        <label for="State" class="visually-hidden">Enter state</label>
+                        <select name="State" id="State" title="Enter State" class="required" required>
+                            <option value="">State</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        <label for="Zip" class="visually-hidden">Enter zip</label>
+                        <input name="Zip" type="text" id="Zip" title="Enter Zip" placeholder="Enter Zip" class="required" required />
+                        <input type="hidden" name="Action" id="Action" value="subscribe">
+                        <input type="hidden" name="InputSource" id="InputSource" value="W_Short_Form">
+                        <input type="hidden" name="ListID" value="4294967408">
+                        <input type="hidden" name="SiteGUID" value="B42E0A41-0F58-46B0-A75C-41DED1303028">
+                        <input type="hidden" name="ReturnURL" value="https://ilfornaio.com/confirm">
+
+                        <div class="clearfix">
+                            <p class="label">Enter Anniversary Date</p>
+                            <label for="DOAM" class="visually-hidden">Enter Anniversary month</label>
+                            <select name="DOAM" id="DOAM" class="form-date month">
+                                <option value="">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+
+                            <label for="DOAD" class="visually-hidden">Enter Anniversary day</label>
+                            <select name="DOAD" id="DOAD" class="form-date day">
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <label for="submit" class="visually-hidden">Submit form</label>
+                <button value="submit" name="submit" id="submit" class="button" title="Submit Form">Submit</button>
+                <p class="form-disclaimer">NOTE: Fields marked with an asterisk (*) are required.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="flex">
+        <div class="half famiglia">
+            <a title="Join our Famiglia to receive up-to-date information on special offers, events and promotions." href="https://assets.fbmta.com/clt/ilfornaio/lp/join/2/join.asp" target="_blank">
+                <p class="text_shadow">Join our Famiglia to receive up-to-date information on special offers, events and promotions.</p>
+                <p><span class="big_p text_shadow">Andiamo!</span></p>
+                <div class="h3"><span class="icon"></span>Join the Famiglia</div>
+            </a>
+        </div>
+        <div class="half store">
+            <a title="Ilfornaio Gift Cards" href="https://ilfornaio.com/giftcards">
+                <div class="flex">
+                    
+<p class="text_shadow">Everything Italian!<br> From Our Own Extra-Virgin Olive Oil to Gift Cards</p>  
+          <img src="images/gift_card.png" alt="Ilfornaio Gift Card" />
+  
+                </div>
+                <div class="h3"><span class="icon"></span>Store</div>
+            </a>
+        </div>
+    </div> -->
+</div>
+<div class="inner_container">
+    <div class="connect">
+        <h2>Connect with us</h2>
+        <h3>Share and enjoy your experiences at Il Fornaio</h3>
+        <div class="flex fb_container">
+            <section>
+                <h4>Facebook</h4>
+                <div class="fb-like-box" data-href="https://www.facebook.com/ILFornaio" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                <a title="Follow Ilfornaio on Facebook" href="https://www.facebook.com/ILFornaio/" target="_blank" class="black">Follow Ilfornaio on Facebook</a>
+            </section>
+            <section>
+                <h4>Twitter</h4>
+                <a title="Tweets by Ilfornaio" class="twitter-timeline" href="https://twitter.com/ilfornaionline" data-widget-id="473967672405663744">Tweets by @ilfornaionline</a>
+                <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+                </script>
+            </section>
+            <section>
+                <h4><a id="pinTitle" title="Visit Ilfornaio on Pinterest" href="https://www.pinterest.com/ilfornaio/" target="_blank">Pinterest</a></h4>
+                <a title="Visit Ilfornaio on Pinterest" data-pin-do="embedUser" href="https://www.pinterest.com/ilfornaio/" data-pin-scale-width="70" data-pin-scale-height="200" data-pin-board-width="245">Visit Il Fornaio's profile on Pinterest.</a>
+                <!-- Please call pinit.js only once per page -->
+                <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+            </section>
+        </div>
+    </div>
+   
+</div>
+<div class="catering_full">
+    <a title="Ilfornaio Catering" href="catering">
+        <h2 class="text_shadow">Catering</h2>
+        <ul>
+            <li class="text_shadow">Weddings</li>
+            <li class="text_shadow">Banquets</li>
+            <li class="text_shadow">Parties</li>
+        </ul>
+    </a>
+    <!-- <p>Host your next event at Il Fornaio and treat your guests to the most authentic Italian experience outside of Italy!<a title="Book your party now!" href="https://gatherhere.com/inquiries/51mpzqjf#/date" class="button" target="_blank">Book your party now!</a></p> -->
+    <p>To receive more information about our catering and private events, visit your preferred location from the menu above to book your party now!</p>
+    <script src="https://gatherhere.com/js/leadform.js" id="gather-loader" data-locationid="51mpzqjf" data-trigger="eventButton"></script>
+</div>
+
+<!-- FOOTER GOES HERE -->
+<style>
+    footer .social {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    footer .social ul {
+        text-align: center;
+        margin: 0 auto 10px auto;
+        max-width: 250px;
+    }
+</style>
+
+
+<footer id="footer">
+    <div class="inner_container">
+        <div class="social">
+            <ul>
+                <li class="fb">
+                    <a title="Ilfornaio Facebook" href="https://www.facebook.com/ILFornaio" target="_blank"><img src="images/icon-facebook.png" alt="Ilfornaio Facebook"/></a>
+                </li>
+                <li class="twitter">
+                    <a title="Ilfornaio Twitter" href="https://twitter.com/ilfornaionline" target="_blank"><img src="images/icon-twitter.png" alt="Ilfornaio Twitter"/></a>
+                </li>
+                <li class="instagram">
+                    <a title="Ilfornaio Instagram" href="https://instagram.com/ilfornaiorestaurants" target="_blank"><img src="images/icon-instagram.png" alt="Ilfornaio Instagram"/></a>
+                </li>
+                <li class="pinterest">
+                    <a title="Ilfornaio Pinterest" href="https://www.pinterest.com/ilfornaio/" target="_blank"><img src="images/icon-pinterest.png" alt="Ilfornaio Pinterest"/></a>
+                </li>
+
+            </ul>
+            <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="fb_hide">
+                <div class="fb-like" data-href="https://www.facebook.com/ILFornaio" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+        </div>
+        <article class="catering mobile">
+            <a title="Ilfornaio Catering" href="catering">
+                <p>Plan your next event with Il Fornaio</p>
+                <p class="subtitle">Catering</p>
+            </a>
+        </article>
+    </div>
+    <div class="outer_container">
+        <div class="inner_container">
+            <div class="footer_info">
+                <div class="logo">
+                    <a title="Il Fornaio - Authentic Italian Bakery" href="#"><img src="images/logo_short.png" alt="Il Fornaio - Authentic Italian Bakery" class="logo_long" /></a>
+                </div>
+                <small class="legal">&copy;2018 Il Fornaio. All Rights Reserved</small>
+                <small><a title="Privacy Policy" href="https://ilfornaio.com/privacy">Privacy Policy</a></small>
+            </div>
+            <div class="footer_nav mobile">
+                <ul>
+                    <li><a title="Contact Us" href="connect">Contact Us</a> | </li>
+                    <li><a title="Careers" href="careers">Careers</a> | </li>
+                    <li><a title="Privacy Policy" href="#">Privacy Policy | </a></li>
+                    <li><a title="Sitemap" href="sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer_nav desk">
+                <div class="left_foot">
+                    <ul class="foot_wrap">
+                        <li>
+                            <div class="title">About Us</div>
+                            <ul>
+                                <li><a title="Our Story" href="aboutus">Our Story</a></li>
+                                <li><a title="Festa Regionale" href="festa">Festa Regionale</a></li>
+                                <li><a title="Press" href="aboutus#press">Press</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title">Support</div>
+                            <ul>
+                                <li><a title="Careers" href="careers">Careers</a></li>
+                                <li><a title="Contact Us" href="connect">Contact Us</a></li>
+                                <li><a title="Feedback" href="connect">Feedback</a></li>
+                                <li>
+                                    <a title="Accessibility" href="accessibility" class="open-accessibility desktop">Accessibility</a>
+                                    <div class="modal accessibility">
+                                        <div class="modal-content">
+                                            <a title="Close Accessibility Modal" href="#" id="close-accesibility" class="close-modal accesibility"><span class="visually-hidden">Close Accessibility Modal</span></a>
+                                            <a title="Accessibility" name="accessibility"></a>
+                                            <p>Accessibility</p>
+                                            <p>Il Fornaio (America) Corp is committed to facilitating the accessibility and usability of its website, ilfornaio.com, for all people. To that end, Il Fornaio (America) Corp is in the process of implementing functional improvements to ilfornaio.com consistent with relevant portions of the World Wide Web Consortium’s Web Content Accessibility Guidelines 2.0 Level AA (“WCAG 2.0 AA”). You can find additional information about WCAG 2.0 AA <a href="https://www.w3.org/WAI/intro/wcag" target="_blank">click here<span class="visually-hidden"> to learn more about WCAG 2.0 AA</span></a>. Contact Il Fornaio (America) Corp With Your Accessibility Questions Please be aware that our efforts are ongoing. If you have specific questions or concerns about the accessibility of ilfornaio.com, please contact us at <a href="mailto:info@ilfo.com">info@ilfo.com</a>.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="title">Explore More</div>
+                            <ul>
+                                <li><a title="Gift Cards" href="https://ilfornaio.com/giftcards"><span class="visually-hidden">Ilfornaio </span> Gift Cards</a></li>
+                                <li><a title="Check Gift Card Balance" target="_blank" href="https://wwws-pt1.givex.com/Merchant_pages/3102095_en/">Gift Card Balance</a></li>
+                                <li><a title="Online Store" href="https://ilfornaio.com/giftcards">Online Store</a></li>
+                                <li><a title="Off-Site Catering" href="catering">Off-Site Catering</a></li>
+                                <li><a title="Weddings" href="catering">Weddings</a></li>
+                                
+                                <li><a title="Sitemap" href="sitemap">Sitemap</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_foot">
+                    <div class="title">Restaurants</div>
+                    <ul>
+                        <li><a title="Beverly Hills" href="beverlyhills">Beverly Hills</a></li>
+                        <li><a title="Burlingame" href="burlingame">Burlingame</a></li>
+                        <li><a title="Carmel" href="carmel">Carmel</a></li>
+                        <li><a title="Coronado" href="coronado">Coronado</a></li>
+                        <li><a title="Corte Madera" href="cortemadera">Corte Madera</a></li>
+                        <li><a title="Del Mar" href="delmar">Del Mar</a></li>
+                        <li><a title="Irvine" href="irvine">Irvine</a></li>
+                        <li><a title="Manhattan Beach" href="manhattanbeach">Manhattan Beach</a></li>
+                        <li><a title="Palo Alto" href="paloalto">Palo Alto</a></li>
+                        <li><a title="Pasadena" href="pasadena">Pasadena</a></li>
+                        <li><a title="Roseville" href="roseville">Roseville</a></li>
+                        <li><a title="Sacramento" href="sacramento">Sacramento</a></li>
+                        <li><a title="San Jose" href="sanjose">San Jose</a></li>
+                        <li><a title="Santa Clara" href="santaclara">Santa Clara</a></li>
+                        <li><a title="Walnut Creek" href="walnutcreek">Walnut Creek</a></li>
+                        <li><a title="Woodland Hills" href="woodlandhills">Woodland Hills</a></li>
+                        <li><a title="Denver" href="greenwoodvillage">Denver</a></li>
+                   
+                        <li><a title="Seattle" href="seattle">Seattle</a></li>
+                        <li><a title="Las Vegas" href="lasvegas">Las Vegas<span class="visually-hidden"> Nevada Location</span></a></li>
+                        <li>
+                            <div class="title last">Canaletto</div>
+                            <ul>
+                                <li><a title="Canaletto Las Vegas" href="canalettolasvegas"><span class="visually-hidden">Canaletto </span>Las Vegas<span class="visually-hidden"> Nevada Location</span></a></li>
+                                <li><a title="Newport Beach" href="canalettonewportbeach">Newport Beach</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+$(function() {
+
+    _gaq.push(['_setAccount', 'UA-21971052-1']);
+
+    if (typeof(_gaq) !== 'undefined') // Check if Google Analytics is Loaded
+    {
+        // Gather Tracking for Google Analytics 
+        $('#eventButton').on('click', function(e) {
+            _gaq.push(['_set', 'hitCallback']);
+            _gaq.push(['_trackEvent', 'Gather', 'Click', 'Catering']);
+        });
+
+    } else {
+        console.log('not loaded');
+    }
+});
+</script>
+</body>
+
+</html>
+
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-21971052-1");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+		

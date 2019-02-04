@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta charset="utf-8">
+    <title>亞美耐熱玻璃股份有限公司 </title>
+
+    <!--Viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<!--CSS-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/hover.css">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/ihover.css"/>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/slick.css">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/metisMenu.css"/>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/storage/web/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/all.css"/>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/fontawesome-pro-5.0.10/web-fonts-with-css/css/fontawesome-all.css"/>
+<!--Jq-->
+<script type="text/javascript" src="/storage/web/js/jquery.js"></script>
+<script type="text/javascript" src="/storage/web/js/slick.js"></script>
+<script type="text/javascript" src="/storage/web/js/metisMenu.js"></script>
+<script type="text/javascript" src="/storage/web/js/jquery.activeNavigation.js"></script>
+<script type="text/javascript" src="/storage/web/js/script.js"></script>
+<script type="text/javascript" src="/storage/web/js/wow.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script type="text/javascript" src="/storage/web/js/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/storage/web/css/jquery.fancybox.min.css">
+<script defer src="/storage/web/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+<!–[if IE]>
+<!-- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+<![endif]–> 
+<!-- font -->
+<!-- <script type='text/javascript' src='//font.arphic.com/FontSubsetOutput/1412144106203/9FD975C30109B5926532F6A359EC3894/1412144106203.JS?2312619615'></script> -->
+
+<link rel="shortcut icon" href="/storage/web/icon.ico" type="image/x-icon" />
+<link rel="Bookmark" href="/storage/web/icon.ico" type="image/x-icon" />
+
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="http://www.yamaglass.com.tw"/>
+<meta property="og:url" content=""/>
+<meta property="og:type" content=""/> 
+
+
+<script type="text/javascript">	
+	var base_path = '/';
+
+	// CSRF
+	$.ajaxSetup({
+	    headers: {
+	        'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+	    }
+	});	
+		
+	$(function() {	
+		// 重定向訊息
+	      
+	    // 錯誤訊息          
+        	});
+
+	/**
+	 * 驗證器
+	 */
+    function validate($form, $rule, $rule_message, $validate_path) {
+    	var formData = new FormData($($form)[0]); 
+
+    	formData.append('rule', $rule);
+    	formData.append('rule_message', $rule_message);
+    	formData.append('validate_path', $validate_path);
+
+	    $.ajax({
+	        url: '/' + 'tool-ajax-validate',                
+	        dataType: 'json',
+	        type:'POST',
+	        data: formData,  
+	        cache: false,
+	        contentType: false,
+	        processData: false,	             
+	        error: function(xhr) { 
+		    	if(xhr.status == 404 || xhr.status == 405) {
+		    		alert('發生錯誤,狀態碼：' + xhr.status)
+		    		history.go(0);
+		    	} else {        	
+		        	var message = '';
+		        	
+		        	$.each($.parseJSON(xhr.responseText), function(key, value) {
+		        		message += value + '\n';
+		        	})
+		        	alert(message);
+		            
+		            return false;
+	        	}
+	        }, 
+	        success: function(response) { 
+	        	$($form).submit();
+	        }
+	    });    	
+    };	  	
+</script>
+    <script>
+	$(function () { 
+	    $('.banner').slick({
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay:true,
+		  dots:true,
+		  arrows:false,
+		});
+	});
+</script>
+	
+</head>
+
+<body id="index">
+	<div class="mobilelogo"><a href="/index"><img src="/storage/web/_img/layout/footer_logo.png" alt=""></a></div>
+<header class="cf">
+	<div class="container cf">
+		<ul class="menu layout">
+			<li><a href="/index">Home</a></li>
+			<li><a href="/about">About us</a></li>
+			<li><a href="/product">Product</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+		<div class="logo layout"><a href="/index"><img src="/storage/web/_img/layout/logo.png" alt=""></a></div>
+		<ul class="language layout">
+			<li ><a href="/index?lang=tw">Chinese</a></li>
+			<li  class="active" ><a href="/index?lang=en">English</a></li>
+		</ul>
+		<div class="media layout">
+			<a target="_blank" href="https://deskgram.org/yamaglass1978"><img src="/storage/web/_img/layout/instagram.png" alt=""></a>
+			<a target="_blank" href="https://www.facebook.com/yamaglasstaiwan/"><img src="/storage/web/_img/layout/fb.png" alt=""></a>
+		</div>
+	</div>
+	<div id="phone_icon"><div class="button"></div></div>
+</header>	
+	
+	<div class="banner">
+				
+        <div class="wrap"><div class="bg-img" style="background-image: url(/storage/upload/banner/image/2018-07-05/ThrNgWDPcSUbXfe7b6JOQvD55c7XuUjHRVuLggLn.png" ></div></div>
+				
+        <div class="wrap"><div class="bg-img" style="background-image: url(/storage/upload/banner/image/2018-07-10/qqnNQmYpBSVcY6n9uIgZBFa2PkQc6kMo5VIq24kK.jpeg" ></div></div>
+				
+        <div class="wrap"><div class="bg-img" style="background-image: url(/storage/upload/banner/image/2018-07-25/Q9zfeyw89UM5MwpMvz77Nk1bnvYvnGH8ZzLX4W7X.jpeg" ></div></div>
+		  		
+	</div>
+	<div class="container">
+		<div class="index-product">
+			<ul class="cf">
+								<li class="col-6">
+					<a href="http://www.yamaglass.com/product/17" class="not">
+						<div class="wrap">
+							<div class="bg-img col-6" style="background-image: url(/storage/upload/banner2/image/2018-07-25/7xZM8er1ux68cpphjXaH95eKvjsPmRhgICculaxy.jpeg);"></div>
+						</div>
+						<div class="title col-6">
+							<h1>Teaware</h1>
+							<h2 class="en"></h2>
+						</div>
+					</a>
+				</li>
+								<li class="col-6">
+					<a href="http://www.yamaglass.com/product/18" class="not">
+						<div class="wrap">
+							<div class="bg-img col-6" style="background-image: url(/storage/upload/banner2/image/2018-07-10/WUc2joFQWfsvG1WlZq3eQ4SeZUOCrsxy0Js081tj.png);"></div>
+						</div>
+						<div class="title col-6">
+							<h1>Coffeeware</h1>
+							<h2 class="en"></h2>
+						</div>
+					</a>
+				</li>
+								<li class="col-6">
+					<a href="http://www.yamaglass.com/product/19" class="not">
+						<div class="wrap">
+							<div class="bg-img col-6" style="background-image: url(/storage/upload/banner2/image/2018-07-25/xBs6mCM5CbRC8OW2BvVH5eqDMMZI4JgjTm3lkgQy.jpeg);"></div>
+						</div>
+						<div class="title col-6">
+							<h1>others</h1>
+							<h2 class="en"></h2>
+						</div>
+					</a>
+				</li>
+							
+					
+			</ul>
+		</div>
+	</div>
+
+
+	<footer>
+	<div class="container">
+		<div class="logo layout"><a href="/index"><img src="/storage/web/_img/layout/footer_logo.png" alt=""></a></div>
+		<ul class="menu layout">
+			<li><a href="/about">About us</a></li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/product">Product</a>
+				<ul class="sec-menu">
+											<li><a href="/product/18">Coffeeware</a></li>	
+											<li><a href="/product/17">Teaware</a></li>	
+											<li><a href="/product/19">Others</a></li>	
+									</ul>
+			</li>
+		</ul>
+		<div class="info layout">
+			<h1>Info</h1>
+			<ul>
+				<li><span>ADDRESS</span><p class="add"><a target="_blank" href="https://goo.gl/maps/QMGs9N9cZLu">No. 17, Industry Rd. Toufen City Miaoli County 35145 Taiwan (R.O.C.)</a></p></li>
+				<li><span>TEL</span><p><a href="tel:+886-37-620-621">+886-37-620-621</a></p></li>
+				<li><span>FAX</span><p><a class="not">+886-37-620-624</a></p></li>
+				<li><span>E-MAIL</span><p><a href="mailto:yamaglass@yamaglass.com">yamaglass@yamaglass.com</a></p></li>
+			</ul>
+		</div>
+		<div class="media layout">
+			<a target="_blank" href="https://deskgram.org/yamaglass1978"><img src="/storage/web/_img/layout/instagram.png" alt=""></a>
+			<a target="_blank" href="https://www.facebook.com/yamaglasstaiwan/"><img src="/storage/web/_img/layout/fb.png" alt=""></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="copyright">Copyright © 2018 亞美耐熱玻璃股份有限公司.All Rights Reserved.</div>
+		<div class="author">Design by <a target="_blank" href="https://www.choice-design.com.tw/">Choice</a></div>
+	</div>
+</footer>
+</body>
+
+</html>

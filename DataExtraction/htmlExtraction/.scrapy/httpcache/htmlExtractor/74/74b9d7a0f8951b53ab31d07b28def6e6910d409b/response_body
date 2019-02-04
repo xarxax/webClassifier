@@ -1,0 +1,72 @@
+# EW
+# robots.txt
+#
+# This file is to prevent the crawling and indexing of certain parts
+# of your site by web crawlers and spiders run by sites like Yahoo!
+# and Google. By telling these "robots" where not to go on your site,
+# you save bandwidth and server resources.
+#
+# This file will be ignored unless it is at the root of your host:
+# Used:    http://example.com/robots.txt
+# Ignored: http://example.com/site/robots.txt
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+
+Allow: /public/*.gif
+Allow: /public/*.jpg
+Allow: /public/*.jpeg
+Allow: /public/*.png
+Allow: /public/*.tif
+Allow: /public/*.mp4
+Allow: /public/*.bmp
+Allow: /public/assets/*.gif
+Allow: /public/assets/*.jpg
+Allow: /public/assets/*.jpeg
+Allow: /public/assets/*.png
+Allow: /public/assets/*.tif
+Allow: /public/assets/*.mp4
+Allow: /public/assets/*.bmp
+Allow: /public/assets/*.htm
+Allow: /public/assets/*.html
+Allow: /public/assets/*.asp
+Allow: /public/*.htm
+Allow: /public/*.html
+Allow: /public/*.asp
+Allow: /modules/
+
+
+
+
+# Directories
+Disallow: /includes/
+Disallow: /asp/
+Disallow: /html/
+Disallow: /php/
+Disallow: /scripts/
+Disallow: /secure/
+Disallow: /assets/
+Disallow: /cgibin/
+Disallow: /captivate/
+Disallow: /chat/
+Disallow: /database/
+Disallow: /duncan/
+Disallow: /duncangay/
+Disallow: /camtasia/
+Disallow: /development/
+Disallow: /final exam images/
+Disallow: /incoming/
+Disallow: /dev/
+Disallow: /AuthorizeNet/
+Disallow: /video/
+Disallow: /documents/
+Disallow: /fields/
+Disallow: /fonts/
+Disallow: /Echoschool/
+Disallow: /ew-incoming/
+Disallow: /KoS/
+Disallow: /lopez/
+Disallow: /iconanimate/
+Disallow: /iEchoSchool Project/

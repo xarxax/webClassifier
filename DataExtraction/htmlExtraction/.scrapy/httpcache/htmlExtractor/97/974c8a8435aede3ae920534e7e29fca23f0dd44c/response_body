@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+
+<script language="JavaScript">
+function Clearfield(theText) {
+     if (theText.value == theText.defaultValue) {
+         theText.value = ""
+     }
+ }
+</script>
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<style type="text/css">
+img
+{ 
+border:none
+}
+#slideshow #slideshowWindow 
+{width:1102px;height:411px;margin:0;padding:0;position:relative;overflow:hidden;z-index: 1;}
+#slideshow #slideshowWindow .slide 
+{margin:0;padding:0;width:1102px;height:411px;float:left;position:relative;}
+#slideshow #slideshowWindow .slide .slideText 
+{position:absolute;top:60px;left:100px;width:100%;height:180px;background-repeat:repeat;margin:0;padding:0;color:#eeeefc;font-family:Arial, Helvetica, sans-serif;}
+#slideshow #slideshowWindow .slide .slideText a:link, 
+#slideshow #slideshowWindow .slide .slideText a:visited 
+{color:#eeeefc;text-decoration:none;}
+#slideshow #slideshowWindow .slide .slideText a:hover 
+{color:#eeeefc;text-decoration:underline;}
+#slideshow #slideshowWindow .slide .slideText h2 
+{color:#eeeefc; margin: 0 0 0 0;font-size:26px;font-weight:normal; font-family: Helvetica, sans-serif; font-stretch:expanded; font-weight:lighter;font-style:italic;}
+#slideshow #slideshowWindow .slide .slideText ul 
+{margin:5px 0 0 20px;padding:0;}
+li.hover 
+{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-size:18px;color:#eeeefc;list-style-type:square;margin-bottom:6px;margin-left:15px;}
+.nav 
+{display:block;text-indent:-10000px;position:absolute;cursor:pointer;}
+#leftNav {
+
+	top:521px;
+
+	left: inherit;
+	width:14px;
+	height:16px;
+	margin-left: 14px;
+    background-image: url(slideshow/Non-metered%20equipment%20images/Backward-Arrow.png);
+	background-repeat:no-repeat;
+	z-index:999;
+}
+#rightNav {
+
+	top:521px;
+
+	left:inherit;
+	width:14px;
+	height:16px;
+
+	margin-left: 1074px;
+
+	background-image: url(slideshow/Non-metered%20equipment%20images/Forward-Arrow.png);
+	background-repeat:no-repeat;
+	z-index:999;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var currentPosition = 0;
+		var slideWidth = 1102;
+		var slides = $('.slide');
+		var numberOfSlides = slides.length;
+		var slideShowInterval;
+		var speed = 3100;
+		slideShowInterval = setInterval(changePosition, speed);
+		slides.wrapAll('<div id="slidesHolder"></div>')
+		slides.css({ 'float' : 'left' });
+ 		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+		$('#slideshow')
+			.prepend('<span class="nav" id="leftNav">Move Left</span>')
+			.append('<span class="nav" id="rightNav">Move Right</span>');
+		manageNav(currentPosition);		
+		$('.nav').bind('click', function() {
+			currentPosition = ($(this).attr('id')=='rightNav')
+			? currentPosition+1 : currentPosition-1;
+			manageNav(currentPosition);
+			clearInterval(slideShowInterval);
+			slideShowInterval = setInterval(changePosition, speed);
+			moveSlide();
+		});
+		function manageNav(position) {
+			if(position==0){ $('#leftNav').hide() }
+			else { $('#leftNav').show() }
+			if(position==numberOfSlides-1){ $('#rightNav').hide() }
+			else { $('#rightNav').show() }
+		}		
+		function changePosition() {
+			if(currentPosition == numberOfSlides - 1) {
+				currentPosition = 0;
+				manageNav(currentPosition);
+			} else {
+				currentPosition++;
+				manageNav(currentPosition);
+			}
+			moveSlide();
+		}
+	function moveSlide() {
+				$('#slidesHolder')
+                  .animate({'marginLeft' : slideWidth*(-currentPosition)});
+		}
+	});
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<html>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<head>
+<meta charset="utf-8" />
+<title>Food processing, packaging, weighing and inspection equipment manufacturer - Heat and Control, Ishida, CEIA and Spray Dynamics</title>
+<meta name="msvalidate.01" content="B102AC5D94E70DD4E28ECBB1132563F2" />
+<meta name="description" content="Food processing, packaging and weighing equipment manufacturer - Heat and Control- for snack food, process prepared, french fries, meats, poultry and seafood systems. Ishida, CEIA and Spray Dynamics products">
+<meta name="keywords" content="Ishida weighers, food equipment, processing, packaging, fryer, checkweigher, impingement oven, conveyor, chicken, metal detection, X-ray inspection, potato chips, tortilla chips, seafood, oven, french fries, seasoning system">
+<META name=\"y_key\" content=\"fadb95195196de16\" >
+<link href="CSS/heatandcontrolV2.css" rel="stylesheet">
+<link href="CSS/slideshow.css" rel="stylesheet">
+<meta name="google-site-verification" content="cOBlfaL8uDK1n48HjvpEWUTBBfcRHEd-ptcTjWy4hPs" />
+<link rel="canonical" href="http://www.heatandcontrol.com" />
+
+	</head>
+<body>
+<div align="center" style="margin-bottom:100px;"><!--- <form action="http://db1.spiderline.com/exec/search" method="get"> ---><table cellpadding="0" cellspacing="0" border="0" style="width:1100px;margin-top:18px;">
+<tr>
+<td colspan="3">
+<table cellpadding="0" cellspacing="0" border="0" style="width:1100px;"><!--- ABOVE EQ NAV --->
+<tr>
+<td valign="middle" style="padding:5px 0 5px 12px;width:186px;"><a href="default.asp"><img src="topimages/HeatandControl-logo.gif" width="174" height="39" alt="Heat and Control Logo" border="0"></a></td>
+<td valign="middle" style="color:#888888; font-size:1.7em;font-weight:normal;padding-bottom:4px;width:382px;">Innovation is Our Business</td>
+<td valign="middle" style="font-size:.7em;font-weight:bold;;color:#343168;padding-left:44px;">
+  <ul id="TopAboutMenu" class="MenuBarHorizontal" style="margin: 0 0 0 0;">
+    <!-- About Us -->
+    <li><a href="aboutus.asp" title="About Us" class="MenuBarItemSubmenu">About&nbsp;Us</a>
+      <ul style="margin-left:-81px;">
+        <li><a href="aboutus.asp">About Us</a></li>
+        <li><a href="about-whatwedo.asp">What We Do</a></li>
+        <li><a href="about-companyhistory.asp">Company History</a></li>
+        <li><a href="about-systems.asp">Systems Designed<br />for your Business</a></li>
+        <li><a href="green processing solutions.asp">Sustainable Solutions</a></li>
+        <li><a href="about-mission.asp">Mission Statement</a></li>
+        <li><a href="about-privacy.asp">Privacy Statement</a></li>
+        <li><a href="locations.asp">Global Locations</a></li> 
+        <li><a href="careers.asp">Careers</a></li>
+        <li><a href="contact2.asp">Contact Us</a></li>
+      </ul>
+    </li>
+    <!--What's New -->
+    <li style="border-left:1px dotted #aaaadd;"><a class="MenuBarItemSubmenu" href="news-products.asp">What's&nbsp;New</a>
+      <ul style="margin-left:-66px">
+        <li><a href="news-products.asp">Products and Services News</a></li>
+        <li><a href="news-company.asp">Company News</a></li>
+        <li><a href="news-tradepress.asp">Trade Press</a></li>
+        <li><a href="news-tradeshows.asp">Trade Show Schedule</a></li>
+        <li><a href="news-innovator.asp">The innovator</a></li>
+        
+      </ul>
+    </li>
+    <!-- Case Histories -->
+<li style="border-left:1px dotted #aaaadd;"><a class="MenuBarItemSubmenu" href="application-stories.asp">Expertise</a>
+      <ul style="margin-left:-79px">
+  <li><a href="application-stories.asp">Application Stories</a></li>
+  <li><a href="casehistories.asp">Case Histories</a></li>
+  <li><a href="testimonials.asp">Customer Testimonials</a></li>
+  <li><a href="faqs.asp">Frequently Asked Questions</a></li>
+  <li><a href="library.asp#articles">Technical Articles &amp; White Papers</a></li>
+  <li><a href="library.asp">Resource Library</a></li>
+  <li><a href="contact4.asp">Ask H&amp;C</a></li>
+      </ul>
+</li>
+    <!-- Services -->
+<li style="border-left:1px  dotted #aaaadd;"><a class="MenuBarItemSubmenu" href="services.asp">Services</a>
+      <ul style="margin-left:-83px">
+  <li><a href="service.asp">Field Service</a></li>
+  <li><a href="service.asp">Spare Parts</a></li>
+  <li><a href="contact2.asp?ct=training">Training</a></li>
+  <li><a href="service-technicalcenters.asp">Technical Centers</a></li>
+  <li><a href="service-democenters.asp">Demonstration Centers</a></li>
+  <li><a href="service-installationservices.asp">Installation Services</a></li>    
+      </ul>
+</li>  
+      
+  </ul>
+  
+  <table width="167" border="0" align="left" cellpadding="0" cellspacing="0" style="width:167px;margin-top:5px;margin-left:10px;">
+  <tr>
+    <td width="19" style="width:19px;"><a href="sitemap.asp"><img src="images/go-sitemap.gif" alt="Site Map" width="19" height="14" border="0" style="margin-top:0px;"></a></td>
+    <td width="15" style="width:15px;"><img src="images/spacer.gif" width="15" height="1" border="0">
+		<!--- <input type="text" name="q" class="search" style="margin:0 5px 1px 11px;" value="Search Site" onFocus="Clearfield(this)"> ---></td>
+    <td width="133" style="width:133px; vertical-align: middle; text-align: right;><img src="images/spacer.gif" width="15" height="1" border="0"><a href="cn_redirect.html" target="_blank" style="text-decoration: none; color: #555588;">Chinese &#20013;&#25991;</a><!--- <INPUT TYPE="image" src="topimages/searchbutton.gif" width="15" height="14" value="SEARCH" ALT="GO" value="Search Site" style="margin-top:0px;"><input type="hidden" name="a" value="17173"> ---></td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="width:5px;"><img src="topimages/TLcorner2.gif" width="5" height="35" align="right"></td>
+<td align="center" valign="middle" style="color:#ffffff;background-color:#464646;font-size:.70em;font-weight:bold;width:1092px;padding:2px 0 2px 0;">
+
+<ul id="MenuBar2" class="MenuBarHorizontal" style="margin: 0 40px 0 42px;">  
+<li><a class="MenuBarItemSubmenu" href="foodindustries.asp" style="background:#464646;color:#FFFFFF;">Solutions by Food Industry</a>
+    <ul style="border: 1px solid #666699;margin-left:8px;">
+  <li><a href="bakery.asp" class="EQ">Bakery&nbsp;Food</a></li>
+  <li><a href="candy.asp" class="EQ">Candy&nbsp;&amp;&nbsp;Confections</a></li>
+  <li><a href="cereal.asp" class="EQ">Cereal</a></li>
+  <li><a href="cheese.asp" class="EQ">Cheese</a></li>
+  <li><a href="coffee.asp" class="EQ">Coffee & Tea</a></li>
+  <li><a href="tortillachips.asp" class="EQ">Corn & Tortilla Chips</a></li>
+  <li><a href="frenchfries.asp" class="EQ">French Fries</a></li>
+  <li><a href="produce.asp" class="EQ">Fruit & Vegetables</a></li>
+  <li><a href="meats.asp" class="EQ">Meat,&nbsp;Poultry&nbsp;&amp;&nbsp;Seafood</a></li>
+  <li><a href="nuts.asp" class="EQ">Nut Meats</a></li>
+  <li><a href="preparedfoods.asp" class="EQ">Other Prepared Foods</a></li>
+  <li><a href="pasta.asp" class="EQ">Pasta</a></li>
+  <li><a href="pelletsnacks.asp" class="EQ">Pellet Snacks</a></li>
+  <li><a href="eqmain.asp?eqid=35" class="EQ">Pharmaceuticals</a></li>
+  <li><a href="banana.asp" class="EQ">Plantain & Banana Chips</a></li>
+  <li><a href="potatochips.asp" class="EQ">Potato Chips</a></li>
+  <li><a href="salad.asp" class="EQ">Salads</a></li>
+  <li><a href="snackfoodsystems.asp" class="EQ">Snack Food Systems</a></li>
+  <li><a href="tortillas.asp" class="EQ">Tortilla Products</a></li>
+    </ul>
+</li> 
+<li><a class="MenuBarItemSubmenu" href="processing.asp" style="background:#464646;color:#FFFFFF;">Food Processing Equipment</a>
+    <ul style="border: 1px solid #666699;margin-left:13px;">
+        <li><a href="eqmain.asp?eqid=1" class="EQ">Fryer Systems</a>
+	<ul style="border: 1px solid #666699;">
+    	<li><a href="eqmain.asp?eqid=1" class="EQ">Fryer Systems</a></li>
+    	<li><a href="eqmain.asp?eqid=3" class="EQ">Oil Heating</a></li>
+    	<li><a href="eqmain.asp?eqid=5" class="EQ">Oil Filters</a></li>
+    	<li><a href="eqmain.asp?eqid=12" class="EQ">Oil Transfer &amp; Storage</a></li>
+    	<li><a href="eqmain.asp?eqid=6" class="EQ">Cooling &amp; Oil Stripping</a></li>
+    </ul>
+  </li>
+  <li><a href="eqmain.asp?eqid=2" class="EQ">Oven Systems</a></li>
+  <li><a href="eqmain.asp?eqid=7" class="EQ">Branding / Searing Systems</a></li>
+  <li><a href="eqmain.asp?eqid=8" class="EQ">Batter &amp; Breading Applicators</a></li>
+  <li><a href="#" class="EQ">Potato Preparation Systems:</a>
+	<ul style="border: 1px solid #666699;">
+    	<li><a href="eqmain.asp?eqid=18" class="EQ">Produce Unloading and Handling</a></li>
+    	<li><a href="eqmain.asp?eqid=14" class="EQ">Peeling / Inspection / Slicing</a></li>
+    	<li><a href="eqmain.asp?eqid=24" class="EQ">Washing &amp; Dewatering</a></li>
+        <li><a href="eqmain.asp?eqid=19" class="EQ">Other Potato Preparation</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="EQ">Corn Product<br />Systems:</a>
+	<ul style="border: 1px solid #666699;">
+    	<li><a href="eqmain.asp?eqid=23" class="EQ">Masa Preparation</a></li>
+    	<li><a href="eqmain.asp?eqid=9" class="EQ">Corn Simmering / Soaking</a></li>
+    	<li><a href="eqmain.asp?eqid=10" class="EQ">Corn Washing / Grinding/Pumping</a></li>
+    	<li><a href="eqmain.asp?eqid=22" class="EQ">Corn Sheeting / Conditioning/Ovens</a></li>
+    </ul>
+  </li>
+  <li><a href="seasoningsystems.asp" class="EQ">Seasoning Systems:</a>
+	<ul style="border: 1px solid #666699;">
+    	<li><a href="eqmain.asp?eqid=20" class="EQ">In-Kitchen Seasoning Systems</a></li>
+    	<li><a href="eqmain.asp?eqid=21" class="EQ">Spray Dynamics Seasoning Systems</a></li>
+    </ul>
+  </li>
+  <li><a href="eqmain.asp?eqid=16" class="EQ">Energy Saving &amp; Pollution Control Systems</a></li>
+  <li><a href="eqmain.asp?eqid=25" class="EQ">Other Processing Equipment</a></li>
+  <li><a href="eqmain.asp?eqid=54" class="EQ">Controls &amp; Information Systems</a></li>
+    </ul>
+</li>
+<li><a class="MenuBarItemSubmenu" href="seasoningsystems.asp" style="background:#464646;color:#FFFFFF;">Seasoning &amp; Coating Equipment</a>
+    <ul style="border: 1px solid #666699;margin-left:26px;">
+  <li><a href="eqmain.asp?eqid=20&ptype=7" class="EQ">In-Kitchen Seasoning Systems</a></li>
+  <li><a href="eqmain.asp?eqid=21&ptype=7" class="EQ">Spray Dynamics Seasoning Systems</a></li>
+  <li><a href="eqmain.asp?eqid=52&ptype=7" class="EQ">On-Machine Seasoning Systems</a></li>
+  <li><a href="eqmain.asp?eqid=8&ptype=7" class="EQ">Batter &amp; Breading Applicators</a></li>
+    </ul>
+</li> 
+<li><a class="MenuBarItemSubmenu" href="producthandling.asp" style="background:#464646;color:#FFFFFF;">Product Handling Equipment</a>
+    <ul style="border: 1px solid #666699;margin-left:15px;">
+  <li><a href="eqmain.asp?eqid=42" class="EQ">Fastback Horizontal Motion Conveyors</a></li>
+  <li><a href="eqmain.asp?eqid=52" class="EQ">On-Machine Seasoning Systems</a></li>
+  <li><a href="eqmain.asp?eqid=45" class="EQ">FastBack Revolution Proportional Gate</a></li>
+  <li><a href="eqmain.asp?eqid=53" class="EQ">Blending Systems</a></li>
+  <li><a href="eqmain.asp?eqid=44" class="EQ">Incline Transfer Conveyors</a></li>
+  <li><a href="eqmain.asp?eqid=49" class="EQ">Product Sizing</a></li>
+  <li><a href="eqmain.asp?eqid=50" class="EQ">Accumulation Equipment</a></li>
+  <li><a href="eqmain.asp?eqid=48" class="EQ">Varilift Bucket Conveyors</a></li>
+  <li><a href="eqmain.asp?eqid=51" class="EQ">Flex Lines &amp; Support Structures</a></li>
+  <li><a href="eqmain.asp?eqid=54" class="EQ">Controls &amp; Information Systems</a></li>
+    </ul>
+</li>
+<li><a class="MenuBarItemSubmenu" href="packagingandweighing.asp" style="background:#464646;color:#FFFFFF;">Packaging &amp; Weighing</a>
+    <ul style="border: 1px solid #666699;margin-left:-3px;">
+  <li><a href="eqmain.asp?eqid=28" class="EQ">Ishida Multihead Weighers</a></li>
+  <li><a href="eqmain.asp?eqid=32" class="EQ">Ishida Snack Bagmakers</a></li>
+  <li><a href="eqmain.asp?eqid=40" class="EQ">Ishida Tray Sealers</a></li>
+  <li><a href="eqmain.asp?eqid=34" class="EQ">Support Structures</a></li>
+  <li><a href="eqmain.asp?eqid=36" class="EQ">Fillers</a></li>
+  <li><a href="eqmain.asp?eqid=52&ptype=2" class="EQ">On-Machine Seasoning Systems</a></li>
+  <li><a href="eqmain.asp?eqid=38" class="EQ">Other Packaging Equipment</a></li>
+  <li><a href="eqmain.asp?eqid=54" class="EQ">Controls &amp; Information Systems</a></li>
+    </ul>
+</li>
+<li><a class="MenuBarItemSubmenu" href="inspectionsystems.asp" style="background:#464646;color:#FFFFFF;">Inspection Equipment</a>
+    <ul style="border: 1px solid #666699;margin-left:-2px;">
+  <li><a href="eqmain.asp?eqid=30" class="EQ">Ishida Checkweighers</a></li>
+  <li><a href="eqmain.asp?eqid=33" class="EQ">CEIA Metal Detectors-Food Products</a></li>
+  <li><a href="eqmain.asp?eqid=35" class="EQ">CEIA Metal Detectors-Pharmaceuticals</a></li>
+  <li><a href="eqmain.asp?eqid=37" class="EQ">Ishida X-ray Inspection Systems</a></li>
+  <li><a href="eqmain.asp?eqid=39" class="EQ">Ishida Seal Checkers</a></li>
+  <li><a href="eqmain.asp?eqid=54" class="EQ">Controls &amp; Information Systems</a></li>
+    </ul>
+</li>
+</ul>
+</td>
+<td><img src="topimages/TRcorner2.gif" width="5" height="35" align="left"></td>
+</tr>
+<tr>
+<td colspan="3">
+<div id="slideshow">
+  <div id="slideshowWindow">
+        <div class="slide">
+            <a href="eqmain.asp?eqid=7" style="text-decoration:none"><img src="slideshow/Non-metered equipment images/prepare.jpg" border="0" /></a>
+                             <div class="slideText" align="left" style="left:56px;">
+                     <h2 class="slideTitle">Prepare:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Breading Applicators</li>
+                     <li class="hover">Batter Applicators</li>
+                     <li class="hover">Searers and Branders</li>
+                     <li class="hover"><a href="eqmain.asp?eqid=7" class="topnav" style="a.hover{COLOR:#FFFFFF;FONT-FAMILY:Arial, Helvetica, sans-serif;TEXT-DECORATION:underline;}">MORE</a></li>
+                     </ul>
+                 </div>
+      </div>  
+      <div class="slide">
+            <a href="processing.asp"><img src="slideshow/Non-metered equipment images/cook.jpg" border="0" /></a>
+<div class="slideText" align="left" style="left:86px;">
+                     <h2 class="slideTitle">Cook:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Fryers</li>
+                     <li class="hover">Ovens</li>
+                     <li class="hover">Roasters</li>
+                     <li class="hover"><a href="processing.asp" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+      </div>      
+        <div class="slide">
+            <a href="seasoningsystems.asp"><img src="slideshow/Non-metered equipment images/season.jpg" border="0" /></a>
+      <div class="slideText" align="left" style="left:70px;">
+                     <h2 class="slideTitle">Season:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">On-Machine</li>
+                     <li class="hover">Spray Dyamics</li>
+                     <li class="hover">In-Kitchen</li>
+                     <li class="hover"><a href="seasoningsystems.asp" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+        </div>    
+        <div class="slide">
+            <a href="producthandling.asp"><img src="slideshow/Non-metered equipment images/convey.jpg" border="0"/></a>
+            <div class="slideText" align="left" style="left:70px;">
+                     <h2 class="slideTitle">Convey:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Horizontal Motion</li>
+                     <li class="hover">Proportional Gates</li>
+                     <li class="hover">Blending</li>
+                     <li class="hover"><a href="producthandling.asp" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+        </div>        
+        <div class="slide">
+            <a href="eqmain.asp?eqid=28"><img src="slideshow/Non-metered equipment images/weigh.jpg" border="0" /></a>
+            <div class="slideText" align="left" style="left:70px;">
+                     <h2 class="slideTitle">Weigh:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Multihead Weighers</li>
+                     <li class="hover">Sticky Foods</li>
+                     <li class="hover">Sanitary Standards</li>
+                     <li class="hover"><a href="eqmain.asp?eqid=28" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+      </div>                
+        <div class="slide">
+            <a href="packagingandweighing.asp"><img src="slideshow/Non-metered equipment images/package.jpg" border="0" /></a>
+            <div class="slideText" align="left" style="left:80px;">
+                     <h2 class="slideTitle">Package:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Bagmakers</li>
+                     <li class="hover">Tray Sealers</li>
+                     <li class="hover">Fillers</li>
+                     <li class="hover"><a href="packagingandweighing.asp" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+        </div>        
+        <div class="slide">
+            <a href="inspectionsystems.asp"><img src="slideshow/Non-metered equipment images/inspect.jpg" border="0" /></a>
+            <div class="slideText" align="left" style="left:75px;">
+                     <h2 class="slideTitle">Inspect:</h2>
+                     <ul class="sidetext">
+                     <li class="hover">Metal Detectors</li>
+                     <li class="hover">X-ray</li>
+                     <li class="hover">Checkweighers</li>
+                     <li class="hover"><a href="inspectionsystems.asp" class="topnav">MORE</a></li>
+                     </ul>
+                 </div>
+        </div>        
+    </div>
+</div><div align="center" style="margin:0px"><img src="topimages/slideshow-meter.gif" name="slideshowmeter" width="1102" height="28" border="0" usemap="#slideshowmeter"><map name="slideshowmeter" id="slideshowmeter">
+  <area shape="rect" coords="625,0,898,26" href="packagingandweighing.asp" alt="Packaging and Weighing" />
+  <area shape="rect" coords="469,0,620,39" href="producthandling.asp" alt="Convey &amp; Product Handling" />
+  <area shape="rect" coords="315,0,467,47" href="seasoningsystems.asp" alt="Seasoning and Coating" />
+  <area shape="rect" coords="69,0,313,35" href="processing.asp" alt="Prepare and Cook" />
+  <area shape="rect" coords="899,-1,1039,25" href="inspectionsystems.asp" alt="Inspect" />
+</map></div>
+</td>
+</tr>
+</table>
+<!--- </form> --->
+<div align="left" style="margin:23px 0px 0 0;width:980px;padding: 0 0 0 0px;" id="whoweare">
+<h2 style="font-size:1.5em;" class="top">Who We Are</h2>
+<p style="margin: 0px;font-size:1.10em;color:#444466;line-height:1.35em;" align="justify">Heat and Control is one of the world's leading manufacturers of food processing, seasoning, conveying, packaging and inspection equipment systems. We have over 65 years experience, 211 U.S. patents, and the best staff of engineers, technicians and consultants in the industry. Our mixture of know-how, innovation and commitment to quality guarantees best-of-breed custom solutions to any part of your production.<img src="images/spacer.gif" width="55" height="1" border="0"><a href="aboutus.asp" class="bluenav" style="font-weight:bold;font-size:.9em;">...More about Heat and Control</a><img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin-left:3px;"> </p>
+</div>
+<div align="center" style="width:1080px;margin-top:38px;"><div style="width:530px;float:left;margin-left:17px;" align="left">
+<table width="530" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="headerbox" style="width:380px"><em>Introducing E-FLO™ Electroporation System</em></td>
+    <td style="width:150px;background-color:#FFFFFF;padding:0px"><img src="topimages/featurebox-corner.gif" width="150" height="20" align="left"></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" style="border-right:solid 1px #666666;border-bottom:solid 1px #666666;border-left:solid 1px #666666;padding:10px 10px 10px 20px;font-size:.75em;"><a href="news-product.asp?npid=274"><img src="topimages/feature-E-FLO.jpg" alt="Potato Chips" width="173" height="195" align="right" style="margin:0 15px 5px 12px;"></a>
+<div style="margin:7px 0 0 0;"><img src="topimages/bulletpointTOP.gif" width="7" height="10" align="absmiddle" style="margin-right: 4px;"><strong style="color:#222266;font-size:1.10em">New preparation system that will change<br />the way you think about potato processing</strong><br/><div style="margin:18px 0 12px 12px;line-height:16px;">Using Pulse Electric Field Processing (PEF) the patent protected E-FLO Electroporation System provides significant product improvement in chip crunch, taste and texture as well as reduction in acrylamide formation and oil content. The system also replaces or reduces the need to blanch.</div><img src="images/spacer.gif" width="220" height="1" border="0"><a href="news-product.asp?npid=274" class="bluenav" style="font-weight:bold">MORE<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin-left:3px;"></a></div></td>
+  </tr>
+<tr>
+  <td><img src="images/spacer.gif" width="380" height="1" border="0"></td>
+  <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+<!--also: 03 CCW-RV_OF.asp / 04 Masa-Maker.asp / 05 E-FLO.asp -->
+<table width="250" border="0" cellspacing="0" cellpadding="0" style="margin-top: 5px;">
+<tr>
+	<td valign="top">
+ 
+ <table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="headerbox" style="width:230px">2017 Innovator Magazine</td>
+    <td style="width:20px;background-color:#464646;padding:0px"><img src="topimages/bar-arrowdown.gif" width="20" height="20" align="left"></td>
+  </tr>
+  
+  
+  <tr>
+    <td colspan="2" valign="top" style="border-right:solid 1px #666666;border-bottom:solid 1px #666666;border-left:solid 1px #666666;height:128px;font-size:.75em;padding:5px 5px 0px 7px;"><a href="innovator_2017.asp"><!--- integrated --->
+<img src="topimages/innovator2017.jpg" width="87" height="122" align="left" style="margin-right:13px" alt="Innovator Magazine 2017 Issue"/></a><div style="margin-top:4px;">See our latest issue featuring articles on potato equipment developments, corn products, acrylamide, coating &amp; conveying,<br/>X-ray inspection,<br/>
+<a href="innovator_2017.asp" class="bluenav" style="font-weight:bold;"><!--- integrated --->
+and more<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin-left:3px;"></a></div></td>
+  </tr>
+</table>   
+
+
+	</td>
+	<td style="width:28px"><img src="images/spacer.gif" width="28" height="1" border="0">
+    </td>
+	<td valign="top">
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="headerbox" style="width:230px">Global Locations</td>
+    <td style="width:20px;background-color:#464646;padding:0px"><img src="topimages/bar-arrowdown.gif" width="20" height="20" align="left"></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" style="border-right:solid 1px #666666;border-bottom:solid 1px #666666;border-left:solid 1px #666666;"><a href="locations.asp"><img src="topimages/contactustoday.gif" width="250" height="128" alt="Contact Us Today" longdesc="http://www.heatandcontrol.com/locations.asp"></a></td>
+  </tr>
+</table>
+	</td>
+   </tr>
+  </table>
+</div>
+<div align="left" style="width:478px;margin-left:602px">
+<table width="478" border="0" cellspacing="0" cellpadding="0">
+	
+  <tr>
+    <td colspan="2" style="padding-bottom:40px"><img src="topimages/partner-logos.gif" alt="Logos: Ishida" width="478" height="36" align="left"></td>
+  </tr>
+	    <tr>
+    <td style="width:100px"><a href="localoven.asp"><img src="topimages/localoven.gif" width="100" height="100" align="left"></a></td>
+    <td valign="top" style="font-size:.8em;padding: 0 0 0 20px"><h3 style="font-size:1em" class="top">Application Success Stories</h3>
+Award-winning bakery and Heat and Control help gluten intolerant customers fall in love with bread again...
+<div align="right" style="margin:8px 8px 0 0;"><a href="localoven.asp" class="bluenav">Read the full story<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin: 0 0 2px 3px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="application-stories.asp" class="bluenav">View more application stories<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin: 0 0 2px 3px;"></a></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+
+  <tr><!-- TRADE SHOW LOGO rotation -->
+    <td style="width:100px"><a href="news-tradeshows.asp"><img src="tradeshow-logos/nwfbworld.gif" width="100" height="100" align="left"></a></td>
+    <td valign="top" style="font-size:.8em;padding: 0 0 0 20px"><h3 style="font-size:1em" class="top">Come Meet Us</h3>
+</div>Meet us at International Production & Processing Expo (IPPE) 2019 in Atlanta, GA&nbsp; Feb.&nbsp;12 - 14 and Expo Carnes in Monterrey, Mexico&nbsp; Feb.&nbsp;26 - 28. <br><div align="right" style="margin:8px 8px 0 0;"><a href="news-tradeshows.asp" class="bluenav">See our trade show schedule<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin: 0 0 2px 3px;"></a>
+</td>
+ </tr>
+ <tr>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+  </tr>
+	<tr>
+    <td style="width:100px"><a href="services.asp"><img src="topimages/servicethumb.jpg" width="100" height="100" align="left"></a></td>
+    <td valign="top" style="font-size:.8em;padding: 0 0 0 20px"><h3 style="font-size:1em" class="top">Service and Training</h3>
+    Heat and Control believes that quality service and support are an absolute component of what we provide: they can't be separated from our equipment solutions.
+<div align="right" style="margin:8px 8px 0 0;"><a href="services.asp" class="bluenav">More about our Services<img src="topimages/redarrow.gif" width="8" height="8" align="absmiddle" style="margin: 0 0 2px 3px;"></a></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+
+<div style="margin: 1px 0 28px 0;clear:both;padding-top:15px;"><a href="contact4.asp" class="bluenav" style="font-weight:bold;font-style:italic;font-size:1.0em">Questions on how to address your unique food product needs?<img src="topimages/ask-H&C.gif" alt="Ask H&amp;C" width="102" height="33" align="absmiddle" style="margin: 0 0 10px 18px;"></a></div>
+
+<table cellpadding="0" cellspacing="0" border="0" style="width:1000px;margin-left:40px">
+<tr>
+	<td style="color:#808080;"><strong style="color:#444444;font-size:.75em">Solutions by Industry</strong></td>
+	<td style="color:#808080"><strong style="color:#444444;;font-size:.75em">Equipment Systems</strong></td>
+    <td style="color:#808080"><strong style="color:#444444;;font-size:.75em">About Heat and Control</strong></td>
+	<td style="color:#808080"><strong style="color:#444444;;font-size:.75em">Case Histories / Success Stories</strong></td>
+ </tr>
+ <tr>
+	<td valign="top" class="lowerlinks" style="line-height:175%" align="left"><a href="bakery.asp" class="graynav">Bakery Food</a>
+<br /><a href="candy.asp" class="graynav">Candy & Confectioneries</a>
+<br /><a href="cereal.asp" class="graynav">Cereal</a>
+<br /><a href="cheese.asp" class="graynav">Cheese</a>
+<br /><a href="coffee.asp" class="graynav">Coffee</a>
+<br /><a href="tortillachips.asp" class="graynav">Corn & Torilla Chips</a>
+<br /><a href="frenchfries.asp" class="graynav">French Fries</a>
+<br /><a href="produce.asp" class="graynav">Fruit & Vegetables</a>
+<br /><a href="meats.asp" class="graynav">Meat, Poultry & Seafood</a>
+<br /><a href="nuts.asp" class="graynav">Nut Meats</a>
+<br /><a href="preparedfoods.asp" class="graynav">Other Prepared Foods</a>    
+<br /><a href="pasta.asp" class="graynav">Pasta</a>
+<br /><a href="pelletsnacks.asp" class="graynav">Pellet Snacks</a>
+<br /><a href="eqmain.asp?eqid=35" class="graynav">Pharmaceuticals</a>
+<br /><a href="banana.asp" class="graynav">Plantain & Banana Chips</a>
+<br /><a href="potatochips.asp" class="graynav">Potato Chips</a>
+<br /><a href="salad.asp" class="graynav">Salads</a>
+<br /><a href="tortillas.asp" class="graynav">Tortilla Products</a>
+	</td>
+ 	<td valign="top" class="lowerlinks" align="left"><a href="processing.asp" class="graynav">Food Processing Equipment:</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=1" class="graynav">Fryers</a>, <a href="eqmain.asp?eqid=2" class="graynav">Ovens</a>, <a href="eqmain.asp?eqid=7" class="graynav">Branding</a>, <a href="eqmain.asp?eqid=18" class="graynav">Produce Unloading</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=14" class="graynav">Potato Peeling</a>, <a href="eqmain.asp?eqid=14" class="graynav">Potato Slicing</a>, <a href="eqmain.asp?eqid=24" class="graynav">Potato Washing</a>,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=9" class="graynav">Corn Simmering</a>, <a href="eqmain.asp?eqid=10" class="graynav">Corn Washing</a>, <a href="eqmain.asp?eqid=10" class="graynav">Grinding</a>, <a href="eqmain.asp?eqid=10" class="graynav">Pumping</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=22" class="graynav">Sheeting</a>, <a href="eqmain.asp?eqid=22" class="graynav">Corn Conditioning</a>, <a href="eqmain.asp?eqid=22" class="graynav">Toasting</a>, &amp; <a href="eqmain.asp?eqid=16" class="graynav">Pollution Control</a>  
+
+<br /><a href="seasoningsystems.asp" class="graynav">Seasoning & Coating Equipment:</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=20&ptype=7" class="graynav">In-Kitchen Seasoning</a>, <a href="eqmain.asp?eqid=52&ptype=7" class="graynav">On-Machine Seasoning</a>,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=21&ptype=7" class="graynav">Spray Dynamics</a>, &amp; <a href="eqmain.asp?eqid=8&ptype=7" class="graynav">Batter and Breading Applicators</a>
+<br /><a href="packagingandweighing.asp" class="graynav">Packaging & Weighing Equipment:</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=28" class="graynav">Ishida Weighers</a>, <a href="eqmain.asp?eqid=32" class="graynav">Ishida Snack Bagmakers</a>,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=40" class="graynav">Ishida Tray Sealers</a>, &amp; <a href="eqmain.asp?eqid=34" class="graynav">Support Structures</a> &amp; <a href="eqmain.asp?eqid=36" class="graynav">Fillers</a>
+<br /><a href="producthandling.asp" class="graynav">Product Handling Equipment:</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=42" class="graynav">FastBack Horizontal Motion Conveyors</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=45" class="graynav">Revolution Proportional Gates</a>, <a href="eqmain.asp?eqid=53" class="graynav">Blending Systems</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=44" class="graynav">Incline Transfer</a>, <a href="eqmain.asp?eqid=49" class="graynav">Product Sizing</a>,
+<a href="eqmain.asp?eqid=50" class="graynav">Accumulation</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=48" class="graynav">Varilift Conveyors</a> &amp; <a href="eqmain.asp?eqid=51" class="graynav">Flex Lines and Supports</a>
+<br /><a href="inspectionsystems.asp" class="graynav">Food Inspection Equipment:</a>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=30" class="graynav">Ishida Checkweighers</a>, <a href="eqmain.asp?eqid=33" class="graynav">CEIA Metal Detectors</a>, 
+<br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="eqmain.asp?eqid=37" class="graynav">Ishida X-ray Systems</a>, &amp; <a href="eqmain.asp?eqid=39" class="graynav">Ishida Seal Checkers</a>
+<br /><a href="eqmain.asp?eqid=54" class="graynav">Controls & Information Systems and Software</a></td>
+	<td valign="top" class="lowerlinks" style="line-height:170%" align="left"><a href="aboutus.asp" class="graynav">About Our Company</a>
+<br /><a href="about-whatwedo.asp" class="graynav">What We Do</a>
+<br /><a href="locations.asp" class="graynav">Global Locations</a>
+<br /><a href="about-companyhistory.asp" class="graynav">Company History</a>
+<br /><a href="green processing solutions.asp" class="graynav">Sustainable Solutions</a>
+<br /><a href="about-mission.asp" class="graynav">Mission Statement</a>
+<br /><a href="about-privacy.asp" class="graynav">Privacy Statement</a>
+<br /><a href="careers.asp" class="graynav">Careers</a>
+<div style="color:#444444;font-size:1.1em;margin: 50px 0 6px 0;font-weight:bold">What's New</div>
+<a href="news-products.asp" class="graynav">Products and Services News</a>
+<br /><a href="news-company.asp" class="graynav">Company News</a>
+<br /><a href="news-tradepress.asp" class="graynav">Trade Press</a>
+<br /><a href="news-tradeshows.asp" class="graynav">Tradeshow Schedule</a>
+<br /><a href="news-innovator.asp" class="graynav">Our innovator magazine</a>
+   </td>
+	<td valign="top" class="lowerlinks" style="line-height:170%" align="left"><a href="application-stories.asp" class="graynav">Application Success Stories</a>
+<br /><a href="testimonials.asp" class="graynav">Customer Testimonials</a>
+<br /><a href="casehistories.asp" class="graynav">Case Histories</a>
+<br /><a href="faqs.asp" class="graynav">Frequently Asked Questions</a>
+<br /><a href="/library.asp#articles" class="graynav">White Papers & Technical Papers</a>
+<br /><a href="/library.asp" class="graynav">Resource Library</a>
+<div style="color:#444444;font-size:1.1em;margin: 50px 0 6px 0;font-weight:bold">Contact Us / Requests for Information</div>
+<a href="contact.asp" class="graynav">Contact Us</a>
+<br /><a href="contact2.asp" class="graynav">Request for Information</a>
+<br /><a href="contact4.asp" class="graynav">Ask H&C!</a>
+<br /><a href="service-technicalcenters.asp" class="graynav">Test Your Products</a>
+<br /><a href="service.asp" class="graynav">Service Requests</a>
+<br /><a href="contact2.asp?ct=training" class="graynav">Training Request</a>
+<br /><a href="contact2.asp?ct=inv" class="graynav">Subscribe to Newsletter</a>
+<br /><a href="contact3.asp" class="graynav">Website Comments &amp; Suggestions</a>
+</td>
+ </tr>
+ <tr>
+	<td width="205"><img src="images/spacer.gif" width="205" height="1" border="0"></td>
+	<td width="320"><img src="images/spacer.gif" width="335" height="1" border="0"></td>
+	<td width="205"><img src="images/spacer.gif" width="205" height="1" border="0"></td>
+	<td width="250"><img src="images/spacer.gif" width="250" height="1" border="0"></td>
+ </tr>
+  </table>
+ <table cellpadding="0" cellspacing="0" border="0" style="width:1102px;">
+ <tr>
+ 	<td width="1102" style="border-top: solid #434343 2px;width:1102px;" colspan="4"><img src="images/spacer.gif" width="1102" height="1" border="0" align="left"></td>
+ </tr>
+  <tr>
+ 	<td style="font-size:.7em;width:180px;color:#444444; height: 35px;">&nbsp;&nbsp;&nbsp;&copy; Heat and Control, Inc. 2018</td><td style="width:120px;"><a href="https://www.facebook.com/Heat-and-Control-Inc-701882153205836/" target="_blank"><img src="images/fblogo.gif" border=0></a> <a href="http://www.twitter.com/heatncontrol" target="_blank"><img src="images/twlogo.gif" border=0></a> <a href="https://www.linkedin.com/company/heat-and-control" target="_blank"><img src="images/lilogo.gif" border=0></a> <a href="https://www.youtube.com/user/heatncontrol" target="_blank"><img src="images/ytlogo.gif" border=0></a></td>
+    <td style="font-size:.8em;width:502px;color:#444477;font-style:italic;font-weight:bold" align="center">Pioneering food production solutions for more than 65 years</td>
+ 	<td style="font-size:.7em;width:300px;" align="right"><a href="about-privacy.asp" class="graynav">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="about-terms.asp" class="graynav">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="contact3.asp" class="graynav">Website Suggestions</a>&nbsp;&nbsp;&nbsp;</td>
+ </tr>
+ </table>
+</div>
+<div style="height:100px;">&nbsp;</div>
+
+
+ <!-- Chinese language region IP detection (for translation link) -->
+
+
+
+
+
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("TopAboutMenu", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+<br />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1879673-1', 'auto');
+  ga('send', 'pageview');
+gtag('config', 'AW-993694100');
+
+</script>
+<script type="text/javascript" src="https://analytics.clickdimensions.com/ts.js" > </script> 
+
+ <script type="text/javascript"> 
+   var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com'); 
+   cdAnalytics.setAccountKey('aswZ83DPz6UKkK0fkeri0G'); 
+   cdAnalytics.setDomain('heatandcontrol.com'); 
+   cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
+   cdAnalytics.trackPage(); 
+ </script> 
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SmartPractice - Healthier Practices. Healthier Patients.</title>
+	<meta name="description" content="SmartPractice is the leader in helping health care offices create and keep loyal patients, plus manage their budget with low priced clinical supplies." />
+	
+
+	<link rel="stylesheet" type="text/css" href="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/bootstrap/bootstrap-3.3.6/css/bootstrap.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/bootstrap/bootstrap-3.3.6/css/bootstrap-theme.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/ekko-lightbox/ekko-lightbox.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/smartpractice/css/main.css?v=201801"/>
+
+	<link rel="stylesheet" type="text/css" href="/smartpractice/css/theme.css?v=201801"/>
+
+	<link rel="stylesheet" type="text/css" href="/smartpractice/css/modalDialog.css?v=201801"/>
+
+	<!-- Google Tag Manager -->
+<link rel="stylesheet" type="text/css" href="/smartpractice/css/modalDialog.css"/>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WV34GFR');</script>
+<!-- End Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="../../favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="../../favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="../../favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../../favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../../favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="SmartPractice"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="../../favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="../../favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="../../favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="../../favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="../../favicon/mstile-310x310.png" />
+
+	<!--[if lt IE 9]>
+
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+<![endif]-->
+
+    
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1777321-1']);
+  _gaq.push(['_trackPageview', '/home/smartpractice']); 
+  
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    
+
+  <script src="/WebObjects/SmartPractice.woa/Frameworks/Ajax.framework/WebServerResources/prototype.js"></script>
+<script src="/WebObjects/SmartPractice.woa/Frameworks/Ajax.framework/WebServerResources/wonder.js"></script>
+<script src="/WebObjects/SmartPractice.woa/Frameworks/Ajax.framework/WebServerResources/effects.js"></script>
+<script src="/WebObjects/SmartPractice.woa/Frameworks/Ajax.framework/WebServerResources/modalbox.js"></script>
+<script src="/WebObjects/SmartPractice.woa/Frameworks/Ajax.framework/WebServerResources/behaviour.js"></script>
+</head>
+  <body>  	
+
+ 	<script>openAMD_cartErrorsModalDialog = function(titleBarText) {
+    options = {slideUpDuration:0, centerVertically:true, overlayDuration:0.1, slideDownDuration:0, title:'Problems with your shopping cart', height:-1, afterHide:function(v) {  AUL.request('/shop/ajax/0.0.27.close', null, null, null);}, transitions:false};
+    if (titleBarText) options.title = titleBarText;
+    Modalbox.show('/shop/ajax/0.0.27.open', options);
+}
+</script>
+	
+	<script>openAMD_quickOrderErrorModalDialog = function(titleBarText) {
+    options = {slideUpDuration:0, centerVertically:true, overlayDuration:0.1, slideDownDuration:0, title:'Quick Order', height:-1, afterHide:function(v) {  AUL.request('/shop/ajax/0.0.29.close', null, null, null);}, transitions:false};
+    if (titleBarText) options.title = titleBarText;
+    Modalbox.show('/shop/ajax/0.0.29.open', options);
+}
+</script>
+	
+  	<div id="saveSpinner" style="display:none;"></div>
+  	
+	
+  	<div class="main" id="outer-wrap">
+		
+		
+		
+		<header id="top" class="navbar-fixed-top" role="banner">
+			
+				<div class="marketnav mb-hide">
+  					<div class="container">
+  						<div class="row">
+  							<ul class="list-inline">
+  								
+          							
+	            						<li><a class="current" href="http://www.smartpractice.com/shop/wa/site?id=SPHOME">SmartPractice</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPD">Dental</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPV">Veterinary</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPM">Medical</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPE">Eye Care</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPC">Chiropractic</a></li>
+	      							
+          						
+          							
+	            						<li><a href="http://www.smartpractice.com/shop/wa/site?id=SPA">Dermatology/Allergy</a></li>
+	      							
+          						
+          						<li class="pull-right"><span class="glyphicon glyphicon-earphone"></span> 800.522.0800</li>					
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  			
+			<div class="header-logo wrapper">
+  				<div class="container">
+					<div class="row row-logoaccount">
+  						
+						<div class="col-xs-1 col-sm-1 sml-gutter desk-hide">
+							<button type="button" class="btn btn-xs btn-offcanvas" data-toggle="offcanvas"><i class="fa fa-bars fa-fw"></i></button>
+						</div>
+						
+						<div class="col-xs-4 col-sm-3 col-md-3 sml-gutter text-left">
+							
+							<a href="/shop/wa/default"><img class="img-responsive logo" src="/images/ui/smartpractice-logo.png"/></a>
+							
+						</div>
+						<div class="col-xs-7 col-sm-8 col-md-9 pull-right">
+							<div class="signin-hdr pull-right">
+								<div class="btn-group">
+									
+										<a class="btn btn-link mb-hide" href="http://www.smartpractice.com/shop/wa/category?cn=About-Us&amp;id=507025&amp;m=SPHOME&amp;mc=true">About Us</a>
+									
+										<a class="btn btn-link mb-hide" href="http://www.smartpractice.com/shop/wa/category?cn=Careers&amp;id=583747&amp;m=SPHOME&amp;mc=true">Careers</a>
+									
+									
+            							<a class="btn btn-contact" href="/shop/wa/contactUs">Contact Us</a>
+										<div class="dropdown mb-hide">
+            								<button type="button" class="btn btn-link dropdown-toggle" id="account-pop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Account <span class="caret"></span></button>            									
+											<ul class="dropdown-menu" aria-labelledby="account-pop">
+	               								<li class="accountHome"><a href="/shop/wa/accountHome">My Account</a></li>
+	                   							<li class="reorderProducts"><a href="/shop/wa/reorderProducts">Reorder Products</a></li>
+	                   							<li class="orderHistory"><a href="/shop/wa/orderHistory">Track Orders &amp; Returns</a></li>
+	               					 			<li class="customProducts"><a href="/shop/wa/savedProjects">Saved Projects</a></li>
+	                   							<li class="shoppingLists"><a href="/shop/wa/shoppingLists">Shopping Lists</a></li>
+	                   							<li class="doNotReorderLists"><a href="/shop/wa/doNotReorderList">Do Not Reorder List</a></li>
+	                   							<li class="viewInvoices"><a href="/shop/wa/viewInvoices">View Invoices</a></li>
+	                   							<li class="billPay"><a href="/shop/wa/billPay">Make A Payment</a></li>
+	                   							<li class="viewStatements"><a href="/shop/wa/viewStatements">View Statements</a></li>
+	               							</ul>
+	               						</div>
+										
+										
+											<a class="btn btn-signIn" href="/shop/wa/login">Sign In</a>
+										
+										
+										
+											<a class="btn btn-accHome" href="/shop/wa/accountHome"><span class="glyphicon glyphicon-user desk-hide"></span></a>
+										
+									
+								</div>
+							</div>
+						</div>
+  					</div>
+  					<div class="row row-searchcart">
+  						<div class="search-bars">
+  							<div class="col-xs-8 col-sm-4 col-md-3 sml-gutter pull-left">
+								<form name="f_0_33_19" method="get" class="input-group input-group-sm" id="searchform" action="https://www.smartpractice.com/shop/wa/search">
+									<input type="hidden" type="text" value="SPHOME" name="m" />
+						  			<input placeholder="search for product" class="form-control" id="searchText" type="text" name="q" />
+						  			<div class="input-group-btn">
+						  				<button type="submit" class="btn btn-searchButton" id="searchButton">Search</button>
+						  			</div>
+								</form>
+							</div>
+  							<div class="col-xs-8 col-sm-6 col-md-5 sml-gutter mb-hide">
+  								<form name="f_0_33_21" method="post" class="form-inline" id="quickorderform" action="https://www.smartpractice.com/shop/wo/0.0.33.21">
+            						<div class="form-group">
+            							<div class="input-group input-group-sm">
+            								<input placeholder="quick order part #" class="form-control" id="quickOrderPart" type="text" name="0.33.21.1" />
+            							</div>
+            						</div>
+            						<div class="form-group">
+            							<div class="input-group input-group-sm">
+            								<input size="3" placeholder="qty" class="form-control" id="quickOrderQty" type="text" value="qty" name="0.33.21.3" />
+            								<div class="input-group-btn">
+            									<input  type="button" name="0.33.21.5" value="Add to Cart" class="btn btn-quickOrderButton" id="quickOrderSubmitButton" onclick="ASB.request(this.form,null,{_asbn:'0.33.21.5'})" />
+            									<input  type="submit" name="0.33.21.7" style="position:absolute;left:-10000px" onclick="ASB.request(this.form,null,{_asbn:'0.33.21.7'}); return false;" />
+            								</div>
+            							</div>
+            						</div>
+          						</form>
+          						<script>AjaxHintedText.register('quickorderform')</script>
+          					</div>
+          					<div class="col-xs-4 col-sm-2 col-md-2 sml-gutter pull-right">
+								<div  id="cartblock" data-updateUrl="/shop/ajax/0.0.33.25">
+									<a class="pull-left" id="cartcontents" href="/shop/wa/shoppingCart">
+										<div class="text-right">
+											0 items<br />
+											<span class="subtotal mb-hide">$0.00</span>
+										</div>
+									</a>
+									<a class="cart-icon pull-right" href="/shop/wa/shoppingCart"></a>
+						        </div><script>AUC.register('cartblock');</script>
+							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<nav class="navbar navbar-default mainmenu" role="navigation">
+					<div class="container no-gutter">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#categorymenu">
+	<a class="text-white" href="#">Shop Popular Categories <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+</button>
+						</div>
+						<div class="collapse navbar-collapse" id="categorymenu">
+							<ul class="nav navbar-nav flex-container-nav">
+								
+								
+									<li class="menusmartbuys">
+										<a class="text-vertical" href="/shop/wa/smartbuys">Offers</a>
+									</li>
+								
+							</ul>
+						</div>
+  					</div>
+  				</nav>
+  			</div>
+  			
+			
+			
+  		</header>
+  			
+  		<div id="main" role="main">
+			<div class="content-wrap">
+				
+				<div class="history">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<a class="text-white" href="/shop/wa/reorderProducts">Shop Using Past Order History <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content">
+					<div class="container">
+					
+						
+						
+						
+							
+	<div class="row content-row-flex row-offcanvas row-offcanvas-left">
+	
+<div style="width: 100%;">
+
+<!-- navigation for homepage  -->
+<div class="row">
+
+	<nav class="navbar navbar-default main-nav" role="navigation">
+	  <div class="container no-gutter">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+	        <a class="text-white" href="#">Select your Practice Type<span class="glyphicon glyphicon-menu-right" aria-hidden="false"></span>
+	        </a>
+	      </button>
+	    </div>
+	
+	    <div class="collapse navbar-collapse no-gutter" id="navbar-main">
+	      <ul class="nav navbar-nav flex-container-nav">
+	      	<li>
+	      		<a class="text-vertical" href="/shop/wa/site?id=SPC" title="Chiropractic exam supplies, cards, and promotional giveaways" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'C']);">Chiropractic</a>
+	      	</li>
+	      	<li>
+	      		<a class="text-vertical" href="/shop/wa/site?id=SPD" title="Low priced supplies and cards from an authorized distributor" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'D']);">Dental</a>
+	      	</li>
+	      	<li>
+	      		<a class="text-vertical" href="/shop/wa/site?id=SPA" title="TRUE Test allergen patch test and Finn Chambers" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'A']);">Dermatology &amp; Allergy</a>
+	      	</li>
+	      	<li>
+	      		<a class="text-vertical" href="/shop/wa/site?id=SPE" title="Optometry, Ophthalmology, Audiology, Hearing Aids" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'E']);">Eye Care &amp; Hearing</a>
+	      	</li>
+	      	<li>
+	      	  <a class="text-vertical" href="/shop/wa/site?id=SPM" title="Medical exam room supplies, cards, and promotional giveaways" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'M']);">Medical &amp; OB/GYN</a>
+	      	</li>
+	      	<li>
+	      	  <a class="text-vertical" href="/shop/wa/site?id=SPV" title="Veterinary exam room supplies, cards, and promotional giveaways" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MarketSelect', 'V']);">Veterinary &amp; Grooming</a>
+	      	</li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container -->
+	</nav>
+</div>	
+
+	<!-- homesliderwrapper -->
+	<div class="row mb-hide">
+    <div class="inner-feature">
+        <img class="adj-lrg" src="/smartpractice/homepage_includes/images/smartpractice-home-banner1.jpg" alt="Improving the health of your practice and patients for 45 years" />
+    </div>
+	</div>
+	
+	<!-- sales statement -->
+	<div class="row-flex border-btm">
+		<div class="col-md-6 inner-padding center-block">
+		    <img class="img-responsive" src="/smartpractice/homepage_includes/images/50SP.png" alt="SmartPractice 50th Anniversary" />
+	  </div>
+	</div>
+	
+<div id="categoryContentWrapper">		
+	<!-- About us corporate brochure -->
+	<div class="row-flex flex-space">
+			<a class="col-md-4 inner-padding-2" href="/shop/wa/category?cn=About-Us&id=507025&m=SPHOME&mc=true" title="" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'Banner', 'AboutUss']);">
+				<img class="img-responsive" src="/smartpractice/homepage_includes/images/about-SP.jpg" alt="" />
+				<div class="box">
+					<h2 style="color: #92c33e; font-size: 22px;">Healthier Practices.<br /><span style="color: #0398ab;">Healthier Patients.</span></h2>
+						<p>Our mission is to improve world health by making it easier for practitioners to focus on patient care.</p>
+						<p class="btn-shop">
+							<button class="btn btn-green">Corporate Brochure</button>
+						</p>
+				</div>
+			</a>
+			<a class="col-md-4 inner-padding-2" href="http://www.oursmartjobs.com/" title="careers" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'Banner', 'Careers']);">
+				<img  class="img-responsive" src="/smartpractice/homepage_includes/images/employer-award.jpg" alt="" />
+				<div class="box">
+					<h2>Interested in a career at <br />an Award-winning Company?</h2>
+					<p>If you're passionate about developing meaningful solutions, then consider joining the SmartPractice family.</p>
+					<p class="btn-shop">
+						<button class="btn btn-green">View Open Positions</button>
+					</p>
+				</div>
+			</a>
+			<a class="col-md-4 inner-padding-2" href="/shop/wa/category?cn=Practice-Marketing-Custom-Products&id=511779&m=SPD" title="custom" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'Banner', 'Custom']);">
+				<img  class="img-responsive" src="/smartpractice/homepage_includes/images/custom-products.jpg" alt="" />
+				<div class="box">
+					<h2>Custom Graphic Design and Printing</h2>
+					<p>Partner with the healthcare industry’s leading designers to create your high quality products.</p>
+					<p class="btn-shop">
+						<button class="btn btn-green">Shop Now</button>
+					</p>
+				</div>
+			</a>
+	</div>	
+	<!-- Services area -->
+	<div class="row-flex">	   
+		<div class="inner-section-4" style="margin: 0; background: #ffffff url('/smartpractice/homepage_includes/images/header-shadow.png') no-repeat center top; border: none; background-size: cover; ">
+				<h3 class="text-center" style="font-size: 22px; color: #5aaf4c; margin-top: 30px;">Get More Patients with Mailing Services</h3> 
+		</div>
+		 <!-- new movers mailer 1-->
+		 <a class="icon-box" href="/shop/wa/category?cn=Practice-Marketing-New-Patient-Marketing&amp;id=406415&amp;m=SPD" target="_blank" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MailingSrv', 'Movers']);" title="New Mover Mailings">
+		   		<div class="box">
+		   			<div class="icon">
+		   				<img class="adj-md" alt="New Mover Mailers Icon" src="/smartpractice/homepage_includes/images/new_mover_icons.png" />
+		   			</div>
+		   			<h2>New Mover Mailers</h2>
+		    		<p>Advertise directly to individuals that recently moved near your practice - automatically.</p>
+		    		<div class="btn-shop">
+		    			<button class="btn btn-green">Learn More</button>
+		    		</div>
+		    	</div> 	 	
+		 </a>
+		<!-- targeted mailers 2-->
+		 <a class="icon-box" href="/shop/wa/category?cn=Practice-Marketing-New-Patient-Marketing&amp;id=406415&amp;m=SPD" target="_blank" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MailingSrv', 'Targeted']);" title="Targeted Mailings"> 
+		      <div class="box">
+		      	<div class="icon">
+		      		<img class="adj-md" alt="New Mover Mailers Icon" src="/smartpractice/homepage_includes/images/target_icons.png"/>
+		      	</div>
+		      	<h2>Targeted Mailers</h2>
+		   			<p>Reach out to the exact demographic and zip code required to create new patients.</p>
+		   			<div class="btn-shop">
+		   				<button class="btn btn-green">Learn More</button>
+		   			</div>
+		   		</div>
+		  </a>
+		<!-- internal mailing services 3-->
+		<a class="icon-box" href="/shop/wa/category?id=511304&m=SPD&utm_source=dentalredirect&utm_medium=catalog&utm_campaign=mailing&g=RE_MAILING" target="_blank" onclick="_gaq.push(['_trackEvent', 'SP-Home', 'MailingSrv', 'Internal']);" title="Internal Mailing Services">
+				<div class="box">
+					<div class="icon">
+						<img class="adj-md" alt="New Mover Mailers Icon" src="/smartpractice/homepage_includes/images/newsletter_icons.png"/>
+					</div>
+					<h2>Internal Mailing Services</h2>
+				 	<p>Save time and money on all your monthly patient mailings.</p>
+				 	<div class="btn-shop">
+				 		<button class="btn btn-green">Learn More</button>
+				 	</div>
+				</div>
+		</a>
+	</div> 
+</div> 
+
+</div> 
+<!-- start left column -->	
+	<div class="col-xs-8 col-sm-3 sidebar-offcanvas desk-hide" id="sidebar">
+		<div class="row-flex flex-column">
+			<div class="col-md-12">
+				<ul class="nav nav-stacked row-flex flex-column">
+					<li>
+						<a title="Our Values" href="/shop/wa/category?cn=About-Us-Our-Values&id=510846&m=SPHOME">Our Values</a>
+					</li>
+				
+					<li>
+						<a title="Our Owners" href="/shop/wa/category?cn=About-Us-Our-Owners&id=509855&m=SPHOME">Our Owners</a>
+					</li>
+				
+					<li>
+						<a title="Our Divisions & Products" href="/shop/wa/category?cn=About-Us-Our-Divisions-%26-Products&id=510847&m=SPHOME">Our Divisions &amp; Products</a>
+					</li>
+				
+					<li>
+						<a title="Giving Back" href="/shop/wa/category?cn=About-Us-Giving-Back&id=510526&m=SPHOME">Giving Back</a>
+					</li>
+				
+					<li>
+						<a title="Our Awards" href="/shop/wa/category?cn=About-Us-Our-Awards&id=510811&m=SPHOME">Our Awards</a>
+					</li>
+				
+					<li>
+						<a title="Our Careers" href="/shop/wa/category?cn=About-Us-Our-Careers&id=510524&m=SPHOME">Our Careers</a>
+					</li>
+				
+					<li>
+						<a title="News Room" href="/shop/wa/category?cn=About-Us-News-Room&id=508495&m=SPHOME">News Room</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+	
+</div>
+
+<style>
+	p, h2, h3 {width: 100%;}
+	.icon-box {display: block;}
+</style>	
+
+
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>	
+	
+	<div style="margin: 20px 0;height: 6px;background:#2467a2"></div>
+	
+	<div class="footer">						
+<!-- footer nav -->
+		<div class="container mb-hide">
+			<div class="row">
+				<div class="sitenav">
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+						  <h4 class="title">Chiropractic Products &amp; Services</h4>
+						  <ul>
+							<li><a href="/shop/wa/category?cn=Massage-Therapy&amp;id=511486&amp;m=SPC&amp;mc=true" title="Chiropractic Massage Therapy">Massage Therapy</a></li>
+							<li><a href="/shop/wa/category?cn=Office-Supplies&amp;id=406626&amp;m=SPC&amp;mc=true" title="Chiropractic Exam Room & Office Supplies">Exam Room &amp; Office Supplies</a></li>
+							<li><a href="/shop/wa/category?cn=Patient-Communications&amp;id=406627&amp;m=SPC&amp;mc=true" title="Chiropractic Patient Communications">Patient Communications</a></li>
+							<li><a href="/shop/wa/category?cn=Promotional-Giveaways&amp;id=406628&amp;m=SPC&amp;mc=true" title="Chiropractic Promotional Giveaways">Promotional Giveaways</a></li>
+							<li><a href="/shop/wa/category?cn=Practice-Marketing&amp;id=406681&amp;m=SPC&amp;mc=true" title="Chiropractic Practice Marketing">Practice Marketing</a></li>
+						  </ul>
+				 		</li>
+				 	</ul>
+				 </div>
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+				 			<h4 class="title">Dental Products &amp; Services</h4>
+				 			<ul>
+				 			  <li><a href="/shop/wa/category?cn=Exam-Gloves&id=2&m=SPD&mc=true" title="Dental Exam Gloves">Exam Gloves</a></li>
+				 			  <li><a href="/shop/wa/category?cn=Office-Supplies&id=3&m=SPD&mc=true" title="Dental Office Supplies">Office Supplies</a></li>
+				 			  <li><a href="/shop/wa/category?cn=Patient-Communications&id=4&m=SPD&mc=true" title="Dental Patient Communications">Cards &amp; Brochures</a></li>
+				 			  <li><a href="/shop/wa/category?cn=Promotional-Giveaways&id=5&m=SPD&mc=true" title="Dental Promotional Giveaways">Promotional Products</a></li>
+				 			  <li><a href="/shop/wa/category?cn=Practice-Marketing&id=6&m=SPD&mc=true" title="Dental Practice Marketing">Dental Marketing</a></li>
+				 			</ul>
+				 		</li>
+				 	</ul>
+				 </div>
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+						  <h4 class="title">Dermatology / Allergy Products &amp; Services</h4>
+						  <ul>
+							<li><a href="/shop/wa/category?cn=Products-T.R.U.E.-TEST&id=508222&m=SPA" title="Dermatology T.R.U.E. TEST">T.R.U.E. TEST</a></li>
+							<li><a href="/shop/wa/category?cn=Products&id=508218&m=SPA&mc=true" title="Dermatology Products">Products</a></li>
+							<li><a href="/shop/wa/category?cn=Education&id=508219&m=SPA&mc=true" title="Dermatology Education">Education</a></li>
+							<li><a href="/shop/wa/category?cn=Practice-Development&id=509136&m=SPA&mc=true" title="Dermatology Practice Development">Practice Development</a></li>
+							<li><a href="/shop/wa/category?cn=Reimbursement&id=581691&m=SPA&mc=true" title="Dermatology Reimbursement">Reimbursement</a></li>
+							<li><a href="/shop/wa/category?cn=About-Us&id=508221&m=SPA&mc=true" title="Dermatology About Us">About Us</a></li>
+						  </ul>
+				 		</li>
+				 	</ul>
+				 </div>
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+						  <h4 class="title">Eye Care Products &amp; Services</h4>
+						  <ul>
+							<li><a href="/shop/wa/category?cn=Hearing&amp;id=511316&amp;m=SPE&amp;mc=true" title="Hearing">Hearing</a></li>
+							<li><a href="/shop/wa/category?cn=Office-Supplies&amp;id=406614&amp;m=SPE&amp;mc=true" title="Eye Care Exam Room & Office Supplies">Exam Room &amp; Office Supplies</a></li>
+							<li><a href="/shop/wa/category?cn=Patient-Communications&amp;id=406615&amp;m=SPE&amp;mc=true" title="Eye Care Patient Communications">Patient Communications</a></li>
+							<li><a href="/shop/wa/category?cn=Promotional-Giveaways&amp;id=406616&amp;m=SPE&amp;mc=true" title="Eye Care Promotional Giveaways">Promotional Giveaways</a></li>
+							<li><a href="/shop/wa/category?cn=Practice-Marketing&amp;id=406682&amp;m=SPE&amp;mc=true" title="Eye Care Practice Marketing">Practice Marketing</a></li>
+						  </ul>
+				 		</li>
+				 	</ul>
+				 </div>
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+						  <h4 class="title">Medical Products &amp; Services</h4>
+						  <ul>
+							<li><a href="/shop/wa/category?cn=Exam-Gloves&amp;id=406567&amp;m=SPM&amp;mc=true" title="Medical Exam Gloves">Exam Gloves</a></li>
+							<li><a href="/shop/wa/category?cn=Office-Supplies&amp;id=406568&amp;m=SPM&amp;mc=true" title="Medical Exam Room & Office Supplies">Exam Room &amp; Office Supplies</a></li>
+							<li><a href="/shop/wa/category?cn=Patient-Communications&amp;id=406569&amp;m=SPM&amp;mc=true" title="Medical Patient Communications">Patient Communications</a></li>
+							<li><a href="/shop/wa/category?cn=Promotional-Giveaways&amp;id=406570&amp;m=SPM&amp;mc=true" title="Medical Promotional Giveaways">Promotional Giveaways</a></li>
+							<li><a href="/shop/wa/category?cn=Practice-Marketing&amp;id=406683&amp;m=SPM&amp;mc=true" title="Medical Practice Marketing">Practice Marketing</a></li>
+						  </ul>
+				 		</li>
+				 	</ul>
+				 </div>
+				 <div class="col-xs-4 col-md-2">
+				 	<ul>
+				 		<li>
+							  <h4 class="title">Veterinary Products &amp; Services</h4>
+							  <ul>
+								<li><a href="/shop/wa/category?cn=Veterinary-Supplies&amp;id=406308&amp;m=SPV&amp;mc=true" title="Veterinary Supplies">Veterinary Supplies</a></li>
+								<li><a href="/shop/wa/category?cn=Grooming&amp;id=509231&amp;m=SPV&amp;mc=true" title="Veterinary Grooming">Grooming</a></li>
+								<li><a href="/shop/wa/category?cn=Office-Supplies&amp;id=406311&amp;m=SPV&amp;mc=true" title="Veterinary Office Supplies">Office Supplies</a></li>
+								<li><a href="/shop/wa/category?cn=Client-Communications&amp;id=406600&amp;m=SPV&amp;mc=true" title="Veterinary Client Communications">Client Communications</a></li>
+								<li><a href="/shop/wa/category?cn=Promotional-Giveaways&amp;id=406601&amp;m=SPV&amp;mc=true" title="Veterinary Promotional Giveaways">Promotional Giveaways</a></li>
+								<li><a href="/shop/wa/category?cn=Practice-Marketing&amp;id=406680&amp;m=SPV&amp;mc=true" title="Veterinary Practice Marketing">Practice Marketing</a></li>
+							  </ul>
+				 		</li>
+				 	</ul>
+				 </div>
+			</div>
+		</div>
+	</div>			
+			
+			<div class="up-nav desk-hide">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-sm-12 col-md-12">
+    						<div class="btn-group" role="group">
+    							<div class="dropup">
+										<button class="btn btn-link dropdown-toggle text-white" id="dental-Cat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">SmartPractice Websites <span class="caret"></span></button>
+											<ul class="dropdown-menu" aria-labelledby="dental-Cat">
+												<li><a href="/shop/wa/site?id=SPD">Dental</a></li>
+												<li><a href="/shop/wa/site?id=SPV">Veterinary</a></li>
+												<li><a href="/shop/wa/site?id=SPM">Medical</a></li>
+												<li><a href="/shop/wa/site?id=SPE">EyeCare/Hearing</a></li>
+												<li><a href="/shop/wa/site?id=SPC">Chiropractic</a></li>
+												<li><a href="/shop/wa/site?id=SPA">Dermatology/Allergy</a></li>
+											</ul>
+    							</div>
+    						</div>
+						</div>
+						
+						<div class="col-sm-12 col-md-12 text-center">
+							<p>
+								<a class="btn btn-blue btn-block" href="/shop/wa/contactUs">Contact Us</a>
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-12 text-center">
+							<p>
+								<a class="btn btn-blue btn-block" href="#">Top <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+							</p>
+						</div>
+						
+					</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<div class="copyright">Copyright © <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> SmartPractice.com - All Rights Reserved</div>
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- class footer -->
+</footer>
+
+<!-- Modal placement top postioning -->
+
+	<div class="modal fade" id="shipping-opts" tabindex="-1" role="dialog" aria-labelledby="shipping">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title" id="shipping">Free Shipping Options</h2>
+	      </div>
+	      <div class="modal-body">
+	        <div style="padding: 0px 20px;">
+	            <h2>FREE standard ground shipping within the continental USA on your $500 or more order</h2>
+	            <p>No hidden handling fees, no special codes. We'll even throw in a sweet treat in your over $500 dental supplies and exam glove order. All smartpractice.com orders use UPS ground as the preferred shipping option.</p>
+	             	<div class="table-responsive">
+	            		<table class="table table-stripped">
+	            			<thead>
+	            				<tr>
+	            					<td><strong>Order Total</strong></td>
+	            		      <td><strong>Shipping Rate</strong></td>
+	            				</tr>
+	            			</thead>
+	            			<tbody>
+	            				<tr>
+	            		        <td>Up to $50.00</td>
+	            		        <td>$9.50</td>
+	            		     </tr>
+	            		     <tr>   
+	            		        <td>$51.00 - $200.00</td>
+	            		        <td>$12.95</td>
+	            		     </tr>
+	            		     <tr>
+	            		        <td>$201.00 - $500.00</td>
+	            		        <td>$18.95</td>
+	            		     </tr>
+	            		     <tr>
+	            		        <td>$500.00 and over</td>
+	            		        <td>FREE</td>
+	            		    </tr>
+	            	    </tbody>
+	            	  </table>
+	            	</div>
+	             <p>Shipping outside of the non-continental U.S. is additional (Alaska, Hawaii, international). Shipping charges will be quoted after your submit your online order. </p>
+	            <p>Due to the Department of Transportation regulations, an additional charge is included on hazardous material shipments. Some hazardous materials must be shipped via ground carrier and are not returnable.</p>
+	            <p>Special freight shipping charges are required for large, heavy items such as office furniture and file cabinets and will be quoted after your submit your online order.</p>
+	            <p><strong>Please call 800.522.0800 to expedite your order or to change your preferred shipping option.</strong></p>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- product style page add to cart modal -->
+
+	<div class="modal fade" id="add-to-cart" tabindex="-2" role="dialog" aria-labelledby="cartview">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title" id="shipping">Shopping Cart</h2>
+	      </div>
+	      <div class="modal-body">
+	        <div class="text-center">
+	            <h3 class="text-danger">Please enter a quantity to add to your cart</h3>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- product style page shopping list modal -->
+
+	<div class="modal fade" id="shoppingList" tabindex="-2" role="dialog" aria-labelledby="shoppinglist">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title" id="shipping">Log in to use Shopping Lists</h2>
+	      </div>
+	      <div class="modal-body">
+	        <div class="text-center">
+	            <h3 class="text-danger">Please sign in to your account to use shopping lists</h3>
+	            <p>&nbsp;</p>
+	            <button class="btn btn-green center-block">SIGN IN</button>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4870806.js"></script>
+	<!-- End of HubSpot Embed Code -->
+
+
+		
+	</div>
+	
+	<!-- ISO: US, CURRENCY: USD -->
+		  				
+	
+
+  	<script type="text/javascript" src="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/jquery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">jQuery.noConflict();</script>
+	<script type="text/javascript" src="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/bootstrap/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/WebObjects/SmartPractice.woa/Frameworks/SHMisc.framework/WebServerResources/ekko-lightbox/ekko-lightbox.min.js"></script>
+	<script type="text/javascript">
+		// resolves conflict between prototype, jquery, bootstrap so double-clicking on main menu item doesn't hide it when on category component/page
+		// found on: http://stackoverflow.com/questions/19139063/twitter-bootstrap-3-dropdown-menu-disappears-when-used-with-prototype-js/32063800#32063800
+		jQuery(document).ready(function() {
+			if (typeof(Prototype) !== 'undefined' && Prototype.BrowserFeatures.ElementExtensions) {
+			  var pluginsToDisable = ['collapse', 'dropdown', 'modal', 'tooltip', 'popover', 'tab'];
+			  var disablePrototypeJS = function (method, pluginsToDisable) {
+			    var handler = function (event) {
+			      event.target[method] = undefined;
+			      setTimeout(function () {
+			        delete event.target[method];
+			      }, 0);
+			    };
+			    pluginsToDisable.each(function (plugin) {
+			      jQuery(window).on(method + '.bs.' + plugin, handler);
+			    });
+			  };
+			
+			  disablePrototypeJS('show', pluginsToDisable);
+			  disablePrototypeJS('hide', pluginsToDisable);
+			};
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('[data-toggle="offcanvas"]').click(function () {
+				jQuery('.row-offcanvas').toggleClass('active')
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
+			event.preventDefault();
+			jQuery(this).ekkoLightbox();
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(function () {
+  			jQuery('[data-toggle="tooltip"]').tooltip()
+		});
+	</script>
+	<!-- load additional js libraries here -->
+<!-- Hotjar Tracking Code for http://www.smartpractice.com/shop/wa/site?id=SPHOME -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:527554,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV34GFR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  </body>
+</html>

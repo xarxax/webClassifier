@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+<title>PMpublishing</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="pmpub.css"/>
+
+</head>
+<body id="main">
+
+<div class="jumbotron" id="pmpub-header">
+	<div class="container">
+		<h1>PMpublishing</h1>
+		<p>PMpublishing's Professional Options Package (ePOP) is server-based trading and risk management 
+			software for options traders. Designed by traders for on-screen trading (or use in the pits), ePOP's  
+			customized trading tools are essential to understanding options risk and reacting to rapidly changing 
+			conditions. ePOP's full range of capabilities, ease-of-use, and flexibility provides a solid foundation
+			for successful trading.</p>
+		<p><a class="btn btn-primary btn-lg" href="#learn" role="button">Learn more &raquo;</a></p>
+	</div>
+</div>
+
+<div class="container-fluid bullet-container" id="pmpub-cols">
+
+	<div id="bullet-row-wrapper">
+		<div class="row" id="bullet-row">
+			<div class="col-md-4 col-center">
+				<div style="display: inline-block; text-align: left">
+					<h2><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Risk Management</h2>
+					<ul>
+						<li> advanced derivatives
+						<li> dynamic volatility models
+						<li> custom skews
+						<li> skew histories
+						<li> position scenarios
+						<li> robust risk limits
+<!--
+						<li> next to trade
+-->
+						<li> circuit breakers
+					</ul>
+					<p><a class="btn btn-default" href="#risk" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-center">
+				<div style="display: inline-block; text-align: left">
+					<h2><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Autoquoting and Trading</h2>
+					<ul>
+						<li> bad trade prevention
+						<li> auto widening, tightening, and size adjustments
+						<li> pickoff prevention
+						<li> opportunity finders
+						<li> anticipatory algorithms
+						<li> spread pricing
+						<li> intelligent autohedge
+						<li> mass market orders
+						<li> contingent orders
+<!--
+						<li> pit tools
+-->
+					</ul>
+					<p><a class="btn btn-default" href="#autoquoting" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-center">
+				<div style="display: inline-block; text-align: left">
+					<h2><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Customizations</h2>
+					<ul>
+<!--
+						<li> "work with a tick"
+						<li> machine learning
+						<li> selling on the bid or buying the offer
+						<li> managing turns in the underlying
+						<li> settings for fine-tuning
+-->
+						<li> P/L analysis
+						<li> model consulting
+						<li> combinations
+						<li> custom skews
+						<li> API's
+
+					</ul>
+					<p><a class="btn btn-default" href="#autohedging" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="risk" class="container-fluid details">
+
+	<h2>Risk Management</h2>
+
+	<p>
+		<span class="txt1">advanced derivatives</span><br class="brk"/>
+		<span class="txt2">Traditional greeks plus combo and skew risk derivatives.</span>
+	</p>
+	<p>
+		<span class="txt1">dynamic volatility models</span><br class="brk"/>
+		<span class="txt2">Model the market's movement better.</span>
+	</p>
+	<p>
+		<span class="txt1">skew histories</span><br class="brk"/>
+		<span class="txt2">View a graph of your skew parameters over time.</span>
+	</p>
+	<p>
+		<span class="txt1">position scenarios</span><br class="brk"/>
+		<span class="txt2">See your position over a range of underlying prices, into the future, or with different skews.</span>
+	</p>
+	<p>
+		<span class="txt1">robust risk limits</span><br class="brk"/>
+		<span class="txt2">Controlled by the clearinghouse, by your group's risk manager, and by the individual trader, set boundries for delta risk, upside/downside risk, and many more.</span>
+	</p>
+<!--
+	<p>
+		<span class="txt1">next to trade</span><br class="brk"/>
+		<span class="txt2">When the price of the underlying changes, what is available to trade?</span>
+	</p>
+-->
+	<p>
+		<span class="txt1">circuit breakers</span><br class="brk"/>
+		<span class="txt2">Stop trading when the market destabilizes or when your risk reaches predetermined threshold.</span>
+	</p>
+
+	<div class="link-top">
+		<a href="#main"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Top</a>
+	</div>
+
+</div>
+
+<div id="autoquoting" class="container-fluid details">
+
+	<h2>Autoquoting and Trading</h2>
+
+	<p>
+		<span class="txt1">bad trade prevention</span><br class="brk"/>
+		<span class="txt2">Only make trades with positive edge or other requirements that you set.</span>
+	</p>
+	<p>
+		<span class="txt1">auto widening, tightening, and size adjustments</span><br class="brk"/>
+		<span class="txt2">Change quotes based on the underlying market and other factors.</span>
+	</p>
+	<p>
+		<span class="txt1">pickoff prevention</span><br class="brk"/>
+		<span class="txt2">Avoid losing trades with trading version of a collision avoidance system.</span>
+	</p>
+	<p>
+		<span class="txt1">opportunity finders</span><br class="brk"/>
+		<span class="txt2">Identify trades that fit your specific risk objectives.</span>
+	</p>
+	<p>
+		<span class="txt1">anticipatory algorithms</span><br class="brk"/>
+		<span class="txt2">Make moves before the rest of the market with statistical pricing.</span>
+	</p>
+	<p>
+		<span class="txt1">spread pricing</span><br class="brk"/>
+		<span class="txt2">Price complex spreads and quote them based on their risk characteristics.</span>
+	</p>
+	<p>
+		<span class="txt1">intelligent autohedge</span><br class="brk"/>
+		<span class="txt2">Buy the bid or sell the offer using "work with a tick" functionality.</span>
+	</p>
+	<p>
+		<span class="txt1">mass market orders</span><br class="brk"/>
+		<span class="txt2">Autoquote two sides of options markets based on edge per stike or strategy.</span>
+	</p>
+	<p>
+		<span class="txt1">contingent orders</span><br class="brk"/>
+		<span class="txt2">Work the underlying before trading the options.</span>
+	</p>
+<!--
+	<p>
+		<span class="txt1">pit tools</span><br class="brk"/>
+		<span class="txt2">Carry a tablet for access to on-screen delta sheets, spread calculator, and strategy creator.</span>
+	</p>
+-->
+	<div class="link-top">
+		<a href="#main"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Top</a>
+	</div>
+
+</div>
+
+<div id="autohedging" class="container-fluid details">
+
+	<h2>Customizations</h2>
+
+	<p>
+		<span class="txt1">P/L analysis</span><br class="brk"/>
+		<span class="txt2">What factors are driving your position P/L? Is your P/L performance in accordance with your model?</span>
+	</p>
+	<p>
+		<span class="txt1">model consulting</span><br class="brk"/>
+		<span class="txt2">Address problems in your model with incremental improvements or total rewrites.</span>
+	</p>
+	<p>
+		<span class="txt1">combinations</span><br class="brk"/>
+		<span class="txt2">Use our statistical methods to implement your ideas about the market.</span>
+	</p>
+	<p>
+		<span class="txt1">custom skews</span><br class="brk"/>
+		<span class="txt2">Implement your own skew model or customize one of ePOP's skew models.</span>
+	</p>
+	<p>
+		<span class="txt1">API's</span><br class="brk"/>
+		<span class="txt2">Hook into ePOP with your own external software using a variety of methods depending on performance requirements.</span>
+	</p>
+
+	<div class="link-top">
+		<a href="#main"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Top</a>
+	</div>
+
+</div>
+
+<div id="learn" class="container-fluid details">
+
+	<h2>Learn More</h2>
+
+	<p>
+		<span class="txt1">For a demo: info@pmpublishing.com</span>
+	</p>
+
+	<div class="link-top">
+		<a href="#main"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Top</a>
+	</div>
+
+</div>
+
+<div class="container-fluid" id="ft">
+	<footer>
+		<p>&copy; 1995-2016 PMpublishing</p>
+	</footer>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  window.scrollTo (0,0);
+
+  $('body').scrollspy({target: "#main"});
+
+  $("#main a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+      });
+    }  // End if
+  });
+
+});
+</script>
+
+</body>
+</html>

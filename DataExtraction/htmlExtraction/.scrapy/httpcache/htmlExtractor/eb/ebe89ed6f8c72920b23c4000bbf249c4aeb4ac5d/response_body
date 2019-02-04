@@ -1,0 +1,1345 @@
+<html>
+<head>
+<title>Equity Benefits Software Solution $999 only, Administration, and Discount Broker Executions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Equity Benefits Software Solution $999 only, Administration, and Discount Broker Executions, ESOP Software">
+<meta name="keywords" content="Stock Options, Stock Options Software, Stock Purchases, Stock Purchases Software, Options, ESPP, ESPP Software, Valuation, Valuations, FAS 123, FAS 123R, FAS 128, ASC 718, ASC 260, Insider, Insiders, SEC16, Edgar, Forms, Black-Scholes, Binomial, Hull-White, Monte-Carlo, option pricing, valuation, incentive stock options, employee stock purchase plan, esop administration, employee stock options, restricted stock grants, restricted units, performance shares">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://03c561f.mynetworksolutions.mobi"/>
+<script type="text/javascript" src="http://detect.deviceatlas.com/redirect.js?m=http://03c561f.mynetworksolutions.mobi"></script>
+<link rel="stylesheet" href="css/style_01.css" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+ function google(){
+  window.open("http://www.google.com/search?q="+document.form1.upit.value+" site:www.ezcustomsoftware.com&l=en");
+ }
+
+<!-- 
+function ShowPicture(id,Source) { 
+if (Source=="1"){ 
+if (document.layers) document.layers[''+id+''].visibility = "show" 
+else if (document.all) document.all[''+id+''].style.visibility = "visible" 
+else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "visible" 
+} 
+else 
+if (Source=="0"){ 
+if (document.layers) document.layers[''+id+''].visibility = "hide" 
+else if (document.all) document.all[''+id+''].style.visibility = "hidden" 
+else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "hidden" 
+} 
+} 
+//-->
+<!--
+function send_request()
+{
+var _form=document.StmtRequest;
+//var _action="mailto:mystatement@ezCustomSoftware.com?Subject=My Stock Option Exercise Request&Body=";
+var _action="http://www.ezcustomsoftware.com/sreq.aspx";
+var _exerctext = "";
+
+if(_form.FullName.value!="") 
+   _action += "?N=" + _form.FullName.value;
+else {
+   alert("Please specify your full name!");
+   return false;
+}
+
+if(_form.Company.value!="" && _form.Company.value!="Please specify company name")
+   _action += "&C=" + _form.Company.value;
+else {
+   alert("Please specify company name!");
+   return false;
+}
+
+if(_form.Country.value!="" && _form.Country.value!="Country of residence")
+   _action += "&O=" + _form.Country.value;
+else {
+   alert("Please specify country of residence!");
+   return false;
+}
+
+if(_form.Country.value=="Other" && _form.Comments.value==""){
+   alert("Please specify Country of residence in the Note field!");
+   return false;
+}
+ 
+
+if(_form.EMail.value!="") 
+   _action += "&E=" + _form.EMail.value;
+else {
+   alert("Please specify your email address!");
+   return false;
+}
+
+//if(_form.Phone.value!="") 
+   _action += "&P=" + _form.Phone.value;
+
+if(!_form.elements[6].checked && !_form.elements[7].checked)
+{
+   alert("Please specify your US Citizenship status!");
+   return false;
+}
+
+if(!_form.elements[8].checked && !_form.elements[9].checked && !_form.elements[10].checked)
+{
+   alert("Please specify your exercise selection!");
+   return false;
+}
+
+if(!_form.elements[11].checked && !_form.elements[12].checked)
+{
+   alert("Please specify your interest bearing selection!");
+   return false;
+}
+
+
+if(_form.elements[6].checked)
+   _action += "&Z=" + _form.elements[6].value;
+else
+   _action += "&Z=" + _form.elements[7].value;
+
+
+if(_form.elements[8].checked)
+//   _exerctext= "I wish to exercise my Stock Option(s) now.";
+  _action +="&X=" + _form.elements[8].value;
+if(_form.elements[9].checked)
+//   _exerctext= "I plan to exercise my Stock Option(s) within next 7-30 days.";
+  _action +="&X=" + _form.elements[9].value;
+//if(_form.elements[].checked)
+//   _exerctext= "Just looking, no plans to exercise my Stock Option(s) at this time.";
+if(_form.elements[10].checked)
+  _action +="&X=" + _form.elements[10].value;
+//   _exerctext= "I wish to be contacted by a Registered Investment Advisor for assistance.";
+
+//   _action +="&X=" + _exerctext; 
+
+if(_form.elements[11].checked)
+  _action +="&I=" + _form.elements[11].value;
+if(_form.elements[12].checked)
+  _action +="&I=" + _form.elements[12].value;
+
+   
+//if(_form.Comments.value!="") 
+   _action += "&M=" + _form.Comments.value;  
+   
+   _form.action = _action;
+//   alert(_action);
+
+return true;
+
+}
+//-->
+<!--
+function send_bd_request()
+{
+var _form=document.BDRequest;
+//var _action="mailto:mystatement@ezCustomSoftware.com?Subject=My Stock Option Exercise Request&Body=";
+var _action="http://www.ezcustomsoftware.com/bdreq.aspx";
+var _exerctext = "";
+
+if(_form.BDFullName.value!="") 
+   _action += "?N=" + _form.BDFullName.value;
+else {
+   alert("Please specify your full name!");
+   return false;
+}
+
+if(_form.BDEMail.value!="") 
+   _action += "&E=" + _form.BDEMail.value;
+else {
+   alert("Please specify your email address!");
+   return false;
+}
+
+//if(_form.Phone.value!="") 
+   _action += "&P=" + _form.BDPhone.value;
+
+if(!_form.elements[1].checked && !_form.elements[3].checked && !_form.elements[5].checked)
+{
+   alert("Please choose your interest!");
+   return false;
+}
+
+if(_form.elements[1].checked)
+  _action +="&I1=1";
+else
+  _action +="&I1=0";
+
+if(_form.elements[3].checked)
+  _action +="&I2=1";
+else
+  _action +="&I2=0";
+
+if(_form.elements[5].checked)
+  _action +="&I3=1";
+else
+  _action +="&I3=0";
+ 
+   _form.action = _action;
+//   alert(_action);
+
+return true;
+
+}
+//-->
+ 
+</script> 
+<style type="text/css"> 
+#StyleSL { 
+position:absolute; 
+visibility:hidden; 
+border:solid 1px #CCC; 
+padding:0px; 
+} 
+</style> 
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" class=txt>
+  <tr> 
+    <td width="780" height="20" colspan="4">&nbsp;</td>
+  </tr>  
+  <tr> 
+    <td width="195" height="50" valign="middle"><img src="images/logo2.jpg" height="50" alt="equity benefits software, administration, and discount broker execution"></td>
+    <td width="195" height="50" valign="middle" align="middle" class=txt1><div style="MARGIN-TOP:2pt; MARGIN-LEFT:2pt">Equity Benefits Software Solution $999 only, Administration &amp; Discount Broker Executions&nbsp;<a href="stock-options-administration.html"><img src="images/strelica.jpg" width="10" height="10" border="0"></a></div></td>
+    <td width="195" height="50" valign="middle" ><a href="stock-options-administration.html"><img src="images/logob.jpg" height="50" alt="esop administration"></a></td>
+    <td width="195" height="50" align="right" valign="middle"><div align="center"><a href="index.shtml">home</a> | <a onClick="MM_openBrWindow('contact.html','Contact','toolbar=no,status=no,menubar=no,scrollbars=no,width=300,height=420')" href="javascript:;">contact</a> | <a onClick="MM_openBrWindow('sservice.html','StoxEMPOWER','toolbar=yes,status=yes,menubar=yes,scrollbars=yes,width=800,height=600')" href="javascript:;"><font color=red>Employee Self-Service</font></a> </div></td>
+  </tr>
+  <tr align="center"> 
+    <td  height="22" colspan="4" background="images/menu_.jpg"><b>HOME</b> | <a href="company.html">ABOUT US</a> | <a href="customer.html">CLIENTS</a> | <a href="stock-options-software.html">SOFTWARE</a> | <a href="stock-plan-administration.html">STOCK ADMIN</a> | <a href="stock-options-administration.html">PAY-PER-USE</a> | <a href="equity-benefits-consulting.html">CONSULTING</a> | <a href="stock-options-software-administration-faq.html">FAQs</a> | <a href="stock-options-software-free-downloads.html">DOWNLOADS</a> | <a href="payment.html">ONLINE PAYMENT</a> | <a href="support.html">SUPPORT</a></td>
+  </tr>
+  <tr> 
+    <td height="20" colspan=3 bgcolor="#E6E6E6"><h1><div style="MARGIN-LEFT:2pt">Employee Stock Options Software, ESPP & ESOP Administration</div></h1></td>
+    <td height="20" align="center" bgcolor="#E6E6E6"><div style="MARGIN-LEFT:2pt"><a href="stock-plan-administration.html">Intro To Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+  </tr>  
+  <tr> 
+    <td width="195" height="133" valign="top"><img src="images/market.jpg" width="195" height="133" alt="employee stock option administration"></td>
+    <td width="390" height="133" colspan="2" valign="top" background="images/money1.jpg" alt="incentive stock option">
+    <div style="MARGIN-LEFT:5pt;MARGIN-RIGHT:5pt;"><b class=txt1>Enterprise that customizes their system to meet your needs</b>
+		<p align="justify"> <b>Ez Custom Software Solutions, Inc.</b> (a Belize corp., since 2008) was formed in San 
+          Francisco in 1997. At the beginning of 2002 the company relocated to 
+          Montreal, Canada, and we currently have business offices in Belize City, WI, Toronto, and São Paulo.<BR> 
+          Our principals have over 30 years of experience in the field of equity 
+          compensation and employee stock option administration.<BR>We offer a comprehensive ... <br><br><a href="company.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="stock plan administration"> read more</a> </p>
+    </div></td>
+              <td bgcolor="#F7F7F7" rowspan=4 valign="top">
+              <table width=195 border=0 cellpadding=0 cellspacing=0 class=txt>
+                <tr>
+                 <td>
+              <form name="form1" method="get" action="" onSubmit="javascript:google();">
+                <div align="center" style="MARGIN-TOP:10pt;"> 
+                  <input name="upit" type="text" class=input id="upit" onFocus="if(this.value=='KEYWORD ...')this.value='';" onBlur="if(this.value=='')this.value='KEYWORD ...';" value="KEYWORD ...">
+                  <input type="submit" name="Submit" value="Search" class=submit>
+                </div>
+              </form>
+                 </td>
+                </tr>
+                <tr>
+                 <td><img src="images/puzzle.jpg" width="195" height="195" alt="employee stock options software ASC 718 reporting discount broker execution stock plan administration"></td>
+                </tr>
+        <!-- Start Links Tab-->
+        <tr>
+        <td bgcolor="#DCE4F1" valign="middle" height="195">
+<form action="" method="post" name="StmtRequest" onsubmit="return send_request();">
+              <table  border="0" bgcolor="red" align="center" cellpadding="1" cellspacing="1" class=txt>
+			  <tr><td><table bgcolor="#DCE4F1" border=0 class=txt> 
+				<TR> 
+				  <td align=center colspan=2><font color=red>My Stock Option Exercise Request</font></TD>
+                </TR>
+				<TR> 
+                  <TD align=right>Name</TD>
+                  <TD> <INPUT type="text" class=input0 value="" name="FullName"></TD>
+                </TR>
+                <TR> 
+                  <TD align=right>Comp</TD>
+                  <TD> <select type="text" class=input0 value="" name="Company" size="1">
+<option>Please specify company name</option>
+<option>American Asset Management</option>
+<option>Acclaim Technical</option>
+<option>Acorn Campus</option>
+<option>Actimize</option>
+<option>Ad Care Health</option>
+<option>Aether Systems</option>
+<option>Akibia</option>
+<option>American Woodmark</option>
+<option>Amerigon</option>
+<option>AnaComp</option>
+<option>Anatolia Minerals MC Canada</option>
+<option>Angstrom Power</option>
+<option>Argus Bermuda</option>
+<option>Arius Canada</option>
+<option>ASMI Holland</option>
+<option>ATA Engineering</option>
+<option>ATP Oil</option>
+<option>Autonomy Options</option>
+<option>Bank One</option>
+<option>Birch Mountain</option>
+<option>BMGI</option>
+<option>Brain Hunter</option>
+<option>BTU</option>
+<option>Build Direct</option>
+<option>CardioMEMS</option>
+<option>Carriage Services, Inc.</option>
+<option>Casella</option>
+<option>ChipMos</option>
+<option>Cintas</option>
+<option>CMS Energy</option>
+<option>Coachmen Industries</option>
+<option>Coghead</option>
+<option>Commonwealth</option>
+<option>Community Bank</option>
+<option>Compugen</option>
+<option>Copart</option>
+<option>Datawatch</option>
+<option>DayJet</option>
+<option>DeltaQ</option>
+<option>Digital Power</option>
+<option>Education Systems</option>
+<option>El Pollo Loco</option>
+<option>Evergreen Bankcorp</option>
+<option>Ez Custom Software Solutions, Inc.</option>
+<option>F-M Trust</option>
+<option>Fidelity Corporation</option>
+<option>First Service</option>
+<option>FlashPoint</option>
+<option>FMC</option>
+<option>Franklin Electronic Publishers</option>
+<option>GCS</option>
+<option>Generex</option>
+<option>GeoEye</option>
+<option>Gilat Israel</option>
+<option>Global Geophysical</option>
+<option>Global MedTech</option>
+<option>Golden Source</option>
+<option>Goodrich Petroleum</option>
+<option>Grande Communications</option>
+<option>GrassRoots Communications</option>
+<option>Guardian Life</option>
+<option>Hand Benefits</option>
+<option>Hard Rock Cafe</option>
+<option>Harvard Apparatus Regenerative Technology</option>
+<option>Hecla Mining</option>
+<option>Heffernan</option>
+<option>HF Financial Bank</option>
+<option>Hilltop</option>
+<option>Hive Live</option>
+<option>Home Federal Bancorp</option>
+<option>Homeowners Choice</option>
+<option>Hudson</option>
+<option>Hythiam</option>
+<option>IBS Digital Fusion</option>
+<option>iMergent Crexendo</option>
+<option>Infonxx</option>
+<option>Interim Healthcare</option>
+<option>International Rectifier</option>
+<option>InterTape</option>
+<option>ION Networks</option>
+<option>IPG Photonics</option>
+<option>IZEA Holdings, Inc.</option>
+<option>Jamcracker</option>
+<option>JumpTV</option>
+<option>Keryx</option>
+<option>Kinross Gold</option>
+<option>Lantronix</option>		
+<option>Life Time Fitness</option>
+<option>Liquid Metal Technologies</option>
+<option>LoJack</option>
+<option>LosPadres Bank</option>
+<option>Lumedx</option>
+<option>MacDermid</option>
+<option>MadCap</option>
+<option>MagicTech</option>
+<option>Main Street Main</option>
+<option>MarkWest</option>
+<option>Mastech</option>
+<option>MatchNet</option>
+<option>MBank</option>
+<option>Mitcham Industries</option>
+<option>MonMouth Community Bank</option>
+<option>National Medical Health Card</option>
+<option>NeoStem</option>
+<option>NexCen Brands</option>
+<option>Next Action Data Logix</option>
+<option>Nimblefish</option>
+<option>NovaGold</option>
+<option>Oak Valley Bank</option>
+<option>OCZ Tech</option>
+<option>Old Second Bank</option>
+<option>OM Group</option>
+<option>One Call Medical</option>
+<option>Orbimage</option>
+<option>PAALP</option>
+<option>Passport Health</option>
+<option>Payoneer</option>
+<option>Pcubed</option>
+<option>Peoples Education</option>
+<option>Pesic Securities</option>
+<option>Pilgrim Software</option>
+<option>Pioneer America</option>
+<option>Pipex</option>
+<option>PlayTech</option>
+<option>Premier Exhibitions</option>
+<option>Pressure BioSciences</option>
+<option>PRG Schultz</option>
+<option>Progressive Gaming EIP Mikohn</option>
+<option>Physical Sciences, Inc.</option>
+<option>QCFin Holdings</option>
+<option>RampCo</option>
+<option>RC2</option>
+<option>Republic Finance</option>
+<option>Resolution Performance</option>
+<option>Rincon Networks</option>
+<option>Rivet</option>
+<option>Safe Life</option>
+<option>SafeStitch Medical</option>
+<option>Sagicor</option>
+<option>Saint Gobain</option>
+<option>Salary.com</option>
+<option>Savana</option>
+<option>Savannah Bancorp</option>
+<option>SC Johnson &amp; Son, Inc.</option>
+<option>Schnitzer Steel</option>
+<option>SCPIE</option>
+<option>Sea Coast National Bank</option>
+<option>Security First Bank</option>
+<option>Septa Energy</option>
+<option>Serica</option>
+<option>ServisFirst Bank</option>
+<option>Simmons First</option>
+<option>Spectrum Signal Processing / Vecima</option>
+<option>Splunk</option>
+<option>StockTrans</option>
+<option>SurModics</option>
+<option>Syska Hennesssy Group</option>
+<option>Tamir Fishman</option>
+<option>Tapestry Pharma NaPro BioTherapeutics</option>
+<option>Techwell</option>
+<option>Tier Technologies / Official Payments</option>
+<option>TLO</option>
+<option>Transoma Medical</option>
+<option>TrioTech</option>
+<option>TTPharma</option>
+<option>TurboChef / Oven</option>
+<option>UniFirst</option>
+<option>US Xpress</option>
+<option>Vector Vest</option>
+<option>Via.Networks</option>
+<option>Viking Bank</option>
+<option>Vital Stream</option>
+<option>VoyagerExpandedLearning</option>
+<option>WebAssociates</option>
+<option>Wellman, Inc.</option>
+<option>Westlake Chemical</option>
+<option>WidePoint</option>
+<option>William O'Neil</option>
+<option>WorldGate</option>
+<option>Youngevity / AL International</option>
+<option>Zecotec AdvancedTax.ca</option>
+<option>Zed.i</option>
+</select>
+				  </TD>
+                </TR>
+                <TR> 
+                  <TD align=right>Country</TD>
+                  <TD><select type="text" class=input0 value="" name="Country" size="1">
+				  <option>Country of residence</option>
+<option>USA</option>
+<option>Other</option>
+	<option>Afghanistan</option>
+	<option>Åland Islands</option>
+	<option>Albania</option>
+	<option>Algeria</option>
+	<option>American Samoa</option>
+	<option>Andorra</option>
+	<option>Angola</option>
+	<option>Anguilla</option>
+	<option>Antarctica</option>
+	<option>Antigua and Barbuda</option>
+	<option>Argentina</option>
+	<option>Armenia</option>
+	<option>Aruba</option>
+	<option>Australia</option>
+	<option>Austria</option>
+	<option>Azerbaijan</option>
+	<option>Bahamas</option>
+	<option>Bahrain</option>
+	<option>Bangladesh</option>
+	<option>Barbados</option>
+	<option>Belarus</option>
+	<option>Belgium</option>
+	<option>Belize</option>
+	<option>Benin</option>
+	<option>Bermuda</option>
+	<option>Bhutan</option>
+	<option>Bolivia, Plurinational State of</option>
+	<option>Bonaire, Sint Eustatius and Saba</option>
+	<option>Bosnia and Herzegovina</option>
+	<option>Botswana</option>
+	<option>Bouvet Island</option>
+	<option>Brazil</option>
+	<option>British Indian Ocean Territory</option>
+	<option>Brunei Darussalam</option>
+	<option>Bulgaria</option>
+	<option>Burkina Faso</option>
+	<option>Burundi</option>
+	<option>Cambodia</option>
+	<option>Cameroon</option>
+	<option>Canada</option>
+	<option>Cape Verde</option>
+	<option>Cayman Islands</option>
+	<option>Central African Republic</option>
+	<option>Chad</option>
+	<option>Chile</option>
+	<option>China</option>
+	<option>Christmas Island</option>
+	<option>Cocos (Keeling) Islands</option>
+	<option>Colombia</option>
+	<option>Comoros</option>
+	<option>Congo</option>
+	<option>Congo, the Democratic Republic of the</option>
+	<option>Cook Islands</option>
+	<option>Costa Rica</option>
+	<option>Côte d'Ivoire</option>
+	<option>Croatia</option>
+	<option>Cuba</option>
+	<option>Curaçao</option>
+	<option>Cyprus</option>
+	<option>Czech Republic</option>
+	<option>Denmark</option>
+	<option>Djibouti</option>
+	<option>Dominica</option>
+	<option>Dominican Republic</option>
+	<option>Ecuador</option>
+	<option>Egypt</option>
+	<option>El Salvador</option>
+	<option>Equatorial Guinea</option>
+	<option>Eritrea</option>
+	<option>Estonia</option>
+	<option>Ethiopia</option>
+	<option>Falkland Islands (Malvinas)</option>
+	<option>Faroe Islands</option>
+	<option>Fiji</option>
+	<option>Finland</option>
+	<option>France</option>
+	<option>French Guiana</option>
+	<option>French Polynesia</option>
+	<option>French Southern Territories</option>
+	<option>Gabon</option>
+	<option>Gambia</option>
+	<option>Georgia</option>
+	<option>Germany</option>
+	<option>Ghana</option>
+	<option>Gibraltar</option>
+	<option>Greece</option>
+	<option>Greenland</option>
+	<option>Grenada</option>
+	<option>Guadeloupe</option>
+	<option>Guam</option>
+	<option>Guatemala</option>
+	<option>Guernsey</option>
+	<option>Guinea</option>
+	<option>Guinea-Bissau</option>
+	<option>Guyana</option>
+	<option>Haiti</option>
+	<option>Heard Island and McDonald Islands</option>
+	<option>Holy See (Vatican City State)</option>
+	<option>Honduras</option>
+	<option>Hong Kong</option>
+	<option>Hungary</option>
+	<option>Iceland</option>
+	<option>India</option>
+	<option>Indonesia</option>
+	<option>Iran, Islamic Republic of</option>
+	<option>Iraq</option>
+	<option>Ireland</option>
+	<option>Isle of Man</option>
+	<option>Israel</option>
+	<option>Italy</option>
+	<option>Jamaica</option>
+	<option>Japan</option>
+	<option>Jersey</option>
+	<option>Jordan</option>
+	<option>Kazakhstan</option>
+	<option>Kenya</option>
+	<option>Kiribati</option>
+	<option>Korea, Democratic People's Republic of</option>
+	<option>Korea, Republic of</option>
+	<option>Kuwait</option>
+	<option>Kyrgyzstan</option>
+	<option>Lao People's Democratic Republic</option>
+	<option>Latvia</option>
+	<option>Lebanon</option>
+	<option>Lesotho</option>
+	<option>Liberia</option>
+	<option>Libya</option>
+	<option>Liechtenstein</option>
+	<option>Lithuania</option>
+	<option>Luxembourg</option>
+	<option>Macao</option>
+	<option>Macedonia, the former Yugoslav Republic of</option>
+	<option>Madagascar</option>
+	<option>Malawi</option>
+	<option>Malaysia</option>
+	<option>Maldives</option>
+	<option>Mali</option>
+	<option>Malta</option>
+	<option>Marshall Islands</option>
+	<option>Martinique</option>
+	<option>Mauritania</option>
+	<option>Mauritius</option>
+	<option>Mayotte</option>
+	<option>Mexico</option>
+	<option>Micronesia, Federated States of</option>
+	<option>Moldova, Republic of</option>
+	<option>Monaco</option>
+	<option>Mongolia</option>
+	<option>Montenegro</option>
+	<option>Montserrat</option>
+	<option>Morocco</option>
+	<option>Mozambique</option>
+	<option>Myanmar</option>
+	<option>Namibia</option>
+	<option>Nauru</option>
+	<option>Nepal</option>
+	<option>Netherlands</option>
+	<option>New Caledonia</option>
+	<option>New Zealand</option>
+	<option>Nicaragua</option>
+	<option>Niger</option>
+	<option>Nigeria</option>
+	<option>Niue</option>
+	<option>Norfolk Island</option>
+	<option>Northern Mariana Islands</option>
+	<option>Norway</option>
+	<option>Oman</option>
+	<option>Pakistan</option>
+	<option>Palau</option>
+	<option>Palestinian Territory, Occupied</option>
+	<option>Panama</option>
+	<option>Papua New Guinea</option>
+	<option>Paraguay</option>
+	<option>Peru</option>
+	<option>Philippines</option>
+	<option>Pitcairn</option>
+	<option>Poland</option>
+	<option>Portugal</option>
+	<option>Puerto Rico</option>
+	<option>Qatar</option>
+	<option>Réunion</option>
+	<option>Romania</option>
+	<option>Russian Federation</option>
+	<option>Rwanda</option>
+	<option>Saint Barthélemy</option>
+	<option>Saint Helena, Ascension and Tristan da Cunha</option>
+	<option>Saint Kitts and Nevis</option>
+	<option>Saint Lucia</option>
+	<option>Saint Martin (French part)</option>
+	<option>Saint Pierre and Miquelon</option>
+	<option>Saint Vincent and the Grenadines</option>
+	<option>Samoa</option>
+	<option>San Marino</option>
+	<option>Sao Tome and Principe</option>
+	<option>Saudi Arabia</option>
+	<option>Senegal</option>
+	<option>Serbia</option>
+	<option>Seychelles</option>
+	<option>Sierra Leone</option>
+	<option>Singapore</option>
+	<option>Sint Maarten (Dutch part)</option>
+	<option>Slovakia</option>
+	<option>Slovenia</option>
+	<option>Solomon Islands</option>
+	<option>Somalia</option>
+	<option>South Africa</option>
+	<option>South Georgia and the South Sandwich Islands</option>
+	<option>South Sudan</option>
+	<option>Spain</option>
+	<option>Sri Lanka</option>
+	<option>Sudan</option>
+	<option>Suriname</option>
+	<option>Svalbard and Jan Mayen</option>
+	<option>Swaziland</option>
+	<option>Sweden</option>
+	<option>Switzerland</option>
+	<option>Syrian Arab Republic</option>
+	<option>Taiwan, Province of China</option>
+	<option>Tajikistan</option>
+	<option>Tanzania, United Republic of</option>
+	<option>Thailand</option>
+	<option>Timor-Leste</option>
+	<option>Togo</option>
+	<option>Tokelau</option>
+	<option>Tonga</option>
+	<option>Trinidad and Tobago</option>
+	<option>Tunisia</option>
+	<option>Turkey</option>
+	<option>Turkmenistan</option>
+	<option>Turks and Caicos Islands</option>
+	<option>Tuvalu</option>
+	<option>Uganda</option>
+	<option>Ukraine</option>
+	<option>United Arab Emirates</option>
+	<option>United Kingdom</option>
+	<option>United States</option>
+	<option>United States Minor Outlying Islands</option>
+	<option>Uruguay</option>
+	<option>Uzbekistan</option>
+	<option>Vanuatu</option>
+	<option>Venezuela, Bolivarian Republic of</option>
+	<option>Viet Nam</option>
+	<option>Virgin Islands, British</option>
+	<option>Virgin Islands, U.S.</option>
+	<option>Wallis and Futuna</option>
+	<option>Western Sahara</option>
+	<option>Yemen</option>
+	<option>Zambia</option>
+	<option>Zimbabwe</option>
+</select>
+				  </TD>
+                </TR>
+                <TR> 
+                  <TD align=right>Email</TD>
+                  <TD> <INPUT type="text" class=input0 value="" name="EMail"></TD>
+                </TR>
+                <TR> 
+                  <TD align=right>Phone</TD>
+                  <TD> <INPUT type="text" class=input0 value="" name="Phone"></TD>
+                </TR>
+                <TR> 
+                  <TD align=right valiign=top>Note</TD>
+                  <TD> <textarea name="Comments" value="" class=input0 rows="1"></textarea></TD>
+                </TR>
+                <TR> 
+                  <TD align=center colspan=2>US Citizen? <input name="usyn" type="radio" value="1" >Yes&nbsp;&nbsp;<input type="radio" name="usyn" value="0" checked>No  </td>
+                </TR>
+                <TR> 
+                  <TD align=center valign=top><input name="sendtype" type="radio" value="1" ></td>
+                  <td>I wish to exercise my stock option now</td>
+                </tr>
+				<tr>
+                    <TD align=center valign=top><input type="radio" name="sendtype" value="2" ></td>
+					<td>I plan to exercise in the next 7-30 days</td>
+                </tr>
+				<tr>
+                    <TD align=center valign=top><input type="radio" name="sendtype" value="3" checked></td>
+                    <td>I wish to be contacted by a Registered Investment Advisor for assistance</td> 
+					</td>
+                </TR>
+                <TR> 
+                  <TD align=center colspan=2>Upon exercise retain funds in<BR><a onClick="MM_openBrWindow('intb.html','Interest rates','toolbar=no,status=no,menubar=no,scrollbars=no,width=300,height=420')" href="javascript:;">interest</a> bearing brokerage<BR>account&nbsp;&nbsp;
+                <input name="intyn" type="radio" value="1" checked>Yes&nbsp;&nbsp;<input name="intyn" type="radio" value="0" >No</td>
+				</TR>
+                <TR> 
+                  <TD colspan=2 align=center> <INPUT type=submit value=" Send Request " name="RequestStmtByEmail" class=submit> 
+                  </TD>
+                </TR>
+			  </table>
+			  </td></tr>
+              </table>
+            </form>        </td>
+        </tr>
+   
+              </table>
+</td>
+  <tr> 
+    <td width="195" height="200" valign="top" background="images/tab1.jpg" alt="employee stock purchase plan"><div style="MARGIN-LEFT:5pt;MARGIN-RIGHT:1pt;"><br>
+	<b class=txt1>Easy Options/ESPP Custom ™<BR>Key Product Features</b></div>
+	<div class=copy style="MARGIN-LEFT:2pt;MARGIN-RIGHT:1pt;"><br><br><br>
+        - <a href="http://www.ezcustomsoftware.com/slides/slide21.htm">Integrated Stock Options, Restricted Awards & Performance Shares</a><br>
+	- <a href="http://www.ezcustomsoftware.com/slides/slide56.htm">Integrated ESPP Management</a><br>
+        - <a href="http://www.ezcustomsoftware.com/slides/slide35.htm">Integrated Valuation Module</a><br>
+	- <a href="http://www.ezcustomsoftware.com/screens/RepForms02a.gif">Insider Reporting - SEC Forms 3, 4 &amp; 5</a><BR>&nbsp;&nbsp;&nbsp;<a href="http://www.ezcustomsoftware.com/screens/RepForms02a.gif">with EDGAR® xml electronic filing</a><br>
+        - <a href="http://www.ezcustomsoftware.com/slides/slide07.htm">Over 180 Customizable Reports</a><br>
+        - <a href="http://www.ezcustomsoftware.com/slides/slide82.htm">Fully Automated Task Scheduling</a><br>
+        - <a href="http://www.ezcustomsoftware.com/slides/slide28.htm">Reports Delivered via e-Mail</a><BR>&nbsp;
+	</div>
+	<div align="justify" style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 5px; MARGIN-TOP: -3px;"><a href="stock-options-software.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="stock options software"> 
+              read more</a></div>
+              </td>
+    <td width="195" height="200" valign="top" background="images/tab2.jpg" alt="stock option pricing valuation"><div style="MARGIN-LEFT:5pt;MARGIN-RIGHT:1pt;"><br>
+        <b class=txt1><font color="#CCCCCC">ASC 718 (FAS 123R) / IASB Compliance &amp; Black-Scholes /<BR>Binomial "Lattice" Valuation</font></b></div><br>
+		<div class=copy style="MARGIN-LEFT:4pt;MARGIN-RIGHT:1pt;">
+                     - <a href="http://www.ezcustomsoftware.com/screens/OptionsV1.gif">Five Historical Scenarios Per Grant</a><BR>
+                     - <a href="http://www.ezcustomsoftware.com/screens/Forecasts1.gif">Black-Scholes Single/Multiple &amp;</a><BR>&nbsp;&nbsp;&nbsp;<a href="http://www.ezcustomsoftware.com/screens/Forecasts1.gif">Binomial Models Implemented</a><br>  
+                     - <a href="http://www.ezcustomsoftware.com/screens/RepOptionsRP06.gif">Estimate Valuation Inputs</a><br>
+                     - <a href="http://www.ezcustomsoftware.com/screens/RepOptions11.gif">Calculate Price Volatility</a><br>
+                     - <a href="http://www.ezcustomsoftware.com/screens/RepOptions39f.gif">Easy Expense Allocation</a><br>
+                     - <a href="http://www.ezcustomsoftware.com/screens/RepOptions40.gif">All Required Reports Available</a><br>
+                     - <a href="http://www.ezcustomsoftware.com/screens/MC2012.gif">Monte-Carlo Custom Modeling for Performance Shares / TSR Valuation</a><br>&nbsp; 					 
+		</div>
+		<div align="justify" style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 5px;"><a href="asc718-reporting-news.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="Black-Scholes Binomial Monte-Carlo"> 
+              read more</a></div></td>
+    <td width="195" height="200" valign="top" background="images/tab3.jpg" alt="stock plan administration"><div style="MARGIN-LEFT:5pt;MARGIN-RIGHT:1pt;"><br>
+        <b class=txt1><font color="#FFFFFF">Contact and Customer <BR>Service Address</font></b><BR><BR>
+          <p><font color="#FFFFFF">
+		  <BR>
+          125-720 King Street West<BR>
+		  Toronto, ON M5V 3S5, Canada<BR>
+		  <br>
+		  1 Mapp Street, Belize City<BR>
+          Belize, WI
+          <br><br>
+          877-249-5980 &nbsp;| &nbsp;973-297-2855
+		  <br><br>
+          <a href="mailto:PPesic@ezCustomSoftware.com"><font color="red">PPesic@ezCustomSoftware.com</font></a>
+          </font> </p>
+      </div></td>
+  </tr>  
+  <tr> 
+    <td width="585" height="100" colspan="3"  align=justify alt="stock options software"> 
+<form action="" method="post" name="BDRequest" onsubmit="return send_bd_request();">
+              <table  border="0" bgcolor="navy" align="center" cellpadding="1" cellspacing="1" class=txt>
+			  <tr><td><table bgcolor="#DCE4F1" border=0 class=txt> 
+				<TR > 
+				  <td align=left colspan=1 width="195"><font color=blue strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Inquiry Form</font></TD>
+				  <td align=left colspan=2 width="390"><font color=blue strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am interested in (please check all that apply):</font></TD>
+                </TR>
+				<TR> 
+                  <TD align=right width="195">Name&nbsp;<INPUT type="text" class=input0 value="" name="BDFullName"></TD>
+				  <TD align=left valign=center colspan=2><input type="checkbox" name="bdinterest1" value="1" >&nbsp;Equity Benefits Software Solution - as low as $999 per year</td>
+                </TR>
+                <TR> 
+                  <TD align=right width="195">Email&nbsp;<INPUT type="text" class=input0 value="" name="BDEMail"></TD>
+				  <TD align=left valign=center colspan=2><input type="checkbox" name="bdinterest2" value="1" >&nbsp;Outsourced Administration - as low as $3,749 per year</td>
+                </TR>
+                <TR> 
+                  <TD align=right width="195">Phone&nbsp;<INPUT type="text" class=input0 value="" name="BDPhone"></TD>
+				  <TD align=left valign=center colspan=2><input type="checkbox" name="bdinterest3" value="1" >&nbsp;Discounted Broker Executions - as low as 2 cents per share (*)</td> 
+                </TR>
+                <TR> 
+                  <TD colspan=3 align=center> <INPUT type=submit value=" Send Request " name="BDRequest" class=submit>&nbsp;&nbsp;or&nbsp;<font color="#FF0000" strong>Call Tony Seker at 877-707-1585 or e-mail <a href="mailto:ts@ezCustomSoftware.com">ts@ezCustomSoftware.com</a></font> 
+                  </TD>
+                </TR>
+			  </table>
+			  </td></tr>
+              </table>
+            </form>
+	</td>
+  </tr>       
+  <tr> 
+    <td width="585" height="70" align="center" valign="center" colspan="3" class="txt1"><BR>
+	<b><font size="+1">Employee stock options solutions for your company's lifetime</font></b>
+	<BR><BR><a href="images/EZCS.jpg" onMouseOver="ShowPicture('StyleSL',1)" onMouseOut="ShowPicture('StyleSL',0)">
+	<font color="#000000"><b><font class="txt1" size="+0">Requirements change over a Company's Life Cycle, but the solution remains EZ Custom<font></b></a><BR>
+<div align="left" id="StyleSL"><img src="http://www.ezcustomsoftware.com/images/EZCS.jpg" width=580 height=663 alt="ASC 718 260 10q"></div>
+    <BR><a href="stock-options-software-free-downloads.html"><img src="images/free-demo-download-link.png" alt="free demo downloads"></a><BR><BR><font color=gray size=-3>Prices are per year [1]</font><BR><BR></td>
+	</td>
+  </tr>       
+  <tr> 
+    <td width="585" colspan="3" align=center> 
+      <table width=585 border="0" cellpadding="2" cellspacing="1" bgcolor="#E6E6E6" class="txt">
+        <tr class="txt1" height=20 valign=center> 
+          <td width=220>
+            <p class="txt1"><font color="black"><b>&nbsp;</b> </font> </p>
+            </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>Pre-IPO</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>IPO</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>Growth</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>Mature</b> </font> </center></td>
+        </tr>
+        <tr class="txt1" height=20 valign=center> 
+          <td align=center width=220>
+            <p class="txt1"><font color="black"><b>Software &amp; Outsourced Full Service Administration&nbsp;</b> </font> </p>
+            </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>Basic</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>Silver</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>Gold</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>Platinum</b> </font> </center></td>
+        </tr>
+        <tr class="txt1" height=20 valign=center> 
+          <td width=220>
+            <p class="txt1"><font color="black"><b>&nbsp;</b> </font> </p>
+            </td>
+          <td width=90 bgcolor="#DDD9C4"> <center>
+              <font color="black"><b>$999</b> </font> </center></td>
+          <td width=90 bgcolor="#DDD9C4"> <center>
+              <font color="black"><b>$1,749</b> </font> </center></td>
+          <td width=90 bgcolor="#DDD9C4"> <center>
+              <font color="black"><b>$2,749</b> </font> </center></td>
+          <td width=95 bgcolor="#DDD9C4"> <center>
+              <font color="black"><b>$3,749</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Options Record-Keeping Module</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Restricted Stock & Performance Shares</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Customizable Reports (180+)</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Data Conversion [2]</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Customer Support [3]</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Software Upgrades</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Training</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Multi-Currency Transactions</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Automated System Backup</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Automated e-mail Notification</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Transaction Logs & Forensic Audit</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">ASC 718/FAS123R reports pack [4]</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Valuation Module: Black-Scholes & Binomial Hull-White Models</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Monte-Carlo for Performance Shares w/ Market Conditions & TSR Valuation</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Online Empl. Self Service Portal</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Automated Pricing Feeds</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Online Exercises via Participating Broker</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Insider Reporting SEC forms 3, 4 & 5</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Disqualifying Dispositions Tracking</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">ESPP Module & Acct. Management</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Support for Dually Listed Companies</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Automated Payroll & A/P Interface</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">Global ESPP Payroll Deductions</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+        <tr height=18> 
+          <td width=220>
+              <font color="black">DWAC or Treasury Directions Author.</font>
+          </td>
+          <td width=90 bgcolor="#eeeef6"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#DCE4F1"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=90 bgcolor="#666699"> <center>
+              <font color="black"><b></b> </font> </center></td>
+          <td width=95 bgcolor="#A6A6A6"> <center>
+              <font color="black"><b>&#8730;</b> </font> </center></td>
+        </tr>
+      </table>
+	  <table width=585 border="0" cellpadding="2" cellspacing="1" bgcolor="white" class="txt">
+        <tr class="txt1" height=39 valign="center"> 
+          <td >
+   	        <p class="txt1"><font color="black"><b>OUTSOURCED STOCK PLAN ADMINISTRATION:</b></font></p>
+           </td>
+        </tr>
+        </table>      
+	  <table width=585 border="0" cellpadding="2" cellspacing="1" bgcolor="#E6E6E6" class="txt">
+        <tr class="txt1" height=30 align ="center" valign="center"> 
+          <td width=220>
+            <p class="txt1"><font color="black"><b>"PAY-PER-USE" &nbsp;PLAN</b></font><BR>&nbsp;</p>
+            </td>
+          <td width=365 colspan="4"> <center>
+              <font color="black"><b>PAY AS YOU GO FOR WHAT YOU NEED AND SAVE!</b></font><BR><a class="small"href="stock-options-administration.html">Click here</a> </center></td>
+        </tr>
+        </table>      
+	  </td>
+          <td width="195" valign="top" bgcolor="#F7F7F7">
+      <table width="195" border="0" cellpadding="0" cellspacing="0" class=txt>
+	          <!-- Start News 1 Tab-->
+        <tr> 
+          <td height="20" bgcolor="#F7F7F7" ><div style="MARGIN-LEFT: 5px;"><strong>Stox 3.99.993 released&nbsp;&nbsp;&nbsp;&nbsp;<font color=red>NEWS</font></strong></div></td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#F7F7F7" align="right" ><div align="right" style="MARGIN-RIGHT: 5px;">10/19/2018</div></td>
+        </tr>
+        <tr> 
+          <td height="25" bgcolor="#F7F7F7"><div align="justify" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"> 
+              Stox 2018 Q4 Edition... </div></td>
+        </tr>
+        <tr> 
+          <td height="22" bgcolor="#F7F7F7"><div align="right" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"><a href="stock-options-software-administration-news.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="stock options expense straight line"> 
+              read more</a></div></td>
+        </tr>
+        <!-- End News 1 Tab-->
+        <tr> 
+          <td height="30" bgcolor="#DCE4F1"><div style="MARGIN-LEFT: 5px;"><strong>StoxEMPOWER</strong></div></td>
+        </tr>
+        <tr> 
+          <td height="50" bgcolor="#DCE4F1"><div align="justify" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"> 
+              <BR>We provide Employee Self-Service / Participant Records Online Access with complete stock option status and exercise request.</div></td>
+        </tr>
+        <tr> 
+          <td height="22" bgcolor="#DCE4F1"><div align="right" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"><a href="stoxempower.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="employee stock plan self-service online portal"> 
+              read more</a></div></td>
+        </tr>
+        <!-- End Links Tab-->
+		<tr> 
+          <td height="20" bgcolor="#F7F7F7"><BR><div style="MARGIN-LEFT: 5px;"><strong>Stox for iPad and iPhone</strong></div></td>
+        </tr>
+        <tr> 
+          <td height="50" bgcolor="#F7F7F7"><div align="justify" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"> 
+              <BR>Did you know that our Stox software runs natively on iPad and iPhone... </div></td>
+        </tr>
+        <tr> 
+          <td height="22" bgcolor="#F7F7F7"><div align="right" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"><a href="stock-options-compensation-software-ipad-iphone.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="stock benefits software ipad iphone"> 
+              read more</a></div></td>
+        </tr>
+        <!-- Start News 3 Tab-->
+        <tr> 
+          <td height="30" bgcolor="#DCE4F1"><BR><div style="MARGIN-LEFT: 5px;"><strong>Black-Scholes/Lattice at Glance</strong></div></td>
+        </tr>
+        <tr> 
+          <td height="50" bgcolor="#DCE4F1"><div align="justify" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"> 
+              <BR>Stox software is fully compliant with ASC 718 (FAS 123R) valuation modeling and reporting requirements... </div></td>
+        </tr>
+        <tr> 
+          <td height="22" bgcolor="#DCE4F1"><div align="right" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"><a href="asc718-reporting-news.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="ASC 718 FAS 123R option valuation option pricing Black-Scholes Binomial Hull-White Monte-Carlo"> 
+              read more</a></div></td>
+        </tr>
+        <!-- End News 3 Tab-->
+        <!-- Start News 2 Tab-->
+        <tr> 
+          <td height="30" bgcolor="#F7F7F7"><BR><div style="MARGIN-LEFT: 5px;"><strong>Stox Private/Ownership &amp;<BR>Stox Multi-currency</strong></div></td>
+        </tr>
+        <tr> 
+          <td height="35" bgcolor="#F7F7F7"><div style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"> 
+              <BR>More products from us:
+              <BR> 
+              - for stock ownership &amp; private companies,<BR>
+              - for companies that grant and exercise options in foreign currencies...
+               </div></td>
+        </tr>
+        <tr> 
+          <td height="22" bgcolor="#F7F7F7"><div align="right" style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px;"><a href="stock-ownership-software-news.html"><img src="images/strelica.jpg" width="10" height="10" border="0" align="absmiddle" alt="stock options multi currency plans"> 
+              read more</a></div></td>
+        </tr>
+        <!-- End News 2 Tab-->
+      </table></td>       
+  </tr>     
+  <tr>
+  	<td colspan="4">
+     <br>[1] e-Commerce customers only - 30-day money back guarantee! Four run-time modules included (Options, ESPP, Valuation, ASC 718 (FAS 123R) Compliance 10-K/Q Reports and Insider Reporting, SEC Forms 3, 4 & 5).<BR><BR>
+        [2] Includes system set-up (prices, vesting schedules, plan information) and data conversion from the current system/loading (grants, exercises, dispositions, ASC 718 (FAS123R) fair value, espp contributions, espp purchases, etc.) and reconciliation. One week turnaround time guaranteed on all data loading projects (from Excel templates provided by us).<BR><BR>
+        [3] Customer support is available from 8 AM to 8 PM EST M-F via an 800 #, e-mail, and online chat-room.<BR><BR>
+        [4]&nbsp;Set of 11 ASC 718 (FAS 123R) reports produced quarterly. Black-Scholes & Binomial models.&nbsp;<a class="small" href="asc718-reports-pack.html">Click here</a> to review sample reports from our quarterly compliance report package.<BR><BR>
+        &nbsp;
+        <div style="MARGIN-LEFT:2pt;MARGIN-RIGHT:1pt;"> 
+       <b class="txt1"><font color="#000000">&nbsp;&nbsp;Customer Testimonials:</font></div>
+    </td>
+  <td valign=center align=justify><div style="MARGIN-LEFT: 10px;MARGIN-RIGHT: 10px; MARGIN-TOP: 5px;" ><b class="txt1">&nbsp;</div>
+    </td>
+  </tr>
+  <tr class="txt">
+  	<td bgcolor="#666699" colspan="4">
+			<div style="MARGIN-LEFT: 10px;MARGIN-RIGHT: 10px; MARGIN-TOP: 10px;" class="txtWhite">
+              <div align="justify">"... of all the software I've dealt with in the past 7 years, its the best. Never have a problem.
+  You get more for your money with EzCustom than anyone else.
+Great people to deal with and very quick in responding to my questions... "&nbsp;&nbsp;<em><strong>Elena Crosby, Digital Fusion, Inc.</strong></em></div>
+		</div>
+			<div style="MARGIN-LEFT: 10px;MARGIN-RIGHT: 10px; MARGIN-TOP: 10px;" class="txtWhite">
+              <div align="justify">"... I wanted to let you know that the "support" experience you've given is outstanding. 
+ I quote it b/c it is way beyond support - almost like my own development shop!"&nbsp;&nbsp;<em><strong>Craig Shelburne, Rincon Networks, Inc.</strong></em></div>
+			</div>
+			<div style="MARGIN-LEFT: 10px;MARGIN-RIGHT: 10px; MARGIN-TOP: 10px;" class="txtWhite">
+          <div align="justify">"... Got it up and running and it's awesome.  The CFO is very impressed. ... I'm specifically impressed with the quality of your customer support."&nbsp;&nbsp;<em><strong>Lesley Weir, Spectrum Signal Processing, Inc.</strong></em></div>
+	</div><BR></td>
+  </tr>
+  <tr align="center">
+    <td height=25 colspan="4" bgcolor="#E6E6E6" class=copy><b>HOME</b> | <a href="company.html">ABOUT US</a> | <a href="customer.html">CLIENTS</a> | <a href="stock-options-software.html">SOFTWARE</a> | <a href="stock-plan-administration.html">STOCK ADMIN</a> | <a href="stock-options-administration.html">PAY-PER-USE</a> | <a href="equity-benefits-consulting.html">CONSULTING</a> | <a href="stock-options-software-administration-faq.html">FAQs</a> | <a href="stock-options-software-free-downloads.html">FREE DOWNLOADS</a> | <a href="payment.html">ONLINE PAYMENT</a> | <a href="support.html">SUPPORT</a></td>
+  </tr>
+  <tr> 
+    <td height="25" colspan="4" align="center"><a href="2nd.html">2007 Vendor of the Year Award Nominee!</a>&nbsp;&nbsp;&nbsp;<a onClick="MM_openBrWindow('pwstatement.htm','Privacy','toolbar=yes,status=yes,menubar=yes,scrollbars=yes,width=800,height=600')" href="javascript:;">Privacy Statement</a>&nbsp;&nbsp;&nbsp;<a href="http://finance.yahoo.com/q/cq?d=v1&s=AMWD%2c+ARGN%2c+ANO.TO%2c+AIS%2c+AR_pa.to%2c+ATPG%2c+AUTNF.PK%2c+BMD%2c+BTUI%2c+CADA%2c+CFNL%2c+CWST%2c+IMOS%2c+CSV%2c+CCI%2c+DEAR%2c+DX%2c+COA%2c+CPRT%2c+DWCH%2c+DIGF.PK%2c+DPW%2c+EVGG.OB%2c+FMRX.OB%2c+FRAF.OB%2c+FSBI%2c+FSRV%2c+FMC%2c+FEP%2c+GLOI%2c+GDP%2c+GHL%2c+HWFG%2c+HL%2c+HFFC%2c+HTBC.OB%2c+HOFD.OB%2c+HYTM%2c+IONN.OB%2c+KHK%2c+LTRX%2c+LTM%2c+MBNC.OB%2c+MIND%2c+MWE%2c+MWP%2c+MHNZF.PK%2c+CJBK%2c+NMHC%2c+NBS%2c+NEOM.OB%2c+NEXC%2c+SPBU.OB%2c+NG%2c+OCZ%2c+OVYB.OB%2c+OSBC%2c+OMG%2c+ORB%2c+ORA%2c+PP%2c+PEDH%2c+PONR%2c+PBIO%2c+PCLI.OB%2c+PGIC%2c+PRXI%2c+PRGX%2c+PSBG.OB%2c+QCCO%2c+RCOCQ.PK%2c+SBCF%2c+SCHN%2c+SGO%2c+SKP%2c+SFNC%2c+SFD%2c+SPPI%2c+SRDX%2c+SSPI%2c+SFC%2c+TPPH%2c+ARTL%2c+CTBC%2c+SAVB%2c+WSB%2c+THS%2c+OVEN%2c+UABK.OB%2c+UDW%2c+USEG%2c+VNWI.PK%2c+VSTH%2c+THK%2c+XPRSA%2c+WYY%2c+WLM%2c+WLK%2c+WRS.V%2c+WGAT.OB%2c+WSTM%2c+ZED.V">Stock Portfolio</a></td>    
+  </tr>
+  <tr> 
+    <td height="25" colspan="4" align="center"><font class=copy>(*) THE MATERIAL FOUND ON THIS WEBSITE DOES NOT CONSTITUTE AN OFFER TO SELL OR THE SOLICITATION OF AN OFFER TO BUY ANY SECURITIES IN THE UNITED STATES<BR>NOR IT CONSTITUTES AN OFFER TO SOLICIT OR PROVIDE BROKER-DEALER SERVICES TO UNITED STATES PERSONS.</font></td>
+  </tr>
+  <tr>
+    <td height="15" colspan="4" align="center">Copyright © 2000-2018	Ez Custom Software Solutions, Inc.</td>
+  </tr>
+</table>
+</body>
+</html>

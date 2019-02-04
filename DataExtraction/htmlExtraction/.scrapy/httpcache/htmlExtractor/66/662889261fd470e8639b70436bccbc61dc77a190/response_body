@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>San Jos&eacute; Farms</title>
+
+<style>
+body {
+	font: .8em/150% Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 850px;
+	margin: 20px auto;
+	max-width: 90%;
+}
+a {
+	color: #66C;
+}
+p {
+	margin: 0 0 1em;
+}
+h1, h2, h3, h4 {
+	color: #000;
+}
+h1 {
+	font: 1.7em;
+	line-height: 110%;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 120%;
+	margin: 30px 0 20px;
+	padding-top: 20px;
+	border-top: double 3px #eee;
+}
+h4 {
+	font-size: 1.2em;
+	line-height: 120%;
+	margin: 30px 0 10px;
+	text-transform: uppercase;
+}
+
+figure {
+	margin: 0;
+}
+
+
+/* html5 elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+/************************************************************************************
+RESPONSIVE VIDEO
+*************************************************************************************/
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/************************************************************************************
+MIN & MAX WIDTH
+*************************************************************************************/
+/* max width container */
+.container {
+	width: 700px;
+	max-width: 90%;
+
+	margin: 0 auto;
+	background: #eee;
+	border: solid 1px #ddd;
+	height: 200px;
+}
+
+/* responsive image */
+img {
+	max-width: 100%;
+	height: auto;
+}
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+/* form */
+input[type="text"], textarea {
+	background: #eee;
+	border: solid 1px #ddd;
+	padding: 8px 5px;	
+}
+input[type="text"] {
+	width: 400px;
+	min-width: 140px;
+	max-width: 40%;
+	margin-right: 10px;
+}
+textarea {
+	width: 96%;
+	height: 180px;
+}
+
+/************************************************************************************
+RELATIVE VALUE
+*************************************************************************************/
+/* commentlist */
+.commentlist {
+	margin: 0;
+	padding: 0;
+}
+.commentlist li {
+	margin: 0 0 10px;
+	list-style: none;
+	overflow: hidden;
+	clear: both;
+}
+.commentlist ul {
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 11%; /* relative value */
+}
+.commentlist .comment-text {
+	overflow: hidden;
+}
+.commentlist img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.commentlist cite {
+	font-size: 140%;
+	font-weight: bold;
+}
+
+/* font size */
+.fontsize-demo .box {
+	background-color: #4d077a;
+	margin: 30px 0;
+	line-height: 140%;
+}
+.fontsize-demo h1 {
+	text-align: center;
+	font-size: 2em;
+	line-height: 140%;
+	color: #ffffff;
+	margin: 0 0 .3em;
+}
+
+.fontsize-demo a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.fontsize-demo .smaller {
+	font-size: 80%;
+	line-height: 130%;
+}
+.fontsize-demo .bigger {
+	font-size: 120%;
+}
+
+/* relative padding */
+.relative-padding {
+	background: #eee;
+	border: solid 1px #ddd;
+	padding: 3% 5%;
+}
+
+/************************************************************************************
+OVERFLOW:HIDDEN TRICK
+*************************************************************************************/
+.overflow-demo {
+	overflow: hidden; /* this will clear the float from .item */
+}
+.overflow-demo .item {
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+.overflow-demo .item img {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.overflow-demo .item .content {
+	overflow: hidden; /* this will clear the float from .item img */
+	min-width: 130px;
+}
+.overflow-demo h4 {
+	font-size: 1.4em;
+	margin: 0 0 5px;
+	padding: 0;
+	color: #666;
+}
+
+/************************************************************************************
+WORD-WRAP
+*************************************************************************************/
+.break-word {
+		word-wrap: break-word;
+}
+</style>
+</head>
+
+<body>
+	
+<figure>
+	<img src="assets/img/bkg.jpg" alt="cosecha 2013 - 2014">
+</figure>
+
+<h3>M&aacute;s Informaci&oacute;n</h3>
+<div class="break-word">
+	<p>Carrera #695, Gorbea - Chile - email:contacto@sanjosefarms.com o llamanos al +56 45 2491075  o al +56 45 2491494.</p>
+</div>
+
+</body>
+</html>

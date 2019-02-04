@@ -1,0 +1,57 @@
+# Robots.txt
+# 2018feb01 - allow blog - google recommendation
+# Last update: 2005feb21; 2008may21; 2010jul31; 2014jan02 by Jim
+# Last update: 2015dec31 by Jim. Note cleanup at end
+#
+# Directed at all spiders
+User-agent: * 
+Disallow: /acme/
+Disallow: /adhopper/
+Disallow: /backoffice/
+#	allow cgi-bin so that sitemap can work.
+Disallow: /opt_in.html
+Allow: /blog
+Disallow: /cgi-bin/admin/
+Disallow: /cgi-bin/backoffice/
+Disallow: /data/
+#Disallow: /display/
+Disallow: /fonts/
+Disallow: /icons/
+#Disallow: /images/
+#Disallow: /logos/
+Disallow: /.private/
+Allow: /pdfs/
+Disallow: /rfqs/
+Disallow: /cust-temp/
+Disallow: /rssfeeds/
+Disallow: /selfservice/
+Disallow: /send_to_friend/
+Disallow: /shortdlr/
+Disallow: /temp/
+Disallow: /uploadrfb/
+Disallow: /upload/
+Disallow: /upsterling/
+Disallow: /uploadrfb/
+Disallow: /admin.html
+Disallow: /adv_search.html
+Disallow: /cust_service.html
+Disallow: /selfservice.html
+Disallow: /privacypolicy.html
+Disallow: /privacy_policy.html
+Disallow: /index_orig.html
+Disallow: /thank_you.php
+Disallow: /footer.html
+Disallow: /missing.html
+Disallow: /upload.html
+Disallow: /mobiletest.html
+Disallow: /cgi-bin/pickcategory.pl
+Disallow: /cgi-bin/sendinfo.pl
+Disallow: /cgi-bin/sharethis.pl
+# 20160320 - add disallow fo rfq.pl This s/b noindex,nofollow since it's customer info
+Disallow: /cgi-bin/rfq.pl
+Disallow: /cgi-bin/mrfq.pl
+Disallow: /hello.html
+Sitemap: https://surplusrecord.com/sitemap_index.xml
+#Disallow: /listings/not_found.html # 20160321 comment out. Bing was confused?
+# Don't put any "allows" after this. 
+#

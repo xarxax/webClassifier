@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="
+not-ie" lang="en" dir="ltr"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.eurocryor.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+
+      <script type='text/javascript'>
+      var objBlackAndWhite  = {
+				hoverEffect: false, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath: '',
+				// for the images with a fluid width and height
+				responsive: true,
+				invertHoverEffect: true,
+				speed: {//this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 400, // 400ms for fadeIn animations
+					fadeOut: 800 // 800ms for fadeOut animations
+				}
+	    };
+	  </script>
+    <base href="/en/angular_catalog/" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.eurocryor.com/en" />
+<link rel="shortlink" href="https://www.eurocryor.com/en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.eurocryor.com/en" />
+<meta property="og:title" content="Epta" />
+<title>Epta |</title>
+        <script type="text/javascript" src="/sites/all/themes/goodnex/js/iubenda_eurocryor_en.js"></script>
+        
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/modules/system/system.base.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/system/system.menus.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/system/system.messages.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/system/system.theme.css?pluc4i");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/modules/aggregator/aggregator.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/comment/comment.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/date/date_api/date.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/date/date_repeat_field/date_repeat_field.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/field/theme/field.css?pluc4i");
+</style>
+<style type="text/css" media="screen">
+@import url("https://www.eurocryor.com/sites/all/modules/flexslider/assets/css/flexslider_img.css?pluc4i");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/modules/node/node.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/search/search.css?pluc4i");
+@import url("https://www.eurocryor.com/modules/user/user.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/views/css/views.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/ckeditor/css/ckeditor.css?pluc4i");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/sites/all/modules/custom_modules/custom_css_adds/custom_css_adds.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/custom_modules/incode_views/incode_views.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/custom_modules/my_webforms/css/my_webforms.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/colorbox/styles/default/colorbox_style.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/ctools/css/ctools.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/dhtml_menu/dhtml_menu.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/panels/css/panels.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/custom_modules/small_display_adapt/small_display_adapt.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/lang_dropdown/ddslick/ddsDefault.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/md_slider/css/animate.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/md_slider/css/md-slider.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/default/files/md-slider-md-slider-54b02d5fd20b1-layers.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/modules/md_slider/css/md-slider-style.css?pluc4i");
+</style>
+
+<!--[if lt IE 10]>
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/sites/default/files/ctools/css/47060dacce48a9ac2d663970ad0e79c4.css?pluc4i");
+</style>
+<![endif]-->
+<style type="text/css" media="all">
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/css/style.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/css/drupal.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/css/skeleton.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/css/layout.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/js/fancybox/jquery.fancybox-1.3.4.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/js/flexslider/css/flexslider.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/js/mediaelement/jquery.mediaelementplayer.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/css/font-awesome.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex/eurocryor.css?pluc4i");
+@import url("https://www.eurocryor.com/sites/all/themes/goodnex_sub/css/custom.css?pluc4i");
+</style>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/misc/drupal.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/colorbox/js/colorbox.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/colorbox/styles/default/colorbox_style.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/colorbox/js/colorbox_load.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/colorbox/js/colorbox_inline.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/dhtml_menu/dhtml_menu.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/custom_modules/small_display_adapt/small_display_adapt.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/libraries/ddslick/jquery.ddslick.min.js?v=2.0"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/md_slider/js/jquery.touchwipe.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/md_slider/js/mdvideobox.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/md_slider/js/md-slider.js?pluc4i"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) {
+      $(document).ready(function() {
+          effectsIn = Drupal.settings.inEffects;
+          effectsOut = Drupal.settings.outEffects;
+          var options = Drupal.settings.md_slider_options_6;
+          $("#md-slider-6").mdSlider(options);
+      });
+    })(jQuery);
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/google_analytics/googleanalytics.js?pluc4i"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-42330396-5", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/modules/lang_dropdown/lang_dropdown.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.modernizr.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.easing.1.3.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.cycle.all.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.blackandwhite.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/mediaelement/mediaelement-and-player.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.jcarousel.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.jflickrfeed.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.touchswipe.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/jquery.isotope.min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/mobile-map.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/fancybox/jquery.fancybox-1.3.4.pack.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/flexslider/js/jquery.flexslider-min.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/config.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/custom.js?pluc4i"></script>
+<script type="text/javascript" src="https://www.eurocryor.com/sites/all/themes/goodnex/js/goodnex.js?pluc4i"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"goodnex_sub","theme_token":"tW4FfozmfYYJjaB1dm5dxn0M4vxe0MhYzTcHUPJ__20","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.js":1,"sites\/all\/modules\/custom_modules\/small_display_adapt\/small_display_adapt.js":1,"sites\/all\/libraries\/ddslick\/jquery.ddslick.min.js":1,"sites\/all\/modules\/md_slider\/js\/jquery.touchwipe.js":1,"sites\/all\/modules\/md_slider\/js\/mdvideobox.min.js":1,"sites\/all\/modules\/md_slider\/js\/md-slider.js":1,"0":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/modules\/lang_dropdown\/lang_dropdown.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.modernizr.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.easing.1.3.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.cycle.all.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.blackandwhite.min.js":1,"sites\/all\/themes\/goodnex\/js\/mediaelement\/mediaelement-and-player.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.jcarousel.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.jflickrfeed.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.touchswipe.min.js":1,"sites\/all\/themes\/goodnex\/js\/jquery.isotope.min.js":1,"sites\/all\/themes\/goodnex\/js\/mobile-map.js":1,"sites\/all\/themes\/goodnex\/js\/fancybox\/jquery.fancybox-1.3.4.pack.js":1,"sites\/all\/themes\/goodnex\/js\/flexslider\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/goodnex\/js\/config.js":1,"sites\/all\/themes\/goodnex\/js\/custom.js":1,"sites\/all\/themes\/goodnex\/js\/goodnex.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/custom_modules\/custom_css_adds\/custom_css_adds.css":1,"sites\/all\/modules\/custom_modules\/incode_views\/incode_views.css":1,"sites\/all\/modules\/custom_modules\/my_webforms\/css\/my_webforms.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/dhtml_menu\/dhtml_menu.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/custom_modules\/small_display_adapt\/small_display_adapt.css":1,"sites\/all\/modules\/lang_dropdown\/ddslick\/ddsDefault.css":1,"sites\/all\/modules\/md_slider\/css\/animate.css":1,"sites\/all\/modules\/md_slider\/css\/md-slider.css":1,"public:\/\/md-slider-md-slider-54b02d5fd20b1-layers.css":1,"sites\/all\/modules\/md_slider\/css\/md-slider-style.css":1,"public:\/\/ctools\/css\/47060dacce48a9ac2d663970ad0e79c4.css":1,"sites\/all\/themes\/goodnex\/css\/style.css":1,"sites\/all\/themes\/goodnex\/css\/drupal.css":1,"sites\/all\/themes\/goodnex\/css\/skeleton.css":1,"sites\/all\/themes\/goodnex\/css\/layout.css":1,"sites\/all\/themes\/goodnex\/js\/fancybox\/jquery.fancybox-1.3.4.css":1,"sites\/all\/themes\/goodnex\/js\/flexslider\/css\/flexslider.css":1,"sites\/all\/themes\/goodnex\/js\/mediaelement\/jquery.mediaelementplayer.css":1,"sites\/all\/themes\/goodnex\/css\/font-awesome.css":1,"sites\/all\/themes\/goodnex\/eurocryor.css":1,"sites\/all\/themes\/goodnex_sub\/css\/custom.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"dhtmlMenu":{"nav":"bullet","animation":{"effects":{"height":"height","opacity":"opacity","width":0},"speed":"500"},"effects":{"siblings":"close-same-tree","children":"none","remember":"0"},"filter":{"type":"blacklist","list":{"devel":0,"main-menu":0,"management":0,"navigation":0,"shortcut-set-1":0,"user-menu":0}}},"lang_dropdown":{"language_content":{"jsWidget":{"widget":"ddslick","width":"80","height":"0","showSelectedHTML":0,"imagePosition":"left"}}},"inEffects":["fadeIn","fadeInUp","fadeInDown","fadeInLeft","fadeInRight","fadeInUpBig","fadeInDownBig","fadeInLeftBig","fadeInRightBig","bounceIn","bounceInDown","bounceInUp","bounceInLeft","bounceInRight","rotateIn","rotateInDownLeft","rotateInDownRight","rotateInUpLeft","rotateInUpRight","lightSpeedIn","rollIn"],"outEffects":["fadeOut","fadeOutUp","fadeOutDown","fadeOutLeft","fadeOutRight","fadeOutUpBig","fadeOutDownBig","fadeOutLeftBig","fadeOutRightBig","bounceOut","bounceOutDown","bounceOutUp","bounceOutLeft","bounceOutRight","rotateOut","rotateOutDownLeft","rotateOutDownRight","rotateOutUpLeft","rotateOutUpRight","lightSpeedOut","rollOut"],"md_slider_options_6":{"fullwidth":true,"transitions":"fade","transitionsSpeed":"800","width":"960","height":"400","enableDrag":true,"responsive":true,"videoBox":true,"loop":true,"showLoading":false,"loadingPosition":"bottom","showArrow":false,"touchArrow":false,"showBullet":true,"posBullet":"2","showThumb":false,"posThumb":"1","slideShowDelay":"8000","slideShow":true,"styleBorder":"0","styleShadow":"0"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/en":true}});
+//--><!]]>
+</script>
+  
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+	<!-- Web Fonts  -->
+	<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600italic|Handlee' rel='stylesheet' type='text/css'>-->
+
+<!-- User defined CSS --><style type='text/css'></style><!-- End user defined CSS -->  
+
+       		<script>jQuery(document).ready(function(){jQuery('#navigation').find('li#dhtml_menu-1834').hide();});</script>
+       </head>
+
+<body class="html front not-logged-in no-sidebars page-node i18n-en wide normal pattern-13 color-14 " >
+<div id="wrapper">
+    <header id="header">
+        <div class="container">
+
+            <div class="eight columns">
+
+                                                    	              
+            </div>
+
+            <div class="eight columns">
+                  <div class="region region-header-right">
+    <div id="block-block-18" class="block block-block">
+
+    
+  <div class="content">
+        <p> <a href="/en/register">Register</a></p>
+
+  </div>
+</div>
+<div id="block-lang-dropdown-language-content" class="block block-lang-dropdown">
+
+    
+  <div class="content">
+    <form class="lang_dropdown_form language_content ddsDefault" id="lang_dropdown_form_language_content" action="/en" method="post" accept-charset="UTF-8"><div><div class="form-item form-type-select form-item-lang-dropdown-select">
+ <select class="lang-dropdown-select-element form-select" id="lang-dropdown-select-language_content" style="width:80px" name="lang_dropdown_select"><option value="en" selected="selected">English</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="es">Español</option></select>
+</div>
+<input type="hidden" name="en" value="/en" />
+<input type="hidden" name="fr" value="/fr" />
+<input type="hidden" name="de" value="/de" />
+<input type="hidden" name="it" value="/it" />
+<input type="hidden" name="es" value="/es" />
+<noscript><div>
+<input type="submit" id="edit-submit" name="op" value="Go" class="button default form-submit" />
+</div></noscript><input type="hidden" name="form_build_id" value="form-1cIopTzKs58uBj2OR3ONTjZ_Y71FPCfhZQlDr5_fBDI" />
+<input type="hidden" name="form_id" value="lang_dropdown_form" />
+</div></form>  </div>
+</div>
+  </div>
+            </div>  
+
+            <div class="clear"></div>
+            <div id="logo_container">
+
+                                    <h1 class="logo">
+                        <a href="/en" title="Home" rel="home" id="logo">
+                            <img src="https://www.eurocryor.com/sites/default/files/eurocryor_logo.png" alt="Home" />
+                        </a>
+                    </h1>
+                
+                                    <div id="name-and-slogan" class="hidden">
+
+                                                    <h1 id="site-name" class="hidden">
+                                <a href="/en" title="Home" rel="home"><span>Epta</span></a>
+                            </h1>
+                        
+                        
+                    </div> <!-- /#name-and-slogan -->
+                         
+
+            </div>
+            <div class="sixteen columns">
+                <div class="menu-container clearfix">
+                    <nav id="navigation" class="navigation">
+                        <div class="menu">
+                              
+<ul><li id="dhtml_menu-1881"><a href="/en/angular_catalog">Products</a></li>
+<li id="dhtml_menu-1764"><a href="/en/content/esp2installazioni">References</a></li>
+<li id="dhtml_menu-1837"><a href="http://www.epta-service.com/en/services/at-your-service" target="_blank">Services</a></li>
+<li id="dhtml_menu-1772"><a href="/en/chi-siamo">About us</a></li>
+<li id="dhtml_menu-1425"><a href="/en/ultime-notizie">News</a></li>
+<li id="dhtml_menu-780"><a href="/en/content/press-area">Press Area</a><ul><li id="dhtml_menu-1600"><a href="/en/content/esp2comunicati-stampa">Press Releases</a></li>
+<li id="dhtml_menu-1599"><a href="/en/content/esp2rassegna-stampa">Press Survey</a></li>
+</ul></li>
+<li id="dhtml_menu-1783"><a href="/en/contact_page/">Contacts</a></li>
+</ul>                        </div>  
+                    </nav>
+
+                    
+                </div>
+            </div>
+
+        </div>  				
+    </header>
+      <div class="region region-before-content-no-wrap">
+    <div id="block-md-slider-6" class="block block-md-slider">
+
+    
+  <div class="content">
+    <div id="md-slider-6" class="md-slide-items" data-thumb-width='100' data-thumb-height='75'>
+          <div class="md-slide-item slide-1" data-timeout='8000' data-thumb='https://www.eurocryor.com/sites/default/files/styles/md_slider_6_thumb/public/grey_0.png?itok=-HOMpqv6'>
+    <div class="md-mainimg"><img src="https://www.eurocryor.com/sites/default/files/grey_0.png" alt="" /></div>
+    <div class="md-objects preloader">
+          <div class="md-object md-layer-6-0-0" data-x='130' data-y='0' data-width='736' data-height='315' data-start='0' data-stop='8000'>
+      <img src='https://www.eurocryor.com/sites/default/files/HP_NewAppStore_Slider_Ecr_web_4.png' alt='img'/>  </div>
+        </div>
+</div>
+          <div class="md-slide-item slide-2" data-timeout='8000' data-thumb='https://www.eurocryor.com/sites/default/files/styles/md_slider_6_thumb/public/grey_0.png?itok=-HOMpqv6'>
+    <div class="md-mainimg"><img src="https://www.eurocryor.com/sites/default/files/grey_0.png" alt="" /></div>
+    <div class="md-objects preloader">
+          <div class="md-object md-layer-6-1-0" data-x='130' data-y='0' data-width='736' data-height='315' data-start='0' data-stop='8000'>
+      <a title='PrimoPiano' href='https://www.eurocryor.com/en/product/57/6667'><img src='https://www.eurocryor.com/sites/default/files/HP_PrimoPiano_Slider_Ecr_web_13.png'/></a>  </div>
+        </div>
+</div>
+          <div class="md-slide-item slide-3" data-timeout='8000' data-thumb='https://www.eurocryor.com/sites/default/files/styles/md_slider_6_thumb/public/grey_0.png?itok=-HOMpqv6'>
+    <div class="md-mainimg"><img src="https://www.eurocryor.com/sites/default/files/grey_0.png" alt="" /></div>
+    <div class="md-objects preloader">
+          <div class="md-object none md-layer-6-2-0" data-x='142' data-y='330' data-width='431' data-height='29' data-start='1000' data-stop='8000' data-easein='fadeIn' data-easeout='fadeOut' data-padding-top='8' data-padding-bottom='3' data-padding-left='10' data-padding-right='10'>
+      <p>Immediate return on investment</p>  </div>
+          <div class="md-object md-layer-6-2-1" data-x='142.5' data-y='300' data-width='298' data-height='38' data-start='486' data-stop='7986' data-easein='fadeIn' data-easeout='fadeOut'>
+      <p>Dynamic System</p>  </div>
+          <div class="md-object md-layer-6-2-2" data-x='130' data-y='0' data-width='736' data-height='315' data-start='0' data-stop='8000'>
+      <a title="DynamicSystem_web" class="md-video" href="http://player.vimeo.com/video/88868088">
+        <img src="https://www.eurocryor.com/sites/default/files/DynamicSystem_01_4.png" />
+        <span class="md-playbtn"></span>
+    </a>
+  </div>
+        </div>
+</div>
+          <div class="md-slide-item slide-4" data-timeout='8000' data-thumb='https://www.eurocryor.com/sites/default/files/styles/md_slider_6_thumb/public/grey_0.png?itok=-HOMpqv6'>
+    <div class="md-mainimg"><img src="https://www.eurocryor.com/sites/default/files/grey_0.png" alt="" /></div>
+    <div class="md-objects preloader">
+          <div class="md-object md-layer-6-3-0" data-x='130' data-y='0' data-width='736' data-height='315' data-start='0' data-stop='8000'>
+      <a title="Livefeedback_SpecFreshEurocryor_web" class="md-video" href="http://player.vimeo.com/video/88868385">
+        <img src="https://www.eurocryor.com/sites/default/files/Customer_01_4.png" />
+        <span class="md-playbtn"></span>
+    </a>
+  </div>
+          <div class="md-object md-layer-6-3-1" data-x='142.5' data-y='300' data-width='469' data-height='38' data-start='500' data-stop='8000' data-easein='fadeIn' data-easeout='fadeOut'>
+      <p>Dynamic System</p>  </div>
+          <div class="md-object md-layer-6-3-2" data-x='213' data-y='330' data-width='502' data-height='29' data-start='1000' data-stop='8000' data-easein='fadeIn' data-easeout='fadeOut' data-padding-top='8' data-padding-bottom='3' data-padding-left='10' data-padding-right='10'>
+      <p>Voice of customer</p>  </div>
+        </div>
+</div>
+          <div class="md-slide-item slide-5" data-timeout='8000' data-thumb='https://www.eurocryor.com/sites/default/files/styles/md_slider_6_thumb/public/grey_0.png?itok=-HOMpqv6'>
+    <div class="md-mainimg"><img src="https://www.eurocryor.com/sites/default/files/grey_0.png" alt="" /></div>
+    <div class="md-objects preloader">
+          <div class="md-object md-layer-6-4-0" data-x='130' data-y='0' data-width='736' data-height='315' data-start='0' data-stop='8000'>
+      <a title="Perfect Showcasing Eurocryor_web" class="md-video" href="http://www.youtube.com/embed/8Fe73kI3P1Y">
+        <img src="https://www.eurocryor.com/sites/default/files/HP_Host17_Slider_Ecr_web_1.png" />
+        <span class="md-playbtn"></span>
+    </a>
+  </div>
+          <div class="md-object md-layer-6-4-1" data-x='142.5' data-y='300' data-width='469' data-height='38' data-start='500' data-stop='8000' data-easein='fadeIn' data-easeout='fadeOut'>
+      <p>Perfect</p>  </div>
+          <div class="md-object md-layer-6-4-2" data-x='213' data-y='330' data-width='502' data-height='29' data-start='1000' data-stop='8000' data-easein='fadeIn' data-easeout='fadeOut' data-padding-top='8' data-padding-bottom='3' data-padding-left='10' data-padding-right='10'>
+      <p>Showcasing</p>  </div>
+        </div>
+</div>
+    </div>
+
+  </div>
+</div>
+<div id="block-block-23" class="block block-block before-content-right">
+
+    
+  <div class="content">
+     <div id="puro-stile-italiano">
+	<img alt="" src="/sites/default/files/body_images/images/puro-stile-italiano.png" style="width: 54px; height: 241px; float: right;" /></div>
+   </div>
+</div>
+  </div>
+
+    <section id="content">
+        <div class="container">
+
+            
+            
+                                                                        
+                        
+                                                                        
+                          <div class="region region-content">
+    <div id="block-views-home-highlights-block" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-home-highlights view-id-home_highlights view-display-id-block view-dom-id-6050e5ac836427295bb91a7920b98035">
+            <div class="view-header">
+      <div id="home-tooltip">
+	<div id="home-tooltip-body">
+		&nbsp;</div>
+	<div id="home-tooltip-bottom">
+		&nbsp;</div>
+</div>
+
+    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first inprimopiano-box">
+    
+  <div class="span3 portfolio-item portfolio-item-first" id="225">
+        <h3>Latest news <span><img src="/sites/all/themes/goodnex_sub/images/plus-icon.png" /></span></h3>
+        <div class="content-tip">
+                <span class="tooltip-img"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/PrimoPiano_ec.jpg?itok=KG-Gnl64" width="220" height="132" /></div></div></div></span>
+                <h5>PrimoPiano</h5>
+                <p><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">A new perspective!</div></div></div></p>
+                <div class="inner_link">
+                    &raquo; <a href="https://www.eurocryor.com/en/content/new-perspective-primopiano-eurocryor" class="portfolio-inner-link">Find out more</a>
+                </div>
+                    
+                
+        </div>
+    
+  </div>
+
+
+
+
+
+<!-- <div class="span3 portfolio-item portfolio-item-first">
+    <div class="view_portfolio_image"><a href="https://www.eurocryor.com/en/content/new-perspective-primopiano-eurocryor"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/PrimoPiano_ec.jpg?itok=KG-Gnl64" width="220" height="132" /></div></div></div></a></div>
+    <a href="https://www.eurocryor.com/en/content/new-perspective-primopiano-eurocryor">
+    <div class="mask">
+      <h3>Latest news</h3>
+      <div class="portfolio_tags"><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">A new perspective!</div></div></div></div>
+          </div>
+    </a>
+  </div>-->
+  </div>
+  <div class="views-row views-row-2 views-row-even inprimopiano-box">
+    
+  <div class="span3 portfolio-item portfolio-item-first" id="223">
+        <h3>Custom-designed <span><img src="/sites/all/themes/goodnex_sub/images/plus-icon.png" /></span></h3>
+        <div class="content-tip">
+                <span class="tooltip-img"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/bareato_ec_th.jpg?itok=iZHB2GoE" width="220" height="220" /></div></div></div></span>
+                <h5>Custom-designed</h5>
+                <p><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">IL CANTINO BUTCHERY</div></div></div></p>
+                <div class="inner_link">
+                    &raquo; <a href="https://www.eurocryor.com/en/content/esp2installazioni?idInstallazione=7442" class="portfolio-inner-link">Find out more</a>
+                </div>
+                    
+                
+        </div>
+    
+  </div>
+
+
+
+
+
+<!-- <div class="span3 portfolio-item portfolio-item-first">
+    <div class="view_portfolio_image"><a href="https://www.eurocryor.com/en/content/esp2installazioni?idInstallazione=7442"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/bareato_ec_th.jpg?itok=iZHB2GoE" width="220" height="220" /></div></div></div></a></div>
+    <a href="https://www.eurocryor.com/en/content/esp2installazioni?idInstallazione=7442">
+    <div class="mask">
+      <h3>Custom-designed</h3>
+      <div class="portfolio_tags"><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">IL CANTINO BUTCHERY</div></div></div></div>
+          </div>
+    </a>
+  </div>-->
+  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last inprimopiano-box">
+    
+  <div class="span3 portfolio-item portfolio-item-first" id="228">
+        <h3>At the forefront  <span><img src="/sites/all/themes/goodnex_sub/images/plus-icon.png" /></span></h3>
+        <div class="content-tip">
+                <span class="tooltip-img"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/DS_eurocryor_th.jpg?itok=UgmqmyWa" width="220" height="145" /></div></div></div></span>
+                <h5>Dynamic System</h5>
+                <p><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Innovative solution</div></div></div></p>
+                <div class="inner_link">
+                    &raquo; <a href="https://www.eurocryor.com/en/content/dynamic-system" class="portfolio-inner-link">Find out more</a>
+                </div>
+                    
+                
+        </div>
+    
+  </div>
+
+
+
+
+
+<!-- <div class="span3 portfolio-item portfolio-item-first">
+    <div class="view_portfolio_image"><a href="https://www.eurocryor.com/en/content/dynamic-system"><div class="field field-name-field-portfolio-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://www.eurocryor.com/sites/default/files/styles/medium/public/portfolio_images/DS_eurocryor_th.jpg?itok=UgmqmyWa" width="220" height="145" /></div></div></div></a></div>
+    <a href="https://www.eurocryor.com/en/content/dynamic-system">
+    <div class="mask">
+      <h3>At the forefront </h3>
+      <div class="portfolio_tags"><div class="field field-name-field-portfolio-description field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Innovative solution</div></div></div></div>
+          </div>
+    </a>
+  </div>-->
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+
+                        
+                    
+                    </div>
+
+                    <div id="after-content" class="container">
+                                            </div>
+
+                </section> 
+
+                
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a1c735afa5fb4c"></script>
+                <script>
+                    var addthis_share = { email_vars: { CustomVariable: "" } };
+                    jQuery('.node-type-news').find('.article-title').after('<div class="addthis_sharing_toolbox"></div>');
+                    //jQuery('.block-installazioni').find('.installazione_addthis').after('<div class="addthis_sharing_toolbox" addthis:url="https://www.eurocryor.com/en"></div>');
+                    jQuery('.page-product').find('.installazione_addthis').before('<div class="addthis_sharing_toolbox"></div>');
+                    //jQuery('.page-esp2installazioni').find('.group-header').css('display', 'block');
+                </script>
+
+                <footer id="footer">
+                    <div class="container">
+
+                        <div class="one-third column alpha footer-block-1">
+                                                                                                                </div>
+
+                        <div class="one-third column alpha footer-block-2">
+                                                                                                                </div>
+
+                        <div class="three columns alpha footer-block-3">
+                                                                                                                </div>
+
+                        <div class="three columns alpha omega footer-block-4">
+                                                                                                                </div>
+
+                        <div class="clear"></div>
+
+
+                                                    <div class="sixteen columns">
+                                <div class="adjective clearfix">
+                                      <div class="region region-footer-bottom">
+    <div id="block-block-20" class="block block-block">
+
+    
+  <div class="content">
+    <div id="footer_first">
+<div id="footer-right">
+<div class="image-link-big" >
+                               <a href="http://www.eptarefrigeration.com/en" target="_new"><img class="image-link-big" alt="" src="/sites/all/themes/goodnex/images/epta-logo-footer.png" /></a></div>
+</div> 
+<div class="text-footer">
+<span class="divisor"></span>
+</div>
+<div class="image-link">
+                                               <a href="https://www.instagram.com/epta_group/" target="_new"><img alt="" src="/sites/all/themes/goodnex/images/Instagram_LogoFooterSiti.png" /></a></div>
+<div class="image-link">
+                               <a href="https://linkedin.com/company/152663" target="_new"><img alt="" src="/sites/all/themes/goodnex/images/linkedin_26px.png" /></a></div>
+<div class="image-link">
+                               <a href="http://www.youtube.com/user/EPTAspa" target="_new"><img alt="" src="/sites/all/themes/goodnex/images/youtube_footer.png" /></a></div>
+<div class="image-link">
+                               <a href="https://twitter.com/Epta_Group" target="_new"><img alt="" src="/sites/all/themes/goodnex/images/tw_footer.png" /></a></div>
+<div class="image-link">
+                                               <a href="https://www.facebook.com/pages/Epta/1419206048317434" target="_new"><img alt="" src="/sites/all/themes/goodnex/images/fb_footer.png" /></a></div>  
+<div class="text-footer follow_text">
+Follow us on</div>
+<div id="footer-left">
+<a href="/en/risorse-umane?language=en">Human Resources</a>  <span class="divisor"></span> <nobr><a href="/en/areadownload?language=en">Download Area <img alt="" src="/sites/default/files/body_images/images/PDF-copia.png" style="width: 14px; height: 19px;" /></a></nobr><span class="divisor"></span><a target="_blank" href="https://reserved.eptarefrigeration.com/">Reserved area</a>
+<span class="divisor"></span>
+<a href="https://www.eurocryor.com/en/userdocs">Userdocs</a>
+</div>
+  </div>
+</div>
+<div id="block-block-14" class="block block-block footer-text float-right footer_epta">
+
+    
+  <div class="content">
+    <div id="footer-secondrow">
+Epta  S.p.a. &copy; 2019 - All rights reserved<span class="divisor"></span>  VAT N. P.IVA 04160730968  <span class="divisor"></span> <a href="/en/node/231">Legal</a> <span class="divisor"></span><a href="/en/node/202" ><img class="image-link" alt="" src="/sites/default/files/body_images/images/Trash-bin.png" /></a>
+</div>  </div>
+</div>
+  </div>
+                                </div>
+                            </div>                    
+                        
+
+                    </div>  
+                </footer>
+
+        </div>
+
+</body>
+</html>

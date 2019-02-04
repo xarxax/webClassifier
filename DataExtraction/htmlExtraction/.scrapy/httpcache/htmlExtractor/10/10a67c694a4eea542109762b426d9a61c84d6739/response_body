@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<title></title>
+	<link href="style3-1.css" rel="STYLESHEET" type="text/css" /><script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script>
+	<script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script>
+</head>
+<body>
+<table border="0" class="close" hspace="0" vspace="0" width="700">
+	<tbody>
+		<tr>
+			<th colspan="4">
+			<center><font size="5">MeddiQuest Limited</font></center>
+			</th>
+		</tr>
+		<tr>
+			<th colspan="4">
+			<center><font size="2">Regulatory Affairs Management</font></center>
+			</th>
+		</tr>
+		<tr>
+			<th colspan="4">
+			<center><font size="1">Welcome to the MeddiQuest website - your first stop on the path to CE Marking, 510(k) clearance, PMA / PDP Approval and ISO 13485 / ISO 14971 Quality Systems! Make Regulatory Compliance part of your Competitive Advantage!</font></center>
+			</th>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<table bgcolor="white" border="1" bordercolor="maroon" class="inner" hspace="0" vspace="0" width="700">
+				<tbody>
+					<tr>
+						<td><a href="sitemap.html">Site Map</a></td>
+						<td><a href="devices.html">Devices</a></td>
+						<td><a href="ivd.html">InVitro Diagnostics</a></td>
+						<td><a href="sands.html">Software-Substances</a></td>
+						<td><a href="comb.html">Combination Products</a></td>
+					</tr>
+					<tr>
+						<td><a href="mq-team.html">Our Team</a></td>
+						<td><a href="mq-services.html">Our Services</a></td>
+						<td><a href="mq-seminars.html">Our Seminars</a></td>
+						<td><a href="mq-news.html">Our News</a></td>
+						<td><a href="mq-contact.html">Contact Us</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<th width="100">Navigation</th>
+			<th width="250">Regulatory News</th>
+			<th width="250">MeddiQuest News</th>
+			<th width="100">The Profession</th>
+		</tr>
+		<tr valign="top">
+			<td bgcolor="white">
+			<hr /><a href="md-eu.html">CE Mark</a>
+
+			<hr /><a href="euar/index.html">EUAR</a>
+
+			<hr /><a href="md-us.html">US FDA</a>
+
+			<hr /><a href="mq-news.html">Press</a>
+
+			<hr /><a href="mq-contact.html">Contact</a>
+
+			<hr /></td>
+			<td>
+			<center><strong>Medical Device Regulation </strong></center>
+			<br />
+			The Medical Device Regulations (<a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.117.01.0001.01.ENG&amp;toc=OJ:L:2017:117:TOC">EU) 2017/745 and 746</a> have now been published will become numbers to fear!- no mean political achievement, but alas there are plenty of flaws in a regulation of disproportionate complexity to the issues it attempts to resolve.<br />
+			The regulation is still hardware-centric and the little language in the draft addressing software has been removed - overall this means that the regulation is better suited to the medical devices of the last century than the innovative new products of the next decades.<br />
+			The issues around reuse of SUDs has been <i>fudged</i> to allow member states to do anything they like and the tightening of controls seems to do more and the wholesale reclassification of ingested devices into the highest category irrespective of risk is likely to bring the new regulation into disrepute.<br />
+			See <a href="http://medicaldeviceregulatory.wordpress.com">Neil&#39;s Blog</a>.</td>
+			<td>
+			<center><strong>Select Committee Brexit Report</strong></center>
+			&nbsp;
+
+			<p class="intable">The House of Commons Health and Social Care Committee&#39;s Brexit Report is released on 21st March 2018 and shows scant consideration of the regulatory cataclysm facing the UK Medical Device Industry. Little over a year to Brexit and no hint of a mechansim to adopt MDR and IVDR into UK Law - indeed with:</p>
+
+			<p class="intable"></p>
+				<li class="intable">adopting implenting and delegated acts ruled out in the PM&#39;s Florence speech</li>
+				<li class="intable">the political impossibility of adopting to two new EU regulations meer weeks after leaving the EU</li>
+				<li class="intable">and an increasingly protectionist US adminstration unlikely to do a trade deal without acceptance of US regulatory primacy</li>
+			</ul>
+
+		<p class="intable">the prospect of Britain finding itself in medical device regulatory area of one country seems increasingly likely. Additional regulatory and administrative costscould be penal and many companies will see little alternative than to relocate their EU operations to an EU-27 country and follow the Commission&#39;s January 2018 advice.</p>
+
+		<p class="intable"><B></B>A USD 9.5Billon industry facing demise through government inaction!</B></p>
+
+			<p><div align="left">See MeddiQuest&#39;s <a href="http://www.meddiquest.com/J0321HSCCtteRep.pdf">Press Release </a></p>
+
+			<center></center>
+			</td>
+			<td>
+			<center><a href="http://www.raps.org" target="_blank"><img alt="" src="RAPS.gif" /></a></center>
+			<font color="darkblue" size="2">RAPS on-line university and RAC certification are major pillars of our profession</font><br />
+			&nbsp;
+			<center><a href="http://www.topra.org" target="_blank"><img alt="" src="TOPRA.jpg" /></a></center>
+			<font color="darkblue" size="2">Neil lectures on the TOPRA MSc Courses in Medical Technologies Regulatory Affairs.</font></td>
+		</tr>
+		<tr valign="top">
+			<td>
+			<center><a href="mq-net.html"><img alt="" src="MDQ-Networks.gif" /></a></center>
+			<font color="darkblue" size="2">MeddiQuest&#39;s National and International Strategic Partners</font><br />
+			&nbsp;
+			<center><a href="euar/index.html"><img alt="" src="EU.gif" /></a></center>
+			<font color="darkblue" size="2"> MeddiQuest&#39;s EU Authorized Representative Service</font></td>
+			<td>
+			<center><img align="middle" alt="Armstrong: Comments will change the future" src="neil-talk.jpg" /></center>
+
+			<p class="intable"></p>
+
+			<center><strong>Key Proposals</strong></center>
+
+			<ul>
+				<li class="intable">Notified Body Consistency</li>
+				<li class="intable">Centralization and Consistency of AIRs</li>
+				<li class="intable">Improved borderline issue management</li>
+				<li class="intable">Responsible Person</li>
+				<li class="intable">Improved transparency</li>
+				<li class="intable">Improved traceability</li>
+				<li class="intable">Increased clinical input</li>
+				<li class="intable">Import Management</li>
+				<li class="intable">Increased Eurocrats</li>
+				<li class="intable">Classification and ER Review</li>
+				<li class="intable">IVDs to come into line</li>
+			</ul>
+
+			<p class="intable" style="text-align: center;"><span style="color:#B22222;"><strong>Trumping User Fees</strong></span></p>
+
+			<center style="text-align: left;">The Trump Administration is proposing to double User Fee receipts from USD 1.2 to 2.4 Billion, on average doubling drug and device user fees. So if you were thinking of a complex US Submission, getting it in quickly could save you thousands!</center>
+			</td>
+			<td>
+			<p style="text-align: center;"><strong>Standards Nightmare</strong></p>
+
+			<p class="intable">Not only are we still smarting under DG SANCO&#39;s rewrite of ISO 14971 to a slavish letter-of-the-law interpretation of the directive, but now&nbsp;ISO TC 210 has accepted DIS 3 so ISO 13485 will not follow the Annex SL format, which is used for&nbsp;all other management system standards including ISO 9001:2015 - when will the regulators stop trying to fiddle standards to suit their needs rather than accept the sound quality philosophy underlying the standards process? This will&nbsp;force many device companies to drop ISO 9001. How sad to see quality principles being compromised by the regulators who claim to value them!&nbsp;</p>
+
+			<p><img alt="Come and talk to use about your quality and risk issues" height="157" src="images/C0927CompaMed0Asmall.JPG" title="After being asleep for two years, Amanda will be fresh and bright for our return to ComPaMED" width="272" /></p>
+
+			<center></center>
+
+			<center><strong>MeddiQuest Team Building</strong></center>
+			The MeddiTigers became MuddiTigers to take part in the 2015 Yorkshire <i>Tough Mudder</i> as our annual team building exercise. What could be more fun than being frozen, wet, electrocuted and running a ten mile assult course? Maybe something easier like a triathlon next year! Hey, special credit to Ivan, because even though he left us a few years ago, he still came back ... he will know better next time!<br />
+			<img alt="MuddiTigers" src="MuddiTigersTeam.jpg" /></td>
+			<td>&nbsp;
+			<center><a href="http://www.iee.org" target="_blank"><img alt="" src="IETlogo.gif" /></a></center>
+			<font color="darkblue" size="2">MeddiQuest is a member of the IET Healthcare Technologies Network.</font><br />
+			&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<table bgcolor="white" border="1" bordercolor="maroon" class="inner" hspace="0" vspace="0" width="700">
+				<tbody>
+					<tr>
+						<td><a href="sitemap.html">Site Map</a></td>
+						<td><a href="devices.html">Devices</a></td>
+						<td><a href="ivd.html">InVitro Diagnostics</a></td>
+						<td><a href="sands.html">Software-Substances</a></td>
+						<td><a href="comb.html">Combination Products</a></td>
+					</tr>
+					<tr>
+						<td><a href="mq-team.html">Our Team</a></td>
+						<td><a href="mq-services.html">Our Services</a></td>
+						<td><a href="mq-seminars.html">Our Seminars</a></td>
+						<td><a href="mq-news.html">Our News</a></td>
+						<td><a href="mq-contact.html">Contact Us</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<center><a href="mailto:info@meddiquest.com"><img align="bottom" alt="" border="0" height="52" naturalsizeflag="0" src="emailed.gif" width="45" /></a> email us at <a href="mailto:info@meddiquest.com">info@meddiquest.com</a></center>
+
+			<center><font color="maroon" size="1">Uploaded March 20, 2005 - Last updated March 21, 2018<br />
+			MeddiQuest Limited: Incorporated in England under number 4226188 at Peterscourt PE1 1SA UK</font></center>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

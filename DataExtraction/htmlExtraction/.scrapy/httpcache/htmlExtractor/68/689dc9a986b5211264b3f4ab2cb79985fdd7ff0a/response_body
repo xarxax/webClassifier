@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><title>
+	Billing, SOAP notes &amp; narratives - Chiropractic Software
+</title>
+<link href="ig_res/Caribbean/ig_shared.css" type="text/css" rel="stylesheet" />
+<link href="ig_res/Caribbean/ig_datamenu.css" type="text/css" rel="stylesheet" /><link href="Content/Site.css" rel="stylesheet" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />           
+        <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+
+strong, b {
+	font-weight: bold;
+	}</style>
+</head>
+<body>
+    <form method="post" action="./" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDMyNDU0NjAzD2QWAmYPDxYEHg9fX0FudGlYc3JmVG9rZW4FIDRmZjBmZjkyNjRmNTQxZGFiNzllNGZhOTQ0YTIxMzI2HhJfX0FudGlYc3JmVXNlck5hbWVlZBYCAgMPZBYCAgIPFgMWBGRkFCsAAhYCHhBjb2xsZWN0aW9uc1N0YXRlBf46W3snMCc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJIb21lIixudWxsLG51bGwsIn4vRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJQcm9kdWN0cyIsbnVsbCxudWxsLCJ+L2NoaXJvcHJhY3RpYy1zb2Z0d2FyZS9EZWZhdWx0LmFzcHgiLCIiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCcxLjAnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiT3VyIFByb2R1Y3RzIixudWxsLG51bGwsIn4vY2hpcm9wcmFjdGljLXNvZnR3YXJlL0RlZmF1bHQuYXNweCIsIiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzEuMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJDbG91ZCBDb21wdXRpbmcgU2FhUyIsbnVsbCxudWxsLCJ+L3NhYXMvRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnMS4yJzpbW251bGwsbnVsbCxudWxsLG51bGwsIkVNUiBEYXRhY2VudGVy4oSiIixudWxsLG51bGwsIn4vY2hpcm9wcmFjdGljLXNvZnR3YXJlL2VtcmRhdGFjZW50ZXIvRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnMS4zJzpbW251bGwsbnVsbCxudWxsLG51bGwsIk15RU1Swq4gZm9yIFdpbmRvd3MiLG51bGwsbnVsbCwifi9jaGlyb3ByYWN0aWMtc29mdHdhcmUvZW1yd2luZG93cy9EZWZhdWx0LmFzcHgiLCIiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCcyJzpbW251bGwsbnVsbCxudWxsLG51bGwsIlNlcnZpY2VzIixudWxsLG51bGwsIn4vc2VydmljZXMvRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnMi4wJzpbW251bGwsbnVsbCxudWxsLG51bGwsIk91ciBTZXJ2aWNlcyIsbnVsbCxudWxsLCJ+L3NlcnZpY2VzL0RlZmF1bHQuYXNweCIsIiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzIuMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJDbG91ZCBDb21wdXRpbmc6IFNhYVMiLG51bGwsbnVsbCwifi9zYWFzL0RlZmF1bHQuYXNweCIsIiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzMnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiRmFjaWxpdGllcyIsbnVsbCxudWxsLCJ+L2RhdGFjZW50ZXIvZGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnNCc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJEb3dubG9hZHMiLG51bGwsbnVsbCwifi9kb3dubG9hZHMvRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnNC4wJzpbW251bGwsbnVsbCxudWxsLG51bGwsIk15RU1Swq4gU2FhUyBDbG91ZCBDb25uZWN0b3IiLG51bGwsbnVsbCwiaHR0cDovL3d3dy5zd21vdGlmLmNvbS9kb3dubG9hZHMvU2V0dXBNeUVNUlNhYVMuZXhlIiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnNC4xJzpbW251bGwsbnVsbCxudWxsLG51bGwsIk15RU1Swq4gU2FhUyBPUE9TIixudWxsLG51bGwsImh0dHA6Ly93d3cuc3dtb3RpZi5jb20vZG93bmxvYWRzL1NldHVwTXlFTVJTYWFTT1BPUy5leGUiLCIiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCc0LjInOltbbnVsbCxudWxsLG51bGwsbnVsbCwiU2V0IENsb3VkIFBvc2l0aW9uIixudWxsLG51bGwsImh0dHA6Ly93d3cuc3dtb3RpZi5jb20vZG93bmxvYWRzL1NldHVwQ2xvdWRQb3NpdGlvbi5leGUiLCIiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCc0LjMnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiTXlFTVLCriBHbG9iYWwiLG51bGwsbnVsbCwiaHR0cDovL3d3dy5zd21vdGlmLmNvbS9kb3dubG9hZHMvU2V0dXBDbG91ZFBvc2l0aW9uLmV4ZSIsIiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzQuNCc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJNaWNyb3NvZnQgRG93bmxvYWQgTGlua3MiLG51bGwsbnVsbCwifi9kb3dubG9hZHMvRGVmYXVsdC5hc3B4IiwiIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnNSc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJSZWxlYXNlIE5vdGVzIixudWxsLG51bGwsImh0dHA6Ly9yZWxlYXNlLnNvZnR3YXJlbW90aWYuY29tIiwicmVsZWFzZSIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzYnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiRkFRXHUwMDI3cyIsbnVsbCxudWxsLCJodHRwOi8vY29tbXVuaXR5LnNvZnR3YXJlbW90aWYuY29tIiwiZmFxIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnNyc6W1szMjc4MjYsbnVsbCxudWxsLG51bGwsImVNYW51YWxzIixudWxsLG51bGwsImh0dHA6Ly9tYW51YWwuc29mdHdhcmVtb3RpZi5jb20vIiwiZW1hbnVhbHMiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCc3LjAnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiZU1hbnVhbCBIb21lIixudWxsLG51bGwsImh0dHA6Ly9tYW51YWwuc29mdHdhcmVtb3RpZi5jb20vIiwiZW1hbnVhbHMiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCc3LjEnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiRU1SIERhdGFjZW50ZXLihKIiLG51bGwsbnVsbCwiaHR0cDovL21hbnVhbC5zb2Z0d2FyZW1vdGlmLmNvbS9FTVJEYXRhY2VudGVyL3RhYmlkLzEzNS9EZWZhdWx0LmFzcHgiLCJlbWFudWFscyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzcuMic6W1tudWxsLG51bGwsbnVsbCxudWxsLCJNeUVNUsKuIGZvciBXaW5kb3dzIixudWxsLG51bGwsImh0dHA6Ly9tYW51YWwuc29mdHdhcmVtb3RpZi5jb20vTXlFTVJmb3JXaW5kb3dzL3RhYmlkLzEzNi9EZWZhdWx0LmFzcHgiLCJlbWFudWFscyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzgnOltbMzI3ODI2LG51bGwsbnVsbCxudWxsLCJlVGlja2V0cyIsbnVsbCxudWxsLCJodHRwczovL3N1cHBvcnQuc29mdHdhcmVtb3RpZi5jb20iLCJldGlja2V0cyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzguMCc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJlVGlja2V0IEhvbWUiLG51bGwsbnVsbCwiaHR0cDovL3N1cHBvcnQuc29mdHdhcmVtb3RpZi5jb20iLCJldGlja2V0cyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzguMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJTdWJtaXQgYW4gZVRpY2tldCIsbnVsbCxudWxsLCJodHRwOi8vc3VwcG9ydC5zb2Z0d2FyZW1vdGlmLmNvbS9DdXN0b21lci9TdWJtaXRUaWNrZXQuYXNweCIsImV0aWNrZXRzIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXSwnOC4yJzpbW251bGwsbnVsbCxudWxsLG51bGwsIkdldCBlVGlja2V0cyIsbnVsbCxudWxsLCJodHRwOi8vc3VwcG9ydC5zb2Z0d2FyZW1vdGlmLmNvbS9DdXN0b21lci9HZXRUaWNrZXRzLmFzcHgiLCJldGlja2V0cyIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsXV0sJzguMyc6W1tudWxsLG51bGwsbnVsbCxudWxsLCJWaWV3IGFuIGVUaWNrZXQiLG51bGwsbnVsbCwiaHR0cDovL3N1cHBvcnQuc29mdHdhcmVtb3RpZi5jb20vQ3VzdG9tZXIvVmlld1RpY2tldC5hc3B4IiwiZXRpY2tldHMiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbF1dLCc4LjQnOltbbnVsbCxudWxsLG51bGwsbnVsbCwiQWdlbnQgTG9naW4iLG51bGwsbnVsbCwiaHR0cDovL3N1cHBvcnQuc29mdHdhcmVtb3RpZi5jb20vTG9naW4uYXNweCIsImV0aWNrZXRzIixudWxsLG51bGwsbnVsbCxudWxsLG51bGxdXX0seyctMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwwLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiLTEiXV0sJzAnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMCxudWxsLG51bGwsMSxudWxsLG51bGwsIjAiXV0sJzEnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjEiXV0sJzEuMCc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiMS4wIl1dLCcxLjEnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjEuMSJdXSwnMS4yJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCIxLjIiXV0sJzEuMyc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiMS4zIl1dLCcyJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCIyIl1dLCcyLjAnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjIuMCJdXSwnMi4xJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCIyLjEiXV0sJzMnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjMiXV0sJzQnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjQiXV0sJzQuMCc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNC4wIl1dLCc0LjEnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjQuMSJdXSwnNC4yJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCI0LjIiXV0sJzQuMyc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNC4zIl1dLCc0LjQnOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjQuNCJdXSwnNSc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNSJdXSwnNic6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNiJdXSwnNyc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNyJdXSwnNy4wJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCI3LjAiXV0sJzcuMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiNy4xIl1dLCc3LjInOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjcuMiJdXSwnOCc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiOCJdXSwnOC4wJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCI4LjAiXV0sJzguMSc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiOC4xIl1dLCc4LjInOltbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIjguMiJdXSwnOC4zJzpbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCI4LjMiXV0sJzguNCc6W1tudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwiOC40Il1dfV1kZA9kFgkPZhQrAAIUKwACFgQeAk4xZR4CTjkFHX4vSW1hZ2VzL2dpZi9Db21wYW55MjR4MjQuZ2lmZGQPAgEUKwACFCsAAhYEHwNlHwQFGH4vSW1hZ2VzL2dpZi9DRDI0eDI0LmdpZmQPZBYED2YUKwACFCsAAhYEHwNlHwQFH34vSW1hZ2VzL2dpZi9DdXN0b21lcnMyNHgyNC5naWZkZA8CARQrAAIUKwACFgQfA2UfBAUafi9JbWFnZXMvZ2lmL2Nsb3Vkc2Fhcy5naWZkZA8CAhQrAAIUKwACFgQfA2UfBAUbfi9JbWFnZXMvZ2lmL0VNUkRDMjR4MjQuZ2lmZGQPAgMUKwACFCsAAhYEHwNlHwQFJn4vSW1hZ2VzL2dpZi9Db21wdXRlcl9kb2N0b3JfMjR4MjQuZ2lmZGQPAgIUKwACFCsAAhYEHwNlHwQFG34vSW1hZ2VzL2dpZi9TbWlsZTI0eDI0LmdpZmQPZBYCD2YUKwACFCsAAhYEHwNlHwQFIn4vSW1hZ2VzL2dpZi9DbGllbnQgZ3JvdXAyNHgyNC5naWZkZA8CARQrAAIUKwACFgQfA2UfBAUafi9JbWFnZXMvZ2lmL2Nsb3Vkc2Fhcy5naWZkZA8CAxQrAAIUKwACFgQfA2UfBAUlfi9JbWFnZXMvZ2lmL0RhdGFiYXNlIHNlcnZlcjI0eDI0LmdpZmRkDwIEFCsAAhQrAAIWBB8DZR8EBR5+L0ltYWdlcy9naWYvRG93bmxvYWQyNHgyNC5naWZkD2QWBQ9mFCsAAhQrAAIWBB8DZR8EBRp+L0ltYWdlcy9naWYvY2xvdWRzYWFzLmdpZmRkDwIBFCsAAhQrAAIWBB8DZR8EBRV+L0ltYWdlcy9naWYvVmlzYS5naWZkZA8CAhQrAAIUKwACFgQfA2UfBAUafi9JbWFnZXMvZ2lmL0ludmVudG9yeS5naWZkZA8CAxQrAAIUKwACFgQfA2UfBAUWfi9JbWFnZXMvcG5nL2VhcnRoLnBuZ2RkDwIEFCsAAhQrAAIWBB8DZR8EBSR+L0ltYWdlcy9naWYvTWljcm9zb2Z0IGZsYWcyNHgyNC5naWZkZA8CBRQrAAIUKwACFgQfA2UfBAUefi9JbWFnZXMvZ2lmL05vdGVib29rMjR4MjQuZ2lmZGQPAgYUKwACFCsAAhYEHwNlHwQFI34vSW1hZ2VzL2dpZi9RdWVzdGlvbiBtYXJrMjR4MjQuZ2lmZGQPAgcUKwACFCsAAhYEHwNlHwQFIn4vSW1hZ2VzL2dpZi9Cb29rIGxpYnJhcnkyNHgyNC5naWZkD2QWAw9mFCsAAhQrAAIWBB8DZR8EBSJ+L0ltYWdlcy9naWYvQm9vayBsaWJyYXJ5MjR4MjQuZ2lmZGQPAgEUKwACFCsAAhYEHwNlHwQFG34vSW1hZ2VzL2dpZi9FTVJEQzI0eDI0LmdpZmRkDwICFCsAAhQrAAIWBB8DZR8EBSZ+L0ltYWdlcy9naWYvQ29tcHV0ZXJfZG9jdG9yXzI0eDI0LmdpZmRkDwIIFCsAAhQrAAIWBB8DZR8EBR1+L0ltYWdlcy9naWYvZVRpY2tldDI0eDI0LmdpZmQPZBYFD2YUKwACFCsAAhYEHwNlHwQFHX4vSW1hZ2VzL2dpZi9lVGlja2V0MjR4MjQuZ2lmZGQPAgEUKwACFCsAAhYEHwNlHwQFHX4vSW1hZ2VzL2dpZi9NYWlsaW5nMjR4MjQuZ2lmZGQPAgIUKwACFCsAAhYEHwNlHwQFHn4vSW1hZ2VzL2dpZi9UcmFuc2ZlcjI0eDI0LmdpZmRkDwIDFCsAAhQrAAIWBB8DZR8EBRp+L0ltYWdlcy9naWYvVmlldzI0eDI0LmdpZmRkDwIEFCsAAhQrAAIWBB8DZR8EBRx+L0ltYWdlcy9naWYvQ2xpZW50MjR4MjQuZ2lmZGRkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUSY3RsMDAkSW1hZ2VCdXR0b24xBRJjdGwwMCRXZWJEYXRhTWVudTEFEmN0bDAwJFdlYkRhdGFNZW51MQ9lZKX16oT/ju7fhI5HH04FRt0SW1AbAZc9MCzs65mq+Sze" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xwGJaEBmitd7urmOuRqdKN-TJhS-Ng-ck1uOHHHRPF_iJHkfAPwnq55rJs6tni19lHFlnRTLJQfalWv7AE-T04BfYX0q49mYUUeNmBLaZ7c1&amp;t=636681460740000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=hoQYhGCN3zbJDPHaY2UWvn701NWvhKno7xvLypbGYv_8W29xfxDp8jRro0taEvUyCP1_03DfGVJwCn3S3TqeCzNdh9jq5atpgra63jaUwC9Sls4cMiX3AMA1mPVLDc4aXdOajXzLKUTbxNvPDS3ZD89Vbk-Q0M9aHTLCjS9gaXQ1&amp;t=545ba255" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=fH7Pa4SJJxZW7FdczQXLPm5YJghTuw9S7dN1KMutEu6p5Bqk-Qj11cc4yuokI_Zu4kH3as12GVe8qPBTLCDJBORaDBd3l1HfsuNAr3t9hdK6Mt6T233eW7yGtfFOz63lIDFcBAxUm1rxt5TdZhws8xt_Xx6PEnl9dbnqkK__5tS9l7wpV-348TG8EmI_StZ90&amp;t=545ba255" type="text/javascript"></script>
+<script src="Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="Scripts/jquery-ui-1.8.24.min.js" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=UJj2iedXefwofyJLkD8L5olov-5U3XvJFXnj0bc0CSm6uKsOhZvbcYRokp52RcUBH2kth0HBa4xjtEvyWyFHNBW2HE4JuLfuQxJ3T0iDRxRFyZjRbARBFdPXFZE5WYVCqFCMrAlfqmlhOZGsD-Km4XmR6-5BScklolZCum2hhns1&amp;t=22fed361" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aN5qYhNeyONIGsESKr-qDNZ2tPmV6S0OQ40xenj6VzszQmmBFYq-qvCqRjQ-XpZt3xq4VnXVAg_qUDi1ojTDDfa70GYiyNnynLF8czPziRFCrVz8dyWc9QC7Z61I5EhbKQ1-ES8YNFUzKFcDk8fJtvS4PE8fVdf1pcui3_J9oBpHX_YtF1_j8Ev-wM9EG_X00&amp;t=22fed361" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gAH_EmH-Rtmahc3vorEc8R-xxB16Ey61e1bAKB83rB26_GvZPp3WI86rcsFiwzAx5xIGJ9GjfsjeyHlOTp7IeUTHIwd-purarCGV2n8o6L3Ht2DuBCA-qf6x1-ebEmiQxEuQ7uUfK18JQmxLwFxg26gDKF9oEXD81NMQWiDDr2z5OUcXJRm3uTWt6hrf20YGuT0h9dMz0rsMVbuHjuqBFg2&amp;t=22fed361" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=woVrAo3o_4NzzUv49hWQKYxW51y1d2REpPEPV3xOuLU48zPGbc7w1FeM_8nIeFNFkz4jT0742G_anGs8yf64eWpetPF_qvSkuTjYcrSJllqEFd0KmEVFWF0SKMbhjcLATlf6kSBBHP-CLl3jvz0KPUV3Q97o04fUOlIwAj3Ix5Z9KTagB4nkS18sjechrBWC-fVgJSoIvWqFVrp-A0qfdA2&amp;t=22fed361" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="1QxOrB4ZTPkGVVZ3jQat1d6xjVIzIfa2MHNHs8zrI9bo8-_FsjUDkkj6miesBKEn8tbvTjD9xtxx8B2PBHG3ovU2aG8NI4NcrCpDZ_0-uqk1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJ/D2LntCUWxRCk99TTc052D4zZrxX92uOlyIx1SyGTQiQWG3oj0Q9Dd3ULsXc0clUFyAcyCS248xXS1Ra+hDna" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl09', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <input type="image" name="ctl00$ImageButton1" id="ImageButton1" src="Images/gif/chiropractic-software.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ImageButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Default.aspx&quot;, false, false))" style="height:90px;width:700px;" />
+                </p>
+                <p class="site-title">
+                </p>
+                <input type="hidden" id="WebDataMenu1_clientState" name="WebDataMenu1_clientState" /><div class="ig_CaribbeanControl igdm_CaribbeanControlHorizontal" id="WebDataMenu1" style="font-weight:normal;width:1015px;display:none;">
+	<div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerRootHorizontal" data-ig="x:6377527.0:mkr:sd" style="position:relative;width:1015px;overflow:hidden;z-index:0;">
+		<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerLeft" title="Scroll left" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.1:mkr:sb" style="z-index:500;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconLeft" data-ig="x:6377527.2:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupHorizontalRoot " style="position:relative;display:block;">
+			<li data-ig="x:6377527.3:adr:0" class="igdm_CaribbeanMenuItemHorizontalRoot" unselectable="on" style="float:left;"><a accesskey="" href="/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Company24x24.gif" alt="Home" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Home</span></a></li><li data-ig="x:6377527.4:adr:1" class="igdm_CaribbeanMenuItemHorizontalRoot igdm_CaribbeanMenuItemHorizontalParent" unselectable="on" style="float:left;"><a href="/chiropractic-software/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/CD24x24.gif" alt="Products" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Products</span></a><div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerVertical" data-ig="x:6377527.5:mkr:sd" style="display:none;visibility:hidden;position:absolute;z-index:500;">
+				<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerTop" title="Scroll up" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.6:mkr:sb" style="z-index:1000;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconTop" data-ig="x:6377527.7:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupScrollingVertical " style="position:relative;display:block;">
+					<li data-ig="x:6377527.8:adr:1.0" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/chiropractic-software/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Customers24x24.gif" alt="Our Products" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Our Products</span></a></li><li data-ig="x:6377527.9:adr:1.1" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/saas/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/cloudsaas.gif" alt="Cloud Computing SaaS" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Cloud Computing SaaS</span></a></li><li data-ig="x:6377527.10:adr:1.2" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/chiropractic-software/emrdatacenter/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/EMRDC24x24.gif" alt="EMR Datacenter™" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">EMR Datacenter™</span></a></li><li data-ig="x:6377527.11:adr:1.3" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/chiropractic-software/emrwindows/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Computer_doctor_24x24.gif" alt="MyEMR® for Windows" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">MyEMR® for Windows</span></a></li>
+				</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerBottom" title="Scroll down" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.12:mkr:sb" style="z-index:1000;left:0px;bottom:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconBottom" data-ig="x:6377527.13:mkr:si" unselectable="on"></span></a>
+			</div></li><li data-ig="x:6377527.14:adr:2" class="igdm_CaribbeanMenuItemHorizontalRoot igdm_CaribbeanMenuItemHorizontalParent" unselectable="on" style="float:left;"><a href="/services/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Smile24x24.gif" alt="Services" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Services</span></a><div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerVertical" data-ig="x:6377527.15:mkr:sd" style="display:none;visibility:hidden;position:absolute;z-index:500;">
+				<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerTop" title="Scroll up" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.16:mkr:sb" style="z-index:1000;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconTop" data-ig="x:6377527.17:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupScrollingVertical " style="position:relative;display:block;">
+					<li data-ig="x:6377527.18:adr:2.0" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/services/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Client%20group24x24.gif" alt="Our Services" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Our Services</span></a></li><li data-ig="x:6377527.19:adr:2.1" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/saas/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/cloudsaas.gif" alt="Cloud Computing: SaaS" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Cloud Computing: SaaS</span></a></li>
+				</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerBottom" title="Scroll down" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.20:mkr:sb" style="z-index:1000;left:0px;bottom:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconBottom" data-ig="x:6377527.21:mkr:si" unselectable="on"></span></a>
+			</div></li><li data-ig="x:6377527.22:adr:3" class="igdm_CaribbeanMenuItemHorizontalRoot" unselectable="on" style="float:left;"><a href="/datacenter/default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Database%20server24x24.gif" alt="Facilities" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Facilities</span></a></li><li data-ig="x:6377527.23:adr:4" class="igdm_CaribbeanMenuItemHorizontalRoot igdm_CaribbeanMenuItemHorizontalParent" unselectable="on" style="float:left;"><a href="/downloads/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Download24x24.gif" alt="Downloads" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Downloads</span></a><div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerVertical" data-ig="x:6377527.24:mkr:sd" style="display:none;visibility:hidden;position:absolute;z-index:500;">
+				<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerTop" title="Scroll up" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.25:mkr:sb" style="z-index:1000;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconTop" data-ig="x:6377527.26:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupScrollingVertical " style="position:relative;display:block;">
+					<li data-ig="x:6377527.27:adr:4.0" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://www.swmotif.com/downloads/SetupMyEMRSaaS.exe" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/cloudsaas.gif" alt="MyEMR® SaaS Cloud Connector" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">MyEMR® SaaS Cloud Connector</span></a></li><li data-ig="x:6377527.28:adr:4.1" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://www.swmotif.com/downloads/SetupMyEMRSaaSOPOS.exe" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Visa.gif" alt="MyEMR® SaaS OPOS" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">MyEMR® SaaS OPOS</span></a></li><li data-ig="x:6377527.29:adr:4.2" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://www.swmotif.com/downloads/SetupCloudPosition.exe" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Inventory.gif" alt="Set Cloud Position" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Set Cloud Position</span></a></li><li data-ig="x:6377527.30:adr:4.3" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://www.swmotif.com/downloads/SetupCloudPosition.exe" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/png/earth.png" alt="MyEMR® Global" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">MyEMR® Global</span></a></li><li data-ig="x:6377527.31:adr:4.4" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="/downloads/Default.aspx" tabindex="-1" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Microsoft%20flag24x24.gif" alt="Microsoft Download Links" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Microsoft Download Links</span></a></li>
+				</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerBottom" title="Scroll down" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.32:mkr:sb" style="z-index:1000;left:0px;bottom:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconBottom" data-ig="x:6377527.33:mkr:si" unselectable="on"></span></a>
+			</div></li><li data-ig="x:6377527.34:adr:5" class="igdm_CaribbeanMenuItemHorizontalRoot" unselectable="on" style="float:left;"><a href="http://release.softwaremotif.com" tabindex="-1" target="release" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Notebook24x24.gif" alt="Release Notes" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">Release Notes</span></a></li><li data-ig="x:6377527.35:adr:6" class="igdm_CaribbeanMenuItemHorizontalRoot" unselectable="on" style="float:left;"><a href="http://community.softwaremotif.com" tabindex="-1" target="faq" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Question%20mark24x24.gif" alt="FAQ&#39;s" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">FAQ's</span></a></li><li data-ig="x:6377527.36:adr:7" class="igdm_CaribbeanMenuItemHorizontalRoot igdm_CaribbeanMenuItemHorizontalParent" unselectable="on" style="display:none;float:left;"><a href="http://manual.softwaremotif.com/" tabindex="-1" target="emanuals" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/Book%20library24x24.gif" alt="eManuals" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">eManuals</span></a><div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerVertical" data-ig="x:6377527.37:mkr:sd" style="display:none;visibility:hidden;position:absolute;z-index:500;">
+				<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerTop" title="Scroll up" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.38:mkr:sb" style="z-index:1000;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconTop" data-ig="x:6377527.39:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupScrollingVertical " style="position:relative;display:block;">
+					<li data-ig="x:6377527.40:adr:7.0" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://manual.softwaremotif.com/" tabindex="-1" target="emanuals" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Book%20library24x24.gif" alt="eManual Home" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">eManual Home</span></a></li><li data-ig="x:6377527.41:adr:7.1" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://manual.softwaremotif.com/EMRDatacenter/tabid/135/Default.aspx" tabindex="-1" target="emanuals" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/EMRDC24x24.gif" alt="EMR Datacenter™" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">EMR Datacenter™</span></a></li><li data-ig="x:6377527.42:adr:7.2" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://manual.softwaremotif.com/MyEMRforWindows/tabid/136/Default.aspx" tabindex="-1" target="emanuals" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Computer_doctor_24x24.gif" alt="MyEMR® for Windows" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">MyEMR® for Windows</span></a></li>
+				</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerBottom" title="Scroll down" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.43:mkr:sb" style="z-index:1000;left:0px;bottom:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconBottom" data-ig="x:6377527.44:mkr:si" unselectable="on"></span></a>
+			</div></li><li data-ig="x:6377527.45:adr:8" class="igdm_CaribbeanMenuItemHorizontalRoot igdm_CaribbeanMenuItemHorizontalParent" unselectable="on" style="display:none;float:left;"><a href="https://support.softwaremotif.com" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemHorizontalRootLink " onclick="{return false;}"><img src="Images/gif/eTicket24x24.gif" alt="eTickets" class="igdm_CaribbeanMenuItemHorizontalIcon " /><span tabindex="-1" unselectable="on">eTickets</span></a><div class="igdm_CaribbeanMenuScrollContainer igdm_CaribbeanMenuScrollContainerVertical" data-ig="x:6377527.46:mkr:sd" style="display:none;visibility:hidden;position:absolute;z-index:500;">
+				<a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerTop" title="Scroll up" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.47:mkr:sb" style="z-index:1000;top:0px;left:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconTop" data-ig="x:6377527.48:mkr:si" unselectable="on"></span></a><ul class="igdm_CaribbeanMenuGroupScrollingVertical " style="position:relative;display:block;">
+					<li data-ig="x:6377527.49:adr:8.0" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://support.softwaremotif.com" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/eTicket24x24.gif" alt="eTicket Home" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">eTicket Home</span></a></li><li data-ig="x:6377527.50:adr:8.1" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://support.softwaremotif.com/Customer/SubmitTicket.aspx" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Mailing24x24.gif" alt="Submit an eTicket" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Submit an eTicket</span></a></li><li data-ig="x:6377527.51:adr:8.2" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://support.softwaremotif.com/Customer/GetTickets.aspx" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Transfer24x24.gif" alt="Get eTickets" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Get eTickets</span></a></li><li data-ig="x:6377527.52:adr:8.3" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://support.softwaremotif.com/Customer/ViewTicket.aspx" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/View24x24.gif" alt="View an eTicket" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">View an eTicket</span></a></li><li data-ig="x:6377527.53:adr:8.4" class="igdm_CaribbeanMenuItemVertical" unselectable="on"><a href="http://support.softwaremotif.com/Login.aspx" tabindex="-1" target="etickets" class="igdm_CaribbeanMenuItemVerticalLink " onclick="{return false;}"><img src="Images/gif/Client24x24.gif" alt="Agent Login" class="igdm_CaribbeanMenuItemVerticalIcon " /><span tabindex="-1" unselectable="on">Agent Login</span></a></li>
+				</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerBottom" title="Scroll down" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.54:mkr:sb" style="z-index:1000;left:0px;bottom:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconBottom" data-ig="x:6377527.55:mkr:si" unselectable="on"></span></a>
+			</div></li>
+		</ul><a class="igdm_CaribbeanMenuScrollButton igdm_CaribbeanMenuScrollerRight" title="Scroll right" href="javascript:void(0)" tabindex="-1" data-ig="x:6377527.56:mkr:sb" style="z-index:500;top:0px;right:0px;display:none;"><span class="igdm_CaribbeanMenuScrollIcon igdm_CaribbeanMenuScrollIconRight" data-ig="x:6377527.57:mkr:si" unselectable="on"></span></a>
+	</div>
+</div>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="./">Home</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        
+<meta name="description" content="MyEMR® chiropractic software provides integrated chiropractic billing, paperless chiropractic scanning, SOAP notes and narrative reports. Built for Windows 10, Windows 8.1, Windows 7, and Tablet PC's. Cloud SaaS available 24x7x365."/>
+<meta name="keywords" content="chiropractic software, chiropractic billing software, chiropractic SOAP note, narrative reports, random text generation, emr datacenter, EMR, EHR, scanning, paperless office, cloud computing"/>
+<meta http-equiv="Classification" content="chiropractic software, chiropractic billing software, chiropractic pocket pc"/>
+<meta name="msvalidate.01" content="4BC78CD38721404CA8516AAB566584A3"/>
+<meta name="y_key" content="25b344257e291c0b"/>
+<meta NAME="Slurp" CONTENT="NOYDIR"/>
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Chiropractic software: Integrated billing, EHR, narrative reporting and scanning solutions</h1>
+            </hgroup>
+            <p>
+                <strong>Paperless office? *Yes!* <span style="font-weight: 400;">With our EMR Datacenter™, MyEMR® and EMR Imagecenter chiropractic software solutions, you will instantly become 100% paperless!&nbsp; Built for Windows 10 and Windows Server.&nbsp; Designed with the ultimate multi-site capability with Software-as-a-Service cloud computing starting at $119/month for up to 3 user logins!</span></strong></p>
+        </div>
+    </section>
+
+        <section class="content-wrapper main-content clear-fix">
+            
+    <style type="text/css">
+        div#MainContent{
+         
+        }
+        div#leftPane {
+         width: 500px;
+         float: left;
+         margin: 0px auto;
+         padding: 10px;
+        }
+
+        div#rightPane {
+         width: 300px;
+         float: left;
+         margin: 0px auto;
+         padding: 10px;
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style1 {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+}
+    </style><div id="leftPane">
+        <h3>Our chiropractic software is seamlessly integrated.&nbsp; We refer to this software collection as our <b>EMR Suite™</b>.<br />
+        </h3>
+    <ol class="round">
+        <li class="one">
+            <h5>EMR Datacenter™ - seamlessly integrated office management</h5>
+            EMR Datacenter is our flagship office management and billing software.&nbsp;
+            It includes insurance &amp; patient billing, appointment management and total office management.</li>
+        <li class="two">
+            <h5>MyEMR® for Windows - Random Text Generation</h5>
+            MyEMR® is our random text generation SOAP and narrative reporting EHR software. MyEMR® includes SOAP notes and narrative reports on Microsoft Windows based computers and Apple Macintosh computers that run Windows either natively or as a virtual machine.</li>
+        <li class="three">
+            <h5>EMR Imagecenter™ - your paperless office</h5>
+            EMR Imagecenter provides scanning and organization features so you can be 100% paperless and immediately organized.&nbsp; EMR Imagecenter provides document scanning and imaging for the ultimate paperless office.&nbsp; Upload your scanned image files into the patient&#39;s integrated imaging window for a truly paperless office - anywhere you login to the cloud!</li>
+        <li class="four">
+            <h5>Software-as-a-Service: SaaS - login to the cloud!</h5>
+            Software Motif Cloud computing that provides all of the advantages of multiuser Windows Remote Desktop access, extreme performance and extreme hardware reliability, with all the feature rich benefits of EMR Datacenter and MyEMR for Windows and Tablet PC&#39;s.&nbsp; Imagine the possibilities and freedom:&nbsp; <b>$119 per month*</b> for the most comprehensive chiropractic office management software running a <strong><a href="/saas/Default.aspx" title="Software-as-a-Service">SaaS</a></strong> cloud computing platform!&nbsp; All you need to have is a broadband Internet connection!
+        </li>
+    </ol>
+        <p align="center">
+            <strong><a href="http://www.softwaremotif.com/chiropractic-software/Default.aspx" title="MyEMR - Electronic Healthcare Records">
+            <img alt="MyEMR® x-ray pane window view." border="0" height="225" src="/images/jpg/MyEMRXRay375W.jpg" width="375" /></a></strong></p>
+        <p>
+            <strong>Paperless office? *Yes!* With EMR Imagecenter™, EMR Datacenter™ and MyEMR®, you will instantly become 100% paperless!&nbsp; Built for Windows 10, Windows 8.1, and Windows 7.&nbsp; Designed for your local area network, or benefit from the ultimate multi-site capability with Software-as-a-Service cloud computing starting at $119/month for up to 3 user logins!</strong></p>
+        <table>
+            <tr>
+                <td width="65">
+                    <img alt="HP TouchSmart 300/600 series:  Touchscreen" border="0" height="135" src="/images/gif/HPTouchSmart300.gif" width="180" /></td>
+                <td>We support <b>touch screens</b>, <b>Tablet PC&#39;s</b>, desktops and notebooks.&nbsp; Our EMR/EHR SaaS Cloud **loves** <b>wireless</b> devices!</td>
+                <td width="150">
+                    <img alt="ASUS T91 Tablet PC:  Solid state drive, long battery life!" border="0" height="88" src="/images/gif/ASUS_T91_150W.gif" width="150" /></td>
+            </tr>
+            <tr>
+                <td><b>Touch screens</b></td>
+                <td>&nbsp;</td>
+                <td><b>Tablet PC&#39;s</b></td>
+            </tr>
+        </table>
+        <p>
+            <a href="/chiropractic-software/" title="chiropractic billing software">Chiropractic software</a> programs that are seamlessly integrated is our specialty, including networked <a href="/chiropractic-software/emrdatacenter/Default.aspx">chiropractic billing software</a> and <a>SOAP notes</a> for Microsoft Windows.</p>
+        <p>
+            <a href="/chiropractic-software/Default.aspx" title="chiropractic SOAP notes">Chiropractic SOAP notes</a> and narrative report documentation is the talent of <b>MyEMR® 2019</b>.&nbsp; It includes an extremely efficient random text generation engine.</p>
+        <p>
+            We specialize in patient demographic and chiropractic EMR SOAP note <a title="data conversions">data conversions</a> for a broad review of chiropractic EMR software products.&nbsp; Please contact us regarding data imports of your existing insurance payers, ICD-9 codes, CPT codes and fee schedules for <a href="/chiropractic-software/emrdatacenter/">EMR Datacenter</a>.™</p>
+        <p align="center">
+            <a href="http://www.softwaremotif.com/chiropractic-software/emrdatacenter/Default.aspx" title="chiropractic billing software">
+            <img alt="Chiropractic billing and appointment schedule" border="0" src="/images/gif/emrFrontDesk50.gif" /></a></p>
+        <table id="table6" border="0" cellpadding="0" cellspacing="0" height="168" width="100%">
+            <tr>
+                <td align="left" height="168" valign="top"><b>
+                    <br />
+                    Product Pricing:</b><p>
+                        We offer the best <u><b>quality</b></u>, best <u><b>service</b></u> at the best <b><u>prices</u></b>!</p>
+                    <p>
+                        <b>EMR Datacenter 2019:&nbsp; </b>For your office management requirements, EMR Datacenter is your best choice.&nbsp; Whether you need it for a single computer, an office network, or even a Windows Server 2012 R2 installation for a multi-facility arrangement using the thin-client features of Windows 10/8/7 and Windows Server 2012/2008, our office management software has exceptional features and exceptional value.</p>
+                    <p>
+                        <b>EMR Imagecenter 2019</b> excels in patient record scanning, document imaging and document management.&nbsp; <b>EMR Imagecenter</b> seamlessly integrates with <b>EMR Datacenter</b> and <b>MyEMR</b> for the ultimate paperless office.</p>
+                    <p>
+                        <b>MyEMR 2019 for Windows</b>:&nbsp; MyEMR® is our chiropractic SOAP note software for Windows, featuring its random text generation engine and customizable text.&nbsp; MyEMR 2019 is database compatible with EMR Datacenter 2019 for a seamlessly integrated solution.&nbsp; MyEMR for Windows is ideal for Tablet PC&#39;s running Windows 10.</p>
+                </td>
+            </tr>
+        </table>
+        <div>
+&nbsp;<div class="swmTextC">
+                        &nbsp;| <u><font color="#808080"><a href="http://release.softwaremotif.com/" title="Release Notes">Release Notes</a></font></u> |</div>
+            <p align="center">
+                <b>
+                <br />
+                MyEMR®,
+                EMR Datacenter and EMR Imagecenter
+                <br />
+                are trademarks of Software Motif, Inc.</b></p>
+            <p align="center">
+                * M.S.R.P.: Manufacturer&#39;s Suggested Retail Price</p>
+            <p align="center">
+                &nbsp;</p>
+        </div>
+        <p>
+            &nbsp;</p>
+    </div>
+    <div id="rightPane">
+        <p align="center">
+            <a href="http://www.softwaremotif.com/chiropractic-software/emrdatacenter/" title="Chiropractic billing and appointment scheduling">
+            <img alt="Billing and appointment scheduling:  EMR Datacenter" border="0" height="33" src="/images/gif/EMRDatacenter.gif" width="234" /></a><br />
+            for Chiropractic Office Management</p>
+        <p align="center">
+            <a href="http://www.softwaremotif.com/saas/Default.aspx" title="Chiropractic Software-as-a-Service 24x7">EMR Datacenter SaaS</a>:<br />
+            &nbsp;<a href="http://www.softwaremotif.com/saas/Default.aspx" title="Cloud computing">Software-as-a-Service Cloud computing</a></p>
+        <p align="center">
+            <a href="http://www.softwaremotif.com/saas/Default.aspx"><b>
+            <img align="left" alt="Software-as-a-Service Cloud computing!" border="0" height="72" src="/images/gif/SaaS-Cloud-Computing-92W.gif" width="92" /></b></a><b>If your office is anywhere on planet Earth, ... login to the cloud!</b>&nbsp; 3 multi-user concurrent secure logins: <a href="/saas/Default.aspx">$119/mo.</a></p>
+        <p align="center">
+            <img alt="EMR Imagecenter - paperless office" border="0" height="69" src="/images/gif/EMRImagecenter.gif" width="202" /></p>
+        <p align="center">
+            <a href="http://www.softwaremotif.com/chiropractic-software/emrwindows" title="MyEMR for Windows">
+            <img alt="MyEMR for Windows" border="0" height="61" src="/images/gif/MyEMRWindows.gif" width="202" /></a></p>
+        <p align="center">
+            <b><font color="#000000">Centralized billing integration package<br />
+            </font></b>Call us at <b>800.481.9060 or contact<br />
+            &nbsp;<a href="mailto:sales@softwaremotif.com?subject=MyEMR integrated package pricing query;" title="Contact S/W Motif Sales">sales@softwaremotif.com</a></b></p>
+        <p align="center">
+            <img alt="Update notice!" border="0" height="11" src="/images/gif/new.gif" width="28" /><b> <a href="http://release.softwaremotif.com">Updates</a>  were posted on:
+            <br />
+            Jan. 25, 2019</b></p>
+        <p align="center">
+            <a href="http://www.softwaremotif.com/chiropractic-software/Default.aspx" title="Integrated credit card processing">
+            <img alt="Integrated credit card processing." border="0" height="145" src="/images/jpg/CCScanning175W.jpg" width="175" /></a></p>
+        <p align="center">
+            <b>EMR Datacenter 2019</b> supports integrated credit card scanning as part of its receipt window. No duplicate credit card entry!</p>
+                        <p align="center">
+                            <a href="http://www.softwaremotif.com/saas/Default.aspx" title="SaaS Cloud Computing:  Software-as-a-Service">
+                            <img alt="SaaS Cloud Computing:  Software-as-a-Service" height="120" src="/images/jpg/cloud2.jpg" width="155" /></a></p>
+                        <p align="center">
+                            <a href="/saas/Default.aspx" title="Chiropractic Software-as-a-Service 24x7">EMR Datacenter SaaS</a>:<br />
+                            <a href="/saas/Default.aspx">Software-as-a-Service</a></p>
+        <p align="center">
+            <img alt="ICD Architect" height="49" longdesc="http://www.softwaremotif.com/ICD%20Architect%20intelligently%20provides%20your%20ICD-10%20codes%20in%20three%20mouse%20clicks!" src="Images/gif/ICDArchitect200x49.gif" width="200" /></p>
+        <p align="center">
+            <strong>CMS-1500 02/12 form including ICD-10 support (with GEM General Equivalency Mapping to ICD-9)!</strong></p>
+        <p align="center">
+            <table id="table11" border="0" cellpadding="2" width="100%">
+                <tr>
+                    <td>
+                        <p align="center">
+                            <b>EMR Datacenter Software-as-a-Service:&nbsp; </b>Cloud Computing starting <b>$119/mo.*, with no contracts and no computer upgrades.&nbsp; Training and support is included. Software updates included. Works with all Windows desktops, laptops and wireless Tablet PC&#39;s.</b></p>
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <p align="center">
+            <a href="/chiropractic-software/Default.aspx" title="EMR Datacenter">Chiropractic billing software integration</a></p>
+        <p align="center">
+        </p>
+    </div>
+    
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>
+                    &copy; 2004-2019 by Software Motif, Inc.  ·  Last reviewed on Friday, January 25, 2019 03:57PM  ·  Server time 01/28/19 06:19PM -05:00 UTC
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebDataMenu, {"id":"WebDataMenu1","name":"WebDataMenu1","props":[[[,,,,,],{"c":{"mihIcon":"igdm_CaribbeanMenuItemHorizontalIcon","miv":"igdm_CaribbeanMenuItemVertical","mivSelected":"igdm_CaribbeanMenuItemVerticalSelected","mivIcon":"igdm_CaribbeanMenuItemVerticalIcon","mgv":"igdm_CaribbeanMenuGroupVertical","mivRootSelected":"igdm_CaribbeanMenuItemVerticalRootSelected","mivParent":"igdm_CaribbeanMenuItemVerticalParent","ocs":1,"mivRootLink":"igdm_CaribbeanMenuItemVerticalRootLink","mihRootActive":"igdm_CaribbeanMenuItemHorizontalRootActive","mihRoot":"igdm_CaribbeanMenuItemHorizontalRoot","mgh":"igdm_CaribbeanMenuGroupHorizontal","mihRootDisabled":"igdm_CaribbeanMenuItemHorizontalRootDisabled","cmonc":true,"mivRootActive":"igdm_CaribbeanMenuItemVerticalRootActive","aoh":true,"mivParentLink":"igdm_CaribbeanMenuItemVerticalParentLink","subMenuClosingDelay":0,"mivRoot":"igdm_CaribbeanMenuItemVerticalRoot","enableScrolling":true,"enabled":true,"uid":"ctl00$WebDataMenu1","mihActive":"igdm_CaribbeanMenuItemHorizontalActive","mihRootLink":"igdm_CaribbeanMenuItemHorizontalRootLink","pi":"[]","tabIndex":"0","mhDisabled":"igdm_CaribbeanControlHorizontalDisabled","mivRootDisabled":"igdm_CaribbeanMenuItemVerticalRootDisabled","mihParentLink":"igdm_CaribbeanMenuItemHorizontalParentLink","mivActive":"igdm_CaribbeanMenuItemVerticalActive","subMenuOpeningDelay":0,"mihRootHover":"igdm_CaribbeanMenuItemHorizontalRootHover","mvDisabled":"igdm_CaribbeanControlVerticalDisabled","mghRoot":"igdm_CaribbeanMenuGroupHorizontalRoot","_pi":"[\"ig_res/Default/images/ig_ajaxIndicator.gif\",,,\"ig_AjaxIndicator\",,1,,,,\"ig_AjaxIndicatorBlock\",,3,,3,\"Async post\"]","mihHover":"igdm_CaribbeanMenuItemHorizontalHover","mihRootSelected":"igdm_CaribbeanMenuItemHorizontalRootSelected","mih":"igdm_CaribbeanMenuItemHorizontal","mvActive":"igdm_CaribbeanControlVerticalActive","mivRootHover":"igdm_CaribbeanMenuItemVerticalRootHover","mivDisabled":"igdm_CaribbeanMenuItemVerticalDisabled","mivLink":"igdm_CaribbeanMenuItemVerticalLink","mihParent":"igdm_CaribbeanMenuItemHorizontalParent","mgvRoot":"igdm_CaribbeanMenuGroupVerticalRoot","mihDisabled":"igdm_CaribbeanMenuItemHorizontalDisabled","mhActive":"igdm_CaribbeanControlHorizontalActive","mihSelected":"igdm_CaribbeanMenuItemHorizontalSelected","mivHover":"igdm_CaribbeanMenuItemVerticalHover","mihLink":"igdm_CaribbeanMenuItemHorizontalLink"}}],[[[[,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]],,]],[{'0':[[,,,,"Home",,,"~/Default.aspx","",,,,,]],'1':[[,,,,"Products",,,"~/chiropractic-software/Default.aspx","",,,,,]],'1.0':[[,,,,"Our Products",,,"~/chiropractic-software/Default.aspx","",,,,,]],'1.1':[[,,,,"Cloud Computing SaaS",,,"~/saas/Default.aspx","",,,,,]],'1.2':[[,,,,"EMR Datacenter™",,,"~/chiropractic-software/emrdatacenter/Default.aspx","",,,,,]],'1.3':[[,,,,"MyEMR® for Windows",,,"~/chiropractic-software/emrwindows/Default.aspx","",,,,,]],'2':[[,,,,"Services",,,"~/services/Default.aspx","",,,,,]],'2.0':[[,,,,"Our Services",,,"~/services/Default.aspx","",,,,,]],'2.1':[[,,,,"Cloud Computing: SaaS",,,"~/saas/Default.aspx","",,,,,]],'3':[[,,,,"Facilities",,,"~/datacenter/default.aspx","",,,,,]],'4':[[,,,,"Downloads",,,"~/downloads/Default.aspx","",,,,,]],'4.0':[[,,,,"MyEMR® SaaS Cloud Connector",,,"http://www.swmotif.com/downloads/SetupMyEMRSaaS.exe","",,,,,]],'4.1':[[,,,,"MyEMR® SaaS OPOS",,,"http://www.swmotif.com/downloads/SetupMyEMRSaaSOPOS.exe","",,,,,]],'4.2':[[,,,,"Set Cloud Position",,,"http://www.swmotif.com/downloads/SetupCloudPosition.exe","",,,,,]],'4.3':[[,,,,"MyEMR® Global",,,"http://www.swmotif.com/downloads/SetupCloudPosition.exe","",,,,,]],'4.4':[[,,,,"Microsoft Download Links",,,"~/downloads/Default.aspx","",,,,,]],'5':[[,,,,"Release Notes",,,"http://release.softwaremotif.com","release",,,,,]],'6':[[,,,,"FAQ\u0027s",,,"http://community.softwaremotif.com","faq",,,,,]],'7':[[327826,,,,"eManuals",,,"http://manual.softwaremotif.com/","emanuals",,,,,]],'7.0':[[,,,,"eManual Home",,,"http://manual.softwaremotif.com/","emanuals",,,,,]],'7.1':[[,,,,"EMR Datacenter™",,,"http://manual.softwaremotif.com/EMRDatacenter/tabid/135/Default.aspx","emanuals",,,,,]],'7.2':[[,,,,"MyEMR® for Windows",,,"http://manual.softwaremotif.com/MyEMRforWindows/tabid/136/Default.aspx","emanuals",,,,,]],'8':[[327826,,,,"eTickets",,,"https://support.softwaremotif.com","etickets",,,,,]],'8.0':[[,,,,"eTicket Home",,,"http://support.softwaremotif.com","etickets",,,,,]],'8.1':[[,,,,"Submit an eTicket",,,"http://support.softwaremotif.com/Customer/SubmitTicket.aspx","etickets",,,,,]],'8.2':[[,,,,"Get eTickets",,,"http://support.softwaremotif.com/Customer/GetTickets.aspx","etickets",,,,,]],'8.3':[[,,,,"View an eTicket",,,"http://support.softwaremotif.com/Customer/ViewTicket.aspx","etickets",,,,,]],'8.4':[[,,,,"Agent Login",,,"http://support.softwaremotif.com/Login.aspx","etickets",,,,,]]},{'-1':[[,,,,,,,,,,,,,,,,,"1015px",0,,,,,,"-1"]],'0':[[,,,,,,,,,,,,,,,,,,0,,,1,,,"0"]],'1':[[,,,,,,,,,,,,,,,,,,,,,,,,"1"]],'1.0':[[,,,,,,,,,,,,,,,,,,,,,,,,"1.0"]],'1.1':[[,,,,,,,,,,,,,,,,,,,,,,,,"1.1"]],'1.2':[[,,,,,,,,,,,,,,,,,,,,,,,,"1.2"]],'1.3':[[,,,,,,,,,,,,,,,,,,,,,,,,"1.3"]],'2':[[,,,,,,,,,,,,,,,,,,,,,,,,"2"]],'2.0':[[,,,,,,,,,,,,,,,,,,,,,,,,"2.0"]],'2.1':[[,,,,,,,,,,,,,,,,,,,,,,,,"2.1"]],'3':[[,,,,,,,,,,,,,,,,,,,,,,,,"3"]],'4':[[,,,,,,,,,,,,,,,,,,,,,,,,"4"]],'4.0':[[,,,,,,,,,,,,,,,,,,,,,,,,"4.0"]],'4.1':[[,,,,,,,,,,,,,,,,,,,,,,,,"4.1"]],'4.2':[[,,,,,,,,,,,,,,,,,,,,,,,,"4.2"]],'4.3':[[,,,,,,,,,,,,,,,,,,,,,,,,"4.3"]],'4.4':[[,,,,,,,,,,,,,,,,,,,,,,,,"4.4"]],'5':[[,,,,,,,,,,,,,,,,,,,,,,,,"5"]],'6':[[,,,,,,,,,,,,,,,,,,,,,,,,"6"]],'7':[[,,,,,,,,,,,,,,,,,,,,,,,,"7"]],'7.0':[[,,,,,,,,,,,,,,,,,,,,,,,,"7.0"]],'7.1':[[,,,,,,,,,,,,,,,,,,,,,,,,"7.1"]],'7.2':[[,,,,,,,,,,,,,,,,,,,,,,,,"7.2"]],'8':[[,,,,,,,,,,,,,,,,,,,,,,,,"8"]],'8.0':[[,,,,,,,,,,,,,,,,,,,,,,,,"8.0"]],'8.1':[[,,,,,,,,,,,,,,,,,,,,,,,,"8.1"]],'8.2':[[,,,,,,,,,,,,,,,,,,,,,,,,"8.2"]],'8.3':[[,,,,,,,,,,,,,,,,,,,,,,,,"8.3"]],'8.4':[[,,,,,,,,,,,,,,,,,,,,,,,,"8.4"]]}],[]]}, null, null, $get("WebDataMenu1"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

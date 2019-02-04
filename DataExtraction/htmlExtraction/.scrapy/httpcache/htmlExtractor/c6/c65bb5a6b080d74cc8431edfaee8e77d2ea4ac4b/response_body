@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Hind Tools: Welcome</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+var timeout         = 200;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose;
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script type="text/javascript"> 
+<!--
+function FadeImage(id, duration)
+{
+   var millisec = Math.round(duration / 100);
+   var timer = 0;
+   for(i = 0; i <= 100; i++)
+   {
+      setTimeout("SetOpacity('" + id + "'," + i + ")",(timer * millisec));
+      timer++;
+   }
+}
+function SetOpacity(id, opacity)
+{
+   var element = document.getElementById(id).style;
+   element.opacity = (opacity / 100);
+   element.MozOpacity = (opacity / 100);
+   element.KhtmlOpacity = (opacity / 100);
+   element.filter = "alpha(opacity=" + opacity + ")";
+}
+//-->
+</script> 
+<script type="text/javascript"> 
+<!--
+function PreloadImages()
+{
+   var imageObj = new Image();
+   var images = new Array();
+   images[0]="images/header1.jpg";
+   images[1]="images/header2.jpg";
+   images[2]="images/header1.jpg"; 
+   for (var i=0; i<=2; i++)
+   {
+      imageObj.src = images[i];
+   }
+}
+// -->
+</script> 
+
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://nolimitshost.info/wp-content/themes/rt-theme5/css/3/ie6.css" type="text/css" media="screen" />
+<script type='text/javascript' src='http://nolimitshost.info/wp-content/themes/rt-theme5/js/dd_belated_png.js'></script>
+<script>DD_belatedPNG.fix('.png,.icon,.alignright,.frame,#numbers a,blockquote,.single_image');</script>
+<![endif]-->
+<style type="text/css">
+	.slide_div {
+		position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 927px; height: 266px;
+	}
+	.slide img {
+		border:none;
+	}
+</style>
+<!--
+  jQuery library
+--> 
+<script type="text/javascript" src="images/lib/01.js"></script> 
+<!--
+  jCarousel library
+--> 
+<script type="text/javascript" src="images/lib/02.js"></script> 
+<!--
+  jCarousel skin stylesheet
+--> 
+<link rel="stylesheet" type="text/css" href="images/skins/01/skin.css" /> 
+ 
+<script type="text/javascript"> 
+ 
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel();
+});
+ 
+</script> 
+
+</head>
+<body onload="MM_preloadImages('images/about_over.jpg','images/contact_over.jpg','images/products_over.jpg','images/group_over.jpg','images/faq_over.jpg','images/clients_over.jpg')" bgcolor="#CCCCCC">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><table width="950" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="900" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><table width="900" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><img src="images/hindtool_logo.jpg" height="105" width="324" alt="Hind  Tools" /></td>
+  </tr>
+  <!--main menu--><tr>
+    <td><table width="900" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a href="index.html"><img src="images/home_over.jpg" height="50" width="112" alt="Home" /></a></td>
+    <td><img src="images/sep.jpg" height="50" width="1" alt="" /></td>
+	<td><ul id="sddm">	
+	<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">		
+	</a><div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="infra.html">Infrastructure</a>
+		<a href="quality system.html">Quality System</a>
+		<a href="accoledes.html">Accolades</a>
+		</div>
+	</li>
+	</ul>
+	</td>
+	<td><img src="images/sep.jpg" height="50" width="1" alt="" /></td>
+    <td><a href="product.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/products_over.jpg',1)"><img src="images/product.jpg" alt="Products" name="Image12" width="125" height="50" border="0" id="Image12" /></a></td>
+    <td><img src="images/sep.jpg" height="50" width="1" alt="" /></td>
+    <td><a href="thegroup.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','images/group_over.jpg',1)"><img src="images/group.jpg" alt="The Group" name="Image13" width="142" height="50" border="0" id="Image13" /></a></td>
+    <td><img src="images/sep.jpg" height="52" width="1" alt="" /></td>
+    <td><a href="faq.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','images/faq_over.jpg',1)"><img src="images/faq.jpg" alt="Faq" name="Image14" width="91" height="50" border="0" id="Image14" /></a></td>
+    <td><img src="images/sep.jpg" height="50" width="1" alt="" /></td>
+	<td><a href="client.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','images/clients_over.jpg',1)"><img src="images/clients.jpg" alt="Client" name="Image15" width="111" height="50" border="0" id="Image15" /></a></td>
+	<td><img src="images/sep.jpg" height="50" width="1" alt="" /></td>
+    <td>
+	<ul id="sddmcn">
+	<li><a href="#" onmouseover="mopen('m2')" onmouseout="mclosetime()"></a>
+	<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="contact.html">Contact Details</a>
+	<a href="contact_feedback.html">Feedback</a></div>
+	</li>
+	</ul>	</td>
+  </tr>
+</table>
+</td>
+  </tr><!--main menu end-->
+</table>
+<!--header-->
+<table width="900" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    
+    
+    <div id="wb_SlideShow1"> 
+<script type="text/javascript"> 
+<!--
+   var SlideShow1_Index = -1;
+   var SlideShow1_Images = new Array();
+   SlideShow1_Images[0] = ["images/header1.jpg","",""];
+   SlideShow1_Images[1] = ["images/header2.jpg","",""];
+   SlideShow1_Images[2] = ["images/header3.jpg","",""];
+   SlideShow1_Images[3] = ["images/header4.jpg","",""]; 
+   function SlideShow1ShowNext()
+   {
+      SlideShow1_Index = SlideShow1_Index + 1;
+      if (SlideShow1_Index > 3)
+         SlideShow1_Index = 0;
+      document.getElementById('SlideShow1_Fade').src = document.getElementById('SlideShow1').src;
+      SetOpacity('SlideShow1', 0);
+      eval("document.SlideShow1.src = SlideShow1_Images[" + SlideShow1_Index + "][0]");
+      setTimeout("SlideShow1ShowNext();", 4000);
+      FadeImage('SlideShow1', 1500);
+   }
+// -->
+</script> 
+<img src="images/header1.jpg"  id="SlideShow1_Fade" border="0" alt="" width="0" height="0" name="SlideShow1_Fade"> 
+<img src="images/header1.jpg"  id="SlideShow1" border="0" alt="" width="900" height="315" name="SlideShow1"> 
+<script type="text/javascript"> 
+<!--
+  SlideShow1ShowNext();
+// -->
+</script> 
+      
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<!--header end-->
+<!--body-->
+<table width="900px" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+  <!--left body-->
+    <td valign="top" style="background-image:url(images/main-content.gif); background-repeat:repeat-x;" align="center">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="welcome" align="left"><br /><h1>Welcome to Hind Tools</h1><br />
+	 Established in the year 1988 at Nashik, 140km. from Mumbai, the financial capital of India, Hind Tools is an engineering and financially stable manufacturing organisation offering high quality global solutions with over 400 dedicated workforce to support all your sheet metal needs .<br />
+We at Hind Tools handle low to high volume production quantities and offer a comprehansive range of services starting with complete product design with a prototype division, along with high quality tool manufacturing through precision sheet metal fabrication, to value added assemblies and direct end customer order fulfillment.<br /> 
+Hind Tools provides engineering based, cost effective customer focused solutions for precision steet metal parts and value added assembly, through innovation and excellence in execution, always exceeding customers expectations.</td>
+  </tr>
+  
+
+<tr>
+    
+  <td width="100%">
+  
+  <div id="wrap" style="background-image:url(images/main-content.gif); height:175px; width:647px; background-repeat:repeat-x; border:1px solid #f1f1f1;"> 
+ <ul id="mycarousel" class="jcarousel-skin-tango"> 
+ 
+    <li><a href="product.html#scroll2"><img src="images/show4.jpg" height="145" width="175" alt="" /></a></li> 
+    <li><a href="product.html#scroll2"><img src="images/show5.jpg" width="175" height="150" alt="" /></a></li>
+	<li><a href="product.html#scroll2"><img src="images/show6.jpg" width="177" height="150" alt="" /></a></li>
+	<li><a href="product.html#scroll4"><img src="images/show10.jpg" height="150" width="175" alt="" /></a></li> 
+    <li><a href="product.html#scroll4"><img src="images/show11.jpg" width="175" height="150" alt="" /></a></li>
+	<li><a href="product.html#scroll4"><img src="images/show12.jpg" width="177" height="150" alt="" /></a></li>
+	<li><a href="product.html#scroll1"><img src="images/show1.jpg" height="145" width="175" alt="" /></a></li> 
+    <li><a href="product.html#scroll1"><img src="images/show2.jpg" height="145" width="175" alt="" /></a></li>
+	<li><a href="product.html#scroll1"><img src="images/show3.jpg" height="145" width="177" alt="" /></a></li>
+	<li><a href="product.html#scroll3"><img src="images/show7.jpg" height="150" width="175" alt="" /></a></li> 
+    <li><a href="product.html#scroll3"><img src="images/show8.jpg" width="175" height="150" alt="" /></a></li>
+	<li><a href="product.html#scroll3"><img src="images/show9.jpg" width="177" height="150" alt="" /></a></li>
+	
+  </ul> 
+</div></td>
+  </tr>
+</table>
+</td>
+  
+ <!--Left body end-->	
+    <td style="width:5px;">&nbsp;</td>
+	<!--right body-->
+    <td valign="top" style="width:179px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/ht.jpg" height="179" width="248" alt="Hind Tools" /></td>
+  </tr>
+  <tr>
+    <td style="height:3px;"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="background-image:url(images/h-bg1.gif); background-repeat:repeat-x; height:60px;" class="product"><h1>Products</h1></td>
+  </tr>
+  <tr>
+    <td class="product"><ul>
+	<li><a href="product.html#scroll2">Sheet Metal Parts</a></li>
+    <li><a href="product.html#scroll1">Welded Assemblies</a></li>
+    <li><a href="product.html#scroll1">Rivetted Assembly</a></li>
+    <li><a href="product.html#scroll4">Press Tools &amp; Mouldes</a></li>
+    <li><a href="product.html#">Jigs & Fixtures</a></li>
+    <li><a href="product.html#scroll3">Luggage Pull Handles</a></li>
+	</ul></td>
+  </tr>
+  </table></td>
+  </tr>
+  
+</table>
+</td>
+  <!--right body end-->  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+<!--body end-->
+
+
+</td>
+  </tr>
+</table>
+<table width="950" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td style="background-image:url(images/bottom.jpg); background-repeat:no-repeat; height:117px; width:950px;">
+	<table width="900" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="footer" align="center" valign="top">
+	<ul><a href="index.html">Home</a>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul> </td>
+    <td>&nbsp;</td>
+    <td class="footer" align="center">
+	<ul>About Us
+    <li><a href="infra.html">Infrastructure</a></li>
+	<li><a href="quality system.html">Quality System</a></li>
+	<li><a href="accoledes.html">Accolades</a></li>
+	</ul> </td>
+    <td>&nbsp;</td>
+	<td class="footer" align="center"><ul><a href="product.html">Products</a>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul> </td>
+	<td>&nbsp;</td>
+	<td class="footer" align="center"><ul><a href="thegroup.html">The Group</a>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li></ul> </td>
+<td>&nbsp;</td>
+	<td class="footer" align="center"><ul><a href="faq.html">F.A.Q.</a>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul> </td>
+<td>&nbsp;</td>
+	<td class="footer" align="center"><ul><a href="client.html">Clients</a>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul> </td>
+<td>&nbsp;</td>
+<td class="footer" align="center"><ul>Contact Us
+<li><a href="contact.html">Contact Details</a></li>
+<li><a href="contact_feedback.html">Feedback</a></li>
+<li>&nbsp;</li>
+</ul> </td>
+	  </tr>
+  </table>
+
+
+
+
+
+</td>
+  </tr>
+  
+</table>
+</td>
+  </tr>
+</table>
+
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

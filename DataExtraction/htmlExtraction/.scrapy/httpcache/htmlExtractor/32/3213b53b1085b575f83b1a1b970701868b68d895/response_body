@@ -1,0 +1,226 @@
+
+<!--
+Added Non-Destructive Examination to menu
+-James Hoard 2/14/2014
+Added PED Certification PDF
+-James Hoard 2/18/2014
+Added BDI ISO Certification
+-James Hoard 2/21/2014
+-->
+<!doctype.html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+ <meta charset="utf-8">
+<title>HuronCasting.com -- The World's Leading Producer of Quality Shell Molded Steel Castings - Located in Pigeon, Michigan (Huron County)</title>
+ 
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link href="css/ddmenu.css" rel="stylesheet" type="text/css" />
+<link href="css/fader2.css" rel="stylesheet" type="text/css" />
+<link href="css/contact.css" rel="stylesheet" type="text/css" />
+<link href="css/request.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/fader2.js"></script>
+<script type="text/javascript" src="js/request.js"></script>
+
+</head>
+		
+<!--[if lt IE 7 ]><body class="ie6"><![endif]--> 
+<!--[if IE 7 ]><body class="ie7"><![endif]--> 
+<!--[if IE 8 ]><body class="ie8"><![endif]--> 
+<!--[if !IE]>--><body class="notie"><!--<![endif]-->
+<div id="bodywrap" class="bodywrap">
+	<div id="head">
+		<div id="innerhead">
+			<div id="logo">
+			<a href="index.php"><img src="images/logo.png" alt="Huron Castings" width="295" height="148" border="0" align="left"/></a>
+				<div id="requestquotewrap" class="disapear">
+					<div id="requestquote">
+						<form action="mailer.php" method="post">
+							<fieldset>
+								<legend class="podheadline space">Request Quote</legend>
+								<label for="name">Name</label>
+								<input name="name" id="name" type="text" />
+								<label for="phone">Phone</label>
+								<input name="phone" id="phone" type="text" />
+								<label for="email">Email</label>
+								<input name="email" id="email" type="text" />
+								<label for="comments">Comments</label>
+								<textarea name="comments" id="comments" type="text"></textarea>
+								<br />
+								<input type="submit" value="Send" class="podtext" id="sendbutt" />
+								
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<style>
+			.menud {color:white !important;}
+			</style>
+			<nav>
+				<div id="nav">
+		<a href="terms.php"><div id="termsnav" class="right"></div></a>
+                <a href="employment.php"><div id="employmentnav" class="right"></div></a>				
+				<a href="contact.php"><div id="contactnav" class="right"></div></a>
+				<a href="#" id="quotelaunch"><div id="requestnav" class="right"></div></a>
+				
+				<a href="company.php"><div id="comnav" class="right menu_class">	
+				<ul class="the_menu">
+				<!--<li><a href="quality.php" class="menud">Quality</a></li>-->
+				<li><a href="pdf/Insertpage3.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />HCI Material Selection Sheet</a></li>
+				<li><a href="pdf/isocertsheetHC.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />ISO 9001 Certification Sheet </a></li>
+				<li><a href="pdf/HCI_PED_Certification.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf"/>PED Certification Sheet</a></li>
+				<li><a href="pdf/BDI_PED_Certification.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf"/>HCI AAR M-1003 Certification Sheet</a></li>
+				<li><a href="pdf/BDSC_AAR_M1003_Cert.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf"/>BDI AAR M-1003 Certification Sheet</a></li>
+
+				</ul>
+				</div></a>
+				<a href="history.php"><div id="hisnav" class="right"></div></a>
+				<a href="#"><div id="capnav" class="right menu_class1">
+				<ul class="the_menu1">
+				<li><a href="#" style="cursor:default;" class="menud">Foundries</a>
+					<ul>
+						<li><a href="huroncasting.php" class="ddnestlist menud">&nbsp; - Huron Casting Inc.</a></li>
+						<li><a href="bluediamond.php" class="ddnestlist menud">&nbsp; - Blue Diamond Steel</a></li>
+						<li><a href="suzhou.php" class="ddnestlist menud">&nbsp; - Suzhou Huron Manufacturing Company</a></li>
+
+					</ul>
+				</li>
+				<li><a href="#" style="cursor:default;" class="menud">Value Added</a>
+					<ul>
+						<li><a href="axis.php" class="ddnestlist menud">&nbsp; - Axis Machining Inc</a></li>
+						<li><a href="bluechip.php" class="ddnestlist menud">&nbsp; - Blue Chip Machining LLC</a></li>
+						<li><a href="arenac.php" class="ddnestlist menud">&nbsp; - Arenac Casting Inc</a></li>
+						<li><a href="exam.php" class="ddnestlist menud">&nbsp; - Non-Destructive Testing</a></li>
+					</ul>
+				</li>
+				</ul>
+				</div></a>
+				<a href="index.php"><div id="homenav" class="right"></div></a>
+				</div>
+			</nav>
+		</div>
+	</div>
+	
+<script type="text/javascript" >
+$(document).ready(function(){
+	$('#bodywrap').removeClass('bodywrap');	
+	});
+</script>
+	<div id="mainbody">
+		<div id="bodytop" class="fader bgimgfiller">
+			<div id="slideshow">
+				<img src="images/showcase/showcase1.jpg" alt="Showcase" width="912" height="373" class="active"/>
+				<img src="images/showcase/showcase2.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase3.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase4.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase5.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase6.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase7.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase9.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase10.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase11.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase12.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase13.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase14.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase15.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase16.jpg" alt="Showcase" width="912" height="373" class=""/>	
+				<img src="images/showcase/showcase17.jpg" alt="Showcase" width="912" height="373" class=""/>	
+					
+			</div>
+		</div>
+		<div id="bodymiddle">
+			<div class="middlepod right">
+				<img border="0" src="images/gray.png" alt="Quality" width="304" height="31" />
+				<div class="podcontent">
+					<div id="ietweak2">
+					<p class="midpodtext">
+						<a href="pdf/Insertpage3.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />HCI Material Selection Sheet</a><br />
+						<a href="pdf/isocertsheetHC.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />ISO 9001 Certification Sheet </a><br />
+						<a href="pdf/PED_Certification.PDF" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />PED Certification Sheet</a><br />
+						<a href="pdf/HCPM-Certification-1.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />HCI AAR M-1003 Certification Sheet</a><br />
+						<a href="pdf/BDSC_AAR_M1003_Cert.pdf" class="menud" target="_blank"><img src="images/pdf.png" alt="pdf" />BDI AAR M-1003 Certification Sheet</a><br />
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middlepod right">
+				<a href="axis.php"><img border="0" src="images/red.png" alt="Value Added Machining" width="304" height="31" /></a>
+				<div class="podcontent">
+						
+						<a href="axis.php"><img border="0" src="images/axis-logo.png" alt="axis" /></a>
+						<a href="arenac.php"><img border="0" src="images/arenac-logo.png" alt="arenac" /></a>
+						<div id="ietweak1">
+						<p class="midpodtext"><!--Sed sem sapien, accumsan eget tempus eget, imperdiet sit amet dui. Sed a nisl a magna pulvinar elementum in eget sapien.
+						Class aptent taciti sociosqu ad litora torquent per conubia--></p>
+						</div>
+				 </div>
+			</div>
+			<div class="middlepod right">
+				<a href="huroncasting.php"><img border="0" src="images/found.png" alt="Foundries" width="304" height="31" /></a>
+				<div class="podcontent">
+					<p align="center"><img src="images/smlogos.png" width="298" height="66" border="0" usemap="#Map">
+                      <map name="Map">
+                        <area shape="rect" coords="113,1,181,65" href="suzhou.php" alt="Suzhou">
+                        <area shape="rect" coords="40,3,102,67" href="huroncasting.php" alt="Huron Casting">
+                        <area shape="rect" coords="199,3,268,64" href="bluediamond.php" alt="Blue Diamond">
+                      </map>
+					</p>
+					<p><a href="huroncasting.php"><a href="bluediamond.php"></a></a>
+					  <a href="bluediamond.php"></a></p>
+					<div id="ietweak">
+					  <p class="midpodtext"><!--Sed sem sapien, accumsan eget tempus eget, imperdiet sit amet dui. Sed a nisl a magna pulvinar elementum in eget sapien. 
+						Class aptent taciti sociosqu ad litora torquent per conubia--></p>
+				  </div>
+			  </div>
+			</div>
+		</div>
+		<div id="bodybottom">
+			<div id="innerbottom">
+				<div id="bottompod1">
+					<div id="innerbottompod1">
+					<p class="podheadline space">WHO WE ARE</p>
+					<p class="podtext">
+					Huron Casting, Inc, (HCI) was founded in 1976 based upon the mission of producing quality shell molded steel castings on time and at a competitive price. Our team of dedicated professionals have helped
+					us become the leading producer of shell molded steel castings in the world. With a dedication to reinvesting into our company we have grown every year since our inception. 
+					</p>
+					<p class="podtext space1">
+					Today our companies total over 1.5 million square feet, with capacity approaching 100,000 tons yearly. 
+					</p>
+					</div>
+				</div>
+				<div id="bottompod2" class="right">
+					<div id="innerbottompod2">
+						<p class="podheadline">NEWS</p>
+<hr /><br>
+						<p class="podtext space">2009 - Blue Chip Machining founded with 97,000 ft<sup>2</sup></p>
+						<p class="podtext space">2011 - Major Expansions   BDS - 175,000 ft<sup>2</sup>  Storage Facility - 100,000 ft<sup>2</sup></p>
+						<p class="podtext space">2012 - State of the art x-ray facility for parts up to 21 inches thick</p>
+						<p class="podtext space">Current - Over 1.5 million square feet of manufacturing space with capacity approaching 100,000 tons yearly.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="spacer"></div>
+	<div id="foot">
+		<div id="innerfoot">
+			<div id="footleft" style="width:350px;">
+			<img src="images/footerlogo.png" alt="Logo" height="29" width="22" />
+			<p>&copy;2011-2016 Huron Casting Inc, All rights Reserved</p>
+			</div>
+			<div class="right" id="footright">
+				<ul>
+					<li><a href="index.php">Home</a> | </li>
+					<li><a href="history.php">History</a> | </li>
+					<li><a href="contact.php">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--[if IE 7 ]> <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en-us" class="no-js ie8"> <![endif]-->
+<head>
+<!-- Compressed with FreeMarker -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Welcome | Sales &amp; Marketing Travel Experts | Discover the World</title>
+<!-- InstanceEndEditable -->
+<!-- #BeginEditable "metatags" -->
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- #EndEditable -->
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="copyright" content="Discover The World 2014" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/793136/772682/css/fonts.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/structure.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/typography.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/content.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/form.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/flexnav.css">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/maps.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/hover_tip.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/print.css" />
+<link rel="stylesheet" type="text/css" media="screen, projection" href="css/flickr-badge.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.min.js"></script>
+<script type="text/javascript" src="js/flexnav.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  // initialize FlexNav
+  $(".flexnav").flexNav();
+});
+</script>
+<script type="text/javascript">
+   var df;
+function init() {
+   df=document.forms[0];
+   df[0].value='search';
+   df[0].style.color='#999';
+df[0].onfocus=function() {
+   this.value='';
+   this.style.color='#333';
+ }
+df[0].onblur=function() {
+if(this.value=='') {
+   this.value='search';
+   this.style.color='#999';
+  }
+ }
+df.onsubmit=function() {
+   return check();
+  }
+ }
+function check() {
+if((df[0].value=='search')||(df[0].value=='')) {
+   alert('please enter a search item');
+   return false;
+  }
+ }
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script>
+function getwidth() {
+	if (document.body && document.body.offsetWidth) {
+	   winW = document.body.offsetWidth;
+	  }
+	  if (document.compatMode=='CSS1Compat' &&
+		  document.documentElement &&
+		  document.documentElement.offsetWidth ) {
+	   winW = document.documentElement.offsetWidth;
+	  }
+	  if (window.innerWidth && window.innerHeight) {
+	   winW = window.innerWidth;
+	  }
+	  return winW;
+}
+$(document).ready(function() {
+	// Determine the window size
+	
+  $(".banner-button").hoverIntent(
+    //on mouseover
+    function() {
+	  var winW = getwidth();
+	  var id = $(this).attr("id");
+	  $(".plus-"+id).fadeOut(0,0);
+	  if (winW > 650) {
+		if (winW <= 900) {
+		  $("#"+id).stop().animate({
+			width: '99%', //adds 150px
+			}, 'slow' //sets animation speed to slow
+		  );
+		} else {
+		  $("#"+id).stop().animate({
+			height: '+=240' //adds 150px
+			}, 'slow' //sets animation speed to slow
+		  );
+		}
+	  }
+	  
+    },
+    //on mouseout
+    function() {
+	  var winW = getwidth();
+	  var id = $(this).attr("id");
+	  if (winW <= 900) {
+		$("#"+id).animate({
+		  width: '13.5%', //substracts 150px
+		  }, 'slow'
+		);
+	  } else {
+		$("#"+id).animate({
+		  height: '-=240px' //substracts 150px
+		  }, 'slow'
+		); 
+	  }
+	  setTimeout(function(){$(".plus-"+id).fadeIn()}, 1000); 
+      
+    }
+  );
+});
+</script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $(".rslides1").responsiveSlides({
+		timeout: 6000,
+        speed: 3000,
+      });
+    });
+</script>
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5201250-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script');
+ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ?
+'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')
+[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+
+<body>
+<div id="siteWrapper">
+	<div id="navWrapper">
+      <div id="nav">
+        <div class="menu-button">Menu</div>
+        <nav>
+          <ul data-breakpoint="800" class="flexnav">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="who"><a href="who-we-are.html">Who we are</a></li>
+            <li class="what"><a href="what-we-do.html">What we do</a>
+              <ul id="whatwedomenu">
+                <li><a href="what-we-do/travel-sales.html">Travel sales</a></li>
+                <li><a href="what-we-do/marketing-services.html">Marketing services</a></li>
+                <li><a href="what-we-do/digital-marketing.html">Digital marketing</a></li>
+                <li><a href="what-we-do/bpo.html">BPO</a></li>
+                <li><a href="what-we-do/fin-protection.html">Financial protection</a></li>
+                <li><a href="what-we-do/strat-marketing.html">Strategic marketing</a></li>
+                <!-- <li><a href="../white-papers.php?Search_x=1">Global Market Insights &amp; White Papers</a></li> -->
+              </ul>
+            </li>
+            <li class="networks"><a href="global.html">Our global network</a>
+              <ul>
+                <li><a href="global/africa-and-middle-east.html">Africa and Middle East</a>
+                <ul>                         <li><a href="office-details.php?pid=66" >Eastern Africa</a></li>	
+                                                  <li><a href="office-details.php?pid=1" >Israel</a></li>	
+                                                  <li><a href="office-details.php?pid=4" >Saudi Arabia</a></li>	
+                                                  <li><a href="office-details.php?pid=7" >South Africa</a></li>	
+                                                  <li><a href="office-details.php?pid=8" >UAE</a></li>	
+                         </ul>                </li>
+                <li><a href="global/asia.html">Asia</a>
+                  <ul id='submenu1'><div class='left'>                         <li><a href="office-details.php?pid=9" >China</a></li>	
+                                                  <li><a href="office-details.php?pid=10" >Hong Kong</a></li>	
+                                                  <li><a href="office-details.php?pid=11" >India</a></li>	
+                                                  <li><a href="office-details.php?pid=12" >Indonesia</a></li>	
+                                                  <li><a href="office-details.php?pid=13" >Japan</a></li>	
+                                                  <li><a href="office-details.php?pid=14" >Korea</a></li>	
+                                                  <li><a href="office-details.php?pid=15" >Malaysia</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=16" >Philippines</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=17" >Singapore</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=18" >Sri Lanka</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=19" >Taiwan</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=20" >Thailand</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=21" >Vietnam</a></li>	
+                         </div><div class='right'></div></ul>                </li>
+                <li><a href="global/europe.html">Europe</a>
+                  <ul id='submenu1'><div class='left'>                         <li><a href="office-details.php?pid=22" >Austria</a></li>	
+                                                  <li><a href="office-details.php?pid=23" >Belgium</a></li>	
+                                                  <li><a href="office-details.php?pid=75" >Bosnia & Herzegovina</a></li>	
+                                                  <li><a href="office-details.php?pid=69" >Bulgaria</a></li>	
+                                                  <li><a href="office-details.php?pid=73" >Croatia</a></li>	
+                                                  <li><a href="office-details.php?pid=24" >Cyprus</a></li>	
+                                                  <li><a href="office-details.php?pid=25" >Czech Republic</a></li>	
+                                                  <li><a href="office-details.php?pid=26" >Denmark</a></li>	
+                                                  <li><a href="office-details.php?pid=27" >Finland</a></li>	
+                                                  <li><a href="office-details.php?pid=28" >France</a></li>	
+                                                  <li><a href="office-details.php?pid=29" >Germany</a></li>	
+                                                  <li><a href="office-details.php?pid=6" >Greece</a></li>	
+                                                  <li><a href="office-details.php?pid=30" >Hungary</a></li>	
+                                                  <li><a href="office-details.php?pid=31" >Iceland</a></li>	
+                                                  <li><a href="office-details.php?pid=32" >Ireland</a></li>	
+                                                  <li><a href="office-details.php?pid=33" >Italy</a></li>	
+                                                  <li><a href="office-details.php?pid=34" >Luxembourg</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=35" >Malta</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=36" >Netherlands</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=37" >Norway</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=38" >Poland</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=39" >Portugal</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=68" >Romania</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=40" >Russia</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=41" >Serbia</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=42" >Slovakia</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=74" >Slovenia</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=43" >Spain</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=44" >Sweden</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=45" >Switzerland</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=67" >Turkey</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=47" >Ukraine</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=48" >United Kingdom</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=71" >West Balkans</a></li>	
+                         </div><div class='right'></div></ul>                </li>
+                <li><a href="global/north-america.html" >North America</a>
+                  <ul>                         <li><a href="office-details.php?pid=3" >Canada</a></li>	
+                                                  <li><a href="office-details.php?pid=49" >Mexico</a></li>	
+                                                  <li><a href="office-details.php?pid=50" >USA</a></li>	
+                         </ul>                </li>
+                <li><a href="global/south-america.html" >South America</a>
+                  <ul id='submenu1'><div class='left'>                         <li><a href="office-details.php?pid=51" >Argentina</a></li>	
+                                                  <li><a href="office-details.php?pid=52" >Bolivia</a></li>	
+                                                  <li><a href="office-details.php?pid=53" >Brazil</a></li>	
+                                                  <li><a href="office-details.php?pid=54" >Chile</a></li>	
+                                                  <li><a href="office-details.php?pid=55" >Colombia</a></li>	
+                                                  <li><a href="office-details.php?pid=56" >Costa Rica</a></li>	
+                                                  <li><a href="office-details.php?pid=72" >Ecuador</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=57" >El Salvador</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=58" >Guatemala</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=59" >Panama</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=65" >Paraguay</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=60" >Peru</a></li>	
+                         </div><div class='right'>                         <li><a href="office-details.php?pid=61" >Uruguay</a></li>	
+                         </div><div class='right'></div></ul>                </li>
+                <li><a href="global/south-pacific.html" >South Pacific</a>
+                  <ul>                         <li><a href="office-details.php?pid=63" >Australia</a></li>	
+                                                  <li><a href="office-details.php?pid=64" >New Zealand</a></li>	
+                         </ul>                </li>
+              </ul>
+            </li>
+            <li class="clients"><a href="clients.html" title="Our Clients" >Our clients</a></li>
+            <li class="news"><a href="latest-news.html" title="News" >News</a></li>
+            <li class="contact"><a href="contact-us.html" title="Contact Us" >Contact us</a></li>
+            <li class="search"><a href="dtwsearch.php" title="Search" >&nbsp;</a>
+              <ul class="searchdd">
+                <li>
+                <form action="dtwsearch.php" method="get">
+                  <input class="search-input" name="zoom_query" type="text" />
+                  <input type="hidden" value="0" name="zoom_sort"></input>
+                  <input class="search-submit" name="srcsbmt" type="submit" />
+                </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="headerrow">
+  <div id="headerWrapperSmall">
+    <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Discover the World" title="Discover the World" class="dtwlogo" /></a></div>
+    <div id="slogan">Global travel sales, marketing &amp; outsourcing</div>
+    <div class="social">
+    <a class="facebook-icon" href="http://www.facebook.com/pages/Discover-the-World/149715051761235?ref=ts" target="_blank" ><img src="images/facebook.png" alt="facebook" title="facebook" width="32" height="32" /></a>
+    <a class="twitter-icon" href="https://twitter.com/discovernews" target="_blank" ><img src="images/twitter.png" alt="twitter" title="twitter" width="32" height="32"  /></a><br />
+     </div>
+  </div>
+</div>
+<div class="clearbanner"></div>
+<!-- End of Header Area -->
+<!-- InstanceBeginEditable name="banner" -->
+<div id="bannerWrapper">
+  <!-- Start Banner code -->
+  <div id="banner-container">
+    <ul class="rslides rslides1">
+            <li><span class="banner" style="background-image: url(images/gallery/home-banner-4.jpg);"></span></li>
+            <li><span class="banner" style="background-image: url(images/gallery/home-banner-5.jpg);"></span></li>
+            <li><span class="banner" style="background-image: url(images/gallery/what-we-do-1.jpg);"></span></li>
+            <li><span class="banner" style="background-image: url(images/gallery/panel-01.jpg);"></span></li>
+        </ul>
+  </div>  <!-- End Bannner Code -->
+
+<div id="bannerButtons">
+  <div id="buttonWrapper">
+  
+    <div id="button1" class="banner-button">
+       <span class="plus-button1"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">AIRLINES &amp;<br />ARC</span>
+       <div class="banner-content">
+         Reach across more markets and trade channels with our sales and marketing professionals. 
+         <a class="learn-more" href="what-we-do/travel-sales.html">Find out more</a><span class="splitter">&nbsp;</span>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    
+    <div id="button2" class="banner-button">
+       <span class="plus-button2"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">HOTELS</span>
+       <div class="banner-content">
+         Grow your revenues across corporate, TMC, MICE, group and retail channels supporting your key market efforts or commencing in new markets.
+         <a class="learn-more" href="what-we-do/travel-sales.html">Find out more</a>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    
+    <div id="button3" class="banner-button">
+       <span class="plus-button3"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">CARS</span>
+       <div class="banner-content">
+         Increase your revenue across global network of offices covering corporate and leisure channels, OTAs, Tour Operators and retail agents. 
+         <a class="learn-more" href="what-we-do/travel-sales.html">Find out more</a>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    
+    <div id="button4" class="banner-button">
+       <span class="plus-button4"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">CRUISE LINES</span>
+       <div class="banner-content">
+         Grow your cruise revenues across global markets. Discover is an expert in cruise representation covering tour operators, wholesale, retail travel agents and consumer direct. 
+         <a class="learn-more" href="what-we-do/travel-sales.html">Find out more</a>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    
+    <div id="button5" class="banner-button">
+       <span class="plus-button5"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">DESTINATIONS</span>
+       <div class="banner-content">
+         Increase your brand awareness and engagement across all trade and consumer channels utilizing Discover’s PR, offline &amp; online marketing tools, email databases and exceptional sales people.
+         <a class="learn-more" href="what-we-do.html">Find out more</a>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    
+    <div id="button6" class="banner-button">
+       <span class="plus-button6"><img src="images/plus.png" width="8" height="8" alt="+" /></span>
+       <span class="banner-box-title">OTAs &amp; TRAVEL PARTNERSHIPS</span>
+       <div class="banner-content">
+         Discover is an expert at introducing new technology products and services to the travel trade. We incorporate a strong knowledge of the market with experience of technology sales to deliver success. 
+         <a class="learn-more" href="what-we-do/travel-sales.html">Find out more</a>
+    	 <div class="clear"></div>
+       </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<!-- InstanceEndEditable -->
+<div id="contentWrapper">
+<!-- InstanceBeginEditable name="content" -->
+<div id="content">
+<div id="home-full">
+<p class="top-text">Do you need to reach new markets, grow your existing markets or change your sales channel mix?</p>
+</div>
+<div class="leftColumn">
+
+<h1>Welcome to Discover the World</h1>
+<p>Ensuring a constant flow of new business is  essential to every organisation. Discover the World is the travel industry  expert at developing proven and innovative solutions to penetrate international  markets, drive market share and increase revenue.</p>
+<p>We are passionate  about sales and marketing, helping our travel clients expand into new markets,  explore new sales channels, win new customers and realize their global  potential.</p>
+<div class="more"> <a href="who-we-are.html" >Find out more</a> </div>
+<div class="hr_home"></div>
+
+<p><img src="images/bricks_clicks.gif" width="349" height="226" align="right" />As your partner we work to help you develop sales representation programs that meet your unique needs. Our recipe for success is simple. We listen to you. You tell us what you want to accomplish. Then we build.</p>
+<p>It is about knowing you. It is about knowing who to target in each country to meet your objectives and deliver the desired result. It is about being your brand in the local market and delivering the right message to the right audience at the right time.</p>
+<p>Today, we have more than 65 offices globally, bringing innovative sales and marketing solutions to a diverse client base to help solve their market expansion challenges. In addition to our core sales and marketing business, Discover the World is a technology leader, providing digital solutions through its innovative bigblueroad.com division.</p> 
+<p>Our combined strength of talented local travel professionals and exciting online technology helps our clients increase profit, open new markets, retain and grow relationships, solve problems and service needs.</p>
+
+<p>Others promise the world, we deliver it. <a href="contact-us.html" >Contact us</a> today.</p>
+<div class="more"> <a href="what-we-do.html" >Find out more</a> </div>
+
+</div>
+<div class="rightColumn">
+<h4><a href="//www.discovertheworld.com/latest-news.html" >Latest news</a></h4>
+<div class="box">
+<div class="newsTitle">Copa Airlines Builds Presence in Asia with Discover the World's Help</div>
+<div class="newsDate">12-03-2018</div>
+<p><p>Copa Airlines is building its presence in Asia with new sales and marketing representation in China, Hong Kong and Taiwan provided by Discover the World.</p></p>
+<div class="blueLink"><a href="//www.discovertheworld.com/news_article.php?nid=79" >Read article</a></div>
+</div>
+<h4 class="space">Get in touch</h4>
+<div class="box">
+<p class="small">
+<strong>Headquarters:</strong> +1 480-707-5566<br />
+<strong>London Regional Center:</strong> +44 0203 598 8030<br />
+<strong>Email:</strong>
+<a href="mailto:info@discover.co.uk" >info@discovertheworld.com</a> </p>
+</div>
+<br/>
+<div class="box">
+<div id="feed">          
+<a class="twitter-timeline" data-height="400" data-link-color="#d35508" href="https://twitter.com/discovernews">Latest Tweets by discovernews</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="blueLink"><a href="https://twitter.com/discovernews" target="_blank" >Follow us</a></div>
+</div></div>
+<div class="clear"></div>
+</div>
+<!-- InstanceEndEditable -->
+<div class="clear"></div>
+</div>
+<!-- End of Content Area -->
+<div id="footer">
+<ul>
+<li class="content">
+<span>Content</span>
+<a href="index.html" >Home</a><br />
+<a href="who-we-are.html" >Who we are</a><br />
+<a href="what-we-do.html" >What we do</a><br />
+<a href="clients.html" >Clients</a><br />
+<a href="latest-news.html" >News</a><br />
+<a href="sitemap.html" >Sitemap</a> </li>
+<li class="sep"></li>
+<li class="sales">
+<span>What we do</span>
+<a href="what-we-do/travel-sales.html" >Sales representation</a><br />
+<a href="what-we-do/marketing-services.html" >Marketing services</a><br />
+<a href="what-we-do/digital-marketing.html" >Online marketing</a><br />
+<a href="what-we-do/bpo.html" >Business process outsourcing (BPO)</a><br />
+<a href="what-we-do/fin-protection.html" >Financial protection and risk management</a><br />
+<a href="what-we-do/strat-marketing.html" >Strategic marketing alliances</a><br />
+<li class="sep2"></li>
+<li class="network">
+<span>Our global network</span>
+<a href="global/africa-and-middle-east.html" >Africa and Middle East</a><br />
+<a href="global/asia.html" >Asia</a><br />
+<a href="global/europe.html" >Europe</a><br />
+<a href="global/north-america.html" >North America</a><br />
+<a href="global/south-america.html" >South America</a><br />
+<a href="global/south-pacific.html" >South Pacific</a><br />
+</li>
+<li class="sep"></li>
+<li class="connect"><span>Connect</span>
+<a href="contact-us.html" >Contact us</a><br />
+<a href="https://twitter.com/discovernews" target="_blank" >Twitter</a><br />
+<a href="http://www.facebook.com/pages/Discover-the-World/149715051761235?ref=ts" target="_blank" >Facebook</a><br/>
+<a href="privacy/" target="_blank" >Privacy</a> </li>
+</ul>
+<div class="clear"></div>
+<p class="copyright">&copy; 2018 Discover the World. All rights reserved.</p>
+</div> </div>
+<script type="text/javascript" src="js/jquery/jquery.pngFix.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.pixastic.custom.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+$(document).pngFix();
+});
+//]]>
+</script> </body>
+<!-- InstanceEnd --></html>

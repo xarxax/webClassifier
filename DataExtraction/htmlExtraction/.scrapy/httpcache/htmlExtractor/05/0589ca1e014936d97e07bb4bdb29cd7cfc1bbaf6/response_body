@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>La Moutonni&egrave;re : Bienvenue</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+<!--
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		accueil_over = newImage("images/menu/accueil-over.jpg");
+		philo_over = newImage("images/menu/philo-over.jpg");
+		heureux_over = newImage("images/menu/heureux-over.jpg");
+		proprietes_over = newImage("images/menu/proprietes-over.jpg");
+		recettes_over = newImage("images/menu/recettes-over.jpg");
+		produit_over = newImage("images/menu/produits-over.jpg");
+		prix_over = newImage("images/menu/prix-over.jpg");
+		articles_over = newImage("images/menu/articles-over.jpg");
+		marche_over = newImage("images/menu/marche-over.jpg");
+		nouvelles_over = newImage("images/menu/nouvelles-over.jpg");
+		animaux_over = newImage("images/menu/animaux-over.jpg");
+		laine_over = newImage("images/menu/laine-over.jpg");
+		contact_over = newImage("images/menu/contact-over.jpg");
+		english_over = newImage("images/menu/english-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!--[if IE 6]>
+<link rel="stylesheet"
+href="IE6hack.css"
+type="text/css" />
+<![endif]-->
+
+</head>
+<body bgcolor="#FFFFFF" background="images/bigsky.jpg" link="#000099" vlink="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="preloadImages();MM_preloadImages('images/menu/BoutiqueOver.jpg','images/menu/anglais-over.jpg')" onResize="location.reload()" height:100%;>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><img src="images/mouton.gif" width="171" height="126" alt=""><img src="images/titre.jpg" width="623" height="126" alt=""></td>
+  </tr>
+</table>
+<table width="800" border="0" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr> 
+    <td width="171" height="403" valign="top"><img src="images/menu/accueil-over.jpg" alt="accueil" name="accueil" width="171" height="27" hspace="0" vspace="0" border="0"><br> 
+      <a href="philo.html" target="_self"
+				onmouseover="changeImages('philo', 'images/menu/philo-over.jpg'); return true;"
+				onmouseout="changeImages('philo', 'images/menu/philo.jpg'); return true;"><img src="images/menu/philo.jpg" alt="philosophie" name="philo" width="171" height="21" hspace="0" vspace="0" border="0"></a><br> 
+      <a href="heureux.html" target="_self"
+				onmouseover="changeImages('heureux', 'images/menu/heureux-over.jpg'); return true;"
+				onmouseout="changeImages('heureux', 'images/menu/heureux.jpg'); return true;"><img src="images/menu/heureux.jpg" alt="100% mouton heureux" name="heureux" width="171" height="19" hspace="0" vspace="0" border="0"></a><br> 
+      <a href="proprietes.html" target="_self"
+				onmouseover="changeImages('proprietes', 'images/menu/proprietes-over.jpg'); return true;"
+				onmouseout="changeImages('proprietes', 'images/menu/proprietes.jpg'); return true;"><img src="images/menu/proprietes.jpg" alt="proprietes du lait de brebis" name="proprietes" width="171" height="18" hspace="0" vspace="0" border="0"></a><br> 
+      <a href="recettes.html" target="_self"
+				onmouseover="changeImages('recettes', 'images/menu/recettes-over.jpg'); return true;"
+				onmouseout="changeImages('recettes', 'images/menu/recettes.jpg'); return true;"><img src="images/menu/recettes.jpg" alt="recettes" name="recettes" width="171" height="18" hspace="0" vspace="0" border="0"></a><br> 
+      <a href="produits.html" target="_self"
+				onmouseover="changeImages('produits', 'images/menu/produits-over.jpg'); return true;"
+				onmouseout="changeImages('produits', 'images/menu/produits.jpg'); return true;"><img name="produits" src="images/menu/produits.jpg" width="171" height="18" border="0" alt="produits"></a><br> 
+      <a href="prix.html" target="_self"
+				onmouseover="changeImages('prix', 'images/menu/prix-over.jpg'); return true;"
+				onmouseout="changeImages('prix', 'images/menu/prix.jpg'); return true;"><img name="prix" src="images/menu/prix.jpg" width="171" height="20" border="0" alt="prix et distinctions"></a><br> 
+      <a href="articles.html" target="_self"
+				onmouseover="changeImages('articles', 'images/menu/articles-over.jpg'); return true;"
+				onmouseout="changeImages('articles', 'images/menu/articles.jpg'); return true;"><img name="articles" src="images/menu/articles.jpg" width="171" height="19" border="0" alt="articles"></a><br> 
+      <a href="marche.html" target="_self"
+				onmouseover="changeImages('marche', 'images/menu/marche-over.jpg'); return true;"
+				onmouseout="changeImages('marche', 'images/menu/marche.jpg'); return true;"><img name="marche" src="images/menu/marche.jpg" width="171" height="18" border="0" alt="marchh&eacute; Jean Talon"></a><br> 
+      <a href="nouvelles.html" target="_self"
+				onmouseover="changeImages('nouvelles', 'images/menu/nouvelles-over.jpg'); return true;"
+				onmouseout="changeImages('nouvelles', 'images/menu/nouvelles.jpg'); return true;"><img name="nouvelles" src="images/menu/nouvelles.jpg" width="171" height="18" border="0" alt="nouvelles"></a><br> 
+      <a href="animaux.html" target="_self"
+				onmouseover="changeImages('animaux', 'images/menu/animaux-over.jpg'); return true;"
+				onmouseout="changeImages('animaux', 'images/menu/animaux.jpg'); return true;"><img name="animaux" src="images/menu/animaux.jpg" width="171" height="19" border="0" alt="animaux &agrave; vendre"></a><br>
+      <a href="laine.html" target="_self"
+				onMouseOver="changeImages('laine', 'images/menu/laine-over.jpg'); return true;"
+				onMouseOut="changeImages('laine', 'images/menu/laine.jpg'); return true;"><img name="laine" src="images/menu/laine.jpg" width="171" height="19" border="0" alt="laine et peaux de moutons"></a> 
+      <a href="boutique.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','images/menu/BoutiqueOver.jpg',1)"><img src="images/menu/boutique.jpg" name="Image39" width="171" height="19" border="0"></a><a href="contact.html" target="_self"
+				onmouseover="changeImages('contact', 'images/menu/contact-over.jpg'); return true;"
+				onmouseout="changeImages('contact', 'images/menu/contact.jpg'); return true;"><img name="contact" src="images/menu/contact.jpg" width="171" height="21" border="0" alt="contactez-nous"></a><a href="index_ang.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/menu/anglais-over.jpg',1)"><img src="images/menu/anglais.jpg" name="Image27" width="171" height="86" border="0"></a><br>
+      <a href="MAILTO:webmaster@lamoutonniere.com"><img src="images/new_web_20.jpg" alt="" width="171" height="129" border="0" usemap="#MapMap"></a></td>
+    <td width="619" rowspan="2" valign="top" bgcolor="#FFFFFF"> <table width="100%" height="1071" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="9" valign="top"><img src="images/coin01.jpg" width="10" height="9"></td>
+          <td height="9" colspan="3"><img src="images/spacer.gif" width="1" height="9"></td>
+          <td height="9" valign="top"><img src="images/coin02.jpg" width="10" height="9"></td>
+        </tr>
+        <tr> 
+          <td width="10" height="1056">&nbsp;</td>
+          <td width="295" valign="top"> <div align="justify"> 
+              <p align="left"><font size="1" face="Tahoma"><strong><font color="#CC3300" size="4"><img src="images/accueil.jpg" alt="Accueil" width="290" height="37"></font></strong></font></p>
+              <p align="left"><font color="#CC3300" size="2" face="Tahoma"><strong>Le 
+                Sein d&#8217;H&eacute;l&egrave;ne</strong></font></p>
+              <p align="left"><font size="2" face="Tahoma">Fromage de montagnes</font></p>
+              <p><font size="2" face="Tahoma"> P&acirc;te semi-ferme<br>
+                mi-vache-mi-brebis</font></p>
+              <p><font size="2" face="Tahoma"> Fromage fabriqu&eacute; &agrave; 
+                partir du lait de brebis de La Moutonni&egrave;re et du lait de 
+                vaches Jersey du troupeau de Marie-Claude et St&eacute;phane Cloutier, 
+                deux fermes situ&eacute;es dans les montagnes de Ste- H&eacute;l&egrave;ne-de-Chester.<br>
+                </font><font size="2" face="Tahoma"><br>
+                La forme du fromage repr&eacute;sente les collines du village, 
+                le nom allie la symbolique de la nouvelle fromagerie install&eacute;e 
+                au SEIN du village de Ste-H&eacute;l&egrave;ne-de-Chester tout 
+                en faisant jouer les mots &agrave; la consonnance de Ste-H&eacute;l&egrave;ne.<br>
+                <br>
+                L&#8217;&eacute;tiquette verte indique la saison de fabrication 
+                du fromage de p&acirc;turage, une nouvelle &eacute;tiquette avec 
+                les paysages enneig&eacute;s d&#8217;hiver, indiquera la fabrication 
+                du fromage lorsque les animaux sont au fourrage sec. L&#8217;&eacute;tiquette 
+                est l&#8217;&#339;uvre de Richard Caisse.</font></p>
+              <p><font size="2" face="Tahoma"> Affinage de 2 &agrave; 4 mois.<br>
+                Cro&ucirc;te naturelle.<br>
+                </font><font size="2" face="Tahoma"><br>
+                Fromage au go&ucirc;t alliant l&#8217;onctuosit&eacute; du lait 
+                de brebis avec des saveurs l&eacute;g&egrave;rements acidul&eacute;es.<br>
+                Servir en plateau de fromage avec des noix et canneberges. </font></p>
+              <p align="right"><font size="2" face="Tahoma"><br>
+                </font><font color="#CC3300" size="2" face="Tahoma"><strong><img src="images/produits/SeindHelene_photo02.jpg" width="295" height="393" align="middle"></strong></font><font size="2"><strong><font size="-2"><em>Gracieuset&eacute; 
+                de La Nouvelle Union</em></font></strong></font> </p>
+            </div></td>
+          <td width="9" background="images/vert_line.jpg"><font size="1">&nbsp;</font></td>
+          <td width="295" valign="top"> <div align="right"> 
+              <table width="282" height="313" border="0" cellpadding="0" cellspacing="0" id="Table_01">
+                <tr> 
+                  <td align="left" valign="top"> <img src="images/box_01.jpg" width="9" height="8" alt=""></td>
+                  <td> <img src="images/box_02.jpg" width="480" height="8" alt=""></td>
+                  <td align="right" valign="top"> <img src="images/box_03.jpg" width="10" height="8" alt=""></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#D44133">&nbsp;</td>
+                  <td bgcolor="#000000"> <div align="center"><font color="#FFFFFF" size="1" face="Tahoma"><strong>DERNI&Egrave;RES 
+                      NOUVELLES</strong></font></div></td>
+                  <td bgcolor="#D44133">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td height="278" bgcolor="#D44133"> <img src="images/box_04.jpg" width="9" height="81" alt=""></td>
+                  <td width="263" valign="top" bgcolor="#D44133"> <ul>
+                      <blockquote> 
+                        <div align="center"></div>
+                      </blockquote>
+                    </ul>
+                    <div align="center"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif" align="justify"><strong></strong></font></div>
+                    <div align="center"> 
+                      <p> 
+                        <object width="480" height="295">
+                          <param name="movie" value="http://www.youtube.com/v/WDYwf5REas8&hl=en_US&fs=1&rel=0&color1=0x5d1719&color2=0xcd311b">
+                          <param name="allowFullScreen" value="true">
+                          <param name="allowscriptaccess" value="always">
+                          <embed src="http://www.youtube.com/v/WDYwf5REas8&hl=en_US&fs=1&rel=0&color1=0x5d1719&color2=0xcd311b" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
+                      </p>
+                      <p><font color="#FFFFFF" size="2" face="Tahoma"><strong><br>
+                        <a href="mailto:fromagerie@lamoutonniere.com">fromagerie@lamoutonniere.com</a> 
+                        <br>
+                        </strong></font><font color="#FFFFFF" size="2" face="Tahoma"><strong>T&eacute;l: 
+                        (819) 382-2300</strong></font></p>
+                    </div></td>
+                  <td bgcolor="#D44133"> <img src="images/box_06.jpg" width="8" height="89" alt=""></td>
+                </tr>
+                <tr> 
+                  <td> <img src="images/box_07.jpg" width="9" height="11" alt=""></td>
+                  <td> <img src="images/box_08.jpg" width="480" height="11" alt=""></td>
+                  <td> <img src="images/box_09.jpg" width="10" height="11" alt=""></td>
+                </tr>
+              </table>
+              <div align="center"> 
+                                  <p><a href="http://www.catherinesauvage.ca/" target="_blank"><img src="images/pub_catherine.jpg" width="375" height="254" border="0"></a></em></font></strong></font></p>
+              </p>
+			  </div>
+            </div></td>
+          <td width="10">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td rowspan="2">&nbsp; </td>
+  </tr>
+  <tr> 
+    <td height="533" valign="top"> 
+      <p align="center"><a href="http://www.easycounter.com/"> 
+        <img src="http://www.easycounter.com/counter.php?ccapaldi"
+border="0" alt="HTML Counter"></a> <br>
+        <a href="http://www.easycounter.com/FreeCounter3.html"><font size="-7">Website 
+        Hit Counters</font></a> &nbsp;</p>
+      </td>
+  </tr>
+  <tr> 
+    <td>&nbsp; </td>
+    <td bgcolor="#FFFFFF"><img src="images/gazon02.gif" width="812" height="72"> 
+    </td>
+    <td>&nbsp; </td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="5,16,96,52" href="#">
+</map>
+</body>
+</html>

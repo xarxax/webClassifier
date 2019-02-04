@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serious Texas Bar-B-Q &reg;</title>
+<link rel="shortcut icon" type="image/x-icon"  href="/images/favicon.ico" />
+<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="include/font-awesome-4.7.0/css/font-awesome.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,340' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="include/sound-mouseover.js"></script>
+
+<!-- jquery menu for narrow viewports -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+
+	/* prepend menu icon */
+	$('#nav-wrap').prepend('<div id="menu-icon2"></div>');
+	
+	/* toggle nav */
+	$("#menu-icon2").on("click", function(){
+		$("#nav").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+	/* toggle nav */
+	$("#nav").slideToggle();
+	/* $(this).toggleClass("active"); */
+
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56656136-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div class="container">
+  <div class="header">
+    <a class="logo-resize" href="/"><span class="invisiText2">HOME</span></a>
+    <a class="best-resize" href="best-pulled-pork.php"></a>
+    <nav id="nav-wrap">
+      <ul id="nav">
+        <li>
+          <a class="menu1-resize" href="menu.php" onmouseover="playclip();"><span class="invisiText">OUR MENUS</span></a>
+        </li>
+        <li>
+          <a class="menu2-resize" href="shop.php" onmouseover="playclip();"><span class="invisiText">ORDER PRODUCTS</span></a>
+        </li>
+        <li>
+          <a class="menu3-resize" href="locations.php" onmouseover="playclip();"><span class="invisiText">LOCATIONS</span></a>
+        </li>
+        <li>
+          <a class="menu4-resize" href="large-group.php" onmouseover="playclip();"><span class="invisiText">LARGE GROUP</span></a>
+        </li>
+        <li>
+          <a class="menu5-resize" href="talk.php" onmouseover="playclip();"><span class="invisiText">THE TALK</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div><!-- header end -->
+</div><!-- container end -->
+
+<div class="container">
+  <div class="content_page">
+    <div class="content_full_size_front tall-front">
+
+      <div id="TagBlock"><img src="images/need-we-say-more.png" width="237" height="98" /></div>
+
+      <div id="Salsas"><a href="shop.php"><img src="images/order-products.png" width="236" height="187" border="0" /></a></div>
+
+      <div id="ChowNow"><a class='chownow-order-online' href="https://ordering.chownow.com/order/2845/locations"><img src ="/images/order-food-to-go.png" width="150" height="98" border="0"></a></div>
+
+      <div id="TextBlock">We know how to heat up a kitchen with a variety of smoked meats and sausage.  We are known for the must-have smoked turkey which pairs nicely with the homemade cranberry  habanero&nbsp;salsa, or our award winning pulled pork sandwich with our fruity, fiery cherry-chipotle salsa or our tender beef brisket you can't help but sink your teeth into... all of which are smoked to perfection!
+      </div>
+            
+      <div id="Bread"><img src="images/bread.png" width="176" height="296" /></div>
+
+      <div id="Ribs"><img src="images/front_foodimages/food2.jpg" width="599" height="361" /></div>
+
+    </div><!-- content_full_size end -->
+  </div><!-- content_page end -->
+</div><!-- container end -->
+
+<footer>
+  <div class="container">
+    <div class="flll">&copy; 2019 Serious Texas Bar-B-Q | ALL RIGHTS RESERVED</div>
+    
+    <div class="social-icons">
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g33397-d1030601-Reviews-Serious_Texas_Bar_B_Q_North_Durango-Durango_Colorado.html" target="_blank" title="Trip Advisor" ><i class="fa fa-tripadvisor fa-red fa-3x" aria-hidden="true"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.facebook.com/home.php?#!/pages/Durango-CO/Serious-Texas-BBQ/234953865503" target="_blank" title="Facebook" ><i class="fa fa-facebook-official fa-red fa-3x" aria-hidden="true"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://ordering.chownow.com/order/2845/locations" target="_blank" title="Order Food to Go" ><i class="fa fa-spoon fa-red fa-3x" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="work"><a href="employment.php"><img src="/images/work_opport.png" width="192" height="45" border="0" /></a></div>
+
+  </div>
+</footer>
+
+<audio>
+<source src="images/MetalCabinetDoor.mp3">
+<source src="images/MetalCabinetDoor.ogg">
+</audio>
+<div id="sounddiv"><bgsound id="sound"></div>
+</body>
+</html>

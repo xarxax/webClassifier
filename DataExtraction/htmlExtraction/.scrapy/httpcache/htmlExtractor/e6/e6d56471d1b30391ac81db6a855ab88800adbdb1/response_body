@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/xml/rss" />
+<style>
+body {font-family: "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;}
+a:link, a:visited, a:active {text-decoration: none; color: blue;}
+a:hover {text-decoration: underline; color: blue;}
+a.isbn:link, a.isbn:visited, a.isbn:active {text-decoration: none; color: blue;}
+a.isbn:hover {text-decoration: none; color: blue; border-bottom: 1px dashed;}
+div.sideTitle {font-weight: bold; font-size: smaller; font-variant: small-caps;}
+div.sideItem {font-size: smaller;}
+h1 {font-size: 250%; font-variant: small-caps;}
+.title {font-size: 250%; font-variant: small-caps; font-weight: bold; font-family: Georgia,"Times New Roman",serif}
+.reviewer {font-size: 120%;}
+.opt {display: none;}
+.opt1 {font-size: 90%;}
+</style>
+<script type="text/javascript">
+function failup(url) {
+  window.open(url + "&amp;new=1", "_blank");
+}
+
+var unrollNode = null;
+var unrollHeight;
+
+function unroll(node,cmd) { // cmd='pre' to prepare, 'go' to go
+  if (node != null) {
+    if (unrollNode != null) { /* finish unrolling old node */
+      unrollNode.style.height = 'auto';
+    }
+    unrollNode = node;
+    unrollHeight = 3.0; // initial height
+    unrollNode.style.overflow = 'hidden';
+  }
+  if (unrollHeight >= 10) { /* done? */
+    unrollNode.style.height = 'auto';
+    unrollNode = null;
+  } else {
+    unrollNode.style.height = unrollHeight + "ex"; // font-dependent units
+    unrollHeight = Math.pow(unrollHeight,1.2); // exponential growth
+    if (cmd != 'pre') {
+      setTimeout("unroll(null)", 80);
+    }
+  }
+}
+
+function unfold(rep,indent,isThread,mode) {
+  var http_request = false;
+  var node = document.getElementById('r' + rep);
+  var url = '/unfold?rep=' + rep + '&indent=' + indent + '&thread=' + isThread;
+
+  node.onclick = "";
+
+  if (window.XMLHttpRequest) { // Mozilla, Safari,...
+    http_request = new XMLHttpRequest();
+  } 
+  else if (window.ActiveXObject) { // IE
+    try {
+      http_request = new ActiveXObject("Msxml2.XMLHTTP");
+    }
+    catch (e) {
+      try {
+        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {}
+    }
+  }
+
+  if (!http_request) {
+    failup(url);
+    return false;
+  }
+
+  var img = document.getElementById('i' + rep);
+  img.src = '/static/unfold' + isThread + mode + '.gif';
+  //document.body.style.cursor = 'wait';
+  http_request.onreadystatechange = function() {
+    if (http_request.readyState == 1) {
+      unroll(node,'pre');
+    } else if (http_request.readyState == 4) {
+      document.body.style.cursor = 'auto';
+      unroll(node,'go');
+      if (http_request.status == 200) {
+        node.innerHTML = http_request.responseText;
+      } 
+      else {
+        failup(url);
+      }
+    }
+  };
+  http_request.open('GET', url, true);
+  http_request.send(null);
+  return false;
+}
+
+var counter = 0;
+</script>
+<title>The Ender Wiggin Quartet / Orson Scott Card</title>
+</head>
+<body vlink="purple" text="black" bgcolor="white" alink="red" link="blue">
+<div align="center">
+<a href="/"><img src="/static/bookshelf-s.gif" border="0" width="337" height="95" alt="Tal Cohen's Bookshelf: A Collection of Personal Opinions about Books" /></a>
+<hr size="1" noshade="noshade" width="337" />
+</div>
+<table border="0" bgcolor="white" cellpadding="2" cellspacing="0" width="570" align="center">
+<tr>
+<td colspan="2"><span class="title">The Ender Wiggin Quartet / Orson Scott Card</span></td>
+</tr>
+<tr bgcolor="#eeeeff">
+ <td>Reviewed by <span class="reviewer"><a href="/author_Tal%20Cohen">Tal Cohen</a></span></td>
+ <td align="right">Saturday, 03 October 1998</td>
+</tr>
+<tr><td colspan="2" align="justify">
+<table border="0" cellpadding="6" cellspacing="2" align="left">
+<tr>
+<td><img src="images/23.jpg" height="259" width="157" border="0" /></td>
+</tr>
+</table>
+
+<font size="+1">Ender’s Game</font> (1985)<br /><font size="+1">Speaker for the Dead</font> (1986)<br /><font size="+1">Xenocide</font> (1991)<br /><font size="+1">Children of the Mind</font> (1996)<br /><br />Reviewed in other pages: <a href="/shadow">Ender’s Shadow</a> and <a href="/hegemon">Shadow of the Hegemon</a>.<br /><br />(<u>Warning:</u> This review contains numerous spoilers to the first four books.)<br /><br />Few science-fiction books leave you, once you have finished reading them, with more than a single idea to ponder. <i>Ender’s Game</i> leaves you with quite a few. Add that to Orson Scott Card’s remarkably flowing prose and you have a winning combination.<br /><br />Personally, I was really impressed by the idea of public-opinion takeover by two children (Peter and Valentine) using “the nets” to disguise their real identity. But of the many ideas and concepts presented throughout the book, the most enjoyable (and certainly the most detailed one) is the Battle School. Ender’s struggles against greater and greater odds are told in a thrilling way, raising a lot of sympathy in the reader. But if it was all about battle tactics in 3D, it would have been far less interesting. The mingling of other aspects of the military life, like command issues, make it really gripping. Let alone the idea of “breeding” military geniuses, monitoring them from birth, and having them go into battle as early as age six.<br /><br />But while the military trainees' young age is what makes a lot of a difference, it also puts <i>Ender’s Game</i> in the center of a controversy. After talking to several people who have read the book, and based on Card’s notes, it seems to me like people who were considered, at childhood, to be brilliant kids are split in two: those who can easily identify with, or at least understand, the three genius-kids in the book (Ender and his siblings); and those who find their behavior totally alien and impossible. “Bright kids just don't act like that” is apparently what many readers think, sometimes adding, “or at least I didn't”.<br /><br />While being totally gripped by the book -- it’s a page turner -- I found it more and more disappointing towards the end. Ender’s final training with Mazer Rackham on the Eros asteroid are so obviously “the real thing” that it looks incredible that Ender, depicted as much more intelligent than the writer of these lines, never suspected a thing. In fact, Card has a habit of surprising his characters with facts that seem obvious, I think, to readers, and should certainly be obvious to the characters in question. Consider, for example, Jane’s discovery (in <i>Xenocide</i>) that one person on the world of Path has the genetically improved intelligence of the “God-spoken”, without the normally accompanying obsessive-compulsive disorder. Considering especially that she knew which DNA samples were examined by Jane, why was Si Wang-mu so surprised?<br /><br />My disappointment with the plot’s predictability towards the end of <i>Ender’s Game</i> was completely wiped out by the last chapter, “<i>Speaker for the Dead</i>”. Here, the plot looks a little into Ender’s future, and it takes a sharp, pleasant and unexpected turn or two which left me quite impressed.<br /><br />The other three books, while depicting the rest of the life of the same Andrew Wiggin, take place three thousand years in the future. I must admit that the far future Card presents seems short-sighted to me. Any example I might provide would seem like nit-picking, since there’s no single outrageous fact that seems impossible (or just very unlikely). Rather, it is the atmosphere presented as a whole that seems unreliable.<br /><br />In <i>Speaker for the Dead</i>, we are presented with two new alien species (in addition to the Buggers): the Pequeninos (or “piggies”) and the unique entity of Jane, the self-aware computer program. At first, Jane seems to be a credible character, a believable result of the communication network. (In fact, some people predict that such an intelligence would be the unavoidable outcome of current communication networks. See, for example, George B. Dyson’s <i>Darwin Among the Machines</i>, <a href="/darwin">reviewed here</a>.) But over time, and increasingly so in the last two sequels, Jane becomes less and less credible. Maybe the behavior of children in <i>Ender’s Game</i> was unrealistic, but the behavior (and nature) of this super-intelligent being, Jane, is on the verge of being ridiculous at times.<br /><br />The credibility problem affects not only the character of Jane. As the idea of “philote”, used for ansible (instantaneous) communications, evolves, we encounter the notion of “ai?÷?÷as”. It seems like Card it trying to fit a scientific dress to the notion of “soul”, while avoiding the word “soul” specifically. But though the initial notion had some merit, by the time we reach <i>Children of the Mind</i>, the result is a totally incredulous mishmash of science, religion and new-age beliefs.<br /><br /><div align="center"><img src="images/23-1.jpg" height="259" width="157" border="0" /><br /><font face="Arial" color="black"><font size="-1"></font></font><br /><br /></div>Personally, I belive the series presents a continous decline in quality, each book being inferior to its predecessor. I think <i>Ender’s Game</i> really is an outstanding book. <i>Speaker for the Dead</i> and <i>Xenocide</i> are both rather average, but the former is redeemed by the unique, surprising and truly special alieness of the Pequeninos, making it a better-than-average book. As for <i>Children of the Mind</i>, here the overplaying of the notion of the “ai?÷?÷a”, the unexplained powers of the Samoan priest, the concept of Ender as a soul controlling three bodies, and Jane as a soul who uses a human as a sensing organ, a hive-queen as an originating pattern, computers for simple data storage and Pequenino mothertrees as advanced data storage modules -- all these were just too much for me, in addition to the feebleness of the plot itself.<br /><br />Like too many other books today, <i>Children of the Mind</i> leaves a clear and wide opening to a sequel -- the race of “descoladores” is still unexplored. If and when this sequel is written, let us all hope it will bring back into the saga the beauty that its first volume had.<br /><br /><table border="0" cellpadding="3" width="100%"><tr><td width="25%" align="center">Ender’s Game</td><td width="25%" align="center">Speaker for the Dead</td><td width="25%" align="center">Xenocide</td><td width="25%" align="center">Children of the Mind</td></tr><tr><td align="center"><a href="http://en.wikipedia.org/wiki/Special:BookSources/0812550706">Find this book</a> using Wikipedia</td><td align="center"><a href="http://en.wikipedia.org/wiki/Special:BookSources/0812550757">Find this book</a> using Wikipedia</td><td align="center"><a href="http://en.wikipedia.org/wiki/Special:BookSources/0812509250">Find this book</a> using Wikipedia</td><td align="center"><a href="http://en.wikipedia.org/wiki/Special:BookSources/0812522397">Find this book</a> using Wikipedia</td></tr></table><br />
+<table border="0" cellpadding="2" cellspacing="2">
+ <tr valign="top"><td width="20%"><div class="sideTitle">New Reviews Notification</div></td>
+ <td><div class="sideItem">To receive notifications as new reviews are published,
+ consider following <a href="/xml/rss">the RSS feed</a>.</div></td></tr>
+</table>
+
+</tr></td>
+</table>
+<div align="right"><font size="+1">[<a href="/reply?id=23&amp;rep=-1&amp;LastView=1900-01-01%2000%3A00">Post a comment on this review</a>]</font></div>
+<div align="right"><a href="/editstory?id=23">&nbsp;</a> [<a href="/ender">Permalink to this review</a>] 
+  &nbsp; [<a href="/ender?base=&NewOnly=1&LastView=2030-12-31">Fold all comments</a>] &nbsp; 
+[<a href="/ender?base=">Unfold all comments</a>]</div>
+<br />
+
+<a name="110"></a><a name="NewReply"></a><table border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td width="1"><img src="/static/spacer.gif" width="0" height="1"></td>
+<td valign="top"><img src="/static/spacer.gif" width="1" height="5" /><br /><img src="/static/bubble_new.gif" width="23" height="19" /></td>
+<td width="100%" bgcolor="#efefff">
+<a onClick="window.location='mailt'+'o:tal@'+(0?'bkdmwl.com':'forum2.org'); return false;" onMouseOver="window.status='Send mail to tal@'+(0?'skzmvl.com':'forum2.org'); return true;" onMouseOut="window.status=''; return true;" href="mailto:tal at.sign forum2.org">Tal Cohen</a>
+
+writes:<br />
+<span style="font-size: 120%;">Innocence</span><br />
+When I wrote this review (about nine years ago), I've asked: ''Ender's final training ... are so obviously גthe real thingג that it looks incredible that Ender ... never suspected a thing''.<br /><br />Well, John Kessel provided a clear answer in 2004, in his article ''Creating the Innocent Killer'' (<a href="http://www4.ncsu.edu/~tenshi/Killer_000.htm" target="_blank">http://www4.ncsu.edu/~tenshi/Killer_000.htm</a>): if Ender knew, he would not have been innocent. And we have to believe that Ender, the Xenocide, is innocent -- as Kessel shows, Card goes a long way towards presenting Ender as innocent, no matter how ruthlessly he kills.</td></tr>
+<tr>
+<td></td><td></td>
+<td align="right"><span style="font-size: 80%; color: gray;">[110] Posted 
+on Sunday, 18 February 2007 at 6:19 GMT [<a href="/reply?id=23&amp;rep=110&amp;LastView=1900-01-01%2000%3A00">Reply to this</a>]<a class="invis" href="/moderate?id=110"> 
+</a>[<a href="/thread?rep=110">Permalink</a>]</font></td>
+</tr>
+</table>
+<br />
+
+<div align="right">[<a href="/reply?id=23&amp;rep=-1&amp;LastView=1900-01-01%2000%3A00">Post a comment on this review</a>] &nbsp; [<a href="/">Back to Main Page</a>]
+</div>
+<div align="right"><font size="-1"><a href="/xml/rss"><img src="/static/rss.gif" border="0" width="38" height="14" /></a> &copy;1997-2019 by Tal Cohen, all rights reserved.</font> [<a href="/about">About</a>]</div>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/link-enhancer?tag=forum2"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=forum2" alt="" /></noscript>
+<!-- $ #ScriptFooter -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1875215-1";
+urchinTracker();
+</script>
+</body>
+</html>

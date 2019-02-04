@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>Chinese Harmony Institute</title>
+<meta name="keywords" content="Chinese harmony, Chinese herbs, Chinese herbal medicine, Chinese herbal remedies, herbal medicine, herbal remedies, Chinese medicine, tcm, traditional chinese medicine, herbal harmony, 5 elements, 3 treasures, 8 principles, trigrams, bagua, yin yang, qi, chi, vital force, life force, meridians channels , acupuncture, daoism, taoism, allergies, hay fever, digestive problems , stress relief, sleep better, insomnia, common cold, pms, pmt, menses, menstrual cramps, better belly, allergease, peace of mind, dreamtime, smoother cycle, shaolin warrior, cold away, yinqiao san, ginseng, natural healthcare, natural remedies, wellness, wellbeing, balance, herbal dietary supplement, eastern medicine, diet, constitution, stems and branches, i ching, yi ching, yi jing, cholesterol statins, blood sugar, preventative medicine, complementary medicine, integrative medicine, plant medicine, phytonutrients, phytonutrition, kosher chinese herbs, tablets, granulated herbs, granulated concentrated powders, bronchitis, antihistamine, antibiotics, relaxed, chill out">
+<!--
+Chinese harmony herbs is a manufacturer of high quality Chinese herbal medicine for common ailments such as digestive problems, insomnia and stress, allergies, colds and flus, and gynecological problems. Proprietary formulas specifically tailored for the western lifestyle.
+-->
+</head>
+<FRAMESET COLS="*,754,*" border=0>
+		<FRAME src="black.html" scrolling=no></frame>
+	<frameset rows="*,571,*">
+		<FRAME src="black.html" scrolling=no></frame>
+		<FRAME src="./chi.html" scrolling=no NORESIZE style=border-style:solid;border-color:black;border-width:2;></frame>
+		<FRAME src="copy.php" scrolling=no></frame>
+	</frameset>
+		<FRAME src="black.html" scrolling=no></frame>
+</frameset>
+<noframes>
+<HEAD>
+<meta http-equiv=Content-Type content="text/html;  charset=">
+<TITLE>chi</TITLE>
+<style type="text/css">
+<!--
+body {
+	font-family: "Book Antiqua", "Times New Roman";
+  scrollbar-face-color: #FFECCF; scrollbar-shadow-color: #2B5B7A; 
+  scrollbar-highlight-color: #666666; scrollbar-3dlight-color: #DFEBF2; 
+  scrollbar-darkshadow-color: #FFECCF; scrollbar-track-color: #FFECCF; 
+  scrollbar-arrow-color: #C9302B;
+  overflow: auto;
+}
+p {
+  cursor: hand;
+}
+a {
+font-family: "Book Antiqua", "Times New Roman";
+font-weight: bold;
+font-size: 18px;
+color: black;
+text-decoration:none; 
+}
+a:hover {color: #C9302B;}
+a:visited {color: #000000;}
+
+.tb {
+background-color:#FFECCF;
+border-top-color:#FFC979;
+border-top-width:2px;
+border-top-style: solid;
+
+}
+
+
+-->
+</style>
+<script language=javascript>
+this.id = "chi";
+selLoc = parent.location.hash;
+var selPage = "0";
+function actElement(pee, el) {
+    clearElement(pee);
+    pee.style.color = "#C9302B";
+    if (flashI.window.chi) flashI.window.chi.SetVariable("/:jsElement", el);
+
+}
+function clearElement(pee) {
+    pee.style.color = "#000000";
+    if (flashI.window.chi)  flashI.window.chi.SetVariable("/:jsClear", "1");
+
+}
+function  setScroll(scrollie) {
+  if (!scrollie) fS = flashI.document.body.style;
+  else fS = scrollie.style;
+  fS.scrollbarFaceColor = "ffffff";
+  fS.scrollbarShadowColor = "ffffff"; 
+  fS.scrollbarDarkShadowColor = "C9302B"; 
+  fS.scrollbarHighlightColor = "ffffff"; 
+  fS.scrollbar3dlightColor = "DFEBF2"; 
+  fS.scrollbarDarkshadowColor = "FFECCF"; 
+  fS.scrollbarTrackColor = "FFECCF"; 
+  fS.scrollbarArrowColor = "C9302B";
+  fS.overflow = "auto";
+}
+
+function goto(page, barOnly) {
+  if (page != selPage) {
+    switch (page) {
+      case "0":
+        flashI.location = "./flash_iframe.html";
+        kav.style.visibility = "hidden";
+        selPage = "0";
+        break;
+      case "1":
+        flashI.location = "./about.html";
+        kav.style.top = about.offsetTop + 100;
+        kav.style.visibility = "visible";
+        break;
+      case "2":
+        flashI.location = "./medicine.html";
+        kav.style.top = medicine.offsetTop + 100;
+        kav.style.visibility = "visible";
+        break;
+      case "3":
+        flashI.location = "./products.html";
+        kav.style.top = products.offsetTop + 100;
+        kav.style.visibility = "visible";
+        break;
+      case "4":
+        flashI.location = "./test.html";
+        kav.style.top = test.offsetTop + 100;
+        kav.style.visibility = "visible";
+        break;
+      case "5":
+        flashI.location = "./contact.html";
+        kav.style.top = contact.offsetTop + 100;
+        kav.style.visibility = "visible";
+        break;
+      case "6":
+        flashI.location = "./faq.html";
+        kav.style.visibility = "hidden";
+        break;
+      case "7":
+        flashI.location = "./members.php";
+        kav.style.visibility = "hidden";
+        break;
+      case "8":
+        flashI.location = "./links.html";
+        kav.style.visibility = "hidden";
+        break;
+      case "9":
+        if (!barOnly) flashI.location = "./disclaimer.html";
+        kav.style.visibility = "hidden";
+        break;
+      case "10":
+        flashI.location = "./privacy.html";
+        kav.style.visibility = "hidden";
+        break;
+    }
+    selPage = page;
+  }
+}
+
+function insertSeperator() {
+  for (i=0;i<3;i++) {
+    flashI.document.write('<hr color=#C9302B style="');
+    if (Math.random() > 0.5) flashI.document.write('border-style:dashed;');
+    flashI.document.write('position:relative;top:-'+(12*i)+';" width=10>');
+  }
+}
+
+function checkInner() {
+	if (selLoc != "") {
+		goto(selLoc.substring(1));
+	}
+}
+</script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" onLoad=checkInner();> 
+
+<div id=htmlLinks style="position:absolute;top:700;"><a href=./about.html>About us</a> | <a href=./medicine.html>Chinese medicine</a> | <a href=./products.html>Products</a> | <a href=./test.html>Testimonials</a> | <a href=./contact.html>Contact</a> | <a href=./faq.html>FAQ</a> | <a href=./members.php>Members</a> | <a href=./links.html>Links</a> | <a href=./disclaimer.html>Disclaimer</a> | <a href=./privacy.html>Privacy policy</a></div>
+
+<div id="title" style="position:absolute;top:0;left:200;width:550;height:80;background-color:#879BC6">
+  <div style=text-align:justify;text-justify:distribute-all-lines;font-size:22;font-weight:bold;position:relative;width:425;top:7;left:35; onClick=goto("0");><img src=title.gif alt="Chinese Harmony Institute - Ancient wisdom for modern living" border=0><BR>ancient&nbsp; wisdom&nbsp; for&nbsp; modern&nbsp; living</div>
+
+</div>
+<!-- div id=stamp style="position:absolute;left:670;top:00;z-index:10"><img src=./stamp.gif></div -->
+<div id="sidebar" style="position:absolute;top:80;width:200;left:0;height:487;background-color:#FFC979;">
+<table border=0><tr><td width=10>&nbsp;</td>
+<td style=font-size:20;font-weight:bold;><BR><BR><BR>
+<p id=about onMouseOver='actElement(this, "fire");' onMouseOut=clearElement(this); onClick=goto("1");>About Us</p>
+<p id=medicine onMouseOver='actElement(this, "earth");' onMouseOut=clearElement(this); onClick=goto("2");>Chinese Medicine</p>
+<p id=products onMouseOver='actElement(this, "metal");' onMouseOut=clearElement(this); onClick=goto("3");>Products</p>
+<p id=test onMouseOver='actElement(this, "water");' onMouseOut=clearElement(this); onClick=goto("4");>Testimonials</p>
+<p id=contact onMouseOver='actElement(this, "wood");' onMouseOut=clearElement(this); onClick=goto("5");>Contact</p>
+</td></tr></table>
+<br><br>
+<center>
+<ximg src=elements.gif>
+</center>
+
+
+</div>
+<div id="dragon" style="position:absolute;top:12;left:5;"><p onClick=goto("0");><img src="./drag1.gif" alt="Chinese harmony herbs is a manufacturer of high quality Chinese herbal medicine for common ailments such as digestive problems, insomnia and stress, allergies, colds and flus, and gynecological problems. Proprietary formulas specifically tailored for the western lifestyle."></p></div>
+<iframe frameborder=0 id="flashI" style="position:absolute;top:80;left:200;width:550;height:457;" src="./flash_iframe.html"></iframe>
+<div id="bottombar" style="position:absolute;left:200;top:537;width:555;height:30;" class="tb" align=center>
+<table border=0 height=28 width=500>
+<tr><td align=center><a href=# onClick=goto("6")>FAQ</a></td>
+<td align=center><a href=# onClick=goto("7")>members</a></td>
+<td align=center><a href=# onClick=goto("8")>links</a></td>
+<td align=center><a href=# onClick=goto("9")>disclaimer</a></td>
+<td align=center><a href=# onClick=goto("10")>privacy policy</a></td></tr>
+</table>
+</div>
+<div id=kav style="width:205;left:10;height:1;position:absolute;visibility:hidden;"><hr width=100% height=2 color=#C9302B></div>
+</BODY>
+</noframes>

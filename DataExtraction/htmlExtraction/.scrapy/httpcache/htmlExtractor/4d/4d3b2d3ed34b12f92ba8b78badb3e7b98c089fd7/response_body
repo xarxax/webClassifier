@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inspektor Research Systems B.V.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href = "https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/webfonts.css">
+	<link href="css/irs.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script src="js/irsmenu.js" ></script>
+<script src="js/irs.js" ></script>
+
+<script>
+var menuId = 0;
+</script>
+
+<body onload="doLoad()" class="bckgrnd">
+<div class="container-fluid">
+  <div class="row">
+    <div class="irslogo col-sm-12 text-center"><span class="LatoBold">Inspektor</span> <span class="LatoThin">Research Systems</span></div>
+    <div id="mainmenu" class="mainmenu col-sm-12">
+	  <nav class="navbar navbar-expand-sm navbar-light BebasKai">
+        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+	    <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
+	    </div>
+	  </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="maincontainer col-sm-12" id="maincontainer">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 bckgrnd text-center" id="websiteversion">
+    </div>
+  </div>
+</div>
+<div id="sound"></div>
+</body>
+</html>

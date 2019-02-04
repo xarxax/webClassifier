@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <title>Superfund - The Future of Investing</title>
+
+        <meta charset="UTF-8" />
+        <link rel="canonical" href="http://www.superfund.com/hp11/Default.aspx" />
+
+        <link rel="Stylesheet" type="text/css" href="Styles/Main.css?v=1" />
+        <link rel="Stylesheet" type="text/css" href="Styles/Text.css" />
+        <style>
+            ul
+            {
+                margin: 0;
+            }
+            li
+            {
+                list-style-type: none;
+                line-height: 22px;
+                padding: 0 0 0 10px;
+                background: url(images/List_Element_Target_White.gif) no-repeat left 7px;
+            }
+        
+            a.Landing
+            {
+                color: #ababad;
+                text-decoration: none;
+            }
+            a.Landing:hover
+            {
+                color: White;
+            }
+            a.Landing2
+            {
+                color: White;
+                text-decoration: none;
+            }
+            a.Landing2:hover
+            {
+                color: #8c9b19;
+            }
+        </style>
+        <script type="text/javascript">
+            function showlayer(layer, button) {
+                var myLayer = document.getElementById(layer).style.display;
+                if (myLayer == "none") {
+                    document.getElementById(layer).style.display = "block";
+                    document.getElementById(button).style.color = "White";
+                } else {
+                    document.getElementById(layer).style.display = "none";
+                    document.getElementById(button).style.color = "#ababad";
+                }
+            }
+        </script>
+        <link rel="shortcut icon" href="favicon.ico?v=1" />
+    </head>
+
+    <body>
+        <div style="width: 660px; height: 210px; -moz-border-radius:10px; border-radius: 10px; margin: 110px auto; margin-bottom: 0px; background-color: Black; background-image: url(images/Background_Default.jpg);"></div>
+        <div style="width: 450px; height: 165px; margin: 20px auto;">
+            <div style="width: 450px; float: left;"><span class="Bold">WELCOME TO THE SUPERFUND GROUP OF INVESTMENT COMPANIES<br /><i>Please choose your language</i></span></div>
+            <div style="width: 450px; float: left; clear: both; margin-top: 20px;">
+                <ul style="float: left; margin-right: 110px;">
+                    <li><a href="#" id="DE" class="Landing" onclick="javascript:showlayer('German', 'DE')">Deutsch</a></li>
+                    <li><a href="http://www.superfundmutualfunds.com/US/index.html" class="Landing">English - USA</a></li>
+<!--                    <li><a href="http://www.superfundusa.com/Login_US_HP.asp" class="Landing">English - USA</a></li>-->
+                    <li><a href="http://www.superfund.com/hp11/Main.aspx" class="Landing">English - Others</a></li>
+                </ul>
+                <ul style="float: left; margin-right: 90px;">
+        		    <li><a href="http://www.superfund.es/hp11/Main.aspx" class="Landing">Espa&ntilde;ol</a></li>
+<!--                    <li><a href="http://www.superfund.com/hp11/Main.aspx" class="Landing">Nederlands</a></li>-->
+                    <li><a href="http://www.superfund.pl/hp11/Main.aspx" class="Landing">Polski</a></li>
+                </ul>
+                <ul style="float: left;">
+                    <li><a href="http://www.superfund.com.hk/" class="Landing">&#32321;&#39636;&#20013;&#25991;</a></li>
+                    <li><a href="http://www.superfund.co.jp/" class="Landing">&#26085;&#26412;&#35486;</a></li>
+                </ul>
+            </div>
+            <div style="display: none; position: relative; left: 115px; top: -66px; float: left;" id="German">
+                <ul>
+                    <li><a href="http://www.superfund.at/hp11/Main.aspx" class="Landing2">&Ouml;sterreich</a></li>
+                    <li><a href="http://www.superfund.de/hp11/Main.aspx" class="Landing2">Deutschland</a></li>    
+<!--                    <li><a href="http://www.superfund.ch/hp11/Main.aspx" class="Landing2">Schweiz</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div style="width: 300px; clear: both; margin: 10px auto;"><p style="color: #666; text-align: center;">Copyright &copy; Superfund. All rights reserved.</p></div>
+    </body>
+</html>

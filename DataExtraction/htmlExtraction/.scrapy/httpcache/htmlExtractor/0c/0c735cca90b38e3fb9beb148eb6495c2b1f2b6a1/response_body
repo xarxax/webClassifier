@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>DUNKES</title>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="index,follow" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="theme-color" content="#000000">
+
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<style>
+			@font-face {
+				font-family: 'Material Icons';
+				font-style: normal;
+				font-weight: 400;
+				src: url('/res/fonts/materialicons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+				src: local('Material Icons'),
+					local('MaterialIcons-Regular'),
+					url('/res/fonts/materialicons/MaterialIcons-Regular.woff2') format('woff2'),
+					url('/res/fonts/materialicons/MaterialIcons-Regular.woff') format('woff'),
+					url('/res/fonts/materialicons/MaterialIcons-Regular.ttf') format('truetype');
+			}
+			@font-face { font-family: DINWeb; src: url("res/fonts/DINWeb.woff"); }
+			
+			.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: sub;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+			
+			video::-webkit-media-controls-panel,
+			video::-webkit-media-controls-panel-container,
+			video::-webkit-media-controls-start-playback-button {
+				display:none !important;
+				-webkit-appearance: none;
+			}
+			
+			body {
+				font-family: DINWeb;
+				font-size: 150%;
+				line-height: 1.3;
+			}
+			video {
+				width: 100%;
+				display: block;
+			}
+			p {
+				margin-top: 1rem;
+			}
+			body .container > .col-group > div {
+				padding: 4rem;
+			}
+			body > div > img {
+				width: 100%;
+				display: block;
+			}
+			h1 {
+				font-size: 3rem;
+				background-color: #FBE122;
+				padding: .5rem 1rem;
+				color: #003349;
+				display: inline-block;
+			}
+			a {
+				color: #fff;
+				text-decoration: underline;
+			}
+			@media (max-width: 500px) {
+				.container > .col-group > div {
+					padding: 1rem;
+				}
+			}
+			@media (max-width: 1000px) {
+				body .container > .col-group > div {
+					padding: 3rem 1rem 1rem 1rem;
+				}
+			}
+			
+			@media (min-width: 45rem) {
+				.col-group {
+					margin-right: 0 !important;
+					margin-left: 0 !important;
+				}
+			}
+			.col-group {
+				margin-right: 0 !important;
+				margin-left: 0 !important;
+				padding: 0;
+			}
+			a.button {
+				display: inline-block;
+				background-color: #fff;
+				color: #003349;
+				margin: .5rem;
+				text-decoration: none;
+				padding-right: 1rem;
+			}
+			a.button:hover {
+				cursor: pointer;
+				background-color: #FBE122;
+			}
+			.button .material-icons {
+				padding: .5rem 1rem .5rem 1.2rem;
+				border-right: 1px solid #003349;
+				margin-right: .5rem;
+			}
+		</style>
+		
+		
+	</head>
+	<body>
+			<video muted="" autoplay="" loop="" id="clip" style="width:100%;position:relative;    top: -100px;
+    margin-bottom: -100px;">
+				<source src="dunkes.mp4" type="video/mp4">
+			</video>
+			<section class="container" style="background-color: #003349; color: #ffffff;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<img src="formingforyou.png" style="max-width:200px;position: relative;top: 2em;" />
+					</div>
+					<div class="col-mb-12 col-6">
+						<h1 style="background-color: #003349; color: #ffffff; padding: 0;">Wir sind Dunkes.</h1>
+						<p>Unsere Umform-, Richt- und Verbindungstechnologien entwickeln und fertigen wir für ein einziges Ziel: Ihre Zufriedenheit. Dabei vereinen wir höchste technische Anforderungen an Präzision und Produktivität mit ganz menschlichen Bedürfnissen an Bedienungsfreundlichkeit und Ergonomie. Das Ergebnis sind ganzheitliche, individuelle Lösungen, mit denen sie zuverlässig Qualitätsprodukte produzieren – und das extrem effizient und mit Spaß an der Leistung.</p>
+						<p>Dahinter stehen nahezu 60 Jahre Erfahrung – mit über 12.000 ausgelieferten Pressen und Anlagen. Dazu kommt das Know-how eines weltweit führenden Anbieters für individuelle Umform- und Verbindungslösungen. Wir setzen unser ganzes Wissen und Können ein, um das Optimum für ihre Anwendung zu realisieren. Wir nennen das: FORMING FOR YOU.</p>
+					</div>
+				</article>
+			</section>
+			
+			<section class="container" style="background-color: #f6f6f6; color: #003349;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<h1>Umformen</h1>
+					</div>
+					<div class="col-mb-12 col-6">
+						<p>Profitieren auch Sie von unserem einzigartigen Know-how, jahrzehntelanger Erfahrung und der Leidenschaft für anspruchsvolle Herausforderung – von der Technik bis zum Service.</p>
+					</div>
+				</article>
+			</section>
+			<div>
+				<img style="width:100%;" src="umformen.jpg" />
+			</div>
+			
+			<section class="container" style="background-color: #f6f6f6; color: #003349;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<h1>Richten</h1>
+					</div>
+					<div class="col-mb-12 col-6">
+						<p>Eine Richtpresse muss präzise zu ihren Werkstücken passen – und zu ihren Prozessen. Dunkes bietet Ihnen ein umfassendes Spektrum an Produkten, die Sie flexibel und modular an Ihre Aufgaben anpassen können. Mit Richtkräften von 5 kN bis 30.000 kN. In C-Gestell-Bauweise, als waagrecht liegende Einheiten oder in Portalbauweise.</p>
+					</div>
+				</article>
+			</section>
+			<div>
+				<img style="width:100%;" src="richten.jpg" />
+			</div>
+
+			<section class="container" style="background-color: #f6f6f6; color: #003349;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<h1>Verbinden</h1>
+					</div>
+					<div class="col-mb-12 col-6">
+						<p>Mit Montagepressen und Nietmaschinen von Dunkes setzen Sie diesen Anspruch perfekt bei ihrem Werkstück um – ob Rund-, Flach- oder Profilmaterialien. Unsere maßgeschneiderten Lösungen passen exakt zu Ihren Anforderungen. Manuell, halb- oder vollautomatisch. Universell einsetzbar, hocheffizient und einfach zu bedienen.</p>
+					</div>
+				</article>
+			</section>
+			<div>
+				<img style="width:100%;" src="verbinden.jpg" />
+			</div>
+			<section class="container" style="background-color: #f6f6f6; color: #003349;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<h1>Umformen. Verbinden. Richten.</h1>
+					</div>
+					<div class="col-mb-12 col-6">
+						<p>Dabei haben wir immer die effizienteste Lösung für Sie im Blick – abgestimmt auf Ihre Arbeitsweise, die Stückzahlen, die Art der Bauteile und das Handling für das Be- und Entladen. Das kann eine manuelle Presse sein, eine halbautomatische Variante oder ein vollautomatisiertes System um autonom zu fertigen. </p>
+						<p>Und wenn sich zeigt, dass Outsourcing wirtschaftlicher für Sie ist, sind wir Ihr Leistungsstarker Partner für das Lohnrichten.</p>
+					</div>
+				</article>
+			</section>
+			
+			<section class="container" style="background-color: #003349; color: #ffffff;">
+				<article class="col-group">
+					<div class="col-mb-12 col-5">
+						<h1>Zertifikate</h1>
+					</div>
+					<div class="col-mb-12 col-6">
+						<p>
+							Internationale Industriestandards sind das Fundament jeder Geschäftsbeziehung. Mit uns kann man gut arbeiten.
+						</p>
+						<p>
+							<a class="button" target="_blank" href="res/pdf/ISO9001:2015-Zertifikat.pdf">
+								<i class="material-icons">cloud_download</i>&nbsp;ISO9001:2015-Zertifikat.pdf
+							</a>
+							<a class="button" target="_blank" href="res/pdf/WHG-Zertifikat.pdf">
+								<i class="material-icons">cloud_download</i>&nbsp;WHG-Zertifikat.pdf
+							</a>
+						</p>
+					</div>
+				</article>
+			</section>
+			
+			<section class="container" style="background-color: #003349; color: #ffffff;">
+				<article class="col-group">
+					<div class="col-mb-12 col-12">
+						<h1>Sprechen Sie mit uns</h1>
+					</div>
+				</article>
+			</section>
+			<section class="container" style="background-color: #003349; color: #ffffff;">
+				<article class="col-group">
+					<div class="col-mb-12 col-12" style="padding-bottom: 0;">
+						<div class="col-group">
+							<div class="col-mb-12 col-8 col-push-4 col-dt-push-0 col-dt-4">
+								<img src="hoelldampf.jpg" style="width:100%;display:block;">
+								<div style="background-color: #004763;padding: 1rem 1rem 3rem;">
+									<strong>Kuno Hölldampf</strong><br>
+									Vertrieb<br><br>
+									<a href="mailto:sales@dunkes.de">sales@dunkes.de</a>
+								</div>
+							</div>
+							<div class="col-mb-12 col-8 col-push-4 col-dt-push-0 col-dt-4">
+								<img src="kuchelmeister.jpg" style="width:100%;display:block;">
+								<div style="background-color: #004763;padding: 1rem 1rem 3rem;">
+									<strong>Oliver Kuchelmeister</strong><br>
+									Lohnrichten<br><br>
+									<a href="mailto:lohnrichten@dunkes.de">lohnrichten@dunkes.de</a>
+								</div>
+							</div>
+							<div class="col-mb-12 col-8 col-push-4 col-dt-push-0 col-dt-4">
+								<img src="luz.jpg" style="width:100%;display:block;">
+								<div style="background-color: #004763;padding: 1rem 1rem 3rem">
+									<strong>Kai Luz</strong><br>
+									Service<br><br>
+									<a href="mailto:service@dunkes.de">service@dunkes.de</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="container" style="background-color: #003349; color: #ffffff;padding-top: 3rem;">
+				<div style="text-align: right; padding: 1rem;">
+					<a href="datenschutz.php">Datenschutz</a> | <a href="impressum.php">Impressum</a>
+				</div>
+			</section>
+	</body>
+</html>

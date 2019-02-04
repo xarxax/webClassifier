@@ -1,0 +1,454 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Clinic Software, Medical Software, Clinic Management System, Practice Management Software, Medical Clinic, Dental Clinic, Veterinary Practice</TITLE>
+
+<meta http-equiv=Pragma content=no-cache>
+<meta http-equiv=Cache-Control content=no-cache>
+<meta name=description content="Clinic software,medical software, clinic management software, practice management software, dental software, help, articles">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+
+
+function MM_findObj(n, d) { //v3.0
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+
+}
+
+
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+
+  tmLn = document.MM_Time[tmLnName];
+
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+
+  if (myID == tmLn.ID) { //if Im newest
+
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+
+    fNew = ++tmLn.curFrame;
+
+    for (i=0; i<tmLn.length; i++) {
+
+      sprite = tmLn[i];
+
+      if (sprite.charAt(0) == 's') {
+
+        if (sprite.obj) {
+
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+
+            keyFrm=1;
+
+            for (j=0; j<sprite.values.length; j++) {
+
+              props = sprite.values[j]; 
+
+              if (numKeyFr != props.length) {
+
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+
+              } else {
+
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+
+        } } } } }
+
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+
+  } }
+
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(6);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 20;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["Layer1"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["Layer1"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 15);
+    document.MM_Time[0][0].values = new Array(2);
+    document.MM_Time[0][0].values[0] = new Array(437,437,437,437,437,437,437,437,437,437,437,437,437,437,437);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(12,27,42,56,71,86,101,116,130,145,160,175,189,204,219);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 2;
+    if (ns)
+        document.MM_Time[0][1].obj = document["Layer2"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["Layer2"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(1, 15);
+    document.MM_Time[0][1].values = new Array(3);
+    document.MM_Time[0][1].values[0] = new Array(607,592,576,561,545,530,514,499,484,468,453,437,422,406,391);
+    document.MM_Time[0][1].values[0].prop = "left";
+    document.MM_Time[0][1].values[1] = new Array(195,195,195,195,195,195,195,195,195,195,195,195,195,195,195);
+    document.MM_Time[0][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][1].values[0].prop2 = "style";
+        document.MM_Time[0][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1].values[2] = new Array("inherit","visible");
+    document.MM_Time[0][1].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][1].values[2].prop2 = "style";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 3;
+    if (ns)
+        document.MM_Time[0][2].obj = document["Layer3"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["Layer3"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(10, 29);
+    document.MM_Time[0][2].values = new Array(2);
+    document.MM_Time[0][2].values[0] = new Array(98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98,98);
+    document.MM_Time[0][2].values[0].prop = "left";
+    document.MM_Time[0][2].values[1] = new Array(509,504,499,494,489,483,478,473,468,463,458,453,448,443,438,432,427,422,417,412);
+    document.MM_Time[0][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[0].prop2 = "style";
+        document.MM_Time[0][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][3] = new String("sprite");
+    document.MM_Time[0][3].slot = 1;
+    if (ns)
+        document.MM_Time[0][3].obj = document["Layer4"];
+    else
+        document.MM_Time[0][3].obj = document.all ? document.all["Layer4"] : null;
+    document.MM_Time[0][3].keyFrames = new Array(27, 30);
+    document.MM_Time[0][3].values = new Array(3);
+    document.MM_Time[0][3].values[0] = new Array(382,384,387,389);
+    document.MM_Time[0][3].values[0].prop = "left";
+    document.MM_Time[0][3].values[1] = new Array(263,263,263,263);
+    document.MM_Time[0][3].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][3].values[0].prop2 = "style";
+        document.MM_Time[0][3].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][3].values[2] = new Array("hidden","visible");
+    document.MM_Time[0][3].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][3].values[2].prop2 = "style";
+    document.MM_Time[0][4] = new String("sprite");
+    document.MM_Time[0][4].slot = 1;
+    if (ns)
+        document.MM_Time[0][4].obj = document["Layer4"];
+    else
+        document.MM_Time[0][4].obj = document.all ? document.all["Layer4"] : null;
+    document.MM_Time[0][4].keyFrames = new Array(31, 34);
+    document.MM_Time[0][4].values = new Array(3);
+    document.MM_Time[0][4].values[0] = new Array(389,384,380,375);
+    document.MM_Time[0][4].values[0].prop = "left";
+    document.MM_Time[0][4].values[1] = new Array(263,263,263,263);
+    document.MM_Time[0][4].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][4].values[0].prop2 = "style";
+        document.MM_Time[0][4].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][4].values[2] = new Array("inherit","inherit");
+    document.MM_Time[0][4].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][4].values[2].prop2 = "style";
+    document.MM_Time[0][5] = new String("sprite");
+    document.MM_Time[0][5].slot = 1;
+    if (ns)
+        document.MM_Time[0][5].obj = document["Layer4"];
+    else
+        document.MM_Time[0][5].obj = document.all ? document.all["Layer4"] : null;
+    document.MM_Time[0][5].keyFrames = new Array(65, 68);
+    document.MM_Time[0][5].values = new Array(3);
+    document.MM_Time[0][5].values[0] = new Array(389,384,380,375);
+    document.MM_Time[0][5].values[0].prop = "left";
+    document.MM_Time[0][5].values[1] = new Array(263,263,263,263);
+    document.MM_Time[0][5].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][5].values[0].prop2 = "style";
+        document.MM_Time[0][5].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][5].values[2] = new Array("inherit","inherit");
+    document.MM_Time[0][5].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][5].values[2].prop2 = "style";
+    document.MM_Time[0].lastFrame = 68;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</SCRIPT>
+
+<STYLE TYPE="text/css">
+
+<!--
+
+a:link		{color: #0000FF; font-family: Arial;}
+
+a:hover		{color: #FF6633;}
+
+a:visited	{font-family: Arial;}
+
+a:active	{color: #FF6633;}
+
+a.ltb:link	{color: #9999FF; font-family: Arial; font-size: 9pt; font-weight:bold; text-decoration: none}
+
+a.ltb:hover 	{color: #FFCC33; text-decoration: none;}
+
+a.ltb:visited	{font-family: Arial; font-size: 9pt; font-weight:bold; text-decoration: none;}
+
+a.ltb:active	{color: #FFCC33; text-decoration: none;}
+
+.text 		{font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 14pt}
+
+.tabletext { font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+
+
+
+#divLoadCont{position:absolute; width:100%; height:95%; top:0; left:0; background-color:white; layer-background-color:white; font-family:arial,helvetica; z-index:100}
+
+TD{font-family:arial,helvetica}
+
+
+
+-->
+
+</STYLE>
+
+
+
+<script>
+
+<!--
+
+/********************************************************************************
+
+Copyright (C) 1999 Thomas Brattli
+
+This script is made by and copyrighted to Thomas Brattli at www.bratta.com
+
+Visit for more great scripts.
+
+This may be used freely as long as this msg is intact!
+
+********************************************************************************/
+
+
+
+//Browsercheck
+
+n=document.layers
+
+ie=document.all
+
+
+
+//Hides the layer onload
+
+function hideIt(){
+
+	if(ie || n){
+
+		if(n) document.divLoadCont.visibility="hidden"
+
+		else divLoadCont.style.visibility="hidden"
+
+	}
+
+}
+
+
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v3.0
+
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+
+  if (app.indexOf('Netscape') != -1) {
+
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+
+  } else if (app.indexOf('Microsoft') != -1) {
+
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+
+}
+
+//-->
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24144906-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="MM_preloadImages('img/home1.gif','img/services1.gif','img/support1.gif','img/about1.gif','img/contact1.gif','img/secmenu_net1.gif','img/secmenu_app1.gif','img/secmenu_web1.gif','Img/secmenu_netsec1.gif');MM_timelinePlay('Timeline1');hideIt();MM_checkBrowser(4.0,0,2,4.0,0,2,2,'','index_stat.htm');return document.MM_returnValue" LINK="#3333FF" VLINK="#9999FF">
+
+<DIV ID="Layer3" STYLE="position:absolute; left:98px; top:509px; width:590px; height:31px; z-index:3"><A HREF="index.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home1','','img/home1.gif',1)"><IMG NAME="home1" BORDER="0" SRC="img/home0.gif" WIDTH="87" HEIGHT="25" ALT="Home"></A><A HREF="services.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('services1','','img/services1.gif',1)"><IMG NAME="services1" BORDER="0" SRC="img/services0.gif" WIDTH="123" HEIGHT="25" ALT="Our Services"></A><A HREF="support.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support1','','img/support1.gif',1)"><IMG NAME="support1" BORDER="0" SRC="img/support0.gif" WIDTH="162" HEIGHT="25" ALT="Customer Support"></A><A HREF="contact.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact1','','img/contact1.gif',1)"><IMG NAME="contact1" BORDER="0" SRC="img/contact0.gif" WIDTH="89" HEIGHT="25" ALT="Contact"></A><A HREF="about.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about1','','img/about1.gif',1)"><IMG NAME="about1" BORDER="0" SRC="img/about0.gif" WIDTH="96" HEIGHT="25" ALT="About Us"></A></DIV>
+
+<DIV ID="Layer4" STYLE="position:absolute; left:382px; top:263px; width:208px; height:22px; z-index:4; visibility: hidden"><FONT COLOR="#000000" FACE="Arial, Helvetica, sans-serif" SIZE="2">
+
+Complete Practice Management Solutions.</FONT></DIV>
+
+<script>
+
+	//We write the table and the div to hide the content out, so older browsers won't see it
+
+	if(ie || n) document.write('<div id="divLoadCont"><table width="100%" height="95%" align="center" valign="middle"><tr><td bgcolor=black width="100%" height="100%" align="center" valign="middle"><h3><font color=white>Loading Encore eServices....</font></h3></td></tr></table></div>')
+
+	</script>
+
+
+
+<!---- TOP NAVIGATION BAR ----> 
+
+<DIV ID="Layer1" STYLE="position:absolute; left:437px; top:12px; width:174px; height:16px; z-index:1"><FONT COLOR="#000000" FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="3">eServices</FONT></B></FONT> </DIV>
+
+<DIV ID="Layer2" STYLE="position:absolute; left:607px; top:195px; width:185px; height:40px; z-index:2; visibility: inherit"><FONT SIZE="5" COLOR="#CCCCCC"><b><FONT COLOR="#000000" FACE="Verdana, Arial, Helvetica, sans-serif">Encore</FONT></b></FONT></DIV>
+
+
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+
+<TR> 
+
+<TD BACKGROUND="img/bg_scanline.gif" WIDTH="100%" BGCOLOR="#FFFFFF"><A HREF="index.htm"><IMG SRC="img/logo_top.gif" WIDTH="236" HEIGHT="30" BORDER="0" ALT="Encore eServices Logo"></A><A HREF="http://www.encoreeservices.com/clinic/clinicsoftware.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('netsec','','Img/secmenu_netsec1.gif',1)"><IMG NAME="netsec" BORDER="0" SRC="Img/secmenu_netsec0.gif" ALT="ENCORE Clinic Software" HSPACE="1" width="111" height="18"></A><A HREF="econnect.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('secmenu_web','','img/secmenu_econnect1.gif',1)"><IMG NAME="secmenu_web" BORDER="0" SRC="img/secmenu_econnect.gif" HSPACE="1" ALT="Encore eConnect" width="136" height="18"></A><A HREF="eMall.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('secmenu_app','','img/secmenu_emall1.gif',1)"><IMG NAME="secmenu_app" BORDER="0" SRC="img/secmenu_emall.gif" WIDTH="118" HEIGHT="18" HSPACE="1" ALT="Encore eStore"></A></TD>
+
+<TD BACKGROUND="img/bg_scanline.gif" WIDTH="100%" BGCOLOR="#FFFFFF"> <FONT FACE="Arial, Helvetica, sans-serif" SIZE="1">WorldWide <a href="/index-sg.htm" id="Local">[Local]</a> </FONT> </TD>
+</TR>
+
+<!---TR> 
+
+<TD WIDTH="740" BGCOLOR="#000000"> 
+
+<DIV ALIGN="left"><A HREF="index.htm"><IMG SRC="img/enlogo_mid.gif" WIDTH="73" HEIGHT="25" BORDER="0" ALT="encore eServices Logo"></A><IMG SRC="img/trans.gif" WIDTH="80" HEIGHT="25" BORDER="0"></DIV>
+
+</TD>
+
+</TR>
+
+<TR> 
+
+<TD><A HREF="index.htm"><IMG SRC="img/logo_bot_black.gif" WIDTH="73" HEIGHT="24" BORDER="0" ALT="encore eServices Logo"></A><span style="letter-spacing: -1pt"><b><sup><font color="#FFFF00" face="Arial" size="4"><a href="index.htm">
+  </a></font></sup><font face="Arial" size="4" color="#000000"><sup>|</sup></font></b></span></TD>
+
+</TR --->
+
+</TABLE>
+
+<DIV ALIGN="CENTER"><BR>
+
+	<BR>
+
+	<TABLE WIDTH="520" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+
+	<TR> 
+
+	<TD BACKGROUND="Img/en1.jpg" HEIGHT="250"><!---IMG SRC="Img/intro_wiremesh.gif" width="520" height="250" ---></TD>
+
+	</TR>
+
+	<TR>
+
+	<TD>&nbsp;</TD>
+
+	</TR>
+
+	</TABLE>
+
+	<!---- END TOP NAVIGATION BAR ----> <FONT COLOR="#CCCCFF" SIZE="1" FACE="Verdana, Arial, Helvetica, sans-serif"> 
+
+	</FONT> </DIV>
+
+</BODY>
+
+</HTML>

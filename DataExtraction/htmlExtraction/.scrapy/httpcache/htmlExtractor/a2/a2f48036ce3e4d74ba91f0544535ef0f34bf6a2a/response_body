@@ -1,0 +1,1421 @@
+﻿<!DOCTYPE html>
+﻿﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<meta name="robots" content="INDEX, FOLLOW, noodp" />	
+	<title>Industrial Parts Washer and Ultrasonic Cleaning | PROCECO</title>
+	<meta name="description" content="PROCECO manufactures heavy duty parts washers designed for cleaning, deburring and blasting large industrial components by providing an integrated solution" />
+	<meta name="keywords" content="Cleanliness Testing,Precision Cleaning,Spray-Immersion,Ultrasonic Cleaning,High-Impact Blow-Off and Convection Drying,Power Flushing,High-Pressure Deburring,Slurry Blasting,Spray Turntable & Conveyor,Wastewater Treatment,cleaning solution,industrial parts washer" />
+	<link rel="canonical" href="http://www.proceco.com/"
+	
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css?v=2" rel="stylesheet">
+    <!--Custom template style.css-->
+    <link href="/css/style.css?v=27" rel="stylesheet">
+    <!--Custom template style.css-->
+    <link href="/css/camera.css?v=2" rel="stylesheet">    
+    <!--OWL-Carousel css-->
+    <link href="/css/owl.theme.css?v=2" rel="stylesheet">
+    <link href="/css/owl.carousel.css?v=2" rel="stylesheet" type="text/css">
+    <!--DataTable css-->
+    <link href="/css/jquery.dataTables.css?v=2" rel="stylesheet">
+	<link href="/css/dataTables.bootstrap.css?v=3" rel="stylesheet">
+    <!--Popup CSS-->
+    <link href="/css/magnific-popup.css?v=2" rel="stylesheet">
+    <!--Google web font css-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>
+    <!--font awesome icon css-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->	    
+    
+    <script type="text/javascript" src="/js/base.js?v=10"></script>
+    <script type="text/javascript" src="/js/vmove.js?v=3"></script>
+    <script type="text/javascript" src="/js/topAdjustment.js?v=2"></script>
+    <script type="text/javascript" src="/js/btnAdjustment.js?v=1"></script>    
+    <script type="text/javascript" src="/js/swap.js?v=1"></script>
+    <script type="text/javascript" src="/js/image.map.js?v=2"></script>
+    <script type="text/javascript" src="/js/jquery-3.1.1.js?v=2"></script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="/js/jquery-1.11.1.min.js"></script> 
+    
+    <script type="text/javascript" src="/js/jquery.dataTables.js?v=3"></script> 
+    <script type="text/javascript" src="/js/dataTables.bootstrap.js?v=1"></script> 
+    
+    <script type="text/javascript" src="/js/bootstrap.min.js?v=1"></script> 
+    <script type="text/javascript" src="/js/owl.carousel.js?v=2"></script> 
+    
+    <!--Popup JS Script-->
+    <script src="/js/jquery.magnific-popup.min.js?v=1"></script>
+    
+    <!--Camera JS Script-->     
+    <script type="text/javascript" src="/js/jquery.min.js?v=1"></script>         
+	<script type="text/javascript" src="/js/jquery.mobile.customized.min.js?v=1"></script>        
+	<script type="text/javascript" src="/js/jquery.easing.1.3.js?v=1"></script>         
+    <script type="text/javascript" src="/js/script.js?v=4"></script>    
+    <script type="text/javascript" src="/js/camera.js?v=2"></script>   
+</head>
+<body>
+<script type="text/javascript">
+	$( document ).ready(function() {
+								 	purifyContent(2);
+									
+									var hasImageBanner = false;
+									if(hasImageBanner)
+										$(window).resize(function(){setBannerImage();});
+										
+									document.getElementById('SearchTextBox').onkeydown = function(e)
+									{
+										if(e.keyCode == 13)	
+										{
+											e.preventDefault();
+											submitSearch();
+										    return false;
+										}
+									};
+								 });
+	
+	var smalImg = '/img/company/top_banner_small.jpg';
+	var bigImg = '';
+	var actImg = '';
+		
+	function setBannerImage()
+	{		
+		var w  = window,
+			d  = w.document,
+			de = d.documentElement,
+			db = d.body || d.getElementsByTagName('body')[0],
+			x  = w.innerWidth || de.clientWidth || db.clientWidth,
+			y  = w.innerHeight|| de.clientHeight|| db.clientHeight;		
+		
+		var newImg = '';
+		
+		if(x < 630)
+			newImg = '/img/company/top_banner_small.jpg';
+		else
+			newImg = '';
+		
+		if(newImg !== actImg)
+		{
+			document.getElementById('headerImage').style.backgroundImage="url('" + newImg + "')";
+			actImg = newImg;
+		}
+	}
+	
+	
+	function openEmail(mailType, optinalId, subject, message)
+	{
+		var obj = $('#obj');
+		var textstatus = $('#textstatus');
+		jQuery.ajax({
+		type: "POST",
+		url: '/phps/functions_ext',
+		dataType: 'json',
+		data: {functionname: 'getEmailAdress', arguments: [mailType, optinalId]},
+	
+		success: function (obj, textstatus)
+					{
+					  if( !('error' in obj) )
+					  {
+						var mailLists = obj.result;					
+						var t = $('#example').DataTable();
+						var mailTo = mailLists[0];
+						
+						var joinChar = '?';
+						
+						mailCc = '';
+						if(mailLists[1] !== '')
+						{
+							mailCc = '?cc=' + mailLists[1];
+							joinChar = '&';
+						}
+						
+						var mailBcc = ''
+						if(mailLists[2] !== '')
+						{
+							mailBcc = joinChar + 'bcc=' + mailLists[2];
+							joinChar = '&';
+						}
+						
+						var subjectText = '';
+						if(subject !== '')
+						{
+							subjectText = joinChar + "subject=" + encodeURIComponent(subject);
+							joinChar = '&';
+						}
+						
+						var bodyText = '';
+						if(message !== '')
+							bodyText = joinChar + "body=" + encodeURIComponent(bodyText);
+							
+						document.location.href = "mailto:" + mailTo + mailCc + mailBcc + subjectText + bodyText;
+						
+						//If the browser respond to the mailto it will loose focus, then timer must be stopped
+						$(window).blur(function(){clearTimeout(t);});
+	
+						//The browser did not lost focus after 500 miliseconds, the mailto url protocol is not set or not working
+						//Send the user to the contact us form
+						t = setTimeout(function(){document.location.href = '/contact_us';}, 500);
+					  }
+					  else
+						  console.log(obj.error);
+				}
+			});	
+	}
+	
+	function submitSearch()
+	{
+		var live = true;
+
+		if(live)
+		{
+			var objPost = $('#obj');
+			var textstatusPost = $('#textstatus');
+			jQuery.ajax({
+			type: "POST",
+			url: '/phps/functions_ext',
+			dataType: 'json',
+			data: {functionname: 'pardotHandlerUrl', arguments: ['SearchForm']},
+		
+			success: function (objPost, textstatusPost)
+						{
+						  if( !('error' in objPost) )
+						  {			
+							var form = document.getElementById('searchForm');								
+							form.method = 'POST';
+							form.action = objPost.result;
+							form.submit();
+						  }
+						  else
+							  console.log(objPost.error);
+						}
+				});
+		}
+		else
+		{
+			var form = document.getElementById('searchForm');								
+			form.method = 'POST';
+			form.action = '/search';
+			form.submit();
+		}
+	}
+	
+	function notify_optin(emailAdress, country)
+	{
+		var obj = $('#obj');
+		var textstatus = $('#textstatus');
+		jQuery.ajax({
+		type: "POST",
+		url: '/phps/functions_ext',
+		dataType: 'json',
+		data: {functionname: 'getEmailAdress', arguments: ['mk']},
+	
+		success: function (obj, textstatus)
+					{
+					  if( !('error' in obj) )
+					  {
+						var mailLists = obj.result;
+						
+						jQuery.ajax({
+						type: "POST",
+						url: '/phps/functions_ext',
+						dataType: 'json',
+						data: {functionname: 'notifyOptIn', arguments: 
+																	[
+																		mailLists[0],
+																		mailLists[1],
+																		mailLists[2],
+																		emailAdress,
+																		country === '' ? 'Unknown' : country
+																	]}
+							});					
+					  }
+					  else
+						  console.log(obj.error);
+				}
+			});
+	}
+</script>
+
+	<!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NRMWNM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NRMWNM');</script>
+    <!-- End Google Tag Manager -->
+
+	<!-- Pardot Tracking -->    
+    <script type="text/javascript">
+		piAId = '152901';
+		piCId = '1081';
+		
+		(function(){
+			function async_load(){
+				var s = document.createElement('script'); s.type = 'text/javascript';
+				s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+				var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+			}
+			if(window.attachEvent) { window.attachEvent('onload', async_load); }
+			else { window.addEventListener('load', async_load, false); }
+		})();
+	</script>
+    <!-- End Pardot Tracking -->
+	
+	<!-- LinkedIn Tracking -->
+	<script type="text/javascript">
+		_linkedin_partner_id = "509524";
+		window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+		window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+	</script>
+	<script type="text/javascript">
+		(function(){var s = document.getElementsByTagName("script")[0];
+		var b = document.createElement("script");
+		b.type = "text/javascript";b.async = true;
+		b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+		s.parentNode.insertBefore(b, s);})();
+	</script>
+	<!-- End LinkedIn Tracking -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 9649375;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+
+
+<!--header start-->
+<div class="header-row" id="header-row">
+    <div class="container">
+        <div class="row"> 
+            <!--logo start-->
+            <div class="col-md-2">
+            	<a class="navbar-brand logo" href="/"><img src="/img/company/Proceco_Logo_EN.svg?v=1" alt="company logo" ></a>
+            </div>
+            <!--logo start close-->
+
+			<br>
+			<div class="col-md-9 contact-info">
+                <p>
+                    <span class="call-number"><i class="fa fa-phone"></i><a href="tel:1-800-978-6677">+ 1 800 978 6677</a></span> 
+                    <span class="mail-info"><i class="fa fa-envelope"></i><a onclick="openEmail('cl', 0, '', '')">Email Us</a></span>
+                    <span class="social-media">
+                    	<a href="https://plus.google.com/106441968352922439025" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+	                    <a href="https://www.linkedin.com/company/proceco-ltd-" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </span>
+                    <br>
+                    <form class="navbar-form navbar-right" role="search" id="searchForm">        
+                        <div class="input-group">
+                            <input type="text" class="form-control" size="25px" name="SearchValue" id="SearchTextBox" maxlength="150" placeholder="Search Here" >
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-yellow" style="height:34px;" type="button" onClick="submitSearch()">Go!</button>
+                            </span>
+                        </div>
+                    </form>
+                </p>
+            </div>            
+        </div>
+	</div>
+</div>
+<!--header Close--> 
+
+<!--menu start-->
+<div class="tp-navigations">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container"> 
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+                    <li class="active"> <a href="/">Home</a></li>
+                    
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">                            
+                            <li><a href="/about_us">Company Profile</a></li>
+                            <li><a href="/about_us#CompanyHistory">Our History</a></li>
+                            <li><a href="/about_us#ProcessLaboratory">Process Laboratory</a></li>
+                            <li><a href="/about_us#IsoQualityPolicy">ISO Quality Policy</a></li>
+                            <li><a href="/about_us#TradeShow">Trade Shows</a></li>
+                            <li style="border-top-color:#000; border-top:5px solid;"><a href="/career">Join Our Team</a></li>
+                        </ul>
+					</li>
+                    
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Industry Segments<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">                            
+                            <li><a href="/industry_segments/aerospace">Aerospace</a></li>
+                            <li><a href="/industry_segments/automotive">Automotive</a></li>
+                            <li><a href="/industry_segments/general_manufacturing">General Manufacturing</a></li>
+                            <li><a href="/industry_segments/rail_transit">Rail and Transit</a></li>
+                        </ul>
+					</li>
+					
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Applications<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/industry_applications/parts_washing">Parts Washing</a></li>
+                            <li><a href="/industry_applications/hydro_deburring">Hydro Deburring</a></li>
+                            <li><a href="/industry_applications/fluorescent_penetrant_inspection">Fluorescent Penetrant Inspection</a></li>
+                            <li><a href="/industry_applications/surface_treatment">Surface Treatment</a></li>
+                            <li><a href="/industry_applications/water_waste_treatment">INDUSTRIAL WASTEWATER TREATMENT</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">                            
+                            <li><a href="/product_information/aerospace">Aerospace</a></li>
+                            <li><a href="/product_information/automotive">Automotive</a></li>
+                            <li><a href="/product_information/general_manufacturing">General Manufacturing</a></li>
+                            <li><a href="/product_information/rail_transit">Rail and Transit</a></li>
+                            <li style="border-top-color:#000; border-top:5px solid;"><a href="/product_information/water_waste_treatment">Industrial Wastewater Treatment</a></li>
+                            <li><a href="/product_information/pre_owned">Pre-Owned Equipment</a></li>
+                        </ul>
+                    </li>          
+
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Customer Support<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        	<li><a href="/customer_support">PROCECO's Customer Support</a></li>
+                            <li><a href="/customer_support#section_troubleshoot">Troubleshoot and Repair</a></li>
+                            <li><a href="/customer_support#section_reaplacement_retrofit">Replacement Parts</a></li>
+                            <li><a href="/customer_support#section_reaplacement_retrofit">Retrofit and Refurbish</a></li>
+                            <li><a href="/customer_support#section_peace_of_mind">Peace-of-mind program</a></li>
+                            <li><a href="/customer_support#section_warranty">Warranty</a></li>                                                                                       
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Documentation<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/technical_information">Brochures</a></li>
+                            <li><a href="/technical_information#section_case_studies">CASE STUDIES</a></li>
+                            <li><a href="/technical_information#section_white_papers">WHITE PAPERS</a></li>
+                        </ul>
+					</li>
+                    
+                    <li class=""><a href="/contact_us">Contact us</a></li>
+                    
+                    <li><a class="langB" id="changeLang" href="#" onClick="ChangeLanguage('FR')">FR</a></li>          
+				</ul>        
+			</div>
+		</div>
+	</nav>
+</div>
+<!--menu end--> 
+
+<div class="tp-page-header" id="headerImage" style="display:none; visibility:hidden;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 page-header-title">
+				<h2></h2>        
+			</div>
+		</div>
+	</div>
+</div><script type="text/javascript">
+	jQuery(function(){
+	 	jQuery('#camera_wrap_1').camera({					
+					fx: 'simpleFade',
+					time: 5000,
+					loader: 'bar',
+					hover:false,
+					playPause: false,
+					pauseOnClick: false,
+					height: '30%'
+			
+	        });		
+    });
+
+	$( document ).ready(function() {
+										var listToAdjust_1 = new ElementVariableTopMargin('lst_one', 991, -30);
+										onMaginAjusmentRequired(listToAdjust_1);
+										$(window).resize(function(){onMaginAjusmentRequired(listToAdjust_1);});
+										
+										var listToAdjust_2 = new ElementVariableTopMargin('lst_two', 991, -30);
+										onMaginAjusmentRequired(listToAdjust_2);
+										$(window).resize(function(){onMaginAjusmentRequired(listToAdjust_2);});
+										
+										if('EN' == 'FR')
+										{
+											var btnToSet = new ElementTopMargin('readMoreGen', 992, 1199, 61)
+											onPositionAjusmentRequired(btnToSet);
+											$(window).resize(function(){onPositionAjusmentRequired(btnToSet);});
+											
+										}
+										else
+										{
+											var btnToSet = new ElementTopMargin('readMoreRail', 992, 1199, 61)
+											onPositionAjusmentRequired(btnToSet);
+											$(window).resize(function(){onPositionAjusmentRequired(btnToSet);});
+										}
+										
+								    });
+</script>
+
+<div class="slider-wrapper" id="slider">
+    <div class="fluid_container">
+    	<div class="camera_wrap" id="camera_wrap_1">
+		    <div data-src="/img/slider/application_banner.jpg">
+			    <div class="camera_caption fadeIn">
+                					    <h1>ENGINEERING &amp;<br />DESIGN SUPPORT</h1>
+				    <a href="/about_us" class="btn btn-outline">Explore PROCECO</a>
+                                        
+                    <!--                    <h1>ingénierie et soutien<br />de conception</h1>
+				    <a href="/about_us" class="btn btn-outline">Découvrez PROCECO</a>
+					-->                </div>
+			</div>
+			<div data-src="/img/slider/blue_fire.jpg">
+				<div class="camera_caption fadeIn">
+                					    <h1>SYSTEM MANUFACTURE, INSTALLATION &amp; START-UP</h1>
+				    <a href="/#industry_segments" class="btn btn-outline">Explore our industry segments</a>
+                                        
+                    <!--                    <h1>Fabrication, installation et mise en service de systèmes</h1>
+				    <a href="/#industry_segments" class="btn btn-outline">Découvrez nos secteurs d'activités</a>
+					-->                </div>
+			</div>
+		    <div data-src="img/slider/where_place.jpg">
+                <div class="camera_caption fadeIn">
+                	                    <h1>INTEGRATION WITH YOUR UP &amp; DOWNSTREAM PROCESSES</h1>
+                    <a href="industry_applications/parts_washing" class="btn btn-outline">Explore our APPLICATIONS</a>
+                                        
+                    <!--                    <h1>INTÉGRATION À VOS PROCESSUS EN AMONT ET EN AVAL</h1>
+                    <a href="industry_applications/parts_washing" class="btn btn-outline">Découvrez nos applications</a>
+					-->                </div>
+		    </div>
+    		<div data-src="/img/slider/location-map.jpg">
+                <div class="camera_caption fadeIn">
+                	                    <h1>ONGOING SUPPORT<br />&amp; ON-TIME DELIVERY</h1>
+                    <a href="/customer_support" class="btn btn-outline">Explore our Customer Service</a>
+                                        
+                    <!--                    <h1>Soutien continu et livraison ponctuelle</h1>
+                    <a href="/customer_support" class="btn btn-outline">Découvrez notre service à la clientèle</a>
+					-->            	</div>
+        	</div>
+	    </div>
+    </div>
+</div>
+
+<div id="stripe-line"></div>
+
+
+<div class="tp-aboutus" style="margin-bottom:-50px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 tp-heading-title">
+            					<h1>Over 43 Years of Expertise</h1>
+                
+                <p style="color:#4097db;">
+                	<strong>PROCECO Offers a Complete Integrated Cleaning System Customized to Your Needs.</strong>
+                </p>
+                
+                <p>
+                	Our extensive process and machine building know-how covers a wide range of applications.                
+                    This has allowed us to be the leading supplier of integrated cleaning systems while offering a full range of standard parts washers covering virtually any aqueous cleaning application.
+                </p>
+                                    
+				<!--                <h1>Plus de 43 ans d'expérience</h1>
+                
+                <p style="color:#4097db;">
+                	<strong>PROCECO offre des solutions intégrées de lavage complètes et personnalisées pour répondre à vos besoins.</strong>
+                </p>
+                
+                <p>
+                	Notre savoir faire complet pour les procédés et la fabrication de machinerie couvre une vaste gamme d'applications.  
+                    C'est ce qui nous a permis de devenir le chef de file en fourniture de systèmes intégrés de lavage, tout en offrant une gamme complète de laveuses de pièces standardisées, qui couvre pratiquement toutes les applications de lavage de pièces en solutions aqueuses.
+                </p>
+                -->            </div>
+		</div>
+        
+		<div class="row">			
+			<div class="col-md-12 tp-about-feature">
+				<div class="row">
+					<div class="col-md-6 tp-about-block">
+                    	                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls01">                                	
+                                    HOW WE MEET YOUR CLEANLINESS REQUIREMENTS                    
+                                </li>
+                            </ol>
+                        </div>
+                                                
+                        <div class="p_value_prop_header">
+                            <p>
+                                Whether you are an original equipment manufacturer or provide maintenance, repair, and overhaul services, we have a proven process to help you meet your requirements.                                  
+                            </p>
+                            <p>
+                            	<strong>Here's how we approach new client engagements:</strong>
+                            </p>                            
+                        </div>
+                        
+                        <div class="st-list-block">                            
+                            <ul>
+                            	<li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Evaluate your parts cleaning needs
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Discuss your process objectives
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Determine your cleaning and drying criteria
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Design and develop a cost-effective solution
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Manufacture, install, and commission your system
+                                </li>
+                            </ul>                            
+                        </div>
+						                        
+                        <!--                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls01">                                	
+                                    COMMENT NOUS RÉPONDONS À VOS EXIGENCES EN MATIÈRE DE PROPRETÉ
+                                </li>
+                            </ol>
+                        </div>
+                                                
+                        <div class="p_value_prop_header">
+                            <p>
+                                Que vous soyez fabriquant ou que vous offriez des services d'entretien, de réparation ou de remises en état, nous sommes en mesure de vous offrir un procédé éprouvé pour vous aider à rencontrer toutes vos exigences.
+                            </p>
+                            <p>
+                            	<strong>Nos engagements envers nos nouveaux clients:</strong>
+                            </p>                            
+                        </div>
+                        
+                        <div class="st-list-block">                            
+                            <ul>
+                            	<li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Évaluation de vos besoins de lavage de pièces
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Discussion sur les objectifs de vos procédés
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Détermination de vos critères de lavage et de séchage
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Conception et développement d'une solution rentable
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Fabrication, installation et mise en service de votre système
+                                </li>
+                            </ul>                            
+                        </div>					
+                   		-->                    </div>
+                    
+                    <div class="col-md-6 tp-about-block">
+                    	                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls02">                                	
+                                    HOW WE ALIGN OUR TECHNOLOGY WITH YOUR NEEDS
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="p_value_prop_header">
+                            <p>
+                                To help you achieve consistent cleaning results, we offer a wide selection of aqueous, single- or multi-stage parts washer models that integrate a variety of technologies.
+                            </p>
+                            
+                            <p>
+                            	<strong>These methods include:</strong>
+                            </p>
+                        </div>                        
+                        
+                        <div class="col-md-6">
+                            <div class="st-list-block">                            
+                                <ul>                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Precision Cleaning
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Spray-Immersion
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Ultrasonic Cleaning
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        High-Impact Blow-Off and Convection Drying
+                                    </li>                                                                        
+                                </ul>                            
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6" id="lst_one">
+                            <div class="st-list-block">
+                                <ul>                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Power Flushing
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        High-Pressure Deburring
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Slurry Blasting
+                                    </li>                                    
+                                                                        
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Wastewater Treatment
+                                    </li>
+                                </ul>                            
+                            </div>
+                        </div>
+                                                
+                        <!--                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls02">                                	
+                                    COMMENT NOUS ALIGNONS NOTRE TECHNOLOGIE SELON VOS BESOINS
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="p_value_prop_header">
+                            <p>
+                                Pour mieux vous aider à obtenir des résultats de lavage constants, nous offrons une vaste sélection de laveuses de pièces en solutions aqueuses, à une seule ou plusieurs étapes, qui intègrent une variété de méthodes de lavage.
+                            </p>
+                            
+                            <p>
+                            	<strong>Ces méthodes incluent notamment:</strong>
+                            </p>
+                        </div>                        
+                        
+                        <div class="col-md-6">
+                            <div class="st-list-block">                            
+                                <ul>                                   
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Lavage de précision
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Aspersion-immersion
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Nettoyage aux ultrasons
+                                    </li>
+                                   
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Décollage par jet et séchage par convexion
+                                    </li>                                                                        
+                                </ul>                            
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6" id="lst_one">
+                            <div class="st-list-block">                            
+                                <ul>
+                                	 <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Ébavurage à haute pression
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Grenaillage par voie humide
+                                    </li>                                    
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Traitement des eaux usées
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Rinçage de grande puissance
+                                    </li>
+                                </ul>                            
+                            </div>
+                        </div>
+                        -->					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 tp-about-block">
+                    	                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls03">                                	
+                                    HOW WE MAINTAIN YOUR PRODUCTION RATE EFFICIENCY
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="p_value_prop_header" style="margin-bottom:-25px;">
+                            <p>
+                                We're focused on minimizing downtime and rejected parts, so you never have to worry about shipping your products late again.  
+                                Our systems minimize parts travel between operations, while eliminating intermediate storage and reducing the number of parts in process.
+                            </p>                            
+                        </div>
+
+                        <div class="st-list-block">                            
+                            <ul>
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Automation and Robotics
+                                </li>
+                                
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Integration With Your Up/Downstream Processes
+                                </li>
+                                
+                                <li>
+                                    <i class="fa fa-angle-double-right"></i>
+                                    Turnkey Installation
+                                </li>                                
+                            </ul>                            
+                        </div>
+                                                
+                        <!--                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls03">                                	
+                                    COMMENT NOUS MAINTENONS L'EFFICACITÉ DE VOTRE CADENCE DE PRODUCTION
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="p_value_prop_header">
+                            <p>
+                                Nous nous efforçons de minimiser les pannes et les pièces rejetées, pour mieux assurer que vous n'ayez jamais à vous soucier d'expédier vos produits en retard.  
+                                Nos systèmes minimisent les transferts des pièces entre les diverses opérations, tout en éliminant le rangement intermédiaire, et en réduisant le nombre de pièces en traitement.
+                            </p>
+                        </div>
+                        
+                        <div class="st-list-block">                            
+                            <ul>
+                            	<li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Automatisation et robotique
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Intégration avec vos procédés en amont/aval
+                                </li>
+                                
+                                <li>
+                                	<i class="fa fa-angle-double-right"></i>
+                                    Installations clé en main
+                                </li>                                
+                            </ul>                            
+                        </div>
+                        -->					</div>
+
+					<div class="col-md-6 tp-about-block">
+                    	                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls04">                                	
+                                    HOW WE HELP YOU TACKLE ANY CHALLENGES IN A COST-EFFECTIVE MANNER
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="p_value_prop_header" style="margin-bottom:-25px;">
+                            <p>
+                                Decades of experience in a variety of industries, including automotive, aerospace, rail & transit, and general manufacturing have given us opportunities to repurpose our expertise to innovate cross-functional solutions to new challenges.
+                            </p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="st-list-block">                            
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Process Know-How
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Sound Engineering
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Reliable Componentry
+                                    </li> 
+                                    
+                                     <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Modular Design Approach
+                                    </li>                                   
+                                </ul>                            
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6" id="lst_two">
+                            <div class="st-list-block">                            
+                                <ul>                                                                        
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Process Lab Testing
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Quality Workmanship
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Competitive Cost of Ownership
+                                    </li>
+                                </ul>                            
+                            </div>
+                        </div> 
+                                                
+                        <!--                    	<div class="mp-list-block">                            
+                            <ol>
+                            	<li class="cls04">                                	
+                                    COMMENT NOUS POUVONS VOUS AIDER À RELEVER VOS DÉFIS, DE MANIÈRE RENTABLE
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="p_value_prop_header">
+                            <p>
+                                Des décennies d'expérience dans une variété d'industries, notamment dans l'industrie automobile, aérospatiale, transport en commun et ferroviaire ainsi que de la fabrication en général nous ont autant d'opportunités d'adapter notre expertise pour innover avec des solutions interfonctionnelles qui répondent aux nouveaux défis.
+                            </p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="st-list-block">                            
+                                <ul>
+                                	<li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Ingénierie viable
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Main-d'œuvre qualifiée
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Fabrication fiable des composantes
+                                    </li> 
+                                    
+                                     <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Approche de design modulaire
+                                    </li>                                   
+                                </ul>                            
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6" id="lst_two">
+                            <div class="st-list-block">                            
+                                <ul>            
+                                	<li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Connaissance des procédés
+                                    </li>
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Tests de traitement en laboratoire
+                                    </li>                                    
+                                    
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        Coût de propriété compétitif 
+                                    </li>
+                                </ul>                            
+                            </div>
+                        </div> 
+                        -->					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="team-section">
+	<div class="container">
+		<div class="row" id="industry_segments">
+			<div class="col-md-12 tp-heading-title">
+            	                <h1>Industries we serve</h1>
+                <p>
+                	Industry leaders around the world trust our expertise in machine design, engineering, and aqueous cleaning to offer superior, integrated cleaning solutions for automotive, aerospace, general manufacturing, and rail & transit industries worldwide.
+                </p>
+                                
+                <!--                <h1>SECTEURS D'ACTIVITÉS DESSERVIS</h1>
+                <p>
+                	Les industries mondiales de l'automobile, de l'aérospatiale, de la fabrication générale ainsi que du transport ferroviaire ont confiance en notre expertise de premier plan en conception de machines, en ingénierie et en lavage aqueux pour offrir des solutions de nettoyage supérieures et intégrées.
+                </p>
+                -->            </div>
+		</div>
+        
+		<div class="row">
+			<div class="col-md-6 tp-service-block">
+                <div class="tp-thumb-pic">
+	                <a href="/industry_segments/aerospace" title="Aerospace Industry"> <img class="img-responsive" src="/img/company/aerospace_home.jpg" alt=""> </a>
+                </div>
+
+				<div class="tp-ser-dec">
+                	                    <h2>Aerospace</h2>
+                    <p>
+                    	With more than 100 customers in the aerospace and aviation industry, our experience allows us to design flexible solutions that significantly reduces your operating costs and helps you reach a higher production. 
+                    </p>
+                                    
+					<!--                    <h2>Aérospatial</h2>
+                    <p>
+                        Avec plus de 100 clients dans l'industrie aérospatiale et aéronautique, notre expérience nous permet de concevoir des solutions flexibles.  
+                        Nos systèmes réduisent considérablement vos coûts d'exploitation et vous aident à atteindre un niveau de production plus élevé.
+                    </p>
+                    -->                    <a href="/industry_segments/aerospace" class="btn-outline-blue btn"> Read More</a><br />
+                </div>
+			</div>
+
+			<div class="col-md-6 tp-service-block">
+                <div class="tp-thumb-pic">
+	                <a href="/industry_segments/automotive" title="Automotive industry"><img class="img-responsive" src="/img/company/automotive_home.jpg" alt=""></a>
+                </div>
+
+				<div class="tp-ser-dec">
+                	                    <h2>Automotive</h2>
+                    <p>
+                    	With more than 100 customers in the automotive industry, our experts ensure that all components are properly cleaned to meet the stringent automotive cleanliness requirements and at the lowest cost to you.
+                    </p>
+                                    
+					<!--                    <h2>Automobile</h2>
+                    <p>
+                        Avec plus de 100 clients dans l'industrie automobile, notre expertise nous permet de développer des systèmes de nettoyage flexibles qui assurent que tous les composantes sont correctement nettoyées pour répondre aux exigences strictes de propreté automobile.
+                    </p>
+                    -->                    <a href="/industry_segments/automotive" class="btn-outline-blue btn"> Read More</a><br />
+                </div>
+			</div>                        
+		</div>
+        
+        <div class="row">
+			<div class="col-md-6 tp-service-block">
+                <div class="tp-thumb-pic">
+	                <a href="/industry_segments/general_manufacturing" title="General Manufacturing Industry"><img class="img-responsive" src="/img/company/general_manufacturing_home.jpg" alt=""> </a>
+                </div>
+
+				<div class="tp-ser-dec">   
+                	                 
+                    <h2>General Manufacturing</h2>
+                    <p>
+                    	Having served more than 200 customers in the General Manufacturing industry, our experience allows us to design flexible systems ensuring that parts are properly cleaned prior to subsequent operations or for final assembly.
+                    </p>
+                                    
+					<!--                    <h2>Fabrication Générale</h2>
+                    <p>
+                        Ayant servi plus de 200 clients dans l'industrie de la fabrication générale, notre expérience nous permet de concevoir des solutions flexibles garantissant que les pièces sont correctement nettoyées avant les opérations ultérieures ou pour l'assemblage final.
+                    </p>
+                    -->                    <a href="/industry_segments/general_manufacturing" id="readMoreGen" class="btn-outline-blue btn"> Read More</a><br />
+                </div>
+			</div>
+
+			<div class="col-md-6 tp-service-block">
+                <div class="tp-thumb-pic">
+	                <a href="/industry_segments/rail_transit" title="Rail and Transit Industry"><img class="img-responsive" src="/img/company/rail_transit_home.jpg" alt=""> </a>
+                </div>
+
+				<div class="tp-ser-dec">
+                	                    <h2>Rail and Transit</h2>
+                    <p>
+                    	Having served more than 100 customers in the Rail and Transit industry, our know-how allows us to develop flexible systems ensuring that components are properly cleaned to remove heavy soils and much more.
+                    </p>
+                                    
+					<!--                    <h2>Ferroviaire et Transport en Commun</h2>
+                    <p>
+                        Ayant servi plus de 100 clients dans l'industrie ferroviaire et de transport en commun, notre savoir-faire nous permet de développer des systèmes flexibles assurant un nettoyage parfait des composantes, enlevant les sols lourds et facilitant le démontage.
+                    </p>
+                    -->                    <a href="/industry_segments/rail_transit" id="readMoreRail" class="btn-outline-blue btn"> Read More</a><br />
+                </div>
+			</div>                        
+		</div>
+	</div>        
+</div>
+
+<div id="trusted" class="trusted-section">
+    <div class="container">
+	    <div class="row">
+    		<div class="col-md-12 tp-heading-title">
+            	                <h1>Knowledge Process</h1>
+                <p>
+                	We strive to continually improve our products, processes, and services in order to meet and exceed the most demanding expectations of our customers.
+                </p>
+                                
+                <!--                <h1>PROCESSUS DE CONNAISSANCE</h1>
+                <p>
+                	Nous nous efforçons d'améliorer constamment nos produits, nos procédés et notre service pour mieux répondre et dépasser les attentes les plus exigeantes de nos clients.
+                </p>
+                -->		    </div>
+	    </div>
+    	
+                <div style="text-align:center;">
+            <a href="/knowledge_process/meeting_cleanliness_requirements" class ="btn-outline-blue btn" style="margin:15px;">Meeting Cleanliness<br />Requirements</a>
+            <a href="/knowledge_process/part_type_examples_and_case_studies" class ="btn-outline-blue btn" style="margin:15px;">Parts Type Examples<br />And Case Studies</a>
+            <a href="/knowledge_process/material_handling_options" class ="btn-outline-blue btn" style="margin:15px;">Material Handling<br />options</a>
+            <a href="/knowledge_process/green_efficiencies" class ="btn-outline-blue btn" style="margin:15px;">Green<br />Efficiencies</a>
+            <a href="/knowledge_process/how_to_buy_from_us" class ="btn-outline-blue btn" style="margin:15px;">How to Buy<br />From Us</a>
+        </div>
+                        
+        <!--        <div style="text-align:center;">
+            <a href="/knowledge_process/meeting_cleanliness_requirements" class ="btn-outline-blue btn" style="margin:15px;">Répondre aux diverses<br />exigences de propreté</a>
+            <a href="/knowledge_process/part_type_examples_and_case_studies" class ="btn-outline-blue btn" style="margin:15px;">Exemples de types de pièces<br />et études de cas</a>
+            <a href="/knowledge_process/material_handling_options" class ="btn-outline-blue btn" style="margin:15px;">Option de manipulation<br />des matériaux</a>
+            <a href="/knowledge_process/green_efficiencies" class ="btn-outline-blue btn" style="margin:15px;">Efficacités<br />éco-énergétiques</a>
+            <a href="/knowledge_process/how_to_buy_from_us" class ="btn-outline-blue btn" style="margin:15px;">Comment acheter<br />chez nous</a>
+        </div>
+        -->    </div>
+</div>
+
+﻿<div id="quote-section" class="quote-section" style="margin-top:-25px;">
+    <div class="container">
+        <div class="row" id="contactRow">
+            <div class="col-md-8 job-section-title">
+                                <h1>Contact a solution expert</h1>
+                <p>
+                    PROCECO develops aqueous cleaning systems that go beyond cleaning, by seamlessly integrating a wide range of processes and features that dramatically improve your productivity and profitability. 
+                </p>
+                                
+                <!--                <h1>Contactez un expert en solutions</h1>
+                <p>
+                    PROCECO développe des solutions clé en main qui vont au-delà du lavage, qui intègrent de manière transparente un large éventail de procédés et de caractéristiques avancées qui améliorent considérablement votre productivité et votre rentabilité.
+                </p>
+                -->        
+            </div>
+            <div class="col-md-4" style="text-align:center;">             	
+				<a href="/contact_us" class="btn btn-outline" id="contactBtn">Contact us</a>			
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(window).scroll(function(){relocateButton();});
+$(window).resize(function(){relocateButton();}); 
+var sectionHeight = 0;
+
+function relocateButton()
+{	
+	if(sectionHeight != document.getElementById('contactRow').getBoundingClientRect().height)
+	{		
+		document.getElementById('contactBtn').style.marginTop = "0px";
+		
+		sectionHeight = document.getElementById('contactRow').getBoundingClientRect().height;
+		
+		var w  = window,
+			d  = w.document,
+			de = d.documentElement,
+			db = d.body || d.getElementsByTagName('body')[0],
+			x  = w.innerWidth || de.clientWidth || db.clientWidth,
+			y  = w.innerHeight|| de.clientHeight|| db.clientHeight;
+		
+		if(x >= 992)
+		{
+			var section_rect = document.getElementById('contactRow').getBoundingClientRect();			
+			var button_rect = document.getElementById('contactBtn').getBoundingClientRect();				
+			document.getElementById('contactBtn').style.marginTop = ((section_rect.height -  button_rect.height) / 2) -15 + "px";
+		}
+	}
+}
+</script><div id="footer" class="footer-section">
+    <div class="container">
+
+    	<div class="row">    		
+            <div class="col-md-3 tp-ft-about">
+        		<div class="ft-logo">
+                	<a href="/"><img src="/img/company/Proceco_Logo_Footer_EN.png?v=0" alt="company logo"></a>
+                </div>
+                
+                <!--Address start-->
+                <div class="address">
+                    <ul>
+                        <li>
+                            <i class="fa fa-home"></i>
+                            7300, Tellier<br>
+                            Montréal, Québec, Canada<br />
+                            H1N 3T7
+                        </li>
+                        <li><i class="fa fa-phone"></i><a href="tel:1-800-978-6677">1 800 978 6677</a></li>                        
+                        <li><i class="fa fa-envelope"></i><a onclick="openEmail('cl', 0, '', '')">Email Us</a></li>
+                        <li><i class="fa fa-fax"></i>1 514 254 8184</li>
+                    </ul>
+                </div>
+		        <!--Address End-->         
+      		</div>
+     
+            <!--Products start-->
+            <div class="col-md-3 tp-investor-relation">
+                <h2>Available Products</h2>
+                <div class="st-list-block">
+                    <ul>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/aerospace">Aerospace</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/automotive">Automotive</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/general_manufacturing">General Manufacturing</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/rail_transit">Rail and Transit</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/water_waste_treatment">Industrial Wastewater Treatment</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/product_information/pre_owned">Pre-Owned Equipment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Products end-->
+            
+            <!--Pages links block start-->
+            <div class="col-md-3 tp-pages-link">
+                <h2>Site Links</h2>
+                <div class="st-list-block">
+                    <ul>
+                        <li>
+                        	<i class="fa fa-angle-double-right"></i>
+                        	<a href="/about_us">About Us</a>
+                        </li>
+                        <li>
+                        	<i class="fa fa-angle-double-right"></i>
+                            <a href="/#industry_segments">Industry Segments</a>
+                        </li>                        
+                        <li>
+                        	<i class="fa fa-angle-double-right"></i>
+                            <a href="/technical_information">Documentation</a>
+                        </li>
+                        <li>
+                        	<i class="fa fa-angle-double-right"></i>
+                            <a href="/contact_us">Contact Us</a>
+                        </li>
+                        <li>
+                        	<i class="fa fa-angle-double-right"></i>
+                            <a href="/career">Career</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Pages links block end-->
+            
+            <!--Customer Support start-->
+            <div class="col-md-3 tp-informations-link">
+                <h2>Customer Support</h2>
+                <div class="st-list-block">
+                    <ul>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support">PROCECO's Customer Support</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support#section_troubleshoot">Troubleshoot and Repair</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support#section_reaplacement_retrofit">Replacement Parts</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support#section_reaplacement_retrofit">Retrofit and Refurbish</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support#section_peace_of_mind">Peace-of-Mind Program</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="/customer_support#section_warranty">Warranty</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Customer Support  end--> 
+		</div>
+
+        <div class="row">  	  
+        	<div class="tp-ft-section-second">
+                <div id="imgParent" class="col-md-3 location-map" style="margin-bottom:50px;">
+                    <h2>Location Map</h2>
+                    <a href="/contact_us"><img id="footer-location-map" src="/img/company/location_map.png" class="img-responsive" alt=""></a>
+                </div>
+		
+                <!--Twitter Widget Start -->                
+                <div class="col-md-4 twitter-widget">
+                	<!--
+                    <h2>Twitter Indus</h2>
+                    <ul>
+                        <li><a href="#">@mona01</a>the gold for mining Perfomance<a href="">http://t.co/2ctjhv45</a> <small>2 days ago</small></li>
+                        <li><a href="#">@mona01</a>the gold for mining Perfomance <a href="">http://t.co/2ctjhv45</a> <small>3 days ago</small></li>
+                    </ul>
+                    -->
+                </div>
+                <!--Twitter Widget End -->
+        
+        		<!--Newsletter Start-->
+		        <div class="col-md-offset-1 col-md-4 tp-ft-newsletter">
+					        			<h2>Sign up for newsletter</h2>
+			        <p>
+                    	Keep up-to-date on the latest PROCECO cleaning solutions.
+                    </p>        
+					                    
+					<!--                    <h2>Abonnez-vous à notre communiqué électronique</h2>
+			        <p>
+                    	Tenez-vous au courant des dernières nouvelles de PROCECO.
+                    </p>
+					-->        
+                    <form role="form" action="" method="post" id="frmOptIn" style="margin-bottom:25px;">
+                        <div class="form-group">
+                        	<input type="email" id="signup_email" name="signup_email" class="form-control" placeholder="Email:" required >
+                        </div>
+                        
+                        <div class="form-fields">
+                            <input type="text" id="signup_first_name" name="signup_first_name" class="form-control" placeholder="First Name:" required >
+                            <input type="text" id="signup_last_name" name="signup_last_name" class="form-control" placeholder="Last Name:" required >                
+                            <input type="text" name="signup_optin" id="signup_optin"/>
+                        </div>
+                        <button type="button" onclick="submitOptIn()" class="btn-outline-blue btn">Subscribe</button>
+                    </form>                    
+		        </div>
+		        <!--Newsletter End-->         
+	        </div>
+		</div>
+        <div class="row">
+        	<div class="col-md-12" align="left">
+            	<h3>Registered ISO-9001</h3>
+            </div>
+        </div>
+	</div>
+</div>
+
+<div id="tiny-footer" class="tiny-footer">
+    <div class="container">
+    	<div class="row">
+		    <div class="col-md-6">
+			    <p class="copyright-ct">
+                	© 2017 PROCECO Ltd | <a class="tf-legal" href="/terms_of_use/privacy_policy">Privacy policy</a> | <a class="tf-legal" href="/terms_of_use/terms_of_use">Terms of use</a>
+                </p>
+		    </div>
+            
+		    <div class="col-md-6">
+			    <ul class="social-icon-ft pull-right">
+                    <!--
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa  fa-rss-square"></i></a></li>
+                    -->
+                    <li><a href="https://plus.google.com/106441968352922439025" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/proceco-ltd-" target="_blank"><i class="fa  fa-linkedin-square"></i></a></li>
+                </ul>
+		    </div>
+	    </div>
+    </div>
+</div>
+
+<!--Popup JS Script-->
+<script type="text/javascript" src="/js/popup-gallery.js?v=2"></script> 
+	
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+								 		var isSet = false;
+										if(isSet)
+											alert("Thank you for subscribing to our newsletter.");
+								   });
+	function submitOptIn()
+    {
+		if(!isEmailValid(document.getElementById('signup_email').value))
+		{
+			formOk = false;
+			alert('Please enter a valid email adress');
+		}
+		else
+		{
+			var signup_optin = document.getElementById('signup_optin');
+			signup_optin.value = 'I would like to receive relevant communications from PROCECO';
+							  
+			var objPost = $('#obj');
+			var textstatusPost = $('#textstatus');
+			jQuery.ajax({
+			type: "POST",
+			url: '/phps/functions_ext',
+			dataType: 'json',
+			data: {functionname: 'pardotHandlerUrl', arguments: ['OptIn', document.getElementById('signup_email').value, document.getElementById('signup_first_name').value, document.getElementById('signup_last_name').value, signup_optin.value]},
+			
+			success: function (objPost, textstatusPost)
+						{
+						  if( !('error' in objPost) )
+						  {
+							  notify_optin(document.getElementById('signup_email').value, '');
+							  
+							  var signup_optin = document.getElementById('signup_optin');
+				  			  signup_optin.value = 'I would like to receive relevant communications from PROCECO';
+																	  							  
+							  var form = document.getElementById('frmOptIn');
+							  form.action = objPost.result;
+							  form.submit();
+						  }
+						  else
+							  console.log(objPost.error);
+					}
+				});		    	
+		}
+    }	
+</script>
+</body>
+</html>

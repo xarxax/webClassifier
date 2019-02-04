@@ -1,0 +1,1576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN" "http://www.w3.org/TR/xhtml 1/DTD/xhtml1-transitional.dtd">
+<!--[if gt IE 8]> <html class="ie9" lang="en"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">   
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="google-translate-customization" content="c658242a1e553665-d4caf8e723ca0892-gee255db5dfcb55af-a" />
+    <LINK rel="STYLESHEET" type="text/css" href="https://msi.tshinc.com/msitemplates/msi.css?v=2">  
+    <title>Medical Solutions Inc.
+    </title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="shortcut icon" href="favicon.ico" /> 
+    
+<script type='text/javascript'> 
+if(window.location.protocol != 'https:') {
+  location.href = location.href.replace("http://", "https://");
+}
+// Added Global variables used by jasvascript and other functions 
+var ShowSalesGP = 'N' ; 
+var ShowSalesmanPricing = 'N' ;
+var ShowSalesmanCustCreate = 'N' ;
+var ShowSalesmanProdCreate = 'N' ;
+var ShowInventory = 'N' ;
+var ShowPricingWidget = 'N' ; 
+//Added Info for Chat 
+var ChatCustomer = 'WEBPRICE' ;
+var ChatLogon = 'WEBPRICE' ;
+var ChatSalesman = 'David Delgado' ;
+var ChatID = '' ;
+// Added Web link Code ;
+var xweblink = '' ;
+var CID = 'WEBPRICE' ;
+var OID = '' ;
+var TotLines = '0' ;
+var StyleID = 'https://msi.tshinc.com/msitemplates/msi.css'
+var SUFFIX = '893' ;
+var image_url = 'https://msi.tshinc.com/rd/rd.php?defpath=https://msi.tshinc.com/msi/images/&imagename=' ;
+var datasheet_url = '' ;
+var DailySpecials = '' ; 
+var OrderSpecials = '';
+// Added Global script Path
+var jsscript_path = 'https://msi.tshinc.com/msitemplates/' ;
+// Added Global menu Path - added to the Footer for this template
+// Added Global Solr Path
+var MDSSolrUrl = 'https://msi.tshinc.com/solr/msiproducts/' ;
+// Added Global Specials Template
+var MDSSpecialsTemplate = '35' ;
+// Added Sales Visibility info 
+var SalesVisible ; 
+// Added Customer Item Number Support
+var intcust = '' ;
+var mastcust = '' ; 
+var custassoc = '' ;
+var autorec = '25000' ;
+var offsethrs = '' ;
+var counthrs = '' ;
+// added for public site 
+var MDSTemplateURL = 'https://msi.tshinc.com/msitemplates/' ;
+var MDSRnUrl = 'https://msi.tshinc.com/MDSWEB/login893'  ;
+
+ </script>       
+    <!-- Flexslider stylesheet -->                             
+    <link rel="stylesheet" href="//hosting.tshinc.com/rn/rnpublic/css/flexslider.css" type="text/css" media="all">     
+    <!-- added styles for usmed-magento template -->  
+    <meta name="apple-mobile-web-app-capable" content="yes"/> 
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel='stylesheet' type='text/css'> 
+    <!--[if lt IE 9]>
+     <style>
+     body {
+     min-width: 960px !important;
+     }
+     </style>
+     <![endif]--> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/font-awesome.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/jquery.bxslider.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/photoswipe.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/bootstrap.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/extra_style.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/styles.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/responsive.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/superfish.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/camera.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/widgets.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/cloud-zoom.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/catalogsale.css" media="all"/> 
+    <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/print.css" media="print"/> 
+    <!--[if lt IE 8]>
+     <link rel="stylesheet" type="text/css" href="//hosting.tshinc.com/rn/templates/templateGT/css/styles-ie.css" media="all" />
+     <![endif]--> 
+    <!--[if lt IE 7]>
+     <![endif]--> 
+    <!-- code block for template -->
+    <style>/* CSS Document TemplateGT Styles */ @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic); /* inline styles to override */ #datsml{font-size:small; padding:3px; } a{color:#000000; }.ajaxsearch{border:solid #CCCCCC 1px}.ajaxsearch .suggest{background:#0A263D;color:#B4B4B4}.ajaxsearch .suggest .amount{color:#FF0000}.ajaxsearch .preview{background:#ffffff}.ajaxsearch .preview a{color:#1B43AC}.ajaxsearch .preview .description{color:#0A263D}.ajaxsearch .preview img{float:left;border:solid 1px #CCC}.header .form-search .ajaxsearch li.selected{background-color:#FBFBFB} /* CSS Document */ input,select,textarea{border:solid 1px #d3d4d6;font-size:11px;} #colhdg ,.rollsort{ /* Added new Heading */ color:#08436A;margin:0 0 30px;padding:2px 4px;background:#e5e5e5;border:1px solid #08436A;border-radius:4px;} #lcolor1{ /* detail data line alternating color #1 */ color:#313131;background:#EBF4FB;} #PriceContent{ /* detail data line alternating color #1 */ color:#313131;background:#EBF4FB;z-index:99010;} #lcolor2{ /* detail data line alternating color #2 */ /* background-image:url(http://hosting.tshinc.com/rn/images/bluemenu.jpg);color:#FFF; */ color:#313131;}.gobutton , .button1 , .button2 , .button3, .sendorder{ /* normal style for GO button */ background-color:#08436A;border:1px solid #BB0000;border-bottom-color:#BB0000;color:#FFF;height:22px;border-radius:4px;padding:0 18px; background:url(//hosting.tshinc.com/rn/images/spacer.gif) #08436A; /* margin-left:5px;margin-bottom:5px;*/ margin:5px;}.gobutton{margin:0px 5px 0px 5px;}.sendorderhov , .gobuttonhov , .buttonhov1 , .buttonhov2 , .buttonhov3{ /* hover style for GO button */ background-color:#E5E5E5;border-radius:4px;height:22px;border-color:#BB0000;border-bottom-color:#BB0000;color:#BB0000;margin:5px;padding:0 18px;}.gobutton, .gobuttonhov{margin:0px 5px 0px 5px;}.sendorder{ /* send order now style for navigation buttons */ color:yellow; }.sendorderhov{ /* sendordernow hover style for navigation buttons */ color:green;}.label{color:white;font-size:10pt;background-COLOR:#0D115B;text-align:right} /* ############################HOME LEFT MENU STYLES ############################*/ #left_menucontent{ /* width:222px;*/ height:auto ;float:left;background-repeat:repeat-y;} #srsearchresults{float:left; width:720px;} #srfootprints{color:black;text-align:center;font-family:"arial";font-size:11px;clear:left;border-bottom:1px solid black;} /* Addl Style Sheets 09-06-12 - djf for search results page */ #SRsortby{ /* width:276px; */ height:25px;float:left;font-family:"arial";font-size:12px;} #SRitemsperpage{width:auto;height:25px;float:left;font-family:"arial";font-size:12px;} #SRfootprints{width:720px; /* width:590px;height:auto;background-color:#ffffff;*/ color:#000000;text-align:center;font-family:"arial";font-size:11px; /* float:left; */ clear:left;border-bottom:1px solid black;} #SRsearchresults{ /* width:590px;height:auto;background-color:#ffffff;*/ float:left;width:720px;}.Salesinfo{position:relative;z-index:99999;background:rgb(211,211,211);left:750px;top:-100px;float:left;display:none; /* Change Default Salesman mode here - set default on or off */ } /* Added New Side Menu Css Styles */.sidemenu{list-style:none;width:270px;}.sidemenu2 ul{padding:0; margin:0; list-style:none; position:absolute; left:200px; }.sidemenu a{color:inherit; height:10px; text-decoration:none;}.sidemenu li{position:relative;font-size:14px;display:block;color:#08436A;font-weight:normal;border:1px solid #E5E5E5;border-bottom-color:#999999;background:#999999;background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5), to(#999999));background:-moz-linear-gradient(top,#E5E5E5,#999999);background:-o-linear-gradient(top,#E5E5E5,#999999);border-radius:5px;padding:5px 5px 5px; }.sidemenu li:last-of-type{border-right:none; }.sidemenu li > ul{position:absolute; left:100%; top:0; width:auto; display:none; white-space:nowrap;}.sidemenu > li > ul{left:100%; width:100%;}.sidemenu li > a:after{margin-left:5px; content:'\25BA'; }.sidemenu > li > a:after{margin-left:5px; content:'\25BA'; }.sidemenu li > a:only-child:after{margin-left:0; content:''; }.sidemenu li > ul > li{border-right:none; display:block; border-bottom:none;background:#999999;background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5), to(#999999));background:-moz-linear-gradient(top,#E5E5E5,#999999);background:-o-linear-gradient(top,#E5E5E5,#999999);}.sidemenu li:hover{color:#8E8E8E; font-weight:bold;}.sidemenu li:hover > ul{display:block; }.slsheader{font-size:18px;float:right;background:whitesmoke;border-radius:5px;padding:3px; height:auto !important;}.GridBox{width:220px;height:310px;float:left;padding:2 2 2 2;}.GridSRBodypicturewrap{width:auto;float:left;height:auto;padding-left:5px;padding-top:5px; }.GridSRBodyiconwrap{width:70px;float:left;height:auto;padding-left:5px;}.GridSRbodyinstock{}.GridSRbodyproddesc{font-family:"arial";font-size:11px;text-align:left;padding-left:5px;padding-top:5px;float:left;width:190px;height:105px;background-color:rgba(0,0,0,0);}.GridSRbodyQTYLine{width:200px;height:175px;float:right;font-family:"arial";font-size:10px;padding-right:10px;}.pmessage{font-style:italic;}.plabel{font-style:bold; } #centeredmenu li a{display:inline-block;margin-right:18px;font-size:14px;color:#fff;border-bottom:1px solid #999999;background:-webkit-gradient(linear,left top,left bottom,from(#999999), to(#999999));background:-moz-linear-gradient(top,#999999,#999999);background:-o-linear-gradient(top,#999999,#999999);background:-ms-linear-gradient(top,#999999,#999999);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999',endColorstr='#99999');} #centeredmenu li a:hover{color:#08436A;border-bottom:1px solid #999999;background:-webkit-gradient(linear,left top,left bottom,from(#999999), to(#999999));background:-moz-linear-gradient(top,#999999,#999999);background:-o-linear-gradient(top,#999999,#999999);background:-ms-linear-gradient(top,#999999,#999999);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999',endColorstr='#99999');} #centeredmenu ul{float:none; }.menu_normallink, .menuItem{float:left;padding:0px 0px 5px 5px;width:100%;white-space:nowrap; border:none; height:auto; }.menu_normallink:hover, .menuItem:hover{color:#FFF;}.firstlink{float:left;padding:0px 0px 5px 5px; border:none; height:auto; }.firstlink:hover{color:#FFF;}.lastlink{float:left;padding:0px 0px 5px 5px;background-position:right; border:none; height:auto;}.lastlink:hover{color:#FFF;}.quick-access{height:40px } #centeredmenu{margin:0; padding:0px 0px 0px 0px; width:auto; z-index:100; text-decoration:none;}.custom1{text-align:right;color:#08436A; right:5px;}.cssmouseon{font-size:14px;display:block;color:#08436A;font-weight:normal;border:1px solid #E5E5E5;border-bottom-color:#999999;background:#999999;background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5), to(#999999));background:-moz-linear-gradient(top,#E5E5E5,#999999);background:-o-linear-gradient(top,#E5E5E5,#999999);border-radius:5px;padding:5px 5px 5px;}.cssmouseoff{font-size:14px;display:block;color:#08436A;font-weight:normal;border:1px solid #E5E5E5;border-bottom-color:#999999;background:#999999;background:-webkit-gradient(linear,left top,left bottom,from(#E5E5E5), to(#999999));background:-moz-linear-gradient(top,#E5E5E5,#999999);background:-o-linear-gradient(top,#E5E5E5,#999999);border-radius:5px;padding:5px 5px 5px;} #centeredmenu li a:before{color:#fff;content:'\f0da';margin-right:8px;font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;text-indent:0 !important;}.ExportOrder{height:16px; width:16px; } #currentorderwidget{z-index:99999; } body div.shadow{display:block;height:100%;left:auto;opacity:1; position:static;top:auto; } /* Added SRBodyclass for line*/.SRBodyClass{width:720px;height:105px;clear:left; /* height:97px;background-color:#ffffff;text-align:center;*/ border-bottom:1px solid #000000;padding-bottom:1px;}.PIimageDetail{width:200px;height:200px;padding:5px;} /* loaded new stuff */ #alert{color:green;font-size:14px;background:white;}.validation{color:#D63301;background-color:#FFCCBA;}.checkoutbar{margin:12px;padding:15px;width:100%;}.EntryBoxes, .Headings{width:50%; font-size:14px; font-family:arial; background-color:aliceblue;} /* Added Special Price Classes for Display */.SpecPriceS{font-size:14px; color:red }.SpecPriceF{font-size:14px; color:black }.SpecPriceC{font-size:14px; color:blue } #right_shortcuts{float:left;width:222px;padding:15px 0px;} #right_specials{float:left;width:222px;padding:15px 0px;}.SearchHeader{font-size:16px; }.SearchTotals{color:#3C68D5; font-size:12px; } /* Added for sidebar filters 02-08-16 */.tabs .active{background-color:#F7F7F7 !important;}.tab_content{display:none; }.RTab{display:none; }.nosh{width:100%; margin:0 0 13px;background-image:url(http://hosting.tshinc.com/rn/images/bluemenu.jpg); color:#FFF;} h3.nosh-saved{position:relative; height:auto !important; height:1%;background-image:url(http://hosting.tshinc.com/rn/images/bluemenu.jpg); color:#FFF; font-size:10px; font-weight:bold; color:#fff; /* text-transform:uppercase;*/ text-shadow:rgba(122,136,37,.7) 1px 1px 0; margin:0; padding:5px 10px; float:left; } h3.nosh{text-transform:none; font-size:12px; text-shadow:none; font-weight:500;} h3.nosh span{width:14px; height:7px; position:absolute; left:10px; bottom:-7px; background-position:-59px -267px;}.FAccordionButton{width:164px; margin:0; padding:5px 10px; font-size:12px; line-height:1.75em; border:solid #ccc; border-width:0 0 1px; color:#2c5987; /* text-transform:uppercase;*/ cursor:pointer; border-radius:0px; -webkit-border-radius:0px; -ms-border-radius:0px; -moz-border-radius:0px; -o-border-radius:0px font-size:1.10em; color:#333; padding:5px 10px 5px 10px; font-weight:bold; cursor:pointer; border-bottom:1px solid #ccc; background-color:#f9f9f9;}.FaccordionContent a:hover, .FaccordionContent a:active{background:#d9eefa; text-decoration:none; color:#2c5987} #Tab1, #Tab2{} #Tab2{border:1px solid #ccc; border-bottom:1px solid white; border-top:1px solid white;} #FilterText{font-size:12px; float:left; }.tabs li a{border-radius:10px 10px 0px 0px; margin-left:-1px; position:relative; left:1px; text-decoration:none; color:black; background:white; /* display:block;*/ float:left; padding:5px 10px; border:1px solid #ccc; border-bottom:1px solid white; }.tab_content{display:none; }.tabs ul{width:100%; list-style-type:none; margin:0; padding:0;} #selection li{display:list-item; padding-right:0px;} #leftsidewrap{width:184px; padding-right:20px; height:auto; float:left;} #price a{ /* display:block; */ width:100%; /* margin:0 0 8px 8px; */ padding:2px 10px; float:left; /* border:1px solid #ccc; */ text-align:left; font-size:12px; /* background:#fafafa; */ /* border-radius:3px; */ /* -webkit-border-radius:3px; */ -ms-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px;}.FaccordionContent div{width:140px; max-height:190px; min-height:50px; margin:0; font-size:12px; /* padding:7px 0; */ /* overflow-x:hidden; */ /* overflow-y:hidden; */ border-bottom:1px solid #dadada;}.FaccordionContent{max-height:200px; overflow-y:scroll;} #selection{float:left; }.CsosText{font-size:14px; font-weight:bold;}.CsosButton{margin-top:-10px;float:right; padding:4px 2px 4px 2px; text-align:center; background-color:#25558c; BORDER-RIGHT:#999 1px solid; BORDER-TOP:#999 1px solid; BORDER-LEFT:#999 1px solid; BORDER-BOTTOM:#999 1px solid; FONT-SIZE:84%; FONT-WEIGHT:bold; FONT-STYLE:normal; COLOR:White; /* FILTER:PROGID:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='black'); */ filter:alpha(opacity=80); opacity:0.8;}.CsosHide{display:none; }.CreateCust, .CreateProd, .ShowBackord{display:none; } img{max-width:100%; height:auto; width:auto\9; /* ie8 */ }.lazy{max-width:100%; max-height:95px; height:auto; width:auto\9;} /* added for new auto complete */ #bsell{margin:0px;padding:2px 5px;cursor:default;display:block;font:menu;font-size:12px;line-height:16px;Overflow:hidden;text-align:left; } #bsell a{text-decoration:none; } #bsell table{font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;font-size:12px;text-align:center;border-collapse:collapse; width:100%;} #bsell table th{font-size:13px;font-weight:normal;background:#08436A;border-top:4px solid black;border-bottom:1px solid #fff;padding:8px;color:rgb(255,255,255);} #bsell table td{border-bottom:1px solid black;color:#669;background:white;border-top:1px solid transparent;padding:4px;vertical-align:top; text-align:left;} #bsell table td:hover{background-color:#0A246A; color:white;} #bsell table td:hover a{color:white;} #tsell a{text-decoration:none; } #tsell table{font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;font-size:12px;text-align:center;border-collapse:collapse; width:100%;} #tsell table th{font-size:10px;font-weight:normal;background:#08436A;border-top:4px solid black;border-bottom:1px solid #fff;padding:8px;color:rgb(255,255,255);} #tsell table td{border-bottom:1px solid black;color:#669;background:white;border-top:1px solid transparent;padding:4px;vertical-align:top; text-align:center;} #tsell table td:hover{background-color:#0A246A; color:white;} #tsell table td:hover a{color:white;} /* Main menu settings */ /* Top menu items */ #centeredmenu ul{margin:0; padding:0; list-style:none; /* float:right; */ position:relative; right:50%;} #centeredmenu ul li{margin:0 0 0 1px; padding:0; float:left; position:relative; left:50%; top:1px;} #centeredmenu ul li a{display:block; margin:0; font-size:1em; line-height:1em; text-decoration:none; /* background:#ddd; text-decoration:none; color:#444; font-weight:bold; border-bottom:1px solid #000; padding:.6em .5em .4em; */ display:inline;font-family:Tahoma,Geneva,sans-serif;font-smooth:always;font-size:14px;} #centeredmenu ul li.active a{color:#fff; background:#000;} #centeredmenu ul li a:hover{ /* Top menu items background colour */ /* background:#36f; color:#fff; border-bottom:1px solid #03f; */ } #centeredmenu ul li:hover a, #centeredmenu ul li.hover a{ /* This line is required for IE 6 and below */ /* Top menu items background colour */ /* background:#36f; color:#fff; border-bottom:1px solid #03f; */ } /* Submenu items */ #centeredmenu ul ul{display:none; /* Sub menus are hidden by default */ position:absolute; top:20px; /* top:30px; */ left:10px; right:auto; /*resets the right:50% on the parent ul */ /* width:10em; */ /* width of the drop-down menus */ } #centeredmenu ul ul li{left:auto; /*resets the left:50% on the parent li */ margin:0; /* Reset the 1px margin from the top menu */ clear:left; width:100%;} #centeredmenu ul ul li a, #centeredmenu ul li.active li a, #centeredmenu ul li:hover ul li a, #centeredmenu ul li.hover ul li a{ /* This line is required for IE 6 and below */ /* resets the bold set for the top level menu items */ /* overwrite line-height value from top menu */ /* sub menu item horizontal lines */ /* font-size:14px; font-weight:normal; background:#eee; color:#444; line-height:1.4em; border-bottom:1px solid #ddd; */ } #centeredmenu ul ul li a:hover, #centeredmenu ul li.active ul li a:hover, #centeredmenu ul li:hover ul li a:hover, #centeredmenu ul li.hover ul li a:hover{ /* This line is required for IE 6 and below */ /* Sub menu items background colour */ /* background:#36f; color:#fff; */ } /* Flip the last submenu so it stays within the page */ #centeredmenu ul ul.last{left:auto; /* reset left:0; value */ right:0; /* Set right value instead */ } /* Make the sub menus appear on hover */ #centeredmenu ul li:hover ul, #centeredmenu ul li.hover ul{ /* This line is required for IE 6 and below */ display:block; /* Show the sub menus */ } #SRbodyproddesc{background-color:transparent; } #SRAOButton{background-color:transparent;}.block-tags{border:none; float:left;}.FaccordionButton{-moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; -webkit-border-radius:0; border:solid #ccc; border-bottom:1px solid #ccc; border-radius:0; border-width:0 0 1px; cursor:pointer; font-size:1.1em; font-weight:700; line-height:1.75em; margin:0; padding:5px 10px; min-width:164px; color:#08436A; background:#e5e5e5; border-bottom:1px solid #999999;} #FilterText{font-size:12px; float:left; width:100%;}.tabs li a{color:white;border-bottom:1px solid #999999;background:-webkit-gradient(linear,left top,left bottom,from(#999999),to(#999999)); /* webkit */ background:-moz-linear-gradient(top,#999999,#999999); /*firefox 3.6+ */ background:-o-linear-gradient(top,#999999,#999999); /* Opera 11.10+ */ background:-ms-linear-gradient(top,#999999,#999999); /* IE10+ */ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999',endColorstr='#999999'); /*IE6-9 */ } h3.nosh{position:relative; height:auto !important; height:1%; /* background-image:none !important; */ color:#FFF; font-size:10px; font-weight:bold; color:#fff; /* text-transform:uppercase; */ text-shadow:rgba(122,136,37,.7) 1px 1px 0; margin:0; padding:5px 10px; float:left; color:white; border-bottom:1px solid #999999; background:-webkit-gradient(linear,left top,left bottom,from(#999999),to(#999999)); background:-moz-linear-gradient(top,#999999,#999999); background:-o-linear-gradient(top,#999999,#999999); background:-ms-linear-gradient(top,#999999,#999999); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999',endColorstr='#999999');} #pager-header span{padding-left:170px;} #pager-footer span{padding-left:170px;} #menu-icon {  display: block;  cursor: pointer;  padding: 0 20px;  margin-bottom: 3px;  width: 100%;   text-align: left ;  }  
+    #SRfootprints {width: auto;     padding: 5px;    border-bottom: 1px solid black;}
+    #navigation { padding-bottom: 4px;  padding: 7px; }
+    
+    /* df updated for slider resize 8-14-18 - */ 
+      .flexslider .slides img {     width: 100%;       display: block;      min-height: 100%;      min-width: 1024px;      width: 100%;        height: 400px;      object-fit: cover;      padding-top: 30px;  }
+    @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans');
+   .sidemenu { padding: 0px ; font-family: 'Noto Sans', sans-serif; }
+   .sidemenu li {  line-height: 20px ; } 
+   .sidemenu > li {
+    text-align: center;
+    height: 50px;
+    font-size: 19px;
+    line-height: 36px;
+    margin-bottom: 6px;
+    font-family: 'Fjalla One', sans-serif;
+    }
+    </style>  
+    <!-- end added --> 
+<script language='JavaScript' type="text/javascript" src='https://msi.tshinc.com/msitemplates/jqfunctions.js?v=2'></script> 
+<script language='JavaScript' type="text/javascript" src='https://msi.tshinc.com/msitemplates/tsh_utils.js?v=2'></script> 
+<script language='JavaScript' type="text/javascript" src='https://msi.tshinc.com/msitemplates/searchlib.js?v=2'></script> 
+<script language='JavaScript' type="text/javascript" src='https://msi.tshinc.com/msitemplates/milonic_src.js?v=2'></script> 
+<script language='JavaScript' type="text/javascript" src='https://msi.tshinc.com/msitemplates/custom.js?v=2'></script> 
+<script language='JavaScript' type="text/javascript" src='//hosting.tshinc.com/rn/templates/templateGT/js/scripts.js?v=2'></script>   
+<script type='text/javascript'>
+if(ns4)_d.write("<script language=Javascript src='https://msi.tshinc.com/msitemplates/mmenuns4.js?v=2'><\/script>");
+ else _d.write("<script language=Javascript src='https://msi.tshinc.com/msitemplates/mmenudom.js?v=2'><\/script>");
+ $("#clickme").click(function() {changepath("PS") ; });
+function TopCart() { 
+ changepath("PS") ; 
+}
+ </script>      
+<script language='JavaScript' type="text/javascript" src='//hosting.tshinc.com/rn/rnpublic/js/RnPublic.js?v=9'></script>      
+<script language='JavaScript' type='text/javascript' src='//hosting.tshinc.com/rn/rnpublic/js/jquery.flexslider-min.js'></script>       
+<script type='text/javascript'>
+// override for showhint ajax externally - djf 6/18/18 
+function showhintajax() {  return true ; }
+ // override changepath to ask for a login
+function changepath(pstr) {
+   var image_url = "" ; 
+     $('#SpecLoader').hide();
+     $('#mask').fadeOut(1000)
+  // Check Existence of Mask and Dialog 
+  if ($("#mask").length < 1) {
+    // need to create div 
+    makediv("mask");
+  }
+  if ($("#SessLoader").length < 1) {
+    // need to create div 
+    makediv("SessLoader");
+  }
+  //Get the screen height and width  
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  //Set heigth and width to mask to fill up the whole screen  
+  $('#mask').css({
+    'width': maskWidth,
+    'height': maskHeight,
+    'position': 'absolute',
+    'left': '0',
+    'top': '0',
+    'z-index': '9000',
+    'background-color': '#000',
+    'display': 'none'
+  });
+  //transition effect   
+  $('#mask').fadeIn(1000);
+  $('#mask').fadeTo("slow", 0.8);
+  //Get the window height and width  
+  var winH = $(document).height();
+  var winW = $(window).width();
+  //Set the popup window to center  
+  $('#SessLoader').css({
+    'min-width': '300px',
+    'min-height': '500px',
+    'padding': '20px',
+    'background': 'white'
+  });
+  // $('#SessLoader').css({'width':'530px','height':'300px','padding':'0px','background': 'white'});
+  // Added Rounded corders - djf 6-28-13
+  $('#SessLoader').css({
+    '-webkit-border-radius': '50px',
+    '-moz-border-radius': '50px',
+    'border-radius': '50px',
+    'border': '2px solid #363600',
+    'background-color': '#FFFFFF',
+    '-webkit-box-shadow': '#CCCCCC 10px 10px 10px',
+    '-moz-box-shadow': '#CCCCCC 10px 10px 10px',
+    'box-shadow': '#CCCCCC 10px 10px 10px'
+  });
+  $('#SessLoader').css({
+    'display': 'none',
+    'z-index': '9999',
+    'position': 'absolute',
+    'color': 'black'
+  });
+  $('#SessLoader').html('<div style="font-family:arial;font-size:20px;"> <div style=float:right> <a href=# id="SessClose" style="padding-right: 33px;" >X</a> </div> </div> <div id="SessContent"> </div> ');
+  $('#SessLoader').css({
+    'position': 'fixed',
+    'top': '50%',
+    'left': '50%',
+    'margin-top': '-250px',
+    'margin-left': '-130px'
+  });
+  // var dummy = widgetload(parms, '#SessContent');
+    var fhtml = '' ; 
+    fhtml += '<form class="CLLoginForm" action=" ' + MDSRnUrl + '" id="LoginForm" method=post>  ' ;
+    fhtml += '<input type=hidden name=pageid value="0">                ' ;
+    fhtml += '<input type=hidden name=loginpath value=" '+ pstr + '">       <img alt="RemoteNet" title="Remotenet Login" src="https://msi.tshinc.com/msi/images/RNlogocrp.jpg" /></a> <br> Please Login Below <br>       ' ;
+    fhtml += '<br><INPUT class=inputText id=username maxLength=50 size=15 name=CustomerId Placeholder="Enter Username"> ' ;
+    fhtml += '<br><INPUT class=inputText id=password type=password maxLength=50 size=15 name=Password Placeholder="Enter Password"> ' ; 
+// var PSTR = |PNO|QTY|UM^
+    fhtml += '   <br> <br>  <input type=submit class="button1" type="button" value="Login"  >  ' ;
+    fhtml += '   <br> <br>  <a onclick="javascript:regme()" href="#" >No Account? Sign Up Here </a>  ' ;
+    fhtml += '</form>   ' ;
+   //  fhtml += '   <br> Status: <div id="StatusMsg"> </div> ' ; 
+    $('#SessContent').html(fhtml) ; 
+  //transition effect  
+  $('#SessLoader').fadeIn(2000);
+  //if clicked hide
+  $('#SessClose').click(function() {
+    $('#SessLoader').hide();
+    $('#mask').fadeOut(1000)
+  });
+}
+//end added generic popup
+ // override changelist to ask for a login
+function changelist(pstr,sflag,templatename) {
+   var image_url = "" ; 
+     $('#SpecLoader').hide();
+     $('#mask').fadeOut(1000)
+  // Check Existence of Mask and Dialog 
+  if ($("#mask").length < 1) {
+    // need to create div 
+    makediv("mask");
+  }
+  if ($("#SessLoader").length < 1) {
+    // need to create div 
+    makediv("SessLoader");
+  }
+  //Get the screen height and width  
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  //Set heigth and width to mask to fill up the whole screen  
+  $('#mask').css({
+    'width': maskWidth,
+    'height': maskHeight,
+    'position': 'absolute',
+    'left': '0',
+    'top': '0',
+    'z-index': '9000',
+    'background-color': '#000',
+    'display': 'none'
+  });
+  //transition effect   
+  $('#mask').fadeIn(1000);
+  $('#mask').fadeTo("slow", 0.8);
+  //Get the window height and width  
+  var winH = $(document).height();
+  var winW = $(window).width();
+  //Set the popup window to center  
+  $('#SessLoader').css({
+    'min-width': '300px',
+    'min-height': '500px',
+    'padding': '20px',
+    'background': 'white'
+  });
+  // $('#SessLoader').css({'width':'530px','height':'300px','padding':'0px','background': 'white'});
+  // Added Rounded corders - djf 6-28-13
+  $('#SessLoader').css({
+    '-webkit-border-radius': '50px',
+    '-moz-border-radius': '50px',
+    'border-radius': '50px',
+    'border': '2px solid #363600',
+    'background-color': '#FFFFFF',
+    '-webkit-box-shadow': '#CCCCCC 10px 10px 10px',
+    '-moz-box-shadow': '#CCCCCC 10px 10px 10px',
+    'box-shadow': '#CCCCCC 10px 10px 10px'
+  });
+  $('#SessLoader').css({
+    'display': 'none',
+    'z-index': '9999',
+    'position': 'absolute',
+    'color': 'black'
+  });
+  $('#SessLoader').html('<div style="font-family:arial;font-size:20px;"> <div style=float:right> <a href=# id="SessClose" style="padding-right: 33px;" >X</a> </div> </div> <div id="SessContent"> </div> ');
+  $('#SessLoader').css({
+    'position': 'fixed',
+    'top': '50%',
+    'left': '50%',
+    'margin-top': '-250px',
+    'margin-left': '-130px'
+  });
+  // var dummy = widgetload(parms, '#SessContent');
+    var fhtml = '' ; 
+    fhtml += '<form class="CLLoginForm" action=" ' + MDSRnUrl + '" id="LoginForm" method=post>  ' ;
+    fhtml += '<input type=hidden name=pageid value="31">   ' ;
+    fhtml += '<input type=hidden name=customlist value="'+ templatename + '">  ' ;
+    fhtml += '<input type=hidden name=loginpath value="'+ pstr + '">       <img alt="RemoteNet" title="RemoteNet" src="https://msi.tshinc.com/msi/images/RNlogocrp.jpg" /></a> <br> Please Login Below <br>       ' ;
+    fhtml += '<br><INPUT class=inputText id=username maxLength=50 size=15 name=CustomerId Placeholder="Enter Username"> ' ;
+    fhtml += '<br><INPUT class=inputText id=password type=password maxLength=50 size=15 name=Password Placeholder="Enter Password"> ' ; 
+// var PSTR = |PNO|QTY|UM^
+    fhtml += '   <br> <br>  <input type=submit class="button1" type="button" value="Login"  >  ' ;
+    fhtml += '   <br> <br>  <a onclick="javascript:regme()" href="#" >No Account? Sign Up Here </a>  ' ;
+    fhtml += '</form>   ' ;
+   //  fhtml += '   <br> Status: <div id="StatusMsg"> </div> ' ; 
+    $('#SessContent').html(fhtml) ; 
+  //transition effect  
+  $('#SessLoader').fadeIn(2000);
+  //if clicked hide
+  $('#SessClose').click(function() {
+    $('#SessLoader').hide();
+    $('#mask').fadeOut(1000)
+  });
+}
+//end added generic popup
+function ordergrid(aprodno) {
+   changepath("PS") ;  
+}
+// search functions - added djf 10-27-17
+    var filterstring = 'mfgname,webtypes,webclasses,webcatgs,websubcatgs';
+    var fnamestr = 'Manufacturer,Product Type,Product Class,Product Category,Product Sub Category';
+function loadspecials() {
+  if (MDSSpecialsTemplate !== '') {
+    var dummy = widgetload(MDSRnUrl + '?orderno=' + OID + '&CUSTOMERID=' + CID + '&LOGINPATH=HOTV&pageid=31&CUSTOMLIST=WEB*' + MDSSpecialsTemplate, '#RSdivcontainer');
+  } else {
+            $("#RSdivcontainer").html("Missing Template Id in Parameter Web Order Options") ;
+  }
+  var lp = "BRX" ; // web types 
+  var dummy = widgetload(MDSRnUrl + '?orderno=' + OID + '&CUSTOMERID=' + CID + '&LOGINPATH=' + lp + '&PAGEID=31', '#typeholder');
+}
+  function bxsliderload() {
+   var pageurl = MDSRnUrl + '?orderno=' + OID + '&CUSTOMERID=' + CID + '&LOGINPATH=DL&pageid=31&SUBMITVAR=WEBPROD.HTM' ;
+   $( "#infoBoxContentsLeft" ).load( pageurl , function() { 
+      $('#mycarousel').bxSlider({    minSlides: 1,  maxSlides: 6,  slideWidth: 150, auto: true , slideMargin: 10 }); 
+   });
+}
+function flexsliderload() {
+  if ( jQuery().flexslider ) {
+        // Flex Slider for Home page
+        $('.home-slider .flexslider').flexslider({
+            animation: "fade",
+            controlNav: false,
+            directionNav: true,
+            pauseOnHover: true,
+            pauseOnAction: false,
+            smoothHeight: false,
+            start: function (slider) {
+                slider.removeClass('loading');
+            }
+        });
+        }
+} ;
+        
+// $(document).keypress(function(e) { if(e.which == 13) { document.login.submit();}}) ;
+$(document).ready(function() {
+ loadspecials()  ;
+ // bxsliderload() ;
+ flexsliderload() ;
+$('.tab_content').hide();
+$(".RTab").addClass("active").show();
+$('#Tab1').fadeIn();
+// Add interactive accordion logic
+ $('div.FaccordionButton').click(function() { $(this).next().toggle( "slow" ); })
+ 	//When page loads...
+	$(".midtab_content").hide(); //Hide all content
+  var linkpass = $(location).attr('hash');
+  if (linkpass !== '') {
+      	$(linkpass).addClass("active"); //Add "active" class to selected tab
+        $(linkpass).fadeIn();
+   } else {     
+	$("ul.midtabs li:first").addClass("active").show(); //Activate first tab
+	$(".midtab_content:first").show(); //Show first tab content
+	}
+	//On Click Event
+	$("ul.midtabs li").click(function() {
+		$("ul.midtabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".midtab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn();
+		return false;
+	});
+});      
+ </script> 
+ <style>
+/*------------------------------------------------------*/
+/* main slider styles
+/*------------------------------------------------------*/
+.home-slider {
+	position: relative;
+}
+.home-testimonial ul li, .home-slider ul li {
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.home-slider .flexslider {
+	min-height: 300px;
+}
+.home-slider .flexslider.loading {
+	min-height: 550px;
+	background: transparent url('./images/slider-loader.gif') no-repeat center center;
+}
+.home-slider .content-wrapper {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+.home-slider .slide-content {
+	width: 44%;
+}
+.home-slider .slide-content h1 {
+	font-size: 48px;
+	margin: 0 0 20px;
+	font-weight: 400;
+}
+.home-slider .slide-content h1 span {
+	font-weight: 800;
+}
+.home-slider .slide-content h1:after {
+	content: url("./images/plus-red.png");
+	margin-left: 10px;
+}
+.home-slider .slide-content p {
+	font-size: 18px;
+	color: #3a3c41;
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+.home-slider .slide-content .slider-button {
+	padding: 10px 30px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	background-color: #f15b5a;
+	color: #ffffff;
+}
+.home-slider .slide-content .slider-button:hover {
+	background-color: #3a3c41;
+	color: #fff;
+}
+.home-slider .slide-content.display-bg {
+	background-color: rgba(225, 255, 255, 0.6);
+	padding: 20px;
+}
+.home-slider .slide-content.display-bg h1 {
+	font-size: 42px;
+}
+.home-slider .appointment {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+}
+.home-slider .make-appoint {
+	font-size: 15px;
+	background-color: #3a3c41;
+	display: block;
+	text-align: left;
+	position: relative;
+	z-index: 99;
+	padding: 7px 15px;
+	outline: none;
+}
+.home-slider .make-appoint:focus {
+	color: #fff;
+}
+.home-slider .make-appoint i {
+	width: 42px;
+	padding: 9px 0;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+	text-align: center;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+.home-slider .make-appoint:hover {
+	background-color: #000;
+	color: #fff;
+}
+.home-slider .make-appoint.open i {
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+/* IE 9 */
+	-webkit-transform: rotate(180deg);
+/* Safari and Chrome */
+}
+.home-slider .appointment-two input[type="submit"] {
+	margin-top: 15px;
+}
+.home-slider .variation-two .appointment-form {
+	padding: 30px 20px;
+}
+.home-slider .variation-two #appointment-loader {
+	margin-top: 15px;
+}
+.home-slider .make-appoint-one {
+	width: 22%;
+}
+.home-slider .make-appoint-one .make-appoint .fa {
+	background: none;
+}
+.home-slider .appointment-form {
+	background-color: #67c9e0;
+	padding: 16px 10px 15px;
+	position: relative;
+	z-index: 99;
+}
+.home-slider .appointment-form label.error {
+	display: none !important;
+}
+.home-slider .common {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+.home-slider input[type="text"], .home-slider input[type="email"], .home-slider input[type="number"], .home-slider textarea {
+	background: none;
+	color: #fff;
+	border: 0;
+	border-bottom: 2px solid #adebfa;
+	width: 100%;
+	display: inline-block;
+	resize: none;
+	padding: 0px 5px 5px 5px;
+	margin-bottom: 0;
+}
+.home-slider textarea {
+	height: auto;
+	margin: 0;
+	line-height: 20px;
+	-webkit-transition: height 0.2s;
+	transition: height 0.2s;
+}
+.home-slider input[type="text"]:focus, .home-slider input[type="email"]:focus, .home-slider textarea:focus {
+	outline: none;
+	border-bottom: 2px solid #fff;
+}
+.home-slider input[type="text"], .home-slider input[type="email"] {
+	margin-bottom: 23px;
+}
+.home-slider input[type="submit"] {
+	font-size: 14px;
+	font-weight: 700;
+	border: 0;
+	padding: 6px 19px;
+	color: #3a3c41;
+	background-color: #fff;
+	border: none;
+	border-image: none;
+	letter-spacing: 0;
+	outline: none;
+}
+.home-slider input[type="submit"]:hover {
+	background-color: #3a3c41;
+	color: #fff;
+}
+.home-slider input[type="submit"]:focus {
+	outline: none;
+	background-color: #fafafa;
+	color: #3a3c41;
+}
+.home-slider input.error, .home-slider textarea.error {
+	border: 0;
+	border-bottom: 2px solid #ff0000;
+}
+.home-slider input.error:focus, .home-slider textarea.error:focus {
+	border-bottom: 2px solid #fff;
+}
+.home-slider::-webkit-input-placeholder {
+	color: #fff;
+}
+.home-slider:-moz-placeholder {
+	color: #fff;
+}
+.home-slider::-moz-placeholder {
+	color: #fff;
+}
+.home-slider:-ms-input-placeholder {
+	color: #fff;
+}
+.home-slider #message-sent {
+	clear: both;
+	padding: 10px 0;
+	font-weight: 600;
+	color: #fff;
+	display: none;
+}
+.banner-block li a {
+	display: block;
+	border: 1px solid #999999;
+	border-bottom-color: #08436A;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	min-height: 150px;
+	padding: 2px;
+}
+#typeholder .banner-block li {
+	float: left;
+	width: 16.6%;
+	padding: 0px 2px 0px 2px;
+}
+.QtyBox {
+	border: solid 1px black;
+}
+.midtabs li a {
+	border-radius: 10px 10px 0px 0px;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+	text-decoration: none;
+	color: white;
+	background: #848484;
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid white;
+}
+.midtab_content {
+	display: none;
+}
+.midtabs ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.form input, select, textarea {
+	border: solid 1px #d3d4d6;
+	font-size: 11px;
+	height: 22px;
+	line-height: 8px;
+	padding: 5px;
+	margin: 2px;
+}
+textarea {
+	border: 1px solid #D3D4D6;
+	font-size: 11px;
+	width: 300px;
+	height: 150px;
+}
+#centeredmenu {
+	margin: 0;
+	padding: 0 0 0 190px;
+	position: relative;
+	text-decoration: none;
+	/* width: 805px;
+*/
+	z-index: 100;
+	min-width: 805px;
+	width: auto;
+}
+#right_specials {
+	float: left;
+	width: 70%;
+	padding: 5px;
+	background: #ebebeb;
+}
+h3.nosh {
+	color: red;
+}
+#right_specials {
+	width: auto;
+}
+#suggitems li {
+    width: 33%;
+    min-height: 215px;
+}
+#PIFBodyprodinfo {
+    text-align: left;
+}
+    </style>  
+  </head> 
+  <body class="ps-static cms-index-index cms-home">         
+    <form method="post" action="#"  name="login11">                                                                         
+      <input type=hidden name=CustomerId value="WEBPRICE">                                                                    
+      <input type=hidden name=orderno value="888888">                                                                       
+      <input type=hidden name=loginpath value="SR">                                                                                                                    
+      <input type=hidden name=submitvar value="">                                                                                                                    
+      <input type=hidden name=pageid value="2A">                                                                    
+      <input type=hidden name=itemspage value="">                                                                    
+      <input type=hidden name=Changesort value="">                                                                                                
+    </form>   
+    <!-- Begine Wrapper -->    
+    <div class="wrapper ps-static en-lang-class"> 
+      <noscript> 
+        <div class="global-site-notice noscript"> 
+          <div class="notice-inner"> 
+            <p><strong>JavaScript seems to be disabled in your browser.</strong> 
+              <br/>You must have JavaScript enabled in your browser to utilize the functionality of this website.   
+            </p> 
+          </div> 
+        </div> 
+      </noscript>   
+      <!-- Begin Page -->    
+      <div class="page"> 
+        <div class="shadow"> 
+        </div> 
+        <div class="swipe-left"> 
+        </div>   
+        <!-- Begin Swipe -->    
+        <div class="swipe">   
+          <div class="swipe-menu">   
+            <a title="Home" class="home-link" href="#">Home</a>   
+            <ul class="links"> 
+              <li class="first"> 
+                <a title="My Account" href=# onclick="javascript:changepath('MYA')">My Account </a>   
+              </li> 
+              <li>
+              <a href=# onclick="javascript:changepath('OE')">Shipping Information</a> 
+              </li>   
+              <li> 
+              <a href=# onclick="javascript:changepath('CL')">Use a Template</a> 
+              </li>   
+              <li> 
+              <a href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>
+              </li>   
+              <li>
+              <a href=# onclick="javascript:changepath('PS')">Search for Products</a> 
+              </li>   
+              <li>
+              <a href=# onclick="javascript:changepath('CO')">View Current Order</a> 
+              </li>  
+              <li> 
+              <a href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a> 
+              </li>   
+              <li class=" last">   
+                <a href="https://msi.tshinc.com/msi/">Log Off </a> 
+              </li> 
+              <li> 
+              <a title="Call Us Toll Free" href="tel:+888-557-8020"> 888-557-8020 </a> 
+              </li> 
+              <li class="last"> 
+                <a title="Contact Us" href="mailto:sales@medicalsolutionsinc.com"> sales@medicalsolutionsinc.com |</a> 
+              </li> 
+            </ul> 
+            <div class="footer-links-menu"> 
+              <ul>
+                <li> 
+                <a href=# onclick='javascript:changelist("CL","Y","WEB*30")'>Top Sellers</a> 
+                </li>
+                <li> 
+                <a href=# onclick='javascript:changelist("CL","Y","WEB*31")'>Most Popular</a> 
+                </li>
+                <li> 
+                <a href=# onclick='javascript:changelist("CL","Y","WEB*32")'>Latest Items</a> 
+                </li>
+                <li> 
+                <a href=# onclick='javascript:changelist("CL","Y","WEB*33")'>Trending Items</a> 
+                </li>
+                <li> 
+                <a href=# onclick='javascript:changelist("CL","Y","WEB*34")'>Best Selling Items</a> 
+                </li> 
+              </ul> 
+              <ul class="links-2"> 
+                <li>
+                <a href=# onclick="javascript:changepath('COO')">Check Order Status</a>
+                </li>  
+                <li>
+                <a href=# onclick="javascript:changepath('PED')">Find a Pedigree</a>
+                </li>  
+                <li>
+                <a href=# onclick="javascript:changepath('CP')">Change My Password</a> 
+                </li>  
+                <li>
+                <a href=# onclick="javascript:changepath('LIC')">View Our Licenses</a> 
+                </li> 
+              </ul>   
+            </div> 
+          </div>   
+        </div> 
+        <!-- End Swipe -->   
+        <!-- Begin Top Icons -->    
+        <div class="top-icon-menu"> 
+          <div class="swipe-control"> 
+            <i class="icon-reorder"></i> 
+          </div> 
+          <div class="top-search"> 
+            <i class="icon-search"></i> 
+          </div> 
+          <span class="clear"> 
+          </span> 
+        </div> 
+        <!-- End Top Icons --> 
+        <!-- Begin Header Container -->   
+        <div class="header-container">   
+          <!-- Begin Container -->    
+          <div class="container">   
+            <!-- Begin Row -->    
+            <div class="row">   
+              <!-- Begin col-xs-12 -->    
+              <div class="col-xs-12">   
+                <!-- Begin Header -->    
+                <div class="header">   
+                  <h1 class="logo"><strong>Medical Solutions, Inc.</strong> 
+                    <a  href="https://www.medicalsolutionsinc.com" title="Medical Solutions, Inc." class="logo"> 
+                      <img alt="Medical Solutions, Inc." title="Medical Solutions, Inc." src="https://msi.tshinc.com/msi/images/RNlogocrp.jpg" /></a></h1>   
+                  <!-- Begin Search Form -->    
+                  <!-- Begin Search Form -->    
+                  <div id="search_mini_form" > 
+                    <div class="form-search"> 
+                      <label for="search">Search:  
+                      </label>
+                      <div id="search"> 
+                        <input type="text" placeholder="Enter Product Code" id="query" name="query" style="float: left;" autocomplete="off" class="ac_input input-text">
+                      </div> 
+                      <button type="submit" title="Search" class="button" onclick="javascript:TopSearch()"> 
+                        <span> 
+                          <span>Search  
+                          </span> 
+                        </span> 
+                      </button> 
+                      <div id="search_autocomplete" class="search-autocomplete">   
+                      </div> 
+                    </div> 
+                  </div> 
+                  <!-- End Search Form -->   
+                  <div class="block-cart-header" id="clickme" onclick="javascript:TopCart()"> <h3>My Cart: </h3> 
+                    <div class="block-content" > 
+                      <div class="empty" > 0 Item(s) $0.00  
+                        <div class="cart-content"> 
+                          <div id="currentorderwidget" style="/* position: absolute; left: 910px; top: 80px; */ display: none; background: rgb(245, 245, 245);" > 
+                          </div>   
+                        </div> 
+                      </div> 
+                      <p class="mini-cart"> 
+                      </p> 
+                    </div>   
+                  </div>   
+                  <!-- Begin f-right -->    
+                  <div class="f-right">   
+                    <!-- Begin Header-Buttons -->    
+                    <div class="header-buttons">   
+                    </div> 
+                    <!-- End Header-Buttons -->   
+                    <div class="clear"> 
+                    </div>   
+                    <p class="welcome-msg"> 
+                    </p>   
+                  </div> 
+                  <!-- End F-Right -->   
+                  <div class="clear"> 
+                  </div>   
+                  <!-- Begin Quick Access -->    
+                  <div class="quick-access">   
+                    <div id="centeredmenu">
+                      <!-- BEGIN HEADER_MENU -->   
+                      <ul> 
+                        <li>
+                        <a href="#" class="firstlink">Place an Order</a> 
+                        <ul> 
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('OE')">Shipping Information</a> 
+                          </li>   
+                          <li> 
+                          <a class="menuItem" href=# onclick="javascript:changepath('CL')">Use a Template</a> 
+                          </li>   
+                          <li> 
+                          <a class="menuItem" href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>
+                          <a class="menuItem" href="#" onclick="iframewin=dhtmlwindow.open('iframebox', 'iframe', 'https://hosting.tshinc.com/simplefileupload/default.aspx?CustomerID=103719&orderno=100040', 'RemoteNet Order Upload', 'width=650px,height=400px,left=420px,top=100px,resize=0,scrolling=1'); return false"> Upload your Order </a> 
+                          </li>   
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('PS')">Search for Products</a> 
+                          </li>   
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('CO')">View Current Order</a> 
+                          </li>  
+                          <li>  
+                          <a class="menuItem" href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a> 
+                          </li>   
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:sendquote()">Email Order as Quote</a> 
+                          </li>
+                          <li> 
+                          </li>   
+                        </ul> 
+                        </li> 
+                        <li>
+                        <a href="#" class="menu_normallink">My Account</a> 
+                        <ul>
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('MYA')">My Information</a> 
+                          </li>
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('IQ')">Check What's in Stock</a>
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('CIQ')">Check My Pricing</a>
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('COO')">Check Order Status</a>
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('PUH')">View/Export My Purchases </a>
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('ARQ')">View My Invoices</a>
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('BO')">View My Backorders</a>
+                          </li>  
+                          <li>
+                          </li>  
+                          <li>
+                          </li>  
+                          <li>
+                          </li>  
+                          <li>
+                          </li>   
+                          <li>  
+                          <a class="menuItem" href=# onclick="javascript:changepath('CP')">Change My Password</a>   
+                          </li>  
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('LIC')">View Our Licenses</a> 
+                          </li> 
+                        </ul> 
+                        </li> 
+                        <li>
+                        <a href="#" class="menu_normallink">Deals</a> 
+                        <ul>
+                          <li>
+                          </li>  
+                          <li> 
+                          <a class="menuItem" href=# onclick='javascript:changelist("CL","Y","WEB*30")'>Top Sellers</a> 
+                          </li>
+                          <li> 
+                          <a class="menuItem" href=# onclick='javascript:changelist("CL","Y","WEB*31")'>Most Popular</a> 
+                          </li>
+                          <li> 
+                          <a class="menuItem" href=# onclick='javascript:changelist("CL","Y","WEB*32")'>Latest Items</a> 
+                          </li>
+                          <li> 
+                          <a class="menuItem" href=# onclick='javascript:changelist("CL","Y","WEB*33")'>Trending Items</a> 
+                          </li>
+                          <li> 
+                          <a class="menuItem" href=# onclick='javascript:changelist("CL","Y","WEB*34")'>Best Selling Items</a> 
+                          </li> 
+                        </ul> 
+                        </li> 
+                        <li>
+                        <a href="#" class="menu_normallink">Contact Us</a> 
+                        <ul> 
+                          <li> 
+                          <a class="menuItem" target=new href="http://www.medicalsolutionsinc.com/Contact-Us">Contact Us</a>
+                          </li> 
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('FB')">Customer Survey</a> 
+                          </li> 
+                          <li>
+                          <a class="menuItem" href="http://www.medicalsolutionsinc.com/Contact-Us#productsearch" target=new >Help</a> 
+                          </li> 
+                        </ul> 
+                        </li> 
+                        <li>
+                        <a href="#" class="menu_normallink">Home</a> 
+                        <ul> 
+                          <li>
+                          <a class="menuItem" href="https://msi.tshinc.com/msi/">Home Page</a> 
+                          </li>
+                          <li>
+                          <a class="menuItem" href=# onclick="javascript:changepath('SUSR')">Sales Login</a>
+                          <div class="CreateCust">
+                            <a class="menuItem" href=# onclick="javascript:regme()">Create Customer</a>
+                          </div>
+                          <div class="CreateProd">
+                            <a class="menuItem" href=# onclick="javascript:prodcreate()">Create Product</a>
+                          </div>
+                          </li> 
+                        </ul> 
+                        </li> 
+                      </ul> 
+                    </div>
+                    <!-- END HEADER_MENU -->    
+                    <div class="weblockmsg"> 
+                    </div> 
+                    <div class="custom1"> Welcome  | 
+                      <a class=custom1 href=# onclick="javascript:Add_To_Order();" > Current Order: - $0.00 </a> |  <strong>Call Us: 888-557-8020 </strong> 
+                    </div>  
+                    <!-- place holder for sales info --> 
+                    <div id=right> 
+                    </div> 
+                  </div> 
+                  <!-- End Quick-Access -->   
+                  <div class="clear"> 
+                  </div>   
+                </div> 
+                <!-- End Header -->   
+              </div> 
+              <!-- End col-xs-12 -->   
+            </div> 
+            <!-- End Row -->   
+            <div class="clear"> 
+            </div>   
+          </div> 
+          <!-- End Container -->   
+        </div> 
+        <!-- End Header Container -->  
+        <div id="tsh">
+        </div> 
+        <div id="ORDXdivcontainer" style="z-index: 99999 ;top: 115px; left: 200px; width: 900px; height: auto; background-color: #ffffff; overflow: scroll;display: none; position: absolute; border: 1px solid" >
+        </div> 
+        <!-- Begin Nav Container -->   
+        <div class="nav-container">   
+          <!-- Begin Container -->    
+          <div class="container">   
+            <!-- Begin Row -->    
+            <div class="row">   
+              <!-- Begin col-xs-12 -->    
+              <div class="col-xs-12">   
+                <!-- Begin sf-menu-block -->    
+                <div class="sf-menu-block">   
+                  <!-- Begin menu-icon-style -->    
+                  <!-- <div id="menu-icon" class="menu-icon-style">Categories
+                   </div> -->    
+                  <!-- collapse menu for phone/sidemenu -->    
+                  <!-- End menu-icon-style 
+                   <ul class="sf-menu-phone"> -->    
+                  <!-- Added Mobile Menu -->  
+                  <div id=nmenu> 
+                    <label id="menu-icon" for="show-menu" class="menu-icon-style"> &nbsp; Shop By Category &nbsp;  
+                    </label> 
+                    <input type="checkbox" id="show-menu" role="button"> 
+                  </div>   
+                  <!-- </ul> -->    
+                </div>   
+                <!-- End sf-menu-block -->    
+              </div> 
+              <!-- End Col Xs-12 -->   
+            </div> 
+            <!-- End Row -->   
+            <div class="clear"> 
+            </div>   
+          </div> 
+          <!-- End Container -->   
+        </div> 
+        <!-- End Nav Container -->
+        <!-- added code --> 
+        <!-- Begin Main Container col2-left-layout -->   
+        <div class="main-container col2-left-layout">   
+          <!-- Begin Division 'Container' -->    
+          <div class="container">   
+            <!-- Begin Division 'Row 1' -->    
+            <div class="row">   
+              <!-- Begin Division 'col-xs-12' -->    
+              <div class="col-xs-12">   
+                <!-- Begin Division 'Main' -->    
+                <div class="main">   
+                  <!-- Begin Row 2 -->    
+                  <div class="row">   
+                    <!-- Begin Division 'col-main col-xs-12 col-sm-9' -->    
+                    <div class="col-main col-xs-12 col-sm-9"> 
+                      
+                                      <div id="slide_holder">                                                                                                                                                                              
+                        <!-- page content goes here -->       	 				                                                                                                                                                                                     
+                        <div class="midtab_container">                                                                                                                                                                                                    
+                          <div id="midtab1" class="midtab_content">  				                                                                                                                                                                                                                                          
+                            <div class="rotating-banner">                                                                                                                                                                                                                                                                        
+                              <!-- Slider Goes Here -->                                                                                                                             
+                              <!--slider-->                                                                                                 
+                              <div class="home-slider clearfix">                                                                                                       
+                                <div class="flexslider loading">                                                                                                                 
+                                  <ul class="slides">                                                                                                                           
+                                    <!--slide start-->                                                                                                                              
+                                    <li>                                                                                                                               
+                                    <img src="./images/slides/slide1.jpg" alt="Medical Supply SpecialistsThat You Can Trust</span>"/>                                                                                                                                
+                                    <div class="content-wrapper clearfix">                                                                                                                                         
+                                      <div class="container">                                                                                                                                                   
+                                        <div class="slide-content clearfix ">                            <h1>                                                                                                                                      
+                                            <span>                                                                                                                                       
+                                            </span></h1>                                                                                                                                                             
+                                          <p>                                                                                                                              
+                                          </p>                                                                                                                                                             
+                                         <!-- <a class="slider-button" href="#more">Read More</a>                                                                                                                                                   
+                                         --> 
+                                        </div>                                                                                                                                         
+                                      </div>                                                                                                                               
+                                    </div>                                                                                                                           
+                                    </li>                                                                                                                           
+                                    <!--slide end-->                                                                                                                              
+                                    <!--slide start-->                                                                                                                              
+                                    <li>                                                                                                                               
+                                    <img src="./images/slides/slide2.jpg"  alt="Specialty Products just for you"/>                                                                                                                               
+                                    <div class="content-wrapper clearfix">                                                                                                                                         
+                                      <div class="container">                                                                                                                                                   
+                                        <div class="slide-content clearfix ">                            <h1>                                                                                                                                      
+                                            <span>                                                                                                                                     
+                                            </span></h1>                                                                                                                                                             
+                                          <p>                                                                                                                               
+                                          </p>                                                                                                                                                             
+                                                                                                                                                                                        
+                                        </div>                                                                                                                                         
+                                      </div>                                                                                                                               
+                                    </div>                                                                                                                           
+                                    </li>                                                                                                                           
+                                    <!--slide end-->                                                                                                                                          
+                                    <!--slide start-->                                                                                                                              
+                                    <li>                                                                                                                               
+                                    <img src="./images/slides/slide3.jpg"  alt="Surgical Supply"/>                                                                                                                               
+                                    <div class="content-wrapper clearfix">                                                                                                                                         
+                                      <div class="container">                                                                                                                                                   
+                                        <div class="slide-content clearfix ">                            <h1>                                                                                                                                      
+                                            <span style="color: #ffa07a;" >                                                                                                                                      
+                                            </span></h1>                                                                                                                                                             
+                                          <p style="color: white;" >                                                                                                                                 
+                                          </p>                                                                                                                                                             
+                                                                                                                                                                                       
+                                        </div>                                                                                                                                         
+                                      </div>                                                                                                                               
+                                    </div>                                                                                                                           
+                                    </li>                                                                                                                           
+                                    <!--slide end-->                                                                                                                    
+                                  </ul>                                                                                                       
+                                </div>                                                                                                  
+                                <!-- end slider -->                                                                                                                                                                                                                                  
+                              </div>
+                             </div>                                                                                               
+                              <div class="infoBoxContents" id="infoBoxContentsLeft">                                                                                          
+                              </div>                                                                                                                                                                                                                                            
+                                                                                                                                     
+                          </div>                                                                                                                                                                                            
+                        </div>                                                                                                                                                                                         
+                        <div class="midtab_container">                                                                                                                                                                                                      
+                          <div id="midtab2" class="midtab_content">                                                                                                                                                                                                                                                                                                           
+                          </div>                                                                                                                                                                                                                                  
+                        </div>                                                                                                                                                                                           
+                        <div class="midtab_container">                                                                                                                                                                                                      
+                          <div id="midtab3" class="midtab_content">                            <h1> Contact Us </h1>                                                                                                                                                                                                                                                                                                                                         
+                            <p>                                                                                                                                                            
+                              <br>                           We're Always Here to Help.                                                                                                                                                                                        
+                              <br>  At RemoteNet Demo Company, a friendly voice is always just a phone call away!                                                                                                                                                                                       
+                              <br>     Get ahold of one of our wonderful sales representatives                                                                                                                                                                                        
+                              <br>     If you have any questions concerning your order or a new product.                                                                                                                                                                                        
+                              <br>     And if there's anything else we can help you with,                                                                                                                                                                                        
+                              <br>     don't hesitate to pick up the phone.                                                                                                                                                                                       
+                              <br>      We can't wait to hear from you!                                                                                                                                                                                               
+                              <p>  RemoteNet Demo Company, Inc.                                                                                                                                                                                                                                                                         
+                              </p>                                                                                                                                                                                            
+                              <p> Please enter your message below and we will be in touch as soon as possible.                                                                                                                                                                                                                                                                                                                                                         
+                              </p>                                                                                                                                                                                                                                                                                                                                                                                                                    
+                              <form name="contact" id="contact" class="form" action="//hosting.tshinc.com/cgi-bin/formmail.asp" method="post">			                                                                                                                                                                                                                                                                                                                                                   
+                                <input name="_recipients" type="hidden" value="support@tshinc.com,sales@tshinc.com" />                                                                                                                                                                                                                                                                                                                                                     
+                                <input name="_envars" type="hidden" value="HTTP_REFERER,HTTP_USER_AGENT,REMOTE_ADDR" />                                                                                                                                                                                                                                                                                                                                                  
+                                <input name="_redirectUrl" type="hidden" value="http://hosting.tshinc.com/rn" />                                                                                                                                                                                                                                                                                                                            
+                                <input name="_subject" type="hidden" value="Contact Us from RN Demo" />                                                                                                                                                                                                                                                                                                                                                                                        
+                                <fieldset>                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                  <div class="rowElem">                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    <input type="text" name="Subject" placeholder="Subject"  />                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                  <div class="rowElem">                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    <input type="text" name="Name" placeholder="Name"  />                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                  <div class="rowElem">                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    <input type="text" name="Company" placeholder="Company Name"  />                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                  <div class="rowElem">                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    <input type="text" name="Phone" placeholder="Phone"  />                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                  <div class="rowElem">                                                                                                                                                                                                                                                                                                                                                                                                              
+                                    <input type="text" name="Email" placeholder="Email Address"  />                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                  <div class="rowElem1">
+<textarea rows="40" cols="30" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''" >Message</textarea>                                                                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                  <br>                                                                                                                                                                                  
+                                  <br>                                                                                                                                                                                  
+                                  <a class="gobutton" onclick="document.getElementById('contact').submit();">Send Your Message</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                </fieldset>                                                                                                                                                                                          
+                                <br>                                                                                                                                                                                         
+                                <br>                                                                                                                                                                                         
+                                <br>                                                                                                                                                                                         
+                                <hr>                                                                                                                                                                                                                                                                                                                  
+                              </form>                                                                                                                                                                                                            
+                          </div>                                                                                                                                                                                                                                  
+                        </div>                                                                                                                                                                                                                      
+                        <div class="midtab_container">                                                                                                                                                                                                      
+                          <div id="midtab4" class="midtab_content">                                                                                                                                              Terms and Conditions...                                                                                                                                                       
+                            <hr>                                                                                                                                                                     
+                          </div>                                                                                                                                                                                                                                  
+                        </div>                                                                                                                                                                    
+                      </div>                                                                      
+                      <!-- slide holder -->                                                                                                                                                                                                       
+                      <div id="searchformdata" style="clear: both; background: white;padding: 10px;" >                                                                                                                                                                                                                                      
+                        <form name=template action="login012" method=post onSubmit="return process_order(0)">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=Aprod_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=prod_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=qty_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=um_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=price_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=comment_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=manufact_string value = "">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=aprodno value="">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=loginpath value="SR">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=searchflag value="N">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=pageid value="31">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=startptr value="1">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=CustomerId value="WEBPRICE">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=orderno value="888888">                                                                                                                                                                                                                                                                               
+                          <input type=hidden name=submitvar value="">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=searchptr value="">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=old_loginpath value="SR">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=prev_changesort value="price desc">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=prev_itemspage value="10">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=slsmno value="">                                                                                                                                                                                                                                                        
+                          <input type=hidden name=slsmn_id value="">                                                                                                                                                                                                                                                        
+                          <div id="SRsortby">                                                                                                                                                                                                                                                                          
+                            <table>                                                                                                                                                                                                                                                                                              
+                              <tr> <td> Sort By:                                                                                                                                                                                                                                                                                                                                  
+                                  <SELECT name="Changesort" size=1>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="aprodno asc">Product Code                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option selected value="proddesc_sort asc">Product Description                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="bestseller desc">Best Sellers (12mo)                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="hotseller desc">Hot Sellers (2mo)                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="createdate desc">Newest Additions                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="price desc">Highest Price                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="price asc">Lowest Price                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                                                       
+                                    <option value="stock asc, price desc">In Stock Items                                                                                                                                                                                                                                                                                                                                                  
+                                    </option>                                                                                                                                                                                                                                                                                                                                                                
+                                  </SELECT> </td><td>                                                                                                                                                                                                                                                                                                                                    
+                                  <input type=button class=gobutton name="GO1" value="GO" onclick="javascript:updatesort()"  onmouseover="this.className='gobutton gobuttonhov' ; window.status='Change Sort Method'"  onmouseout="this.className='gobutton' ; window.status=''"> </td>                                                                                                                                                                                                                                                                                                                
+                                <td id=datsml width=10></td>                                                                                                                                                                                                                                                                                                              
+                                <td nowrap id=datsml>                                                                                                                                                                                                                                                                                                                                
+                                  <input type=checkbox name="save_Sort" value="Y"> </td>                                                                                                                                                                                                                                                                                                              
+                                <td nowrap id=taghdg><b>Save as Default</b>&nbsp; </td>                                                                                                                                                                                                                                                                                              
+                              </tr>                                                                                                                                                                                                                                                                          
+                            </table>                                                                                                                                                                                                                                                        
+                          </div>                                                                                                                                                                                                                                                           
+                          <div id="SRitemsperpage">                                                                                                                                                                                                                                                                            
+                            <table>                                                                                                                                                                                                                                                                                              
+                              <tr> <td> Items per page:                                                                                                                                                                                                                                                                                                                                  
+                                  <select name="itemspage" size=1>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="1">1                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option selected value="10">10                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="15">15                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="25">25                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="50">50                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                                    
+                                    <option value="100">100                                                                                                                                                                                                                                                                                                                                                   
+                                    </option>                                                                                                                                                                                                                                                                                                                                
+                                  </select> </td><td>                                                                                                                                                                                                                                                                                                                                    
+                                  <input type=button class=gobutton name="GO1" value="GO" onclick="javascript:updatesort()"   onmouseover="this.className='gobutton gobuttonhov' ; window.status='Change Items Per Page'"  onmouseout="this.className='gobutton' ; window.status=''"> </td>                                                                                                                                                                                                                                                                                                              
+                                <td id=datsml width=10></td>                                                                                                                                                                                                                                                                                                                
+                                <td nowrap id=datsml>                                                                                                                                                                                                                                                                                                                                  
+                                  <input type=checkbox name="save_Items" value="Y"> </td>                                                                                                                                                                                                                                                                                                                
+                                <td nowrap id=taghdg><b>Save as Default</b></td>                                                                                                                                                                                                                                                                                              
+                              </tr>                                                                                                                                                                                                                                                                            
+                            </table>                                                                                                                                                                                                                                                        
+                          </div>                                                                                                                                                                                                                                 
+                          <div id="SRsearchresults">                                                                                                                                                                                                       
+                          </div>                                                                                                                                                                                                                                                               
+                          <div id="SRfootprints">                                                                                                                                                                                                                                                                            
+                            <table width=100%>                                                                                                                                                                                                                                                                                              
+                              <tr><td> </td>                                                                                                                                                                                                                                                                                            
+                              </tr>                                                                                                                                                                                                                                                                                              
+                              <tr>                                                                                                                                                                                                                                                                                                                
+                                <td align=center>                                                                                                                                                                                                                                                                                                                                  
+                                  <!-- Added Display of Footprint String as Ajax -->                                                                                                                                                                                                                                                                                                                                             
+                                  <div id="footprintholder">                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                  
+                                  <!-- End added content for Footprint -->          </td>                                                                                                                                                                                                                                                                                              
+                              </tr>                                                                                                                                                                                                                                                                                              
+                              <tr> <td>                                                                                                                                                                                                                                                                                                                                  
+                                  <!-- Added Display of product class String as Ajax -->                                                                                                                                                                                                                                                                                                                                             
+                                  <div id="saved-pcxholder">                                                                                                                                                                                                                                                                                                                                
+                                  </div>                                                                                                                                                                                                                                                                                                                                  
+                                  <!-- End added content for product class -->          </td>                                                                                                                                                                                                                                                                                              
+                              </tr>                                                                                                                                                                                                                                                                            
+                            </table>                                                                                                                                                                                                                                                        
+                          </div>                                                                                                                                                                                                                                                            
+                          <div id="navigation">                                                                                                                                                                                                                                                                            
+                            <ul id="toppager">                                                                                                                                                                                                                                                                          
+                            </ul>                                                                                                                                                                                                                                                                            
+                            <div id="pager-header" >                                                                                                                                                                                                                                                                          
+                            </div>                                                                                                                                                                                                                                                            
+                          </div>                                                                                                                                                                                                                                                          
+                          <div id="docs">                                                                                                                                                                                                                                                        
+                          </div>                                                                                                                                                                                                                                                          
+                          <div id="navigation">                                                                                                                                                                                                                                                                            
+                            <ul id="pager">                                                                                                                                                                                                                                                                          
+                            </ul>                                                                                                                                                                                                                                                                            
+                            <div id="pager-footer">                                                                                                                                                                                                                                                                          
+                            </div>                                                                                                                                                                                                                                                            
+                          </div>                                                        
+                        </form> &nbsp;                                                                                                                                                                                                                                           
+                      </div>    
+                      
+                         
+                    </div>   
+                    <!-- End Division 'col-main col-xs-12 col-sm-9' -->    
+                    <!-- Begin Division 'col-left sidebar col-xs-12 col-sm-3' -->    
+                    <div class="col-left sidebar col-xs-12 col-sm-3">    
+                      <form class="CLLoginForm" action="https://msi.tshinc.com/MDSWEB/login893" id="LoginForm" method="post">                                                                                                                                                                                                                              
+                        <input type="hidden" name="pageid" value="0">                                                                                                                                                                                                                                
+                        <input type=hidden name=submitvar value="">                                                                                                                                                                                                                                 
+                        <!-- used by search pages -->                                                                                                                                                                                                                                                     
+                        <input type="hidden" name="loginpath" value="PS">                                                                                                                                                                                                                                       
+                        <p style="margin: 5px; font-size: 20px; text-align: center;" > Account Login                                                                                                                                                                                                                         
+                        </p>                                                                                                                                                                                                                                              
+                        <input style="margin: 5px; font-size: 20px; text-align: center;width: 90%" class="inputText" id="username" maxlength="50" size="15" name="CustomerId" placeholder="Enter Username">                                                                                                                                                                                                                                        
+                        <br>                                                                                                                                                                                                                       
+                        <input  style="margin: 5px;font-size: 20px; text-align: center;width: 90%" class="inputText" id="password" type="password" maxlength="50" size="15" name="Password" placeholder="Enter Password">                                                                                                                                                                                                                                               
+                        <br>                                                                                                                                                                                                                          
+                        <input  style="font-size: 20px; text-align: center;width: 90%" type="submit" class="button1" value="Login">                                                                                                                                                                                                                              
+                        <br>                  No Account?                                                                                                                                                                                                                           
+                        <a onclick="javascript:regme()" href="#"> Sign Up Here </a>                                                                                                                                                                                                                                
+                      </form>                                                                                                                                                                                                                                                                                             
+                      <div class="content-tabs">                                                                                                                                                                                                                                                                         
+                        <!-- Nav tabs -->                                                                                                                                                                                                                                                                                    
+                        <ul class="tabs">                                                                                                                                                                                                                                                                                             
+                        <!--                                                                                                                                                                                                                                                                                              
+                          <li>                                                                                                                                                                                                                                                                                             
+                          <a class="SearchTabLink STab" href="#Tab1">Supplies</a>                                                                                                                                                                                                                                                                                             
+                          </li> 
+                           <li>                                                                                                                                                                                                                                                                                             
+                          <a class="SearchTabLink SPTab" href="#Tab3">Specials</a>                                                                                                                                                                                                                                                                                             
+                          </li>                                                                                                                                                                                                                                                                                            
+                          <li>                                                                                                                                                                                                                                                                                             
+                          <a class="SearchTabLink RTab" href="#Tab2">Filter Results</a>                                                                                                                                                                                                                                                                                           
+                          </li> 
+                          -->                                                                                                                                                                                                                                                                        
+                        </ul>                                                                                                                                                                                                                                                                         
+                        <!-- Tab panes -->                                                                                                                                                                                                                                                                                    
+                        <div class="tab_container">                                                                                                                                                                                                                                                                                             
+                          <div class="tab_content" id="Tab3">                                                                                                                                                                                                                                                                                                                 
+                            <div id="right_specials">        <h2>Popular Products </h2>                                                                                                                                                                                                                                                                                                                                     
+                              <div id="RSdivcontainer">                                                                                                                                                                                                                                                                                                                                     
+                              </div>                                                                                                                                                                                                                                                                                                               
+                            </div>                                                                                                                                                                                                                                                                                               
+                          </div>                                                                                                                                                                                                                                                                                             
+                          <div class="tab_content" id="Tab1">                                                                                                                                                                                                                                                                                                                 
+                            <!-- Begin Division 'nav-container block' -->                                                                                                                                                                                                                                                                                                                            
+                            <div class="nav-container block">                                                                                                                                                                                                                                                                                                                                     
+                              <!-- Begin Division 'menu-icon-style' -->                                                                                                                                                                                                                                                                                                                                                
+                              <!-- <div class="menu-icon-style">Categories 
+                                                                                                                                                                                                                                                                                                                                                       </div>
+                                                                                                                                                                                                                                                                                                                                                       -->                                                                                                                                                                                                                                                                                                                                                
+                              <!-- End Division 'menu-icon-style' -->                                                                                                                                                                                                                                                                                                                                                
+                              <!-- Begin Unordered List 'sf-menu-phone item' -->                                                                                                                                                                                                                                                                                                                                                
+                              <!-- BEGIN LEFT_MENUCONTENT -->                                                                                                                                                                                                                                                                                                                                                
+                              <div id='left_menucontent' >                                                                                                                                                                                                                                                                                                                                 
+                              </div>                                                                                                                                                                                                                                                                                                                                   
+                              <!-- END LEFT_MENUCONTENT -->                                                                                                                                                                                                                                                                                                                                               
+                              <!-- End Unordered List 'sf-menu-phone item' -->                                                                                                                                                                                                                                                                                                                            
+                            </div>                                                                                                                                                                                                                                                                                                                 
+                            <!-- End Division 'nav-container block' -->                                                                                                                                                                                                                                                                                                        
+                          </div>                                                                                                                                                                                                                                                                                             
+                          <div class="tab_content" id="Tab2">                                                                                                                                                                                                                                                                                                                 
+                            <h3 class="nosh">Your Filters                                                                                                                                                                                                                                                                                                                                     
+                              <span>                                                                                                                                                                                                                                                                                                                                     
+                              </span> </h3>                                                                                                                                                                                                                                                                                                               
+                            <div class="FaccordionButton">                                                                                                                                                                                                                                                                                                                                     
+                              <ul id="selection" >                                                                                                                                                                                                                                                                                                                                   
+                              </ul>                                                                                                                                                                                                                                                                                                               
+                            </div>                                                                                                                                                                                                                                                                                                               
+                            <h3 class="nosh">Narrow Your Choices                                                                                                                                                                                                                                                                                                                                     
+                              <a href="#" id="CloseFilter" > &#9650; </a>                                                                                                                                                                                                                                                                                                                                   
+                              <a href="#" id="OpenFilter" > &#9660; </a>                                                                                                                                                                                                                                                                                                                                   
+                              <span>                                                                                                                                                                                                                                                                                                                                   
+                              </span></h3>                                                                                                                                                                                                                                                                                                               
+                            <div id="FilterText">                                                                                                                                                                                                                                                                                                                 
+                            </div>                                                                                                                                                                                                                                                                                             
+                          </div>                                                                                                                                                                                                                                                                         
+                        </div>                                                                                                                                                                                                                                                     
+                      </div>                                                                                                                                                                                                                              
+                      <div class="block block-tags">   
+                      <!--
+                        <div class="block-title"> <strong> 
+                            <span>Help  
+                            </span></strong>   
+                        </div>  
+                        --> 
+                        <div class="block-content">   
+                          <div class="custom2" >   
+                            <p>   Phone: 888-557-8020   
+                            <br />  E-mail:   
+                              <a href="mailto:sales@medicalsolutionsinc.com">sales@medicalsolutionsinc.com</a>   <br />   
+                            </p>   
+                          </div>   
+                        </div>   
+                      </div>   
+                    </div>   
+                    <!-- End Division 'col-left sidebar col-xs-12 col-sm-3' -->    
+                  </div>   
+                  <!-- End Row -->    
+                </div>   
+                <!-- End Division 'Main' -->    
+              </div>   
+              <!-- End Division 'col-xs-12' -->    
+            </div>   
+            <!-- End Division 'Row 1' -->    
+          </div>   
+          <!-- End Container-->    
+        </div>   
+        <!-- Main Container col2-left-layout -->   
+        </form>&nbsp;   
+        <!-- Begin Division 'footer-container' -->    
+        <div class="footer-container">   
+          <!-- Begin Division 'container' -->    
+          <div class="container">   
+            <!-- Begin Division 'row' -->    
+            <div class="row">   
+              <!-- Begin Division 'col-xs-12' -->    
+              <div class="col-xs-12">   
+                <!-- Begin Division 'footer' -->    
+                <div class="footer">   
+                  <!-- Begin Paragraph 'back-top' -->    
+                  <p id="back-top">   
+                    <a href="#top"> 
+                      <span> 
+                      </span></a>   
+                  </p>   
+                  <!-- End Paragraph 'back-top' -->    
+                  <!-- Begin Division 'footer-cols-wrapper' -->    
+                  <div class="footer-cols-wrapper">   
+                    <!-- Begin Division *1* 'footer-col' -->    
+                    <div class="footer-col"> <h4>Information</h4>   
+                      <!-- Begin Division 'footer-col-content' -->    
+                      <div class="footer-col-content">  
+                        <ul class="links" > 
+                          <li>
+                          <a href=# onclick="javascript:changepath('OE')">Shipping Information</a> 
+                          </li>   
+                          <li> 
+                          <a href=# onclick="javascript:changepath('CL')">Use a Template</a> 
+                          </li>   
+                          <li> 
+                          <a href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>
+                          </li>   
+                          <li>
+                          <a href=# onclick="javascript:changepath('PS')">Search for Products</a> 
+                          </li>   
+                          <li>
+                          <a href=# onclick="javascript:changepath('CO')">View Current Order</a> 
+                          </li>  
+                          <li> 
+                          <a href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a> 
+                          </li>   
+                        </ul> 
+                      </div>   
+                      <!-- End Division 'footer-col-content' -->    
+                    </div>   
+                    <!-- End Division *1* 'footer-col' -->    
+                    <!-- Begin Divsion *2* 'footer-col' -->    
+                    <div class="footer-col"> <h4>Why buy from us</h4>   
+                      <!-- Begin Division 'footer-col-content' -->    
+                      <div class="footer-col-content">   
+                        <ul>
+                          <li> 
+                          <a href=# onclick='javascript:changelist("CL","Y","WEB*30")'>Top Sellers</a> 
+                          </li>
+                          <li> 
+                          <a href=# onclick='javascript:changelist("CL","Y","WEB*31")'>Most Popular</a> 
+                          </li>
+                          <li> 
+                          <a href=# onclick='javascript:changelist("CL","Y","WEB*32")'>Latest Items</a> 
+                          </li>
+                          <li> 
+                          <a href=# onclick='javascript:changelist("CL","Y","WEB*33")'>Trending Items</a> 
+                          </li>
+                          <li> 
+                          <a href=# onclick='javascript:changelist("CL","Y","WEB*34")'>Best Selling Items</a> 
+                          </li> 
+                        </ul> 
+                      </div>   
+                      <!-- End Division 'footer-col-content' -->    
+                    </div>   
+                    <!-- End Division *2* 'footer-col' -->    
+                    <!-- Begin Division *3* 'footer-col' -->    
+                    <div class="footer-col"> <h4>My account</h4>   
+                      <!-- Begin Division 'footer-col-content' -->    
+                      <div class="footer-col-content">  
+                        <ul>
+                          <li>
+                          <a href=# onclick="javascript:changepath('MYA')">My Information</a> 
+                          </li>
+                          <li>
+                          <a href=# onclick="javascript:changepath('COO')">Check Order Status</a>
+                          </li>  
+                          <li>
+                          <a href=# onclick="javascript:changepath('PED')">Find a Pedigree</a>
+                          </li>  
+                          <li>
+                          <a href=# onclick="javascript:changepath('CP')">Change My Password</a> 
+                          </li>  
+                          <li>
+                          <a href=# onclick="javascript:changepath('LIC')">View Our Licenses</a> 
+                          </li>
+                        </ul> 
+                      </div>   
+                      <!-- End Division 'footer-col-content' -->    
+                    </div>   
+                    <!-- End Division *3* 'footer-col' -->    
+                    <!-- Begin Division *4* 'footer-col contacts' -->    
+                    <div class="footer-col contacts">   <h4>Contact Information</h4>   
+                      <!-- Begin Division 'footer-col-content' -->    
+                      <div class="footer-col-content">   
+                        <p> Medical Solutions, Inc. <br />   
+                        </p>   <h3>Call us:</h3>   
+                        <p class="tel">888-557-8020 
+                        </p> <h3>Email us:</h3> 
+                        <p class="mail"> 
+                          <a href="mailto:sales@medicalsolutionsinc.com">sales@medicalsolutionsinc.com </a>
+                        </p>   
+                      </div>   
+                      <!-- End Division 'footer-col-content' -->    
+                    </div>   
+                    <!-- End Division *4* 'footer-col contacts' -->    
+                    <!-- Begin Division *5* 'footer-col' -->    
+                    <div class="footer-col">   
+                      <!-- Begin Division 'block block-subscribe' -->    
+                      <div class="block block-subscribe">   
+                      </div>   
+                      <!-- End Division 'block block-subscribe' -->  <h3>Send Us Feedback</h3>   
+                      <!-- Begin Unordered List 'list-icon' -->    
+                      <ul class="list-icon">   
+                        <li>
+                        <button onclick="javascript:changepath('FB')" class="button1">Customer Survey 
+                        </button> 
+                        </li>   
+                      </ul>   
+                      <!-- End Unordered List 'list-icon' -->    
+                      <div class="clear"> 
+                      </div>   
+                      <div class="clear"> 
+                      </div>   
+                      <!-- Begin Address -->    
+                      <address> Custom Designed for Medical Solutions, Inc. <br> <br>  Copyright &copy; The Systems House, Inc.   
+                        <a href="mailto:support@tshinc.com"> 
+                          <em>Problems? Click here to email the Webmaster 
+                          </em> </a>   
+                      </address>   
+                      <!-- End Address -->    
+                      <div class="clear"> 
+                      </div>   
+                      <div class="clear"> 
+                      </div>   
+                    </div>   
+                    <!-- End Division *5* 'footer-col' -->    
+                    <div class="clear"> 
+                    </div>   
+                  </div>   
+                  <!-- End Division 'footer-cols-wrapper' -->    
+                </div>   
+                <!-- End Division 'footer' -->    
+              </div>   
+              <!-- End Division 'col-xs-12' -->    
+            </div>   
+            <!-- End Division 'row' -->    
+          </div>   
+          <!-- End Division 'container' -->    
+        </div>   
+        <!-- End Division 'footer-container' -->    
+      </div>   
+      <!-- End Page -->    
+    </div>   
+    <!-- End Wrapper -->    
+  </body> 
+  <!-- End Body --> 
+</HTML>

@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Heerema Company</TITLE>
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="" name=Description>
+<META content="" name=keywords>
+<LINK media=screen href="styles.css" type=text/css rel=stylesheet>
+<LINK media=print href="styles.css" type=text/css rel=stylesheet>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="javascript1.2" src="uscript2.js"></script>
+<script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["pro/images/show/lg_21_CentrifugalPumps_us.jpg", "", ""] //image with link and target syntax
+fadeimages[1]=["pro/images/show/lg_30_Valves_us1.jpg", "", ""] //image with link syntax
+fadeimages[2]=["pro/images/show/lg_34_ButterflyValves_us.jpg", "", ""] //image with link and target syntax
+fadeimages[3]=["pro/images/show/lg_40_TankEquipment_us.jpg", "", ""] //image with link and target syntax
+fadeimages[4]=["pro/images/show/lg_45BYMP_US.jpg", "", ""] //image with link and target syntax
+fadeimages[5]=["pro/images/show/lg_61_MiscellaneousProducts_us.jpg", "", ""] //image with link and target syntax
+fadeimages[6]=["pro/images/show/lg_Baseline_37041_12_EPIC.jpg", "", ""] //image with link and target syntax
+fadeimages[7]=["pro/images/show/lg_PH800001_EPIC.jpg", "", ""] //image with link and target syntax
+fadeimages[8]=["pro/images/show/lg_SaniMagnum_Epic.jpg", "", ""] //plain image syntax
+fadeimages[9]=["pro/images/show/lg_solidc_us.jpg", "", ""] //plain image syntax
+fadeimages[10]=["pro/images/show/lg_TS6_M.jpg", "", ""] //plain image syntax
+fadeimages[11]=["pro/images/show/lg_TZ74_EPIC.jpg", "", ""] //plain image syntax
+fadeimages[12]=["graphics/MR166_185_200_US_blue.jpg", "", ""] //plain image syntax
+var fadebgcolor="#ffffff"
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #333333;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.style20 {
+	color: #666666;
+	font-size: 11px;
+}
+.style21 {color: #777777}
+-->
+</style>
+</HEAD>
+<BODY onload="startList()">
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" background="" bgcolor="#FFFFFF" style="padding-left:20px;padding-right:20px;">
+      <div style="width:856px;height:10px"></div>
+		<div style="width:100%;border-bottom:3px solid #666666;margin-bottom:10px;padding-bottom:5px;">
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="69%" rowspan="2" style="padding:10px;padding-bottom:0px;padding-left:0px;"><a href="../index.php"><img src="../imgs/logo.jpg" width="370" height="82" border="0"></a></td>
+            <td width="31%" align="right" valign="top" style="padding-top:0px" class="small"><a href="../home.php">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="../sitemap.php">sitemap</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="contact-info.php">contact</a><br>
+            <span style="font-family:Tahoma,Arial;font-size:15px;color:#76A21E;font-weight:bold">Toll-Free: 800 346-4729</span>            </td>
+          </tr>
+          <tr>
+            <td align="right" valign="bottom" style="padding-top:8px">
+              <form style="margin:0px" method="post" action="search.php">
+<span style='border-bottom:4px solid white'>search our site</span>
+    <input name='search' type=text class="textbox"  style="margin:0px;margin-bottom:1px;" size=19 maxlength=255>
+    <input type=submit value=go>
+              </form>
+            </td>
+          </tr>
+        </table>
+</div>
+    </td>
+  </tr>
+</table>
+
+    <TABLE width="90%" border=0 align=center cellPadding=0 cellSpacing=0 bgcolor="#">
+        <TR valign="top">
+          <TD valign="middle" bgcolor="#FFFFFF" style="width:90%;padding-left:20px;padding-right:20px;padding-top:0px;padding-bottom:0px;"> 
+		   <ul id="nav" style="border-bottom:1px solid #dddddd;">
+                <li>
+                  <div style="padding-left:0px;border-bottom:0px;">
+				  <a href="index.php" class=" ">HOME PAGE </a></div>
+                </li>
+				 <li>
+                  <div style="padding-left:0px;border-bottom:0px;border-left:0px;"><a href="our-history.php" class="">ABOUT OUR COMPANY</a></div>
+                </li>
+                 <li>
+                   <div style="padding-left:0px;border:0px;"><a href="products.php" class="">PRODUCTS & SERVICES</a></div>
+                   <ul>
+                                          <li>
+                       <div style="padding-left:0px;"><a href="products.php?id=1">Sanitary</a></div>
+                     </li>
+                                          <li>
+                       <div style="padding-left:0px;"><a href="products.php?id=2">Refrigeration</a></div>
+                     </li>
+                                          <li>
+                       <div style="padding-left:0px;"><a href="products.php?id=3">Design Engineering</a></div>
+                     </li>
+                                        </ul>
+                 </li>
+                 <li>
+                   <div style="padding-left:0px;border-bottom:0px;border-left:0px;"><a href="manufacturers.php" class=" ">OUR MANUFACTURERS </a></div>
+                   <ul>
+                                          <li>
+                       <div style="padding-left:0px;"><a href="alfa-laval.php">Alfa Laval</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="anderson.php">Anderson</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="feldmeier.php">Feldmeier</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="sine-pumps.php">Sine-Pumps</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="saint-gobain-sanitary-couplers.php">Saint-Gobain/Sanitary Couplers</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="sani-matic.php">Sani-Matic</a></div>
+                     </li>
+                                         <li>
+                       <div style="padding-left:0px;"><a href="frick.php">Frick</a></div>
+                     </li>
+                                       </ul>
+                </li>
+                 <li>
+                <div style="padding-left:0px;border-bottom:0px;border-left:0px;"><a href="contact-info.php" class=" ">CONTACT INFO </a></div>
+                <ul>
+                                  </ul>
+              </li>
+            </ul>
+		 </TD>
+        </TR>
+    </TABLE>
+
+
+<table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#FFFFFF" style="padding-left:20px;padding-right:20px;">
+      <TABLE width="100%" border=0 align=center  cellSpacing=0 bgColor=#ffffff style="padding-top:0px;border:1px solid #dddddd;border-top:0px solid #FFFFFF">
+        <TR valign="top">
+          <TD height="26" colspan="3" background="imgs/bluediag.gif" bgcolor="#FaFaFa">
+            <div style="width:852px;">&nbsp;</div>
+          </TD>
+        </TR>
+        <TR valign="top" bgcolor="#FFFFFF">
+          <TD height="160" colspan="2" background="imgs/grad.gif" class="menusp"  style="padding:25px;border-right:1px solid #FFFFFF">
+            <h3>Serving Food, Beverage and Pharmaceutical Industries</h3>
+            <p class="style5">More then just your source for sanitary and refrigeration equipment and supplies, Heerema Company has the capabilities to supply your business with complete turnkey systems for all of your process needs. </p>
+            <p class="wr style20">The Heerema Company began in 1922 with a marketing approach toward the New York and New Jersey dairy industry. Since our inception, the company found a growing need in the food, beverage, and pharmaceutical industries. Because of our expertise in refrigeration and <b>sanitary installations</b>, the company found an easy transition to accommodate growth and give our customers a complete turn-key plant, utilizing state of the art technology. As a result, Heerema Company is known as a very experienced engineering and service oriented company. Our aim has always been to provide our customers with the best answers to their processing needs.</p>
+          </TD>
+          <TD align="center" style="padding:20px;padding-top:25px;padding-bottom:15px;">
+            <script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 220, 220, 0, 1500, 1, "")
+            </script>
+          </TD>
+        </TR>
+        <TR valign="top">
+          <TD height="26" colspan="3" background="imgs/bluediag.gif" bgcolor="#FaFaFa">
+            <div style="width:852px;">&nbsp;</div>
+          </TD>
+        </TR>
+        <TR valign="top">
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+        </TR>
+        <TR valign="top">
+          <TD bgcolor="#FaFaFa" style="border-right:1px dotted #cccccc;padding-top:10px;padding-left:5px">
+            <h2><img src="imgs/heerema_drop.png" width="38" height="38" align="left"> Sanitary Process &amp; Equipment &amp; Installation</h2>
+          </TD>
+          <TD bgcolor="#FaFaFa" style="padding-bottom:0px;padding-top:10px;padding-left:5pxx">
+            <h2><img src="imgs/heerema_drop.png" width="38" height="38" align="left"> Refrigeration<br>
+            Equipment &amp; Installation </h2>
+          </TD>
+          <TD bgcolor="#FaFaFa" style="border-left:1px dotted #cccccc;padding-top:10px;padding-left:5px">
+            <h2><img src="imgs/heerema_drop.png" width="38" height="38" align="absmiddle"> Design Engineering</h2>
+          </TD>
+        </TR>
+        <TR valign="top">
+          <TD width="34%" bgcolor="#FaFaFa" style="padding:25px;border-right:1px dotted #cccccc;padding-bottom:10px;padding-top:10px">
+            <p class="style21"  style="text-align:left;">We work with best manufacturers in the industry, offering you a wide range of Sanitary Process products: </p>
+            <ul style="margin-bottom:0px;">
+              <li><a href="alfa-laval.php">Alfa-Laval</a></li>
+              <li><a href="anderson.php">Anderson</a></li>
+              <li><a href="feldmeier.php">Feldmeier</a></li>
+              <li><a href="sine-pumps.php">Sine-Pumps</a></li>
+              <li><a href="saint-gobain-sanitary-couplers.php">Saint-Gobain/Sanitary Couplers</a> </li>
+              <li><a href="sani-matic.php">Sani-Matic</a></li>
+            </ul>
+          </TD>
+          <TD width="32%" bgcolor="#FaFaFa" style="padding:25px;padding-bottom:0px;padding-right:5px;padding-top:10px">
+            <p style="text-align:left"><span class="style8"><b>INSTALLATION</b></span>: <span class="style21">A broad line of screw compressors, evaporators, condensers, vessles, hygienic air handling units, control systems, valves and accessoreis give you the flexibility.</span></p>
+              <p style="text-align:left"> <b class="style8">SERVICE:</b> <span class="style21">design unique systems while gaining the efficiencies of pre-engineered, pre-tested construction. </span></p>
+              <ul style="margin-bottom:0px;">
+                <li class="style4"><A style="FONT-SIZE: 11px" href="frick.php">Frick</A> </li>
+              </ul>
+          </TD>
+          <TD width="34%" bgcolor="#FaFaFa" style="padding:25px;border-left:1px dotted #cccccc;padding-top:10px">
+            <p style="margin-bottom:0px;margin-top:5px"><a href="#" class="small"> </a>              <span class="style21">We specialize in both skid mounts systems and on-site installations of clean in place systems, HTST pasteurizing systems, pump skids and refrigerated warehouse systems. We specialize in both skid mounts systems and on-site installations of clean in place systems, </span></p>
+            </TD>
+        </TR>
+        <TR valign="top">
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+          <TD bgcolor="#FaFaFa" style="padding:0px">&nbsp;</TD>
+        </TR>
+      </TABLE>
+      <br>
+    </td>
+  </tr>
+</table>
+</DIV>
+<style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+</style>
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:40px">
+  <tr>
+    <td align="center" bgcolor="#FFFFFF">&nbsp;    </td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" class="style1" style="padding-left:25px;padding-right:25px;color:#999999;">
+	<a href="./home.php">HOME</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="our-history.php">ABOUT US</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="products.php">PRODUCTS AND SERVICES</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="manufacturers.php">OUR-MANUFACTURERS</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="contact-info.php">CONTACT US</a>    </td>
+  </tr>
+  <tr>
+    <td height="140" align="center" bgcolor="#FFFFFF" style="color:#666666;font-size:11px;"><span class="style1"><STRONG>Copyright &copy; 2019 Heerema Company</STRONG></span><br>
+       200 Sixth Avenue
+Hawthorne, NJ 07506 
+ &nbsp;&nbsp;&#149;&nbsp;&nbsp;&nbsp;Phone: 973-423-0505 
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;&nbsp;Outside NJ: 800-346-4729 
+       
+ &nbsp;&nbsp;&#149;&nbsp;&nbsp;Fax: 973-427-8672&nbsp;<br>
+    E-mail: <a href="mailto:sales@heeremacompany.com" style="font-size:11px">sales@heeremacompany.com</a></td>
+  </tr>
+</table>
+<center>
+  <a href="http://powersolution.com" style="font-size:11px">  web site design and development by powersolution.com: <br>
+  also providing quality IT support and computer network services in New Jersey and beyond.  </a><br>
+  <br>
+
+  <a href="admin.php"  style="font-size:11px;color:#666666;">site admin</a></center>
+</BODY>
+</HTML>

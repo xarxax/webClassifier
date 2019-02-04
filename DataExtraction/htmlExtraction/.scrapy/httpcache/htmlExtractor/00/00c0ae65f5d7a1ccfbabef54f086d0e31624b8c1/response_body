@@ -1,0 +1,2225 @@
+<!DOCTYPE html><html lang="en"><!--
+	This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL.
+	Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.
+
+	More information and contribution opportunities at https://www.neos.io
+-->
+<head><meta charset="UTF-8" /><link rel="stylesheet" href="https://www.ndd.ch/_Resources/Static/Packages/Ndd.NddCh/Styles/App.css?bust=9ad083c1" /><link rel="stylesheet" href="https://www.ndd.ch/_Resources/Static/Packages/TMS.CookieConsent/Styles/cookieconsent.min.css?bust=225df1e9" /><title>ndd</title><script>;var _rollbarConfig={'accessToken':'ae2908a8a24d4acf97461a84d00fe751','captureUncaught':!0,'captureUnhandledRejections':!0,'payload':{'environment':'production','FLOW_CONTEXT':'Production\/PlatformSh'}};!function(r){function e(o){if(n[o])return n[o].exports;var t=n[o]={exports:{},id:o,loaded:!1};return r[o].call(t.exports,t,t.exports,e),t.loaded=!0,t.exports};var n={};return e.m=r,e.c=n,e.p='',e(0)}([function(r,e,n){'use strict';var a=n(1).Rollbar,i=n(2);_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||'https://d37gvrvc0wt4s1.cloudfront.net/js/v1.9/rollbar.min.js';var o=a.init(window,_rollbarConfig),t=i(o,_rollbarConfig);o.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,t)},function(r,e){'use strict';function a(r){return function(){try{return r.apply(this,arguments)}catch(e){try{console.error('[Rollbar]: Internal error',e)}catch(e){}}}};function i(r,e,n){window._rollbarWrappedError&&(n[4]||(n[4]=window._rollbarWrappedError),n[5]||(n[5]=window._rollbarWrappedError._rollbarContext),window._rollbarWrappedError=null),r.uncaughtError.apply(r,n),e&&e.apply(window,n)};function c(r){var e=function(){var e=Array.prototype.slice.call(arguments,0);i(r,r._rollbarOldOnError,e)};return e.belongsToShim=!0,e};function n(r){this.shimId=++l,this.notifier=null,this.parentShim=r,this._rollbarOldOnError=null};function u(r){var e=n;return a(function(){if(this.notifier)return this.notifier[r].apply(this.notifier,arguments);var n=this,o='scope'===r;o&&(n=new e(this));var t=Array.prototype.slice.call(arguments,0),a={shim:n,method:r,args:t,ts:new Date};return window._rollbarShimQueue.push(a),o?n:void 0})};function s(r,e){if(e.hasOwnProperty&&e.hasOwnProperty('addEventListener')){var o=e.addEventListener;e.addEventListener=function(e,n,t){o.call(this,e,r.wrap(n),t)};var n=e.removeEventListener;e.removeEventListener=function(r,e,o){n.call(this,r,e&&e._wrapped?e._wrapped:e,o)}}};var l=0;n.init=function(r,e){var t=e.globalAlias||'Rollbar';if('object'==typeof r[t])return r[t];r._rollbarShimQueue=[],r._rollbarWrappedError=null,e=e||{};var o=new n;return a(function(){if(o.configure(e),e.captureUncaught){o._rollbarOldOnError=r.onerror,r.onerror=c(o);var n,a,i='EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload'.split(',');for(n=0;n<i.length;++n)a=i[n],r[a]&&r[a].prototype&&s(o,r[a].prototype)};return e.captureUnhandledRejections&&(o._unhandledRejectionHandler=function(r){var e=r.reason,t=r.promise,n=r.detail;!e&&n&&(e=n.reason,t=n.promise),o.unhandledRejection(e,t)},r.addEventListener('unhandledrejection',o._unhandledRejectionHandler)),r[t]=o,o})()},n.prototype.loadFull=function(r,e,o,u,t){var s=function(){var a;if(void 0===r._rollbarPayloadQueue){var i,n,o,e;for(a=new Error('rollbar.js did not load');i=r._rollbarShimQueue.shift();)for(o=i.args,e=0;e<o.length;++e)if(n=o[e],'function'==typeof n){n(a);break}};'function'==typeof t&&t(a)},i=!1,n=e.createElement('script'),l=e.getElementsByTagName('script')[0],c=l.parentNode;n.crossOrigin='',n.src=u.rollbarJsUrl,n.async=!o,n.onload=n.onreadystatechange=a(function(){if(!(i||this.readyState&&'loaded'!==this.readyState&&'complete'!==this.readyState)){n.onload=n.onreadystatechange=null;try{c.removeChild(n)}catch(r){};i=!0,s()}}),c.insertBefore(n,l)},n.prototype.wrap=function(r,e){try{var t;if(t='function'==typeof e?e:function(){return e||{}},'function'!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(e){throw'string'==typeof e&&(e=new String(e)),e._rollbarContext=t()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var o in r)r.hasOwnProperty(o)&&(r._wrapped[o]=r[o])};return r._wrapped}catch(n){return r}};for(var t='log,debug,info,warn,warning,error,critical,global,configure,scope,uncaughtError,unhandledRejection'.split(','),o=0;o<t.length;++o)n.prototype[t[o]]=u(t[o]);r.exports={Rollbar:n,_rollbarWindowOnError:i}},function(r,e){'use strict';r.exports=function(r,e){return function(n){if(!n&&!window._rollbarInitialized){var a=window.RollbarNotifier,o=e||{},i=o.globalAlias||'Rollbar',t=window.Rollbar.init(o,r);t._processShimQueue(window._rollbarShimQueue||[]),window[i]=t,window._rollbarInitialized=!0,a.processPayloads()}}}}]);</script><meta name="description" content="ndd Medical Technologies are leaders in lung function testing equipment. We manufactur spirometry and PFT devices, available in more than 100 countries." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://www.ndd.ch/" /> <link rel="alternate" hreflang="en" href="https://www.ndd.ch/"/><link rel="alternate" hreflang="en-US" href="https://www.nddmed.com/en-us"/><link rel="alternate" hreflang="de" href="https://www.ndd.ch/de"/><link rel="alternate" hreflang="es" href="https://www.ndd.ch/es"/> <link rel="stylesheet" href="https://www.ndd.ch/_Resources/Static/Packages/Psmb.Ajaxify/loader.css?bust=70c7f2dd" /><meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="icon" sizes="32x32" href="/favicon-32x32.png" type="image/png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" /><script async src="https://www.googletagmanager.com/gtag/js?id=UA-54224036-1"></script><script>;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','AW-816179153');gtag('config','AW-984799865');</script></head><body class><noscript><div class="alert alert-warning m-0 rounded-0" role="alert"><strong>JavaScript is disabled in your browser</strong><br> To ensure the functionality of this site, JavaScript must be activated. </div></noscript><!--[if lt IE 9]><div class="alert alert-info m-0 rounded-0" role="alert"><strong>Your browser is not up-to-date</strong><br> Please use a newer browser to view our website. </div><![endif]--><header class="page-header "><div class="container"><div class="logo"><a href="/"><img src="https://www.ndd.ch/_Resources/Static/Packages/Ndd.NddCh/Images/ndd-logo.png?bust=de000fde" alt="Logo ndd Medizintechnik AG" /></a><span class="logo-shape-edge"><img src="https://www.ndd.ch/_Resources/Static/Packages/Ndd.NddCh/Images/ndd-logo-shape.png?bust=990fe2f5" alt /></span><span class="logo-claim">Early Diagnosis for<br> Better Lung Health</span></div><div class="row d-none d-md-flex"><div class="col-sm-9 offset-sm-3 text-right"><ul class="list-inline meta-nav"><li class="list-inline-item"> <a href="#" class="" data-toggle="modal" data-target="#worldwide"><i class="fas fa-globe mr-2"></i>English </a> </li><li class="list-inline-item"><a href="#" class="icon-search" data-toggle="modal" data-target="#search"><i class="fas fa-search mr-2"></i> Search for ...</a></li></ul></div></div></div><div class="container"><nav class="navbar navbar-expand-md navbar-light pb-md-0 px-0"><div class="navbar-mobile-toolbar d-block d-md-none"> <button type="button" class="btn btn-link px-1" data-toggle="modal" data-target="#worldwide"><i class="fas fa-globe mr-2"></i>EN </button> <a href="#" class="btn btn-link px-1" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i></a></div><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto my-4 my-md-0"><li class="nav-item normal dropdown navbar-fw" data-flyout="nav1"><a href="/en/ndd.html" id="navbarDropdown1" class="nav-link">ndd<span class="dropdown-toggle d-none d-md-inline-block"><i class="fas fa-angle-down"></i></span></a><span data-toggle="dropdown" class="dropdown-toggle d-md-none"><i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i></span><div class="dropdown-menu d-lg-none menu-layout-grid" aria-labelledby="navbarDropdown1"><a class="dropdown-item normal" href="/en/ndd/proven-technology-1.html" title="Proven Technology"><div>Proven Technology</div></a><a class="dropdown-item normal" href="/en/ndd/connectivity.html" title="Connectivity"><div>Connectivity</div></a><a class="dropdown-item normal" href="/en/ndd/research-and-studies.html" title="Research and Studies"><div>Research and Studies</div></a><a class="dropdown-item normal" href="/en/ndd/early-diagnosis-1.html" title="Early Diagnosis"><div>Early Diagnosis</div></a><a class="dropdown-item normal" href="/en/ndd/social-responsibility.html" title="Social Responsibility"><div>Social Responsibility</div></a><a class="dropdown-item normal" href="/en/ndd/events.html" title="Events"><div>Events</div></a><a class="dropdown-item normal" href="/en/ndd/news-stories.html" title="News stories"><div>News stories</div></a><a class="dropdown-item normal" href="/en/ndd/careers.html" title="Careers"><div>Careers</div></a><a class="dropdown-item normal" href="/en/ndd/team-zurich.html" title="Meet the Team - Zurich"><div>Meet the Team - Zurich</div></a><a class="dropdown-item normal" href="/en/ndd/team-us.html" title="Meet the Team - US"><div>Meet the Team - US</div></a></div><div class="dropdown-menu navigation-flyout d-none d-md-block"><div id="nav1" class="container navigation-flyout-container"><a href="/en/ndd.html" class="navigation-flyout-parent-link">Who we are</a><ul class="menu-layout-grid row list-unstyled"><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/proven-technology-1.html" title="Proven Technology"><div>Proven Technology</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/connectivity.html" title="Connectivity"><div>Connectivity</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/research-and-studies.html" title="Research and Studies"><div>Research and Studies</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/early-diagnosis-1.html" title="Early Diagnosis"><div>Early Diagnosis</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/social-responsibility.html" title="Social Responsibility"><div>Social Responsibility</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/events.html" title="Events"><div>Events</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/news-stories.html" title="News stories"><div>News stories</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/careers.html" title="Careers"><div>Careers</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/team-zurich.html" title="Meet the Team - Zurich"><div>Meet the Team - Zurich</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/ndd/team-us.html" title="Meet the Team - US"><div>Meet the Team - US</div></a></li></ul></div><button class="navigation-flyout-close"><i class="fas fa-times fa-fw"></i><span class="sr-only">Close Menu</span></button></div></li><li class="nav-item normal dropdown navbar-fw" data-flyout="nav2"><a href="/en/product.html" id="navbarDropdown2" class="nav-link">Product solutions<span class="dropdown-toggle d-none d-md-inline-block"><i class="fas fa-angle-down"></i></span></a><span data-toggle="dropdown" class="dropdown-toggle d-md-none"><i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i></span><div class="dropdown-menu d-lg-none menu-layout-grid" aria-labelledby="navbarDropdown2"><a class="dropdown-item normal" href="/en/product/easyone-air.html" title="EasyOne Air"><div>EasyOne Air<span title="Portable &amp; PC spirometer">Portable &amp; PC spirometer</span></div></a><a class="dropdown-item normal" href="/en/product/easyone-pro.html" title="EasyOne Pro®"><div>EasyOne Pro®<span title="Portable DLCO, Lung Volumes and Spirometry">Portable DLCO, Lung Volumes and Spirometry</span></div></a><a class="dropdown-item normal" href="/en/product/easyone-pro-lab.html" title="EasyOne Pro® LAB"><div>EasyOne Pro® LAB<span title="Portable DLCO, MBW, Lung Volumes, LCI and Spirometry">Portable DLCO, MBW, Lung Volumes, LCI and Spirometry</span></div></a><a class="dropdown-item normal" href="/en/product/easy-on-pc.html" title="Easy on-PC"><div>Easy on-PC<span title="PC spirometer">PC spirometer</span></div></a><a class="dropdown-item normal" href="/en/product/easyone-connect.html" title="EasyOne Connect"><div>EasyOne Connect<span title="Integrated software platform">Integrated software platform</span></div></a></div><div class="dropdown-menu navigation-flyout d-none d-md-block"><div id="nav2" class="container navigation-flyout-container"><a href="/en/product.html" class="navigation-flyout-parent-link">Product solutions</a><ul class="menu-layout-grid-with-image row list-unstyled"><li class="col-6 col-lg-4 my-2"><a class="dropdown-item normal" href="/en/product/easyone-air.html" title="EasyOne Air"><img class="lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/25e8a3b15e9c4d976bb26dcdd1dccfbccf2fa6f4/Air_merged-450x450.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt><div>EasyOne Air<span title="Portable &amp; PC spirometer">Portable &amp; PC spirometer</span></div></a></li><li class="col-6 col-lg-4 my-2"><a class="dropdown-item normal" href="/en/product/easyone-pro.html" title="EasyOne Pro®"><img class="lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/a166f752b410b654be3a98f8d3478eb81ca475da/EasyOne-Pro-V5-450x450.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt><div>EasyOne Pro®<span title="Portable DLCO, Lung Volumes and Spirometry">Portable DLCO, Lung Volumes and Spirometry</span></div></a></li><li class="col-6 col-lg-4 my-2"><a class="dropdown-item normal" href="/en/product/easyone-pro-lab.html" title="EasyOne Pro® LAB"><img class="lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/84ce06fc73da0f72e47d3d8775d886eb70d8ca90/EOPLAB-front-450x450.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt><div>EasyOne Pro® LAB<span title="Portable DLCO, MBW, Lung Volumes, LCI and Spirometry">Portable DLCO, MBW, Lung Volumes, LCI and Spirometry</span></div></a></li><li class="col-6 col-lg-4 my-2"><a class="dropdown-item normal" href="/en/product/easy-on-pc.html" title="Easy on-PC"><img class="lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/21201307cf6951fc47e766fd39c837bdf50d7fea/easy-on-pc-left-tablet-trans-450x450.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt><div>Easy on-PC<span title="PC spirometer">PC spirometer</span></div></a></li><li class="col-6 col-lg-4 my-2"><a class="dropdown-item normal" href="/en/product/easyone-connect.html" title="EasyOne Connect"><img class="lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/12d7865f978ad59eeed22d5b398362ea9c51c72e/EOCicon-450x450.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt><div>EasyOne Connect<span title="Integrated software platform">Integrated software platform</span></div></a></li></ul></div><button class="navigation-flyout-close"><i class="fas fa-times fa-fw"></i><span class="sr-only">Close Menu</span></button></div></li><li class="nav-item normal dropdown navbar-fw" data-flyout="nav3"><a href="/en/support.html" id="navbarDropdown3" class="nav-link">Support<span class="dropdown-toggle d-none d-md-inline-block"><i class="fas fa-angle-down"></i></span></a><span data-toggle="dropdown" class="dropdown-toggle d-md-none"><i class="fas fa-angle-down"></i><i class="fas fa-angle-up"></i></span><div class="dropdown-menu d-lg-none menu-layout-grid" aria-labelledby="navbarDropdown3"><a class="dropdown-item normal" href="/en/support/download.html" title="Downloads"><div>Downloads</div></a><a class="dropdown-item normal" href="/en/support/scientific-documents.html" title="Scientific documents"><div>Scientific documents</div></a><a class="dropdown-item normal" href="/en/support/faq.html" title="FAQ"><div>FAQ</div></a><a class="dropdown-item normal" href="/en/support/remote-support.html" title="Remote Support"><div>Remote Support</div></a></div><div class="dropdown-menu navigation-flyout d-none d-md-block"><div id="nav3" class="container navigation-flyout-container"><a href="/en/support.html" class="navigation-flyout-parent-link">Support</a><ul class="menu-layout-grid row list-unstyled"><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/support/download.html" title="Downloads"><div>Downloads</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/support/scientific-documents.html" title="Scientific documents"><div>Scientific documents</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/support/faq.html" title="FAQ"><div>FAQ</div></a></li><li class="col-4 col-lg-3 my-2"><a class="dropdown-item normal" href="/en/support/remote-support.html" title="Remote Support"><div>Remote Support</div></a></li></ul></div><button class="navigation-flyout-close"><i class="fas fa-times fa-fw"></i><span class="sr-only">Close Menu</span></button></div></li><li class="nav-item normal" data-flyout="nav4"><a href="/en/contact.html" class="nav-link">Contact us</a></li></ul></div></nav></div></header><section class="page-content" id="main"><div class="neos-contentcollection"><div class="slick-carousel-initialize mb-5 slick-carousel" id="carousel-node-58bea8771f4e5" data-slick="{&quot;autoplay&quot;: true, &quot;autoplaySpeed&quot;: 10000}"><div class="slide-padding-default mh-vh-60 lazyload slide-with-background-image gradient gradient-directional-smooth slide d-flex" data-expand="-1" data-bgset="https://d3cumwfln92soa.cloudfront.net/6c8337a07bcf41b9af7110cfeaf411f47f11da84/Pro-1617x565-400x140.jpg 400w,https://d3cumwfln92soa.cloudfront.net/34a28f2c2cf335c9c74d6fc56a9a7bc49bad7cc8/Pro-1617x565-600x210.jpg 600w,https://d3cumwfln92soa.cloudfront.net/a20cfb2a95f2fa8dabc4d584d3c43c7c9235b8d2/Pro-1617x565-800x280.jpg 800w,https://d3cumwfln92soa.cloudfront.net/9764ffd5fa21591ee554db278ca286c3b5395820/Pro-1617x565-1000x349.jpg 1000w,https://d3cumwfln92soa.cloudfront.net/6f98f8a652f6199cbf4a7d89103cada68c1054a5/Pro-1617x565-1200x419.jpg 1200w,https://d3cumwfln92soa.cloudfront.net/0cc3a67fb5fcaccf45cd799d9d80abbbeb10e599/Pro-1617x565-1600x559.jpg 1600w" data-sizes="auto"><div class="container d-flex flex-column"><div class="row my-auto"><div class="col-9 col-md-7 col-lg-6 mx-5"><div class="h2">Simple. Certain. Proven.</div><p class="lead d-none d-lg-block">Give your Patients the Best in Pulmonary Care with the EasyOne Pro Complete PFT Device.&nbsp;</p><div class="neos-contentcollection"><a class="btn btn-primary btn-lg btn-icon-right" href="/en/product/easyone-pro.html">Learn more<i class="fas fa-angle-right"></i></a></div></div></div></div></div><div class="slide-padding-default mh-vh-60 lazyload slide-with-background-image gradient gradient-directional-smooth slide d-flex" data-expand="-1" data-bgset="https://d3cumwfln92soa.cloudfront.net/b6ee44b0193dba682f64d09b6873d333e810f29a/Man-touching-screen-2699x1003-400x149.png 400w,https://d3cumwfln92soa.cloudfront.net/05aa162d51e220ea5a37e61a075551ce16baaef7/Man-touching-screen-2699x1003-600x223.png 600w,https://d3cumwfln92soa.cloudfront.net/6aa49c17dacca48fb06781f7f9363a7e3acab3a2/Man-touching-screen-2699x1003-800x297.png 800w,https://d3cumwfln92soa.cloudfront.net/4b3b530b1b1bdc20ecfbad8b49ae195ea996ef79/Man-touching-screen-2699x1003-1000x372.png 1000w,https://d3cumwfln92soa.cloudfront.net/36bba3d8b1f596799a388db946305523e1e40ca1/Man-touching-screen-2699x1003-1200x446.png 1200w,https://d3cumwfln92soa.cloudfront.net/689203d5a3dcbad86800f61c83103571842e81ff/Man-touching-screen-2699x1003-1600x595.png 1600w" data-sizes="auto"><div class="container d-flex flex-column"><div class="row my-auto"><div class="col-9 col-md-7 col-lg-6 mx-5"><div class="h2">Connecting to your EMR has never been easier.</div><p class="lead d-none d-lg-block">One software, One database for all devices.</p><div class="neos-contentcollection"><a class="btn btn-secondary btn-lg" href="/en/product/easyone-connect.html">EasyOne Connect solution</a></div></div></div></div></div><div class="slide-padding-default mh-vh-60 lazyload slide-with-background-image gradient gradient-directional-smooth slide d-flex" data-expand="-1" data-bgset="https://d3cumwfln92soa.cloudfront.net/5acaf26c4dc1f2e2a744cb8e5a5d67794e2c9887/Air-1617x565-400x140.jpg 400w,https://d3cumwfln92soa.cloudfront.net/41c1c57d15bce3e996e209f6dd13efb94bb5bc4a/Air-1617x565-600x210.jpg 600w,https://d3cumwfln92soa.cloudfront.net/f37b95e37a588a99dc49f64376b14b53b54bf9e5/Air-1617x565-800x280.jpg 800w,https://d3cumwfln92soa.cloudfront.net/88b98ddb9dc4fe2bf33317f21ce9db55885d7ff9/Air-1617x565-1000x349.jpg 1000w,https://d3cumwfln92soa.cloudfront.net/5f17906ce5119887f9c8d30a2c9764f15a56f1c1/Air-1617x565-1200x419.jpg 1200w,https://d3cumwfln92soa.cloudfront.net/6ccf0662adebddc7293269306d4d22038a4a111f/Air-1617x565-1600x559.jpg 1600w" data-sizes="auto"><div class="container d-flex flex-column"><div class="row my-auto"><div class="col-9 col-md-7 col-lg-6 mx-5"><div class="h2">All the Portable Advantages, One Connected Solution.</div><p class="lead d-none d-lg-block">EasyOne Air - Proven Spirometry Solution</p><div class="neos-contentcollection"><a class="btn btn-secondary btn-lg" href="/en/product/easyone-air.html">Show Me More</a></div></div></div></div></div></div></div><div class="neos-contentcollection"><section class="tms-basics-section section-padding-default section-font-color-default"><div class="container"><div class="row"><div class="col-md-9 col-xl-8 mr-auto text-left"><h2 class="section-headline">Early Diagnosis for Better Lung Health<br/></h2></div></div><div class="row"><div class="col-12"><div class="row"><div class="col-12 col-md-6 col-lg-6 col-xl-6 neos-contentcollection"><p style="text-align:justify">For more than 20 years, ndd Medical Technologies has worked to improve early detection and accurate diagnosis for people living with COPD and other chronic lung diseases.<br/></p><p style="text-align:justify">To address the issues of growing numbers of COPD patients and a large undiagnosed population, ndd's line of EasyOne products is moving lung function testing closer to the point of care. This facilitates routine lung health assessment which is easy to do and available to everyone. <br/></p><a class="btn btn-secondary" href="/en/ndd.html">Learn more about us</a></div><div class="col-12 col-md-6 col-lg-6 col-xl-6 neos-contentcollection"><div class="embed-responsive embed-responsive-16by9 opt-in"><div class="opt-in-consent lazyload opt-in-youtube"><div class="opt-in-consent-body"><div class="opt-in-consent-type">YouTube content</div><p class="opt-in-consent-message"><span class="d-none d-sm-block hidden-xs">This content may share personally identifiable information with third parties. Read more in our <a href="/en/legal/privacy.html" target="_blank">privacy policy</a>.</span><a class="d-sm-none visible-xs-block" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="This content may share personally identifiable information with third parties. Read more in our &lt;a href=&quot;/en/legal/privacy.html&quot; target=&quot;_blank&quot;&gt;privacy policy&lt;/a&gt;." data-placement="top" data-html="true">What does that mean?</a></p><button data-opt-in-action="youtube" class="btn btn-sm btn-secondary">Got it</button></div></div><iframe webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" class="lazyload embed-responsive-item" data-opt-in-type="youtube" data-opt-in-src="https://www.youtube-nocookie.com/embed/S_WqOQy9-Do?wmode=transparent&amp;autoplay=&amp;controls=1&amp;rel=1&amp;showinfo=1"></iframe></div></div></div></div></div><div class="clearfix"></div></div></section><section class="section-padding-default section-background-color-light-grey"><div class="container"><div class="row"><div class="col-md-8 mx-auto"><h2 class="section-headline text-center">Meet the ndd EasyOne® Product Family</h2></div></div><div class="slick-carousel slick-product-carousel"><div><a href="/en/product/easyone-air.html" class="product-short mx-2 mx-md-3"><div class="product-short-header"><div class="product-short-title">EasyOne<sup>®</sup> Air<br/></div><div class="product-short-image"><img class="img-fluid lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/25e8a3b15e9c4d976bb26dcdd1dccfbccf2fa6f4/Air_merged-450x450.png" alt></div></div><div class="product-short-body"><div class="product-short-testtypes">Portable &amp; PC spirometer</div><div class="product-short-usps"><ul class="product-usps fa-ul"><li><span class="fa-li"><i class="fas fa-check"></i></span>Full spirometry </li><li><span class="fa-li"><i class="fas fa-check"></i></span>Large color touch screen</li><li><span class="fa-li"><i class="fas fa-check"></i></span>Wireless connectivity to PC via Bluetooth</li></ul></div><div class="product-short-action"><button class="btn btn-primary btn-block btn-icon-right">Show details <i class="fas fa-angle-right"></i></button></div></div></a></div><div><a href="/en/product/easyone-pro.html" class="product-short mx-2 mx-md-3"><div class="product-short-header"><div class="product-short-title">EasyOne Pro<sup>®</sup></div><div class="product-short-image"><img class="img-fluid lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/a166f752b410b654be3a98f8d3478eb81ca475da/EasyOne-Pro-V5-450x450.png" alt></div></div><div class="product-short-body"><div class="product-short-testtypes">Portable DLCO, Lung Volumes and Spirometry</div><div class="product-short-usps"><ul class="product-usps fa-ul"><li><span class="fa-li"><i class="fas fa-check"></i></span>Full spirometry</li><li><span class="fa-li"><i class="fas fa-check"></i></span>DLCO</li><li><span class="fa-li"><i class="fas fa-check"></i></span>Lung volumes and provocation</li></ul></div><div class="product-short-action"><button class="btn btn-primary btn-block btn-icon-right">Show details <i class="fas fa-angle-right"></i></button></div></div></a></div><div><a href="/en/product/easyone-pro-lab.html" class="product-short mx-2 mx-md-3"><div class="product-short-header"><div class="product-short-title">EasyOne Pro<sup>®</sup> LAB</div><div class="product-short-image"><img class="img-fluid lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/84ce06fc73da0f72e47d3d8775d886eb70d8ca90/EOPLAB-front-450x450.png" alt></div></div><div class="product-short-body"><div class="product-short-testtypes">Portable DLCO, MBW, Lung Volumes, LCI and Spirometry</div><div class="product-short-usps"><ul class="product-usps fa-ul"><li><span class="fa-li"><i class="fas fa-check"></i></span>Full spirometry &amp; provocation</li><li><span class="fa-li"><i class="fas fa-check"></i></span>DLCO &amp; lung volumes</li><li><span class="fa-li"><i class="fas fa-check"></i></span>MBW, LCI &amp; lung volumes</li></ul></div><div class="product-short-action"><button class="btn btn-primary btn-block btn-icon-right">Show details <i class="fas fa-angle-right"></i></button></div></div></a></div><div><a href="/en/product/easy-on-pc.html" class="product-short mx-2 mx-md-3"><div class="product-short-header"><div class="product-short-title">Easy on-PC</div><div class="product-short-image"><img class="img-fluid lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/21201307cf6951fc47e766fd39c837bdf50d7fea/easy-on-pc-left-tablet-trans-450x450.png" alt></div></div><div class="product-short-body"><div class="product-short-testtypes">PC spirometer</div><div class="product-short-usps"><ul class="product-usps fa-ul"><li><span class="fa-li"><i class="fas fa-check"></i></span>Full spirometry </li><li><span class="fa-li"><i class="fas fa-check"></i></span>Provocation &amp; challenge testing</li><li><span class="fa-li"><i class="fas fa-check"></i></span>Real-time curves &amp; pediatric incentives</li></ul></div><div class="product-short-action"><button class="btn btn-primary btn-block btn-icon-right">Show details <i class="fas fa-angle-right"></i></button></div></div></a></div><div><a href="/en/product/easyone-connect.html" class="product-short mx-2 mx-md-3"><div class="product-short-header"><div class="product-short-title">EasyOne Connect</div><div class="product-short-image"><img class="img-fluid lazyload blur-up" data-src="https://d3cumwfln92soa.cloudfront.net/12d7865f978ad59eeed22d5b398362ea9c51c72e/EOCicon-450x450.png" alt></div></div><div class="product-short-body"><div class="product-short-testtypes">Integrated software platform</div><div class="product-short-usps"><ul class="product-usps fa-ul"><li><span class="fa-li"><i class="fas fa-check"></i></span>One single user interface for all devices</li><li><span class="fa-li"><i class="fas fa-check"></i></span>Simple software installation</li><li><span class="fa-li"><i class="fas fa-check"></i></span>Free lifetime updates</li></ul></div><div class="product-short-action"><button class="btn btn-primary btn-block btn-icon-right">Show details <i class="fas fa-angle-right"></i></button></div></div></a></div></div><div class="pt-5 text-center"><a class="btn btn-link btn-lg" href="/en/product.html">Show all products</a></div></div></section></div><section class="tms-basics-section section-padding-default section-latest-articles"><div class="container"><div class="row"><div class="py-4 col-md-6 col-lg-6"><div class="h5">Latest news</div><div class="latest-news"><a href="/en/ndd/news-stories/gulf-study.html" class="article-short lazyload" data-bg="https://d3cumwfln92soa.cloudfront.net/f9aa4e7044e4afd4d46f1144272ab79fe5df793a/shutterstock_61875832-small-800x600.jpg"><div><div class="article-short-title">GuLF STUDY (Gulf Long-term Follow-up Study)</div></div></a></div><a class="btn btn-link btn-icon-right btn-block" href="/en/ndd/news-stories.html">Show all news<i class="fas fa-angle-right"></i></a></div><div class="py-4 col-md-6 col-lg-6"><div class="h5">Upcoming events</div><div class="upcoming-events"><div class="event-item"><div class="event-title">Industrieforum Pneumologie DGP + GPP</div><div class="event-detail"><span class="event-date">Mar 13 2019<span>- Mar 16 2019</span></span> in <span class="event-location">München, Germany</span><div>Booth: F.46 Exhibitor: ndd</div></div></div><div class="event-item"><div class="event-title">59. Wissenschaftliche Jahrestagung der DGAUM</div><div class="event-detail"><span class="event-date">Mar 20 2019<span>- Mar 22 2019</span></span> in <span class="event-location">Erfurt, Germany</span><div>Exhibitor: ndd</div></div></div><div class="event-item"><div class="event-title">25. Kongress der Jugendmedizin bvkj</div><div class="event-detail"><span class="event-date">May 24 2019<span>- May 26 2019</span></span> in <span class="event-location">Weimar, Germany</span><div>Exhibitor: ndd</div></div></div></div><a class="btn btn-link btn-icon-right btn-block" href="/en/ndd/events.html">Show all events<i class="fas fa-angle-right"></i></a></div></div></div></section><div class="neos-contentcollection"></div></section><footer class="page-footer"><div class="container"><div class="row"><div class="col-md-6 col-xl-3"><div class="h5">About us</div><ul class="list-unstyled"><li><a href="/en/ndd.html">Who we are</a></li></ul><address>ndd Medizintechnik AG<br>Technoparkstrasse 1<br>CH-8005 Zurich</address></div><div class="col-md-6 col-xl-3"><div class="h5">Products & Support</div><ul class="list-unstyled"><li><a href="/en/product.html">EasyOne Product Line</a></li><li><a href="/en/support/download.html">Downloads</a></li><li><a href="/en/support/faq.html">FAQs</a></li><li><a href="https://www.nddmed.com/en-us/support/download/software.html">Software</a></li></ul></div><div class="col-md-6 col-xl-3"><div class="h5">Follow us on</div><ul class="list-unstyled"><li><a href="https://www.facebook.com/nddmedical/" target="_blank" rel="noopener" class="media"><span class="fa-stack mr-2"><i class="fas fa-circle fa-stack-2x social-profile-circle"></i><i class="fab fa-facebook-f fa-stack-1x text-white"></i></span><div class="media-body align-self-center">Facebook</div></a></li><li><a href="https://twitter.com/nddmedical" target="_blank" rel="noopener" class="media"><span class="fa-stack mr-2"><i class="fas fa-circle fa-stack-2x social-profile-circle"></i><i class="fab fa-twitter fa-stack-1x text-white"></i></span><div class="media-body align-self-center">Twitter</div></a></li><li><a href="https://www.youtube.com/user/nddmed" target="_blank" rel="noopener" class="media"><span class="fa-stack mr-2"><i class="fas fa-circle fa-stack-2x social-profile-circle"></i><i class="fab fa-youtube fa-stack-1x text-white"></i></span><div class="media-body align-self-center">Youtube</div></a></li></ul></div><div class="col-md-6 col-xl-3"><div class="h5">ndd worldwide</div> <a href="#" class="btn btn-outline-light btn-block btn-icon-left btn-sm" data-toggle="modal" data-target="#worldwide"><i class="fas fa-globe mr-2"></i>English </a> <div class="h5">Contact us</div><div><a href="tel:+41445126500">+41 44 512 65 00</a></div><div><a href="mailto:info@ndd.ch">info@ndd.ch</a></div></div></div><div class="row footer-bottom"><div class="col-12 copyright text-center">Copyright © 2019 ndd Medizintechnik AG All Rights Reserved</div><div class="col-12 legal"><ul class="list-inline text-center"><li class="list-inline-item m-0 py-2"><a href="/en/legal/impress.html">Imprint</a><span class="px-2">|</span></li><li class="list-inline-item m-0 py-2"><a href="/en/legal/privacy.html">Privacy</a><span class="px-2">|</span></li><li class="list-inline-item m-0 py-2"><a href="/en/legal/terms-and-conditions.html">Terms and conditions</a><span class="px-2">|</span></li><li class="list-inline-item m-0 py-2"><a href="/en/legal/patents.html">Patents</a></li></ul></div></div></div></footer><a class="back-to-top" href="#"><i class="fas fa-angle-up" data-fa-transform="grow-6"></i></a><div id="quick-navigation" class="collapse"><ul class="quick-navigation list-unstyled row m-2 mb-lg-3"><li class="col p-0"><button class="w-100 rounded-left" data-toggle="modal" data-target="#support" data-form-type="Support"><div class="quickbar-icon p-2 p-sm-4 pb-lg-3"><i class="far fa-life-ring"></i></div><div class="small d-none d-lg-block px-2 pb-2">Support</div></button></li><li class="col p-0"><button class="w-100" data-toggle="modal" data-target="#registration" data-form-type="Registration"><div class="quickbar-icon p-2 p-sm-4 pb-lg-3"><i class="fas fa-key"></i></div><div class="small d-none d-lg-block px-2 pb-2">Registration</div></button></li><li class="col p-0"><button class="w-100 primary rounded-right" data-toggle="modal" data-target="#sales" data-form-type="Sales"><div class="quickbar-icon p-2 p-sm-4 pb-lg-3"><i class="fas fa-users"></i></div><div class="small d-none d-lg-block px-2 pb-2">Sales</div></button></li><li class="col p-0"><button class="w-100 bg-transparent" data-toggle="collapse" data-target="#quick-navigation"><div class="quickbar-icon p-2 p-sm-4 pb-lg-3"><i class="fas fa-times"></i></div><div class="small d-none d-lg-block px-2 pb-2">Close</div></button></li></ul></div><button id="quick-navigation-button" class="collapsed" data-toggle="collapse" data-target="#quick-navigation" aria-expanded="false"><span class="fa-layers fa-fw fa-4x"><i class="fas fa-circle"></i><i class="fa-inverse fas fa-plus" data-fa-transform="shrink-10"></i></span></button><div class="modal" tabindex="-1" role="dialog" id="support" aria-labelledby="supportLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content shadow-lg border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body row"><div class="col-lg-7 py-5 px-4"><div class="h4" id="supportLabel">Technical Support</div><div class="neos-contentcollection"><div class="neos-contentcollection">
+<div class="neos-nodetypes-form">
+	
+			
+<form enctype="multipart/form-data" method="post" id="form-support" action="https://www.ndd.ch/#form-support">
+<div style="display: none"><input type="hidden" name="--form-support[__state]" value="TzozMjoiTmVvc1xGb3JtXENvcmVcUnVudGltZVxGb3JtU3RhdGUiOjI6e3M6MjU6IgAqAGxhc3REaXNwbGF5ZWRQYWdlSW5kZXgiO2k6MDtzOjEzOiIAKgBmb3JtVmFsdWVzIjthOjA6e3192ef2596b92fe47c0ce890fb838ff0cfca22edaaf" /><input type="hidden" name="--form-support[field-privacy-policy-consent]" value="" />
+<input type="hidden" name="--form-support[__trustedProperties]" value="a:25:{s:13:&quot;field-company&quot;;i:1;s:18:&quot;field-company-type&quot;;i:1;s:15:&quot;field-firstname&quot;;i:1;s:14:&quot;field-lastname&quot;;i:1;s:11:&quot;field-title&quot;;i:1;s:10:&quot;field-mail&quot;;i:1;s:13:&quot;field-address&quot;;i:1;s:9:&quot;field-zip&quot;;i:1;s:10:&quot;field-city&quot;;i:1;s:11:&quot;field-state&quot;;i:1;s:13:&quot;field-country&quot;;i:1;s:12:&quot;field-region&quot;;i:1;s:11:&quot;field-phone&quot;;i:1;s:13:&quot;field-website&quot;;i:1;s:13:&quot;field-product&quot;;i:1;s:18:&quot;field-serialnumber&quot;;i:1;s:21:&quot;field-firmwareVersion&quot;;i:1;s:21:&quot;field-softwareVersion&quot;;i:1;s:21:&quot;field-message-support&quot;;i:1;s:14:&quot;field-upload-1&quot;;i:1;s:14:&quot;field-upload-2&quot;;i:1;s:14:&quot;field-upload-3&quot;;i:1;s:28:&quot;field-privacy-policy-consent&quot;;i:1;s:15:&quot;captcha-support&quot;;i:1;s:13:&quot;__currentPage&quot;;i:1;}f718995f365767cc6f632f834d6f27b68f1621b3" />
+</div>
+
+	
+<fieldset>
+	
+	
+		
+<fieldset id="form-support-section-text">
+	
+	<div class="row">
+		
+			<div class="col-12">
+	
+		<p>We are committed to providing first-rate technical support. Email us today and hear back within 24 business hours.</p>
+	
+</div>
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-company">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-company">
+					Company / Hospital
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-company" type="text" name="--form-support[field-company]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-company-type">
+					Company Type
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-support-field-company-type" name="--form-support[field-company-type]"><option value="" selected="selected"></option>
+<option value="distributor">Distributor</option>
+<option value="hospital">Hospital</option>
+<option value="private-practice">Private Practice</option>
+<option value="manufacturer">Manufacturer</option>
+<option value="university">University / College</option>
+<option value="research">Research</option>
+<option value="individual">Individual</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-contact">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-firstname">
+					First Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-firstname" type="text" name="--form-support[field-firstname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-lastname">
+					Last Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-lastname" type="text" name="--form-support[field-lastname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-title">
+					Title
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-title" type="text" name="--form-support[field-title]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-mail">
+					Email
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-mail" type="text" name="--form-support[field-mail]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						We will never share your email address
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-address">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-address">
+					Address
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-address" type="text" name="--form-support[field-address]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-zip">
+					Zip
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-zip" type="text" name="--form-support[field-zip]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-city">
+					City
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-city" type="text" name="--form-support[field-city]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-state">
+					State
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-state" type="text" name="--form-support[field-state]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-from">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-country">
+					Country
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-country" type="text" name="--form-support[field-country]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Where are you from?
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-region">
+					Region
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-support-field-region" name="--form-support[field-region]"><option value="" selected="selected"></option>
+<option value="north-america">North America</option>
+<option value="south-america">South America</option>
+<option value="europe">Europe</option>
+<option value="asia">Asia</option>
+<option value="middle-east">Middle East</option>
+<option value="africa">Africa</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-connect">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-phone">
+					Phone
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-phone" type="text" name="--form-support[field-phone]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Will never be used for advertising purposes
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-website">
+					Website
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-website" type="text" name="--form-support[field-website]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-product">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-product">
+					Product
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-support-field-product" name="--form-support[field-product]"><option value=""></option>
+<option value="EasyOne Air">EasyOne Air</option>
+<option value="EasyOne Pro®">EasyOne Pro®</option>
+<option value="EasyOne Pro® LAB">EasyOne Pro® LAB</option>
+<option value="Easy on-PC">Easy on-PC</option>
+<option value="EasyOne Connect">EasyOne Connect</option>
+<option value="easyone-world-plus">EasyOne World / Plus</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-serialnumber">
+					Product Serial Number
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-serialnumber" type="text" name="--form-support[field-serialnumber]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Numbers on the left side of the slash /
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-firmwareVersion">
+					Firmware Version
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-firmwareVersion" type="text" name="--form-support[field-firmwareVersion]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Main menu / Configuration / Device Information
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-softwareVersion">
+					PC Software Version
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-support-field-softwareVersion" type="text" name="--form-support[field-softwareVersion]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						for example <code>EasyWare 2.9.2</code>
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-support-section-message">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-support-field-message-support">
+					Description
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<textarea placeholder="" rows="3" class="form-control" id="form-support-field-message-support" name="--form-support[field-message-support]"></textarea>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset class="row py-4 my-3 bg-light" id="form-support-section-uploads">
+
+    <div class="col-12 h6">
+        Attach your logfiles, printscreens or photos
+    </div>
+
+    
+        <div class="col-12">
+            <div class="alert alert-info form-section-alert">
+                
+                    <div>
+                        <strong>
+                            Accepted file types
+                        </strong>
+                        .log / .jpg / .png / .gif
+                    </div>
+                
+                    <div>
+                        <strong>
+                            Max. file size
+                        </strong>
+                        10 MB
+                    </div>
+                
+                    <div>
+                        <strong>
+                            Max. 3 files
+                        </strong>
+                        per upload
+                    </div>
+                
+            </div>
+        </div>
+    
+
+    
+        
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+
+	
+		<div id="form-support-field-upload-1-uploadfields">
+
+			<div class="custom-file">
+				<input type="hidden" name="--form-support[field-upload-1][__collectionName]" value="support" /><input class="custom-file-input" id="form-support-field-upload-1" type="file" name="--form-support[field-upload-1]" />
+				<label class="custom-file-label" for="form-support-field-upload-1">
+					Browse file
+				</label>
+			</div>
+
+			
+
+		</div>
+
+		
+
+		<script type="text/javascript">
+		//
+			var resourcePointers = [];
+			function enableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'none';
+				document.getElementById(property + '-uploadfields').style.display = 'block';
+				resourcePointers[property] = document.getElementById(property + '-resource-identity').value;
+				document.getElementById(property + '-resource-identity').value = '';
+				return true;
+			}
+			function disableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'block';
+				document.getElementById(property + '-uploadfields').style.display = 'none';
+				document.getElementById(property + '-resource-identity').value = resourcePointers[property];
+				return true;
+			}
+		//</script>
+	
+
+
+			
+			
+
+		</div>
+	</div>
+
+    
+        
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+
+	
+		<div id="form-support-field-upload-2-uploadfields">
+
+			<div class="custom-file">
+				<input type="hidden" name="--form-support[field-upload-2][__collectionName]" value="support" /><input class="custom-file-input" id="form-support-field-upload-2" type="file" name="--form-support[field-upload-2]" />
+				<label class="custom-file-label" for="form-support-field-upload-2">
+					Browse file
+				</label>
+			</div>
+
+			
+
+		</div>
+
+		
+
+		<script type="text/javascript">
+		//
+			var resourcePointers = [];
+			function enableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'none';
+				document.getElementById(property + '-uploadfields').style.display = 'block';
+				resourcePointers[property] = document.getElementById(property + '-resource-identity').value;
+				document.getElementById(property + '-resource-identity').value = '';
+				return true;
+			}
+			function disableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'block';
+				document.getElementById(property + '-uploadfields').style.display = 'none';
+				document.getElementById(property + '-resource-identity').value = resourcePointers[property];
+				return true;
+			}
+		//</script>
+	
+
+
+			
+			
+
+		</div>
+	</div>
+
+    
+        
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+
+	
+		<div id="form-support-field-upload-3-uploadfields">
+
+			<div class="custom-file">
+				<input type="hidden" name="--form-support[field-upload-3][__collectionName]" value="support" /><input class="custom-file-input" id="form-support-field-upload-3" type="file" name="--form-support[field-upload-3]" />
+				<label class="custom-file-label" for="form-support-field-upload-3">
+					Browse file
+				</label>
+			</div>
+
+			
+
+		</div>
+
+		
+
+		<script type="text/javascript">
+		//
+			var resourcePointers = [];
+			function enableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'none';
+				document.getElementById(property + '-uploadfields').style.display = 'block';
+				resourcePointers[property] = document.getElementById(property + '-resource-identity').value;
+				document.getElementById(property + '-resource-identity').value = '';
+				return true;
+			}
+			function disableUpload(property) {
+				document.getElementById(property + '-preview').style.display = 'block';
+				document.getElementById(property + '-uploadfields').style.display = 'none';
+				document.getElementById(property + '-resource-identity').value = resourcePointers[property];
+				return true;
+			}
+		//</script>
+	
+
+
+			
+			
+
+		</div>
+	</div>
+
+    
+
+</fieldset>
+	
+		
+<fieldset id="form-support-section-privacy">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-support-field-privacy-policy-consent" type="checkbox" name="--form-support[field-privacy-policy-consent]" value="privacy-policy-consent" />
+		<label class="custom-control-label" for="form-support-field-privacy-policy-consent">
+			I understand that my personal data, entered in the contact form, will be used to answer my request. Detailed information on how this data is used can be found in our <a href="/en/legal/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+			
+				<span class="required">*</span>
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+
+	<div class="">
+		<div class="form-group ">
+			
+			
+    <input id="form-support-captcha-support" type="hidden" name="--form-support[captcha-support]" value="" />
+    <div class="g-recaptcha" id="multiple-form-support-captcha-support"></div>
+    <style>.g-recaptcha>div>div {margin: 0 auto;}</style>
+    <script type="text/javascript">!function(e){var t,n,a;e.addEventListener?(t="addEventListener",n=""):(t="attachEvent",n="on"),a=e.getElementById("form-support"),a[t](n+"submit",function(t){e.getElementById("form-support-captcha-support").value=a.getElementsByClassName("g-recaptcha-response")[0].value},!1)}(document);</script>
+
+			
+			
+
+		</div>
+	</div>
+
+	
+</fieldset>
+	<div class="actions">
+		<nav class="form-navigation">
+	
+	
+			<div class="next submit">
+				<button class="btn btn-primary btn-block btn-icon-left" type="submit" name="--form-support[__currentPage]" value="1">
+					
+						<i class="fas fa-envelope"></i>
+					
+					Request support
+				</button>
+			</div>
+		
+</nav>
+
+	</div>
+</form>
+		
+</div>
+</div></div><button type="button" class="btn btn-link btn-block mt-3" data-dismiss="modal">Close</button></div><div class="col-lg-5 py-5 lazyload modal-sidebar rounded-right d-none d-lg-flex"></div></div></div></div></div><div class="modal" tabindex="-1" role="dialog" id="registration" aria-labelledby="registrationLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content shadow-lg border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body row"><div class="col-lg-7 py-5 px-4"><div class="h4" id="registrationLabel">Register your device today!</div><div class="neos-contentcollection"><div class="neos-contentcollection">
+<div class="neos-nodetypes-form">
+	
+			
+<form enctype="multipart/form-data" method="post" id="form-registration" action="https://www.ndd.ch/#form-registration">
+<div style="display: none"><input type="hidden" name="--form-registration[__state]" value="TzozMjoiTmVvc1xGb3JtXENvcmVcUnVudGltZVxGb3JtU3RhdGUiOjI6e3M6MjU6IgAqAGxhc3REaXNwbGF5ZWRQYWdlSW5kZXgiO2k6MDtzOjEzOiIAKgBmb3JtVmFsdWVzIjthOjA6e3192ef2596b92fe47c0ce890fb838ff0cfca22edaaf" /><input type="hidden" name="--form-registration[field-subscribe-newsletter]" value="" />
+<input type="hidden" name="--form-registration[field-subscribe-software-updates]" value="" />
+<input type="hidden" name="--form-registration[field-privacy-policy-consent]" value="" />
+<input type="hidden" name="--form-registration[__trustedProperties]" value="a:22:{s:18:&quot;field-serialnumber&quot;;i:1;s:23:&quot;field-place-of-purchase&quot;;i:1;s:13:&quot;field-company&quot;;i:1;s:18:&quot;field-company-type&quot;;i:1;s:15:&quot;field-firstname&quot;;i:1;s:14:&quot;field-lastname&quot;;i:1;s:11:&quot;field-title&quot;;i:1;s:10:&quot;field-mail&quot;;i:1;s:13:&quot;field-address&quot;;i:1;s:9:&quot;field-zip&quot;;i:1;s:10:&quot;field-city&quot;;i:1;s:11:&quot;field-state&quot;;i:1;s:13:&quot;field-country&quot;;i:1;s:12:&quot;field-region&quot;;i:1;s:11:&quot;field-phone&quot;;i:1;s:13:&quot;field-website&quot;;i:1;s:13:&quot;field-product&quot;;i:1;s:26:&quot;field-subscribe-newsletter&quot;;i:1;s:32:&quot;field-subscribe-software-updates&quot;;i:1;s:28:&quot;field-privacy-policy-consent&quot;;i:1;s:20:&quot;captcha-registration&quot;;i:1;s:13:&quot;__currentPage&quot;;i:1;}71fa88c4886058f7873f7cdb6637229d9dcd6e74" />
+</div>
+
+	
+<fieldset>
+	
+	
+		
+<fieldset id="form-registration-section-text">
+	
+	<div class="row">
+		
+			<div class="col-12">
+	
+		<p>Fill out the form below to take full advantage of the warranty program for your ndd product.</p>
+	
+</div>
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-product">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-serialnumber">
+					Product Serial Number
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-serialnumber" type="text" name="--form-registration[field-serialnumber]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Numbers on the left side of the slash /
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-place-of-purchase">
+					Place of Purchase
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-place-of-purchase" type="text" name="--form-registration[field-place-of-purchase]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Where did you buy the product?
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-company">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-company">
+					Company / Hospital
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-company" type="text" name="--form-registration[field-company]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-company-type">
+					Company Type
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-registration-field-company-type" name="--form-registration[field-company-type]"><option value="" selected="selected"></option>
+<option value="distributor">Distributor</option>
+<option value="hospital">Hospital</option>
+<option value="private-practice">Private Practice</option>
+<option value="manufacturer">Manufacturer</option>
+<option value="university">University / College</option>
+<option value="research">Research</option>
+<option value="individual">Individual</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-contact">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-firstname">
+					First Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-firstname" type="text" name="--form-registration[field-firstname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-lastname">
+					Last Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-lastname" type="text" name="--form-registration[field-lastname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-title">
+					Title
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-title" type="text" name="--form-registration[field-title]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-mail">
+					Email
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-mail" type="text" name="--form-registration[field-mail]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						We will never share your email address
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-address">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-address">
+					Address
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-address" type="text" name="--form-registration[field-address]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-zip">
+					Zip
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-zip" type="text" name="--form-registration[field-zip]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-city">
+					City
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-city" type="text" name="--form-registration[field-city]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-state">
+					State
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-state" type="text" name="--form-registration[field-state]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-from">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-country">
+					Country
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-country" type="text" name="--form-registration[field-country]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Where are you from?
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-region">
+					Region
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-registration-field-region" name="--form-registration[field-region]"><option value="" selected="selected"></option>
+<option value="north-america">North America</option>
+<option value="south-america">South America</option>
+<option value="europe">Europe</option>
+<option value="asia">Asia</option>
+<option value="middle-east">Middle East</option>
+<option value="africa">Africa</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-connect">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-phone">
+					Phone
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-phone" type="text" name="--form-registration[field-phone]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Will never be used for advertising purposes
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-website">
+					Website
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-registration-field-website" type="text" name="--form-registration[field-website]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-registration-field-product">
+					Product
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-registration-field-product" name="--form-registration[field-product]"><option value=""></option>
+<option value="EasyOne Air">EasyOne Air</option>
+<option value="EasyOne Pro®">EasyOne Pro®</option>
+<option value="EasyOne Pro® LAB">EasyOne Pro® LAB</option>
+<option value="Easy on-PC">Easy on-PC</option>
+<option value="EasyOne Connect">EasyOne Connect</option>
+<option value="easyone-world-plus">EasyOne World / Plus</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-subscription">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-registration-field-subscribe-newsletter" type="checkbox" name="--form-registration[field-subscribe-newsletter]" value="subscribe-newsletter" />
+		<label class="custom-control-label" for="form-registration-field-subscribe-newsletter">
+			I'm interested in receiving promotional emails from ndd
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-registration-field-subscribe-software-updates" type="checkbox" name="--form-registration[field-subscribe-software-updates]" value="subscribe-software-updates" />
+		<label class="custom-control-label" for="form-registration-field-subscribe-software-updates">
+			I would like to receive email notifications for free software upgrades
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-registration-section-privacy">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-registration-field-privacy-policy-consent" type="checkbox" name="--form-registration[field-privacy-policy-consent]" value="privacy-policy-consent" />
+		<label class="custom-control-label" for="form-registration-field-privacy-policy-consent">
+			I understand that my personal data, entered in the contact form, will be used to answer my request. Detailed information on how this data is used can be found in our <a href="/en/legal/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+			
+				<span class="required">*</span>
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+
+	<div class="">
+		<div class="form-group ">
+			
+			
+    <input id="form-registration-captcha-registration" type="hidden" name="--form-registration[captcha-registration]" value="" />
+    <div class="g-recaptcha" id="multiple-form-registration-captcha-registration"></div>
+    <style>.g-recaptcha>div>div {margin: 0 auto;}</style>
+    <script type="text/javascript">!function(e){var t,n,a;e.addEventListener?(t="addEventListener",n=""):(t="attachEvent",n="on"),a=e.getElementById("form-registration"),a[t](n+"submit",function(t){e.getElementById("form-registration-captcha-registration").value=a.getElementsByClassName("g-recaptcha-response")[0].value},!1)}(document);</script>
+
+			
+			
+
+		</div>
+	</div>
+
+	
+</fieldset>
+	<div class="actions">
+		<nav class="form-navigation">
+	
+	
+			<div class="next submit">
+				<button class="btn btn-primary btn-block btn-icon-left" type="submit" name="--form-registration[__currentPage]" value="1">
+					
+						<i class="fas fa-key"></i>
+					
+					Register product
+				</button>
+			</div>
+		
+</nav>
+
+	</div>
+</form>
+		
+</div>
+</div></div><button type="button" class="btn btn-link btn-block mt-3" data-dismiss="modal">Close</button></div><div class="col-lg-5 py-5 lazyload modal-sidebar rounded-right d-none d-lg-flex"></div></div></div></div></div><div class="modal" tabindex="-1" role="dialog" id="sales" aria-labelledby="salesLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content shadow-lg border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body row"><div class="col-lg-7 py-5 px-4"><div class="h4" id="salesLabel">Product Request<br/></div><div class="neos-contentcollection"><div class="neos-contentcollection">
+<div class="neos-nodetypes-form">
+	
+			
+<form enctype="multipart/form-data" method="post" id="form-sales" action="https://www.ndd.ch/#form-sales">
+<div style="display: none"><input type="hidden" name="--form-sales[__state]" value="TzozMjoiTmVvc1xGb3JtXENvcmVcUnVudGltZVxGb3JtU3RhdGUiOjI6e3M6MjU6IgAqAGxhc3REaXNwbGF5ZWRQYWdlSW5kZXgiO2k6MDtzOjEzOiIAKgBmb3JtVmFsdWVzIjthOjA6e3192ef2596b92fe47c0ce890fb838ff0cfca22edaaf" /><input type="hidden" name="--form-sales[field-products]" value="" />
+<input type="hidden" name="--form-sales[field-subscribe-newsletter]" value="" />
+<input type="hidden" name="--form-sales[field-subscribe-software-updates]" value="" />
+<input type="hidden" name="--form-sales[field-privacy-policy-consent]" value="" />
+<input type="hidden" name="--form-sales[__trustedProperties]" value="a:21:{s:13:&quot;field-company&quot;;i:1;s:18:&quot;field-company-type&quot;;i:1;s:15:&quot;field-firstname&quot;;i:1;s:14:&quot;field-lastname&quot;;i:1;s:11:&quot;field-title&quot;;i:1;s:10:&quot;field-mail&quot;;i:1;s:13:&quot;field-address&quot;;i:1;s:9:&quot;field-zip&quot;;i:1;s:10:&quot;field-city&quot;;i:1;s:11:&quot;field-state&quot;;i:1;s:20:&quot;field-country-select&quot;;i:1;s:11:&quot;field-phone&quot;;i:1;s:13:&quot;field-website&quot;;i:1;s:14:&quot;field-products&quot;;a:6:{i:0;i:1;i:1;i:1;i:2;i:1;i:3;i:1;i:4;i:1;i:5;i:1;}s:19:&quot;field-message-sales&quot;;i:1;s:22:&quot;field-how-did-you-hear&quot;;i:1;s:26:&quot;field-subscribe-newsletter&quot;;i:1;s:32:&quot;field-subscribe-software-updates&quot;;i:1;s:28:&quot;field-privacy-policy-consent&quot;;i:1;s:13:&quot;captcha-sales&quot;;i:1;s:13:&quot;__currentPage&quot;;i:1;}c1a75104334938e4fedba5693a0e10d030589dbe" />
+</div>
+
+	
+<fieldset>
+	
+	
+		
+<fieldset id="form-sales-section-text">
+	
+	<div class="row">
+		
+			<div class="col-12">
+	
+		<p>Need a quote? Want a demo? Looking for more information? Ready to buy? Curious about current promotions?</p><p>Use this form to get in touch with our sales team!</p>
+	
+</div>
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-company">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-company">
+					Company / Hospital
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-company" type="text" name="--form-sales[field-company]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-company-type">
+					Company Type
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-sales-field-company-type" name="--form-sales[field-company-type]"><option value="" selected="selected"></option>
+<option value="distributor">Distributor</option>
+<option value="hospital">Hospital</option>
+<option value="private-practice">Private Practice</option>
+<option value="manufacturer">Manufacturer</option>
+<option value="university">University / College</option>
+<option value="research">Research</option>
+<option value="individual">Individual</option>
+</select>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-contact">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-firstname">
+					First Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-firstname" type="text" name="--form-sales[field-firstname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-lastname">
+					Last Name
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-lastname" type="text" name="--form-sales[field-lastname]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-title">
+					Title
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-title" type="text" name="--form-sales[field-title]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-mail">
+					Email
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-mail" type="text" name="--form-sales[field-mail]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						We will never share your email address
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-address">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-address">
+					Address
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-address" type="text" name="--form-sales[field-address]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-zip">
+					Zip
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-zip" type="text" name="--form-sales[field-zip]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-city">
+					City
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-city" type="text" name="--form-sales[field-city]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-state">
+					State
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-state" type="text" name="--form-sales[field-state]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-from">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-country-select">
+					Country
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<select class="form-control" id="form-sales-field-country-select" name="--form-sales[field-country-select]"><option value="" selected="selected"></option>
+<option value="country-select-option-af">Afghanistan</option>
+<option value="country-select-option-al">Albania</option>
+<option value="country-select-option-dz">Algeria</option>
+<option value="country-select-option-ad">Andorra</option>
+<option value="country-select-option-ao">Angola</option>
+<option value="country-select-option-ar">Argentina</option>
+<option value="country-select-option-am">Armenia</option>
+<option value="country-select-option-au">Australia</option>
+<option value="country-select-option-at">Austria</option>
+<option value="country-select-option-az">Azerbaijan</option>
+<option value="country-select-option-bs">Bahamas</option>
+<option value="country-select-option-bh">Bahrain</option>
+<option value="country-select-option-bd">Bangladesh</option>
+<option value="country-select-option-bb">Barbados</option>
+<option value="country-select-option-by">Belarus</option>
+<option value="country-select-option-be">Belgium</option>
+<option value="country-select-option-bz">Belize</option>
+<option value="country-select-option-bj">Benin</option>
+<option value="country-select-option-bt">Bhutan</option>
+<option value="country-select-option-bo">Bolivia (Plurinational State of)</option>
+<option value="country-select-option-ba">Bosnia and Herzegovina</option>
+<option value="country-select-option-bw">Botswana</option>
+<option value="country-select-option-br">Brazil</option>
+<option value="country-select-option-bn">Brunei Darussalam</option>
+<option value="country-select-option-bg">Bulgaria</option>
+<option value="country-select-option-bf">Burkina Faso</option>
+<option value="country-select-option-bi">Burundi</option>
+<option value="country-select-option-cv">Cabo Verde</option>
+<option value="country-select-option-kh">Cambodia</option>
+<option value="country-select-option-cm">Cameroon</option>
+<option value="country-select-option-ca">Canada</option>
+<option value="country-select-option-cf">Central African Republic</option>
+<option value="country-select-option-cl">Chile</option>
+<option value="country-select-option-cn">China</option>
+<option value="country-select-option-co">Colombia</option>
+<option value="country-select-option-cg">Congo</option>
+<option value="country-select-option-cd">Congo, (Democratic Republic of the)</option>
+<option value="country-select-option-cr">Costa Rica</option>
+<option value="country-select-option-ci">Côte d’Ivoire</option>
+<option value="country-select-option-hr">Croatia</option>
+<option value="country-select-option-cu">Cuba</option>
+<option value="country-select-option-cy">Cyprus</option>
+<option value="country-select-option-cz">Czechia</option>
+<option value="country-select-option-dk">Denmark</option>
+<option value="country-select-option-dm">Dominica</option>
+<option value="country-select-option-do">Dominican Republic</option>
+<option value="country-select-option-ec">Ecuador</option>
+<option value="country-select-option-eg">Egypt</option>
+<option value="country-select-option-sv">El Salvador</option>
+<option value="country-select-option-gq">Equatorial Guinea</option>
+<option value="country-select-option-er">Eritrea</option>
+<option value="country-select-option-ee">Estonia</option>
+<option value="country-select-option-et">Ethiopia</option>
+<option value="country-select-option-fj">Fiji</option>
+<option value="country-select-option-fi">Finland</option>
+<option value="country-select-option-fr">France</option>
+<option value="country-select-option-gf">French Guiana</option>
+<option value="country-select-option-ge">Georgia</option>
+<option value="country-select-option-de">Germany</option>
+<option value="country-select-option-gh">Ghana</option>
+<option value="country-select-option-gr">Greece</option>
+<option value="country-select-option-gd">Grenada</option>
+<option value="country-select-option-gp">Guadeloupe</option>
+<option value="country-select-option-gt">Guatemala</option>
+<option value="country-select-option-gn">Guinea</option>
+<option value="country-select-option-gy">Guyana</option>
+<option value="country-select-option-hn">Honduras</option>
+<option value="country-select-option-hk">Hong Kong</option>
+<option value="country-select-option-hu">Hungary</option>
+<option value="country-select-option-is">Iceland</option>
+<option value="country-select-option-in">India</option>
+<option value="country-select-option-id">Indonesia</option>
+<option value="country-select-option-ir">Iran (Islamic Republic of)</option>
+<option value="country-select-option-iq">Iraq</option>
+<option value="country-select-option-ie">Ireland</option>
+<option value="country-select-option-il">Israel</option>
+<option value="country-select-option-it">Italy</option>
+<option value="country-select-option-jm">Jamaica</option>
+<option value="country-select-option-jp">Japan</option>
+<option value="country-select-option-jo">Jordan</option>
+<option value="country-select-option-kz">Kazakhstan</option>
+<option value="country-select-option-ke">Kenya</option>
+<option value="country-select-option-ki">Kiribati</option>
+<option value="country-select-option-kp">Korea (Democratic People’s Republic of)</option>
+<option value="country-select-option-kr">Korea (Republic of)</option>
+<option value="country-select-option-kw">Kuwait</option>
+<option value="country-select-option-kg">Kyrgyzstan</option>
+<option value="country-select-option-la">Lao People’s Democratic Republic</option>
+<option value="country-select-option-lv">Latvia</option>
+<option value="country-select-option-lb">Lebanon</option>
+<option value="country-select-option-ls">Lesotho</option>
+<option value="country-select-option-lr">Liberia</option>
+<option value="country-select-option-ly">Libya</option>
+<option value="country-select-option-lt">Lithuania</option>
+<option value="country-select-option-lu">Luxemburg</option>
+<option value="country-select-option-mk">Macedonia (the former Yugoslav Republic of)</option>
+<option value="country-select-option-mg">Madagascar</option>
+<option value="country-select-option-my">Malaysia</option>
+<option value="country-select-option-mv">Maldives</option>
+<option value="country-select-option-ml">Mali</option>
+<option value="country-select-option-mt">Malta</option>
+<option value="country-select-option-mq">Martinique</option>
+<option value="country-select-option-mr">Mauritania</option>
+<option value="country-select-option-mu">Mauritius</option>
+<option value="country-select-option-mx">Mexico</option>
+<option value="country-select-option-fm">Micronesia (Federated States of)</option>
+<option value="country-select-option-md">Moldova (Republic of)</option>
+<option value="country-select-option-mc">Monaco</option>
+<option value="country-select-option-mn">Mongolia</option>
+<option value="country-select-option-me">Montenegro</option>
+<option value="country-select-option-ma">Morocco</option>
+<option value="country-select-option-mz">Mozambique</option>
+<option value="country-select-option-mm">Myanmar</option>
+<option value="country-select-option-na">Namibia</option>
+<option value="country-select-option-nr">Nauru</option>
+<option value="country-select-option-np">Nepal</option>
+<option value="country-select-option-nl">Netherlands</option>
+<option value="country-select-option-nc">New Caledonia</option>
+<option value="country-select-option-nz">New Zealand</option>
+<option value="country-select-option-ni">Nicaragua</option>
+<option value="country-select-option-ng">Nigeria</option>
+<option value="country-select-option-no">Norway</option>
+<option value="country-select-option-om">Oman</option>
+<option value="country-select-option-pk">Pakistan</option>
+<option value="country-select-option-ps">Palestine, State of</option>
+<option value="country-select-option-pa">Panama</option>
+<option value="country-select-option-pg">Papua New Guinea</option>
+<option value="country-select-option-py">Paraguay</option>
+<option value="country-select-option-pe">Peru</option>
+<option value="country-select-option-ph">Philippines</option>
+<option value="country-select-option-pl">Poland</option>
+<option value="country-select-option-pt">Portugal</option>
+<option value="country-select-option-pr">Puerto Rico</option>
+<option value="country-select-option-qa">Qatar</option>
+<option value="country-select-option-re">Réunion</option>
+<option value="country-select-option-ro">Romania</option>
+<option value="country-select-option-ru">Russian Federation</option>
+<option value="country-select-option-rw">Rwanda</option>
+<option value="country-select-option-lc">Saint Lucia</option>
+<option value="country-select-option-ws">Samoa</option>
+<option value="country-select-option-sm">San Marino</option>
+<option value="country-select-option-st">São Tomé and Príncipe</option>
+<option value="country-select-option-sa">Saudi Arabia</option>
+<option value="country-select-option-sn">Senegal</option>
+<option value="country-select-option-rs">Serbia</option>
+<option value="country-select-option-sc">Seychelles</option>
+<option value="country-select-option-sl">Sierra Leone</option>
+<option value="country-select-option-sg">Singapore</option>
+<option value="country-select-option-sk">Slovakia</option>
+<option value="country-select-option-si">Slovenia</option>
+<option value="country-select-option-za">South Africa</option>
+<option value="country-select-option-es">Spain</option>
+<option value="country-select-option-lk">Sri Lanka</option>
+<option value="country-select-option-sd">Sudan</option>
+<option value="country-select-option-sr">Suriname</option>
+<option value="country-select-option-sz">Swaziland</option>
+<option value="country-select-option-se">Sweden</option>
+<option value="country-select-option-ch">Switzerland</option>
+<option value="country-select-option-sy">Syrian Arab Republic</option>
+<option value="country-select-option-tw">Taiwan, Province of China</option>
+<option value="country-select-option-tj">Tajikistan</option>
+<option value="country-select-option-tz">Tanzania, United Republic of</option>
+<option value="country-select-option-th">Thailand</option>
+<option value="country-select-option-tg">Togo</option>
+<option value="country-select-option-to">Tonga</option>
+<option value="country-select-option-tt">Trinidad and Tobago</option>
+<option value="country-select-option-tn">Tunisia</option>
+<option value="country-select-option-tr">Turkey</option>
+<option value="country-select-option-tm">Turkmenistan</option>
+<option value="country-select-option-tv">Tuvalu</option>
+<option value="country-select-option-ug">Uganda</option>
+<option value="country-select-option-ua">Ukraine</option>
+<option value="country-select-option-ae">United Arab Emirates</option>
+<option value="country-select-option-gb">United Kingdom of Great Britain and Northern Ireland</option>
+<option value="country-select-option-us">United States of America</option>
+<option value="country-select-option-uy">Uruguay</option>
+<option value="country-select-option-zu">Uzbekistan</option>
+<option value="country-select-option-vu">Vanuatu</option>
+<option value="country-select-option-ve">Venezuela (Bolivarian Republic of)</option>
+<option value="country-select-option-vn">Viet Nam</option>
+<option value="country-select-option-ye">Yemen</option>
+<option value="country-select-option-zw">Zimbabwe</option>
+</select>
+
+			
+			
+				<div class="small text-muted">
+					
+						Where are you from?
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-connect">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-phone">
+					Phone
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-phone" type="text" name="--form-sales[field-phone]" value="" />
+
+			
+			
+				<div class="small text-muted">
+					
+						Will never be used for advertising purposes
+					
+				</div>
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-sm-6">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-website">
+					Website
+					
+				</label>
+			
+			
+	<input class="form-control" id="form-sales-field-website" type="text" name="--form-sales[field-website]" value="" />
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-product">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-products">
+					Product of interest (check all that apply)
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-0" type="checkbox" name="--form-sales[field-products][]" value="EasyOne Air" />
+			<label class="custom-control-label" for="field-products-0">
+				EasyOne Air
+			</label>
+		</div>
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-1" type="checkbox" name="--form-sales[field-products][]" value="EasyOne Pro®" />
+			<label class="custom-control-label" for="field-products-1">
+				EasyOne Pro®
+			</label>
+		</div>
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-2" type="checkbox" name="--form-sales[field-products][]" value="EasyOne Pro® LAB" />
+			<label class="custom-control-label" for="field-products-2">
+				EasyOne Pro® LAB
+			</label>
+		</div>
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-3" type="checkbox" name="--form-sales[field-products][]" value="Easy on-PC" />
+			<label class="custom-control-label" for="field-products-3">
+				Easy on-PC
+			</label>
+		</div>
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-4" type="checkbox" name="--form-sales[field-products][]" value="EasyOne Connect" />
+			<label class="custom-control-label" for="field-products-4">
+				EasyOne Connect
+			</label>
+		</div>
+	
+		<div class="custom-control custom-checkbox">
+			<input class="custom-control-input" id="field-products-5" type="checkbox" name="--form-sales[field-products][]" value="other" />
+			<label class="custom-control-label" for="field-products-5">
+				Other
+			</label>
+		</div>
+	
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-message">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-message-sales">
+					Enter your question or comment here...
+					
+						<span class="required">*</span>
+					
+				</label>
+			
+			
+	<textarea placeholder="" rows="3" class="form-control" id="form-sales-field-message-sales" name="--form-sales[field-message-sales]"></textarea>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+				<label class="control-label small font-weight-bold mb-1" for="form-sales-field-how-did-you-hear">
+					How did you hear about ndd?
+					
+				</label>
+			
+			
+	<textarea placeholder="" rows="3" class="form-control" id="form-sales-field-how-did-you-hear" name="--form-sales[field-how-did-you-hear]"></textarea>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-subscription">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-sales-field-subscribe-newsletter" type="checkbox" name="--form-sales[field-subscribe-newsletter]" value="subscribe-newsletter" />
+		<label class="custom-control-label" for="form-sales-field-subscribe-newsletter">
+			I'm interested in receiving promotional emails from ndd
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-sales-field-subscribe-software-updates" type="checkbox" name="--form-sales[field-subscribe-software-updates]" value="subscribe-software-updates" />
+		<label class="custom-control-label" for="form-sales-field-subscribe-software-updates">
+			I would like to receive email notifications for free software upgrades
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+<fieldset id="form-sales-section-privacy">
+	
+	<div class="row">
+		
+			
+
+	<div class="col-12">
+		<div class="form-group ">
+			
+			
+	<div class="custom-control custom-checkbox">
+		<input class="custom-control-input" id="form-sales-field-privacy-policy-consent" type="checkbox" name="--form-sales[field-privacy-policy-consent]" value="privacy-policy-consent" />
+		<label class="custom-control-label" for="form-sales-field-privacy-policy-consent">
+			I understand that my personal data, entered in the contact form, will be used to answer my request. Detailed information on how this data is used can be found in our <a href="/en/legal/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+			
+				<span class="required">*</span>
+			
+		</label>
+	</div>
+
+			
+			
+
+		</div>
+	</div>
+
+		
+	</div>
+</fieldset>
+	
+		
+
+	<div class="">
+		<div class="form-group ">
+			
+			
+    <input id="form-sales-captcha-sales" type="hidden" name="--form-sales[captcha-sales]" value="" />
+    <div class="g-recaptcha" id="multiple-form-sales-captcha-sales"></div>
+    <style>.g-recaptcha>div>div {margin: 0 auto;}</style>
+    <script type="text/javascript">!function(e){var t,n,a;e.addEventListener?(t="addEventListener",n=""):(t="attachEvent",n="on"),a=e.getElementById("form-sales"),a[t](n+"submit",function(t){e.getElementById("form-sales-captcha-sales").value=a.getElementsByClassName("g-recaptcha-response")[0].value},!1)}(document);</script>
+
+			
+			
+
+		</div>
+	</div>
+
+	
+</fieldset>
+	<div class="actions">
+		<nav class="form-navigation">
+	
+	
+			<div class="next submit">
+				<button class="btn btn-primary btn-block btn-icon-left" type="submit" name="--form-sales[__currentPage]" value="1">
+					
+						<i class="fas fa-envelope"></i>
+					
+					Contact the ndd team
+				</button>
+			</div>
+		
+</nav>
+
+	</div>
+</form>
+		
+</div>
+</div></div><button type="button" class="btn btn-link btn-block mt-3" data-dismiss="modal">Close</button></div><div class="col-lg-5 py-5 lazyload modal-sidebar rounded-right d-none d-lg-flex"></div></div></div></div></div><div class="modal" tabindex="-1" role="dialog" id="worldwide" aria-labelledby="worldwideLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content shadow-lg border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body row"><div class="col-lg-7 py-5 px-4"><div class="h4" id="worldwideLabel">ndd worldwide</div> <p>Choose your target language (market) for the current page:</p><button data-dismiss="modal" class="btn btn-primary btn-block btn-icon-left mb-2" data-toggle="tooltip" data-placement="bottom" title="That&#039;s your current selected language (market)"><i class="fas fa-globe"></i>English </button><a href="https://www.nddmed.com/en-us" class="btn btn-outline-primary btn-block btn-icon-left mb-2"><i class="fas fa-globe"></i>English (United States) </a><a href="https://www.ndd.ch/de" class="btn btn-outline-primary btn-block btn-icon-left mb-2"><i class="fas fa-globe"></i>Deutsch </a><a href="https://www.ndd.ch/es" class="btn btn-outline-primary btn-block btn-icon-left mb-2"><i class="fas fa-globe"></i>Español </a> <button type="button" class="btn btn-link btn-block mt-3" data-dismiss="modal">Close</button></div><div class="col-lg-5 py-5 lazyload modal-sidebar rounded-right d-none d-lg-flex" data-bg="https://www.ndd.ch/_Resources/Static/Packages/Ndd.NddCh/Images/ModalBackground/worldwide.jpg?bust=bd8c9ab6"></div></div></div></div></div><div class="modal" tabindex="-1" role="dialog" id="search" aria-labelledby="searchLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content shadow-lg border-0"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body row"><div class="col-lg-7 py-5 px-4"><form class="search-form" action="/en/search.html" method="GET"><div class="mt-3 mt-lg-0"><input type="text" name="search" class="form-control search-input" placeholder="Search for ..." autofocus /><small class="text-muted">Type in your keyword and click ENTER</small></div></form><div class="row"><div class="col-12"><div class="h6 mt-4">Popular</div><ul class="popular-search-keywords"><li><a href="/en/search.html?search=application+notes">application notes</a></li><li><a href="/en/search.html?search=software+download">software download</a></li><li><a href="/en/search.html?search=easyone+air">easyone air</a></li><li><a href="/en/search.html?search=trueflow+technology">trueflow technology</a></li><li><a href="/en/search.html?search=product+line">product line</a></li><li><a href="/en/search.html?search=where+can+i">where can i</a></li></ul></div></div><button type="button" class="btn btn-link btn-block mt-3" data-dismiss="modal">Close</button></div><div class="col-lg-5 py-5 lazyload modal-sidebar rounded-right d-none d-lg-flex" data-bg><div><div class="h6">Helpful Links</div><ul><li><a href="/en/support/download.html">Downloads</a></li><li><a href="/en/support/scientific-documents.html">Scientific documents</a></li><li><a href="/en/support/faq.html">FAQ</a></li></ul></div></div></div></div></div></div><script src="https://www.ndd.ch/_Resources/Static/Packages/Psmb.Ajaxify/ajax.js?bust=62c0d666"></script><script src="https://www.ndd.ch/_Resources/Static/Packages/Ndd.NddCh/JavaScript/App.js?bust=d0dc135c"></script><script src="https://www.ndd.ch/_Resources/Static/Packages/TMS.Basics.Text/JavaScript/Table.js?bust=fa68d8f4"></script><script src="https://www.ndd.ch/_Resources/Static/Packages/TMS.CookieConsent/JavaScript/cookieconsent.min.js?bust=253b2883"></script><script>;window.cookieconsent.initialise({'enabled':!0,'position':'bottom-left','theme':'block','palette':{'popup':{'background':'#fff','text':'#333','link':'#000'},'button':{'background':'transparent','border':'#000','text':'#000'},'highlight':{'background':'#000','border':'#000','text':'#fff'}},'showLink':!0,'content':{'message':'We use cookies on our website to provide you with an optimal experience. By using the site, we will assume that you agree to our cookie policy.','dismiss':'Agree and dismiss','link':'Learn more','href':'\/en\/legal\/privacy.html'}});</script><script>;var gaProperty='UA-54224036-1',disableStr='ga-disable-'+gaProperty;if(document.cookie.indexOf(disableStr+'=true')>-1){window[disableStr]=!0};function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';window[disableStr]=!0;alert('Tracking by Google Analytics has been disabled in your browser for this site.')};</script><script>(function(e,s,o,c,t,a,n){e["GoogleAnalyticsObject"]=t;e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date();a=s.createElement(o),n=s.getElementsByTagName(o)[0];a.async=1;a.src=c;n.parentNode.insertBefore(a,n)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create","UA-54224036-1","auto");ga("set","anonymizeIp",!0);ga("send","pageview");setTimeout("ga('send','event','adjusted bounce rate','page visit 30 seconds or more')",30000);</script><script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit&hl=en" async defer></script><script type="text/javascript" charset="utf-8">;var captchaCallback=function(){var e=document.querySelectorAll('div[class=g-recaptcha]');for(i=0;i<e.length;i++){grecaptcha.render(e[i].id,{'sitekey':'6LeRHzEUAAAAAAkhjT7uN2ELyp1QmNrVI4PrUGka','theme':'light','type':'image','size':'normal','tabindex':0})}};</script><script data-neos-node="/sites/nddch@live;language=en" src="https://www.ndd.ch/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js?bust=45f0ece1" async></script></body></html>

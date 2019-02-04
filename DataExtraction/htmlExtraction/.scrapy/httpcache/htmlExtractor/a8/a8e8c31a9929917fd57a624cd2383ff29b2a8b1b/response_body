@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<script>var dataLayer = [{"drupalLanguage":"en","drupalCountry":"","siteName":"STANLEY Healthcare","entityType":"node","entityBundle":"page","entityId":"324","entityTitle":"404 Page Not Found","entityLangcode":"en","entityVid":"2686","entityUid":"1","entityCreated":"1541063262","entityStatus":"1","entityName":"siteadmin","primaryCategory":"solutions","subCategory1":"resident-safety","subCategory2":"fall-management","userUid":0}];</script>
+<meta name="title" content="404 Page Not Found | STANLEY Healthcare" />
+<link rel="canonical" href="https://www.stanleyhealthcare.com/404-page-not-found" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>function euCookieComplianceLoadScripts() {}</script>
+<style></style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Corporation",
+            "@id": "https://www.stanleyhealthcare.com/",
+            "url": "https://www.stanleyhealthcare.com/",
+            "name": "STANLEY Healthcare",
+            "telephone": "+1-888-622-6992",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-888-622-6992",
+                "contactType": "customer service",
+                "areaServed": {
+                    "@type": "Place",
+                    "name": [
+                        "North America",
+                        "Europe",
+                        "Asia",
+                        "Middle East"
+                    ],
+                    "url": "https://www.stanleyhealthcare.com/",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "130 Turner Street, Building #3",
+                        "addressRegion": [
+                            "Waltham",
+                            "MA"
+                        ],
+                        "postalCode": "02453",
+                        "addressCountry": "USA"
+                    }
+                }
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.stanleyhealthcare.com//themes/custom/stanley_bootstrap/logo.svg"
+            },
+            "brand": {
+                "@type": "Brand",
+                "name": [
+                    "Accushield",
+                    "AeroScout Links",
+                    "AeroScout RTLS",
+                    "Arial",
+                    "Bed-Check",
+                    "Foresite",
+                    "Hugs",
+                    "M200",
+                    "MyCall",
+                    "RoamAlert",
+                    "SpaceTRAX",
+                    "STANLEY Healthcare",
+                    "Tabs",
+                    "UMP Fall Management",
+                    "WanderGuard Blue"
+                ]
+            }
+        }
+    ]
+}</script>
+<link rel="shortcut icon" href="/sites/stanleyhealthcare.com/themes/custom/stanley_bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="/404-page-not-found" />
+<script src="/sites/stanleyhealthcare.com/files/google_tag/google_tag.script.js?plwc1x"></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>404 Page Not Found | STANLEY Healthcare</title>
+    <link rel="stylesheet" href="/sites/stanleyhealthcare.com/files/css/css_VrmClTevYs2VDWuAAgUTxDtPl1b_8ALNtx8Nok3bjqc.css?plwc1x" media="all" />
+<link rel="stylesheet" href="/sites/stanleyhealthcare.com/files/css/css_K9HOBAwoorsbucPREnJw8rkoFw74IyBvekjP-JdpGks.css?plwc1x" media="all" />
+<link rel="stylesheet" href="//use.typekit.net/pbm7qeh.css" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/stanleyhealthcare.com/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="path-solutions page-node-type-page has-glyphicons">
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF5R39D" height="0" width="0" title="Google Tag Manager"></iframe></noscript>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+              <header class="navbar navbar-default container-fluid" id="navbar" role="banner">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <img src="/sites/stanleyhealthcare.com/themes/custom/stanley_bootstrap/logo.svg" alt="Home" />
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-stanley-bootstrap-main-menu-menu" id="block-stanley-bootstrap-main-menu">
+            <h2 class="sr-only" id="block-stanley-bootstrap-main-menu-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="expanded dropdown first">
+              <a class="dropdown-toggle" href="/hospitals-clinics" data-toggle="dropdown">Hospitals &amp; Clinics<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                      <li class="expanded dropdown first">
+              <a href="/hospital-clinics/protection">Protection</a>
+                          <ul class="dropdown-menu">
+                      <li class="first">
+              <a href="/hospital-clinics/protection/infant-protection">Infants</a>
+                  </li>
+                      <li>
+              <a href="/hospital-clinics/protection/patients">Patients</a>
+                  </li>
+                      <li class="last">
+              <a href="/hospital-clinics/protection/staff">Staff</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      <li>
+              <a href="/hospital-clinics/fall-management">Fall Management</a>
+                  </li>
+                      <li class="expanded dropdown">
+              <a href="/hospital-clinics/rtls">RTLS</a>
+                          <ul class="dropdown-menu">
+                      <li class="first">
+              <a href="/hospital-clinics/rtls/asset-management">Asset Management</a>
+                  </li>
+                      <li>
+              <a href="/hospital-clinics/rtls/hand-hygiene-compliance-monitoring">Hand Hygiene Compliance Monitoring</a>
+                  </li>
+                      <li>
+              <a href="/hospitals-clinics/rtls/aeroscout-temperature-and-environmental-monitoring">Temperature &amp; Environmental Monitoring</a>
+                  </li>
+                      <li>
+              <a href="/hospital-clinics/rtls/workflow-solutions/patients">Patient Flow</a>
+                  </li>
+                      <li class="last">
+              <a href="/hospital-clinics/rtls/workflow-solutions/staff">Staff Workflow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      <li>
+              <a href="/hospital-clinics/inventory-management">Inventory Management</a>
+                  </li>
+                      <li class="last">
+              <a href="/hospital-clinics/aeroscout-links-cloud-monitoring">Cloud Monitoring</a>
+                  </li>
+        </ul>
+  
+            </li>
+                      <li class="expanded dropdown last">
+              <a class="dropdown-toggle" href="/senior-living" data-toggle="dropdown">Senior Living<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                      <li class="first">
+              <a href="/senior-living/wanderguard-blue-wander-management">Wander Management</a>
+                  </li>
+                      <li>
+              <a href="/senior-living/fall-management">Fall Management</a>
+                  </li>
+                      <li>
+              <a href="/senior-living/emergency-nurse-call">Emergency &amp; Nurse Call</a>
+                  </li>
+                      <li class="last">
+              <a href="/senior-living/community-management/visitor-management">Visitor Management</a>
+                  </li>
+        </ul>
+  
+            </li>
+        </ul>
+  
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-sidenavigation-menu" id="block-sidenavigation">
+            
+  <h2 class="visually-hidden" id="block-sidenavigation-menu">Side Navigation</h2>
+  
+
+        
+      <ul class="menu menu--side-navigation nav">
+                      <li class="first">
+              <a href="/priorities">Our Priorities</a>
+                  </li>
+                      <li class="last">
+              <a href="/support-training">Support and Training</a>
+                  </li>
+        </ul>
+  
+
+  </nav>
+<div class="search-block-form block block-search block-search-form-block" data-drupal-selector="search-block-form" id="block-stanley-bootstrap-search" role="search">
+  
+      <h2 class="visually-hidden">Search</h2>
+    
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+      <label for="edit-keys" class="control-label sr-only">Search</label>
+  
+  
+  <div class="input-group"><input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip" /><span class="input-group-btn"><button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name=""><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+
+  
+  
+  </div>
+<div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions"></div>
+
+</form>
+
+  </div>
+<section id="block-getintouch" class="block block-block-content block-block-contentd675b244-9a32-4a4a-a36a-e1f4adcd8f65 clearfix">
+  
+    
+
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <div class="header-call-us"><a class="btn btn-default btn-standard" href="tel:1-888-622-6992">Call Us</a></div>
+
+<div class="header-get-in-touch"><a class="btn btn-warning btn-standard" href="/contact">Get in Touch</a></div>
+
+            </div>
+          </div>
+
+  </section>
+
+
+  </div>
+
+        </div>
+            
+    </header>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" role="heading">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="region region-header-top">
+    
+
+  </div>
+
+                      </div>
+        </div>
+                                          <div  class="block-hero x-center y-center" style="background-image: url(' https://www.stanleyhealthcare.com/sites/stanleyhealthcare.com/files/styles/hero_background/public/media/2018-11/404-servers.jpg?itok=Y8g5WxyS ')">
+          
+                            <div class="row">
+                <div class="col-sm-12">
+                    <div class="region region-header">
+        <h1 class="page-header"><span property="schema:name">404 Page Not Found</span>
+</h1>
+
+
+  </div>
+
+                </div>
+              </div>
+              
+              
+            </div>
+                  <div class="row">
+          <div class="col-sm-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="main" role="main" class="main-container container-fluid js-quickedit-main-content">
+
+
+    
+
+
+    <div class="row">
+                  <section class="col-sm-12">
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      <article data-history-node-id="324" role="article" about="/404-page-not-found" typeof="schema:WebPage" class="page full clearfix">
+
+  
+      <span property="schema:name" content="404 Page Not Found" class="hidden"></span>
+
+
+  
+  <div class="content">
+    
+      <div>
+
+
+
+
+
+
+
+
+
+
+<div class="paragraph paragraph--type--bp-simple paragraph--view-mode--default paragraph--id--486">
+  <div class="paragraph__column">
+    
+        <div class="field field--name-bp-text field--type-text-long field--label-hidden field__items">
+                <div class="field__item">
+        <p>We're sorry, but this page cannot be found.  Please <a href="/contact" title="Contact">send us a message</a> or contact us at +1 (888) 622-6992.</p>
+            </div>
+          </div>
+
+  </div>
+</div>
+</div>
+  
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+    </div>
+
+
+  </div>
+
+      <div class="content_bottom container-fluid">
+        <div class="region region-content-bottom">
+    <section id="block-startconversation" class="block block-block-content block-block-contentc19cac3d-fadc-4003-be27-50b4db409650 clearfix">
+  
+    
+
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <div class="cta-wrap">
+    <div class="left">
+        <strong>Interested?</strong> Start a Conversation
+    </div>
+    
+    <div class="right">
+        <span class="phone"><a href="tel: +1 (888) 622-6992">+1 (888) 622-6992</a></span>
+        <span><a class="btn btn-default" href="/contact">Contact Us</a> </span>
+    </div>
+</div>
+            </div>
+          </div>
+
+  </section>
+
+
+  </div>
+
+    </div>
+  
+      <footer class="footer container-fluid" role="contentinfo">
+      <div class="main-footer">
+          <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-stanley-bootstrap-footer-menu" id="block-stanley-bootstrap-footer">
+      
+  <h2 id="block-stanley-bootstrap-footer-menu">Explore</h2>
+  
+
+        
+      <ul class="menu menu--footer nav">
+                      <li class="first">
+              <a href="/about">Company</a>
+                  </li>
+                      <li>
+              <a href="/brands">Brands</a>
+                  </li>
+                      <li>
+              <a href="/products">Products</a>
+                  </li>
+                      <li class="last">
+              <a href="/resources">Resources</a>
+                  </li>
+        </ul>
+  
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footermiddle-menu" id="block-footermiddle">
+            
+  <h2 class="visually-hidden" id="block-footermiddle-menu">Footer Middle</h2>
+  
+
+        
+      <ul class="menu menu--footer-middle nav">
+                      <li class="first">
+              <a href="/partners">Partners</a>
+                  </li>
+                      <li>
+              <a href="/insights">Insights</a>
+                  </li>
+                      <li class="last">
+              <a href="/careers">Careers</a>
+                  </li>
+        </ul>
+  
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footernetwork-menu" id="block-footernetwork">
+      
+  <h2 id="block-footernetwork-menu">Network</h2>
+  
+
+        
+      <ul class="menu menu--footer-network nav">
+                      <li class="first">
+              <a target="_blank" href="http://www.stanleyblackanddecker.com/">Stanley Black &amp; Decker</a>
+                  </li>
+                      <li class="last">
+              <a target="_blank" href="http://www.stanleysecuritysolutions.com/">STANLEY Security</a>
+                  </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+      </div>
+      <div class="side-footer">
+          <div class="region region-footer-second">
+    <section id="block-stayuptodate" class="block block-block-content block-block-content5f0ad1a1-5373-4232-801b-19db8afd6851 clearfix">
+  
+      <h2 class="block-title">Stay up-to-date</h2>
+    
+
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <p><a class="btn btn-clear" href="/subscribe">Sign Up</a></p>
+
+            </div>
+          </div>
+
+  </section>
+
+<section id="block-connect" class="block block-block-content block-block-content061ca6ad-d76d-4259-a3c4-6656911b7ea3 clearfix">
+  
+      <h2 class="block-title">Connect</h2>
+    
+
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field__items">
+                <div class="field__item">
+        <ul class="footer-connect"><li><a href="https://business.facebook.com/StanleyHealthcare/" target="_blank"><svg height="16px" version="1.1" viewbox="0 0 9 16" width="9px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" id="Icon/Social-Facebook-Footer" stroke="none" stroke-width="1"><path d="M2.456,16 L2.456,8.701 L0,8.701 L0,5.857 L2.456,5.857 L2.456,3.76 C2.456,1.325 3.943,0 6.114,0 C7.154,0 8.048,0.077 8.309,0.112 L8.309,2.656 L6.803,2.656 C5.622,2.656 5.393,3.218 5.393,4.041 L5.393,5.857 L8.209,5.857 L7.843,8.701 L5.393,8.701 L5.393,16 L2.456,16 Z" fill="#CDCDD2" id="Facebook-Icon"></path></g></svg></a></li>
+	<li><a href="https://twitter.com/stanleyhealth" target="_blank"><svg height="14px" version="1.1" viewbox="0 0 18 14" width="18px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" id="Icon/Social-Twitter-Footer" stroke="none" stroke-width="1"><path d="M17.227,1.657 C16.593,1.938 15.912,2.128 15.197,2.214 C15.927,1.776 16.487,1.084 16.751,0.259 C16.068,0.663 15.312,0.958 14.507,1.116 C13.862,0.428 12.943,-1.13686838e-13 11.927,-1.13686838e-13 C9.975,-1.13686838e-13 8.393,1.582 8.393,3.534 C8.393,3.811 8.424,4.081 8.484,4.34 C5.547,4.192 2.942,2.785 1.199,0.646 C0.895,1.169 0.721,1.776 0.721,2.424 C0.721,3.649 1.345,4.731 2.293,5.365 C1.714,5.346 1.169,5.188 0.692,4.924 C0.692,4.938 0.692,4.953 0.692,4.968 C0.692,6.68 1.91,8.108 3.527,8.433 C3.23,8.514 2.918,8.557 2.596,8.557 C2.368,8.557 2.147,8.535 1.931,8.494 C2.381,9.898 3.686,10.92 5.232,10.948 C4.023,11.896 2.499,12.461 0.843,12.461 C0.558,12.461 0.276,12.444 0,12.412 C1.564,13.415 3.422,14 5.418,14 C11.919,14 15.474,8.614 15.474,3.944 C15.474,3.791 15.47,3.638 15.463,3.486 C16.154,2.988 16.753,2.366 17.227,1.657" fill="#CDCDD2" id="Twitter-Icon"></path></g></svg></a></li>
+  <li class="linkedin">
+    <a href="https://www.linkedin.com/company/stanley-healthcare/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="16px" viewbox="0 0 16 16" xml:space="preserve"><g transform="translate(-1091.000000, -6283.000000)"><rect x="-100" y="-100" class="st0" width="1440" height="7120"></rect><g transform="translate(0.000000, 6000.000000)"><g transform="translate(0.000000, 320.000000)"><g transform="translate(0.000000, 48.000000)"><g transform="translate(1133.000000, 15.000000)"><g transform="translate(58.000000, 0.000000)"><path class="st1" d="M-84-84h-3.3v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.3h-3.3v-10.7h3.2v1.5l0 0c0.4-0.8 1.5-1.7 3.1-1.7 3.4 0 4 2.2 4 5.1C-84-89.8-84-84-84-84zM-98.1-96.1c-1.1 0-1.9-0.9-1.9-1.9 0-1.1 0.9-1.9 1.9-1.9 1.1 0 1.9 0.9 1.9 1.9S-97-96.1-98.1-96.1zM-99.7-84h3.3v-10.7h-3.3V-84z"></path></g></g></g></g></g></g></svg></a>
+  </li>
+	<li><a href="https://www.youtube.com/user/stanleyhealthcare" target="_blank"><svg height="15px" version="1.1" viewbox="0 0 21 15" width="21px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" id="Icon/Social-Youtube-Footer" stroke="none" stroke-width="1"><path d="M8.35228324,10.6659375 L8.35228324,4.335 L13.8415606,7.5 L8.35228324,10.6659375 Z M20.5616716,2.3428125 C20.3203135,1.4203125 19.608261,0.6946875 18.7047866,0.448125 C17.0670659,-1.13686838e-13 10.5004624,-1.13686838e-13 10.5004624,-1.13686838e-13 C10.5004624,-1.13686838e-13 3.93293408,-1.13686838e-13 2.29521335,0.448125 C1.39173896,0.6946875 0.680611211,1.4203125 0.438328416,2.3428125 C0,4.0134375 0,7.5 0,7.5 C0,7.5 0,10.9865625 0.438328416,12.658125 C0.680611211,13.5796875 1.39173896,14.30625 2.29521335,14.5528125 C3.93293408,15 10.5004624,15 10.5004624,15 C10.5004624,15 17.0670659,15 18.7047866,14.5528125 C19.608261,14.30625 20.3203135,13.5796875 20.5616716,12.658125 C21,10.9865625 21,7.5 21,7.5 C21,7.5 21,4.0134375 20.5616716,2.3428125 Z" fill="#CDCDD2" id="Youtube-Icon"></path></g></svg></a></li>
+</ul>
+            </div>
+          </div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="end-footer">
+        <span class="end-footer-name">&copy;2019 STANLEY Healthcare</span>
+        <span class="end-footer-policy"><a href="https://www.stanleyblackanddecker.com/privacy-policy">Privacy Policy</a></span>
+        <span class="end-footer-terms"><a href="/legal">Terms of Use</a></span>
+      </div>
+    </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"eu_cookie_compliance":{"popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info\u0022\u003E\n  \u003Cdiv class =\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      We place cookies on your device to improve this website. See our \u003Ca href=\u0022https:\/\/www.stanleyblackanddecker.com\/privacy-policy\u0022 target=\u0022_blank\u0022\u003EPrivacy Policy\u003C\/a\u003E to find out more about cookies and how to change your cookie settings. Otherwise, we\u2019ll assume you\u2019re happy to continue.\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022btn btn-default agree-button eu-cookie-compliance-default-button\u0022\u003EAccept\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info\u0022\u003E\n  \u003Cdiv class =\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022btn btn-default agree-button eu-cookie-compliance-default-button\u0022\u003EAccept\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/node\/318","popup_link_new_window":true,"popup_position":false,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":false,"cookie_name":"","reload_page":false,"domain":"","popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"disagree_do_not_show_popup":false,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","popover_trigger_autoclose":1,"tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"774f31126eeeebbe54cdb3125dbeb098cf6c1076b087cde5d7a7e6d1f75ef8da"}}</script>
+<script src="/sites/stanleyhealthcare.com/files/js/js_G94Y6jRpcvlBUr0SzYeMtzJKYNSfGeLI5GDYZL1QnFQ.js"></script>
+<script src="//static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/stanleyhealthcare.com/files/js/js_nRHKLtIp3tLjhV3co3ORt0xz88bp11v6y7S0tUoNm-s.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3a6193621e","applicationID":"125023167","transactionName":"YlFTNhNWCBUCAEVaCVsbZBAIGA8IBwZJHRZdRA==","queueTime":0,"applicationTime":111,"atts":"ThZQQFtMGxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

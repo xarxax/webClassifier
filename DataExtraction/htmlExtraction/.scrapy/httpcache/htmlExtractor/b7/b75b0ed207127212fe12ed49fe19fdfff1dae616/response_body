@@ -1,0 +1,1042 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Gendou's Anime Music</title>
+	<style type="text/css">
+		/* Default Stylesheet Data */
+
+body, table
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background: #000000;
+}
+
+form
+{
+	margin: 0px;
+}
+
+input, select, textarea
+{
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+input[disabled] { color: #808080; }
+
+textarea
+{
+	/* margin: -2px; padding: 0px; */
+}
+
+table
+{
+	border-bottom: 1px solid #707070;
+	border-right:  1px solid #707070;
+	border-collapse: collapse;
+}
+
+th
+{
+	border-top:  1px solid #707070;
+	border-left: 1px solid #707070;
+	padding: 3px;
+	text-align: center;
+	vertical-align: top;
+}
+
+td
+{
+	border-top:  1px solid #707070;
+	border-left: 1px solid #707070;
+	padding: 3px;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+img { border: 0px; }
+
+.red    { color: #FF0000; }
+.small  { font-size: 10px; }
+.big    { font-size: 14px; }
+.left   { text-align:   left; }
+.right  { text-align:  right; }
+.center { text-align: center; }
+
+.naked, .naked tr, .naked th, .naked td
+{
+	border: 0px;
+}
+
+.title  { background-color: #000000; }
+.body   { background-color: #222222; white-space: normal; }
+.dead   { background-color: #440000; white-space: normal; }
+.new    { background-color: #000050 }
+.wall   { background-color: #005000 }
+.old    { background-color: #500000 }
+.body2
+{
+	background-color: #000000;
+	border: 1px solid #FFFFFF;
+	margin: 20px;
+	padding: 4px;
+}
+
+.quote
+{
+	background-color: #000000;
+	border: 1px solid #FFFFFF;
+	margin: 20px;
+	margin-bottom: -10px;
+	padding: 4px;
+}
+
+a:link    { color: #00FFFF; }
+a:hover   { color: #FF00FF; }
+a:visited { color: #5050FF; }
+
+.link
+{
+	text-decoration: underline;
+	color:  #00FFFF;
+	cursor: pointer;
+}
+
+.link:hover
+{
+	color: #FF00FF;
+}
+
+.nick img
+{
+	white-space: nowrap;
+	vertical-align: middle;
+}
+		/* Nav Panel Menus */
+
+#navPanel
+{
+	z-index: 1;
+	position: relative;
+	height: 30px;
+	font:   12px tahoma;
+	color:            #00FFFF;
+	background-color: #000050;
+	border: 1px solid #FFFFFF;
+}
+
+#navPanel a:visited
+{
+	color: #00FFFF;
+}
+
+#navPanel a:hover
+{
+	color: #FFFFFF;
+}
+
+#navPanel li
+{
+	cursor: pointer;
+}
+
+#navPanel a
+{
+	margin:  0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+}
+
+.navHorizontal
+{
+	margin:  0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 30px;
+	list-style: none;
+	background-color: #000050;
+}
+
+.navHorizontal li
+{
+	margin:  0px 0px  0px  0px;
+	padding: 0px 12px 0px 12px;
+	z-index: 10;
+	float: left;
+	position: relative;
+	background-color: #000050;
+}
+
+.navHorizontal li:hover, .navHorizontal li.over, .navHorizontal a:hover
+{
+	background-color: #000090;
+	color: #FFFFFF;
+}
+
+.navVertical
+{
+	margin:  0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute; 
+	top: 30px;
+	left: -1px;
+	display: none;
+	list-style: none;
+	width: 100px;
+	border: 1px solid #FFFFFF;
+	border-top: 0px;
+}
+
+.navVertical li
+{
+	margin:  0px 0px 0px 0px;
+	padding: 0px 0px 0px 6px;
+	float: none;
+	line-height: 17px;
+	min-height:  17px;
+        height:      17px;
+}
+
+.navHorizontal li:hover .navVertical, .navHorizontal .over .navVertical
+{
+	display: block;
+}
+
+.navHorizontal li, .navVertical li
+{
+			/* behavior for MSIE was excluded! */
+	}
+
+.navRight
+{
+	float: right !important;
+	color: #FFFFFF;
+}
+
+.navRight a:hover, .navRight a:visited, .navRight a:link
+{
+	color: #FFFFFF !important;
+}
+
+.navSearch
+{
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navSearch input
+{
+	position: relative;
+	top: 1px;
+	left: -4px;
+	height: 13px;
+	width: 75px;
+	font-size: 10px;
+	margin:  0px;
+	padding: 0px;
+}
+			</style>
+	<link rel="alternate" type="application/rss+xml" title="Gendou.com RSS" href="/rss.php" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Gendou" href="/opensearch.xml" />
+	<link rel="shortcut icon" href="/images/favicon.png" />
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+			<meta name="Keywords" content="anime, music, gendou, mp3, lyrics, download, song, request, free" />
+
+<meta name="Googlebot" content="nofollow" />
+
+<meta name="Description" content="
+	Gendou's Anime Music. Free registration, fast download. 5,000+ mp3 files!
+	Search feature, lyrics, request system, song ratings, discussion forum, frequently updated.
+" />
+	</head><body>
+
+<script type="text/javascript">
+	var ajaxMutex = 0;
+
+	function ajaxRequest(url, successFunction, errorFunction)
+	{
+		ajaxRequest(url, successFunction, errorFunction, '');
+	}
+
+	function ajaxRequest(url, successFunction, errorFunction, postArgs)
+	{
+		if(ajaxMutex)
+		{
+			alert('Please wait!');
+			return;
+		}
+
+		ajaxMutex = 1;
+
+		var xmlHttpReq = false;
+
+		if(window.XMLHttpRequest)     xmlHttpReq = new XMLHttpRequest();
+		else if(window.ActiveXObject) xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+		else
+		{
+			alert('Sorry, your browser does not support this feature. Try Firefox!');
+			return;
+		}
+
+		xmlHttpReq.onreadystatechange = function ()
+		{
+			if(xmlHttpReq.readyState != 4) return;
+
+			if(xmlHttpReq.responseText.substr(0, 1) == '#')
+			{
+				errorFunction(xmlHttpReq.responseText.substr(1, xmlHttpReq.responseText.length));
+			}
+			else
+			{
+				if(successFunction != undefined) successFunction(xmlHttpReq.responseText);
+			}
+
+			ajaxMutex = 0;
+		}
+
+		xmlHttpReq.open('POST', url + '&js=1');
+		xmlHttpReq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xmlHttpReq.send('js=1&' + postArgs);
+	}
+
+	function refresh() { window.location = window.location; }
+	function resizeMe(elem)
+	{
+		var count = 0;
+		var lines = elem.value.split(/\n/);
+		for(var i in lines) count += Math.floor(lines[i].length / elem.cols) + 1;
+		elem.rows = Math.min(20, Math.max(2, count));
+	}
+</script>
+<div id="navPanel">
+<ul class="navHorizontal">
+	<li><a href="/donate.php">Donate!</a>
+		<ul class="navVertical">
+			<li><a href="/donate.php?type=paypal">Via Paypal</a></li>
+			<li><a href="/donate.php?type=amazon">Via Amazon</a></li>
+			<!-- <li><a href="/donate.php?type=google">Via Google</a></li> -->
+		</ul>
+	</li>
+			<li>
+			<a href="/forum/login.php?back=%2Famusic%2F">Login</a>
+			<ul class="navVertical" style="width: 250px;">
+				<li style="width: 244px; height: 42px; line-height: 20px;">
+					<form method="post" action="/forum/login.php" class="navSearch">
+						<div style="float: right; padding: 10px;">
+							<input type="submit" value="Login" style="font-size: 12px; height: 22px;" />
+						</div>
+						<div style="float: right;">
+							<input type="text"     name="name" /><br />
+							<input type="password" name="pass" />
+						</div>
+						Username:<br />Password:
+						<input type="hidden" name="back" value="/amusic/" />
+					</form>
+				</li>
+			</ul>
+		</li>
+		<li><a href="/forum/register.php">Register</a></li>
+		<li><a href="/">Home</a></li>
+		<li><a href="/forum/search.php">Forum</a>
+		<ul class="navVertical">
+			<li><a href="/forum/">Home</a></li>
+			<li><a href="/forum/search.php">Search</a></li>
+			<li><a href="/forum/userlist.php">User List</a></li>
+			<li><a href="/forum/online.php">Who's Online</a></li>
+							<li><a href="/forum/resend.php">Resend Email</a></li>
+						<li><a href="/poll/">Polls</a></li>
+			<li><a href="/forum/avatar.php">Avatar Creator</a></li>
+			<li><a href="/forum/stats.php">Site Statistics</a></li>
+			<li><a href="/help.php?type=forum">FAQ/Help</a></li>
+			<li><a href="/legal.php?query=forum">Rules</a></li>
+		</ul>
+	</li>
+	<li><a href="/amusic/">Music</a>
+		<ul class="navVertical" style="width: 100px;">
+			<li>
+				<span style="float: right; padding-right: 3px;">
+					<a title="Toggle Quick Search" class="link" onclick="toggleSearch('Amusic');">Q</a>
+				</span>
+				<form class="navSearch" style="display: none;" action="/amusic/" id="navAmusicSearch">
+					<input type="text" title="Search Anime Music" name="filter" />
+				</form>
+				<span id="navAmusicLink"><a href="/amusic/">Download</a></span>
+			</li>
+						<li><a href="/amusic/upload.php">Upload</a></li>
+									<li><a href="/amusic/req/">View Requests</a></li>
+			<li><a href="/amusic/req/add.php">Submit Request</a></li>
+			<li><a href="/amusic/release/">Release Dates</a></li>
+			<li><a href="/amusic/contribute.php">Contribute</a></li>
+			<li><a href="/idol/">Gendou Idol</a></li>
+						<li><a href="/amusic/lyrics-history.php">Lyrics History</a></li>
+			<li><a href="/amusic/stats.php">Site Statistics</a></li>
+			<li><a href="/help.php?type=amusic">FAQ/Help</a></li>
+			<li><a href="/legal.php?query=music">Rules</a></li>
+		</ul>
+	</li>
+		<li><a href="/chat.php">Chat</a>
+		<ul class="navVertical" style="width: 80px;">
+			<li><a href="/chat.php">Enter Chat</a></li>
+			<li><a href="/chat.php?help=1">Help</a></li>
+			<li><a href="/legal.php?query=chat">Rules</a></li>
+						<li><a href="/chat.php?do=log">View Log</a></li>
+					</ul>
+	</li>
+	<li><a href="/t/15219">Games</a>
+		<ul class="navVertical" style="width: 120px;">
+			<li><a href="/crap/hangman.php">Hangman</a></li>
+		<!--	<li><a href="/tcell/">T-Cell</a></li>
+			<li><a href="/asteroids/">Asteroids3D</a></li>
+			<li><a href="/dust/">DustBunnies</a></li>
+			<li><a href="/whistle/">Whistle (Beta)</a></li>
+			<li><a href="/ringworld/">Ringworld (Demo)</a></li>
+			<li><a href="/phage/">Phage Wars: Galaxy</a></li>
+		-->	<li><a href="/crypto/">Crypto. Challenges</a></li>
+			<li><a href="/t/15219">More!</a></li>
+		</ul>
+	</li>
+		</ul>
+</div>
+
+<script type="text/javascript">
+	var hexChars = '0123456789ABCDEFEDCBA987654321';
+	function glowRed(id, x, speed)
+	{
+		var element = document.getElementById(id);
+		var thisChar = hexChars[x % 30];
+		element.setAttribute('style', "color: #FF" + thisChar + thisChar + thisChar + thisChar + " !important;");
+		setTimeout("glowRed('" + id + "', " + ++x + ", " + speed + ")", speed);
+	}
+				function toggleSearch(key)
+	{
+		var search = document.getElementById('nav' + key + 'Search');
+		var link   = document.getElementById('nav' + key + 'Link');
+		search.style.display = (search.style.display == 'none') ? '' : 'none';
+		link.style.display   = (link.style.display   == 'none') ? '' : 'none';
+	}
+</script>
+
+<br />
+
+	<ul class="red">
+					<li>You must <a href="/forum/login.php">login</a> to use this website.</li>
+			</ul>
+	<br />
+<style class="text/css">
+	.complete
+	{
+		text-align: left;
+		position: relative;
+	}
+
+	.complete ul
+	{
+		position: absolute;
+		display: block;
+		white-space: nowrap;
+		top: 6px;
+		left: 0px;
+		list-style: none;
+		color:            #FFFFFF;
+		background-color: #222222;
+		border: 1px solid #FFFFFF;
+		padding: 3px;
+	}
+
+	.complete ul li
+	{
+		font-family: Courier;
+		font-size: 12px;
+		cursor: pointer;
+	}
+
+	.selected
+	{
+		background-color: #444444;
+	}
+</style>
+
+<script type="text/javascript">
+	var completeQuery = 0;
+	var completeIndex = 0;
+	var completeValues = new Array();
+	function completeSuccess(str)
+	{
+		completeIndex = 0;
+		completeValues = new Array();
+		var keywords = str.split("\n");
+		var ul = document.getElementById('complete');
+		while(ul.hasChildNodes()) ul.removeChild(ul.lastChild);
+		if(keywords[0] == '') { ul.style.display = "none"; return; } else ul.style.display = '';
+		for(var i = 0; i < keywords.length; i++)
+		{
+			completeValues[i + 1] = keywords[i];
+			var li = document.createElement('li');
+			li.id = 'complete_' + (i + 1);
+			li.setAttribute('data-index', i + 1);
+			li.innerHTML = keywords[i];
+			li.onclick = function ()
+			{
+				completeSelect(this.getAttribute('data-index'));
+				document.getElementById('filter').form.submit();
+			}
+			ul.appendChild(li);
+		}
+	}
+	function completeAjax(q)
+	{
+		ajaxRequest('/amusic/?do=complete&q=' + q, completeSuccess, alert);
+	}
+	function completeKey(e)
+	{
+		switch(window.even ? window.event.keyCode : e.which)
+		{
+			case 38: completeSelect(completeIndex - 1); return false; // up
+			case 40: completeSelect(completeIndex + 1); return false; // down
+		}
+		return true;
+	}
+	function completeSelect(newIndex)
+	{
+		var filter = document.getElementById('filter');
+		if(completeIndex == 0) completeValues[0] = filter.value;
+		else document.getElementById('complete_' + completeIndex).className = '';
+		completeIndex = newIndex;
+		if(completeIndex >= completeValues.length) completeIndex = 0;
+		if(completeIndex < 0) completeIndex = completeValues.length - 1;
+		if(completeIndex > 0) document.getElementById('complete_' + completeIndex).className = 'selected';
+		filter.value = completeValues[completeIndex];
+	}
+	function completeSchedule(e, q)
+	{
+		switch(window.even ? window.event.keyCode : e.which) { case 38: case 40: return; }
+		if(completeQuery) clearTimeout(completeQuery);
+		if(ajaxMutex) return;
+		completeQuery = setTimeout('completeAjax("' + encodeURIComponent(q) + '");', 500);
+	}
+</script>
+
+
+<div align="center">
+
+<b>Bored? Take a crack at one of the <a href="/crypto/">Cryptography Challenges</a>!</b>
+<!-- <b>Bored? Stop by the <a href="/t/26620">Gendou.com Minecraft Server</a>!</b> -->
+
+<br /><br />
+
+Please <a href="/donate.php">donate</a> to help keep this site free.<br /><br />
+
+<form method="get" name="theform" action="/amusic/" autocomplete="off">
+	<span class="complete">
+		<input type="text" name="filter" id="filter" value="" size="32"
+			onkeyup="completeSchedule(event, this.value);" onkeydown="return completeKey(event);" />
+		<ul id="complete" style="display: none;"></ul>
+		<input type="submit" value="Search" />
+		<a href="http://twitter.com/gendou_com"><img src="/images/twitter.png" style="vertical-align: top;" alt="Twitter" title="Get updates on Twitter!" /></a>
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgendou.com%2Famusic%2F&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px; vertical-align:top;" allowTransparency="true"></iframe>
+	</span>
+				</form><br />
+
+
+	| <a href='?cols=1111111111111'>Show All</a> |
+															<a href="?cols=1111011111100">Show Album</a> |
+								<a href="?cols=1110111111100">Show Track</a> |
+																										<a href="?cols=1110011111110">Show Clicks</a> |
+								<a href="?cols=1110011111101">Show Date</a> |
+				<br /><br />
+
+	<table>
+		<tr><th colspan="9">1 to 20 of 7552 matches.</th></tr>
+		<tr>
+						<th><a href="?sort=0">Song (Link)</a></th>
+												<th>
+						<a href="?cols=1010011111100">Hide</a><br />
+						<a href="?sort=1">
+							Anime						</a>
+					</th>
+																<th>
+						<a href="?cols=1100011111100">Hide</a><br />
+						<a href="?sort=2">
+							Artist						</a>
+					</th>
+																														<th>
+						<a href="?cols=1110001111100">Hide</a><br />
+						<a href="?sort=5">
+							Type						</a>
+					</th>
+																<th>
+						<a href="?cols=1110010111100">Hide</a><br />
+						<a href="?sort=6">
+							Time						</a>
+					</th>
+																<th>
+						<a href="?cols=1110011011100">Hide</a><br />
+						<a href="?sort=7">
+							Size						</a>
+					</th>
+																<th>
+						<a href="?cols=1110011101100">Hide</a><br />
+						<a href="?sort=8">
+							Lyrics						</a>
+					</th>
+																<th>
+						<a href="?cols=1110011110100">Hide</a><br />
+						<a href="?sort=9">
+							Buy!						</a>
+					</th>
+																<th>
+						<a href="?cols=1110011111000">Hide</a><br />
+						<a href="?sort=10">
+							Rating						</a>
+					</th>
+																							</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Sayonara Memories</a></td>
+													<td><a href="?filter=Naruto+Shippuden">Naruto Shippuden</a></td>
+													<td>
+													<a href="?filter=7%21%21+Oops">
+								7!! Oops							</a>
+											</td>
+																					<td>ED24</td>
+													<td>3:41</td>
+													<td>8.5 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11912&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11912&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11912&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1032122524-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11912">
+							8.113						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Kyouran Hey Kids!</a></td>
+													<td><a href="?filter=Noragami+Aragoto">Noragami Aragoto</a></td>
+													<td>
+													<a href="?filter=The+Oral+Cigarettes">
+								The Oral Cigarettes							</a>
+											</td>
+																					<td>OP01</td>
+													<td>4:13</td>
+													<td>9.8 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11911&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11911&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11911&show=2">EN</a>
+						</td>
+																								<td><a href="http://www.cdjapan.co.jp/detailview.html?KEY=AZCS-2048">Buy</a></td>
+																		<td>
+						<span id="rating_11911">
+							8.254						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Kisetsu wa Tsugitsugi Shindeiku</a></td>
+													<td><a href="?filter=Tokyo+Ghoul">Tokyo Ghoul</a></td>
+													<td>
+													<a href="?filter=Amazarashi">
+								Amazarashi							</a>
+											</td>
+																					<td>ED01</td>
+													<td>5:39</td>
+													<td>13.1 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11910&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11910&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11910&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1037667435-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11910">
+							8.368						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Renegade</a></td>
+													<td><a href="?filter=Gangsta">Gangsta</a></td>
+													<td>
+													<a href="?filter=Stereo+Drive+Foundation">
+								Stereo Drive Foundation							</a>
+											</td>
+																					<td>OP01</td>
+													<td>4:07</td>
+													<td>9.8 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11908&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11908&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11908&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1041267698-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11908">
+							8.214						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Re:Re</a></td>
+													<td><a href="?filter=Boku+Dake+Ga+Inai+Machi">Boku Dake Ga Inai Machi</a></td>
+													<td>
+													<a href="?filter=Asian+Kung-fu+Generation">
+								Asian Kung-fu Generation							</a>
+											</td>
+																					<td>OP01</td>
+													<td>5:32</td>
+													<td>13.0 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11907&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11907&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11907&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1047897340-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11907">
+							8.685						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Ai no Reincarnation</a></td>
+													<td><a href="?filter=Uta+no+Prince-sama+%7EMaji+L">Uta no Prince-sama ~Maji L</a></td>
+													<td>
+													<a href="?filter=Toriumi+Kousuke">
+								Toriumi Kousuke							</a>
+											</td>
+																					<td>&nbsp;</td>
+													<td>1:51</td>
+													<td>4.3 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11906&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11906&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11906&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1033039123-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11906">
+							5.400						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">REINCARNATION BLUE</a></td>
+													<td><a href="?filter=BlazBlue%3A+Alter+Memory">BlazBlue: Alter Memory</a></td>
+													<td>
+													<a href="?filter=Yuuki+Aira">
+								Yuuki Aira							</a>
+											</td>
+																					<td>ED01</td>
+													<td>4:25</td>
+													<td>10.3 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11905&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11905&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11905&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1034163763-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11905">
+							6.267						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">BRE@TH//LESS</a></td>
+													<td><a href="?filter=Aldnoah+Zero">Aldnoah Zero</a></td>
+													<td>
+													<a href="?filter=Kobayashi+Mika">
+								Kobayashi Mika							</a>
+											</td>
+																					<td>&nbsp;</td>
+													<td>4:02</td>
+													<td>9.3 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11904&show=0">ro</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11904&show=1">ka</a>
+							<a title="English" href="/amusic/lyrics.php?id=11904&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1044037391-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11904">
+							8.182						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">THE HERO !! ~Okoreru Kobushi ni Hi wo Tsukero~</a></td>
+													<td><a href="?filter=One+Punch+Man">One Punch Man</a></td>
+													<td>
+													<a href="?filter=JAM+Project">
+								JAM Project							</a>
+											</td>
+																					<td>&nbsp;</td>
+													<td>3:50</td>
+													<td>9.1 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11903&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11903&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11903&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1044842842-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11903">
+							8.722						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Kieru Daydream</a></td>
+													<td><a href="?filter=Nekomonogatari">Nekomonogatari</a></td>
+													<td>
+													<a href="?filter=Marina+Kawano">
+								Marina Kawano							</a>
+											</td>
+																					<td>ED01</td>
+													<td>4:40</td>
+													<td>10.7 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11902&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11902&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11902&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1032338295-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11902">
+							7.588						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Butterfly Effect</a></td>
+													<td><a href="?filter=Ryuugajou+Nanana+no+Maizoukin">Ryuugajou Nanana no Maizoukin</a></td>
+													<td>
+													<a href="?filter=Shiritsu+Ebisu+Chuugaku">
+								Shiritsu Ebisu Chuugaku							</a>
+											</td>
+																					<td>OP01</td>
+													<td>4:27</td>
+													<td>10.3 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11901&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11901&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11901&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035367931-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11901">
+							6.600						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Gekkou STORY</a></td>
+													<td><a href="?filter=Gingitsune">Gingitsune</a></td>
+													<td>
+													<a href="?filter=SCREEN+mode">
+								SCREEN mode							</a>
+											</td>
+																					<td>ED01</td>
+													<td>4:52</td>
+													<td>11.2 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11900&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11900&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11900&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1034090099-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11900">
+							6.571						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Reach for Light</a></td>
+													<td><a href="?filter=Maken-Ki%21+Two">Maken-Ki! Two</a></td>
+													<td>
+													<a href="?filter=Saeko+Zougou">
+								Saeko Zougou							</a>
+											</td>
+																					<td>ED01</td>
+													<td>3:56</td>
+													<td>9.1 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11899&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11899&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11899&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1034727554-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11899">
+							6.500						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Ex:Futurize</a></td>
+													<td><a href="?filter=Z%2FX+Ignition">Z/X Ignition</a></td>
+													<td>
+													<a href="?filter=Youko+Hikasa">
+								Youko Hikasa							</a>
+											</td>
+																					<td>OP01</td>
+													<td>4:26</td>
+													<td>10.2 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11898&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11898&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11898&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1034722203-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11898">
+							7.636						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Sore ha Bokutachi no Kiseki</a></td>
+													<td><a href="?filter=Love+Live%21+2">Love Live! 2</a></td>
+													<td>
+													<a href="?filter=%CE%BC%27s">
+								μ's							</a>
+											</td>
+																					<td>OP01</td>
+													<td>4:14</td>
+													<td>9.9 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11897&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11897&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11897&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035220157-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11897">
+							7.211						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Erementario de Aimashou</a></td>
+													<td><a href="?filter=Amagi+Brilliant+Park">Amagi Brilliant Park</a></td>
+													<td>
+													<a href="?filter=Brilliant4">
+								Brilliant4							</a>
+											</td>
+																					<td>ED01</td>
+													<td>3:50</td>
+													<td>8.9 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11896&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11896&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11896&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1036698707-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11896">
+							7.300						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Bowie Knife</a></td>
+													<td><a href="?filter=Dramatical+Murder">Dramatical Murder</a></td>
+													<td>
+													<a href="?filter=Goatbed">
+								Goatbed							</a>
+											</td>
+																					<td>ED01</td>
+													<td>4:15</td>
+													<td>9.8 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11895&show=0">ro</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11895&show=1">ka</a>
+							<a title="English" href="/amusic/lyrics.php?id=11895&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035814643-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11895">
+							6.077						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Slip on the Pumps</a></td>
+													<td><a href="?filter=Dramatical+Murder">Dramatical Murder</a></td>
+													<td>
+													<a href="?filter=Goatbed">
+								Goatbed							</a>
+											</td>
+																					<td>OP01</td>
+													<td>3:29</td>
+													<td>8.1 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11894&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11894&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11894&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035814643-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11894">
+							6.273						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">TRICK BOX</a></td>
+													<td><a href="?filter=Nisekoi">Nisekoi</a></td>
+													<td>
+													<a href="?filter=Mikako+Komatsu">
+								Mikako Komatsu							</a>
+											</td>
+																					<td>ED03</td>
+													<td>3:45</td>
+													<td>8.8 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11893&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11893&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11893&show=2">EN</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035086760-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11893">
+							5.800						</span>
+											</td>
+															</tr>
+					<tr>
+													<td><a href="/forum/register.php?error=1">Hanagonomi</a></td>
+													<td><a href="?filter=Nisekoi">Nisekoi</a></td>
+													<td>
+													<a href="?filter=Azumi+Kana">
+								Azumi Kana							</a>
+											</td>
+																					<td>ED05</td>
+													<td>4:08</td>
+													<td>9.7 MB</td>
+																			<td>
+							<a title="Romaji"  href="/amusic/lyrics.php?id=11892&show=0">RO</a>
+							<a title="Kanji"   href="/amusic/lyrics.php?id=11892&show=1">KA</a>
+							<a title="English" href="/amusic/lyrics.php?id=11892&show=2">en</a>
+						</td>
+																								<td><a href="http://track.webgains.com/click.html?wgcampaignid=34733&wgprogramid=1120&wgtarget=http://www.yesasia.com/us/1035481876-0-0-0-en/info.html">Buy</a></td>
+																		<td>
+						<span id="rating_11892">
+							5.778						</span>
+											</td>
+															</tr>
+			</table>
+	
+
+<div style='margin: 10px;'>Go to page: 0, 
+<a href="?page=1">1</a>, 
+<a href="?page=2">2</a>, 
+<a href="?page=3">3</a>, 
+<a href="?page=4">4</a>, 
+<a href="?page=5">5</a>, 
+<a href="?page=6">6</a>, 
+<a href="?page=7">7</a>, 
+<a href="?page=8">8</a>, 
+<a href="?page=9">9</a>, 
+<a href="?page=10">10</a>, 
+ ... <a href="?page=377">377</a> </div>
+</div>
+<hr style="clear: both;" />
+
+<div class="center small">
+	Copyright 2000-2019 <a href="/contact.php">Gendou</a> |
+	<a href="/legal.php">Terms of Use</a> |
+	Page loaded in 0.0020 seconds at 2019-01-26 08:33:22 <!-- (1548520402) -->
+	</div>
+
+<a href="/bot-trap.php?1594744641" title="WARNING: Do not click on this link!"></a>
+
+</body></html>

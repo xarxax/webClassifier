@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700" rel="stylesheet" type="text/css" /><link href="Layout/CSS/styles.css" rel="stylesheet" type="text/css" /><link href="Layout/CSS/print.css" rel="stylesheet" type="text/css" media="print" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+	
+	<!--[if IE 9]>
+		<link href="Layout/CSS/ie9-styles.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+		<script src="/layout/js/html5shiv-printshiv.js"></script> 
+		<link href="Layout/CSS/ltie9-styles.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+<title>
+	CMP Automation
+</title></head>
+
+<body class="BodyStyle">
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA3MTEwODcwOA9kFgJmD2QWAgIBD2QWBgIBDxYCHgtfIUl0ZW1Db3VudAIGFgwCAQ9kFgQCAQ8PFgQeC05hdmlnYXRlVXJsBTQvYXV0b21hdGlvbi1zb2x1dGlvbnMvc2VnbWVudC90dWJpbmctYXV0b21hdGlvbi5hc3B4HgRUZXh0BRFUdWJpbmcgQXV0b21hdGlvbmRkAgMPFgIfAAILFhYCAQ9kFgJmDw8WBB8BBTYvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vbWV0YWwtdHViZS1iZW5kaW5nLmFzcHgfAgUSTWV0YWwgVHViZSBCZW5kaW5nZGQCAg9kFgJmDw8WBB8BBTUvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vY25jLW55bG9uLXR1YmUtYmVuZGluZx8CBRZDTkMgTnlsb24gVHViZSBCZW5kaW5nZGQCAw9kFgJmDw8WBB8BBTsvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vZGVkaWNhdGVkLW55bG9uLXR1YmUtYmVuZGluZx8CBRxEZWRpY2F0ZWQgTnlsb24gVHViZSBCZW5kaW5nZGQCBA9kFgJmDw8WBB8BBTQvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vdHViZS1lbmQtZm9ybWluZy5hc3B4HwIFEFR1YmUgRW5kIEZvcm1pbmdkZAIFD2QWAmYPDxYEHwEFMi9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi90dWJlLXN0cmlwcGluZy5hc3B4HwIFDlR1YmUgU3RyaXBwaW5nZGQCBg9kFgJmDw8WBB8BBTgvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vdHViZS1idW5kbGUtYXNzZW1ibHkuYXNweB8CBRRUdWJlIEJ1bmRsZSBBc3NlbWJseWRkAgcPZBYCZg8PFgQfAQVFL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL2NuYy10dWJlLWJlbmRlci1sb2FkaW5nLXVubG9hZGluZy5hc3B4HwIFI0NOQyBUdWJlIEJlbmRlciBMb2FkaW5nICYgVW5sb2FkaW5nZGQCCA9kFgJmDw8WBB8BBTAvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vbGVhay10ZXN0aW5nLmFzcHgfAgUMTGVhayBUZXN0aW5nZGQCCQ9kFgJmDw8WBB8BBTwvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vY3VzdG9tLWF1dG9tYXRpb24tdHViaW5nLmFzcHgfAgUaQ3VzdG9tIEF1dG9tYXRpb24gLSBUdWJpbmdkZAIKD2QWAmYPDxYEHwEFNC9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9tYWNoaW5lLWNvbnRyb2xzLmFzcHgfAgUQTWFjaGluZSBDb250cm9sc2RkAgsPZBYCZg8PFgQfAQU3L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3NlcnZvLW55bG9uLXR1YmUtYmVuZGluZx8CBRhTZXJ2byBOeWxvbiBUdWJlIEJlbmRpbmdkZAICD2QWBAIBDw8WBB8BBTUvYXV0b21hdGlvbi1zb2x1dGlvbnMvc2VnbWVudC9zZWF0aW5nLWF1dG9tYXRpb24uYXNweB8CBRJTZWF0aW5nIEF1dG9tYXRpb25kZAIDDxYCHwACBhYMAgEPZBYCZg8PFgQfAQU5L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3NlYXQtYXNzZW1ibHktcGFsbGV0cy5hc3B4HwIFFVNlYXQgQXNzZW1ibHkgUGFsbGV0c2RkAgIPZBYCZg8PFgQfAQVCL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3NlYXQtYXNzZW1ibHktY29udmV5b3Itc3lzdGVtcy5hc3B4HwIFHlNlYXQgQXNzZW1ibHkgQ29udmV5b3IgU3lzdGVtc2RkAgMPZBYCZg8PFgQfAQVCL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3NlYXQtYXNzZW1ibHktY2Fyb3VzZWwtc3lzdGVtcy5hc3B4HwIFHlNlYXQgQXNzZW1ibHkgQ2Fyb3VzZWwgU3lzdGVtc2RkAgQPZBYCZg8PFgQfAQVDL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL29mZi1saW5lLXNlYXQtYXNzZW1ibHktZml4dHVyZXMuYXNweB8CBR9PZmYgTGluZSBTZWF0IEFzc2VtYmx5IEZpeHR1cmVzZGQCBQ9kFgJmDw8WBB8BBTUvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vY2VudGVyLWNvbnNvbGUtcGFsbGV0cx8CBRZDZW50ZXIgQ29uc29sZSBQYWxsZXRzZGQCBg9kFgJmDw8WBB8BBU0vYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vc2VhdC1zaWRlLW1lbWJlci1kaWFsLXR5cGUtYXNzZW1ibHktYXV0b21hdGlvbh8CBS5TZWF0IFNpZGUgTWVtYmVyIERpYWwgVHlwZSBBc3NlbWJseSBBdXRvbWF0aW9uZGQCAw9kFgQCAQ8PFgQfAQUwL2F1dG9tYXRpb24tc29sdXRpb25zL3NlZ21lbnQvd2VsZGluZy1hdXRvbWF0aW9uHwIFEldlbGRpbmcgQXV0b21hdGlvbmRkAgMPFgIfAAIFFgoCAQ9kFgJmDw8WBB8BBT4vYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vcm9ib3RpYy1taWctLS1zcG90LXdlbGRpbmctY2VsbB8CBR9Sb2JvdGljIE1pZyAmIFNwb3QgV2VsZGluZyBDZWxsZGQCAg9kFgJmDw8WBB8BBUAvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vYXV0by1lbmQtZm9ybS0tYmVuZC1hbmQtd2VsZC1jZWxsHwIFIUF1dG8gRW5kLUZvcm0sIEJlbmQgYW5kIFdlbGQgQ2VsbGRkAgMPZBYCZg8PFgQfAQU4L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3JvYm90aWMtbWlnLXdlbGRpbmctY2VsbHMfAgUZUm9ib3RpYyBNaWcgV2VsZGluZyBDZWxsc2RkAgQPZBYCZg8PFgQfAQVHL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3JvYm90aWMtc3BvdC0tbWlnLS0tZHJhd24tYXJjLXdlbGQtY2VsbHMfAgUoUm9ib3RpYyBTcG90LCBNaWcgJiBEcmF3biBBcmMgV2VsZCBDZWxsc2RkAgUPZBYCZg8PFgQfAQU2L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3Byb2plY3Rpb24td2VsZC1tYWNoaW5lHwIFF1Byb2plY3Rpb24gV2VsZCBNYWNoaW5lZGQCBA9kFgQCAQ8PFgQfAQU0L2F1dG9tYXRpb24tc29sdXRpb25zL3NlZ21lbnQvY3VzdG9tLWF1dG9tYXRpb24uYXNweB8CBRFDdXN0b20gQXV0b21hdGlvbmRkAgMPFgIfAAIIFhACAQ9kFgJmDw8WBB8BBTYvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vaGVhZGxpbmVyLWFzc2VtYmx5LmFzcHgfAgUSSGVhZGxpbmVyIEFzc2VtYmx5ZGQCAg9kFgJmDw8WBB8BBUUvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vc3RlZXJpbmctY29sdW1uLWFzc2VtYmx5LW1hY2hpbmVzLmFzcHgfAgUhU3RlZXJpbmcgQ29sdW1uIEFzc2VtYmx5IE1hY2hpbmVzZGQCAw9kFgJmDw8WBB8BBTwvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vc2VhdC1mcmFtZS1hc3NlbWJseS1kaWFsLmFzcHgfAgUYU2VhdCBGcmFtZSBBc3NlbWJseSBEaWFsZGQCBA9kFgJmDw8WBB8BBT8vYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vcm9ib3RpYy10dWJlLXByb2Nlc3MtbG9hZGVyLmFzcHgfAgUbUm9ib3RpYyBUdWJlIFByb2Nlc3MgTG9hZGVyZGQCBQ9kFgJmDw8WBB8BBUAvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vYWRoZXNpdmUtYXBwbGljYXRpb24tbWFjaGluZS5hc3B4HwIFHEFkaGVzaXZlIEFwcGxpY2F0aW9uIE1hY2hpbmVkZAIGD2QWAmYPDxYEHwEFOC9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9iZWFyaW5nLWNhZ2UtZmlsbGluZy1jZWxsHwIFGUJlYXJpbmcgQ2FnZSBGaWxsaW5nIENlbGxkZAIHD2QWAmYPDxYEHwEFQi9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9yZWx1Y3Rvci13aGVlbC1pbnNwZWN0aW9uLWdhZ2UtY2VsbB8CBSNSZWx1Y3RvciBXaGVlbCBJbnNwZWN0aW9uIEdhZ2UgQ2VsbGRkAggPZBYCZg8PFgQfAQU4L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3JvYm90aWMtaW5zcGVjdGlvbi1zeXN0ZW0fAgUZUm9ib3RpYyBJbnNwZWN0aW9uIFN5c3RlbWRkAgUPZBYEAgEPDxYEHwEFNS9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zZWdtZW50L29pbC1nYXMtYXV0b21hdGlvbi5hc3B4HwIFFE9pbCAmIEdhcyBBdXRvbWF0aW9uZGQCAw8WAh8AAgIWBAIBD2QWAmYPDxYEHwEFQS9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9vaWwtZ2FzLXR1YmUtdHJhbnNmZXItc3lzdGVtcy5hc3B4HwIFH09pbCAmIEdhcyBUdWJlIFRyYW5zZmVyIFN5c3RlbXNkZAICD2QWAmYPDxYEHwEFPC9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9vaWwtZ2FzLXR1YmUtaHlkcm90ZXN0ZXIuYXNweB8CBRpPaWwgJiBHYXMgVHViZSBIeWRyb3Rlc3RlcmRkAgYPZBYEAgEPDxYEHwEFOi9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zZWdtZW50L2hvcnRpY3VsdHVyZS1hdXRvbWF0aW9uLmFzcHgfAgUXSG9ydGljdWx0dXJlIEF1dG9tYXRpb25kZAIDDxYCHwACBBYIAgEPZBYCZg8PFgQfAQVGL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL2F1dG9tYXRlZC1zZWVkbGluZy10cmFuc3BsYW50aW5nLXN5c3RlbR8CBSdBdXRvbWF0ZWQgU2VlZGxpbmcgVHJhbnNwbGFudGluZyBTeXN0ZW1kZAICD2QWAmYPDxYEHwEFRy9hdXRvbWF0aW9uLXNvbHV0aW9ucy9zb2x1dGlvbi9hdXRvbWF0ZWQtcGx1Zy10cmFuc3BsYW50aW5nLXN5c3RlbS5hc3B4HwIFI0F1dG9tYXRlZCBQbHVnIFRyYW5zcGxhbnRpbmcgU3lzdGVtZGQCAw9kFgJmDw8WBB8BBUcvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vYXV0b21hdGVkLWJ1bGItdHJhbnNwbGFudGluZy1zeXN0ZW0uYXNweB8CBSNBdXRvbWF0ZWQgQnVsYiBUcmFuc3BsYW50aW5nIFN5c3RlbWRkAgQPZBYCZg8PFgQfAQVIL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3JvYm90aWMtbWluaS1jdWN1bWJlci10cmF5LWxvYWRpbmctc3lzdGVtHwIFKVJvYm90aWMgTWluaS1DdWN1bWJlciBUcmF5IExvYWRpbmcgU3lzdGVtZGQCAw8WAh8AAgIWBAIBD2QWAgIBDw8WBB8BBSAvcmVzb3VyY2VzL2Jyb2NodXJlcy12aWRlb3MuYXNweB8CBRJCcm9jaHVyZXMgJiBWaWRlb3NkZAICD2QWAgIBDw8WBB8BBR8vcmVzb3VyY2VzL2ltYWdlLXJlc291cmNlcy5hc3B4HwIFBkltYWdlc2RkAgcPZBYEAgEPFgIfAAIIFhACAQ9kFgICAQ8PFgIfAQU5L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3NlYXQtYXNzZW1ibHktcGFsbGV0cy5hc3B4ZBYGZg8PFgIeCEltYWdlVXJsBT4vZmlsZS5hc2h4P2lkPTI4Y2RiMTNkLTYxYTUtNDkzZS1hODllLWUxYzEwNDljYjE2MyZoPTMwMCZ3PTMwMGRkAgEPFQEVU2VhdCBBc3NlbWJseSBQYWxsZXRzZAICDxYCHwIF9QFDTVAgcHJvZHVjZXMgc2VhdCBhc3NlbWJseSBwYWxsZXRzIHRoYXQgYXJlIGRlc2lnbmVkIGFuZCBtYW51ZmFjdHVyZWQgdG8gYmUgdXNlZCBvbiBjb252ZXlvciBiYXNlZCBhc3NlbWJseSBzeXN0ZW1zLiBUaGVzZSBwYWxsZXRzIGluY29ycG9yYXRlIHRpbHQgYW5kIHJvdGF0ZSBmZWF0dXJlcyB0aGF0IHByb3ZpZGUgcHJvdmVuIHByb2Nlc3MgYW5kIGFzc2VtYmx5IGVyZ29ub21pYyBiZW5lZml0cyB0byB0aGUgb3BlcmF0b3IuIGQCAg9kFgICAQ8PFgIfAQU1L2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL2NuYy1ueWxvbi10dWJlLWJlbmRpbmdkFgZmDw8WAh8DBT4vZmlsZS5hc2h4P2lkPTRjZTFlMTk1LTRiZDMtNDBlOC1iM2ExLTM4MWQ1MjU2MDE1MCZoPTMwMCZ3PTMwMGRkAgEPFQEWQ05DIE55bG9uIFR1YmUgQmVuZGluZ2QCAg8WAh8CBY8CQmFzZWQgb24gc2Vydm8gdGVjaG5vbG9neSwgdGhlIFNOQjEwMCBpcyBhIGZ1bGx5IGZsZXhpYmxlIG1hbnVmYWN0dXJpbmcgcGxhdGZvcm0gZm9yIHRoZSBiZW5kaW5nIG9mIG55bG9uIHR1YmVzLiAgV2hldGhlciB5b3UgbmVlZCB0byBwcm9kdWNlIGxvdyB2b2x1bWUsIHByb3RvdHlwZSBydW5zIG9yIGhpZ2ggdm9sdW1lIHByb2R1Y3Rpb24sIHRoZSBTTkIxMDAgY2FuIHByb2R1Y2UgbXVsdGlwbGUgY29udG91cnMgd2l0aCBjaGFuZ2VvdmVyIGJ5IEhNSSBkYXRhIGVudHJ5LmQCAw9kFgICAQ8PFgIfAQVHL2F1dG9tYXRpb24tc29sdXRpb25zL3NvbHV0aW9uL3JvYm90aWMtc3BvdC0tbWlnLS0tZHJhd24tYXJjLXdlbGQtY2VsbHNkFgZmDw8WAh8DBT4vZmlsZS5hc2h4P2lkPTk2OTU0N2Q0LTUyOGQtNGFhMC05ZmYyLTk3NTY1ZmJlNzgwNCZoPTMwMCZ3PTMwMGRkAgEPFQEoUm9ib3RpYyBTcG90LCBNaWcgJiBEcmF3biBBcmMgV2VsZCBDZWxsc2QCAg8WAh8CBYcBQ01QIEF1dG9tYXRpb24gZGVzaWducyBhbmQgYnVpbGRzIHJvYm90aWMgbWlnIHdlbGRpbmcgY2VsbHMgdG8gY3VzdG9tZXIgc3BlY2lmaWNhdGlvbnMgdXNpbmcgc3RhdGUgb2YgdGhlIGFydCB0ZWNobm9sb2d5LiAgPGJyIC8+PGJyIC8+ZAIED2QWAgIBDw8WAh8BBTgvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vcm9ib3RpYy1taWctd2VsZGluZy1jZWxsc2QWBmYPDxYCHwMFPi9maWxlLmFzaHg/aWQ9ZmQwMmQ1MzAtZjJkZS00ODkxLThkNGItYTJhNWNmMDEwYjQ0Jmg9MzAwJnc9MzAwZGQCAQ8VARlSb2JvdGljIE1pZyBXZWxkaW5nIENlbGxzZAICDxYCHwIFlAFDTVAgQXV0b21hdGlvbiBkZXNpZ25zIGFuZCBidWlsZHMgcm9ib3RpYyBtaWcgd2VsZGluZyBjZWxscyB0byBjdXN0b21lciBzcGVjaWZpY2F0aW9ucyB1c2luZyBzdGF0ZSBvZiB0aGUgYXJ0IHRlY2hub2xvZ3kgYW5kIGEgd2VhbHRoIG9mIGV4cGVyaWVuY2UuZAIFD2QWAgIBDw8WAh8BBUAvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vYXV0by1lbmQtZm9ybS0tYmVuZC1hbmQtd2VsZC1jZWxsZBYGZg8PFgIfAwU+L2ZpbGUuYXNoeD9pZD03NjdmNDYwMi0zN2M5LTRhYjQtYmZlZi00NGZhNDIxYjA5N2ImaD0zMDAmdz0zMDBkZAIBDxUBIUF1dG8gRW5kLUZvcm0sIEJlbmQgYW5kIFdlbGQgQ2VsbGQCAg8WAh8CBe0BVGhpcyBhdXRvbWF0ZWQgc3lzdGVtIGZlYXR1cmVzIHNldmVyYWwgY2FwYWJpbGl0aWVzIGF0IENNUCBBdXRvbWF0aW9uLjxiciAvPjEuIEF1dG9tYXRlZCBFbmQtZm9ybWluZyBTeXN0ZW1zPGJyIC8+Mi4gUHJvamVjdGlvbiBXZWxkaW5nPGJyIC8+My4gUm9ib3RpYyBNYXRlcmlhbCBIYW5kbGluZyBBdXRvbWF0aW9uPGJyIC8+NC4gQXV0b21hdGVkIFRyYXkgSGFuZGxpbmcgKFN0YWNraW5nICYgRGUtc3RhY2tpbmcpZAIGD2QWAgIBDw8WAh8BBTwvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vc2VhdC1mcmFtZS1hc3NlbWJseS1kaWFsLmFzcHhkFgZmDw8WAh8DBT4vZmlsZS5hc2h4P2lkPWJjYjJmNjg0LWI2MTYtNDk3NS1iMjMxLTAwOWMwYzM5OTIyZCZoPTMwMCZ3PTMwMGRkAgEPFQEYU2VhdCBGcmFtZSBBc3NlbWJseSBEaWFsZAICDxYCHwIF0wFDTVAncyBleHBlcmllbmNlZCB0ZWFtIG9mIGRlc2lnbmVycyBhbmQgbWFjaGluZSBidWlsZGVycyBpbnRlZ3JhdGUgcm90YXJ5IGRpYWwgdHJhbnNmZXIgc3lzdGVtcyB3aGVuIHJlcXVpcmVkLCB0byBtZWV0IHRoZSBkZW1hbmRzIG9mIGhpZ2ggdm9sdW1lIHByb2R1Y3Rpb24gZm9yIG1ldGFsIGNvbXBvbmVudCBhc3NlbWJseSBpbiB0aGUgc2VhdGluZyBpbmR1c3RyeS4gZAIHD2QWAgIBDw8WAh8BBUEvYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vb2lsLWdhcy10dWJlLXRyYW5zZmVyLXN5c3RlbXMuYXNweGQWBmYPDxYCHwMFPi9maWxlLmFzaHg/aWQ9MzEzMDZkMGMtMzc3My00N2RjLWFjNWItNDE3OGRjNDYzMjgzJmg9MzAwJnc9MzAwZGQCAQ8VAR9PaWwgJiBHYXMgVHViZSBUcmFuc2ZlciBTeXN0ZW1zZAICDxYCHwIF6wFDTVAgZGVzaWducyBhbmQgbWFudWZhY3R1cmVzIGNvbXBsZXRlIHR1YmUgdHJhbnNmZXIgc3lzdGVtcyBmb3IgT2lsICYgR2FzIHR1YmluZyBtYW51ZmFjdHVyZXJzLiBUaGUgQ01QIHRlYW0gd2lsbCBkZXZlbG9wLCBidWlsZCBhbmQgaW5zdGFsbCBhIGNvbXBsZXRlIHNvbHV0aW9uIHRoYXQgaW50ZWdyYXRlcyBvcGVyYXRvciBwcm9jZXNzZXMgYXMgd2VsbCBhcyBhdXRvbWF0ZWQgcHJvY2VzcyBtYWNoaW5lcnkuZAIID2QWAgIBDw8WAh8BBT4vYXV0b21hdGlvbi1zb2x1dGlvbnMvc29sdXRpb24vcm9ib3RpYy1taWctLS1zcG90LXdlbGRpbmctY2VsbGQWBmYPDxYCHwMFPi9maWxlLmFzaHg/aWQ9MGEyNjJhMGYtNGUyNy00OTIyLTk1MDgtNWEyNTc0MWMxNWMwJmg9MzAwJnc9MzAwZGQCAQ8VAR9Sb2JvdGljIE1pZyAmIFNwb3QgV2VsZGluZyBDZWxsZAICDxYCHwIFlgFDTVAgQXV0b21hdGlvbiBkZXNpZ25zIGFuZCBidWlsZHMgcm9ib3RpYyBzcG90IHdlbGRpbmcgY2VsbHMgdG8gY3VzdG9tZXIgc3BlY2lmaWNhdGlvbnMgdXNpbmcgc3RhdGUgb2YgdGhlIGFydCB0ZWNobm9sb2d5IGFuZCBhIHdlYWx0aCBvZiBleHBlcmllbmNlLiBkAgMPFgIfAAIEFggCAQ9kFgICAQ8PFgQfAQU9L25ld3Nyb29tLyNsdWMtZHVwb250LWFwcG9pbnRlZC1vdXRzaWRlLXNhbGVzLWFjY291bnQtbWFuYWdlch8CBTJMdWMgRHVwb250IGFwcG9pbnRlZCBPdXRzaWRlIFNhbGVzIEFjY291bnQgTWFuYWdlcmRkAgIPZBYCAgEPDxYEHwEFNy9uZXdzcm9vbS8jbG9yZW5hLWxhbmdlbC1hcHBvaW50ZWQtZmluYW5jaWFsLWNvbnRyb2xsZXIfAgUsTG9yZW5hIExhbmdlbCBhcHBvaW50ZWQgRmluYW5jaWFsIENvbnRyb2xsZXJkZAIDD2QWAgIBDw8WBB8BBTMvbmV3c3Jvb20vI3dhZGUtc2FuZGVyc29uLWFwcG9pbnRlZC1nZW5lcmFsLW1hbmFnZXIfAgUoV2FkZSBTYW5kZXJzb24gYXBwb2ludGVkIEdlbmVyYWwgTWFuYWdlcmRkAgQPZBYCAgEPDxYEHwEFVC9uZXdzcm9vbS8jY21wLWF1dG9tYXRpb24tLS1lbXBsb3llZXMtYWRkcmVzcy1wb3ZlcnR5LXdpdGgtb3Bwb3J0dW5pdHktaW50ZXJuYXRpb25hbB8CBUlDTVAgQXV0b21hdGlvbiAmIEVtcGxveWVlcyBBZGRyZXNzIFBvdmVydHkgd2l0aCBPcHBvcnR1bml0eSBJbnRlcm5hdGlvbmFsZGRkPQob4vO4a9O4GARRMHFKJrLkzVForwThi2fA8Gn42tI=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+	
+	<img class="PrintHeader" src="/images/logo.png" width="300" alt="" />
+	<a class="SkipLink" href="#MainContent">Skip to Content</a>
+	
+	<header> 
+		<div class="Wrapper CF">
+			
+			<a href="/default.aspx"><img class="Logo" src="/images/logo.png" width="300" alt="" /></a>
+			
+			<div class="TopLinks CF"><a href="/default.aspx">Home</a> | <a href="/newsroom/default.aspx">Newsroom</a><!--| <a href="/blog/default.aspx">Blog</a>--></div>
+			
+		</div>
+		<div class="menu-button">Menu</div>
+		<nav class="MainNav CF">
+				
+		  <ul data-breakpoint="990" class="flexnav">
+			<li><a href="/about/default.aspx">ABOUT US</a>
+                
+			</li>
+			<li><a href="/automation-solutions/default.aspx">AUTOMATION SOLUTIONS</a>
+                <ul>
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_0" href="/automation-solutions/segment/tubing-automation.aspx">Tubing Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_0" href="/automation-solutions/solution/metal-tube-bending.aspx">Metal Tube Bending</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_1" href="/automation-solutions/solution/cnc-nylon-tube-bending">CNC Nylon Tube Bending</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_2" href="/automation-solutions/solution/dedicated-nylon-tube-bending">Dedicated Nylon Tube Bending</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_3" href="/automation-solutions/solution/tube-end-forming.aspx">Tube End Forming</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_4" href="/automation-solutions/solution/tube-stripping.aspx">Tube Stripping</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_5" href="/automation-solutions/solution/tube-bundle-assembly.aspx">Tube Bundle Assembly</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_6" href="/automation-solutions/solution/cnc-tube-bender-loading-unloading.aspx">CNC Tube Bender Loading & Unloading</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_7" href="/automation-solutions/solution/leak-testing.aspx">Leak Testing</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_8" href="/automation-solutions/solution/custom-automation-tubing.aspx">Custom Automation - Tubing</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_9" href="/automation-solutions/solution/machine-controls.aspx">Machine Controls</a><a id="Repeater_Segments_Repeater_Solutions_0_HyperLink_Solution_10" href="/automation-solutions/solution/servo-nylon-tube-bending">Servo Nylon Tube Bending</a></div>
+                        </li>
+                    
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_1" href="/automation-solutions/segment/seating-automation.aspx">Seating Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_0" href="/automation-solutions/solution/seat-assembly-pallets.aspx">Seat Assembly Pallets</a><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_1" href="/automation-solutions/solution/seat-assembly-conveyor-systems.aspx">Seat Assembly Conveyor Systems</a><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_2" href="/automation-solutions/solution/seat-assembly-carousel-systems.aspx">Seat Assembly Carousel Systems</a><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_3" href="/automation-solutions/solution/off-line-seat-assembly-fixtures.aspx">Off Line Seat Assembly Fixtures</a><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_4" href="/automation-solutions/solution/center-console-pallets">Center Console Pallets</a><a id="Repeater_Segments_Repeater_Solutions_1_HyperLink_Solution_5" href="/automation-solutions/solution/seat-side-member-dial-type-assembly-automation">Seat Side Member Dial Type Assembly Automation</a></div>
+                        </li>
+                    
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_2" href="/automation-solutions/segment/welding-automation">Welding Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_2_HyperLink_Solution_0" href="/automation-solutions/solution/robotic-mig---spot-welding-cell">Robotic Mig & Spot Welding Cell</a><a id="Repeater_Segments_Repeater_Solutions_2_HyperLink_Solution_1" href="/automation-solutions/solution/auto-end-form--bend-and-weld-cell">Auto End-Form, Bend and Weld Cell</a><a id="Repeater_Segments_Repeater_Solutions_2_HyperLink_Solution_2" href="/automation-solutions/solution/robotic-mig-welding-cells">Robotic Mig Welding Cells</a><a id="Repeater_Segments_Repeater_Solutions_2_HyperLink_Solution_3" href="/automation-solutions/solution/robotic-spot--mig---drawn-arc-weld-cells">Robotic Spot, Mig & Drawn Arc Weld Cells</a><a id="Repeater_Segments_Repeater_Solutions_2_HyperLink_Solution_4" href="/automation-solutions/solution/projection-weld-machine">Projection Weld Machine</a></div>
+                        </li>
+                    
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_3" href="/automation-solutions/segment/custom-automation.aspx">Custom Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_0" href="/automation-solutions/solution/headliner-assembly.aspx">Headliner Assembly</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_1" href="/automation-solutions/solution/steering-column-assembly-machines.aspx">Steering Column Assembly Machines</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_2" href="/automation-solutions/solution/seat-frame-assembly-dial.aspx">Seat Frame Assembly Dial</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_3" href="/automation-solutions/solution/robotic-tube-process-loader.aspx">Robotic Tube Process Loader</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_4" href="/automation-solutions/solution/adhesive-application-machine.aspx">Adhesive Application Machine</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_5" href="/automation-solutions/solution/bearing-cage-filling-cell">Bearing Cage Filling Cell</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_6" href="/automation-solutions/solution/reluctor-wheel-inspection-gage-cell">Reluctor Wheel Inspection Gage Cell</a><a id="Repeater_Segments_Repeater_Solutions_3_HyperLink_Solution_7" href="/automation-solutions/solution/robotic-inspection-system">Robotic Inspection System</a></div>
+                        </li>
+                    
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_4" href="/automation-solutions/segment/oil-gas-automation.aspx">Oil & Gas Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_4_HyperLink_Solution_0" href="/automation-solutions/solution/oil-gas-tube-transfer-systems.aspx">Oil & Gas Tube Transfer Systems</a><a id="Repeater_Segments_Repeater_Solutions_4_HyperLink_Solution_1" href="/automation-solutions/solution/oil-gas-tube-hydrotester.aspx">Oil & Gas Tube Hydrotester</a></div>
+                        </li>
+                    
+                        <li>
+                            <a id="Repeater_Segments_HyperLink_Segment_5" href="/automation-solutions/segment/horticulture-automation.aspx">Horticulture Automation</a>
+                            <div class="SubNav"><a id="Repeater_Segments_Repeater_Solutions_5_HyperLink_Solution_0" href="/automation-solutions/solution/automated-seedling-transplanting-system">Automated Seedling Transplanting System</a><a id="Repeater_Segments_Repeater_Solutions_5_HyperLink_Solution_1" href="/automation-solutions/solution/automated-plug-transplanting-system.aspx">Automated Plug Transplanting System</a><a id="Repeater_Segments_Repeater_Solutions_5_HyperLink_Solution_2" href="/automation-solutions/solution/automated-bulb-transplanting-system.aspx">Automated Bulb Transplanting System</a><a id="Repeater_Segments_Repeater_Solutions_5_HyperLink_Solution_3" href="/automation-solutions/solution/robotic-mini-cucumber-tray-loading-system">Robotic Mini-Cucumber Tray Loading System</a></div>
+                        </li>
+                    </ul>
+			</li>
+			<li><a href="/capabilities/default.aspx">CAPABILITIES</a>
+                
+			</li>
+			<li class="Resources"><a href="/resources/default.aspx">RESOURCES</a>
+                <ul><li><a id="Repeater_Resources_HyperLink_Page_0" href="/resources/brochures-videos.aspx">Brochures & Videos</a></li><li><a id="Repeater_Resources_HyperLink_Page_1" href="/resources/image-resources.aspx">Images</a></li></ul>
+			</li>
+			<li><a href="/careers/default.aspx">CAREERS</a>
+                
+			</li>
+			<li><a href="/contact/default.aspx">CONTACT US</a>
+                
+			</li>
+		  </ul>
+		</nav>
+			
+	</header>	
+	
+	
+	
+	<main role="main" id="MainContent" tabindex="-1">
+		
+
+	<div class="Banner">
+		<div class="Wrapper CF">
+			<ul id="sliderbanner">
+				<li class="panel7"> 
+					<a href="about/default.aspx"> 
+						<h1>Global Installations</h1>
+						<p>CMP has installations in 4 continents and over 10 countries.  We have the experience to deliver world class automation to customers across the globe.   <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+				<li class="panel1"> 
+					<a href="automation-solutions/segment/tubing-automation.aspx">
+						<h1>Tubing Automation</h1>
+						<p>Leading automation for the small diameter tubing industry,  from Dedicated Bending Machines to fully Automated Processing Equipment, make CMP your automation partner.  <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+				<li class="panel2">
+					<a href="automation-solutions/segment/seating-automation.aspx"> 
+						<h1>Seating Automation</h1>
+						<p>CMP's robust and innovative designs for the seat manufactures are the tooling of choice for many customers.  Our team can take your process to the next level in manufacturing excellence.  <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+				<li class="panel3"> 
+					<a href="automation-solutions/segment/welding-automation"> 
+						<h1>Welding Automation</h1>
+						<p>CMP Automation designs and manufactures fully automated custom welding systems and robotic welding solutions. Renowned for precision, accuracy and repeatability, we offer the many solutions in this automation segment.  <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+                <li class="panel4"> 
+					<a href="automation-solutions/segment/custom-automation.aspx"> 
+						<h1>Custom Automation</h1>
+						<p>CMP continually partners with our customers in the development of new technologies. We have a proven track record in developing customized manufacturing solutions for a wide range of applications.     <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+				<li class="panel5"> 
+					<a href="automation-solutions/segment/oil-gas-automation.aspx"> 
+						<h1>Oil & Gas Automation</h1>
+						<p>CMP designs and manufactures complete tube transfer systems for Oil & Gas tube manufacturers. We develop complete solutions around your finishing floor processes to provide a fully automated system.  <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+				<li class="panel6"> 
+					<a href="automation-solutions/segment/horticulture-automation.aspx"> 
+						<h1>Horticulture Automation</h1>
+						<p>CMP is applying excellence in automation for the Horticulture Industry.  Our team can provide innovative solutions to your growing operation.  <span>|</span>  <strong>More</strong></p>
+					</a>
+				</li>
+                
+			</ul>			
+		</div>
+		
+		<div class="Wrapper CF">
+			<ul class="thumbNav CF">
+				<li><a data-slide="1" href="automation-solutions/segment/tubing-automation.aspx">Tubing Automation</a></li>
+				<li><a data-slide="2" href="automation-solutions/segment/seating-automation.aspx">Seating Automation</a></li>
+				<li><a data-slide="3" href="automation-solutions/segment/welding-automation">Welding Automation</a></li>
+                <li><a data-slide="4" href="automation-solutions/segment/custom-automation.aspx">Custom Automation</a></li>
+				<li><a data-slide="5" href="automation-solutions/segment/oil-gas-automation.aspx">Oil & Gas Automation</a></li>
+				<li><a data-slide="6" href="automation-solutions/segment/horticulture-automation.aspx">Horticulture Automation</a></li>
+                
+			</ul>
+		</div>
+	</div>
+	
+	<div class="Wrapper CF">
+		<div class="Callouts Home CF">
+			<div class="ThreeCol EntireLink">
+				<a href="about/default.aspx">
+					<h2>What We Do</h2>
+					<p>CMP is a medium sized, vertically integrated manufacturer of turnkey automation equipment, providing custom manufacturing automation solutions to various industries. Since 1988, we have primarily supplied the automotive industry, in North America and overseas, specializing in small diameter tubing automation. <span class="Pipe">|</span>  <strong>More</strong></p>
+				</a>
+			</div>
+			<div class="ThreeCol FeaturedTech">
+				<h2>Featured Technology</h2>
+				<div>
+					<ul id="sliderfeatured">
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_0" href="/automation-solutions/solution/seat-assembly-pallets.aspx"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_0" src="/file.ashx?id=28cdb13d-61a5-493e-a89e-e1c1049cb163&amp;h=300&amp;w=300" />
+								<h3>Seat Assembly Pallets</h3>
+								<p>CMP produces seat assembly pallets that are designed and manufactured to be used on conveyor based assembly systems. These pallets incorporate tilt and rotate features that provide proven process and assembly ergonomic benefits to the operator.  <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_1" href="/automation-solutions/solution/cnc-nylon-tube-bending"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_1" src="/file.ashx?id=4ce1e195-4bd3-40e8-b3a1-381d52560150&amp;h=300&amp;w=300" />
+								<h3>CNC Nylon Tube Bending</h3>
+								<p>Based on servo technology, the SNB100 is a fully flexible manufacturing platform for the bending of nylon tubes.  Whether you need to produce low volume, prototype runs or high volume production, the SNB100 can produce multiple contours with changeover by HMI data entry. <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_2" href="/automation-solutions/solution/robotic-spot--mig---drawn-arc-weld-cells"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_2" src="/file.ashx?id=969547d4-528d-4aa0-9ff2-97565fbe7804&amp;h=300&amp;w=300" />
+								<h3>Robotic Spot, Mig & Drawn Arc Weld Cells</h3>
+								<p>CMP Automation designs and builds robotic mig welding cells to customer specifications using state of the art technology.  <br /><br /> <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_3" href="/automation-solutions/solution/robotic-mig-welding-cells"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_3" src="/file.ashx?id=fd02d530-f2de-4891-8d4b-a2a5cf010b44&amp;h=300&amp;w=300" />
+								<h3>Robotic Mig Welding Cells</h3>
+								<p>CMP Automation designs and builds robotic mig welding cells to customer specifications using state of the art technology and a wealth of experience. <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_4" href="/automation-solutions/solution/auto-end-form--bend-and-weld-cell"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_4" src="/file.ashx?id=767f4602-37c9-4ab4-bfef-44fa421b097b&amp;h=300&amp;w=300" />
+								<h3>Auto End-Form, Bend and Weld Cell</h3>
+								<p>This automated system features several capabilities at CMP Automation.<br />1. Automated End-forming Systems<br />2. Projection Welding<br />3. Robotic Material Handling Automation<br />4. Automated Tray Handling (Stacking & De-stacking) <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_5" href="/automation-solutions/solution/seat-frame-assembly-dial.aspx"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_5" src="/file.ashx?id=bcb2f684-b616-4975-b231-009c0c39922d&amp;h=300&amp;w=300" />
+								<h3>Seat Frame Assembly Dial</h3>
+								<p>CMP's experienced team of designers and machine builders integrate rotary dial transfer systems when required, to meet the demands of high volume production for metal component assembly in the seating industry.  <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_6" href="/automation-solutions/solution/oil-gas-tube-transfer-systems.aspx"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_6" src="/file.ashx?id=31306d0c-3773-47dc-ac5b-4178dc463283&amp;h=300&amp;w=300" />
+								<h3>Oil & Gas Tube Transfer Systems</h3>
+								<p>CMP designs and manufactures complete tube transfer systems for Oil & Gas tubing manufacturers. The CMP team will develop, build and install a complete solution that integrates operator processes as well as automated process machinery. <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						
+						<li>
+							<a id="ContentPlaceHolder_Content_Repeater_Featured_HyperLink_Solution_7" href="/automation-solutions/solution/robotic-mig---spot-welding-cell"><img id="ContentPlaceHolder_Content_Repeater_Featured_Image_Solution_7" src="/file.ashx?id=0a262a0f-4e27-4922-9508-5a25741c15c0&amp;h=300&amp;w=300" />
+								<h3>Robotic Mig & Spot Welding Cell</h3>
+								<p>CMP Automation designs and builds robotic spot welding cells to customer specifications using state of the art technology and a wealth of experience.  <span class="Pipe">|</span>  <strong>More</strong></p>
+							</a>
+						</li>
+						</ul>
+				</div>
+			</div>
+			<div class="ThreeCol">
+				<h2>Latest News</h2>
+                <ul><li><a id="ContentPlaceHolder_Content_Repeater_News_HyperLink_News_0" href="/newsroom/#luc-dupont-appointed-outside-sales-account-manager">Luc Dupont appointed Outside Sales Account Manager</a></li><li><a id="ContentPlaceHolder_Content_Repeater_News_HyperLink_News_1" href="/newsroom/#lorena-langel-appointed-financial-controller">Lorena Langel appointed Financial Controller</a></li><li><a id="ContentPlaceHolder_Content_Repeater_News_HyperLink_News_2" href="/newsroom/#wade-sanderson-appointed-general-manager">Wade Sanderson appointed General Manager</a></li><li><a id="ContentPlaceHolder_Content_Repeater_News_HyperLink_News_3" href="/newsroom/#cmp-automation---employees-address-poverty-with-opportunity-international">CMP Automation & Employees Address Poverty with Opportunity International</a></li></ul>
+			</div>
+		</div>
+	</div><!-- end Wrapper -->	
+		 
+	</main>
+	
+	<footer>
+		<div class="Wrapper CF">
+			<div class="ThreeQuartersCol">
+				<h2>Contact Us</h2>
+				<p>229 Boida Avenue &nbsp; | &nbsp; Ayr &nbsp; | &nbsp; Ontario &nbsp; |&nbsp; Canada &nbsp; | &nbsp; N0B 1E0<br />
+				Tel: 519-740-6035 &nbsp; | &nbsp; Fax: 519-622-5894<br />
+				Email: <a href="mailto:salescanada@cmpautomation.ca" target="_blank">salescanada@cmpautomation.ca</a></p>
+			</div>
+			<div class="ThreeCol">
+				<p class="FooterLinks"><a href="/terms.aspx">Terms of Use</a> &nbsp; | &nbsp; <a href="/privacy.aspx">Privacy Policy</a></p>
+				<div class="SocialIcons CF"><a class="YouTube" href="http://www.youtube.com/user/cmpinc1" target="_blank"></a><!--<a class="Facebook" href="" target="_blank"></a><a class="Twitter" href="" target="_blank"></a>--><a class="LinkedIn" href="https://www.linkedin.com/company/cmp-automation-inc/?originalSubdomain=ca" target="_blank"></a></div>
+				<p class="Copyright">© Copyright 2019 CMP Automation Inc.</p>
+				
+    <p class="RKD"><a href="http://www.rkd.ca" target="_blank"><img src="images/rkd.png" alt="Web Design by RKD Web Studios" width="155" /></a></p>
+		
+			</div>        
+		</div>
+	</footer>	
+
+	
+    </form>
+	
+	<!-- Javascript -->		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/layout/js/stacktable.js"></script> 
+	<script type="text/javascript" src="/layout/js/jquery.flexnav.min.js"></script> 
+	<script type="text/javascript" src="/layout/js/scripts.js"></script> 
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="/layout/js/respond.min.js"></script> 
+	<![endif]-->
+	
+	
+	<!--Put one off JS here-->
+	<script type="text/javascript" src="layout/js/jquery.anythingslider.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+		 $('#sliderbanner') 
+			.anythingSlider({
+				mode : 'f',   // fade mode - new in v1.8!
+				hashTags:false,
+				autoPlay : true, 
+				animationTime: 300,
+				delay : 5000,
+				buildArrows : false,
+				buildNavigation: false,    
+				buildStartStop : false,
+				expand: true,
+                autoPlayLocked: true,
+                resumeDelay: 1000,
+                onSlideComplete: function (slider) {
+                    $(".thumbNav li a").attr("class", "");
+                    $(".thumbNav li:nth-child(" + (slider.currentPage - 1) + ") a").attr("class", "Current");
+                }
+				 })
+		  
+		  $('#sliderfeatured') 
+			.anythingSlider({
+				hashTags:false,	
+				buildNavigation : false, 
+				buildStartStop : false,
+				expand: true
+		  })
+			
+			$('ul.thumbNav a').bind('mouseover', function(e) {
+				// get slide number
+			    var h = $(this).attr('data-slide');
+			    h = parseInt(h) + 1;
+				// external links will fall through and go to the external url
+				if (h) {
+					$('#sliderbanner').anythingSlider(h);
+				}
+			})
+		
+		});
+		$(window).load(function(){
+		  $('#sliderfeatured').data('AnythingSlider').makeActive(); // only works in version 1.6.1+
+		});
+	</script>
+
+
+	
+	<!-- Analytics -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48751116-1', 'cmpautomation.ca');
+  ga('send', 'pageview');
+
+</script> 
+
+</body>
+</html>

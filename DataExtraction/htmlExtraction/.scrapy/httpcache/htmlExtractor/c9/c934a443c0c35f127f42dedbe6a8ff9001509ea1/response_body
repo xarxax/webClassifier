@@ -1,0 +1,406 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Peixin International Group,diaper machine,baby diaper machine,adult diaper machine ,sanitary napkin machine ,lady sanitary napkin machine ,tissue machine ,toilet paper machine ,underpad machine, wet wipe machine, china diaper machine ">
+<meta name="description" content="Peixin International Group,diaper machine,baby diaper machine,adult diaper machine ,sanitary napkin machine ,lady sanitary napkin machine ,tissue machine ,toilet paper machine ,underpad machine, wet wipe machine, china diaper machine ">
+<title>Peixin International Group,diaper machine,baby diaper machine,adult diaper machine ,sanitary napkin machine ,lady sanitary napkin machine ,tissue machine ,toilet paper machine ,underpad machine, wet wipe machine, china diaper machine </title>
+<link href="/home/css/fontcss.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="/home/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/home/js/jms.js"></script>
+<script type="text/javascript">
+var bannerIndex = 0, bannerTotal, bannerTimer, bannerList, bannerNav;
+
+function showBanner()
+{
+    bannerList.stop();
+    bannerList.eq(bannerIndex).siblings().fadeOut(200);
+    bannerList.eq(bannerIndex).fadeIn(2000);
+	bannerNav.find("a").eq(bannerIndex).addClass("this").siblings().removeClass("this");
+}
+
+function nextBanner()
+{ 
+    if(bannerIndex < bannerTotal - 1) bannerIndex += 1;
+    else bannerIndex = 0;
+	showBanner();
+}
+
+function prevBanner()
+{ 
+    if(bannerIndex > 0) bannerIndex -= 1;
+    else bannerIndex = bannerTotal - 1;
+	showBanner();
+}
+
+function bannerAutoScroll()
+{
+    bannerTimer = setInterval(nextBanner,5000);
+}
+
+$(function() {
+	bannerList = $('#index_banner_list li');
+	bannerNav = $("#index_banner_nav");
+    bannerTotal = bannerList.length; 
+	bannerList.eq(0).fadeIn(2000); //显示第一张
+
+	var navHTML = "";
+	for (var i=0; i<bannerTotal; i++) {
+		var className = (i == 0) ? ' class="this"' : '';
+		navHTML += '<a href="javascript:;"'+className+'>'+(i+1)+'</a>';
+	}
+
+	bannerNav.html(navHTML);
+
+    bannerAutoScroll();
+
+    $('#index_banner').hover(function() {
+        $('#prev_btn, #next_btn').fadeIn();
+        clearInterval(bannerTimer);
+    }, function() {
+        $('#prev_btn, #next_btn').fadeOut();
+        bannerAutoScroll();
+    });
+
+    $('#prev_btn').click(prevBanner);
+    $('#next_btn').click(nextBanner); 
+
+	bannerNav.find("a").bind("click", function() {
+		bannerIndex = $(this).index();
+		showBanner();
+	});
+});
+</script>
+</head>
+<body>
+<div align="center">
+  <table width="1180" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div align="left"><a href="/"><img src="/home/image/index2_02.jpg" width="506" height="104" /></a></div></td>
+      <td valign="top"><div align="right">
+          <table width="100" height="13" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><a href="http://cn.peixin.com" target="_blank"><img src="/home/image/index2_05.jpg" width="65" height="39" /></a></td>
+              <td><a href="http://www.peixin.com" target="_blank"><img src="/home/image/index2_06.jpg" width="57" height="39" /></a></td>
+              <td><a href="http://fr.peixin.com/?mod=index&lang=fr" target="_blank"><img src="/home/image/index2_07.jpg" width="68" height="39" /></a></td>
+              <td><a href="http://ru.peixin.com/?mod=index&lang=py" target="_blank"><img src="/home/image/index2_08.jpg" width="62" height="39" /></a></td>
+            </tr>
+          </table>
+          <table width="100" border="0" cellpadding="0" cellspacing="1" bgcolor="eeeeee">
+            <tr>
+              <td bgcolor="#FFFFFF">
+              
+             <form action="" method="get" name="search" id="search" class="searchform">
+                <input type="hidden" value="product" name="mod" /> 
+              <table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><input type="text" name="keyword" style="width:200px; height:24px; border:none; background:none;" /></td>
+                    <td><input type="image" src="/home/image/index2_12.jpg" width="41" height="28" /></td>
+                  </tr>
+                </table>
+              </form>
+                
+                </td>
+            </tr>
+          </table>
+        </div></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="013437">
+    <tr>
+      <td><div align="center">
+          <table width="1180" height="40" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td><div align="left" id="log">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/?mod=about&id=1">About PEIXIN</a></li>
+                    <li><a href="/?mod=product">Products</a></li>
+                    <li><a href="/?mod=investor">Investor Relations</a></li>
+                    <li><a href="/?mod=news">News</a></li>
+                    <li><a href="/?mod=service&id=9">Network</a></li>
+                    <li><a href="/?mod=feedback">Feedback</a></li>
+                    <li style="background:url(/home/image/index2_15.jpg) right no-repeat;"><a href="/?mod=contact&id=12">Contact us</a></li>
+                  </ul>
+                </div></td>
+            </tr>
+          </table>
+        </div></td>
+    </tr>
+  </table>
+</div><div align="center">
+  <div id="index_banner">
+    <ul id="index_banner_list">
+	      <li><a href="?mod=about&id=1" target="_blank" style="background-image:url(/uploadfile/upfiles/20150921095241.jpg); ">&nbsp;&nbsp;</a></li>
+           <li><a href="?mod=product_show&id=35" target="_blank" style="background-image:url(/uploadfile/upfiles/20151106171241.jpg); ">&nbsp;&nbsp;</a></li>
+           <li><a href="?mod=product_show&id=31" target="_blank" style="background-image:url(/uploadfile/upfiles/20160822154827.jpg); ">&nbsp;&nbsp;</a></li>
+           <li><a href="?mod=product_show&id=30" target="_blank" style="background-image:url(/uploadfile/upfiles/20151027163944.jpg); ">&nbsp;&nbsp;</a></li>
+      
+    </ul>
+    <div id="index_banner_nav"></div>
+    <a href="javascript:;" id="prev_btn" title="上一张"><img src="/home/pic/left.png" width="40" height="61" border="0"></a> <a href="javascript:;" id="next_btn" title="下一张"><img src="/home/pic/right.png" width="40" height="61" border="0"></a> </div>
+</div>
+<div align="center">
+  <table width="100" height="40" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1180" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="374" valign="top"><div align="left">
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="/home/image/index2_22.jpg" width="334" height="132" /></td>
+            </tr>
+          </table>
+          <table width="334" height="53" border="0" cellpadding="0" cellspacing="0" style="border-bottom:solid 1px #eee;">
+            <tr>
+              <td><div align="left" style="font-size:14px; color:#000; font-weight:bold;">Hot News</div></td>
+            </tr>
+          </table>
+          <table width="334" height="120" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><div align="left"><a href="/?mod=news_show&id=142" class="link1" title="《Peixin》международное сообщество приняло активное участие в международной выставке « ИнтерБытХим»">《Peixin》международное ...</a></div></td>
+                    <td><div align="right" style="color:#999;">[2016-03-19]</div></td>
+                  </tr>
+                </table>
+                 
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><div align="left"><a href="/?mod=news_show&id=141" class="link1" title="Attending China National Household Paper Industry Exhibition">Attending China National Household Pap...</a></div></td>
+                    <td><div align="right" style="color:#999;">[2016-03-16]</div></td>
+                  </tr>
+                </table>
+                 
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><div align="left"><a href="/?mod=news_show&id=140" class="link1" title="Участие в форуме 《Интерэкспо-2016》 9-11 марта 2016 г.">Участие в форуме 《Ин...</a></div></td>
+                    <td><div align="right" style="color:#999;">[2016-01-07]</div></td>
+                  </tr>
+                </table>
+                 
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><div align="left"><a href="/?mod=news_show&id=118" class="link1" title="THE TECHNOTEX INDIA Fair">THE TECHNOTEX INDIA Fair</a></div></td>
+                    <td><div align="right" style="color:#999;">[2013-01-15]</div></td>
+                  </tr>
+                </table>
+                  
+               
+                
+                </td>
+            </tr>
+          </table>
+          <table width="334" height="53" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #eee;">
+            <tr>
+              <td><div align="left"><a href="/?mod=news" class="link1">Detail&gt;&gt;&gt;</a></div></td>
+            </tr>
+          </table>
+        </div></td>
+      <td width="374" valign="top"><div align="left">
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="/uploadfile/upfiles/20150921095622.jpg" width="334" height="132" /></td>
+            </tr>
+          </table>
+          <table width="334" height="53" border="0" cellpadding="0" cellspacing="0" style="border-bottom:solid 1px #eee;">
+            <tr>
+              <td><div align="left" style="font-size:14px; color:#000; font-weight:bold;">Company Profile</div></td>
+            </tr>
+          </table>
+          <table width="334" height="120" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>PEIXIN International Group is located in Shuangyang Overseas Chinese Economic-Develop Zone, Luojiang District, Quanzhou. PEIXIN is one of the biggest enterprises in China specializ...</td>
+            </tr>
+          </table>
+          <table width="334" height="53" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #eee;">
+            <tr>
+              <td><div align="left"><a href="/?mod=about&id=1" class="link1">Detail&gt;&gt;&gt;</a></div></td>
+            </tr>
+          </table>
+        </div></td>  
+      <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="013437">
+          <tr>
+            <td><div align="left" style="font-size:14px; color:#fff; font-weight:bold; padding-left:10px;">Video</div></td>
+            <td width="40"><a href="/?mod=video"><img src="/home/image/index2_24.jpg" width="40" height="40" border="0" /></a></td>
+          </tr>
+        </table>
+        <table width="100" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+                
+              <!--酷播迷你 CuPlayerMiniV2.0 代码开始-->
+			<SCRIPT type=text/javascript src="/home/js/swfobject.js"></SCRIPT>
+            <SPAN id=CuPlayer><STRONG>酷播迷你(CuPlayerMiniV2.0) 提示：你的Flash Player版本过低，请<A 
+            href="http://www.cuplayer.com/">点此进行播放器升级</A>！</STRONG> </SPAN>
+            <SCRIPT type=text/javascript>
+            var so = new SWFObject("/home/js/CuPlayerMiniV20_Black_S.swf","CuPlayer","432","267","9","#000000");
+            so.addParam("allowfullscreen","true");
+            so.addParam("allowscriptaccess","always");
+            so.addParam("wmode","opaque");
+            so.addParam("quality","high");
+            so.addParam("salign","lt");
+            so.addVariable("CuPlayerFile","/uploadfile/upfiles/20150924150257.flv");
+            so.addVariable("CuPlayerImage","/uploadfile/upfiles/20150930101035.jpg");
+            so.addVariable("CuPlayerShowImage","true");
+            so.addVariable("CuPlayerWidth","432");
+            so.addVariable("CuPlayerHeight","267");
+            
+            so.addVariable("CuPlayerAutoPlay","false");
+            
+            so.addVariable("CuPlayerAutoRepeat","false");
+            so.addVariable("CuPlayerShowControl","true");
+            so.addVariable("CuPlayerAutoHideControl","false");
+            so.addVariable("CuPlayerAutoHideTime","6");
+            so.addVariable("CuPlayerVolume","80");
+            so.write("CuPlayer");	
+            </SCRIPT>
+            <!--酷播迷你 CuPlayerMiniV2.0 代码结束-->
+            
+            </td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="1180" height="30" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #eee;">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1180" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+      <div class="picMarquee-left">
+      <div id="proli" class="bd">
+          <ul>
+             
+            <li><a href="/?mod=product_show&id=35"><img src="/uploadfile/upfiles/20170717155633.jpg"  width="226" height="141" title="Full-servo Control Elastic Laminated Waistband Baby Diaper Production Line"/>
+              <p>Full-servo Control Elastic Laminat...</p>
+              <span>Detail</span></a></li>
+        
+              
+            <li><a href="/?mod=product_show&id=34"><img src="/uploadfile/upfiles/20151008162917.jpg"  width="226" height="141" title="Full Servo Control Pull-ups Baby Panty Production Line"/>
+              <p>Full Servo Control Pull-ups Baby P...</p>
+              <span>Detail</span></a></li>
+        
+              
+            <li><a href="/?mod=product_show&id=31"><img src="/uploadfile/upfiles/20161213161452.jpg"  width="226" height="141" title="Full-servo Control Full-function Adult Diaper Production Line"/>
+              <p>Full-servo Control Full-function A...</p>
+              <span>Detail</span></a></li>
+        
+              
+            <li><a href="/?mod=product_show&id=30"><img src="/uploadfile/upfiles/20151008160805.jpg"  width="226" height="141" title="Full-servo Control Sanitary Napkin Production Line"/>
+              <p>Full-servo Control Sanitary Napkin...</p>
+              <span>Detail</span></a></li>
+        
+              
+            <li><a href="/?mod=product_show&id=27"><img src="/uploadfile/upfiles/20151008155532.jpg"  width="226" height="141" title="Full-servo Control Horizonal Panty Liner Production Line"/>
+              <p>Full-servo Control Horizonal Panty...</p>
+              <span>Detail</span></a></li>
+        
+              
+            <li><a href="/?mod=product_show&id=1"><img src="/uploadfile/upfiles/20151008151702.jpg"  width="226" height="141" title="Color Printing and Rewinding Machine"/>
+              <p>Color Printing and Rewinding Machi...</p>
+              <span>Detail</span></a></li>
+        
+               
+      
+          </ul>
+        </div></div></td>
+    </tr>
+  </table>
+
+  <script language="javascript">
+  jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50,trigger:"click"});
+  </script>
+  <table width="100" height="30" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div align="center" style="background:#013437;">
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1180" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div id="bottom">
+          <ul>
+            <li><a href="/?mod=about&id=1"><strong>About PEIXIN</strong></a><br />
+              <a href="/?mod=about&id=1">PEIXIN Profile</a><br />
+              <a href="/?mod=about&id=2">Management</a><br />
+              <a href="/?mod=about&id=3">Quality Guarantee</a><br />
+              <a href="/?mod=honor">Honor</a><br />
+              <a href="/?mod=about&id=3">Team spirit</a><br />
+              <a href="/?mod=about&id=4">Core Concept</a><br />
+              <a href="/?mod=video">Video</a>
+              </li>
+            <li><a href="/?mod=product"><strong>Products</strong></a><br />
+             
+              <a href="/?mod=product&typeid=1">Baby Diaper Production line Series</a><br />
+              
+              <a href="/?mod=product&typeid=2">Adult diaper Production Line Series</a><br />
+              
+              <a href="/?mod=product&typeid=3">Sanitary Napkin Production line Series</a><br />
+              
+              <a href="/?mod=product&typeid=4">Panty Liner Production line Series</a><br />
+              
+              <a href="/?mod=product&typeid=5">Bed Mattress & Pet Mattress Production line Series</a><br />
+              
+              <a href="/?mod=product&typeid=6">Rewinding Machine Series Equipment</a><br />
+              
+              <a href="/?mod=product&typeid=7">Cutting Machine Series Equipment</a><br />
+              
+              <a href="/?mod=product&typeid=8">Box-drawing Face Tissue Series Equipment</a><br />
+              
+              <a href="/?mod=product&typeid=9">Napkin paper Series Equipment</a><br />
+                         </li>
+            <li><a href="/?mod=news"><strong>News</strong></a><br />
+                
+              <a href="/?mod=news&typeid=7">Company news</a><br />
+                
+              <a href="/?mod=news&typeid=8">Industry news</a><br />
+                              </li>
+            <li><a href="/?mod=service&id=9"><strong>Network</strong></a><br />
+              <a href="/?mod=service&id=9">Sales Network</a><br />
+              <a href="/?mod=trade">Trade Fair</a><br />
+              <a href="/?mod=case">Customers</a> </li>
+            <li><a href="/?mod=feedback"><strong>Feedback </strong></a><br />
+              <a href="/?mod=feedback">Message</a><br />
+              <a href="/?mod=faq">Frequently asked</a></li>
+            <li><a href="/?mod=contact&id=12"><strong>Contact us</strong></a><br />
+              <a href="/?mod=contact&id=12">Contact</a></li>
+          </ul>
+        </div></td>
+    </tr>
+  </table>
+  <table width="100" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <table width="1180" height="54" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><div align="left" style="font-family:Arial, Helvetica, sans-serif;">Copyright © Peixin.com. All rights reserved. Designed by chinakewei.net &nbsp;&nbsp;&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256697474'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1256697474%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>&nbsp;&nbsp;<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39073700 = new Ya.Metrika({ id:39073700, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39073700" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

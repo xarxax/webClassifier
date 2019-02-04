@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head><title>Welcome to HR Advice.com - your online Human Resources solution!</title>
+
+
+
+<META  name="description" content="Helps employees, employers and human resource professionals solve
+
+problems in the workplace. Human Resources Advice, Human Resources outsourcing.">
+
+
+
+<META  name="keywords" content="Human resource,advice,HR,help,consulting,research,employment,work problem,career,planning,employee,issues,recruiting,training,personnel,employee relations,development,leadership,360 degree feedback,360 feedback,benefit,discrimination,compensation">
+
+
+
+<script language="Javascript">
+
+<!--
+
+window.onerror=null;
+
+ok=document.images;
+
+timeout=0; stored=0;
+
+hrfArray=new Array();
+
+hrfArray[1]='strat';
+
+hrfArray[2]='training';
+
+hrfArray[3]='perf';
+
+hrfArray[4]='relat';
+
+hrfArray[5]='policy';
+
+hrfArray[6]='benefit';
+
+function preload(name){
+
+	eval("img"+name+"=new Image()");
+
+	eval("img"+name+".src='pics/"+name+".gif'");
+
+}
+
+if (ok){
+
+	preload("bg_color1");
+
+	for (i=1; i<=6; i++) {
+
+		preload(i);
+
+		preload(i+"over");
+
+		preload("head_pict"+i);
+
+		for (j=1; j<=6; j++) {
+
+			if (j!=6) {
+
+				preload(i+"menu"+j);
+
+				preload(i+"menu"+j+"over");
+
+			}
+
+			else if (i==1 || i==4) {
+
+					preload(i+"menu"+j);
+
+					preload(i+"menu"+j+"over");
+
+				}
+
+		}
+
+	}
+
+	preload("head_pict7");
+
+	preload("menu6");
+
+	preload("menu7");
+
+}
+
+window.status="HR Advice.com";
+
+function show(section_ID, line){
+
+	if (ok) {
+
+		timeout=0;
+
+		if (section_ID!=stored) clear(0);
+
+		stored=section_ID;
+
+		if (stored!=0) {
+
+			document.images["im"+stored].src=eval("img"+stored+"over.src");
+
+			hrf=hrfArray[stored];
+
+			for (j=1; j<=5; j++) {
+
+				if (j!=line) 
+
+					document.images["menu"+j].src=eval("img"+stored+"menu"+j+".src");
+
+				else
+
+					document.images["menu"+j].src=eval("img"+stored+"menu"+j+"over.src");
+
+			}
+
+			if (stored==1 || stored==4) {
+
+				if (line==6) document.images["menu6"].src=eval("img"+stored+"menu6over.src");
+
+				else document.images["menu6"].src=eval("img"+stored+"menu6.src");
+
+				document.images["menu7"].src=eval("imgmenu7.src");
+
+			}
+
+			else {
+
+				document.images["menu6"].src=eval("imgmenu6.src");
+
+				document.images["menu7"].src=eval("imghead_pict7.src");
+
+			}
+
+		window.status="Choose a category and ask us a question!";
+
+		}
+
+		else window.status="HR Advice.com";
+
+	}
+
+}
+
+function clear(all){
+
+	if (ok && stored>0) {
+
+		document.images["im"+stored].src=eval("img"+stored+".src");
+
+		if (all) for (j=1; j<=7; j++) document.images["menu"+j].src=eval("imghead_pict"+j+".src");
+
+		stored=0;
+
+		hrf="";
+
+	}
+
+	window.status="HR Advice.com";
+
+}
+
+function hide(){
+
+	if (ok && stored>0) {
+
+		timeout=1;
+
+		window.setTimeout('if (timeout>0) clear(1)',1500);
+
+	}
+
+}
+
+//-->
+
+</script>
+
+</head><body bgcolor="#ffffff" onload="window.open('popup.html','popup','scrollbars=no,width=200,height=169,resizable=no,top=0,left=0')">
+
+<center>
+
+
+
+<table width="687" cellpadding="0" cellspacing="0" border="0" background="pics/bg_color1.gif">
+
+<tr><td>
+
+	<table width="687" cellpadding="0" cellspacing="0" border="0" background="">
+
+	<tr>
+
+		<td width="687" colspan="2"><img 
+
+		src="pics/logo.gif" width=220 height=70 alt="" border="0"><img
+
+		src="pics/welcom.gif" width=356 height=26 alt="" border="0"></td>
+
+	</tr>
+
+	<tr>
+
+		<td colspan="2" width="687"><img src="pics/line1.gif" width=220 height=8 alt="" border="0"><img 
+
+		src="pics/line2.gif" width=467 height=8 alt="" border="0"></td>
+
+	</tr>
+
+	<tr>
+
+		<td rowspan="2" valign="top"><img src="pics/dot.gif" width=1 height=5 alt="" border="0"><br><img src="pics/dot.gif" width=10 height=1 alt="" border="0"><a href="regist.html"><img 
+
+		src="pics/cons_regd1.gif" width=125 height=32 alt="Consultants Registry" border="0"></a><img src="pics/dot.gif" width=15 height=1 alt="" border="0"></td>
+
+	<td><a href="news.php3"><img align="top" 
+
+		src="pics/hrnews.gif" width=106 height=29 alt="HR News & Tips" border="0"></a><a href="chall.php3"><img align="top" 
+
+		src="pics/take_challenge.gif" width=75 height=29 alt="Take the HR Challenge" border="0"></a><a href="samquan.php3"><img align="top" 
+
+		src="pics/questions_answers.gif" width=111 height=29 alt="Sample Questions and Answers" border="0"></a><a href="contact.html"><img align="top" 
+
+		src="pics/contact_us.gif" width=125 height=29 alt="Contact Us/Register for Employment" border="0"></a><img src="pics/dot.gif" width=20 height=1 alt="" border="0"><a href="why.html"><img align="top" 
+
+		src="pics/why_us.gif" width=93 height=29 alt="Why Us?" border="0"></a></td></tr>
+
+	<tr><td><font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1" color="#c40b11"><p align="justify"><b>Receive answers to your workplace questions from degreed Human Resources professionals with at least 10 years HR experience for only $7.95 per month.   Customized responses within 2 hours delivered to your desktop or via phone.</b></font></td></tr>
+
+	<tr><td colspan="2"><img src="pics/dot.gif" width=1 height=10 alt="" border="0"></td></tr>
+
+	</table>
+
+	<table width="687" cellpadding="0" cellspacing="0" border="0" background="">
+
+	<tr>
+
+		<td width="197" rowspan="2" valign="bottom"><img src="pics/dot.gif" width=197 height=1 border="0"><br>
+
+		<font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1"><p
+
+		align="right"><b>Grow your business<br>to the MAX!</b><br><img
+
+		src="pics/cnr.gif" width=18 height=32 border="0"></font></td>
+
+		<td width="208" rowspan="2"><a href="strat.html" onMouseOver="show(1, 0); return true" onMouseOut="hide()"><img name="im1"
+
+		src="pics/1.gif" width=60 height=86 alt="" border="0"></a><img 
+
+		src="pics/pict1.gif" width=75 height=86 alt="" border="0"><a href="training.html" onMouseOver="show(2, 0); return true" onMouseOut="hide()"><img name="im2"
+
+		src="pics/2.gif" width=73 height=86 alt="" border="0"></a></td>
+
+		<td width="282"><img 
+
+		src="pics/dot.gif" width=282 height=1 alt="" border="0"><br>
+
+		<font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1"><b>Embrace change,<br>meet expectations,<br>define organizational culture</b></font></td>
+
+	</tr>
+
+	<tr><td valign="bottom"><img src="pics/31.gif" width=33 height=30 border="0"></td></tr>
+
+	<tr>
+
+		<td colspan="3">
+
+			<table width="687" cellpadding="0" cellspacing="0" border="0">
+
+			<tr><td rowspan="2" width="131"><font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1"><p align="right"><b>Resolve challenging<br>workplace issues</b></font></td>
+
+					<td width="79" align="right"><img 
+
+				src="pics/pict2.gif" width=40 height=45 alt="" border="0"></td>
+
+				<td width="177" rowspan="2"><a href="#" onMouseOver="show(stored, 1); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0) location.href=hrf+'1.html';return(false);"><img name="menu1"
+
+				src="pics/head_pict1.gif" width=177 height=28 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored,2); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0) location.href=hrf+'2.html';return(false);"><img name="menu2"
+
+				src="pics/head_pict2.gif" width=177 height=15 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored,3); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0) location.href=hrf+'3.html';return(false);"><img name="menu3"
+
+				src="pics/head_pict3.gif" width=177 height=15 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored,4); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0) location.href=hrf+'4.html';return(false);"><img name="menu4"
+
+				src="pics/head_pict4.gif" width=177 height=15 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored,5); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0) location.href=hrf+'5.html';return(false);"><img name="menu5"
+
+				src="pics/head_pict5.gif" width=177 height=15 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored,6); return true" onMouseOut="hide()" 
+
+				onClick="if(stored!=0 && (stored==1 || stored==4)) location.href=hrf+'6.html';return(false);"><img name="menu6"
+
+				src="pics/head_pict6.gif" width=177 height=15 alt="" border="0"></a><br><a href="#" onMouseOver="show(stored, 0); return true" onMouseOut="hide()" 
+
+				onClick="return(false);"><img name="menu7"
+
+				src="pics/head_pict7.gif" width=177 height=14 alt="" border="0"></a></td>
+
+				<td width="62" rowspan="2"><a href="perf.html" onMouseOver="show(3, 0); return true" onMouseOut="hide()"><img name="im3" src="pics/3.gif" width=62 height=65 alt="" border="0"><br><img 
+
+				src="pics/pict4.gif" width=62 height=52 alt="" border="0"></a></td>
+
+				<td width="231" rowspan="2" colspan="2"><p><font face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-1"><b>Achieve excellence,<br>job satisfaction<br>and positive results</b></font><br><br><img src="pics/dot.gif" width=245 height=1 border="0"></td>
+
+			</tr>
+
+			<tr>
+
+				<td width="79" align="right"><a href="relat.html" onMouseOver="show(4, 0); return true" onMouseOut="hide()"><img name="im4" 
+
+				src="pics/4.gif" width=79 height=72 alt="" border="0"></a></td>
+
+			</tr>
+
+		</table></td>
+
+	</tr>
+
+	<tr>
+
+		<td width="687" colspan="3">
+
+			<table cellpadding="0" cellspacing="0" border="0" width="687">
+
+			<tr>
+
+				<td width="175"><font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1"><p align="right"><b>Create or modify<br>Human Resources<br>Policies and Programs</b></font></td>
+
+				<td width="68" valign="top"><a href="policy.html" onMouseOver="show(5, 0); return true" onMouseOut="hide()"><img name="im5" src="pics/5.gif" width=68 height=87 border="0"></a></td>
+
+				<td width="103" valign="top"><img src="pics/pict5.gif" width=103 height=87 border="0"></td>
+
+				<td width="70" valign="top"><a href="benefit.html" onMouseOver="show(6, 0); return true" onMouseOut="hide()"><img name="im6" src="pics/6.gif" width=70 height=70 border="0"></a></td>
+
+				<td valign="top" width="271"><font face="arial, helvetica, ag_helvetica, helv, sans-serif, helvetica, helv" size="-1"><b>The guide to salary, benefits<br>and incentives in the workplace</b></font>
+
+<A HREF="hrproducts.html"><IMG align="right" WIDTH="120" HEIGHT="60" border="0" SRC="pics/hrproducts_120x60.gif" alt=""></a>
+
+<img src="pics/dot.gif" width="3" height="10" border="0">
+
+</td></tr></table></td></tr>
+
+	<tr><td colspan="3" align="right" valign="bottom"></td></tr>
+
+	<tr><td colspan="3">
+
+	<table width="687" cellpadding="0" cellspacing="0" border="0" background="">
+
+
+
+
+
+	<tr><td align="center" valign="bottom">
+
+	    <a href="tip.php3"><img src="pics/tip1.gif" width=133 height=22 alt="Tip of the day" border="0"></a><br></td>
+
+		<td  align="center" valign="bottom"><a href="price_info.html"><img 
+
+		src="pics/price_info.gif" width=167 height=25 alt="Pricing Information" border="0"></a></td>
+
+		<td align="center" valign="bottom"><a href="questions.php3"><img 
+
+		src="pics/ask1.gif" width=158 height=23 alt="Ask us a question" border="0" align="absbottom"></a></td>
+
+		<td align="right" valign="bottom">
+
+
+
+<a href="http://www.cobraquarterly.com" target="_top">
+
+<img align=right src="http://www.commission-junction.com/banners/tracker.exe?PID=569627&AID=815864&banner=815864%2Egif" width="120" height="60" alt="COBRAQuarterly.com" border="0"></a>
+
+	</td></tr></table>
+
+	</td>
+
+	</tr>
+
+	</table></td>
+
+	</tr>
+
+	</table>
+
+<table width="687" cellpadding="0" cellspacing="0" border="0" background="">
+
+<tr>
+
+	<td colspan=2><br><p align="center"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-1">Why spend massive consulting dollars or tedious hours on Human Resources research, seminars and publications, when <b><i>HR Advice.com</i></b> can be your information source?  Specializing in the areas of <a href="relat.html">Employee Relations</a>, <a href="strat.html">Business Planning and Strategy,</a> <a href="strat2.html">Recruiting,</a> <a href="policy.html">Human Resources Policy</a>, <a href="benefit.html">Compensation & Benefits,</a> <a href="training.html">Training,</a> <a href="perf.html">Development and Performance systems,</a> <b>HR Advice.com</b> is your personalized real-time workplace solution.</font></td>
+
+</tr>
+
+<tr>
+
+	<td colspan="2"><br><p align="center"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-1">Staffed by <a href="about.html">degreed professionals</a> with a minimum of ten years Human Resources experience, <b>HR Advice.com</b> provides <b>Trustworthy, Confidential and Reliable</b> information to ease your workplace demands. <br><br>
+
+</font></td>
+
+</tr>
+
+<tr>
+
+	<td><img src="pics/dot.gif" width=15 height=1 alt="" border="0"><img align="middle"
+
+	src="pics/bbb.gif" width=50 height=55 alt="" border="0"><img align="middle" 
+
+	src="pics/dot.gif" width=33 height=1 alt="" border="0"><img align="middle" src="pics/cards.gif" width=104 height=65 alt="" border="0"><img align="middle" 
+
+	src="pics/dot.gif" width=20 height=1 alt="" border="0"></td>
+
+	<td valign="bottom" align="right"><p align="right"><img src="pics/dot.gif" width=5 height=80 align="right" alt="" border="0"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-1"><b>All services are <a href="guarantee.html">guaranteed</a> and your membership is all inclusive!</b></font><br><br></td>
+
+</tr>
+
+<tr>
+
+	<td><img src="pics/dot.gif" width=1 height=40 alt="" border="0"></td>
+
+	<td align="right" valign="top"><a href="request.html"><img src="pics/adver.gif" width=204 height=27 alt="Advertise with HR Advice" border="0"></a>&nbsp;&nbsp;</td>
+
+</tr>
+
+<tr>
+
+	<td colspan=2 valign="bottom"><img src="pics/copy1.gif" width=48 height=30 border="0"><img
+
+	src="pics/dot.gif" width=20 height=1 alt="" border="0"><a href="research.php3"><img 
+
+	src="pics/hrproducts1.gif" width=105 height=32 border="0" alt="HR Products"></a><img
+
+	src="pics/dot.gif" width=25 height=1 alt="" border="0"><a href="hr_partners.html"><img 
+
+	src="pics/partners.gif" width=140 height=16 alt="Partners" border="0"></a><a href="subres.html"><img 
+
+	src="pics/stud_submit.gif" width=163 height=30 alt="Students/HR Pros Submit Research" border="0"></a><a href="links.html"><img 
+
+	src="pics/other.gif" width=135 height=16 alt="Other HR Sites" border="0"></a></td>
+
+</tr>
+
+<tr>
+
+	<td colspan=2><img src="pics/line2.gif" width=687 height=8 alt="" border="0"></td>
+
+</tr>
+
+<tr>
+
+	<td background="pics/copy2.gif" colspan="4"><table width="687" background=""><tr><td><div align="center"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-2"><b><a href="mailto:hrpro@hradvice.com">hrpro@hradvice.com</a> 
+                Toll Free 877 854 0469<br>
+                Mountain Lakes, NJ 07046 USA</b></font></div></td>
+            <td align="right" valign="top"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-2">&copy;Copyright 
+              1999,2004, <b>HR Advice.com</b>. All rights reserved. Designed by 
+              <a href ="http://www.datacatalyst.com">DataCatalyst </a></font><br>
+              <a href="statement.html"><img src="pics/q.gif" width=9 height=7 alt="" border="0"><font
+
+	face="arial, helvetica, ag_helvetica, helv, sans-serif" size="-2">Legal disclaimer/Privacy statement</font></a></td></tr></table></td>
+
+</tr>
+
+<tr><td colspan=2><br>
+
+<center>
+
+<!--banner -->
+
+<A HREF="http://www.hrzone.com">
+
+       <IMG WIDTH=468 HEIGHT=60 SRC="pics/diversity_hrzone.gif" border="0"></A>
+
+<!-- end of banner-->
+
+</center>
+
+<br>
+
+<!-- BEGIN LINKEXCHANGE CODE -- >
+
+<center><iframe src="http://leader.linkexchange.com/1/X1058056/showiframe?" width=468 height=60 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no>
+
+<a href="http://leader.linkexchange.com/1/X1058056/clickle" target="_top"><img width=468 height=60 border=0 ismap alt="" src="http://leader.linkexchange.com/1/X1058056/showle?"></a></iframe><br><a href="http://leader.linkexchange.com/1/X1058056/clicklogo" target="_top"><img src="http://leader.linkexchange.com/1/X1058056/showlogo?" width=468 height=16 border=0 ismap alt=""></a><br></center>
+
+< !-- END LINKEXCHANGE CODE --></td></tr>
+
+</table>
+
+<img src="/counter.php3?type=home" width=1 height=1 hspace=0 vspace=0 border=0 alt="">
+
+</center></body>
+
+
+
+</html>
+

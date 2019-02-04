@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>Sewage Pumping Stations and Foul / Waste Water Lifting Stations</title>
+<meta name="description" content="Southern Pumps Servicing Ltd provide a wide range of sewage pumping stations for domestic and commercial application where there is not direct access to the sewer." />
+<meta name="keywords" content="pumping stations , above ground pump station , below ground pump station , pumpstation refurbishment , submersible pumps , foul water pumps , sewage pumps , storm water pumps , surface water pumps , surface water pump stations , pump station installation , pump station servicing , pump station maintanence" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="SPSE">
+
+<link href="/inc/css/boot.css" rel="stylesheet">
+<link href="/inc/css/carousel.css" rel="stylesheet">
+<link href="/inc/css/spse.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/v4-shims.css">
+
+<link href="/inc/js/yamm/yamm.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+
+<script src="/inc/js/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+<script src="/inc/javascript/scrollto/jquery.scrollTo-1.4.3.1-min.js"></script></head>
+
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top yamm">
+      <div class="container">
+
+        <form class="navbar-form pull-right visible-lg" action="s.php" method="get" id="s_form">
+
+              <input type="text" name="s" id="s" class="form-control" placeholder="Search..." onkeyup="se();" style="width: 200px;" />
+              <button type="submit" class="btn btn-default" onClick="$('#s_form').submit();"><i class="fa fa-search"></i></button>
+
+              <script>
+
+                  function show_search_results(){
+                      $("#s_results").show();
+                  }
+
+                  function hide_search_results(){
+                      $("#s_results").hide();
+                  }
+
+                  function se() {
+                      show_search_results();
+
+                      var s_string = $("#s").val();
+                      $.get("/inc/ajax/search.php", {s: s_string}, function (data) {
+                          $("#s_results").html(data);
+                      });
+                  }
+
+              </script>
+
+
+              <div id="s_results">...</div>
+
+        </form>
+
+
+        <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-2" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand visible-lg" href="/"><img src="/img/banner-logo.png" alt=""></a>
+        </div>
+        <div id="navbar-collapse-2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+         <li><a href="/"><i class="fa fa-home"></i></a></li>
+
+          <!-- Media Example -->
+          <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Sewage / Foul Water <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+
+                  <div class="yamm-content">
+
+                  <div class="row">
+                    <div class="col-md-9">
+
+                      <p class="yamm-h1"><a href="/sewage-pump-stations.php">Package Pumping Stations</a></p>
+                      <div class="row yamm-p-hold">
+                        <div class="col-md-4 yamm-p yamm-right-bord"><a href="/above-ground-pumping-stations.php"><img src="/img/new/nav/pumpstations/above.jpg" /><span>Above Ground Pump Stations</span></a></div>
+                        <div class="col-md-4 yamm-p yamm-right-bord"><a href="/packaged-pumping-station.php"><img src="/img/new/nav/pumpstations/below.jpg" /><span>Below Ground Pump Stations</span></a></div>
+                        <div class="col-md-4 yamm-p"><a href="/abs-pumps/sulzer-muffin-monster.php"><img src="/img/new/nav/pumpstations/muffin.jpg" /><span>Muffin Monster Sewage Grinders</span></a></div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <p class="yamm-h1"><a href="/sewage-pumping-station-servicing.php">Pumping Station Servicing</a></p>
+                        <a href="/sewage-pumping-station-servicing.php" style="display: block; margin-bottom: 15px;"><img src="/img/new/nav/pumpstations/servicing.jpg" class="img-responsive img-rounded" /></a>
+
+                        <p class="yamm-h1">Pump Station Tools</p>
+                        <ul class="list-unstyled">
+                            <li><a href="/config/">Price Configurator</a></li>
+                            <li><a href="/config/volume.php">Storage Chamber Configurator</a></li>
+                        </ul>
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="horiz-feature-band">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> High Quality German Pumps</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Robust GRP Chamber</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Pre-Assembled Pipework and Equipment</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Feature-Rich Control-Panel</li>
+                    </ul>
+                </div>
+
+                </div>
+
+              </li>
+
+            </ul>
+          </li>
+
+          <!-- Tables -->
+          <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Clean Water<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+
+                  <div class="yamm-content">
+
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <p class="yamm-h1"><a href="/sewage-pump-stations.php">Clean Water Pumping</a></p>
+                      <div class="row yamm-p-hold">
+                        <div class="col-md-6 yamm-p yamm-right-bord"><a href="/rainwater-harvesting.php"><img src="/img/new/nav/rainwater-harvesting.jpg" /><span>Rain Water Harvesting</span></a></div>
+                        <div class="col-md-6 yamm-p yamm-right-bord"><a href="/booster-sets/"><img src="/img/new/nav/booster.jpg" /><span>Booster Sets</span></a></div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="/img/new/nav/cleanwater.jpg" class="img-responsive img-rounded" />
+                    </div>
+
+                  </div>
+
+                  <div class="horiz-feature-band">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> High Quality German Pumps</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Garden Irrigation</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Car Washing</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Self-Cleaning Filters</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Inflow Stilling System</li>
+                    </ul>
+                </div>
+
+                </div>
+
+              </li>
+
+            </ul>
+
+
+          </li>
+
+          <!-- Thumbnails demo -->
+          <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pumps & Equipment<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="yamm-content">
+
+                  <div class="row">
+                    <div class="col-md-9">
+
+                        <p class="yamm-h1"><a href="/submersable-pumps.php">Pumps by Manufacturer</a></p>
+                      <div class="row yamm-p-hold">
+                        <div class="col-md-3 yamm-p yamm-right-bord"><a href="/abs-pumps/"><img src="/img/new/nav/other/sulzer.jpg" /><span>ABS Pumps</span></a></div>
+                        <div class="col-md-3 yamm-p yamm-right-bord"><a href="/caprari_pumps/"><img src="/img/new/nav/other/caprari.jpg" /><span>Caprari Pumps</span></a></div>
+                        <div class="col-md-3 yamm-p yamm-right-bord"><a href="/xylem/"><img src="/img/new/nav/other/lowara.jpg" /><span>Lowara Pumps</span></a></div>
+                        <div class="col-md-3 yamm-p"><a href="/wilo/submersible-pumps.php"><img src="/img/new/nav/other/wilo.jpg" /><span>WILO Pumps</span></a></div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <p class="yamm-h1">Other Products</p>
+                        <ul class="list-unstyled">
+                           <li><a href="/borehole-pumps.php"><span>Borehole Pumps</span></a></li>
+                           <li><a href="/grease-traps.php"><span>Grease Traps</span></a></li>
+                           <li><a href="/chemical-dosing.php"><span>Chemical Dosing</span></a></li>
+                           <li><a href="/ancillery.php"><span>Ancillery Equipment</span></a></li>
+                           <li><a href="/ancillery.php"><span>Manhole Covers</a></li>
+                           <li><a href="/ancillery.php"><span>Pump Control</a></li>
+                       </ul>
+
+                    </div>
+
+                  </div>
+
+                <div class="horiz-feature-band">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Massive Stock</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Wide Range fo Applications</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Quick Delivery</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Foul / Clean Water Applications</li>
+                    </ul>
+                </div>
+
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown yamm-fw"> <a href="/contact.php" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+
+              <ul class="dropdown-menu">
+              <li>
+                <div class="yamm-content">
+
+                  <div class="row">
+                    <div class="col-md-6 yamm-right-bord">
+
+                        <p class="yamm-h1"><a href="/contact.php">Contact</a></p>
+                        <div class="yamm-tel">Call Our Sales Team Now: <span class="tel">020 8991 6650</span></div>
+                        <ul class="list-unstyled">
+                            <li><a href="mailto: sales@spse.co.uk">Email: sales@spse.co.uk</a></li>
+                            <li><a href="/contact.php">Online Enquiry</a></li>
+                        </ul>
+
+                        <p style="margin-top: 30px;"><img src="/img/chas.png" class="img-responsive" style="max-height: 50px;" /></p>
+                    </div>
+
+                    <div class="col-md-3 yamm-right-bord">
+                        <p class="yamm-h1">About</p>
+                        <ul class="list-unstyled">
+                            <li><a href="/aboutus.php">About Us</a></li>
+                            <li><a href="/new_accounts.php">New Accounts</a></li>
+                            <li><a href="/jobvacancies.php">Job Vacancies</a></li>
+                            <li><a href="/case_studies/">Case Studies</a></li>
+                            <li><a href="/site-map.php">Site Map</a></li>
+                       </ul>
+
+                        <p class="yamm-h1">Resources</p>
+                        <ul class="list-unstyled">
+                            <li><a href="/pump-station-faqs/">Frequently Asked Questions</a></li>
+                            <li><a href="/pump-station-downloads.php">Downloads</a></li>
+                            <li><a href="/blog.php">Pumping Station Blog</a></li>
+                       </ul>
+                    </div>
+
+                      <div class="col-md-3">
+                        <p class="yamm-h1"><a href="/sewage-pumping-station-servicing.php">Pumping Station Servicing</a></p>
+                        <a href="/sewage-pumping-station-servicing.php" style="display: block; margin-bottom: 15px;"><img src="/img/new/nav/pumpstations/servicing.jpg" class="img-responsive img-rounded" /></a>
+                          <p>Already got a Southern Pumps Servicing Contract?... Login to your servicing dashboard here.</p>
+                        <p class="text-center"><a href="/servicing/login.php" class="btn btn-primary">My Servicing Dashboard</a></p>
+                    </div>
+
+                  </div>
+
+                <div class="horiz-feature-band">
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Providing High Quality Pumping Stations through UK</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Established 1995</li>
+                      <li class="list-inline-item"><i class="far fa-check-circle"></i> Friendly Customer Service</li>
+                    </ul>
+                </div>
+
+                </div>
+              </li>
+            </ul>
+
+            </li>
+
+        </ul>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- Carousel================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    
+    <div class="item active">
+    	<img src="/img/banners/b1.jpg" width="2000" height="631">
+        <div class="container">
+            <div class="carousel-caption hidden-xs hidden-sm">
+                <h1>Rainwater Harvesting</h1>
+                <p class="visible-lg">The Rainharvester system can collect rainwater for use in the commercial for laundry, toilet flushing, general cleaning and watering. </p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="item"> <img src="/img/banners/b2.jpg" width="2000" height="631">
+      <div class="container">
+        <div class="carousel-caption hidden-xs hidden-sm">
+          <h1>Foul Water Pumping Stations</h1>
+          <p class="visible-lg">We supply a large range of packaged pumpstations, submersible pumps, chains, shackles, control panels, gate valves and floatswitches</p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="item"> <img src="/img/banners/b3.jpg" width="2000" height="631">
+      <div class="container">
+        <div class="carousel-caption hidden-xs hidden-sm">
+          <h1>Foul Water Pumping Stations</h1>
+          <p class="visible-lg">We supply a large range of packaged pumpstations, submersible pumps, chains, shackles, control panels, gate valves and floatswitches</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <!-- Controls --> 
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </a> 
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </a> 
+</div>
+<!-- /.carousel -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="page-header">
+        <h1>Sewage Pumping Stations</h1>
+      </div>
+      <p class="lead"> We supply a wide range of sewage pumping stations, rain water harvesting units and submersible pumps and ancillery equipment, as well as pump station servicing.</p>
+      <p> Whether you're a property developer, local authority, private individual, ground worker or a consultant, we provide custom sewage pumping stations to suit your application. Our range of pump stations are ideal for raw sewage, foul water, surface water, rainwater harvesting or cold booster sets.</p>
+
+      <p>Our fantastic sewage pumping station servicing team can also be used to keep your existing pump station working reliably and efficiently under a servicing/maintenance contract.</p>
+
+      <p>
+      <table width="100%">
+      	<tr>
+        	<td width="50%"><a href="above-ground-pumping-stations.php"><img src="/img/new/images/above-ground-pumpstations.jpg" width="100%" border="0" /></a></td>
+            <td width="50%"><a href="packaged-pumping-station.php"><img src="/img/new/images/below-ground-pumpstations.jpg" width="100%" border="0" /></a></td>
+        </tr>
+      </table></p>
+      
+      <p>Here at Southern Pumps Servicing Lts we have built a name for quality and reliability, proudly only supplying top quality and reliable equipment. All five manufacturers of pumps we are distributors for are used within the municipal water industry, control panels are mild steel and built to order in the UK, pumping stations incorporate galvanised or ductile iron pipework as standard (depending on pipework size) and sewage rated ball valves. </p>
+    </div>
+   
+<div class="col-md-5 rightMenu rightMenuNotRed">
+      
+	       
+    <div class="list-group">
+        <div class="list-group-item active">
+            <h3 class="list-group-item-heading">Our Services</h3>
+            <p class="list-group-item-text"> Southern Pump Services install and maintain foul water pumping stations.</p>
+        </div>
+        <a href="/sewage-pump-stations.php" class="list-group-item">
+        <img src="/img/new/nav/pumpstations.jpg" class="img-circle pull-right" style="height: 80px; margin-left: 10px;" />
+        <h3 class="list-group-item-heading">Sewage Pumping Stations</h3>
+        <p class="list-group-item-text">Our sewage pumping stations can be either above ground or below ground, and suitable from small domestic applications to large installs.</p>
+        </a> 
+        <a href="/ancillery.php" class="list-group-item">
+        <img src="/img/new/nav/ancillery.jpg" class="img-circle pull-right" style="height: 80px; margin-left: 10px;" />
+        <h3 class="list-group-item-heading">Ancillary Equipment</h3>
+        <p class="list-group-item-text">These submersible pumps are available in 220v or 400v electrical supply, which can be supplied or alternatively installed by our Southern Pump Services engineers.</p>
+        </a> 
+        <a href="/rainwater-harvesting.php" class="list-group-item">
+        <img src="/img/new/nav/rainwater-harvesting.jpg" class="img-circle pull-right" style="height: 80px; margin-left: 10px;" />
+        <h3 class="list-group-item-heading">Rain Water Harvesting</h3>
+        <p class="list-group-item-text">The Rainharvester system can collect rainwater for use in the commercial [in non-potable applications] for laundry, toilet flushing, general cleaning and watering. </p>
+        </a> 
+        <a href="/sewage-pumping-station-servicing.php" class="list-group-item">
+        <img src="/img/new/nav/servicing.jpg" class="img-circle pull-right" style="height: 80px; margin-left: 10px;" />
+        <h3 class="list-group-item-heading">Pump Station Servicing</h3>
+        <p class="list-group-item-text">At southern pumps we provide comprehensive after sales support providing a second to none service to keep your pumping station working smoothly.</p>
+        </a> 
+    </div>
+     
+      
+      <blockquote>
+        <p>We've been using Southern Pump Services for over 10 years now, we wouldn't use anyone else</p>
+        - <cite title="Source Title">A Large Central London Theatre</cite>
+      </blockquote>      </div>
+    
+    
+    
+      
+    
+    
+  </div>
+  <!-- /.container --> 
+</div>
+
+<!-- /.container -->
+
+<hr class="divider-blank">
+
+<div class="container">
+  
+  
+  
+  
+<hr class="divider-blank">
+  <div class="smalljumbotron"> <span class="label label-danger">Featured Pump Station 2</span> <a href="/wilo/drainlift-xxl.php" class="btn btn-default pull-right">Learn more</a>
+    <h1>Wilo-Drainlift XXL <small>Sewage Lifting Plant</small></h1>
+    <div class="row">
+      <div class="col-md-6"><img src="/img/new/wilo-xxl.png" class="img-responsive" /></div>
+      <div class="col-md-6">
+        <div class="panel panel-danger"> 
+          <div class="panel-heading"> Quick Specs:</div>
+          <div class="panel-body">
+            <p>Untreted sewage that cannot be fed to the public sewer system by gravity flow and sewage coming in from toilets below the backflow level must therefore (sccording to the requirements of DIN 1986/EN1205) be fed to the public sewer system using an automatic lifting plant.</p>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-check-square-o grey"></i> Packaged sewage set for large projects</li>
+            <li class="list-group-item"><i class="fa fa-check-square-o grey"></i> Discharge port DN100(80) </li>
+            <li class="list-group-item"><i class="fa fa-check-square-o grey"></i> Total volume 800l </li>
+            <li class="list-group-item"><i class="fa fa-check-square-o grey"></i> Double-pump plant </li>
+            <li class="list-group-item"><i class="fa fa-check-square-o grey"></i> 8.4kW Power P2 per pump</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  <h2 class="page-header">Foul Water Packaged Pump Stations</h2>
+  <p>Our foul water packaged pump stations are manufactured to the highest British Standards relevant to our industry such as BS EN 12050-1:2001 for buildings and sites, BS EN 12056-4:2000 gravity drainage systems inside buildings, BS EN 752-6:1998 drain and sewer pumping stations outside buildings and sewage pumpstations, surface water pumpstations designed in accordance with Building Regulations Documentation H1 Foul Drainage, page 16. Section 2.39</p>
+</div>
+
+<hr class="divider-blank">
+
+<div class="full_band full_band_clients">
+<h2 class="page-header">We supply, install and service a wide range of pumping equipment to:</h2>
+	<div class="row">
+    	<div class="col-md-auto"><img src="/img/client-icons/family.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/building86.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/school.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/office.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/store5.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/hotel16.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/restaurant.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/construction15.png" class="img-responsive" /></div>
+        <div class="col-md-auto"><img src="/img/client-icons/eco4.png" class="img-responsive" /></div>
+    </div>
+    <div class="row visible-lg" style="margin-top: 10px;">
+    	<div class="col-md-auto"><h3>Residential Customers</h3></div>
+        <div class="col-md-auto"><h3>Commercial</h3></div>
+        <div class="col-md-auto"><h3>Schools</h3></div>
+        <div class="col-md-auto"><h3>Local Authority</h3></div>
+        <div class="col-md-auto"><h3>Retail</h3></div>
+        <div class="col-md-auto"><h3>Hotels</h3></div>
+        <div class="col-md-auto"><h3>Resturants</h3></div>
+        <div class="col-md-auto"><h3>New Building Developments</h3></div>
+        <div class="col-md-auto"><h3>Industrial Estates</h3></div>
+    </div>
+</div>
+
+<div class="colour_grey full_band_call_us" style="text-align:center">
+  <div class="container">
+    <h2 class="featurette-heading"> Call Our Sales Team Now: <span class="tel">020 8991 6650</span> </h2>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+     
+      <div class="col-md-8">
+          <div class="row">
+          
+              <div class="col-lg-4">
+                <h3>Resources</h3>
+                <ul class="list-unstyled">
+                  <li><a href="/config/">Pumpstation Price Guide</a></li>
+                  <li><a href="/Pump_stations_Installation_Guide.pdf">Pumping station installation Guide</a></li>
+                  <li><a href="/how-to-look-after-your-packaged-pump-station.php">How to look after your Pumping Stations</a></li>
+                  <li><a href="/case_studies/">Case Studies</a></li>
+                  <li><a href="/chemical-dosing.php">Chemical Dosing for Pumping Stations</a></li>
+                </ul>
+
+                  <h3>Links</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="/pump-station-faqs/">Frequently Asked Questions</a></li>
+                      <li><a href="/pump-station-downloads.php">Downloads</a></li>
+                      <li><a href="/contact.php">Contact Us</a></li>
+                      <li><a href="/new_accounts.php">New Accounts</a></li>
+                  </ul>
+              </div>
+
+
+              <div class="col-lg-8">
+                  <h3>Sewage Pumping Station Blog</h3>
+                  <p><a href="/pump-station-blog/harrow-school-foul-water-pumping-station-servicing">Harrow School Foul Water Pumping Station Servicing</a></p><p><a href="/pump-station-blog/harrow-school-foul-water-pumping-station-servicing"><img src="/system_files/images/blog/288.jpg" class="img-responsive" /></a></p><p>We have recently been asked to service a foul water pumping station at the Harrow School.
+Harrow School for Boys was founded in 1572 under a Royal Charter granted by Queen   Elizabeth I. It is located in a leafy 300-acre estate, encompassing   much of Harrow on the Hill in Northwest London. Eight y...</p>              </div>
+          
+          </div>
+            <hr class="featurette-divider">
+          <div class="bottom_config" style="text-align: center; padding-top: 0px; padding-bottom: 15x;">
+                <h2>Configure Your Pumpstation &amp; Get a Price</h2>
+                <p class="intro">The Southern Pump Services Ltd. pump station configurator is a new tool that gives you guide prices for the specific pump station you're looking for.</p>
+                
+                <div class="row">
+                    <div class="col-sm-6"><a href="/config/" class="btn btn-primary btn-lg btn-block">Launch Pumpstation Configurator</a></div>
+                    <div class="col-sm-6"><a href="/product_finder.php?system_type_id=below-ground-pump-stations&attribute_value=spse-below-ground-pump-systems" class="btn btn-default btn-lg btn-block">Pumpstation Finder</a></div>
+                </div>
+        	</div>
+            
+            <hr class="featurette-divider">
+            <!-- FOOTER -->
+            <footer>
+              <p align="right"><img src="/img/chas.png" class="img-responsive"></p>
+              <p><small>&copy; Southern Pump Services Engineering Limited - 2004 - 2018</small></p>
+              <p><img src="/img/manufacturers.png" /></p>
+            </footer>
+          
+               
+      </div>
+      
+      <div class="col-lg-4">
+        <div class="fb-page" data-href="https://www.facebook.com/pages/Southern-Pump-Services-Engineering-Limited/134551659952328" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Southern-Pump-Services-Engineering-Limited/134551659952328"><a href="https://www.facebook.com/pages/Southern-Pump-Services-Engineering-Limited/134551659952328">Southern Pump Services Engineering Limited</a></blockquote></div></div>
+        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      </div>
+      
+    </div>
+  </div>
+  <!-- /.container -->
+  
+  <div class="container">
+    
+  </div>
+  <!-- /.container --> 
+  
+</div><script>
+!function ($) {
+$(function(){
+  // carousel demo
+  $('#myCarousel').carousel()
+})
+}(window.jQuery)
+	  
+$(document).scroll(function(){
+    var elem = $('.navbar');
+    if (!elem.attr('data-top')) {
+        if (elem.hasClass('navbar-fixed-top'))
+            return;
+         var offset = elem.offset()
+        elem.attr('data-top', offset.top);
+    }
+    if (elem.attr('data-top') - elem.outerHeight() <= $(this).scrollTop() - $(elem).outerHeight())
+        elem.addClass('navbar-fixed-top');
+    else
+        elem.removeClass('navbar-fixed-top');
+});	  
+
+
+
+function scroll_to(target, custom_offset)
+{
+	custom_offset = typeof custom_offset !== 'undefined' ? custom_offset : -80;
+	
+	$.scrollTo(target, 600, {offset: custom_offset});
+}
+
+	  
+</script>
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta content="Mozilla/4.79 (Macintosh; U; PPC) [Netscape]" name="GENERATOR">
+  <title>Making Maple Syrup in Parry Sound</title>
+<!-- AUTO GENERATED HEADER -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link title="Sitewide RSS Feed" type="application/rss+xml" rel="alternate" href="http://www.johnharveyphoto.com/feed.xml" >
+<style type="text/css">
+    .fullwidth {
+        margin: 0pt 200pt 0pt 0pt;
+    }
+    .onePortrait {
+        margin: 0pt 100pt 0pt 0pt;
+    }
+    .oneLandscape {
+        margin: 0pt 100pt 0pt 0pt;
+    }
+    .twoPortrait {
+        margin: 0pt 50pt 0pt 0pt;
+    }
+    .tableCell {
+        margin: 0pt 0pt 0pt 0pt;
+        font-size: 100%;
+    }
+    body {
+        font-size: 100%;
+    }
+    h2 {
+        font-weight: bold;
+        font-family: helvetica,arial,sans-serif;
+        font-size: 120%;
+    }
+    div.captionFrameHidden {
+        display: none;
+    }
+    div.captionFrameVisible {
+        position: absolute;
+        display: block;
+        z-index: 2;
+        padding: 2px 5px;
+        font-family: Verdana, helvetica, sans-serif;
+        font-size: x-small;
+        background: #FFFFE6;
+        color: #777777;
+        padding: 8px;
+        border: 1px solid black;
+    }
+   .stdImg:hover {
+       border-color: #000;
+   }
+   
+   .stdImg {
+       border-style: solid;
+       border-width: thin;
+       border-color: #CCC;
+   }
+</style>
+<script language="Javascript" type="text/javascript">
+   var http_request = false;
+   var submitForm;
+
+   function submitForm(formObject,url) {
+
+       url += '?';
+       submitForm = formObject;
+       for(var i=0;i < formObject.elements.length;i++)
+       {
+            if ( i != 0 )
+            {
+                url += '&';
+            }
+            url += formObject.elements[i].name + "=" + escape(formObject.elements[i].value);
+       }
+
+       if (window.XMLHttpRequest) { // Mozilla, Safari,...
+           http_request = new XMLHttpRequest();
+       } else if (window.ActiveXObject) { // IE
+           http_request = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+       //alert(url);
+       http_request.onreadystatechange = alertContents;
+       http_request.open('GET', url, true);
+       http_request.send(null);
+
+   }
+
+   function alertContents() {
+
+       if (http_request.readyState == 4) {
+           if (http_request.status == 200) {
+               alert(http_request.responseText);
+               for(var i=0;i < submitForm.elements.length;i++)
+               {
+                   submitForm.elements[i].disabled = 1;
+               }
+           } else {
+               alert('There was a problem with the request.');
+           }
+       }
+
+   }
+
+function hoverUpdate(imageName,goToClass,image)
+{
+    var obj = image;
+    var x = obj.offsetLeft;
+    var y = obj.offsetTop + obj.height;
+    while(obj.offsetParent)
+    {
+        if ( obj == document.getElementsByTagName('body')[0])
+        {
+            break;
+        }
+        else
+        {
+            x += obj.offsetParent.offsetLeft;
+            y += obj.offsetParent.offsetTop;
+            obj = obj.offsetParent;
+        }
+    }
+     var element = (document.getElementById) ? document.getElementById(imageName + "_caption") : eval("document.all['" + imageName + "_caption']");
+     element.className = goToClass;
+     if (( x != -1 ) && ( y != -1 ) ) 
+     {
+         element.style.top = y - 5 + "px";
+         element.style.left = x + "px";
+     }
+}
+
+function changeMainimage(imageName,src,width,height,space)
+{
+
+    if ( ! document.images[imageName] )
+    {
+        //alert("Sorry - which? " + imageName );
+    }
+    else if ( document.images[imageName].src != src ) 
+    {
+        document.images[imageName].src = src;
+        document.images[imageName].width = width;
+        document.images[imageName].height = height;
+        document.images[imageName].hspace = space;
+        document.images[imageName].vspace = space;
+    }
+}
+
+function changeMainvideo(imageName,src,width,height,space)
+{
+	var element = (document.getElementById) ? document.getElementById(imageName + '_video') : eval("document.all[imageName + '_video']");
+	var element_mp4 = (document.getElementById) ? document.getElementById(imageName + '_mp4') : eval("document.all[imageName + '_mp4']");
+	element_mp4.src = src + '.mp4';
+	var element_webm = (document.getElementById) ? document.getElementById(imageName + '_webm') : eval("document.all[imageName + '_webm']");
+	element_webm.src = src + '.webm';
+	var element_ogv = (document.getElementById) ? document.getElementById(imageName + '_ogv') : eval("document.all[imageName + '_ogv']");
+	element_ogv.src = src + '.ogv';
+	element.width = width;
+	element.height = height;
+	element.src = src + '.mp4';
+}
+
+function resizeMainimageForBrowserSize()
+{
+    var WindowWidth = 0, WindowHeight = 0;
+    if( typeof( window.innerWidth ) == 'number' )
+    {
+        WindowWidth = window.innerWidth;
+        WindowHeight = window.innerHeight;
+    } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) )
+    {
+        WindowWidth = document.documentElement.clientWidth;
+        WindowHeight = document.documentElement.clientHeight;
+    } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) )
+    {
+        WindowWidth = document.body.clientWidth;
+        WindowHeight = document.body.clientHeight;
+    }
+
+    var StyleSheetCount = document.styleSheets.length;
+
+    if (!document.styleSheets) return;
+    var theRules = new Array();
+    if (document.styleSheets[0].cssRules)
+        theRules = document.styleSheets[0].cssRules
+    else if (document.styleSheets[0].rules)
+        theRules = document.styleSheets[0].rules
+    else return;
+
+    var fullMargin = WindowWidth - 650;
+    if ( fullMargin < 0 ) fullMargin = 0;
+
+    var onePortraitMargin = WindowWidth - 850;
+    if ( onePortraitMargin < 0 ) onePortraitMargin = 0;
+
+    var oneLandscapeMargin = WindowWidth - 950;
+    if ( oneLandscapeMargin < 0 ) oneLandscapeMargin = 0;
+
+    var twoPortraitMargin = WindowWidth - 1250;
+    if ( twoPortraitMargin < 0 ) twoPortraitMargin = 0;
+
+    var tableCellMargin = (WindowWidth - 1050) / 2;
+    if ( tableCellMargin < 0 ) tableCellMargin = 0;
+
+    var topMargin = 5;
+    var fontSize = 100;
+    SourceWidth = WindowWidth;
+    var mediaQuery3 = '(-webkit-min-device-pixel-ratio: 3.0), (min--moz-device-pixel-ratio: 3.0), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 3.0dppx)';
+    var mediaQuery2 = '(-webkit-min-device-pixel-ratio: 2.0), (min--moz-device-pixel-ratio: 2.0), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2.0dppx)';
+    var mediaQuery15 = '(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)';
+    var mediaQuery13 = '(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)';
+    var mediaQuery125 = '(-webkit-min-device-pixel-ratio: 1.25), (min--moz-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx)';
+
+    var root = (typeof exports === 'undefined' ? window : exports);
+
+    if (root.matchMedia && root.matchMedia(mediaQuery3).matches) {
+	SourceWidth = WindowWidth * 3;
+    }
+    else if (root.matchMedia && root.matchMedia(mediaQuery2).matches) {
+	SourceWidth = WindowWidth * 2;
+    }
+    else if (root.matchMedia && root.matchMedia(mediaQuery15).matches) {
+    	SourceWidth = WindowWidth * 1.5;
+    }
+    else if (root.matchMedia && root.matchMedia(mediaQuery13).matches) {
+	SourceWidth = WindowWidth * 1.3;
+    }      
+    else if (root.matchMedia && root.matchMedia(mediaQuery125).matches) {
+	SourceWidth = WindowWidth * 1.25;
+    } 
+
+    var a0;
+    var a1;
+    var a2;
+
+    if ( SourceWidth > 2300 )
+    {
+        sa0 =  "_550H.jpg"
+        sa1 =  "_550W.jpg"
+    }
+    else if ( SourceWidth > 1900 )
+    {
+        sa0 =  "_500H.jpg"
+        sa1 =  "_500W.jpg"
+    }
+    else if ( SourceWidth > 1600 )
+    {
+        sa0 =  "_450H.jpg"
+        sa1 =  "_450W.jpg"
+    }
+    else if ( SourceWidth > 1400 )
+    {
+        sa0 =  "_400H.jpg"
+        sa1 =  "_400W.jpg"
+    }
+    else if ( SourceWidth > 1200 )
+    {
+        sa0 =  "_350H.jpg"
+        sa1 =  "_350W.jpg"
+    }
+    else if ( SourceWidth > 1050 )
+    {
+        sa0 =  "_300H.jpg"
+        sa1 =  "_300W.jpg"
+    }
+    else if ( SourceWidth > 870 )
+    {
+        sa0 =  "_250H.jpg"
+        sa1 =  "_250W.jpg"
+    }
+    else if ( SourceWidth > 770 )
+    {
+        sa0 =  "Sm.jpg"
+        sa1 =  "Sm.jpg"
+    }
+    else if ( SourceWidth > 670 )
+    {
+        sa0 =  "Sm.jpg"
+        sa1 =  "Sm.jpg"
+    }
+    else if ( SourceWidth > 570 )
+    {
+        sa0 =  "_150H.jpg"
+        sa1 =  "_150W.jpg"
+    }
+    else
+    {
+        sa0 =  "_150H.jpg"
+        sa1 =  "_150W.jpg"
+    }
+
+    if ( WindowWidth > 2300 )
+    {
+        topMargin = 20;
+        fontSize = 130;
+        a0 =  367;
+        a1 =  550;
+        a2 =  368;
+    }
+    else if ( WindowWidth > 1900 )
+    {
+        topMargin = 20;
+        fontSize = 130;
+        a0 =  333;
+        a1 =  500;
+        a2 =  334;
+    }
+    else if ( WindowWidth > 1600 )
+    {
+        topMargin = 20;
+        fontSize = 130;
+        a0 =  300;
+        a1 =  450;
+        a2 =  301;
+    }
+    else if ( WindowWidth > 1400 )
+    {
+        topMargin = 20;
+        fontSize = 120;
+        a0 =  267;
+        a1 =  400;
+        a2 =  267;
+    }
+    else if ( WindowWidth > 1200 )
+    {
+        topMargin = 20;
+        fontSize = 115;
+        a0 =  233;
+        a1 =  350;
+        a2 =  234;
+    }
+    else if ( WindowWidth > 1050 )
+    {
+        topMargin = 15;
+        fontSize = 110;
+        a0 =  200;
+        a1 =  300;
+        a2 =  201;
+    }
+    else if ( WindowWidth > 870 )
+    {
+        topMargin = 10;
+        fontSize = 105;
+        a0 =  167;
+        a1 =  250;
+        a2 =  167;
+    }
+    else if ( WindowWidth > 770 )
+    {
+        topMargin = 10;
+        fontSize = 105;
+        a0 =  133;
+        a1 =  200;
+        a2 =  134;
+    }
+    else if ( WindowWidth > 670 )
+    {
+        topMargin = 10;
+        fontSize = 105;
+        a0 =  133;
+        a1 =  200;
+        a2 =  134;
+    }
+    else if ( WindowWidth > 570 )
+    {
+        topMargin = 10;
+        fontSize = 105;
+        a0 =  100;
+        a1 =  150;
+        a2 =  100;
+    }
+    else
+    {
+        a0 =  100;
+        a1 =  150;
+        a2 =  100;
+    }
+
+    changeMainimage("linkimage345", "KyleOnSnow" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage343", "KaylieOnSnow" + sa1, a1, a0, topMargin);
+    changeMainimage("linkimage353", "TappedTree" + sa0, a2, a1, topMargin);
+    changeMainimage("linkimage344", "KyleHoldingLines" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage346", "LinesFromSapWell" + sa1, a1, a0, topMargin);
+    changeMainimage("linkimage357", "WaitingForSyropToFlow" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage354", "TastingSap" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage350", "QuadLeaving" + sa1, a1, a0, topMargin);
+    changeMainimage("linkimage336", "EvaporatingShed" + sa0, a2, a1, topMargin);
+    changeMainimage("linkimage335", "CleanedEvaporatorPan" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage338", "FilterOnTray" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage356", "VatBoiling" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage333", "BoilingSap" + sa1, a1, a0, topMargin);
+    changeMainimage("linkimage339", "FrontOfIceFalls" + sa0, a2, a1, topMargin);
+    changeMainimage("linkimage340", "HidingBehindWall" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage341", "IceCave" + sa0, a2, a1, topMargin);
+    changeMainimage("linkimage342", "KatlynAndKyleInFrontFalls" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage347", "PanningOutConcetratedSap" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage351", "SocksOnTable" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage332", "BoilingDownInSmaller" + sa1, a1, a0, topMargin);
+    changeMainimage("linkimage355", "Thermometer" + sa0, a0, a1, topMargin);
+    changeMainimage("linkimage337", "FilteringIntoBucket" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage352", "SocksOnTable" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage348", "PotOnStove" + sa1, a1, a2, topMargin);
+    changeMainimage("linkimage334", "BottlesOfSyrup" + sa0, a2, a1, topMargin);
+
+    theRules[0].style.margin = topMargin + "px " + fullMargin + "px 0px 0px";
+    theRules[1].style.margin = topMargin + "px " + onePortraitMargin + "px 0px 0px";
+    theRules[2].style.margin = topMargin + "px " + oneLandscapeMargin + "px 0px 0px";
+    theRules[3].style.margin = topMargin + "px " + twoPortraitMargin + "px 0px 0px";
+    theRules[4].style.fontSize = fontSize + "%";
+    theRules[4].style.margin = topMargin + "px " + tableCellMargin + "px 0px 0px";
+    theRules[5].style.fontSize = fontSize + "%";
+    theRules[6].style.fontSize = (fontSize * 1.15) + "%";
+
+}
+
+window.onresize = resizeMainimageForBrowserSize;
+
+
+</script>
+<!-- AUTO GENERATED HEADER -->
+</head>
+<body vlink="#551a8b" bgcolor="#ffffff" alink="#0000ff" text="#000000" link="#0000ff"><a href="/index.html"><img align="left" src="/Logo4.jpg" alt="John Harvey Photo" style="border: 0px solid ; width: 200px; height: 97px;"></a>
+<center>
+<h1>Making Maple Syrup in Parry Sound<a href="index_slideshow.html"><img align="middle" src="../BlankSlides.gif" alt="Go to Slide Show" hspace="10" style="border: 0px solid ; width: 41px; height: 36px;"></a></h1>
+</center>
+<center>Making Syrup from Sugar Maples</center>
+<br clear="all"><hr width="100%">
+<!-- AUTO GENERATED GOOGLE AD -->
+<div style="margin-left: 40px; margin-bottom: 40px; float: right;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8065091949518276";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as";
+google_ad_type = "text_image";
+//2007-03-17: Top of Index Pages
+google_ad_channel = "7243795844";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- AUTO GENERATED GOOGLE AD -->
+
+
+
+<p><a href="KyleOnSnow.html" name="link345"><img alt="Kyle on Snow" width="133" hspace="10" src="KyleOnSnowSm.jpg" height="200" onmouseout="hoverUpdate('link345', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link345', 'captionFrameVisible', this)" align="left" name="linkimage345" title="" class="stdImg"></a><div class="onePortrait">My grandfather made maple
+syrup
+and he taught his children, including my father.&nbsp;&nbsp; Growing
+up,
+I never happened to be around my grandfathers farm to learn how maple
+syrup
+was made and I didn't want to the first generation to say I've never
+made
+syrup.&nbsp; My project at work was completing around the end of
+February
+and I was long overdue for a trip to back east so Andrea and I and my
+parents
+booked a trip back east to see if we could catch the maple sap flowing
+and
+make maple syrup!&nbsp; Before we go any further I should introduce two
+of
+the locals (and my second cousins) - Kyle and Kaitlyn.&nbsp; They are
+old
+hands at making maple syrup and provided guidance through out the
+process.
+
+</div><center>
+<p><a name="link343" href="KaylieOnSnow.html"><img class="stdImg" title="" name="linkimage343" onmouseover="hoverUpdate('link343', 'captionFrameVisible', this)" align="texttop" onmouseout="hoverUpdate('link343', 'captionFrameHidden', this)" height="133" src="KaylieOnSnowSm.jpg" hspace="10" alt="Caitlin on Snow" width="200"></a><br clear="all">
+
+</center>
+<p><a name="link353" href="TappedTree.html"><img class="stdImg" title="" name="linkimage353" align="left" onmouseover="hoverUpdate('link353', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link353', 'captionFrameHidden', this)" height="200" src="TappedTreeSm.jpg" hspace="10" alt="Tapped Maple Tree" width="134"></a><div class="onePortrait">First, I have to
+say that the
+majority of the hard work was done before we arrived.&nbsp; A week
+before,
+my uncle and cousin spent a day drilling and connecting tubes to trees
+(tapping
+the trees).&nbsp; Years before that, they ran large gage tubes over the
+landscape
+and into a vat that would store a day's run of syrup.&nbsp; And
+finally,
+the trees making the sap itself.&nbsp; As the sun came up, the trees
+would
+warm up to above freezing and sap would run in the trees.&nbsp; Part of
+the
+sap would drain into the tubes, flow into the main lines and collect in
+the
+vat.
+
+</div><center>
+<p><a name="link344" href="KyleHoldingLines.html"><img class="stdImg" title="" name="linkimage344" onmouseover="hoverUpdate('link344', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link344', 'captionFrameHidden', this)" height="134" src="KyleHoldingLinesSm.jpg" width="200" alt="Kyle Holding Lines"></a><br clear="all">
+
+</center>
+<p><a href="LinesFromSapWell.html" name="link346"><img src="LinesFromSapWellSm.jpg" hspace="10" alt="Lines From Sap Vat" width="200" height="133" onmouseover="hoverUpdate('link346', 'captionFrameVisible', this)" align="left" onmouseout="hoverUpdate('link346', 'captionFrameHidden', this)" class="stdImg" title="" name="linkimage346"></a><div class="oneLandscape">Saturday, the
+temperature
+rose to just -10&deg;c - not warm enough to pump sap.&nbsp; Sunday
+(thankfully)
+was much warmer and by the early afternoon the sap stored in the vat
+had
+melted enough so that it could be pumped.&nbsp; My uncle has run a tube
+from
+the collecting vat, and a power line to pump the sap out to a road
+side.&nbsp;
+Using an ATV, he hauls a generator and 45 gallon drums to hold the
+sap.&nbsp;
+Turn on the generator, power the pump and a few seconds later cold,
+nearly
+clear sap is flowing into the 45 gallon drums.&nbsp; Thankfully, today
+the
+sap ran!&nbsp; We collected at least 30 gallons of sap (probably more -
+I
+didn't really check)</div><br clear="all">
+
+<center>
+<p><a name="link357" href="WaitingForSyropToFlow.html"><img height="200" hspace="10" width="133" alt="Waiting for Syrup to Flow" src="WaitingForSyropToFlowSm.jpg" title="" name="linkimage357" class="stdImg" onmouseout="hoverUpdate('link357', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link357', 'captionFrameVisible', this)"></a><a href="TastingSap.html" name="link354"><img title="" name="linkimage354" class="stdImg" onmouseout="hoverUpdate('link354', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link354', 'captionFrameVisible', this)" height="200" hspace="10" width="133" alt="Tasting Sap" src="TastingSapSm.jpg"></a>
+</center>
+<p><a href="QuadLeaving.html" name="link350"><img height="133" src="QuadLeavingSm.jpg" width="200" alt="Quad Leaving" hspace="10" class="stdImg" name="linkimage350" title="" onmouseover="hoverUpdate('link350', 'captionFrameVisible', this)" align="left" onmouseout="hoverUpdate('link350', 'captionFrameHidden', this)"></a><div class="oneLandscape">After pumping the sap into
+the
+drums, they are covered and driven back to the farm where the water is
+removed
+(evaporated) out of the sap.&nbsp;</div><br clear="all">
+
+<p><a name="link336" href="EvaporatingShed.html"><img onmouseout="hoverUpdate('link336', 'captionFrameHidden', this)" align="left" onmouseover="hoverUpdate('link336', 'captionFrameVisible', this)" name="linkimage336" title="" class="stdImg" width="134" alt="Evaporator Shed" hspace="10" src="EvaporatingShedSm.jpg" height="200"></a><div class="onePortrait">My uncle has refined
+the evaporating process over the years.&nbsp; It takes a lot of energy
+to
+boil such a large volume of liquid and a lot of time for the sap to
+concentrate
+into syrup.&nbsp; The shed holds a wood burning stove with has been
+modified
+so that the fumes from the fire run over the length of the large
+evaporator
+pan.
+
+</div><center>
+<p><a href="CleanedEvaporatorPan.html" name="link335"><img class="stdImg" name="linkimage335" title="" onmouseover="hoverUpdate('link335', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link335', 'captionFrameHidden', this)" height="134" src="CleanedEvaporatorPanSm.jpg" width="200" alt="Cleaned Evaporator Pan" hspace="10"></a><br clear="all">
+
+</center>
+<p><img height="200" align="left" src="PouringThroughFeltSm.jpg" width="134" hspace="10"><div class="fullwidth">Making syrup from sap really involves two
+steps
+- boiling the water our of the sap and filtering the sap to remove any
+impurities.&nbsp;
+Before the raw sap is put in the evaporator pan, it is filtered through
+two
+layers of felt to remove any wood pieces, sand and gravel (which the
+trees
+somehow suck up and drain) and anything else that might have fallen
+into
+the tubes.
+
+</div><center><a name="link338" href="FilterOnTray.html"><img title="" name="linkimage338" class="stdImg" onmouseout="hoverUpdate('link338', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link338', 'captionFrameVisible', this)" height="134" hspace="10" alt="Filter on Evaporator Pan" width="200" src="FilterOnTraySm.jpg"></a><br clear="all">
+</center>
+<p><div class="fullwidth">And then you leave the sap to boil.&nbsp; And boil.&nbsp; And
+boil.&nbsp;
+You only put in a thin layer of sap so that the surface area is
+maximized.&nbsp;
+Periodically you come out and filter another few gallons of sap into
+the evaporator.
+
+</div><center>
+<p><a name="link356" href="VatBoiling.html"><img height="134" src="VatBoilingSm.jpg" hspace="10" width="200" alt="Vat Boiling" class="stdImg" title="" name="linkimage356" onmouseover="hoverUpdate('link356', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link356', 'captionFrameHidden', this)"></a><a href="BoilingSap.html" name="link333"><img src="BoilingSapSm.jpg" width="200" alt="Boiling Sap in Large Evaporator" hspace="10" height="133" onmouseover="hoverUpdate('link333', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link333', 'captionFrameHidden', this)" class="stdImg" name="linkimage333" title=""></a>
+</center>
+<p><div class="fullwidth">And boil.&nbsp; To help pass the time we decided to go for a little
+snowmobile
+ride.&nbsp; There is a large waterfall a few lakes over that freezes in
+the
+winter.&nbsp; Kyle and Kaitlyn showed me the caves formed behind the
+ice
+wall and how to hide there.
+
+</div><center>
+<p><a href="FrontOfIceFalls.html" name="link339"><img height="200" src="FrontOfIceFallsSm.jpg" width="134" alt="Family in Front of Ice Falls" hspace="10" class="stdImg" name="linkimage339" title="" onmouseover="hoverUpdate('link339', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link339', 'captionFrameHidden', this)"></a><a href="HidingBehindWall.html" name="link340"><img height="200" alt="Hiding Behind Ice Wall" width="133" hspace="10" src="HidingBehindWallSm.jpg" name="linkimage340" title="" class="stdImg" onmouseout="hoverUpdate('link340', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link340', 'captionFrameVisible', this)"></a><a name="link341" href="IceCave.html"><img class="stdImg" name="linkimage341" title="" onmouseover="hoverUpdate('link341', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link341', 'captionFrameHidden', this)" height="200" src="IceCaveSm.jpg" width="134" alt="Ice Cave" hspace="10"></a>
+<p><a href="KatlynAndKyleInFrontFalls.html" name="link342"><img src="KatlynAndKyleInFrontFallsSm.jpg" alt="Caitlin and Kyle on Snow" width="200" height="134" onmouseover="hoverUpdate('link342', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link342', 'captionFrameHidden', this)" class="stdImg" title="" name="linkimage342"></a>
+</center>
+<p><br>
+
+<p><a name="link347" href="PanningOutConcetratedSap.html"><img class="stdImg" name="linkimage347" title="" onmouseover="hoverUpdate('link347', 'captionFrameVisible', this)" align="left" onmouseout="hoverUpdate('link347', 'captionFrameHidden', this)" height="200" src="PanningOutConcetratedSapSm.jpg" alt="Panning Out Concentrated Sap" width="133" hspace="10"></a><a name="link351" href="SmallerBoiling.html"><img class="stdImg" name="linkimage351" title="" align="left" onmouseover="hoverUpdate('link351', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link351', 'captionFrameHidden', this)" height="134" src="SmallerBoilingSm.jpg" alt="Socks on the Table" width="200" hspace="10"></a><div class="twoPortrait">We boil the sap until it's just a thin
+layer in the evaporator
+pan.&nbsp; The concentrated sap is then filtered (again) and put in a
+smaller
+pan for further boiling.&nbsp; This propane powered stove offers a more
+controllable
+heat than the fire powered stove and the sap will boil here for a few
+more
+hours.
+
+</div><center>
+<p><a name="link332" href="BoilingDownInSmaller.html"><img onmouseout="hoverUpdate('link332', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link332', 'captionFrameVisible', this)" name="linkimage332" title="" class="stdImg" alt="Boiling Down in a Smaller Vat" width="200" src="BoilingDownInSmallerSm.jpg" height="133"></a><br clear="all">
+
+</center>
+<p><a name="link355" href="Thermometer.html"><img height="200" hspace="10" alt="Thermometer in Syrup" width="133" src="ThermometerSm.jpg" title="" name="linkimage355" class="stdImg" onmouseout="hoverUpdate('link355', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link355', 'captionFrameVisible', this)" align="left"></a><div class="onePortrait">In the smaller pan
+we introduce
+another tool - the thermometer.&nbsp; As the sap concentrates, the
+boiling
+point rises.&nbsp; The goal for syrup is 219.5 &deg;F (about 7 degrees
+higher than the boiling point of water).&nbsp; When the boiling
+point is close, we bring the sap in for a few more passes through
+filters
+(felt and a specially designed "sock") and then finishing on the stove
+where
+we can watch the temperature exactly.</div><br clear="all">
+
+<center>
+<p><a href="FilteringIntoBucket.html" name="link337"><img src="FilteringIntoBucketSm.jpg" width="200" alt="Filtering into Bucket" hspace="10" height="134" onmouseover="hoverUpdate('link337', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link337', 'captionFrameHidden', this)" class="stdImg" name="linkimage337" title=""></a><a name="link352" href="SocksOnTable.html"><img class="stdImg" name="linkimage352" title="" onmouseover="hoverUpdate('link352', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link352', 'captionFrameHidden', this)" height="134" src="SocksOnTableSm.jpg" width="200" alt="Socks on the Table" hspace="10"></a><a href="PotOnStove.html" name="link348"><img onmouseover="hoverUpdate('link348', 'captionFrameVisible', this)" onmouseout="hoverUpdate('link348', 'captionFrameHidden', this)" class="stdImg" title="" name="linkimage348" src="PotOnStoveSm.jpg" hspace="10" alt="Pot on Stove" width="200" height="134"></a>
+</center>
+<p><a name="link334" href="BottlesOfSyrup.html"><img name="linkimage334" title="" class="stdImg" onmouseout="hoverUpdate('link334', 'captionFrameHidden', this)" onmouseover="hoverUpdate('link334', 'captionFrameVisible', this)" align="left" height="200" width="134" alt="Finished Bottles of Syrup" hspace="10" src="BottlesOfSyrupSm.jpg"></a><div class="onePortrait">Once
+the critical
+temperature is reached, the heat is reduced and the bottles come out of
+the
+oven.&nbsp; Very carefully (the bottles are too hot to touch and the
+sap
+would burn badly if it touched skin) the sap is panned out of the pot
+and
+into a funnel to fill the bottle.&nbsp; The sap is quite dark,
+especially
+considering it is some of the first sap of the year.&nbsp; The theory
+among
+my uncle and cousin is that the sap sat in the vat for days while the
+weather
+didn't agree with us.&nbsp; I've tasted the syrup - it's very good.</div><br clear="all">
+
+<p><br>
+<!-- AUTO GENERATED FOOTER -->
+<script language="JavaScript" type="text/javascript">
+    resizeMainimageForBrowserSize();
+</script>
+<br><div style="text-align: center;"><script type="text/javascript"><!--
+google_ad_client = "pub-8065091949518276";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-03-17: Bottom of Index Pages
+google_ad_channel = "4508294242";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<hr>
+<!-- These are captions that Javascript will float on -->	
+<div class="captionFrameHidden" id="link333_caption" onmouseover= "hoverUpdate('link333', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link333', 'captionFrameHidden', -1, -1)" ><a href="BoilingSap.html">Boiling Sap in Large Evaporator</a></div>
+<div class="captionFrameHidden" id="link336_caption" onmouseover= "hoverUpdate('link336', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link336', 'captionFrameHidden', -1, -1)" ><a href="EvaporatingShed.html">Evaporator Shed</a></div>
+<div class="captionFrameHidden" id="link352_caption" onmouseover= "hoverUpdate('link352', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link352', 'captionFrameHidden', -1, -1)" ><a href="SocksOnTable.html">Socks on the Table</a></div>
+<div class="captionFrameHidden" id="link346_caption" onmouseover= "hoverUpdate('link346', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link346', 'captionFrameHidden', -1, -1)" ><a href="LinesFromSapWell.html">Lines From Sap Vat</a></div>
+<div class="captionFrameHidden" id="link334_caption" onmouseover= "hoverUpdate('link334', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link334', 'captionFrameHidden', -1, -1)" ><a href="BottlesOfSyrup.html">Finished Bottles of Syrup</a></div>
+<div class="captionFrameHidden" id="link332_caption" onmouseover= "hoverUpdate('link332', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link332', 'captionFrameHidden', -1, -1)" ><a href="BoilingDownInSmaller.html">Boiling Down in a Smaller Vat</a></div>
+<div class="captionFrameHidden" id="link337_caption" onmouseover= "hoverUpdate('link337', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link337', 'captionFrameHidden', -1, -1)" ><a href="FilteringIntoBucket.html">Filtering into Bucket</a><br>Tags: <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=358">bucket</a></div>
+<div class="captionFrameHidden" id="link339_caption" onmouseover= "hoverUpdate('link339', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link339', 'captionFrameHidden', -1, -1)" ><a href="FrontOfIceFalls.html">Family in Front of Ice Falls</a><br>Tags: <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=41">snow</a>, <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=2">waterfall</a></div>
+<div class="captionFrameHidden" id="link348_caption" onmouseover= "hoverUpdate('link348', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link348', 'captionFrameHidden', -1, -1)" ><a href="PotOnStove.html">Pot on Stove</a></div>
+<div class="captionFrameHidden" id="link355_caption" onmouseover= "hoverUpdate('link355', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link355', 'captionFrameHidden', -1, -1)" ><a href="Thermometer.html">Thermometer in Syrup</a></div>
+<div class="captionFrameHidden" id="link341_caption" onmouseover= "hoverUpdate('link341', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link341', 'captionFrameHidden', -1, -1)" ><a href="IceCave.html">Ice Cave</a></div>
+<div class="captionFrameHidden" id="link342_caption" onmouseover= "hoverUpdate('link342', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link342', 'captionFrameHidden', -1, -1)" ><a href="KatlynAndKyleInFrontFalls.html">Caitlin and Kyle on Snow</a><br>Person: <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=33">Caitlin</a>, <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=43">Kyle</a></div>
+<div class="captionFrameHidden" id="link357_caption" onmouseover= "hoverUpdate('link357', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link357', 'captionFrameHidden', -1, -1)" ><a href="WaitingForSyropToFlow.html">Waiting for Syrup to Flow</a></div>
+<div class="captionFrameHidden" id="link356_caption" onmouseover= "hoverUpdate('link356', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link356', 'captionFrameHidden', -1, -1)" ><a href="VatBoiling.html">Vat Boiling</a></div>
+<div class="captionFrameHidden" id="link340_caption" onmouseover= "hoverUpdate('link340', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link340', 'captionFrameHidden', -1, -1)" ><a href="HidingBehindWall.html">Hiding Behind Ice Wall</a><br>Person: <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=33">Caitlin</a>, <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=43">Kyle</a></div>
+<div class="captionFrameHidden" id="link354_caption" onmouseover= "hoverUpdate('link354', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link354', 'captionFrameHidden', -1, -1)" ><a href="TastingSap.html">Tasting Sap</a></div>
+<div class="captionFrameHidden" id="link345_caption" onmouseover= "hoverUpdate('link345', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link345', 'captionFrameHidden', -1, -1)" ><a href="KyleOnSnow.html">Kyle on Snow</a><br>Person: <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=43">Kyle</a></div>
+<div class="captionFrameHidden" id="link335_caption" onmouseover= "hoverUpdate('link335', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link335', 'captionFrameHidden', -1, -1)" ><a href="CleanedEvaporatorPan.html">Cleaned Evaporator Pan</a></div>
+<div class="captionFrameHidden" id="link351_caption" onmouseover= "hoverUpdate('link351', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link351', 'captionFrameHidden', -1, -1)" ><a href="SmallerBoiling.html">Socks on the Table</a></div>
+<div class="captionFrameHidden" id="link347_caption" onmouseover= "hoverUpdate('link347', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link347', 'captionFrameHidden', -1, -1)" ><a href="PanningOutConcetratedSap.html">Panning Out Concentrated Sap</a></div>
+<div class="captionFrameHidden" id="link338_caption" onmouseover= "hoverUpdate('link338', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link338', 'captionFrameHidden', -1, -1)" ><a href="FilterOnTray.html">Filter on Evaporator Pan</a></div>
+<div class="captionFrameHidden" id="link353_caption" onmouseover= "hoverUpdate('link353', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link353', 'captionFrameHidden', -1, -1)" ><a href="TappedTree.html">Tapped Maple Tree</a></div>
+<div class="captionFrameHidden" id="link344_caption" onmouseover= "hoverUpdate('link344', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link344', 'captionFrameHidden', -1, -1)" ><a href="KyleHoldingLines.html">Kyle Holding Lines</a><br>Tags: <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=41">snow</a></div>
+<div class="captionFrameHidden" id="link343_caption" onmouseover= "hoverUpdate('link343', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link343', 'captionFrameHidden', -1, -1)" ><a href="KaylieOnSnow.html">Caitlin on Snow</a><br>Person: <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=33">Caitlin</a><br>Tags: <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=41">snow</a></div>
+<div class="captionFrameHidden" id="link350_caption" onmouseover= "hoverUpdate('link350', 'captionFrameVisible', -1, -1)" onmouseout= "hoverUpdate('link350', 'captionFrameHidden', -1, -1)" ><a href="QuadLeaving.html">Quad Leaving</a></div>
+<font face="Verdana, helvetica, sans-serif" size="1" color="#777777">
+<b>Tags:</b> <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=41">snow</a>(3), <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=2">waterfall</a>(1), <a href="/cgi-bin/search.pl?Advanced=2&SearchIncludesphotos=set&metaEnumTag16=set&MetaTag16=358">bucket</a>(1)</font><br>
+<font face="Verdana, helvetica, sans-serif" size="1" color="#777777">
+<b>People:</b> <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=33">Caitlin</a>(3), <a href="/cgi-bin/search.pl?Advanced=1&PersonOverTime=43">Kyle</a>(3)</font><br>
+<font face="Verdana, helvetica, sans-serif" size="1" color="#777777">
+
+<b>From:</b> <a href="../index.html">John Harvey Photo</a> > <a href="../Top Page/People.html">Pictures of People</a> > <a href="../ParrySound/index.html">Making Maple Syrup in Parry Sound</a><br>
+
+</font>
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Thank you for your website.  My 4 year-old daughter has just had maple syrup on her pancakes, and was  really interested in the information on your site.  She was enchanted by the pictures of the snow! </div>
+<div style="text-align: right;">
+<b>Heather</b><br><small>Wednesday, September 12th, 2007 at 10:57:50</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Thank-you for giving details. I'm from Oswego, N.Y. and now in Kansas, I remembered most of the process but not how many times it has to be boiled and filtered. I felt the Lord telling me to use this example to teach our womens group tonight. Oh,how we get filtered and boiled in our daily lives as we grow in Him.   I really enjoyed the pictures too, I miss the snow!!
+God Bless and enjoy the syrup, Cheryl</div>
+<div style="text-align: right;">
+<b>cheryl</b><br><small>Tuesday, October 9th, 2007 at 10:08:50</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Hi, just read your article and I fancy having a go at this next year.  First attempt we might just do it all manualy.  I found your article very useful as I previously had no idea.  If there are any tips you can give to a first time tapper it would be appreciated.  We have just bought a plot of land in New Brunswick and I am told it has 2000 maple trees, I am guessing they need to be a certain size before tapping?  First time I will be happy if we nake enough just to show the kids how to do it.  Good article, thanks, Peter</div>
+<div style="text-align: right;">
+<b>peter james</b><br><small>Sunday, October 28th, 2007 at 07:48:07</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Thank you!! My 6 year old daughter and I were curious about syrup making this morning and your page came up when we googled- very interesting and informative! We're in Georgia and don't get snow like that, lol. We both enjoyed looking at your pics, too, especially the frozen waterfall :) ~ namaste! michele</div>
+<div style="text-align: right;">
+<b>michele</b><br><small>Sunday, November 18th, 2007 at 06:24:43</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Hi!  We have a sponsored child in Guatemala.  I wanted to send him a history of maple syrup making, espcially with lots of pictures as he only speaks Spanish and someone will have to translate the words for him.  I think he will really find it interesting--I did, and we live in taping country, too. :)</div>
+<div style="text-align: right;">
+<a href="http://olvetbaptist meaford.com" rel="nofollow">Sandra </a>
+<br><small>Tuesday, March 4th, 2008 at 08:50:46</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">good slide show</div>
+<div style="text-align: right;">
+<a href="http://nvifmv" rel="nofollow">nick</a>
+<br><small>Thursday, March 20th, 2008 at 06:35:17</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Thank you SOOO much for the useful information.  I live in Zumbrota, Minnesota.  Last weekend a Maintenance man from work told me all about making maple syrup and his enthusiasm was contagious.  I live in town and have two large maple trees.  Today I followed his and your instructions and tapped the trees.  It was prime tapping as the sap poured out of them.  I cooked and cooked and cooked the sap and have almost one quart of syrup to show for it.  This has been a very delightful day and I'm so impressed with the finished product.  Thank you for the excellent slide show!  Cathy</div>
+<div style="text-align: right;">
+<b>CATHY STRIEMER</b><br><small>Saturday, March 29th, 2008 at 18:50:12</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">I was looking for pictures of Maple Syrup production and came across your site. It is really quite wonderful.  I hope you will come down to the Royal Agriculture Winter Fair Nov 7-16 to see the exhibit we have entered into our Maple Syrup Competition.  If you are ever interested in information on the competition or the fair - let us know.
+Have a great year with production and family.
+Sally Andrews
+Royal Winter Fair - Agriculture Show
+</div>
+<div style="text-align: right;">
+<a href="http://royalfair.org" rel="nofollow">Sally</a>
+<br><small>Thursday, April 3rd, 2008 at 09:21:21</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Hi!
+A fun website to read. I used to tap trees in northern Maine until I moved to Alaska. I think I miss the spring activity of sugaring more than anything else I did in the lower 48. My wife and I just purchased 42 acres with sugar maples in the U.P. of Michigan for our retirement home and I'm looking forward to the day that we will move back and settle there permanently. (Only four more years!)
+
+So thank you for getting me all excited again. My four sons used to help me gather sap. I did it the old fashioned way... drilled with a bit and brace, used the old fashioned spiles, and used heavy duty gallon freezer bags tied to the spile. They were inexpensive and worked well. 
+
+As a retired school teacher and current university professor, I'm delighted to see that you have made maple sugaring a family project. Sounds and looks fun. Thanks for sharing! Tom </div>
+<div style="text-align: right;">
+<a href="http://www.alaskaprofessor.com" rel="nofollow">Tom Pennington</a>
+<br><small>Sunday, September 21st, 2008 at 20:01:50</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">I just finished reading "Miracles on Maple Hill" to my children, and then we searched for pictures of the way it was done in the book.  Thank you for showing the evaporator pans.  My kids couldn't quite understand it until we saw it on your website.  Thanks again. </div>
+<div style="text-align: right;">
+<b>Val</b><br><small>Wednesday, February 11th, 2009 at 11:37:49</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">Thank you for the tips on this adventure you went on. As I'm writing this e-mail, I'm at my waiting period of my sap to further boil down. I only have two tree's in my yard on which i can tap and it produced ten gallons of sap in 1.5 weeks. So here i what to make some syrup.<p>
+Its a fun, playful thing to do and some time when my 6 month old daughter gets older, she can help me and have fun. All i need now is to buy more land to tap more trees</div>
+<div style="text-align: right;">
+<b>norm</b><br><small>Saturday, February 20th, 2010 at 09:14:14</small></div></div></small>
+
+<p><small><div class="onePortrait" style="margin-left: 40px; font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-right: 120px;">I was making a power point about the making of maple syrup for a class when I came across your sight. It was very helpful and I really enjoyed the pictures. Thanks for your helpful information!!</div>
+<div style="text-align: right;">
+<b>Elisabeth</b><br><small>Tuesday, October 19th, 2010 at 12:33:52</small></div></div></small>
+
+<form action="/cgi-bin/comment.pl" method="post">
+   <div style="margin-left: 80px;">
+   <h2>Leave a Comment</h2>
+   <p>
+   <input type="text" name="author" value="" size="22" tabindex="1" />
+   <label for="author"><small>Name </small></label></p>
+   <p><input type="text" name="email" value="" size="22" tabindex="2" />
+   <label for="email"><small>Mail (will not be published) </small></label></p>
+   <p><input type="text" name="url" value="http://" size="44" tabindex="3" />
+   <label for="url"><small>Website (optional)</small></label></p>
+   <p><textarea name="comment" cols="100" rows="10" tabindex="4"></textarea></p>
+   <p><input name="submit" type="button" tabindex="5" onClick="submitForm(this.form, 'http://www.johnharveyphoto.com/cgi-bin/AddComment.pl')" value="Submit Comment" />
+Some HTML allowed: &lt;b&gt;, &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strike&gt; &lt;strong&gt;, but most isn't.&nbsp; Text length is limited.&nbsp; comments from first time authors will be reviewed before being posted. 
+comments with swearing or painfully poor spelling will probably be rejected.   <input type="hidden" name="PageID" value="43" />
+   </p>
+   </div>
+</form>
+<font face="Verdana, helvetica, sans-serif" size="1" color="#777777">
+<BR>Last Modified Tuesday, June 9th, 2009 at 00:27:03 <A HREF="/cgi-bin/edit/editindex.pl?PageID=43">Edit</A> <BR>
+<A HREF="http://www.johnharveyphoto.com/copyright.html">Copyright and Contact Information. </A>
+</font>
+<!-- AUTO GENERATED FOOTER -->
+</body>
+</html>

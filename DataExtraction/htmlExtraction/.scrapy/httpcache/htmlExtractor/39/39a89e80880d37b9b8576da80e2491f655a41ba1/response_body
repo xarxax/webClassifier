@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="pageContent" ng-cloak>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>404 Page Not Found</title>
+<link rel="shortcut icon" href="https://amaproducts.com.au/plugin/images/favicon.png">
+<link href="https://amaproducts.com.au/plugin/css/bootstrap.css" rel="stylesheet">
+<link href="https://amaproducts.com.au/plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://amaproducts.com.au/plugin/css/style.css" rel="stylesheet"> 
+<link href="https://amaproducts.com.au/plugin/css/style2.css" rel="stylesheet"> 
+<link href="https://amaproducts.com.au/plugin/css/animate.css" rel="stylesheet"> 
+<link href="https://amaproducts.com.au/plugin/js/guidely/guidely.css" rel="stylesheet"> 
+
+<script type="text/javascript">var baseurl = 'https://amaproducts.com.au/';</script>
+<script src="https://amaproducts.com.au/plugin/angular/angular.min.js"></script>
+<script src="https://amaproducts.com.au/plugin/angular/appmain.js"></script>
+<script src="https://amaproducts.com.au/plugin/angular/dirPagination.js"></script>
+<link href="https://amaproducts.com.au/plugin/angular/angular-datepicker.css" type="text/css" rel="stylesheet">
+<script src="https://amaproducts.com.au/plugin/angular/angular-datepicker.js" type="text/javascript"></script>
+<script src="https://amaproducts.com.au/plugin/angular/checklist-model.js" type="text/javascript"></script>
+<script src="https://amaproducts.com.au/plugin/angular/angular-sanitize.js" type="text/javascript"></script>
+<script src="https://amaproducts.com.au/plugin/angular/textAngular.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+.container-fluid #content{min-height:100vh!important;}
+.affix {
+top: 0;
+width: 100%;
+z-index: 99 !important;
+}
+.container-fluid{padding-left:0; padding-right:0; margin-left:0; margin-right:
+.affix + .container-fluid {
+padding-top:70px;
+}
+.checkbox {
+padding-left: 20px; }
+.checkbox label {
+display: inline-block;
+position: relative;
+padding-left: 5px; }
+.checkbox label::before {
+content: "";
+display: inline-block;
+position: absolute;
+width: 17px;
+height: 17px;
+left: 0;
+margin-left: -20px;
+border: 1px solid #cccccc;
+border-radius: 3px;
+background-color: #fff;
+-webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+.checkbox label::after {
+display: inline-block;
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0;
+top: 0;
+margin-left: -20px;
+padding-left: 3px;
+padding-top: 1px;
+font-size: 11px;
+color: #555555; }
+.checkbox input[type="checkbox"] {
+opacity: 0; }
+.checkbox input[type="checkbox"]:focus + label::before {
+outline: thin dotted;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px; }
+.checkbox input[type="checkbox"]:checked + label::after {
+font-family: 'FontAwesome';
+content: "\f00c"; }
+.checkbox input[type="checkbox"]:disabled + label {
+opacity: 0.65; }
+.checkbox input[type="checkbox"]:disabled + label::before {
+background-color: #eeeeee;
+cursor: not-allowed; }
+.checkbox.checkbox-circle label::before {
+border-radius: 50%; }
+.checkbox.checkbox-inline {
+margin-top: 0; }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+background-color: #428bca;
+border-color: #428bca; }
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+color: #fff; }
+
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+background-color: #d9534f;
+border-color: #d9534f; }
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+color: #fff; }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+background-color: #5bc0de;
+border-color: #5bc0de; }
+.checkbox-info input[type="checkbox"]:checked + label::after {
+color: #fff; }
+
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+background-color: #f0ad4e;
+border-color: #f0ad4e; }
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+color: #fff; }
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+background-color: #5cb85c;
+border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after {
+color: #fff; }
+
+.radio {
+padding-left: 20px; }
+.radio label {
+display: inline-block;
+position: relative;
+padding-left: 5px;}
+.radio label::before {
+content: "";
+display: inline-block;
+position: absolute;
+width: 17px;
+height: 17px;
+left: 0;
+margin-left: -20px;
+border: 1px solid #cccccc;
+border-radius: 50%;
+background-color: #fff;
+-webkit-transition: border 0.15s ease-in-out;
+-o-transition: border 0.15s ease-in-out;
+transition: border 0.15s ease-in-out; }
+.radio label::after {
+display: inline-block;
+position: absolute;
+content: " ";
+width: 11px;
+height: 11px;
+left: 3px;
+top: 3px;
+margin-left: -20px;
+border-radius: 50%;
+background-color: #555555;
+-webkit-transform: scale(0, 0);
+-ms-transform: scale(0, 0);
+-o-transform: scale(0, 0);
+transform: scale(0, 0);
+-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+-moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+-o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+.radio input[type="radio"] {
+opacity: 0; }
+.radio input[type="radio"]:focus + label::before {
+outline: thin dotted;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px; }
+.radio input[type="radio"]:checked + label::after {
+-webkit-transform: scale(1, 1);
+-ms-transform: scale(1, 1);
+-o-transform: scale(1, 1);
+transform: scale(1, 1); }
+.radio input[type="radio"]:disabled + label {
+opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before {
+cursor: not-allowed; }
+.radio.radio-inline {
+margin-top: 0; }
+
+.radio-primary input[type="radio"] + label::after {
+background-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::before {
+border-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::after {
+background-color: #428bca; }
+
+.radio-danger input[type="radio"] + label::after {
+background-color: #d9534f; }
+.radio-danger input[type="radio"]:checked + label::before {
+border-color: #d9534f; }
+.radio-danger input[type="radio"]:checked + label::after {
+background-color: #d9534f; }
+
+.radio-info input[type="radio"] + label::after {
+background-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::before {
+border-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::after {
+background-color: #5bc0de; }
+
+.radio-warning input[type="radio"] + label::after {
+background-color: #f0ad4e; }
+.radio-warning input[type="radio"]:checked + label::before {
+border-color: #f0ad4e; }
+.radio-warning input[type="radio"]:checked + label::after {
+background-color: #f0ad4e; }
+
+.radio-success input[type="radio"] + label::after {
+background-color: #5cb85c; }
+.radio-success input[type="radio"]:checked + label::before {
+border-color: #5cb85c; }
+.radio-success input[type="radio"]:checked + label::after {
+background-color: #5cb85c; }
+</style>
+
+
+<!--quantity-->
+<style>
+.quantity {
+position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number]
+{
+-moz-appearance: textfield;
+}
+
+.quantity input {
+min-width:100px;
+height:34px; 
+line-height: 1.65;
+float: left;
+display: block;
+padding: 0;
+margin: 0;
+padding-left: 20px;
+border: 1px solid #eee;
+}
+
+.quantity input:focus {
+outline: 0;
+}
+
+.quantity-nav {
+float: left;
+position: relative;
+height:34px;
+}
+
+.quantity-button {
+position: relative;
+cursor: pointer;
+border-left: 1px solid #eee;
+width: 20px;
+text-align: center;
+color: #333;
+font-size: 13px;
+font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+line-height: 1.7;
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.quantity-button.quantity-up {
+position: absolute;
+height:18px;
+top: 0;
+border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+position: absolute;
+bottom: 3px;
+height:18px;
+}
+</style> <!--quantity end--><style>
+.list-group li a{color:#333333; text-decoration:none;}
+.list-group li a:hover, .list-group li a .glyphicon{color:#006699; text-decoration:none;}
+.btn-minus{cursor:pointer;}
+.btn-plus{cursor:pointer;}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N975TDB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+/* Note: Try to remove the following lines to see the effect of CSS positioning */
+.affix {
+  float:left;
+  
+-webkit-transition: opacity 100ms, visibility 100ms;
+transition: opacity 100ms, visibility 100ms;
+}
+.affix .mm02{float:left!important; margin-left:150px;}
+/*.affix .newww{ visibility:hidden;}
+.affix + .container-fluid {
+padding-top:70px;
+}*/
+.affix .navbar-brand img{height:40px;}
+.affix .navbar-brand{height:40px!important; margin:5px 10px 10px 20px !important;}
+.affix .navbar-default .form-group, .affix .navbar-default .navbar-nav{margin-top:5px; margin-bottom:5px;}
+.affix  .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn{height:36px; padding:5px 16px; font-size:14px;}
+.affix .btn-lg{height:36px; padding:5px 16px;}
+.adsear{float:right; display:none;} 
+.affix .adsear{display:block;} 
+.affix .hidefix{visibility:hidden; position:absolute; height:0px;}
+.affix #adv-search{margin:5px auto;}
+.affix #adv-search{width:350px;}
+.affix .cartvv{ display:none; margin-top:-15px; }
+.remm{display:none;}
+.affix .remm{display:block;}
+/*.cartvv{position:relative; top:-65px; right:3%;}*/
+.cat{margin:15px 0;}
+.affix .cat{margin:4px 0;}
+@media only screen and (max-width: 768px) {
+.affix .mm02{ margin-left:0;}
+}
+
+.has-children{border:none; }
+.is-hidden{ padding-left:0; padding-right:0; margin-left:0; margin-right:0;}
+.affix .cd-dropdown-trigger{margin-top:0;}
+@media only screen and (max-width: 768px) {
+.navbar-collapse{padding-right:0;} 
+#adv-search{margin:15px auto;}
+}
+
+#adv-search .dropdown-menu{right:0!important; left:auto;}
+.dropdown.dropdown-lg .dropdown-menu {
+margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+border-radius: 4px;
+    /*border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;*/
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 100%;
+        margin: 15px auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+.cd-secondary-dropdown li.brand{ width:220px; border:none; padding:0px 10px !important; margin:0px !important; height:auto; }
+.cd-secondary-dropdown li.brand a{ color:#111433 !important; margin-bottom:0px; padding:0px; }
+
+.count{ float:right; font-size:10px; margin:-5px -10px 0px 0px;}
+.suggesstion{ position:absolute; width:100%; display:none; }
+#country-list{float:left; list-style:none;margin:0;padding:0; width:100%; border:1px solid #D7D7D7; z-index:9999; position:relative;}
+#country-list li{ display:block; background:#ffffff; border-bottom:1px solid #D7D7D7; text-align:left;}
+#country-list li a{ display:block; padding: 3px 2.5%; background:#ffffff; overflow:hidden;}
+#country-list li a:hover{ background:#d9534f; text-decoration:none; color:#fff;}
+#country-list li:hover{ color:#484848; cursor:pointer;}
+#country-list li.activeSel { background:#004080 !important; color:#ffffff;}
+#country-list .tit{ font-size:16px; display:block;}
+#country-list .sub{ font-size:13px; color:#DADADA;}
+.activeRow { background:#f5f5f5 !important; color:#000000;} 
+.lastAll{ text-align:right; float:right; font-size:20px;}
+.see-alld{padding:15px; background:#dfdfdf; text-align:center;}
+</style>
+<span ng-controller="searchProduct">    
+<div  id="header" class="navbar navbar-default container-fluid">
+<div class="container-fluid" style="padding:5px 0;">
+<div class="container"><div class="row">
+ 
+<div class="col-md-12 text-right"><i class="fa fa-phone text-primary"></i> 1300 558 135&nbsp;&nbsp;</div>
+</div></div></div>
+<div class="container hidefix">
+
+<div class="navbar-header">   
+	<a class="navbar-brand" href="https://amaproducts.com.au/"><img title="AMAPRODUCTS" alt="AMAPRODUCTS" src="https://amaproducts.com.au/plugin/logo_image/1534230246_AMA_LOGO_BLUE.png"></a>
+</div>
+<div class="navbar-collapse"  style="padding-left: 0px;">
+	<div class="col-md-6 col-md-offset-3 col-sm-7 col-xs-9"> 
+		<div class="input-group input-group-lg" id="adv-search" style="margin-bottom:0px;">
+			<form id="ord05" class="form-horizontal" ng-submit="searchCustomer(pcodepname)" role="form">
+				<input type="text" class="form-control" style="height:46px;" id="cust" autocomplete="off" placeholder="Search Products" ng-model="pcodepname"  ng-change="searchCustomer(pcodepname);" /><input type="submit" style="display:none;" value="Submit" ng-click="getProduct(pcodepname,'pcodepname')" />
+			</form>
+			<div class="input-group-btn"> 
+				<div class="btn-group" role="group">
+					
+					<div class="dropdown dropdown-lg"> 
+						<button type="button" title="Advance Search" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<div class="dropdown-menu dropdown-menu-right" role="menu"> 
+							<h4>Advance Search</h4>
+							<form class="form-horizontal">
+							<div class="form-group"><div class="input-group">
+								<input placeholder="Product Code" name="searchpp" class="form-control" ng-model="pcode" type="text">
+								<span class="input-group-btn">
+									<button type="submit" ng-click="getProduct(pcode,'pcode')" class="btn btn-primary btn-add"><i class="glyphicon glyphicon-search white"></i></button>
+								</span>
+							</div></div>
+							</form>
+							<form class="form-horizontal" role="form">
+							<div class="form-group"><div class="input-group">
+								<input placeholder="Product Name / Key word" name="product_search" class="form-control" ng-model="pname" type="text">
+								<span class="input-group-btn">
+									<button type="submit" ng-click="getProduct(pname,'pname')" class="btn btn-primary btn-add"><i class="glyphicon glyphicon-search white"></i></button>
+								</span>
+							</div></div>
+							</form>
+														<form class="form-horizontal" role="form">
+							<div class="form-group"> 
+								<select name="product_name" ng-model="catagory"  ng-change="getProduct(catagory,'catagory')" class="form-control sli">
+								<option value="">-----Select Product Catagory-----</option>
+								<option ng-repeat="c in catalist" value="{{c.ama_category_name}}">{{c.ama_category_name}}</option> 
+								</select>
+							</div>
+							</form>
+													</div> 
+					</div> 
+					<button type="submit" class="btn btn-danger" ng-click="getProduct(pcodepname,'pcodepname')"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</div>
+		<div class="suggesstion" id="drop1"> <!--ng-show="customerList"  style="display:block;"-->
+			<ul id="country-list">
+				<li ng-repeat="list in mainsearchlist">
+					<a href="https://amaproducts.com.au/allproducts/product/{{list.itemname | specialFilterProvider : '_' | lowercase}}~{{list.product_id}}">
+						<div class="col-md-2" style="padding:0px;"><img src="https://amaproducts.com.au/plugin/product_image/{{list.proimage}}" width="40px" alt="item" /></div>
+						<div class="col-md-10" style="padding:0px;">
+							<span class="tit">{{list.itemname}}</span>
+							<span class="sub">{{list.uniquecode}} {{list.brand_name}}</span>
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+            <div style="padding:0; position:relative; z-index:999999; clear:both; text-align:center;" ng-click="getProduct(pcodepname,'pname')"><span class="btn btn-primary btn-block">Click here to show all results for: "{{pcodepname}}"</span></div>
+		</div>
+		
+			</div>
+	<div class="cartvv pull-right" style="display:block;">
+		<button ng-click="getCartlist()" class="btn-lg btn btn-danger cat" id="button"><span><i id="subMenu22" class="shc"></i></span>
+		<i class="glyphicon glyphicon-shopping-cart"></i> <span class="cc">Cart</span><span class="count" id="cartCount1"></span></button> 
+	</div>
+</div><!-- /.navbar-collapse -->
+
+</div><!-- /.container-fluid -->
+</div>
+
+
+<div data-spy="affix" data-offset-top="95">
+<nav class="navbar navbar-inverse" role="navigation"> 
+<div class="container">
+<div class="cd-dropdown-wrapper newww2">
+	<a class="cd-dropdown-trigger" href="#0">Shop <i class="glyphicon glyphicon-align-justify shopp"></i><span>All Products</span></a>
+	<nav id="dpmenu" class="cd-dropdown newww">
+		<h2>Shop All Products</h2>
+		<a href="#0" class="cd-close">Close</a>
+		<ul class="cd-dropdown-content">
+						<li><a href="https://amaproducts.com.au/sitemap">All Product</a></li>
+			<li style="background:#b2e3fc;">
+				<a href="https://amaproducts.com.au/specials"><img src="https://amaproducts.com.au/plugin/images/special-ico.png" width="30" height="auto" /> Specials</a>
+			</li>
+		</ul> 
+	</nav> <!-- .cd-dropdown -->
+</div>
+
+<div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<div class="col-md-1 remm pull-right text-right">
+		<button ng-click="getCartlist()" class="btn-lg btn btn-danger cat shc" id="subMenu22"> <i class="glyphicon glyphicon-shopping-cart"></i><span class="count" id="cartCount2"></span></button>
+	</div>
+	<div class="pull-right adsear"> 
+		<div class="input-group" id="adv-search">
+			<form ng-submit="searchCustomer1(pcodepname)" role="form">
+				<input type="text" style="height:36px;" class="form-control" autocomplete="off" id="cust1" placeholder="Search Products" ng-model="pcodepname"  ng-change="searchCustomer1(pcodepname);" /><input type="submit" style="display:none;" value="Submit" ng-click="getProduct(pcodepname,'pcodepname')" />
+			</form>
+			<div class="input-group-btn">
+				<div class="btn-group" role="group">
+					<div class="dropdown dropdown-lg">
+						<button type="button" title="Advance Search" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<div class="dropdown-menu dropdown-menu-right" role="menu">
+							<h4>Advance Search</h4>
+							<form class="form-horizontal" role="form">
+							<div class="form-group"><div class="input-group">
+								<input placeholder="Product Code" name="searchpp" class="form-control" ng-model="pcode" type="text">
+								<span class="input-group-btn">
+									<button type="submit" ng-click="getProduct(pcode,'pcode')" class="btn btn-primary btn-add"><i class="glyphicon glyphicon-search white"></i></button>
+								</span>
+							</div></div>
+							</form>
+							<form class="form-horizontal" role="form">
+							<div class="form-group"><div class="input-group">
+								<input placeholder="Product Name / Key word" name="product_search" class="form-control" ng-model="pname" type="text">
+								<span class="input-group-btn">
+									<button type="submit" ng-click="getProduct(pname,'pname')" class="btn btn-primary btn-add"><i class="glyphicon glyphicon-search white"></i></button>
+								</span>
+							</div></div>
+							</form>
+														<form class="form-horizontal" role="form">
+							<div class="form-group"> 
+								<select name="product_name" ng-model="catagory"  ng-change="getProduct(catagory,'catagory')" class="form-control sli">
+								<option value="">-----Select Product Catagory-----</option>
+								<option ng-repeat="c in catalist" value="{{c.ama_category_code}}">{{c.ama_category_name}}</option> 
+								</select>
+							</div>
+							</form>
+													</div>
+					</div>
+					<button type="button" class="btn btn-danger" ng-click="getProduct(pcodepname,'pcodepname')"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+			</div>
+		</div>
+		<div class="suggesstion" style="max-width:500px;" id="drop2">
+			<ul id="country-list">
+				<li ng-repeat="list in mainsearchlist1">
+					<a href="https://amaproducts.com.au/allproducts/product/{{list.itemname | specialFilterProvider : '_' | lowercase}}~{{list.product_id}}">
+						<div class="col-md-2" style="padding:0px;"><img src="https://amaproducts.com.au/plugin/product_image/{{list.proimage}}" width="40px" alt="item" /></div>
+						<div class="col-md-10" style="padding:0px;">
+							<span class="tit">{{list.itemname}}</span>
+							<span class="sub">{{list.uniquecode}} {{list.brand_name}}</span>
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+            <div style="padding:0; position:relative; z-index:999999; clear:both; text-align:center;"  ng-click="getProduct(pcodepname,'pname')">
+            <span class="btn btn-block btn-primary">Click here to show all results for: "{{pcodepname}}"</span>
+            </div>
+		</div>
+	</div>
+	<ul class="nav navbar-nav navbar-right mm02">
+		<li><a href="https://amaproducts.com.au/home"><i class="glyphicon glyphicon-home"></i></a></li>
+		<li><a href="https://amaproducts.com.au/specials">Specials</a></li> 
+		<li><a href="https://amaproducts.com.au/catalogue">Catalogue</a></li>
+		<li><a ng-if="cust == ''" href="https://amaproducts.com.au/registration">Register</a><a ng-if="cust != ''" href="" ng-click="logoutAction()">Logout</a></li>
+		<li><a ng-if="cust == ''" href="https://amaproducts.com.au/myaccount">Sign In</a><a ng-if="cust != ''" href="https://amaproducts.com.au/myaccount">My Account</a></li>
+		<li><a href="https://amaproducts.com.au/downloads" title="Downloads Forms in PDF"><i class="glyphicon glyphicon-cloud-download"></i></a></li>
+	</ul>  
+</div>
+</div>
+</nav>
+
+<div class="clearfix"></div>
+
+<div id="newpost" style="width:100%; position:absolute; display:none; z-index:999999; max-height:500px; overflow:auto; background:#003366; color:#fff;">
+<div class="container">
+	<div class="tab-pane active" id="kids">
+		<div class="col-md-12 text-center"><h2>My Cart</h2></div>
+		<div class="col-md-12" ng-show="viewloading"><p style="text-align:center;"><img src="https://amaproducts.com.au/plugin/images/loading.gif" width="125px" height="125px" /></p></div>
+		<div class="col-md-12" ng-hide="viewloading">
+			<ul class="nav-list list-inline" style="text-align:center;">
+				<li ng-repeat="list in cartlist | limitTo:11">
+					<a href="#">
+						<img ng-if="list.proimage == ''" src="https://amaproducts.com.au/plugin/images/not-available.jpg">
+						<img ng-if="list.proimage != ''" src="https://amaproducts.com.au/plugin/product_image/{{list.proimage}}" />
+						<span>{{list.itemname}}</span>
+						<div class="price"><span>$</span>{{list.proprice}}</div>
+					</a>
+				</li>
+				<li ng-if="cartlist.length > 10">
+					<a style="padding-top:30px!important; display:block;" href="https://amaproducts.com.au/add_cart/view_cart">View More</a>
+				</li>
+				<li ng-if="cartlist.length==''"><a href="#"><span>Cart Empty</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-md-12 text-center"> 
+		<p ng-if="totalprice != 0 || totalprice != ''"> <h3 style="color:#fff;">Total : $ {{totalprice | number:2}}</h3>  <a href="https://amaproducts.com.au/add_cart/view_cart" class="btn btn-danger">View Cart</a></p>
+	</div>				
+</div>
+</div>
+
+<div class="modal" ng-show="logoutMsg" style="display:block; background-color:rgba(0, 0, 0, 0.9); z-index:9999;">
+  <div class="modal-dialog" style="width:350px;">
+  	<div style="text-align:center;" ng-hide="logload">
+		<img src="https://amaproducts.com.au/plugin/images/loading.gif" width="125px" />
+	</div>
+	<div class="modal-content" ng-show="logload">
+		<div ng-class="class" class="alert alert-dismissable" style="margin-bottom:0px; text-align:center;">
+			<h4 style="margin:0px; padding-bottom:10px;">There are itmes in you cart, Logging off will delete these. Are you sure you want to continue?</h4>
+			<button type="button" class="btn btn-sm btn-primary" ng-click="logoutConfirm()">Yes</button> 
+			<button type="button" class="btn btn-sm btn-warning" ng-click="logoutMsg=false;">No</button> 
+		</div>
+	</div>
+  </div>
+</div>
+
+</div>
+</span>
+<div class="container-fluid" style="height:100%;"><div class="container reform">
+	<div class="row mtb">
+		<div class="col-md-4 text-center col-xs-offset-4"><img src="https://amaproducts.com.au/plugin/images/404.png" class="img-responsive" alt="404" title="404"></div>
+		<div class="col-md-8 text-center col-xs-offset-2">
+			<a class="media-url" itemprop="url" href="https://gifer.com/7Acz">
+				<video class="media-url__video" loop="" autoplay="" muted="" playsinline="" width="20%">
+					<source src="https://i.gifer.com/7Acz.mp4" itemprop="contentUrl" type="video/mp4">
+				</video>
+			</a>
+			<h3>The page you were looking for was moved or doesn't exist.<br>|<br>|<br>Let's get you back<br>|<br>|<br>|<br></h3> 
+			<a href="https://amaproducts.com.au/home" class="btn-danger btn">BACK TO HOME</a><br><br>
+		</div>
+	</div>
+</div></div>
+
+
+
+<style>
+.fol{ width:100%; margin:0px; overflow:hidden;}
+.fol li{ display:block; padding:1px 0;}
+.fol02 li{display:inline; margin:0 15px 0 0}
+.fol02{ margin-bottom:0 0 5px 0; padding:0 0 5px 0;}
+</style>
+
+<footer>   
+<div class="container">
+
+<div class="col-lg-12 col-sm-12 col-md-12">
+<div class="row">
+	<div class="col-md-5">
+		<p><a class="" href="https://amaproducts.com.au/"><img title="AMAPRODUCTS" alt="AMAPRODUCTS" width="200" height="auto" src="https://amaproducts.com.au/plugin/logo_image/1534230246_AMA_LOGO_BLUE.png"></a><h1 class="nopadding"><strong>1300 558 135</strong></h1>
+        <h4><a href="mailto:sales@amaproducts.com.au">sales@amaproducts.com.au</a></h4>
+        </p>
+	</div>
+	<div class="col-md-7">
+		<div class="row">
+        <div class="col-md-12"  ng-controller="subscribeFooter">
+        <h3>Subscribe</h3> 
+		<p> Get monthly updates and free resources. </p>
+		<p ng-class="classres" class="text-center">{{footerResult}}</p>
+		<form name="subscribeddFooter" method="post">
+		<div class="input-group form-group-lg">
+			<input class="form-control" placeholder="Enter Email ID" ng-model="emailid" type="email">
+			<span class="input-group-btn"><button class="btn btn-primary btn-lg" type="button" ng-click="submitData(emailid,'ajaxResult')" ng-disabled="subscribeddFooter.$invalid">SUBSCRIBE</button></span>
+		</div>
+		</form>
+        </div>
+        <div class="col-md-12" style="margin-top:15px;">
+        <div class="col-md-9 text-right" style="padding:0;"><h4 class="text-primary">Payment Accepted</h4></div>
+ <div class="col-md-3 text-right" style="padding:0;"><img width="150" height="auto" src="https://amaproducts.com.au/plugin/images/payment-cards.png" /> </div>
+        </div>
+        </div>
+	</div>
+</div>
+</div>
+
+
+ 
+
+ 
+
+ 
+ 
+
+<!--<div class="col-lg-3 col-md-6">
+<h3>Payment Accepted</h3>
+<img src="images/payments.png">
+  <h3>Follow</h3>
+
+<ul class="follow_icon">
+<li>
+<a href="#" class="fa fa1 fa-facebook"></a>
+</li>
+<li>
+<a href="#" class="fa fa1 fa-rss"></a>
+</li>
+<li>
+<a href="#" class="fa fa1 fa-twitter"></a>
+</li>
+<li>
+<a href="#" class="fa fa1 fa-google-plus"></a>
+</li>
+</ul> 
+
+</div>-->
+
+
+
+</div>
+
+ 
+</footer>
+
+<div class="templatemo-footer"> <div class="container">
+<div class="col-lg-8 col-sm-12 col-md-8"> 
+<ul class="fol02">
+<li><a href="https://amaproducts.com.au/about_us">About Us</a></li>
+<li><a href="https://amaproducts.com.au/terms_conditions">Terms &amp; Conditions</a></li>
+<li><a href="https://amaproducts.com.au/return_credit_request">Return &amp; Credit Request</a></li>
+<li><a href="https://amaproducts.com.au/sitemap">Site Map</a></li>
+<li><a href="https://amaproducts.com.au/contact">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-lg-4 text-right col-sm-12 col-md-4"> Copyright &copy; AMA PRODUCTS 2017</div>
+
+</div> 
+</div>
+
+<!-- Product view Modal -->
+<div class="modal fade" id="viewProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog02">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="javascript:closeProductsDialog('boxpopup')"><button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="text-danger fa fa-remove"></i></button></a>
+				<h4 id="myModalLabel" class="modal-title">{{list.itemname}}</h4> 
+			</div>
+
+			<div class="panel-body">
+				<div class="col-md-5 item">
+					<div class="product text-center">
+						<a data-toggle="modal" role="button" href="#myModal_img"><img class="img-responsive img-thumbnail" src="https://amaproducts.com.au/plugin/product_image/{{list.proimage}}"/></a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="product-title">{{list.itemname}}</div>
+					<div class="roomNameInner">
+						<p><strong>Product Code :</strong> {{list.uniquecode}}</p>
+						<p><strong>UOM :</strong> {{list.unit_code}}</p>
+												
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined property: CI_Exceptions::$user</p>
+<p>Filename: html/footer.php</p>
+<p>Line Number: 114</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\footer.php<br />
+			Line: 114<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\error_404.php<br />
+			Line: 40<br />
+			Function: include_once			</p>
+
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\index.php<br />
+			Line: 319<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>						<p style="margin-bottom:0px; overflow:hidden;">
+							<span ng-if="list.bulk_item == '1'" class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Bulk Item"><img style="width:25px; height:25px; margin-right:3px; padding:1px;" class="img-responsive img-thumbnail" src="https://amaproducts.com.au/plugin/images/icon1.png" alt=""></span>
+							<span ng-if="list.cold_store == '1'" class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Cold Chain Product"><img style="width:25px; height:25px; margin-right:3px; padding:1px;" class="img-responsive img-thumbnail" src="https://amaproducts.com.au/plugin/images/icon2.png" alt=""></span>
+							<span ng-if="list.non_stock_item == '1'" class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Non Stock Item"><img style="width:25px; height:25px; margin-right:3px; padding:1px;" class="img-responsive img-thumbnail" src="https://amaproducts.com.au/plugin/images/icon3.png" alt=""></span>
+						</p>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6" style="padding:0px;">
+							<div class="product-price">
+								<span><span style=" margin:0px;" class="dolar">$</span>{{list.baseprice_ex | number:2}}</span> 
+								<span class="small">Ex GST</span>
+							</div>
+						</div> 
+						<div class="col-md-6 item" style="padding:0px;" ng-if="list.rule_type != 2 && list.web_product == '1' && list.sales_status != 'Not to be Sold'" ng-controller="addCart">
+							<div class="form-group form-group-options qua section" style="width:140px;"> <label>Qty</label> 
+								<div class="input-group input-group-option quantity-wrapper" id="1" style="width:100px;">
+									<span class="input-group-addon input-group-addon-remove quantity-remove btn-xs btn-minus" ng-click="numQty('minus')">
+										<span class="glyphicon glyphicon-minus"></span>
+									</span>
+									<input value="1" class="form-control quantity-count" ng-model="proqty" style="padding:6px;" numbers-only />
+									<span class="input-group-addon input-group-addon-remove quantity-add btn-xs btn-plus" ng-click="numQty('plus')">
+										<span class="glyphicon glyphicon-plus"></span>
+									</span>
+								</div>
+							</div>
+							<button style="margin:10px 0 0 0;;" ng-if="list.btnchk == 1" class="add-to-cart btn btn-primary btt btnsuc" type="button" ng-click="addingCart(list.uniquecode,list.baseprice_ex);cartFunct();"><i class="glyphicon glyphicon-shopping-cart"></i> Added</button>
+							<button style="margin:10px 0 0 0;" ng-if="list.btnchk == 0" class="add-to-cart btn btn-primary btt" type="button" ng-click="addingCart(list.uniquecode,list.baseprice_ex);cartFunct();"><i class="glyphicon glyphicon-shopping-cart"></i> Add to Cart</button>
+														
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  include_once(cart-msg.php): failed to open stream: No such file or directory</p>
+<p>Filename: html/footer.php</p>
+<p>Line Number: 145</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\footer.php<br />
+			Line: 145<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\footer.php<br />
+			Line: 145<br />
+			Function: include_once			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\error_404.php<br />
+			Line: 40<br />
+			Function: include_once			</p>
+
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\index.php<br />
+			Line: 319<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  include_once(): Failed opening 'cart-msg.php' for inclusion (include_path='.;.\includes;.\pear')</p>
+<p>Filename: html/footer.php</p>
+<p>Line Number: 145</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\footer.php<br />
+			Line: 145<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\footer.php<br />
+			Line: 145<br />
+			Function: include_once			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\application\views\errors\html\error_404.php<br />
+			Line: 40<br />
+			Function: include_once			</p>
+
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: C:\Inetpub\vhosts\amaproducts.com.au\httpdocs\index.php<br />
+			Line: 319<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>						</div>
+						<div class="col-md-3" ng-if="list.web_product == '0' || list.sales_status == 'Not to be Sold'" style="margin-bottom:15px;"><button class="add-to-cart btn btn-block btn-info" type="button" ng-click="enqProduct(list.uniquecode,list.itemname);">Enquiry</button></div>
+					</div>
+					<div class="row"><div class="col-md-12" ng-if="list.price_break == '1' && list.price_visiblity != 3">
+						<h4 ng-if="list.brk1 != '0' && list.onsale == '0'">Price Break Available</h4>
+						<h4 ng-if="list.qty1 != '0' && list.onsale != '0'">Price Break Available</h4>
+						<table class="table" style="width:auto;" ng-if="list.onsale == '0'"><tr>
+							<td ng-if="list.brk1 != '0'">Qty {{list.brk1}}+ <span class="text-primary">$ {{list.brkprice1}}</span></td>
+							<td ng-if="list.brk2 != '0'">Qty {{list.brk2}}+ <span class="text-primary">$ {{list.brkprice2}}</span></td>
+							<td ng-if="list.brk3 != '0'">Qty {{list.brk3}}+ <span class="text-primary">$ {{list.brkprice3}}</span></td>
+							<td ng-if="list.brk4 != '0'">Qty {{list.brk4}}+ <span class="text-primary">$ {{list.brkprice4}}</span></td>
+							<td ng-if="list.brk5 != '0'">Qty {{list.brk5}}+ <span class="text-primary">$ {{list.brkprice5}}</span></td>
+						</tr></table>
+						<table class="table table-bordered" style="width:auto; margin-bottom:0px;" ng-if="list.onsale != '0'"><tr>
+							<td ng-if="list.qty1 != '0'">Qty {{list.qty1}}+ <span class="text-primary">$ {{list.price1}}</span></td>
+							<td ng-if="list.qty2 != '0'">Qty {{list.qty2}}+ <span class="text-primary">$ {{list.price2}}</span></td>
+							<td ng-if="list.qty3 != '0'">Qty {{list.qty3}}+ <span class="text-primary">$ {{list.price3}}</span></td>
+							<td ng-if="list.qty4 != '0'">Qty {{list.qty4}}+ <span class="text-primary">$ {{list.price4}}</span></td>
+							<td ng-if="list.qty5 != '0'">Qty {{list.qty5}}+ <span class="text-primary">$ {{list.price5}}</span></td>
+						</tr></table>
+					</div></div>
+					<hr>
+					<p class="boto">{{list.desc_a}}</p>
+					<p class="boto">{{list.desc_b}}</p>
+					<p class="boto">{{list.desc_c}}</p> 
+				</div> 
+				<div class="clearfix"></div>
+				<div class="boto" ng-if="list.content_status == 1"><span ng-bind-html="list.content_descp"></span></div>               
+			</div>
+		</div>
+	</div>
+</div>
+ 
+<div class="modal fade" id="prodHistory" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg"><div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><i class="glyphicon glyphicon-remove"></i></span> </button>
+		<h3 ng-if="product != '0'" class="modal-title" id="lineModalLabel"><i class="fa fa-file"></i> {{product.itemname}}</h3>
+		<h3 ng-if="product == '0'" class="modal-title" id="lineModalLabel"><i class="fa fa-file"></i> Item Purchase History!</h3>
+	</div>
+	<div class="modal-body">
+		<div class="table-responsive" ng-if="product != '0'">
+			<div class="tophead" style="background:#6d6d6d; color:#fff; padding:2px 10px;">
+				<h4>ITEM QUANITIES ORDERED BY MONTH</h4>
+			</div>
+			<table class="table table-hover form-group-sm tbo text-left">
+			<thead style="background:#dddddd !important; color:#6d6d6d;">
+				<tr><th width="150px">Code</th><th>{{product.year1}}</th><th>{{product.year2}}</th><th>{{product.year3}}</th><th>{{product.year4}}</th><th>{{product.year5}}</th><th>{{product.year6}}</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>{{product.uniquecode}}</td><td>{{product.years1}}</td><td>{{product.years2}}</td><td>{{product.years3}}</td><td>{{product.years4}}</td><td>{{product.years5}}</td><td>{{product.years6}}</td></tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="table-responsive" ng-if="product == '0'">
+			<p class="text-center"><strong>No item history found for this product</strong></p>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div></div>
+</div>
+
+<!-- Enquiry Modal -->
+<div class="modal fade" id="enqProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog02">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href=""><button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="text-danger fa fa-remove"></i></button></a>
+				<h4 id="myModalLabel" class="modal-title">Product Enquiry</h4> 
+			</div>
+
+			<div class="panel-body">
+				<p>This Product is not for sale or either discontinued, please contact us for more information.</p>
+				<p class="text-center text-danger">{{loadingmsg}}</p>
+				<div class="col-md-12 item">
+					<form method="post" class="form-horizontal" name="enquiryForm">
+						<div class="form-group">
+							<label class="control-label col-md-4 text-left" for="Title">Enquiry For</label>
+							<div class="col-md-8"><input type="text" class="form-control" value="{{enq.procode}},{{enq.proname}}" readonly=""></div>
+						</div>  
+						<div class="form-group">
+							<label class="control-label col-md-4 text-left" for="Title">Enter Your Name</label>
+							<div class="col-md-8"><input type="text" class="form-control" ng-model="enq.name" required autofocus /></div>
+						</div> 
+						<div class="form-group">
+							<label class="control-label col-md-4 text-left" for="Title">Enter Your Email</label>
+							<div class="col-md-8"><input type="email"class="form-control" ng-model="enq.email" required /></div>
+						</div> 
+						<div class="form-group">
+							<label class="control-label col-md-4 text-left" for="Title">Company Name</label>
+							<div class="col-md-8"><input type="text" class="form-control" ng-model="enq.company" required /></div>
+						</div> 
+						<div class="form-group">
+							<div class="col-md-4">
+								<img id="vimg" src="https://amaproducts.com.au/index.php/captcha" align="absmiddle" width="80%" style="width:120px; max-height:38px;">
+								<i style="color:#00CA00; font-size:20px; cursor:pointer;" class="glyphicon glyphicon-refresh" onClick="javascript:refreshCaptcha()"></i>
+							</div>
+							<div class="col-md-8"><input type="text" class="form-control" ng-model="enq.captcha" placeholder="Enter Captcha" required /></div>
+						</div> 
+						<div class="form-group">
+							<label class="control-label col-md-4 text-left" for="Title">&nbsp;</label>
+							<div class="col-md-8">
+								<button type="submit" class="btn btn-primary" ng-click="enquiryProduct(enq,'ajaxResult')" ng-disabled="enquiryForm.$invalid">Submit</button>  
+								<button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+							</div>
+						</div> 
+					</form>
+				</div>             
+			</div>
+		</div>
+	</div>
+</div>
+
+<span  ng-controller="subscribePage">
+<div class="modal fade" id="newsletter1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content" style="border:dashed 5px #d9534f; background:#131b4b; color:#fff;">
+			<a href="javascript:closeProductsDialog('boxpopup')" style="border-radius:50px; margin:-10px -10px 0 0; height:30px; width:30px;" class="btn tbn-sm btn-danger pull-right"><button aria-hidden="true" data-dismiss="modal" class="close btn-sm" type="button" style="font-size:17px; margin:-1px -5px 0 0;"><i class="fa fa-remove"></i></button></a>
+			<div class="panel-body">
+				<form name="subscribeForm" method="post"> 
+				<div class="col-md-12 text-center"><img src="https://amaproducts.com.au/plugin/images/email2.png" width="60" height="auto"> <h2>News Letter</h2></div>
+				<div class="col-md-12 text-center">
+					<div class="col-md-12"><h4 class="text-uppercase" style="margin-top:30px;">Stay up to date with our latest products, promotions or news</h4></div>
+					<p ng-show="loadSubscrib" class="text-danger text-center">Sending....</p>
+					<div class="col-md-12"> 
+						<div class="input-group input-group-lg">
+							<input class="form-control" placeholder="Subscribe for News Letter" type="email" ng-model="emailid" autofocus required />
+							<div class="input-group-btn">
+								<div class="btn-group" role="group"> 
+									<button type="button" class="btn btn-lg btn-primary" ng-click="newsLetter(emailid,'ajaxResult')" ng-disabled="subscribeForm.$invalid">SUBSCRIBE</button>
+								</div>
+							</div>
+						</div>
+						<span class="small">Your Email is Safe with us, We dont Spam!</span>
+					</div>
+				</div>
+				</form> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- NEWS  Modal End-->
+
+<div class="modal" style="display:block;" ng-show="subscribMsg">
+  <div class="modal-dialog" style="width:350px;">
+	<div class="modal-content">
+		<div ng-class="class" class="alert alert-dismissable" style="margin-bottom:0px; text-align:center;">
+			<h4 style="margin:0px; padding-bottom:10px;">{{subscribResult}}</h4>
+			<button type="button" class="btn btn-sm btn-primary" ng-click="subscribMsg=false;">OK</button> 
+		</div>
+	</div>
+  </div>
+</div>
+ 
+<!-- NEWS Modal02 -->
+<div class="modal fade" id="newsletter2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<a href="javascript:closeProductsDialog('boxpopup')" style="border-radius:50px; margin:-10px 0px 0 -10px; position:relative; z-index:3; height:30px; width:30px;" class="btn tbn-sm btn-danger pull-left"><button aria-hidden="true" data-dismiss="modal" class="close btn-sm" type="button" style="font-size:17px; margin:-1px -5px 0 0;"><i class="fa fa-remove"></i></button></a>
+		<div class="panel-body" style="position:relative; z-index:1">
+			<div class="col-md-12"><img src="https://amaproducts.com.au/plugin/images/join.png"></div>
+			<div class="col-md-12">&nbsp;</div>
+			<div style="position:absolute; width:190px; right:-50px; top:-20px; z-index:2;"><img class="img-responsive" src="https://amaproducts.com.au/plugin/images/newsletter-bro.png" /></div>
+			<div class="col-md-12">
+				<div class="col-md-7">
+					<ul class="starbul">
+						<li>Receive our catalogue by Email</li>
+						<li>Huge Savings on Vitamins, Fragrances, Health & Beauty, Everyday Essentials & More!</li>
+						<li>Special Offers & Discounts Direct to your Inbox!</li>
+					</ul>
+				</div>
+				<div class="col-md-2"><img src="https://amaproducts.com.au/plugin/images/logo.png" width="100" height="auto" /></div>
+				<div class="clearfix"></div>
+			
+				<div class="col-md-12">
+					<form name="subscribeForm2" method="post"> 
+					<h4 class="text-primary">Simply enter your email below</h4>
+					<p ng-show="loadSubscrib" class="text-danger text-center">Sending....</p>
+					<div class="input-group input-group-lg">
+						<input class="form-control" placeholder="Subscribe for News Letter" type="email" ng-model="emailid" required>
+						<div class="input-group-btn">
+							<div class="btn-group" role="group"> 
+								<button type="button" class="btn btn-lg btn-success" ng-click="newsLetter(emailid,'ajaxResult')" ng-disabled="subscribeForm2.$invalid">JOIN NOW</button>
+							</div>
+						</div>
+					</div>
+					<span class="small">Your Email is Safe with us, We dont Spam!</span>
+					</form>
+				</div>
+			</div> 
+		</div>
+	</div>
+</div>
+</div>
+</span>
+<!-- NEWS  Modal End--> 
+
+
+
+
+
+
+
+<a href="#" id="scroll" style="display: none;"><span></span></a>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b6a52cce21878736ba2b8dd/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<script src="https://amaproducts.com.au/plugin/js/jquery.js"></script> 
+<script src="https://amaproducts.com.au/plugin/js/bootstrap.js"></script>
+<link href="https://amaproducts.com.au/plugin/css/st-demo.css" rel="stylesheet">
+<script src="https://amaproducts.com.au/plugin/js/st-demo.js"></script>
+<script src="https://amaproducts.com.au/plugin/js/jquery-ui.js"></script>
+<script src="https://amaproducts.com.au/plugin/js/wow.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+<script>
+jQuery(document).ready(function() {
+        
+	jQuery('.carousel[data-type="multi"] .item').each(function(){
+		var next = jQuery(this).next();
+		if (!next.length) {
+			next = jQuery(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo(jQuery(this));
+	  
+		for (var i=0;i<4;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = jQuery(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+        
+});
+</script>
+<!--<script type="text/javascript">
+$(document).ready(function() {
+	var h = window.innerHeight - 180;
+	document.getElementById('content').style.minHeight=h+'px';
+});
+</script>-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N975TDB');</script>
+<!-- End Google Tag Manager -->
+
+<!-- onclick release link -->   
+<script>
+$('.cd-dropdown .has-children > a').click(function(){ location.href = this.href; });
+
+wow = new WOW({ animateClass: 'animated', offset: 100 });
+wow.init();
+
+function refreshCaptcha()
+{
+	var ct=(new Date()).getTime();
+	document.getElementById("vimg").src = "https://amaproducts.com.au/index.php/captcha?"+ct;
+}
+
+$(document).ready(function() {
+    $("body").click(function(event) {
+        $("#drop1").hide(500); $("#drop2").hide(500);  $("#drop3").hide(500);
+    });
+});
+</script> <!-- onclick release link end -->  
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("ul.menu-items > li").on("click",function(){
+		$("ul.menu-items > li").removeClass("active");
+		$(this).addClass("active");
+	})
+
+	$(".attr,.attr2").on("click",function(){
+		var clase = $(this).attr("class");
+		$("." + clase).removeClass("active");
+		$(this).addClass("active");
+	})
+	
+	//-- Click on QUANTITY
+	$(".btn-minus").on("click",function(){
+		var now = $(".section > div > input").val();
+		if ($.isNumeric(now)){
+		if (parseInt(now) -1 > 0){ now--;}
+		$(".section > div > input").val(now);
+		}else{
+		$(".section > div > input").val("1");
+		}
+	})            
+	$(".btn-plus").on("click",function(){
+		var now = $(".section > div > input").val();
+		if ($.isNumeric(now)){
+		$(".section > div > input").val(parseInt(now)+1);
+		}else{
+		$(".section > div > input").val("1");
+		}
+	})                        
+}); 
+</script>
+
+<script>
+$('.add-to-cart').on('click', function () {
+var cart = $('.shc');
+var imgtodrag = $(this).parent('.item').find("img").eq(0);
+if (imgtodrag) {
+var imgclone = imgtodrag.clone()
+.offset({
+top: imgtodrag.offset().top,
+left: imgtodrag.offset().left
+})
+.css({
+'opacity': '0.8',
+'position': 'absolute',
+'height': '150px',
+'width': '150px',
+'z-index': '100'
+})
+.appendTo($('body'))
+.animate({
+'top': cart.offset().top + 10,
+'left': cart.offset().left + 10,
+'width': 75,
+'height': 75
+}, 1000, 'easeInOutExpo');
+
+setTimeout(function () {
+cart.effect("shake", {
+times: 2
+}, 200);
+}, 1500);
+
+imgclone.animate({
+'width': 0,
+'height': 0
+}, function () {
+$(this).detach()
+});
+}
+});
+
+$('.carousel').carousel({
+interval: 5000 //changes the speed
+})
+</script>
+
+<script type="text/javascript">
+// Add slideDown animation to Bootstrap dropdown when expanding.
+$('.dropdown').on('show.bs.dropdown', function() {
+$(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+});
+
+// Add slideUp animation to Bootstrap dropdown when collapsing.
+$('.dropdown').on('hide.bs.dropdown', function() {
+$(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+});
+
+$(document).ready( function() {
+$('#myCarousel').carousel({
+interval:   4000
+});
+
+var clickEvent = false;
+$('#myCarousel').on('click', '.nav a', function() {
+clickEvent = true;
+$('.nav li').removeClass('active');
+$(this).parent().addClass('active');		
+}).on('slid.bs.carousel', function(e) {
+if(!clickEvent) {
+var count = $('.nav').children().length -1;
+var current = $('.nav li.active');
+current.removeClass('active').next().addClass('active');
+var id = parseInt(current.data('slide-to'));
+if(count == id) {
+$('.nav li').first().addClass('active');	
+}
+}
+clickEvent = false;
+});
+});
+
+!function ($) {
+    $(document).on("click","#left ul.nav li.parent > a > span.sign", function(){          
+        $(this).find('i:first').toggleClass("icon-minus");      
+    }); 
+    // Open Le current menu
+    $("#left ul.nav li.parent.active > a > span.sign").find('i:first').addClass("icon-minus");
+    $("#left ul.nav li.current").parents('ul.children').addClass("in");
+}(window.jQuery);
+</script> 
+
+<!--script for 'shop all products' drop down-->
+<script src="https://amaproducts.com.au/plugin/js/modernizr.js"></script> 
+<script src="https://amaproducts.com.au/plugin/js/jquery.menu-aim.js"></script> 
+<script src="https://amaproducts.com.au/plugin/js/main.js"></script> 
+
+<!--script for 'on hover image dispaly other image'-->
+<script type="text/javascript">
+$( document ).ready(function() {
+$("[rel='tooltip']").tooltip();    
+$('.thumbnail02').hover(
+function(){
+$(this).find('.caption').fadeIn(250); //.fadeIn(250)
+},
+function(){
+$(this).find('.caption').fadeOut(250); //.fadeOut(205)
+}
+); 
+});
+</script>
+
+<script type="text/javascript">
+$(".cat").on("click", function (event) {
+event.stopPropagation();
+$("#newpost").slideToggle("slow");
+});
+$("#newpost").on("click", function (event) {
+event.stopPropagation();
+});
+$(document).on("click", function () {
+$("#newpost").hide("slow");
+});
+</script>
+
+
+
+<!-- NEWS Modal -->
+<div class="modal fade" id="newsletter02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content" style="border:dashed 5px #d9534f; background:#131b4b; color:#fff;">
+<a href="javascript:closeProductsDialog('boxpopup')" style="border-radius:50px; margin:-10px -10px 0 0; height:30px; width:30px;" class="btn tbn-sm btn-danger pull-right"><button aria-hidden="true" data-dismiss="modal" class="close btn-sm" type="button" style="font-size:17px; margin:-1px -5px 0 0;"><i class="fa fa-remove"></i></button></a>
+<!--<div class="modal-header">
+<a href="javascript:closeProductsDialog('boxpopup')"><button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="text-danger fa fa-remove"></i></button></a>
+<h4 id="myModalLabel" class="modal-title">NEWS LETTER</h4> 
+</div>-->
+
+<div class="panel-body">
+<div class="col-md-12 text-center"><img src="https://amaproducts.com.au/plugin/images/email2.png" width="60" height="auto"> <h2>News Letter</h2></div>
+<div class="col-md-12 text-center">
+<div class="col-md-12"><h4 class="text-uppercase" style="margin-top:30px;">Stay up to date with our latest products, promotions or news</h4></div>
+<div class="col-md-12"> <div class="input-group input-group-lg">
+<input class="form-control" placeholder="Subscribe for News Letter" type="text">
+<div class="input-group-btn">
+<div class="btn-group" role="group"> 
+<button type="button" class="btn btn-lg btn-primary">SUBSCRIBE</button>
+</div>
+</div>
+</div>
+<span class="small">Your Email is Safe with us, We dont Spam!</span></div>
+
+</div> 
+
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- NEWS  Modal End-->
+
+
+
+
+<!-- NEWS Modal02 -->
+<div class="modal fade" id="newsletter03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<a href="javascript:closeProductsDialog('boxpopup')" style="border-radius:50px; margin:-10px 0px 0 -10px; position:relative; z-index:3; height:30px; width:30px;" class="btn tbn-sm btn-danger pull-left"><button aria-hidden="true" data-dismiss="modal" class="close btn-sm" type="button" style="font-size:17px; margin:-1px -5px 0 0;"><i class="fa fa-remove"></i></button></a>
+<!--<div class="modal-header">
+<a href="javascript:closeProductsDialog('boxpopup')"><button aria-hidden="true" data-dismiss="modal" class="close" type="button"><i class="text-danger fa fa-remove"></i></button></a>
+<h4 id="myModalLabel" class="modal-title">NEWS LETTER</h4> 
+</div>-->
+
+<div class="panel-body" style="position:relative; z-index:1">
+<div class="col-md-12"><img src="https://amaproducts.com.au/plugin/images/join.png"></div>
+<div class="col-md-12">&nbsp;</div>
+<div style="position:absolute; width:190px; right:-50px; top:-20px; z-index:2;"><img class="img-responsive" src="https://amaproducts.com.au/plugin/images/newsletter-bro.png" /></div>
+<div class="col-md-12">
+<div class="col-md-7">
+<ul class="starbul">
+<li>Receive our catalogue by Email</li>
+<li>Huge Savings on Vitamins, Fragrances,
+Health & Beauty, Everyday Essentials & More!</li>
+<li>Special Offers & Discounts Direct to your Inbox!</li>
+</ul>
+</div>
+<div class="col-md-2">
+<img src="https://amaproducts.com.au/plugin/images/logo.png" width="100" height="auto" />
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-12">
+<h4 class="text-primary">Simply enter your email below</h4>
+<div class="input-group input-group-lg">
+<input class="form-control" placeholder="Subscribe for News Letter" type="text">
+<div class="input-group-btn">
+<div class="btn-group" role="group"> 
+<button type="button" class="btn btn-lg btn-success">JOIN NOW</button>
+</div>
+</div>
+</div>
+<span class="small">Your Email is Safe with us, We dont Spam!</span></div>
+
+</div> 
+
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- NEWS  Modal End--> 
+
+
+<script>
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn();
+        } else { 
+            $('#scroll').fadeOut();
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script></body>
+</html>

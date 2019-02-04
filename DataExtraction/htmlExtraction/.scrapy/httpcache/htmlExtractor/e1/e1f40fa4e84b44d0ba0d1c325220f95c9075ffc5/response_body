@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<title>Welcome to Mediplus | Mediplus - Innovating Healthcare since 1986</title>
+	<meta name="title" content="Mediplus Ltd - Innovating Anaesthesia, Urology, Operating Theatres, Gynaecology and Gastroenterology" />
+	<meta name="keywords" content="Mediplus Ltd, Mediplus UK, Urology, Urodynamics, TIVA, TIVA-TCI, Gynaecology" />
+	<meta name="description" content="Mediplus Ltd - Innovating Anaesthesia, Urology, Operating Theatres, Gynaecology and Gastroenterology" />
+	<meta name="google-site-verification" content="3Gk8CHQe_AwezmaazTxTe6iM3I78uyFoYNCHNr7Mdak" />
+	<link rel="stylesheet" type="text/css" href="/css/style_basic.css" />
+	<script type="text/javascript" src="http://www.pagecontroller.co.uk/clients/pc_flash_inc.js"></script>
+	<script type="text/javascript" src="/js/tabchange.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body >
+<div class="container">
+	<div class="container2">
+
+<script type="text/javascript">
+<!--
+var xmlHttp = false;
+/*@cc_on @*/
+/*@if (@_jscript_version >= 5)
+try {
+  xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+  try {
+    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+  } catch (e2) {
+    xmlHttp = false;
+  }
+}
+@end @*/
+
+if (!xmlHttp && typeof XMLHttpRequest != 'undefined') {
+  xmlHttp = new XMLHttpRequest();
+}
+
+var pcs_shopstate=0;
+function pcs_addtocart(prodid,priceid,quantity)
+{
+	if (pcs_shopstate==0)
+	{
+		var rnd = Math.round(Math.random()*10000);
+		var url = "/updateCart.php?prodid="+escape(prodid) +"&priceid="+escape(priceid)+"&quantity="+escape(quantity)+"&abasketid=3ed568084ed5239464303ee4900511801548720301&rand="+rnd;
+		xmlHttp.open("GET", url, true);
+		xmlHttp.onreadystatechange = pcs_updatecart;
+		xmlHttp.send(null);
+				pcs_shopstate=1;
+	}
+	return false;
+}	
+function pcs_updatecart() {
+  if (xmlHttp.readyState == 4) {
+    var response = xmlHttp.responseText;
+		pcs_shopstate=0;
+		
+				document.getElementById("basket").innerHTML = response;
+							document.getElementById("basket").style.display = "block";
+			var ScrollTop = document.body.scrollTop;
+			if (ScrollTop == 0)
+			{
+					if (window.pageYOffset)
+							ScrollTop = window.pageYOffset;
+					else
+							ScrollTop = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0;
+			}
+			document.getElementById("basket").style.top = ScrollTop+'px';
+		  }
+}
+//-->
+</script>
+<div id="basket" class="basketAdd">
+</div>
+<div class="header">
+	
+	<ul id="nav">
+<li><a class="headlink" href="/"><img src="/gallery/links/home_on.jpg" style="border:0px;" alt="Home" /></a></li>
+<li><a class="headlink" href="/About-Us"><img src="/gallery/links/aboutus.jpg" style="border:0px;" alt="About Us" /></a></li>
+<li><a class="headlink" href="/Products"><img src="/gallery/links/products.jpg" style="border:0px;" alt="Products" /></a></li>
+<li><a class="headlink" href="/Shop"><img src="/gallery/links/shop.jpg" style="border:0px;" alt="Shop" /></a></li>
+<li><a class="headlink" href="/Global"><img src="/gallery/links/global.jpg" style="border:0px;" alt="Global" /></a></li>
+<li><a class="headlink" href="/Education-Links"><img src="/gallery/links/education.jpg" style="border:0px;" alt="Education &amp; Links" /></a></li>
+<li><a class="headlink" href="/Patient-Info"><img src="/gallery/links/patientinfo.jpg" style="border:0px;" alt="Patient Info" /></a></li>
+<li><a class="headlink" href="/Employment"><img src="/gallery/links/employment.jpg" style="border:0px;" alt="Employment" /></a></li>
+<li><a class="headlink" href="/Contact-Us"><img src="/gallery/links/contact.jpg" style="border:0px;" alt="Contact Us" /></a></li>
+		</ul>
+	<br class="cl"/>
+</div>
+
+<div class="topClear">
+	<div class="social-drop">
+        <ul>
+          
+          <li style="padding-right:0px; padding-left:10px"><img src="images/linkedin.png" width="28" height="28" alt="Linkedin"/>
+          <ul>
+              <li><a href="https://www.linkedin.com/company/543182?trk=vsrp_companies_cluster_name&trkInfo=VSRPsearchId%3A1860532501427985719591%2CVSRPtargetId%3A543182%2CVSRPcmpt%3Acompanies_cluster" target="_blank">Mediplus Ltd</a></li>
+              <li><a href="https://www.linkedin.com/company/mediplus-urodynamics?trk=company_name" target="_blank">Mediplus Urodynamics</a></li>
+              <li><a href="https://www.linkedin.com/company/5038245?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2Cidx%3A2-1-5%2CtarId%3A1427985753445%2Ctas%3ATIVA" target="_blank">TIVA - TCI with Mediplus Sets Showcase</a></li>
+              <li><a href="https://www.linkedin.com/company/5039236?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2Cidx%3A2-1-5%2CtarId%3A1427985783113%2Ctas%3AS-Cath" target="_blank">S-Cath&#8482;, Seldinger Suprapubic Catheterisation</a></li>
+              <li><a href="https://www.linkedin.com/company/5249559?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2Cidx%3A1-1-1%2CtarId%3A1427985809083%2Ctas%3Arectus+sheath" target="_blank">Enhance Recovery with Rectus Sheath Catheters</a></li>
+              <li><a href="https://www.linkedin.com/company/5340984?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2Cidx%3A1-1-1%2CtarId%3A1427985827992%2Ctas%3Acapnomask" target="_blank">Capnomask Showcase</a></li>
+              <li><a href="https://www.linkedin.com/company/5037393?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2Cidx%3A2-1-3%2CtarId%3A1428660505668%2Ctas%3Anon+invasive+b" target="_blank">Non Invasive Bladder Analysis</a></li>
+              <li><a href="https://www.linkedin.com/groups/Total-Intravenous-Anaesthesia-TIVA-8130540?gid=8130540&mostPopular=&trk=tyah&trkInfo=clickedVertical%3Agroup%2Cidx%3A4-2-12%2CtarId%3A1428659936503%2Ctas%3ATIVA" target="_blank">Total Intravenous Anaesthesia Group</a></li>
+              <li><a href="https://www.linkedin.com/profile/view?id=325629338&authType=NAME_SEARCH&authToken=7P6O&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2Cidx%3A3-1-7%2CtarId%3A1428660635323%2Ctas%3ATIVA" target="_blank">TIVA - Total Intravenous Anaesthesia</a></li>
+            </ul>
+          </li>
+          <li style="padding-right:0px; padding-left:10px"><img src="images/twitter.png" width="28" height="28" alt="Twitter"/>
+          <ul style="width:135px;">
+              <li><a href="https://twitter.com/mediplusurology" target="_blank">Mediplus Urology</a></li>
+              <li><a href="https://twitter.com/MediplusLtd" target="_blank">Mediplus Ltd</a></li>
+              <li><a href="https://twitter.com/Alokui" target="_blank">Alokui</a></li>
+            </ul>
+          </li>
+          <li style="padding-right:0px; padding-left:10px"><a href="https://www.youtube.com/channel/UC7UzQ7_MdHV_PPv-p4HeLAg" target="_blank"><img src="images/youtube.png" width="28" height="28" alt="YouTube"/></a></li>
+          <li style="padding-right:0px; padding-left:10px"><a href=" http://www.medicalexpo.com/prod/mediplus-89841.html" target="_blank"><img src="images/medicalexpo.png" height="28" alt="Medical EXPO"/></a></li>
+        </ul>
+    </div>
+  	<div id="google_translate_element"></div>
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({
+		pageLanguage: 'en',
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+	  }, 'google_translate_element');
+	}
+	</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+</div>
+
+<div class="content">
+<div id="homeBanner" class="homeBanner">
+	<a href="c-Anaesthetic" id="headSwapLink"><img src="/gallery/headers/mainpanel03.jpg" id="headSwapImg" width="706" height="221" alt="Home - Panel 3" /></a>
+	<div class="headBan">
+		<div class="left">
+		<p>Receive updates and information on products and procedures, special offers and news. Sign up to our newsletter.</p>
+		</div>
+		<div class="right">
+			<input name="emailJoin" id="emailJoin" type="text" value="Enter your Email Address" onfocus="this.value = ''; this.onfocus = function () {}" />
+			<img src="/images/generic/inputBtn.jpg" width="25" height="25" alt="Submit" onclick="Newsletter();return false"/>
+		</div>
+	</div>
+</div>
+<div class="Newsletter" id="Newsletter">
+	<div style="position:absolute; top:15px; left: 540px; color:white; font-weight:bold;font-size:1.2em;">
+		<a href="#" onclick="document.getElementById('Newsletter').style.display = 'none';return false">Close</a>
+	</div>
+	<p>To stay updated with news, product introductions/updates, clinical information, and exhibitions that we will be attending:</p>
+	<form action="/Email-Registration" method="post">
+	<div style="float:left;width:40%;">
+	
+	<p>Please enter your name and email address:</p>
+	<p>First name:<br/>
+	<input type="hidden" name="action" value="emailRegistration" />
+	<input name="mail_firstname" class="newsletter" type="text" value="Enter your First Name" onfocus="this.value = ''; this.onfocus = function () {}" /></p>
+	<p>Last name:<br/>
+	<input name="mail_lastname" class="newsletter" type="text" value="Enter your Last Name" onfocus="this.value = ''; this.onfocus = function () {}" /></p>
+	</div>
+	<div style="float:right;width:59%;">
+		<p>Please indicate the areas you are interested in by checking the boxes below:</p>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Interest_Urodynamics" value="yes" /></div>
+		<div style="float:left;width:130px;">Urodynamics</div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Theatre" value="yes" /></div>
+		<div style="float:left;width:130px;">Theatre</div>
+		<div style="clear:both;height:5px;"></div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Gastrointestinal" value="yes" /></div>
+		<div style="float:left;width:130px;">Gastrointestinal</div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Anaesthetic" value="yes" /></div>
+		<div style="float:left;width:130px;">Anaesthetic</div>
+		<div style="clear:both;height:5px;"></div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Diagnostic_Equipment" value="yes" /></div>
+		<div style="float:left;width:130px;">Diagnostic Equipment</div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Gynaecology" value="yes" /></div>
+		<div style="float:left;width:130px;">Gynaecology</div>
+		<div style="clear:both;height:5px;"></div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Urology" value="yes" /></div>
+		<div style="float:left;width:130px;">Urology</div>
+		<div style="float:left;width:20px;"><input type="checkbox" name="mail_Erectile_Dysfunction" value="yes" /></div>
+		<div style="float:left;width:130px;">Erectile Dysfunction</div>
+		<div style="clear:both"></div>
+		
+	</div>
+	<div style="clear:both"></div>
+	<div style="float:left;">
+		<p>Email:<br/>
+		<input name="mail_email" id="newsletterEmail" class="newsletter" type="text" value="" style="width:350px;"/></p>
+	</div>
+	<div style="float:right;padding-top:5px; padding-right:20px;">
+		<input type="image" src="/images/generic/submit.jpg" />
+	</div>
+	</form>
+	<div style="clear:both"></div>
+</div>
+
+	<script type="text/javascript">
+		function Newsletter()
+		{
+			document.getElementById("newsletterEmail").value = document.getElementById("emailJoin").value;
+			var ScrollTop = document.body.scrollTop;
+			if (ScrollTop == 0)
+			{
+					if (window.pageYOffset)
+							ScrollTop = window.pageYOffset;
+					else
+							ScrollTop = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0;
+			}
+			ScrollTop = ScrollTop+100;
+			document.getElementById("Newsletter").style.display = 'block';
+			document.getElementById("Newsletter").style.top = ScrollTop+'px';
+		}
+	</script>
+	<script type="text/javascript">
+
+		var imgAddr = new Array();
+		var imgLink = new Array();
+				imgAddr[0] = "/gallery/headers/mainpanel03.jpg";
+		imgLink[0] = "c-Anaesthetic";
+				imgAddr[1] = "/gallery/headers/mainpanel04a.jpg";
+		imgLink[1] = "/About-Us";
+				var imgCnt = 2;
+		var curImg = 0;
+
+		function headImgChange()
+		{
+			curImg++;
+			if (curImg>=imgCnt) {curImg=0;}
+			document.getElementById('headSwapImg').src = imgAddr[curImg];
+			document.getElementById('headSwapLink').href = imgLink[curImg];
+			setTimeout("headImgChange()",3000);
+		}
+		setTimeout("headImgChange()",3000);
+	</script><div id="textBanner">
+	<div class="textBannerTitle">Mediplus News</div>
+	<div class="textBannerContent">
+				<p>We have moved our news across to the new Mediplus Blog. This gives you the opportunity to view and comment on our articles plus submit information of your own. Click on the button below to access our blog</p>
+		<p>&nbsp;</p>
+		<a href="http://www.mediplus.co.uk/blog/"><img src="/gallery/blog_button.jpg" width="201px" height="56" alt="View the new Mediplus Blog here" /></a>
+	</div>
+</div>
+<div class="clearer" style="height:1px"></div>
+	<div class="hr">
+		Welcome to Mediplus	</div>
+	<div class="content_left home">
+		<p>Mediplus has two clinical divisions &ndash; Pelvic Floor and Critical Care.</p>
+<p><strong>The Pelvic Floor Division</strong> promotes Urology, Urodynamic, Gynaecology, Male Impotence and Gastroenterology products. These include:</p>
+<p>Mediplus' New All Silicone Shelf Pessary the POPY<sup>TM</sup>. A conservative, cost effective solution for 2nd/3rd degree prolapse or procidentia.</p>
+<p><br />Urology products, such as, S-Cath<sup>TM</sup>&nbsp;System an innovative method of Inserting Catheters Suprapubically that is proven to be safer, faster and dramatically more cost effective than other Urinary Catheters on the market, Foley Catheters, for both adult and Paediatric Urology. &nbsp;</p>
+<p><br />Urodynamic catheters and equipment such as Uroflow to assist in the diagnosis of Lower Urinary Tract Symptoms such as Bladder Incontinence, Urge Incontinence and Stress Urinary Incontinence. A novel, Non-invasive Urodynamic device "The Penile Cuff Test"&nbsp;for the diagnosis of Bladder Outlet Obstruction (BOO). These tests are often carried out as a precursor to Incontinence Surgery or, for male patients, Transurethral Resection of the Prostate surgery (TURP).</p>
+<p><br />For a more conservative management of female patients, Mediplus offers the Milex range of Pessaries for pelvic Organ Prolapse, vaginal and rectal prolapse and as an additional Incontinence Treatment which often avoids the need for Incontinence Surgery.</p>
+<p><br />Non-invasive management of Impotence and Peyronie's Disease utilizing the Osbon ErecAid. The Osbon ErecAid is a Vacuum Therapy System that is proven to be highly effective in the management of Male Impotence and has also been proven as a Peyronie's Treatment option avoiding the need for a Surgical Operation.</p>
+<ul>
+</ul>			</div>
+	<div class="content_right home">
+		<p>Gastroenterology products for the identification of gastric disorders and Digestive Motility Diseases and Disorders such as Achalasia, Gastroesophageal Reflux Disease (GERD) and ano-rectal problems.</p>
+<p><br />Development of an innovative skincare cream &ndash; Alokui<sup>TM</sup>. With its 100% natural ingredients, Alokui<sup>TM&nbsp;</sup>has been formulated to help patients suffering with damaged skin</p>
+<p><strong>The Critical Care Division</strong> promotes Anaesthetic, ligating clips&nbsp;and general Theatre products. These include:</p>
+<p>TIVA Combination Sets, Increasing Safety in Anaesthesia, Reducing cost and Risk, Saving time and promoting better infection control.</p>
+<p><br />Anaesthetic sets, commonly known as Total Intravenous Anaesthesia (TIVA) sets, plus a range of peripheral IV connectors. The Mediplus TIVA sets are considered Gold Standard by clinicians through Europe.</p>
+<p><br />Introduction of a Rectus Sheath Catheter Set for post-operative pain management after abdominal surgery in line with Enhanced Recovery Guidelines</p>
+<p><br />A range dedicated&nbsp;Oxygen Masks and nasal cannulae sampling lines for use in Capnography.<br />Ligation products including SLS Ligating clips, manufactured by Vitalitac and silicone Mediloops for temporary ligation.</p>
+<p><br />Specialist Infusion Tubing and Arthroscopy Surgical Sets.</p>
+<ul>
+</ul>
+<p>
+<script src="http://platform.linkedin.com/in.js" type="mce-mce-mce-mce-text/javascript"></script>
+<script type="mce-mce-mce-mce-IN/FollowCompany"></script>
+</p>	</div>
+	<div class="clearer"></div>
+			<div class="clearer"></div>
+	<div class="hr">
+		<div style="float:left;width:51%">
+		Latest Mediplus News		</div>
+		<div style="float:left;width:40%">
+		Information on Exhibitions, Conferences and Study Days		</div>
+		<div class="clearer"></div>
+	</div>
+	<div class="clearer"></div>
+	<div class="content_left home">
+		<p><span style="font-size: large;">&nbsp;Latest News</span></p>
+<hr />
+<p><span style="font-size: medium;"><strong>Mediplus Support Hernia International Carpenter</strong></span></p>
+<p><a href="/gallery/New_Website_PDFs/Mediplus_Support_Hernia_International_Carpenter.pdf" target="_blank" title="Mediplus Support Hernia International Carpenter "><img src="/gallery/New_Website_Images/Hernia_Surgery_Carpenter,_Ghana_Nov_2018.png" alt="Mediplus Support Hernia International Carpenter " title="Mediplus Support Hernia International Carpenter " width="400" height="212" /></a><span style="font-size: medium;"><strong>&nbsp;
+<hr />
+</strong></span></p>
+<p><strong><span style="font-size: medium;">S-Cath&trade; System&nbsp;suprapubic catheterisation kit is awarded the UK&rsquo;s most prestigious accolade.</span></strong></p>
+<p style="text-align: left;"><strong><span style="font-size: medium;"><a href="/gallery/Mediplus/QA__Europe_version_(2).pdf" target="_blank" title="Queen's Award for Innovation 2017">Mediplus wins Queen's Award for Enterprise: Innovation 2017</a>&nbsp;</span></strong></p>
+<p style="text-align: left;"><strong><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="/gallery/Mediplus/QA__Europe_version_(2).pdf" target="_blank" title="Queen's Award for Innovation 2017"><img src="/gallery/Queens_Award/Queens_Awards_for_Enterprise_2017_Emblem_(3).png" alt="Queen's Award for Innovation 2017" title="Queen's Award for Innovation 2017" width="150" height="245" /> </a></span></strong></p>
+<hr />
+<p><strong><a href="/gallery/Mediplus/QA__Europe_version_(2).pdf" target="_blank" title="Queen's Award for Innovation 2017"> </a></strong></p>
+<p style="text-align: center;"><strong><span style="font-size: medium;">Healthcare Solutions of the Future</span></strong></p>
+<p><strong><span style="font-size: medium;">&nbsp;</span></strong> 
+<object data="http://www.youtube.com/v/F-KJexyyf1s" height="350" style="width: 425px; height: 350px;" type="application/x-shockwave-flash" width="425">
+<param name="data" value="http://www.youtube.com/v/F-KJexyyf1s" />
+<param name="src" value="http://www.youtube.com/v/F-KJexyyf1s" />
+</object>
+</p>
+<p><strong><span style="font-size: medium;"> </span></strong></p>
+<hr />
+<p><strong><span style="font-size: medium;">Mediplus Direct</span></strong></p>
+<p><a href="/MediplusDirect"><img style="font-size: medium;" src="/gallery/Mediplus_Direct/Mediplus_Direct_Logo.jpg" alt="Mediplus, Mediplus Direct" title="Mediplus Direct" width="400" height="110" /></a></p>
+<p style="text-align: center;"><span style="color: #56aa1c; font-size: large;"><strong>Here to help with your prescription needs</strong></span></p>
+<hr />	</div>
+	<div class="content_right home">
+		<h2>See Mediplus products at the following venues in 2019:</h2>
+<p><span style="color: #000000;"><strong>January 2019</strong></span></p>
+<p><span style="color: #000000;"><strong>Association of Anaesthesia - Winter Scientific Meeting</strong></span></p>
+<p><span style="color: #000000;">9 - 11 Janaury</span></p>
+<p><span style="color: #000000;">QEII Conference Centre, London</span></p>
+<hr />
+<p><span style="color: #000000;"><strong>Norwich Anaesthesia Update</strong></span></p>
+<p><span class="bold" style="color: #000000;">16 January</span></p>
+<p><span style="color: #000000;"><span class="bold">&nbsp;</span><a href="http://conference.jic.ac.uk/" target="_blank" title="John Innes Conference Centre">John Innes Conference Centre</a>, Norwich</span>&nbsp;</p>
+<hr />
+<p><span style="color: #000000;"><strong> February 2019</strong></span></p>
+<p><span style="color: #000000;"><strong>BAUN - Male and Female Sexual Dysfunction Study Day</strong></span></p>
+<p><span style="color: #000000;">6 February</span></p>
+<p><span style="color: #000000;">Novotel, Southampton</span></p>
+<hr />
+<p><strong>March 2019</strong></p>
+<p><strong><span>Mediplus TIVA/TCI Study Day - Want to expand your current TIVA practice?</span></strong></p>
+<p>1 March</p>
+<p><a href="https://www.eventbrite.co.uk/e/tivatci-study-day-want-to-expand-your-current-tiva-practice-tickets-52524238411?aff=ebdssbdestsearch" target="_blank" title="Tickets">Get Tickets here</a></p>
+<hr />
+<p><strong>Bladder and Bowel UK Symposium 2019</strong></p>
+<p>6 March</p>
+<p>Bolton Arena, Arena Approach, Horwich, Bolton BL6 6LB</p>
+<hr />
+<p><strong>Society of Anaesthetists of Wales - SAW 2019</strong></p>
+<p>8 March</p>
+<p>Theatr Brycheiniog, Brecon</p>
+<hr />
+<p><strong>34th Annual EAU Congress</strong></p>
+<p>15 - 19 March</p>
+<p>Fira Barcelona Gran Via,&nbsp;Av. Joan Carles I, 64, 08908 L'Hospitaletde Llobregat,</p>
+<p>Barcelona, Spain</p>
+<hr />
+<p><strong>April 2019</strong></p>
+<p><strong>BSOA Spring Scientific Meeting 2019</strong></p>
+<p>29 April</p>
+<p>Crowne Plaza Chester,&nbsp;Trinity Street,&nbsp;Chester,&nbsp;CH1 2BD</p>
+<hr />
+<p><strong>May 2019</strong></p>
+<p><strong>American Urological Association - AUA&nbsp;</strong></p>
+<p>3 - 6 May</p>
+<p><span>McCormick Place,&nbsp;</span><span>2301 S. Martin Luther King Drive,&nbsp;</span><span>Chicago, IL 60616 </span></p>
+<hr />
+<p><strong>Obstetric Anaethesia Association - OAA</strong></p>
+<p>23 - 24 May</p>
+<p><span>The Sage, St Mary's Square, Gateshead Quays, Gateshead NE8 2JR</span></p>
+<hr />
+<p><span style="font-size: 12pt;"><span style="color: #000000;"><span style="font-size: small;"><span>For more information on these events and exhibitions, Mediplus will be attending please contact head office on 01494 551200. Alternatively, email&nbsp;</span><a href="mailto:help@mediplus.co.uk">marketing@mediplus.co.uk</a><span>&nbsp;</span><br /></span></span></span></p>	</div>
+	<div class="clearer"></div>
+	<div class="hr">
+		Mediplus sell medical equipment in the following product areas:
+	</div>
+	<div id="categorySelectBox">
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/urodynamics.jpg');">
+		<h2><a href="/c-Urodynamics">Urodynamics</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Urodynamics"><img src="/img/viewProducts.jpg" alt="view products in Urodynamics" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/gastro.jpg');">
+		<h2><a href="/c-Gastrointestinal">Gastrointestinal</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Gastrointestinal"><img src="/img/viewProducts.jpg" alt="view products in Gastrointestinal" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/urology/bladder_scanner_equipment.jpg');">
+		<h2><a href="/c-Equipment">Equipment</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Equipment"><img src="/img/viewProducts.jpg" alt="view products in Equipment" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/urology.jpg');">
+		<h2><a href="/c-Urology">Urology</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Urology"><img src="/img/viewProducts.jpg" alt="view products in Urology" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/theatre.jpg');">
+		<h2><a href="/c-Theatre-Operating-Room">Theatre (Operating Room)</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Theatre-Operating-Room"><img src="/img/viewProducts.jpg" alt="view products in Theatre (Operating Room)" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/anasthetic.jpg');">
+		<h2><a href="/c-Anaesthetic">Anaesthetic</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Anaesthetic"><img src="/img/viewProducts.jpg" alt="view products in Anaesthetic" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/gynaecology.jpg');">
+		<h2><a href="/c-Gynaecology">Gynaecology</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Gynaecology"><img src="/img/viewProducts.jpg" alt="view products in Gynaecology" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+
+<div class="category">
+	<div class="category_minibox" style="background: url('/gallery/categories/erectile.jpg');">
+		<h2><a href="/c-Erectile-Dysfunction">Erectile Dysfunction</a></h2>
+		
+	</div>
+	<div class="category_linkarea"><a href="/c-Erectile-Dysfunction"><img src="/img/viewProducts.jpg" alt="view products in Erectile Dysfunction" width="128" height="19" /></a>
+	</div>
+	<div style="clear:both">
+	</div>
+</div>
+	</div>
+	<div class="clearer"></div>
+	<div class="clearer"></div>
+
+
+
+		<div class="hr">
+			Product Navigation
+		</div>
+	</div>
+	<div id="footer">
+	<div class="fRow">
+				<div class="fList">
+			<h5>Urodynamics</h5>
+			<ul>
+								<li><a href="/c-Single-Lumen-Filling-and-Cystometry">Urodynamic Catheters - Single Lumen Filling &amp; Cystometry</a></li>
+								<li><a href="/c-Double-Lumen-Cystometry">Urodynamic Catheters - Double Lumen Cystometry</a></li>
+								<li><a href="/c-UPP-Single-and-Double-Lumen-Catheters">Urodynamic Catheters - Urethral Pressure Profile</a></li>
+								<li><a href="/c-Abdominal-rectal-Pressure-Catheters">Urodynamic Catheters - Abdominal (Rectal) Pressure</a></li>
+								<li><a href="/c-Cystometry-Sets">Urodynamic Catheters - Cystometry Sets</a></li>
+								<li><a href="/c-Pump-Tube-Filling-Sets">Urodynamic Pump Tube &amp; Filling Sets</a></li>
+								<li><a href="/c-Transducer-Pressure-Domes">Transducer Pressure Domes</a></li>
+								<li><a href="/c-Extension-Sets">Extension Sets</a></li>
+								<li><a href="/c-Catheter-Flushing-Sets">Catheter Flushing Sets</a></li>
+								<li><a href="/c-Cystoscopy-Sets">Cystoscopy Sets</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Gastrointestinal</h5>
+			<ul>
+								<li><a href="/c-Single-Use-Upper-GI-Manometry-Catheters">Single-Use Upper GI Manometry Catheters</a></li>
+								<li><a href="/c-Single-use-Lower-GI-Manometry-Catheters">Single-use Lower GI Manometry Catheters</a></li>
+								<li><a href="/c-Antroduodenal-Colonic-Manometry-Catheters">Antroduodenal &amp; Colonic Manometry Catheters</a></li>
+								<li><a href="/c-pH-catheters-accessories">pH Catheters &amp; Accessories</a></li>
+								<li><a href="/c-GI-Pump-Transducers">GI Pump Transducer</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Equipment</h5>
+			<ul>
+								<li><a href="/c-Plasma-Edge">Plasma Edge</a></li>
+								<li><a href="/c-Uroscan-Bladder-Scanner">Uroscan Bladder Scanner</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Urology</h5>
+			<ul>
+								<li><a href="/c-Suprapubic-Foley-Catheter-Introducing-Sets">Suprapubic Foley Catheter Introducing Sets - S-Cathï¿½  System</a></li>
+								<li><a href="/c-Silicone-Foley-Catheters">Silicone 2-way Foley Catheter Kits</a></li>
+								<li><a href="/c-Cysto-Aid">Cysto-Aid</a></li>
+								<li><a href="/c-Other-Products">Other Products</a></li>
+								<li><a href="/c-Alokui-Premium-Natural-Moisturiser">Alokui Premium Natural Moisturiser</a></li>
+								<li><a href="/c-3_Way_Foley_Catheters">Silicone 3-way Foley Catheter</a></li>
+								<li><a href="/c-Catheter-Exchange-Kit">Catheter Exchange Kit</a></li>
+							</ul>
+
+		</div>
+		</div><div class="fRow">		<div class="fList">
+			<h5>Theatre (Operating Room)</h5>
+			<ul>
+								<li><a href="/c-Peters-Surical-Titanium-Haemostatic-Clip-Systems">Peters Surgical Titanium Haemostatic Clip Systems</a></li>
+								<li><a href="/c-Peters-Surgical-Enclose-II">Peters Surgical Enclose II</a></li>
+								<li><a href="/c-Peters-Surgical-Atraumatic-Temporary-Occlusion">Peters Surgical Temporary Occlusion</a></li>
+								<li><a href="/c-Surgical-Loops-(not-for-sale-in-USA)">Surgical Loops (not for sale in USA)</a></li>
+								<li><a href="/c-Other-Theatre-Products">Other Theatre Products</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Anaesthetic</h5>
+			<ul>
+								<li><a href="/c-TIVA-TCI-multiple-infusion-sets">TIVA-TCI multiple infusion sets</a></li>
+								<li><a href="/c-TIVA-Combination-Set">TIVA Combination-Set</a></li>
+								<li><a href="/c-Peripheral-IV-connector-sets">Peripheral IV Connectors</a></li>
+								<li><a href="/c-TIVA-Extension-sets">TIVA Extension sets</a></li>
+								<li><a href="/c-Capnomask">Capnography Products</a></li>
+								<li><a href="/c-Rectus-Sheath-Catheter">Rectus Sheath Catheter Set</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Gynaecology</h5>
+			<ul>
+								<li><a href="/c-POPY">POPYâ¢ Silicone Shelf Pessary</a></li>
+								<li><a href="/c-The-Milex-Pessary-Range">THE MILEX PESSARY RANGE</a></li>
+								<li><a href="/c-Pessaries-for-Prolapse">PESSARIES FOR PROLAPSE</a></li>
+								<li><a href="/c-Pessaries-for-Prolapse-and-Incontinence">PESSARIES FOR PROLAPSE AND INCONTINENCE</a></li>
+								<li><a href="/c-Cube-Cube-wit-drainage-holes-and-Tandem-Cube">Cube, Cube with Drainage Holes and Tandem Cube</a></li>
+								<li><a href="/c-Pessaries-for-Incontinence">PESSARIES FOR INCONTINENCE</a></li>
+								<li><a href="/c-Donut">Donut</a></li>
+								<li><a href="/c-Gehrung-and-Gehrung-with-Knob">Gehrung and Gehrung with Knob</a></li>
+								<li><a href="/c-Gellhorn">Gellhorn</a></li>
+								<li><a href="/c-Hodge-Pessaries">Hodge Pessaries</a></li>
+								<li><a href="/c-Incontinence-Dish">Incontinence Dish</a></li>
+								<li><a href="/c-Incontinence-Ring">Incontinence Ring</a></li>
+								<li><a href="/c-Inflatoball">Inflatoball</a></li>
+								<li><a href="/c-Regula">Regula</a></li>
+								<li><a href="/c-Ring-and-Ring-with-Support">Ring and Ring with Support</a></li>
+								<li><a href="/c-Ring-with-Knob-and-Ring-with-Support-and-Knob">Ring with Knob and Ring with Support and Knob</a></li>
+								<li><a href="/c-Risser">Risser</a></li>
+								<li><a href="/c-Shaatz">Shaatz</a></li>
+								<li><a href="/c-Smith">Smith</a></li>
+							</ul>
+
+		</div>
+				<div class="fList">
+			<h5>Erectile Dysfunction</h5>
+			<ul>
+								<li><a href="/c-Osbon-ErecAid">Osbon ErecAid</a></li>
+								<li><a href="/c-VenoSeal">VenoSeal</a></li>
+							</ul>
+
+		</div>
+		</div><div class="fRow">		<div class="fList">
+			<h5>We will work it out</h5>
+			<ul>
+							</ul>
+
+		</div>
+				<div style="clear:both;height:30px;">&nbsp;</div>
+		</div><!-- fRow end -->
+		
+		<div class="address">
+				<p>Copyright &copy; 2013 Mediplus Ltd., Unit 7 The Gateway Centre, Cressex Business Park, Coronation Road, High Wycombe, Bucks, UK, HP12 3SU<br />Company REG. NO.2051641 | <a href="http://www.mediplus.co.uk/Privacy-policy">Privacy Policy</a> | <a href="http://www.investorsinpeople.co.uk/">Investors in People</a> | <a href="http://www.mediplus.co.uk/ISO-Certification">ISO Certification</a> | <a href="http://www.mediplus.co.uk/Terms-and-Conditions">Terms and Conditions</a></p>
+		</div><!-- fRow end -->
+	
+	</div><!-- footer end -->
+	<div id="footerBottom"></div>
+	<div class="clearer"></div>
+	</div>
+<!-- WOW Async Tracking Code Start -->
+<script type='text/javascript'>
+var _wow = _wow || [];
+(function () {
+try{
+                _wow.push(['setClientId', '1f7231fe-5789-4ad1-b66f-b7f997088853']);
+                _wow.push(['enableDownloadTracking']);
+                _wow.push(['trackPageView']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript'; g.defer = true; g.async = true;
+                g.src = '//t.wowanalytics.co.uk/Scripts/tracker.js';
+                s.parentNode.insertBefore(g, s);
+}catch(err){}})();
+</script>
+<!-- WOW Async Tracking Code End -->
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6012176-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "mediplus";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#222";
+  feedback_widget_options.style = "question";
+  feedback_widget_options.product = "mediplus_website";
+  
+  
+  
+  feedback_widget_options.limit = "3";
+  
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+</div>
+
+</body>
+</html>

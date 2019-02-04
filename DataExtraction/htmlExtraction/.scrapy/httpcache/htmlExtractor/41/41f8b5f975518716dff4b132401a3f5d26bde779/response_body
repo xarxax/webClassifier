@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title></head>
+<body>
+    <form name="form1" method="post" action="./sprach.aspx?id=31986&amp;sp=D&amp;basehrefrequ=true" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6lG/OJ6kpz1AIAXnlNOE9t9ofTZCNMYCzekRLnAADiqyCQB6jNKNj6SHIABHj/ddwwHfE6Fb2u9eI/D3NcE4a6WVYasNQh63LCn68rauSGJUxZA+JcxGnnV4qXKgzEfUIJ9CwpCmtdAxhcdJKLkeqWAjSbUpLztW9rTbaYn3n0WiKJj2Nr+GPIUExjwtaygePwbHDfoa6WOMUj68FHVBZJw/VzVAxxdtDi++hY5QYVHk4eL0kgfS5Kj8ra9zLfvpwNBICWYTBfkDYhmsb0F1TifYXclpA6fn020BFYoSbGmItO18gm7Nh4+obbh3CK4YuKC5uBlp9o2ANKCRX7R3+jzyf51ncvYx0AFQY+T5WP65Bo9dT6O7rjRsuJA/swtVNnLedkkNSfhvYCjjbtgYCYJT9kCccXZZ0+wa0qYKPKzjk5ayBvHV7CMEmcp+ZF62qbYrJj0ucGYdzv48XdA0VqxjTrRqSmAuKXdh/5a4A0DN1BlJmo6UQOjmR6jjrPxl" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FA3B9642" />
+</div>
+        
+    <div id="content"><script type="text/javascript">            var arrLang = new Array();arrLang['de'] = '/30970/start/start.aspx';
+arrLang['en'] = '/30971/start/start.aspx';
+arrLang['fr'] = '/32165/start/start.aspx';
+arrLang['it'] = '/32517/start/start.aspx';
+</script></div>
+        <script type="text/javascript">
+
+            var strLang = "";
+            if (navigator.userLanguage != undefined) strLang = navigator.userLanguage;
+            if (navigator.language != undefined) strLang = navigator.language;
+
+            function redir() {
+	            if (arrLang[strLang.substring(0,2)] != undefined){
+	                window.location.href = arrLang[strLang.substring(0, 2)];
+	            }else{
+		            window.location.href = arrLang["en"];
+	            }
+            }
+
+            redir();
+
+        </script>
+    </form>
+</body>
+</html>

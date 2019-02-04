@@ -1,0 +1,514 @@
+﻿
+
+
+
+    
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="ko-KR" class= ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ko-KR" class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> 
+<html lang="ko-KR"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>SAMSUNG MEDISON</title>
+		<meta name="robots" content="all">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="format-detection" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link rel="stylesheet" type="text/css" href="/resources/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/jquery.bxslider.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/contents.css">
+		<!-- 윈도우8 서피스 및 데스크탑 IE10 뷰포트 버그를 위한 CSS핵 -->
+		<link rel="stylesheet" href="/resources/css/ie10-viewport-bug-workaround.css">
+		<!-- HTML5 요소와 미디어 쿼리의 IE8 지원을위한 js -->
+		<!--[if lt IE 9]>
+			<script src="/resources/js/html5shiv.min.js"></script>
+			<script src="/resources/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="header">
+			
+
+    
+<div id="util-wrap">
+	<div class="util-wrap-inner">
+		<div class="social">
+			<h2 class="screen-out">SNS바로가기 링크</h2>
+			<a href="https://www.facebook.com/SamsungNewsroom" target="_blank" class="fb"><span class="screen-out">페이스북</span></a>
+			<a href="https://twitter.com/Samsung_HealthC" target="_blank" class="tw"><span class="screen-out">트위터</span></a>
+			<a href="https://www.youtube.com/channel/UCid6wC33XpcFiQvzlkASkig" target="_blank" class="ut"><span class="screen-out">유튜브</span></a>
+		</div>
+		<!-- //social -->
+		<div class="lang-wrap">
+			<h2 class="screen-out">웹사이트 언어 선택 및 동물 초음파 기기 정보 사이트 바로가기 링크</h2>
+			<!-- <a href="#" target="_blank" class="lang">ENG</a> -->
+			<a href="http://www.samsungmedison.co.kr/" target="_blank" class="lang">KR</a>
+			<a href="http://www.samsunghealthcare.com" target="_blank" class="med">MED</a>
+			<a href="http://vet.samsunghealthcare.com/jsp/main.jsp" target="_blank" class="vet">VET</a>
+		</div>
+		<!-- //lang -->
+	</div>
+	<!-- //util-wrap-inner -->
+</div>
+<!-- //util-wrap -->
+<div id="gnb-wrap">
+	<div class="gnb-wrap-inner">
+		<h1><a href="index"><img src="/resources/images/common/gnb_logo.png" alt="SAMSUNG MEDISON"></a></h1>
+		<div class="gnb">
+			<a href="#none;" class="screen-out">gnb메뉴</a>
+			<ul class="depth1">
+				<li class="m1">
+					<a href="#none">Company</a>
+					<div class="depth2">
+						<div class="depth2-inner">
+							<ul>
+								<li><a href="company_inf">About us</a></li>
+								<li><a href="company_loc">Location</a></li>
+								<li><a href="company_ask">Contact us</a></li>
+							</ul>
+						</div>
+						<!-- //depth2-inner -->
+					</div>
+					<!-- //depth2 -->
+				</li>
+				<li class="m2">
+					<a href="career_sec_1">Career</a>
+				</li>
+			</ul>
+			<!-- //depth1 -->
+		</div>
+		<!-- //gnb -->
+		<a href="#" class="sitemap-go" data-toggle="layer" data-target="#siteMap">SITEMAP</a>
+		<div class="mobile-lang-wrap">
+			<!-- <a href="#" target="_blank" class="lang">ENG</a>-->
+			<a href="http://www.samsungmedison.co.kr/" target="_blank" class="lang">KR</a>
+		</div>
+		<a class="hamburger" href="#">Menu</a>
+	</div>
+	<!-- //gnb-wrap-inner -->
+</div>
+<!-- //gnb-wrap -->
+<!-- gnb for mobile -->
+<div class="mobile-gnb-panel">
+	<div class="mobile-gnb">
+		<ul class="accordion">
+			<li>
+				<a class="toggle" href="javascript:void(0);">Company<i class="icon"></i></a>
+				<ul class="inner">
+					<li><a href="company_inf">About us</a></li>
+					<li><a href="company_loc">Location</a></li>
+					<li>
+						<a class="toggle inner-toggle" href="company_ask">Contact us<i class="icon"></i></a>
+						<ul class="inner sub-inner">
+							<li><a href="company_ask">IR</a></li>
+							<li><a href="company_ask">Career</a></li>
+							<li><a href="company_ask">Etc</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a class="toggle" href="career_sec_1">Career<i class="icon"></i></a>
+				<ul class="inner">
+					<li><a href="career_sec_1">How to apply</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<ul class="mobile-util-wrap">
+		<li><a href="https://www.facebook.com/SamsungNewsroom" target="_blank"><i class="icon fb"></i><span class="screen-out">페이스북</span></a></li>
+		<li><a href="https://twitter.com/Samsung_HealthC" target="_blank"><i class="icon tw"></i><span class="screen-out">트위터</span></a></li>
+		<li><a href="https://www.youtube.com/channel/UCid6wC33XpcFiQvzlkASkig" target="_blank"><i class="icon ut"></i><span class="screen-out">유튜브</span></a></li>
+		<li><a href="http://www.samsunghealthcare.com/en/common/index" target="_blank"><i class="icon med2"></i>MED</a></li>
+		<li><a href="http://vet.samsunghealthcare.com/jsp/main.jsp" target="_blank"><i class="icon vet"></i>VET</a>
+	</div>
+</div>
+<div class="dimd-gnb-panel"></div>
+<!-- //gnb for mobile -->
+		</div>
+		<!-- //header -->
+		<div id="fullpage" class="content">
+			<div class="section" id="section0">
+				<div class="intro">
+					<!-- slide -->
+					<ul class="intro-slider bxslider">
+  						<li class="slide01">
+  							<div class="slider-wrap">
+								<i class="logo"><img src="/resources/images/main/intro_slide01_logo.png" alt=""></i>
+  								<h1>Samsung's philosophy for<br>a new healthcare experience</h1>
+  							</div>
+  						</li>
+  						<li class="slide02  pro_slide">
+  							<div class="slider-wrap"> 
+  								<div class="text-wrap">
+  									<div class="logo_area">
+  										<div class="logo_inner">
+											<i class="logo"><img src="/resources/images/main/intro_slide02_logo.png" alt=""></i>
+											<div class="txt_box">
+												<p>Samsung’s commitment to <br>life-long healthcare for women</p>
+		  										<h1>WS80A <span class="s_txt">with Elite</span></h1>
+											</div>
+	  									</div>
+  									</div>
+  									<div class="product_area">
+										<img src="/resources/images/main/intro_slide02_img.png" alt="">
+									</div>
+  								</div>
+  							</div>
+  						</li>
+  						<li class="slide03 pro_slide">
+  							<div class="slider-wrap">
+  								<div class="text-wrap">
+  									<div class="logo_area">
+  										<div class="logo_inner">
+											<i class="logo"><img src="/resources/images/main/intro_slide03_logo.png" alt=""></i>
+											<div class="txt_box">
+												<p>Samsung’s commitment to supporting<br>confident decision making</p>
+		  										<h1>RS85</h1>
+											</div>
+	  									</div>
+  									</div>
+  									<div class="product_area">
+										<img src="/resources/images/main/intro_slide03_img.png" alt="" >
+									</div>
+  								</div>
+  							</div>
+  						</li>
+  						<li class="slide04 pro_slide">
+  							<div class="slider-wrap">
+  								<div class="text-wrap">
+  									<div class="logo_area">
+  										<div class="logo_inner">
+											<i class="logo"><img src="/resources/images/main/intro_slide04_logo.png" alt=""></i>
+											<div class="txt_box">
+												<p>Samsung’s commitment to an active<br>and energetic life</p>
+		  										<h1>HS70A <span class="s_txt">with Prime</span></h1>
+											</div>
+	  									</div>
+  									</div>
+  									<div class="product_area">
+										<img src="/resources/images/main/intro_slide04_img.png" alt="" >
+									</div>
+  								</div>
+  							</div>
+  						</li>
+					</ul>
+					<!-- //slide -->
+					<div class="intro-container clear-fix">
+						<ul class="intro-btn-wrap clear-fix">
+							<li>
+								<a href="https://www.samsunghealthcare.com/en/products/UltrasoundSystem" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon01.png" alt=""></div>
+									<p>Ultrasound System</p>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.samsunghealthcare.com/en/products/DigitalRadiography" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon02.png" alt=""></div>
+									<p>Digital Radiography</p>
+								</a>
+							</li>
+							<!--
+							<li>
+								<a href="https://www.samsunghealthcare.com/en/products/InVitroDiagnostics" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon03.png" alt=""></div>
+									<p>In-vitro Diagnostics</p>
+								</a>
+							</li>
+							-->
+							<li>
+								<a href="https://www.samsunghealthcare.com/en/products/PortableCT" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon04.png" alt=""></div>
+									<p>Portable CT</p>
+								</a>
+							</li>
+							<li>
+								<a href="https://samsunghealthcare.com/en/contact" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon05.png" alt=""></div>
+									<p>Purchase Request</p>
+								</a>
+							</li>
+							<li>
+								<a href="https://samsunghealthcare.com/en/contact" target="_blank">
+									<div class="intro-icon"><img src="/resources/images/main/intro_btn_icon06.png" alt=""></div>
+									<p>Service Request</p>
+								</a>
+							</li>
+						</ul>
+						<ol class="callNum clear-fix">
+							<li>TEL +82-2-2194-1000</li>
+							<li>SERVICE 1644-0550</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section1">
+				<div class="intro">
+					<h1>Company</h1>
+					<div class="bg-line"></div>
+					<p>Life begins with health and happiness based on<br>Samsung’s cutting-edge technologies.</p>
+					<ul class="info-btn-wrap">
+						<li>
+							<a href="company_inf">
+								<div class="v-wrap">
+									<p><span class="num">01</span><span>About us</span></p>
+								</div>
+							</a>
+							<img src="/resources/images/main/bg_btn_info01.jpg" alt="">
+						</li>
+						<li>
+							<a href="company_loc">
+								<div class="v-wrap">
+									<p><span class="num">02</span><span>Location</span></p>
+								</div>
+							</a>
+							<img src="/resources/images/main/bg_btn_info02.jpg" alt="">
+						</li>
+						<li>
+							<a href="company_ask">
+								<div class="v-wrap">
+									<p><span class="num">03</span><span>Contact</span></p>
+								</div>
+							</a>
+							<img src="/resources/images/main/bg_btn_info03.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1>Careers</h1>
+					<div class="bg-line"></div>
+					<p>Please make your dreams and hopes<br>at Samsung Medison.</p>
+					<div class="career-slider-wrap">
+						<div class="container">
+							<!-- slide -->
+							<ul class="career-slider bxslider">
+								<li>
+									<div class="careerBox">
+										<a href="career_sec_1">
+											<span class="num">01</span>
+											<div class="bg-line"></div>
+											<span class="script">Image/Signal Processing<br>Specialist</span>
+											<div class="icon"></div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="careerBox">
+										<a href="career_sec_2">
+											<span class="num">02</span>
+											<div class="bg-line"></div>
+											<span class="script">Ultrasound Transducer<br>Development Engineer</span>
+											<div class="icon"></div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="careerBox">
+										<a href="career_sec_3">
+											<span class="num">03</span>
+											<div class="bg-line"></div>
+											<span class="script">Ultrasound Diagnosis<br>Application<br>/IT SW Specialist</span>
+											<div class="icon"></div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="careerBox">
+										<a href="career_sec_4">
+											<span class="num">04</span>
+											<div class="bg-line"></div>
+											<span class="script">Ultrasound<br>System Engineer</span>
+											<div class="icon"></div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="careerBox">
+										<a href="career_sec_5">
+											<span class="num">05</span>
+											<div class="bg-line"></div>
+											<span class="script">Ultrasound<br>Diagnosis System<br>UX Design Specialist</span>
+											<div class="icon"></div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section fp-auto-height" id="footer">
+				<footer>
+					
+
+<div class="container">
+	<div class="footer-body">
+		<ul class="footer-menu">
+			<li><a href="btm_privacy_policy">Privacy</a></li>
+			<li><a href="btm_ethics_report">Business Ethics</a></li>
+			<li><a href="btm_business_guide">Business Guideline</a></li>
+			<li><a href="company_ask">Contact us</a></li>
+		</ul>
+	</div>
+	<div class="logo"><img src="/resources/images/common/footer_logo.png" alt="SAMSUNG MEDISON"></div>
+	<div class="select-wrap fm-wrap">
+		<a href="#" class="fm-btn">Family Site</a>
+		<ul class="fm-list">
+			<li><a href="http://www.samsung.com" target="_blank">Samsung</a></li>
+			<li><a href="http://www.samsunghealthcare.com/en/common/index" target="_blank">SamsungHealthCare</a></li>
+			<li><a href="http://vet.samsunghealthcare.com/jsp/main.jsp" target="_blank">SamsungHealthCare VET</a></li>
+		</ul>
+	</div>
+	<div class="copyright">Copyright (c) 2017 Samsung Medison Co., Ltd. All Right Reserved</div>
+</div>
+
+				</footer>
+			</div>
+		</div>
+
+		<!-- 레이어 팝업 -->
+		<div id="layer-position">
+		</div>
+		<!--// 레이어 팝업 -->
+		
+		<script src="/resources/js/jquery.min1.12.4.js"></script>
+		<script src="/resources/js/ui-plugin.js"></script>
+		<script src="/resources/js/ui-common.js"></script>
+		<script>
+			var oBxSettings = {};
+			var company_str = $('#section1 .intro > p').html();
+			var newStr = company_str.replace('<br>', ' ');
+			var career_str = $('#section2 .intro > p').html();
+			var career_newStr = career_str.replace('<br>', ' ');
+			
+			$(document).ready(function(){
+				$("#fullpage").fullpage({
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['INTRO', 'COMPANY', 'CAREERS', 'CAREERS'],
+					verticalCentered: false,
+					onLeave: function(anchorLink, index){
+						var loadedSection = $(this);
+						if(index == 2){
+							$('#fp-nav').removeClass('white');
+						} else {
+							$('#fp-nav').addClass('white');
+						}
+					}
+				});
+				$(".intro-slider").bxSlider({
+						auto: true,
+						autoControls: true,
+						pause : 5000
+				});
+				screen();
+				careerSlider();
+				$('#fp-nav').addClass('white');
+				$('#fp-nav li').eq(3).css({'top':'-32px', 'z-index':'0'});
+				$(".bx-controls-auto a.bx-start").hide();
+				$(".bx-controls-auto a").click(function(){
+					$(this).hide().siblings().show();
+				});
+				screen();
+				company_text();
+				career_text();
+				$(window).resize(function(){
+					company_text();
+					career_text();
+				});
+			});
+			function careerSlider(){
+				var slider = $('.career-slider').bxSlider(oBxSettings);
+				var sliderFullwidth = $('.career-slider-wrap .bx-wrapper').width();
+				var sliderwidth = $('.career-slider-wrap .bx-wrapper').width() / 5;
+				if($(window).width() > 1023){
+					oBxSettings.slideWidth = sliderwidth;
+					oBxSettings.minSlides = 1;
+					oBxSettings.maxSlides = 5;
+					oBxSettings.pager = false;
+					oBxSettings.infiniteLoop = false;
+					oBxSettings.hideControlOnEnd = true;
+					oBxSettings.touchEnabled = false;
+					slider.reloadSlider();
+				} else {
+					oBxSettings.slideWidth = sliderwidth * 5;
+					oBxSettings.minSlides = 1;
+					oBxSettings.maxSlides = 1;
+					oBxSettings.pager = true;
+					oBxSettings.infiniteLoop = false;
+					oBxSettings.hideControlOnEnd = true;
+					oBxSettings.touchEnabled = true;
+					slider.reloadSlider();
+				}
+				$(window).on('resize', function(){
+					var sliderFullwidth = $('.career-slider-wrap .career-wrapper').width();
+					var sliderwidth = $('.career-slider-wrap .bx-wrapper').width() / 5;
+					if($(window).width() > 1023){
+						oBxSettings.slideWidth = sliderwidth;
+						oBxSettings.minSlides = 1;
+						oBxSettings.maxSlides = 5;
+						oBxSettings.pager = false;
+						oBxSettings.infiniteLoop = false;
+						oBxSettings.hideControlOnEnd = true;
+						oBxSettings.touchEnabled = false;
+						slider.reloadSlider(oBxSettings);
+					} else {
+						oBxSettings.slideWidth = sliderwidth * 5;
+						oBxSettings.minSlides = 1;
+						oBxSettings.maxSlides = 1;
+						oBxSettings.pager = true;
+						oBxSettings.infiniteLoop = false;
+						oBxSettings.hideControlOnEnd = true;
+						oBxSettings.touchEnabled = true;
+						slider.reloadSlider(oBxSettings);
+					}
+				});
+			}
+			/* company */
+			function company_text(){
+				if($(window).width() >= 340){
+					$('#section1 .intro > p').html(company_str);
+				} else {
+					$('#section1 .intro > p').html(newStr);
+				}
+			}
+			/* careers */
+			function career_text(){
+				if($(window).width() > 768){
+					$('#section2 .intro > p').html(career_newStr);
+				} else {
+					$('#section2 .intro > p').html(career_str);
+				}
+			}
+	
+			/* 1366 x 768 혹은 height 768 이하 노트북 해상도 */
+			function screen(){
+				if($(window).width() >= 1024 && $(window).height() < 768){
+					$(".intro-container").css('margin-top', '-185px');
+					$('.section .intro h1').css('margin-top', '60px');
+					$('#section0 .intro h1').css('margin-top', '-10px');
+					$('.info-btn-wrap, .career-slider-wrap').css('margin-top', '30px');
+					$('.info-btn-wrap li').css({'max-height':'240px', 'overflow':'hidden'});
+				}
+			}
+			
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-79989612-3', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+	</body>
+</html>

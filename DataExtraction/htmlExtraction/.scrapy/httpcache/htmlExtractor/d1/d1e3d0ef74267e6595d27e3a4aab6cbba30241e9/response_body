@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<TITLE>Yet another Anime CD Cyclopedia</TITLE>
+</HEAD>
+<BODY bgcolor=EFEFEF>
+<CENTER>
+<TABLE border=0 cellpadding=3 border=1>
+<TR>
+<TH width=8% bgcolor=ffafaf>Top</TH>
+<TH width=8%><a href="./series/series.0.html">A-B</A></TH>
+<TH width=8%><a href="./series/series.1.html">C-D</A></TH>
+<TH width=8%><a href="./series/series.2.html">E-G</A></TH>
+<TH width=8%><a href="./series/series.3.html">H-K</A></TH>
+<TH width=8%><a href="./series/series.4.html">L</A></TH>
+<TH width=8%><a href="./series/series.5.html">M</A></TH>
+<TH width=8%><a href="./series/series.6.html">N-Q</A></TH>
+<TH width=8%><a href="./series/series.7.html">R-S</A></TH>
+<TH width=8%><a href="./series/series.8.html">T-V</A></TH>
+<TH width=8%><a href="./series/series.9.html">W-Z</A></TH>
+<TH width=8%><a href="./series/series.html">New</A></TH>
+</TR>
+</TABLE>
+<HR>
+
+<H2>
+Yet another Anime CD Cyclopedia<BR>
+<font size=-1>and a little JPop on the side</font>
+</h2>
+<I>Last updated:
+<!--!date +"%b-%d-%Y"!-->
+Dec-01-2001
+<!--Done-->
+</I>
+<HR>
+<TABLE>
+<TR><TD>
+<FONT size=+1>
+<UL>
+<!--
+<LI><A HREF="http://www.maison-otaku.net/~confu/anime.cd/">Mirror site</A>
+-->
+<LI><A HREF="#New">What's new</A>
+<LI><A href="series/series.html">CD List</A>
+<HR>
+<LI><A href="getting.html"><B>Buying Anime CDs</B></A>
+<LI><A href="links.html">Other pages</A>
+<HR>
+<LI><A HREF="#about">About this page</A>
+<LI><A HREF="#tech">Technical stuff</A>
+<LI><A HREF="template.html">Adding information</A>
+<LI><A HREF="faq.html">Mini-FAQ</A>
+<LI><A HREF="#rating">Rating scale</A>
+<LI><A HREF="thanks.html">Acknowledgements</A>
+<LI><A HREF="contrib.html">Contributors</A>
+</UL>
+</FONT>
+</TD></TR>
+</TABLE>
+<HR width=90%>
+<TABLE>
+<TR><TD colspan=3>
+All images are copyright of their respective owners.
+</TD>
+</TR>
+<TR valign=top>
+<TD>
+<LI>Adachi Mitsuru
+<LI><a href=http://www.anime-int.com>AIC</a>
+<LI>Artmic
+<LI>CLAMP
+<LI>Dentsuu
+<LI>GAINAX
+<LI>Kakinouchi Narumi
+<LI>Katsura Masakazu
+<LI>Koudansha
+</TD>
+<TD>
+<LI>NAS
+<LI>Nibariki
+<LI><a href=http://www.pioneer.co.jp>Pioneer LDC</a>
+<LI>Pony Canyon
+<LI>Shogakukan
+<LI>Shueisha Inc.
+<LI>Studio Pierot
+<LI>Sunrise
+</TD>
+<TD>
+<LI>Toho
+<LI>TMS
+<LI>TV Tokyo
+<LI>Watase Yuu
+<LI>Yomiuri TV
+<LI>Youmex
+</TD></TR>
+</TABLE>
+<HR width=90%>
+<!--!head -n 5 revisions.log | perl gen-revlog.pl!-->
+<TABLE WIDTH=95%>
+<TR><TD COLSPAN=2 ALIGN=CENTER><A NAME="New"><H3>What's new</H3></A></TD></TR>
+
+<TR><TD valign=top><nobr>Dec-01-2001</nobr></TD>
+<TD>Added Noir OST 3 (Scott Fujimoto).
+</TD></TR>
+<TR><TD valign=top><nobr>Nov-28-2001</nobr></TD>
+<TD>Updated Noir OST 1, added Noir OST 2 (Scott Fujimoto).
+</TD></TR>
+<TR><TD valign=top><nobr>Nov-27-2001</nobr></TD>
+<TD>Replaced the (little-used) forum with ikonboard. I'm going to try to follow it a little more actively than before. If people are interested in helping moderate, leave me email or post in forum feedback.
+</TD></TR>
+<TR><TD valign=top><nobr>Nov-01-2001</nobr></TD>
+<TD>Added Noir OST 1 and Cowboy Bebop Movie OST (Scott Fujimoto).
+</TD></TR>
+<TR><TD valign=top><nobr>Oct-23-2001</nobr></TD>
+<TD>Added Arc the Lad OST 1 and 2 (Ru Igarashi).
+</TD></TR>
+</TABLE>
+<!--Done-->
+<A href="revisions.html">Older revision notes</A>
+<HR Width=90%>
+<FONT size=+1><A name="about">About this page</A></FONT>
+<Table width=90%><TR><TD>
+
+Yes. This is yet another Anime CD Cyclopedia based on the Remus CD
+Cyclopedia compiled by Steve Pearl.  The real aim of this project is
+to have a Database with timely updates and useful searching.  How well
+that aim is accomplished, who knows?  Currently, about a third of the
+Remus pedia has been cleaned up with the remaining to be handle in a
+timely fashion, I promise!  The next step of my current plan is to
+convert to a SQL db engine (MySQL).  This should allow for nifty
+querying functions.
+<a href="mailto:yaacc@cjas.org">Comments</a> are always welcome.
+</TD></TR></TABLE>
+
+<HR width=90%>
+<font size=+1><a name="tech">Technical stuff</A></font>
+<table width=90%><TR><TD>
+
+The pages and index are currently generated from a <a
+href="template.html">plain-text format</A> and
+converted using a Perl script into html.  I like doing things this way
+because I can change layouts and only have to change it in one
+location.
+<P>
+I initially had tried to develop this project using mSQL but stopped
+that due to limitations in the mSQL engine.  But I've given MySQL a
+try and I think it should be powerful enough for my needs.  The key
+advantage of having the MySQL DB against the current text file system
+should be having efficient searching be easier.  Text files would
+require all sorts of intermediate index files for the same efficiency
+which I think will be more of a pain.
+<P>
+The rating system is arbitrary, but if you provide a rating, I'd like the
+scale to be 0-5 following these guidlines somewhat.<BR>
+<A name="rating"></A>
+<UL>
+<LI>0: "This cd blows chunks.  It suketh mightily. I would use it
+to torture people."
+<LI>1: "This CD is pretty bad.  I'd consider using it for
+microwave fireworks."
+<LI>2: "This CD has good points and bad points.  I wouldn't
+consider getting it."
+<LI>3: "Nice CD.  Maybe get it if I can find it cheap."
+<LI>4: "This is a very good CD that I'd seriously consider getting."
+<LI>5: "I loved this CD. You will love this CD. Buy buy buy!"
+</UL>
+
+</TD></TR></Table>
+
+</CENTER>
+<!--
+<HR>
+This page has been accessed
+<IMG
+SRC="http://www.cjas.org/cgi-bin/Count.cgi?df=anime.cd.dat&ft=0&tr=t&trgb=ffffff&pad=0&dd=C&negate=T"
+ALIGN=absbottom>
+times.
+-->
+<HR>
+<CENTER>
+<TABLE border=0 cellpadding=3>
+<TR>
+<TH width=8% bgcolor=ffafaf>Top</TH>
+<TH width=8%><a href="./series/series.0.html">A-B</A></TH>
+<TH width=8%><a href="./series/series.1.html">C-D</A></TH>
+<TH width=8%><a href="./series/series.2.html">E-G</A></TH>
+<TH width=8%><a href="./series/series.3.html">H-K</A></TH>
+<TH width=8%><a href="./series/series.4.html">L</A></TH>
+<TH width=8%><a href="./series/series.5.html">M</A></TH>
+<TH width=8%><a href="./series/series.6.html">N-Q</A></TH>
+<TH width=8%><a href="./series/series.7.html">R-S</A></TH>
+<TH width=8%><a href="./series/series.8.html">T-V</A></TH>
+<TH width=8%><a href="./series/series.9.html">W-Z</A></TH>
+<TH width=8%><a href="./series/series.html">New</A></TH>
+</TR>
+</TABLE>
+</Center>
+<HR>
+
+<Address>Maintained by
+<A href="http://www.cjas.org/~jhsu">Jerry Hsu</A>
+-
+<!--<A href="mailto:yaacc@cjas.org">yaacc@cjas.org</A>-->
+</BODY>
+</HTML>

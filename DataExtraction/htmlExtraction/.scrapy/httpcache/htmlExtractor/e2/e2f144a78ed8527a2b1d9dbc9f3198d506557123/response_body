@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<base href="https://www.accupay.net/"><!--[if lte IE 6]></base><![endif]-->
+	<title>Home &raquo; Accupay</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="SilverStripe - http://silverstripe.org" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	
+    <link rel="shortcut icon" href="/favicon.ico?v=1" />
+    <link rel="canonical" href="https://www.accupay.net/" />
+    <!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-73764890-1', 'auto');
+	ga('send', 'pageview');
+  
+	function recordOutboundLink(link, category, action, opt_label, is_tel) {
+		var params = {
+			'eventCategory': category,
+			'eventAction': action,
+			'eventLabel': opt_label
+		};
+		ga('send', 'event', params);
+		if(is_tel){
+			//onClick="return recordOutboundLink(this,'Phone Call Links','Call','Header Phone Link',true);"
+			return true;
+		} else {
+			setTimeout('document.location = "' + link.href + '"', 100);
+		}		
+	} 
+	
+	function trackFormSubmit(form, category, action, opt_label, opt_value, submit_form) {
+		var params = {
+			'eventCategory': category,
+			'eventAction': action,
+			'eventLabel': opt_label,
+			'eventValue': opt_value
+		};
+		ga('send', 'event', params);
+		if (submit_form) setTimeout("document.getElementById('"+form.id+"').submit();", 100);
+		return false;
+	}
+</script>
+<!-- End Analytics-->
+    
+    <!--[if lt IE 9]>
+    <script src="/themes/mysite/javascript/html5shiv.js"></script>
+    <script src="/themes/mysite/javascript/html5shiv-printshiv.js"></script>
+    <![endif]-->
+<link rel="stylesheet" type="text/css" href="/themes/mysite/css/fonts.css?m=1536955079" />
+<link rel="stylesheet" type="text/css" href="/themes/mysite/combined/Base.css?m=1477942381" />
+<link rel="stylesheet" type="text/css" href="/themes/mysite/combined/HomePage.css?m=1439902940" />
+<link rel="stylesheet" type="text/css" href="/themes/mysite/combined/Responsive.css?m=1477942381" />
+</head>
+<body>
+
+    <div id="header_wrap">
+	<header>
+		<a href="/" id="logo"><img src="/themes/mysite/images/logo.png" alt="Accupay"/></a><!--logo-->
+		<div id="top_nav_ct">
+			<ul id="top_nav">
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<li><a href="/login-portal/" target="_self" class="link" id="nav7"  >Login Portal</a>
+    <ul class="dropdown" style="display:none;">
+        
+            <li><a href="/login-portal/support/" target="_self" >Support</a></li>
+        
+            <li><a href="/login-portal/accupaypayrollinc-myfileguardian-compostofficemain-aspx/" target="_self" >Send Secure File</a></li>
+        
+    </ul>
+</li>
+					
+				
+					
+						<li><a href="/contact-us/" target="_self" class="link" id="nav8"  heading="1">Contact Us</a>
+    <ul class="dropdown" style="display:none;">
+        
+            <li><a href="/contact-us/contact-accupay/" target="_self" >Contact Accupay</a></li>
+        
+            <li><a href="/contact-us/request-a-quote/" target="_self" >Request a Quote</a></li>
+        
+    </ul>
+</li>
+					
+				
+			</ul><!--top_nav-->
+		</div><!--top_nav_ct-->
+		<nav class="desktop" id="main_nav">
+			<ul>
+				
+					
+				
+					
+						<li><a href="/about/" target="_self" class="link" id="nav2"  >About</a></li>
+					
+				
+					
+						<li><a href="/services-overview/" target="_self" class="link" id="nav3"  >Services Overview</a></li>
+					
+				
+					
+						<li><a href="/payroll-services/" target="_self" class="link" id="nav4"  >Payroll Services</a>
+    <ul class="dropdown" style="display:none;">
+        
+            <li><a href="/payroll-services/credit-card-processing/" target="_self" >Credit Card Processing</a></li>
+        
+            <li><a href="/payroll-services/direct-deposit-2/" target="_self" >Direct Deposit</a></li>
+        
+            <li><a href="/payroll-services/employee-self-serve-2/" target="_self" >Employee Self-Serve</a></li>
+        
+            <li><a href="/payroll-services/finfit/" target="_self" >FinFit</a></li>
+        
+            <li><a href="/payroll-services/new-hire-reporting/" target="_self" >New Hire Reporting</a></li>
+        
+            <li><a href="/payroll-services/payroll-debit-cards/" target="_self" >Payroll Debit Cards</a></li>
+        
+            <li><a href="/payroll-services/staffingrecruiting-solutions/" target="_self" >Remote Payroll Entry</a></li>
+        
+            <li><a href="/payroll-services/storeroom/" target="_self" >Storeroom</a></li>
+        
+            <li><a href="/payroll-services/tax-credit-services/" target="_self" >Tax Credit Services</a></li>
+        
+            <li><a href="/payroll-services/tax-solutions/" target="_self" >Tax Solutions</a></li>
+        
+            <li><a href="/payroll-services/timeattendance-solutions/" target="_self" >Time Attendance Solutions</a></li>
+        
+    </ul>
+</li>
+					
+				
+					
+						<li><a href="/hr-services/" target="_self" class="link" id="nav5"  >HR Services</a>
+    <ul class="dropdown" style="display:none;">
+        
+            <li><a href="/hr-services/401k/" target="_self" >401k</a></li>
+        
+            <li><a href="/hr-services/benefit-services/" target="_self" >Benefit Services</a></li>
+        
+            <li><a href="/hr-services/cafeteria-plans-s125/" target="_self" >Cafeteria Plans (S125)</a></li>
+        
+            <li><a href="/hr-services/compliance-poster-program/" target="_self" >Compliance Poster Program</a></li>
+        
+            <li><a href="/hr-services/employment-screening/" target="_self" >Employment Screening</a></li>
+        
+            <li><a href="/hr-services/hris/" target="_self" >HCMS Solution</a></li>
+        
+            <li><a href="/hr-services/hr-resource-center/" target="_self" >HR Resource Center</a></li>
+        
+            <li><a href="/hr-services/unemployment-claims-management/" target="_self" >Unemployment Claims Management</a></li>
+        
+            <li><a href="/hr-services/workers-compensation/" target="_self" >Workers Compensation</a></li>
+        
+    </ul>
+</li>
+					
+				
+					
+						<li><a href="/forms-and-resources/" target="_self" class="link" id="nav6"  >Forms &amp; Resources</a>
+    <ul class="dropdown" style="display:none;">
+        
+            <li><a href="/forms-and-resources/forms/" target="_self" >AccuPay Forms</a></li>
+        
+            <li><a href="/forms-and-resources/resources/" target="_self" >Resource Links</a></li>
+        
+            <li><a href="/forms-and-resources/tax-forms/" target="_self" >Tax Forms</a></li>
+        
+            <li><a href="/forms-and-resources/videos-and-tutorials/" target="_self" >Videos &amp; Tutorials</a></li>
+        
+            <li><a href="/forms-and-resources/accupay-blog/" target="_self" >Accupay Blog</a></li>
+        
+    </ul>
+</li>
+					
+				
+					
+				
+					
+				
+			</ul>
+		</nav><!--main_nav-->
+	</header>
+</div><!--header_wrap-->
+    
+	<div id="banner_wrap">
+	<div id="banner">
+		<h1><img src="/themes/mysite/images/banner_h1.png" alt="Reducing the Cost of HR Administration &amp; Payroll." /></h1>
+		<ul>
+			<li>Accurate payroll processing</li>
+			<li>Responsive Customer Service</li>
+			<li>State of the art technology</li>
+			<li>Making your payroll management easier</li>
+		</ul>
+		<a href="/login-portal/" id="login_portal">Login Portal</a><!--login_portal-->
+	</div><!--banner-->
+</div><!--banner_wrap-->
+
+<div id="callouts">
+	<ul>
+		<li class="callout1">
+			<a href="/payroll-services/">
+				<div class="icon"></div>
+				<h3>Payroll &amp; Tax Solutions</h3>
+			</a>
+			<p>We offer a full range of payroll related services. Come see what we can do for you today.</p>
+		</li>
+		<li class="callout2">
+			<a href="/hr-services/">
+				<div class="icon"></div>
+				<h3>HR Solutions</h3>
+			</a>
+			<p>Looking for that HR solution? We have plenty to offer.</p>
+		</li>
+		<li class="callout3">
+			<a href="/forms-and-resources/">
+				<div class="icon"></div>
+				<h3>Forms &amp; Resources</h3>
+			</a>
+			<p>AccuPay is pleased to provide you the convenience of on-line access to various forms you may need. </p>
+<p> </p>
+<p> </p>
+		</li>
+	</ul>
+</div><!--callouts-->
+
+<div id="main_wrap">
+	<div id="main">
+		<div id="page_type" class="home typography">
+			<h1 style="text-align: center;">Spotlight Service</h1>
+<h1 style="text-align: left;">  </h1>
+<h1>Employment Screening</h1>
+<p>We have partnered with National Crime Search to offer employment screening solutions through our web site. The results are fast and affordable. <br>Remember;</p>
+<ul><li>50% of all resumes contain false information</li>
+<li>33% of all business failures are due to employee theft</li>
+<li>18% of all violent crimes occur in the workplace </li>
+</ul><p>Can you afford to be wrong??? </p>
+<p>For more information, please visit; <a href="http://accupay.nationalcrimesearch.com/" target="_blank">Employment Screening</a></p>
+			<a href="/hr-services/employment-screening" class="more">Learn More</a>
+		</div>
+	</div><!--main-->
+</div><!--main_wrap-->
+
+<div id="home_lower_wrap">
+	<div id="home_lower">
+		<ul>
+			<li class="sameheight typography pos1" rel="home_lower">
+				<h3><img src="/themes/mysite/images/home_lower_1_title.png" alt="Determine your HR functions effectiveness" /></h3>
+				<p><img class="center" title="" src="assets/Uploads/home-block1.jpg" alt="home block1" width="244" height="121"></p>
+				<a target="_blank" class="more" href="https://www.myhrsupportcenter.com:443/widget/hraudit_widget/40638">Get an HR audit. It's easy and quick</a>
+			</li>
+			<li class="sameheight typography pos2" rel="home_lower">
+				<h3><img src="/themes/mysite/images/home_lower_2_title.png" alt="Sign Up for Accupay Newsletter" /></h3>
+				<p>Keep up on the latest news that concerns your payroll.</p>
+				
+<form id="Form_NewsletterForm" action="/home/NewsletterForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="Form_NewsletterForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<div id="Name" class="field text">
+	<label class="left" for="Form_NewsletterForm_Name">Name</label>
+	<div class="middleColumn">
+		<input type="text" name="Name" class="text" id="Form_NewsletterForm_Name" required="required" aria-required="true" />
+	</div>
+	
+	
+	
+</div>
+
+		
+			<div id="Email" class="field email text">
+	<label class="left" for="Form_NewsletterForm_Email">Email</label>
+	<div class="middleColumn">
+		<input type="email" name="Email" class="email text" id="Form_NewsletterForm_Email" required="required" aria-required="true" />
+	</div>
+	
+	
+	
+</div>
+
+		
+			<input type="hidden" name="SecurityID" value="d06fc2dea367e6f5b49f45946d05bd3a3e3a1723" class="hidden" id="Form_NewsletterForm_SecurityID" />
+
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			
+	<input type="submit" name="action_SubmitForm" value="Submit" class="action" id="Form_NewsletterForm_action_SubmitForm" />
+
+
+		
+	</div>
+	
+
+</form>
+
+
+			</li>
+			<li class="sameheight typography pos3" rel="home_lower">
+				<h3><img src="/themes/mysite/images/home_lower_3_title.png" alt="Discover Time Clock Employee Time Tracking" /></h3>
+				<p><img class="leftAlone" title="" src="assets/Uploads/home-block3.png" alt="home block3" width="172" height="172"></p>
+				<a href="/payroll-services/timeattendance-solutions/" class="more">Learn More</a>
+			</li>
+			<li class="sameheight typography pos4" rel="home_lower">
+				<h3><img src="/themes/mysite/images/home_lower_4_title.png" alt="We Offer Retirement and Benefits Service" /></h3>
+				<p>Planning for the future as well as for now. We have a solution.</p>
+<p><img class="center" title="" src="assets/Uploads/home-block4.jpg" alt="home block4" width="244" height="109"></p>
+				<a href="/hr-services/" class="more">Learn More</a>
+			</li>
+		</ul>
+	</div><!--home_lower-->
+</div><!--home_lower_wrap-->
+
+<div id="sponsors_wrap" cnt="4">
+	<ul>
+		
+		<li>
+			<a href="http://www.americanpayroll.org/home/" target="_blank" title="American Payroll Association"><img src="/assets/Uploads/_resampled/SetRatioSize16580-apa.png" alt="American Payroll Association" /></a>
+		</li>
+		
+		<li>
+			<a href="https://www.ippa.net/" target="_blank" title="Integrity In Payroll Processing"><img src="/assets/Uploads/ippa.png" alt="Integrity In Payroll Processing" /></a>
+		</li>
+		
+		<li>
+			<a title="SSAE 16"><img src="/assets/Uploads/_resampled/SetRatioSize16580-ssae16.png" alt="SSAE 16" /></a>
+		</li>
+		
+		<li>
+			<a title=""><img src="/assets/Uploads/_resampled/SetRatioSize16580-comodo-secure-100x85-white.png" alt="" /></a>
+		</li>
+		
+	</ul>
+</div><!--sponsors_wrap-->
+	
+    <div id="footer_wrap">
+	<footer>
+		<nav>
+			<ul>
+				
+					<li><a href="/" target="_self" class="current" >Home</a></li>
+				
+					<li><a href="/about/" target="_self" class="link" >About</a></li>
+				
+					<li><a href="/services-overview/" target="_self" class="link" >Services Overview</a></li>
+				
+					<li><a href="/payroll-services/" target="_self" class="link" >Payroll Services</a></li>
+				
+					<li><a href="/hr-services/" target="_self" class="link" >HR Services</a></li>
+				
+					<li><a href="/forms-and-resources/" target="_self" class="link" >Forms &amp; Resources</a></li>
+				
+					<li><a href="/login-portal/" target="_self" class="link" >Login Portal</a></li>
+				
+					<li><a href="/contact-us/" target="_self" class="link" >Contact Us</a></li>
+				
+			</ul>
+		</nav>
+		<address>
+			<strong>Accupay Payroll</strong><br />
+			50 South Penn Street<br />
+			Suite A5<br />
+			Hatboro, PA 19040<br />
+			Phone: <strong>267.803.1213</strong><br />
+			Fax: 267.803.1214
+		</address>
+		<ul id="social">
+			<li><a href="/blog/" id="icon_blog">Blog</a></li>
+			
+			
+		</ul><!--social-->
+		<p id="copyright">
+			Copyright &copy; 2019 accupay.net<br />
+			
+				<a href="http://www.iqnection.com" target="_blank">Website Design &amp; Website Hosting by IQnection</a>
+			
+		</p>
+	</footer>
+</div><!--footer_wrap-->
+
+
+<script type="text/javascript" src="/themes/mysite/combined/Base.js?m=1477942379"></script><script type="text/javascript" src="/themes/mysite/combined/HomePage.js?m=1439902940"></script><script type="text/javascript">//<![CDATA[
+
+$(document).ready(function(){
+	$("#Form_NewsletterForm").validate({
+		useNospam: true,
+	});
+});
+			
+
+//]]></script></body>
+</html>

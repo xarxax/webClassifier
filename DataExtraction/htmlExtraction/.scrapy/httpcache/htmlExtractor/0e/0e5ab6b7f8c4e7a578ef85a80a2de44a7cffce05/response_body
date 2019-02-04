@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta name="Description" content="Comptoir Général d'Emballage" />
+<meta name="Keywords" lang="fr" content="" />
+<meta name="Robots" content="all" />
+<meta name="Revisit-after" content="7 days" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="_js/plus.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="_js/fb/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="_js/fb/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<link href="_css/style.css" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"En navigant sur ce site, vous acceptez l'utilisation des cookies pour stocker vos informations de connexion","dismiss":"OK","learnMore":"En savoir plus","link":"http://www.cge.net/cookie.php","theme":"dark-floating"};
+</script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+<title>Comptoir Général d'Emballage</title>
+</head>
+
+<body >
+<section id="home">
+<header>
+
+    <a href="index.php" id="logo" ><img src="_img/logo.png" alt="Cge" width="200px" /></a>
+
+<div id="login">
+
+     <form action="login.php" method="post">
+           <img src="_img/icones/connect.png" alt="" /> <input type="text" name="pseudo" placeholder="EMAIL CLIENT"/>
+            <input type="password" name="mdp" placeholder="MOT DE PASSE"/>
+                <input type="image" src="_img/icones/send.png" alt="envoyer"/>
+    </form>
+     <form action="recherche.php" method="post">
+            <input id="search" type="text" name="search" placeholder="RECHERCHE PRODUITS / REFERENCES"/>
+                <input type="image" src="_img/icones/send.png" alt="envoyer"/>
+    </form>
+
+</div>
+
+
+</header>
+
+<aside id="contact">
+	<a href="mailto:info@cge.fr"><i class="fa fa-envelope-o"></i></a><br />
+	<a id="telephone" href="#"><i class="fa fa-phone"></i></a>
+</aside>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+			$("#telephone").fancybox({
+			closeClick	: false,
+			openSpeed   : 'slow',
+			openEffect	: 'fade',
+			closeEffect	: 'fade',
+			type        : 'iframe',
+			width       : '300px',
+			height      : '30px',
+			href        : '_inc/phone.php'
+		});
+	});
+</script>
+<nav>
+<a href="fabrication_et_distribution.php?id=1" class="menu1-2" ><img src="_img/accueil/menu1-2.png" alt="caisses_et_containers" /></a><a href="fabrication_et_distribution.php?id=1" class="menu1" ><img src="_img/accueil/menu1.png" alt="caisses_et_containers" /></a><a href="caisses_et_containers.php?id=2" class="menu2-2" ><img src="_img/accueil/menu2-2.png" alt="emballages_postaux" /></a><a href="caisses_et_containers.php?id=2" class="menu2" ><img src="_img/accueil/menu2.png" alt="emballages_postaux" /></a><a href="emballages_postaux.php?id=3" class="menu3-2" ><img src="_img/accueil/menu3-2.png" alt="fermeture_et_cerclage" /></a><a href="emballages_postaux.php?id=3" class="menu3" ><img src="_img/accueil/menu3.png" alt="fermeture_et_cerclage" /></a><a href="fermeture_et_cerclage.php?id=4" class="menu4-2" ><img src="_img/accueil/menu4-2.png" alt="films_et_palettes" /></a><a href="fermeture_et_cerclage.php?id=4" class="menu4" ><img src="_img/accueil/menu4.png" alt="films_et_palettes" /></a><a href="films_et_palettes.php?id=5" class="menu5-2" ><img src="_img/accueil/menu5-2.png" alt="etiquetage" /></a><a href="films_et_palettes.php?id=5" class="menu5" ><img src="_img/accueil/menu5.png" alt="etiquetage" /></a><a href="etiquetage.php?id=6" class="menu6-2" ><img src="_img/accueil/menu6-2.png" alt="calage_et_protection" /></a><a href="etiquetage.php?id=6" class="menu6" ><img src="_img/accueil/menu6.png" alt="calage_et_protection" /></a><a href="calage_et_protection.php?id=7" class="menu7-2" ><img src="_img/accueil/menu7-2.png" alt="enveloppes_pochettes_sacs" /></a><a href="calage_et_protection.php?id=7" class="menu7" ><img src="_img/accueil/menu7.png" alt="enveloppes_pochettes_sacs" /></a><a href="enveloppes_pochettes_sacs.php?id=8" class="menu8-2" ><img src="_img/accueil/menu8-2.png" alt="caisses_sur_mesure" /></a><a href="enveloppes_pochettes_sacs.php?id=8" class="menu8" ><img src="_img/accueil/menu8.png" alt="caisses_sur_mesure" /></a><a href="caisses_sur_mesure.php?id=9" class="menu9-2" ><img src="_img/accueil/menu9-2.png" alt="destockage" /></a><a href="caisses_sur_mesure.php?id=9" class="menu9" ><img src="_img/accueil/menu9.png" alt="destockage" /></a><a href="destockage.php?id=10" class="menu10-2" ><img src="_img/accueil/menu10-2.png" alt="tarifs_degressifs" /></a><a href="destockage.php?id=10" class="menu10" ><img src="_img/accueil/menu10.png" alt="tarifs_degressifs" /></a><a href="tarifs_degressifs.php?id=11" class="menu11-2" ><img src="_img/accueil/menu11-2.png" alt="livraison_rapide" /></a><a href="tarifs_degressifs.php?id=11" class="menu11" ><img src="_img/accueil/menu11.png" alt="livraison_rapide" /></a><a href="livraison_rapide.php?id=12" class="menu12-2" ><img src="_img/accueil/menu12-2.png" alt="la_societe_cge" /></a><a href="livraison_rapide.php?id=12" class="menu12" ><img src="_img/accueil/menu12.png" alt="la_societe_cge" /></a><a href="la_societe_cge.php?id=13" class="menu13-2" ><img src="_img/accueil/menu13-2.png" alt="Mentions Légales" /></a><a href="la_societe_cge.php?id=13" class="menu13" ><img src="_img/accueil/menu13.png" alt="Mentions Légales" /></a>
+</nav></section>
+<!--footer-->
+<div class="bloc horizontalBottom bottom">
+<footer>
+	<div id="center">
+        <div class="left">
+            <a href="register.php">Créer un compte</a> - 
+            <a href="account.php">Mon compte</a> - 
+            <a href="panier.php">Panier</a>
+        </div>
+    	<img src="_img/icones/cge_blue.png" alt="Comptoir Générale d'Emballage" />
+        <a href="mentions.php">Mentions Légales</a> - 
+        <a href="cgv.php">CGV</a> - 
+        <a href="contact.php">Contact</a> 
+        <!--<a href="plan_du_site.php">plan du site</a>--> - 
+        2019    </div>
+</footer>
+</div>
+<!--fin du footer-->
+<div id="basket">
+		    
+	
+</div>
+
+
+</body>
+</html>

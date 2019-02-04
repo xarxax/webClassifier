@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="fullscreen_page sticky_menu">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name=”description” content=”Official website of artist Cris Ortega.” />
+<link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple_icons_57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple_icons_72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple_icons_114x114.png">
+<title>Spider's Soul | Cris Ortega Art </title>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header class="main_header">
+        <div class="header_wrapper">
+        	<div class="logo_sect">
+                <a href="index.html" class="logo"><img src="img/title.png" alt=""  class="logo_def"></a>
+                <div class="slogan">CRIS ORTEGA ART GALLERY</div>
+            </div>                       
+            <div class="header_rp">
+                <nav>
+                    <div class="menu-main-menu-container">
+                    	<ul id="menu-main-menu" class="menu">
+                        	<li class="current-menu-parent menu-item-has-children">
+                            	<a href="new.htm"><span>Home</span></a>                           
+                            </li>
+                        	<li class="menu-item-has-children">
+                            	<a href="http://cris-ortega.blogspot.com.es/" target="_blank"><span>News</span></a>                           
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="gallery.htm"><span>Gallery</span></a>   
+                                <ul class="sub-menu">
+                                	<li><a href="gallery.htm"><span>Recent works</span></a></li>
+                                    <li><a href="oldworks.htm"><span>Old works</span></a></li>
+                                </ul>                    
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="#"><span>Publications</span></a>
+                                <ul class="sub-menu">
+                                	<li><a href="books.htm"><span>My Books</span></a></li>
+                                    <li><a href="covers.htm"><span>Covers</span></a></li>
+                                    <li><a href="collaborations.htm"><span>Collaborations</span></a></li>
+                                    <li><a href="merchandising.htm"><span>Merchadising</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="merchandising.htm"><span>Shop</span></a>                                  
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="commissions.htm"><span>Commissions</span></a>                                 
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="about.htm"><span>About</span></a>
+                            </li>                                                  
+                        </ul>
+                    </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    
+    <div class="gallery_kenburns">
+        <canvas id="kenburns">
+            <p>Your browser doesn't support canvas!</p>
+        </canvas>
+    </div>    
+	<div class="content_bg"></div>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/modules.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript">
+		gallery_set = [
+			'../ilustraciones/image290b.jpg',
+			'../ilustraciones/image244b.jpg',
+			'../ilustraciones/image228b.jpg',
+			'../ilustraciones/image296b.jpg',
+			'../ilustraciones/image233b.jpg',
+			'../ilustraciones/image289b.jpg',
+			'../ilustraciones/image284b.jpg',
+			'../ilustraciones/image266b.jpg'
+		]
+		jQuery(document).ready(function(){
+			"use strict";
+			jQuery('html').addClass('without_border');
+			jQuery('#kenburns').attr('width', window_w);
+			jQuery('#kenburns').attr('height', window_h-header.height());
+			jQuery('#kenburns').kenburns({
+				images: gallery_set,
+				frames_per_second: 30,
+				display_time: 5000,
+				fade_time: 1000,
+				zoom: 1.2,
+				background_color:'#000000'
+			});
+			jQuery('#kenburns').css('top', header.height()+'px');
+		});
+	
+		function kenburns_resize() {
+			"use strict";
+			jQuery('.gallery_kenburns').append('<canvas id="kenburns"><p>Your browser does not support canvas!</p></canvas>');
+			jQuery('#kenburns').attr('width', window_w);
+			jQuery('#kenburns').attr('height', window_h-header.height());
+				jQuery('#kenburns').kenburns({
+					images: gallery_set,
+					frames_per_second: 30,
+					display_time: 5000,
+					fade_time: 1000,
+					zoom: 1.2,
+					background_color:'#000000'
+				});				
+				jQuery('#kenburns').css('top', header.height()+'px');
+		}
+		jQuery(window).resize(function(){ 
+			"use strict";
+			jQuery('#kenburns').remove();
+			setTimeout('kenburns_resize()',300);
+		});							
+	</script>
+</body>
+</html>

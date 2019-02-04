@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="dcterms.created" content="Wed, 29 Aug 2012 17:32:34 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Health Data Systems, Inc.</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="global.css" type="text/css">
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 1000,
+				pause: 500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+  </head>
+  <body>
+  <div id="wrap">
+  <div id="header">
+<!--<link rel="stylesheet" href="hdsi-banner.css" type="text/css">
+<script src="js/jquery.transform-0.8.0.min.js"></script>
+<script src="js/jquery.banner.js"></script>
+<script>
+	$(function(){
+        $('#hdsi_banner').banner({
+            	steps : [
+            		[
+            			//1 step:
+            			[{"to" : "2"}, {"effect": "zoomOutRotated-zoomInRotated"}],
+           				[{"to" : "2"}, {}]
+         			],
+       				[
+          				//2 step:
+            			[{"to" : "1"}, {}],
+            			[{"to" : "1"}, {"effect": "slideOutRight-slideInRight"}]
+            		],
+            		[
+            			//3 step:
+            			[{"to" : "2"}, {"effect": "zoomOutRotated-zoomInRotated"}],
+            			[{"to" : "2"}, {}]
+            		],
+            		[
+            			//4 step:
+            			[{"to" : "1"}, {}],
+            			[{"to" : "1"}, {"effect":"slideOutRight-slideInRight"}]
+            		]
+            	],
+            	total_steps	: 4,
+            	speed : 3000
+        });
+    });
+</script>-->
+
+<div id="logo">
+    <!--<div id="hdsi_banner" class="ca_banner ca_banner1">
+        <div class="ca_slide">
+            <div class="ca_zone ca_zone1">
+                <div class="ca_wrap ca_wrap1">
+                    <img src="images/hdsi_banner_logo.png" class="ca_shown" alt="HDSI"/>
+                    <img src="images/hdsi_banner_logo.png" alt="HDSI" style="display:none;"/>
+                </div>
+            </div>
+            <div class="ca_zone ca_zone2">
+                <div class="ca_wrap ca_wrap2">
+                    <img src="images/hdsi_banner_tagline.png" class="ca_shown" alt="35 yrs of Healthcare Solutions!"/>
+                    <img src="images/hdsi_banner_tagline.png" alt="35 yrs of Healthcare Solutions!" style="display:none;"/>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <a href="index.php"><img src="images/logo.png" alt="Health Data Systems, Inc."/></a>
+</div>    
+  
+  <!--end logo-->
+  
+  <div id="navigation">
+  
+  <ul>
+      <li><a href="about.php">About Us</a></li>
+      <li><a href="solutions.php">Solutions</a></li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="alliances.php">Alliances</a></li>
+      <li><a href="customerportal.php">Customer Portal</a></li>
+      <li><a href="contact.php">Contact Us</a></li>
+  </ul>
+  </div>
+  
+  <!--end navigation-->
+  
+  </div>
+  <!-- end header-->
+
+  <div id="content">
+ <div id="container">
+		<div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="services.php" title="Support and Service" target="_blank"><img src="images/hdsi_slide1.jpg" width="900" height="250" alt="Slide 1"></a>
+						<!--<div class="caption" style="bottom:0">
+							<p>Support and Service</p>
+						</div>-->
+					</div>
+					<div class="slide">
+						<a href="index.php" title="Redefining" target="_blank"><img src="images/hdsi_slide2.jpg" width="900" height="250" alt="Slide 2"></a>
+						<!--<div class="caption">
+							<p>Redefining HDSI</p>
+						</div>-->
+					</div>
+					<div class="slide">
+						<a href="solutions.php" title="Technology Solution" target="_blank"><img src="images/hdsi_slide3.jpg" width="900" height="250" alt="Slide 3"></a>
+						<!--<div class="caption">
+							<p>Technology Solution</p>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end image carousel -->
+  
+  
+
+  
+  
+  </div>
+  
+  <!-- end content-->
+  
+  <div style="WIDTH: 1000px " id="home-nav" class="layout-3col"><div class="col-1-home"><div class="text" style="background:url(images/services.jpg) repeat-y"><h2>Services</h2>
+
+<p>HDSI consulting services, training, and support, focus on the operational and business requirements of our industry while spotlighting productivity & effective return on investment.</p>
+
+</div>
+
+<!--/.text-->
+<p class="info"><a href="services.php">Learn More</a>
+<!--/.col-1-contact--></p>
+  </div>
+  <div class="col-2-home"><div class="text" style="background:url(images/technology.jpg) repeat-y"><h2>Solutions</h2>
+
+<p>HDSI works to exceed our client’s needs with a wide range of integrated solutions. Offering technology to 
+addressing the expanding clinical & business requirements while integrating employees, residents & their family and, care givers into the communications.</p>
+
+</div>
+
+<!--/.text--><p class="info"><a href="solutions.php">Learn More</a></p>
+
+</div>
+
+<!--/.col-2-contact-->
+
+<div class="col-3-home"><div class="text" style="background:url(images/alliances.jpg) repeat-y"><h2>Alliances</h2>
+
+<p>HDSI integrates a robust offering, to provide the right solutions & tools for the client
+growing needs.</p>
+
+</div>
+
+<!--/.text-->
+<p class="info"><a href="alliances.php">Learn More</a></p>
+
+</div>
+
+<!--/.col-3-contact-->
+
+<!--<div class="col-4-contact home"><div class="text" style="background:url(images/connect.jpg) no-repeat"><h2>Connect with us</h2>
+
+<p><a href="https://www.facebook.com/pages/Health-Data-Systems-Inc/237037489736205?ref=ts" target="_blank"><img src="images/facebook_logo.png" alt="Facebook" /></a> &nbsp;
+<a href="http://www.linkedin.com/company/2666561?trk=tyah" target="_blank"><img src="images/linkedin_logo.png" alt="LinkedIn" /></a>
+</p>
+
+
+</div>
+-->
+</div>
+</div>
+
+  <div id="footer">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="29%">
+            </td>
+            <td width="42%">
+                <p>1501 E. Woodfield Rd. Suite 113 E, Schaumburg, Illinois 60173</p>
+                <p><a href="mailto:sales@healthdatasystems.com">sales@healthdatasystems.com</a></p>
+                <p id="copy-right"></p>
+            </td>
+            <td width="29%">
+                <a href="https://www.facebook.com/pages/Health-Data-Systems-Inc/237037489736205?ref=ts" target="_blank"><img alt="Facebook" src="images/facebook_logo_small.png" /></a>
+                <a href="http://www.linkedin.com/company/2666561?trk=tyah" target="_blank"><img alt="Linkedin" src="images/linkedin_logo_small.png" /></a>
+                <a href="https://twitter.com/hdsinc" target="_blank"><img alt="Twitter" src="images/twitter_logo.png" /></a>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="js/common.js"></script>  
+  
+  </body>
+</html>

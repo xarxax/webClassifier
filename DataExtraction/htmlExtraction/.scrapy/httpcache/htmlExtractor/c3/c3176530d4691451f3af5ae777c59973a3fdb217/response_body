@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aceites Especiales - Naturaloils</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.chocoslider.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
+<script src="js/msdropdown/jquery.dd.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/skin2.css" />
+<link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" />
+
+<style>
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 'Asap', sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	background-color: #FFFFFF;
+}
+
+#container {
+	width: 950px;
+	margin: 0 auto;
+}
+
+ul{
+	list-style:none;
+}
+.menu{
+	float: left;
+}
+.menu ul{
+	height:52px;
+}
+.menu ul li{
+	position:relative;
+	width:auto;
+	float:left;/*Esta vez le dimos un float left... para que no de problemas la posision relativa*/
+}
+.menu ul li a{
+	float:left;
+	height:52px;
+	text-decoration: none;
+	color:#7b7a68;
+}
+.menu ul li a:hover{
+	background:url(imagenes/bgmenu.png);
+	color:#fff;
+}
+
+#menu{height: 34px; width: 96px; float: left; margin-left: -40px; margin-bottom: 30px;}
+#menu ul{list-style-type:none;}
+#menu ul li{float: left; position: relative;}
+#menu ul li:hover{color:#fff;}
+#menu ul li a{display: block; text-decoration:none; color:#7b7a68;}
+#menu ul li a:hover{background:url(imagenes/bgmenu.png); color:#fff; width: 100px;}
+#menu ul li#sub a:hover{background:#83b817; color:#fff; width: 100px;}
+#menu ul li ul li{float: none; position: relative;}
+#menu ul li ul{position: absolute; top:52px; left:0; display: none; background:#83b817; width:100px;}
+#menu ul li:hover > ul{display: block;}
+#menu ul li ul li a{white-space: nowrap; line-height:25px;}
+#menu ul li ul li ul{position: absolute; top:0; left:100px; display: none; background:#83b817; width:100px;}
+
+.fixer{
+	clear: both;
+	height: 0px;
+}
+</style>
+
+    <!--[if IE 7]>
+     <link rel="stylesheet" type="text/css" media="screen" href="ie7.css">
+    <![endif]-->
+
+    <script type="text/javascript">
+    $(window).load(function() {
+    $('#slider').chocoslider({
+		auto:true,
+		effect:'fade',
+		sliderDelay:3000,
+		transparencytitle:0.8,
+		bChange: function(){},
+		aChange: function(){},
+		chocoEnd: function(){},
+		controlNavigation:true
+		})
+	});
+    </script>
+</head>
+
+<body>
+<div id="container">
+<div id="bg" style="position: absolute; z-index: 10;">
+        <div style="position: absolute; right: 0px; top: 10px;">
+            <div style="float: left;">
+            <img src="imagenes/logo.png" width="215" height="141" />
+            </div>
+            <div style="float: left; margin-left: -50px;">
+            <select name="countries" id="countries" style="width:100px;" onchange="if (this.value) window.location.href=this.value">
+            	<option value='index.html' data-image="../imagenes/msdropdown/icons/blank.gif" data-imagecss="flag es" data-title="Spain" selected>Español</option>
+      			<option value='eng/index.html' data-image="../images/msdropdown/icons/blank.gif" data-imagecss="flag gb" data-title="Great Britain (UK)">English</option>
+            </select>
+            </div>
+      </div>
+        <div style="position: absolute; top: 154px; left: 157px; font-size: 15px; color: #7b7a68; font-weight: 500;">
+
+  <div class="menu">
+            <ul>
+              <li><a style="padding-top: 18px; height: 34px; width: 95px; padding-left:34px;" href="empresa.html">Empresa</a></li>
+              <li><a style="padding-top: 18px; height: 34px; width: 105px; padding-left:22px;" href="instalaciones.html">Instalaciones</a></li>
+              <li><a style="padding-top: 18px; height: 34px; width: 96px; padding-left:33px;" href="personas.html">Personas</a></li>
+              <li><a style="padding-top: 18px; height: 34px; width: 96px; padding-left:32px;" href="mercados.html">Mercados</a></li>
+            </ul>
+        </div>
+    
+		<div id="menu">
+			<ul>
+<li><a style="padding-top: 18px; padding-left:32px; height: 34px; width: 96px;" href="#">Productos</a>
+							<ul style="font-size: 13px;">
+				   <li id="sub"><a style="margin-left: -30px;" href="aceites-alimentacion.html">Aceites Comestibles</a>
+									<ul style="width: 60px;">
+										
+										
+									</ul>
+								</li>
+				  <li id="sub"><a style="margin-left: -30px;" href="aceites-cosmetica.html">Aceites Cosmética</a>
+									<ul style="width: 60px;">
+										
+									</ul>
+								</li>
+							  <li id="sub"><a style="margin-left: -30px;" href="aceites-funcionales.html">Aceites Funcionales</a></li>
+	</ul>
+						</li>
+ 			</ul>
+		</div>
+ 
+  <div class="menu" style="margin-left: 32px;">
+            <ul>
+              <li style="width: 48px;"><a style="width: 86px; padding-top: 18px; height: 34px; padding-left:26px;" href="noticias.php">Noticias</a></li>
+            </ul>
+        </div>
+    
+</div>
+        <img src="imagenes/bg.png" width="950" height="682" />
+        <div style="position: inherit; z-index: -1; top: 221px;">
+            <div id="slider" style="overflow: hidden;">
+                <a href="#"><img src="imagenes/slide1.png" alt="" title=""></a>
+                <a href="#"><img src="imagenes/slide2.png" alt="" title=""></a>
+                <a href="#"><img src="imagenes/slide3.png" alt="" title=""></a>
+            </div>
+        </div>
+    
+        <div id="bottom">
+            <div style="float: left; padding-top: 64px; padding-bottom: 20px;">
+            <a href="contactenos.php"><img src="imagenes/btncontacto.jpg" width="219" height="37" border="0" /></a>
+            </div>
+            <div style="float: right; padding-top: 15px; padding-bottom: 20px; padding-right: 30px;">
+            <img src="imagenes/logodown.png" width="217" height="86" />
+            </div>
+        <div class="fixer"></div>
+          <div style="float: left; padding-right: 30px; padding-top: 10px; border-top: 1px solid #ccc; width: 920px; text-align: right;">
+            <img src="imagenes/logos-empresas.jpg" width="581" height="60" /></div>
+    </div>
+    
+        <div class="fixer"></div>
+    
+        <div id="footer">
+          <div style="margin-top: 10px; border-top: 1px solid #ccc; border-bottom: 0px solid #ccc; padding-top: 15px; padding-bottom: 15px; text-align: right; margin-bottom: 20px; padding-right: 15px;">
+            Avda. Esquina Blanca 1117, Maipú, Santiago - Chile - Tel: (56 2) 2676 3300, (56 2) 2676 3346, Fax: (56 2) 2676 3333
+            <div style="padding-top: 10px; color: #7b7a68;">HOME  |  EMPRESA  |  INSTALACIONES  |  PERSONAS  |  MERCADO  |  CONTACTO</div>
+            </div>
+        </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+$(document).ready(function(e) {		
+	//no use
+	try {
+		var pages = $("#pages").msDropdown({on:{change:function(data, ui) {
+												var val = data.value;
+												if(val!="")
+													window.location = val;
+											}}}).data("dd");
+
+		var pagename = document.location.pathname.toString();
+		pagename = pagename.split("/");
+		pages.setIndexByValue(pagename[pagename.length-1]);
+		$("#ver").html(msBeautify.version.msDropdown);
+	} catch(e) {
+		//console.log(e);	
+	}
+	
+	$("#ver").html(msBeautify.version.msDropdown);
+		
+	//convert
+	$("select").msDropdown({roundedBorder:false});
+	createByJson();
+	$("#tech").data("dd");
+});
+function showValue(h) {
+	console.log(h.name, h.value);
+}
+$("#tech").change(function() {
+	console.log("by jquery: ", this.value);
+})
+//
+</script>

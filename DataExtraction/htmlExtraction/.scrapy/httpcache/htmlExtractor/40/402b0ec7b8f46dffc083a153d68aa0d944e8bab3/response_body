@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Eastern Point Consulting Group, Inc.</title>
+<meta name="keywords" content="Eastern Point Consulting Group,management consultants,training law firms,management training,woman-owned consulting firm,Katie Herzog,Katherine A. Herzog,law firms and diversity,corporations and training,government agencies and training,not for profit organizations and training,diversity,diverse trainers,mentoring programs,mentor training,Diversity workshop,Diversity speakers,Best practices mentoring,attrition analysis,retention strategies,human resource strategies,executive coaching,leadership training,professional development,law firm retreats,team building,assignment systems,best practices diversity,change management,recruiting law firms,360 degree feedback,upward evaluations,Myers-Briggs,Center for Creative Leadership,Blessing-White,Forum Corporation,Zenger-Miller,DDI,NTL,Cultural assessment,Diversity assessment,Management consultation,Diversity consultation,Diversity training,Diversity leadership,Diversity management,Mentor programs,Law firm consultant,Diversity consultants,Leadership development,MBTI,CCL,Associate retention,Race and training,Gender and training,Race workshop,Gender workshop,Inclusion,Law diversity,Legal diversity,Diversity and inclusion,Diversity speech,Diversity talks,Diversity programs">
+
+<link href="styles.css" rel="stylesheet" media="screen">
+<link href="print.css" type="text/css" rel="stylesheet" media="print">
+
+<!-- this is the code for the button roll-overs in the center of the home page -->
+<script language="JavaScript">
+<!-- START OF home page rollovers SCRIPT -->  
+if (document.images){
+     assignmentOver = new Image();
+     assignmentOver.src="http://www.eastpt.com/images/home-assignment-over.jpg";
+     attritionOver = new Image();
+     attritionOver.src="http://www.eastpt.com/images/home-attrition-over.jpg";
+     diversityOver = new Image();
+     diversityOver.src="http://www.eastpt.com/images/home-diversity-over.jpg";
+     executiveOver = new Image();
+     executiveOver.src="http://www.eastpt.com/images/home-executive-over.jpg";
+     humanOver = new Image();
+     humanOver.src="http://www.eastpt.com/images/home-human-over.jpg";
+     lawOver = new Image();
+     lawOver.src="http://www.eastpt.com/images/home-law-over.jpg";
+     leadershipOver = new Image();
+     leadershipOver.src="http://www.eastpt.com/images/home-leadership-over.jpg";
+	 mentoringOver = new Image();
+     mentoringOver.src="http://www.eastpt.com/images/home-mentoring-over.jpg";
+	 teamOver = new Image();
+     teamOver.src="http://www.eastpt.com/images/home-team-over.jpg";
+	 
+	 
+	 assignmentNorm = new Image();
+     assignmentNorm.src="http://www.eastpt.com/images/home-assignment.jpg";
+     attritionNorm = new Image();
+     attritionNorm.src="http://www.eastpt.com/images/home-attrition.jpg";
+     diversityNorm = new Image();
+     diversityNorm.src="http://www.eastpt.com/images/home-diversity.jpg";
+     executiveNorm = new Image();
+     executiveNorm.src="http://www.eastpt.com/images/home-executive.jpg";
+     humanNorm = new Image();
+     humanNorm.src="http://www.eastpt.com/images/home-human.jpg";
+     lawNorm = new Image();
+     lawNorm.src="http://www.eastpt.com/images/home-law.jpg";
+     leadershipNorm = new Image();
+     leadershipNorm.src="http://www.eastpt.com/images/home-leadership.jpg";
+	 mentoringNorm = new Image();
+     mentoringNorm.src="http://www.eastpt.com/images/home-mentoring.jpg";
+	 teamNorm = new Image();
+     teamNorm.src="http://www.eastpt.com/images/home-team.jpg";
+	 
+
+   }
+
+function epOver(imgName){
+   if (document.images){
+      imgOver=eval(imgName + "Over.src");
+      document[imgName].src= imgOver;
+    }
+ }
+
+function epNorm(imgName){
+   if (document.images){
+      imgNorm=eval(imgName + "Norm.src");
+      document[imgName].src= imgNorm;
+    }
+ }
+<!-- END OF SCRIPT -->
+</SCRIPT> <!-- this points to the code for the home page button rollovers -->
+
+<!-- this is the code for the blue drop downs to work right on all pages -->
+<script language="javascript">
+<!-- START OF home page rollovers SCRIPT -->
+
+//Chrome Drop Down Menu v2.01- Author: Dynamic Drive (http://www.dynamicdrive.com)
+//Last updated: November 14th 06- added iframe shim technique
+
+var cssdropdown={
+	disappeardelay: 250, //set delay in miliseconds before menu disappears onmouseout
+	disablemenuclick: false, //when user clicks on a menu item with a drop down menu, disable menu item's link?
+	enableswipe: 1, //enable swipe effect? 1 for yes, 0 for no
+	enableiframeshim: 1, //enable "iframe shim" technique to get drop down menus to correctly appear on top of controls such as form objects in IE5.5/IE6? 1 for yes, 0 for no
+
+	//No need to edit beyond here////////////////////////
+	dropmenuobj: null, ie: document.all, firefox: document.getElementById&&!document.all, swipetimer: undefined, bottomclip:0,
+
+	getposOffset:function(what, offsettype){
+		var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+		var parentEl=what.offsetParent;
+		while (parentEl!=null){
+			totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+			parentEl=parentEl.offsetParent;
+		}
+		return totaloffset;
+	},
+
+	swipeeffect:function(){
+		if (this.bottomclip<parseInt(this.dropmenuobj.offsetHeight)){
+			this.bottomclip+=10+(this.bottomclip/10) //unclip drop down menu visibility gradually
+			this.dropmenuobj.style.clip="rect(0 auto "+this.bottomclip+"px 0)"
+		}
+		else
+		return
+		this.swipetimer=setTimeout("cssdropdown.swipeeffect()", 10)
+	},
+
+	showhide:function(obj, e){
+		if (this.ie || this.firefox)
+		this.dropmenuobj.style.left=this.dropmenuobj.style.top="-500px"
+		if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover"){
+			if (this.enableswipe==1){
+				if (typeof this.swipetimer!="undefined")
+				clearTimeout(this.swipetimer)
+				obj.clip="rect(0 auto 0 0)" //hide menu via clipping
+				this.bottomclip=0
+				this.swipeeffect()
+			}
+			obj.visibility="visible"
+		}
+		else if (e.type=="click")
+		obj.visibility="hidden"
+	},
+
+	iecompattest:function(){
+		return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+	},
+
+	clearbrowseredge:function(obj, whichedge){
+		var edgeoffset=0
+		if (whichedge=="rightedge"){
+			var windowedge=this.ie && !window.opera? this.iecompattest().scrollLeft+this.iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+			this.dropmenuobj.contentmeasure=this.dropmenuobj.offsetWidth
+			if (windowedge-this.dropmenuobj.x < this.dropmenuobj.contentmeasure)  //move menu to the left?
+			edgeoffset=this.dropmenuobj.contentmeasure-obj.offsetWidth
+		}
+		else{
+			var topedge=this.ie && !window.opera? this.iecompattest().scrollTop : window.pageYOffset
+			var windowedge=this.ie && !window.opera? this.iecompattest().scrollTop+this.iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+			this.dropmenuobj.contentmeasure=this.dropmenuobj.offsetHeight
+			if (windowedge-this.dropmenuobj.y < this.dropmenuobj.contentmeasure){ //move up?
+				edgeoffset=this.dropmenuobj.contentmeasure+obj.offsetHeight
+				if ((this.dropmenuobj.y-topedge)<this.dropmenuobj.contentmeasure) //up no good either?
+				edgeoffset=this.dropmenuobj.y+obj.offsetHeight-topedge
+			}
+		}
+		return edgeoffset
+	},
+
+	dropit:function(obj, e, dropmenuID){
+		if (this.dropmenuobj!=null) //hide previous menu
+		this.dropmenuobj.style.visibility="hidden" //hide menu
+		this.clearhidemenu()
+		if (this.ie||this.firefox){
+			obj.onmouseout=function(){cssdropdown.delayhidemenu()}
+			obj.onclick=function(){return !cssdropdown.disablemenuclick} //disable main menu item link onclick?
+			this.dropmenuobj=document.getElementById(dropmenuID)
+			this.dropmenuobj.onmouseover=function(){cssdropdown.clearhidemenu()}
+			this.dropmenuobj.onmouseout=function(e){cssdropdown.dynamichide(e)}
+			this.dropmenuobj.onclick=function(){cssdropdown.delayhidemenu()}
+			this.showhide(this.dropmenuobj.style, e)
+			this.dropmenuobj.x=this.getposOffset(obj, "left")
+			this.dropmenuobj.y=this.getposOffset(obj, "top")
+			this.dropmenuobj.style.left=this.dropmenuobj.x-this.clearbrowseredge(obj, "rightedge")+"px"
+			this.dropmenuobj.style.top=this.dropmenuobj.y-this.clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+1+"px"
+			this.positionshim() //call iframe shim function
+		}
+	},
+
+	positionshim:function(){ //display iframe shim function
+		if (this.enableiframeshim && typeof this.shimobject!="undefined"){
+			if (this.dropmenuobj.style.visibility=="visible"){
+				this.shimobject.style.width=this.dropmenuobj.offsetWidth+"px"
+				this.shimobject.style.height=this.dropmenuobj.offsetHeight+"px"
+				this.shimobject.style.left=this.dropmenuobj.style.left
+				this.shimobject.style.top=this.dropmenuobj.style.top
+			}
+			this.shimobject.style.display=(this.dropmenuobj.style.visibility=="visible")? "block" : "none"
+		}
+	},
+
+	hideshim:function(){
+		if (this.enableiframeshim && typeof this.shimobject!="undefined")
+		this.shimobject.style.display='none'
+	},
+
+	contains_firefox:function(a, b) {
+		while (b.parentNode)
+		if ((b = b.parentNode) == a)
+		return true;
+		return false;
+	},
+
+	dynamichide:function(e){
+		var evtobj=window.event? window.event : e
+		if (this.ie&&!this.dropmenuobj.contains(evtobj.toElement))
+		this.delayhidemenu()
+		else if (this.firefox&&e.currentTarget!= evtobj.relatedTarget&& !this.contains_firefox(evtobj.currentTarget, evtobj.relatedTarget))
+		this.delayhidemenu()
+	},
+
+	delayhidemenu:function(){
+		this.delayhide=setTimeout("cssdropdown.dropmenuobj.style.visibility='hidden'; cssdropdown.hideshim()",this.disappeardelay) //hide menu
+	},
+
+	clearhidemenu:function(){
+		if (this.delayhide!="undefined")
+		clearTimeout(this.delayhide)
+	},
+
+	startchrome:function(){
+		for (var ids=0; ids<arguments.length; ids++){
+			var menuitems=document.getElementById(arguments[ids]).getElementsByTagName("a")
+			for (var i=0; i<menuitems.length; i++){
+				if (menuitems[i].getAttribute("rel")){
+					var relvalue=menuitems[i].getAttribute("rel")
+					menuitems[i].onmouseover=function(e){
+						var event=typeof e!="undefined"? e : window.event
+						cssdropdown.dropit(this,event,this.getAttribute("rel"))
+					}
+				}
+			}
+		}
+		if (window.createPopup && !window.XmlHttpRequest){ //if IE5.5 to IE6, create iframe for iframe shim technique
+			document.write('<IFRAME id="iframeshim"  src="" style="display: none; left: 0; top: 0; z-index: 90; position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)" frameBorder="0" scrolling="no"></IFRAME>')
+			this.shimobject=document.getElementById("iframeshim") //reference iframe object
+		}
+	}
+
+}
+
+<!-- END OF SCRIPT -->
+</script> <!-- this points to the code for the top navigation -->
+
+</head>
+
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<div align="center">
+<!-- this is the code for the top image and the blue drop downs on the home page -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td align="center" class="topColor"><a href="index.shtml" title="Return to home page"><img src="images/header-image-home.jpg" width="1000" height="236" border="0" alt="Eastern Point Consulting Group, Inc." /></a></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF" height="4"><img src="images/spacer.gif" width="100" height="4" border="0" alt="" /></td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#002d8d"><table width="930" border="0" cellspacing="0" cellpadding="0" align="center">
+  		<tr>
+			 	<td height="30"><div id="dropdownmenu"><a href="http://www.eastpt.com/lawfirms/" rel="dropmenu1"><img src="images/topnav01.gif" width="205" height="30" border="0" alt="law firms" /></a><a href="http://www.eastpt.com/corporations/" rel="dropmenu2"><img src="images/topnav02.gif" width="180" height="30" border="0" alt="corporations" /></a><a href="http://www.eastpt.com/nfpgov/" rel="dropmenu3"><img src="images/topnav03.gif" width="203" height="30" border="0" alt="non-profit/government" /></a><a href="http://www.eastpt.com/about/why.shtml" rel="dropmenu4"><img src="images/topnav04.gif" width="203" height="30" border="0" alt="about eastern point" /></a><a href="http://www.eastpt.com/about/contact.shtml"><img src="images/topnav05.gif" width="130" height="30" border="0" alt="contact us" /></a></div>
+<!--drop down menu 1-->                                                   
+<div id="dropmenu1" class="dropmenudiv" style="width: 205px;">
+<a href="http://www.eastpt.com/lawfirms/index.shtml">Services for Law Firms</a>
+<a href="http://www.eastpt.com/lawfirms/diversity.shtml">Diversity Consultation and Training</a>
+<a href="http://www.eastpt.com/lawfirms/mentoring.shtml">Mentoring Consultation and Training</a>
+<a href="http://www.eastpt.com/lawfirms/retention.shtml">Attrition Analysis and Retention Strategies</a>
+<a href="http://www.eastpt.com/lawfirms/MBTI.shtml">Myers Briggs Type Indicator (MBTI)</a>
+<a href="http://www.eastpt.com/lawfirms/coaching.shtml">Executive Coaching</a>
+<a href="http://www.eastpt.com/lawfirms/profdev.shtml">Professional Development for Attorneys</a>
+<a href="http://www.eastpt.com/lawfirms/competencies.shtml">Competency Based Training</a>
+<a href="http://www.eastpt.com/lawfirms/retreats.shtml">Law Firm Retreats</a>
+<a href="http://www.eastpt.com/lawfirms/assignment.shtml">Assignment Systems: Best Practices</a>
+<a href="http://www.eastpt.com/lawfirms/360.shtml">360&#176; Feedback/Upward Evaluations</a>
+<a href="http://www.eastpt.com/lawfirms/harassmentprevention.shtml">Harassment Prevention</a>
+<a href="http://www.eastpt.com/lawfirms/consultations.shtml">Examples of Recent Consultations</a>
+</div>
+<!--drop down menu 2-->                                                
+<div id="dropmenu2" class="dropmenudiv" style="width: 180px;">
+<a href="http://www.eastpt.com/corporations/index.shtml">Services for Corporations</a>
+<a href="http://www.eastpt.com/corporations/diversity.shtml">Diversity Consultation and Training</a>
+<a href="http://www.eastpt.com/corporations/mentoring.shtml">Mentoring Consultation and Training</a>
+<a href="http://www.eastpt.com/corporations/retention.shtml">Attrition Analysis and Retention Strategies</a>
+<a href="http://www.eastpt.com/corporations/hr.shtml">Human Resource Strategies</a>
+<a href="http://www.eastpt.com/corporations/coaching.shtml">Executive Coaching</a>
+<a href="http://www.eastpt.com/corporations/leadership.shtml">Leadership/Professional Development</a>
+<a href="http://www.eastpt.com/corporations/teambuilding.shtml">Team Building</a>
+<a href="http://www.eastpt.com/corporations/360.shtml">360&#176; Feedback/Upward Evaluations</a>
+<a href="http://www.eastpt.com/corporations/MBTI.shtml">Myers Briggs Type Indicator (MBTI)</a>
+<a href="http://www.eastpt.com/corporations/harassmentprevention.shtml">Harassment Prevention</a>
+<a href="http://www.eastpt.com/corporations/consultations.shtml">Examples of Recent Consultations</a>
+</div>
+<!--drop down menu 3-->                                                   
+<div id="dropmenu3" class="dropmenudiv" style="width: 203px;">
+<a href="http://www.eastpt.com/nfpgov/index.shtml">Services for Not for Profit Organizations and Government Agencies</a>
+<a href="http://www.eastpt.com/nfpgov/diversity.shtml">Diversity Consultation and Training</a>
+<a href="http://www.eastpt.com/nfpgov/mentoring.shtml">Mentoring Consultation and Training</a>
+<a href="http://www.eastpt.com/nfpgov/retention.shtml">Attrition Analysis and Retention Strategies</a>
+<a href="http://www.eastpt.com/nfpgov/hr.shtml">Human Resource Strategies</a>
+<a href="http://www.eastpt.com/nfpgov/coaching.shtml">Executive Coaching</a>
+<a href="http://www.eastpt.com/nfpgov/leadership.shtml">Leadership/Professional Development</a>
+<a href="http://www.eastpt.com/nfpgov/teambuilding.shtml">Team Building</a>
+<a href="http://www.eastpt.com/nfpgov/360.shtml">360&#176; Feedback/Upward Evaluations</a>
+<a href="http://www.eastpt.com/nfpgov/MBTI.shtml">Myers Briggs Type Indicator (MBTI)</a>
+<a href="http://www.eastpt.com/nfpgov/harassmentprevention.shtml">Harassment Prevention</a>
+<a href="http://www.eastpt.com/nfpgov/consultations.shtml">Examples of Recent Consultations</a>
+</div>
+<!--drop down menu 4-->                                                   
+<div id="dropmenu4" class="dropmenudiv" style="width: 203px;">
+<a href="http://www.eastpt.com/about/why.shtml">Why Choose Eastern Point?</a>
+<a href="http://www.eastpt.com/about/katieherzog.shtml">A Message from Katie Herzog, President</a>
+<a href="http://www.eastpt.com/about/team.shtml">The Eastern Point Team</a>
+<a href="http://www.eastpt.com/about/whatsnew.shtml">What's New</a>
+<a href="http://www.eastpt.com/about/clientlist.shtml">Client List</a>
+<a href="http://www.eastpt.com/about/contact.shtml">Contact Us</a>
+</div>
+<script type="text/javascript">cssdropdown.startchrome("dropdownmenu")</script></td>
+			 </tr></table>
+		</td>
+	</tr>
+</table> <!-- this inserts the top navigation and top image -->
+<!-- this is the start of the main content section for the page -->
+<table style="clear:left" width="900" cellpadding="10" cellspacing="0" border="0">
+	<tr>
+		<td class="copy"><h1>Creative Solutions, Sustainable Change</h1>
+
+<p>Eastern Point Consulting Group, Inc. is one of the nation's premier management consulting firms committed to improving an organization's culture and work environment.</p>
+
+<p>Eastern Point's areas of expertise include diversity and inclusion, mentoring, executive coaching, harassment prevention, team building, 360's and upward evaluations, leadership and professional development.  Eastern Point provides each client with customized and sustainable recommendations designed to achieve their goals and objectives.</p>
+
+<p>Eastern Point's expert consultation strengthens the work enviroment, increases morale, and helps clients achieve organizational power which stems from genuine diversity and inclusion.  Eastern Point has provided successful consultation and training to hundreds of clients including law firms, corporations, universities, state agencies and not for profit organizations.</p>
+
+<p>Eastern Point's resources include diversity consultants, diversity trainers, human resource specialists, and senior executive coaches.  A diverse firm, Eastern Point offers best practices in each specialty area.</p>
+<div align="center">
+<a href="http://www.eastpt.com/diversitymenu.shtml" onMouseOver="epOver('diversity');" onMouseOut="epNorm('diversity');"><img src="images/home-diversity.jpg" width="364" height="36" border="0" alt="Diversity Consultation and Training" name="diversity" /></a>
+<a href="http://www.eastpt.com/mentoringmenu.shtml" onMouseOver="epOver('mentoring');" onMouseOut="epNorm('mentoring');"><img src="images/home-mentoring.jpg" width="364" height="36" border="0" alt="Mentoring Consultation and Training" name="mentoring" /></a>
+<br />
+<a href="http://www.eastpt.com/coachingmenu.shtml" onMouseOver="epOver('executive');" onMouseOut="epNorm('executive');"><img src="images/home-executive.jpg" width="364" height="36" border="0" alt="Executive Coaching" name="executive" /></a>
+<a href="http://www.eastpt.com/harassmentpreventionmenu.shtml" onMouseOver="epOver('harassment');" onMouseOut="epNorm('harassment');"><img src="images/home-harassment.jpg" width="364" height="36" border="0" alt="Harassment Prevention" name="harassment" /></a>
+<br />
+<a href="http://www.eastpt.com/teambuildingmenu.shtml" onMouseOver="epOver('team');" onMouseOut="epNorm('team');"><img src="images/home-team.jpg" width="364" height="36" border="0" alt="Team Building" name="team" /></a>
+<a href="http://www.eastpt.com/leadershipmenu.shtml" onMouseOver="epOver('leadership');" onMouseOut="epNorm('leadership');"><img src="images/home-leadership.jpg" width="364" height="36" border="0" alt="Leadership and Professional Development" name="leadership" /></a>
+<br />
+<a href="http://www.eastpt.com/hrmenu.shtml" onMouseOver="epOver('human');" onMouseOut="epNorm('human');"><img src="images/home-human.jpg" width="364" height="36" border="0" alt="Human Resource Strategies" name="human" /></a>
+<a href="http://www.eastpt.com/360menu.shtml" onMouseOver="epOver('360');" onMouseOut="epNorm('360');"><img src="images/home-360.jpg" width="364" height="36" border="0" alt="360's and Upward Evaluations" name="360" /></a>
+<br />
+<a href="http://www.eastpt.com/retentionmenu.shtml" onMouseOver="epOver('attrition');" onMouseOut="epNorm('attrition');"><img src="images/home-attrition.jpg" width="364" height="36" border="0" alt="Attrition Analysis and Retention Strategies" name="attrition" /></a>
+<a href="http://www.eastpt.com/lawfirms/assignment.shtml" onMouseOver="epOver('assignment');" onMouseOut="epNorm('assignment');"><img src="images/home-assignment.jpg" width="364" height="36" border="0" alt="Assignment Systems: Best Practices" name="assignment" /></a>
+</div>
+
+<p>Eastern Point's emphasis on customer service and excellence is demonstrated by our long standing client relations and national reputation.</p></td>
+	</tr>
+</table>
+<!-- this is the end of the main content section -->
+
+<!-- this is the code for the bottom blue bar on all pages -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td align="center" class="footer1" height="30">To find out more about Eastern Point, please visit our <a class="footer1" href="http://www.eastpt.com/about/contact.shtml">contact form</a>, email <script language=javascript>
+<!--
+var link = "Info @ Eastern Point"; /* if you want to change the displayed text, change what's in the quotes of this line */
+var tag1 = "mail";
+var tag2 = "to:";
+var email1 = "info";
+var email2 = "eastpt";
+var email3 = ".com";
+document.write("<a class='footer1' h" + "ref=" + tag1 + tag2 + email1 + "@" + email2 + email3 + ">" + link + "</a>")
+//-->
+</script>, or call (617) 965-4141.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF" height="4"><img src="http://www.eastpt.com/images/spacer.gif" width="100" height="4" border="0" alt="" /></td>
+	</tr>
+</table> <!-- this points to the bottom blue bar with contact info -->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">	
+	<tr>
+		<td align="center" class="footer2" height="20">Web site design by <a class="footer2" href="http://www.gustinadvertising.net">Gustin Advertising</a>.</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

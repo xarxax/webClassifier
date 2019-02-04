@@ -1,0 +1,575 @@
+<!DOCTYPE html><html>
+<head>
+<SCRIPT TYPE="text/javascript" LANGUAGE="javascript">
+ function SelectCountry(Country,Form) {
+document.getElementById('selectStateUS').style.display = 'none'
+if (Country=='US')
+   {
+   document.getElementById('lblState').innerHTML= 'State*'
+   }
+document.getElementById('selectStateCA').style.display = 'none'
+if (Country=='CA')
+   {
+   document.getElementById('lblState').innerHTML= 'Province*'
+   }
+document.getElementById('selectStateMEX').style.display = 'none'
+if (Country=='MEX')
+   {
+   document.getElementById('lblState').innerHTML= 'State*'
+   }
+document.getElementById('selectState' + Country).style.display = ''
+document.getElementById('Country').value = Country
+document.getElementById('State').value = document.getElementById('selectState' + Country).value
+}
+   </script>
+<!--Beginning of Show Category--><!--Beginning of Display Frame--><meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title></title>
+<meta name='description' content='' /> 
+<meta name='keywords' content='' /> <meta name='title' content='' /> 
+<link rel='stylesheet' href='Main.css' type='text/css'><script type='text/vbscript' src='CB_VBScript.vbs'></script><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='Scripts/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));}</script><script type="text/javascript" src="Scripts\jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="Scripts\jquery-ui.js"></script>
+<link rel='stylesheet' href="jquery-ui.css" type='text/css'>
+<script src='https://www.google.com/recaptcha/api.js'></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script type="text/javascript" src="Scripts/CB_JavascriptStatic.js"></script><script type="text/javascript" src="Scripts/CB_Javascript.js"></script><script type='text/javascript'>
+$(document).ready(function(){
+$('#login-trigger').click(function(){
+$(this).next('#login-content').slideToggle();
+$(this).toggleClass('active');
+if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+else $(this).find('span').html('&#x25BC;')
+})
+})
+   </script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script type="text/javascript">
+        $.widget("custom.catcomplete", $.ui.autocomplete, {
+            _create: function () {
+                this._super();
+                this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+            },
+            _renderMenu: function (ul, items) {
+                var that = this;
+                var currentGroup = "";				  
+                $.each(items, function (index, item) {
+                    var li;
+                    if (item.group != currentGroup) {
+                        ul.append("<li class='ui-autocomplete-category'>" + item.group + "</li>");
+                        currentGroup = item.group;
+                    }
+
+                    li = that._renderItemData(ul, item);
+                    if (item.group) {
+                        li.attr("aria-label", item.group + " : " + item.primary);
+                    }
+                });
+            },
+            _renderItem: function (ul, item) {
+				var $li = $('<li>');				
+							var $div = $('<div class="searchsug-item-wrapper">');
+							var $div2 = $('<div class="searchsug-textwrapper">');
+
+				if (item.image) {
+					var $img = $('<img class="searchsug-img">');
+
+					$img.attr({
+						src: item.image,
+						alt: item.primary,
+						style: 'max-height:75px;'
+					});
+
+					$div.append($img);
+				}
+														
+							$div2.append("<span class=\"searchsug-primarytext\">" + item.primary + "</span>")
+				
+				if (item.secondary) {
+								$div2.append("<span class=\"searchsug-secondarytext\">" + item.secondary + "</span>");
+				}
+				
+							$div2.appendTo($div);
+				$div.appendTo($li);
+                return $li.appendTo(ul);
+            }
+        });
+    </script>
+    <script type="text/javascript">
+		$(function () {
+			var cache = {};
+			$("#SearchText").catcomplete({
+				source: function (request, response) {
+					var term = request.term;
+					if (term in cache) {
+						response(cache[term]);
+						return;
+					}
+
+					$.getJSON("/api/searchsuggestions", request, function (data, status, xhr) {
+						cache[term] = data;
+						response(data);
+					});
+				},
+				select: function (event, ui) {
+					if (ui.item.link) {
+						window.location.href = ui.item.link;
+					}
+				}
+			});
+		});
+    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117350647-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117350647-1');
+</script>
+
+<script type='text/javascript' src='jquery.zoom-min.js'></script><script type='text/javascript' src='jQueryCalls.js'></script></head><body onunload='UncheckAllCompareCheckboxes()' id='MainBody' class='CBodyClass Container' onMouseMove="getMousePos()"><div class='cBodyTable container' cellpadding=0 cellspacing=0 border=0><div class='cb_functions_tr_42'><div class='cb_functions_td_43' id='cb_functions44'  align='' ><!-- Start ignoreResponsive -->
+<!--<head>-->
+<!--<meta charset="utf-8">
+<title>Untitled Document</title>-->
+<link href="responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--</head>-->
+
+<!--<body>-->
+<div class="height">
+<div class="wrapper header">
+<div class="inner">
+<div class="container">
+<div class="section1"><a href="advancedwebpage.aspx"><img src="image/logo.png"></a></div>
+<div class="section2"><div class="tag1">Over 20,000 items available from stock. </div><div class="searchbox">
+			<form action="advancedwebpage.aspx" method="post" name="form0" id="form0" class="searchby">
+				<div>
+				<input type="HIDDEN" name="RunSearch" id="RunSearch" value="yes">
+				<input type="HIDDEN" name="SearchList" id="SearchList" value="All Fields">
+				<input type="text" name="SearchText" id="SearchText"  placeholder="Search by keyword or item #" >
+				<button type="submit" class="sbutton" name="Search" id="Search"><i class="material-icons">search</i></button>
+				</div>
+</form>	</div></div>
+<div class="section4"><div class="greeting"><a href='account.aspx?page=login'>Log In</a>&nbsp;|&nbsp; <a href="Account.aspx">View Account</a> &nbsp;|&nbsp;<a href="catalogwebcart.aspx"><span class="shopping"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> View Cart</span></a>&nbsp;<span class="items">0</span></div>
+<div class="smedia"><div class="icons"><a href="https://www.linkedin.com/in/aa-electric-co-ab1433110"><img src="image/in.png"></a><a href="https://www.facebook.com/AA-Electric-118232873958/"><img src="image/fb.png"></a><a href="https://twitter.com/AAElectric"><img src="image/twitter.png"></a></div><li class="iphone"><img src="image/phone.svg"> 1-800-237-8274</li></div>
+</div>
+</div>
+</div>
+<nav class="navigation">
+<div class="topnav container">
+<ul class="nav">
+<li><a href="advancedwebpage.aspx">Home</a></li>
+<li><a href="advancedwebpage.aspx?p=about">About Us</a></li>
+<li><a href="pdf/AA Line Card COMPLETE Hi-Res.pdf" target="_blank">Line Card</a></li>
+<li><a href="advancedwebpage.aspx?p=service">Service</a></li>
+<li><a href="advancedwebpage.aspx?p=training">Training</a></li>
+
+<li class="dropdown"><a class="dropdown-toggle">Contact<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=contact">Contact Us</a></li>
+<li><a href="advancedwebpage.aspx?p=quote">Request Quote</a></li>
+<li><a href="advancedwebpage.aspx?p=catalog">Literature Request</a></li>
+<li><a href="advancedwebpage.aspx?p=registration">Email Registration </a></li>
+</ul>
+</li>
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Customer Resources <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=testimonials">Testimonials</a></li>
+<li><a href="advancedwebpage.aspx?p=feedback">Feedback</a></li>
+<li><a href="advancedwebpage.aspx?p=New-Products">New Product Ads</a></li>
+<li><a href="pdf/Red Lion - Responsive Email Template.pdf">Notifications</a></li>
+<li><a href="advancedwebpage.aspx?p=terms">Terms & Conditions</a></li>
+</ul>
+</li>
+</ul>
+</div></nav>
+</div>
+</div>
+<!--</body>-->
+<!-- End ignoreResponsive --></div></div><div class='advancedwebpagefunctions_tr_4'><div class='advancedwebpagefunctions_td_4' id='advancedwebpagefunctions4' ><div border=0 class='Brian MainTable'   height=550  cellpadding=0 cellspacing=0><div class='navbar-default row'><div id='advancedwebpagefunctions5' class='SideBar col-md-3' rowspan='0'><button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar' style='z-index: 100;' aria-expanded='false' aria-controls='navbar'><span class='sr-only'>Toggle navigation</span><span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span></button><div id='navbar'  align=center cellpadding=0 cellspacing=0 border=0 class='navbar-collapse collapse table2' aria-expanded='false'>
+<div class='sidebar_tr_37'><div id='sidebar37' class='HtmlAboveSidebarCell'><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="sidenav"><ul class="nav1"><li><a href="advancedwebpage.aspx">Home</a></li><li><a href="advancedwebpage.aspx?p=about">About Us</a></li><li><a href="pdf/AA 2015 Line Card COMPLETE Hi-Res.pdf" target="_blank">Line Card</a></li><li><a href="advancedwebpage.aspx?p=service">Service</a></li><li><a href="advancedwebpage.aspx?p=training">Training</a></li>
+
+<li class="dropdown"><a class="dropdown-toggle">Contact<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=contact">Contact Us</a></li>
+<li><a href="advancedwebpage.aspx?p=quote">Request Quote</a></li>
+<li><a href="advancedwebpage.aspx?p=catalog">Literature Request</a></li>
+<li><a href="advancedwebpage.aspx?p=registration">Email Registration </a></li>
+</ul>
+</li>
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="advancedwebpage.aspx?p=resources">Customer Resources <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=testimonials">Testimonials</a></li>
+<li><a href="advancedwebpage.aspx?p=feedback">Feedback</a></li>
+<li><a href="advancedwebpage.aspx?p=New-Products">New Product Ads</a></li>
+<li><a href="pdf/Red Lion - Responsive Email Template.pdf">Notifications</a></li>
+<li><a href="advancedwebpage.aspx?p=terms">Terms & Conditions</a></li>
+</ul></li></ul></div>
+
+</body>
+</html>
+</div></div><div class='sidebar_tr_39'></div><div class='accountfunctions_tr_369'><div id='GSAHH1' height='30' class='Cat1 SidebarAccountHeading'><strong>Customer Log In:</strong></div></div>
+<div class='sidebar_tr_52'><div class='sidebar_td_72' id='sidebar69'><div class='sidebar_table_11'  cellpadding=3 align=left><div class='sidebar_tr_53'><div id='sidebar70' align=left  class='Cat1 SidebarLoginCell'><a href=Account.aspx?page=login class='Cat1 SidebarLoginAnchor'>&nbsp;Log&nbsp;In&nbsp;&nbsp;</a>&nbsp;or<a href='account.aspx?page=register' class='Cat1 SidebarRegisterAnchor'>Request Login</a></div></div></div></div></div><div class='sidebar_tr_65'></div><div class='sidebar_tr_10'></div><div class='sidebar_tr_11'><div id='sidebar11' height='30' class='Cat1 SidebarShop' style="font-size: 22pt;"><strong>Product by Category:</strong></div></div><div class='sidebar_tr_22'></div><div class='sidebar_tr_27'><div id='sidebar26' class='HtmlAboveSidebarCell'><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="sidenav"><ul class="nav1"><li><a href="advancedwebpage.aspx">Home</a></li><li><a href="advancedwebpage.aspx?p=about">About Us</a></li><li><a href="pdf/AA 2015 Line Card COMPLETE Hi-Res.pdf" target="_blank">Line Card</a></li><li><a href="advancedwebpage.aspx?p=service">Service</a></li><li><a href="advancedwebpage.aspx?p=training">Training</a></li>
+
+<li class="dropdown"><a class="dropdown-toggle">Contact<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=contact">Contact Us</a></li>
+<li><a href="advancedwebpage.aspx?p=quote">Request Quote</a></li>
+<li><a href="advancedwebpage.aspx?p=catalog">Literature Request</a></li>
+<li><a href="advancedwebpage.aspx?p=registration">Email Registration </a></li>
+</ul>
+</li>
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="advancedwebpage.aspx?p=resources">Customer Resources <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="advancedwebpage.aspx?p=testimonials">Testimonials</a></li>
+<li><a href="advancedwebpage.aspx?p=feedback">Feedback</a></li>
+<li><a href="advancedwebpage.aspx?p=New-Products">New Product Ads</a></li>
+<li><a href="pdf/Red Lion - Responsive Email Template.pdf">Notifications</a></li>
+<li><a href="advancedwebpage.aspx?p=terms">Terms & Conditions</a></li>
+</ul></li></ul></div>
+
+</body>
+</html>
+</div></div><div class='sidebar_tr_28'><div class='sidebar_td_33' id='sidebar27'><div id='SCT1' class='SidebarCatTable'  cellpadding=3 border='0'><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=AACurrently%20Stocked%20Items&SBCatPage=&FromPage=1&sbt='>Currently Stocked Items</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=AC%20-%20DC%20Drives&SBCatPage=&FromPage=1&sbt='>AC - DC Drives</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Circuit%20Protection&SBCatPage=&FromPage=1&sbt='>Circuit Protection</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Connectivity&SBCatPage=&FromPage=1&sbt='>Connectivity</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Digital%20Panel%20Meters&SBCatPage=&FromPage=1&sbt='>Digital Panel Meters</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Din%20Rail&SBCatPage=&FromPage=1&sbt='>Din Rail</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Enclosures&SBCatPage=&FromPage=1&sbt='>Enclosures</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Encoders&SBCatPage=&FromPage=1&sbt='>Encoders</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=HMI%20%26%20Computers&SBCatPage=&FromPage=1&sbt='>HMI & Computers</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Lighting%20%26%20Indication&SBCatPage=&FromPage=1&sbt='>Lighting & Indication</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Limit%20Switches&SBCatPage=&FromPage=1&sbt='>Limit Switches</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Motion%20Control&SBCatPage=&FromPage=1&sbt='>Motion Control</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Motor%20Controls&SBCatPage=&FromPage=1&sbt='>Motor Controls</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Motor%20Protection%2C%20Phase/Voltage%20Monitors%2C%20Speed%20Protection&SBCatPage=&FromPage=1&sbt='>Motor Protection, Phase/ Voltage Monitors, Speed Protection</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Networks&SBCatPage=&FromPage=1&sbt='>Networks</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Pilot%20Devices&SBCatPage=&FromPage=1&sbt='>Pilot Devices</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Power%20Supplies&SBCatPage=&FromPage=1&sbt='>Power Supplies</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Programmable%20Logic%20Controllers%20/%20IO&SBCatPage=&FromPage=1&sbt='>Programmable Logic Controllers /  IO</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Relays&SBCatPage=&FromPage=1&sbt='>Relays</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=RFID&SBCatPage=&FromPage=1&sbt='>RFID</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Safety&SBCatPage=&FromPage=1&sbt='>Safety</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Sensors&SBCatPage=&FromPage=1&sbt='>Sensors</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Signal%20Conditioners&SBCatPage=&FromPage=1&sbt='>Signal Conditioners</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Temperature/Process%20Controllers/Thermocouples&SBCatPage=&FromPage=1&sbt='>Temperature/ Process Controllers/ Thermocouples</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Terminal%20Blocks&SBCatPage=&FromPage=1&sbt='>Terminal Blocks</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Timers/Counters/Tachometers&SBCatPage=&FromPage=1&sbt='>Timers/ Counters/ Tachometers</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Vision&SBCatPage=&FromPage=1&sbt='>Vision</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Wire%20Accessories%20and%20Tools&SBCatPage=&FromPage=1&sbt='>Wire Accessories & Tools</a></div></div><div  class=Cat1  align='left' ><div id='sidebar28'  class='Cat1 Cat1td'><a  class=Cat1  href='advancedwebpage.aspx?CategoryText1=Wireless&SBCatPage=&FromPage=1&sbt='>Wireless</a></div></div></div></div></div><div class='sidebar_tr_32'></div><div class='sidebar_tr_33'></div></div></div><!-- Closing advancedwebpagefunctions5 --><div style='height:100%;'   class='mainTableBgrnd col-md-9' name='mainTableBgrnd' id='mainTableBgrnd' ><div class='advancedwebpagefunctions_table_9' style='height:100%;'  height='500' border='0' cellpadding='0' cellspacing='0'><div class='advancedwebpagefunctions_tr_18' style='height:100%;'><div class='advancedwebpagefunctions_td_23' id='advancedwebpagefunctions23' style='height:100%;' align=Left > <!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">-->
+
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--<script type="text/javascript" src="engine1/jquery.js"></script>-->
+    <!--<link href="../assets/css/bootstrap.css" rel="stylesheet">-->
+    <style>
+
+    </style>
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!----------------------------------------  HOME PAGE  ---------------------------------------------------------------------->
+  
+  
+  <body>
+    <div class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 col-md-12 banner">
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="7000" id="bs-carousel">
+  
+
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+
+  <!----------------------------------------  Wrapper for slides  ---------------------------------------------------------------------->
+  <div class="carousel-inner">
+  
+  	 <!------------------------      Slide 1  ------------------------------------------------------------------------->
+    <div class="item slides active">
+      <div class="slide-1">
+	  <a class="callout first" href="https://events.r20.constantcontact.com/register/eventReg?oeidk=a07efzjr2za7c3bca5d&oseq=&c=&ch=" target="_blank">
+	  <img class="img-responsive" src="image/SliderImage/chilifl.png" alt="omron 4" title="" id="omron">
+	  
+	  </div>
+      <div class="carousel-caption">
+	  </a>
+      </div>
+    </div>
+	
+<!------------------------      Slide 2  ------------------------------------------------------------------------->
+    <div class="item slides">
+      <div class="slide-2">
+	  
+	  <img class="img-responsive" src="image/SliderImage/banner1.jpg" alt="RedLion 1" title="" id="">
+	  
+	  </div>
+      
+    </div>
+
+<!------------------------      Slide 3  ------------------------------------------------------------------------->	
+    <div class="item slides">
+      <div class="slide-3">
+	  <img class="img-responsive" src="image/SliderImage/wago.png" alt="Sprecher" title="" id="">
+	  
+	  </div>
+      
+    </div>
+	
+	
+  </div> 
+  
+  
+    <!----------------------------------------  End Wrapper for slides  ---------------------------------------------------------------------->
+	
+	
+</div>
+
+	</div>
+ 
+ </div>
+   
+ 
+
+ 
+ 
+ 
+ 
+    <!---------------------------------------------- NEW PRODUCTS SECTION ---------------------------------------------------------------->
+	
+   <div class="row two">  
+   <h3 class="line"><span>New Products</span></h3>  
+   
+  <div class="featured col-xs-12 col-md-12">
+  
+     <!-- PRODUCT 1 ---------------------------------------------------------------------------------------------->
+<div class=" col-sm-4 ad first">
+  	<div class="height1">
+     <a class="callout first" href="https://conta.cc/2EIljUn" target="_blank">
+	<img src="image/NewProduct/newproduct1.jpg" alt=""> 
+	<span>
+	</span>
+	<h2>Omron</h2>
+	</a>
+	</div>
+</div>
+
+     <!-- PRODUCT 2 ---------------------------------------------------------------------------------------------->
+<div class=" col-sm-4 ad"><div class="height1">
+     <a class="callout first" href="https://conta.cc/2MIBnVG" target="_blank">
+	<img src="image/NewProduct/newproduct_wago.jpg" width= 285 height= 220 alt=""> 
+	<span>
+	</span>
+	<h2>
+	WAGO
+	</h2>
+	</a>
+	</div>
+</div>
+
+     <!-- PRODUCT 3 ---------------------------------------------------------------------------------------------->
+<div class=" col-sm-4 ad"><div class="height1">
+    <a class="callout first" href="https://conta.cc/2Gi1I95" target="_blank">
+	<img src="image/NewProduct/newproduct3.jpg" alt=""> 
+	<span>
+	</span>
+	<h2>
+	Turck
+	</h2>
+	</a>
+	</div>
+</div>
+
+
+</div>
+  </div>   
+  
+    <!-- END NEW PRODUCTS SECTION ---------------------------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Service & Training SECTION ---------------------------------------------------------------------------------------------->
+  
+ <div class="row">
+ <div class="servicerow col-xs-12 col-md-12">
+ 
+   <!-- Service ----->
+  <div class="col-sm-6 col-md-6 service"><div class="productlist">
+  <h3 class="line"><span>Service</span></h3>
+  <div class="pimage one"><div class="viewmore"><a href="advancedwebpage.aspx?p=service">Learn More</a></div></div><p>AA Electric is your single source for machine control and automation specialty electrical products. </p></div>
+  </div>
+
+  
+ <!-- Training -----> 
+ <div class="col-sm-6 col-md-6 training"><div class="productlist">
+ <h3 class="line"><span>Training</span></h3>
+ <div class="pimage two"><div class="viewmore"><a href="advancedwebpage.aspx?p=training">Learn More</a></div></div><p>AA Electric is your single source for machine control and automation specialty electrical products. </p></div>
+  </div>
+
+ </div>
+</div>
+  <!-- End Service & Training SECTION ---------------------------------------------------------------------------------------------->
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- <script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+-->
+  <!--</body>
+</html>-->
+</div></div></div><!--End of Display Frame--></div><!-- Closing mainTableBgrnd --></div><!-- Close row from DisplayFrame containing sidebar and main table --></div><!-- Closing Brian MainTable --></div><!-- Closing advancedwebpagefunctions4 --><!--End of Show Category-->
+<!--Page built in: 01.2812500-->
+<!--Stopwatch:00:00:00.00--><!-- CPC Current.Server:  True --></div></div></div><!-- Closing cBodyTable (DisplayFrame) --><div class='headerfooter_tr_3 container'>
+<div class='headerfooter_td_20' id='headerfooter20' align=center colspan='2'>
+<div class=FooterDiv name=FooterDiv id=FooterDiv><div border=0  align=center   cellpadding=0 cellspacing=0 class=FooterLink><div class='headerfooter_tr_7'><div class='headerfooter_td_24' id='headerfooter24' align=center > <!--<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>-->
+<style type="text/css">
+.foot  {  padding-top: 10px;
+font-family: 'Monda', sans-serif;
+}
+.f {
+	border-top: thin solid #E7EAEC;
+	width: 100%;
+	/*position: absolute;*/
+	left: 0;
+		   
+	
+}
+.btmnav {
+	text-align:center;
+	margin-bottom: 10px;
+}
+.btmnav li {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+ 
+}
+.foot ul {
+  padding: 0px;
+}
+.address {
+  float: none;
+  margin: auto;
+  width: 180px;
+  text-align: center;
+}
+.address p{
+  text-align: center;
+}
+.address img {
+    outline: 2px solid #fff;
+    margin-bottom: 6px;
+    width: 200px;
+    height: 150px;
+}
+.address h6 {
+    font-size: 13px;
+    font-weight: bold;
+}
+</style>
+<!--</head>
+
+<body>-->
+
+
+
+
+<div class="f">
+<div class="container">
+
+<div class="col-xs-12 col-md-12">
+<div class="foot"><div class="btmnav col-xs-12">
+<ul>
+<li><a href="advancedwebpage.aspx?p=terms">Terms & Conditions</a></li>
+<li><a href="advancedwebpage.aspx?p=about">About Us</a></li>
+<li><a href="advancedwebpage.aspx?p=contact">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4 col-xs-12">
+<div class="address">
+<h6>Corporate Headquarters</h6>
+<img src="image/nj.jpg">
+<p>230 West Parkway  Suite #11<br>
+Pompton Plains, NJ 07444</p>
+</div>
+</div>
+
+<div class="col-sm-4 col-xs-12">
+<div class="address">
+<h6>Georgia Location</h6>
+<img src="image/ga.png">
+<p>1665 Lakes Parkway Suite 108<br>
+Lawrenceville, GA 30043</p>
+</div>
+</div>
+
+<div class="col-sm-4 col-xs-12">
+<div class="address">
+<h6>Florida Location</h6>
+<img src="image/fl.png">
+<p>2011 South Combee Road<br>
+Lakeland, FL 33801</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!--</body>
+</html>-->
+</div></div><div class='headerfooter_tr_8'><div id='headerfooter26' colspan=2 class=SmallText align=center><a href='sitemap.html' target=blank class=SmallText>Sitemap</a><br> </div></div><div class='headerfooter_tr_9'></div><div class='headerfooter_tr_10'><div id='headerfooter28' colspan=2  align=center  class=SmallText>Copyright &#169; 1999-2019 All Rights Reserved<br>Powered by <a href='http://www.computerpundits.com' target=blank>eCommerce21</a> US Patent # 7,698,167.</div></div></div></div></div></div></body></html>

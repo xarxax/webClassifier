@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title>Stafford Creative</title>
+	<meta name="author" content="Stafford Creative, Sid Stafford, Tina Stafford, Dave Chapaitis">
+	<meta name="description" content="Stafford Creative - An Ad Agency. An experienced creative shop based north of Seattle, Washington. Strategic advertising and graphic design with a branding focus." />
+  	<meta name="keywords" content="Stafford Creative, StaffordCreative, advertising, graphic design, stevie award, american business awards, NAHB, copywriting, ads, brochures, logos, branding, creative, Leisure Care Retirement Communities, web development, Sid Stafford, Tina Stafford, environmental, award winning, corporate identity, Seattle, Edmonds, Washington, WA, strategy, marketing, development, ad agency" />
+	<meta name="robots" content="" />
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/meyer-reset.css">
+	<link rel="stylesheet" href="stafford.css">
+
+	<!-- Rokkitt -->
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+
+	<!--CDN link for the latest jQuery (I don't understand the HTTP thing)-->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<!--OR:
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
+	<!--CDN link for the latest TweenMax-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+	<!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+
+	<!--DIRECT links for TweenLite, CSSPlugin, and EasePack
+	<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+	<script type="text/javascript" src="js/greensock/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>-->
+
+	<!--VideoJS-->
+	<link href="http://vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.5/video.js"></script>
+
+	
+<style>
+
+body{
+    background-color:#d7d2cb;
+    z-index: -2;
+}
+
+@font-face {
+	font-family: 'neue';
+	src: url('fonts/HelveticaNeueLTStd-Lt.eot');
+	src: url('fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+    	 url('fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+    	 url('fonts/HelveticaNeueLTStd-Lt.svg') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+.for-chrome {letter-spacing:0px;}
+
+
+/* Unique To Homepage */
+.wrapper {
+	width: 896px;
+    height: 608px;
+    margin-left: auto ;
+	margin-right: auto ;
+}
+.slideshow1 {
+	width: 896px;
+    height: 608px;
+	z-index: 3;
+	position: absolute;
+}
+.slideshow2 {
+	width: 896px;
+    height: 608px;
+	z-index: 2;
+	position: absolute;
+}
+.slideshow3 {
+	width: 896px;
+    height: 608px;
+	z-index: 1;
+	position: absolute;
+}
+
+.textBar1 {
+	width: 468px;
+    height: 48px;
+    background-image:url('img/textBar.png');
+    float:right;
+    margin-top: 16px;
+}
+.textBar2 {
+	width: 468px;
+    height: 48px;
+    background-image:url('img/textBar.png');
+    float:left;
+    margin-top: 16px;
+}
+.textBar3 {
+	width: 468px;
+    height: 48px;
+    background-image:url('img/textBar.png');
+    float:right;
+    margin-top: 16px;
+}
+
+.A {
+	width: 408px;
+    height: 468px;
+    background-image:url('img/A.jpg');
+    float:left;
+    margin-top: 64px;
+}
+.B {
+	width: 240px;
+    height: 168px;
+    background-image:url('img/B.jpg');
+    float:right;
+    margin-top: 64px;
+    margin-right: 20px;
+}
+.C {
+	width: 208px;
+    height: 168px;
+    background-image:url('img/C.jpg');
+    float:right;
+    margin-top: 64px;
+}
+.D {
+	width: 468px;
+    height: 220px;
+    background-image:url('img/D.jpg');
+    float:right;
+    margin-top: 16px;
+}
+.E {
+	width: 468px;
+    height: 220px;
+    background-image:url('img/E.jpg');
+    float:left;
+    margin-top: 64px;
+}
+.F {
+	width: 240px;
+    height: 168px;
+    background-image:url('img/F.jpg');
+    float:left;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.G {
+	width: 208px;
+    height: 168px;
+    background-image:url('img/G.jpg');
+    float:left;
+    margin-top: 16px;
+}
+.H {
+	width: 408px;
+    height: 468px;
+    background-image:url('img/H.jpg');
+    float:right;
+    margin-top: 64px;
+}
+.I {
+	width: 408px;
+    height: 468px;
+    background-image:url('img/I.jpg');
+    float:left;
+    margin-top: 64px;
+}
+.J {
+	width: 468px;
+    height: 220px;
+    background-image:url('img/J.jpg');
+    float:right;
+    margin-top: 64px;   
+}
+.K {
+	width: 208px;
+    height: 168px;
+    background-image:url('img/K.jpg');
+    float:left;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.L {
+	width: 240px;
+    height: 168px;
+    background-image:url('img/L.jpg');
+    float:right;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.video-js { background-color:#f1ece8; }
+
+</style>	
+</head>
+<body>
+	
+	<div id="header">
+		<div id="menu">
+			<a><span class="orange">stafford</span><span class="brown">creative</span><span class="orange">inc&nbsp;&nbsp;&nbsp;</span></a>
+			<a href="1_lytle.html">&nbsp;&nbsp;&nbsp;work&nbsp;&nbsp;&nbsp;</a>
+			<a href="services.html">&nbsp;&nbsp;&nbsp;services&nbsp;&nbsp;&nbsp;</a>
+			<a href="about.html">&nbsp;&nbsp;&nbsp;about&nbsp;&nbsp;&nbsp;</a>
+			<a href="awards.html">&nbsp;&nbsp;&nbsp;awards&nbsp;&nbsp;&nbsp;</a>
+			<a href="contact.html">&nbsp;&nbsp;&nbsp;contact</a>
+		</div>
+	</div>
+	<div id="home">
+	<div class="wrapper">
+		<div class="slideshow1">
+			<a href="1_lytle.html"><div class="A"></div></a>
+			<a href="3_treeo.html"><div class="C"></div></a>
+			<a href="2_leisurecare.html"><div class="B"></div></a>			
+			<div class="textBar1"><h3><span class="brighter">communication that works&nbsp;</span>harder</h3></div>
+			<a href="4_camellia.html"><div class="D"></div></a>
+		</div>
+		<div class="slideshow2">
+			<a href="8_renaissance.html"><div class="E"></div></a>
+			<a href="2_leisurecare.html"><div class="H"></div></a>
+			<div class="textBar2"><h5><span class="brighter">don’t just reach&nbsp;</span>connect</h5></div>
+			<a href="3_treeo.html"><div class="F"></div></a>
+			<a href="12_svea.html"><div class="G"></div></a>						
+		</div>
+		<div class="slideshow3">
+			<a href="6_galvin.html"><div class="I"></div></a>
+			<a href="2_leisurecare.html"><div class="J"></div></a>
+			<div class="textBar3"><h3><span class="brighter">emotion vs logic&nbsp;</span>bet on emotion every time</h3></div>
+			<a href="9_goodtaste.html"><div class="K"></div></a>			
+			<a href="3_treeo.html"<div class="L"></div></a>
+		</div>
+
+	</div>
+	</div>
+	<div id="footer">
+		<div id="stafford">
+			<div style="margin-top:62px; float:left;"><span><h1>stafford</h1><h2>creative</h2></span></div>
+			<div style="width:610px; margin-top:45px; float:right;"><p>It’s all about connections. Think of the brands that connect with you. You know, the ones you adore. The brands you will not veer from...ever. The brands you tell your friends about. That’s the brands we help build. So, while your competitors are busy “reaching” you can be connecting. Our secret? Authenticity with dashes of wit and grace and intelligence. Our results? Customers for life.</p></div>
+			<div style="width:896px; padding-top:48px; float:left;">
+			  <p style="font-size:0.9em; text-align:center; color:#887e76;">©2016 StaffordCreative Inc. Edmonds WA 425.412.1550</p></div>
+		</div>
+	</div>
+	
+
+<!-- javascripts go here -->
+<script> 
+
+$(document).ready(main);
+
+function isChrome() {
+    return navigator.userAgent.indexOf("Chrome") >- 1;   
+}
+function main() {
+    if(isChrome()) {
+        $("a,h3,h4,h5,h6").addClass("for-chrome");
+    }
+}
+
+$(document).ready(function() {
+
+//TweenLite.to(".A", 0.5, {scale:0, alpha:0, ease:Back.easeIn});
+
+    var tl = new TimelineMax({repeat:-1});
+
+    tl.from(".A", 0.7, {scale:0, alpha:0, ease:Expo.easeOut});
+    tl.from(".B", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".C", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".textBar1", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".D", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+
+    tl.to(".slideshow1", 0.3, {scale:0.8, autoAlpha:0, ease:Expo.easeIn}, "+=6");
+
+    tl.from(".E", 0.7, {scale:0, alpha:0, ease:Expo.easeOut});
+    tl.from(".textBar2", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".H", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".F", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".G", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+
+    tl.to(".slideshow2", 0.3, {scale:0.8, autoAlpha:0, ease:Expo.easeIn}, "+=6");
+
+    tl.from(".I", 0.7, {scale:0, alpha:0, ease:Expo.easeOut});
+    tl.from(".J", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".textBar3", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".K", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    tl.from(".L", 0.7, {scale:0, alpha:0, ease:Expo.easeOut}, "-=0.65");
+    
+    tl.to(".slideshow3", 0.3, {scale:0.8, autoAlpha:0, ease:Expo.easeIn}, "+=6");
+
+
+	//tl.add(TweenLite.from(".A", 0.5, {scale:0, alpha:0, ease:Expo.easeOut}));
+});
+
+</script>
+
+<!--COPYRIGHT YEAR UPDATER 
+    <script type="text/javascript">
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>	-->
+	
+</body>
+</html>

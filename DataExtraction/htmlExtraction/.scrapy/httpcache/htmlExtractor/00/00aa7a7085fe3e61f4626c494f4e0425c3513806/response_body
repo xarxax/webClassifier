@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Irish Papers Limited - Irish Papers, Experts in Packaging</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="Packaging Supplies packaging box boxes bag container tray vacuum pallet tape foil wrapper wrap fashion corrugated cake printed paper plastic polythene carrier bags distributor dublin ireland" />
+<meta name="description" content="Irish Papers Ltd. are suppliers and distributors of Packaging, paper bags, plastic bags, cake boxes, printed carrier bags, aluminium foil, cling wrap, tape and all your packaging needs. Packaging suppliers in Ireland." />
+<meta name="robot" content="index, follow">
+<link href="http://www.irishpapers.ie/_css/styles.css" rel="stylesheet" type="text/css" />
+<link href="http://www.irishpapers.ie/_css/side.css" rel="stylesheet" type="text/css" />
+<link href="http://www.irishpapers.ie/_css/slideShow.css" rel="stylesheet" type="text/css" />
+<link href="http://www.irishpapers.ie/_css/thickbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="http://www.irishpapers.ie/lib/functions.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div class="left"><a href="http://www.irishpapers.ie/index.php"><img src="http://www.irishpapers.ie/_images/spc.gif" width="545" height="87" /></a></div>
+    <div class="right" style="font-weight: bold;">Irish Papers Ltd<br />
+      74 Baldoyle Ind Est<br />
+      Dublin 13.  Ireland<br />
+      <a style="color:#000; text-decoration:none;" href="tel:00353018393144">Tel: + 353 (0)1 839 3144</a><br />
+      Fax: + 353 (0)1 839 3057<br />
+      Email: info@irishpapers.com</div>
+  </div>
+  <div id="menu">
+    <div class="left"><a href="http://www.irishpapers.ie/index.php"><img src="http://www.irishpapers.ie/_images/home.png" alt="home" /></a><a href="http://www.irishpapers.ie/about/"><img src="http://www.irishpapers.ie/_images/about.png" alt="about" /></a><a href="http://www.irishpapers.ie/products/"><img src="http://www.irishpapers.ie/_images/products.png" alt="products" /></a><a href="http://www.irishpapers.ie/sectors/"><img src="http://www.irishpapers.ie/_images/sectors.png" alt="sectors" width="103" height="20" /></a><a href="http://www.irishpapers.ie/clients/"><img src="http://www.irishpapers.ie/_images/clients.png" alt="clients" /></a><a href="http://www.irishpapers.ie/news/"><img src="http://www.irishpapers.ie/_images/news.png" alt="new products and news" /></a><a href="http://www.irishpapers.ie/contact/"><img src="http://www.irishpapers.ie/_images/contact.png" alt="contact" /></a></div>
+    <div class="right"><a href="http://www.irishpapers.ie/quoteRequest/"><img src="http://www.irishpapers.ie/_images/quote_request.png" alt="quote request" /></a></div><div class="clear"></div>
+  </div>
+  <div id="content">
+    
+    <div id="main-content-wide">
+      
+      <div class="top"></div>        
+        <div class="middle">
+        <span class="breadcrumps"><a href="http://www.irishpapers.ie/index.php">Home</a></span>
+        <script type="text/javascript" src="_js/slideHome.js"></script>
+
+<h1>Irish Papers Limited</h1>
+<table width = '100%' cellpadding='0' cellspacing='0' border='0'>
+	<tr>
+		<td valign='top'><p><em>With almost 40 years of experience , Irish Papers is a business that provides a professional service in the delivery of paper and packaging goods to a wide range of Industry sectors including <a title="Food Processing" href="../sectors/food-processing/">Food Processing</a>, <a title="Retail" href="../sectors/retail/">Retail</a>, <a title="Pizza Resteraunts" href="../sectors/pizza-restaurants/">Pizza Restaurants</a>, <a title="Meat and Butchery" href="../sectors/meat-and-butchery/">Meat &amp; Butchery</a>, <a title="Fruit and Vegatable Producers" href="../sectors/fruit-and-veg-producers/">Fruit &amp; Veg Producers</a>, <a title="Catering" href="../sectors/catering/">Catering</a>, <a title="Retail Food and Drink" href="../sectors/retail-food-drink/">Retail food &amp; Drink</a> and <a title="Bakery" href="../sectors/bakery/">Bakeries </a>all over Ireland the UK and Europe.</em></p>
+<p><em>Our full service model provides <a href="../clients/">our clients</a> with a dynamic range of off-the-shelf and customised products, including, <a href="../products/foil-containers/">Foil Containers</a>, <a href="../products/pizza-boxes/">Pizza Boxes</a>, <a href="../products/paper-bags/">Paper Bags</a>, <a href="../products/bakery/">Bakery</a>, <a href="../products/hygiene/">Hygiene</a>, <a href="../products/plastics/">Plastics</a>, <a href="../products/paper/">Paper</a>, <a href="../products/corrugated-cardboard-boxes/">Corrugated Cardboard boxes,</a> <a href="../products/ovenable-board-trays/">Ovenable Board Trays</a> and <a href="../products/netting-bags-clipwire/">Netting/Bags and Clipwire</a>.We constantly strive to meet market changes and respond rapidly and efficiently to our client&rsquo;s demands. </em></p>
+<p><em>I hope you will find this new site useful, we will be adding more features to it over time, in order to help you, our customer and I would&nbsp; welcome your comments good, bad or indifferent<br /></em></p>
+<p>&nbsp; Regards</p>
+<p>&nbsp;&nbsp;<a href="mailto:eoin@irishpapers.com">Eoin Mc Connon</a></p>
+<p>&nbsp; Managing Director&nbsp; <br />&nbsp; Irish Papers Ltd</p>
+<ul>
+</ul>
+<ul>
+</ul></td>
+					<td valign='top' width='380'>
+				<div style="float:right; padding:5px; margin-left:15px; background-image:url(home-photos/bg.jpg); background-repeat:no-repeat; background-position:right top;">
+					<div style="padding:5px;">
+						
+						<script type="text/javascript">
+							new fadeshow(fadeimages, 380, 255, 0, 6000, 1)
+						</script>
+						
+					</div>
+				</div>
+				
+				<noscript>
+				<div style="float:right; padding:5px; margin-left:15px; background-image:url(home-photos/bg.jpg); background-repeat:no-repeat; background-position:right top;">
+					<div style="padding:5px;">
+						<img src='http://www.irishpapers.ie/home-photos/outside-1.jpg'>
+					</div>
+				</div>
+				</noscript>
+			</td>
+			</tr>
+</table>
+
+<div style="background-image:url(_images/scroller-bg.gif); background-repeat:no-repeat; padding-top:15px; padding-left:7px; height:115px">
+<script type="text/javascript" src="_js/scroller.js"></script>
+<noscript>
+<table border="0" cellspacing="10" cellpadding="10" align="center" style="margin-left:auto; margin-right:auto">
+<tbody>
+<tr>
+<td><img title="O'Briens" src="http://www.irishpapers.ie/uploads/gallery/obriens_logo.jpg" alt="O'Briens" width="100" height="33" /></td>
+<td><img title="Esso" src="http://www.irishpapers.ie/uploads/gallery/esso_logo.jpg" alt="Esso" width="100" height="71" /></td>
+<td><img title="Pat The Baker" src="http://www.irishpapers.ie/uploads/gallery/pat_the_baker.jpg" alt="Pat The Baker" width="100" height="68" /></td>
+<td><img title="Kerry Foods" src="http://www.irishpapers.ie/uploads/gallery/kerry_foods_logo.jpg" alt="Kerry Foods" width="100" height="39" /></td>
+<td><img title="FAI" src="http://www.irishpapers.ie/uploads/gallery/fai_2.jpg" alt="FAI" width="80" height="80" /></td>
+<td><img title="Superquinn" src="http://www.irishpapers.ie/uploads/gallery/superquinn_logo.jpg" alt="Superquinn" width="100" height="27" /></td>
+<td><img title="Beshoff Brothers" src="http://www.irishpapers.ie/uploads/gallery/beshoff_bros_large_2.jpg" alt="Beshoff Brothers" width="100" height="100" /></td>
+<td><img title="Beshoff Brothers" src="http://www.irishpapers.ie/uploads/gallery/moy_park.jpg" alt="Moy Park" width="100" height="68" /></td>
+</tr>
+</tbody>
+</table>
+</noscript>
+</div>        </div>
+        <div class="bottom"></div>
+    </div>
+  </div>
+  <div id="footer">
+  	&copy;2019 Copyright , <strong>Irish Papers</strong> - Experts in packaging since 1971 
+  	<div style="text-align: right; position: relative; width: 420px; top: -15px; left: 500px; color: #ffffff;"><a href="http://www.irishpapers.ie/terms/" class="footerLinks" style="color: #ffffff; font-weight: bold;">Terms & conditions</a> | <a href="http://www.irishpapers.ie/disclaimer/" class="footerLinks" style="color: #ffffff; font-weight: bold;">Disclaimer</a> | <a href="http://www.irishpapers.ie/siteMap/" class="footerLinks" style="color: #ffffff; font-weight: bold;">Site map</a> | <a href="http://www.irishpapers.ie/downloads/" class="footerLinks" style="color: #ffffff; font-weight: bold;">Downloads</a> | <a href="http://www.irishpapers.ie/partnerLinks/" class="footerLinks" style="color: #ffffff; font-weight: bold;">Partner Links</a></div>
+  </div>
+  <div style="text-align: center; margin-top: 0px; color: #666;"><a href="http://www.enhance.ie" class="breadcrumps">website development</a> - <a href="http://www.enhance.ie" class="breadcrumps">enhance.ie</a></div>
+</div>
+
+<!-- Google Analythics -->
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9165288-1");	
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+<!-- End Of Google Analythics -->
+ 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2a0eb43fe8","applicationID":"71227629","transactionName":"ZgdQMkRSWhVZVRZfXF9NZxRfHF0IXFMaGENZEg==","queueTime":0,"applicationTime":10,"atts":"SkBTRAxISRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

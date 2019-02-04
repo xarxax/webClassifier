@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html  lang="">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Home" />
+<meta http-equiv="last-modified" content="2018-04-26 22:29:55" />
+<meta name="generator" content="Websplanet" />
+<meta name="robots" content="index,follow" />
+<meta property="og:url" content="http://connectgroupinc.com/" />	<title>Home - Connect Group</title>	<link href="/templates/resellers/2/favicon.ico?v=1524771001" rel="SHORTCUT ICON" type="image/x-icon" />
+<link href="/js/fancybox2/jquery.fancybox.min.css?v=6.9.42161" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/widgets/concat_widget.min.css?v=6.9.42161" media="screen" rel="stylesheet" type="text/css" />
+<link href="/templates/creator/m_4/43/432/318/css/main.min.css?v=1455791335" media="screen" rel="stylesheet" type="text/css" id="template-grid" />
+<link href="/templates/creator/m_4/43/432/318/css/skin.min.css?v=1455791335" media="screen" rel="stylesheet" type="text/css" id="template-skin" />
+<link href="http://connectgroupinc.com/" rel="canonical" />		
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?v=6.9.42161"></script>
+<script type="text/javascript">
+    //<!--
+    $(document).ready(function(){var settings = {galleryid: "13",numberOfRowsToShow: 4,numberOfColumns: 4,margin: 0,ratio: 1,thumbnailDisplay: "fit",langClose: "Close",langPrev: "Previous",langNext: "Next"};	var width = $('#gallery_diy_widget_'+settings.galleryid).css("width");
+	if (!width || 0 == parseInt(width)) {
+		efu.mediator().on("dc_event",  efu.w.gallery, [settings]);
+	} else {
+		efu.w.gallery(settings);
+	}
+	$(".fancybox").fancybox({
+				nextEffect : "none",
+				prevEffect : "none",
+				tpl : {
+ 					closeBtn : '<a title="'+settings['langClose']+'" class="fancybox-item fancybox-close" href="javascript:;"></a>',
+ 					next: '<a title="'+settings['langNext']+'" class="fancybox-nav fancybox-next"><span></span></a>',
+  					prev: '<a title="'+settings['langPrev']+'" class="fancybox-nav fancybox-prev"><span></span></a>'
+				}	
+	});
+	$(".image_gallery_navbar").on('click', function(){
+		$("img.lazy").lazyload();	
+	});});    //-->
+</script>
+<script type="text/javascript" src="/js/efu/main.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/efu/w.gallery.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/fancybox2/jquery.fancybox.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/footer/get_deps.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/footer/build_social_entries.min.js?v=6.9.42161"></script>
+<script type="text/javascript">
+    //<!--
+    $(document).ready(function(){socialEntries = {"facebook":"","twitter":"","linkedin":"","linkedincompany":"","googleplus":""};
+socialEntriesTitle = {"facebook":" Follow on Facebook","twitter":"Follow on Twitter","linkedin":"Follow on LinkedIn","linkedincompany":"Follow on LinkedIn","googleplus":"Follow on Google Plus"};
+$.each(socialEntries, function(key, value) {
+      buildSocialEntry(key, value, socialEntriesTitle[key]);
+});
+getDependecies();
+});    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+       
+
+    //-->
+</script>
+	
+	
+	<link type="text/css" href="/templates/creator/m_4/43/432/318/assets/normalize.css?v=1455791335" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    //label of menu button on mobile version
+    var config = {
+      navigation: "Navigation"
+    };
+    $(function(){
+        $('#circle-action').circleMenu({
+          direction:'top-left',
+          trigger:'click',
+          item_diameter: 40,
+            });
+        $('a').on('click',function(evt){
+          if($(this).attr('href')==='#'){
+            evt.preventDefault();
+          }
+        });      
+    });
+
+    if(/(iPhone|iPod|iPad)/i.test(navigator.userAgent)) { 
+        $( ":input" ).focus(function() {
+          $("#fixed_mobile_action").hide()
+        });
+        $( ":input" ).focusout(function() {
+          $("#fixed_mobile_action").show()
+        });
+        if(/OS [2-4]_\d(_\d)? like Mac OS X/i.test(navigator.userAgent)) { 
+            // iOS 2-4 so Do Something  
+          // alert('ios[2-4]');
+           $('#circle-action').removeClass('ios5');
+           $('#circle-action').addClass('ios4');
+
+            $('.sk-container').on('touchstart', function(){
+               $('#circle-action').css('visibility', 'hidden');
+            });
+
+
+            var $myFixedDiv = $('#circle-action');
+            var iFixedDivHeight = $myFixedDiv.outerHeight({ 'margin': true });
+
+            $(window).scroll(function() {
+                var iWindowHeight = $(window).height();
+                var iScrollPosition = $(document).scrollTop(); // or document.body.scrollTop
+                //$myFixedDiv.css({ 'top': iWindowHeight + iScrollPosition - iFixedDivHeight + 60});
+                 $myFixedDiv.css({ 'bottom': 0 - iScrollPosition - iFixedDivHeight - 20});
+
+            });
+
+
+            $('.sk-container').on('touchend', function(){  
+                 $('#circle-action').css('visibility', 'visible');
+            }); 
+                        
+
+        } else {
+            // iOS 5 or Newer so Do Nothing             
+                    
+        }
+    }
+</script>
+<style type="text/css" media="screen">
+<!--
+.skinBg { background-color: #3244fa; }
+.modules_td { background-color: transparent; }
+body{  background-image: none; background-color: #89a7e6; background-size: auto; }
+ #content { font-family: Arial; font-size: 1.5em; color: #070707; }
+ #content a {  font-family: Arial !important; font-size: 1.2em !important; }
+ .titles {  font-family: Arial; font-size: 1.5em; color: #070707 !important; }
+ .buttons {  font-family: Arial; color: #3244fa !important; }
+
+-->
+</style></head>
+<body>
+<header class="clearfix header" >
+	<nav role="navigation" class="nav ">
+		<ul id="nav" class="menu_count_13 wp-menu"><li id="menu_7" class="first current  lb_7 menu-item-home"><a href="http://connectgroupinc.com/" target="_self" title="Home" data-pageid="7" data-act="canvas" data-itemid="7" data-cat="0">Home</a> </li><li id="menu_119169" class=" lb_119169 menu-item-toppage"><a href="http://connectgroupinc.com/products.shtml" target="_self" title="Products" data-pageid="119169" data-act="canvas" data-itemid="113107" data-cat="0">Products</a> </li><li id="menu_119170" class=" lb_119170 menu-item-toppage"><a href="http://connectgroupinc.com/services.shtml" target="_self" title="Services" data-pageid="119170" data-act="canvas" data-itemid="113108" data-cat="0">Services</a> </li><li id="menu_8" class="last lb_8 menu-item-toppage"><a href="http://connectgroupinc.com/contact-us.shtml" target="_self" title="Contact Us" data-pageid="8" data-act="canvas" data-itemid="8" data-cat="0">Contact Us</a> </li></ul>	</nav>
+	<div class="logo-container container">
+		<a href="/" class="logo"><img src="/var/m_4/48/48d/63237/712322-41d376ab-648b-4208-afe3-c8f9e8ec2c06.png" alt="Connect Group" id="siteMainDynLogo" border="0px" data-test="123" /></a> <script type="application/ld+json">
+    				{
+				      "@context": "http://schema.org",
+				      "@type": "LocalBusiness",
+				      "url": "http://connectgroupinc.com",
+				      "logo": "/var/m_4/48/48d/63237/712322-41d376ab-648b-4208-afe3-c8f9e8ec2c06.png"
+				    }
+					</script>	</div>	
+	<div class="tag-1"></div>
+</header>  <section id="wrapper" class="skinBg container">
+          <div id="content">
+      <div id="main-content">		    <div id="searchResults"></div>        <div id="wp_content_data"><div class="vertical" style="width: 100%;"><div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-867177" 
+		class="widget-body " style="padding: 0px 0px 0px 13px; margin: -16px 0px 0px 0px; background-color: #89a7e6; background-repeat: repeat; -ms-border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px">
+		<div class="freetextarea">	
+	<div><strong>ISO 9001:2008 Registered&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 410-729-5000</strong></div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-866867" 
+		class="widget-body " style="-ms-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; background-color: #89a7e6; background-repeat: repeat; padding: 14px 0px 7px 0px; margin: 5px 10px 8px 0px">
+				<div class="freetext-image" style=" width:34.93723849372385%; float:left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="709993"
+				     src="/var/m_4/48/48d/63237/709993-9caeb43e-369b-4655-a56b-54103b4eb113.jpg" 
+				     alt="" 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea">
+			<address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="color: rgb(0, 0, 0);"><span style="font-size: 20px;"><strong>Connect Group</strong></span><span style="font-size: 16px;"><strong> </strong>manufactures high quality cable assemblies, wire harnesses, electro-mechanical, box builds&nbsp; and custom. We also have custom molding capabilities.</span></span>​</address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="font-size:14px;">​</span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="color: rgb(0, 0, 0);"><span style="font-size: 16px;">Capabilities include design through production - serving commercial, industrial and aerospace markets.</span></span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="font-size:14px;">​</span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="color: rgb(0, 0, 0);"><span style="font-size: 16px;">If you're looking for high quality and personal service you've come to the right place.</span></span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="font-size:14px;">​</span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="color: rgb(0, 0, 0);"><span style="font-size: 16px;">At Connect Group we'll give you the attention and personal service you'll come to expect and enjoy. </span></span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="font-size:11px;">​</span></address><address style="color: rgb(7, 7, 7); font-family: Arial; font-size: 24px; background-color: rgb(137, 167, 230); margin-left: 160px;"><span style="color: rgb(0, 0, 0);">​<span style="font-size:14px;">​</span></span><span style="color: rgb(0, 0, 0);"><span style="font-size: 16px;">If you’d like to discuss what we have to offer or have any questions - </span></span><span style="color: rgb(0, 0, 0); font-size: 16px;">give us a call&nbsp; - 410-729-5000.</span></address>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element gallery-diy-lightbox diy-resizable ">
+
+		<div id="gallery_diy_widget_13" 
+		class="widget-body gallery_diy" style="background-color: #89a7e6; background-repeat: repeat; border: 5px solid #3244fa; -ms-border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px">
+		<div class="gallery_row" style="height: 25%; ">
+	<div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709061-Misc_042006_012.w1024.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709061-Misc_042006_012.w1024.jpg" alt="" style="width:100%;" class="lazy" data-width= "2048" data-height = "1536">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/710007-BA_100_with_New_75_ft_Extension_Cable_PN_88458.w1024.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/710007-BA_100_with_New_75_ft_Extension_Cable_PN_88458.w1024.jpg" alt="" style="width:100%;" class="lazy" data-width= "2592" data-height = "1936">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709109-8aecfc63-5ea6-490e-bca1-00ce358ee987.png" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709109-8aecfc63-5ea6-490e-bca1-00ce358ee987.png" alt="" style="width:100%;" class="lazy" data-width= "480" data-height = "360">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709124-DSCN2700.w1024.JPG" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709124-DSCN2700.w1024.JPG" alt="" style="width:100%;" class="lazy" data-width= "2048" data-height = "1536">
+		</a>		
+	</div>
+</div></div>
+<div class="clear"></div><div class="gallery_row" style="height: 25%; ">
+	<div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709062-DSCN0740.w1024.JPG" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709062-DSCN0740.w1024.JPG" alt="" style="width:100%;" class="lazy" data-width= "2048" data-height = "1536">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709081-DSCN0753.w1024.JPG" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709081-DSCN0753.w1024.JPG" alt="" style="width:100%;" class="lazy" data-width= "2048" data-height = "1536">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709063-edcf11ec-dbd7-4046-9d2e-528ea9b3b7a6.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709063-edcf11ec-dbd7-4046-9d2e-528ea9b3b7a6.jpg" alt="" style="width:100%;" class="lazy" data-width= "850" data-height = "637">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709974-08155d36-6a4f-42d1-973e-90377bae6979.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709974-08155d36-6a4f-42d1-973e-90377bae6979.jpg" alt="" style="width:100%;" class="lazy" data-width= "1024" data-height = "756">
+		</a>		
+	</div>
+</div></div>
+<div class="clear"></div><div class="gallery_row" style="height: 25%; ">
+	<div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709049-2b866c31-f8a4-4fed-a775-aa6f4e7474b8.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709049-2b866c31-f8a4-4fed-a775-aa6f4e7474b8.jpg" alt="" style="width:100%;" class="lazy" data-width= "925" data-height = "625">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709057-5e1fcacb-0516-4df4-bfe9-46d8c25b4555.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709057-5e1fcacb-0516-4df4-bfe9-46d8c25b4555.jpg" alt="" style="width:100%;" class="lazy" data-width= "979" data-height = "644">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709055-f240bd50-ebd9-4771-85b6-7831faf2e630.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709055-f240bd50-ebd9-4771-85b6-7831faf2e630.jpg" alt="" style="width:100%;" class="lazy" data-width= "886" data-height = "494">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/710019-GS_ACU-_CGI_version__042006_013.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/710019-GS_ACU-_CGI_version__042006_013.jpg" alt="" style="width:100%;" class="lazy" data-width= "1281" data-height = "794">
+		</a>		
+	</div>
+</div></div>
+<div class="clear"></div><div class="gallery_row" style="height: 25%; ">
+	<div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/710025-2012-07-30_09-48-10_812.w1024.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/710025-2012-07-30_09-48-10_812.w1024.jpg" alt="" style="width:100%;" class="lazy" data-width= "2592" data-height = "1456">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709077-d8efb7f5-e365-40b7-a701-b9ecb9bc1880.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709077-d8efb7f5-e365-40b7-a701-b9ecb9bc1880.jpg" alt="" style="width:100%;" class="lazy" data-width= "941" data-height = "509">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/710014-e5d18e8b-516d-4ded-a0dc-fa8f4abba37a.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/710014-e5d18e8b-516d-4ded-a0dc-fa8f4abba37a.jpg" alt="" style="width:100%;" class="lazy" data-width= "985" data-height = "516">
+		</a>		
+	</div>
+</div><div class="gallery_single_image" style="width: 25%;  height: 100%; overflow:hidden;">
+	<div style="">
+		<a href="/var/m_4/48/48d/63237/709080-e785f320-fe69-42d2-b7a4-0ca2d9ba0d23.jpg" class="fancybox" rel="gallery1" style="height:100%;" title="">
+			<img data-original="/var/m_4/48/48d/63237/709080-e785f320-fe69-42d2-b7a4-0ca2d9ba0d23.jpg" alt="" style="width:100%;" class="lazy" data-width= "1024" data-height = "609">
+		</a>		
+	</div>
+</div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-14" 
+		class="widget-body " style="background-color: #89a7e6; background-repeat: repeat; border: 4px solid #3244fa; -ms-border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px">
+		<div class="freetextarea">	
+	<p style="text-align: center;"><span style="font-size:22px;"><span style="color:#000000;">A high percentage of our business is from repeat customers and referrals.</span></span></p><p style="text-align: center;"><span style="font-size:22px;"><span style="color:#000000;">We welcome the opportunity to earn your trust and deliver the best possible service to you.</span></span>​</p></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+</div></div>      </div>
+      <div class="clear"></div>
+    </div>   
+  </section>
+ <footer id="copyrights" class="footer">
+  <div class="container clearfix">
+      <div id="footerContent"><p><span style="color:#000000;"><span style="font-size:10px;">Website designed by Connect Group Inc. (C) 2018 Website Design Tools by Comcast Business Cloud Solutions</span></span></p>
+</div>
+<div id="mySocialList" class="addthis_toolbox addthis_32x32_style addthis_default_style"></div>
+
+        
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "url": "http://connectgroupinc.com",
+		 "sameAs" : [
+		 	  ]
+	}
+</script>
+
+
+      <div class="languages">
+              </div>
+    </div>
+  </footer>
+<aside id="fixed_mobile_action" class="clearfix">
+    <ul id="circle-action" class="ios5">
+      <li><a href="#" onclick="return false;">+</a></li>
+      <li class="phone" data-word="Call us now !"><a href="tel:" class="click-phone">Call us now !</a></li>
+      <li class="map" data-word="Find us on the map"> <a href="" class="click-map">Find us on the map</a></li>
+      <li class="mail" data-word="Send us an email"><a href="mailto:" class="click-mail">Send us an email</a></li>
+    </ul>
+  </aside>
+		
+	    <script type="text/javascript">
+    //<!--
+    var sid = 63237;    //-->
+</script>
+<script type="text/javascript" src="/js/functions_stripped.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/jquery.lazyload.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/js/galleryLightbox/gallery-paging.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/templates/creator/m_4/43/432/318/assets/wp-menu.min.js?v=6.9.42161"></script>
+<script type="text/javascript" src="/templates/creator/m_4/43/432/318/assets/jQuery.circleMenu.min.js?v=6.9.42161"></script>        <script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "LocalBusiness",
+	"url": "http://connectgroupinc.com",
+	"name": "Connect Group",
+	"email": "",
+	"address": {
+	    "@type": "PostalAddress",
+	    "addressLocality": "",
+	    "addressRegion": "",
+	    "addressCountry":"",
+	    "postalCode":"",
+	    "streetAddress": ""
+	                },
+	"telephone": "",
+	"telephone": "",
+	"fax": ""
+}
+</script>
+</body>
+</html>

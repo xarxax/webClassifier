@@ -1,0 +1,413 @@
+<!-- CactuShop v6 license: SMALLWON-PD4424-002 -->
+<!-- CactuShop ©1999-2006 Cactusoft Ltd. - www.cactushop.com -->
+<!-- MYDEVLICNUM -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--
+		===============================================================================
+		CACTUSHOP v6 ASP SHOPPING CART
+		©1999-2006 CACTUSOFT INTERNATIONAL FZ-LLC. - WWW.CACTUSHOP.COM
+		All rights reserved.
+		===============================================================================
+		-->
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<meta name="description" content="Hygienic Solutions UK. Hand hygiene training and hygiene products. The number one supllier of Glo Germ provide hygiene training equipment, and specialise in handwashing hygiene training. We are the number one supplier of Glo Germ, an effective tool to demonstrate hand washing, surface cleaning, hygiene, and containment techniques.   " />
+		<meta name="keywords" content="hygiene, hand washing, hygiene training, handwashing techniques, glo germ, hands, germs, kits, ultra violet, light, flashlights, thermometors, hand cleansers " />
+		<title>Hygienic Solutions UK | Hygienic Hand Washing | Hand Hygiene Training products and Suppliers of Glo Germ</title>
+		<link rel="Stylesheet" type="text/css" href="/skin_default/templatestyles/template.css" media="all" />
+		<link rel="Stylesheet" type="text/css" href="/skin_default/templatestyles/cactushop.css" media="all" />
+		<link rel="Stylesheet" type="text/css" href="/includes/adminbar.css" media="all" />
+		<link rel="Stylesheet" type="text/css" href="/skin_default/templatestyles/print.css" media="print" />
+		<script type="text/javascript" src="/skin_default/templatescripts/main.js"></script>
+		<script type="text/javascript" src="/skin_default/templatescripts/options.js"></script>
+        <script type="text/javascript" src="/skin_default/templatescripts/bgrotate.js"></script>
+    <script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+
+
+var pausecontent2=new Array()
+pausecontent2[0]='You will have 1000 more bacteria on your hands after you have washed <br>your hands if you  do not dry them correctly'
+pausecontent2[1]='60% of men DO NOT wash their hands after visiting the toilet'
+pausecontent2[2]='40% of women DO NOT wash their hands after visiting the toilet'
+pausecontent2[3]='Touching a grab rail on the underground system brings you into contact with 5000 hands, many of which are unwashed!'
+pausecontent2[4]='There are more germs on a computer keyboard than there are on your toilet.'
+pausecontent2[5]='A survey on catering workers, which showed 39% did not wash their hands after going to the toilet and 53% did not do so before they prepared foods.<br /><br /><br /><br /><br />'
+pausecontent2[6]='<a href="page.asp?id=factpage">More Hygiene Facts</a>'
+
+
+
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=5000 //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*2)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+5)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+
+</script>
+</head>
+	<body>
+	
+	<div id="container">
+	<div class="topnav">
+    <p><span class="style1">Information:</span> <a href="/page.asp?id=hygiene1">Education Hygiene</a>&nbsp;| <a href="/page.asp?id=hygiene2">Healthcare Hygiene</a>| <a href="/page.asp?id=labhygiene">Laboratories</a> | <a href="/page.asp?id=fdhygiene">Catering/Food Hygiene</a> | <a href="/page.asp?id=research">Research</a></p>
+  </div>
+  <div id="centrecontainer">
+<div id="header"></div>
+<div class="nav1"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a href="/default.asp?">Home</a> <span class="style2">|</span> <a href="/customer_home.asp?">My Account</a> <span class="style2"> |</span> <a href="/contact.asp?">Contact Info</a><span class="style2"> |</span> <a href="/page.asp?id=about">About</a><span class="style2"> | </span> <a href="/page.asp?id=glogerm">Glo Germ&#8482</a><span class="style2"> | </span> <a href="/page.asp?id=customers">Our Customers</a><span class="style2"> | </span><a href="/page.asp?id=training">Hygiene Training</a> <span class="style2">|</span> <a href="/page.asp?id=factpage">Hygiene Facts</a></td>
+<td align="right"><form method="get" action="/search.asp"><div id="searchbox">
+					
+						
+		      <input type="submit" name="submit" value="Search" id="searchbutton" class="smallsubmit" />
+			  <input name="strKeywords" type="text" class="nav1search" />
+			</div>
+			</form></td>
+  </tr>
+</table>
+</div>
+			
+				<div id="left">
+			
+				  <div id="currencymenu"><h4>Currency</h4>
+					<p class="currencymenupad"><form id="currmenuform" method="get" action="/default.asp"><div>
+<select name="numCurrencyID" class="currencymenu" onchange="javascript:document.getElementById('currmenuform').submit();">
+<option value="1" selected="selected">&#163; (GBP)</option>
+</select></div></form>
+</p>
+				  </div>
+
+					
+				  <div><h4>Browse</h4><div id="categorymenu"><ul>
+<li><div><a href="/Glo-Box-Kits/c-1-111/">Glo Box Kits</a></div></li>
+<li><div><a href="/Glo-Germ-Micro-Kits/c-1-98/">Glo Germ Micro Kits</a></div></li>
+<li><div><a href="/Glo-Germ-Starter-Kits/c-1-93/">Glo Germ Starter Kits</a></div></li>
+<li><div><a href="/Glo-Germ-Medium-Kits/c-1-97/">Glo Germ Medium Kits</a></div></li>
+<li><div><a href="/Glo-Germ-Pro-Kits/c-1-96/">Glo Germ Pro Kits</a></div></li>
+<li><div><a href="/UV-Lights-Gels-Powders-Oils/c-1-99/">UV Lights Gels Powders Oils</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/c-1-94/">Portable/Temporary Hand Wash Basins</a></div><ul>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/TealWash/c-1-94-103/">TealWash</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/Handeman/c-1-94-102/">Handeman</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/KiddiWash/c-1-94-112/">KiddiWash</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/Compact-Classic/c-1-94-104/">Compact Classic</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/Stallette-Super/c-1-94-106/">Stallette Super</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/Hygienius/c-1-94-101/">Hygienius</a></div></li>
+<li><div><a href="/PortableTemporary-Hand-Wash-Basins/Hygienic-Hand-Driers/c-1-94-110/">Hygienic Hand Driers</a></div></li></ul></li>
+<li><div><a href="/Training-Aids/c-1-108/">Training Aids</a></div></li></ul></div>	</div>
+
+					<div id="extra_info2">
+    
+			      <img src="http://www.hygienicsolutionsuk.com/custom-images/cards.png" width="155" height="211" alt="Payment Accepted" /></div>
+					
+					<div id="extra_info2">
+                      <h4>Hygiene Facts</h4>
+					  <script type="text/javascript">
+
+//new pausescroller(name_of_message_array, CSS_ID, CSS_classname, pause_in_miliseconds)
+
+
+new pausescroller(pausecontent2, "pscroller2", "someclass", 2000)
+
+                    </script>
+                    </div>
+			    <div id="extra_info">
+					  <h4>Extra Info</h4>
+					  <p><a href="page.asp?id=handguide">Hand Hygiene Guide</a><br />
+					    <a href="/page.asp?id=terms">Terms & Conditions</a><br />
+                        <a href="/page.asp?id=refunds">Returns and Refunds</a><br />
+					    <a href="/page.asp?id=privacy">Privacy</a><br />
+					    <a href="/page.asp?id=security">Security</a><br />
+					    <a href="/page.asp?id=delivery">Delivery</a><br />
+					    <a href="/page.asp?id=links">Links</a><br />
+                      </p>
+				  </div>			
+					</div>
+				<div id="pagebody">
+			  <div id="backgrounds">
+             
+              <div id="basket_right"><div id="minibasket">
+<p id="numberofitems">No of items: <em>0</em></p>
+<p id="basketempty">Your basket is empty</p>
+<ul id="basketlinks">
+<li><div><a href="/basket.asp?">View Basket</a></div></li>
+</ul>
+</div>
+</div>
+			  </div>
+<div id="pagecontent">
+					<div id="pagecontent_pad">
+					
+<div class="home_region" id="home_region1">
+	
+	<div id="newsitem1">
+		
+				<div class="pad">
+				<h1>Welcome to Hygienic Solutions UK</h1>
+<p>Hygienic Solutions UK are committed to 
+ensuring 
+  that effective hand washing techniques are 
+applied, 
+  at all levels, in all sectors of Industry. 
+</p>
+<p>We are able to ensure this, by supplying 
+Glo Germ&#8482; to a variety of users, whilst at the 
+same time, 
+offering advice, with the benefit of years of 
+experience of using Glo Germ and the associated 
+products. </p>
+
+<h2>What is Glo Germ?</h2>
+<p>Glo Germ&#8482; simulates the spread of 
+germs, 
+teaching how quickly and broadly germs can be 
+spread in a short period of time.  <a 
+href="http://www.hygienicsolutionsuk.com/page.asp?id=glogerm">( Read 
+more about 
+Glo Germ&#8482; here )</a>
+<p>Hygienic Solutions UK are now the number one 
+  provider of Glo Germ&#8482; throughout Europe. 
+We are 
+  supplying all sectors of industry with a range of 
+UV 
+  lamps and Glo Germ&#8482; products that  
+surpasses all 
+others. </p>
+<h2>Purchasing Information</h2>
+<p><strong>We now accept payment online however we do take purchase orders from all organisations. Please call or use the contact form that can be found<b> <a href="http://www.hygienicsolutionsuk.com/contact.asp?">here</a>.</strong></p></b>
+
+
+				</div>
+			
+	</div>
+
+</div>
+
+<div class="home_region" id="home_region2">
+	
+	<div class="products specials ">
+		<h2 class="boxheader">Featured Products</h2>
+		
+	<div class="products products_shortened">
+		<div class="product" id="product1"><div class="box"><div class="pad">
+<h2><a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=404">Glo Germ Micro Kits</a></h2>
+<div class="generalspace"></div>
+<a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=404"><img src="/uploads/images_products/404.jpg" alt="Glo Germ Micro Kits" /></a>
+<div class="minprice">From £12.86 (Inc Tax £15.43)</div>
+</div></div></div>
+
+<div class="product" id="product2"><div class="box"><div class="pad">
+<h2><a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=405">Glo Germ Starter Kits</a></h2>
+<div class="generalspace"></div>
+<a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=405"><img src="/uploads/images_products/405.jpg" alt="Glo Germ Starter Kits" /></a>
+<div class="minprice">From £43.93 (Inc Tax £52.71)</div>
+</div></div></div>
+
+<div class="product" id="product3"><div class="box"><div class="pad">
+<h2><a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=462">Glo Box Kit Gel</a></h2>
+<em class="strapline">New Glo Box Kit!!!</em>
+<a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=462"><img src="/uploads/images_products/462.jpg" alt="Glo Box Kit Gel" /></a>
+<div class="minprice">£107.80 (Inc Tax £129.36)</div>
+</div></div></div>
+
+<div class="product" id="product4"><div class="box"><div class="pad">
+<h2><a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=424">Handeman for Motor Vehicles</a></h2>
+<div class="generalspace"></div>
+<a href="/product.asp?strParents=&amp;CAT_ID=&amp;P_ID=424"><img src="/uploads/images_products/424.jpg" alt="Handeman for Motor Vehicles" /></a>
+<div class="minprice">From £264.00 (Inc Tax £316.80)</div>
+</div></div></div>
+
+
+	</div><div class="spacer"></div>
+	</div><div class="products_end"></div> 
+</div>
+
+<div class="home_region" id="home_region3">
+	
+	<div id="newsitems">
+		
+			<div class="newsitem" id="newsitem2"><div class="pad">
+			<h4>Product Support</h4>
+If you have any questions about any of our products 
+please do not hesitate to call our support line on 
+<b>0800 7566680</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div></div>
+			
+			<div class="newsitem" id="newsitem3"><div class="pad">
+			<h4><b>KIT UPGRADES!!</b></h4>
+We have upgraded the flashlights in the Medium and Professional range.
+The Medium kits now come with the 21UVLED as standard and the Pro kits have an all new 32UVLED...The prices remain the same!
+The website will be updated soon.
+
+			</div></div>
+			
+	</div>
+	<div id="newsitems_end"></div>
+	
+
+</div>
+
+<div class="home_region" id="home_region4">
+	
+
+	<div id="toplists">
+				<div class="box">
+					<h4>Our Newest Products</h4>
+					<div class="pad">
+					<div><ul>				
+							<li><div><a href="product.asp?P_ID=466">kiddiSynk</a></div></li>				
+							<li><div><a href="product.asp?P_ID=465">KiddiWash</a></div></li>				
+							<li><div><a href="product.asp?P_ID=463">Glo Box Kit Oil</a></div></li>				
+							<li><div><a href="product.asp?P_ID=462">Glo Box Kit Gel</a></div></li>				
+							<li><div><a href="product.asp?P_ID=460">32  UV LED LIGHT</a></div></li>
+					</ul></div>
+				</div></div>
+			
+	</div>
+	
+</div>
+
+
+					</div>
+	  </div>
+	  <div id="footer">
+					<div id="terms">
+						Hygienic Solutions UK ©2008 . Site design ::UFO<br />
+            <br />
+					</div>
+	  </div>
+                
+			</div>
+	  </div>
+	</div>	
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1995335-8");
+pageTracker._trackPageview();
+</script>
+	</body>
+</html>

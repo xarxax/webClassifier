@@ -1,0 +1,28 @@
+﻿
+<html>
+
+<script  type="text/javascript">
+
+    /*
+    if (isMobile()) {
+        window.location = "http://www.mcgrathsfishhouse.com/mobile/default.html";
+    }
+    else {
+        window.location = "http://www.mcgrathsfishhouse.com/default.aspx";
+    }
+    */
+
+    window.location = "/default.aspx";
+
+
+    function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+
+    function isMobile() { return ('ontouchstart' in document.documentElement); }
+
+</script>
+
+
+</html>

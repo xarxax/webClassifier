@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+
+<title>A.B. Heller, Inc. | Full-Function CNC Machining</title>
+<meta name="description" content="We’re a full-function CNC machining facility with grinding, honing and lapping capabilities, using 50+ processes.">
+
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/voltageSlideshow.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/skin-2.css" />
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noticia+Text:400,700" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<style>
+.voltageSlideshowPlay { display:none !important; }
+.videoContainer { display:block !important; }
+</style>
+<![endif]-->
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript' src="js/settings.js"></script>
+<script type='text/javascript' src='js/jquery.waitforimages.js'></script>
+<script type='text/javascript' src='js/jquery.color.js'></script>
+<script type='text/javascript' src='js/jquery.backgroundPosition.js'></script>
+<script type='text/javascript' src='js/global.js'></script>
+<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='js/folio.js'></script>
+<script type='text/javascript' src='js/jquery.tweet.js'></script>
+<script type='text/javascript' src='js/jquery.tweet-config.js'></script>
+<script type='text/javascript' src='js/rollovers.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/jquery.voltageSlideshow.js'></script>
+<script type='text/javascript' src='js/jquery.cj-swipe.js'></script>
+<script type='text/javascript' src='js/flowplayer/flowplayer-3.2.10.min.js'></script>
+<script type='text/javascript' src='js/contact.js'></script>
+<script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+<script type='text/javascript' src='http://assets.pinterest.com/js/pinit.js'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+
+<script type="text/javascript">
+var ua = navigator.userAgent;
+var checker = {
+	mobile: ua.match(/(Android|iPhone|iPod|iPad|BlackBerry)/),
+	mobileNotIpad: ua.match(/(Android|iPhone|iPod|BlackBerry)/)
+};
+
+jQuery(document).ready(function($) {
+
+	var s_scrollOnClick=true;
+	var s_easing='swing';
+	var s_autoSlide=true;
+	var s_autoSlideTimer=5000;
+
+	s_easing='easeInQuad';
+	s_autoSlideTimer=5000;
+	
+	jQuery('.slider').not('#vs1, #vs2, .sidebarSlider').voltageSlideshow({scrollOnClick:s_scrollOnClick,easing:s_easing,autoSlide:s_autoSlide,autoSlideTimer:s_autoSlideTimer,theme:'black',videoWidth:270,videoHeight:151});
+	jQuery('#vs2').voltageSlideshow({scrollOnClick:s_scrollOnClick,easing:s_easing,autoSlide:s_autoSlide,autoSlideTimer:s_autoSlideTimer,videoWidth:400,videoHeight:225,theme:'black'});
+	jQuery('.sidebarSlider').voltageSlideshow({scrollOnClick:false,easing:s_easing,autoSlide:s_autoSlide,autoSlideTimer:s_autoSlideTimer,theme:'black'});
+	jQuery('#vs1').voltageSlideshow({scrollOnClick:s_scrollOnClick,easing:s_easing,autoSlide:s_autoSlide,autoSlideTimer:s_autoSlideTimer,videoWidth:450,videoHeight:253,fullWidth:true});
+	
+	/*** This is needed to make prettyPhoto compatible with HTML5. Use data-rel in a tags instead of rel ***/
+	jQuery('a[data-rel]').each(function() {
+		jQuery(this).attr('rel', jQuery(this).data('rel'));
+	});
+	/*** *** *** *** ***/
+	if(!checker.mobileNotIpad) {
+		jQuery("a[rel^='prettyPhoto']").prettyPhoto();
+	}
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105132134-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper">
+
+	<div>
+	<div class="headerWrapper fullWidth">
+	
+		<div class="headerBarWrapper">
+			<div class="headerBar">
+				
+				<!--social networks-->
+				<ul class="socialSmall" style="width:246px;">
+					<li><a href="https://www.linkedin.com/company/5312960" title="LinkedIn" class="linkedin">LinkedIn</a></li>
+					<!--<li><a href="#" title="Facebook" class="facebook">Facebook</a></li>
+					<li><a href="#" title="Flickr" class="flickr">Flickr</a></li>
+					<li><a href="#" title="Google+" class="googleplus">Google+</a></li>
+					<li><a href="#" title="Skype" class="skype">Skype</a></li>
+					<li><a href="#" title="Vimeo" class="vimeo">Vimeo</a></li> -->
+				</ul>
+				
+				<!--info-->
+				<div class="info">
+					Tel: +1 (248) 685-9500 | Email: <a href="mailto:info@abheller.com">info@abheller.com</a></strong>
+				</div>
+				
+			</div>
+		</div>
+	
+		<div class="headerInnerWrapper">
+			<header>
+				<!--logo-->
+				<div class="logoWrapper">
+					<a href="index.php" title="A.B. Heller" class="logo"><img src="img/skin-2/logo.png" alt="A.B. Heller"/></a>
+					
+				</div>
+				
+				<!--menu-->
+				<nav>
+					<ul id="menu-main-menu" class="menu">
+						<li><a href="index.php" class="active">Home</a>
+						</li>
+						<li><a href="about-us.php">Our Company</a>
+							<ul class="sub-menu">
+								<li><a href="about-us.php">About Us</a></li>
+                             <li><a href="leadership.php">Leadership</a></li>
+								<li><a href="quality.php">Quality Systems</a></li>
+								<li><a href="facilities.php">Facilities</a></li>
+							</ul>
+						</li>
+						<li><a href="markets.php">Markets</a></li>
+						<li><a href="capabilities.php">Capabilities</a>
+							<ul class="sub-menu">
+								<li><a href="cnc-milling.php">CNC Milling</a></li>
+								<li><a href="cnc-turning.php">CNC Turning</a></li>
+								<li><a href="cnc-swiss.php">CNC Swiss Machines</a></li>
+								<li><a href="cnc-grinding.php">CNC Grinding</a></li>
+								<li><a href="deburring.php">Deburring</a></li>
+								<li><a href="inspection.php">Inspection/Validation</a></li>
+							</ul>
+						</li>
+						<li><a href="casestudies.php">Case Studies</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+						<li><a href="careers.php">Careers</a></li>
+                        <li><a href="news.php">News</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
+		</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+	
+	<!-- Slider -->
+	<section id="vs1" class="slider vs1 lowerElements">
+		<ul>
+			
+			<li data-vs="image" data-vs-bgcolor="">
+				<img src="img/sliders/sliderbg1.jpg" alt="A.B. Heller" />
+				<div class="caption1 left" style="">
+					<p>Over 125 primary machines<span class="impact_variation">are capable of</span>
+					more than 50 different processes.</p>
+					<p><a href="capabilities.php" class="submit submitTheme"  title="Read more">Our Capabilities</a></p>
+				</div>
+			</li>
+			<li data-vs="image" data-vs-bgcolor="">
+				<img src="img/sliders/sliderbg2.jpg" alt="A.B. Heller" />
+				<div class="caption1 left" style="">
+					<p>A. B. Heller offers full <span class="impact_variation">manufacturing services</span> capability for turned, milled and finished close tolerance components.</p>
+					<p><a href="casestudies.php" class="submit submitTheme"  title="Read more">Case Studies</a></p>
+				</div>
+			</li>
+            <li data-vs="video" data-vs-video="vimeo" data-vs-video-id="68081276" data-vs-bgcolor="" data-vs-video-align="videoLeft">
+				<img src="img/sliders/sliderbg3.jpg" alt="A.B. Heller" />
+				<div class="caption1 right" style="">
+					<p>Our strength is a <span class="impact_variation" >highly skilled</span>nucleus of process experts developed during more than 50 years in the prototype business.</p>
+					<p><a href="about-us.php" class="submit submitTheme" title="Read more">Our Company</a></p>
+				</div>
+			</li>
+		</ul>
+	</section>
+	
+	
+	
+	<!--Content-->
+	<div class="contentWrapper">
+		<section class="layout2">
+		
+			<div class="cols_three">
+				<div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/style-picto.png">
+					<a href="about-us.php" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Project Management</h3>
+				<p style="text-align: center;">A.B. Heller is a leader in project management, providing fast resolution of engineering issues. Our company has extensive process engineering experience, offering complete service from integration of machining technologies and automation to successful test runs and on-time delivery.</p>
+				<p style="text-align: center;"><a title="Read More" href="casestudies.php">Read More</a></p>
+			</div>
+			
+			<div class="cols_three">
+				<div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/responsive-picto.png">
+					<a href="quality.php" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Quality Control</h3>
+				<p style="text-align: center;">Our quality management system ensures world-class quality of components and customer service, produced to exacting requirements. All of our inspection, test and measuring equipment is calibrated at regular intervals using methods traceable to NIST standards.</p>
+				<p style="text-align: center;"><a title="Read More" href="quality.php">Read More</a></p>
+			</div>
+			
+			<div class="cols_three cols_last">
+				<div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/support-picto.png">
+					<a href="news.php" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Company News</h3>
+				<p style="text-align: center;">A.B. Heller has been certified for our commitment to environmental preservation. Read more about this and other announcements in our News and Awards section.</p>
+				<p style="text-align: center;"><a title="Read More" href="news.php">Read More</a></p>
+			</div>
+			
+			<div style="clear:both;"></div>
+			
+			
+			
+			<!--<div class="divider" style="margin-top:0px; margin:20px 0 16px; "></div> -->
+            
+            <!--<h2>Case <span>Studies</span></h2>
+			
+		<div class="cols_three">
+				<div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/270x166.png">
+					<a href="#" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Success Story</h3>
+				<p style="text-align: center;">Six complex parts with strict deburr and cleanliness requirements.</p>
+				<p style="text-align: center;"><a title="Read More" href="#">Read More</a></p>
+			</div>
+			
+			<div class="cols_three">
+			  <div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/270x166.png">
+					<a href="#" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Success Story</h3>
+				<p style="text-align: center;">Significant field warranty issue required a new part design. </p>
+				<p style="text-align: center;"><a title="Read More" href="#">Read More</a></p>
+			</div>
+			
+			<div class="cols_three cols_last">
+			  <div class="imageWrapper noOverlay" style="width:270px; height:166px;">
+					<img src="img/270x166.png">
+					<a href="#" title="" class="linkedImageLink"></a>
+				</div>
+				
+				<h3 style="text-align: center;">Success Story</h3>
+				<p style="text-align: center;">Complete replication of customer's process avoided new PPAP.</p>
+				<p style="text-align: center;"><a title="Read More" href="#">Read More</a></p>
+			</div> -->
+			
+			<div style="clear:both;"></div>
+
+		</section>
+
+	</div>
+	
+	<div class="push"></div>
+
+</div>
+
+<div class="footerWrapper">
+	
+	
+  <div class="footerInnerWrapper">
+		<footer>
+			
+			<span class="copyright">&copy; 2016 <a href="http://abheller.com" title="A.B. Heller">A.B. Heller</a>. <a href="about-us.php">About Us</a> | <a href="careers.php">Careers</a></span>
+			<a href="#" title="Back to top" class="backToTop">Back to top</a>
+  <div class="clear"></div>
+		</footer> 
+		<div style="float:left; clear:both;"></div>
+	</div>
+	
+</div>
+<script>
+jQuery(document).ready(function($) {
+	$('.sc_flowplayer').flowplayer({ src:"js/flowplayer/flowplayer-3.2.11.swf", wmode: "transparent"}, { clip: { autoPlay: true }, wmode: "transparent" });
+	$('.featured_flowplayer').flowplayer({ src:"js/flowplayer/flowplayer-3.2.11.swf", wmode: "transparent"}, { clip: { autoPlay: true } });
+});
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53065411-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+
+</html>

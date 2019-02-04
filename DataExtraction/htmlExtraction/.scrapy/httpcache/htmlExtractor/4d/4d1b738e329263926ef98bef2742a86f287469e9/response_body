@@ -1,0 +1,247 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>ADONAI &quot;Tool &amp; Die&quot; Engineering - Custom Product Development Using Automated Machines, Metal Stamping, CNC Machining &amp; Grinding, &amp; Sheet Metal Fabrication</title>
+		<meta name="keywords" content="tool and die engineering, automated machines, metal stamping, machining and grinding, floor safes, wall safes, custom product development, sheet metal fabrication, drilling and tapping, tool and die, metal fabricated products">
+		<meta name="Description" content="Adonai Specializes in automated machines, metal stamping, machining and grinding, floor safes, drilling and tapping, and sheet metal fabrication. Custom Metal Fabricated Products are our specialty.">
+		<!--Adonai Specializes in automated machines, metal stamping, machining and grinding, floor safes, drilling and tapping, and sheet metal fabrication. Custom Metal Fabricated Products are our specialty.-->
+		<csscriptdict>
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if (actArray == null) return false;
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'About Adonai Button',/*URL*/'atdimages/atdbutton1.gif',/*URL*/'atdimages/atdbutton2.gif',/*URL*/'','About Adonai \"Tool & Die\" Engineering');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Adonai Crew Button',/*URL*/'atdimages/adonaicrewbuton.gif',/*URL*/'atdimages/adonaicrewbuton2.gif',/*URL*/'','Adonai Tool & Die Crew');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Adonai Services',/*URL*/'atdimages/servicesbuton1.gif',/*URL*/'atdimages/servicesbuton2.gif',/*URL*/'','Adonai \"Tool & Die\" Services');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Contact Adonai Button',/*URL*/'atdimages/contactbuton1.gif',/*URL*/'atdimages/contactbuton2.gif',/*URL*/'','Contact Adonai \"Tool & Die\" Engineering');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Drilling and Tapping Button',/*URL*/'atdimages/drillingtappingbuton1.gif',/*URL*/'atdimages/drillingtappingbuton2.gif',/*URL*/'','Adonai\'s Drilling and Tapping Services');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Email Adonai Button',/*URL*/'atdimages/emailbuton1.gif',/*URL*/'atdimages/emailbuton2.gif',/*URL*/'','Email Adonai \"Tool & Die\" Engineering');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Feedback Button',/*URL*/'atdimages/feedbackbuton1.gif',/*URL*/'atdimages/feedbackbuton2.gif',/*URL*/'','Give Adonai Feedback');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Floor Safes Button',/*URL*/'atdimages/floorsafebuton1.gif',/*URL*/'atdimages/floorsafebuton2.gif',/*URL*/'','Adonai\'s Floor Safes');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'CNC Machining and Grinding Button',/*URL*/'atdimages/machiningbuton1.gif',/*URL*/'atdimages/machiningbuton2.gif',/*URL*/'','Adonai\'s Machining & Grinding Services');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Metal Stamping Button',/*URL*/'atdimages/metalstampbuton1.gif',/*URL*/'atdimages/metalstampbuton2.gif',/*URL*/'','Adonai\'s Metal Stamping');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Past Projects Button',/*URL*/'atdimages/pastprojectsbuton1.gif',/*URL*/'atdimages/pastprojectsbuton2.gif',/*URL*/'','Adonai\'s Past Projects');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Search Adonai Button',/*URL*/'atdimages/searchbuton1.gif',/*URL*/'atdimages/searchbuton2.gif',/*URL*/'','Search Adonai\'s Web Site');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="white" text="black" link="#11413a" alink="#af120c" vlink="#7f7f7f" onload="CSScriptInit();">
+		<center>
+			<table border="0" cellpadding="0" cellspacing="0" width="630" height="90">
+				<tr height="50">
+					<td align="center" valign="top" width="630" height="50"><img height="50" width="630" src="atdimages/adonailogoa.gif" alt="Adonai Tool &amp; Die Specializes in Automated Machines, Metal Stamping, CNC Machining &amp; Grinding, Custom Product Development, Floor Safes, and Sheet Metal Fabrication"></td>
+				</tr>
+				<tr height="40">
+					<td width="630" height="40" align="center" valign="top"><font size="1" color="white">Adonai &quot;Tool and Die&quot; Engineering Specializes in Automated Machines, Metal Stamping, CNC Machining &amp; Grinding, and Custom Product Development<br>
+						</font><font size="1"><a href="atdpages/aboutadonai.html">About Adonai</a> &#149; <a href="atdpages/customservices.html">Services</a> &#149; <a href="atdpages/contact.html">Contact</a> &#149; <a href="atdpages/drillingandtapping.html">Drilling &amp; Tapping</a> &#149; <a href="atdpages/emailadonai.html">Email</a> &#149; <a href="atdpages/safes.html">Floor Safes</a> &#149;&nbsp;<a href="atdpages/cncmachiningrinding.html">CNC Machining &amp; Grinding</a> &#149; <a href="atdpages/metalstamping.html">Metal Stamping</a> &#149; <a href="atdpages/search.html">Search</a><img src="atdimages/longredbar1.jpg" width="630" height="5" border="0" vspace="3" alt="Tool &amp; Die Cross Bar"></font></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="630">
+				<tr height="26">
+					<td width="630" height="26" valign="top"><img src="atdimages/toolanddietext_01.jpg" width="379" height="26" border="0" alt="Adonai Tool &amp; Die Engineering"></td>
+				</tr>
+				<tr height="22">
+					<td width="630" height="22" valign="top"><img src="atdimages/toolanddietext_03.jpg" width="379" height="22" border="0" alt="Specializing In Automated Machines, Metal Stamping"><img src="atdimages/toolanddietext_04.jpg" width="251" height="22" border="0" alt="CNC Machining &amp; Grinding and Custom Product Development"></td>
+				</tr>
+				<tr height="99">
+					<td width="630" height="99" valign="top"><img src="atdimages/toolanddietext_05.jpg" width="379" height="99" border="0" alt="Adonai Tool &amp; Die 2151 E. Avenue Q Palmdale, CA 93550"><img src="atdimages/redtooldieline.gif" width="251" height="25" border="0" alt="Tel: 661-267-1116 Fax: 661-267-1117"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="630">
+				<tr height="12">
+					<td width="120" height="12"><img src="atdimages/adonai.jpg" width="120" height="110" border="0" alt="Tool &amp; Die Fabrication"></td>
+					<td width="15" height="12"></td>
+					<td width="495" height="12" valign="top"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">ADONAI &quot;Tool &amp; Die&quot; ENGINEERING specializes in Custom Product Development using years of experience in Automated Machines, Metal Stamping, CNC Machining &amp; Grinding, Drilling &amp; Tapping and Sheet Metal Fabrication. Adonai &quot;Tool &amp; Die&quot; Engineering is a quality company with one goal in mind: To Design, Develop, and Manufacture Quality Products using years of experience in the &quot;Tool &amp; Die&quot; Industry.<br>
+							<br>
+							
+							
+							
+							
+							
+							
+								Adonai Engineering helps you to develop and manufacture your custom products from start to finish, making sure to meet your specific demands and requirements. Adonai is in the business of Manufacturing and Developing Quality Metal Fabricated Products, so you can be sure we will provide you with the best service at the best price. <a href="atdpages/pastprojects.html">Click here for a view of some of Adonai's past projects.</a></font></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="632" height="165">
+				<tr height="40">
+					<td width="100" height="40" valign="top"><img src="atdimages/squareA.gif" width="100" height="40" border="0" alt="red cross"></td>
+					<td width="432" height="40" valign="middle"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href="mailto:albert@adonaitoolanddie.com"><img src="atdimages/email.gif" width="60" height="35" border="0" align="absmiddle" hspace="5" alt="Email"></a><a href="mailto:albert@adonaitoolanddie.com">albert@adonaitoolanddie.com</a> for technical questions</font></td>
+					<td width="100" height="40" valign="top"></td>
+				</tr>
+				<tr height="20">
+					<td width="100" height="20" valign="top"><img src="atdimages/redbar.jpg" width="100" height="20" border="0" alt="dies"></td>
+					<td width="432" height="20" valign="top"><img src="atdimages/longredbar.jpg" width="432" height="20" border="0" alt="red line"></td>
+					<td width="100" height="20" valign="top"><img src="atdimages/redbarB.jpg" width="100" height="20" border="0" alt="dies"></td>
+				</tr>
+				<tr height="85">
+					<td width="100" height="85" valign="middle"><img height="85" width="100" src="atdimages/adonaidie.gif" alt="Tool &amp; Die" border="0"></td>
+					<td width="432" height="85" valign="middle"><csobj w="108" h="25" t="Button" ht="atdimages/atdbutton2.gif" st='About Adonai "Tool & Die" Engineering'><a href="atdpages/aboutadonai.html" onmouseover="return CSIShow(/*CMP*/'About Adonai Button',1)" onmouseout="return CSIShow(/*CMP*/'About Adonai Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/atdbutton1.gif" width="108" height="25" name="About Adonai Button" border="0" alt="About Adonai &quot;Tool &amp; Die&quot; Engineering"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/adonaicrewbuton2.gif" st="Adonai Tool & Die Crew"><a href="atdpages/adonaiworkers.html" onmouseover="return CSIShow(/*CMP*/'Adonai Crew Button',1)" onmouseout="return CSIShow(/*CMP*/'Adonai Crew Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/adonaicrewbuton.gif" width="108" height="25" name="Adonai Crew Button" border="0" alt="Adonai Tool &amp; Die Crew"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/servicesbuton2.gif" st='Adonai "Tool & Die" Services'><a href="atdpages/customservices.html" onmouseover="return CSIShow(/*CMP*/'Adonai Services',1)" onmouseout="return CSIShow(/*CMP*/'Adonai Services',0)" onclick="return CSButtonReturn()"><img src="atdimages/servicesbuton1.gif" width="108" height="25" name="Adonai Services" border="0" alt="Adonai &quot;Tool &amp; Die&quot; Services"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/contactbuton2.gif" st='Contact Adonai "Tool & Die" Engineering'><a href="atdpages/contact.html" onmouseover="return CSIShow(/*CMP*/'Contact Adonai Button',1)" onmouseout="return CSIShow(/*CMP*/'Contact Adonai Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/contactbuton1.gif" width="108" height="25" name="Contact Adonai Button" border="0" alt="Contact Adonai &quot;Tool &amp; Die&quot; Engineering"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/drillingtappingbuton2.gif" st="Adonai's Drilling and Tapping Services"><a href="atdpages/drillingandtapping.html" onmouseover="return CSIShow(/*CMP*/'Drilling and Tapping Button',1)" onmouseout="return CSIShow(/*CMP*/'Drilling and Tapping Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/drillingtappingbuton1.gif" width="108" height="25" name="Drilling and Tapping Button" border="0" alt="Adonai's Drilling and Tapping Services"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/emailbuton2.gif" st='Email Adonai "Tool & Die" Engineering'><a href="atdpages/emailadonai.html" onmouseover="return CSIShow(/*CMP*/'Email Adonai Button',1)" onmouseout="return CSIShow(/*CMP*/'Email Adonai Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/emailbuton1.gif" width="108" height="25" name="Email Adonai Button" border="0" alt="Email Adonai &quot;Tool &amp; Die&quot; Engineering"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/feedbackbuton2.gif" st="Give Adonai Feedback"><a href="atdpages/feedback.html" onmouseover="return CSIShow(/*CMP*/'Feedback Button',1)" onmouseout="return CSIShow(/*CMP*/'Feedback Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/feedbackbuton1.gif" width="108" height="25" name="Feedback Button" border="0" alt="Give Adonai Feedback"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/floorsafebuton2.gif" st="Adonai's Floor Safes"><a href="atdpages/safes.html" onmouseover="return CSIShow(/*CMP*/'Floor Safes Button',1)" onmouseout="return CSIShow(/*CMP*/'Floor Safes Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/floorsafebuton1.gif" width="108" height="25" name="Floor Safes Button" border="0" alt="Adonai's Floor Safes"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/machiningbuton2.gif" st="Adonai's Machining & Grinding Services"><a href="atdpages/cncmachiningrinding.html" onmouseover="return CSIShow(/*CMP*/'CNC Machining and Grinding Button',1)" onmouseout="return CSIShow(/*CMP*/'CNC Machining and Grinding Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/machiningbuton1.gif" width="108" height="25" name="CNC Machining and Grinding Button" border="0" alt="Adonai's Machining &amp; Grinding Services"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/metalstampbuton2.gif" st="Adonai's Metal Stamping"><a href="atdpages/metalstamping.html" onmouseover="return CSIShow(/*CMP*/'Metal Stamping Button',1)" onmouseout="return CSIShow(/*CMP*/'Metal Stamping Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/metalstampbuton1.gif" width="108" height="25" name="Metal Stamping Button" border="0" alt="Adonai's Metal Stamping"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/pastprojectsbuton2.gif" st="Adonai's Past Projects"><a href="atdpages/pastprojects.html" onmouseover="return CSIShow(/*CMP*/'Past Projects Button',1)" onmouseout="return CSIShow(/*CMP*/'Past Projects Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/pastprojectsbuton1.gif" width="108" height="25" name="Past Projects Button" border="0" alt="Adonai's Past Projects"></a></csobj><csobj w="108" h="25" t="Button" ht="atdimages/searchbuton2.gif" st="Search Adonai's Web Site"><a href="atdpages/search.html" onmouseover="return CSIShow(/*CMP*/'Search Adonai Button',1)" onmouseout="return CSIShow(/*CMP*/'Search Adonai Button',0)" onclick="return CSButtonReturn()"><img src="atdimages/searchbuton1.gif" width="108" height="25" name="Search Adonai Button" border="0" alt="Search Adonai's Web Site"></a></csobj><br>
+					</td>
+					<td width="100" height="85" valign="middle"><img height="85" width="100" src="atdimages/adonaidie2.gif" alt="Tool &amp; Die"></td>
+				</tr>
+				<tr height="20">
+					<td width="100" height="20" valign="top"><img src="atdimages/redbar.jpg" width="100" height="20" border="0" alt="red cross"></td>
+					<td width="432" height="20" valign="top"><img src="atdimages/longredbar.jpg" width="432" height="20" border="0" alt="red line"></td>
+					<td width="100" height="20" valign="top"><img src="atdimages/redbarB.jpg" width="100" height="20" border="0" alt="red cross"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="630" height="30">
+				<tr height="30">
+					<td align="center" valign="top" width="630" height="30"><img height="40" width="630" src="atdimages/adonaibarA.jpg" alt="Tool &amp; Die Engineering Metal Stamping"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="632" height="194">
+				<tr height="30">
+					<td valign="middle" height="30" width="20"></td>
+					<td valign="middle" height="30" width="50"><img src="atdimages/redline.jpg" width="50" height="30" border="0" alt="machining"></td>
+					<td width="210" height="30"><img src="atdimages/otherservices.jpg" width="210" height="20" border="0" vspace="5" alt="Adonai's Services"></td>
+					<td width="15" height="30"></td>
+					<td width="140" height="30" valign="middle" align="center"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><a href="atdpages/safes.html">Adonai's<br>
+									
+									
+									Floor Safes</a></b></font></td>
+					<td width="15" height="30" valign="middle" align="center"></td>
+					<td width="140" height="30" valign="middle" align="center"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href="atdpages/drillingandtapping.html">Adonai's<br>
+								
+								&quot;Drilling &amp; Tapping&quot; Machine</a></font></td>
+					<td width="42" height="30"><img src="atdimages/redverticalline.gif" width="10" height="30" border="0"></td>
+				</tr>
+				<tr height="164">
+					<td width="20" valign="top" height="164"></td>
+					<td width="50" valign="top" height="164"><img src="atdimages/redverticalline2.gif" width="10" height="165" border="0" hspace="13" alt="line"></td>
+					<td width="210" valign="top" height="164"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><br>
+							For more information on Adonai's &quot;Drilling &amp; Tapping&quot; services, <a href="atdpages/drillingandtapping.html">click here</a>. To learn more about Adonai's Floor safes, <a href="atdpages/safes.html">click here</a>. To view Adonai's Drilling &amp; Tapping Machine in action, click on the appropriate movie link below:<br>
+							<br>
+							<a href="movies/corneringmachine.avi">corneringmachine.avi</a> - 2.7 MB<br>
+							<a href="movies/corneringmachine.mov">corneringmachine.mov</a> - 1.2 MB<br>
+							<a href="movies/corneringmachine.mpg">corneringmachine.mpg</a> - 1.3 MB<br>
+						</font></td>
+					<td width="15" valign="top" height="164"></td>
+					<td width="140" height="164" valign="top" align="center"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><br>
+								<a href="atdpages/safes.html"><img height="152" width="136" src="atdimages/floorsafe.gif" alt="Floor Safes" border="0"></a></b></font></td>
+					<td width="15" height="164" valign="top" align="center"></td>
+					<td width="140" height="164" valign="top" align="center"><br>
+						<font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><a href="atdpages/drillingandtapping.html"><img height="152" width="123" src="atdimages/cornermachiningsm.gif" alt="Drilling &amp; Tapping Machine" border="0"></a></font></td>
+					</object>
+					<td width="42" height="164"><img src="atdimages/redverticalline2.gif" width="10" height="165" border="0" alt="line"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="632" height="20">
+				<tr height="20">
+					<td width="100" height="20" valign="top"><img src="atdimages/redbar.jpg" width="100" height="20" border="0" alt="red cross"></td>
+					<td width="432" height="20" valign="top"><img src="atdimages/longredbar.jpg" width="432" height="20" border="0" alt="red line"></td>
+					<td width="100" height="20" valign="top"><img src="atdimages/redbarB.jpg" width="100" height="20" border="0" alt="red cross"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="632">
+				<tr height="79">
+					<td width="71" height="79"></td>
+					<td width="490" height="79" valign="top" align="center"><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">This electronic publication is property of Adonai Tool &amp; Die Engineering and no responsibility for errors and omissions is assumed. All rights reserved. &copy;2002 Adonai Tool &amp; Die Engineering.<br>
+						</font><font color="#11413a" size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><u>Last Updated: <csobj w="31" h="10" t="DateTime" format="ShortDate" region="0">2/26/02</csobj> &#149; <a href="atdpages/webmaster.html">webmaster</a></u> </font><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Created By: All One Graphics<br>
+						</font></td>
+					<td width="71" height="79"></td>
+				</tr>
+			</table>
+		</center>
+	</body>
+
+</html>

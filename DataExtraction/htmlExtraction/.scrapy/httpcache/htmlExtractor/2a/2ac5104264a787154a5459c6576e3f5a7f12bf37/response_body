@@ -1,0 +1,30 @@
+# robots.txt UDX
+
+User-agent: *
+Allow: *
+Allow: /usen/*
+Allow: /company/*
+Allow: /promo/*
+Allow: /peervision/*
+Allow: /
+User-agent: *
+Disallow: /admin/ # admin space
+Disallow: /update/ #support form
+Disallow: /sitecore/content?sc_lang=en
+
+# allow google image bot to search all images
+User-agent: Googlebot-Image
+Allow: /*
+
+# allow archiving site
+User-agent: ia_archiver
+Allow: /
+ 
+# disable duggmirror
+User-agent: duggmirror
+Disallow: /
+
+
+Sitemap: https://www.gehealthcare.com/en/sitemap.xml
+
+

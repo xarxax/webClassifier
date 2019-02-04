@@ -1,0 +1,880 @@
+
+
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head id="ctl00_Head1"><meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /><meta name="msvalidate.01" content="11ABC8455D9FD11667245E15E60F2B7D" /><meta http-equiv="content-language" content="en" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23985643-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+      (function (d, s, i, r) {
+          if (d.getElementById(i)) { return; }
+          var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+          n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/95050.js';
+          e.parentNode.insertBefore(n, e);
+      })(document, "script", "hs-analytics", 300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+    <title>
+	Ortho2 - Orthodontic Practice Management Software and Systems.
+</title>
+        <script src="/Scripts/modernizr-2.8.3.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.tools.min.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.simplemodal.1.4.4.min.js"></script>
+        <link rel="stylesheet" href="/Style/normalize.css"type="text/css" />
+        <link rel="stylesheet" href="/Style/MainNew.css" type="text/css" /><link title="forms" rel="stylesheet" href="/Style/formsNew.css" type="text/css" /><link rel="stylesheet" href="/Style/topMenuStyleNew.css" type="text/css" /><link rel="stylesheet" href="/Style/topMobileMenuStyle.css" type="text/css" /><link rel="stylesheet" type="text/css" href="Style/mediumNew.css" media="only screen and (min-width:650px) and (max-width:930px)" /><link rel="stylesheet" type="text/css" href="Style/smallNew.css" media="only screen and (max-width:649px)" /><link rel="shortcut icon" href="/favicon.ico" />
+
+    <style>
+        #modalContent {display:none;}
+
+        /* Overlay */
+        #simplemodal-overlay {background-color:#F2F2F2;}
+
+        /* Container */
+        #simplemodal-container {height:360px; width:600px; color:#696969; background-color:#F2F2F2; border:1px solid #696969; padding:12px;}
+        #simplemodal-container .simplemodal-data {padding:8px;}
+        #simplemodal-container a {color:#015b86;}
+        #simplemodal-container a.modalCloseImg {background:url(/images/jqueryTools/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+        #simplemodal-container h3 {color:#84b8d9;}
+
+        #ctl00_O2Alert{height:50px; width: 150px; left:50%; top:-3px; position:absolute; cursor:pointer;}
+
+      @media screen and (max-width:675px){
+        #ctl00_O2Alert{
+        height:40px; left:45%; top:0;
+      }
+        #ctl00_O2Alert img{
+        height:40px;}
+
+      }
+      @media screen and (max-width:560px){
+        #ctl00_O2Alert{
+        width:75px; left:40%; top:12px;
+      }
+        #ctl00_O2Alert img{
+        width:75px; height:25px;}
+        #simplemodal-container {height:360px; width:500px;}
+      }
+      @media screen and (max-width:430px){
+        #ctl00_O2Alert{
+        width:75px; left:40%; top:12px;
+      }
+        #ctl00_O2Alert img{
+        width:50px; height:17px;}
+        #simplemodal-container {height:360px; width:300px;}
+      }
+
+    </style>
+
+    
+<meta name="description" content="Whether you are already an Ortho2 client, just starting to think about computerized, orthodontic practice management systems, software and solutions, or you are ready to make a decision for your practice, Ortho2 has the practice management solution for you with features like orthodontic scheduling, appointment control, treatment chart, and integration with imaging.">
+<script src="/Scripts/responsiveslides.min.js"></script>
+<script src="/Scripts/jquery.ba-resize.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="/Style/apple-overlay/overlay-apple.css">
+
+  <style>
+  #feature .apple img {
+    border:0;
+    cursor:pointer;
+    margin:0 1px;
+  }
+</style>
+</head>
+<body>
+<div id="pageContainer">
+<form name="aspnetForm" method="post" action="./" id="aspnetForm" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1Mg9kFgJmD2QWAgIDD2QWAgIDDxYCHgdWaXNpYmxlaGRkcuNiRN0AQyqF7CrJibcW6dE8dGg=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=Cr6NY1haBII3CUWgTf-vRxkAVYzK1FJ6XORbJp5zHXYb1faJ2WnIXBUQYE-i4nGMszzp_Bd8NNpxf0uVdI32lDKWS0A1&amp;t=636475903203255666" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=JLPvQCe79CMbnupy1Gw_l-8pG_7krA5qC2o0PaW7tIF2yz74Duh32ebddUL2UKxVYoXrogGXs_yQiGyzTGbDPyUEO-5d0Vsv9NQfr_2CPzolVg_BPkdMBupmv3MFEDN6M2fPD3H4bI2U8FrLkONBCpVCxcg1&amp;t=ffffffffad4b7194" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ZSlWV-saEH3R2M3u8ZSRpICNWAa1IAES3J1XO9-87VImt0T286xSlcRSuRX0mqI1YWdemKFL25HeOcGp_Y5uvWqD-cJb33-4BOa1lCayGCuLiq1OA8qUpR8zxh9rJ-sPquWz94eFSp0YYzrA80szMwRK96-YOumEr6uFA56InFiMf6rm0&amp;t=ffffffffad4b7194" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+    <div id="headerContainer">
+        <div id="headerLogoContainer"><a href="/Default.aspx"><img id="headerLogo" alt="Ortho2" src="/images/spacer.gif" /></a></div>
+    </div>
+    
+    <div class="right" id="searchTexbox">
+        <div id="searchBox" class="left">
+            
+        </div>
+        <ul id="socialTopMenu">
+                <li id="mobileRemoteSupport" class="imageSocialItem">
+                        <div class="headingContainerSocial">
+                            <a href="/Remote/Default.aspx"><div class="headingImageSocialIcon headingRemote"><img src="/images/Break.gif" alt="Remote Support" title="Remote Support" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                        </div>
+                </li>
+                <li class="imageSocialItem">
+                        <div class="headingContainerSocial">
+                            <a href="/SupportAndLearning/OrderProducts/Default.aspx"><div class="headingImageSocialIcon headingWebStore"><img src="/images/Break.gif" alt="Ortho2 Webstore" title="Ortho2 Webstore" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                        </div>
+                </li>
+                <li class="imageSocialItem">
+                        <div class="headingContainerSocial">
+                            <a id="ctl00_HyperLink1" title="UserVoice" class="headingImageSocialIcon headingUserVoice" href="http://ortho2.uservoice.com" target="_blank"></a>
+                        </div>
+                </li>
+                <li class="imageSocialItem">
+                        <div class="headingContainerSocial">
+                            <a href="/ReferralRewards.aspx"><div class="headingImageSocialIcon headingReferAFriend"><img src="/images/Break.gif" alt="Refer a Friend" title="Refer a Friend" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                        </div>
+                </li>
+            </ul>
+    </div>
+
+<nav class="clearLeft">
+<ul id="menu">
+    <!-- Begin Home Item -->
+    <!--<li class="noDrop"><a href="/Default.aspx" class="dropSingleMenuItem">Home</a></li>-->
+        <li class="imageMenuItem" id="menuLogo"><a href="/Default.aspx"><img src="/images/menu/Ortho2Logo-Menu.png" width="25" height="25" alt="Ortho2" /></a></li>
+        <li class="imageMenuItem"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!-- End Home Item -->
+
+<!--Start Products & Features-->
+    <li><a href="/ProductsAndFeatures/Default.aspx" class="drop">Products<br />& Features</a>
+    <!-- Begin 3 columns Item -->
+        <div class="dropdown_3columns">
+        <!-- Begin 3 columns container -->  
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImage headingEdge"></div>
+                    <h3>Edge Cloud</h3>
+                </div>
+                <ul class="greyboxLarge">
+                    <li><a href="/ProductsAndFeatures/Edge/Default.aspx">Edge Cloud</a></li>
+                    <li><a href="/ProductsAndFeatures/Edge/NewVersion.aspx">What's New</a></li>
+	                <li><a href="/ProductsAndFeatures/Edge/Features.aspx">Features</a></li>
+	                <li><a href="/ProductsAndFeatures/Edge/Modules.aspx">Modules</a></li>
+	                <li><a href="/ProductsAndFeatures/Edge/DataVault.aspx">Edge Cloud Storage</a></li>
+                    <li><a href="/ProductsAndFeatures/Comparison.aspx">Product Comparison</a></li>
+	                <li><a href="/ProductsAndFeatures/Edge/Hardware.aspx">Hardware</a></li>
+	                <li><a href="/ProductsAndFeatures/Edge/Integrations.aspx">Integrations</a></li>
+                </ul>
+            </div>
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImage headingEdgeAnimations"></div>
+                    <h3>Edge Animations</h3>
+                </div>
+                <ul class="greyboxLarge">
+                    <li><a href="http://edgeanimations.ortho2.com/" target="_blank">Edge Animations</a></li>
+                    <li><a href="/ProductsAndFeatures/Edge/EdgeAnimationsApp/Default.aspx" target="_blank">Edge Animations App</a></li>
+                </ul> 
+                <div class="headingContainer">
+                    <div class="headingImage headingViewPoint"></div>
+                    <h3>ViewPoint</h3>
+                </div>
+                <ul class="greyboxLarge">
+                    <li><a href="/ProductsAndFeatures/ViewPoint/Default.aspx">ViewPoint</a></li>
+                    <li><a href="/ProductsAndFeatures/ViewPoint/NewVersion.aspx">What's New</a></li>
+                    <li><a href="/ProductsAndFeatures/ViewPoint/Features.aspx">Features</a></li>
+	                <li><a href="/ProductsAndFeatures/ViewPoint/Modules.aspx">Modules</a></li>
+                    <li><a href="/ProductsAndFeatures/Comparison.aspx">Product Comparison</a></li>
+	                <li><a href="/ProductsAndFeatures/ViewPoint/Hardware.aspx">Hardware</a></li>
+	                <li><a href="/ProductsAndFeatures/ViewPoint/Integrations.aspx">Integrations</a></li>
+                </ul>
+
+            </div>   
+           <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImage headingEdgeImaging"></div>
+                    <h3>Edge Imaging</h3>
+                </div>
+                <ul class="greyboxLarge">
+                    <li><a href="http://edgeimaging.ortho2.com/" target="_blank">Edge Imaging</a></li>
+                    <li><a href="http://edgeimaging.ortho2.com/PremierImaging.aspx" target="_blank">Premier Imaging</a></li>
+                </ul>
+
+            </div>            
+        </div>
+    <!-- End 3 columns container -->
+    </li>
+    <!-- End 3 columns Item -->
+
+    <li class="imageMenuItem"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2"/></li>
+    <!--START SUPPORT AND LEARNING-->
+    <li><a href="/SupportAndLearning/Default.aspx" class="drop">Support<br />& Learning </a>
+    <!-- Begin 4 columns Item -->
+        <div class="dropdown_4columns">
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingVisualHelp"></div>
+                    <h3>Visual Help</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/VisualHelp/Edge/Default.aspx">Edge Cloud</a></li>
+                    <li><a href="/SupportAndLearning/VisualHelp/ViewPoint/Default.aspx">ViewPoint</a></li>
+                </ul>   
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingFAQs"></div>
+                    <h3>FAQs</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/FAQs/Edge.aspx">Edge Cloud</a></li>
+                    <li><a href="/SupportAndLearning/FAQs/ViewPoint.aspx">ViewPoint</a></li>
+                </ul>   
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingDocumentation"></div>
+                    <h3>Documentation</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/Documentation/General/Default.aspx">General</a></li>
+                    <li><a href="/SupportAndLearning/Documentation/Edge/Default.aspx">Edge Cloud</a></li>
+                    
+                    <li><a href="/SupportAndLearning/Documentation/ViewPoint/Default.aspx">ViewPoint</a></li>
+                    
+                </ul>  
+            </div>
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingIntegrationSpecs"></div>
+                    <h3>Integration Specs</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/IntegrationSpecs/Edge/Default.aspx">Edge Cloud</a></li>
+                    <li><a href="/SupportAndLearning/IntegrationSpecs/ViewPoint/Default.aspx">ViewPoint</a></li>
+                </ul> 
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingForumsAndFeedback"></div>  
+                    <h3>Forums & Feedback</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a id="ctl00_UVLink1" href="http://ortho2.uservoice.com" target="_blank">UserVoice</a></li>
+                    <li><a href="/ReferralRewards.aspx">Referral Rewards</a></li>
+                    <li><a href="http://blog.ortho2.com/" target="_blank">Blog</a></li>
+                    <li><a href="/Resources/News/Default.aspx">News</a></li>
+                    <li><a href="mailto:ortho2support@ortho2.com?subject=Question">E-mail a Question</a></li>
+                </ul>  
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingNewCustomerCare"></div>
+                    <h3>New Customer Care</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/NewCustomerCare/Edge/Default.aspx">Edge Cloud</a></li>
+                    <li><a href="/SupportAndLearning/NewCustomerCare/ViewPoint/Default.aspx">ViewPoint</a></li>
+                </ul>         
+            </div>
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingRequestsForms"></div>
+                    <h3>Requests/Forms</h3>
+                </div>
+                <ul class="greybox">
+		            <li><a href="/SupportAndLearning/RequestsAndForms/ChangeinPracticeNameForm.pdf" target="_blank">Change in Practice Name Form</a></li>
+                    <li><a href="/SupportAndLearning/RequestsAndForms/CustomProject.aspx">Custom Project</a></li>
+	                
+	                <li><a href="/SupportAndLearning/RequestsAndForms/CustomCephAnalysis.aspx">Request Ceph Custom Analysis</a></li>
+                    
+                    
+                    
+                    <li><a href="/SupportAndLearning/RequestsAndForms/AlignClincheckLicenseAmendment.pdf" target="_blank">Align ClinCheck License Amendment</a></li>
+                    <li><a href="/SupportAndLearning/RequestsAndForms/ChangePassword.aspx">Change Password</a></li>
+                </ul>  
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingAccount"></div> 
+                    <h3>Account</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="http://myaccount.ortho2.com/" target="_blank">View Account/ Make Payments</a></li>
+                    <li><a href="/SupportAndLearning/LoginOverview.aspx">Website Login History</a></li>
+                </ul>
+            </div>
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingNewDownloads"></div> 
+                    <h3>Downloads</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/Downloads/SystemReq/Default.aspx">Edge System Requirements Utility</a></li>
+                    <li><a href="/SupportAndLearning/Downloads/PaymentPreference/Default.aspx">Payment Preference Forms</a></li>
+                    <li><a href="/SupportAndLearning/Downloads/ReportRepository/ViewPoint/Default.aspx">ViewPoint Report Repository</a></li>
+                    <li><a href="/SupportAndLearning/Downloads/VPRemoteViewer/Default.aspx">VP Remote Viewer</a></li>
+                </ul>   
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingOrderProducts"></div> 
+                    <h3>Order Products</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/SupportAndLearning/OrderProducts/ProductList.aspx?type=EDGE">Edge Cloud</a></li>
+                    <li><a href="/SupportAndLearning/OrderProducts/ProductList.aspx?type=VP">ViewPoint</a></li>
+					<li><a href="/SupportAndLearning/OrderProducts/ProductList.aspx?type=HW">Hardware</a></li>
+					<li><a href="/SupportAndLearning/OrderProducts/ProductList.aspx?type=SERVICES">Services</a></li>
+                </ul>
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingSupportTools"></div> 
+                    <h3>Support Tools</h3>
+                </div>
+                    <ul class="greybox">
+                    <li><a href="/SupportAndLearning/FindYourIP/Default.aspx">Find Your IP</a></li>
+                    <li><a href="/Remote/Default.aspx">Remote Support</a></li>
+                    <li><a href="/SupportAndLearning/InternetChecklist.aspx">Internet Checklist for Edge Cloud Customers</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End 4 columns container -->
+    </li>
+
+    <li class="imageMenuItem"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!--START DEMO-->
+    <!-- End 4 columns Item -->
+    <li><a href="/Demo/Default.aspx" class="dropSingleMenuItem">Demo</a>
+        <div class="dropdown_1column">
+        <!-- Begin 2 columns container -->
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingDemo"></div> 
+                    <h3>Demo</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/Demo/Edge.aspx">Edge Cloud</a></li>
+                    <li><a href="/Demo/ViewPoint.aspx">ViewPoint</a></li>
+                    <li><a href="/Demo/AdditionalOptions.aspx">Additional Options</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+
+    <li class="imageMenuItem menuMeetingsAndWebinarsSeparator"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!--START MEETINGS AND WEBINARS-->
+    <li><a href="/MeetingsAndWebinars/Default.aspx" class="drop">Meetings<br />& Webinars</a>
+        <div class="dropdown_1column">
+        <!-- Begin 2 columns container -->
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingMeetings"></div> 
+                    <h3>Meetings & Webinars</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/MeetingsAndWebinars/UGM/Default.aspx">UGM</a></li>
+                    <li><a href="/MeetingsAndWebinars/OrthodonticMeetings.aspx">Orthodontic Meetings</a></li>
+                    <li><a href="http://www.aaoinfo.org" target="_blank">AAO</a></li>
+                    <li><a href="/MeetingsAndWebinars/Ortho2Webinars.aspx">Ortho2 Webinars</a></li>
+                    <li><a href="/MeetingsAndWebinars/CuttingEdgeWebinars/Default.aspx">Cutting Edge Webinars</a></li>
+                    <li><a href="https://ortho2.webex.com/" target="_blank">Web Meetings</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+
+    <li class="imageMenuItem menuResourcesSeparator"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!--START RESOURCES-->
+    <li><a href="/Resources/Default.aspx" class="dropSingleMenuItem">Resources</a>
+        <div class="dropdown_1column">
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingResources"></div> 
+                        <h3 class="small">Resources</h3>
+                    </div>
+                <ul class="greybox">
+                    <li><a href="/Resources/News/Default.aspx">News</a></li>
+                    <li><a href="/Resources/RegisterForUpdates.aspx">Register for Updates</a></li>
+                    <li><a href="http://blog.ortho2.com/">Blog</a></li>
+     
+                    <li><a href="/Resources/Consultants/Default.aspx">Consultants</a></li>
+                    <li><a href="/Resources/Newsletters/Default.aspx">Newsletters</a></li>
+                    <li><a href="/Resources/PresidentsPerspective/Default.aspx">President's Perspective</a></li>
+                    <li><a href="/Resources/SpotlightFeatures/Default.aspx">Spotlight Features</a></li>
+                    <li><a href="/Resources/ResourceLibrary.aspx">Resource Library</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li class="imageMenuItem menuResourcesSeparator"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!--START EDGE UNIVERSITY-->
+    <li><a href="/ProductsAndFeatures/EdgeU/Default.aspx" class="drop">Edge Cloud<br />University</a>
+        <div class="dropdown_1column">
+            <div class="col_1">
+                <div class="headingContainer">
+                        <div class="headingImageSmall headingEdgeUniversity"></div> 
+                        <h3>Edge Cloud University</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/ProductsAndFeatures/EdgeU/RequestLunchAndLearnForm.aspx">Request a Lunch & Learn</a></li>
+                    <li><a href="/ProductsAndFeatures/EdgeU/ResidentPurchaseProgram.aspx">Resident Purchase Program</a></li>
+                    <li><a href="/ProductsAndFeatures/EdgeU/EdgeAnimationsApp.aspx">Edge Animations App</a></li>
+                    <li><a href="/MeetingsAndWebinars/CuttingEdgeWebinars/Default.aspx">Cutting Edge Webinars</a></li>
+                    <li><a href="/ProductsAndFeatures/EdgeU/UniversityDonationProgram.aspx">University Donation Program</a></li>
+                    <li><a href="/SupportAndLearning/Documentation/Edge/EW-EdgeBrochure.pdf" target="_blank">Edge Cloud Brochure</a></li>
+                    <li><a href="/ProductsAndFeatures/EdgeU/UniversityResources.aspx">Ortho2 Universities</a></li>
+                    
+                    <li><a href="/Company/MeetYourConsultant.aspx">Contact My Rep</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+        <li class="imageMenuItem"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+    <!--START COMPANY-->
+    <li><a href="/Company/Default.aspx" class="drop">Company<br />& Contact Us</a>
+        <div class="dropdown_1column  align_right">
+        <!-- Begin 2 columns container -->
+            <div class="col_1">
+                <div class="headingContainer">
+                    <div class="headingImageSmall headingCompany"></div> 
+                    <h3 class="small">Company</h3>
+                </div>
+                <ul class="greybox">
+                    <li><a href="/ContactUs/Default.aspx">Contact Us</a></li>
+                    <li><a href="/Company/Testimonials.aspx">Testimonials</a></li>
+                    <li><a href="/Company/MeetYourConsultant.aspx">Meet Your Regional Manager</a></li>
+                    <li><a href="/Company/MeetTheStaff.aspx">Meet the Staff</a></li>
+                    <li><a href="/Company/OurHistory.aspx">Our History</a></li>
+                    <li><a href="/Company/Careers.aspx">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+
+    <li class="imageMenuItem menuCompanySeparator"><img src="/images/menu/drop.png" style="margin-top:5px" alt="Ortho2" /></li>
+</ul>
+         <div id="mobileMenuDiv">
+<ul>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <a href="/ProductsAndFeatures/Default.aspx">Products & Features</a>
+
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+  
+                        <span class="nonbold"><a href="/SupportAndLearning/Default.aspx">Support & Learning</a></span>
+
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <span class="nonbold"><a href="/Demo/Default.aspx">Demo</a></span>
+
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <span class="nonbold"><a href="/MeetingsAndWebinars/Default.aspx">Meetings & Webinars</a></span>
+
+                </li>
+
+                <li class="ltgrywht-gradient-bg"  style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <span class="nonbold"><a href="/ProductsAndFeatures/EdgeU/Default.aspx">Edge U</a></span>
+
+                </li>
+
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <span class="nonbold"><a href="/Resources/Default.aspx">Resources</a></span>
+
+                </li>
+
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+
+                        <span class="nonbold"><a href="/Company/Default.aspx">Company & Contact Us</a></span>
+
+                </li>
+</ul>
+</div>
+<!--<div id="mobileMenuDiv">
+	<ul data-role="listview" data-inset="true" data-filter="true">
+		<li>
+			<a href="/ProductsAndFeatures/Default.aspx">Products & Features</a>
+		</li>
+		<li>
+			<a href="/SupportAndLearning/Default.aspx">Support & Learning</a>
+		</li>
+		<li>
+				<a href="/Demo/Default.aspx">Demo</a>
+		</li>
+		<li>
+			<a href="/MeetingsAndWebinars/Default.aspx">Meetings & Webinars</a>
+		</li>
+		<li>
+			<a href="/Resources/Default.aspx">Resources</a>
+		</li>
+		<li>
+			<a href="/ProductsAndFeatures/EdgeU/Default.aspx">Edge U</a>
+		</li>
+		<li>
+			<a href="/Company/Default.aspx">Company & Contact Us</a>
+		</li>
+	</ul>
+</div>-->
+<!--<div id="mobileMenuDiv">
+<ul>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/ProductsAndFeatures/Default.aspx">Products & Features</a></span>
+                    </span>
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/SupportAndLearning/Default.aspx">Support & Learning</a></span>
+                    </span>
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/Demo/Default.aspx">Demo</a></span>
+                    </span>
+                </li>
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/MeetingsAndWebinars/Default.aspx">Meetings & Webinars</a></span>
+                    </span>
+                </li>
+
+                <li class="ltgrywht-gradient-bg"  style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/ProductsAndFeatures/EdgeU/Default.aspx">Edge U</a></span>
+                    </span>
+                </li>
+
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/Resources/Default.aspx">Resources</a></span>
+                    </span>
+                </li>
+
+                <li class="ltgrywht-gradient-bg" style="cursor: pointer" onmousedown="this.className='liSelected'" ontouchstart="this.className='liSelected'" onmouseup="this.className='ltgrywht-gradient-bg'" ontouchend="this.className='ltgrywht-gradient-bg'">
+                    <span class="arrow">
+                        <span class="nonbold"><a href="/Company/Default.aspx">Company & Contact Us</a></span>
+                    </span>
+                </li>
+</ul>
+</div>-->
+</nav>
+    
+    <div class="clear-fix" />
+    <div id="pageContent">
+        <!--START NESTED MASTERPAGE-->
+        
+<div>
+<ul class="rslides" style="z-index:0;">
+  <li>
+      <a href="/ProductsAndFeatures/Edge/Default.aspx" title="Not All Clouds Are Created Equal"><img class="slides stretch" src="/images/homePage/NotAllCloudsAreEqual.png" alt="Not All Clouds Are Created Equal"></a>
+  </li>
+  <li>
+      <a href="/ProductsAndFeatures/Edge/Modules.aspx#edgeSpecialist" title="Edge Specialist"><img class="slides stretch" src="/images/homePage/EdgeSpecialist.png" alt="Edge Specialist"></a>
+  </li>
+  <li>
+      <a href="/Demo/EdgeDemoForm.aspx" title="POW"><img class="slides stretch" src="/images/homePage/POW.png" alt="We're the extra POW that your practice deserves"></a>
+  </li>
+
+  <li>
+      <a href="/ProductsAndFeatures/Edge/EdgeAnimationsApp/Default.aspx" title="Edge Animations App"><img class="slides stretch" src="/images/homePage/EdgeAnimationsAppHome.png" alt="Edge Animations App"></a>
+  </li>
+  <li>
+      <a href="/MeetingsAndWebinars/UGM/Default.aspx" title="Users Group Meeting"><img class="slides stretch" src="/images/homePage/UGM2019.jpg" alt="Users Group Meeting"></a>
+  </li>
+  <li>
+      <img id="featureImage" class="slides stretch" src="/images/homePage/genius2.jpg" alt="Ortho2's EDGE CLOUD, practice management system makes everyone in your practice seem like a genius." style="position:absolute; top:0; left:0;">
+    <div id="feature">
+        <div class="column left">
+            <div class="apple">
+                <img id="feature7" rel="#video1" title="Stay on top of your busy schedule by scheduling efficiently and smartly with Edge's Scheduler" src="/images/homePage/Feature7.png" alt="Scheduler">
+            </div>
+            <div class="apple">
+                <img id="feature1" rel="#video1" title="What you need, when you need it - just one example of how Edge Cloud helps each user perform better." src="/images/homePage/Feature1.png" alt="Dynamic Dashboard">
+            </div>
+            <div class="apple">
+                <img id="feature2" rel="#video1" title="Never waste time searching through your schedule again. Dynamic search to the rescue!" class="thumbnail" src="/images/homePage/Feature2.png" alt="Dynamic Search">
+            </div>
+            <div class="apple">
+                <img id="feature3" rel="#video1" title="Watch the Edge Animations app video to see how you can start using it today." src="/images/homePage/Feature3.png" alt="Edge Animations App">
+            </div>
+        </div>
+
+        <div class="column right">
+                <div class="apple">
+                    <img id="feature4" rel="#video1" title="Make case presentations more compelling with image enhancement pizazz." class="thumbnail" src="/images/homePage/Feature4.png" alt="Image Morph">
+                </div>
+                <div class="apple">
+                    <img id="feature8" rel="#video1" title="With Practice Connect you can give your patient’s a fun and easy way to stay involved in their treatment." class="thumbnail" src="/images/homePage/Feature8.png" alt="Practice Connect">
+                </div>
+                <div class="apple">
+                    <img id="feature5" rel="#video1" title="Social Media Gold! The benefit of Timepoint Morphing." class="thumbnail" src="/images/homePage/Feature5.png" alt="Timepoint Morphing">
+                </div>
+            <div class="apple">
+                <img id="feature6" rel="#video1"  title="Edge Imaging - flexible display options for you - a powerful presentation for your patients." class="thumbnail" src="/images/homePage/Feature6.png" alt="Powerful Presentations">
+            </div>
+        </div>
+    </div>
+    <div class="mobileDisplayOnly">
+        <a href="/ProductsAndFeatures/Edge/Genius.aspx" title="Learn More!"><img class="slides stretch" src="/images/homePage/geniusMobile.jpg" alt="Pracite like a Genius!"></a>
+    </div>
+  </li>
+
+  <li>
+      <a href="/Company/OurHistory.aspx" title="EmPOWering Practices"><img class="slides stretch" src="/images/homePage/EmpoweringPractices.png" alt="EmPOWering Practices."></a>
+  </li>
+  <li>
+      <a href="/PracticeConnect/Default.aspx" title="Practice Connect"><img class="slides stretch" src="/images/homePage/PracticeConnect.jpg" alt="Make yourself be seen in the crowd."></a>
+  </li>
+
+</ul>
+</div>
+<div>
+<ul id="slider-pager" class="rslides_tabs rslides3_tabs">
+    <li id="edgeSpecialist" class="rslides3_s1"><a href="#"><img src="/images/homePage/NotAllCloudsAreEqualThumb.png" alt="Not All Clouds Are Created Equal" title="Not All Clouds Are Created Equal"></a></li>  
+    <li id="newThumbOne" class="rslides3_s1"><a href="#"><img src="/images/homePage/EdgeSpecialistThumb.png" alt="Edge Specialist" title="Edge Specialist"></a></li>
+    <li id="pow" class="rslides3_s1"><a href="#"><img src="/images/homePage/POWThumb.png" alt="We're the extra POW that your practice deserves" title="We're the extra POW that your practice deserves"></a></li>
+    <li id="edgeAnimationsApp" class="rslides3_s1"><a href="#"><img src="/images/homePage/EdgeAnimationsAppThumb.jpg" alt="Edge Animations App" title="Edge Animations App"></a></li>          
+    <li id="usersGroupMeeting" class="rslides3_s1"><a href="#"><img src="/images/homePage/UGM2019Thumb.jpg" alt="Users Group Meeting" title="Users Group Meeting"></a></li>
+    <li id="thumbTwo" class="rslides3_s1"><a href="#"><img src="/images/homePage/geniusThumb.jpg" alt="GENIUS videos!" title="GENIUS videos!"></a></li>
+    <li id="thumbFive" class="rslides3_s4"><a href="#"><img src="/images/homePage/EmpoweringPracticesThumb.png" alt="EmPOWering Practices"></a></li>
+    <li id="thumbFour" class="rslides3_s1"><a href="#"><img src="/images/homePage/practiceConnectThumb.png" alt="Practice Connect"></a></li>
+</ul>
+</div>
+<div style="padding:5px;">
+    <p>Whether you are already an Ortho2 client, just starting to think about computerized, orthodontic practice management systems and solutions, ready to consider orthodontic cloud software, or are ready to make a decision for your practice, Ortho2 has the practice management solution for you with features like orthodontic scheduling, imaging, treatment chart, mobile apps, patient reminders, animations, appointment control, and more.</p>
+</div>
+
+<!--overlays have to be outside of the rslides div to display correctly-->
+<!-- overlay for the first trigger. id matches the rel- attribute -->
+<div class="overlay black" id="video1">
+    <video id="videoPlayer" src="http://edgeanimations.ortho2.com/Video/EdgeAnimations.mp4" style="max-width:550px" controls="controls">Sorry, your browser doesn't support HTML5 video.</video>
+    <p id="videoDescription"></p>
+</div>
+
+
+
+<script>
+    $(window).load(function () {
+        var newHeight = $('#rslides1_s0').height();
+        $("#featureImage").height(newHeight);
+    });
+    $(document).ready(function () {
+        //$('#ctl00_ContentPlaceHolder1_O2Alert').click(function () {
+        //    $('#modalContent').modal(
+        //        {
+        //        }
+        //    );
+        //})
+
+        $(".apple img[rel]").overlay(
+            {
+                closeOnClick: true,
+                effect: 'apple',
+                mask: { color: '#000', opacity: 0.7 },
+                onClose: function () {
+                    $("#videoPlayer").get(0).pause();
+                }
+
+            });
+        $(".rslides").responsiveSlides(
+            {
+                speed: 1500,
+                auto: true,
+                pager: true,
+                pauseControls: true,
+                manualControls: "#slider-pager"//,
+            }
+
+            );
+   
+        $('#testimonialsHome1').click(function () {
+            $('#videoPlayer').attr('src', '/Company/Testimonials/Paquette-PatientTracker.mp4');
+            $('#videoPlayer').get(0).play();
+        });
+
+        $('#testimonialsHome4').click(function () {
+            $('#videoPlayer').attr('src', '/Company/Testimonials/Andy-CustomizedDesktopRoles.mp4');
+            $('#videoPlayer').get(0).play();
+        });
+        $('#testimonialsHome5').click(function () {
+            $('#videoPlayer').attr('src', '/Company/Testimonials/Dumas-SwitchToEdge.mp4');
+            $('#videoPlayer').get(0).play();
+        });
+
+        $('#feature1').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/EdgeInnovation-DashboardExample.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('What you need, when you need it - just one example of how Edge helps each user perform better.');
+        });
+        $('#feature2').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/DynamicSearch.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Never waste time searching through your schedule again. Dynamic search to the rescue!');
+        });
+        $('#feature3').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/EdgeAnimationsApp/EdgeAnimationsApp.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Watch the Edge Animations app video to see how you can start using it today.');
+        });
+        $('#feature4').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/ImageMorph.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Make case presentations more compelling with image enhancement pizazz.');
+        });
+        $('#feature5').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/TimepointMorphing.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Social Media Gold! The benefit of Timepoint Morphing.');
+        });
+        $('#feature6').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/CardFlow.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Edge Imaging - flexible display options for you - a powerful presentation for your patients.');
+        });
+        $('#feature7').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/Scheduler.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('Stay on top of your busy schedule by scheduling efficiently and smartly with Edge’s Scheduler.');
+        });
+        $('#feature8').click(function () {
+            $('#videoPlayer').attr('src', '/ProductsAndFeatures/Edge/Genius/PracticeConnect.mp4');
+            $('#videoPlayer').get(0).play();
+            $('#videoDescription').text('With Practice Connect you can give your patient’s a fun and easy way to stay involved in their treatment.');
+        });
+        //$("#feature1 img[title]").tooltip();
+        //$('#thumbFour').click(function () {
+        //    window.location.href = '/ProductsAndFeatures/Edge/practiceconnect/index.html';
+        //    return false;
+        //});
+    });
+
+    //This is functional because of the /Scripts/jquery.ba-resize.js plugin
+    $('.rslides').resize(function () {
+        var newHeight = $('#rslides1_s0').height();
+        $("#feature").height(newHeight);
+        $("#featureImage").height(newHeight);
+        $("#testimonialsHome").height(newHeight);
+    });
+
+
+</script>
+
+
+        <!--END NESTED MASTERPAGE-->
+    </div>
+
+    </form>
+<footer>
+<div id="footerContainer">
+    <div id="footerText"><p>Ortho2 | 1107 Buckeye Avenue | Ames, Iowa 50010 | Sales: <a href="tel:+8006784644">800.678.4644</a> | Support: <a href="tel:+8003464504">800.346.4504</a> | <a href="/ContactUs/Default.aspx" style="text-decoration:none"><span style="color:white !important;">Contact Us</span></a> | <a href="../Ortho2WebsitePrivacyPolicy.pdf" style="text-decoration:none"><span style="color:white !important;">Privacy Policy</span></a></p></div>
+    <div id="footerSocial">
+        <ul id="socialIconMenu">
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="http://www.facebook.com/ortho2" target="_blank">
+                        <div class="footerImageSocialIcon headingFacebook">
+                        <img src="/images/Break.gif" alt="Facebook" title="Facebook" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="https://www.youtube.com/user/Ortho2Systems" target="_blank">
+                        <div class="footerImageSocialIcon headingYouTube">
+                            <img src="/images/Break.gif" alt="YouTube" title="YouTube" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="https://twitter.com/ortho2systems" target="_blank">
+                        <div class="footerImageSocialIcon headingTwitter">
+                            <img src="/images/Break.gif" alt="Twitter" title="Twitter" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="http://www.linkedin.com/company/ortho2" target="_blank">
+                        <div class="footerImageSocialIcon headingLinkedIn">
+                            <img src="/images/Break.gif" alt="LinkedIn" title="LinkedIn" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="http://www.instagram.com/Ortho2Systems" target="_blank">
+                        <div class="footerImageSocialIcon headingInstagram">
+                            <img src="/images/Break.gif" alt="Instagram" title="Instagram" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="https://plus.google.com/118199490194594225057" target="_blank">
+                        <div class="footerImageSocialIcon headingGooglePlus">
+                            <img src="/images/Break.gif" alt="Google+" title="Google+" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+            <li class="socialIconImage menu_right">
+                <div class="footerContainerSocial">
+                    <a href="http://feeds.feedburner.com/ortho2/ZTyZ" target="_blank">
+                        <div class="footerImageSocialIcon headingRSS">
+                            <img src="/images/Break.gif" alt="RSS" title="RSS" style="width:35px; height:35px; margin-left:-37px;"/></div></a>
+                </div>
+            </li>
+         </ul>
+    </div>
+</div>
+</footer>
+</div>
+    <div id="modalContent">
+	    <h3>ALERT</h3>
+	    <p id="ctl00_alertMessage"></p>
+    </div>
+</body>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#ctl00_O2Alert').click(function () {
+            $('#modalContent').modal(
+                {
+                }
+            );
+        })
+        /* prepend menu icon */
+        $('#socialTopMenu').prepend('<div id="menu-icon"></div>');
+
+        /* toggle nav */
+        $("#menu-icon").on("click", function () {
+            $("#mobileMenuDiv").slideToggle();
+            $(this).toggleClass("active");
+        });
+
+    });
+</script>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一川企業有限公司</title>
+<META content="一川企業有限公司"  name="KeyWords">
+<META content="一川企業有限公司"      name="Description">
+
+<script>
+var _Web_Url='http://www.yiichwan.com.tw';
+</script><script src="http://www.yiichwan.com.tw/style/script/link.js"       type="text/javascript"></script><!--CSS-->  
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/master.css">  
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/home.css">    
+<!--<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/rect.css">-->
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/package.css">      
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/rwdgrid.css">    
+
+<link rel="shortcut icon" href="http://www.yiichwan.com.tw/style/img/favicon.ico"/>
+<link rel="bookmark" href="http://www.yiichwan.com.tw/style/img/favicon.ico"/>   
+  
+<!--JS-->  
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/jquery-1.9.1.min.js"></script>
+<script>
+jQuery.browser={};(function(){jQuery.browser.msie=false; jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)./)){ jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();  
+</script>
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js2/jquery.form.js"></script>
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js2/jquery.PrintArea.js"></script>
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/script/buycar.js"></script>
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/main.js"></script>
+ 
+  
+<!--jsManage-->
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/jsManage.js"></script>   
+<script>
+
+  var isTablet =false;
+  var isAndroidOS =true;
+  var isiOS =true;
+  var isSafari =false;
+</script>  
+
+<script type="text/javascript">
+var mobiles = new Array
+(
+"midp", "j2me", "avant", "docomo", "novarra", "palmos", "palmsource",
+"240x320", "opwv", "chtml", "pda", "windows ce", "mmp/",
+"blackberry", "mib/", "symbian", "wireless", "nokia", "hand", "mobi",
+"phone", "cdm", "up.b", "audio", "sie-", "sec-", "samsung", "htc",
+"mot-", "mitsu", "sagem", "sony", "alcatel", "lg", "eric", "vx",
+"NEC", "philips", "mmm", "xx", "panasonic", "sharp", "wap", "sch",
+"rover", "pocket", "benq", "java", "pt", "pg", "vox", "amoi",
+"bird", "compal", "kg", "voda", "sany", "kdd", "dbt", "sendo",
+"sgh", "gradi", "jb", "dddi", "moto", "iphone", "android",
+"iPod", "incognito", "webmate", "dream", "cupcake", "webos",
+"s8000", "bada", "googlebot-mobile"
+)
+
+var ua = navigator.userAgent.toLowerCase();
+var isMobile = false;
+for (var i = 0; i < mobiles.length; i++) {
+if (ua.indexOf(mobiles[i]) > 0) {
+isMobile = true;
+break;
+}
+}
+</script>  
+  
+<!--font-->    
+<link href="http://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet" type="text/css">  
+  
+<!--footer_button-->  
+<!--<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/buttons.js"></script>  
+<script type="text/javascript">
+  stLight.options
+  ({
+    publisher: "f8aeb247-ed78-4ea6-aadc-91eb70fed908", 
+    doNotHash: false, 
+    doNotCopy: false, 
+    hashAddressBar: false
+  });
+</script>-->
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/jquery.blockUI.js"></script> 
+<script>
+function open_loading_status(loading_name){
+  width=$('#'+loading_name).css('width').replace("px","");
+  height=$('#'+loading_name).css('height').replace("px","");
+  $.blockUI({
+  message:$('#'+loading_name),
+    css:{ 
+    cursor:'default',
+    border:'',
+    backgroundColor:'',
+    width: width + 'px',
+    height:height+ 'px',
+    padding:'0px',
+    top:($(window).height()-height)/2 + 'px',
+    left:($(window).width()-width)/2 + 'px'
+    }
+  });
+
+}
+
+function open_layer_detail(div_name,width,height){
+  if(width==''){
+    width=0;
+  }
+  if(height==''){
+    height=0;
+  }
+  $.blockUI({
+  message:$('#'+div_name),
+    css:{ 
+    cursor:'default',
+    width: width + 'px',
+    height:height+ 'px',
+    padding:'0px',
+    top:($(window).height()-height)/2 + 'px',
+    left:($(window).width()-width)/2 + 'px'
+    }
+  });    
+
+}
+
+function close_layer_detail(){
+  $.unblockUI();
+
+}
+
+function close_top_layer_detail(){
+  top.$.unblockUI();
+
+}
+</script>  
+
+<!--bannerAreacss-->  
+<style type="text/css">   
+.bannerArea:after{
+  display:none;
+  }  
+</style>   
+
+<!--訂單查詢-->
+<div class="orderCheckArea"><!--orderCheckArea-->
+  <div class="wrap b-box">
+      <a id="closeOrder"><i class="icon-remove"></i></a>
+            <input name="order_no" type="text" class="b-box" id="sorder_number" placeholder="訂單編號">
+<input name="order_mtel" type="text" class="b-box" id="sorder_phone" placeholder="訂購人手機號碼">
+<a class="btn" style="cursor:pointer" onClick="send_form_buycar_order_search();">送出查詢</a>
+<span id="action_javascript"></span>    </div>
+</div><!--orderCheckArea end-->
+
+<script>
+$(function(){  
+  /*開啟訂單查詢*/
+  $(document).on('click','.orderToggle',function(){
+    $.blockUI({
+      message:$('.orderCheckArea'),
+      css:{cursor:null},
+      onOverlayClick: $.unblockUI,
+      onBlock:function(){
+        $('input').blur();
+      }
+    });
+  });
+  
+  /*關閉訂單查詢*/
+  $('#closeOrder').click(function(){
+    $.unblockUI(); 
+    return false; 
+  });
+  
+  /*開啟購物清單*/
+  $('.cartToggle').click(function(){
+    $.blockUI({
+      message:$('.cartArea'),
+      css:{cursor:null},
+      onOverlayClick: $.unblockUI
+    });
+  });
+  
+  /*關閉購物清單*/
+  $('#closeCart').click(function(){
+    $.unblockUI(); 
+    return false;
+  });
+  get_page_buycar();
+});
+</script>  
+<title></title>
+ 
+</head>
+  
+<div class="m_menu b-box clearfix"><!--m_menu-->
+    <div class="mask"></div>
+    <div class="controlBox clearfix"><!--controlBox-->    
+        <a class="main"><i class="icon-reorder"></i></a>
+      <div class="m_logo"><a href="#" onclick="menu_mainhome();"><img src="http://www.yiichwan.com.tw/style/img/logo.png"></a></div>
+        
+      <div class="right">
+          <div class="rightBox_text">
+               <a href="http://yiichwan.com.tw/" target="_blank" class="i-con"><i class="icon-en">繁</i></a>
+               <a href="http://yiichwan.com.tw/cn/" target="_blank" class="i-con"><i class="icon-en">简</i></a>
+               <a href="http://yiichwan.com.tw/en/" target="_blank" class="i-con"><i class="icon-en">EN</i></a>
+          </div>
+          <!--<div class="btn_cart"><a class="cartToggle"><i class="icon-shopping-cart"></i><b class="m_cartCount" id="buycar_count_m">0</b></a></div>-->
+        </div>
+    </div><!--controlBox end-->
+    <div class="hideBox"><!--hideBox-->        
+        <div class="searchBox_m"><!--searchBox-->
+            <input name="keyword" type="text" class="b-box" id="keyword" placeholder="商品搜尋" value="">
+            <a class="icon-search" style="cursor:pointer" onclick="products_search_mobile();"></a>
+        </div><!--searchBox end-->
+      
+        <!--<p class="sp member">
+          <a href="/views/member_centre.php" class="contactLink" data-mail="">會員中心</a>
+          <a href="#" onclick="menu_register();" class="contactLink" data-mail="">註冊</a>
+          <a href="#" onclick="menu_login();" class="contactLink" data-mail="">登入</a>      
+          <a class="orderToggle">訂單查詢</a>
+        </p>-->        
+        <p class="sp sp_menu">MENU</p>
+
+        
+      <ul class="nav"></ul>   
+        
+        <p class="sp">聯絡我們</p>
+        <div class="mfun"><!--mfun--> 
+                        <a href="#" onclick="menu_mainhome();"><i class="icon-home"></i></a>          
+                        <a href="TEL:0800-333-555"><i class="icon-phone"></i></a>
+                        <a href="#" onclick="menu_contact();" class="contactLink" data-mail=""><i class="icon-envelope"></i></a>
+                    </div><!--mfun end--> 
+    </div><!--hideBox end-->
+  
+</div>
+
+<div id="gmap"></div>  
+
+<div class="outerWrap b-box"><!--outerWrap-->
+        
+    <header><!--header-->
+        <div class="wrap b-box clearfix"><!--wrap-->
+      <h1><a href="#" onclick="menu_mainhome();" title=""></a></h1>
+            <div class="leftBox"><!--leftBox-->
+                                                
+
+          <div class="leftBox_text"><!--leftBox-->    
+                                <a href="tel:886-4-25321249" class="i-con"><i class="icon-phone"></i><b>886-4-25321249</b></a>
+                                <a href="#" onclick="menu_contact();" class="i-con" data-mail=""><i class="icon-envelope"></i><b>yiichwan@ms10.hinet.net</b></a>            
+          <!--<a href="/views/member_centre.php" class="contactLink" data-mail="">會員中心</a>
+          <a href="#" onclick="menu_register();" class="contactLink" data-mail="">註冊</a>
+          <a href="#" onclick="menu_login();" class="contactLink" data-mail="">登入</a>-->
+          <!--<a class="orderToggle">訂單查詢</a>-->
+          </div>                      
+                
+            </div><!--leftBox end-->
+            <div class="rightBox clearfix"><!--rightBox-->
+              <div class="rightBox_text">
+               <a href="http://yiichwan.com.tw/" target="_blank" class="i-con"><i class="icon-en">繁</i></a>
+               <a href="http://yiichwan.com.tw/cn/" target="_blank" class="i-con"><i class="icon-en">简</i></a>
+               <a href="http://yiichwan.com.tw/en/" target="_blank" class="i-con"><i class="icon-en">EN</i></a>
+        <!--<a class="cartToggle exclude"><i class="icon-shopping-cart"></i>我的購物車<b class="num" id="buycar_count_1">0</b>項商品</a>-->
+             </div> 
+          </div><!--rightBox end-->  
+
+            <div class="downBox clearfix"><!--downBox-->
+                
+                <nav class="b-box"><!--nav-->
+                    <ul class="menu clearfix">
+<li><a href="#" onclick="menu_about();">企業概況<br><h7 class="en">ABOUT US</h7></a></li>
+<li><a href="#" onclick="menu_products();">產品介紹<br><h7 class="en">PRODUCTS</h7></a></li>
+<li class="break"><a href="#" onclick="menu_news();">資訊公告<br><h7 class="en">ENQUIRY FROM</h7></a></li>
+<li><a href="#" onclick="menu_service();">我們的客戶<br><h7 class="en">CUSTOMERS LIST</h7></a></li>
+<li><a href="#" onclick="menu_about_order();">產品詢價需求單<br><h7 class="en">PRODUCT INQUIRY</h7></a></li>
+                       <!-- <li><a href="#" onclick="menu_maintain_online();">設計表單諮詢<br><h7 class="en"></h7></a></li>
+                        <li><a href="#" onclick="menu_about_faq();">維修表單諮詢<br><h7 class="en"></h7></a></li>-->
+<li><a href="#" onclick="menu_contact();">聯絡資訊<br><h7 class="en">CONTACT US</h7></a></li>
+
+                    </ul>
+                                        
+                </nav><!--nav end-->
+            </div><!--downBox end-->            
+        </div><!--wrap end-->   
+        
+    </header><!--header end-->  
+<body>
+
+    
+   <!--banner-->
+    <div class="bannerArea" id="bannerArea"><!--bannnerArea-->
+        <div id="banner" class="superSlider">
+          <ul class="marqueeTxt">
+            <li><a href=""><img src="http://www.yiichwan.com.tw/upload/banner/3020180223114905.jpg" alt="banner" /></a></li><li><a href=""><img src="http://www.yiichwan.com.tw/upload/banner/3320180223114927.jpg" alt="banner" /></a></li><li><a href=""><img src="http://www.yiichwan.com.tw/upload/banner/3620180322101326.jpg" alt="banner" /></a></li><li><a href=""><img src="http://www.yiichwan.com.tw/upload/banner/3220180223114921.jpg" alt="banner" /></a></li><li><a href=""><img src="http://www.yiichwan.com.tw/upload/banner/3420180223114932.jpg" alt="banner" /></a></li>          </ul>
+
+            <a class="scrollDown upDown">
+              <i class="icon-double-angle-down"></i><br>
+              Scroll Down
+            </a>  
+          
+        </div> 
+    </div><!--bannerArea end-->
+    
+    <div class="storeArea"><!--storeArea-->
+      <div class="wrap b-box"><!--wrap-->
+          
+<ul class="clearfix">
+      
+</ul>
+          </div><!--wrap end-->
+    </div><!--storeArea end-->
+    
+<!--    <div class="aboutArea"><!--aboutArea-->
+
+<!--    </div><!--aboutArea end-->
+    
+    <div class="newsArea"><!--newsArea-->
+      <div class="wrap clearfix b-box"><!--wrap-->   
+    <h2>
+	<em>ABOUT US</em><strong>公 司 格 言</strong></h2>
+
+	<h3>本公司不斷專注於機器硬體與軟體的研究開發，近年發展軟性基材塗佈技術，目前積極朝光電塗佈領域邁進，對生產流程與品質皆經一貫作業的嚴格管制，使本公司的塗佈設備達到高品質、高效率與高產能，讓客戶擁有最大的市場競爭力，以便因應市場變化，並且獲得最多的利潤，最重要的是我們擁有豐富的經驗，為您創造更多的財富。</h3>
+
+         
+
+        
+  <div class="btn">
+<!--  <a href="#" onclick="menu_news();">More Detail</a>--></div>
+       
+        </div><!--wrap end-->
+    </div><!--newsArea end-->
+        
+    <!--feathureArea-->
+    <div class="feathureArea"><!--feathureArea-->
+           <h2><strong>主 力 商 品</strong></h2>      
+      
+      <div class="wrap b-box"><!--wrap-->
+
+      <ul class="clearfix">
+        <li class="col-4"><!--data--><div class="Img"><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1831" title=""><img src="http://www.yiichwan.com.tw/upload/pro_index/1831_20180316173345_1.jpg" alt=""></a></div><div class="Txt"><!--Txt--><h3><strong><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1831">FB-168 碳纖維布製造機</a></strong></h3></div><!--Txt end--></li><!--data--><li class="col-4"><!--data--><div class="Img"><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1834" title=""><img src="http://www.yiichwan.com.tw/upload/pro_index/1834_20180316170330_1.jpg" alt=""></a></div><div class="Txt"><!--Txt--><h3><strong><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1834">JH-1010 塗佈貼合機械</a></strong></h3></div><!--Txt end--></li><!--data--><li class="col-4"><!--data--><div class="Img"><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1832" title=""><img src="http://www.yiichwan.com.tw/upload/pro_index/1832_20180316173353_1.jpg" alt=""></a></div><div class="Txt"><!--Txt--><h3><strong><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1832">KW-8010 非碳複寫紙製造機械</a></strong></h3></div><!--Txt end--></li><!--data--><li class="col-4"><!--data--><div class="Img"><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1830" title=""><img src="http://www.yiichwan.com.tw/upload/pro_index/1830_20180316173401_1.jpg" alt=""></a></div><div class="Txt"><!--Txt--><h3><strong><a href="http://www.yiichwan.com.tw/index.php/web/products_i/0/1830">CW-400 藥布專用製造機</a></strong></h3></div><!--Txt end--></li><!--data-->        <!--IndexServicePic-->
+        <!--IndexProPic-->
+      </ul>
+      </div><!--wrap-->
+    </div><!--feathureArea end-->
+            
+<footer class="clearfix">
+	<!--footer-->
+	<div class="wrap b-box clearfix">
+		<!--wrap-->
+		<div class="row clearfix">
+			<!--row-->
+			<div class="col-2 clearfix">
+				<!--col-3-->
+				<h3>
+					一川企業有限公司</h3>
+				<!--<a class="logo_down" onclick="menu_home();"><img alt="" src="/style/img/logo_down.png"></a>-->
+				<div style="overflow:hidden;">
+					<h5 class="copyright">
+						台灣地區<br />
+						台中市潭子區大德一路2段14號 , 台中市潭子區昌平路3段492巷117弄8號<br />
+						TEL：886-4-25321249 , FAX：886-4-25347268<br />
+						<font style="">E-mail：<a href="mailto:yiichwan@ms10.hinet.net">yiichwan@ms10.hinet.net</a></font></h5>
+					<div class="social">
+						<!--social--></div>
+					<!--social end--></div>
+			</div>
+			<!--col-3 end-->
+			<div class="col-2">
+				<!--col-3-->
+				<h3>
+					&nbsp;</h3>
+				<div class="qrcode">
+					&nbsp;</div>
+				<ul class="downMenu clearfix">
+					<li>
+						<a href="#" onclick="menu_about();">企業概況<b>ABOUT US</b></a></li>
+					<li>
+						<a href="#" onclick="menu_products();">產品介紹<b>PRODUCTS</b></a></li>
+					<li>
+						<a href="#" onclick="menu_news();">資訊公告<b>ENQUIRY FROM</b></a></li>
+					<li>
+						<a href="#" onclick="menu_service();">我們的客戶<b>CUSTOMERS LIST</b></a></li>
+					<li>
+						<a href="#" onclick="menu_about_order();">產品詢價需求單<b>PRODUCT INQUIRY</b></a></li>
+					<li>
+						<a href="#" onclick="menu_contact();">聯絡資訊<b>CONTACT US</b></a></li>
+				</ul>
+			</div>
+			<!--col-3 end--></div>
+		<!--row end-->
+		<div class="cr">
+			版權所有 &copy; 2017 一川企業有限公司 All Rights Reserved Designed By Redwall</div>
+	</div>
+	<!--wrap end--></footer>
+          
+</div>
+
+<!--bxslider-->
+<link rel="stylesheet" type="text/css" href="http://www.yiichwan.com.tw/style/css/jquery.bxslider.css">
+<script type="text/javascript" src="http://www.yiichwan.com.tw/style/js/jquery.bxslider.min.js"></script>
+<!--購物車-->
+<div class="cartArea"><!--cartArea-->
+  <div class="wrap b-box"><!--wrap-->
+    <a id="closeCart"><i class="icon-remove"></i></a>
+    <div id="buycarlist">      
+        <div class="countBox"><!--countBox-->
+          總數<b id="buycar_count">0</b>　總計<b><em>$</em><span id="buycar_totalprice">0</span></b>
+        </div><!--countBox end-->  
+    </div>
+  </div>
+</div>  
+<!--superSlider-->
+<link type="text/css" media="screen" rel="stylesheet" href="http://www.yiichwan.com.tw/style/css/superslides.css" />
+<script src="http://www.yiichwan.com.tw/style/js/jquery.easing.1.3.js"></script>
+<script src="http://www.yiichwan.com.tw/style/js/jquery.animate-enhanced.min.js"></script>
+<script src="http://www.yiichwan.com.tw/style/js/hammer.min.js"></script>
+<script src="http://www.yiichwan.com.tw/style/js/jquery.superslides.js"></script>
+
+  
+ 
+  
+<script>
+  $(function() {
+      if(!isMobile){ 
+    $('.marqueeTxt').bxSlider({
+      mode:'fade', //'horizontal', 'vertical', 'fade',
+      captions: false, 
+      //slideWidth:2500,  
+      
+      auto: true,  
+      autoHover: true, 
+      pager: true, 
+      controls:true, 
+      pause: 2000
+
+    });
+        
+      }else{
+        
+      document.getElementById("bannerArea").style.height = "100%"          
+       //banner
+      $('.marqueeTxt').bxSlider({
+        mode:'fade', //'horizontal', 'vertical', 'fade',
+        captions: false, 
+        slideWidth:2500,  
+        adaptiveHeight: true,
+        auto: true,  
+        autoHover: true, 
+        pager: false, 
+        controls:false, 
+        pause: 2000
+      }); 
+
+      }
+    });
+</script>
+</body>
+</html>

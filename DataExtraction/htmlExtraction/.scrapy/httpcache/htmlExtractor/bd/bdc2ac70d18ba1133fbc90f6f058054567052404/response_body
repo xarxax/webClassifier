@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2015, by DNN Corporation -->
+<!--*********************************************-->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+<meta name="RATING" content="GENERAL" />
+<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+<meta content="text/javascript" http-equiv="Content-Script-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<title>
+	VentureNet  > Home
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/DependencyHandler.axd/7ff466d51367c54c3798327985055bff.366.css" media="all" type="text/css" rel="stylesheet"/><script src="/DependencyHandler.axd/f260f42243c0007290ffe0609a2c60c8.366.js" type="text/javascript"></script><!--[if IE 8]><link id="IE8Minus" rel="stylesheet" type="text/css" href="/Portals/_default/Skins/TSoSC/css/ie8style.css" /><![endif]--><script type='text/javascript'>
+//<![CDATA[
+    var analytics_page_startTime = (new Date()).getTime();
+//]]>
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" /></head>
+<body id="Body">
+    
+    <form method="post" action="/venturenet" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU1MDYzMDgwNw9kFgICBg9kFgICAQ9kFgQCBw9kFgJmD2QWJAIED2QWBAIHD2QWAgICDxAPFgIeB1Zpc2libGVoZA8WAWYWARAFF0VuZ2xpc2ggKFVuaXRlZCBTdGF0ZXMpBQVlbi1VU2cWAWZkAggPZBYCAgIPEA8WAh8AaGQPFgFmFgEQBRdFbmdsaXNoIChVbml0ZWQgU3RhdGVzKQUFZW4tVVNnFgFmZAIFD2QWAmYPZBYCAgIPEA8WAh8AaGQPFgFmFgEQBRdFbmdsaXNoIChVbml0ZWQgU3RhdGVzKQUFZW4tVVNnFgFmZAIGD2QWAmYPZBYCAgIPEA8WAh8AaGQPFgFmFgEQBRdFbmdsaXNoIChVbml0ZWQgU3RhdGVzKQUFZW4tVVNnFgFmZAIHD2QWAmYPZBYCAgIPEA8WAh8AaGQPFgFmFgEQBRdFbmdsaXNoIChVbml0ZWQgU3RhdGVzKQUFZW4tVVNnFgFmZAIID2QWBAIHD2QWAgICDxAPFgIfAGhkDxYBZhYBEAUXRW5nbGlzaCAoVW5pdGVkIFN0YXRlcykFBWVuLVVTZxYBZmQCCA9kFgICAg8QDxYCHwBoZA8WAWYWARAFF0VuZ2xpc2ggKFVuaXRlZCBTdGF0ZXMpBQVlbi1VU2cWAWZkAgkPZBYCZg9kFgICAg8QDxYCHwBoZA8WAWYWARAFF0VuZ2xpc2ggKFVuaXRlZCBTdGF0ZXMpBQVlbi1VU2cWAWZkAgoPZBYCZg9kFgICAg8QDxYCHwBoZA8WAWYWARAFF0VuZ2xpc2ggKFVuaXRlZCBTdGF0ZXMpBQVlbi1VU2cWAWZkAgsPZBYCZg9kFgICAg8QDxYCHwBoZA8WAWYWARAFF0VuZ2xpc2ggKFVuaXRlZCBTdGF0ZXMpBQVlbi1VU2cWAWZkAg0PZBYCZg9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAg8PFgIfAGhkZAIRD2QWAmYPZBYCAgEPZBYCAgEPZBYCAgEPZBYCAgEPZBYCAgIPDxYCHwBoZGQCEg9kFgRmD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgICDw8WAh8AaGRkAgEPZBYCAgEPZBYCAgMPZBYCAgEPZBYCAgEPZBYCAgIPDxYCHwBoZGQCEw9kFgJmD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgICDw8WAh8AaGRkAioPZBYEZg9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAg8PFgIfAGhkZAIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgICDw8WAh8AaGRkAjQPZBYEZg9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAg8PFgIfAGhkZAIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgICDw8WAh8AaGRkAjUPZBYCZg9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAg8PFgIfAGhkZAI2D2QWBGYPZBYCAgEPZBYCAgEPZBYCAgEPZBYCAgEPZBYCAgIPDxYCHwBoZGQCAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgICAQ9kFgJmDxYCHgRUZXh0BeMDPGRpdiBjbGFzcz0iYWRkdGhpc190b29sYm94IGFkZHRoaXNfZGVmYXVsdF9zdHlsZSBhZGR0aGlzXzMyeDMyX3N0eWxlIj48YSBjbGFzcz0iYWRkdGhpc19idXR0b25fZmFjZWJvb2siPjwvYT48YSBjbGFzcz0iYWRkdGhpc19idXR0b25fZ29vZ2xlX3BsdXNvbmVfc2hhcmUiPjwvYT48YSBjbGFzcz0iYWRkdGhpc19idXR0b25fdHdpdHRlciI+PC9hPjxhIGNsYXNzPSJhZGR0aGlzX2J1dHRvbl9jb21wYWN0Ij48L2E+PGEgY2xhc3M9ImFkZHRoaXNfY291bnRlciBhZGR0aGlzX2J1YmJsZV9zdHlsZSI+PC9hPjwvZGl2PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij52YXIgYWRkdGhpc19jb25maWcgPSB7ImRhdGFfdHJhY2tfYWRkcmVzc2JhciI6ZmFsc2V9Ozwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii8vczcuYWRkdGhpcy5jb20vanMvMzAwL2FkZHRoaXNfd2lkZ2V0LmpzI3B1YmlkPSI+PC9zY3JpcHQ+ZAI3D2QWAmYPZBYCAgEPZBYCAgMPZBYCAgIPZBYCAgEPZBYCAgIPDxYCHwBoZGQCPA9kFgJmD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgIBD2QWAgICDw8WAh8AaGRkAg8PDxYCHwBoZGRknMBwI2RrF/NzfdHc7IBXb9IIdQg=" />
+</div>
+
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/StandardMenu/StandardMenu.js"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3ab7585254-495e-4311-9545-1f910247aca5%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMSs/t+ILL4sko4mr5d/DaAV8nzZwti40eBrdWaPdC9rCCVhOCbIPrX4LkK0Gy5W0BeNXokdeLTUhG0CaJJA8DF479yPg==" />
+</div><script src="/DependencyHandler.axd/e46041f3ed08a3d00f84fd7ebb832431.366.js" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+<div id="ControlPanelWrapper">
+  
+  </div>
+<div id="skin_wrapper" class="">
+<link id="headerCSS" rel="stylesheet" href="/Portals/_default/Skins/TSoSC/commonparts/Header4.css">
+
+
+
+
+<!--start skin header-->
+<header id="HeaderFour"> 
+  <!--start skin top-->
+  <section class="skin_top">
+    <div class="skin_width clearafter">
+      <div class="user_bar clearafter">
+        <div class="language_position">
+          <div class="language-object" >
+
+
+</div>
+        </div>
+       
+      </div>
+      <div id="skin_topLeft">
+      </div>
+    </div>
+  </section>
+  <!--start skin top--> 
+  <!--start logo bar -->
+  <section id="skin_header4">
+    <div class="skin_width clearafter">
+      <div class="logo_style clearafter"> 
+        <!--site logo-->
+        <div class="site_logo">
+          <a id="dnn_Header4_dnnLOGO_hypLogo" title="VentureNet " href="http://www.siia.net/venturenet/"><img id="dnn_Header4_dnnLOGO_imgLogo" src="/Portals/32/venturenet-logo.png?ver=2016-12-16-144020-320" alt="VentureNet " /></a>
+        </div>
+        <!--mobile menu button-->
+        <div class="mobile_nav"><a href="#" class="menuclick"><img alt="Menu" class="click_img" src="/Portals/_default/Skins/TSoSC/commonparts/images/blank.gif" /></a></div>
+      </div>
+      <!--start skin menu-->
+      <nav class="menu_box">
+        <div id="standardMenu">
+  <ul class="rootMenu">
+    <li class="item first child-1"><a href="http://www.siia.net/venturenet/Investors"><span>Investors</span></a><div class="setHover"></div>
+    </li>
+    <li class="item child-2"><a href="http://www.siia.net/venturenet/Speakers"><span>Speakers</span></a><div class="setHover"></div>
+    </li>
+    <li class="item child-3"><a href="http://www.siia.net/venturenet/Sponsors-Exhibitors"><span>Sponsors &amp; Exhibitors</span></a><div class="setHover"></div>
+    </li>
+    <li class="item haschild child-4"><a><span>Attend<i class="navarrow"></i></span></a><div class="subMenu">
+        <ul>
+          <li class="item first child-1"><a href="http://www.siia.net/venturenet/Attend/Registration"><span>Registration</span></a></li>
+          <li class="item last child-2"><a href="http://www.siia.net/venturenet/Attend/Venue"><span>Venue</span></a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="item child-5"><a href="http://www.siia.net/venturenet/Companies"><span>Companies</span></a><div class="setHover"></div>
+    </li>
+    <li class="item child-6"><a href="http://www.siia.net/venturenet/Agenda"><span>Agenda</span></a><div class="setHover"></div>
+    </li>
+    <li class="item last haschild child-7"><a href="http://www.siia.net/venturenet/About"><span>About<i class="navarrow"></i></span></a><div class="setHover"></div>
+      <div class="subMenu">
+        <ul>
+          <li class="item first child-1"><a href="http://www.siia.net/venturenet/Screening-Committee"><span>Screening Committee</span></a></li>
+          <li class="item last child-2"><a href="http://www.siia.net/venturenet/History"><span>History</span></a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+      </nav>
+      <!--end skin menu--> 
+    </div>
+  </section>
+  <!--end logo bar --> 
+</header>
+<!--end skin header-->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$("#dnn_HeaderPane").appendTo("#skin_topLeft").show();
+	});
+</script> 
+
+
+
+<div id="dnn_HeaderPane" class="headerpane DNNEmptyPane"></div>
+  <!--start skin banner-->
+  <section class="skin_banner">
+    <div id="dnn_BannerPane" class="bannerpane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29407 DnnVersionableControl"><a name="29407"></a>
+<div class="notitle_container"><div id="dnn_ctr29407_ContentPane"><!-- Start_Module_29407 --><div id="dnn_ctr29407_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29407_HtmlModule_lblContent"><ul class="unoslider" id="slider">
+    <li><img alt="" src="/portals/32/VN_17art.png?ver=2017-05-26-115650-457" /> <a href="#"><img alt="" src="/portals/32/VN_17art.png" /></a>
+    <div class="unoslider_caption">
+    <a href="/venturenet/Attend/registration" target="_blank"><span style="color: #000000;">
+    </span>
+    <h2><span style="color: #000000;">Register Now &gt;&gt;</span></h2>
+    </a>
+    </div>
+    </li>
+</ul></div>
+
+
+
+
+</div><!-- End_Module_29407 --></div></div></div></div>
+  </section>
+  <!--end skin banner--> 
+  <!--start skin main-->
+  <div class="skin_main">
+    <section class="content_whitebg">
+      <div class="skin_width">
+        <div class="skin_top_content">
+          <div class="row dnnpane">
+            <div id="dnn_ContentPane" class="contentgrid12 col-md-12 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid6A" class="topgrid6a col-md-6 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid6B" class="topgrid6b col-md-6 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid4A" class="topgrid4a col-md-4"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29483 DnnVersionableControl"><a name="29483"></a>
+<div class="notitle_container"><div id="dnn_ctr29483_ContentPane"><!-- Start_Module_29483 --><div id="dnn_ctr29483_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29483_HtmlModule_lblContent"><h3 style="text-align: center;">Entrepreneurs  </h3>
+<p style="text-align: center;">
+Need Funding? Our 2017 Call for Presenting Companies is officially open! We are looking for the hottest technology, media and ecommerce companies to pitch on our stage to a panel of top investors and a curated audience of entrepreneurs, investors and strategic partners. This is an exciting opportunity to join a powerful ecosystem that supports entrepreneurship and take your business to the next level.
+</p>
+<br />
+<p style="text-align: center;" rel="text-align: center;"><a href="/venturenet/Companies"><button onclick="javascript:location.href ='http://www.siia.net/venturenet/Companies';" type="button" class="btn btn-success">Apply Now</button></a>
+</p></div>
+
+
+
+
+</div><!-- End_Module_29483 --></div></div></div></div>
+            <div id="dnn_TopGrid4B" class="topgrid4b col-md-4"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29484 DnnVersionableControl"><a name="29484"></a>
+<div class="notitle_container"><div id="dnn_ctr29484_ContentPane"><!-- Start_Module_29484 --><div id="dnn_ctr29484_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29484_HtmlModule_lblContent"><h3 style="text-align: center;">Investors </h3>
+<p style="text-align: center;">
+Dating back to 1996, VentureNet has a rich history of bringing a great lineup of companies to the stage. With the relaunch of the TechCouncil we are bringing back this event for our investment community. Investors interested in participating should contact Rhianna Collier at <a href="mailto:rcollier@siia.net" class="ApplyClass">rcollier@siia.net</a>.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /></div>
+
+
+
+
+</div><!-- End_Module_29484 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-31026 DnnVersionableControl"><a name="31026"></a>
+
+<div class="notitle">  
+	  
+	<div id="dnn_ctr31026_ContentPane" class="body"><!-- Start_Module_31026 --><div id="dnn_ctr31026_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr31026_HtmlModule_lblContent"><br />
+<h3 style="text-align: center;">Event Partner</h3>
+<p style="text-align: center;">
+<br />
+<img alt="" src="/portals/32/Images/octane-logo@2x_200.jpg?ver=2017-07-28-113230-787" /></p></div>
+
+
+
+
+</div><!-- End_Module_31026 --></div>
+	
+	
+</div>
+</div></div>
+            <div id="dnn_TopGrid4C" class="topgrid4c col-md-4"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29485 DnnVersionableControl"><a name="29485"></a>
+<div class="notitle_container"><div id="dnn_ctr29485_ContentPane"><!-- Start_Module_29485 --><div id="dnn_ctr29485_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29485_HtmlModule_lblContent"><h3 style="text-align: center;">Sponsors </h3>
+<p style="text-align: center;">The return of VentureNet 2017 is expected to draw another sell-out crowd. We’re excited to continue our strong track record of delivering exceptional networking and 1:1 meeting opportunities for investors and technology executives, all while showcasing Southern California’s most promising technologies and companies. Don’t miss the perfect opportunity to get your brand front and center with today’s rising technology stars and the investors who back them. 
+</p>
+<p style="text-align: center;"><strong><a href="/venturenet/Sponsors-Exhibitors">Learn More</a></strong>
+</p></div>
+
+
+
+
+</div><!-- End_Module_29485 --></div></div></div></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid3A" class="topgrid3a col-md-3 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid3B" class="topgrid3b col-md-3 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid3C" class="topgrid3c col-md-3 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid3D" class="topgrid3d col-md-3 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid8L" class="topgrid8l col-md-8 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid4R" class="topgrid4r col-md-4 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid4L" class="topgrid4l col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid8R" class="topgrid8r col-md-8 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid9L" class="topgrid9l col-md-9 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid3R" class="topgrid3r col-md-3 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid3L" class="topgrid3l col-md-3 DNNEmptyPane"></div>
+            <div id="dnn_TopGrid9R" class="topgrid9r col-md-9 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_TopGrid12" class="topgrid12 col-md-12 DNNEmptyPane"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content_graybg">
+      <div class="skin_width">
+        <div class="skin_main_padding">
+          <div class="row dnnpane">
+            <div id="dnn_GrayGrid4A" class="graygrid4a col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_GrayGrid4B" class="graygrid4b col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_GrayGrid4C" class="graygrid4c col-md-4 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_GrayGrid12" class="graygrid12 col-md-12 DNNEmptyPane"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content_whitebg">
+      <div class="skin_width">
+        <div class="skin_main_padding">
+          <div class="row dnnpane">
+            <div id="dnn_MiddleGrid4A" class="middlegrid4a col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_MiddleGrid4B" class="middlegrid4b col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_MiddleGrid4C" class="middlegrid4c col-md-4 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_MiddleGrid6A" class="middlegrid6a col-md-6 DNNEmptyPane"></div>
+            <div id="dnn_MiddleGrid6B" class="middlegrid6b col-md-6 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_MiddleGrid12" class="middlegrid12 col-md-12"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29142 DnnVersionableControl"><a name="29142"></a></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-29143 DnnVersionableControl"><a name="29143"></a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content_graybg">
+      <div class="skin_width">
+        <div class="skin_main_padding">
+          <div class="row dnnpane">
+            <div id="dnn_Gray2Grid4A" class="gray2grid4a col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_Gray2Grid4B" class="gray2grid4b col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_Gray2Grid4C" class="gray2grid4c col-md-4 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_Gray2Grid12" class="gray2grid12 col-md-12 DNNEmptyPane"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content_whitebg">
+      <div class="skin_width">
+        <div class="skin_main_padding">
+          <div class="row dnnpane">
+            <div id="dnn_BottomGrid4A" class="bottomgrid4a col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_BottomGrid4B" class="bottomgrid4b col-md-4 DNNEmptyPane"></div>
+            <div id="dnn_BottomGrid4C" class="bottomgrid4c col-md-4 DNNEmptyPane"></div>
+          </div>
+          <div class="row dnnpane">
+            <div id="dnn_BottomGrid12" class="bottomgrid12 col-md-12 DNNEmptyPane"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--end skin main--> 
+  <!--start footer top-->
+  <section class="skin_main_bottom">
+    <div class="skin_width">
+      <div class="skin_main_padding">
+        
+        <div class="row dnnpane">
+          <div id="dnn_ColorGrid12" class="colorgrid12 col-md-12 DNNEmptyPane"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer_top">
+    <div class="skin_width">
+      <div class="footerpane_style skin_main_padding">
+        <div class="row dnnpane">
+          <div id="dnn_FooterGrid3A" class="footer_grid3a col-md-3"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29136 DnnVersionableControl"><a name="29136"></a>
+<div class="notitle_container"><div id="dnn_ctr29136_ContentPane"><!-- Start_Module_29136 --><div id="dnn_ctr29136_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29136_HtmlModule_lblContent"><p><a href="http://siia.net/tcosc" target="_blank"></a>
+</p>
+<p>
+</p>
+<p><a href="http://siia.net/tcosc" target="_blank"><img src="/portals/32/Images/tcosc-rev636175154939439344.png?ver=2016-12-16-150453-943" alt="tcosc-rev636175154939439344" title="tcosc-rev636175154939439344" style="max-width: 100%;"></a><br>
+</p>
+<p><br>
+</p>
+<p>
+</p>
+<p>
+</p></div>
+
+
+
+
+</div><!-- End_Module_29136 --></div></div></div><div class="DnnModule DnnModule-DNN_HTML DnnModule-29246 DnnVersionableControl"><a name="29246"></a>
+<div class="notitle_container"><div id="dnn_ctr29246_ContentPane"><!-- Start_Module_29246 --><div id="dnn_ctr29246_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29246_HtmlModule_lblContent"><span style="font-size: 16px;"><strong>VentureNet</strong> is produced by the <strong>Technology Council of Southern California</strong>, a chapter of SSD, the Software &amp; Services Division of SIIA.</span></div>
+
+
+
+
+</div><!-- End_Module_29246 --></div></div></div></div>
+          <div id="dnn_FooterGrid3B" class="footer_grid3b col-md-3"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29248 DnnVersionableControl"><a name="29248"></a>
+<div class="notitle_container"><div id="dnn_ctr29248_ContentPane"><!-- Start_Module_29248 --><div id="dnn_ctr29248_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29248_HtmlModule_lblContent"><p><strong></strong>
+</p>
+<p><strong><span id="selection-marker-1" class="redactor-selection-marker"></span><span id="selection-marker-1" class="redactor-selection-marker"></span><a href="http://siia.net/ssd" target="_blank"><img src="/portals/32/Images/SSD-horiz.png?ver=2016-12-16-145306-967" alt="SSD-horiz" title="SSD-horiz" style="max-width: 100%;"></a></strong>
+</p><strong><br></strong>
+<p>
+</p>
+<p><strong>SSD</strong> (the Software & Services Division of SIIA) represents companies that develop the applications, services, infrastructure and tools driving the success of today’s high-tech industry. SSD provides business development opportunities, industry exposure and a forum for members to collaborate and share expertise, best practices, and innovations that build growing and successful businesses.
+</p>
+<p><strong><a href="http://www.siia.net/ssd" target="_blank">www.siia.net/ssd</a></strong>
+</p></div>
+
+
+
+
+</div><!-- End_Module_29248 --></div></div></div></div>
+          <div id="dnn_FooterGrid3C" class="footer_grid3c col-md-3"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29247 DnnVersionableControl"><a name="29247"></a>
+<div class="notitle_container"><div id="dnn_ctr29247_ContentPane"><!-- Start_Module_29247 --><div id="dnn_ctr29247_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr29247_HtmlModule_lblContent"><p><strong></strong>
+</p>
+<p><strong></strong>
+</p>
+<p><strong>Rhianna S. Collier</strong> <br>
+	Vice President & Managing Director<br>
+	+1.408.884.3834 | <a href="mailto:rcollier@siia.net">rcollier@siia.net</a> 
+</p>
+<p><strong>Jenn Carl</strong><br>
+	Program Manager<br>
+	+1.303.325.3336 | <a href="mailto:jcarl@siia.net" class="ApplyClass">jcarl@siia.net</a>
+</p></div>
+
+
+
+
+</div><!-- End_Module_29247 --></div></div></div><div class="DnnModule DnnModule-UnisolsSocialSharing DnnModule-29139"><a name="29139"></a>
+<div class="notitle_container"><div id="dnn_ctr29139_ContentPane"><!-- Start_Module_29139 --><div id="dnn_ctr29139_ModuleContent" class="DNNModuleContent ModUnisolsSocialSharingC">
+	<div class="addthis_toolbox addthis_default_style addthis_32x32_style"><a class="addthis_button_facebook"></a><a class="addthis_button_google_plusone_share"></a><a class="addthis_button_twitter"></a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a></div><script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+</div><!-- End_Module_29139 --></div></div></div></div>
+          <div id="dnn_FooterGrid3D" class="footer_grid3d col-md-3"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29140 DnnVersionableControl"><a name="29140"></a></div></div>
+        </div>
+        <div class="row dnnpane">
+          <div id="dnn_FooterGrid12" class="footer_grid12 col-md-12 DNNEmptyPane"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end footer top--> 
+  <!--start footer-->
+  <footer class="copyright_bg">
+    <div class="skin_width">
+      <div class="copyright_bar clearafter">
+        <div class="footer_left">
+          <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="Footer">Copyright 2019 by SIIA - Accelerating Innovation in Technology, Data & Media</span>
+
+<!--          |
+          <a id="dnn_dnnPRIVACY_hypPrivacy" class="Footer" rel="nofollow" href="http://www.siia.net/venturenet/Privacy">Privacy Statement</a>
+          |
+          <a id="dnn_dnnTERMS_hypTerms" class="Footer" rel="nofollow" href="http://www.siia.net/venturenet/Terms">Terms Of Use</a>-->
+        </div>
+        <div class="socialpane_style">
+          <div id="dnn_Socialpane" class="socialpane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29144 DnnVersionableControl"><a name="29144"></a></div></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end footer--> 
+  
+  <a href="#top" id="top-link" title="Top"> </a> </div>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.flexslider.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/trans-banner.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.unoslider.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.quovolver.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery.countdown.min.js"></script>
+
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript">
+<!--
+//Header Fixed
+jQuery(document).ready(function() {
+	if ($(window).width() >= 1140){
+	 $("#HeaderOne #skin_header").scrollToFixed();
+	 $("#HeaderTwo #skin_header2").scrollToFixed();
+	 $("#HeaderThree #skin_menu").scrollToFixed();
+	 $("#HeaderFour #skin_header4").scrollToFixed();	 
+	};
+});
+// -->
+</script>
+
+<!--[if IE 9]>
+<script type="text/javascript">
+//Disable Animation:
+jQuery(document).ready(function() {
+	 $(".animation").css({"opacity": "1"});
+});
+</script>
+<![endif]-->
+<script type="text/javascript" src="/Portals/_default/Skins/TSoSC/js/custom.js"></script>
+<link rel="stylesheet" href="/Portals/_default/Skins/TSoSC/CustomStyle.css">
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/venturenet/`,`sf_tabId`:`39641`,`evoq_TabId`:`39641`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fwww.siia.net%2fventurenet`,`evoq_UrlQuery`:`%3fTabId%3d39641%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="4YvOlckon7OaOM4fhboEc0zegTwrKVhIpFNmNsmlBq8aBEQUU_wYqy7WybCB58ryTLBbUDF2XTR-eUzcyEK-cWaWP5WBirnJhTlXduTk6l_EGrIpDkPoXSvjn_E1" />
+    
+<script type='text/javascript'>
+//<![CDATA[
+(function() {
+
+  var analyticsSettings;
+  var initAnalyticsSettings = function (e) {
+    analyticsSettings = {
+      pageStart: analytics_page_startTime,
+      servicesFramework: $.ServicesFramework(-1)
+    };
+  };
+  if(window.addEventListener) {
+    window.addEventListener('load', initAnalyticsSettings, false);
+  } else {
+    window.attachEvent('onload', initAnalyticsSettings);
+  };
+
+  var eventName = (window.onpagehide || window.onpagehide === null) ? 'pagehide' : 'unload';
+  if (window.addEventListener) {
+    window.addEventListener(eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    }, false);
+  } else {
+    window.attachEvent('on' + eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    });
+  }
+
+})();
+//]]>
+</script>
+
+<script type="text/javascript" src="/Resources/Shared/scripts/initWidgets.js" ></script></form>
+    
+    
+</body>
+</html>

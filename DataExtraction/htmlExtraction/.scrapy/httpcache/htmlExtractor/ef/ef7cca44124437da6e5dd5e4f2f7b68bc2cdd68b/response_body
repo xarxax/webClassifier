@@ -1,0 +1,46 @@
+# Grapeshot crawler (making malformed URL requests)
+User-Agent: grapeshot
+Disallow: /
+
+# SEMrushBot (crawling ancient links and not respecting limits)
+User-Agent: SemrushBot
+Disallow: /
+
+#AhrefsBot
+User-agent: AhrefsBot
+Disallow: /
+
+# MSNBot
+User-Agent: msnbot
+Crawl-Delay: 4
+
+# Yandex
+User-agent: Yandex
+Crawl-delay: 4
+
+# Yahoo
+User-agent: Slurp
+Crawl-delay: 5
+
+User-agent: Yahoo! Slurp
+Crawl-delay: 5
+
+User-Agent: *
+Disallow: /control_panel/
+Disallow: /*/control_panel/
+Disallow: /login/
+Disallow: /*/login/
+Disallow: /search/
+Disallow: /*/search/
+Disallow: /*/update_state_select
+Disallow: /*/ads/
+Disallow: /*/feedback
+Disallow: /*/report_error
+Disallow: /*/responsive
+Disallow: /*/translation_suggestion
+Disallow: /*/uploads/
+Disallow: /*/utility/
+Disallow: /*?no_crawl=true
+Disallow: /*&no_crawl=true
+
+Sitemap: https://www.machinetools.com/xml_sitemaps/sitemap.xml.gz
