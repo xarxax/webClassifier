@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <title>ACE Website - Home</title>
+        <meta charset="utf-8" />
+        
+<base href="http://www.ace.be/" />
+ <meta charset="UTF-8" />
+<meta name="description" content="" />
+        
+        <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_d3b03471c553f0a3e7514beca6a6ad43.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_aa2c8b49d248b9f50492a2f2b491b08f.css" media="print" />
+<link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_0af57e43066abe890c4a3b35db9a48e9.css" media="screen" />
+
+        <!--[if lte IE 6]>            
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_7c119bbbcfb0cbb28f003dd0f419e707.css" media="screen" />
+
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_bcab2fd85bead40ada9b1c09fe999c9a.css" media="screen" />
+
+        <![endif]-->
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_7c119bbbcfb0cbb28f003dd0f419e707.css" media="screen" />
+
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_def562f994a068406354684d32ab7920.css" media="screen" />
+
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_7c119bbbcfb0cbb28f003dd0f419e707.css" media="screen" />
+
+            
+        <![endif]-->
+        <!--[if IE 9]>
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_644242c1e27ab45a3e19a58b1b1a1aa9.css" media="screen" />
+
+        <![endif]-->
+        <!--[if IE 10]>
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_10d806d6cf3a70b6e275cd1c5dd3c06d.css" />
+
+        <![endif]-->
+        <!--[if IE 11]>
+            <link rel="stylesheet" type="text/css" href="http://www.ace.be/tmp/cache/stylesheet_combined_45bdf73ef7e0e0ff89a47aa086ba737b.css" />
+
+        <![endif]-->
+        	<script type="text/javascript" src="uploads/gdpr/ct-ultimate-gdpr.min.js"></script>
+    	<script type="text/javascript" src="uploads/gdpr/init.js"></script>
+    	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+        
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">    
+    function initialize() {
+        var latlng = new google.maps.LatLng(50.82524,4.366547);
+        var myOptions = {
+          zoom: 15,
+          center: new google.maps.LatLng(50.82524,4.366547),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+         
+        var contentString = '<h3>ACE AISBL</h3>'+
+'<p>250 Avenue Louise, Box 106<br />1050 Brussels<br />Tel: + 32 (0)2 504 07 10<br />Fax: + 32 (0)2 504 07 19</p>'+
+'<p><a href="mailto:secretariat[at]beveragecarton[dot]eu">Send an email</a></p>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 300
+        });
+        
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title:"How to contact us"
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+    }
+    function initialize2() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(50.8386152,4.378537),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize2);
+</script>
+<!--<script type="text/javascript" src="uploads/gdpr/js/dependencies.js"></script>
+<script type="text/javascript" src="uploads/gdpr/js/ct-ultimate-gdpr.js"></script>
+<script type="text/javascript" src="uploads/gdpr/js/init.js"></script>
+<link rel="stylesheet" type="text/css" href="uploads/gdpr/css/ct-ultimate-gdpr.css">
+<link rel="stylesheet" type="text/css" href="uploads/gdpr/css/fa/css/fontawesome-all.min.css"> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.banners-list').nivoSlider({
+            directionNav: false, 
+            pauseTime: 8000,
+            manualAdvance:true
+        });
+        var emailAddress = $('.layout-main-container').html();
+        if ($(emailAddress).length > 0) {
+            emailAddress = emailAddress.replace(/\[at]/g, '@');
+            emailAddress = emailAddress.replace(/\[dot]/g, '.');
+            $('.layout-main-container').html(emailAddress);
+        }
+        var widthPort = $(window).width();
+        var heightPort = $(window).height();
+        $(".preload").css('display','block');
+        $(".loading").css('display','none');
+        $('.inside-content ul:not(.reset-list,.inside-menu)').addClass('content-list');
+        $(".colorbox").colorbox();
+        $(".bio-colorbox").colorbox({innerWidth:'680px', innerHeight:'430px', inline:true, href:$(this).attr('href')});
+        $(".moderator-colorbox").colorbox({innerWidth:'680px', innerHeight:'430px', inline:true, href:$(this).attr('href')});
+        $("#tabs").tabs({ fx:{opacity:'toggle', duration:'slow'}} ).tabs("rotate", 10000);
+        $("#accordion").accordion({autoHeight:false, navigation:true});
+        $('.history-slideshow').bxSlider({randomStart:true, auto:true, easing:'ease-in-out', pager:false, slideWidth:466, controls:false});
+        $('.faqs-list').accordion({ header:".question", heightStyle: "content"});
+        $('.accordion-content').accordion({ header:".accordion-content-header", active:false, collapsible:true, heightStyle: "content"});
+        $('.biography-block').accordion({header:'.biography', active:false, collapsible:true});
+        $('.external-video-colorbox').colorbox({innerWidth:'640px', innerHeight:'390px', iframe:true});
+        $('.internal-video-colorbox').colorbox({innerWidth:'640px', innerHeight:'390px', inline:true, href:$(this).attr('href')});
+        $('.gallery-colorbox, .max-colorbox').colorbox({maxWidth:'90%', maxHeight:'90%'});
+        /*$('.ebook-colorbox').colorbox({inline:true, href:function() {
+                return $(this).attr('href')}
+        });*/
+        $('.ebook-colorbox').colorbox({innerWidth:'90%', innerHeight:'90%', iframe:true});
+        $(window).on("resize", function(){
+            if ($('.ebook-colorbox, .max-colorbox, .gallery-colorbox').length > 0) {
+                $.fn.colorbox.resize({
+                    height: "90%",
+                    width: "92%"
+                });
+            }
+        });
+        
+        $('.side-box-container .left-registration-box .register a').bind('click', function(e) {
+            e.preventDefault();
+            $('#ace-20-tab-1').fadeOut( 800, function() {
+                $('#ace-20-tab-2').fadeIn(300);
+            });
+        });
+        $('.page-ace-20 .button-back-speakers a').bind('click', function(e) {
+            e.preventDefault();
+            $('#ace-20-tab-2').fadeOut( 800, function() {
+                $('#ace-20-tab-1').fadeIn(300);
+            });
+        });
+        
+        /*if ($('.inside-menu').length > 0) {
+            var menuWidth = $('.inside-content').innerWidth();
+            var menuItems = $('.inside-menu li').size();
+            var itemWidth = (menuWidth/menuItems); /* -2 if left/right border 
+            $('.inside-menu').css({'width': menuWidth +'px'});
+            $('.inside-menu a').css({'width': itemWidth - $('.inside-menu li a').css('padding-left').replace(/[^-\d\.]/g, '') - $('.inside-menu li a').css('padding-right').replace(/[^-\d\.]/g, '') + 'px'});
+        }*/
+        
+        var bulletWidth = 0;
+        $('.bx-pager .bx-pager-item').each(function(e) {
+            bulletWidth += $(this).outerWidth();
+        });
+        $('.bx-pager').css('width',bulletWidth);
+        
+        if ($('.inside-content').children('.third-navigation').length > 0) {
+            $('.inside-content h1').css('padding-top','25px');
+        }
+        
+        $('.current-month').accordion({header:'.question-header'});
+        $('.other-months').accordion({header:'.question-header', active:false, collapsible:true});
+        
+
+        
+        
+        if (jQuery(".display_archive").length) {
+        	// newsletter, fix date format
+        
+        	jQuery('.campaign').each(function (index, value) {
+        		var $this = $(this);
+        
+        		var text = $this.contents().filter(function () {
+        			return this.nodeType == Node.TEXT_NODE;
+        		}).text();
+        
+        		text = text.replace("-", "");
+        		text = jQuery.trim(text);
+        
+        		var date = new Date(text);
+        		date =  date.getDate() + '/' + (("0" + (date.getMonth() + 1)).slice(-2)) + '/' +  date.getFullYear();
+        
+        		date = date + ' - ';
+        		$this.contents().first()[0].textContent = date;
+        
+        	});
+        
+        }
+        
+    });
+    
+    $(window).load(function() {
+    
+        $('.videos-list li, .video-block').each(function() {
+            var $this = $(this);
+            $this.children('.icon-video').append('<div class="play-icon" />');
+            $('.play-icon').css('top',($this.height() - $this.find('span').height())/2);
+        });
+        $('.home-news-list li').each(function() {
+            var newsItem = $(this);
+            var newsWidth = newsItem.width();
+            var thumbnailWidth = newsItem.children('.thumbnail').outerWidth() + 15;
+            $(this).children('.content-large').css('width',newsWidth - thumbnailWidth);
+        });
+    
+    });
+</script>
+<script type="text/javascript">
+    function printPage() {
+        window.print()
+    }
+</script>
+
+
+
+<script type="text/javascript">
+$('.eu-buildings input').live('click', function(){
+        if ($(this).is(':checked')){
+            $('.fieldset-access').slideDown();
+ 
+        } else{
+            $('.fieldset-access').slideUp();
+        }
+    });
+    $('.eu-buildings input:checked').parent().next().show();
+</script>
+
+
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51dd0ae34f42e261"></script>
+
+        <script type="text/javascript" src="js/jwplayer.js"></script>
+    </head>    <body class="page-home">
+         <div class="container">
+            <div class="light-blur">Light Blur</div>
+            <div class="wrapper">
+                <div class="header">
+                    <a class="home" href="http://www.ace.be/">ACE Website</a>
+                    <div class="technical-navigation">
+                        <a href="http://mailgw.ace.be/workgroups" target="_blank">Members Area</a>
+                        <a href="http://www.ace.be/faqs">FAQs</a>
+                        <a href="http://www.ace.be/alt/links">Links</a>
+                        <a href="http://www.ace.be/about-ace/secretariat">Contact</a>
+                        <a href="http://www.ace.be/">Home</a>
+                    </div>
+                </div>
+                 <div class="search"><form id="cntnt01moduleform_5" method="get" action="http://www.ace.be/alt/search" class="cms_form">
+<div class="hidden">
+<input type="hidden" name="mact" value="Search,cntnt01,dosearch,0" />
+<input type="hidden" name="cntnt01returnid" value="64" />
+</div>
+
+<label for="cntnt01searchinput">Search:&nbsp;</label>
+<input type="text" class="search-input" id="cntnt01searchinput" name="cntnt01searchinput" size="20" maxlength="50" value="" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value=this.defaultValue;"/>
+
+<input class="search-button" name="submit" value=" " type="submit" />
+<input type="hidden" id="cntnt01origreturnid" name="cntnt01origreturnid" value="15" />
+</form>
+</div>
+                 <div class="main-navigation">
+                      
+
+  
+<ul>
+
+<li><a href="http://www.ace.be/about-ace/mission-and-identity"><span>About ACE</span></a>
+
+
+</li>
+
+<li><a href="http://www.ace.be/beverage-cartons/what-are-beverage-cartons"><span>Beverage Cartons</span></a>
+
+
+</li>
+
+<li><a href="http://www.ace.be/ace-priorities/beverage-cartons-the-environment"><span>ACE Priorities</span></a>
+
+
+</li>
+
+<li><a href="http://www.ace.be/newsroom/news"><span>Newsroom</span></a>
+
+
+</li>
+</ul>
+
+                 </div>
+                                    
+                        <div class="home-banner slider-wrapper">
+                            <div class="reset-list banners-list">
+    <a href="http://www.ace.be/beverage-cartons/recycling">
+        <img src="/uploads/Modules/Banner/recycling.jpg" alt="Recycling" title="#htmlcaption-0"/>
+    </a>  
+    <a href="http://www.ace.be/ace-priorities/forest-based-renewability/traceability-commitment">
+        <img src="/uploads/Modules/Banner/banner_forestry.png" alt="Forestry" title="#htmlcaption-1"/>
+    </a>  
+    <a href="http://www.ace.be/ace-priorities/environmental-footprint-2/environmental-footprint">
+        <img src="/uploads/Modules/Banner/banner_new.jpg" alt="Environmental Footprint" title="#htmlcaption-2"/>
+    </a>  
+    <a href="http://www.ace.be/ace-priorities/resource-efficiency/sustainable-sourcing">
+        <img src="/uploads/Modules/Banner/banner_ressource_efficiency.png" alt="Resource Efficiency" title="#htmlcaption-3"/>
+    </a>  
+</div>
+            <div id="htmlcaption-0" class="nivo-html-caption">
+            <span class="title">Recycling</span><br />
+            <span class="content">All the materials used in beverage cartons are recyclable. In 2017, 48% of beverage cartons in EU-28 were recycled. </span>
+        </div>
+                <div id="htmlcaption-1" class="nivo-html-caption">
+            <span class="title">Forestry</span><br />
+            <span class="content">100% of the paperboard produced in Europe for the manufacturing of beverage cartons comes from paper mills that have an FSC certified chain-of-custody in place.</span>
+        </div>
+                <div id="htmlcaption-2" class="nivo-html-caption">
+            <span class="title">Environmental Footprint</span><br />
+            <span class="content">Beverage cartons have the lowest carbon footprint in their core categories of milk and fruit juice packaging.</span>
+        </div>
+                <div id="htmlcaption-3" class="nivo-html-caption">
+            <span class="title">Resource Efficiency</span><br />
+            <span class="content">The beverage carton industry now produces 40% more cartons with the same amount of wood fibres as 20 years ago.</span>
+        </div>
+    
+                        </div>
+                    
+                             <div class="layout-main-container">
+                                    <div class="home-row">
+                        <div class="home-style home-style-questions">
+                            <div class="home-block home-questions">
+                                <h2>Question of the Month</h2>
+                                <ul class="reset-list home-questions-list">
+        <li>
+        <span class="question">It's easy to recycle beverage cartons!</span>
+        <div class="answer">All the materials used in beverage cartons are recyclable. Recycling beverage cartons reduces carbon emissions and enables a better use of raw material resources. Paper mills, very interested in the quality fibre that makes beverage ...</div>
+        <a class="read-more" href="http://www.ace.be/newsroom/question-of-the-month">Read more</a>
+    </li>
+    </ul>
+
+                            </div>
+                        </div>
+                        <div class="home-style">
+                            <div class="home-double-block home-about">
+                                <h2>About Us</h2>
+                                <img class="bc-icons" src="/images/bc_icons.png" alt="Beverage Cartons Icons" width="147" height="170" />
+                                <h3>Working with nature</h3>
+                                <p>The Alliance for Beverage Cartons and the Environment – provides a European platform for beverage carton manufacturers and their paperboard suppliers to benchmark and profile cartons as renewable, recyclable and low carbon packaging solutions.</p>
+                                <p>ACE members work together to demonstrate that beverage carton packaging is the smart green choice today and in the future.</p>
+                                <a class="read-more" href="http://www.ace.be/about-ace/mission-and-identity">Read More</a>
+                            </div>
+                        </div>
+                        <div class="home-style">
+                            <div class="home-block home-videos">
+                                <h2>Videos</h2>
+                                        <div class="video-block">
+                    <a class="icon-video internal-video-colorbox" href="#video-1"><img src="http://www.ace.be/tmp/cache/Thumbnail_w208_h120_m_default__uploads_Modules_Videos_230_130_thumbnail_infographics.JPG" alt="Beverage Cartons contribute to a Circular Economy" /></a>
+            <div class="hide">
+                <div id="video-1">Loading the player...</div>
+                
+                <script type="text/javascript">
+                  jwplayer("video-1").setup({
+                    file: "http://www.ace.be//uploads/videos/Animation_Circular%20Economy_final.mp4",
+                    width:640,
+                    height:390
+                  });
+                </script>
+                
+            </div>
+                <span class="title">Beverage Cartons contribute to a Circular Economy</span>
+    </div>
+    
+                                <a class="see-all" href="http://www.ace.be/newsroom/mediabank/videos">See Videos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-row">
+                        <div class="home-special-block">
+                            <div class="home-style home-style-feature">
+                                <div class="home-block home-feature">
+                                    <a href="http://www.ace.be/ace-priorities/forest-based-renewability/traceability-commitment">
+                                        <div><span class="icon-download">Committed to source wood from responsibly managed forests</span></div>
+                                        <img src="/images/tb_renewable_resource.jpg" alt="ACE - Using a natural renewable resource" width="208" height="140" /></a>
+                                </div>
+                            </div>
+                            
+                            <div class="home-style home-style-twitter">
+                                <div class="home-block home-twitter">
+                                    <h3>From Twitter</h3>
+                                      
+     <div class="message">🔈 Beverage Cartons team up with WWF and UN to enhance <a href="http://twitter.com/search?q=%23biodiversity" target="_new">#biodiversity</a> in <a href="http://twitter.com/search?q=%23LifeCycleAssessments." target="_new">#LifeCycleAssessments.</a> Read our new press re… <a href="https://t.co/ddhcyUxG3f" target="_new">https://t.co/ddhcyUxG3f</a></div>
+     <p class="info">
+          <span class="author">Posted by <a href="https://www.twitter.com/Beveragecartons" target="_blank">ACE Beverage Cartons</a>,</span>
+          <span class="date">5 days ago</span>
+     </p>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="home-style">
+                            <div class="home-double-block home-news">
+                                <h2>Ace Highlights</h2>
+                                <div class="special-border">Special Border</div>
+                                
+                                <div class="home-style-mediaroom">
+                                                                                        <ul class="reset-list home-news-list">
+                    <li>
+                                    <img class="thumbnail" src="http://www.ace.be/tmp/cache/Thumbnail_w150_h100_m_default__uploads_Modules_Mediaroom_cartoon-october-2018_thumbnail.jpg" alt="Rising waste collection and recycling: Europe’s optimal solution for a true circularity" />
+                                <div class="content content-large">
+                    <span class="date">10 Oct 2018</span>
+                    <h4>Rising waste collection and recycling: Europe’s optimal solution for a true circularity</h4>
+                    <div class="summary">
+                                                    48% of beverage cartons were recycled in the EU in 2017, marking the twelfth consecutive ...
+                                            </div>
+                    <a class="read-more" href="http://www.ace.be/mediaroom/99/50/Rising-waste-collection-and-recycling-Europe-s-optimal-solution-for-a-true-circularity">Read more</a>
+                </div>
+            </li>
+                    <li>
+                                    <img class="thumbnail" src="http://www.ace.be/tmp/cache/Thumbnail_w150_h100_m_default__uploads_Modules_Mediaroom_official-md-photo_thumbnail.jpg" alt="Interview with MEP Miriam Dalli: The role of recycling in reducing littering " />
+                                <div class="content content-large">
+                    <span class="date">10 Oct 2018</span>
+                    <h4>Interview with MEP Miriam Dalli: The role of recycling in reducing littering </h4>
+                    <div class="summary">
+                                                    Miriam Dalli, Member of the European Parliament, shares her views on the role of recycling as an enabler ...
+                                            </div>
+                    <a class="read-more" href="http://www.ace.be/mediaroom/100/50/Interview-with-MEP-Miriam-Dalli-The-role-of-recycling-in-reducing-littering">Read more</a>
+                </div>
+            </li>
+                </ul>
+    
+                                                                    </div>
+                            </div>
+                        </div>    
+                        <div class="home-style">
+                            <div class="home-block home-archives">
+                                <h2>Archive</h2>
+                                            <ul class="reset-list archives-list">
+                    <li>
+                <span class="date">30 Jan 2019</span>
+                <h4>Beverage Cartons team up with WWF and UN to enhance biodiversity in Life-Cycle Assessments</h4>
+                <div class="summary">
+                                            The Alliance for Beverage Cartons and the Environment (ACE), representing the European beverage ...
+                                    </div>
+                <a class="read-more" href="http://www.ace.be/mediaroom/108/50/Beverage-Cartons-team-up-with-WWF-and-UN-to-enhance-biodiversity-in-Life-Cycle-Assessments">Read more</a>
+            </li>
+                    <li>
+                <span class="date">19 Dec 2018</span>
+                <h4>Beverage Carton companies launch EXTR:ACT platform to boost recycling</h4>
+                <div class="summary">
+                                            The Alliance for Beverage Cartons and the Environment (ACE) today announced that it ...
+                                    </div>
+                <a class="read-more" href="http://www.ace.be/mediaroom/107/50/Beverage-Carton-companies-launch-EXTR-ACT-platform-to-boost-recycling">Read more</a>
+            </li>
+            
+        </ul>
+    
+                            </div>
+                        </div>
+                                                <div class="clear"></div>
+                        <div class="home-style home-style-illustrations">
+                            <div class="home-illustrations">
+                                <div class="home-icon icon-renewability">
+                                    <a href="http://www.ace.be/ace-priorities/forest-based-renewability/traceability-commitment"><span>Using Forest-based Renewable Resources</span></a>
+                                </div>
+                                <div class="home-icon icon-footprint">
+                                    <a href="http://www.ace.be/ace-priorities/environmental-footprint-2/environmental-footprint"><span>Reducing our Environmental Footprint</span></a>
+                                </div>
+                                <div class="home-icon icon-recycling">
+                                    <a href="http://www.ace.be/ace-priorities/recycling-2/recycling-performance"><span>Promoting Recycling</span></a>
+                                </div>
+                                <div class="home-icon icon-efficiency">
+                                    <a href="http://www.ace.be/ace-priorities/resource-efficiency/sustainable-sourcing"><span>Contributing to Resource Efficiency</span></a>
+                                </div>
+                            </div>
+                        </div>
+                                            </div>
+                    <div class="clear"></div>
+                             </div>
+             <div class="footer">
+                 <p>Copyright @ ACE 2019 | <a href="http://www.ace.be/alt/disclaimer">Disclaimer</a> | <a href="http://www.ace.be/cookie-policy">Cookies Policy</a> | <a href="http://www.ace.be/privacy-policy">Privacy Policy</a>| <a href="http://www.ace.be/privacy-centre">Privacy Centre</a> | <a href="http://www.ace.be/terms-of-use">Terms of use</a> | <a href="http://www.ace.be/alt/sitemap">Sitemap</a> | <input onclick="printPage()" type="button" value="Print this page" /> | <a class="social-twitter" href="https://twitter.com/Beveragecartons" target="_blank">Follow ACE</a></p>
+             </div>
+         </div>
+         </div>
+         
+         
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15750232-32', 'ace.be');
+  ga('send', 'pageview');
+
+</script>
+
+
+    </body>
+</html>

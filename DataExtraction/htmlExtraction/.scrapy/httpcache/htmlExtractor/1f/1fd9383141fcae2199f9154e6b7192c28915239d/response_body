@@ -1,0 +1,928 @@
+<HTML lang="en">
+
+<HEAD>
+	<title>The Story of Pinocchio by Carlo Collodi</title>
+	<META NAME="Description" CONTENT="Carlo Collodi (Lorenzini) &#9658; The story of Pinocchio - A short biography telling how he came to write Pinocchio. Includes a couple of Pinocchio photos" />
+	<meta name="keywords" content="pinocchio carlo collodi biography carlo lorenzini the story adventures of pinocchio photos pinochio" />
+	<META NAME="Robots" CONTENT="index,follow">
+	<LINK REL="stylesheet" TYPE="text/css" HREF="/florence-italy.css">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0">
+
+<h1>carlo lorenzini (carlo collodi): biography, the story of pinocchio, photos</h1>
+
+<!--[if lt IE 7]>
+        <script type="text/javascript" src="http://www.yourwaytoflorence.com/unitpngfix.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+//Usp
+var uspnum = 0;
+var usp= new Array();
+
+usp[0]="Book online";
+usp[1]="Pay at the hotel!";
+usp[2]="Best price guaranteed!";
+
+function showusp(){
+	var el = document.getElementById('usps');
+	el.innerHTML="";
+	if (uspnum % 2)
+	  el.className = "even"
+	else
+	  el.className = "odd"
+	el.innerHTML=usp[uspnum%3];
+	uspnum++;
+	setTimeout("showusp()", 2000);
+}
+
+//]]>
+
+</script>
+
+<script type="text/javascript">
+
+function tickCheckBox(el)
+{
+	if (document.getElementById)
+	{
+		if (document.getElementById(el))
+		{
+			document.getElementById(el).checked = true;
+		}
+	}
+	return true;
+}
+
+var filaMonth;
+
+function showCalendar (img, cal, dt, frm,m,y,d) {
+    if (document.getElementById) {
+        var c = document.getElementById(cal);
+        var i = document.getElementById(img);
+        var f = document.getElementById(frm);
+        calendar.calfrm = frm;
+        calendar.cal = c;
+        calendar.caldt = dt;
+        calendar.calf = f;
+        var my = f[dt + '_month'].value.split("-");
+        y=my[0];m=my[1];d=f[ dt + '_day'].value;
+        buildCal(y,m,d);
+        var l=5; var t=0;
+        aTag = i;
+document.getElementById("b_calendarInner").style.display="block";
+        do {
+            aTag = aTag.offsetParent;
+            l += aTag.offsetLeft;
+            t += aTag.offsetTop;
+        } while (aTag.offsetParent && aTag.tagName != 'body');
+        var left =  i.offsetLeft + l;
+        var top = i.offsetTop + t + i.offsetHeight + 2;
+        c.style.position = "absolute";
+        c.style.left = left+'px';
+        c.style.top = top+'px';
+        c.style.display="block";
+    }
+}
+
+function closeCal() {
+    calendar.cal.style.display='none';
+}
+
+function buildCal(y,m,d){
+    var daysInMonth=[31,0,31,30,31,30,31,31,30,31,30,31];
+    td=new Date();
+    if (!y) y = td.getFullYear();
+    if (!m) m = td.getMonth()+1;
+    if (!d) d = td.getDate;
+    var frm = calendar.calfrm;
+    var dt = calendar.caldt;
+
+    var mDate = new Date(y, m-1, 1);
+    var firstMonthDay = mDate.getDay();
+    daysInMonth[1]=(((mDate.getFullYear()%100!=0) && (mDate.getFullYear()%4==0)) || (mDate.getFullYear()%400==0))?29:28;
+
+    var today = (y==td.getFullYear() && m==td.getMonth()+1)? td.getDate() : 0;
+    var t='<table class="b_caltable" cellspacing="0"><tr class="b_calHeader">';
+    var flm=td.getMonth()+1;var flyr=td.getFullYear();
+    for(p=0;p<=10;p++){
+        if (flm == m) {
+            filaMonth = p;
+        }
+        flm++; if (flm>12) { flm=1;flyr++ }
+    }
+    t+='<td colspan="7">';
+    if (filaMonth == 0) {
+        t+='&nbsp;&lt;&nbsp;';
+    }
+    else {
+        t+='<a href="javascript:prevMonth('+y+','+m+');" title="'+tr.prevMonth+'">&nbsp;&lt;&nbsp;</a>';
+    }
+    t+='&nbsp;<select name="ym" onchange="goMonth(this.options[this.selectedIndex].value)">';
+    var mn=td.getMonth()+1;var yr=td.getFullYear();
+    for(n=0;n<=10;n++){
+        t+='<option value="' + mn + '"';
+        if (mn == m) {
+            t+=' selected="selected"';
+        }
+        t+='>' + months[mn-1] + ' ' + yr +'</option>';
+        mn++; if (mn>12) { mn=1;yr++ }
+    }
+    t+= ' </select>&nbsp;';
+    if (filaMonth == 10) {
+        t+='&nbsp;&gt;&nbsp;';
+    }
+    else {
+        t+='<a href="javascript:nextMonth('+y+','+m+');" title="' + tr.nextMonth +'">&nbsp;&gt;&nbsp;</a>';
+    }
+    t+='</td></tr>';
+    t+='<tr class="b_calDayNames">';
+    for(dn=0;dn<7;dn++){
+        var cl = '';
+        if ((dn%7==5) || (dn%7 == 6)) cl += ' b_calWeekend';
+        t+='<th class="'+cl+'">'+days[dn]+'</th>';
+    }
+    t+='</tr><tr class="b_calDays">';
+    for(i=1;i<=42;i++){
+        var x = i - (firstMonthDay+6)%7;
+        if (x > daysInMonth[m-1] || x <1) x = '&nbsp;';
+        var cl = '';
+        var href = 0;
+        if ((i%7==0) || (i%7 == 6)) cl += ' b_calWeekend';
+        if (x>0){
+            var xDay = new Date(y, m-1, x);
+            if ((xDay.getFullYear() == y) && (xDay.getMonth()+1 == m)
+                && (xDay.getDate() == d))
+                { cl += ' b_calSelected' ; href=1}
+            if ((xDay.getFullYear() == td.getFullYear())
+                && (xDay.getMonth() == td.getMonth())
+                && (xDay.getDate() == td.getDate()))
+                { cl += ' b_calToday'; href=1;}
+            else {
+                if (xDay > td){ cl += ' b_calFuture'; href=1; }
+                else {
+                    if (xDay < td) { cl += ' b_calPast'}
+                }
+            }
+        };
+        t+='<td class="'+cl+'">';
+        if (href){
+            t+='<a href="javascript:pickDate('+y+','+m+','+x+',\''+dt+'\',\''+frm+'\');">'+x+'</a>';
+        } else {
+            t+=x;
+        }
+        t+='</td>';
+        if(((i)%7==0)&&(i<36)) {
+            t+='</tr><tr class="b_calDays">';
+        }
+    }
+    t+='</tr><tr class="b_calClose"><td colspan="7"><a href="javascript:closeCal();">' + tr.closeCalendar + '</a></td></tr></table>';
+    document.getElementById("b_calendarInner").innerHTML= t;
+}
+
+function prevMonth(y,m) {
+    if (new Date(y,m-1,1) < td) return;
+    if (m > 1) {m--} else {m = 12; y--};
+    buildCal(y,m);
+}
+
+function nextMonth(y,m) {
+//    if ((new Date(y,m-1,1) - td) > 1000*3600*24*300) return;
+    if (m<12){m++;} else {m=1;y++;}
+    if (y > td.getFullYear() && m >= td.getMonth() ) return;
+    buildCal(y,m);
+}
+
+function goMonth(m){
+    var y = td.getFullYear();
+    if (m < td.getMonth()+1) y++;
+    buildCal(y,m);
+}
+
+function pickDate(y,m,d,dt,frm){
+    // set form values
+    var f = calendar.calf;
+    var dt = calendar.caldt;
+    f[dt + '_month'].value = y + "-"  + m;
+    f[dt + '_day'].value = d;
+	tickCheckBox('b_availcheck');
+	if (dt == "b_checkin"){
+		checkDateOrder(calendar.calfrm, 'b_checkin_day', 'b_checkin_month', 'b_checkout_day', 'b_checkout_month');
+	}
+    closeCal();
+}
+
+function addzero( value )
+   {
+      while( value.length<2 ) value = String("0") + value;
+      return value;
+   }
+
+function checkDateOrder(frm, ci_day, ci_month_year, co_day, co_month_year) {
+	if (document.getElementById) {
+		var frm = document.getElementById(frm);
+		// create date object from checkin values
+		// set date to 12:00 to avoid problems with one
+		// date being wintertime and the other summertime
+		var my = frm[ci_month_year].value.split("-");
+	    var ci = new Date (my[0], my[1]-1, frm[ci_day].value, 12, 0, 0, 0);
+
+        // create date object from checkout values
+	    my = frm[co_month_year].value.split("-");
+	    var co = new Date (my[0], my[1]-1, frm[co_day].value, 12, 0, 0, 0);
+
+		// if checkin date is at or after checkout date,
+		// add a day full of milliseconds, and set the
+		// selectbox values for checkout date to new value
+	    if (ci >= co){
+    	    co.setTime(ci.getTime() + 1000 * 60 * 60 * 24);
+	        frm[co_day].value =  co.getDate();
+    	    var com = co.getMonth()+1;
+	        frm[co_month_year].value = co.getFullYear() + "-" + com;
+    	}
+	}
+}
+
+// <![CDATA[
+    calendar = new Object();
+    tr = new Object();
+    tr.nextMonth = "Next month";
+    tr.prevMonth = "Previous month";
+    tr.closeCalendar = "Close calendar";
+    tr.pressCtlD = "Press control-d or choose bookmarks/add or favorites/add in your browser";
+    tr.pressCtlP = "Press control-p or choose file/print in your browser";
+    tr.url = "http://www.booking.com/general.en.html?aid=327496;sid=e239eb05bd5b10b76ddeb17f9a966f18;tmpl=searchbox280x130";
+    tr.title = "Booking.com: Welcome";
+    tr.icons = "/static/affiliate_base/img/";
+    var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var days=['Mo','Tu','We','Th','Fr','Sa','Su'];
+// ]]>
+
+<!--
+if (document.getElementById) {
+    document.write("<style type='text/css'>");
+    document.write(".b_blocktoggle {display: none}");
+    document.write("</style>");
+    var shown = new Array();
+}
+
+function blocktoggle(i) {
+    if (document.getElementById) {
+        shown[i] = (shown[i]) ? false : true;
+        currentdisplay = (shown[i]) ? 'block' : 'none';
+        document.getElementById('b_blocktoggle'+i).style.display = currentdisplay;
+    }
+}
+
+function blockdisplay(i) {
+    if (document.getElementById){
+        if (document.getElementById("b_blockdisplay"+i)) {
+            for ( j = 1; j < 1000; j++ ) {
+                if (document.getElementById('b_blockdisplay' + j)) {document.getElementById('b_blockdisplay' + j).style.display = 'none';}
+                else {j = 1000;}
+            }
+            if (i) {document.getElementById("b_blockdisplay"+i).style.display = 'block';}
+        }
+    }
+}   //-->
+
+</script>
+
+<style type="text/css">
+
+/* ATTENCTION: CUT OFF BODY STYLE IF YOU ARE COPYING CODE INTO YOUR PAGE */
+
+.b_popup {
+background-color: #FFFFFF !important;
+}
+
+div#b_calendarInner {
+border:#7f9db9 2px solid;
+display:none;
+}
+
+tr.b_calHeader td { color: transparent !important; }
+tr.b_calDays td { border: 2px solid #7F9DB9 !important; padding:3px; }
+.b_caltable { border-collapse: collapse !important; border: none; font: normal 10px Verdana; }
+.b_caltable a { color: #003580; }
+.b_calClose { text-align: right; }
+form#b_frm { margin: 0 !important; }
+
+div#b_noscript {
+border:#FF0000 1px dashed;
+background:#FFFFBF;
+padding:2px;
+color:#FF0000;
+}
+
+div#b_contenitore {
+width:280px;
+height:115px;
+position:relative;
+font-family: Trebuchet Ms,Verdana,Arial,sans-serif;
+font-size:14px;
+color:#FFFFFF;
+background:transparent url("http://x.bstatic.com/images/affiliate/327496/sbbg.jpg") 0 0 no-repeat;;
+text-align:left;
+}
+
+div#b_dest,div#b_browse,div#hotel_form_checkin,
+div#hotel_form_checkout, div#options,div#options2,
+div#b_partnership,div#hotelTypes,div#b_but,div#destHelp,div#b_topBox, div#usps,div#dist,img#distHelpImg, div#b_logo,div#b_icoHotel
+{
+position:absolute;
+}
+
+div#b_contenuti {
+margin:0;
+padding:0;
+}
+
+div#b_topBox {
+left:10px;
+text-align:left;
+top:9px;
+}
+
+div#b_icoHotel {
+right:10px;
+top:9px;
+}
+
+/*destination*/
+div#b_dest {
+left:10px;
+top:21px;
+white-space:nowrap;
+}
+
+div#b_browse {
+left:10px;
+top:62px;
+white-space:nowrap;
+}
+
+div#b_browse a,
+div#b_browse a:link,
+div#b_browse a:visited,
+div#b_browse a:hover,
+div#b_browse a:active {
+color:#FF0000;
+}
+
+.other_text {
+font-weight:bold;
+}
+
+div#b_destInput {}
+
+
+/*checkin*/
+div#hotel_form_checkin {
+bottom:40px;
+left:10px;
+white-space:nowrap;
+}
+
+.hotel_form_checkin_title {}
+
+/*checkout*/
+div#hotel_form_checkout {
+bottom:40px;
+right:10px;
+white-space:nowrap;
+}
+
+.hotel_form_checkout_title {}
+
+/*calendario*/
+.b_calendar {
+vertical-align:bottom;
+}
+
+/*usps*/
+div#usps {
+bottom:5px;
+color:#262468;
+font-size:12px;
+font-weight:bold;
+left:10px;
+text-align:right;
+white-space:nowrap;
+}
+
+.odd{
+color:#B3B36B;
+}
+
+.even{
+color:#9B6BB3;
+}
+
+/*button*/
+div#b_but {
+right:10px;
+bottom:8px;
+}
+
+/* decommentare per attivare l'immagine di sfondo
+div#b_but .b_submit {
+background:url("http:/aff.bstatic.com/images/affiliate/321689/submit.gif") center center no-repeat;
+border:0;
+width:31px;
+height:31px;
+color:#FFFFFF;
+font-size:14px;
+font-weight:bold;
+cursor:pointer;
+}*/
+
+/*logo*/
+div#b_logo {
+bottom:5px;
+color:#7A9467;
+left:10px;
+}
+
+div#b_frm{
+margin:0;
+padding:0;
+}
+
+/*rifiniture*/
+.b_inline {display:inline;}
+.b_clearLeft{clear:left;}
+.b_clearRight{clear:right;}
+.b_clearAll{clear:both;}
+
+</style>
+
+<script language="JavaScript">
+function apri(url,w,h,altro)
+	{
+	winNew = open(url,"windowNew","width="+w+",height="+h+altro);
+	winNew.focus();
+	}
+function clk(el)
+	{
+	if(document.images)
+			{
+			TrackImg = new Image();
+			TrackImg.src="http://activenews.aperion.it/click.asp?idaz=155&URL="+escape(el.href);
+			}
+	return true;
+	}
+</script>
+
+<LINK REL="stylesheet" TYPE="text/css" HREF="/include/css/style.css" />
+
+<div class="contenitore-testata">
+	<div class="testata">
+		<div class="testata-left"><A HREF="http://www.yourwaytoflorence.com/" title="Your Way to Florence - All about Florence and Tuscany, Italy: accommodation, tourism, Italian schools, weddings..."><IMG SRC="http://www.yourwaytoflorence.com/include/images/logo-your-way-to-florence.gif" alt="Your Way to Florence - All about Florence and Tuscany, Italy: accommodation, tourism..." BORDER="0"/></A></div>
+		<div class="testata-right" style="padding-top:13px">
+		
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- YWTF 468x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-8525628769565860"
+     data-ad-slot="4469529694"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	</div>
+</div>
+
+<!-- google + -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- delicious -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://delicious-button.googlecode.com/files/jquery.delicious-button-1.0.min.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="verde"><IMG SRC="http://www.yourwaytoflorence.com/include/images/sfondino-verde.gif" BORDER="0"/></div>
+
+<div class="contenitore-barra-bottoni">
+	<div class="barra-bottoni">
+
+		<div id="menu">
+			<ul>
+				<li><a href="/tourism/florence/general.htm" class="current">TOURIST INFORMATION</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/tourism/florence/arts.htm">ART & HISTORY</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/maps/map-of-florence-italy.htm">MAPS</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/weather/florence-italy-weather-forecast.htm">WEATHER</a></li>
+				<!--
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/news/florence-italy-news.htm">NEWS</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/events">EVENTS</a></li>
+				-->
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/postcard/index.htm">POSTCARDS</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="http://www.uffizi.org/" target="blank">UFFIZI GALLERY</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="http://www.artofcookery.com/" target="blank">TUSCAN RECIPES</a></li>
+				<li class="divisorio"><IMG SRC="/include/images/divisorio.gif" BORDER="0"/></li>
+				<li><a href="/hotel">FLORENCE HOTELS</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+ <div class="grigio-sfumato"> </div>
+
+<!-- fine testata -->
+
+
+
+
+<style>
+div.foto {
+	width:680px;
+
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:180px;
+	padding-bottom:16px;
+	}
+</style>
+
+<div class="contenuto-pagina">
+	<div class="pagina">
+		<table width="980" cellpadding="0" cellspacing="0">
+			<td width="700" valign="top">
+				<div class="pagina-sx">
+
+					<div id="fototestata" class="foto"><img src="/include/images/claim.png" border="0"/></div>
+					<!-- <img src="http://www.yourwaytoflorence.com/include/images/ombra-foto.gif" border="0"/><br/>&nbsp;<br/> -->
+
+					<!-- social buttons -->
+
+					<style type="text/css">
+					.social_buttons
+						{
+						background: WhiteSmoke;
+						padding: 7px 10px 7px 10px;
+						border-bottom: 1px dotted Silver;
+						}
+					</style>
+
+					<div class="social_buttons">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td align="left" valign="middle" nowrap>
+									<!-- twitter -->
+									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								</td>
+								<td align="left" valign="middle" nowrap>
+									<!-- google +1 -->
+									<g:plusone size="medium" callback="plusone_vote"></g:plusone>
+								</td>
+								<!--<td><div style="width: 15px"></div></td>-->
+								<td align="left" valign="middle" nowrap>
+									<!-- facebook -->
+									<fb:like layout="button_count" show_faces="false" send="true"></fb:like>
+								</td>
+								<td>&nbsp;</td>
+								<td align="right" valign="middle" nowrap width="90%">
+									<a class="delicious-button-2" href="http://delicious.com/save">Save on Delicious</a>
+									<script type="text/javascript">
+									$(document).ready(function(){
+									$('a.delicious-button-2').deliciousButton({
+									url:''
+									,title:'Google Buzz Widget - A jQuery Plugin'
+									,button:'wide'
+									});
+									});
+									</script>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<!-- fine social buttons -->
+
+					<br/>
+
+<script type="text/javascript">
+	var randomnumber=Math.floor(Math.random()*30);
+	var nomefoto = "url(/include/picture/testata"+leadingZeros(randomnumber,2,"0")+".jpg)"
+	document.getElementById("fototestata").style.backgroundImage = nomefoto;
+
+function leadingZeros(num, totalChars, padWith) {
+	num = num + "";
+	padWith = (padWith) ? padWith : "0";
+	if (num.length < totalChars) {
+		while (num.length < totalChars) {
+			num = padWith + num;
+		}
+	} else {}
+
+	if (num.length > totalChars) { //if padWith was a multiple character string and num was overpadded
+		num = num.substring((num.length - totalChars), totalChars);
+	} else {}
+
+	return num;
+}
+</script>
+<style>
+.barraeventi a {
+	font-weight:bold
+}
+.listaevento img {
+	border: 3px solid #BF70F6;
+}
+.listaevento a {
+	font-weight:bold
+}
+.linkarticoloevento a {
+	font-weight:bold
+}
+</style>
+
+		<div class="testo">
+
+			<center>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- YWTF 468x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:468px;height:60px"
+     data-ad-client="ca-pub-8525628769565860"
+     data-ad-slot="4469529694"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</center>
+
+			<!-- google_ad_section_start -->
+
+			<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%" id="tabellacontenuto">
+
+				<TR>
+
+
+<TD WIDTH="100%" VALIGN="TOP">
+
+	<br/>
+
+	<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%">
+		<TR>
+			<TD BGCOLOR="#17155D" NOWRAP>&#160;&#160;<B class="title">Carlo Collodi - The story of Pinocchio</B>&#160;&#160;</TD>
+			<TD BGCOLOR="#BF70F6" WIDTH="100%"></TD>
+		</TR>
+	</TABLE>
+
+	<br/><br/>
+
+	<img src="pinocchio.jpg" width="150" height="218" style="margin: 0px 10px 10px 0px" align="left" alt="Pinocchio" />
+	<b>Carlo Collodi</b> is the pen-name of <b>Carlo Lorenzini</b> (1826-90). <b>Collodi</b> is the name of the
+	little village in Tuscany where his mother was born. He was born in Florence, the son of a cook and
+	a servant, and spent his chilhood as much in the rough and tumble of the streets of his native
+	Florence as in the classroom. No doubt this stood him in good stead in his two periods as a soldier -
+	once in 1848 when Tuscany rose in revolt against its Habsburg rulers, and again in the war between
+	Italy and Austria in1859.<br>
+	<br>
+	Collodi starded his writing career as a newspaperman: he wrote for other papers, and also started his
+	own satirical paper Il Lampione (The Lanter) - but the government closed it down. Later  he became
+	a government official himself, working as a civil servant for the education department and trying to
+	push through much-needed educational reforms.<br>
+	<br>
+	In the 1850s, <img src="37700a.jpg" width=208 height=144  style="margin: 0px 0px 10px 10px" align="right" alt="Pinocchio's nose">
+	he began to have a variety of both fiction and non-fiction books published. Once, he
+	translated some French fairy-tales so well that he was asked whether he would like to write some of
+	his own. The result was his fist major success, Giannettino, which is a kind of educational  fairly-
+	tale. He now devoted himself to writing for children" becouse adults are too hard to please"!<br>
+	<br>
+	In 1881, he sent to a friend, who edited a newspaper in Rome, a short episode in the life of a
+	wooden puppet, wondering whether the editor would be interested in publishing this "bit of
+	foolishness" in his children's section. The editor did, and the children loved it. <b>The adventures of
+	Pinocchio</b> were serialized in the paper in 1881-2, and then published in 1883 with huge success. The
+	fist English-language version was just as successful on its publication in 1892. The 1940 Walt
+	Disney cartoon has ensured that the character of <b>Pinocchio</b> remains familiar: but the book is far
+	richer in the details of the adventures of the naughty puppet in search of boyhood.<br>
+
+	<br><br><br>
+
+	<iframe src="http://www.booking.com/general.html?aid=327496;tmpl=searchbox;ifl=1;lang=en;ss=Collodi;width=670" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="125">Do you want to visit Collodi? Search for an hotel near Collodi.</iframe>
+
+	<!--
+<hr width=100% noshade>
+
+<DIV ALIGN="JUSTIFY">
+	<B>&#169; Copyright by <a href="/bonechi/bonechi.htm">Casa Editrice Bonechi</a></B> - All right reserved. Text and Photographs may not be reproduced without the permission of the <a href="/bonechi/bonechi.htm">Publisher</a>. Tutti i diritti riservati. Testi e Fotografie non possono essere riprodotti senza il permesso dell'<a href="/bonechi/bonechi.htm">Editore</a>.<BR>
+	<BR>
+	<B>&#169; Copyright by <a href="/apt/apt.htm">APT - Azienda di Promozione Turistica</B></a> - All right reserved. Text and Photographs may not be reproduced without the permission of the <a href="/apt/apt.htm">Publisher</a>. Tutti i diritti riservati. Testi e Fotografie non possono essere riprodotti senza il permesso dell'<a href="/apt/apt.htm">Editore</a>.
+</DIV>
+
+<hr width=100% noshade>
+-->
+
+
+
+	<br>
+	
+<!--
+<br clear="all"/><br/><br/><br/>
+
+<div class="fb-comments" data-href="http://www.yourwaytoflorence.com" data-num-posts="3" data-width="670"></div>
+-->
+
+</TD>
+</TR>
+</TABLE>
+
+<!-- google_ad_section_end -->
+
+</div>		</div></td>
+		<td valign=top width="280"><div class="centro-pagina-dx">
+
+
+			<!-- <br/> -->
+
+			<!-- spotlight -->
+
+			<!--
+			<div class="box-spotlight">
+				<div class="box2-spotlight">
+					<div class="spotlight">
+						<a href="/the-medicean-month-in-florence.htm" title="The Medicean month, Florence"><img src="/images/medicean-month.jpg" width="41" height="65" class="left" border="0" alt="The Medicean month, Florence"/></a>
+						<a href="/the-medicean-month-in-florence.htm" class="grigio">The Medicean month</a><br/>
+						 theatre shows
+					</div>
+				</div>
+			</div>
+			-->
+			<!-- spotlight -->
+			
+				
+		<div><a href="http://www.florenceaccommodation.com/" rel="nofollow"><img src="/florenceaccommodation.jpg" alt="Florence Accommodation.com" width="280" height="233"></a><br></div>
+		
+			<br/>
+
+			<!-- bottoni barra dx -->
+			<div class="barradx">
+
+				<div class="titolo-barradx">
+					<A HREF="/tourism/florence/accomodation.htm" class="titolo-barradx">ACCOMMODATION</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/tourism/hotel.htm" class="bottone-barradx">Hotels</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/florence/homes.htm" class="bottone-barradx">Bed and Breakfasts</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/homes.htm" class="bottone-barradx">Holiday Homes</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/rentals.htm" class="bottone-barradx">Holiday Farmhouses</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/charme.htm" class="bottone-barradx">Charme and Relax</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/villas.htm" class="bottone-barradx">Apartments & Villas</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/historic-residences.htm" class="bottone-barradx">Historic Residences</A></div>
+				<div class="bottone-barradx"><A HREF="/luxury.htm" class="bottone-barradx">Luxury Villas in Tuscany</A></div>
+				<div class="bottone-barradx"><A HREF="/montespertoli.htm" class="bottone-barradx">Visit a Jewel in Chianti: Montespertoli</A></div>
+
+				<br/>
+
+				<div class="titolo-barradx">
+					<A HREF="/index.htm#tourist_services_florence_italy" class="titolo-barradx">TOURIST SERVICES</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/tourism/accomodation/realestate.htm" class="bottone-barradx">Real Estate</A></div>
+				<div class="bottone-barradx"><A HREF="/incoming.htm" class="bottone-barradx">Incoming Services</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/florence/transportation.htm" class="bottone-barradx">Limousine Service & Driving Tours</A></div>
+				<div class="bottone-barradx"><A HREF="/enjoyflorence.htm" class="bottone-barradx">Florence Tours</A></div>
+				<div class="bottone-barradx"><A HREF="/tickets/florence-museum-tickets-reservations.htm" class="bottone-barradx">Florence Museum Tickets</A></div>
+				<div class="bottone-barradx"><A HREF="/tourism/restaurant.htm" class="bottone-barradx">Florence Restaurants</A></div>
+
+				<br/>
+
+				<div class="titolo-barradx">
+					<A HREF="/italian-language-schools/learn_italian_in_italy.htm" class="titolo-barradx">LEARN ITALIAN IN ITALY</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/italian-language-schools/learn_italian_in_italy.htm" class="bottone-barradx">Italian Language Schools in Florence</A></div>
+
+				<br/>
+
+				<div class="titolo-barradx">
+					<A HREF="/wedding.htm" class="titolo-barradx" title="Getting Married in Florence, italy.">WEDDINGS IN FLORENCE</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/tuscany-wedding-locations-services.htm" class="bottone-barradx">Wedding Locations & Services</A></div>
+
+				<br/>
+
+				<div class="titolo-barradx">
+					<A HREF="/index.htm#hand_made_in_florence" class="titolo-barradx">HAND MADE IN FLORENCE</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/leather.htm" class="bottone-barradx">Leather</A></div>
+				<div class="bottone-barradx"><A HREF="/jewels.htm" class="bottone-barradx">Jewels</A></div>
+				<div class="bottone-barradx"><A HREF="/silver.htm" class="bottone-barradx">Silver</A></div>
+				<div class="bottone-barradx"><A HREF="/artandcraft.htm" class="bottone-barradx">Arts and Crafts</A></div>
+
+				<br/>
+
+				<div class="titolo-barradx">
+					<A HREF="/index.htm#art_gallery_florence_italy" class="titolo-barradx">ART GALLERY</A>
+				</div>
+				<div class="bottone-barradx"><A HREF="/books.htm" class="bottone-barradx">Books and Prints</A></div>
+				<div class="bottone-barradx"><A HREF="/paintings.htm" class="bottone-barradx">Paintings and Sculptures</A></div>
+
+				<br/>
+
+				<!-- banner -->
+
+				<CENTER>
+				<a title="Visit Florence" alt="Guide to Florence" href="http://www.visitflorence.com/" rel="nofollow" target="_blank"><img src="/images/visitflorence.gif" alt="" width="250" height="250" border="0"></a>
+
+				<!-- sponsors 
+				<div class="box-sponsors">
+					<div class="box2-sponsors">
+						<div class="spotlight">
+							<a href="http://www.pierotucci.com/?n=banner+tucci" target="blank" onmousedown="return clk(this)" rel="nofollow"><IMG SRC="/images/pierotucci2.jpg" width="146" border="0" target="_blank" alt="Pierotucci leather goods"></a>
+						</div>
+					</div>
+				</div>
+				 fine sponsors -->
+
+				
+				</CENTER>
+
+				<!-- fine banner -->
+
+			</div>
+			<!-- fine bottoni barra dx -->
+		</div>
+</td>
+	</table>
+
+
+<div><IMG SRC="/include/images/ombra-piede.jpg" BORDER="0"/></div>
+
+	</div>
+</div>
+
+<!-- piede -->
+
+<div class="contenuto-piede">
+
+	<div class="piede">
+
+
+
+		<div id="footer">
+
+			<p>
+				&copy; 1996&ndash;2014 <b>your way to florence</b> - the right way to find resources about <b><a href="/#florence-italy" title="All about Florence, Italy">florence, italy</a></b>
+			</p>
+
+			<br/>
+
+			<p>
+				<a href="/spotlight.htm">spotlight archive</a> |
+				<a href="/reviews.htm">reviews</a> |
+				<a href="/network.htm">our network</a> |
+				<a href="/sitemap.htm">sitemap</a>
+			</p>
+
+			<p style="margin-top: 5px">
+				see also: <a href="http://www.yourwaytotuscany.com/" title="Your way to Tuscany">Your Way to Tuscany</a> - the best way to find tuscany accommodations
+			</p>
+
+		</div>
+
+		<br/>
+
+		a project by <a href="http://www.aperion.it" target="blank" class="bianco"><b>aperion.it</b> - web & seo agency</a> - firenze
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-824555-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</BODY>
+</HTML>

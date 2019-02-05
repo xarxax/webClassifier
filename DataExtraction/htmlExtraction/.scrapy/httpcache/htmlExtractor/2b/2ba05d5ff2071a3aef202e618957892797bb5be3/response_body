@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8116799-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-8116799-1');
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="icon" href="/favicon.ico" type="image/x-icon" /><meta charset="UTF-8" />
+<!-- must include this meta tag in order for IE9 to display CSS3 properties and for jQuery animations to work nicely -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" /><meta name="p:domain_verify" content="51e4faa3adf844e40707a9236ec6bc5f" /><title>
+	First Reference
+</title>
+
+<!--Google web fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet" /><link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css" /><link type="text/css" href="css/preliminary-styles.css" rel="Stylesheet" /><link type="text/css" href="css/navigation.css" rel="Stylesheet" /><link type="text/css" href="css/forms.css" rel="Stylesheet" />
+<!--<link type="text/css" href="css/styles.css" rel="Stylesheet" />	-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    
+<!--Slider files-->
+<link type="text/css" rel="stylesheet" href="css/ticker.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/ticker.js"></script>
+<!--Slider files-->
+
+<script type="text/javascript">
+    function resizeText(multiplier) {
+        if (document.body.style.fontSize == "") {
+            document.body.style.fontSize = "1.0em";
+        }
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+    }
+</script>
+
+<script type="text/javascript">
+
+    //Free trial button on scroll
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('#takeTrialBottom').fadeIn();
+        } else {
+            $('#takeTrialBottom').fadeOut();
+        }
+    });
+
+    // A jQuery based placeholder polyfill
+    $(document).ready(function () {
+        function add() {
+            if ($(this).val() === '') {
+                $(this).val($(this).attr('placeholder')).addClass('placeholder');
+            }
+        }
+
+        function remove() {
+            if ($(this).val() === $(this).attr('placeholder')) {
+                $(this).val('').removeClass('placeholder');
+            }
+        }
+
+        // Create a dummy element for feature detection
+        if (!('placeholder' in $('<input>')[0])) {
+
+            // Select the elements that have a placeholder attribute
+            $('input[placeholder], textarea[placeholder]').blur(add).focus(remove).each(add);
+
+            // Remove the placeholder text before the form is submitted
+            $('form').submit(function () {
+                $(this).find('input[placeholder], textarea[placeholder]').each(remove);
+            });
+        }
+    });
+</script>
+
+<!--expand/collapse -->
+<script type="text/javascript" src="scripts/expand.js"></script>
+
+<!--powertip used in jurisdiction page-->
+<script type="text/javascript" src="scripts/jquery.powertip.js"></script>
+<link href="scripts/css/jquery.powertip.css" rel="stylesheet" type="text/css" /><link href="css/canada-map.css" rel="stylesheet" type="text/css" />
+
+<!-- sticky tooltip -->
+<script type="text/javascript" src="scripts/tooltip.js"></script>
+
+<!-- form validation functions-->
+<script type="text/ecmascript" src="scripts/validationFunctions.js"></script>
+
+<!-- Accessibility functions-->
+<script type="text/ecmascript" src="scripts/accessibility.js"></script>
+<script type="text/ecmascript" src="scripts/zoom.js"></script>
+
+<meta name="keywords" content="sample policy, sample policies, human resources, HR, employment, payroll, HR Forms, Letters, HR documents, training, compliance, hr software, HRIS, human resources software, hris system, payroll, employment law" /><meta name="description" content="First Reference provides practical resources for payroll and employment law, HR best practices and internal controls to help employers with compliance." /></head>
+<body>
+<!--IF browser is IE older than 9: create the new HTML5 elements and display a message-->
+<div id="iemsg"><!--[if lt IE 9]>
+ <script>
+    document.createElement("header");
+    document.createElement("footer");
+    document.createElement("section"); 
+    document.createElement("aside");
+    document.createElement("nav");
+    document.createElement("article"); 
+    document.createElement("hgroup"); 
+    document.createElement("menu");
+    document.createElement("figure");
+    document.createElement("figcaption");
+    document.createElement("details");
+  </script>
+  <h1 style="color:#60001b;">This website is best viewed in an Internet browser supporting HTML5</h1>
+  <h1 style="color:#60001b;">Please upgrade your browser. You can download Google Chrome <a href="https://www.google.com/chrome/">here</a></h1>
+  <noscript>
+     <h1 style="color:#60001b;">Warning!</h1>
+     <h1>Because your browser does not support HTML5, some elements are simulated using JavaScript.</h1>
+     <h1>Unfortunately your browser has disabled scripting. Please enable it in order to display this page.</h1>
+  </noscript>
+<![endif]--></div>
+
+<header role="banner">
+
+	<div id="branding" style="max-width:900px;">
+		<section id="logo">
+			<a href="http://firstreference.com" title="First Reference"><img src="images/firstref-logo.png" alt="Workplace compliance information and resources for HR, payroll, accessibility, finance, accounting, IT, non-profits, charities and more" /></a>
+			<span class="banner-tagline">Compliance made easy</span><span style="font-size: 14px;"><sup>&reg;</sup></span>
+		</section>
+		<section id="accessibility" style="margin-top: 30px; padding-right: 0px;">
+			<a href="http://myaccount.firstreference.com" target="_blank" style="border-radius: 3px; background: #258BE0; color: white; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -webkit-transition: background-color 300ms ease-out; -moz-transition: background-color 300ms ease-out; transition: background-color 300ms ease-out; text-decoration: none; text-align: center; padding: 10px 18px;" onClick="_gaq.push(['_trackEvent', 'hra', 'click', 'login', '0']);">Product Login</a>
+			<!--<a href="#top" class="standard">Skip to content</a>&nbsp;&nbsp;
+			<a href="#" onClick="zoomin();" title="Enlarge the sixe of text on the page">Enlarge</a>&nbsp;&nbsp;
+			<a href="#" onClick="zoomout();" title="Reduce the size of text on the page">Reduce</a>&nbsp;&nbsp;
+			<a href="#" onClick="zoomrest();" title="Reset the size of text on the page">Reset</a>
+			<br><br>-->
+		</section>
+	</div>
+
+	<nav id="sub-nav" role="navigation">
+		<ul id="menu-sub">
+			<li><a href="FR/index.aspx" class="drop"><img src="images/bilingual_website_flag_icon.png" style="vertical-align:bottom;" alt="&Ecirc;tre en conformit&eacute;, en toute facilit&eacute; avec des solutions d'affaires de La R&acute;f&acute;rence" width="16" height="16" />Fran&ccedil;ais</a></li>
+			<li><a href="support.aspx" class="drop">Support</a>
+				<div class="dropdown_1column" style="width: 150px;padding-left:0px;">
+					<div class="col_1" style="width: 150px;padding-left:0px;">  
+						<ul>
+							<li><a href="requirements.aspx">Requirements</a></li>
+							<li><a href="support_ticket.aspx">Submit a ticket</a></li>
+							<li><a href="#">Contents Checklists</a>
+								<div class="second_drop" style="width: 120px; padding-left: 0px;">
+									<div class="col_1" style="width: 120px; height: 55px; padding-left: 0px;"> 
+										<ul>
+											<li><a href="/HRA_EV/A/checklist.pdf" target="_blank">HRA Atlantic</a></li>
+											<li><a href="/HRA_EV/O/checklist.pdf" target="_blank">HRA Ontario</a></li>
+											<li><a href="/HRA_EV/W/checklist.pdf" target="_blank">HRA Western</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="company.aspx" class="drop">Company</a>
+				<div class="dropdown_1column" style="width: 150px;padding-left:0px;">
+					<div class="col_1" style="width: 150px;padding-left:0px;">  
+						<ul>
+							<li><a href="contactUs.aspx">Contact</a></li>
+							<li><a href="partners.aspx">Partners</a></li>
+							<li><a href="accessibility.aspx">Accessibility</a></li>
+							<li><a href="careers.aspx">Careers</a></li>
+							<li><a href="legal.aspx">Terms & conditions</a></li>
+							<li><a href="privacy.aspx">Privacy Policy</a></li>
+							<li><a href="publisherdisclaimer.pdf">Publisher Disclaimer</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+<!--			<li><a href="index.aspx">Home</a></li>	-->
+		</ul>
+	</nav>
+    <nav id="main-nav" role="navigation">
+		<div id="social-icons" style="float: right; padding-top: 6px;">
+			<a href="https://www.facebook.com/FirstReference" target="_blank" title="Facebook" style="margin-right: 8px;"><img src="images/social-fb.png" alt="Facebook" /></a>
+			<a href="https://twitter.com/firstreference" target="_blank" title="Twitter" style="margin-right: 8px;"><img src="images/social-tw.png" alt="Twitter" /></a>
+			<a href="https://www.linkedin.com/company/first-reference-inc" target="_blank" title="LinkedIn" style="margin-right: 8px;"><img src="images/social-li.png" alt="LinkedIn" /></a>
+			<a href="https://www.youtube.com/firstreference" target="_blank" title="Youtube" style="margin-right: 8px;"><img src="images/social-yt.png" alt="Youtube" /></a>
+		</div>
+		<ul id="menu" style="padding: 0;">
+			<li><a href="solutions.aspx?ref=menu">Solutions</a><!-- Begin 5 columns Item -->  
+				<div class="dropdown_5columns"><!-- Begin 5 columns container -->  
+					<div class="col_1">  
+						<h3>HR &amp; Payroll Management</h3>
+						<ul>  
+<!--							<li><a href="humanresourcesadvisor-atlantic.aspx?ref=solutions">Atlantic</a></li>  
+							<li><a href="humanresourcesadvisor-ontario.aspx?ref=solutions">Ontario</a></li>  
+							<li><a href="humanresourcesadvisor-western.aspx?ref=solutions">Western</a></li>   
+-->
+							<li><a href="humanresourcesadvisor.aspx?ref=solutions">Human Resources Advisor&trade;</a></li>
+							<li><a href="paysource.aspx?ref=solutions">PaySource<sup>&reg;</sup></a></li>
+						</ul>     
+					</div>  
+					<div class="col_1">  
+						<h3>Policies &amp; Procedures</h3>  
+						<ul>  
+							<li><a href="accessibilitystandardspolicypro.aspx?ref=solutions">Accessibility</a></li>  
+							<li><a href="financeaccountingpolicypro.aspx?ref=solutions">Finance &amp; Accounting</a></li>  
+							<li><a href="humanresourcespolicypro.aspx?ref=solutions">Human Resources</a></li>  
+							<li><a href="informationtechnologypolicypro.aspx?ref=solutions">Information Technology</a></li>  
+							<li><a href="notforprofitpolicypro.aspx?ref=solutions">Not-for-Profit</a></li>  
+						</ul>     
+					</div>  
+					<div class="col_1">  
+						<h3>News & discussion</h3>  
+						<ul>  
+							<li><a href="hrinfodesk.aspx">HRinfodesk<sup>&reg;</sup></a></li>  
+							<li><a href="blogs.aspx">HR Blog</a></li>  
+							<li><a href="blogs.aspx">Internal Controls Blog</a></li>
+						</ul>
+					</div>  
+					<div class="col_1">  
+						<h3>Topic-based</h3>
+						<a href="guides.aspx">Best Practice &amp; Compliance Guides</a>
+					</div>   
+				</div><!-- End 5 columns container -->  
+			</li><!-- End 5 columns Item -->   
+	        
+			<li><a href="products.aspx?ref=menu">Products</a>
+				<div class="dropdown_3columns"><!-- Begin 4 columns container -->  
+					<div class="col_1" style="width:240px;">  
+						<h3><a href="humanresourcesadvisor.aspx?ref=products">Human Resources Advisor<sup>&trade;</sup></a></h3>  
+						<ul>  
+							<li><a href="humanresourcesadvisor-atlantic.aspx?ref=products">Atlantic</a></li>  
+							<li><a href="humanresourcesadvisor-ontario.aspx?ref=products">Ontario</a></li>  
+							<li><a href="humanresourcesadvisor-western.aspx?ref=products">Western</a></li>   
+						</ul> 
+						<h3><a href="paysource.aspx?ref=products">PaySource<sup>&reg;</sup></a></h3>
+					</div>  
+					<div class="col_1" style="width:240px;">  
+	                	<h3>PolicyPro<sup>&reg;</sup></h3>   
+						<ul>
+							<li><a href="accessibilitystandardspolicypro.aspx?ref=products">Accessibility Standards PolicyPro<sup>&reg;</sup></a></li>
+							<li><a href="financeaccountingpolicypro.aspx?ref=products">Finance &amp; Accounting PolicyPro<sup>&reg;</sup></a></li>
+							<li><a href="humanresourcespolicypro.aspx?ref=products">Human Resources PolicyPro<sup>&reg;</sup></a></li>
+							<li><a href="informationtechnologypolicypro.aspx?ref=products">Information Technology PolicyPro<sup>&reg;</sup></a></li>
+							<li><a href="notforprofitpolicypro.aspx?ref=products">Not-for-Profit PolicyPro<sup>&reg;</sup></a></li>
+						</ul>
+					</div> 
+	            
+					 <div class="col_1">
+						 <h3><a href="hrinfodesk.aspx?ref=products">HRinfodesk<sup>&reg;</sup></a></h3><br>   
+						 <h3><a href="guides.aspx?ref=products">Guides</a></h3><br>   					
+					</div>
+				</div>
+			</li>
+			<li><a href="jurisdictions.aspx?ref=menu">Jurisdictions</a>
+				<div class="dropdown_1column_jur">
+					<div class="col_1">  
+						<ul>
+							<li><a href="national.aspx?ref=menu">National</a></li>
+							<li><a href="alberta.aspx?ref=menu">Alberta</a></li>
+							<li><a href="britishcolumbia.aspx?ref=menu">British Columbia</a></li>
+							<li><a href="manitoba.aspx?ref=menu">Manitoba</a></li>
+							<li><a href="newbrunswick.aspx?ref=menu">New Brunswick</a></li>
+							<li><a href="newfoundland.aspx?ref=menu">Newfoundland &<br> Labrador</a></li>
+							<li><a href="novascotia.aspx?ref=menu">Nova Scotia</a></li>
+							<li><a href="ontario.aspx?ref=menu">Ontario</a></li>
+							<li><a href="princeedwardisland.aspx?ref=menu">Prince Edward Island</a></li>
+							<li><a href="humanresourcespolicypro-quebec.aspx?ref=menu">Quebec</a></li>
+							<li><a href="saskatchewan.aspx?ref=menu">Saskatchewan</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="resources.aspx?ref=menu">Resources</a>
+				<div class="dropdown_1column_res">
+					 <div class="col_1">  
+						<ul>
+							<li><a href="asktheeditor.aspx?ref=menu">Ask the Editor</a></li>
+							<li><a href="blogs.aspx?ref=menu">Blogs</a></li>
+							<li><a href="events.aspx?ref=menu">Events</a></li>
+			     	 		<li><a href="fr-update-newsletter.aspx?ref=menu">Newsletter</a></li>
+							<li><a href="free-resources.aspx?ref=menu">Free Resources</a></li>                        
+							<!--<li><a href="#">Webinars</a></li>
+							<li><a href="#">Demos</a></li>-->	
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="fr-update-newsletter.aspx?ref=menu" target="_blank">Free Newsletter</a></li>
+			<!--<li><a href="conference/confdetails.aspx?wherefrom=FRnav" target="_blank">2018 Conference</a></li>-->
+      </ul>
+    </nav>
+</header>
+
+<link rel="canonical" href="http://firstreference.com" />
+
+<!--
+
+<section id="special">
+
+	<div style="margin:20px auto 12px;width:90%;border:4px dashed red;border-radius:16px;background:#ffffff;padding:6px 14px;">
+		<h4 style="margin-top:6px;font-size:16px;font-weight:normal;text-align:center;">During Canada Post workers' rotating strikes, customers can make payments by going to <a style="font-size:16px;" href="https://myaccount.firstreference.com/details/invoices.aspx" target="_blank">myaccount.firstreference.com</a> or calling customer service at 1-800-750-8175.</h4>
+	</div>
+		
+</section>
+
+-->
+
+<section id="ticker" style="height:44px; background-color:#fbf7e5;border-bottom:1px solid #999999;">
+	<div id="newsticker">
+		<div id="tickerContainer" style="height:40px; overflow:hidden; width:775px; padding-left:25px;">	
+			
+			<div class="ticker" style="display:flex">
+				<div style="color:#212121; font-size:13px; padding-top:15px; padding-bottom:5px; width:auto;">New Special Report&nbsp;|</div>
+				<div style="color:#0269CE; font-size:13px; padding-top:15px; padding-bottom:5px;"><a href="http://www.firstreference.com/whitepapers/legal-recreational-cannabis-SR03.aspx?utm_source=ticker&utm_medium=web&utm_campaign=SR03&ref=index" style="color:#0269CE;text-decoration:none; font-size:13px;" target="_blank">&nbsp;Recreational marijuana and the workplace: Policies and best practices to comply with the law</a></div> 
+			</div>	
+
+			<!-- <div class="ticker" style="display:flex">
+				<div style="color:#212121; font-size:13px; padding-top:15px; padding-bottom:5px; width:auto;">June Update&nbsp;|</div>
+				<div style="color:#0269CE; font-size:13px; padding-top:15px; padding-bottom:5px;"><a href="http://www.firstreference.com/view-online/First-Reference-Update-view-online-jun-18.html?utm_source=ticker&utm_medium=web&utm_campaign=FR-update&ref=index" style="color:#0269CE;text-decoration:none; font-size:13px;" target="_blank">&nbsp;Check out the latest issue of the First Reference Update here</a></div> 
+			</div>	-->		
+
+			<div class="ticker" style="display:flex">
+				<div style="color:#212121; font-size:13px; padding-top:15px; padding-bottom:5px; width:auto;">Free Compliance Checklist&nbsp;|</div>
+				<div style="color:#0269CE; font-size:13px; padding-top:15px; padding-bottom:5px;"><a href="http://www.firstreference.com/whitepapers/required-workplace-postings-compliance-checklist.aspx?utm_source=ticker&utm_medium=web&utm_campaign=CC01&ref=index" style="color:#0269CE;text-decoration:none; font-size:13px;" target="_blank">&nbsp;Required Workplace Postings in Alberta, British Columbia and Ontario</a></div> 
+			</div>
+			
+			<div class="ticker" style="display:flex">
+				<div style="color:#212121; font-size:13px; padding-top:15px; padding-bottom:5px; width:auto;">Free Whitepaper&nbsp;|</div>
+				<div style="color:#0269CE; font-size:13px; padding-top:15px; padding-bottom:5px;"><a href="http://www.firstreference.com/whitepapers/hra-wp17-S559.aspx?utm_source=ticker&utm_medium=web&utm_campaign=HRAWP&ref=index" style="color:#0269CE;text-decoration:none; font-size:13px;" target="_blank">&nbsp;Learn how to prevent the ten most common employment standards errors</a></div> 
+			</div>	
+
+			<div class="ticker" style="display:flex">
+				<div style="color:#212121; font-size:13px; padding-top:15px; padding-bottom:5px; width:auto;">Special Report&nbsp;|</div>
+				<div style="color:#0269CE; font-size:13px; padding-top:15px; padding-bottom:5px;"><a href="http://www.firstreference.com/whitepapers/ab-update-sr01.aspx?utm_source=ticker&utm_medium=web&utm_campaign=SR01&ref=index" style="color:#0269CE;text-decoration:none; font-size:13px;" target="_blank">&nbsp;How are Alberta's updated employment and labour laws affecting employers?</a></div> 
+			</div> 
+		</div>
+	</div>
+</section>
+
+<section id="hero">
+<div style="width: 100%; height: auto; max-width: 900px; margin: auto; padding: 6px 0 24px; background-color: #FDFDF6;">	
+	<div id="lead-in">
+		<h1 style="margin:15px auto;text-align: center;font-size: 15px;font-family: arial;font-weight:normal;line-height:20px;">For over 20 years, First Reference has helped businesses, non-profits and charities meet legal requirements<br>and best practices for HR, payroll, accessibility, finance, accounting, governance, IT and more.</p>
+	</div>
+	<div id="headline">
+		<h3 style="margin:0 auto 10px; text-align:center; font-size:30px; font-weight:normal; font-family:'Roboto slab','Roboto','Times',serif; line-height:50px;">How can we make compliance easier for you?</h3>
+	</div>
+	<div id="hero" style="height:450px; width:890px; margin-left: 10px; display:inline-flex;">
+		<div id="column1" style="margin: 0 20px 0 0; max-width: 300px; height: 450px; text-align: center">
+			<div id="section1" style="width: 280px;">
+				<div id="HRPP" style="height:165px;padding: 20px 0; border: 3px solid #260050; border-radius:20px;">
+					<div style="height:75px;">
+						<div style="max-width: 170px; padding-right:40px;float:right;">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; color:#260050; margin-top:0px;">
+								<a href="http://www.firstreference.com/humanresourcespolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRPP&ref=index" style="margin-top:0px;text-align:left;line-height:24px;font-family:arial;font-size:18px;color:#260050;text-decoration:none;">Ready-to-Use <br>HR Policies<br>& Templates</a>
+							</h2>
+						</div>
+						<div style="float: left; margin-left:12px;">
+							<a href="http://www.firstreference.com/humanresourcespolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRPP&ref=index">
+								<img style="width: 75px; height: 75px;" alt="Human Resources policy and procedure samples, templates, manuals" src="http://firstreference.com/google/images/compliant-hr-policies.png" />
+							</a>
+						</div>
+					</div>					
+					<div id="bullets1" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 16px 15px;line-height: 18px;">Complete your human resources policy and procedure manual&thinsp;&mdash;&thinsp;choose from hundreds of samples</p>
+					</div>
+					<div style="margin:0;width:100%;height:27px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background-color:#260050">
+						<p style="margin-top:12px;padding-top:6px;"><a style="text-align:center;font-size:15px;color:#ffffff;text-transform:uppercase; text-decoration:none;" href="http://www.firstreference.com/humanresourcespolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRPP&ref=index">learn more</a></p>
+					</div>				
+				</div>	
+				
+				<div id="break" style="height:20px;">&nbsp;</div>
+				
+				<div id="paysource" style="height:165px;padding: 20px 0; border: 3px solid #f05e23; border-radius:20px;">	
+					<div style="height:75px;">
+						<div style="max-width: 164px; float:right;">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; color:#f05e23; margin-top:0px;">
+								<a href="http://www.firstreference.com/paysource.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=paysource&ref=index" style="margin-top:0px;text-align:left;line-height:24px;font-family:arial;font-size:18px;color:#f05e23;text-decoration:none;">Payroll Administration<br>& Management</a>
+							</h2>
+						</div>
+						<div style="float: left; margin-left:12px;">
+							<a href="http://www.firstreference.com/paysource.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=paysource&ref=index">
+								<img style="width: 75px; height: 75px;" alt="Payroll administration compliance and best practice information, forms, tools" src="http://firstreference.com/google/images/payroll-envelope.png" />
+							</a>
+						</div>
+					</div>					
+					<div id="bullets2" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 16px 15px;line-height: 18px;">We offer Canada's complete online source for expert-level payroll compliance information and tools</p>
+					</div>
+					<div style="margin:0;width:100%;height:27px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background-color:#f05e23;">
+						<p style="margin-top:12px;padding-top:6px;"><a style="text-align:center;font-size:15px;color:#ffffff;text-transform:uppercase; text-decoration:none;" href="http://www.firstreference.com/paysource.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=paysource&ref=index">learn more</a></p>
+					</div>	
+				</div>	
+			</div>
+		</div>
+		
+		<div id="column2" style="margin: 0 20px 0 0; max-width: 300px; height: 450px; text-align: center">
+			<div id="section2" style="width: 280px;">
+			   <div id="HRA" style="height:165px;padding: 20px 0; border: 3px solid #1682C3; border-radius:20px">
+					<div style="height:75px;">
+						<div style="max-width: 160px; padding-right:48px; float:right;">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; margin-top:0px; color:#1682c3;">
+								<a href="http://www.firstreference.com/humanresourcesadvisor.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRA&ref=index" style="margin-top:0px;text-align:left;line-height:24px;font-family:arial;font-size:18px;color:#1682c3;text-decoration:none;">Human <br>Resources <br>Management</a>
+							</h2>
+						</div>
+						<div style="float: left; margin-left:12px;">
+							<a href="http://www.firstreference.com/humanresourcesadvisor.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRA&ref=index">
+								<img style="width: 75px; height: 75px;" alt="The HR Advisor can answer your HR compliance questions" src="http://firstreference.com/google/images/hra-cloud-platform.png" />
+							</a>
+						</div>
+					</div>					
+					<div id="bullets3" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 16px 15px;line-height: 18px;">Easily find practical, up-to-date answers to your HR and payroll management questions</p>
+					</div>
+					<div style="margin:0;width:100%;height:27px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background-color:#1682c3;">
+						<p style="margin-top:12px;padding-top:6px;"><a style="text-align:center;font-size:15px;color:#ffffff;text-transform:uppercase; text-decoration:none;" href="http://www.firstreference.com/humanresourcesadvisor.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRA&ref=index">learn more</a></p>
+					</div>					
+				</div>	
+								
+				<div id="break" style="height:20px;">&nbsp;</div>
+				
+				<div id="HRID" style="height:165px;padding: 20px 0; border: 3px solid #354370; border-radius:20px;">	
+					<div style="height:75px;">
+						<div style="max-width: 170px; padding-right:38px; float:right;">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; margin-top:0px; color: #354370;">
+								<a href="http://www.firstreference.com/hrinfodesk.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRID&ref=index" style="margin-top:0px;text-align:left;line-height:24px;font-family:arial;font-size:18px;color:#354370;text-decoration:none;">Employment <br>& Payroll <br>News Updates</a>
+							</h2>
+						</div>
+						<div style="float: left; margin-left:12px;">
+							<a href="http://www.firstreference.com/hrinfodesk.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRID&ref=index">
+								<img style="width: 75px; height: 75px;" alt="Canadian employment and payroll news, developments, analysis" src="http://firstreference.com/google/images/employment-payroll-news.png" />
+							</a>
+						</div>
+					</div>					
+					<div id="bullets4" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 16px 15px;line-height: 18px;">Get the latest news and analysis on HR law nationwide to know what's coming and be ready for it</p>
+					</div>
+					<div style="margin:0;width:100%;height:27px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background-color:#354370;">
+						<p style="margin-top:12px;padding-top:6px;"><a style="text-align:center;font-size:15px;color:#ffffff;text-transform:uppercase; text-decoration:none;" href="http://www.firstreference.com/hrinfodesk.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=HRID&ref=index">learn more</a></p>
+					</div>					
+				</div>	
+			</div>
+		</div>		
+		
+		<div id="column3" style="margin: 0 20px 0 0; max-width: 300px; height: 450px; text-align: center">
+			<div id="section3" style="width: 280px;">
+				<div id="ICL" style="height:165px;padding: 20px 0; border: 3px solid #05175c; border-radius:20px;">
+					<div style="height:75px;">
+						<div style="max-width: 170px; float:right; padding-right:12px">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; color:#05175c; margin-top:0px;">Risk Management,<br>Internal Controls<br>& Governance</h2>
+						</div>
+						<div style="float: left; margin-left:12px;"><img style="width: 75px; height: 75px;" alt="Risk management policy and procedure manuals for finance, accounting, corporate governance, marketing, operations, information technology, IT, non-profits, charities" src="http://firstreference.com/google/images/internal-controls-check.png" />
+						</div>
+					</div>					
+					<div id="bullets5" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 14px 15px 4px;line-height: 18px;">Policy and procedure manuals for:</p> 
+						<ul style="margin-top:0px;">
+							<li style="line-height:20px; text-align:left;"><a href="http://www.firstreference.com/financeaccountingpolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=FAPP&ref=index" style="font-size: 15px;font-family: arial;font-weight:bold; text-align:left;">Finance and Accounting</a></li> 
+							<li style="line-height:20px; text-align:left;"><a href="http://www.firstreference.com/informationtechnologypolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=ITPP&ref=index" style="font-size: 15px;font-family: arial;font-weight:bold; text-align:left;">Information Technology</a></li>
+							<li style="line-height:20px; text-align:left;"><a href="http://www.firstreference.com/notforprofitpolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=NPPP&ref=index" style="font-size: 15px;font-family: arial; font-weight:bold; text-align:left;">Not-for-Profit Organizations</a></li>
+						</ul>
+					</div>
+				</div>	
+				
+				<div id="break" style="height:20px;">&nbsp;</div>
+
+				<div id="ASPP" style="height:165px;padding: 20px 0; border: 3px solid #097395; border-radius:20px">	
+					<div style="height:75px;">
+						<div style="max-width: 160px; float:right;">
+							<h2 style="font-size:18px; font-family:arial; text-align:left; color:#097395;margin-top:0px;">
+								<a href="http://www.firstreference.com/accessibilitystandardspolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=ASPP&ref=index" style="margin-top:0px;text-align:left;line-height:24px;font-family:arial;font-size:18px;color:#097395;text-decoration:none;">Accessibility Compliance <br>& Policies</a>
+							</h2>
+						</div>
+						<div style="float: left; margin-left:12px;">
+							<a href="http://www.firstreference.com/accessibilitystandardspolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=ASPP&ref=index">
+								<img style="width: 75px; height: 75px;" alt="Accessibility standards compliance tools, policies, procedures" src="http://firstreference.com/google/images/AODA-accessibility-laws.png" />
+							</a>
+						</div>
+					</div>					
+					<div id="bullets6" style="height:55px;">
+						<p style="text-align: center;font-size: 15px;font-family: arial;margin: 16px 15px;line-height: 18px;">Meet the requirements of current accessibility standards (e.g., AODA) with our step-by-step method</p>
+					</div>
+					<div style="margin:0;width:100%;height:27px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;background-color:#097395;">
+						<p style="margin-top:12px;padding-top:6px;"><a style="text-align:center;font-size:15px;color:#ffffff;text-transform:uppercase; text-decoration:none;" href="http://www.firstreference.com/accessibilitystandardspolicypro.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=ASPP&ref=index">learn more</a></p>
+					</div>
+				</div>	
+			</div>
+		</div>				
+		
+	</div>
+</div>	
+
+</section>
+
+
+<section style="width: 100%; height: 290px; max-width: 900px; margin: auto; padding: 40px 0;">
+
+<!-- product feature -->
+	<div id="product-feature" style="float:left;width: 58%;border-radius: 16px;border: 2px dashed #5396b2;background-color: #FDFDF6;padding: 2px 10px 6px 20px">
+		<h2 style="color: #000; font-size: 16px;">Do you know the 11 HR policies that are required by law?</h2>
+		<div style="color: #000; font-size: 13px; line-height: 18px;">
+			<div style="float:left;max-width:370px">
+				<p>Download our free whitepaper, <a href="http://www.firstreference.com/whitepapers/hrpp-wp17-s558.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=whitepapers&wherefrom=FRcom" title="Click here to download the free whitepaper, Getting Started with the 11 HR Policies Required By Law" style="font-size: 13px; color: #000; font-weight: bold;" target="_blank">Getting Started with the 11 HR Policies Required By Law</a>, to find out!</p>
+				<p>No matter how many employees you have, if you don't have these policies, you're placing your organization at risk of penalties, fines and unnecessary legal costs.</p>
+			</div>
+			<div style="float: left;max-width: 150px; padding-left:15px;padding-top:8px;padding-bottom:14px">
+				<img style="max-width: 115px;height:auto" alt="Learn about the essential HR policies that are required by law, courts and best practice" src="http://www.firstreference.com/images/getting-started-with-11-HR-policies-FRcom.png" />
+			</div>
+			<div>
+				<p style="padding-right:5px;">Find out what these legally required policies are&mdash;plus 20 more that are essential for due diligence&mdash;and get help implementing them with our latest HR whitepaper.</p>
+				<p><a href="http://www.firstreference.com/whitepapers/hrpp-wp17-s558.aspx?utm_source=FRcom&utm_medium=web&utm_campaign=whitepapers&wherefrom=FRcom" title="Click here to download the free whitepaper, Getting Started with the 11 HR Policies Required By Law" style="font-size: 13px; color: #000; font-weight: bold;" target="_blank">Download your free copy today!</a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- FR Update sign-up widget -->
+	<div id="FR-update-sign-up" style="float:right;width:34%; padding-top:12px">
+
+        <div id="formPanel">
+	
+            <form method="post" action="" id="contact">
+	<div class="aspNetHidden">
+	<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcyNTE1MTU2MmRk1rRXaNbvtRgy6aOHdbZIgWRMUZ64p/R8+Qdu6QFmjFM=" />
+	</div>
+	
+				<div style="margin-top:10px;">
+					<label for="email">
+						<p class="boldtext" style="margin:0 0 20px 0; color:#004565; font-weight:bold; font-size:16px; line-height:14px">Get our monthly update</p>
+						<p style="margin:4px 0; font-size:13px; line-height:22px">Learn how First Reference can help your organization meet the growing legal obligations in today's increasingly complex and changing compliance environment.</p>
+					</label>
+				</div>
+				<div>
+					<div style="display: inline-table; max-width: 170px; margin-left:60px; margin-top:20px;">
+						<div style="padding:16px; background-color:#357137; border-radius:5px; display:block; text-transform:uppercase; font-family:arial; font-size: 16px; line-height:26px;">
+							<a href="http://firstreference.com/fr-update-newsletter.aspx?ref=index" target="_blank" style="color:#ffffff; text-decoration:none;font-weight:500;font-size:16px;">Sign up here</a>
+						</div>
+					</div>
+				</div>
+            </form>
+        
+</div>
+        <span id="lblConfirm"></span>
+	</div>
+	
+</section>
+
+<section id="testimonial" style="width: auto; height: auto; max-width: 900px; margin: auto;">
+	<div style="background-image: url(images/testimonial-bg-w.png); background-repeat: no-repeat; padding: 10px 40px 16px 140px; height: 90px;">
+		<p style="font-size: 11.5px; line-height: 18px; margin: 0px;"><span style="font-size:11.5px; font-weight: bold; color: #333;">Darlene Belliveau of Alpha Court Community Mental Health & Addiction Services</span> in Thunder Bay, Ontario says:<br><a href="http://firstreference.com/humanresourcesadvisor.aspx?wherefrom=INDX" style="color:#00197c; font-size:11.5px;"><strong>The Human Resources Advisor</strong></a> is "<strong style="font-size:11.5px;">an excellent reference tool</strong>" in both its print and digital versions. Without a dedicated human resources person, she "<strong style="font-size:11.5px;">loves having something onsite that she can use...to help her with day-to-day problems that may arise</strong>."</p>
+	</div>
+</section>
+<section id="social2" style="margin-top: 30px; height:500px;">
+	<section id="blog-feed2" style="width: 380px; height:450px; margin-top: -8px;">		
+		<h2 style="margin-top:0px; margin-bottom:20px; font-size:16px; text-align:center;">Join the discussion on our blogs</h2>
+		<!-- start feedwind code --> 
+		<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="18517/">
+		</script> <!-- end feedwind code -->
+		<!-- start feedwind code --> 
+		<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="18522/"></script> 
+		<!-- end feedwind code -->
+	</section>
+	<section id="twitter-feed">
+		<div class="twitterback" style="margin-left:20px;width:428px;height:485px;padding-right:10px;">
+			<a class="twitter-timeline" data-width="428" data-height="485" data-theme="light" data-chrome="nofooter transparent" data-link-color="#700020" href="https://twitter.com/firstreference?ref_src=twsrc%5Etfw">Tweets by @firstreference</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</section>
+
+</section>
+
+<footer role="contentinfo">
+    <section id="SocialMedia" style="height: 16px;">&nbsp;
+        <!--<a href="https://www.facebook.com/FirstReference" target="_blank" title="Facebook"><img src="images/social_fb.png" alt="Facebook" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/firstreference" target="_blank" title="Twitter"><img src="images/social_tw.png" alt="Twitter" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/company/first-reference-inc/products" target="_blank" title="LinkedIn"><img src="images/social_li.png" alt="LinkedIn" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://plus.google.com/u/0/115416622813704472768/posts" target="_blank" title="Google Plus"><img src="images/social_gg.png" alt="Google plus" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="http://www.youtube.com/firstreference" target="_blank" title="Youtube"><img src="images/social_yt.png" alt="Youtube" /></a>-->
+    </section>
+    <section id="productLinks">
+        <h4 style="padding-bottom: 7px"><a href="products.aspx?ref=footer">Products</a></h4>
+        <a href="humanresourcesadvisor.aspx?ref=footer-products"><strong>The Human Resources Advisor</strong></a>&trade;<br />
+        <a href="humanresourcesadvisor-atlantic.aspx?ref=footer-products" class="indentLink">Atlantic</a><br />
+        <a href="humanresourcesadvisor-ontario.aspx?ref=footer-products" class="indentLink">Ontario</a><br />
+        <a href="humanresourcesadvisor-western.aspx?ref=footer-products" class="indentLink">Western</a><br />
+        <h4>PolicyPro<sup>&reg;</sup></h4>
+        <a href="accessibilitystandardspolicypro.aspx?ref=footer-products" class="indentLink">Accessibility Standards PolicyPro</a><sup>&reg;</sup><br />
+        <a href="financeaccountingpolicypro.aspx?ref=footer-products" class="indentLink">Finance &amp; Accounting PolicyPro</a><sup>&reg;</sup><br />
+        <a href="humanresourcespolicypro.aspx?ref=footer-products" class="indentLink">Human Resources PolicyPro</a><sup>&reg;</sup><br />
+        <a href="informationtechnologypolicypro.aspx?ref=footer-products" class="indentLink">Information Technology PolicyPro</a><sup>&reg;</sup><br />
+        <a href="notforprofitpolicypro.aspx?ref=footer-products" class="indentLink">Not-for-Profit PolicyPro</a><sup>&reg;</sup><br />
+        
+        <h4><a href="paysource.aspx?ref=footer-products">PaySource</a><sup>&reg;</sup></h4>
+        <h4><a href="hrinfodesk.aspx?ref=footer-products">HRinfodesk</a><sup>&reg;</sup></h4>
+		<h4><a href="guides.aspx?ref=footer-products">Compliance how-to guides</a></h4>
+    </section>
+    <section id="solutionLinks">
+        <h4 style="padding-bottom: 7px"><a href="solutions.aspx?ref=footer">Solutions</a></h4>
+        <h4 style="margin-top: 0">HR &amp; Payroll Management</h4>
+        <a class="indentLink" href="humanresourcesadvisor.aspx?ref=footer-solutions">The Human Resources Advisor</a>&trade;<br />
+        <a class="indentLink" href="paysource-current.aspx?ref=footer-solutions">PaySource</a><sup>&reg;</sup><br />
+        <h4>Policies &amp; Procedures</h4>
+        <a href="accessibilitystandardspolicyPro.aspx?ref=footer-solutions" class="indentLink">Accessibility</a><br />
+        <a href="financeaccountingpolicyPro.aspx?ref=footer-solutions" class="indentLink">Finance & Accounting</a><br />
+        <a href="humanresourcespolicypro.aspx?ref=footer-solutions" class="indentLink">Human Resources</a><br />
+        <a href="informationtechnologypolicypro.aspx?ref=footer-solutions" class="indentLink">Information Technology</a><br />
+        <a href="notforprofitpolicypro.aspx?ref=footer-solutions" class="indentLink">Not-for-Profit</a><br />
+        <h4>News and Analysis</h4>
+        <a href="hrinfodesk.aspx?ref=footer-solutions" class="indentLink">HRinfodesk</a><sup>&reg;</sup><br />
+        <h4>Topic-based</h4>
+        <a href="guides.aspx" class="indentLink">Best Practice &amp; Compliance Guides</a><br />
+    </section>
+    <section id="Jurisdictions">
+        <h4 style="padding-bottom: 7px"><a href="jurisdictions.aspx?ref=footer">Jurisdictions</a></h4>
+        <a href="national.aspx?ref=footer" class="indentLink">National</a><br />
+        <a href="alberta.aspx?ref=footer" class="indentLink">Alberta</a><br />
+        <a href="britishcolumbia.aspx?ref=footer" class="indentLink">British Columbia</a><br />
+        <a href="manitoba.aspx?ref=footer" class="indentLink">Manitoba</a><br />
+        <a href="newbrunswick.aspx?ref=footer" class="indentLink">New Brunswick</a><br />
+        <a href="newfoundland.aspx?ref=footer" class="indentLink">Newfoundland & Labrador</a><br />
+        <a href="novascotia.aspx?ref=footer" class="indentLink">Nova Scotia</a><br />
+        <a href="ontario.aspx?ref=footer" class="indentLink">Ontario</a><br />
+        <a href="princeedwardisland.aspx?ref=footer" class="indentLink">Prince Edward Island</a><br />
+        <a href="humanresourcespolicypro-quebec.aspx?ref=footer" class="indentLink">Quebec</a><br />
+        <a href="saskatchewan.aspx?ref=footer" class="indentLink">Saskatchewan</a><br />
+        <h4><a href="resources.aspx?ref=footer">Resources</a></h4>
+        <a href="fr-update-newsletter.aspx?ref=footer" class="indentLink">FR Newsletter</a><br />
+        <a href="blogs.aspx?ref=footer" class="indentLink">Blogs</a><br />
+        <a href="events.aspx?ref=footer" class="indentLink">Events</a><br />
+        <a class="indentLink" href="infographics.aspx?ref=footer">Infographics</a><br />
+    </section>
+    <section id="CompanyLinks">
+        <h4 style="padding-bottom: 7px"><a href="company.aspx"><strong>Company</strong></a></h4>
+        <a href="partners.aspx" class="indentLink">Partners</a><br />
+        <a href="accessibility.aspx" class="indentLink">Accessibility</a><br />
+        <a href="careers.aspx" class="indentLink">Careers</a><br />
+        <a href="legal.aspx" class="indentLink">Legal Matters</a><br /><br />
+        <a href="legal.aspx#pageTOCfr" class="indentLink">Affaires juridiques</a><br />       
+        <a href="contactus.aspx" class="indentLink">Contact</a><br /> <br /> 
+
+        <h4><a href="support.aspx"><strong>Support</strong></a></h4>
+        <a href="requirements.aspx" class="indentLink">Requirements</a><br />
+        <a href="support_ticket.aspx" class="indentLink">Submit a ticket</a><br /><br />
+        <a href="FR/" class="indentLink">French website</a>
+    </section>
+    <section id="copyright">
+        <p>&copy; <script type="text/javascript">
+					var currentTime = new Date();
+					var year = currentTime.getFullYear();
+					document.write(year);
+				</script> First Reference Inc. All Rights Reserved.</p>
+        <a href="legal.aspx">Legal and Copyright notices</a> |  <a href="privacy.aspx">Privacy Policy</a> | <a href="accessibility.aspx">Accessibility Policy</a>
+    </section>
+</footer>
+<section style="text-align:right;font-family:Verdana;font-size:10px;padding-top:10px;color:#5a5a5a;">
+    <div style="display:inline-table;vertical-align:top;line-height:13px;">
+        Our website uses HTML5 and CSS3<br />
+        HTML5 logo by <a href="http://www.w3.org" target="_blank" style="color:#152f3e;font-family:Verdana;font-size:10px;line-height:13px;">World Wide Web Consortium</a> 
+    </div>
+       
+    <div style="display:inline-table;width:73px;margin-left:10px;vertical-align:top;">
+         <img src="/images/html5-badge.png" alt="HTML5 logo" />
+    </div>
+</section>
+<!-- Google Code for Remarketing Tag -->
+<!--
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980706844;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980706844/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script type="text/javascript">
+(function(d, s, id) {
+  window.Wishpond = window.Wishpond || {};
+  Wishpond.merchantId = '948944';
+  Wishpond.writeKey = '4f86a38d77c9';
+  var js, wpjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//cdn.wishpond.net/connect.js";
+  wpjs.parentNode.insertBefore(js, wpjs);
+}(document, 'script', 'wishpond-connect'));
+</script>
+
+<!-- LinkedIn Website Demographics Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "486858";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=486858&fmt=gif" />
+</noscript>
+
+</body>
+</html>

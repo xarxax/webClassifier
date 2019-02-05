@@ -1,0 +1,30 @@
+#User-agent: *
+#Disallow: /
+#
+#User-Agent: Googlebot
+
+User-Agent: *
+Disallow: /cgi-bin/adv_search_results.cgi*
+Disallow: /cgi-bin/se.cgi*
+Disallow: /cgi-bin/edit/
+Disallow: /cgi-bin/mod/
+Disallow: /cgi-bin/diffselect*
+Disallow: /cgi-bin/recent*
+Disallow: /cgi-bin/user*
+Disallow: /cgi-bin/my*
+Disallow: /cgi-bin/search*
+Disallow: /cgi-bin/stats*
+Crawl-delay: 3
+Request-rate: 1/3
+
+#Disallow: /cgi-bin/edit
+#Disallow: /cgi-bin/mod
+#Disallow: /cgi-bin/diffselect
+#Disallow: /cgi-bin/recent
+#Disallow: /cgi-bin/user
+#Disallow: /cgi-bin/my
+#Disallow: /cgi-bin/search
+#Disallow: /cgi-bin/stats
+#Disallow: oldid=
+#Crawl-delay: 3
+#Request-rate: 1/3

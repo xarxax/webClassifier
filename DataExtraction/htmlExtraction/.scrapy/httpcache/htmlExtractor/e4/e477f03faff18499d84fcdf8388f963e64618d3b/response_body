@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:description" content="">
+<title>Home - Institute for Luxury Home Marketing</title>
+<meta property="og:title" content="Home - Institute for Luxury Home Marketing"> 
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4DJ7P5');</script>
+<!-- End Google Tag Manager -->
+
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,300italic,400italic,700italic|Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<link href="/2015_assets/css/bootstrap.css" rel="stylesheet">
+<!--
+<link rel="stylesheet" href="/2015_assets/css/bootstrap.min.css">
+-->
+<link href="/2015_assets/css/bootstrap_custom_grid.css" rel="stylesheet">
+<link href="/2015_assets/css/C_public.css" rel="stylesheet">
+<link href="/2015_assets/css/C_public_dev.css" rel="stylesheet">
+<link href="/2015_assets/css/select2.css" rel="stylesheet">
+<link href="/2015_assets/css/select2-bootstrap.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<script src="/2015_assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/2015_assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="/2015_assets/js/vendor/bootstrap.min.js"></script>
+<script src="/2015_assets/js/vendor/select2.min.js"></script>
+<script src="/2015_assets/js/public.js"></script>
+
+<link href="/2015_assets/css/C_home.css" rel="stylesheet">
+
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4DJ7P5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="site_header">
+    <div class="navbar navbar-static-top" role="navigation" id="navbar_eyebrow">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left nav-highlighted hidden-xs hidden-xs1 hidden-sm">
+                <li><a href="/real-estate-agents/">Home</a></li>
+                <li><a href="/real-estate-agents/about_the_institute.html">About Us</a></li>
+                <!-- <li><a href="/real-estate-agents/Global_Online_Training_Info.html">Global</a></li> -->
+                <li><a href="/real-estate-agents/contact.html">Contact Us</a></li>
+            </ul>
+            
+                            <a href="/real-estate-agents/login.html" class="btn btn-default btn-login">Member Log In</a>
+                        </div>
+        </div>
+    </div>
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation" id="navbar_primary">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_primary">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/real-estate-agents/home.html"><img src="/2015_assets/imgD/logo_header.png" alt="Institute for Luxury Home Marketing"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav_primary">
+                
+                <ul class="nav navbar-nav">
+<li class=""><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Find a Member</a><ul class="dropdown-menu" role="menu">
+<li class=""><a href="/real-estate-agents/find_a_member.html">Basic Search</a></li>
+<li class=""><a href="/real-estate-agents/advanced_search.html">Advanced Search</a></li>
+</ul>
+</li>
+<li class=""><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Training</a><ul class="dropdown-menu" role="menu">
+<li class=""><a href="/real-estate-agents/CLHMS_training.html">Training Options</a></li>
+<li class=""><a href="/real-estate-agents/schedule.html">Luxury Live Schedule</a></li>
+<li class=""><a href="/real-estate-agents/trainers.html">Our Expert Trainers</a></li>
+<li class=""><a href="/real-estate-agents/Testimonials.html">Testimonials</a></li>
+<li class=""><a href="/real-estate-agents/Host-a-Course.html">Host a Training</a></li>
+</ul>
+</li>
+<li class=""><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Membership</a><ul class="dropdown-menu" role="menu">
+<li class=""><a href="/real-estate-agents/learnperformachieve.html">Overview</a></li>
+<li class=""><a href="/real-estate-agents/become_a_member.html">Become a Member</a></li>
+<li class=""><a href="/real-estate-agents/benefits_overview.html">Benefits of Membership</a></li>
+<li class=""><a href="/real-estate-agents/earn_the_CLHMS_designation.html">Earn the CLHMS Designation</a></li>
+<li class=""><a href="/real-estate-agents/achieve_guild_recognition.html">Achieve Guild Recognition</a></li>
+<li class=""><a href="/real-estate-agents/leaders_in_luxury.html">Leaders in Luxury</a></li>
+</ul>
+</li>
+<li class=""><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Insights</a><ul class="dropdown-menu" role="menu">
+<li class=""><a href="/real-estate-agents/luxury_insights.html">Luxury Insights Blog</a></li>
+<li class=""><a href="/real-estate-agents/ILHM-luxury-report.html">Luxury Market Report</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+        </div>
+    </div>
+</div>
+<div id="home_main">
+<div id="billboard_lead">
+    <div id="billboard">
+        <div id="header_billboard" class="carousel slide" data-ride="carousel" data-interval="10000">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/images/billboard_02_1432634387_3264.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/images/billboard_01_1432634387_4442.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/images/billboard_03_1432634387_2199.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="container">
+        <div id="intro">
+            <h1>The Home For<br class="visible-xs1-inline">
+                Luxury Agents</h1>
+            <div class="row">
+                <div class="col-xs1-10 col-xs1-offset-1 col-sm-6 col-sm-offset-3">
+                    <p>The&nbsp;Institute works with luxury agents to fulfill their dreams and take their careers to the next level.</p>
+                </div>
+            </div>
+        </div>
+        <div id="callouts" class="row">
+            <div class="col-sm-4 item item-1">
+                <h2>Find a Member</h2>
+                <p>Search through The Institute's global directory for more information on the accomplished agents in your community.</p>
+                <a href="find_a_member.html" class="box-link"><span></span>Search our member directory</a></div>
+            <div class="col-sm-4 item item-2">
+                <h2>Complete Our Training</h2>
+                <p>The Institute's Luxury Home Marketing Training helps professionals boost their performance in the luxury market.</p>
+                <a href="/real-estate-agents/CLHMS_training.html" class="box-link"><span></span>Learn More About Our Training</a></div>
+            <div class="col-sm-4 item item-3">
+                <h2>Earn the Distinction</h2>
+                <p>Institute membership and the CLHMS&trade; designation act as marks of assurance for buyers and sellers.</p>
+                <a href="learnperformachieve.html" class="box-link"><span></span>Learn more about Membership</a></div>
+        </div>
+    </div>
+</div>
+
+<div id="become_member">
+    <div class="container">
+        <div class="info">
+            <h2>Become a Member</h2>
+            <div class="row info-items">
+                <div class="col-md-20p">
+                    <div class="item">
+                        <div class="ratio-fixer"></div>
+                        <div class="item-detail">
+                            <h3>Win Clients</h3>
+                            <p>Find prospective clients and win luxury listings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-20p">
+                    <div class="item">
+                        <div class="ratio-fixer"></div>
+                        <div class="item-detail">
+                            <h3>Market Properties</h3>
+                            <p>Find prospective buyers and market the property.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-20p">
+                    <div class="item">
+                        <div class="ratio-fixer"></div>
+                        <div class="item-detail">
+                            <h3>Connect with Peers</h3>
+                            <p>Network with other Institute Members and international real estate agents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-20p">
+                    <div class="item">
+                        <div class="ratio-fixer"></div>
+                        <div class="item-detail">
+                            <h3>Grow Your Skills</h3>
+                            <p>Gain insightful knowledge, continue your education, and earn the CLHMS designation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-20p">
+                    <div class="item">
+                        <div class="ratio-fixer"></div>
+                        <div class="item-detail">
+                            <h3>Brand Yourself</h3>
+                            <p>Position yourself and your credentials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="btn-container"><a href="benefits_overview.html" class="btn btn-grey btn-white-text">Learn More About Benefits</a></p>
+            <div class="row">
+                <div class="quote col-md-8 col-md-offset-2">
+                    <p><span class="icon icon-quote icon-quote-grey"></span><br>
+                        Ideas for marketing properties and tools available as a member help me stand out among all of my competitors.</p>
+                    <p class="attributed">Monica Parker, Rockville MD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<div id="take_training">
+    <div class="container">
+        <h2>&#8211; Complete our course &#8211;</h2>
+        <div class="row">
+            <div class="col-xs1-10 col-xs1-offset-1 col-sm-6 col-sm-offset-3">
+                <p>You can become a member by completing our two-day training classes either in-person or online.</p>
+            </div>
+        </div>
+        <p>For further information about becoming a member, see:<br class="hidden-md hidden-lg">
+            <span class="hidden-xs hidden-xs1 hidden-sm">&nbsp;&nbsp;</span> <a href="benefits_overview.html" class="link-arrow">Membership Overview</a> &nbsp;&nbsp; <a href="Membership_FAQs.html" class="link-arrow">Membership FAQs</a></p>
+        <div class="training-options row">
+            <div class="col-sm-6">
+                <div class="option training-inperson">
+                    <div class="ratio-fixer"></div>
+                    <div class="details">
+                        <h2>Live Training</h2>
+                        <p>Two back-to-back days of great information and a chance to network with your classmates.</p>
+                        <p class="btn-container"><a href="schedule.html" class="btn btn-block btn-tan">Find a live course near you</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="option training-online">
+                    <div class="ratio-fixer"></div>
+                    <div class="details">
+                        <h2>Online Training</h2>
+                        <p>Same great content as the live course, allowing you to complete the training at your own pace from anywhere in the world.</p>
+                        <p class="btn-container"><a href="CLHMS_Online_Training_Info.html" class="btn btn-block btn-green">Take the online course</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center"><a href="CLHMS_training.html" class="btn btn-border btn-gold">See What the Training Covers</a></p>
+    </div>
+</div>
+--> 
+
+<div id="designation_v2">
+    <div class="image-spacer"></div>
+    <div class="container">
+        <div class="info">
+            <h2>&#8211; Earn the CLHMS Designation &#8211;</h2>
+            <div class="row">
+                <div class="quote col-md-8 col-md-offset-2">
+                    <p><span class="icon icon-quote icon-quote-gold"></span><br>
+                        Incredible! Being without this designation and selling
+                        luxury homes is like driving a car without a license.</p>
+                    <p class="attributed">Eric Copper, Austin TX</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="detail-wrap col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="detail"> <img src="/2015_assets/imgD/logo_clhms.png" alt="CLHMS">
+                        <p>Recognized as the mark of accomplishment in luxury markets around the world, the Certified Luxury Home Marketing Specialist<sup>TM</sup> (CLHMS) designation assures affluent buyers and sellers that the agents who have earned it have the knowledge, experience, competence, and confidence they&nbsp;require.</p>
+                        <p><strong>CLHMS designation is awarded to Institute Members with documented sales performance in the top 10% of their&nbsp;market.</strong></p>
+                       <p class=”text-center”><a href="http://www.luxuryhomemarketing.com/real-estate-agents/earn_the_CLHMS_designation.html" class="btn btn-gold btn-white-text">How to Earn the Designation</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="alliances">
+            <h2>Brand Alliances</h2>
+            <p>We are the official luxury training and designation for many distinguished international brands. If you are a member of one of the following organizations, select your logo to see the CLHMS training specifically geared for you.</p>
+            <h3>Select Your Organization Below</h3>
+
+            <div class="row" id="alliances_grid">
+<div class="item col-xs-6 col-sm-3"><a href="/real-estate-agents/forKW.html"><img src="/2015_assets/images/logo_black_kellerwilliams.png" class="brand "alt="Keller Williams Associates"  title="Keller Williams Associates" /></a></div>
+<div class="item col-xs-6 col-sm-3"><a href="/real-estate-agents/remax.html"><img src="/2015_assets/images/logo_black_remax.png" class="brand "alt="Exclusive Training Options"  title="Exclusive Training Options" /></a></div>
+<div class="item col-xs-6 col-sm-3"><a href="/real-estate-agents/for_royal_le_page.html"><img src="/2015_assets/images/logo_black_carriage.png" class="brand "alt="Royal LePage Agents"  title="Royal LePage Agents" /></a></div>
+<div class="item col-xs-6 col-sm-3"><a href="/real-estate-agents/BHHS.html"><img src="/2015_assets/imgD/fpo_logo.png" class="brand "alt="Luxury Training"  title="Luxury Training" /></a></div>
+<div class="item col-xs-6 col-sm-3"><a href="/real-estate-agents/Better_Homes_and_Gardens.html"><img src="/2015_assets/images/logo_black_betterhomes.png" class="brand "alt="Better Homes and Gardens Real Estate Agents"  title="Better Homes and Gardens Real Estate Agents" /></a></div>
+</div>
+
+
+        </div>
+-->
+
+    </div>
+    <div class="image-spacer-end"></div>
+</div>
+
+<!-- 
+<div id="why_v2">
+    <div class="image-spacer"></div>
+    <div class="container">
+        <div class="join">
+            <h2>&#8211; Join Us &#8211;</h2>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-4 join-item">
+                            <h3>Member of The Institute</h3>
+                            <div class="image"><a href="/real-estate-agents/benefits_overview.html"><img src="/2015_assets/imgD/logo_member_hires.png" alt="Institute for Luxury Home Marketing Member"></a></div>
+                            <p>As a member, you will be recognized as a knowledgeable professional who has undergone extensive training with a focus on providing quality service and effective results in the luxury market with access to exclusive Institute Member benefits.</p>
+                        </div>
+                        <div class="col-md-4 join-item">
+                            <h3>Certified Luxury Home<br>
+                                Marketing Specialist</h3>
+                            <div class="image"><a href="/real-estate-agents/earn_the_CLHMS_designation.html"><img src="/2015_assets/imgD/logo_clhms_hires.png" alt="Certified Luxury Home Marketing Specialist"></a></div>
+                            <p>CLHMS designees are Members of The Institute with proven
+                                expertise in the luxury market. Not only have they met our training requirement, they have documented sales performance in the top 10% of their markets.</p>
+                        </div>
+                        <div class="col-md-4 join-item">
+                            <h3>Million Dollar Guild</h3>
+                            <div class="image"><a href="/real-estate-agents/achieve_guild_recognition.html"><img src="/2015_assets/imgD/logo_guild_hires.png" alt="CLHMS Million Dollar Guild"></a></div>
+                            <p>CLHMS designees with documented performance selling million and multi-million dollar homes and estates may also be awarded the Million Dollar Guild recognition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="btn-container"><a href="http://www.luxuryhomemarketing.com/real-estate-agents/learnperformachieve.html" class="btn btn-gold btn-border">Learn More About Membership</a></p>
+        </div>
+    </div>
+    <div class="image-spacer-end"></div>
+</div>
+-->
+
+<div id="members">
+    <div class="container">
+        <h2>&#8211; Our Members &#8211;</h2>
+        <div class="row">
+            <div class="detail col-md-8 col-md-offset-2">
+                <p>Members of The Institute actively seek out the latest information in marketing strategies, stay on top of changing market conditions, and know how to handle the special needs of an elite clientele and their exceptional properties. And they are always looking to take their skills, contacts and opportunities even&nbsp;further.</p>
+                <p>To find out more about a member, please use the search below:</p>
+            </div>
+        </div>
+        <p class="btn-container"><a href="find_a_member.html" class="btn btn-green btn-border">Search Our Member Directory</a></p>
+    </div>
+        <div id="carousel_featured_members" class="carousel slide" data-ride="carousel" data-interval="false">
+        <h3>Featured Leaders in Luxury</h3>
+        
+        <ol class="carousel-indicators" >
+<li data-target="#carousel_featured_members" data-slide-to="0" class="active"></li><li data-target="#carousel_featured_members" data-slide-to="1" class=""></li><li data-target="#carousel_featured_members" data-slide-to="2" class=""></li></ol>
+
+        <div class="carousel-inner">
+
+            <div class="item  active ">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Kriske__Mary_1148495119_8248.jpg" alt="|Waterfront Properties and Club Communities|"  title="|Waterfront Properties and Club Communities|" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Mary Kriske</span><br>
+Jupiter, FL <br>
+
+                                   </h3>
+                                <p></p>
+                                <p><a href="../members/member_23eae.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Phinney__Loretta_1148495119_6818.jpeg" alt="Loretta Phinney"  title="Loretta Phinney" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Loretta Phinney</span><br>
+Mississauga, ON CA<br>
+
+                                   </h3>
+                                <p>As leader in Canadian real estate for over 30 years, Loretta & her team are the #1 Sales Team in Canada for Royal LePage 8 out of the last 10 years! </p>
+                                <p><a href="../members/member_2406a.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Kevin_1148495119_6704.jpg" alt="Kevin Patterson"  title="Kevin Patterson" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Kevin Patterson</span><br>
+Colorado Springs, CO <br>
+
+                                   </h3>
+                                <p>In the last 7 years, Kevin has listed over $500 million in Residential Real Estate and sold over $300 million worth of property. </p>
+                                <p><a href="../members/member_225b0.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item ">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Christopher_Fling_1148495119_3579.jpg" alt="|Fling Yang &amp; Associates | Coldwell Banker Global Luxury|"  title="|Fling Yang &amp; Associates | Coldwell Banker Global Luxury|" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Christopher Fling</span><br>
+Silicon Valley, CA <br>
+
+                                   </h3>
+                                <p>Christopher Fling, Managing Partner of FlingSanty Associates with offices in Phoenix, and the San Francisco Bay Area specializing in Silicon Valley.</p>
+                                <p><a href="../members/member_233eb.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Smith__Mary_1148495119_2260.jpg" alt="Mary Smith"  title="Mary Smith" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Mary Smith</span><br>
+Ormond Beach, FL <br>
+
+                                   </h3>
+                                <p></p>
+                                <p><a href="../members/member_2223e.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Barnwell__Jon_1148495119_6473.jpg" alt="Jon Barnwell"  title="Jon Barnwell" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Jon Barnwell</span><br>
+Clayton, GA <br>
+
+                                   </h3>
+                                <p></p>
+                                <p><a href="../members/member_2416f.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item ">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Battista__Christine_1148495119_1989.jpg" alt="|Keller Williams Denver Tech Center|"  title="|Keller Williams Denver Tech Center|" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Christine Battista</span><br>
+Denver, CO <br>
+
+                                   </h3>
+                                <p>Christine & team are known as the top tier of trusted professionals specializing in the Denver & Beyond metropolitan area for luxury properties.</p>
+                                <p><a href="../members/member_228b6.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Patrick_Ryan_1148495119_8723.jpg" alt="Patrick Ryan"  title="Patrick Ryan" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Patrick Ryan</span><br>
+Chicago, IL <br>
+
+                                   </h3>
+                                <p>Patrick has been a Broker for 11 years with over 300 closed transactions, ranking him in the Top 1% of Chicago Realtors since 2006.</p>
+                                <p><a href="../members/member_23b65.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/member_images/Thomas__Maya_1148495119_7097.jpg" alt="Maya Thomas"  title="Maya Thomas" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Maya Thomas</span><br>
+Key West, FL <br>
+
+                                   </h3>
+                                <p>Featured on HGTV's House Hunters with a Manhattan couple who invest in an income producing multi million dollar vacation home in the heart of Old Town</p>
+                                <p><a href="../members/member_2320c.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="carousel_featured_quotes" class="carousel slide" data-ride="carousel" data-interval="false">
+        <h3>What Do Members Think of Our Training?</h3>
+
+        <ol class="carousel-indicators">
+<li data-target="#carousel_featured_quotes" data-slide-to="0" class="active"></li><li data-target="#carousel_featured_quotes" data-slide-to="1" class=""></li><li data-target="#carousel_featured_quotes" data-slide-to="2" class=""></li></ol>
+
+        <div class="carousel-inner">            <div class="item  active ">
+                <div class="container">
+                    <div class="row">
+                        <div class="quote col-md-8 col-md-offset-2">
+                            <p><span class="icon icon-quote icon-quote-green"></span><br>
+                                Great class!</p>
+                            <p class="attributed">Steven Pollack, Boca Raton  FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            <div class="item ">
+                <div class="container">
+                    <div class="row">
+                        <div class="quote col-md-8 col-md-offset-2">
+                            <p><span class="icon icon-quote icon-quote-green"></span><br>
+                                The Institute has accumulated great info and it is well presented.</p>
+                            <p class="attributed">John Decosta, Portland OR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            <div class="item ">
+                <div class="container">
+                    <div class="row">
+                        <div class="quote col-md-8 col-md-offset-2">
+                            <p><span class="icon icon-quote icon-quote-green"></span><br>
+                                The story examples were great!  I loved this class!  It'll show prospective sellers how they can differentiate their house from others (finding the uniqueness in properties to advertise).  A bonus when up against more seasoned agents!</p>
+                            <p class="attributed">Anne Hincks, Concord MA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </div>
+</div>
+
+<div id="trainers">
+    <div class="container">
+        <h2>&#8211; Our Expert Trainers &#8211;</h2>
+        <div class="row">
+            <div class="detail col-md-8 col-md-offset-2">
+                <p>Meet the market experts that will lead you through our training courses:</p>
+            </div>
+        </div>
+    </div>
+    <div id="carousel_featured_trainers" class="carousel slide" data-ride="carousel" data-interval="false">
+
+<!--
+  <ol class="carousel-indicators" >
+<li data-target="#carousel_featured_trainers" data-slide-to="0" class="active"></li><li data-target="#carousel_featured_trainers" data-slide-to="1" class=""></li></ol>
+-->
+
+  <div class="carousel-inner">
+
+            <div class="item  active ">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/2015_assets/images/trainers/LucioBernal_resized_1201019124_5825.jpg" alt="Lucio Bernal"  title="Lucio Bernal" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Lucio Bernal</span><br>
+                                   Palm Springs, California</h3>
+                                <p>Lucio Bernal is a Million Dollar Guild member of the Institute and has been working with affluent clients for nearly 20 years, specializing in executive and corporate relocation services.</p>
+                                <p><a href="trainers.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/2015_assets/images/trainers/Circle_Bill_Hensley_1201019124_7753.jpg" alt="Bill Hensley"  title="Bill Hensley" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Bill Hensley</span><br>
+                                   Carlsbad, California</h3>
+                                <p>Bill shares lessons and insights gained from his diverse experience being a successful broker, published author, and leadership coach.</p>
+                                <p><a href="trainers.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-sm-4 slide-item">
+                            <div class="image">
+                                <div class="ratio-fixer"></div>
+                                <img src="/2015_assets/images/trainers/Circle_Tami_expert_1201019124_3629.jpg" alt="Tami Simms"  title="Tami Simms" /> </div>
+                            <div class="item-detail">
+                                <h3><span class="text-green">Tami Simms</span><br>
+                                   St. Petersburg, Florida</h3>
+                                <p>Tami is a Million Dollar Guild member as well as a real estate marketing expert and accomplished trainer who receives outstanding reviews.</p>
+                                <p><a href="trainers.html" class="link-arrow link-green">See Full Profile</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="btn-container"><a href="/real-estate-agents/trainers.html" class="btn btn-grey btn-white-text">Meet All Trainers</a></p>
+    <div class="image-spacer-end"></div>
+</div>
+
+<div id="insights">
+    <div class="image-spacer"></div>
+    <div class="image-spacer-end"></div>
+    <div class="container">
+        <h2>&#8211; Featured Insights &#8211;</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Luxury Insights Blog</h3>
+                <div class="row">
+                                        <div class="col-sm-6 insight-item">
+                        <!-- <p>- insert image -</p> -->
+                        <h3><a href="http://blog.luxuryhomemarketing.com/luxury-travel-beach-destinations/" class="text-gold">Top 5 Beach Destinations for Luxury Travelers</a></h3>
+                        <p>Looking for a luxury getaway? A beautiful beach could be the perfect setting for relaxation and to create lasting memories with family and friends. Here are some of the most highly rated beaches in the world. Some are in established luxury markets while others represent emerging luxury for trendsetting&#8230;</p>
+                        <p><a href="http://blog.luxuryhomemarketing.com/luxury-travel-beach-destinations/" class="link-arrow link-gold">Read More</a></p>
+                    </div>
+                </div>
+                <p class="btn-container"><a href="luxury_insights.html" class="btn btn-border btn-gold">More Luxury Insights</a></p>
+            </div>
+            <div class="col-sm-4 insight-item">
+                <h3>Luxury Market Report</h3>
+                <p><img src="/2015_assets/imgD/ILHM_report_cover.jpg"></p>
+                <p class="btn-container"><a href="/real-estate-agents/ILHM-luxury-report.html" class="btn btn-border btn-green">Review The Market</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<div id="site_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 legal">
+                <p>&copy; 2019 The Institute for Luxury Home Marketing. All rights reserved.</p>
+                <p>"Certified Luxury Home Marketing Specialist®", "Million Dollar Guild®" and the associated logos are 
+                    <!-- <a href="/real-estate-agents/Trademark_Info.html">trademarks</a> --><a href="/real-estate-agents/Terms_and_Conditions.html">trademarks</a> of The Institute for Luxury 
+                    Home Marketing and may not be used without permission.</p>
+            </div>
+            <div class="col-sm-6 links">
+                <ul>
+                    <li><a href="/real-estate-agents/Site_Map.html">Site Map</a></li>
+                    <li><a href="/real-estate-agents/Terms_and_Conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="/real-estate-agents/Privacy_Policy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-31525413-1', 'luxuryhomemarketing.com');
+ga('set', 'contentGroup1', 'pre-login');
+ga('send', 'pageview');
+
+</script>
+
+<!-- added 2017-04-21 jj task-ILHM041 -->
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2278427.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3908db9677","applicationID":"33271373","transactionName":"YFdaMkRUX0ZXVkwKV1kdbRRfGnpxGEVQEw==","queueTime":0,"applicationTime":1667,"atts":"TBBZRAxOTEg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

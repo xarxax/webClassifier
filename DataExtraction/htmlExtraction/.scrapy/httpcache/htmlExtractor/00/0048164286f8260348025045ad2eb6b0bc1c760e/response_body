@@ -1,0 +1,67 @@
+# Gigabot is listed separately, as it is reputed to mis-parse the file otherwise
+User-agent: Gigabot
+Disallow: /
+User-agent: AhrefsBot
+User-agent: HuaweiSymantecSpider
+User-agent: ShopWiki
+#Russian Search engine
+User-agent: Yandex 
+# Japan-based search engines
+User-agent: moget
+User-agent: ichiro
+# S Korean
+User-agent: NaverBot
+User-agent: Yeti
+#Second-tier Chinese Search engines (Primary is Baidu, which we will allow)
+User-agent: sogou spider
+User-agent: YoudaoBot
+# per Jeremy on Sept 13 2010 disallow these crawlers on our site
+User-agent: Accelobot
+User-agent: AtraxSolutions
+User-agent: NaverBot
+User-agent: Presans
+User-agent: Presansbot
+User-agent: YaCybot
+Disallow: /
+# allow no crawlers to browse the areas listed below
+User-agent: *
+Disallow: /cas/
+Disallow: /eventreg/
+Disallow: /eventsetup/
+Disallow: /eventsetup2/
+Disallow: /farmhouse/
+Disallow: /feedback/
+Disallow: /feedback2/
+Disallow: /get/scripts/
+Disallow: /giving/home
+Disallow: /get/layout/g2s/
+Disallow: /get/page/events/who-is-coming*
+Disallow: /get/page/g2s/
+Disallow: /get/page/groups/ClubLeaderResource
+Disallow: /get/page/regions/events
+Disallow: /get/page/regions/events*
+Disallow: /get/page/regions/events/
+Disallow: /get/page/regions/events/*
+Disallow: /get/page/regions/landing/
+Disallow: /get/page/test/
+Disallow: /giving/menu.js
+Disallow: /giving/part/tsc/progress_challenge.html
+Disallow: /giving/part/tsc/progress_excellence.html
+Disallow: /giving/part/tsc/progress_leaders.html
+Disallow: /giving/part/tsc/progress_solutions.html
+Disallow: /giving/part/tsf/ReunionCurrent.html
+Disallow: /membership/
+Disallow: /odr/
+Disallow: /pbooks/help/
+Disallow: /pgw/help/
+Disallow: /pgw/footer/
+Disallow: /pgw/js/
+Disallow: /pgw/odrdemo/
+Disallow: /pgw/scripts/
+Disallow: /pgw/test/
+Disallow: /pgw/saa/
+Disallow: /profile/
+Disallow: /WebDirectory/
+Disallow: /whoscoming/
+Disallow: /SmartMail/
+Disallow: /get/page/events?fromDate=*

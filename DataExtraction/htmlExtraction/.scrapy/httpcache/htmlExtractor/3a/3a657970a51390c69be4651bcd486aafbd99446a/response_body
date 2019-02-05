@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <base href="http://salvopress.com/">
+        <link rel="canonical" href="http://salvopress.com/" />
+
+        <title>Salvo Press </title>
+
+        <meta name="description" content="Salvo Press proudly publishes quality mysteries, thrillers, and literary books in eBook and audiobook formats." />
+
+        <meta property="og:title" content="Salvo Press" />
+
+                <meta property='og:type' content='article' />
+        <meta property='og:url' content='http://salvopress.com/'/>
+        <meta property='og:site_name' content='Salvo Press'/>
+        <meta property="og:description" content="Salvo Press proudly publishes quality mysteries, thrillers, and literary books in eBook and audiobook formats."/>
+
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/modernizr-2.6.2.min.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/jquery-1.10.2.min.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/helpers-script-0.8.js" ></script>
+
+
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/jquery.cycle2.min.js"></script>
+
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/jquery.cycle2.swipe.min.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/jquery.cycle2.carousel.min.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/js/jquery.easing.1.3.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/typeahead/typeahead.bundle.min.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/scripts.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/ajax-loader.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/tillJS.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/tillJSPartials.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/MainController.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/SearchTable.js" ></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/historyHandler.js" ></script>
+
+        <!-- CSS ================================================== -->
+
+
+
+
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/bootstrap/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/bootstrap/css/bootstrap-theme.min.css" >
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/bootstrap/js/bootstrap.min.js"></script>
+        <script src="http://cloud.start-publishing.com/public/module/PublicWebsite/js/handlebars-v4.0.5.js"></script>
+
+
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/css/defaults-0.0003.css" >
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/framework-assets/css/master-elements-0003.css" >
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/css/fonts.css" >
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/css/style.css" >
+        <link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/css/responsive.css" >
+
+
+        <link rel="apple-touch-icon" sizes="57x57" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/manifest.json">
+<link rel="mask-icon" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/mstile-144x144.png">
+<meta name="msapplication-config" content="http://cloud.start-publishing.com/public/module/PublicWebsite/img/salvopress/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">        
+            <!-- 
+			[request] => /
+    		[requestedUrlPart] => 
+    		[requestedUrl] 		http://cloud.start-publishing.com/salvo-press/?context=remote&amp;r=1549365995
+		-->
+      </head>
+
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73647209-5', 'auto');
+  ga('send', 'pageview');
+
+</script><link rel="stylesheet" href="http://cloud.start-publishing.com/public/module/PublicWebsite/css/salvo-press.css" >
+<div data-checkout_button_text="Checkout" data-cart_button_text="Cart" data-button_text_color="ffffff" data-button_background_color="7fb466" data-background_color="ffffff" data-text_color="000000" data-accent_color="767676" data-cart_title="Your cart" data-discount_notice_text="Shipping and discount codes are added at checkout." data-cart_total_text="Total" data-sticky="true" data-empty_cart_text="Your cart is empty." data-embed_type="cart" data-shop="start-publishing.myshopify.com"></div>
+<script type="text/javascript">
+    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+</script>
+<div id="page-wrapper">
+    <script>
+        var baseUrl = "http://salvopress.com/";
+        var publicDirUrl = "http://cloud.start-publishing.com/public/";
+    </script>
+
+
+
+
+<script>
+    var imprintId = "12";
+</script>
+
+<header id="top-container" class="imprint-header imprintentity-12" >
+    <div class="container">
+        <div class="row">
+
+            <div id="main-logo" class="col-xs-2 col-sm-4 col-md-2 ">
+                <h1 itemscope="" itemtype="http://schema.org/Organization" >
+                   <a href="http://salvopress.com/" itemprop="url" >
+                    <div class="logo-container" style="background:url('http://cloud.start-publishing.com/public/content/module/public-website/files/2016/04/08/imprints_0003_salvo-press-4253.png') no-repeat center center; background-size: contain;" >
+
+                    </div>
+                   </a>
+                </h1>
+            </div>
+
+                    <div id="top-nav-bar"  class="col-xs-10 col-sm-8 col-md-10 hidden-xs hidden-sm ">
+                <div id="top-navigation" class="navigation" >
+                    <ul class="site-nav">
+                        <li class="" ><a href="http://salvopress.com/books/"  >Books</a><ul class="menu" ></ul></li><li class="" ><a href="http://salvopress.com/about/"  >About</a><ul class="menu" ></ul></li><li class="" ><a href="http://salvopress.com/authors/"  >Authors</a><ul class="menu" ></ul></li>                    </ul>
+                </div>
+            </div>
+        
+                    <div id="header-search" class="col-xs-8 col-sm-8 col-md-4 ">
+                <div class="header-search-wrap" >
+                    <div id="header-search-icon" >
+                        <a href="javascript:toggleSearch()">
+                            <img src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/search-lupe.svg">
+                        </a>
+                    </div>
+                    <div id="header-search-bar" style="display: none;">
+                        <form id="top-search-form" action="http://salvopress.com/search/" method="get" class="header-bar-search-form" role="search">
+                            <div class="input-group">
+                                <input type="text" name="s" class="form-control typeahead" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"  >Go</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div id="header-imprint-by-line" class="" >
+                    An Imprint of <a href="http://start-publishing.com/" target="_blank">Start Publishing</a>
+                </div>
+            </div>
+        
+            <div class="mobile-menu-toggle visible-xs-block visible-sm-block hidden-md hidden-lg ">
+                <a href="javascript:toggleSmallMenu()" >
+                    <img class="menu-in-icon" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/hamburger-menu-black.svg" />
+                    <img class="menu-out-icon" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/close-x-thinner.svg" />
+                </a>
+            </div>
+
+        </div>
+        <div id="small-navigation-target-wrapper" class="visible-xs-block visible-sm-block  hidden-md hidden-lg" >
+            <div id="small-navigation-target">
+
+            </div>
+        </div>
+    </div>
+
+<div class="line"></div>
+
+
+
+</header>
+
+    <script>
+        var publicDirUrl = "http://cloud.start-publishing.com/public/";
+        var spinnerLink = publicDirUrl + 'module/CmsWebAdmin/img/lightbox-ico-loading.gif';
+    </script>
+    <div id="imprint" class="view-imprint page-container " >
+
+                    <div id="promo-area-container" class="container" >
+                <div class="row" >
+                    <div id="promo-area" class="col-xs-16"  >
+                                <div class="regular-slideshow" >
+            <div class="slides-container">
+                <div class="regular-slide">
+                                <a href="book/1662/fatal-network/" >
+                                    <img src="http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/02/03/1280w__salvo-fatal-network-1925.jpg" />
+                                </a>
+                         </div><div class="regular-slide">
+                                <a href="book/1667/hypershot/" >
+                                    <img src="http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/02/03/1280w__salvo-hypershot2-1918.jpg" />
+                                </a>
+                         </div>            </div>
+            <div class="slideshow-prev slideshow-arrows">
+                <div class="state-hover">
+                    <img class="mouse-out"  src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-left.svg" >
+                    <img class="mouse-over" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-left.svg" >
+                </div>
+            </div>
+
+            <div class="slideshow-next slideshow-arrows">
+                <div class="state-hover">
+                    <img class="mouse-out"  src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-right.svg" >
+                    <img class="mouse-over" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-right.svg" >
+                </div>
+            </div>
+        </div>
+        <div class="regular-slideshow-pager-wrapper">
+            <div class="regular-slideshow-pager"></div>
+        </div>
+
+                            </div>
+                </div>
+            </div>
+
+                <div class="spacer-half-cell">&nbsp;</div>
+
+        <div class="container" >
+            <div class="row" >
+                <div class="col-xs-16 " >
+                                <div class="book-finder-viewelement row" >
+
+            <div class="col-xs-16" >
+                <h3 class="section-head" >Search</h3>
+                    <div class="headline-float">
+                            <a href="http://salvopress.com/books/" >
+                                View All Books [+]
+                            </a>
+                    </div>
+                <div class="line">&nbsp;</div>
+                <div class="spacer-mini">&nbsp;</div>
+            </div>
+
+            <div class="col-xs-16 clearfix" >
+                <div class="inpage-search-bar col-xs-16 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Search books by title, author or ISBN">
+                </div>
+                <div class="spacer-mini hidden visible-xs">&nbsp;</div>
+                <div class="search-categories col-xs-8 col-sm-push-4 col-sm-3" >
+                    <div class="faux-dropdown  " >
+                        <div class="large-type cat-label" >Categories</div>
+                        <div class="arrow-controls">
+                            <img class="arrow-up" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-up.svg">
+                            <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-down.svg">
+                        </div>
+                        <ul>
+                            <li><a id="book-cat-1" href="javascript:addToBookFinderSelection('book-cat-1','BIO005000')" data-bisac="BIO005000" >biography & autobiography</a></li><li><a id="book-cat-4" href="javascript:addToBookFinderSelection('book-cat-4','FIC002000')" data-bisac="FIC002000" >fiction</a></li><li><a id="book-cat-23" href="javascript:addToBookFinderSelection('book-cat-23','JUV028000')" data-bisac="JUV028000" >juvenile fiction</a></li>                        </ul>
+                    </div>
+                </div>
+
+                <div class="search-tags col-xs-8 col-sm-push-4 col-sm-3" >
+                    <div class="faux-dropdown " >
+                        <div class="large-type cat-label" >Tags</div>
+                        <div class="arrow-controls">
+                            <img class="arrow-up" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-up.svg">
+                            <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-down.svg">
+                        </div>
+                        <ul>
+                            <li><a id="book-tag-1"  href="javascript:addToBookFinderSelection('book-tag-1','FIC028010')" data-bisac="FIC028010" >Action & Adventure</a></li><li><a id="book-tag-2"  href="javascript:addToBookFinderSelection('book-tag-2','FIC027020')" data-bisac="FIC027020" >Contemporary</a></li><li><a id="book-tag-3"  href="javascript:addToBookFinderSelection('book-tag-3','BIO005000')" data-bisac="BIO005000" >Entertainment & Performing Arts</a></li><li><a id="book-tag-4"  href="javascript:addToBookFinderSelection('book-tag-4','FIC006000')" data-bisac="FIC006000" >Espionage</a></li><li><a id="book-tag-5"  href="javascript:addToBookFinderSelection('book-tag-5','JUV031000')" data-bisac="JUV031000" >General</a></li><li><a id="book-tag-6"  href="javascript:addToBookFinderSelection('book-tag-6','FIC022010')" data-bisac="FIC022010" >Hard-Boiled</a></li><li><a id="book-tag-7"  href="javascript:addToBookFinderSelection('book-tag-7','FIC015000')" data-bisac="FIC015000" >Horror</a></li><li><a id="book-tag-8"  href="javascript:addToBookFinderSelection('book-tag-8','FIC022080')" data-bisac="FIC022080" >International Mystery & Crime</a></li><li><a id="book-tag-9"  href="javascript:addToBookFinderSelection('book-tag-9','FIC031050')" data-bisac="FIC031050" >Military</a></li><li><a id="book-tag-10"  href="javascript:addToBookFinderSelection('book-tag-10','JUV028000')" data-bisac="JUV028000" >Mysteries & Detective Stories</a></li><li><a id="book-tag-11"  href="javascript:addToBookFinderSelection('book-tag-11','FIC022040')" data-bisac="FIC022040" >Mystery & Detective</a></li><li><a id="book-tag-12"  href="javascript:addToBookFinderSelection('book-tag-12','JUV031000')" data-bisac="JUV031000" >Performing Arts</a></li><li><a id="book-tag-13"  href="javascript:addToBookFinderSelection('book-tag-13','BIO026000')" data-bisac="BIO026000" >Personal Memoirs</a></li><li><a id="book-tag-14"  href="javascript:addToBookFinderSelection('book-tag-14','FIC022090')" data-bisac="FIC022090" >Private Investigators</a></li><li><a id="book-tag-15"  href="javascript:addToBookFinderSelection('book-tag-15','FIC027020')" data-bisac="FIC027020" >Romance</a></li><li><a id="book-tag-16"  href="javascript:addToBookFinderSelection('book-tag-16','FIC028030')" data-bisac="FIC028030" >Science Fiction</a></li><li><a id="book-tag-17"  href="javascript:addToBookFinderSelection('book-tag-17','FIC029000')" data-bisac="FIC029000" >Short Stories (single author)</a></li><li><a id="book-tag-18"  href="javascript:addToBookFinderSelection('book-tag-18','FIC028030')" data-bisac="FIC028030" >Space Opera</a></li><li><a id="book-tag-19"  href="javascript:addToBookFinderSelection('book-tag-19','FIC030000')" data-bisac="FIC030000" >Suspense</a></li><li><a id="book-tag-20"  href="javascript:addToBookFinderSelection('book-tag-20','FIC036000')" data-bisac="FIC036000" >Technological</a></li><li><a id="book-tag-21"  href="javascript:addToBookFinderSelection('book-tag-21','FIC036000')" data-bisac="FIC036000" >Thrillers</a></li><li><a id="book-tag-22"  href="javascript:addToBookFinderSelection('book-tag-22','FIC022030')" data-bisac="FIC022030" >Traditional</a></li><li><a id="book-tag-23"  href="javascript:addToBookFinderSelection('book-tag-23','FIC022040')" data-bisac="FIC022040" >Women Sleuths</a></li>                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-16 search-selections-box" >
+                <div class="regular-small-caps">Filters:</div>
+                <div class="search-selections clearfix " >
+
+                </div>
+            </div>
+
+
+            
+        <div id="search-table-target" class="col-xs-16 " >
+
+        </div>
+
+
+<script type="text/html" id="search-table-controls">
+    <div class="search-table-search" >
+        <input type="text" class="form-control" value="" placeholder="Search by title, author or keyword" >
+    </div>
+
+    <!--
+    <div class="search-table-display" >
+        <div class="as-grid" >Grid</div>
+        <div class="as-list" >List</div>
+    </div>
+    -->
+    <div class="spacer-mini hidden visible-xs" ></div>
+
+    <div class="search-table-sort-controls" >
+
+        <div class="sort-name sort-controls" >
+            <span class="arrow-down" aria-hidden="true" style="display: none">
+                <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-down.svg">
+            </span>
+            <span class="arrow-up" aria-hidden="true">
+                <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-up.svg">
+            </span>
+            Title
+        </div>
+
+        <div class="sort-price price-ebook sort-controls" >
+            <span class="arrow-down" aria-hidden="true" style="display: none">
+                <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-down.svg">
+            </span>
+            <span class="arrow-up" aria-hidden="true">
+                <img class="arrow-up" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-up.svg">
+            </span> Price E-Book
+        </div>
+
+        <div class="sort-price price-print sort-controls" >
+            <span class="arrow-down" aria-hidden="true" style="display: none">
+                <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-down.svg">
+            </span>
+            <span class=arrow-up" aria-hidden="true">
+                <img class="arrow-down" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/arrow-up.svg">
+            </span>
+            Price Print
+        </div>
+    </div>
+
+</script>
+
+
+<script>
+    $(document).ready(function(){
+
+        new SearchTable('#search-table-target',{
+            'name' :'',
+            'data' : []        });
+    });
+</script>
+
+        </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="spacer-half-cell">&nbsp;</div>
+        <div data-partial="BookCollectorViewelement" class="container" >
+            <div class="row" >
+                        <div class="book-collector" >
+
+                            <div class="col-xs-16" >
+                    <h3 class="section-head" > From our catalog</h3>
+                                            <div class="headline-float">
+                            <a href="http://salvopress.com/catalog/" >
+                                View All Books [+]
+                            </a>
+                        </div>
+                                        <div class="line">&nbsp;</div>
+                    <div class="spacer-mini">&nbsp;</div>
+                </div>
+            
+            <div class="book-container even-space-grid even-space-lg-6 even-space-md-6
+            even-space-sm-3 even-space-xs-2">
+
+                    <div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1680/silver-thaw-and-selected-stories/" >
+                            <img data-file-id='976' data-org-height='1120' data-org-width='700' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934343_fc-976.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Silver Thaw and Selected Stories</div>
+
+                                <div class="book-info-author" ><a href="author/755/ron-johnson/" >Ron Johnson</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1649/bound-to-die/" >
+                            <img data-file-id='1014' data-org-height='900' data-org-width='600' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934022_fc-1014.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Bound to Die</div>
+
+                                <div class="book-info-author" >Brian Lutterman</div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1690/the-hobgoblin-of-the-redwoods/" >
+                            <img data-file-id='986' data-org-height='781' data-org-width='506' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934442_fc-986.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">The Hobgoblin of the Redwoods</div>
+
+                                <div class="book-info-author" ><a href="author/759/trevor-scott/" >Trevor Scott</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1658/dog-walker/" >
+                            <img data-file-id='1011' data-org-height='900' data-org-width='608' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934114_fc-1011.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Dog Walker</div>
+
+                                <div class="book-info-author" ><a href="author/743/heath-kizzier/" >Heath Kizzier</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1669/lethal-force/" >
+                            <img data-file-id='965' data-org-height='781' data-org-width='506' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934237_fc-965.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Lethal Force</div>
+
+                                <div class="book-info-author" ><a href="author/759/trevor-scott/" >Trevor Scott</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1647/alone/" >
+                            <img data-file-id='1024' data-org-height='900' data-org-width='600' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934008_fc-1024.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Alone</div>
+
+                                <div class="book-info-author" ><a href="author/749/martha-fawcett/" >Martha Fawcett</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1674/murder-at-the-arlington/" >
+                            <img data-file-id='970' data-org-height='900' data-org-width='600' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934282_fc-970.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Murder at the Arlington</div>
+
+                                <div class="book-info-author" ><a href="author/746/kathleen-kaska/" >Kathleen Kaska</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1702/without-options/" >
+                            <img data-file-id='998' data-org-height='781' data-org-width='506' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934565_fc-998.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Without Options</div>
+
+                                <div class="book-info-author" ><a href="author/759/trevor-scott/" >Trevor Scott</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1689/the-great-planet-robbery/" >
+                            <img data-file-id='985' data-org-height='2700' data-org-width='1800' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934435_fc-985.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">The Great Planet Robbery</div>
+
+                                <div class="book-info-author" ><a href="author/740/craig-dilouie/" >Craig DiLouie</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1663/fractured-state/" >
+                            <img data-file-id='1006' data-org-height='781' data-org-width='506' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934169_fc-1006.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Fractured State</div>
+
+                                <div class="book-info-author" ><a href="author/759/trevor-scott/" >Trevor Scott</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1672/mayan-key/" >
+                            <img data-file-id='968' data-org-height='900' data-org-width='600' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934268_fc-968.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Mayan Key</div>
+
+                                <div class="book-info-author" ><a href="author/747/keith-jones/" >Keith Jones</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div><div class="even-space-grid-cell book-teaser" >
+                        <a href="book/1660/duluthians/" >
+                            <img data-file-id='1009' data-org-height='831' data-org-width='538' itemprop='image' src='http://cloud.start-publishing.com/public/content/module/public-website/files-versions/2016/01/17/285_420c__9781627934138_fc-1009.jpg'   />
+                        </a>
+                            <div class="book-info">
+                                <div  class="book-info-title">Duluthians</div>
+
+                                <div class="book-info-author" ><a href="author/759/trevor-scott/" >Trevor Scott</a></div>
+                            </div>
+                        <div class="spacer-mini">&nbsp;</div>
+            </div>
+            </div>
+        </div>
+                    </div>
+            
+        </div>
+        <div class="spacer-half-cell">&nbsp;</div>
+
+        
+        
+        <div class="spacer-half-cell">&nbsp;</div>
+        <div class="container" >
+            <div class="row" >
+                <div class="col-xs-16  large-body-text"  >
+    <h3 class="section-head" >Salvo Press</h3>
+    <div class="line">&nbsp;</div>
+</div>
+<div class="spacer-mini">&nbsp;</div>
+<div class="col-xs-16 col-sm-16 col-md-10  large-body-text"  >
+    <p>Salvo Press proudly publishes quality mysteries, thrillers, and literary books in eBook and audiobook formats.</p>
+</div>
+
+<div class="spacer-one-cell hidden visible-sm-block  visible-xs-block"></div>
+<div class="col-xs-16 col-sm-16 col-md-4  col-md-push-2 large-body-text" >
+
+    
+</div>
+<div class="spacer-mini">&nbsp;</div>            </div>
+        </div>
+        <div class="spacer-half-cell">&nbsp;</div>
+
+
+                <div id="browsing-history-target"></div>
+
+        <script type="text/html" id="browsing-history-tmpl" >
+            <div class="row">
+                <div class="spacer-mini">&nbsp;</div>
+                <div class="book-collector" >
+                    <div class="col-xs-16" >
+                        <h3 class="section-head" >Recently Viewed
+                            <div class="headline-float">
+                                <a href="javascript:flushViewingHistory()" >
+                                    Clear History
+                                </a>
+                            </div>
+                        </h3>
+                        <div class="line">&nbsp;</div>
+                        <div class="spacer-mini">&nbsp;</div>
+                    </div>
+                    <div class="book-container even-space-grid even-space-lg-6 even-space-md-6
+            even-space-sm-3 even-space-xs-2">
+
+                    </div>
+                </div>
+            </div>
+        </script>
+
+
+        <script type="text/html" id="book-teaser-tmpl" >
+            <div class="even-space-grid-cell book-teaser">
+                <a href="#">
+                    <img src="#">
+                </a>
+                <div class="book-info">
+                    <div class="book-info-title"></div>
+
+                    <div class="book-info-author"></div>
+                </div>
+                <div class="spacer-mini">&nbsp;</div>
+            </div>
+        </script>
+        
+    </div>
+
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div id="footer-primary-row" class="row ">
+                    <div class="col-xs-16 col-sm-4 col-md-4 footer-col">
+                        <div class='footer-social-media' ><ul><li>
+                <a href="http://instagram.com/salvo_press" target="_blank"  >
+                    <span class="state-hover" >
+                    <img class="mouse-out" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/instagram-icon-grey.svg" />
+                    <img class="mouse-over" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/instagram-icon-grey.svg" />
+                    </span>
+                </a>
+            </li><li>
+                <a href="https://www.facebook.com/salvopress" target="_blank"  >
+                    <span class="state-hover" >
+                    <img class="mouse-out" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/facebook-icon-grey.svg" />
+                    <img class="mouse-over" src="http://cloud.start-publishing.com/public/module/PublicWebsite/img/facebook-icon-grey.svg" />
+                    </span>
+                </a>
+            </li></ul></div>                    </div>
+
+
+                    <div class="col-xs-16 col-sm-4 col-md-4 footer-col" >
+                                            </div>
+
+
+
+                    <div class="col-xs-16 col-sm-4 col-md-4 footer-col">
+                        <h4 class="mid-head">Links</h4><li class="" ><a href="http://salvopress.com/contact/"  >Contact</a><ul class="menu" ></ul></li><li class="" ><a href="http://salvopress.com/about/"  >About</a><ul class="menu" ></ul></li>                    </div>
+
+
+
+                    <div class="col-xs-16 col-sm-4 col-md-4 footer-col">
+                        <h4 class="mid-head">Contact Us</h4>
+        <div class="rte">Salvo Press<br />
+101 Hudson Street, 37th Floor, Suite 3705<br />
+Jersey City, NJ 07302<br />
+<br />
+<a href="mailto:info@salvopress.com">info@salvopress.com</a><br />
+212-431-5455</div>                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="line">&nbsp;</div>
+
+                    <div id="footer-copyright-row" class="col-xs-16">
+                        Salvo Press is an imprint of  <a href="http://start-publishing.com/" target="_blank" >
+        Start Publishing
+        </a> |  Copyright &copy; 2019, <a href="http://start-publishing.com/" target="_blank" >Start Publishing</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+<!-- end  -->
+
+
+    <!-- mandatory for device check -->
+<div class="device-xxs visible-xxs"></div>
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+<!-- end mandatory -->
+
+
+
+</div> <!-- end page wrapper -->
+<!-- for template usage -->
+<div id="var-store" class="hidden"></div>
+
+    </body>
+</html>
+

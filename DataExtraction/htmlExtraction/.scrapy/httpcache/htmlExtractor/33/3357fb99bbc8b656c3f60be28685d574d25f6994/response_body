@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="distribution" content="global" />
+<meta name="copyright" content="Copyright (c) The Lones Group 2000, 2019" />
+<meta name="author" content="The Lones Group" />
+<meta name="robots" content="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="pWR_5z1N1VCSfcbONF-XcwDqOs58jtPmLt3iRV6-Tbk" />
+<meta name="google-site-verification" content="RWyP-38aX1ZIO4NkPJASTMTjUTxTSppo800LbcmCDps" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="all" href="./css/global.css?ver=11%2F29%2F2018+2%3A46%3A53+PM" />
+<link rel="stylesheet" type="text/css" media="all" href="./css/colorbox.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./fonts/font-awesome-5-0-10/css/fontawesome-all.min.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300" />
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="./js/global.js?ver=8%2F1%2F2018+3%3A12%3A32+PM"></script>
+<script type="text/javascript">
+//shopping cart lightbox functionality. Requires includes: jquery.min.js, colorbox-min.js, colorbox.css
+// requires at server evaluation getCartBoxHeight(), so this cannot go into global.js
+$(document).ready(function () { liteShopCartOn(); });
+function liteShopCartOn() { $(".startcart").colorbox({ className:"cartcbox", opacity: 0.8, iframe:true, width:"400px", maxWidth:"90%", height:"540px", maxHeight:"80%", escKey:true, previous:false, next:false, slideshow:false, arrowkey:false, loop:false, closeButton:false, rel:false, onClosed:function(){location.reload(true)} }); $('#cboxClose').remove(); return 0; }
+// Stop browser scrolling on lightbox (colorbox)
+$(document).bind('cbox_open', function(){ 
+        $('body').css({overflow:'hidden'}); 
+    }).bind('cbox_closed', function(){ 
+        $('body').css({overflow:'auto'}); 
+    }
+);
+
+
+
+//sticky navigation
+var doSticky = debounce(function() {
+    $("#navwrap").toggleClass("stickynav", window.pageYOffset > 195);
+    $("#contact").toggleClass("stickycontact", window.pageYOffset >195);
+}, 10);
+window.addEventListener('scroll',doSticky);
+
+//Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-6210216-1');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6210216-1"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6210216-1');
+
+//facebook events (pixel)
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1593935490933317');
+fbq('track', "PageView");
+
+//Flip display status from none to desired display parameter (usually onclick) 
+function doMobileMenu(id,s) {
+    var w=Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+    if (w<=800) {
+        if (document.getElementById(id).style.display!=s) {
+            document.getElementById(id).style.display=s;
+        } else {
+            document.getElementById(id).style.display='none';
+        }
+    }
+    return 0;
+}
+
+//heatmap tracking
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:384624,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1593935490933317&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+<meta name="description" content="The Lones Group provides marketing, branding, lead generation systems, and real estate coaching and training for agents, brokers and related professionals." />
+<title>The Lones Group - Real Estate Coaching, Branding and Marketing</title>
+<link rel="canonical" href="https://www.thelonesgroup.com/" />
+<style media="all" type="text/css">
+#slideshow {width:100%; max-width:2000px; height:493px; margin:0px auto 0px auto; background:#e9e9e9; overflow:hidden;}
+#slideshow .slidedeco {width:100%; height:10px; margin:0px auto 0px auto; background-color:rgba(255,255,255,0.7);}
+#slideshow .slidetext {width:100%; height:60px; margin-bottom:100px; margin-top:330px; font:300 2em lato, verdana; text-align:center; text-transform:uppercase; line-height:2.5em; letter-spacing:0.05em; background-color:rgba(255,255,255,0.88);}
+#slideshow .findoutmore {font-size:0.8em;}
+#slideshow #gallery  {margin:0px; padding:0px; position:relative; z-index:0; width:100%;}
+#slideshow #gallery .slide {width:100%; overflow:hidden;}
+/* #slideshow #gallery #safari {background: url(images/home-slide-total-transformation.jpg) no-repeat top center; background-size:cover; display:block;} */
+/* #slideshow #gallery #slide0 {background: url(images/home-slide-2018-revolutionize-your-real-estate-business-with-systems.jpg) no-repeat top center; background-size:cover; display:block;} */
+#slideshow #gallery #slide0 {background: url(images/home-slide-2019-safari-real-estate-business-building.jpg) no-repeat top center; background-size:cover; display:block;}
+#slideshow #gallery #slide1 {background: url(images/home-slide01.jpg) no-repeat top center; background-size:cover; display:block;} /*set display:none when adding new top slide*/
+#slideshow #gallery #slide2 {background: url(images/home-slide02.jpg) no-repeat top center; background-size:cover; display:none;}
+#slideshow #gallery #slide3 {background: url(images/home-slide03.jpg) no-repeat top center; background-size:cover; display:none;}
+#slideshow #gallery #slide4 {background: url(images/home-slide04.jpg) no-repeat top center; background-size:cover; display:none;}
+#cta {width:100%; max-width:2000px; height:auto; margin:0px auto 0px auto; background:#fff url(images/bg-cta.jpg) center center no-repeat; background-size:cover; overflow:hidden;} 
+#cta #ctadeco {width:100%; height:6px; background:#a3551f url(images/bg-ctadeco.jpg) center center no-repeat; -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35); box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);} 
+#cta #ctabuttons {text-align:center; width:100%; max-width:1024px; margin:60px auto 60px auto;}
+#cta .ctabutton {display:inline-block; width:24%; max-width:244px; height:175px; padding:175px 0px 0px 0px; margin:0px 4px 0px 0px; border:2px solid #bbb; font-weight:300; font-size:2.583em; text-transform:uppercase;} .ctabutton:last-child{margin:0px 0px 0px 0px;}
+#cta .ctabutton:hover {cursor:pointer;}
+#cta .ctatext {display:inline-block; line-height:normal; font-size:0.6em; margin:40px 0px 0px 0px; padding:10px 0px 10px 0px; width:100%; max-width:215px; text-align:center; text-decoration:none;}
+#cta #ctabranding {background:#ffffff url(images/cta-button-branding.jpg) center 30px no-repeat; letter-spacing:0.2em; color:#dc6a2c;} #ctabranding .ctatext {border-top:solid 1px #dc6a2c; border-bottom:solid 1px #dc6a2c; letter-spacing:0.15em;}
+#cta #ctacoaching {background:#ffffff url(images/cta-button-coaching.jpg) center 30px no-repeat; letter-spacing:0.2em; color:#ad6d35;} #ctacoaching .ctatext {border-top:solid 1px #ad6d35; border-bottom:solid 1px #ad6d35; letter-spacing:0.25em;}
+#cta #ctaproducts {background:#ffffff url(images/cta-button-products.jpg) center 30px no-repeat; letter-spacing:0.2em; color:#69403d;} #ctaproducts .ctatext {border-top:solid 1px #69403d; border-bottom:solid 1px #69403d; letter-spacing:0.25em;}
+#cta #ctaclubzebra {background:#ffffff url(images/cta-button-clubzebra.jpg) center 30px no-repeat; letter-spacing:0.10em; color:#358aae;} #ctaclubzebra .ctatext {border-top:solid 1px #358aae; border-bottom:solid 1px #358aae; letter-spacing:0.25em;}
+#marquee {width:100%; max-width:2000px; margin:0px auto 0px auto; background-color:#4c4c4c; overflow:hidden; padding:80px 0px 40px 0px;}
+#marquee .flex-container {display:-webkit-flex; display:-ms-flexbox; display:flex; flex-wrap:wrap; overflow:hidden; -webkit-justify-content:space-between; align-items:space-between; width:100%; max-width:1024px; margin:0px auto 0px auto;}
+#marquee .flex-item {flex:1; display:inline-block; color:#ffffff; font-size:1.2em; line-height:1.35em; max-width:302px; margin:0px 15px 0px 15px;}
+#marquee .flex-item img {border:solid 1px white; margin-bottom:0px; width:100%; height:auto;}
+#marquee .flex-item .cname {margin-bottom:10px;}
+#marquee .more {text-align:center; color:#fff; font-size:2em; padding:10px 0px 0px 0px;}
+#marquee a {color:#dedede;} #marquee a:hover{color:#ffffff; text-decoration:none;}
+#zebrareport {width:100%; max-width:1024px; margin:0px auto 0px auto; padding:20px 0px 30px; background:#ffffff url(images/bg-zebrareport.jpg) left bottom no-repeat; font-size:12px;}
+#zebrareport #zrtext1 {font-size:2.035em; color:#d16830;}
+#zebrareport #zrtext2 {font-size:2.545em; color:#d16830;}
+#zebrareport #zrtext3 {font-size:0.9em; color:#d16830; text-align:right; text-transform:uppercase;}
+#zebrareport #zrform {width:300px; margin:0px 0px 0px 50%; padding:30px 0px 0px 0px;}
+#zebrareport #zrsignup {font-size:1.2em; width:120px; margin-top:1em;}
+@media (max-width:1040px) { /*compatible 800px to 1024px*/
+    #slideshow{height:380px;}
+    #slideshow .slidetext {margin-top:200px; margin-bottom:110px; padding-top:10px; height:50px; font:300 1.5em lato, verdana; line-height:2.5em;}
+    #slideshow .findoutmore {margin-left:10px;}
+    #cta .ctabutton {font-size:1.8em; padding:155px 0px 30px 0px; height:auto; width:22%; max-width:244px;}
+    #cta .ctatext {display:inline-block; line-height:normal; font-size:0.6em; margin:15% 0px 0px 0px; padding:10px 0px 10px 0px; width:100%; max-width:215px; text-align:center; text-decoration:none;}
+    #cta #ctabranding, #cta #ctacoaching, #cta #ctaproducts, #cta #ctaclubzebra {background-size:50%;}
+    #marquee .flex-item {margin:0px 15px;}
+    #marquee .ctestimonial {height:220px; background: -webkit-linear-gradient(#ffffff,#4c4c4c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+}
+@media (max-width:799px) { /* good to about 640 in most cases*/
+    #slideshow{height:300px;}
+    #slideshow .slidetext {margin-top:180px; margin-bottom:70px; padding-top:10px; height:30px; font:400 1.2em lato, verdana; line-height:1.5em; background-color:rgba(255,255,255,0.92);}
+    #slideshow .findoutmore {margin-left:10px;}
+    #cta .ctabutton {font-size:1.3em; padding:135px 0px 30px 0px; height:auto; width:22%; max-width:244px; font-weight:400;}
+    #cta .ctatext {font-size:0.65em; font-weight:400;}
+    #zebrareport {background-size:40%;} 
+}
+@media (max-width:639px) {
+    #slideshow{height:200px;}
+    #slideshow .slidetext {margin-top:120px; margin-bottom:70px; font:400 1.15em lato, verdana; cursor:pointer;}
+    #slideshow .findoutmore {display:none;}
+    #slideshow #gallery .slide {height:200px; width:100%;}
+    #cta .ctabutton {font-size:1.2em; letter-spacing:0px; padding:115px 0px 30px 0px; height:auto; width:22%; max-width:244px; font-weight:400;}
+    #cta .ctatext {display:none;}
+    #cta #ctabranding, #cta #ctacoaching, #cta #ctaproducts, #cta #ctaclubzebra {background-size:60%; letter-spacing:0.05em;}
+    #marquee {padding:40px 0px 40px 0px;}
+    #marquee .ctestimonial {height:150px; background: -webkit-linear-gradient(#ffffff,#4c4c4c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+    #zebrareport {background-image:none;} 
+    #zebrareport #zrform {margin:0px auto 0px auto;}
+}
+@media (max-width:479px) {
+    #slideshow .slidetext {display:none;}
+    #cta #ctabuttons {margin:40px auto 40px auto;}
+    #cta .ctabutton {width:100%; height:auto; min-width:240px; padding:0px 0px 0px 90px; margin:0px auto 20px auto; height:85px; font-weight:300; font-size:3em; line-height:2.3em; text-align:left; white-space:nowrap;} #cta .ctabutton:last-child {margin:0px auto 0px auto;}
+    #cta #ctabranding, #cta #ctacoaching, #cta #ctaproducts, #cta #ctaclubzebra {background-size:70px; background-position:10px center; letter-spacing:0.05em;}
+    #marquee {display:none;}
+    #zebrareport {background-color:#4c4c4c;}
+    #zebrareport #zrsignup {margin:8px 0px 0px 160px;}
+    #zebrareport #zrtext1, #zebrareport #zrtext2, #zebrareport #zrtext3 a {color:#f19850;}
+}
+</style>
+<script type="text/javascript" src="./js/jquery.cycle.lite.min.js"></script>
+<script type="text/javascript">$(function() { $('#gallery').cycle({ delay:18000, timeout:4000, speed:2000 }); }); //image rotation </script>
+</head>
+<body>
+
+<a name="top"></a>
+<form method="post" action="https://www.thelonesgroup.com/index.asp" name="form" id="form" accept-charset="UTF-8">
+<input type="hidden" name="op" value="" />
+<div id="topnavtabs">
+    <div id="topnavtabs-wrap">
+        <div id="login">
+            
+                <div id="dropdown-wrap">
+                    
+                    <input type="text" name="userid" id="userid" value="" class="text" maxlength="25" autocomplete="off" placeholder="username" onfocus="this.placeholder='';" onblur="this.placeholder='username';" />
+                    <input type="password" name="passwd" id="passwd" value="" class="text" maxlength="25" autocomplete="off" placeholder="password" onfocus="this.placeholder=''; document.getElementById('dropdown').style.maxHeight='30px';" onblur="this.placeholder='password'; document.getElementById('dropdown').style.maxHeight='';" />
+                    <input type="submit" value="Log In" class="button" onClick="form.action='https://www.thelonesgroup.com/customer/login.asp'; form.op.value='login';" />
+                    <div id="dropdown"><label for="isPersistent"><input type="checkbox" name="isPersistent" id="isPersistent" value="1" /> Remember me</label></div>
+                </div>
+            
+        </div>
+        <a href="#" id="menu-topnav" onclick="doMobileMenu('topnavtabs-tabs','block');">VISIT</a>
+        <ul id="topnavtabs-tabs">
+            <li><a href="index.asp" class="topnavtab topnavtab-on">The Lones Group</a></li>
+            <li><a href="customer/index.asp" class="topnavtab">Club Zebra</a></li>
+            <li><a href="http://www.realestatezebrablog.com/" class="topnavtab">Zebra Blog</a></li>
+            <li><a href="http://www.thelonesgroup.com/customer/login.asp" class="topnavtab" id="topnavtab-login">Log-In</a></li>
+        </ul>
+    </div>
+</div>
+<div id="header">
+    <div id="header-content">
+        <a href="index.asp" id="logo"><img src="images/logo-the-lones-group.png" title="The Lones Group" /></a>
+        <div id="contact">360-527-8904<br id="contactbr" /><a id="contact-email" href="mailto:solutions@thelonesgroup.com" title="Email The Lones Group">Solutions@TheLonesGroup.com</a></div>
+    </div>
+</div>
+<nav id="navwrap">
+    <a href="#" id="menu-icon" onclick="doMobileMenu('navbar','block'); return false;">MENU</a>
+    <div id="logo-sm-wrap"><a href="index.asp" title="The Lones Group"><img src="images/logo-the-lones-group-sm.png" id="logo-sm" alt="The Lones Group"/></a></div>
+    <div id="navbar">
+    	<ul id="nav">
+        	<li class="navtab nav-about">
+                <span class="maintabtitle" onclick="doMobileMenu('sub-about','block');">Our Company</span>
+                <ul class="subnav" id="sub-about">
+                    <li><a href="about.asp" class="submenutitle">Our Company</a>
+                        <span class="navtext">We're mighty proud of our history and of the experts in business, technology and design behind our company's many years of success.</span>
+                        <a href="about.asp" class="submenulink">Read Our Story</a>
+                        <a href="team.asp" class="submenulink">Meet the Team</a>
+                        <a href="zebrareport.asp" class="submenulink">Get the Zebra Report</a>
+                    </li>
+                    <li><a href="media.asp" class="submenutitle">In the News</a>
+                        <span class="navtext">We are widely published, nationwide, both online, in print, and with special appearances on the airwaves too!</span>
+                        <a href="press.asp" class="submenulink hideonmobile">Press Releases</a>
+                        <a href="media.asp" class="submenulink">Featured in the Media</a>
+                        <a href="whitepapers.asp" class="submenulink hideonmobile">White Papers</a>
+                    </li>
+                    <li><a href="calendar.asp" class="submenutitle">Upcoming Events</a>
+                        <span class="navtext">Interested in attending or even hosting one of our many popular events? Safari is our flagship coaching event. Take a look!</span>
+                        <a href="calendar.asp" class="submenulink">Event Calendar</a>
+                        <a href="safari.asp" class="submenulink hideonmobile">Come on Safari</a>
+                    </li>
+                    <li><a href="testimonials.asp" class="submenutitle">Testimonials</a>
+                        <span class="navtext">You don't have to take our word for it, hundreds of clients agree too. Hear their words and see samples of what we've done for them here.</span>
+                        <a href="testimonials.asp" class="submenulink hideonmobile">Learn More</a>
+                        <a href="testimonials.asp" class="submenulink hideondesktop">Testimonials</a>
+                        <!-- <a href="testimonials.asp" class="submenulink">Case Studies</a>-->
+                    </li>
+                </ul>
+            </li>
+            <li class="navtab nav-branding">
+		        <span class="maintabtitle" onclick="doMobileMenu('sub-branding', 'block');">Branding Services</span>
+                <ul class="subnav" id="sub-branding">
+                    <li><a href="branding.asp" class="submenutitle">Branding</a>
+                        <span class="navtext">Stand out from the crowd! Our designers have created incredible real estate branding for hundreds upon hundreds of successful agents.</span>
+                        <a href="branding.asp?do=semi" class="submenulink">Semi-Custom Branding</a>
+                        <a href="branding.asp?do=semipro" class="submenulink">Semi-Custom Pro Branding</a>
+                        <a href="branding.asp?do=custom" class="submenulink">Custom Branding</a>
+                    </li>
+                    <li><a href="websites.asp" class="submenutitle">Real Estate Websites</a>
+                        <span class="navtext">WordPress powered real estate websites offer easy access and a powerful online presence. Custom built for online success.</span>
+                        <a href="websites.asp" class="submenulink">Website Services</a>
+                        <a href="website-portfolio.asp" class="submenulink">Website Portfolio</a>
+                    </li>
+                    <li><a href="#" class="submenutitle" style="cursor:text;" onclick="return false;">Portfolios</a>
+                        <span class="navtext">Whether you're seeking a look of understated simplicity, dramatic impact, timeless classics or something professional, yet eclectic, we can design it.</span>
+                        <a href="branding-instant.asp" class="submenulink">Sample Semi-Custom</a>
+                        <a href="branding-semicustompro.asp" class="submenulink">Sample Semi-Custom Pro</a> 
+                        <a href="branding-signature.asp" class="submenulink">Custom Branding Portfolio</a>
+                        <a href="branding-corporate.asp" class="submenulink hideonmobile">Corporate Branding Portfolio</a>
+                        <a href="website-portfolio.asp" class="submenulink hideonmobile">Real Estate Websites</a>
+                    </li>
+                    <li><a href="branding.asp" class="submenutitle navad">Starting at $199/month!</a>
+                        <a href="branding.asp" class="submenutitle"><img src="images/media-nav-real-estate-branding.png" width="200" height="151" alt="Real Estate Branding" /></a>
+                    </li>
+                </ul>
+			</li>
+            <li class="navtab nav-coaching">
+                <span class="maintabtitle" onclick="doMobileMenu('sub-coaching', 'block');">Coaching &amp; Education</span>
+                <ul class="subnav" id="sub-coaching">
+                    <li><a href="real-estate-coaching.asp" class="submenutitle">Coaching</a>
+                        <span class="navtext">Seeking a completely personalized approach to coaching that will change your business and your life? Get our decades of experience on your team!</span>
+                        <a href="real-estate-coaching.asp" class="submenulink">Mastery</a>
+                    </li>
+                    <li><a href="blueprint.asp" class="submenutitle">Self-Directed</a>
+                        <span class="navtext">Business Blueprint takes our decades of winning real estate experience and condenses it into online resources and modular systems you can build into your business.</span>
+                        <a href="blueprint.asp" class="submenulink">Business Blueprint</a>
+                        
+                    </li>
+                    <li><a href="booking.asp" class="submenutitle">Seminars</a>
+                        <span class="navtext">Want to bring Denise to your event? Denise is a licensed Washington State educator and teaches a wide breadth of topics, from marketing to conflict management.</span>
+                        <a href="calendar.asp" class="submenulink hideonmobile">Event Calendar</a>
+                        <a href="safari.asp" class="submenulink hideonmobile">Come on Safari</a>
+                        <a href="booking.asp" class="submenulink">How to Book Denise</a>
+                        <a href="seminars.asp" class="submenulink">Available Seminars</a>
+                        <a href="sponsors.asp" class="submenulink">Become a Sponsor</a>
+                        
+                    </li>
+                    <li><a href="products.asp?c=20110429151509" class="submenutitle">Personal Discovery</a>
+                        <span class="navtext">Learn about your business strengths and weaknesses, your risk habits, how your personality affects your sales relationship and what to do about it.</span>
+                        <a href="products.asp?a=20070605141325" class="submenulink hideonmobile">Business Analysis</a>
+                        <a href="products.asp?a=20130826095423" class="submenulink hideonmobile">Free Design Style Analysis</a>
+                        <a href="products.asp?a=20110404113458" class="submenulink hideonmobile">Free Personality Analysis</a>
+                        <a href="products.asp?a=20110928102009" class="submenulink hideonmobile">Free RealtySocialQ</a>
+                        <a href="whitepapers.asp" class="submenulink">White Papers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navtab nav-product">
+                <span class="maintabtitle" onclick="doMobileMenu('sub-products', 'block');">Products &amp; Resources</span>
+                <ul class="subnav" id="sub-products">
+                    <li><a href="#" class="submenutitle" style="cursor:text;" onclick="return false">Audio Guides</a>
+                        <span class="navtext">Looking for real estate coaching that you can take on your Mp3 player? We've got you covered from hiring assistants to overcoming objections to holding open houses!</span>
+                        <a href="products.asp?c=20110429151540" class="submenulink">How-To Guides</a>
+                        <a href="products.asp?c=20160401105445" class="submenulink">Lead Generation Guides</a>
+                    </li>
+                    <li><a href="#" class="submenutitle" style="cursor:text;" onclick="return false">Business Building</a>
+                        <span class="navtext">Complete systems for any kind of agent, with business tools included. We won't just tell you how to do it, we provide the tools, the content AND the know-how too.</span>
+                        <a href="products.asp?a=20071213174507" class="submenulink">Annual Client Review</a>
+                        <a href="blueprint.asp" class="submenulink hideonmobile">Business Blueprint</a>
+                        <a href="products.asp?c=20110429151448" class="submenulink">Lead Generation Systems</a>
+                        <a href="products.asp?a=20070403183406" class="submenulink">Pricing System</a>
+                    </li>
+                    <li><a href="clubzebra.asp" class="submenutitle">Club Zebra</a>
+                        <span class="navtext">Our online education portal and the largest repository of real estate materials online. Audio guides, client content, hundreds of training videos, online tools and <i>much</i> more! New content weekly.</span>
+                        <a href="clubzebra.asp" class="submenulink hideonmobile">Learn More</a>
+                        <a href="clubzebra.asp" class="submenulink hideondesktop">Club Zebra</a>
+                    </li>
+                    <!--
+                    <li><a href="safari.asp" class="submenutitle navad">Come on Safari!</a>
+                        <span class="navtext">Our flagship coaching event returns this October. <a href="safari.asp" style="display:inline; color:#cc0033;">Register now!</a></span>
+                        <a href="safari.asp" style="margin:10px 0px 0px 10px;"><img src="images/media-nav-total-transformation.png" width="100" height="100" alt="Real Estate Coaching" class="hideonmobile" /></a>
+                    </li>
+                    -->
+                    <li><a href="clubzebra.asp" class="submenutitle navad">Just $9.95</a>
+                         <span class="navtext">That's right, try Club Zebra Pro for 30 days for just $9.95! <a href="clubzebra.asp" class="submenutitle"><img src="images/media-nav-clubzebra.png" width="176" height="125" alt="Club Zebra Pro" /></a></span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="slideshow">
+    <div id="gallery">
+        <div class="slide" id="slide0" onclick="if (1024<=screen.width || 800>=screen.width) window.location='safari.asp';">
+            <div class="slidedeco"></div>
+            <div class="slidetext"><b style="color:#EF7D40;">SAFARI: REAL ESTATE WORKSHOP</b>&nbsp;&nbsp;Bothell, February 11-12&nbsp;&nbsp;&nbsp; <a class="findoutmore huebutton" href="safari.asp">register now</a></div>
+        </div>
+        <div class="slide" id="slide1" onclick="if (1024<=screen.width || 800>=screen.width) window.location='branding.asp';">
+            <div class="slidedeco"></div>
+            <div class="slidetext">A complete Business makeover - Lones style! <a class="findoutmore huebutton" href="branding.asp">get started</a></div>
+        </div>
+        <div class="slide" id="slide2" onclick="if (1024<=screen.width || 800>=screen.width) window.location='real-estate-coaching.asp';">
+            <div class="slidedeco"></div>
+            <div class="slidetext">A to Z business coaching with all the tools you need <a class="findoutmore huebutton" href="real-estate-coaching.asp">learn more</a></div>        
+        </div>
+        <div class="slide" id="slide3" onclick="if (1024<=screen.width || 800>=screen.width) window.location='products.asp?c=20110429151448';">
+            <div class="slidedeco"></div>
+            <div class="slidetext">Proven Lead Generation Systems for every business style <a class="findoutmore huebutton" href="products.asp?c=20110429151448">learn more</a></div>        
+        </div>
+        <div class="slide" id="slide4" onclick="if (1024<=screen.width || 800>=screen.width) window.location='branding.asp';">
+            <div class="slidedeco"></div>
+            <div class="slidetext">Be envied by your competition with gorgeous branding <a class="findoutmore huebutton" href="branding.asp">get started</a></div>
+        </div>
+    </div>
+</section>
+<section id="cta">
+    <div id="ctadeco"></div>
+    <div id="ctabuttons">
+        <a href="branding.asp" id="ctabranding" class="ctabutton">Branding<span class="ctatext">View Portfolio</span></a>
+        <a href="real-estate-coaching.asp" id="ctacoaching" class="ctabutton">Coaching<span class="ctatext">Learn More</span></a>
+        <a href="tools.asp" id="ctaproducts" class="ctabutton">Products<span class="ctatext">View Options</span></a>
+        <a href="clubzebra.asp" id="ctaclubzebra" class="ctabutton">Club Zebra<span class="ctatext">Join the Club</span></a>
+    </div>
+</section>
+<section id="marquee">
+    <div class="flex-container">
+        <div id="testimonial1" class="flex-item"><img src="./images/agent-photos/300-steve-laevastu.jpg" alt="A happy real estate coaching client of The Lones Group" /><div class="cname">Steve Laevastu</div><div class="ctestimonial">"I have been a Realtor for 27 years. I hired the Lones Group to redo my marketing materials and they did a SPECTACULAR job! Later I took Denise's coaching. This is a class that coaches you on how to become a better more efficient agent. Denise is AWESOME!!! She helps me function better and become a better agent. It does not matter if you have been in the business for 2 months or 20 years - Denise Lones is the best coach in the world and she will help you become better, more efficient and succeed."</div></div>
+        <div id="testimonial2" class="flex-item"><img src="./images/agent-photos/300-jane-maxson.jpg" alt="A happy real estate coaching client of The Lones Group" /><div class="cname">Jane Maxson</div><div class="ctestimonial">"A HUGE Thank You to Denise Lones and her team. I went to a listing presentation yesterday armed with my boards, CMA and a smaller version of my usual presentation. Only an hour went by after I left and the clients called and gave me the listing. They said I blew the competition out of the water with the presentation! So with that, I thank you once again."</div></div>
+        <div id="testimonial3" class="flex-item"><img src="./images/agent-photos/300-sue-leonard.jpg" alt="A happy real estate branding client of The Lones Group" /><div class="cname">Sue Leonard</div><div class="ctestimonial">"What an awesome year driving my business to the next level working with the Lones Group. It all began with a level of energy, responsiveness and idea brainstorming. The fantastic support was maintained throughout the year as we worked through our business plan leveraging the Lones Group's extensive toolset to produce professional business marketing that will take me forward for many years and gives me the confidence and enthusiasm to reach for the sky."</div></div>
+    </div>
+    <div class="more"><a href="testimonials.asp">-&nbsp;&nbsp;&nbsp;Read More&nbsp;&nbsp;&nbsp;-</a></div>
+</section>
+<section id="zebrareport">
+    <div id="zrform" class="compact-form">
+        <div id="zrtext1">Sign up now to receive your</div>
+        <div id="zrtext2">FREE ZEBRA REPORT</div>
+        <div id="zrtext3"><a href="zebrareport.asp">learn more</a></div>
+        <div style="margin:10px 0px 0px 0px; width:300px;">
+            <div class="form-row">
+                <div id="wrap-fname" style="width:48%; float:left;" class="floating-label"><input type="text" name="fname" id="fname" placeholder="first name" value="" maxlength="25" autocomplete="given-name" autocorrect="no" autocapitalize="no" spellcheck="no" /><label for="bill_first_name">First Name</label></div>
+                <div id="wrap-lname" style="width:48%; float:right;" class="floating-label"><input type="text" name="lname" id="lname" placeholder="last name" value="" maxlength="25" autocomplete="family-name" autocorrect="no" autocapitalize="no" spellcheck="no" /><label for="bill_last_name">Last Name</label></div>
+            </div>
+            <div id="wrap-email" class="form-row floating-label"><input type="text" name="email" id="email" placeholder="you@example.com" value="" maxlength="150" autocomplete="email" autocorrect="no" autocapitalize="no" spellcheck="no" /><label for="email">Email</label></div>
+            <input type="submit" id="zrsignup" class="huebutton" value="Sign Up" onclick="form.action='zebrareport.asp'; form.op.value='exec_subscribe'; form.submit(); return false;" />
+        </div>
+    </div>
+</section>
+</form>
+<footer id="footer">
+    <div id="footer-content">
+        <div id="bnav">
+            <div class="bnav-list">
+                <span class="bnav-title">Our Company</span>
+                <ul>
+                    <li><a href="about.asp" class="submenulink">Our Story</a></li>
+                    <li><a href="calendar.asp" class="submenulink">Event Calendar</a></li>
+                    <li><a href="team.asp" class="submenulink">Meet the Team</a></li>
+                    <li><a href="zebrareport.asp" class="submenulink">Get the Zebra Report</a></li>
+                    <li><a href="media.asp" class="submenutitle">In the News</a></li>
+                    <li><a href="press.asp" class="submenulink">Press Releases</a></li>
+                    <li><a href="testimonials.asp" class="submenulink">Testimonials</a></li>
+                    <li><a href="contact.asp" class="submenulink">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="bnav-list">
+                <span class="bnav-title">Branding Services</span>
+                <ul>
+                    <li><a href="branding.asp" class="submenulink">Branding Services</a></li>
+                    <li><a href="branding-instant.asp" class="submenulink">Semi-Custom Samples</a></li>
+                    <li><a href="branding-semicustompro.asp" class="submenulink">Semi-Custom Pro Samples</a></li>
+                    <li><a href="branding-signature.asp" class="submenulink">Custom Portfolio</a></li>
+                    <li><a href="branding-corporate.asp" class="submenulink">Corporate Portfolio</a></li>
+                    <li><a href="websites.asp" class="submenulink">Real Estate Websites</a></li>
+                    <li><a href="website-portfolio.asp" class="submenulink">Website Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="bnav-list">
+                <span class="bnav-title">Coaching &amp; Education</span>
+                <ul>
+                    <li><a href="real-estate-coaching.asp" class="submenulink">Mastery Coaching</a></li>
+                    <li><a href="safari.asp" class="submenulink">Come on Safari</a></li>
+                    <li><a href="seminars.asp" class="submenulink">Seminars &amp; Booking</a></li>
+                    <li><a href="sponsors.asp" class="submenulink">Become a Sponsor</a></li>
+                    <li><a href="products.asp?a=20130826095423" class="submenulink">Free Design Style Analysis</a></li>
+                    <li><a href="products.asp?a=20110404113458" class="submenulink">Free Personality Analysis</a></li>
+                    <li><a href="products.asp?a=20110928102009" class="submenulink">Free RealtySocialQ</a></li>
+                </ul>
+            </div>
+            <div class="bnav-list">
+                <span class="bnav-title">Products &amp; Resources</span>
+                <ul>
+                    <li><a href="clubzebra.asp" class="submenulink">Club Zebra</a></li>
+                    <li><a href="blueprint.asp" class="submenulink">Business Blueprint</a></li>
+                    <li><a href="products.asp?c=20110429151540" class="submenulink">How-To Audio Guides</a></li>
+                    <li><a href="products.asp?c=20160401105445" class="submenulink">Lead Generation Audio Guides</a></li>
+                    <li><a href="products.asp?c=20110429151448" class="submenulink">Lead Generation Systems</a></li>
+                    <li><a href="products.asp?a=20071213174507" class="submenulink">Annual Client Review</a></li>
+                    <li><a href="products.asp?a=20070403183406" class="submenulink">Pricing System</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="menu-top" href="#top" alt="return to top of page" title="Return to Top"></a>
+        <div id="social"><a href="http://www.facebook.com/thelonesgroup" target="_blank" alt="Get Real Estate Tips on Facebook" rel="noopener"><img src="images/icon-facebook.jpg" title="Like us on Facebook" alt="Get Real Estate Tips on Facebook" /></a><a href="http://twitter.com/#!/TheLonesGroup" target="_blank" alt="Real Estate Agent Help" rel="noopener"><img src="images/icon-twitter.jpg" title="Follow us on Twitter" alt="Real Estate Agent Help" /></a><a href="http://www.realestatezebrablog.com/" target="_blank" alt="Real Estate Agent and Broker News" rel="noopener"><img src="images/icon-wordpress.jpg" title="Daily real estate industry information, advice and articles" alt="Real Estate Agent and Broker News" /></a><a href="http://www.pinterest.com/thelonesgroup" target="_blank" alt="Advice, Humor and More on Pinterest" rel="noopener"><img src="images/icon-pinterest.jpg" title="Follow Us at Pinterest" alt="Advice, Humor and More on Pinterest" /></a><a href="https://plus.google.com/102374776030291139538" target="_blank" alt="Real Estate Agent Tips on Google+" rel="noopener"><img src="images/icon-googleplus.jpg" title="Circle us on Google+" alt="Real Estate Agent Tips on Google+" /></a><a href="http://www.youtube.com/user/thelonesgroup" target="_blank" alt="Real Estate Agent Training Videos" rel="noopener"><img src="images/icon-youtube.jpg" title="Watch us on YouTube" alt="Real Estate Agent Training Videos" /></a><a href="http://www.linkedin.com/company/the-lones-group" target="_blank" alt="Join our Real Estate Agent Training Network on Linked-In" rel="noopener"><img src="images/icon-linkedin.jpg" title="Find us on LinkedIn" alt="Join our Real Estate Agent Training Network on Linked-In" /></a></div>
+        <div id="affiliations"><img src="images/logo-footer-nar.png" title="Member of National Association of REALTORS&reg;" alt="National Association of REALTORS logo"/><img src="images/logo-footer-nahb.png" title="Member of National Association of Home Builders" alt="National Association of Home Builders logo"/><img src="images/logo-footer-wcr.png" title="Member of Women's Council of REALTORS&reg;" alt="Women's Council of REALTORS logo"/><img src="images/logo-footer-reea.png" title="Member of Real Estate Educators Association" alt="Real Estate Educators Association logo"/><img src="images/logo-footer-mba.png" title="Member of Master Builders Association" alt="Master Builders Association logo"/><img src="images/logo-footer-wcar.png" title="Member of Whatcom County Association of REALTORS&reg;" alt="Whatcom County Association of REALTORS logo"/></div>
+        <div id="copyright"><a href="legal.asp">Terms &amp; Conditions</a><span class="pipe"> | </span><a href="contact.asp">Contact</a><span class="pipe"> | </span>&copy; 2001, 2019 The Lones Group, Inc.</div>
+    </div>
+</footer>
+<!-- put stuff below here that is for globally before the closing body tag, like scripts -->
+<script src="https://app.textrequest.com/content/smschat/textrequest-sms-chat.js?locationId=12416&phoneNumber=13605278904&bgc=a3cf5d&bggc=84A64B&ac=0f2f4a&bt=Text%20us"></script> <script> function showHideTrCallButton(){var t=document.getElementById("tr-chat-desktop-min"),e=document.getElementById("tr-chat-desktop-full"),i=document.getElementById("tr-chat-mobile");window.innerWidth<600?(i.style.visibility ="visible" ,t.style.visibility="hidden" ,e.style.visibility="hidden" ):(i.style.visibility="hidden" ,t.style.visibility="visible" ,e.style.visibility="visible" )}function hideFullForm(){document.getElementById("tr-chat-desktop-full").style.bottom="-300px" ,setTimeout(function(){document.getElementById("tr-chat-desktop-min").style.bottom="25px" },250)}function showFullDesktopChat(){document.getElementById("tr-chat-desktop-min").style.bottom="-100px" ;var t=document.getElementById("tr-chat-desktop-full");setTimeout(function(){t.style.bottom ="0px" },250)}function receiveMessage(t){"https://app.textrequest.com"==t.origin&&("showFullDesktopChat"==t.data?showFullDesktopChat():"hideFullForm"==t.data&&hideFullForm())}window.addEventListener("message",receiveMessage,!1),window.onresize=function(t){showHideTrCallButton()},document.addEventListener("DOMContentLoaded",function(){showHideTrCallButton()}); </script>
+</body>
+</html>

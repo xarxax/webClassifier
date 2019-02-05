@@ -1,0 +1,182 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/xml/rss" />
+<style>
+body {font-family: "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;}
+a:link, a:visited, a:active {text-decoration: none; color: blue;}
+a:hover {text-decoration: underline; color: blue;}
+a.isbn:link, a.isbn:visited, a.isbn:active {text-decoration: none; color: blue;}
+a.isbn:hover {text-decoration: none; color: blue; border-bottom: 1px dashed;}
+div.sideTitle {font-weight: bold; font-size: smaller; font-variant: small-caps;}
+div.sideItem {font-size: smaller;}
+h1 {font-size: 250%; font-variant: small-caps;}
+.title {font-size: 250%; font-variant: small-caps; font-weight: bold; font-family: Georgia,"Times New Roman",serif}
+.reviewer {font-size: 120%;}
+.opt {display: none;}
+.opt1 {font-size: 90%;}
+</style>
+<script type="text/javascript">
+function failup(url) {
+  window.open(url + "&amp;new=1", "_blank");
+}
+
+var unrollNode = null;
+var unrollHeight;
+
+function unroll(node,cmd) { // cmd='pre' to prepare, 'go' to go
+  if (node != null) {
+    if (unrollNode != null) { /* finish unrolling old node */
+      unrollNode.style.height = 'auto';
+    }
+    unrollNode = node;
+    unrollHeight = 3.0; // initial height
+    unrollNode.style.overflow = 'hidden';
+  }
+  if (unrollHeight >= 10) { /* done? */
+    unrollNode.style.height = 'auto';
+    unrollNode = null;
+  } else {
+    unrollNode.style.height = unrollHeight + "ex"; // font-dependent units
+    unrollHeight = Math.pow(unrollHeight,1.2); // exponential growth
+    if (cmd != 'pre') {
+      setTimeout("unroll(null)", 80);
+    }
+  }
+}
+
+function unfold(rep,indent,isThread,mode) {
+  var http_request = false;
+  var node = document.getElementById('r' + rep);
+  var url = '/unfold?rep=' + rep + '&indent=' + indent + '&thread=' + isThread;
+
+  node.onclick = "";
+
+  if (window.XMLHttpRequest) { // Mozilla, Safari,...
+    http_request = new XMLHttpRequest();
+  } 
+  else if (window.ActiveXObject) { // IE
+    try {
+      http_request = new ActiveXObject("Msxml2.XMLHTTP");
+    }
+    catch (e) {
+      try {
+        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {}
+    }
+  }
+
+  if (!http_request) {
+    failup(url);
+    return false;
+  }
+
+  var img = document.getElementById('i' + rep);
+  img.src = '/static/unfold' + isThread + mode + '.gif';
+  //document.body.style.cursor = 'wait';
+  http_request.onreadystatechange = function() {
+    if (http_request.readyState == 1) {
+      unroll(node,'pre');
+    } else if (http_request.readyState == 4) {
+      document.body.style.cursor = 'auto';
+      unroll(node,'go');
+      if (http_request.status == 200) {
+        node.innerHTML = http_request.responseText;
+      } 
+      else {
+        failup(url);
+      }
+    }
+  };
+  http_request.open('GET', url, true);
+  http_request.send(null);
+  return false;
+}
+
+var counter = 0;
+</script>
+<title>The Cyberiad: Fables for the Cybernetic Age / Stanislaw Lem</title>
+</head>
+<body vlink="purple" text="black" bgcolor="white" alink="red" link="blue">
+<div align="center">
+<a href="/"><img src="/static/bookshelf-s.gif" border="0" width="337" height="95" alt="Tal Cohen's Bookshelf: A Collection of Personal Opinions about Books" /></a>
+<hr size="1" noshade="noshade" width="337" />
+</div>
+<table border="0" bgcolor="white" cellpadding="2" cellspacing="0" width="570" align="center">
+<tr>
+<td colspan="2"><span class="title">The Cyberiad: Fables for the Cybernetic Age / Stanislaw Lem</span></td>
+</tr>
+<tr bgcolor="#eeeeff">
+ <td>Reviewed by <span class="reviewer"><a href="/author_Tal%20Cohen">Tal Cohen</a></span></td>
+ <td align="right">Wednesday, 01 April 1998</td>
+</tr>
+<tr><td colspan="2" align="justify">
+<table border="0" cellpadding="6" cellspacing="2" align="left">
+<tr>
+<td><img src="images/15.jpg" height="280" width="186" border="0" /></td>
+</tr>
+</table>
+
+Chances are, you’ve never met a gruncheon, nor have you ever seen a targalisk, a shupop, a calinatifact or a thists. In fact, I’m almost certain that you’ve never laid your eyes on a worch, or enjoyed the beauty of a true priton. You have no idea what you are missing!<br /><br />But alas, all these are gone for good. The cause for this is a machine, created by Trurl the constructor. Oh, the machine is not to blame: it did only what was asked of it. It was a mighty machine that could create anything starting with <i>n</i>. At Trurl’s request, it created noodles, nuclei, neutrons, noses, nymphs and other kinds of nonsense. But when Trurl’s friend Klapaucius was offered a chance to test the machine, he did not care for such non-challenging nibbles. First, he asked the machine to create Nature, and the machine complied by filling Trurl’s front yard with naturalists, arguing, publishing their works in many volumes, and tearing the works of others. Then Klapaucius, never satisfied, asked the machine to create Negative, which Trurl thought was tricky and unfair but the machine easily did by generating antiprotons, antielectrons, antineutrons, and other anti-particles in such a vast amount that a small anti-matter world was created before the constructors' eyes.<br /><br />Still not satisfied, and aiming to prove that Trurl’s machine really isn't worth that much, Klapaucius’s next challenge was for the machine to create Nothing. At first, the two thought that indeed, the machine is doing nothing, which Trurl said was exactly what was asked of it, but Klapaucius countered by claiming that the machine was asked to do Nothing, but it isn't doing anything...<br /><br />As the bickering between the two became more and more bitter, the machine suddenly interfered, explaining that it really is creating Nothing. Slowly, by removing things that are. Already there were no targalisks or pritons. Within a short time, there will be no worlds, no people... only Nothing will remain, as per Klapaucius’s request.<br /><br />By the time the two constructors came to their senses and stopped the process, the gruncheons, the thists, the worches and many other things were gone for good, never to be seen again.<br /><br /><table cellspacing="0" cellpadding="2" width="80%"><tr><td width="42%"></td><td bgcolor="#ffcc66"><img src="/static/quotes.gif" width="37" height="30" align="left" alt="(From the book) " title="" /><i>And as all subsequent attempts to build a machine on any other letter met with failure, it is to be feared that never again will we have such marvelous phenomena as the worches and the zits -- no, never again.</i></td></tr></table><br />This is the outline of “<i>How the World Was Saved</i>,” the first story in Stanislaw Lem’s fabulous collection <i>The Cyberiad: Fables for the Cybernetic Age</i>. The book contains fifteen stories from the lives and adventures of the famous constructors Trurl and Klapaucius, in Lem’s unique, witty way.<br /><br />As the first story shows, The Cyberiad is certainly not hard-core science fiction. Lem allows himself to ignore some aspects of the physical universe which are not interesting; the mischievousness of the stories is much more absorbing.<br /><br />However, this does not make the book a science-fiction parody, or even a simple lightweight science-fiction work. With all the jokes, puns and playfulness, Lem discusses serious issues in the philosophy of science, in a highly thought-provoking way. And while teen-agers might enjoy some of the humor, there’s a considerable amount of laughs saved for those versed in mathematics and physics. For example, the story “<i>The Sixth Sally, or How Trurl and Klapaucius Created a Demon of the Second Kind to Defeat the Pirate Pugg</i>” does not appear in all its glory unless you are familiar with the concept of Maxwell’s Demon, and the (serious) debate it created among physicists. (In these days of information overload, though, the story gains some whole new meanings.)<br /><br />The stories take place in a universe inhabited by intelligent robots. Trurl and his friend are in fact robots themselves. The robots have their own stories about how they came to be, apparently long after humankind (the “paleface” race) is gone:<br /><br /><table cellspacing="0" cellpadding="2" width="85%"><tr><td width="4%"></td><td bgcolor="#ffcc66"><img src="/static/quotes.gif" width="37" height="30" align="left" alt="(From the book) " title="" /><i>... There are legends, as you know, that speak of a race of paleface, who concocted robotkind out of a test tube, though anyone with a grain of sense knows this to be a foul lie... For in the Beginning there was naught but Formless Darkness, and in the Darkness, Magneticity, which moved the atoms, and whirling atom struck atom, and Current was thus created, and the First Light... from which the stars were kindled, and then the planets cooled, and in their cores the breath of Scared Statisicality gave rise to microscopic Protomechanoans, which begat Protermechanoids, which begat the Primitive Mechanisms. These could not yet calculate, nor scarcely put two and two together, but thanks to Evolution and Natural Subtraction they soon multiplied and produced Omnistats, which gave birth to the Servostat, the Missing Clink, and from it came our progenitor, Automatus Sapiens...</i></td></tr></table><br /><center><hr size=1 noshade width="40%"></center><br />Among the issues Lem discusses (between the lines of the hilarious fables) is the question of artificial intelligence, moral questions relating to man-made sentient beings, and many more.<br /><br /><i>The Cyberiad</i> was originally published in 1967, in Polish. The English translation first appeared some seven years later. The translator is Michael Kandel, who does a marvelous job of preserving Lem’s unique sense of humor. With all the puns and rhyming, this certainly isn't a simple task. Consider, for example, the story “<i>The First Sally (A), or Trurl’s Electronic Bard</i>”, in which Klapaucius challenges the Bard to compose a poem --<br /><br /><table cellspacing="0" cellpadding="2" width="60%"><tr><td width="22%"></td><td bgcolor="#ffcc66"><img src="/static/quotes.gif" width="37" height="30" align="left" alt="(From the book) " title="" /><i>-- a poem about a haircut! But lofty, noble, tragic, timeless, full of love, treachery, retribution, quiet heroism in the face of certain doom! Six lines, cleverly rhymed, and every word beginning with the letter s!!</i></td></tr></table><br />To the surprise of both constructors, the machine delivers exactly that, in a wonderful pearl of poetry. But while the machine’s effort is fictitious, Kandel’s work most certainly isn't.<br /><br />In conclusion, somewhat like that poem, the book is a noble, timeless piece indeed, highly recommended to anyone who enjoys a good, intelligent read.<br /><br /><div align="center"><a href="http://en.wikipedia.org/wiki/Special:BookSources/0156027593">Find this book</a> using Wikipedia</div><table border="0" cellpadding="2" cellspacing="2"><tr valign="top"><td width="20%"><div class="sideTitle">Lem and Science</div></td><td><div class="sideItem">In the original Polish text, Klapaucius asks the machine to create <i>science</i> rather than nature. The result -- scientists roaming about, publishing volumes upon volumes of works and endlessly arguing -- is typical for Lem’s sarcasm of the way scienctific research is conducted in the modern world.<br /><br />Even Lem’s best-known work, <a class="isbn" href="http://en.wikipedia.org/wiki/Special:BookSources/0156027607">Solaris</a>, despite being a very serious work, includes more than a hint of this sarcasm, when Dr. Kelvin describes his browsing of the research station’s library.</div></td></tr></table><br />
+<table border="0" cellpadding="2" cellspacing="2">
+ <tr valign="top"><td width="20%"><div class="sideTitle">New Reviews Notification</div></td>
+ <td><div class="sideItem">To receive notifications as new reviews are published,
+ consider following <a href="/xml/rss">the RSS feed</a>.</div></td></tr>
+</table>
+
+</tr></td>
+</table>
+<div align="right"><font size="+1">[<a href="/reply?id=15&amp;rep=-1&amp;LastView=1900-01-01%2000%3A00">Post a comment on this review</a>]</font></div>
+<div align="right"><a href="/editstory?id=15">&nbsp;</a> [<a href="/cyberiad">Permalink to this review</a>] 
+  &nbsp; [<a href="/cyberiad?base=&NewOnly=1&LastView=2030-12-31">Fold all comments</a>] &nbsp; 
+[<a href="/cyberiad?base=">Unfold all comments</a>]</div>
+<br />
+
+<a name="292"></a><a name="NewReply"></a><table border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td width="1"><img src="/static/spacer.gif" width="0" height="1"></td>
+<td valign="top"><img src="/static/spacer.gif" width="1" height="5" /><br /><img src="/static/bubble_new.gif" width="23" height="19" /></td>
+<td width="100%" bgcolor="#efefff">
+Walter
+
+writes:<br />
+<span style="font-size: 120%;">Translation</span><br />
+Interestingly, some of the issues faced by the translator of this book, and in particular this story, are discussed in Hofstadter's Ton Beau de Marot.</td></tr>
+<tr>
+<td></td><td></td>
+<td align="right"><span style="font-size: 80%; color: gray;">[292] Posted 
+on Sunday, 02 December 2007 at 21:43 GMT [<a href="/reply?id=15&amp;rep=292&amp;LastView=1900-01-01%2000%3A00">Reply to this</a>]<a class="invis" href="/moderate?id=292"> 
+</a>[<a href="/thread?rep=292">Permalink</a>]</font></td>
+</tr>
+</table>
+<br /><a name="687"></a><table border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td width="1"><img src="/static/spacer.gif" width="0" height="1"></td>
+<td valign="top"><img src="/static/spacer.gif" width="1" height="5" /><br /><img src="/static/bubble_new.gif" width="23" height="19" /></td>
+<td width="100%" bgcolor="#efefff">
+Tal Cohen
+
+writes:<br />
+<span style="font-size: 120%;">Hall of Shame</span><br />
+Norman D. Holland, in his book <i>Literature and the Brain</i>, quotes ''the poem about the haircut'' mentioned in the review above, in its entirety, from <The Cyberiad> (p. 152 in Holland's book).<br /><br />But he entirely fails in finding the source (even though a simple Googling will do the trick). He refers to the poem as something that ''appears on various internet sites'', and derogatorily refers to the author as a ''non-Milton''.<br /><br />See here: <a href="http://books.google.com/books?id=kSOKWUk0rVMC&amp;lpg=PA151&amp;dq=Seduced%2C%20shaggy%20Samson%20snored.&amp;pg=PA151#v=onepage&amp;q=Seduced%2C%20shaggy%20Samson%20snored.&amp;f=false" target="_blank">http://books.google.com/books?id=kSOKWUk0rVMC&amp;lp...</a></td></tr>
+<tr>
+<td></td><td></td>
+<td align="right"><span style="font-size: 80%; color: gray;">[687] Posted 
+on Sunday, 22 May 2011 at 21:44 GMT [<a href="/reply?id=15&amp;rep=687&amp;LastView=1900-01-01%2000%3A00">Reply to this</a>]<a class="invis" href="/moderate?id=687"> 
+</a>[<a href="/thread?rep=687">Permalink</a>]</font></td>
+</tr>
+</table>
+<br />
+
+<div align="right">[<a href="/reply?id=15&amp;rep=-1&amp;LastView=1900-01-01%2000%3A00">Post a comment on this review</a>] &nbsp; [<a href="/">Back to Main Page</a>]
+</div>
+<div align="right"><font size="-1"><a href="/xml/rss"><img src="/static/rss.gif" border="0" width="38" height="14" /></a> &copy;1997-2019 by Tal Cohen, all rights reserved.</font> [<a href="/about">About</a>]</div>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/link-enhancer?tag=forum2"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=forum2" alt="" /></noscript>
+<!-- $ #ScriptFooter -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1875215-1";
+urchinTracker();
+</script>
+</body>
+</html>

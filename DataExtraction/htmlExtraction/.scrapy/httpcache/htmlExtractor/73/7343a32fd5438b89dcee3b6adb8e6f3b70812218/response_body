@@ -1,0 +1,357 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/SiteHome.dwt.asp" codeOutsideHTMLIsLocked="false" -->
+<head>
+<title>Property2000.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Description" content="Property2000.com - Real Estate Listing Service. Find Real Estate including homes for sale, new houses, rentals, foreclosure properties as well as mortgage calculators and rates on Property2000.com." />
+<meta name="keywords" content="real estate, homes for sale, homes, home, houses for sale, new homes for sale, real estate for sale, real estate listings, find a home, for rent, apartments listings, MLS, FSBO, for sale by owner" />
+<meta name="Owner" content="Property2000 Corporation" />
+<meta name="Rating" content="General" />
+<meta name="Revisit-After" content="7 Days" />
+<meta name="Distribution" content="Global" />
+<meta name="robots" content="index,follow" />
+<meta name="Googlebot" content="index,follow" />
+<link rel="stylesheet" type="text/css" href="css/p2k.css" />
+<!-- InstanceBeginEditable name="Head1" -->
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript" src="js/mootools-core.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jwp-mootools-native.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jwp-mootools-extensions.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/application.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/navbar.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/gui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jwp-class-window.js"></script>
+<!--[if lte IE 6]>
+<script language="JavaScript" type="text/javascript" src="js/jwp-class-WCH.js"></script>
+<![endif]-->
+<script language="JavaScript" type="text/javascript"><!--
+function doNavigate(oButton)
+{
+	var oForm	= document.GoForm;
+	window.location.href	= oForm.action;
+}
+function setAction(oElement)
+{
+	var oForm	= document.GoForm;
+	var sPage	= getSelectValue(oElement, oForm.action);
+	oForm.action= (sPage === "client") ? "https://client.property2000.com/" : sPage;
+}
+// --></script>
+<!-- InstanceBeginEditable name="Head2" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="JavaScript" -->
+<script language="JavaScript" type="text/javascript"><!--
+saveScreenSize();
+function formValidation(oForm)
+{
+	if (!oForm.txtListingId.value.isListingId())
+	{
+		alert("Invalid Listing Id!\n\nUse this format: #######.####\n\ni.e. 1999001.0551")
+		$Element.setFocus(oForm.txtListingId);
+		return false;
+	}
+	return true;
+}
+function saveScreenSize()
+{
+	var sSize	= $JWP.Screen.getScreenSize();
+	var oDate	= $JWP.Date.newDate();
+	oDate.setTime(oDate.getTime() + (1000 * 60 * 60 * 24 * 90));
+	"ScreenSize".setCookie(sSize, oDate);
+}
+// --></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body bgcolor="#FFFFFF">
+<a name="top"></a>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="130" valign="top">
+
+		<div id="divNavBarSection">
+
+			<div class="clsNavBarTitleFirst">Property2000.com</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet1).write();
+// --></script>
+			</div>
+
+			<div class="clsNavBarTitle">Search</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet2).write();
+// --></script>
+			</div>
+
+			<div class="clsNavBarTitle">Listings</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet3).write();
+// --></script>
+			</div>
+
+			<div class="clsNavBarTitle">News</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet4).write();
+// --></script>
+			</div>
+
+			<div class="clsNavBarTitle">Q&amp;A</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet5).write();
+// --></script>
+			</div>
+
+			<div class="clsNavBarTitle">Services</div>
+			<div class="clsDividerMenu"><span></span></div>
+			<div>
+<script language="JavaScript" type="text/javascript"><!--
+getNavLinksHTML(aLinkSet6).write();
+// --></script>
+			</div>
+
+			<div class="clsFontFamilyAlt1 clsStdMarginTop clsCenter">P5113027201258</div>
+
+		</div>
+
+	</td>
+	<td width="3" rowspan="99"></td>
+	<td width="615" valign="top">
+
+		<div id="divGoSection" class="clsGoSection">
+			<div id="divGoSectionRight" class="clsGoSectionRight">
+				<form id="frmGoForm" name="GoForm" method="POST" action="default.asp" onSubmit="return false;">
+
+				<select id="selGoSelect" name="GoSelect" class="clsGoSelect" onChange="setAction(this)">
+					<option value="default.asp">Go To A Page Fast!</option>
+					<option value="newcustomerinfo.asp">New Customer</option>
+<!--				<option value="pricelist.asp">Listing Prices</option> -->
+					<option value="client">Modify Your Listing</option>
+					<option value="search.asp?c=s">Find For Sale</option>
+					<option value="search.asp?c=r">Find Rental</option>
+					<option value="search.asp?c=t">Find Timeshare</option>
+					<option value="search.asp?c=v">Find Vacation Home</option>
+					<option value="search.asp?c=c">Find Corp. Rental</option>
+					<option value="contacts.asp">Contact us</option>
+					<option value="testimonials.asp">Testimonials</option>
+					<option value="calculator.asp">Mortgage Calculator</option>
+					<option value="resources.asp">Real Estate Resources</option>
+					<option value="listing.asp?id=5555001.0001">View Sample Listing</option>
+					<option value="contacts.asp">Get Support</option>
+				</select>
+				<input type="image" id="btnGoSubmit" name="GoSubmit" class="clsAlignMiddle" src="images/go_blue.gif" alt="Go!" onClick="doNavigate(this)">
+
+				</form>
+			</div>
+			<div id="divGoSectionLeft" class="clsGoSectionLeft"><img src="images/logo.gif" width="311" height="40" border="0" alt="Property2000.com"></div>
+			<div class="clsDividerDark"><span></span></div>
+		</div>
+
+		<div id="divBannerSection" class="clsBannerSection">
+			<iframe id="ifmFrame1" name="ifmFrame1" class="clsBanner" frameborder="0" scrolling="no" src="bannerads.aspx" tabindex="-1"></iframe>
+			<div class="clsDividerDark"><span></span></div>
+		</div>
+
+		<div id="divHeadingSection">
+			<div class="clsHeadingSectionHome"><!-- InstanceBeginEditable name="HeadingSection" --><span style="color:#FF0000">W</span>elcome to Property2000.com!<!-- InstanceEndEditable --></div>
+			<div class="clsDividerCoral"><span></span></div>
+		</div>
+
+		<div id="divMainSection" class="clsMainSection" style="width:615px;padding-left:8px">
+			<!-- InstanceBeginEditable name="MainSection" -->
+
+			<div style="margin-bottom:10px" align="center"><font face="Arial, Helvetica" color="#0000FF" size="2"><b>Are you serious about selling <!--or renting--> your property?<br>If you are, you've come to the right place!</b></font></div>
+
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			  <tr valign="top"> 
+				<td width="296">
+
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Property2000 Savings ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><img src="images/newani.gif" width="39" height="21" border="0" alt="">&nbsp;<font face="Verdana, Arial, Helvetica" size="2"><b>Free Listings.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Free photo scanning.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>This site receives over 7000 hits per day, </b></font><font face="Verdana, Arial, Helvetica" size="2"><b><a href="newcustomerinfo.asp" onmouseover="return $APP.doStatus('New Customer Sign-up')">list</a> your property today.</b></font><br></li>
+					  </ul>
+					</td>
+				  </tr>
+				  <tr>
+					<td width="100%"><img src="images/spacepix.gif" width="1" height="10" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Sample Listing ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b><a href="listing.asp?id=5555001.0001" onmouseover="return $APP.doStatus('Sample Listing')">Click here</a> to view a sample property listing.</b></font><br></li>
+					  </ul>
+					</td>
+				  </tr>
+				  <tr>
+					<td width="100%"><img src="images/spacepix.gif" width="1" height="10" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Example Newspaper Ad ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Enhance your Newspaper &amp; Magazine advertisements with Property2000's Internet address.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Below is an example of how you can use our Internet address in a newspaper ad.</b></font><br></li>
+					  </ul>
+
+					  <table bgcolor="#FFCC99" width="90%" border="1" cellspacing="0" cellpadding="0" align="center">
+						<tr>
+						  <td> 
+							<p><font face="Arial, Helvetica" size="1"><b>For sale</b>: 5 bed. 4 bath new home on 3/4 acre wooded lot, located in private setting. 4000 sq.ft. Must see! For more information and photos go to: <b><font color="#0000FF">www.property2000.com</font></b> Listing ID: <b><font color="#0000FF">1999123.4567</font></b> or call 444-4444 for details.</font></p>
+							<p align="center"><font face="Arial, Helvetica" size="1">(Use your listing ID instead of <b><font color="#0000FF">1999123.4567</font></b>)</font></p>
+						  </td>
+						</tr>
+					  </table>
+
+					</td>
+				  </tr>
+				</table>
+
+				</td>
+				<td><img src="images/spacepix.gif" width="7" height="1" border="0" alt=""></td>
+				<td bgcolor="#000000"><img src="images/spacepix.gif" width="1" height="1" border="0" alt=""></td>
+				<td><img src="images/spacepix.gif" width="7" height="1" border="0" alt=""></td>
+				<td width="296">
+
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Search by Listing ID ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+
+					  <form name="form1" method="post" action="listing.asp" onSubmit="return formValidation(this)">
+						<ul>
+						  <li><font face="Verdana, Arial, Helvetica" size="2"><b>Enter Listing ID:</b></font><br>
+							<font face="Arial, Helvetica" size="1"><b> 
+							<input class="clsSmallText" type="text" id="txtListingId" name="ListingId" size="12" maxlength="12">
+							<input class="clsSmallButton" type="submit" id="btnSubmit" name="Submit" value="Get Listing">
+							<br>example: 1999001.0551</b></font><br></li>
+						</ul>
+					  </form>
+
+					</td>
+				  </tr>
+				  <tr>
+					<td width="100%"><img src="images/spacepix.gif" width="1" height="10" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Property2000 Features ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>World wide exposure for your property.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Easy online ad <a href="newcustomerinfo.asp" onmouseover="return $APP.doStatus('New Customer Sign-up')">registration</a>.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>All ads post instantly.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Edit or cancel your ad at any time 24 hours a day 7 days a week.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Each ad consists of a full page property description including 5 pictures.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Servicing the United States and Canada.</b></font><br></li>
+					  </ul>
+					</td>
+				  </tr>
+				  <tr>
+					<td width="100%"><img src="images/spacepix.gif" width="1" height="10" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Our Customers ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Owners.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Realtors.</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b><a href="testimonials.asp" onmouseover="return $APP.doStatus('Testimonials')">What are they saying about us?</a></b></font><br></li>
+					  </ul>
+					</td>
+				  </tr>
+				  <tr>
+					<td width="100%"><img src="images/spacepix.gif" width="1" height="10" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%"><font face="Verdana, Arial, Helvetica" size="2" color="#0000FF"><b>Our Property ...</b></font></td>
+				  </tr>
+				  <tr>
+					<td width="100%" bgcolor="#FF0000"><img src="images/spacepix.gif" width="1" height="2" border="0" alt=""></td>
+				  </tr>
+				  <tr>
+					<td width="100%">
+					  <ul>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>For Sale</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Rentals</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Timeshares</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Vacation Rentals</b></font><br></li>
+						<li><font face="Verdana, Arial, Helvetica" size="2"><b>Commercial, Land, etc...</b></font><br></li>
+					  </ul>
+					</td>
+				  </tr>
+				</table>
+
+				</td>
+			  </tr>
+			</table>
+
+			<table style="margin-top:5px;margin-bottom:10px" border="0" width="100%" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%" bgcolor="#000000"><img src="images/spacepix.gif" width="1" height="1" border="0" alt=""></td>
+			  </tr>
+			</table>
+
+			<!-- InstanceEndEditable -->
+		</div>
+
+			<div id="divFooterSection" class="clsPageSizeInner clsFooterSection" style="width:615px">
+				<div class="clsDividerCoral"><span></span></div>
+				<div class="clsCopyright" style="padding-left:8px">
+<script language="JavaScript" type="text/javascript"><!--
+("Copyright &copy; 1997-" + $JWP.Date.newDate().getFullYear() + " Property2000 Corporation").write();
+// --></script>
+				</div>
+			</div>
+
+	</td>
+</tr>
+</table>
+
+</body>
+<!-- InstanceEnd --></html>

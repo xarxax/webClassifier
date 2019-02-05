@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inside Cambridge Who's Who - Personal Branding Through Global Networking</title>
+<meta name="description" content="Cambridge" />
+<meta name="abstract" content="Cambridge" />
+<meta name="keywords" content="cambridge, networking" />
+<meta name="revisit-after" content="30 days" />
+<meta name="robots" content="follow,index" />
+<link rel="stylesheet" type="text/css" href="/v2/css/global.css" />
+<script language="javascript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="/v2/js/jquery.jcarousel.min.js"></script>
+<script language="javascript" type="text/javascript" src="/v2/js/jquery.cycle.all.min.js"></script>
+<script language="javascript" type="text/javascript" src="/v2/js/jquery.marquee.min.js"></script>
+<script language="javascript" type="text/javascript">
+$(function(){
+    $('input').keydown(function(e){
+        if (e.keyCode == 13) {
+            $(this).parents('form').submit();
+            return false;
+        }
+    });
+});
+
+$(function () {
+	//Homepage slideshow
+	$('#jquery').cycle({
+		fx: 'fade',
+		pager:  '#slide-nav',
+		slideExpr: 'div.slide',
+		timeout: 5000,
+		speed: 1000
+	});
+	
+	$('#slide-nav').append('<a id="pause" href="/v2/#"><img rel="pause" src="/v2/images/buttonPause.png" /></a>');
+	$('#pause').click(
+		function() { 
+			$('#jquery').cycle('toggle');
+			if( $('#pause span img').attr('rel') == 'pause' )
+				$('#pause span').html('<img rel="play" src="/v2/images/buttonPlay.png" />');
+			else
+				$('#pause span').html('<img rel="pause" src="/v2/images/buttonPause.png" />');
+		}
+	);
+	$('#slide-nav a').wrapInner('<span class="slideNumber"/>');
+
+	//Homepage carousels
+	if( $('#scroll-callouts li').length > 4 )
+	{
+		$('#scroll-callouts').jcarousel({
+			vertical: true,
+			visible: 4,
+			scroll: 4,
+			itemFallbackDimension: '70px',
+			buttonNextHTML: '<img src="/v2/images/scroll-down.gif" width="284" height="15" alt="Scroll Down" />',
+			buttonPrevHTML: '<img src="/v2/images/scroll-up.gif" width="284" height="15" alt="Scroll Up" />',
+		});
+	}
+	if ( $('#scroll-callouts-2 li').length > 3 )
+	{
+		$('#scroll-callouts-2').jcarousel({
+			vertical: true,
+			visible: 3,
+			scroll: 3,
+			itemFallbackDimension: '70px',
+			buttonNextHTML: '<img src="/v2/images/scroll-down-2.gif" width="240" height="15" alt="Scroll Down" />',
+			buttonPrevHTML: '<img src="/v2/images/scroll-up-2.gif" width="240" height="15" alt="Scroll Up" />',
+		});
+	}
+	//Homepage marquee
+	$('#ticker').liScroll({travelocity: 0.05});
+});
+</script>
+<script language="javascript" type="text/javascript">
+//IE fix for nav
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("nav");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+</script>
+<script language="javascript" type="text/javascript">
+<!--
+// JavaScript Document
+function set_cookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function get_cookie(name) {
+    var name_eq = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(name_eq) == 0) return c.substring(name_eq.length,c.length);
+    }
+    return null;
+}
+
+
+if(get_cookie("page_size") != null){   
+    document.write('<style>');
+    document.write('body{');
+    document.write('font-size:'+ get_cookie("page_size") + 'em');
+    document.write('}');
+    document.write('</style>')
+}else{
+    document.write('<style>');
+    document.write('body{');
+    document.write('font-size: .83em');
+    document.write('}');
+    document.write('</style>')   
+}
+    
+
+-->
+</script>
+
+<!-- Per Cww's Request, adding Google Analytics to the CWW website [03-22-12] -->
+<script language="javascript" type="text/javascript" src="/v2/js/ganalytics.js"></script>
+</head>
+<body id="home" class="home">
+<div id="container">
+<div id="branding">
+	<a href="/index.htm"><h1 id="logo">Cambridge Who's Who</h1></a>
+	<img id="tagline" src="/v2/images/tagline.png" height="18" width="355" alt="Personal Branding Through Global Networking" />
+	
+   <!-- <div id="search-box"><input class="box" name="search" type="text" /><INPUT TYPE="image" src="/v2/images/button-search.gif" BORDER="0"></div>-->
+    <ul id="nav">
+    		<li><a id="nav-home" href="/v2/index.htm"><span>Home</span></a></li>
+    		<li><a id="nav-inside" href="/v2/inside-cambridge-mission-statement.htm"><span>Inside Cambride Who's Who</span></a>
+				<ul class="subnav-start">
+					<!--<li><a href="/v2/inside-cambridge-mission-statement.htm">About Us</a></li>-->
+					<li><a href="/v2/inside-cambridge-who-we-are.htm">Who We Are</a></li>
+					<li><a href="/v2/inside-cambridge-what-we-do.htm">What We Do</a></li>
+             
+					<!--<li><a href="/v2/inside-cambridge-company-history.asp">Company History</a></li>-->
+					<li><a href="/v2/inside-cambridge-our-team.htm">Our Team</a></li>
+                    <!--<li><a href="/v2/inside-cambridge-donald-trump-jr.htm">Meet Donald Trump Jr.</a></li>-->
+				</ul>
+			</li>
+    		<li><a id="nav-members" href="/v2/members-public-member-search.aspx?BrowseLetter=A"><span>Members</span></a>
+				<ul>
+					<li><a href="/v2/members-public-member-search.aspx?BrowseLetter=A">Public EPE/VIP Member Directory</a></li>
+					<li><a href="/v2/members-hall-of-fame.htm">Hall of Fame</a></li>
+                    <li><a href="/v2/members-elite.htm">Elite Americans</a></li>
+					<li><a href="/v2/members-industry-experts.htm">Industry Experts</a></li>
+					<li><a href="/v2/members-epe.htm">EPEs of the Year</a></li>
+					<li><a href="/v2/members-vip.htm">VIP Members</a></li>
+					<!--<li><a href="/v2/members-video-interviews.asp">Video Interviews</a></li>
+					<li><a href="/v2/members-featured-website.asp">Featured Website</a></li>-->
+				</ul>
+			</li>
+    		<li><a id="nav-why" href="/v2/member-benefits-jquery.htm"><span>Why Join?</span></a>
+				<ul>
+					<li><a href="/v2/member-benefits-jquery.htm">Member Benefits</a></li>
+					<li><a href="/v2/why-affiliate-benefits.htm">Partner Benefits</a></li>
+					<li><a href="/v2/cambridge-whos-who-on-web.htm">CWW on the Web</a></li>
+					<!--<li><a href="/v2/why-success-stories.asp">Success Stories</a></li>-->
+					<li><a href="/v2/testimonials.htm">Testimonials</a></li>
+					<li><a href="http://www.memberapp.mycww.org/" target="_blank">Apply Now!</a></li>
+				</ul>
+			</li>
+            <li><a id="nav-faqs" href="/v2/faqs-general.htm"><span>Faqs</span></a>
+				<ul>
+					<li><a href="/v2/faqs-general.htm">General</a></li>
+                    <li><a href="/v2/faqs-candidate.htm">Candidates</a></li>
+					<li><a href="/v2/faqs-members.htm">Members</a></li>
+
+					<li><a href="/v2/faqs-careers.htm">Career</a></li>
+				</ul>
+			</li>
+            <li><a id="nav-press" href="/v2/press-room.htm"><span>Press Room</span></a>
+				<ul>
+					<li><a href="/v2/press-announcements.htm">Announcements</a></li>
+					<li><a href="/v2/press-corporate.htm">Corporate News &amp; Events</a></li>
+					<li><a href="/v2/press-member-news.htm">Member News</a></li>
+					<!--<li><a href="/v2/press-whos-who.asp">Who's Who in the News</a></li>-->
+					<li><a href="/v2/press-corporate-giving.htm">Corporate Giving</a></li>
+				</ul>
+			</li>
+            <li><a id="nav-careers" href="/v2/careers-benefits.htm"><span>Careers</span></a>
+				<ul>
+					<li><a href="/v2/careers-benefits.htm">Employee Benefits</a></li>
+					<li><a href="/v2/careers-employee-testimonials.htm">Employee Testimonials</a></li>
+					<li><a href="/v2/careers-opportunities.htm">Career Opportunities</a></li>
+                    <li><a href="/v2/faqs-careers.htm">Career FAQs</a></li>
+				</ul>
+			</li>
+            <li><a id="nav-contact" href="/v2/contact.htm"><span>Contact</span></a>
+				<ul class="subnav-end">
+					<li><a href="/v2/contact-email.aspx">E-mail Us</a></li>
+				</ul>
+			</li>
+    </ul>
+</div>  
+
+<!-- Header End -->
+
+<!-- Body Start -->
+
+<div id="content">
+		<div id="jquery">
+			<div id="slide-nav"></div>
+    		<!--<div class="slide">
+				<a href="http://cww.videobio.com/donaldtrumpjr/" target="_blank"><img src="/v2/images/index-slide1.jpg" width="660" height="320" alt="Donald Trump Jr. Discusses the Importance of Personal Branding" /></a>
+		    </div>-->
+	   		<div class="slide">
+				<a href="/v2/web-development-program.htm"><img src="/v2/images/index-2.jpg" width="660" height="320" alt="Enhance Your Online Visibility with a Custom Website" /></a>
+		  </div>
+			<!--<div class="slide">
+				<a href="/v2/press-announcement-4.htm"><img src="/v2/images/pro-files-mag-2.jpg" width="660" height="320" alt="Introducing Our Newest Publication" /></a>
+			</div>-->
+		</div>
+        <div id="scroll-callouts">
+		<ul id="scroll-callouts-contents">
+			<li><a href="/v2/members-public-member-search.aspx?BrowseLetter=A"><img class="scroll-img" src="/v2/images/callout-featured.gif" width="284" height="70" alt="Featured Members" /></a></li>
+			<li><a href="/v2/member-benefits-jquery.htm"><img class="scroll-img" src="/v2/images/callout-benefits.gif" width="284" height="70" alt="Member Benefits" /></a></li>
+			<li><a href="http://www.youtube.com/watch?v=Xn5VvpGGNCs." target="_blank"><img class="scroll-img" src="/v2/images/callout-perspectives.jpg" width="284" height="70" alt="Member Perspectives" /></a></li>
+			<!--<li><a href="/v2/cambridge-whos-who-on-web.asp"><img class="scroll-img" src="/v2/images/callout-web.gif" width="284" height="70" alt="Web" /></a></li>-->
+			<!--<li><a href="/v2/#"><img class="scroll-img" src="/v2/images/callout-brand-button.jpg" width="284" height="70" alt="Branding Guide" /></a></li>-->
+			<li><a href="http://www.memberapp.mycww.org/" target="_blank"><img class="scroll-img" src="/v2/images/callout-application.jpg" width="283" height="70" alt="Membership Application" /></a></li>
+			<!--<li><a href="http://cww.videobio.com/donaldtrumpjr/"><img class="scroll-img" src="/v2/images/callout-tour.gif" width="284" height="70" alt="Membership Tour" /></a></li>-->
+			<li><a href="/v2/press-announcements.htm"><img class="scroll-img" src="/v2/images/callout-announcement.jpg" width="284" height="70" alt="Announcements" /></a></li>
+			</li>			
+		</ul>	  
+</div>
+  		<div id="news-ticker">
+        <img src="/v2/images/latest-news.gif" width="130" height="40" alt="Latest news" />
+			<div id="ticker-hold">
+  			<ul id="ticker">
+				<li><span class="date">6.20.2011</span><a href="/v2/press-announcement-3.htm">Details about the Sixth Edition of Top Industry Experts Revealed</a></li>
+            	<li><span class="date">6.06.2011</span><a href="/v2/press-announcement-2.htm" class="sup">Cambridge Who’s Who<sup>&reg;</sup> Releases 15th Edition of Hardcover Registry in June 2011</a></li>
+                <!--<li><span class="date">3.01.2011</span><a href="/v2/press-announcement-5.htm">Leading Networking and Branding Organization Hosts Enlightening Webinar on Résumé Writing Strategies</a></li>-->
+				<li><span class="date">2.21.2011</span><a href="/v2/press-announcement-4.htm" class="sup">Cambridge Who’s Who<sup>&reg;</sup> Launches Pro-Files Magazine<sup>&trade;</sup></a></li>
+				<li>&nbsp;</li>
+          	</ul>
+			</div>
+        </div>
+    <div id="col-a">
+   	  <h2 id="testimonials-home">Testimonials</h2>
+		<div id="scroll-callouts-2">
+			<ul id="scroll-callouts-contents2">
+				<li class="testimonial">
+					<img src="/v2/images/keita-sato-th.jpg" width="146" height="146" />
+			    <p><span class="name">Keita Sato</span><br /><span class="title">Owner, President</span><br /><span class="company">Inc.Hatsuhana of USA, Inc.</span></p>
+					<p><a href="/v2/testimonials.htm#keita">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/silvia-abarrategui-th.jpg" width="146" height="146" />
+			    <p><span class="name">Silvia Abarrategui</span><br /><span class="title">Owner, President</span><br /><span class="company">SEA International Network, Inc.</span></p>
+					<p><a href="/v2/testimonials.htm#silvia">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/nelson-moody-th.jpg" width="146" height="146" />
+			    <p><span class="name">Nelson Moody</span><br /><span class="title">Published Author</span><br /><span class="company">The Johns Hopkins Hospital; Self-Employed</span></p>
+					<p><a href="/v2/testimonials.htm#nelson">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/kip-ingram.jpg" width="146" height="146" />
+          <p><span class="name">Kip M. Ingram</span><br /><span class="title">General Manager</span><br /><span class="company">HAGEMEYER NORTH AMERICA</span></p>
+					<p><a href="/v2/testimonials.htm#kip">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/lisa-parker.jpg"  width="146" height="146" />
+					<p><span class="name">Lisa G. Parker</span>
+                    <br /><span class="title">Professional</span><br /><span class="company">PARKER-CPRW</span></p>
+					<p><a href="/v2/testimonials.htm#lisa">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/okezie.jpg" width="145" height="146" />
+					<p><span class="name">Chi-Chi Okezie</span>
+                    <br /><span class="title">Owner, Producer</span><br /><span class="company">SIMPLEnetworking, LLC</span></p>
+					<p><a href="/v2/testimonials.htm#chichi">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/xiomara.jpg" width="145" height="142" />
+					<p><span class="name">Xiomara Carrillo</span>
+                    <br /><span class="title">Account Executive</span><br /><span class="company">MATRIX EMPLOYEE LEASING, INC.</span></p>
+					<p><a href="/v2/testimonials.htm#xiomara">View Testimonial</a></p>
+				</li>
+				<li class="testimonial">
+					<img src="/v2/images/jo-demarco.jpg" width="146" height="145" />
+					<p><span class="name">Jo DeMarco</span>
+                    <br /><span class="title">President, Chief Executive Officer</span><br /><span class="company">CONTESSA CARES</span></p>
+					<p><a href="/v2/testimonials.htm#jo">View Testimonial</a></p>
+				</li>
+			</ul>
+		</div>
+    </div>
+    <div id="col-b">
+    	<div class="box-bkgd"><h2 id="spotlight-home">Product Spotlight</h2>
+            	<img src="/v2/images/img-multimedia.gif" width="121" height="121" alt="Multimedia" />
+                <p>Drive online traffic to your profile, press release, website or video through the <strong>Internet Exposure program</strong> — we will customize your search engine marketing campaign for optimal visibility.</p>
+                <p align="right"><a href="/v2/member-benefits-jquery.htm" class="link">Read More</a></p>
+        </div>
+        <div class="box-bkgd">
+       	  <h2 id="partner-home">Partner Benefits</h2>
+            	<img src="/v2/images/img-partners_2.png" width="123" alt="Multimedia" />
+                <p>Cambridge Who’s Who<sup>&reg;</sup> offers several affiliate benefits to thank members for their participation in membership. Find out how you can take advantage of these special offers or how your company can participate.</p>
+                <p align="right"><a href="/v2/why-affiliate-benefits.htm" class="link">Read More</a></p>
+      </div>
+  </div>
+  <div id="col-c">
+  <div id="login">
+    <h2 id="home-login">Member Info</h2>
+    <form method="post" action="/v2/login.aspx">
+  <table width="279" height="52" border="0">
+    <tr>
+      <td width="80" height="24" align="right" valign="top"><img src="/v2/images/username-home.gif" width="60" height="16" alt="Username" /></td>
+      <td width="189" colspan="2" valign="top"><input name="Username" type="text" class="field" /></td>
+    </tr>
+    <tr>
+      <td height="22" align="right" valign="top"><img class="tag" src="/v2/images/password-home.gif" width="60" height="16" alt="Username" /></td>
+      <td colspan="2" valign="top"><input name="Password" type="password" class="password-field" autocomplete="off" /></td>
+    </tr>
+  </table>
+  <p><a href="mailto:techsupport@cambridgeregistry.com" target="_blank" class="forgot" >Forgot your login info?</a>
+    <input type="image" class="login" src="/v2/images/button-login.gif" border="0" />
+  </p>
+  </form>
+  <p class="note">Not a member? Learn more about our benefits and apply for membership today!</p>
+ </div>
+  <div id="search">
+    <h2 id="home-search">Browse Our EPE/VIP Members</h2>
+<img src="/v2/images/img-search.jpg" alt="Search" width="100" height="138" class="left-home" />
+    <p>View our featured EPE of the Year and VIP  member profiles via the Public Member Directory.</p>
+    <p align="right"><a href="/v2/members-public-member-search.aspx?BrowseLetter=A">
+    <input type="image" class="button" src="/v2/images/button-view.gif" border="0" />
+    </a></p>
+  </div>
+
+  </div>
+</div>
+<br clear="all" />
+</div>
+<div id="bottom">
+  <div id="footer">
+  <p><a href="http://www.cambridgeregistry.com/MainSite/Legal/Disclaimer.aspx" target="_blank">copyright &copy; 2011 Cambridge Who&#39;s Who</a> |<a href="/v2/terms-conditions.htm"> Terms and Conditions</a> |  <a href="/v2/privacy-policy.htm">Privacy Policy</a> <!--|  <a href="/v2/#">Site Map</a> -->|  <a href="http://www.cambridgeregistry.com/Remove/Default.aspx" target="_blank">Remove from Mailing List</a><br />&copy; Cambridge Who&#39;s Who 2007-2010. Cambridge Who&#39;s Who is not associated or affiliated with any other Who&#39;s Who organization or publication.</p>
+<a href="http://twitter.com/#!/cambridgewhos" target="_blank"><img src="/v2/images/icon-twitter.gif" width="24" height="24" alt="Twitter" /></a><a href="http://www.facebook.com/cambridgewhoswho?sk=wall" target="_blank"><img src="/v2/images/icon-facebook.gif" width="24" height="24" alt="Facebook" /></a><a href="http://www.linkedin.com/groups/Cambridge-Whos-Who-Official-Group-3711200?trk=myg_ugrp_ovr" target="_blank"><img src="/v2/images/icon-linkedin.png" width="24" height="24" alt="Linked-In" /></a><a href="http://www.youtube.com/cambridgewhoswho" target="_blank"><img src="/v2/images/icon-youtube.gif" width="24" height="24" alt="Youtube" /></a>
+</div>
+<br clear="all" />
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,59 @@
+# If the Joomla site is installed within a folder such as at
+# e.g. www.example.com/joomla/ the robots.txt file MUST be
+# moved to the site root at e.g. www.example.com/robots.txt
+# AND the joomla folder name MUST be prefixed to the disallowed
+# path, e.g. the Disallow rule for the /administrator/ folder
+# MUST be changed to read Disallow: /joomla/administrator/
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/orig.html
+#
+# For syntax checking, see:
+# http://www.sxw.org.uk/computing/robots/check.html
+
+User-agent: *
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /components/
+#Disallow: /images/
+Disallow: /includes/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+#Disallow: /templates/
+Disallow: /tmp/
+Allow: media/k2/assets/css/k2.fonts.css?v2.7.1
+Allow: templates/venus/css/k2.css?v2.7.1
+Allow: templates/venus/css/bootstrap.min.css
+Allow: templates/venus/css/bootstrap-responsive.min.css
+Allow: plugins/system/helix/css/font-awesome.css
+Allow: plugins/system/helix/css/mobile-menu.css
+Allow: templates/venus/css/flat-ui.css
+Allow: templates/venus/css/animate.css
+Allow: templates/venus/css/animate.min.css
+Allow: templates/venus/css/custom.css
+Allow: templates/venus/css/template.css
+Allow: templates/venus/css/presets/preset1.css
+Allow: media/com_uniterevolution/assets/rs-plugin/css/settings.css
+Allow: media/com_uniterevolution/assets/rs-plugin/css/captions.css
+Allow: media/jui/js/jquery.min.js
+Allow: media/jui/js/jquery-noconflict.js
+Allow: media/jui/js/jquery-migrate.min.js
+Allow: media/system/js/mootools-core.js
+Allow: media/system/js/core.js
+Allow: media/system/js/mootools-more.js
+Allow: plugins/system/helix/js/jquery-noconflict.js
+Allow: media/jui/js/bootstrap.min.js
+Allow: plugins/system/helix/js/modernizr-2.6.2.min.js
+Allow: plugins/system/helix/js/helix.core.js
+Allow: plugins/system/helix/js/menu.js
+Allow: templates/venus/js/fixed-menu.js
+Allow: templates/venus/js/animation.js
+Allow: templates/venus/js/scripts.js
+Allow: media/com_uniterevolution/assets/rs-plugin/js/jquery.themepunch.plugins.min.js
+Allow: media/com_uniterevolution/assets/rs-plugin/js/jquery.themepunch.revolution.min.js

@@ -1,0 +1,376 @@
+<HTML>
+<HEAD> 
+<title>Blogerzoom - SEO Services, Blog Directory, Article Directory, Free Classified Ads, Link Exchange</title>
+<meta name="Description" content="Indian SEO company, cheapest advertising, providing internet marketing and search engine optimization services." />
+<meta name="google-site-verification" content="CJxktn9bsrYpCCxTUST3L5NNyrejB1JUOC6gjujsc7A" />
+<meta name="alexaVerifyID" content="o8y-gbBP5RxACJ4uwFWpz6mBjME" />
+<meta name="Keywords" content="SEO, SEO Services india, Search Engine Optimization, blog directory, search optimization, classified ads, SEO india, article submission, website promotion, banner advertising, top ranking, make money online, top ten ranking, SEO company, SEO consultant" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18017302-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+/***********************************************
+* Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+* Copyright 2002-2007 by Sharon Paine
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+var dom = (document.getElementById) ? true : false;
+var ns5 = (!document.all && dom || window.opera) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ie4 && !ie5 && !dom) ? true : false;
+
+var origWidth, origHeight;
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 160;
+var offX= 18;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#DDECFF"; 
+var tipBorderColor= "#808080";
+var tipBorderWidth= 3;
+var tipBorderStyle= "ridge";
+var tipPadding= 6;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltipmessages[0] = new Array('','Title - </br> Description - ',"#DDECFF");
+messages[0] = new Array('','<b>Title</b> - Dreams Are For Living</br> <b>Description</b> - To empower and assist people to realize their dreams/life purpose through music, the arts and all forms of creative expression.',"#DDECFF");
+messages[1] = new Array('','<b>Title</b> - Pinstripe Magazine</br> <b>Description</b> - Online mens lifestyle magazine.',"#DDECFF");
+messages[2] = new Array('','<b>Title</b> - Being Health For Wealth</br> <b>Description</b> - Healthy living leads productivity and wealthy.',"#DDECFF");
+messages[3] = new Array('','<b>Title</b> - 1000promobiles</br> <b>Description</b> - The promotion of the BB 3G networks and more.',"#DDECFF");
+messages[4] = new Array('','<b>Title</b> - Shy on Foot</br> <b>Description</b> - This blog is a compilation of stories whilst my travel in the Philippines and abroad.',"#DDECFF");
+messages[5] = new Array('','<b>Title</b> - Adventure Australia</br> <b>Description</b> - The Australian technological, political, social and cultural environment. Current activities and happenings in Australia and the world, Blog includes funny animal photos.',"#DDECFF");
+messages[6] = new Array('','<b>Title</b> - DR3ALHOLIC</br> <b>Description</b> - Darryl Virgiawan Official Blog - Health, photography, Social Network, Finance, Quotes, Everything.',"#DDECFF");
+messages[7] = new Array('','<b>Title</b> - Sexy Women Photos</br> <b>Description</b> - A blog about sexy celeb women photos: actresses, singers, glamour, supermodels, TV stars, centerfolds, gravure and AV idols. Non-nude pictures, wallpapers of women in dresses, swimsuits, bikinis, monokinis, thongs, lingerie, stockings.',"#DDECFF");
+messages[8] = new Array('','<b>Title</b> - Toutim-isa</br> <b>Description</b> - A blog where you can find my artistic paintings, illustrations and photographs.',"#DDECFF");
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img"';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
+	mouseX = (ns5)? evt.pageX: window.event.clientX + standardbody.scrollLeft;
+	mouseY = (ns5)? evt.pageY: window.event.clientY + standardbody.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body
+		mouseX = (ns5)? evt.pageX: window.event.clientX + standardbody.scrollLeft;
+		mouseY = (ns5)? evt.pageY: window.event.clientY + standardbody.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns5)? window.innerWidth-20+window.pageXOffset: standardbody.clientWidth+standardbody.scrollLeft;
+	var winHt = (ns5)? window.innerHeight-20+window.pageYOffset: standardbody.clientHeight+standardbody.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = mouseX-(tpWd+offX)+"px";
+	else tipcss.left = mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = winHt-(tpHt+offY)+"px";
+	else tipcss.top = mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+document.write('<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>')
+
+</script><script type="text/javascript">
+<!--
+function bookmark(url, sitename)
+{
+  ns="Netscape and FireFox users, use CTRL+D to bookmark this site."
+  if ((navigator.appName=='Microsoft Internet Explorer') &&
+    (parseInt(navigator.appVersion)>=4))
+  {
+    window.external.AddFavorite(url, sitename);
+  }
+  else if (navigator.appName=='Netscape')
+  {
+    alert(ns);
+  }
+}
+//-->
+</script><style type="text/css">
+<!-- 
+.links { font-family: calibri; font-size: 16px; color: #EBEBEB;text-decoration: none}
+.links:hover {font-family: calibri; font-size: 16px; color: #FF8B22; text-decoration: none}
+-->
+</style><style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head><body alink="#000000" bgcolor="#000000" link="#000000" text="#000000" vlink="#000000">
+<tr>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <td valign="top" width="30%">
+        <div style="padding-left: 20px; padding-top: 12px;">
+          <img src="http://www.blogerzoom.com/zoom.jpg" alt="blogerzoom" title="" border="0"></a> </div>        </td>
+        <td valign="top" width="100%">
+        </div><div align="right"></div></p>
+        </div>        </td>
+        <td valign="top" width="30%">
+        <div align="right">
+        <!-- Beginning of Client Side Image Map -->
+<img src="http://www.blogerzoom.com/peelout.jpg" alt="peelout" title="" USEMAP="#peelout" BORDER=0>
+<map name="peelout">
+  <area shape="rect" coords="51,9,100,47" href="http://www.blogerzoom.com/blogdirectory" target="_blank">
+</map>
+<!-- End of Client Side Image Map -->
+		</div>        </td>
+      </tr>
+    </table></td>
+	</tbody>
+	<div id="procontainer_brown">
+	<div id="pronav_brown">
+		<ul>
+			<li><a href="http://www.blogerzoom.com" title="home"><span>HOME</span></a></li>
+			<li><a href="http://www.blogerzoom.com/aboutus.html" title="aboutus" class="current"><span>ABOUT US</span></a></li>
+			<li><a href="http://www.blogerzoom.com/blog"target="_blank" title="blog"><span>BLOG</span></a></li>
+			<li><a href="http://www.blogerzoom.com/registration.html" title="join now"><span>JOIN NOW</span></a></li>
+            <li><a href="http://www.blogerzoom.com/review.html" title="client review"><span>Buy Pixel&nbsp;<img src="new.gif" /></span></a></li>
+			<li><a href="http://www.blogerzoom.com/contact.html" title="contact us"><span>Contact</span></a></li>
+		</ul>
+	</div>
+</div>
+<div align="center"><div><table bgcolor="#000000" border="0" cellpadding="2" cellspacing="3" width="100%">
+<tbody><tr valign="top">
+<td height="110">
+<div><div align="center"></br><img src="http://www.blogerzoom.com/submit.jpg" width="82" height="85" alt="blog submission" title="blog submission" border="0" align="" /></div>
+</td>
+<td height="110">
+<div><div align="center"></br><img src="http://www.blogerzoom.com/community.jpg" width="91" height="85" alt="blog directory" title="blog directory" border="0" align="" /></div>
+</td>
+<td height="110">
+<div><div align="center"><img src="http://www.blogerzoom.com/article.jpg" alt="article directory" title="article directory" border="0" align="" /></div>
+</td>
+</br>
+<td rowspan=4 width=295>
+</br></br>
+<div align="center"><font size="3" face="snap ITC" color="#FF8040">SPONSORS</font></div>
+<div align="center"><a href="http://www.blogerzoom.com/badgeadvt.html" target="_blank"><img src="http://www.blogerzoom.com/buyads.jpg" title="" border="0" align="" /></a>
+</div></br>
+<div align="center">
+</div>
+</font>
+</tr>
+<tr valign="top">
+<td height="34">
+<div><div align="center"><a href="http://www.blogerzoom.com/registration.html" target="_parent" class="links">Blog/Site Submit</a></div></div>
+</td>
+<td height="34">
+<div><div align="center"><a href="http://www.blogerzoom.com/blogdirectory" target="_blank" class="links">Blog Directory</a></div></div>
+</td>
+<td height="34">
+<div><div align="center"><a href="http://www.blogerzoom.com" class="links">Article Directory (upcoming)</a></div></div>
+</td>
+</tr>
+<td height="110">
+<div><div align="center"></br><img src="http://www.blogerzoom.com/classifieds.jpg" width="82" height="90" alt="classified ads" title="classified" border="0" align="" /></div>
+</td>
+<td height="110">
+<div><div align="center"></br><img src="http://www.blogerzoom.com/traffic.jpg" width="78" height="87" alt="traffic" title="traffic booster" border="0" align="" /></div>
+</td><td height="110">
+<div><div align="center"></br><img src="http://www.blogerzoom.com/networking.jpg" width="79" height="87" alt="networking" title="connectivity" border="0" align="" /></div></div>
+</div></td>
+</tr>
+<tr valign="top">
+<td height="34">
+<div><div align="center"><a href="http://www.blogerzoom.com/classified/" target="_blank" class="links">Classified Directory</a></div></div>
+</td>
+<td height="34">
+<div><a href="http://www.blogerzoom.com/traffic.html" target="_parent" class="links"></a><div align="center"><a href="http://www.blogerzoom.com/traffic.html" target="_parent" class="links">Traffic Booster</a></div>
+</td>
+<td height="34">
+<div><a href="http://www.blogerzoom.com/connectivity/connect1.html" target="_blank" class="links"></a><div align="center"><a href="http://www.blogerzoom.com/connectivity/connect1.html" target="_blank" class="links">Connectivity</a></div>
+</td>
+</tr>
+</tbody></table>
+</div></div>
+<br>
+<br>
+
+<div align="center"><div align="center"><img src="http://www.blogerzoom.com/spot.jpg" alt="blogspotlight" title="" border="0" align="" /></div>
+</p>
+</div>
+<div></div></div><table bgcolor="#000000" border="0" cellpadding="5" cellspacing="5" width="100%"></table><table bgcolor="#000000" border="0" bordercolor="#ffffff" cellpadding="5" cellspacing="5" width="100%">
+<tbody><tr valign="top"><td>
+<td>
+<div><div align="center"><a href="http://being-health4wealth.blogspot.com" target="_blank" onmouseover="doTooltip(event,2)" onmouseout="hideTip()"><img src="http://www.blogerzoom.com/health.jpg" alt="health" title="" align="" border="0"></a></div></div>
+<a href="http://being-health4wealth.blogspot.com/" target="_blank" onmouseover="doTooltip(event,2)" onmouseout="hideTip()">
+</a></td>
+<td>
+<div><div align="center"><a href="http://shyonfoot.blogspot.com" target="_blank" onmouseover="doTooltip(event,4)" onmouseout="hideTip()"><img src="http://www.blogerzoom.com/shy.jpg" alt="shyonfoot" title="" align="" border="0"></a></div></div>
+<a href="http://shyonfoot.blogspot.com" target="_blank" onmouseover="doTooltip(event,4)" onmouseout="hideTip()">
+</a></td>
+<td>
+<div><div align="center"><a href="http://toutim-isa.blogspot.fr" target="_blank" onmouseover="doTooltip(event,8)" onmouseout="hideTip()"><img src="http://www.blogerzoom.com/isa.jpg" alt="isa" title="" align="" border="0"></a></div></div>
+<a href="http://toutim-isa.blogspot.fr" target="_blank" onmouseover="doTooltip(event,8)" onmouseout="hideTip()">
+</a></td>
+</tr>
+</tbody></table>
+</br></br>
+<font size=2 color="#000000" face="Arial">
+<div><div align="center"><table width="85%" border=0 cellpadding=2 bordercolor="#ffffff" cellspacing=2 bgcolor="#000000">
+<tr valign=top>
+<td><div style="font-family: 'Century Gothic'; font-size: 22px;" align="right">
+        <span style="color: rgb(255, 131, 0);"><u><div align="center">Our Networks</div></u></span></div>
+<br />
+</td>
+<td><div style="font-family: 'Century Gothic'; font-size: 22px;" align="right">
+        <span style="color: rgb(65, 155, 224);"><u><div align="center">Testimonials</div></u></span></div>
+<br />
+</td>
+</tr>
+<tr valign=top>
+<td><div align="center"><iframe src="http://www.blogerzoom.com/network.html" width=150 height=170 marginwidth=0 marginheight=0 name="badge" frameborder=no scrolling=no></iframe></div><br />
+</td>
+<td><div align="center"><iframe src="http://www.blogerzoom.com/test.html" width=250 height=210 marginwidth=0 marginheight=0 name="badge" frameborder=no scrolling=no></iframe></div><br />
+</td>
+<td></br><div align="center"><a href="http://www.blogerzoom.com/freejoinnow.html" target="_blank"><img src="http://www.blogerzoom.com/joinnow.png" width="150" height="108" alt="join now" title="" border="0" align="" /></a></div><br />
+</td>
+</tr>
+</table></div>
+</div>
+</font> 
+</br>
+
+<table class="footerContainer" <table width="100%" border=0 cellpadding=5 cellspacing=0 bgcolor="#000000">
+<div class="footer">
+					 <font size="2" face="tahoma, arial" color="#FFFFFF">&copy; 2009 - 2019 Blogerzoom.com All Right Reserved</font>
+
+ | <a href="http://www.blogerzoom.com/privacy.html"><font size="2" face="Tahoma">Privacy</font></a> | <a href="http://www.blogerzoom.com/disclaimer.html"><font size="2" face="Tahoma">Disclaimer</font></a> |
+						<br /> &nbsp;<font size="2" face="Book Antiqua, arial" color="#FFFFFF">Powered by <a href="http://www.blogerzoom.com"> Blogerzoom.com</font></a>&nbsp;&nbsp;|&nbsp<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="http://www.AmericasLoanSource.com" target="_blank">AmericasLoanSource</font></a>&nbsp;|&nbsp;<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="http://fastcommercialcapital.com" target="_blank">FastCommercialCapital</font></a>&nbsp;|&nbsp;<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="https://getfast.cash" target="_blank">GetFast.cash</font></a>&nbsp;|&nbsp<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="http://www.GetTravelPlace.com" target="_blank">GetTravelPlace</font></a>&nbsp;|&nbsp;<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="http://www.WebSeoPlace.com" target="_blank">WebSeoPlace</font></a>&nbsp;|</br>&nbsp;<font size="2" face="Book Antiqua, arial" color="#FFFFFF"><a href="http://www.TopWatchesPlace.com" target="_blank">TopWatchesPlace</font></a>&nbsp;
+
+</br></br>
+					</div>
+</div>
+</font> 
+</body>
+</html>

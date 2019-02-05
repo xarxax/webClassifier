@@ -1,0 +1,227 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tan Eng Hong</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--font-->
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
+
+
+
+<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+<!-- owl CSS -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper border-top clearfix">
+
+
+<div class="header-wrap">
+<div class="navbar-wrap">
+	<div class="navbar navbar-bg">
+	<div class="logo"><a href="index.html"><img src="images/logo.png" width="187" height="53" /></a>
+	</div><!--logo end-->
+	<div class="nav-wrap">
+	<div id='cssmenu'>
+<ul>
+   <li class='has-sub'><a href='#'>About Us</a>
+      <ul>
+         <li><a href="company-background.html">Company Background</a></li>
+         <li><a href="vision-mission.html">Vision & Mission</a></li>
+<!--
+         <li><a href="achievements.html">Achievements</a></li>
+         <li><a href="corporate-social-responsibility.html">Corporate Social Responsibility</a></li>
+-->
+         <li class='last'><a href="capabilities.html">Capabilities</a></li>
+      </ul>
+   </li>
+   <li class="has-sub"><a href='#'>Products</a>
+      <ul>
+         <li><a href='dotdown.html'>Dot Down</a></li>
+         <li><a href="dotdownjunior.html">Dot Down Junior</a></li>
+         <li><a href='recraft.html'>RECRAFT</a></li>
+         <li><a href='flyingwheel.html'>Flying Wheel</a></li>
+         <li><a href='sealion.html'>Sealion</a></li>
+         <li><a href='decopaper.html'>DECO Paper</a></li>
+         <li class='last'><a href='ebook.html'>e.book</a></li>
+      </ul>
+   </li>
+
+   <li class="has-sub"><a href="#">Careers</a>
+      <ul>
+         <li><a href="Job-Vacancy.html">Job Vacancy</a></li>
+  		 <li class='last'><a href="students-internships.html">Students / Internships</a></li>
+      </ul>
+	</li>
+   <li><a href='news.html'>News & Events</a></li>
+   <li class='last'><a href='contact.html'>Contact Us</a></li>
+</ul>
+</div>
+	</div>
+	<!--<div class="nav-wrap">
+	<ul>
+	<li><a href="#">About Us</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">Careers</a></li>
+	<li><a href="#">News & Events</a></li>
+	<li><a href="#">Contact Us</a></li>
+	</ul></div>-->
+
+</div><!--nav-wrap end-->
+</div><!--navbar-wrap end-->
+<!--book-slider-->
+    <div class="book-slider-wrap">
+    <div class="book-slider">    
+	<div class="book-wrap">
+    <div class="item"><img src="images/book-1.png" width="186" height="200"></div>
+    <div class="item"><img src="images/book-2.png" width="186" height="200"></div>
+    <div class="item"><img src="images/book-3.png" width="186" height="200"></div>
+	</div>
+	</div>
+	</div>
+ <script type="text/javascript">
+$('.book-wrap').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+  </script>
+
+</div>
+<div class="content-wrap content-wrap-bg">
+<div class="brand-list-wrap clearfix">
+	<div class="brand-list clearfix">
+	<ul><li><img src="images/brand-00.jpg" width="80" height="70" /></li>
+	<li><img src="images/brand-01.jpg" width="100" height="70" /></li>
+	<li><img src="images/brand-02.jpg" width="80" height="70" /></li>
+	<li><img src="images/brand-03.jpg" width="110" height="70" /></li>
+	<li><img src="images/brand-04.jpg" width="110" height="70" /></li>
+	<li><img src="images/brand-05.jpg" width="80" height="70" /></li>
+	<li><img src="images/brand-06.jpg" width="68" height="70" /></li>
+	<li><img src="images/brand-07.jpg" width="100" height="70" /></li>
+	<li><img src="images/brand-08.jpg" width="85" height="70" /></li>
+	</ul>
+  </div></div><!--brand-list-wrap end-->
+<div class="content-wrap-inner pd-tb4050 clearfix">
+
+  <div class="content-flow-1-wrap">
+	<h1>Featured Products</h1>
+		<div class="content-flow-1"><div class="flexslider">
+          <ul class="slides">
+            <li> <a href="recraft-spiral-bound.html"><img src="images/fea-banner-1.jpg" /></a>
+  	    		</li>
+  	    		<li> <a href="dotdown-hc-square-book.html"><img src="images/fea-banner-2.jpg" /></a>
+  	    		</li>
+  	    		<li> <a href="flyingwheel-Pad-150s-memo-pad.html"><img src="images/fea-banner-3.jpg" /></a>
+  	    		</li>
+
+          </ul>
+        </div>
+  <!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "fade",
+		slideshowSpeed: 4500,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+
+</div></div>
+
+  <div class="content-flow-2-wrap">
+	<div class="content-flow-2"> <a href="job-vacancy.html"><img src="images/work-1.jpg" width="318" height="105" /></a><a href="#"><img src="images/work-2.jpg" width="318" height="105" /></a></div></div>
+
+  <div class="content-flow-3-wrap">
+	<h1>Our Story</h1>
+	<div class="content-flow-3"><span class="text-wrap"><img src="images/company.jpg" width="458" height="205" /></span>
+	  <p>Tan Eng Hong Paper & Stationery Sdn. Bhd. or in short T.E.H., is a member of Tan Eng Hong Group of Companies. From our humble beginning in 1969, we have grown prominently to become one of the leading paper products manufacturers in Malaysia. With over 200 employees, production facilities of 124,800ft² and 48,400ft² warehouse facilities, T.E.H. has one of the biggest investments in raw materials and machineries. </p>
+<p>Gaining from years of successes, not only have we built a formidable reputation in Malaysia for producing popular brands of paper products and services, our OEM (Original Equipment Manufacturers) and custom-made products are exported to countries such as USA, Ireland, Italy, Greece, Cyprus, the Middle East, West Africa, Singapore and the Pacific Rim. </p>
+<p>In pursue of excellence, we constantly invest into human capital and quality assets to ensure that our clients enjoy unsurpassed quality, competitive pricing and reliable services. </p></div></div>
+</div>
+</div><!--content-wrap end-->
+
+<footer>
+	<div class="footer clearfix">
+	<div class="footer-inner clearfix">
+	<div class="flow1"><img src="images/footer-logo.jpg" width="120" height="40" /></div>
+	<div class="flow2"><h1>About Us</h1>
+		<ul>
+		<li><a href="company-background.html">Company Background</a></li>
+		<li><a href="vision-mission.html">Vision & Mission</a></li>
+		<li><a href="capabilities.html">Capabilities</a></li></ul></div>
+
+	<div class="flow3"><h1>Products</h1>
+		<ul>
+		<li><a href="dotdown.html">Dot.Down</a></li>
+		<li><a href="dotdownjunior.html">Dot.Down Junior</a></li>
+		<li><a href="recraft.html">ReCraft</a></li>
+		<li><a href="#">More Brands</a></li>
+		</ul>
+</div>
+
+	<div class="flow4"><h1>Careers</h1>
+		<ul>
+		<li><a href="job-vacancy.html">Job Vacancy</a></li>
+		<li><a href="students-internships.html">Students / Internship</a></li>
+		</ul></div>
+
+	<div class="flow5"><h1>News & Events</h1>
+		<ul>
+		<li><a href="news.html">News</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="#">Newsletter</a></li>
+		</ul></div>
+
+	<div class="flow6"><h1>Contact Us</h1
+		><ul>
+		<li><a href="contact.html">Location</a></li>
+		<li><a href="contact.html">Enquiry</a></li>
+		</ul></div>
+	</div>
+</div>
+<div class="copyright"><div class="copyright-inner"><p>copyright © 2014 Tan Eng Hong Paper & Stationery Sdn. Bhd. all right reserved.</p></div></div>
+</footer>
+
+</div><!--wrapper end-->
+</body>
+</html>

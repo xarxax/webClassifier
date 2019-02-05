@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="DESCRIPTION" content="" />
+		<meta name="KEYWORDS" content="" />
+		<title>Errors</title>
+		
+		<link href="/css/reset.css"	rel="stylesheet" type="text/css" />
+		<link href="/css/main.css"	rel="stylesheet" type="text/css" />
+		<link href="/css/subpage.css"	rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			function rollOver(target, amnt){
+				  document.getElementById(target).style.backgroundPosition=amnt;
+			}
+			function rollOut(target){
+				  document.getElementById(target).style.backgroundPosition='0';
+			}
+		</script>
+		</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<div id="header">
+					<div onclick="location.href='/'" id="home-link"><a name="top" />&nbsp;</div>
+					<div id="sticker"><a href="/quote"><img src="/img/sticker.png" /></a></div>
+					<div id="note"><span class="black">Welcome.</span></div> 
+				</div>
+				<div id="nav">
+					 <div id="nav-home"><a href="/" onMouseOver="rollOver('nav-home', '-31px')" onMouseOut="rollOut('nav-home')"><img src="/img/spacer.gif" width="31" height="10" alt="book printing home" /></a></div>
+					 <div id="nav-quote"><a href="/quote" onMouseOver="rollOver('nav-quote', '-72px')" onMouseOut="rollOut('nav-quote')"><img src="/img/spacer.gif" width="72" height="10" alt="book printing quote" /></a></div>
+					 <div id="nav-how"><a href="/how-to-print-your-book" onMouseOver="rollOver('nav-how', '-78px')" onMouseOut="rollOut('nav-how')"><img src="/img/spacer.gif" width="78" height="10" alt="book printing how to" /></a></div>
+					 <div id="nav-faq"><a href="/faq" onMouseOver="rollOver('nav-faq', '-20px')" onMouseOut="rollOut('nav-faq')"><img src="/img/spacer.gif" width="20" height="10" alt="frequently asked question" /></a></div>
+					 <div id="nav-blog"><a href="/blog" onMouseOver="rollOver('nav-blog', '-28px')" onMouseOut="rollOut('nav-blog')"><img src="/img/spacer.gif" width="28" height="10" alt="book printing blog" /></a></div>
+					 <div id="nav-about"><a href="/about" onMouseOver="rollOver('nav-about', '-55px')" onMouseOut="rollOut('nav-about')"><img src="/img/spacer.gif" width="55" height="10" alt="about advanced print finishing" /></a></div>
+					 <div id="nav-contact"><a href="/contact" onMouseOver="rollOver('nav-contact', '-69px')" onMouseOut="rollOut('nav-contact')"><img src="/img/spacer.gif" width="69" height="10" alt="contact best book printing" /></a></div>
+					 <div id="nav-login"><a href="/login" onMouseOver="rollOver('nav-login', '-83px')" onMouseOut="rollOut('nav-login')"><img src="/img/spacer.gif" width="83" height="10" alt="login" /></a></div>
+				</div>				
+				<h2>Not Found</h2>
+<p class="error">
+	<strong>Error: </strong>
+	The requested address <strong>'/robots.txt'</strong> was not found on this server.</p>				<div class="clear">&nbsp;</div>		
+			</div>   <!-- main -->
+		</div>       <!-- wrap -->
+		
+		<div id="footers">
+			<div id="footer-nav">
+				<div class="footer-li"><a href="/">Home</a></div>
+				<div class="footer-li"><a href="/quote">Instant Quote</a></div>
+				<div class="footer-li"><a href="/how-to-print-your-book">How to Print</a></div>
+				<div class="footer-li"><a href="/faq">Frequently Asked Questions</a></div>
+				<div class="footer-li"><a href="/blog">Blog</a></div>
+				<div class="footer-li"><a href="/about">About Us</a></div>
+				<div class="footer-li"><a href="/contact">Contact Us</a></div>
+				<div class="footer-last"><a href="/login">Submit Order</a></div>
+			</div>
+			<div class="clear">&nbsp;</div>
+			<div class="copyright">
+				<div class="footer-li"><a href="/prices">Pricing</a></div>
+				<div class="footer-li"><a href="/terms">Terms of Use</a></div>
+				<div class="footer-li"><a href="/privacy">Privacy Policy</a></div>
+				<div class="footer-li"><a href="http://www.advancedpf.com" target="_blank">Copyright &copy; 2018 Advanced Print & Finishing</a></div>
+				<div class="footer-last"><a href="http://www.logicbombmedia.com" target="_blank">Site Designed &amp; Coded by LogicBomb Media</a></div>
+			</div>
+		</div>       <!-- footers -->
+	
+		<!-- Old Tracking Code -->	
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-5646906-1");
+			pageTracker._trackPageview();
+		</script>
+	
+		<!-- New Tracking Code  -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-45705529-1', 'bestbookprinting.com');
+		  ga('send', 'pageview');
+		
+		</script>
+	
+	</body>
+</html>

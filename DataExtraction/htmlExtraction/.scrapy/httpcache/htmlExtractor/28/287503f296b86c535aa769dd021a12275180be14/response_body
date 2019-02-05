@@ -1,0 +1,68 @@
+# Block annoying bots
+User-agent: FatBot
+Disallow: /
+User-agent: FatBot 2.0
+Disallow: /
+User-agent: Yandex
+Disallow: /
+User-agent: Yandex/1.01.001
+Disallow: /
+User-agent: Baiduspider
+Disallow: /
+User-agent: 008
+Disallow: /
+user-agent: AhrefsBot
+Disallow: /
+
+# Crawlers Setup
+User-agent: *
+Crawl-delay: 10
+
+# Allowable Index
+Allow: /*?p=
+
+
+# Directories
+
+
+Disallow: /app/
+Disallow: /downloader/
+Disallow: /errors/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /pkginfo/
+Disallow: /shell/
+Disallow: /var/
+Disallow: /catalogsearch/
+Disallow: /catalog/seo_sitemap/category/
+Disallow: /catalog/seo_sitemap/product/
+
+# Paths (clean URLs)
+Disallow: /index.php/
+Disallow: /catalogsearch/result/
+Disallow: /catalogsearch/result/index/
+Disallow: /catalogsearch/result/index/?*
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /poll/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /tag/
+Disallow: /wishlist/
+
+# Files
+Disallow: /cron.php
+Disallow: /cron.sh
+Disallow: /error_log
+Disallow: /install.php
+Disallow: /LICENSE.html
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /STATUS.txt
+
+# Website Sitemap
+Sitemap: http://www.image2output.com/sitemap.xml

@@ -1,0 +1,168 @@
+<!doctype html>
+<html ng-app="aliCle">
+<head>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-signin-client_id" content="619982556842-jmsllpc7amqe8jbk3n0btjgjt21r2tlk.apps.googleusercontent.com">
+	<meta name="fragment" content="!">
+	<meta name="description" content="{{ngMeta.description}}" />
+	<title ng-bind="ngMeta.title"></title>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<link ng-if="ngMeta.canonical" rel="canonical" href="https://www.ali-cle.org/course/{{ngMeta.canonical}}" />
+	<!-- Google Tag Manager -->
+
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+		originalLocation: document.location.protocol + '//' + document.location.hostname + document.location.pathname + document.location.search
+	});
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TDH328X');</script>
+	<!-- End Google Tag Manager -->
+	<meta name="msvalidate.01" content="D6FAF4E77AD9190ACC36D2165AFC1461" /> 
+	<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4069463"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg">
+</head>
+<body class="home-2">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDH328X"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="fb-root"></div>
+	<script>
+	if(document.addEventListener){
+		document.addEventListener("DOMContentLoaded", function(){
+			// Handler when the DOM is fully loaded
+
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1317891868269131',
+					cookie     : true,
+					xfbml      : true,
+					version    : 'v2.8'
+				});
+				FB.AppEvents.logPageView();
+			};
+
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		});
+	}
+	else{
+		console.log('There is an issue with IE8.');
+	}
+	</script>
+	<script type="text/javascript">
+		var _elqQ = _elqQ || [];
+		var eloquaReferrer = document.location.protocol + '//' + document.location.hostname + document.location.pathname + document.location.search;
+		_elqQ.push(['elqSetSiteId', '90815893']);
+		_elqQ.push(['elqTrackPageView', eloquaReferrer, eloquaReferrer]);
+
+		(function () {
+		function async_load()
+		{ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//img04.en25.com/i/elqCfg.min.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }
+		async_load();
+		})();
+	</script>
+	<header><div ui-view="header"></div></header>
+	<div ui-view="container"></div>
+	<footer ui-view="footer"></footer>
+</body>
+<script defer src="js/libs/jquery-1.12.4.min.js"></script>
+<!-- new -->
+<script defer src="js/libs/modernizr-2.8.3.min.js"></script>
+<script src="js/libs/angular.min.js"></script>
+<script defer src="js/libs/angular-ui-router.min.js"></script>
+<script defer src="js/libs/stateEvents.js"></script>
+<script src="js/libs/angular-animate.min.js"></script>
+<script defer src="js/libs/bootstrap.min.js"></script>
+<script defer src="js/libs/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script defer src="js/libs/angular-bootstrap-multiselect.js"></script>
+<script defer src="js/libs/counter.js"></script>
+<script defer src="js/libs/angular-base64.js"></script>
+<script defer src="js/libs/angular-filter.min.js"></script>
+<!-- new -->
+<script defer src="js/libs/jquery.meanmenu.min.js"></script>
+<script defer src="js/libs/jquery.bootstrap-responsive-tabs.min.js"></script>
+<script defer src="js/libs/jquery.themepunch.tools.min.js"></script>
+<script defer src="js/libs/jquery.themepunch.revolution.min.js"></script>
+<script defer src="js/libs/jquery.themepunch.enablelog.js"></script>
+<script defer src="js/libs/imageMapResizer.min.js"></script>
+<script defer src="js/libs/angular-cache-buster.js"></script>
+<script defer src="js/libs/ngClickCopy.js"></script>
+<script defer src="js/libs/re-tree.js"></script>
+<script defer src="js/libs/ng-device-detector.js"></script>
+<script defer src="js/libs/ngMeta.min.js"></script>
+<!--[if IE]>
+<script defer src="js/libs/classList.min.js"></script>
+<script defer src="js/libs/querySelector.polyfill.js"></script>
+<![endif]-->
+<script id="bundle-js" defer src="dist/js/app.min.js?v=f6bpb6xxvjl"></script>
+
+<script defer src="js/libs/main.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<!--<link rel="stylesheet" href="css/font-awesome.css">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/v4-shims.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- new styles start here -->
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/bootstrap-slider.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/meanmenu.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap-responsive-tabs.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,800,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,300,300italic,500italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="css/settings.css">
+<script type="text/ng-template" id="uib/template/modalTemplate.html">
+	<div class="modal-header">
+		<h3 class="modal-title" id="modal-title">{{$ctrl.content.header}}</h3>
+	</div>
+	<!--
+	<div class="modal-body" id="modal-body" ng-bind-html="$ctrl.message.message">
+
+</div>
+-->
+<div class="modal-body" id="modal-body">
+	<div ng-repeat="item in $ctrl.content.messages">
+		<div ng-bind-html="item.message"></div>
+	</div>
+</div>
+<div class="modal-footer">
+	<small>Don't forget you can always contact our <a ui-sref="app.customerservice" href="/customerservice">Customer Service</a> team for help with any issue.</small>
+	<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Okay</button>
+</div>
+</script>
+<script type="text/ng-template" id="uib/template/notifyTemplate.html">
+	<div class="modal-header"><h3>{{$ctrl.title}}</h3></div>
+	<div class="modal-body">
+		<div class="form-group" ng-show="$ctrl.sent == false">
+			<label>Enter your email address:</label>
+			<span class="input-group">
+				<input name="notifyEmail" type="email" class="form-control notifyform" placeholder="Your email address" ng-model="$ctrl.email" required ng-keyup="$event.keyCode == 13 ? $ctrl.sendNotify() : null"><button class="btn btn-primary" ng-click="$ctrl.sendNotify()">Sign Up</button>
+			</span>
+		</div>
+		<div ng-show="$ctrl.sent == true">A reminder has been set for this course's online product.</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Close</button>
+	</div>
+</script>
+<script defer src="js/init.js"></script>
+</html>

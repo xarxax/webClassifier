@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<title>Digital Print, Packaging, and Document Management | DPS Magazine</title>
+		<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=3' />
+<meta name='dcterms.audience' content='Global' />
+
+<!-- All in One SEO Pack 2.11 by Michael Torbert of Semper Fi Web Design[53,60] -->
+<meta name="description"  content="Digital Print, Packaging, and Document Management | DPS Magazine" />
+
+<link rel="canonical" href="http://www.dpsmagazine.com/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="DPS Magazine &raquo; Feed" href="http://www.dpsmagazine.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="DPS Magazine &raquo; Comments Feed" href="http://www.dpsmagazine.com/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="DPS Magazine &raquo; iCal Feed" href="http://www.dpsmagazine.com/events/?ical=1" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.4.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.4.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-6489375-4';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-6489375-4', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.dpsmagazine.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='http://www.dpsmagazine.com/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='st-font-custom-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700' type='text/css' media='all' />
+<link rel='stylesheet' id='st-shortcodes-css-css'  href='http://www.dpsmagazine.com/wp-content/themes/Truemag/assets/css/shortcodes.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='http://www.dpsmagazine.com/wp-content/plugins/stkit/components/lightbox/assets/css/prettyPhoto.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='st-style-css'  href='http://www.dpsmagazine.com/wp-content/themes/Truemag-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='http://www.dpsmagazine.com/wp-content/plugins/stkit/assets/plugins/mediaelement/mediaelementplayer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css'  href='http://www.dpsmagazine.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15' type='text/css' media='all' />
+<link rel='stylesheet' id='st-custom-css'  href='http://www.dpsmagazine.com/wp-content/uploads/truemag_custom.css' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"[]","home_url":"http:\/\/www.dpsmagazine.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.4.2'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pf = {"spam":{"label":"I'm human!","value":"ea885d7e12"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/pirate-forms/public/js/custom-spam.js?ver=5.0.3'></script>
+<link rel='https://api.w.org/' href='http://www.dpsmagazine.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.dpsmagazine.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.dpsmagazine.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.3" />
+<link rel='shortlink' href='http://www.dpsmagazine.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.dpsmagazine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.dpsmagazine.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.dpsmagazine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.dpsmagazine.com%2F&#038;format=xml" />
+
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.dpsmagazine.com/?wordfence_lh=1&hid=7E27DAB45BD628CAA982820211E6B579');
+</script><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://www.dpsmagazine.com"><link rel="https://theeventscalendar.com/" href="http://www.dpsmagazine.com/wp-json/tribe/events/v1/" /><link rel='Shortcut Icon' href='http://www.dpsmagazine.com/wp-content/uploads/2014/12/favicon.ico' type='image/x-icon' />
+<!--[if IE 8 ]><div id="ie8-detect"></div><![endif]-->
+<!--[if IE 9 ]><div id="ie9-detect"></div><![endif]-->
+	</head>
+
+	<body class="home page-template page-template-template-frontpage page-template-template-frontpage-php page page-id-1152 font-st tribe-no-js chrome">
+
+		<div id="layout">
+		
+			<div id="header">
+
+				<div id="header-layout">
+
+					<div id="posts-featured">
+												<div class="clear"><!-- --></div>
+					</div>
+
+					<div id="header-holder">
+
+						<div id="menu" class="div-as-table ">
+							<div>
+								<div>
+
+									<div id="logo" class="div-as-table">
+										<div>
+											<div>
+												<h2><a href="http://www.dpsmagazine.com"><img src="http://www.dpsmagazine.com/wp-content/uploads/2017/08/dps_largelogo_Cropped2.png" alt="Truemag"/></a></h2>											</div>
+										</div>
+									</div><!-- #logo -->
+
+									<span id="menu-select"></span>
+									<div id="menu-box" class="div-as-table"><div><div><nav><ul class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a  href="#">Subscribe</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/new-subscription/">New Subscription</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/account-updates/">Account Updates</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/customer-service/">Customer Service</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a  href="#">News &#038; Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="http://www.dpsmagazine.com/category/news/">News</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a  href="http://www.dpsmagazine.com/events/">Events</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a  href="#">Advertise</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/media-kit/">Media Kit</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/reprints/">Reprints</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/contacts/">Contacts</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a  href="#">Editorial</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/the-dps-magazine-podcast/">Podcasts</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="http://www.dpsmagazine.com/category/current-articles/">Current Articles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/dps-magazine-digital-edition-archives/">Digital Editions</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a  href="http://www.dpsmagazine.com/category/enewsletter/">eNewsletter</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/edit-calendar/">Edit Calendar</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a  href="http://www.dpsmagazine.com/contacts/">Contacts</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a  href="#">Buyers Guide</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a  target="_blank" href="http://www.rcpbuyersguide.com/title-3">Search</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a  target="_blank" href="http://rcpbuyersguide.com/login.php?id=3">Vendor Update</a></li>
+</ul>
+</li>
+</ul></nav></div></div></div>
+									<div class="clear"><!-- --></div>
+								</div>
+							</div>
+						</div><!-- #menu -->
+
+						<div class="clear"><!-- --></div>
+
+					</div><!-- #header-holder -->
+
+				</div><!-- #header-layout -->
+
+				<div id="header-layout-2">
+
+					<div id="header-holder-2">
+
+						<div class="icons-social">
+<a id="icon-Twitter" class="tooltip" title="Twitter" href="http://www.dpsmagazine.com/redirect/?https://twitter.com/dps_magazine" target="_blank"><!-- --></a></div>
+						<form action="http://www.dpsmagazine.com/" method="get" role="search" id="search-form-header">
+							<span></span>
+							<input
+								type="text"
+								name="s"
+								value=""
+								placeholder="Search..."
+							/>
+						</form>
+
+						<div class="clear"><!-- --></div>
+
+					</div><!-- #header-holder-2 -->
+
+					<div class="sidebar sidebar-ad-a">
+<div class="widget_text widget widget_custom_html">
+<div class="textwidget custom-html-widget"><div align="center" >
+<!-- DPS Leaderboar-Super Homepage ROS [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc209199 = window.plc209199 || 0;
+document.write('<'+'div id="placement_209199_'+plc209199+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 209199, [970,90], 'placement_209199_'+opt.place, opt); }, opt: { place: plc209199++, keywords: abkw, domain: 'ab149174.adbutler-zino.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+</script>
+	<br/>
+
+<!-- DPS Leaderboar-Super Homepage 2 ROS [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'https://servedbyadbutler.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc324506 = window.plc324506 || 0;
+document.write('<'+'div id="placement_324506_'+plc324506+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 324506, [970,90], 'placement_324506_'+opt.place, opt); }, opt: { place: plc324506++, keywords: abkw, domain: 'servedbyadbutler.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+</script>
+</div></div>
+<div class="clear"><!-- --></div></div>
+</div>
+				</div><!-- #header-layout-2 -->
+
+			</div><!-- #header -->
+
+			<div id="content-parent">
+			
+				<div id="content-layout">
+			<div id="content-holder" class="sidebar-secondary-available sidebar-position-right">
+
+				<div id="content-box">
+
+					<div>
+		
+						<div>
+
+							
+<div class="post-template posts-highlighted"><a href="http://www.dpsmagazine.com/a-round-table-on-labels/" class="post-thumb"  style="background-image: url(http://www.dpsmagazine.com/wp-content/uploads/2019/01/DSC09605-1-574x200.jpg)" data-format="standard">&nbsp;</a><div class="posts-highlighted-details"><div><h1><a href="http://www.dpsmagazine.com/a-round-table-on-labels/">A Round Table on Labels</a></h1><p>The latest advancements in digital label printing target flexible...</p>
+
+				<div class="meta">
+			
+								
+				</div><!-- .meta --></div></div></div>
+<div class="sidebar sidebar-ad-b">
+<div class="widget widget_text">
+			<div class="textwidget"><!-- DPS 468 x 60 Home 1 Banner [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc87071 = window.plc87071 || 0;
+document.write('<div id="placement_87071_'+plc87071+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 87071, [468,60], 'placement_87071_'+opt.place, opt); }, opt: { place: plc87071++, keywords: abkw, domain: 'ab149174.adbutler-zino.com' }});
+</script>
+<BR>
+<!-- DPS 468 x 60  Home 2 [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc130793 = window.plc130793 || 0;
+document.write('<div id="placement_130793_'+plc130793+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 130793, [468,60], 'placement_130793_'+opt.place, opt); }, opt: { place: plc130793++, keywords: abkw, domain: 'ab149174.adbutler-zino.com' }});
+</script></div>
+		
+<div class="clear"><!-- --></div></div>
+
+<div class="widget widget_text">
+			<div class="textwidget">
+</div>
+		
+<div class="clear"><!-- --></div></div>
+</div><div class="post-template post-t4 even">
+
+	<div class="thumb-wrapper"><a href="http://www.dpsmagazine.com/runs-by-the-million/" class="post-thumb post-thumb-standard"  style="background-image: url(http://www.dpsmagazine.com/wp-content/uploads/2019/01/Final_InkjetDrivingPrint_122017-262x76.jpg)" data-format="standard">&nbsp;</a></div>
+<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/runs-by-the-million/">Runs by the Million</a></h3><p>High-volume digital print engines handle monthly duty cycles...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 even">
+
+	<div class="thumb-wrapper"><a href="http://www.dpsmagazine.com/inks-for-inkjet/" class="post-thumb post-thumb-standard"  style="background-image: url(http://www.dpsmagazine.com/wp-content/uploads/2019/01/Oce╠ü-ProStream_img_0061-262x76.jpg)" data-format="standard">&nbsp;</a></div>
+<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/inks-for-inkjet/">Inks for Inkjet</a></h3><p>The adoption of production inkjet continues to grow...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 even">
+
+	<div class="thumb-wrapper"><a href="http://www.dpsmagazine.com/satisfying-direct-mail-with-digital/" class="post-thumb post-thumb-standard"  style="background-image: url(http://www.dpsmagazine.com/wp-content/uploads/2019/01/IMG_3336-262x76.jpg)" data-format="standard">&nbsp;</a></div>
+<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/satisfying-direct-mail-with-digital/">Satisfying Direct Mail with Digital</a></h3><p>Impact, a direct mail marketing provider, began in 1985...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/efficient-management/">Efficient Management</a></h3><p>Managed print services (MPS) help organizations...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/all-encompassing/">All-Encompassing</a></h3><p>Managed print services (MPS) continue to evolve...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/print-goals/">Print Goals</a></h3><p>Depending on the organization’s needs, in-plant print...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/in-state-in-plant/">In State In Plant</a></h3><p>In-plant printing operations are common in a number...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/building-futures/">Building Futures</a></h3><p>Colleges, trade schools, and universities are known for preparing...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/combining-arts-and-print-education/">Combining Arts and Print Education</a></h3><p>Print education programs combine lessons, support services...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/education-and-innovation/">Education and Innovation</a></h3><p>The next generation of print professionals faces new challenges...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div class="post-template post-t4 post-t4-no-thumb even">
+
+	<div><h3 class="post-title post-title-short"><a href="http://www.dpsmagazine.com/year-in-review-2/">Year in Review</a></h3><p>2018 was the year for re-evaluation. Enterprises continue to work...</p></div>
+	<div class="clear"><!-- --></div>
+
+</div><!-- .post-template --><div id="wp-pagenavibox"><div class='wp-pagenavi' role='navigation'>
+<span class='pages'>Page 1 of 227</span><span aria-current='page' class='current'>1</span><a class="page larger" title="Page 2" href="http://www.dpsmagazine.com/page/2/">2</a><a class="page larger" title="Page 3" href="http://www.dpsmagazine.com/page/3/">3</a><a class="page larger" title="Page 4" href="http://www.dpsmagazine.com/page/4/">4</a><a class="page larger" title="Page 5" href="http://www.dpsmagazine.com/page/5/">5</a><span class='extend'>...</span><a class="larger page" title="Page 10" href="http://www.dpsmagazine.com/page/10/">10</a><a class="larger page" title="Page 20" href="http://www.dpsmagazine.com/page/20/">20</a><a class="larger page" title="Page 30" href="http://www.dpsmagazine.com/page/30/">30</a><span class='extend'>...</span><a class="nextpostslink" rel="next" href="http://www.dpsmagazine.com/page/2/">&raquo;</a><a class="last" href="http://www.dpsmagazine.com/page/227/">Last &raquo;</a>
+</div></div>
+							<div class="clear"><!-- --></div>
+
+						</div>
+			
+						<div id="sidebar-secondary"><div class="sidebar">
+<div class="widget widget_nav_menu">
+<h5>Channel Access</h5>
+<div class="menu-channel-access-sponsored-2017-container"><ul id="menu-channel-access-sponsored-2017" class="widget_custom_menu"><li id="menu-item-2790" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2790"><a href="http://www.dpsmagazine.com/category/digital-printing/">Digital Printing</a></li>
+<li id="menu-item-4859" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4859"><a href="http://#"><!-- DPS Channel workflow [async] -->  <script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>  <script type="text/javascript">  var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];  var abkw = window.abkw || '';  var plc211002 = window.plc211002 || 0;  document.write('<'+'div id="placement_211002_'+plc211002+'"></'+'div>');  AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 211002, [180,45], 'placement_211002_'+opt.place, opt); }, opt: { place: plc211002++, keywords: abkw, domain: 'ab149174.adbutler-zino.com', click:'CLICK_MACRO_PLACEHOLDER' }});  </script></a></li>
+<li id="menu-item-2791" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2791"><a href="http://www.dpsmagazine.com/category/doc-strategies/">Doc. Strategies</a></li>
+<li id="menu-item-2792" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2792"><a href="http://www.dpsmagazine.com/category/finishing/">Finishing</a></li>
+<li id="menu-item-2793" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2793"><a href="http://www.dpsmagazine.com/category/mailingfulfillment/">Mailing &#038; Fulfillment</a></li>
+<li id="menu-item-2794" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2794"><a href="http://www.dpsmagazine.com/category/workflow/">Workflow</a></li>
+</ul></div>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget widget_text">
+			<div class="textwidget"><div align=center>
+<!-- DPS 160x600 SkyScraper [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc185216 = window.plc185216 || 0;
+document.write('<'+'div id="placement_185216_'+plc185216+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 185216, [160,600], 'placement_185216_'+opt.place, opt); }, opt: { place: plc185216++, keywords: abkw, domain: 'ab149174.adbutler-zino.com' }});
+</script>
+</div></div>
+		
+<div class="clear"><!-- --></div></div>
+<div class="widget widget-posts widget-posts-recent"><h5>News</h5>
+
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/canon-helps-businesses-stomp-out-security-threats-with-latest-enterprise-solutions/">Canon Helps Businesses Stomp Out Security Threats with Latest Enterprise Solutions</a><div class="widget-posts-excerpt"><p>2.4.19 With organizations honing in on...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="even"><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/canon-u-s-a-launches-oce-arizona-1300-series/">Canon U.S.A. Launches Océ Arizona 1300 Series</a><div class="widget-posts-excerpt"><p>2.4.19 Canon U.S.A., Inc., a leader in digital...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/supply55-releases-reelpro-v2-a-universal-take-up-system-for-wide-format-printers-and-laminators/">Supply55 Releases ReelPRO V2 a Universal Take-Up System for Wide Format Printers and Laminators</a><div class="widget-posts-excerpt"><p>2.1.19 ReelPRO V2 is an affordable...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="even"><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/graymills-introduces-hp-indigo-edition-parts-washer/">Graymills Introduces HP Indigo Edition Parts Washer</a><div class="widget-posts-excerpt"><p>1.31.19 Designed with input from HP...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/roland-dga-introduces-new-dgshape-de-3-rotary-engraver/">Roland DGA Introduces New DGSHAPE DE-3 Rotary Engraver</a><div class="widget-posts-excerpt"><p>1.30.19 Roland DGA, a leading provider...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget widget_nav_menu">
+<div class="menu-news-container"><ul id="menu-news" class="widget_custom_menu"><li id="menu-item-1522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1522"><a href="http://www.dpsmagazine.com/category/news/">All News >></a></li>
+</ul></div>
+<div class="clear"><!-- --></div></div>
+<div class="widget widget-posts widget-posts-recent"><h5>Industry Resources</h5>
+
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/2016-dps-readers-choice-awards/">2016 DPS READERS’ Choice Awards</a><div class="widget-posts-excerpt"><p>We’d like to congratulate this year’s Readers’ Choice Top 30 winners...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="even"><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/hot-products-in-florida/">Hot Products in Florida</a><div class="widget-posts-excerpt"><p>Graph Expo takes place from September 25 to 28, 2016 in the North Hall...</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/label-expo-2016-highlights/">Label Expo 2016 Highlights</a><div class="widget-posts-excerpt"><p>Launched in 1989, Labelexpo Americas is touted as the largest event....</p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="even"><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/a-wider-photo-finish/">A Wider Photo Finish</a><div class="widget-posts-excerpt"><p>With the prevalence of online photo sharing opportunities, printed pictures have impact. </p>
+</div></div><div class="clear"><!-- --></div></div>
+<div><div class="widget-posts-post-box"><a class="widget-posts-title" href="http://www.dpsmagazine.com/at-home-with-labels/">At Home with Labels</a><div class="widget-posts-excerpt"><p>Traditional label converters look to digital to complement their existing flexography capabilities. </p>
+</div></div><div class="clear"><!-- --></div></div>
+<div class="clear"><!-- --></div></div>
+</div></div>
+						<div class="clear"><!-- --></div>
+
+					</div>
+
+				</div><!-- #content-box -->
+
+				<div id="sidebar"><div class="sidebar">
+<div class="widget_text widget widget_custom_html">
+<div class="textwidget custom-html-widget"><div align="center"><img src="http://www.dpsmagazine.com/wp-content/uploads/2018/04/New_DEGraphic_DPS.png" usemap="#Map" width="300" height="111" /><map name="Map"> 
+<area coords="159,33,289,55" shape="rect" href="http://rcppubs.com/3D/DPS/2019/dps01/index.html" target="_blank" />
+
+<area coords="159,57,290,78" shape="rect" href="http://www.dpsmagazine.com/dps-magazine-digital-edition-archives/" target="_self" />
+
+<area coords="159,81,289,103" shape="rect" href="http://www.dpsmagazine.com/new-subscription/" target="“_self”" />
+ </map></div></div>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget_text widget widget_custom_html">
+<div class="textwidget custom-html-widget"><!-- DPS BBU Home 1 Big Box [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc108307 = window.plc108307 || 0;
+document.write('<'+'div id="placement_108307_'+plc108307+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 108307, [300,250], 'placement_108307_'+opt.place, opt); }, opt: { place: plc108307++, keywords: abkw, domain: 'ab149174.adbutler-zino.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+</script></div>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget_text widget widget_custom_html">
+<div class="textwidget custom-html-widget"><!-- DPS BBU HomePage 3 [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab149174.adbutler-zino.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc132535 = window.plc132535 || 0;
+document.write('<'+'div id="placement_132535_'+plc132535+'"></'+'div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(149174, 132535, [300,250], 'placement_132535_'+opt.place, opt); }, opt: { place: plc132535++, keywords: abkw, domain: 'ab149174.adbutler-zino.com', click:'CLICK_MACRO_PLACEHOLDER' }});
+</script></div>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget widget_media_image">
+<a href="http://www.dpsmagazine.com/the-dps-magazine-podcast/"><img width="300" height="250" src="http://www.dpsmagazine.com/wp-content/uploads/2018/06/DPS_300x250_PodcastBBU-300x250.jpg" class="image wp-image-7902  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="http://www.dpsmagazine.com/wp-content/uploads/2018/06/DPS_300x250_PodcastBBU.jpg 300w, http://www.dpsmagazine.com/wp-content/uploads/2018/06/DPS_300x250_PodcastBBU-262x218.jpg 262w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+<div class="clear"><!-- --></div></div>
+
+<div class="widget widget_nav_menu">
+<h5>Quick Links</h5>
+<div class="menu-quick-links-container"><ul id="menu-quick-links" class="widget_custom_menu"><li id="menu-item-1280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1280 has-image"><a target="_blank" href="http://www.rcpmarketlink.com/pub-7"><img width="300" height="59" src="http://www.dpsmagazine.com/wp-content/uploads/2014/10/QuickLinks-DPSDirect1.png" class="wp-image-1457 attachment-full size-full wp-post-image" alt="dpsMagDirect" title="dpsMagDirect" srcset="http://www.dpsmagazine.com/wp-content/uploads/2014/10/QuickLinks-DPSDirect1.png 300w, http://www.dpsmagazine.com/wp-content/uploads/2014/10/QuickLinks-DPSDirect1-262x51.png 262w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li id="menu-item-1496" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1496 has-image"><a href="http://www.dpsmagazine.com/category/target-charts/"><img width="300" height="58" src="http://www.dpsmagazine.com/wp-content/uploads/2014/10/TargetChart_QL.png" class="wp-image-1456 attachment-full size-full wp-post-image" alt="Target Charts" title="Target Charts" srcset="http://www.dpsmagazine.com/wp-content/uploads/2014/10/TargetChart_QL.png 300w, http://www.dpsmagazine.com/wp-content/uploads/2014/10/TargetChart_QL-262x50.png 262w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+</ul></div>
+<div class="clear"><!-- --></div></div>
+</div></div>
+
+				<div class="clear"><!-- --></div>
+
+			</div><!-- #content-holder -->
+	
+		
+				</div><!-- #content-layout -->
+		
+			</div><!-- #content -->
+
+			<div class="clear"><!-- --></div>
+
+			<footer>
+
+				<div id="footer">
+	
+					<div id="footer-layout">
+
+						
+						<div id="footer-holder">
+					
+								
+	
+		<div id="footer-box" class="footer-box-vnone"><div class="clear"><!-- --></div>	
+		</div><!-- end footer-box -->		
+						</div><!-- #footer-holder -->
+	
+						<div id="copyrights-holder">
+	
+							<div id="copyrights-box">
+						
+								<div id="copyrights-company">2019 &copy; Rockport Custom Publishing, LLC</div>	
+								<div class="clear"><!-- --></div>
+	
+							</div><!-- #copyrights-box -->
+						
+						</div><!-- #copyrights-holder -->
+	
+					</div><!-- #footer-layout -->
+	
+				</div><!-- #footer -->
+
+			</footer>
+
+		</div><!-- #layout -->
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<!-- Powered by WPtouch Pro: 4.3.25 --><script type='text/javascript'>/* <![CDATA[ */var stData = new Array();
+			stData[0] = "1c5c6b";
+			stData[1] = "8fcc1d";
+			stData[2] = "http://www.dpsmagazine.com/wp-content/themes/Truemag";
+			stData[3] = "http://www.dpsmagazine.com";
+			stData[4] = "0";
+			stData[5] = "http://www.dpsmagazine.com/wp-content/plugins";
+			stData[6] = "boxed";/* ]]> */</script>
+<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};var tribe_system_info = {"sysinfo_optin_nonce":"b03c78aeda","clipboard_btn_text":"Copy to clipboard","clipboard_copied_text":"System info copied","clipboard_fail_text":"Press \"Cmd + C\" to copy"};/* ]]> */ </script><script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/stkit/assets/js/jquery.stkit.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/stkit/components/shortcodes/assets/js/jquery.shortcodes.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/stkit/components/lightbox/assets/js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/stkit/components/adsense/assets/js/jquery.adsense.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/themes/Truemag/assets/js/jquery.menu.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/themes/Truemag/assets/js/jquery.theme.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/themes/Truemag/framework/assets/js/jquery.st.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-content/plugins/stkit/assets/plugins/mediaelement/mediaelement-and-player.min.js'></script>
+<script type='text/javascript' src='http://www.dpsmagazine.com/wp-includes/js/wp-embed.min.js?ver=5.0.3'></script>
+
+	</body>
+
+</html>

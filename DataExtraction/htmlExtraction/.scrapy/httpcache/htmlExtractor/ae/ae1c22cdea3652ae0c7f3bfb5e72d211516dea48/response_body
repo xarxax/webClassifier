@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="user-scalable=yes, maximum-scale=1.0, minimum-scale=0.25, width=1200">
+<!-- 호환성 보기 제거 메타 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<!-- 사이트 전체 기본 문자셋 지정 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- 캐쉬 사용하지 않음 메타 -->
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+
+<meta name="robots" content="noindex,nofollow">
+
+<!-- 페이스북 관련 메타 -->
+<meta property="og:image" content=""/>
+<meta property="og:title" content="[(주)나노]"/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="website" />
+
+<!-- 트위터 관련 메타 -->
+<meta name="twitter:title"          content="[(주)나노] ">
+<meta name="twitter:image"          content="">
+<meta name="twitter:description"    content="">
+
+<!-- 공통 CSS 파일 -->
+<link rel="stylesheet" href="/GnCommon/css/common.css" type="text/css">
+
+<!-- 쇼핑몰 상품문의 / 사용후기 게시판 -->
+
+<!-- 매장현황 게시판 스킨 -->
+<link rel="stylesheet" href="/GnCommon/css/agency_search_bbs.css" type="text/css">
+
+<!-- 커스텀 페이징 전용 CSS -->
+<link rel="stylesheet" href="/GnCommon/css/custom_paging.css" type="text/css">
+
+<!-- 기존 달력 -->
+<link rel="stylesheet" href="/GnCommon/css/calendar-eraser_lim.css" type="text/css">
+<link rel="stylesheet" href="/GnCommon/css/calender_jquery.css" type="text/css">
+<!-- Gn 솔루션 자바스크립트 function -->
+<script type='text/javascript' src='/GnCommon/js/javascript.js'></script>
+
+<!-- jQuery 1.7 압축버젼 -->
+<script type="text/javascript" src="/GnCommon/js/jquery-1.7.min.js"></script>
+
+<!-- jQuery 애니메이션 (가속,탄력) 효과관련 추가 스크립트 -->
+<script type="text/javascript" src="/GnCommon/js/jquery.easing.min.js"></script>	
+
+<!-- 모바일 카카오톡 링크 관련 -->
+<script type='text/javascript' src='/GnCommon/js/kakao.link.js'></script>
+
+<!-- 기존달력 -->
+<script type='text/javascript' src='/GnCommon/js/calendar-eraser_lim.js'></script>
+
+<!-- new post -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/addr_zip/Uzipjs/new_UzipJs.js"></script><!-- openDaumPostcode -->
+<title>(주)나노 - 홈페이지</title>
+<!-- ------------------------------------------------------------- [ 디자인 CSS 영역 - S ] ------------------------------------------------------------- -->
+
+<link rel="stylesheet" href="/css/style.css" type="text/css">			<!-- 디자인 CSS -->
+<link rel="stylesheet" href="/css/style_ex1.css" type="text/css">		<!-- 추가 CSS -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/css/js/jquery.bxslider.js"></script>
+
+
+<link href="/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script src="/css/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<link rel="stylesheet" href="/css/layer_pop.css" type="text/css">
+
+<!-- ------------------------------------------------------------- [ 디자인 CSS 영역 - E ] ------------------------------------------------------------- -->
+
+
+</head>
+
+<body leftmargin="0" topmargin="0">
+<DIV ID="objContents"><script language="javascript" type="text/javascript">
+isIE=document.all;
+isNN=!document.all&&document.getElementById;
+isN4=document.layers;
+isHot=false;
+
+function ddInit(e){
+	topDog=isIE ? "BODY" : "HTML";
+	whichDog=isIE ? document.all.theLayer : document.getElementById("theLayer");
+	hotDog=isIE ? event.srcElement : e.target;
+	while (hotDog.id!="titleBar"&&hotDog.tagName!=topDog){
+		hotDog=isIE ? hotDog.parentElement : hotDog.parentNode;
+	}
+	if (hotDog.id=="titleBar"){
+		offsetx=isIE ? event.clientX : e.clientX;
+		offsety=isIE ? event.clientY : e.clientY;
+		nowX=parseInt(whichDog.style.left);
+		nowY=parseInt(whichDog.style.top);
+		ddEnabled=true;
+		document.onmousemove=dd;
+	}
+}
+
+function dd(e){
+	if (!ddEnabled) return;
+	whichDog.style.left=isIE ? nowX+event.clientX-offsetx : nowX+e.clientX-offsetx;
+	whichDog.style.top=isIE ? nowY+event.clientY-offsety : nowY+e.clientY-offsety;
+	return false;
+}
+
+function ddN4(whatDog){
+	if (!isN4) return;
+	N4=eval(whatDog);
+	N4.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+	N4.onmousedown=function(e){
+		N4.captureEvents(Event.MOUSEMOVE);
+		N4x=e.x;
+		N4y=e.y;
+	}
+	N4.onmousemove=function(e){
+		if (isHot){
+			N4.moveBy(e.x-N4x,e.y-N4y);
+			return false;
+		}
+	}
+	N4.onmouseup=function(){
+		N4.releaseEvents(Event.MOUSEMOVE);
+	}
+}
+
+function hideMe(){
+	if (isIE||isNN) whichDog.style.visibility="hidden";
+	else if (isN4) document.theLayer.visibility="hide";
+}
+
+function showMe(){
+	if (isIE||isNN) whichDog.style.visibility="visible";
+	else if (isN4) document.theLayer.visibility="show";
+}
+
+document.onmousedown=ddInit;
+document.onmouseup=Function("ddEnabled=false");
+
+function notice_setCookie( name, value, expiredays )
+{
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + '=' + escape( value ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+	return;
+}
+function notice_getCookie( name )
+{
+	var nameOfCookie = name + "=";
+	var x = 0;
+	while ( x <= document.cookie.length )
+	{
+		var y = (x+nameOfCookie.length);
+		if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+				endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+		}
+		x = document.cookie.indexOf( " ", x ) + 1;
+		if ( x == 0 ) break;
+	}
+	return "";
+}
+</script>
+
+
+<div id="wrap">
+	<div id="header">
+		<div class="inner">
+			<h1><a href="/main.php"><img src="/images/main/logo.png" alt="NANO" /></a></h1>
+			<ul id="gnb" class="clfix">
+				<li><a href="/sub01/sub01.php">NANO</a></li>
+				<li><a href="/sub02/sub01.php">SCR 촉매 원료</a></li>
+				<li><a href="/sub03/sub01.php">SCR 촉매</a></li>
+				<li><a href="/sub04/sub01.php">SCR 촉매 재생 / 평가</a></li>
+				<li><a href="/sub05/sub01.php">투자정보</a></li>
+				<li><a href="/sub06/sub01.php">고객센터</a></li>
+			</ul>
+
+			<div class="language_wrap">
+				<div class="select01">
+					<p>LANGUAGE</p>
+				</div>
+				<div class="select02">
+					<ul>
+						<li><a href="/e_main.php">English</a></li>
+						<li><a href="/j_main.php">Japanese</a></li>
+						<li><a href="/c_main.php">Chinese</a></li>
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('.select01 p').click(function(){
+					$('.select02').slideToggle(200)
+				})
+				$('.language_wrap').mouseleave(function(){
+					$('.select02').slideUp(200)
+				})
+			</script>
+		</div>
+	</div>
+
+	<div id="visual_wrap">
+		<script type="text/javascript" src="/css/js/bxslider.js"></script>
+		<link rel="stylesheet" href="/css/main_slider.css" type="text/css">
+		<ul id="slider1">
+			<li style="background:url(/images/main/visual1.jpg) center no-repeat; background-size:cover; height:905px;"></li>
+			<li style="background:url(/images/main/visual2.jpg) center no-repeat; background-size:cover; height:905px;"></li>
+			<li style="background:url(/images/main/visual3.jpg) center no-repeat; background-size:cover; height:905px;"></li>
+		</ul>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#slider1').bxSlider({
+					mode:'fade',
+					autoControls: true
+				});
+			});
+		</script>
+	</div>
+
+
+
+	<div id="footer">
+		
+<div id="navigation" class="clfix">
+	<div class="map_box map_box1">
+		<h2>NANO</h2>
+		<ul class="depth2">
+			<li><a href="/sub01/sub01.php#회사소개" class="link11">회사소개</a></li>
+			<li><a href="/sub01/sub01.php#기술소개" class="link12">기술소개</a></li>
+			<li><a href="/sub01/sub01.php#CEO" class="link13">CEO</a></li>
+			<li><a href="/sub01/sub01.php#경영이념과 경영 목표" class="link14">경영이념 / 목표</a></li>
+			<li><a href="/sub01/sub01.php#연혁" class="link15">연혁</a></li>
+			<li><a href="/sub01/sub01.php#NANO GLOBAL MAP" class="link16">GLOBAL MAP</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>SCR 촉매 원료</h2>
+		<ul class="depth2">
+			<li><a href="/sub02/sub01.php#Catalytic TiO2 Powder" class="link21">촉매 원료 (TiO<sub>2</sub>)</a></li>
+			<li><a href="/sub02/sub01.php#촉매 원료 공장" class="link22">촉매 원료 공장</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>SCR 촉매</h2>
+		<ul class="depth2">
+			<li><a href="/sub03/sub01.php#촉매 (Honeycomb)" class="link31">촉매 (Honeycomb)</a></li>
+			<li><a href="/sub03/sub01.php#촉매 (Plate)" class="link32">촉매 (Plate)</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>SCR 촉매 재생 / 평가</h2>
+		<ul class="depth2">
+			<li><a href="/sub04/sub01.php#촉매 재생 (NANO ART)" class="link41">촉매 재생 (NANO ART)</a></li>
+			<li><a href="/sub04/sub01.php#촉매 평가 (Micro)" class="link42">촉매 평가 (Micro)</a></li>
+			<li><a href="/sub04/sub01.php#촉매 평가 (Bench)" class="link43">촉매 평가 (Bench)</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>투자정보</h2>
+		<ul class="depth2">
+			<li><a href="/sub05/sub01.php">재무정보</a></li>
+			<li><a href="/sub05/sub02.php">공시정보</a></li>
+			<li><a href="/sub05/sub03.php">주가정보</a></li>
+			<li><a href="/sub05/sub04.php">IR센터</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>고객센터</h2>
+		<ul class="depth2">
+			<li><a href="/sub06/sub01.php">공지사항</a></li>
+			<li><a href="/sub06/sub02.php">보도자료</a></li>
+			<li><a href="/sub06/sub03.php">뉴스레터</a></li>
+			<li><a href="/sub06/sub04.php">브로슈어</a></li>
+			<li><a href="/sub06/sub05.php">홍보영상</a></li>
+			<li><a href="/sub06/sub06.php">상담/문의</a></li>
+		</ul>
+	</div>
+	<!-- <div class="map_box">
+		<h2>투자정보</h2>
+		<ul class="depth2">
+			<li><a href="/sub05/sub01.php#재무정보" class="link51">재무정보</a></li>
+			<li><a href="/sub05/sub01.php#공시정보" class="link52">공시정보</a></li>
+			<li><a href="/sub05/sub01.php#주가정보" class="link53">주가정보</a></li>
+			<li><a href="/sub05/sub01.php#IR센터" class="link54">IR센터</a></li>
+		</ul>
+	</div>
+	<div class="map_box">
+		<h2>고객센터</h2>
+		<ul class="depth2">
+			<li><a href="/sub06/sub01.php#공지사항" class="link61">공지사항</a></li>
+			<li><a href="/sub06/sub01.php#보도자료" class="link62">보도자료</a></li>
+			<li><a href="/sub06/sub01.php#뉴스레터" class="link63">뉴스레터</a></li>
+			<li><a href="/sub06/sub01.php#브로슈어" class="link64">브로슈어</a></li>
+			<li><a href="/sub06/sub01.php#갤러리" class="link65">갤러리</a></li>
+			<li><a href="/sub06/sub01.php#상담/문의" class="link65">상담/문의</a></li>
+		</ul>
+	</div> -->
+</div>		<div class="inner">
+			<h2><img src="/images/main/footer_logo.jpg" alt="NANO" /></h2>
+			<div class="copy clfix">
+				<p>Copyright &copy; 2016 NANO All Rights Reserved. </p>
+				<address>
+					<span class="bar">|</span>
+					<span>본사 상주공장 : 경상북도 상주시 청리면 마공리 1188번지 (마공공단로 60)</span>
+					<span class="bar">|</span>
+					<span>TEL : 054-533-5887</span>
+					<span class="bar">|</span>
+					<span>FAX : 054-534-5884</span>
+				</address>
+			</div>
+		</div>
+	</div>
+</div>
+
+</DIV>
+<DIV ID="objSelection">
+</DIV>
+
+
+</body>
+</html>
