@@ -20,7 +20,7 @@ class htmlExtractor(scrapy.Spider):
     }
     def start_requests(self):
         print('beginning crawling')
-        self.driver = webdriver.PhantomJS('/home/guillem/phantomjs')
+        self.driver = webdriver.PhantomJS('/home/xarxax/phantomjs')
         #print(self.parameter)
         if self.parameter[0] == '$':
             self.parameter= self.parameter[1:]
@@ -47,7 +47,7 @@ class htmlExtractor(scrapy.Spider):
         url = response.url
         cat =  str(response.meta['cat'])
         filename = '../dataset/'+str(cat) + '_' + str(url[:70]).replace('/','_')
-        with open(filename,'wb') as f:
+        with open(filename,'w') as f:
             f.write(str(cat)+ '\n')
             f.write(str(url)+ '\n')
-            f.write(response.body)
+            f.write(str(response.body))

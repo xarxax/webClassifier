@@ -2,18 +2,19 @@ import glob,os,sys
 from bs4 import BeautifulSoup
 
 #gets property property from the soup's meta
+#gets property property from the soup's meta
 def getMetaContent(soup,property):
-    cssQuery='meta ["property"="og:' + property+'"]'
+    cssQuery='meta[property="og:' + property+'"]'
+    #print(cssQuery)
     content = soup.select(cssQuery)
     if len(content)>0 and not(content[0].get('content') is None) :
         return content[0].get('content') + '\n'
-    cssQuery='meta ["name"="' + property+'"]'
+    cssQuery='meta[name="' + property+'"]'
     content = soup.select(cssQuery)
     if len(content)>0 and not(content[0].get('content') is None) :
         return content[0].get('content') + '\n'
 
     return ''
-
 #extracts all metas information from the soup'
 #tags obtained from http://ogp.me/
 def addMetas(soup,text):

@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 def getMetaContent(soup, property):
-    cssQuery = 'meta ["property"="og:' + property + '"]'
+    cssQuery = 'meta[property="og:' + property + '"]'
     content = soup.select(cssQuery)
     #print(content)
     if len(content)>0 and not(content[0].get('content') is None) :
