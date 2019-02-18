@@ -25,7 +25,7 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     content = [re.findall(r'[a-zA-Z][A-Z]*[^A-Z]*',x) for x in content]
     content = sum(content,[])
     content = [x.lower() for x in content]
-    print(content)
+    #print(content)
 
     newFilePath = folderPath.replace('datasetFeatures/','tokenizedDataset/',1)
     if not os.path.exists(newFilePath):

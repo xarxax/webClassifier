@@ -1,7 +1,9 @@
 import ast,sys,glob,numpy
-from keras.models import Sequential
+from keras.models import Sequential,load_model
 from keras.layers import Dense
 from collections import Counter
+from keras.utils import plot_model
+import matplotlib.pyplot as plt
 
 def sumColumn(m, column):
     total = 0
@@ -20,6 +22,7 @@ for folderPath in glob.iglob('gloveDataset/*'):
         print('Reached limit established')
         break
     i-=1
+    print(folderPath)
     with open(folderPath +'/text.txt','r') as file:
         word_representation = ast.literal_eval(file.read())
     urlfile= open(folderPath+'/url.txt')
@@ -61,4 +64,27 @@ model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
 
-model.fit(x_train, y_train, epochs=5, batch_size=32)
+history = model.fit(x_train, y_train,validation_split=0.25, epochs=20, batch_size=32)
+model.save('my_model.h5')  # creates a HDF5 file 'my_model.h5'
+
+
+plot_model(model, to_file='model.png')
+
+
+# Plot training & validation accuracy values
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('Model accuracy')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Validation'], loc='upper left')
+plt.show()
+
+# Plot training & validation loss values
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Model loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(['Train', 'Validation'], loc='upper left')
+plt.show()
