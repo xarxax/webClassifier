@@ -1,99 +1,185 @@
-[INFO  - 2019-02-17T10:42:51.358Z] GhostDriver - Main - running on port 47751
-[INFO  - 2019-02-17T10:42:52.298Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-02-17T10:42:52.298Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.customHeaders:  - {}
-[INFO  - 2019-02-17T10:42:52.298Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-02-17T10:42:52.298Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c6cc8880-32a0-11e9-a53c-9d5a5582f561
-[ERROR - 2019-02-17T10:43:19.685Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: TypeError: null is not an object (evaluating 'container.set')
+[INFO  - 2019-02-18T12:06:49.781Z] GhostDriver - Main - running on port 58495
+[INFO  - 2019-02-18T12:06:50.728Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-18T12:06:50.728Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.customHeaders:  - {}
+[INFO  - 2019-02-18T12:06:50.728Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-02-18T12:06:50.728Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ac59b060-3375-11e9-87a4-69dc59dedf49
+[ERROR - 2019-02-18T12:07:04.335Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:43:19.686Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  addControls (http://www.ieinternet.com/templates/dktemp/javascript/md_stylechanger.js:66)
-  (anonymous function) (http://www.ieinternet.com/media/system/js/mootools-core.js:375)
-  forEach (:0)
-  (anonymous function) (http://www.ieinternet.com/media/system/js/mootools-core.js:33)
-  each (http://www.ieinternet.com/media/system/js/mootools-core.js:40)
-  fireEvent (http://www.ieinternet.com/media/system/js/mootools-core.js:374)
-  g (http://www.ieinternet.com/media/system/js/mootools-core.js:514)
+[ERROR - 2019-02-18T12:07:04.335Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:198)
+  footer (http://ndraw.tripod.com/andrey.js:198)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:43:47.750Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: ReferenceError: Can't find variable: user
+[ERROR - 2019-02-18T12:07:04.422Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:43:47.750Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  (anonymous function) (http://www.angelfire.com/amiga/nz/:5)
+[ERROR - 2019-02-18T12:07:04.422Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:100)
+  adsense (http://ndraw.tripod.com/andrey.js:100)
+  define_page (http://ndraw.tripod.com/andrey.js:152)
+  bodytop (http://ndraw.tripod.com/andrey.js:158)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:45:49.057Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: TypeError: undefined is not a function (evaluating '$('#metaslider_4').flexslider')
+[ERROR - 2019-02-18T12:07:04.422Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:45:49.058Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  metaslider_4 (http://aabox.com/:34)
-  timer_metaslider_4 (http://aabox.com/:34)
+[ERROR - 2019-02-18T12:07:04.422Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:00.424Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-02-18T12:07:04.423Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:00.424Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  defineProperty (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:6)
-  value (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:6)
-  t (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:6)
-  o (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:5)
-  r (http://www.axac.com/gdpr/gdprscript.js?buildTime=1550256872&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-02-18T12:07:04.423Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:00.715Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:00.715Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  defineProperty (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:6)
-  value (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:6)
-  t (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:6)
-  o (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:5)
-  r (http://www.axac.com/gdpr/gdprscript.js?buildTime=1545355875&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:23.773Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - msg: SyntaxError: Unexpected token '<'
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-17T10:46:23.773Z] Session [c6cc8880-32a0-11e9-a53c-9d5a5582f561] - page.onError - stack:
-  eval (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  (anonymous function) (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  globalEval (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  text script (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  Pb (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  x (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  b (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  send (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  ajax (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  _evalUrl (https://www.alterlinks.com/css/jquery-1.11.3.min.js:5)
-  domManip (https://www.alterlinks.com/css/jquery-1.11.3.min.js:4)
-  append (https://www.alterlinks.com/css/jquery-1.11.3.min.js:4)
-  loadScript (https://www.alterlinks.com/css/jquery.cookiesdirective.js:85)
-  cookieScripts (http://www.alterlinks.com/:45)
-  cookiesDirective (https://www.alterlinks.com/css/jquery.cookiesdirective.js:53)
-  (anonymous function) (http://www.alterlinks.com/:71)
-  j (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  fireWith (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  ready (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
-  J (https://www.alterlinks.com/css/jquery-1.11.3.min.js:2)
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-17T10:47:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T10:52:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T10:57:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:02:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:07:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:12:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:17:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:22:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:27:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:32:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:37:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:42:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:47:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:52:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T11:57:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-17T12:02:51.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.434Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:214)
+  banner (http://ndraw.tripod.com/andrey.js:214)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.435Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: Type error
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.436Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  write (http://ndraw.tripod.com/andrey.js:198)
+  footer (http://ndraw.tripod.com/andrey.js:198)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.706Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.navigate('#'+document.anchors[i[0]].name)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:04.706Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  jump (http://ndraw.tripod.com/andrey.js:15)
+  onload (http://ndraw.tripod.com/toplist.htm:43)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: Unhandled promise rejection Error: Loading chunk 1 failed.
+(error: https://www.marinetraffic.com/js/1.mtapp.213.77e322.js)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://www.marinetraffic.com/js/41.mtapp.213.77e322.js:12)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: Unhandled promise rejection Error: Loading chunk 1 failed.
+(error: https://www.marinetraffic.com/js/1.mtapp.213.77e322.js)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://www.marinetraffic.com/js/41.mtapp.213.77e322.js:12)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: Unhandled promise rejection Error: Loading chunk 1 failed.
+(error: https://www.marinetraffic.com/js/1.mtapp.213.77e322.js)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:33.548Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://www.marinetraffic.com/js/41.mtapp.213.77e322.js:12)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:43.138Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: undefined is not a function (evaluating 'new Array(nu).fill(null)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:07:43.138Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  CcnG (http://www.webservicex.net/vendor.402d30aef7f0ee73724d.js:1)
+  f (http://www.webservicex.net/runtime.ec2944dd8b20ec099bf3.js:1)
+  zUnb (http://www.webservicex.net/main.4c7e532314efa9c7ef2b.js:1)
+  f (http://www.webservicex.net/runtime.ec2944dd8b20ec099bf3.js:1)
+  (anonymous function) (http://www.webservicex.net/main.4c7e532314efa9c7ef2b.js:1)
+  f (http://www.webservicex.net/runtime.ec2944dd8b20ec099bf3.js:1)
+  t (http://www.webservicex.net/runtime.ec2944dd8b20ec099bf3.js:1)
+  r (http://www.webservicex.net/runtime.ec2944dd8b20ec099bf3.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:26.107Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: GPT synchronous rendering is deprecated and will no longer work after April 2nd, 2019. To prepare for this change, we recommend you stop using the enableSyncRendering API. See https://support.google.com/admanager/answer/9212594 for more details.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:26.107Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  enableSyncRendering (https://securepubads.g.doubleclick.net/gpt/pubads_impl_306.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:26.960Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: QS: SF/DMP Errors :: [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:26.960Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://www.developer.com/java/web/article.php/10935_2207371_1:139)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:33.768Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: ReferenceError: Can't find variable: HTMLMediaElement
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:33.768Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://c.s-microsoft.com/en-us/CMSScripts/script.jsx?k=a99b0db8-bfbf-545e-1fb8-9506657ef0a2_548ab34c-2019-5a40-159d-497aca0a31aa_681f815f-66fa-dd0d-337c-f122e5fbc441_774037fe-99e5-7f85-adaf-a0125cb8b0e6_8b6e2c63-6927-7db5-8e32-7f3333da659e_336509cc-abc8-912e-9a27-74fc22d5e823_d05d04f0-2693-ec0c-01de-808f5ad22891_693cb7af-5841-0401-bf99-98f0d9ba4140_a42d7277-10a1-6935-b06a-ebeeb8815ba6_30431ce6-63a7-f889-dfb0-0df5e1561da0_a96731a9-c05d-ced4-6287-89c900b1ed4f_55f6f45b-01ff-8a72-87f2-aef7adb3c4ae_2d3684a3-f1a0-d1c4-8c01-8f5b22b0884d_bec3e8b8-6afd-a4da-0cb7-e3f0e65d6704_68cd1f40-bbde-ccf7-a8db-fc758f19dad3_3d6f4407-99a7-efc0-9273-2886b50fa823_a1e4ace8-0c06-859f-d19d-204323fc559a_536c15c9-cc5e-aebd-bdc1-6600bbd56208_ea224619-95bb-a165-f9df-9793fc132f20_5cfb8622-944a-a007-0029-1b23875a989f_9d62eb5c-f640-be97-667a-9a2d35a764fa_909bcd34-59dc-06d2-a459-d961ea4eec95_548c8edb-b925-5700-12de-1fbe1e801b5e:24)
+  dispatch (https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js:3)
+  handle (https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js:3)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:48.264Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: GPT synchronous rendering is deprecated and will no longer work after April 2nd, 2019. To prepare for this change, we recommend you stop using the enableSyncRendering API. See https://support.google.com/admanager/answer/9212594 for more details.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:48.264Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  enableSyncRendering (https://securepubads.g.doubleclick.net/gpt/pubads_impl_ob_306.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-18T12:11:49.792Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-18T12:11:49.838Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - msg: TypeError: undefined is not a function (evaluating '$('#olal-container').on')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-18T12:11:49.838Z] Session [ac59b060-3375-11e9-87a4-69dc59dedf49] - page.onError - stack:
+  (anonymous function) (https://www.codeguru.com/hqb2b/js/sl_widget_tracker.js:3)
+  resolveWith (https://www.codeguru.com/hqx/min/?b=js&f=jquery-1.6.2.js,jquery-ui-1.8.16.custom.js,lightbox_me.js,jquery.cookie.js,csshover3.js,tabs.js,newsletter.js,jquery.MetaData.js,jquery.rating.js,rating.js,google-code-prettify/prettify.js,prettyPrint.js,article.js,jquery.validate.js,additional-methods.js,comment.js:76)
+  ready (https://www.codeguru.com/hqx/min/?b=js&f=jquery-1.6.2.js,jquery-ui-1.8.16.custom.js,lightbox_me.js,jquery.cookie.js,csshover3.js,tabs.js,newsletter.js,jquery.MetaData.js,jquery.rating.js,rating.js,google-code-prettify/prettify.js,prettyPrint.js,article.js,jquery.validate.js,additional-methods.js,comment.js:37)
+  DOMContentLoaded (https://www.codeguru.com/hqx/min/?b=js&f=jquery-1.6.2.js,jquery-ui-1.8.16.custom.js,lightbox_me.js,jquery.cookie.js,csshover3.js,tabs.js,newsletter.js,jquery.MetaData.js,jquery.rating.js,rating.js,google-code-prettify/prettify.js,prettyPrint.js,article.js,jquery.validate.js,additional-methods.js,comment.js:67)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-18T12:16:49.784Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-18T12:21:49.784Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-18T12:26:49.784Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
