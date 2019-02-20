@@ -16,7 +16,7 @@ class htmlExtractor(scrapy.Spider):
         'AJAXCRAWL_ENABLED' : True,
         'AUTOTHROTTLE_ENABLED':True,
         'HTTPCACHE_ENABLED': True,
-        'CLOSESPIDER_TIMEOUT': 14400#number of seconds in 4 hours
+        'CLOSESPIDER_TIMEOUT': 7200#number of seconds in 4 hours
     }
     def start_requests(self):
         print('beginning crawling')
