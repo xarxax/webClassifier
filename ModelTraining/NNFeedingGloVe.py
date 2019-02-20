@@ -25,7 +25,7 @@ for folderPath in glob.iglob('gloveDataset/*'):
     print(folderPath)
     with open(folderPath +'/text.txt','r') as file:
         word_representation = ast.literal_eval(file.read())
-    urlfile= open(folderPath+'/url.txt')
+    #urlfile= open(folderPath+'/url.txt')
     #print(folderPath)
     if len(word_representation) == 0:
         #print('empty document')
@@ -63,12 +63,12 @@ model.add(Dense(units=13, activation='softmax'))
 model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
-
+print('Training the model.')
 history = model.fit(x_train, y_train,validation_split=0.25, epochs=20, batch_size=32)
-model.save('my_model.h5')  # creates a HDF5 file 'my_model.h5'
+model.save('gloVe.h5')  # creates a HDF5 file 'my_model.h5'
 
 
-plot_model(model, to_file='model.png')
+plot_model(model, to_file='modelGloVe.png')
 
 
 # Plot training & validation accuracy values
