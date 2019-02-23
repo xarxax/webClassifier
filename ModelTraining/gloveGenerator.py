@@ -19,9 +19,12 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
     content = file.read()
     content =ast.literal_eval(content)
     pathContentVectors+=[[folderPath,content,[]]]
-    if i%10000==0:#more than 10k files make python just stop when opening the big file
+    if i%5000==0:#more than 10k files make python just stop when opening the big file
         #read through the glove txt and save the documents
         #glove represented
+        if total -i < 20001:
+            pathContentVectors=[]
+            continue
         print('Reading the Common Crawl file. Number of documents processed:')
         print(total -i)
         with open("glove.840B.300d.txt") as infile:
@@ -52,6 +55,7 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
             with open(newFilePath+'/text.txt', 'w') as f:
                 f.write(str(vectors))
         #now we remove the documents already processed
+        #should probably close files
         pathContentVectors=[]
 ###
 print('Reading the Common Crawl file. Number of documents processed:')

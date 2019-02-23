@@ -1,156 +1,121 @@
-[INFO  - 2019-02-20T10:33:55.579Z] GhostDriver - Main - running on port 42021
-[INFO  - 2019-02-20T10:33:56.531Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-02-20T10:33:56.532Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.customHeaders:  - {}
-[INFO  - 2019-02-20T10:33:56.532Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-02-20T10:33:56.532Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 06b26120-34fb-11e9-8d23-71f26f594217
-[ERROR - 2019-02-20T10:34:05.112Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: There is no script 'mtag'
+[INFO  - 2019-02-23T11:44:27.889Z] GhostDriver - Main - running on port 51009
+[INFO  - 2019-02-23T11:44:28.841Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-02-23T11:44:28.841Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.customHeaders:  - {}
+[INFO  - 2019-02-23T11:44:28.841Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-02-23T11:44:28.841Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 6096bb70-3760-11e9-9012-f7849455af23
+[ERROR - 2019-02-23T11:44:40.887Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:05.113Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  invoke (https://www.sap.com/etc.clientlibs/sapdx/clientlibs/clientlib-dtm.min.0badbf9d6e38ffdf2314ecae5e888026.js:203)
+[ERROR - 2019-02-23T11:44:40.887Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:05.113Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: There is no script 'liveEngage'
+[ERROR - 2019-02-23T11:44:40.917Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: new_adsAreDisabled
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:05.113Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  inline (https://www.sap.com/etc.clientlibs/sapdx/clientlibs/clientlib-dtm.min.0badbf9d6e38ffdf2314ecae5e888026.js:204)
+[ERROR - 2019-02-23T11:44:40.918Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://ds.gamespy.com/:377)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:22.620Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: ReferenceError: Can't find variable: tfObj
+[ERROR - 2019-02-23T11:44:40.992Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: Error: Page loading stopped
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:22.620Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  global code (http://www.visualtime.com/:214)
+[ERROR - 2019-02-23T11:44:40.992Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  doRedirect (https://g.ign.com/ign.js?cc=&ccp=geocc=&url=http%3A%2F%2Fds.gamespy.com%2F:242)
+  init (https://g.ign.com/ign.js?cc=&ccp=geocc=&url=http%3A%2F%2Fds.gamespy.com%2F:56)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:25.103Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'window.location.pathname.match(/[^\/]+$/)[0]')
+[ERROR - 2019-02-23T11:44:46.829Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'container.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:34:25.103Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  (anonymous function) (http://www.wisetimetable.com/javascripts.js:105)
-  l (http://www.wisetimetable.com/JQuery/jquery-1.8.3.min.js:2)
-  fireWith (http://www.wisetimetable.com/JQuery/jquery-1.8.3.min.js:2)
-  ready (http://www.wisetimetable.com/JQuery/jquery-1.8.3.min.js:2)
-  A (http://www.wisetimetable.com/JQuery/jquery-1.8.3.min.js:2)
+[ERROR - 2019-02-23T11:44:46.829Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  resizeIframe (https://es.ign.com/:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:36:18.392Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: NoModificationAllowedError: DOM Exception 7: An attempt was made to modify an object where modifications are not allowed.
+[ERROR - 2019-02-23T11:44:46.931Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'container.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:36:18.392Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  hns2 (https://js.hsforms.net/forms/v2.js:5)
-  (anonymous function) (https://js.hsforms.net/forms/v2.js:9)
+[ERROR - 2019-02-23T11:44:46.931Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  resizeIframe (https://es.ign.com/:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:12.365Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:46.952Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'container.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:12.365Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (http://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (http://www.archchinese.com/js/mp3.js:419)
-  getInstance (http://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (http://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (http://www.archchinese.com/js/mp3.js:709)
-  isUsable (http://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (http://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (http://www.archchinese.com/js/mp3.js:709)
-  isUsable (http://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (http://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (http://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:46.952Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  resizeIframe (https://es.ign.com/:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:14.018Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:47.086Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'container.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:14.018Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (https://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (https://www.archchinese.com/js/mp3.js:419)
-  getInstance (https://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (https://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:47.087Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  resizeIframe (https://es.ign.com/:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:14.018Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:50.601Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: SyntaxError: Expected an identifier but found 'web' instead
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:14.018Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (https://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (https://www.archchinese.com/js/mp3.js:419)
-  getInstance (https://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (https://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:50.601Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  write (https://es.ign.com/:1)
+  anonymous (:14)
+  sandbox (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  execute (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  _runFallback (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  (anonymous function) (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  u (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  (anonymous function) (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
+  a (https://cdn-cf.justpremium.com/js/v2.7.271/jpxp.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.462Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:51.357Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'top.$('#dfp-atf')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.462Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (https://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (https://www.archchinese.com/js/mp3.js:419)
-  getInstance (https://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (https://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:51.357Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (https://es.ign.com/:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.539Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:51.361Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'top.$('#dfp-footer')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.540Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (https://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (https://www.archchinese.com/js/mp3.js:419)
-  getInstance (https://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (https://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:51.361Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (https://es.ign.com/:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.547Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2019-02-23T11:44:51.365Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'top.$('#dfp-btf')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:38:15.547Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  appendFlashObject (https://www.archchinese.com/js/mp3.js:559)
-  FlashAudioPlayer (https://www.archchinese.com/js/mp3.js:419)
-  getInstance (https://www.archchinese.com/js/mp3.js:397)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:234)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  (anonymous function) (https://www.archchinese.com/js/mp3.js:709)
-  isUsable (https://www.archchinese.com/js/mp3.js:30)
-  initUsablePlugin (https://www.archchinese.com/js/mp3.js:705)
-  AudioPlayer (https://www.archchinese.com/js/mp3.js:691)
+[ERROR - 2019-02-23T11:44:51.365Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (https://es.ign.com/:2)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-20T10:38:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-02-20T10:39:03.788Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - msg: TypeError: null is not an object (evaluating 'gapi.iframes.getContext().getParentIframe().send')
+[ERROR - 2019-02-23T11:44:51.369Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'top.$('#dfp-mtf')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-20T10:39:03.788Z] Session [06b26120-34fb-11e9-8d23-71f26f594217] - page.onError - stack:
-  (anonymous function) (https://www.blogger.com/followers.g?blogID=918578128071412234&colors=Cgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByMwMDAwMDAiByMwZjUwYmIqByNmZmZmZmYyByMwMDAwMDA6ByMwMDAwMDBCByMwZjUwYmJKByM5NDk0OTRSByMwZjUwYmJaC3RyYW5zcGFyZW50&pageSize=21&origin=http%3A%2F%2Fwww.erpgenie.com%2F&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.LDL3x_JdBVc.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMRiBBtr07eIOeY_RnI2x8Chi9xXw%2Fm%3D__features__&bpli=1:134)
+[ERROR - 2019-02-23T11:44:51.370Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (https://es.ign.com/:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:45:08.370Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: user
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:45:08.370Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://www.angelfire.com/ab5/termite/game/N64/index.html:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:00.769Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this video. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:00.769Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  F (https://cdn.escapistmagazine.com/public/videos/js/video.4.12.js?_=1550922359629:23)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:23.005Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'gapi.iframes.getContext().getParentIframe().send')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:23.005Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (https://www.blogger.com/followers.g?blogID=705536812493836035&colors=Cgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByM5OTk5OTkiByM5OWFhZGQqByMwMDAwMDAyByNhYWRkOTk6ByM5OTk5OTlCByM5OWFhZGRKByM3Nzc3NzdSByM5OWFhZGRaC3RyYW5zcGFyZW50&pageSize=21&origin=http%3A%2F%2Fsneshack.blogspot.com%2F&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.asl94_tb7VA.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN75ELuhu85NvUiHlkE-LxL2v2r9w%2Fm%3D__features__&bpli=1:134)
   (anonymous function) (https://apis.google.com/js/plusone.js:18)
   Oa (https://apis.google.com/js/plusone.js:10)
   b (https://apis.google.com/js/plusone.js:18)
@@ -158,32 +123,301 @@
   (anonymous function) (https://apis.google.com/js/plusone.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-20T10:43:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T10:48:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T10:53:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T10:58:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:03:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:08:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:13:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:18:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:23:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:28:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:33:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:38:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:43:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:48:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:53:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T11:58:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:03:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:08:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:13:55.578Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:18:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:23:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:28:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:33:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:38:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:43:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:48:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:53:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T12:58:55.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-20T13:03:55.581Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-23T11:46:25.153Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:25.153Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:25.486Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: $ENV
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:25.486Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:1057)
+  s (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:5954)
+  s (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  e (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:25.676Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: igndrones
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:46:25.676Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://ds.gamespy.com/nintendo-ds/grand-theft-auto-chinatown-wars/:747)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:09.580Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:09.580Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://www.play-asia.com/ads/19-0,000000,none,0,0,0,0,FFFFFF,000000,left,1,0-81-1-49-en-76-5-70-707i-6-2-78-3c-90-16r5-40-5-44-160px.html?url=www%255Bdot%255Dnesworld%255Bdot%255Dcom%255Bobs%255D:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:19.630Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: damAdShow
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:19.630Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  showAd2 (http://js.tiscali.dotandad.com/TiscaliAds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:28.655Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'e[0].pause()')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:28.655Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  init (http://www.dice.se/wp-content/themes/dice/js/app.min.js?ver=1.1:11)
+  init (http://www.dice.se/wp-content/themes/dice/js/app.min.js?ver=1.1:11)
+  (anonymous function) (http://www.dice.se/wp-content/themes/dice/js/app.min.js?ver=1.1:11)
+  j (http://www.dice.se/wp-includes/js/jquery/jquery.js?ver=1.11.1:2)
+  fireWith (http://www.dice.se/wp-includes/js/jquery/jquery.js?ver=1.11.1:2)
+  ready (http://www.dice.se/wp-includes/js/jquery/jquery.js?ver=1.11.1:2)
+  J (http://www.dice.se/wp-includes/js/jquery/jquery.js?ver=1.11.1:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:28.667Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this video. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:28.667Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  D (http://www.dice.se/wp-content/themes/dice/js/app.min.js?ver=1.1:8)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:35.606Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'e.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:35.607Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  blocks_fixbox (undefined:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:58.140Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:48:58.140Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201908.js:16)
+  view (https://stats.wp.com/e-201908.js:15)
+  push (https://stats.wp.com/e-201908.js:13)
+  STQ (https://stats.wp.com/e-201908.js:13)
+  initQueue (https://stats.wp.com/e-201908.js:13)
+  (anonymous function) (https://stats.wp.com/e-201908.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:49:00.436Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: rmShowPop
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:49:00.436Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://screenmania.retrogames.com/index3.html:28)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-23T11:49:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-23T11:50:47.003Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:50:47.003Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:50:47.066Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: igndrones
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:50:47.066Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://ds.gamespy.com/nintendo-ds/asphalt-gt/575109p1.html:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:03.402Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: nedstatbasic
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:03.403Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://www.worlddesign.net/cheats.htm:231)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.365Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.365Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.372Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: $ENV
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.372Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:1057)
+  s (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  (anonymous function) (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:5954)
+  s (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+  e (http://s7.addthis.com/custom/ign/js/addthis_widget.php?v=12:3)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.554Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: igndrones
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:13.554Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://ds.gamespy.com/nintendo-ds/homie-rollerz/:680)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:31.297Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: Error: Can't find variable: Audio
+https://proonto-widget.s3.amazonaws.com/code/app/widget-app.js?v=19_02_03_1509-yywg8z7lv:1:15453
+e@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:45852
+https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:2:10476
+https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:121438
+s@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:968
+v@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:95578
+g@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:66736
+g@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:66753
+g@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:66753
+g@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:66753
+https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:88779
+https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:11745
+$eval@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:2:78289
+$apply@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:2:78520
+https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:11707
+e@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:45852
+d@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:5997
+sc@https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:1:6279
+global code@https://chat.proonto.com/chat/code/app/index.html?c=10001212&u=https%3A%2F%2Fwww.gamegear.be%2F&r=http%3A%2F%2Fwww.gamegear.nl%2F&t=Gamegear.be%20-%20Improve%20your%20game&d=false&noTracking=false&whiteLabelWidget=false&screenType=smartphone&clientId=&cookiesEnabled=true&uniqueId=&clientName=:73:26 undefined
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:31.297Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (https://proonto-widget.s3.amazonaws.com/code/app/lib.min.js?v=19_02_03_1509-yywg8z7lv:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:34.237Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: Modernizr
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:53:34.238Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://open-site.org/js/opensite.js:78)
+  n (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  ready (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  B (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-23T11:54:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-23T11:54:41.343Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'this.get(Hb)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:41.343Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  Fa (http://www.google-analytics.com/ga.js:63)
+  (anonymous function) (http://www.google-analytics.com/ga.js:19)
+  trackPageView (http://ajax.googleapis.com/ajax/libs/dojo/1.3.2/dojox/analytics/Urchin.xd.js:8)
+  GAonLoad (http://ajax.googleapis.com/ajax/libs/dojo/1.3.2/dojox/analytics/Urchin.xd.js:8)
+  _gotGA (http://ajax.googleapis.com/ajax/libs/dojo/1.3.2/dojox/analytics/Urchin.xd.js:8)
+  (anonymous function) (http://ajax.googleapis.com/ajax/libs/dojo/1.3/dojo/dojo.xd.js:16)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:41.673Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: null is not an object (evaluating 'o.className')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:41.674Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  jscss (http://painterlypack.net/common.js:77)
+  jscss (http://painterlypack.net/common.js:67)
+  rewriteForJavascript (http://painterlypack.net/fieldsets.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:46.754Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: user
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:46.754Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://cypher40.tripod.com/nuon-nest/index.html:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:50.824Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: user
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:50.824Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://3stoogesmafia.tripod.com/:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:54.853Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: user
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:54:54.853Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://damiensanchez1.tripod.com/damiengametips/:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:55:25.109Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: user
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:55:25.109Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  (anonymous function) (http://then64zone.tripod.com/home/index.htm:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:06.895Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:06.895Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:07.231Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: igndrones
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:07.231Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://xbox.gamespy.com/xbox/true-crime-streets-of-la/6377p1.html:817)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:09.495Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: _
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:09.495Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  _renderAdCreatives (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:55)
+  renderAds (http://oystatic.ignimgs.com/min/core/js/sugarads-min.js:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:09.537Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: igndrones
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:09.537Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://cube.gamespy.com/gamecube/need-for-speed-underground/6407p1.html:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:34.389Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: rmShowPop
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:56:34.389Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://cheat.retrogames.com/:40)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:58:41.319Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: damAdShow
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:58:41.319Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  showAd2 (http://js.tiscali.dotandad.com/TiscaliAds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-23T11:59:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-02-23T11:59:42.632Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: ReferenceError: Can't find variable: rmShowPop
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T11:59:42.633Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  global code (http://mamerominfo.retrogames.com/:27)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T12:00:22.647Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-02-23T12:00:22.647Z] Session [6096bb70-3760-11e9-9012-f7849455af23] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201908.js:16)
+  view (https://stats.wp.com/e-201908.js:15)
+  push (https://stats.wp.com/e-201908.js:13)
+  STQ (https://stats.wp.com/e-201908.js:13)
+  initQueue (https://stats.wp.com/e-201908.js:13)
+  (anonymous function) (https://stats.wp.com/e-201908.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-02-23T12:04:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:09:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:14:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:19:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:24:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:29:27.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:34:27.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:39:27.893Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:44:27.895Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-02-23T12:49:27.895Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
