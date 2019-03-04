@@ -16,7 +16,7 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     i-=1
     print(folderPath)
     file = open(folderPath +'/text.txt','r')
-    urlfile= open(folderPath+'/url.txt')
+    #urlfile= open(folderPath+'/url.txt')
     content = file.read()
     content =word_tokenize(content)
     #leave only alfanumerical symbols
@@ -33,6 +33,6 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     #write text
     with open(newFilePath+'/text.txt', 'w') as f:
         f.write(str(content))
-    with open(newFilePath + '/url.txt','w') as f:
-        f.write(urlfile.read())
+    #with open(newFilePath + '/url.txt','w') as f:
+    #    f.write(urlfile.read())
     #we must also write the urls
