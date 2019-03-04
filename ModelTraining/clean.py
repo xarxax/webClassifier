@@ -8,7 +8,9 @@ if not os.path.exists('tokenizedDataset'):
 
 
 i = int(sys.argv[1])
-
+total =i
+counter=0
+skipped =0
 for folderPath in glob.iglob('datasetFeatures/*'):
     if i <=0:
         print('Reached limit established')
@@ -16,6 +18,9 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     i-=1
     print(folderPath)
     file = open(folderPath +'/text.txt','r')
+    if os.path.exists(folderPath.replace('datasetFeatures/','tokenizedDataset/',1)):
+        #i+=1#effectively skip the iteration
+        continue
     #urlfile= open(folderPath+'/url.txt')
     content = file.read()
     content =word_tokenize(content)
@@ -29,6 +34,7 @@ for folderPath in glob.iglob('datasetFeatures/*'):
 
     newFilePath = folderPath.replace('datasetFeatures/','tokenizedDataset/',1)
     if not os.path.exists(newFilePath):
+        counter+=1
         os.makedirs(newFilePath)
     #write text
     with open(newFilePath+'/text.txt', 'w') as f:
@@ -36,3 +42,5 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     #with open(newFilePath + '/url.txt','w') as f:
     #    f.write(urlfile.read())
     #we must also write the urls
+print('Total websites:' + str(total-i) )
+print(str(counter) + ' documents generated' )
