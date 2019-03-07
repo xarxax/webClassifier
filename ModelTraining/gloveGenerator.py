@@ -1,6 +1,5 @@
 import glob,os,sys,ast
 
-
 if not os.path.exists('gloveDataset'):
     os.makedirs('gloveDataset')
 
@@ -8,32 +7,38 @@ if not os.path.exists('gloveDataset'):
 i = int(sys.argv[1])
 total = i
 pathContentVectors=[]
+counter = 0
 for folderPath in glob.iglob('tokenizedDataset/*'):
     if i <=0:
         print('Reached limit established')
         break
     i-=1
-    print(folderPath)
+
+    print(folderPath + '\n' + 'folder number:' +  str(counter))
+    counter +=1
+    if os.path.exists(folderPath.replace('tokenizedDataset/','gloveDataset/',1)):
+        i+=1#effectively skip the iteration
+        continue
     file = open(folderPath +'/text.txt','r')
     #urlfile= open(folderPath+'/url.txt')
     content = file.read()
     content =ast.literal_eval(content)
     pathContentVectors+=[[folderPath,content,[]]]
-    if i%5000==0:#more than 10k files make python just stop when opening the big file
+    if (total-i)%5000==0:#more than 10k files make python just stop when opening the big file
         #read through the glove txt and save the documents
         #glove represented
-        if total -i < 25001:
-            pathContentVectors=[]
-            continue
+        print('Length of files to be written:')
+        print(len(pathContentVectors))
         print('Reading the Common Crawl file. Number of documents processed:')
         print(total -i)
+
         with open("glove.840B.300d.txt") as infile:
             #print('begin getting words')
             for line in infile:
                 vector =line.split()
-                word = vector[0]
+                #word = vector[0]
                 #skip weird cases
-                print('word:'+str(word))
+                print('word:'+str(vector[0]))
                 if vector[1] =='name@domain.com':
                     del vector[1]
                 if(len(vector) > 301):
@@ -44,7 +49,7 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
                 #print('adding content:')
                 for _,content,vectors in pathContentVectors:
                     #print('Adding:'+str(word))
-                    if word in content:
+                    if vector[0] in content:
                         vectors += [vector]
         #now we save all the wordVectors
         print('Finished reading the file. Creating now new files')
@@ -58,6 +63,8 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
         #should probably close files
         pathContentVectors=[]
 ###
+print('Length of files to be written:')
+print(len(pathContentVectors))
 print('Reading the Common Crawl file. Number of documents processed:')
 print(total -i)
 with open("glove.840B.300d.txt") as infile:
