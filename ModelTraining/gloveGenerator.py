@@ -14,7 +14,7 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
         break
     i-=1
 
-    print(folderPath + '\n' + 'folder number:' +  str(counter))
+    #print(folderPath + '\n' + 'folder number:' +  str(counter))
     counter +=1
     if os.path.exists(folderPath.replace('tokenizedDataset/','gloveDataset/',1)):
         i+=1#effectively skip the iteration
@@ -63,15 +63,18 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
         #should probably close files
         pathContentVectors=[]
 ###
-print('Length of files to be written:')
+
+print('Final write. Length of files to be written:')
 print(len(pathContentVectors))
 print('Reading the Common Crawl file. Number of documents processed:')
 print(total -i)
 with open("glove.840B.300d.txt") as infile:
     for line in infile:
         vector =line.split()
-        word = vector[0]
+        #word = vector[0]
         #skip weird cases
+        print('word:'+str(vector[0]))
+
         if vector[1] =='name@domain.com':
             del vector[1]
         if(len(vector) > 301):
@@ -80,7 +83,7 @@ with open("glove.840B.300d.txt") as infile:
         #print(len(pathContentVectors))
         #print(pathContentVectors[1])
         for _,content,vectors in pathContentVectors:
-            if word in content:
+            if vector[0] in content:
                 vectors += [vector]
 #now we save all the wordVectors
 print('Finished reading the file. Creating now new files')
