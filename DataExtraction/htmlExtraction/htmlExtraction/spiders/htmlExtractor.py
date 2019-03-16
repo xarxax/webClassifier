@@ -11,7 +11,7 @@ class htmlExtractor(scrapy.Spider):
         'DOWNLOAD_DELAY': 5,
         'CONCURRENT_REQUESTS' :5000,
         'REACTOR_THREADPOOL_MAXSIZE' : 20,
-        'LOG_LEVEL' : 'ERROR',
+        'LOG_LEVEL' : 'CRITICAL',
         'COOKIES_ENABLED' : False,
         'AJAXCRAWL_ENABLED' : True,
         'AUTOTHROTTLE_ENABLED':True,
@@ -35,7 +35,7 @@ class htmlExtractor(scrapy.Spider):
             #not repeating work
             filename = '../dataset/'+str(cat) + '_' + str(url[:70]).replace('/','_')
             if os.path.isfile(filename):
-                print('Url: \"' +str(url) + '\". File already exists,skiping.')
+                print('Cat:' + str(cat)+'.Url: \"' +str(url) + '\". File already exists,skiping.')
                 continue
             extractionUrls.append((cat,url))
             #if i > 20:

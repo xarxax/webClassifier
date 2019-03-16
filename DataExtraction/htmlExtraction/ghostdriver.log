@@ -1,599 +1,154 @@
-[INFO  - 2019-02-25T12:45:06.195Z] GhostDriver - Main - running on port 58877
-[INFO  - 2019-02-25T12:45:07.161Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-02-25T12:45:07.161Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.customHeaders:  - {}
-[INFO  - 2019-02-25T12:45:07.161Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-02-25T12:45:07.161Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2e04e410-38fb-11e9-98ce-2720f56635ce
-[ERROR - 2019-02-25T12:46:03.735Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+[INFO  - 2019-03-16T10:06:10.075Z] GhostDriver - Main - running on port 35949
+[INFO  - 2019-03-16T10:06:11.044Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-16T10:06:11.044Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.customHeaders:  - {}
+[INFO  - 2019-03-16T10:06:11.044Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-16T10:06:11.045Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1fe602b0-47d3-11e9-9ed4-d3fc044b0718
+[ERROR - 2019-03-16T10:06:12.517Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: user
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:46:03.735Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
+[ERROR - 2019-03-16T10:06:12.517Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  (anonymous function) (http://hotyf.tripod.com/home.htm:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:46:20.138Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: [object XMLHttpRequestProgressEvent]
+[ERROR - 2019-03-16T10:06:17.970Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: $JssorArrowNavigator$
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:46:20.139Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  onabort (https://cdn.userway.org/widgetapp/2019-02-23/widget_app_1550884766852.js:2)
+[ERROR - 2019-03-16T10:06:17.971Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  global code (https://www.artistdirect.com/artists:3484)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:46:20.146Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: Audio
+[ERROR - 2019-03-16T10:06:30.644Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: TypeError: null is not an object (evaluating '$player')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:46:20.146Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  init (https://cdn.userway.org/widgetapp/2019-02-23/widget_app_1550884766852.js:5)
-  v (https://cdn.userway.org/widgetapp/2019-02-23/widget_app_1550884766852.js:2)
-  (anonymous function) (https://cdn.userway.org/widgetapp/2019-02-23/widget_app_1550884766852.js:1)
-  onabort (https://cdn.userway.org/widgetapp/2019-02-23/widget_app_1550884766852.js:2)
-  openUrl (:0)
-  open (phantomjs://platform/webpage.js:281)
-  (anonymous function) (phantomjs://code/session_request_handler.js:495)
-  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
-  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
-  _handle (phantomjs://code/session_request_handler.js:91)
-  _reroute (phantomjs://code/request_handler.js:61)
-  _handle (phantomjs://code/router_request_handler.js:78)
+[ERROR - 2019-03-16T10:06:30.644Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  luna (https://www.artistdirect.com/js1/jquery-luna.js:43)
+  (anonymous function) (https://www.artistdirect.com/js1/custom.js:38)
+  j (https://www.artistdirect.com/js1/jquery.min.js:2)
+  fireWith (https://www.artistdirect.com/js1/jquery.min.js:2)
+  ready (https://www.artistdirect.com/js1/jquery.min.js:2)
+  I (https://www.artistdirect.com/js1/jquery.min.js:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:01.805Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:06:37.571Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:01.805Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:06:37.572Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201911.js:16)
+  view (https://stats.wp.com/e-201911.js:15)
+  push (https://stats.wp.com/e-201911.js:13)
+  STQ (https://stats.wp.com/e-201911.js:13)
+  initQueue (https://stats.wp.com/e-201911.js:13)
+  (anonymous function) (https://stats.wp.com/e-201911.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:03.811Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:06:37.643Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: IntersectionObserver
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:03.812Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:6)
-  value (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:6)
-  t (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:6)
-  o (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:5)
-  r (http://www.naugatuckvh.com/gdpr/gdprscript.js?buildTime=1537384437&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:06:37.643Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  o (https://www.rollingstone.com/wp-content/themes/vip/pmc-rollingstone-2018/assets/build/js/vendor/iolazy.js:1)
+  (anonymous function) (https://www.rollingstone.com/wp-content/themes/vip/pmc-rollingstone-2018/assets/build/js/main.js?ver=2.2:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:58.047Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: null is not an object (evaluating 'document.getElementById('rw_email_contact').href = _rwObsfuscatedHref')
+[ERROR - 2019-03-16T10:06:38.573Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: SyntaxError: Unexpected token '<'
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:47:58.049Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (http://gaahde.com/:182)
+[ERROR - 2019-03-16T10:06:38.573Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  appendChild (about:blank:1)
+  apply (:0)
+  (anonymous function) (https://tagan.adlightning.com/penske/op.js:1)
+  (anonymous function) (https://www.rollingstone.com/t/morrissey/:15)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-25T12:50:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-02-25T12:50:48.569Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+[ERROR - 2019-03-16T10:06:39.606Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: Promise
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:50:48.569Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
+[ERROR - 2019-03-16T10:06:39.606Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  get (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
+  processNextRequest (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
+  (anonymous function) (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:51:23.981Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:06:46.896Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:51:23.981Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.bebt.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:06:46.896Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  (anonymous function) (https://static.topixcdn.com/static/common.20190315-174230.js:34)
+  t (https://static.topixcdn.com/static/common.20190315-174230.js:1)
+  (anonymous function) (https://static.topixcdn.com/static/common.20190315-174230.js:15)
+  t (https://static.topixcdn.com/static/common.20190315-174230.js:1)
+  (anonymous function) (https://static.topixcdn.com/static/stars-int-stad.20190315-174230.js:16643)
+  t (https://static.topixcdn.com/static/common.20190315-174230.js:1)
+  (anonymous function) (https://static.topixcdn.com/static/stars-int-stad.20190315-174230.js:16654)
+  t (https://static.topixcdn.com/static/common.20190315-174230.js:1)
+  webpackJsonp (https://static.topixcdn.com/static/common.20190315-174230.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:52:09.607Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: Error retrieving:  http://embed.broadly.com/580029fe4e62c66400404d0f/yelp/best 204
+[ERROR - 2019-03-16T10:06:47.023Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: topixExt
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T12:52:09.607Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  onreadystatechange (http://embed.broadly.com/include.js:43)
+[ERROR - 2019-03-16T10:06:47.023Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  global code (https://www.topix.com/who/motley-crue:1081)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-25T12:55:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:00:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:05:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:10:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:15:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:20:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:25:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:30:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:35:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:40:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:45:06.195Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:50:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T13:55:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:00:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:05:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:10:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:15:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:20:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:25:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:30:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:35:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:40:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:45:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T14:50:06.196Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-02-25T14:53:45.830Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:06:47.023Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: topixExt
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:53:45.830Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:06:47.024Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  global code (https://www.topix.com/who/motley-crue:1087)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:53:46.030Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:06:48.929Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:53:46.030Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:6)
-  value (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:6)
-  t (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:6)
-  o (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:5)
-  r (http://www.animalandbirdvet.com/gdpr/gdprscript.js?buildTime=1536346644&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:06:48.929Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201911.js:16)
+  view (https://stats.wp.com/e-201911.js:15)
+  push (https://stats.wp.com/e-201911.js:13)
+  STQ (https://stats.wp.com/e-201911.js:13)
+  initQueue (https://stats.wp.com/e-201911.js:13)
+  (anonymous function) (https://stats.wp.com/e-201911.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:53:54.977Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+[ERROR - 2019-03-16T10:06:49.482Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: IntersectionObserver
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:53:54.977Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
+[ERROR - 2019-03-16T10:06:49.482Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  o (https://www.rollingstone.com/wp-content/themes/vip/pmc-rollingstone-2018/assets/build/js/vendor/iolazy.js:1)
+  (anonymous function) (https://www.rollingstone.com/wp-content/themes/vip/pmc-rollingstone-2018/assets/build/js/main.js?ver=2.2:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:14.454Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: undefined is not a function (evaluating 'document.querySelectorAll(".storefront-handheld-footer-bar .search > a").forEach(function(a){a.addEventListener("click",function(b){a.parentElement.classList.toggle("active"),b.preventDefault()})})')
+[ERROR - 2019-03-16T10:06:49.853Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: SyntaxError: Unexpected token '<'
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:14.454Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  (anonymous function) (http://humaneanimalcoalition.com/wp-content/themes/storefront/assets/js/navigation.min.js?ver=2.2.7:1)
+[ERROR - 2019-03-16T10:06:49.853Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  appendChild (about:blank:1)
+  apply (:0)
+  (anonymous function) (https://tagan.adlightning.com/penske/op.js:1)
+  (anonymous function) (https://www.rollingstone.com/t/motley-crue/:15)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:45.715Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+[ERROR - 2019-03-16T10:06:50.497Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: ReferenceError: Can't find variable: Promise
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:45.715Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
+[ERROR - 2019-03-16T10:06:50.497Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  get (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
+  processNextRequest (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
+  (anonymous function) (https://hb.vntsm.com/v3/live/ad-manager.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:58.221Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-16T10:07:03.162Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - msg: TypeError: undefined is not a function (evaluating 'o.play()')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:54:58.221Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.travelingtails.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-16T10:07:03.162Z] Session [1fe602b0-47d3-11e9-9ed4-d3fc044b0718] - page.onError - stack:
+  playVideo (undefined:7)
+  animcompleted (:7)
+  (anonymous function) (:7)
+  _callback (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:60)
+  render (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:74)
+  render (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:74)
+  render (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:60)
+  render (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:60)
+  dispatchEvent (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:60)
+  r (http://motorbaby.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2:60)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:55:03.286Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:55:03.286Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.ropermountainah.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-25T14:55:06.197Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-02-25T14:56:16.249Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:16.249Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.barnsidevethospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:22.423Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:22.423Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:22.607Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:22.607Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:6)
-  value (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:6)
-  t (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:6)
-  (anonymous function) (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:6)
-  o (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:5)
-  r (http://www.homevetcaresj.com/gdpr/gdprscript.js?buildTime=1527815433&hasRemindMe=true:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:27.525Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:27.525Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.mbvets.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.068Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.068Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:562)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.481Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.481Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:564)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.732Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.733Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:567)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.912Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.912Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:578)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.985Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:43.985Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:593)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:44.105Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: URLSearchParams
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:44.105Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  loadCSS (http://www.wachalpet.com/:91)
-  onload (http://www.wachalpet.com/:571)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:59.436Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:56:59.436Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.brannanvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:07.319Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:07.319Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:11.529Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:11.529Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:18.258Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:18.258Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.parkeastanimalhospital.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:24.323Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:24.323Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:24.517Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:24.517Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:6)
-  value (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:6)
-  t (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:6)
-  o (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:5)
-  r (http://www.kentlandsvet.com/gdpr/gdprscript.js?buildTime=1538286302&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:26.249Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:26.249Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:27.970Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:27.970Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.farmingtonvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:28.333Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: undefined is not an object (evaluating '_W.Slideshow.initHeaderSlideshow')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:28.333Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  (anonymous function) (http://www.farmingtonvetclinic.com/:66)
-  l (https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js:2)
-  fireWith (https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js:2)
-  ready (https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js:2)
-  A (https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js:2)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:31.135Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:31.135Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.franklinvetclinic.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:33.816Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:33.816Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:34.039Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:34.039Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:6)
-  value (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:6)
-  t (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:6)
-  o (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:5)
-  r (http://www.animalclinickearney.com/gdpr/gdprscript.js?buildTime=1542143263&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:37.039Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this video. [object Object]
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:37.039Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  F (http://www.elocallink.tv/m/1.7/pv_prd_ell_pop.php?pid=A4zzz7N3&videocid=y8BN2AB62&ismobile=false&vversion=73&ss=1&mid=undefined&forceap=undefined:34)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:42.043Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:42.043Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:42.270Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:42.270Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:6)
-  value (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:6)
-  t (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:6)
-  o (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:5)
-  r (http://www.vtnhvet.com/gdpr/gdprscript.js?buildTime=1546898959&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:51.316Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: [object XMLHttpRequestProgressEvent]
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:51.316Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  onabort (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:2)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:51.318Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: Audio
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:57:51.318Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  init (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:5)
-  O (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:2)
-  M (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:1)
-  (anonymous function) (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:1)
-  onabort (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:2)
-  openUrl (:0)
-  open (phantomjs://platform/webpage.js:281)
-  (anonymous function) (phantomjs://code/session_request_handler.js:495)
-  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
-  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
-  _handle (phantomjs://code/session_request_handler.js:91)
-  _reroute (phantomjs://code/request_handler.js:61)
-  _handle (phantomjs://code/router_request_handler.js:78)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:58:54.073Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:58:54.073Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  defineProperty (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  value (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  t (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:6)
-  o (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-  r (http://www.dodgevillevet.com/gdpr/gdprscript.js?buildTime=1550778034&hasRemindMe=true&stealth=false:5)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:09.389Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ErrorUtils caught an error: "Cannot listen to an undefined element. TAAL[2]". Subsequent errors won't be logged; see https://fburl.com/debugjs.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:09.389Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/2uawcle6ukx.js:55)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.798Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: $
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.798Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (https://www.vetscene.com/Scripts/extReview.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: $
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (https://www.vetscene.com/Scripts/extReviewFeed.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: $
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (https://vetscene.com/Scripts/extAppointment.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: $
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T14:59:43.810Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (https://www.vetscene.com/Scripts/extReferAFriend.js:3)
-
-  phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-25T15:00:06.197Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-02-25T15:00:13.458Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: Error: Syntax error, unrecognized expression: acom/
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:00:13.459Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  error (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  tokenize (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  select (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  fb (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  find (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  init (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  m (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:1)
-  (anonymous function) (http://www.barburvet.com/combine/082d804ad47de69fe7caa873eb79f687-1549417391.js:3)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:00:21.932Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: [object Object]
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:00:21.932Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  Viewer (http://ws.everyscape.com/v/1/500175/main%7Bapplication,error,viewer,utility,jq,jqjp,mod,swf,easyxdm,noflash,html5%7D.js:255)
-  createViewer (http://ws.everyscape.com/v/1/500175/main%7Bapplication,error,viewer,utility,jq,jqjp,mod,swf,easyxdm,noflash,html5%7D.js:124)
-  installViewer (http://ws.everyscape.com/v/1/500175/main%7Bapplication,error,viewer,utility,jq,jqjp,mod,swf,easyxdm,noflash,html5%7D.js:211)
-  installThisViewer (http://ws.everyscape.com/api.js?key=embed&embedId=script:19100356&embedWidth=775&embedHeight=400:57)
-  _mainIsLoaded (http://ws.everyscape.com/api.js?key=embed&embedId=script:19100356&embedWidth=775&embedHeight=400:23)
-  (anonymous function) (http://ws.everyscape.com/v/1/500175/main%7Bapplication,error,viewer,utility,jq,jqjp,mod,swf,easyxdm,noflash,html5%7D.js:834)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:00:22.293Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: undefined is not a function (evaluating '$(document)')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:00:22.293Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (http://amshpetvet.com/:956)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:51.444Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: lightwindow.js requires including script.aculo.us' effects.js library!
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:51.444Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  global code (https://www.tampabayvets.net/wp-content/cache/wpfc-minified/8x5ffo6b/8by9c.js:3358)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:51.568Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: undefined is not an object (evaluating 's[a]=e')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:51.568Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  set (https://platform.twitter.com/widgets.js?ver=ea4e2926df408540f8355568e5c5b191:8)
-  (anonymous function) (https://platform.twitter.com/widgets.js?ver=ea4e2926df408540f8355568e5c5b191:8)
-  i (https://platform.twitter.com/widgets.js?ver=ea4e2926df408540f8355568e5c5b191:1)
-  (anonymous function) (https://platform.twitter.com/widgets.js?ver=ea4e2926df408540f8355568e5c5b191:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:53.469Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: ReferenceError: Can't find variable: Audio
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:01:53.469Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  init (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:5)
-  O (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:2)
-  M (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:1)
-  (anonymous function) (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:1)
-  onload (https://cdn.userway.org/widgetapp/2019-02-25/widget_app_1551096615394.js:2)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:02:14.632Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - msg: TypeError: null is not an object (evaluating 't[this.name]')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-02-25T15:02:14.633Z] Session [2e04e410-38fb-11e9-98ce-2720f56635ce] - page.onError - stack:
-  has (https://static.parastorage.com/polyfill/v2/polyfill.min.js?features=Object.values,Object.entries,IntersectionObserver,es2015,es2016,es2017,fetch&flags=always,gated&unknown=polyfill&rum=0&callback=polyfillsAreLoaded:75)
-  m (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/bolt-main-r.1.js:1)
-  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/bolt-main-r.1.js:1)
-  ft (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/bolt-main-r.1.js:1)
-  $endBatch (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/bolt-main-r.1.js:1)
-  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/main-r.min.js:1)
-  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/main-r.min.js:1)
-  m (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/main-r.min.js:1)
-  s (https://static.parastorage.com/services/wix-bolt/1.1352.0/bolt-main/app/main-r.min.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-02-25T15:05:06.203Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T15:10:06.203Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T15:15:06.203Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T15:20:06.203Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2019-02-25T15:25:06.203Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
