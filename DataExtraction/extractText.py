@@ -43,6 +43,11 @@ for filePath in glob.iglob('dataset/*'):
     i-=1
     print(filePath)
     file = open(filePath,'r')
+    newFilePath = filePath.replace('dataset/','datasetFeatures/',1)
+    if os.path.exists(newFilePath):
+        i+=1#effectively skip the iteratio
+        print('File already processed. Skipping.')
+        continue
     #split the 3 important informations
     try:
         [cat,url,htmlDoc] = file.read().split('\n',2)
@@ -64,7 +69,6 @@ for filePath in glob.iglob('dataset/*'):
         continue
     #saving text now
     #we create a folder for the web features
-    newFilePath = filePath.replace('dataset/','datasetFeatures/',1)
     if not os.path.exists(newFilePath):
         os.makedirs(newFilePath)
     #write text
