@@ -4,6 +4,13 @@ if not os.path.exists('gloveDataset'):
     os.makedirs('gloveDataset')
 
 
+def sumColumn(m, column):
+    total = 0
+    for row in range(len(m)):
+        total += m[row][column]
+    return total
+
+
 i = int(sys.argv[1])
 total = i
 pathContentVectors=[]
@@ -24,7 +31,7 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
     content = file.read()
     content =ast.literal_eval(content)
     pathContentVectors+=[[folderPath,content,[]]]
-    if (total-i)%5000==0:#more than 10k files make python just stop when opening the big file
+    if (total-i)%10000==0:#more than 10k files make python just stop when opening the big file
         #read through the glove txt and save the documents
         #glove represented
         print('Length of files to be written:')
@@ -54,10 +61,18 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
         #now we save all the wordVectors
         print('Finished reading the file. Creating now new files')
         for path,content,vectors in pathContentVectors:
+            if len(vectors) < 1:
+                print('Skipping \"' + str(path) + '\" due to no vectors.')
+                continue
+            #print(len(vectors[0]))
+            #print(vectors[0])
             newFilePath = path.replace('tokenizedDataset/','gloveDataset/',1)
             if not os.path.exists(newFilePath):
                 os.makedirs(newFilePath)
             with open(newFilePath+'/text.txt', 'w') as f:
+                vectors = [i[1:] for i in vectors]
+                vectors = [[float(i) for i in j] for j in vectors]
+                vectors = [sumColumn(vectors,i)for i in range(0,len(vectors[0]))]
                 f.write(str(vectors))
         #now we remove the documents already processed
         #should probably close files
@@ -84,12 +99,24 @@ with open("glove.840B.300d.txt") as infile:
         #print(pathContentVectors[1])
         for _,content,vectors in pathContentVectors:
             if vector[0] in content:
+                #print(len(vector))
                 vectors += [vector]
 #now we save all the wordVectors
 print('Finished reading the file. Creating now new files')
 for path,content,vectors in pathContentVectors:
+    if len(vectors) < 1:
+        print('Skipping \"' + str(path) + '\" due to no vectors.')
+        continue
+    #print(len(vectors[0]))
+    #print(vectors[0])
     newFilePath = path.replace('tokenizedDataset/','gloveDataset/',1)
     if not os.path.exists(newFilePath):
         os.makedirs(newFilePath)
     with open(newFilePath+'/text.txt', 'w') as f:
+        vectors = [i[1:] for i in vectors]
+        vectors = [[float(i) for i in j] for j in vectors]
+        #print(range(0,len(vectors[0])))
+        vectors = [sumColumn(vectors,i)for i in range(0,len(vectors[0]))]
+        print(len(vectors))
+
         f.write(str(vectors))
