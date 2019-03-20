@@ -20,12 +20,16 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     file = open(folderPath +'/text.txt','r')
     if os.path.exists(folderPath.replace('datasetFeatures/','tokenizedDataset/',1)):
         #i+=1#effectively skip the iteration
+        print('Skipped.')
         continue
     #urlfile= open(folderPath+'/url.txt')
     content = file.read()
+    print('File read')
     content =word_tokenize(content)
+    print('Tokenize')
     #leave only alfanumerical symbols
     content = [re.sub(r'[^A-Za-z0-9]+', '', x) for x in content]
+    print('Substringed')
     content = [x for x in content if x != '' and len(x) > 1 and len(x) < 16]
     content = [re.findall(r'[a-zA-Z][A-Z]*[^A-Z]*',x) for x in content]
     content = sum(content,[])
