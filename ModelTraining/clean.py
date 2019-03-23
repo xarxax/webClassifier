@@ -42,7 +42,8 @@ for folderPath in glob.iglob('datasetFeatures/*'):
         os.makedirs(newFilePath)
     #write text
     with open(newFilePath+'/text.txt', 'w') as f:
-        f.write(str(content))
+        for word in content:
+            f.write(str(word) + ' ')
     #with open(newFilePath + '/url.txt','w') as f:
     #    f.write(urlfile.read())
     #we must also write the urls
