@@ -27,6 +27,7 @@ int main()
 {
     int numFiles;//number of files to transform
     ifstream ifWE,ifWebpage;//interface to the big file
+    ofstream outputDocument;
     //and the one to the current web
     vector<string> words;
     vector<vector<float> > vectors;
@@ -61,25 +62,64 @@ int main()
         ifWebpage.open(folderNames[i]);
         //cout << folderNames[i] << endl;
         while (ifWebpage >> word)
+            //cout << word << ' ';
             documents[i].push_back(word);
+        //if (i==4) break;
+
     }
+
     //cout << documents[2].size() << endl;
     cout << "Documents loaded." << endl;
-    cout << "Turning documents to WE..." << endl;
+    cout << "Allocating memory for WE documents..." << endl;
 
     //Now we must substitute every document for its representation and write them
     documentsWE =  vector<vector<float> >(folderNames.size(),vector<float>(300,0.));
-    for(int i=0;i< words.size(); ++i)//this way we guarantee that we wont have
+    cout << folderNames[0] << endl;
+    cout << folderNames[1] << endl;
+
+    cout << "Turning documents to WE..." << endl;
+    for(int i=0;i< words.size(); ++i){//this way we guarantee that we wont have
       //to search a huge vector every time
-        for(int j=0;j<folderNames.size();++j)
-            for(int k=0;k<folderNames[j].size();++k){
-              if(words[i] == documents[j][k])
+        //cout << "++++++++++++++++++++" << endl;
+        //cout << words[i] << endl;
+        for(int j=2;j<folderNames.size();++j){//skip . and ..
+            //cout << "#####################################" << endl;
+            //cout << folderNames[j] << endl;
+            //cout << documents[j].size() << endl;
+            for(int k=0;k<documents[j].size();++k){
+              //cout << "**********************************" << endl;
+              //cout << documents[j][k] << endl;
+              //cout << documents[j][k] << endl;
+              if(words[i] == documents[j][k]){
+                  //cout << "-----------------------------------" << endl;
+                  //cout << documentsWE[j].size() << endl;
+                  //cout << vectors[i].size() << endl;
                   sum_vectorvalue(documentsWE[j],vectors[i]);
+              }
             }
-
-
+        }
+    }
     cout << "Documents turned." << endl;
+    cout << "Writing WE documents..." << endl;
+    for(int i=2;i< folderNames.size(); ++i){//this way we guarantee that we wont have
+      //cout << folderNames[i] << endl;
+      folderNames[i].replace(folderNames[i].begin(),folderNames[i].begin()+9,modelName);
+      string folderWithoutText=folderNames[i];
+      folderWithoutText.replace(folderWithoutText.end()-9,folderWithoutText.end(),"");
+      //cout << folderNames[i] << endl;
+      //cout <<  folderWithoutText << endl;
+      //creat folder if does not exist
+      outputDocument.open(folderWithoutText);
+      for(int j = 0;j< documentsWE[i].size();j++){
+        outputDocument << documentsWE[i][j] << " ";
+        //cout << documentsWE[i][j] << endl;
+      }
+      outputDocument.close();
+      //if(i == 8)
+      //break;
 
+    }
+    cout << "Documents written." << endl;
 
     return 0;
 }
