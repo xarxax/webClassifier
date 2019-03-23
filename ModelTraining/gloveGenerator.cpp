@@ -35,12 +35,18 @@ int main()
     vector<vector<string> > documents;
     vector<vector<float> > documentsWE;
     string modelName,inputPath = "tokenizedDataset";
+    int trash;
 
     cin >> numFiles >> modelName;
     cout << "I read " << numFiles <<  " files. Model: " <<modelName << endl;
     //Adding WE
     cout << "Loading WE..." << endl;
-    ifWE.open("glove.840B.300d.txt");
+    if(modelName == "glove") ifWE.open("glove.840B.300d.txt");
+    else {
+      ifWE.open("lexVec58Bvectors300.txt");
+      ifWE >> trash;
+      ifWE >> trash;//we will not be using them
+    }
     string word;
     int curr=0;
     while(ifWE >> word){
@@ -53,7 +59,9 @@ int main()
             vectors[curr][i]=val;
         }
         curr+=1;
+        //if(curr==100000) break;
     }
+    ifWE.close();
     cout << "WE Loaded." << endl << "Loading documents..." << endl;
     read_directory(inputPath,folderNames);//this loads . and .. as the first files
     documents = vector<vector<string> >(folderNames.size(),vector<string>(0));//we alloc memory and make sure they start as empty
@@ -64,6 +72,7 @@ int main()
         while (ifWebpage >> word)
             //cout << word << ' ';
             documents[i].push_back(word);
+        ifWebpage.close();
         //if (i==4) break;
 
     }
@@ -75,7 +84,7 @@ int main()
     //Now we must substitute every document for its representation and write them
     documentsWE =  vector<vector<float> >(folderNames.size(),vector<float>(300,0.));
     cout << folderNames[0] << endl;
-    cout << folderNames[1] << endl;
+    cout << documents[4].size() << endl;
 
     cout << "Turning documents to WE..." << endl;
     for(int i=0;i< words.size(); ++i){//this way we guarantee that we wont have
@@ -93,11 +102,14 @@ int main()
               if(words[i] == documents[j][k]){
                   //cout << "-----------------------------------" << endl;
                   //cout << documentsWE[j].size() << endl;
-                  //cout << vectors[i].size() << endl;
+                  //cout << words[i]<< " colision." << endl;
                   sum_vectorvalue(documentsWE[j],vectors[i]);
               }
             }
+            //if (j==4) break;
+
         }
+        //break;
     }
     cout << "Documents turned." << endl;
     cout << "Writing WE documents..." << endl;
@@ -107,7 +119,7 @@ int main()
       string folderWithoutText=folderNames[i];
       folderWithoutText.replace(folderWithoutText.end()-9,folderWithoutText.end(),"");
       //cout << folderNames[i] << endl;
-      //cout <<  folderWithoutText << endl;
+      cout <<  folderWithoutText << endl;
       //creat folder if does not exist
       outputDocument.open(folderWithoutText);
       for(int j = 0;j< documentsWE[i].size();j++){
@@ -115,7 +127,7 @@ int main()
         //cout << documentsWE[i][j] << endl;
       }
       outputDocument.close();
-      //if(i == 8)
+      //if (i==4) break;
       //break;
 
     }

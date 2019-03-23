@@ -12,7 +12,7 @@ class htmlExtractor(scrapy.Spider):
         'CONCURRENT_REQUESTS' :5000,
         'REACTOR_THREADPOOL_MAXSIZE' : 20,
         'LOG_LEVEL' : 'CRITICAL',
-        'COOKIES_ENABLED' : False,
+        'COOKIES_ENABLED' : True,
         'AJAXCRAWL_ENABLED' : True,
         'AUTOTHROTTLE_ENABLED':True,
         'HTTPCACHE_ENABLED': True,

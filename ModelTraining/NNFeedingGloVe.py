@@ -23,24 +23,29 @@ for folderPath in glob.iglob('gloveDataset/*'):
         break
     i-=1
     print(folderPath)
-    with open(folderPath +'/text.txt','r') as file:
-        word_representation = ast.literal_eval(file.read())
+    file = open(folderPath +'/text.txt','r')
+    if file.read() is '':
+        print("Empty document, skipping.")
+        i+=1
+        continue
+    word_representation = ast.literal_eval(file.read())
     #urlfile= open(folderPath+'/url.txt')
     #print(folderPath)
     if len(word_representation) == 0:
         #print('empty document')
         continue
-    word_representation = [i[1:] for i in word_representation]
-    word_representation = [[float(i) for i in j] for j in word_representation]
-    wordCount= len(word_representation)
-    vectors= len(word_representation[0])
+    #word_representation = [i[1:] for i in word_representation]
+    #word_representation = [[float(i) for i in j] for j in word_representation]
+    #wordCount= len(word_representation)
+    #vectors= len(word_representation[0])
     #print('words:' + str(wordCount))
     #print('vectors:' + str(vectors))
     #print(sumColumn(word_representation,0))
-    word_representation = [sumColumn(word_representation,i)for i in range(0,vectors)]
+    #word_representation = [sumColumn(word_representation,i)for i in range(0,vectors)]
     documents = documents + [word_representation]
     categories = categories + [folderPath.split('/')[1].split('_')[0]]
 
+print(categories)
 print(Counter(categories))
 
 all_categories = ['Arts' ,'Business','Computers','Games','Health','Home','News','Recreation'

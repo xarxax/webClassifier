@@ -1,4 +1,4 @@
-import glob,os,sys,ast
+import glob,os,sys,ast,gc
 
 if not os.path.exists('gloveDataset'):
     os.makedirs('gloveDataset')
@@ -10,7 +10,24 @@ def sumColumn(m, column):
         total += m[row][column]
     return total
 
+print('Reading WE')
+WE = ''
+WEvectors=[]
+with open("glove.840B.300d.txt") as infile:
+    breakcount=0
+    for line in infile:
+        if len(line.split()[0])< 16:
+            WEvectors += [line.split()]
+            breakcount+=1
+            if (breakcount%10000)==0:
+                print('Flushing memory')
+                breakcount=0
+                gc.collect()
+        #print(WEvectors)
+        #break
+print('File loaded and with vectors')
 
+exit()
 i = int(sys.argv[1])
 total = i
 pathContentVectors=[]
