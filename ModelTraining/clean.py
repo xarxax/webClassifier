@@ -33,7 +33,7 @@ for folderPath in glob.iglob('datasetFeatures/*'):
     content = [x for x in content if x != '' and len(x) > 1 and len(x) < 16]
     content = [re.findall(r'[a-zA-Z][A-Z]*[^A-Z]*',x) for x in content]
     content = sum(content,[])
-    content = [x.lower() for x in content]
+    #content = [x.lower() for x in content]
     #print(content)
 
     newFilePath = folderPath.replace('datasetFeatures/','tokenizedDataset/',1)
