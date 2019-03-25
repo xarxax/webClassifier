@@ -84,13 +84,13 @@ int main()
     //Now we must substitute every document for its representation and write them
     documentsWE =  vector<vector<float> >(folderNames.size(),vector<float>(300,0.));
     cout << folderNames[0] << endl;
-    cout << documents[4].size() << endl;
+    //cout << documents[4].size() << endl;
 
     cout << "Turning documents to WE..." << endl;
     for(int i=0;i< words.size(); ++i){//this way we guarantee that we wont have
       //to search a huge vector every time
         //cout << "++++++++++++++++++++" << endl;
-        //cout << words[i] << endl;
+        cout << words[i] <<   "  " << i << endl;
         for(int j=2;j<folderNames.size();++j){//skip . and ..
             //cout << "#####################################" << endl;
             //cout << folderNames[j] << endl;
