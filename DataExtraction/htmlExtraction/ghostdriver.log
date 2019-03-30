@@ -1,507 +1,1272 @@
-[INFO  - 2019-03-23T15:00:10.115Z] GhostDriver - Main - running on port 60241
-[INFO  - 2019-03-23T15:00:10.929Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-03-23T15:00:10.929Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.customHeaders:  - {}
-[INFO  - 2019-03-23T15:00:10.929Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-03-23T15:00:10.929Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5afc2bf0-4d7c-11e9-9d92-7d63e799fb36
-[ERROR - 2019-03-23T15:00:19.432Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: null is not an object (evaluating 'b.firstChild')
+[INFO  - 2019-03-30T13:03:38.141Z] GhostDriver - Main - running on port 47181
+[INFO  - 2019-03-30T13:03:39.091Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-30T13:03:39.091Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.customHeaders:  - {}
+[INFO  - 2019-03-30T13:03:39.091Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-30T13:03:39.091Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 3c6a9c10-52ec-11e9-b06f-2f4049f363f7
+[ERROR - 2019-03-30T13:03:43.042Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:00:19.432Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getElementChildren (http://www.terryt.com/SpryAssets/SpryAccordion.min.js:1)
-  getPanels (http://www.terryt.com/SpryAssets/SpryAccordion.min.js:1)
-  attachBehaviors (http://www.terryt.com/SpryAssets/SpryAccordion.min.js:1)
-  processLoadQueue (http://www.terryt.com/SpryAssets/SpryAccordion.min.js:1)
+[ERROR - 2019-03-30T13:03:43.042Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:00:27.292Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: user
+[ERROR - 2019-03-30T13:03:43.042Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:00:27.292Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.angelfire.com/dc/pdsfoto/:5)
+[ERROR - 2019-03-30T13:03:43.042Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/94891049?title=0&amp;byline=0:273)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:00:35.722Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: MM_preloadImages
+[ERROR - 2019-03-30T13:04:43.947Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:00:35.722Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  onload (http://www.granitestudios.com/:49)
+[ERROR - 2019-03-30T13:04:43.947Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.aldersgateumc-eb.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:27.608Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:04:58.709Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'p.satellite')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:27.608Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:04:58.709Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:27.609Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:05:08.091Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'jQuery(".scrollable").scrollable({circular: true}).navigator()')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:27.609Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/214779034?autoplay=0:273)
+[ERROR - 2019-03-30T13:05:08.091Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (http://www.fumcscotchplains.org/:140)
+  i (http://www.fumcscotchplains.org/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  fireWith (http://www.fumcscotchplains.org/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  ready (http://www.fumcscotchplains.org/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+  K (http://www.fumcscotchplains.org/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:33.140Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:05:08.092Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:33.140Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:05:08.093Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (http://stats.wp.com/e-201913.js:16)
+  view (http://stats.wp.com/e-201913.js:15)
+  push (http://stats.wp.com/e-201913.js:13)
+  STQ (http://stats.wp.com/e-201913.js:13)
+  initQueue (http://stats.wp.com/e-201913.js:13)
+  (anonymous function) (http://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:52.761Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: Set
+[ERROR - 2019-03-30T13:05:11.975Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:52.762Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://static.parastorage.com/unpkg/react-dom@16.3.0/umd/react-dom.production.min.js:118)
-  (anonymous function) (https://static.parastorage.com/unpkg/react-dom@16.3.0/umd/react-dom.production.min.js:12)
+[ERROR - 2019-03-30T13:05:11.975Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://farmingdalefumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:52.784Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: ReactDOM
+[ERROR - 2019-03-30T13:05:15.916Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:02:52.784Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://static.parastorage.com/services/pro-gallery-statics/2.848.0/cartIcon.bundle.min.js:12)
-  t (https://static.parastorage.com/services/pro-gallery-statics/2.848.0/cartIcon.bundle.min.js:1)
-  (anonymous function) (https://static.parastorage.com/services/pro-gallery-statics/2.848.0/cartIcon.bundle.min.js:1)
-  t (https://static.parastorage.com/services/pro-gallery-statics/2.848.0/cartIcon.bundle.min.js:1)
-  (anonymous function) (https://static.parastorage.com/services/pro-gallery-statics/2.848.0/cartIcon.bundle.min.js:1)
+[ERROR - 2019-03-30T13:05:15.916Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:6)
+  value (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:6)
+  t (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:6)
+  o (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:5)
+  r (http://www.asburyumcwoodstown.org/gdpr/gdprscript.js?buildTime=1545430657&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:03:29.114Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:05:39.632Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:03:29.114Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:05:39.632Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-03-23T15:05:10.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-03-23T15:07:02.077Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.navigate("_noflash.htm")')
+[ERROR - 2019-03-30T13:05:51.122Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: tribe_js_config
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:07:02.077Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  global code (http://www.scarpati.com/_scripts/little_black_box.js:74)
+[ERROR - 2019-03-30T13:05:51.122Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (http://cumcnj.com/wp-content/plugins/the-events-calendar/src/resources/js/tribe-events.min.js?ver=4.8.0.1:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:07:50.427Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:05:51.122Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: tribe_js_config
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:07:50.427Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:05:51.122Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (http://cumcnj.com/wp-content/plugins/the-events-calendar/src/resources/js/tribe-events-ajax-calendar.min.js?ver=4.8.0.1:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:08:14.609Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: null is not an object (evaluating 'this.element.getAttribute')
+[ERROR - 2019-03-30T13:05:56.031Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'Y.one(gallery.get("elements.next")._nodes[0]).on')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:08:14.609Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  init (http://sander-martijn.com/sites/default/files/js/js_Cxoj_mbwdmdFsEtadQtcxl1-vyVtHPN_fRvTe9XkgIo.js:948)
-  e (http://sander-martijn.com/sites/default/files/js/js_Cxoj_mbwdmdFsEtadQtcxl1-vyVtHPN_fRvTe9XkgIo.js:947)
-  (anonymous function) (http://sander-martijn.com/sites/default/files/js/js_Cxoj_mbwdmdFsEtadQtcxl1-vyVtHPN_fRvTe9XkgIo.js:916)
-  dispatch (http://sander-martijn.com/sites/default/files/js/js_v7z_ueNi9EIrZXPI8So7AkuzyXuKekr2jbdDptsM5Oc.js:3)
-  i (http://sander-martijn.com/sites/default/files/js/js_v7z_ueNi9EIrZXPI8So7AkuzyXuKekr2jbdDptsM5Oc.js:3)
+[ERROR - 2019-03-30T13:05:56.031Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (http://www.kembleumc.org/:53)
+  _notify (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  notify (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  _notify (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  _procSubs (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  fireSimple (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  _fire (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  fire (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  _load (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
+  i (http://static.squarespace.com/universal/scripts-compressed/common-8d6e4386242f3f0ed7cb-min.en-US.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:08:15.806Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: user
+[ERROR - 2019-03-30T13:06:00.839Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:08:15.806Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://afryephotography.tripod.com/:5)
+[ERROR - 2019-03-30T13:06:00.839Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.fumcsomervillenj.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:25.085Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: user
+[ERROR - 2019-03-30T13:06:45.565Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:25.085Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://sabrinarios.tripod.com/sabrinariosphotography/:5)
+[ERROR - 2019-03-30T13:06:45.566Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.944Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:06:47.013Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Failure at Loading:revolution.extension.layeranimation.min.js on Path://jackson.church/wp-content/plugins/revslider/public/assets/js/extensions/
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.944Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:06:47.013Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://jackson.church/wp-content/cache/wpfc-minified/e5un5gqg/ha32t.js:189)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.944Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:07:08.934Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'this.refs.video.load()')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.944Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/169106736:273)
+[ERROR - 2019-03-30T13:07:08.934Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  loadSource (https://static.parastorage.com/services/wix-bolt/1.2161.0/node_modules/wix-santa/dist/packages-bin/backgroundCommon/backgroundCommon.min.js:1)
+  (anonymous function) (:0)
+  componentDidLayout (https://static.parastorage.com/services/wix-bolt/1.2161.0/node_modules/wix-santa/dist/packages-bin/backgroundCommon/backgroundCommon.min.js:1)
+  (anonymous function) (:0)
+  g (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+  (anonymous function) (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:45)
+  mt (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:27)
+  forOwn (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:112)
+  g (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+  (anonymous function) (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:45)
+  mt (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:27)
+  (anonymous function) (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:45)
+  nu (https://static.parastorage.com/unpkg/lodash@4.17.11/lodash.min.js:67)
+  triggerComponentDidLayout (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+  K (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:3)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:3)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:3)
+  XE (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:3)
+  $endBatch (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:3)
+  donePreparingNavigation (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  resolve (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  z (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  Ot (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  $endBatch (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-r.init.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
+  h (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
+  s (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.992Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:07:47.269Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.992Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:07:47.269Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.rrumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.993Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:07:58.847Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:31.993Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/225375466:273)
+[ERROR - 2019-03-30T13:07:58.847Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.010Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:07:58.847Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.010Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:07:58.847Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/326173886:273)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.010Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:08:27.914Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: coudn't load wixui.VideoPlayer TypeError: Property description must be an object.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.010Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/185603285:273)
+[ERROR - 2019-03-30T13:08:27.914Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.014Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:08:28.688Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.014Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:08:28.688Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.014Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:08:28.888Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.014Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/220445035:273)
+[ERROR - 2019-03-30T13:08:28.888Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.024Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:08:29.680Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.024Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:08:29.680Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  apply (:0)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.024Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:08:33.593Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: jQuery
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.024Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/168636532:273)
+[ERROR - 2019-03-30T13:08:33.593Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (http://stpaulsbrick.com/wp-content/plugins/simple-pdf-viewer/js/main.js?ver=5.1.1:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.027Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[INFO  - 2019-03-30T13:08:38.142Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:08:57.389Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'document.querySelectorAll(".give-donor-wall-shortcode-attrs").forEach(function(e,t){i.loadGravatar(e)})')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.027Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:08:57.389Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  value (http://fumcdeming.org/wp-content/plugins/give/assets/dist/js/give.js?ver=2.4.1:1)
+  (anonymous function) (http://fumcdeming.org/wp-content/plugins/give/assets/dist/js/give.js?ver=2.4.1:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.027Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:09:10.056Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.028Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/219996636:273)
+[ERROR - 2019-03-30T13:09:10.056Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.pearsonmemorialumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.654Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:09:37.655Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.654Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:09:37.655Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/unpkg/react-dom@16.6.3/umd/react-dom.production.min.js:190)
+  (anonymous function) (https://static.parastorage.com/unpkg/react-dom@16.6.3/umd/react-dom.production.min.js:12)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.655Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:09:37.667Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'Object.assign({}, params || {}, {
+        visitorID: visitorId,
+      })')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.655Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/171469142:273)
+[ERROR - 2019-03-30T13:09:37.667Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  sendVodWidgetBi (https://vod-server.wix.com/widget.html?cacheKiller=1553883019216&compId=comp-j6semcvc&deviceType=desktop&externalId=40c940b2-b0f2-49c6-9444-debaaa41f28d&height=785&instance=Cx8krJBGjXAn-fF1Dork9RmezOVwhkxXI7QnmGa1AoQ.eyJpbnN0YW5jZUlkIjoiZjY4ZmViNzUtNWUyMi00NjNjLTk4ZjEtNWNiZmNiYzI4N2U2IiwiYXBwRGVmSWQiOiIxNDQwOTU5NS1mMDc2LTQ3NTMtODMwMy05YTg2ZjlmNzE0NjkiLCJtZXRhU2l0ZUlkIjoiMzM1ZTUxYmUtOTliYi00Y2FlLThhNmItNjUxODRiNTY2YTZmIiwic2lnbkRhdGUiOiIyMDE5LTAzLTMwVDEzOjA5OjM1LjE2OVoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjkwLjE3NS4yNDIuMjMwLzQyNzM0IiwidmVuZG9yUHJvZHVjdElkIjpudWxsLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6Ijk3Y2U4MjRkLWI0ODgtNGNiZS1hMThkLTBkZDVkYzBhMjlhZSIsImJpVG9rZW4iOiJjNWQxYmFjYi1jNzk5LTBhOTItMTI5YS0zOWE3ODA5NGVkODkiLCJzaXRlT3duZXJJZCI6ImJkYmRiY2U3LWRjMGYtNGUyZi1iYmJmLWFlMDE4MTFlNmNjNSJ9&locale=en&pageId=c19p5&siteRevision=284&viewMode=site&width=794:191)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.825Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:09:37.752Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: ReactDOM
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.825Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:09:37.752Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  faye (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
+  a (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
+  kx5W (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
+  a (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
+  n (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
+  (anonymous function) (https://static.parastorage.com/services/wix-vod-widget/1.378.0/widget/widget.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.825Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:09:43.632Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: You have included the Google Maps JavaScript API multiple times on this page. This may cause unexpected errors.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:09:32.825Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/276636023:273)
+[ERROR - 2019-03-30T13:09:43.633Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  zh (https://maps.googleapis.com/maps/api/js?key=AIzaSyCuf23HPFo4OrtqnSDptO5Os7fNmtXTKks&ver=4.7.3:121)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-03-23T15:10:10.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-03-23T15:10:46.139Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not an object (evaluating 'api.onBeforeSeek')
+[ERROR - 2019-03-30T13:10:09.894Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:10:46.139Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.tyronebranigan.com/wp-content/themes/tyrone/js/global.js?ver=ab6ee9c547b780fef0572af157d77650:66)
-  i (http://www.tyronebranigan.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
-  fireWith (http://www.tyronebranigan.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
-  ready (http://www.tyronebranigan.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
-  K (http://www.tyronebranigan.com/wp-includes/js/jquery/jquery.js?ver=1.12.4:2)
+[ERROR - 2019-03-30T13:10:09.894Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.nybhumc.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:00.886Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: SeiteLaden
+[ERROR - 2019-03-30T13:10:34.273Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:00.886Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  onload (http://www.otten-photography.com/:19)
+[ERROR - 2019-03-30T13:10:34.273Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.avonnyumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:19.951Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:10:37.324Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Widgetic SDK:  fn@https://widgetic.com/wbl/js/sdk.js:1:39287
+[native code]
+https://widgetic.com/wbl/js/sdk.js:1:12058
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:19.951Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:10:37.324Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://widgetic.com/wbl/js/sdk.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:19.951Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:10:37.721Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'e.h.U')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:11:19.951Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/36101095:273)
+[ERROR - 2019-03-30T13:10:37.721Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  I (http://cdn2.editmysite.com/js/site/main.js?buildTime=1552432735:11)
+  (anonymous function) (http://cdn2.editmysite.com/js/site/main.js?buildTime=1552432735:11)
+  n (http://cdn2.editmysite.com/js/site/main.js?buildTime=1552432735:11)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:27.323Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: Error: Syntax or http error: https://img4.wsimg.com/wst/v7/WSB7_J_20160311_1352_VNEXT-158_8676/v2/common/cookiemanager/cookiemanager.js
+[ERROR - 2019-03-30T13:11:01.933Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:27.323Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  c (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  f (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  reject (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  c (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  f (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  reject (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
-  f (http://img4.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k:2)
+[ERROR - 2019-03-30T13:11:01.933Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.asburyumc.net/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:31.088Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: cssdropdown
+[ERROR - 2019-03-30T13:11:23.790Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:31.088Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  global code (http://www.photographercommercialcharlotte.com/:426)
+[ERROR - 2019-03-30T13:11:23.790Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.hightstownmethodist.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:34.474Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:12:13.692Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:34.474Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wordpress.com/e-201912.js:16)
-  view (https://stats.wordpress.com/e-201912.js:15)
-  push (https://stats.wordpress.com/e-201912.js:13)
-  st_go (https://stats.wordpress.com/e-201912.js:1)
+[ERROR - 2019-03-30T13:12:13.692Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.umcnorthchili.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:39.419Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:12:20.521Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:12:39.419Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:12:20.521Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:13:09.468Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:13:02.942Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating '_d.body.addEventListener')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:13:09.468Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:13:02.942Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  _jsInit (http://www.wellsvilleumc.org/javascript/swfaddress.js?tracker=null:45)
+  (anonymous function) (http://www.wellsvilleumc.org/javascript/swfaddress.js?tracker=null:53)
+  (anonymous function) (http://www.wellsvilleumc.org/javascript/swfaddress.js?tracker=null:26)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:25.617Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+[ERROR - 2019-03-30T13:13:10.661Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:25.618Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://f.vimeocdn.com/p/3.8.37/js/player.js:2)
+[ERROR - 2019-03-30T13:13:10.661Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:25.618Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+[ERROR - 2019-03-30T13:13:14.956Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'document.querySelectorAll(".give-donor-wall-shortcode-attrs").forEach(function(e,t){i.loadGravatar(e)})')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:25.618Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (https://player.vimeo.com/video/43398117:273)
+[ERROR - 2019-03-30T13:13:14.956Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  value (http://williamsvilleumc.org/wp-content/plugins/give/assets/dist/js/give.js?ver=2.4.1:1)
+  (anonymous function) (http://williamsvilleumc.org/wp-content/plugins/give/assets/dist/js/give.js?ver=2.4.1:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:35.023Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: mejs
+[ERROR - 2019-03-30T13:13:21.544Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: You have included the Google Maps JavaScript API multiple times on this page. This may cause unexpected errors.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:35.023Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.photobusiness.com/js/common.js:492)
+[ERROR - 2019-03-30T13:13:21.545Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  zh (http://maps.googleapis.com/maps/api/js?sensor=false:121)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:35.059Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating '$('.thumb, .gallery-icon').epicHoverFadeZoom')
+[INFO  - 2019-03-30T13:13:38.142Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:13:47.355Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Console is not a function (evaluating 'console')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:35.059Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.photobusiness.com/js/common.js:295)
-  j (http://www.photobusiness.com/js/jquery-1.11.0.min.js:2)
-  fireWith (http://www.photobusiness.com/js/jquery-1.11.0.min.js:2)
-  ready (http://www.photobusiness.com/js/jquery-1.11.0.min.js:2)
-  K (http://www.photobusiness.com/js/jquery-1.11.0.min.js:2)
+[ERROR - 2019-03-30T13:13:47.356Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (undefined:1)
+  dispatch (http://www.cctroy.org/wp-includes/js/jquery/jquery.js?ver=1.12.3:3)
+  handle (http://www.cctroy.org/wp-includes/js/jquery/jquery.js?ver=1.12.3:3)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:52.250Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: JQTWEET
+[ERROR - 2019-03-30T13:13:47.356Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Console is not a function (evaluating 'console')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:14:52.250Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.stevenandres.com/javascripts/screen.js:12)
-  o (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:2)
-  fireWith (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:2)
-  ready (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:2)
-  B (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:2)
+[ERROR - 2019-03-30T13:13:47.356Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (undefined:1)
+  dispatch (http://www.cctroy.org/wp-includes/js/jquery/jquery.js?ver=1.12.3:3)
+  handle (http://www.cctroy.org/wp-includes/js/jquery/jquery.js?ver=1.12.3:3)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:15:01.660Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating '$container.isotope({
-		filter: toFilter,
-		animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false,
-			
-			
-		}
-	})')
+[ERROR - 2019-03-30T13:14:27.551Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:15:01.660Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  (anonymous function) (http://www.stevenandres.com/javascripts/screen.js:90)
-  dispatch (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:3)
-  i (http://www.stevenandres.com/javascripts/jquery-1.7.2.min.js:3)
+[ERROR - 2019-03-30T13:14:27.551Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-03-23T15:15:10.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-03-23T15:15:47.655Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: null is not an object (evaluating 'o.onmousedown	= Drag.start')
+[ERROR - 2019-03-30T13:14:30.113Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:15:47.655Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  init (http://www.kuonath.com/dom-drag.js:17)
+[ERROR - 2019-03-30T13:14:30.113Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:18:00.284Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-30T13:14:30.134Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:18:00.284Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  defineProperty (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  value (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  t (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  o (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:5)
-  r (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-30T13:14:30.134Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:18:00.493Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-30T13:14:30.172Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:18:00.493Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  defineProperty (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:6)
-  value (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:6)
-  t (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:6)
-  o (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:5)
-  r (http://www.kramerphotos.com/gdpr/gdprscript.js?buildTime=1532729449&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-30T13:14:30.172Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:19:29.601Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2019-03-30T13:15:13.364Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:19:29.601Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  global code (http://www.myfotographer.com/wp-content/themes/newsworthy/library/js/scripts.js?ver=1.0.0:1)
+[ERROR - 2019-03-30T13:15:13.364Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://thewayonlineumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-03-23T15:20:10.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-03-23T15:21:44.785Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: fadeimages2
+[ERROR - 2019-03-30T13:15:26.871Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:21:44.785Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  global code (http://www.bendaphotography.com/:217)
+[ERROR - 2019-03-30T13:15:26.872Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://firstumcnorthville.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:21:46.582Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: ReferenceError: Can't find variable: choosePic
+[ERROR - 2019-03-30T13:15:45.074Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Unhandled promise rejection InvalidValueError: initMap is not a function
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:21:46.582Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  onload (http://www.bendaphotography.com/:172)
+[ERROR - 2019-03-30T13:15:45.074Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (http://www.esumc.org/wp-content/plugins/give/assets/dist/js/babel-polyfill.js?ver=2.2.4:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:34.159Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:15:45.330Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: You have included the Google Maps JavaScript API multiple times on this page. This may cause unexpected errors.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:34.159Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:15:45.331Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  zh (http://maps.google.com/maps/api/js?key=AIzaSyCi3qTrToHFC-5af-Ug5ARBopBFWndelLU&libraries=geometry%2Cplaces%2Cweather%2Cpanoramio%2Cdrawing&language=en&ver=5.0.4:152)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:42.738Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-30T13:15:45.336Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: You have included the Google Maps JavaScript API multiple times on this page. This may cause unexpected errors.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:42.738Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  defineProperty (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  value (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  t (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:6)
-  o (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:5)
-  r (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1553288600&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-30T13:15:45.336Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  zh (http://maps.googleapis.com/maps/api/js?ver=5.0.4:121)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:42.980Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+[ERROR - 2019-03-30T13:15:55.000Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:22:42.980Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  defineProperty (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:6)
-  value (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:6)
-  t (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:6)
-  (anonymous function) (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:6)
-  o (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:5)
-  r (http://www.mathewsfoto.com/gdpr/gdprscript.js?buildTime=1541801229&hasRemindMe=true&stealth=false:5)
+[ERROR - 2019-03-30T13:15:55.000Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:25:00.770Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:15:56.890Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:25:00.770Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (https://stats.wp.com/e-201912.js:16)
-  view (https://stats.wp.com/e-201912.js:15)
-  push (https://stats.wp.com/e-201912.js:13)
-  STQ (https://stats.wp.com/e-201912.js:13)
-  initQueue (https://stats.wp.com/e-201912.js:13)
-  (anonymous function) (https://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:15:56.890Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
 
   phantomjs://platform/console++.js:263 in error
-[INFO  - 2019-03-23T15:25:10.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2019-03-23T15:26:13.472Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+[ERROR - 2019-03-30T13:16:04.252Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-23T15:26:13.472Z] Session [5afc2bf0-4d7c-11e9-9d92-7d63e799fb36] - page.onError - stack:
-  getFirstContentfulPaint (http://stats.wp.com/e-201912.js:16)
-  view (http://stats.wp.com/e-201912.js:15)
-  push (http://stats.wp.com/e-201912.js:13)
-  STQ (http://stats.wp.com/e-201912.js:13)
-  initQueue (http://stats.wp.com/e-201912.js:13)
-  (anonymous function) (http://stats.wp.com/e-201912.js:18)
+[ERROR - 2019-03-30T13:16:04.252Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
 
   phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:16:47.797Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:16:47.797Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (http://www.gibsonvilleumc.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-30T13:18:38.142Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:20:30.062Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:20:30.062Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:20:51.334Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:20:51.334Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:03.769Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:03.769Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.361Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.361Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.361Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.361Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/322079068?title=0&byline=0&portrait=0&color=ffffff:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.676Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.676Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.676Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:04.676Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/322078677?title=0&byline=0&portrait=0&color=ffffff:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: jquery.fitvids
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: app/notice
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: enquire
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: jquery.colorbox
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.095Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: app/wardrobe
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: app/rotator
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: app/mobile
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: monkcms
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.096Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Script error for: jqueryui
+http://requirejs.org/docs/errors.html#scripterror
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:21:21.097Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  aa (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  v (http://www.mtzionumc.net/_assets/js/lib/require.js:12)
+  onScriptError (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+  appendChild (:0)
+  load (http://www.mtzionumc.net/_assets/js/lib/require.js:34)
+  load (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+  load (http://www.mtzionumc.net/_assets/js/lib/require.js:18)
+  (anonymous function) (http://www.mtzionumc.net/_assets/js/lib/require.js:17)
+  (anonymous function) (http://www.mtzionumc.net/_assets/js/lib/require.js:8)
+  execCb (http://www.mtzionumc.net/_assets/js/lib/require.js:29)
+  check (http://www.mtzionumc.net/_assets/js/lib/require.js:18)
+  enable (http://www.mtzionumc.net/_assets/js/lib/require.js:23)
+  init (http://www.mtzionumc.net/_assets/js/lib/require.js:17)
+  (anonymous function) (http://www.mtzionumc.net/_assets/js/lib/require.js:26)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:21.459Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:21.459Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-de6dc3c707d84b484e73e7ebe832b52a7af6a4400780cfb793637ccfe2a6c546.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-30T13:23:38.142Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:23:41.505Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:41.505Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:41.505Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:41.505Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/191809167:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:46.406Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Component not implemented: wysiwyg.viewer.components.WixFreemiumBanner2
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:46.406Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://static.parastorage.com/services/santa/1.6908.3/app/main-r.min.js:16)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:46.417Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Invariant Violation: Minified React error #130; visit https://reactjs.org/docs/error-decoder.html?invariant=130&args[]=undefined&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings. 
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:23:46.417Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  Pf (https://static.parastorage.com/unpkg/react-dom@16.6.3/umd/react-dom.production.min.js:104)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:17.569Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating '_d.body.addEventListener')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:17.569Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  _jsInit (http://www.evergreenumc.com/javascript/swfaddress.js?tracker=null:45)
+  (anonymous function) (http://www.evergreenumc.com/javascript/swfaddress.js?tracker=null:53)
+  (anonymous function) (http://www.evergreenumc.com/javascript/swfaddress.js?tracker=null:26)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:57.999Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:57.999Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:57.999Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:57.999Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/304177896:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:58.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:58.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:58.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:24:58.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/288197695:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:09.934Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:09.934Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.fumcsaranaclake.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:13.219Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Widgetic SDK:  fn@https://widgetic.com/wbl/js/sdk.js:1:39287
+[native code]
+https://widgetic.com/wbl/js/sdk.js:1:12058
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:13.219Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://widgetic.com/wbl/js/sdk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:14.789Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'e.h.U')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:14.789Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  I (https://cdn2.editmysite.com/js/site/main.js?buildTime=1548445742:11)
+  (anonymous function) (https://cdn2.editmysite.com/js/site/main.js?buildTime=1548445742:11)
+  n (https://cdn2.editmysite.com/js/site/main.js?buildTime=1548445742:11)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:35.909Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:26:35.909Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:07.920Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating '_d.body.addEventListener')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:07.920Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  _jsInit (http://wadsumc.org/javascript/swfaddress.js?tracker=null:45)
+  (anonymous function) (http://wadsumc.org/javascript/swfaddress.js?tracker=null:53)
+  (anonymous function) (http://wadsumc.org/javascript/swfaddress.js?tracker=null:26)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:10.547Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: swfobject
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:10.547Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (http://www.brecksvilleumc.com/:727)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:16.232Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:16.232Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:16.232Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:16.233Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:19.199Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:19.199Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:36.058Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:36.058Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:36.058Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:28:36.058Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/248207071:273)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-30T13:28:38.144Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:29:45.216Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: Set
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:29:45.216Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2018)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:1966)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2107)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2106)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2212)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2218)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2392)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2244)
+  __webpack_require__ (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2)
+  (anonymous function) (https://www.powr.io/assets/packs/apps-view-183dff9da9800f5b6f4c.js:2916)
+  j (https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js:2)
+  fireWith (https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js:2)
+  ready (https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js:2)
+  J (https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:29:48.719Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: grecaptcha
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:29:48.719Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (https://parsippanyumc.org/:875)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:30:19.329Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'i[n].href.includes("rackcdn")')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:30:19.330Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  s (https://ac4a520296325a5a5c07-0a472ea4150c51ae909674b95aefd8cc.ssl.cf1.rackcdn.com/theme/js/theme-common.js:15)
+  (anonymous function) (https://ac4a520296325a5a5c07-0a472ea4150c51ae909674b95aefd8cc.ssl.cf1.rackcdn.com/theme/js/theme-common.js:15)
+  (anonymous function) (https://ac4a520296325a5a5c07-0a472ea4150c51ae909674b95aefd8cc.ssl.cf1.rackcdn.com/theme/js/theme-common.js:15)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:30:45.915Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:30:45.915Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:31:03.038Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:31:03.038Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:32:40.477Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Profile timeline for screen_name: search not found
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:32:40.477Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  l (http://platform.twitter.com/widgets.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:06.801Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:06.801Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:06.801Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:06.801Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/89612487:273)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:14.926Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating '$(".events-home .bit-3:first-of-type h2")')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:14.926Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (https://universityumc.church/:852)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:14.926Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating '$(window)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:33:14.927Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (https://universityumc.church/:893)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-30T13:33:38.144Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-03-30T13:34:06.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:06.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://f.vimeocdn.com/p/3.8.38/js/player.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:06.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new VimeoPlayer(player, config, cssDone || { link: link, startTime: startTime })')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:06.211Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://player.vimeo.com/video/273317369?autoplay=1&loop=1&title=0&byline=0&portrait=0&wmode=opaque:233)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:09.748Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'window.performance.getEntriesByType('paint')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:09.749Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  getFirstContentfulPaint (https://stats.wp.com/e-201913.js:16)
+  view (https://stats.wp.com/e-201913.js:15)
+  push (https://stats.wp.com/e-201913.js:13)
+  STQ (https://stats.wp.com/e-201913.js:13)
+  initQueue (https://stats.wp.com/e-201913.js:13)
+  (anonymous function) (https://stats.wp.com/e-201913.js:18)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:43.708Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ReferenceError: Can't find variable: stLight
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:43.708Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  global code (https://www.myersparkumc.org/:108)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:44.016Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: Error: Syntax error, unrecognized expression: .missiontext:not(.localtext
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:34:44.016Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  tokenize (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  select (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  fa (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  find (https://www.myersparkumc.org/wp-includes/js/jquery/jquery-migrate.min.js:2)
+  find (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  find (https://www.myersparkumc.org/wp-includes/js/jquery/jquery-migrate.min.js:2)
+  init (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  init (https://www.myersparkumc.org/wp-includes/js/jquery/jquery-migrate.min.js:2)
+  n (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  (anonymous function) (https://www.myersparkumc.org/wp-content/themes/myerspark/assets/js/scripts.js:2)
+  i (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  fireWith (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  ready (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+  K (https://www.myersparkumc.org/wp-includes/js/jquery/jquery.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:35:19.886Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: undefined is not a function (evaluating 'i[n].href.includes("rackcdn")')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:35:19.886Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  s (http://shared.ekk360.com/theme/js/theme-common.js:15)
+  (anonymous function) (http://shared.ekk360.com/theme/js/theme-common.js:15)
+  (anonymous function) (http://shared.ekk360.com/theme/js/theme-common.js:15)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:35:54.074Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: coudn't load wixui.VideoPlayer TypeError: Property description must be an object.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:35:54.074Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:36:00.303Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:36:00.303Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  parseJSON (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  saveError (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:29)
+  (anonymous function) (:0)
+  error (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:25)
+  u (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  fireWith (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:2)
+  i (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  n (https://cdn.cloversites.com/production/websites/application-c422527ffeae19e61a26770ee5cca7d3082efff42e9b4e86335c8666113eaddc.js:3)
+  openUrl (:0)
+  open (phantomjs://platform/webpage.js:281)
+  (anonymous function) (phantomjs://code/session_request_handler.js:495)
+  _execFuncAndWaitForLoadDecorator (phantomjs://code/session.js:212)
+  _postUrlCommand (phantomjs://code/session_request_handler.js:494)
+  _handle (phantomjs://code/session_request_handler.js:91)
+  _reroute (phantomjs://code/request_handler.js:61)
+  _handle (phantomjs://code/router_request_handler.js:78)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:36:48.707Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: SyntaxError: JSON Parse error: Unexpected EOF
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:36:48.707Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  parse (http://sulphurgrove.org/wp-content/plugins/css-hero-animator-save/assets/animator-applier.js?ver=1.0.0:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.254Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: coudn't load wixui.VideoPlayer TypeError: Property description must be an object.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.254Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  error (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/main-r.min.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.520Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.520Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.784Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:16.784Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:18.032Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:18.032Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:18.532Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:18.532Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.599Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: null is not an object (evaluating 'u.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.599Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  (anonymous function) (https://static.parastorage.com/services/wix-bolt/1.2161.0/bolt-main/app/bolt-main-prod.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.887Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.887Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.938Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: ErrorUtils caught an error: "<![EX[["Tried to listen to element of type %s from %s: %s","click","Error","C...". Subsequent errors won't be logged; see https://fburl.com/debugjs.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:19.938Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  reportError (https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/LcA8mCKeU15.js:55)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:23.411Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:23.411Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://www.fumcrutherfordton.org/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:46.941Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - msg: TypeError: Attempting to change access mechanism for an unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-30T13:37:46.941Z] Session [3c6a9c10-52ec-11e9-b06f-2f4049f363f7] - page.onError - stack:
+  defineProperty (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  value (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  t (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  (anonymous function) (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:6)
+  o (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+  r (https://southparkumc.weebly.com/gdpr/gdprscript.js?buildTime=1553821729&hasRemindMe=true&stealth=false:5)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-30T13:38:38.144Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
