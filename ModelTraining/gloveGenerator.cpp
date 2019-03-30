@@ -31,21 +31,26 @@ int main()
     //and the one to the current web
     vector<string> words;
     vector<vector<float> > vectors;
-    vector<string> folderNames;
+    vector<string> folderNames,folderNamesOutput;
     vector<vector<string> > documents;
     vector<vector<float> > documentsWE;
     string modelName,inputPath = "tokenizedDataset";
+    string outputPath;
     int trash;
 
     cin >> numFiles >> modelName;
     cout << "I read " << numFiles <<  " files. Model: " <<modelName << endl;
     //Adding WE
+    outputPath = modelName + "Dataset";
     cout << "Loading WE..." << endl;
     if(modelName == "glove") ifWE.open("glove.840B.300d.txt");
-    else {
+    else if (modelName == "lexvec")  {
       ifWE.open("lexVec58Bvectors300.txt");
       ifWE >> trash;
       ifWE >> trash;//we will not be using them
+    }else {
+      cout << "Wrong model name. Aborting" << endl;
+      return -1;
     }
     string word;
     int curr=0;
@@ -61,9 +66,32 @@ int main()
         curr+=1;
         //if(curr==100000) break;
     }
+
     ifWE.close();
     cout << "WE Loaded." << endl << "Loading documents..." << endl;
     read_directory(inputPath,folderNames);//this loads . and .. as the first files
+
+    cout << "Documents Loaded." << endl << "Loading output documents..." << endl;
+    read_directory(outputPath,folderNamesOutput);//this loads . and .. as the first files
+    cout << "Output documents Loaded." << endl << "Removing Files already processed..." << endl;
+
+    int maxDocs=folderNames.size(), doneDocs=folderNamesOutput.size();
+    int j=2,removed = 0;
+    if(doneDocs > 2){
+      for(int i=2;i<folderNames.size();i++){
+        while(folderNamesOutput[j]== folderNames[i]){
+          folderNames.erase(folderNames.begin()+i);//erase is very slow, but it this is the
+          folderNamesOutput.erase(folderNamesOutput.begin()+j);
+          removed++;//faster part of the execution
+        }
+      }
+    }
+    cout << "Removed Files already processed." << endl << "Loading output documents..." << endl;
+
+    cout << "We will treat " << (maxDocs-removed-2)  << " documents. Vector has length " << (folderNames.size()-2) << endl;
+    cout << "output folder has " << doneDocs  << " documents" << endl;
+
+    //cout << folderNames[2] << endl;
     documents = vector<vector<string> >(folderNames.size(),vector<string>(0));//we alloc memory and make sure they start as empty
     for(int i=2;i< folderNames.size(); ++i){//so we started at position 2
         folderNames[i]= inputPath +"/"+ folderNames[i]+"/text.txt";
