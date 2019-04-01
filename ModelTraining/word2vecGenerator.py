@@ -28,11 +28,11 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
     if os.path.exists(folderPath.replace('tokenizedDataset/','word2vecDataset/',1)):
         i+=1#effectively skip the iteration
         continue
-    #print(folderPath)
+    print(folderPath)
     file = open(folderPath +'/text.txt','r')
     #urlfile= open(folderPath+'/url.txt')
-    content = file.read()
-    content =ast.literal_eval(content)
+    content = file.read().split()
+    #content =ast.literal_eval(content)
     vectors =[]
     #print([['This'] + list(model.get_vector('This'))])
     #print(len(model.wv.word_vec('hello')))
@@ -41,21 +41,23 @@ for folderPath in glob.iglob('tokenizedDataset/*'):
         try:
             vectors+= [[w] + list(model.get_vector(w))]
         except:
-            print('word \'' + str(w) + '\' not found in word2vec')
+            #print('word \'' + str(w) + '\' not found in word2vec')
             pass
     if len(vectors) < 1:
-        print('Skipping \"' + str(folderPath) + '\" due to no vectors.')
+        #print('Skipping \"' + str(folderPath) + '\" due to no vectors.')
         continue
     #vectors = [model[w] for w in content]
     newFilePath = folderPath.replace('tokenizedDataset/','word2vecDataset/',1)
-    if not os.path.exists(newFilePath):
-        os.makedirs(newFilePath)
-    with open(newFilePath+'/text.txt', 'w') as f:
+    #if not os.path.exists(newFilePath):
+    #    os.makedirs(newFilePath)
+    with open(newFilePath, 'w') as f:
         vectors = [i[1:] for i in vectors]
         vectors = [[float(i) for i in j] for j in vectors]
-        vectors = [sumColumn(vectors,i)for i in range(0,len(vectors[0]))]
-        f.write(str(vectors))
+        vectors = [str(sumColumn(vectors,i))for i in range(0,len(vectors[0]))]
+        #print(' '.join(vectors))
+        #exit()
+        f.write(' '.join(vectors))
     #print(str(vectors))
 
 
-print('booya')
+#print('booya')
