@@ -34,14 +34,16 @@ int main()
     vector<string> folderNames,folderNamesOutput;
     vector<vector<string> > documents;
     vector<vector<float> > documentsWE;
+    vector<int> numWords;//this counts how many word vectors a document combines in its input. Used for extras1
     string modelName,inputPath = "tokenizedDataset";
     string outputPath;
-    int trash;
+    int trash,extras;//extras is mainly to do alterations and generate new datasets
 
-    cin >> numFiles >> modelName;
+    cin >> numFiles >> modelName >> extras;
     cout << "I read " << numFiles <<  " files. Model: " <<modelName << endl;
     //Adding WE
-    outputPath = modelName + "Dataset";
+    if (extras ==1) outputPath =modelName + "AveragedDataset";
+    else outputPath = modelName + "Dataset";
     cout << "Loading WE..." << endl;
     if(modelName == "glove") ifWE.open("glove.840B.300d.txt");
     else if (modelName == "lexvec")  {
@@ -112,8 +114,8 @@ int main()
     //Now we must substitute every document for its representation and write them
     documentsWE =  vector<vector<float> >(folderNames.size(),vector<float>(300,0.));
     cout << folderNames[0] << endl;
-    //cout << documents[4].size() << endl;
-
+    //numwords has the same size as the amount of folders.
+    numWords = vector<int>(folderNames.size(), 0);
     cout << "Turning documents to WE..." << endl;
     for(int i=0;i< words.size(); ++i){//this way we guarantee that we wont have
       //to search a huge vector every time
@@ -132,12 +134,22 @@ int main()
                   //cout << documentsWE[j].size() << endl;
                   //cout << words[i]<< " colision." << endl;
                   sum_vectorvalue(documentsWE[j],vectors[i]);
+                  numWords[j]++;
               }
             }
             //if (j==4) break;
 
         }
         //break;
+    }
+    if(extras==1){//we average
+        cout << "Averaging vectors.." << endl;
+        for(int i=2;i<folderNames.size();++i){
+            for(int j=0;j<documentsWE[i].size();++j)
+            documentsWE[i][j]= documentsWE[i][j] / float(numWords[i]);
+        }
+        cout << "Averaged." << endl;
+        
     }
     cout << "Documents turned." << endl;
     cout << "Writing WE documents..." << endl;
