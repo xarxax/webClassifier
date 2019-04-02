@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 
 i = int(sys.argv[1])
 inputDataset = str(sys.argv[2])
+layers = str(sys.argv[3])
+
+
 
 documents = []
 categories = []
@@ -59,7 +62,7 @@ categories = [list(map( lambda x: float(x==i),all_categories )) for i in categor
 #print(categories)
 #print(len(documents[0]))
 #x_train =[numpy.array(i) for i in documents]
-print(categories)
+#print(categories)
 x_train =numpy.array(documents)
 #print(x_train[0].shape)
 y_train=numpy.array(categories)
@@ -69,8 +72,8 @@ y_train=numpy.array(categories)
 
 model = Sequential()
 model.add(Dense(units=64, activation='relu', input_dim=300))
-model.add(Dense(units=64, activation='relu'))
-model.add(Dense(units=64, activation='relu'))
+for _ in range(layers):
+    model.add(Dense(units=64, activation='relu'))
 model.add(Dense(units=13, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',
