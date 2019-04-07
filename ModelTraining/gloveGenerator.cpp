@@ -34,7 +34,7 @@ int main()
     vector<string> folderNames,folderNamesOutput;
     vector<vector<string> > documents;
     vector<vector<float> > documentsWE;
-    vector<int> numWords;//this counts how many word vectors a document combines in its input. Used for extras1
+    //vector<int> numWords;//this counts how many word vectors a document combines in its input. Used for extras1
     string modelName,inputPath = "tokenizedDataset";
     string outputPath;
     int trash,extras;//extras is mainly to do alterations and generate new datasets
@@ -115,7 +115,7 @@ int main()
     documentsWE =  vector<vector<float> >(folderNames.size(),vector<float>(300,0.));
     cout << folderNames[0] << endl;
     //numwords has the same size as the amount of folders.
-    numWords = vector<int>(folderNames.size(), 0);
+    //numWords = vector<int>(folderNames.size(), 0);
     cout << "Turning documents to WE..." << endl;
     for(int i=0;i< words.size(); ++i){//this way we guarantee that we wont have
       //to search a huge vector every time
@@ -134,7 +134,7 @@ int main()
                   //cout << documentsWE[j].size() << endl;
                   //cout << words[i]<< " colision." << endl;
                   sum_vectorvalue(documentsWE[j],vectors[i]);
-                  numWords[j]++;
+                  //numWords[j]++;
               }
             }
             //if (j==4) break;
@@ -142,7 +142,7 @@ int main()
         }
         //break;
     }
-    if(extras==1){//we average
+    /**if(extras==1){//we average
         cout << "Averaging vectors.." << endl;
         for(int i=2;i<folderNames.size();++i){
             for(int j=0;j<documentsWE[i].size();++j)
@@ -150,7 +150,7 @@ int main()
         }
         cout << "Averaged." << endl;
         
-    }
+    }**/
     cout << "Documents turned." << endl;
     cout << "Writing WE documents..." << endl;
     for(int i=2;i< folderNames.size(); ++i){//this way we guarantee that we wont have
