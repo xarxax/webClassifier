@@ -117,7 +117,7 @@ model.add(Dense(units=13, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',
               optimizer='sgd',
-              metrics=[f1])
+              metrics=['acc'])
 print('Training the model.')
 history = model.fit(x_train, y_train,validation_split=0.25, epochs=epochs, batch_size=32)
 model.save( 'models/' + inputDataset + '.h5')  # creates a HDF5 file 'my_model.h5'
@@ -125,7 +125,7 @@ model.save( 'models/' + inputDataset + '.h5')  # creates a HDF5 file 'my_model.h
 
 plot_model(model, to_file=  'models/' + inputDataset + '.png')
 
-metric = 'f1' 
+metric = 'acc' 
 
 # Plot training & validation accuracy values
 plt.plot(history.history[metric])
