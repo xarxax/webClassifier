@@ -5,7 +5,7 @@ from collections import Counter
 from keras.utils import plot_model
 import matplotlib.pyplot as plt
 from keras import backend as K
-
+from keras.regularizers import l2
 
 
 def f1(y_true, y_pred):
@@ -53,14 +53,14 @@ for folderPath in glob.iglob(inputDataset + '/*'):
         print('Reached limit established')
         break
     i-=1
-    print(folderPath)
+    #print(folderPath)
     file = open(folderPath ,'r')
     word_representation = file.read().split()
     if word_representation is '':
         print("Empty document, skipping.")
         i+=1
         continue
-    print(folderPath)
+    #print(folderPath)
     if len(word_representation) == 0:
         print('empty document')
         continue
@@ -94,10 +94,17 @@ y_train=numpy.array(categories)
 
 #exit()
 
+
+
+
+param_grid = dict()
+
+
+
 model = Sequential()
 model.add(Dense(units=units, activation='relu', input_dim=300))
 for _ in range(layers):
-    model.add(Dense(units=units, activation='relu'))
+    model.add(Dense(units=units, activation='relu',kernel_regularizer=l2(0.001)))
 model.add(Dense(units=13, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',
@@ -105,6 +112,8 @@ model.compile(loss='categorical_crossentropy',
               metrics=[f1])
 print('Training the model.')
 history = model.fit(x_train, y_train,validation_split=0.10, epochs=epochs, batch_size=32)
+
+
 model.save( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+  '.h5')  # creates a HDF5 file 'my_model.h5'
 
 
