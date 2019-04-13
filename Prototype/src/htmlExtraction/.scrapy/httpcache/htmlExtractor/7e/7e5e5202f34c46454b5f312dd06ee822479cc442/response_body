@@ -1,0 +1,1386 @@
+<!DOCTYPE HTML>
+<!-- test -->
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<title>Home - IngMar Medical</title>
+	<meta charset="UTF-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
+	<link rel="pingback" href="https://www.ingmarmed.com/xmlrpc.php" />
+	<link rel="shortcut icon" href="https://www.ingmarmed.com/wp-content/themes/ingmar/img/favicon.ico"/>
+	<link rel="stylesheet" href="https://www.ingmarmed.com/wp-content/themes/ingmar/css/jquery.bxslider.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	
+<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+</script>
+<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+<script>window._wca = window._wca || [];</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.ingmarmed.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home - IngMar Medical" />
+<meta property="og:url" content="https://www.ingmarmed.com/" />
+<meta property="og:site_name" content="IngMar Medical" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.ingmarmed.com/#website","url":"https://www.ingmarmed.com/","name":"IngMar Medical","potentialAction":{"@type":"SearchAction","target":"https://www.ingmarmed.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="IngMar Medical &raquo; Home Comments Feed" href="https://www.ingmarmed.com/home-2/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/www.ingmarmed.com\/wp-includes\/js\/wp-emoji.js?ver=5.0.3","twemoji":"https:\/\/www.ingmarmed.com\/wp-includes\/js\/twemoji.js?ver=5.0.3"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Check if two sets of Emoji characters render the same.
+	 *
+	 * @param set1 array Set of Emoji characters.
+	 * @param set2 array Set of Emoji characters.
+	 * @returns {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji".
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 56826, 55356, 56819 ],
+					[ 55356, 56826, 8203, 55356, 56819 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447 ],
+					[ 55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447 ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * She's the hero Emoji deserves, but not the one it needs right now.
+				 *
+				 * To test for support, try to render a new emoji (female superhero),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (superhero + female sign).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[55358, 56760, 9792, 65039],
+					[55358, 56760, 8203, 9792, 65039]
+				);
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='jquery.prettyphoto-css'  href='https://www.ingmarmed.com/wp-content/plugins/wp-video-lightbox/css/prettyPhoto.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='video-lightbox-css'  href='https://www.ingmarmed.com/wp-content/plugins/wp-video-lightbox/wp-video-lightbox.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ingmarmed.com/wp-includes/css/dist/block-library/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cpsh-shortcodes-css'  href='https://www.ingmarmed.com/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='gdpr-css'  href='https://www.ingmarmed.com/wp-content/plugins/gdpr/assets/css/gdpr-public.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-quote-frontend-css-css'  href='https://www.ingmarmed.com/wp-content/plugins/woocommerce-quote-1.0.4-shipping2/assets/css/style-frontend.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.5.3' type='text/css' media='all' />
+<style id='woocommerce-layout-inline-css' type='text/css'>
+
+	.infinite-scroll .woocommerce-pagination {
+		display: none;
+	}
+</style>
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.5.3' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.5.3' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='all-css'  href='https://www.ingmarmed.com/wp-content/themes/ingmar/css/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-custom-css'  href='https://www.ingmarmed.com/wp-content/themes/ingmar/css/woocommerce.css?ver=9879779793434387971111898734543' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widget-social-icons-styles-css'  href='https://www.ingmarmed.com/wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css?ver=20170506' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://www.ingmarmed.com/wp-content/plugins/tablepress/css/default.css?ver=1.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sticky_popup-style-css'  href='https://www.ingmarmed.com/wp-content/plugins/sticky-popup/css/sticky-popup.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-css'  href='https://www.ingmarmed.com/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelementplayer.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-legacy-css'  href='https://www.ingmarmed.com/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelementplayer-legacy.min.css?ver=5.0.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gadwpUAEventsData = {"options":{"event_tracking":"1","event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":0,"aff_tracking":0,"event_affiliates":"\/out\/","hash_tracking":0,"root_domain":"ingmarmed.com","event_timeout":100,"event_precision":0,"event_formsubmit":0,"ga_pagescrolldepth_tracking":0,"ga_with_gtag":0}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/google-analytics-dashboard-for-wp/front/js/tracking-analytics-events.js?ver=5.3.7'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min.js?ver=3.1.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var vlpp_vars = {"prettyPhoto_rel":"wp-video-lightbox","animation_speed":"fast","slideshow":"5000","autoplay_slideshow":"false","opacity":"0.80","show_title":"true","allow_resize":"true","allow_expand":"true","default_width":"1056","default_height":"772","counter_separator_label":"\/","theme":"pp_default","horizontal_padding":"20","hideflash":"false","wmode":"opaque","autoplay":"true","modal":"false","deeplinking":"false","overlay_gallery":"true","overlay_gallery_max":"30","keyboard_shortcuts":"true","ie6_fallback":"true"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/wp-video-lightbox/js/video-lightbox.js?ver=3.1.6'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/agile-crm-lead-management/js/inputsubmit.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var GDPR = {"ajaxurl":"https:\/\/www.ingmarmed.com\/wp-admin\/admin-ajax.php","logouturl":"","i18n":{"aborting":"Aborting","logging_out":"You are being logged out.","continue":"Continue","cancel":"Cancel","ok":"OK","close_account":"Close your account?","close_account_warning":"Your account will be closed and all data will be permanently deleted and cannot be recovered. Are you sure?","are_you_sure":"Are you sure?","policy_disagree":"By disagreeing you will no longer have access to our site and will be logged out."},"is_user_logged_in":"","refresh":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gdpr/assets/js/gdpr-public.js?ver=2.1.0'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/sticky-popup/js/modernizr.custom.js?ver=1.2'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelement-and-player.min.js?ver=4.2.8'></script>
+<link rel='https://api.w.org/' href='https://www.ingmarmed.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ingmarmed.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ingmarmed.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.3" />
+<meta name="generator" content="WooCommerce 3.5.3" />
+<link rel='shortlink' href='https://www.ingmarmed.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ingmarmed.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ingmarmed.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ingmarmed.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ingmarmed.com%2F&#038;format=xml" />
+<script>
+            WP_VIDEO_LIGHTBOX_VERSION="1.8.8";
+            WP_VID_LIGHTBOX_URL="https://www.ingmarmed.com/wp-content/plugins/wp-video-lightbox";
+                        function wpvl_paramReplace(name, string, value) {
+                // Find the param with regex
+                // Grab the first character in the returned string (should be ? or &)
+                // Replace our href string with our new value, passing on the name and delimeter
+
+                var re = new RegExp("[\?&]" + name + "=([^&#]*)");
+                var matches = re.exec(string);
+                var newString;
+
+                if (matches === null) {
+                    // if there are no params, append the parameter
+                    newString = string + '?' + name + '=' + value;
+                } else {
+                    var delimeter = matches[0].charAt(0);
+                    newString = string.replace(re, delimeter + name + "=" + value);
+                }
+                return newString;
+            }
+            </script>
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<style type="text/css">
+			.sticky-popup .popup-header
+			{
+							background-color : #2C5A85;		
+										background-color : #2c5a85;		
+						
+		}
+		.popup-title
+		{
+							color : #ffffff;		
+					}
+					.sticky-popup-right, .sticky-popup-left
+			{
+									top : 25%;		
+							}
+
+				</style>
+		
+<!-- BEGIN ExactMetrics v5.3.7 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-29965201-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+			<style type="text/css" id="wp-custom-css">
+				/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+.page-id-5841 .gform_body {
+}			</style>
+		<script async src='https://stats.wp.com/s-201905.js'></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29965201-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!--
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29965201-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+-->
+
+<!--[if lt IE 9]>
+		<script src="https://www.ingmarmed.com/wp-content/themes/ingmar/js/respond.js"></script>
+	<![endif]-->
+
+	<style>
+		@media screen and (min-width: 768px) {
+			.navbar {	
+				margin-bottom: 0;
+				border: 0;
+			}
+		}
+		.socialMedia a {
+			text-indent: -99999px;
+		}
+	</style>
+
+	
+</head>
+<body class="home page-template page-template-new-page-home page-template-new-page-home-php page page-id-1086 woocommerce-no-js home-2">
+
+<div class="site ">
+
+<div class="header">
+<div class="container ">
+	<div class="row">
+		<div class="col-sm-4">
+			<header>
+				<img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/shared/logo.png" class="visible-print"/>
+				<h1><a href="https://www.ingmarmed.com" class="hidden-print"><img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/shared/logo.png" class="img-responsive"/></a></h1>
+			</header>
+		</div> <!-- col-6 -->
+		<div class="col-sm-8">
+			<div class="col-sm-12">
+				<nav role="navigation" class="site-navigation top-navigation hidden-print">
+					<div class="menu-topright-container"><ul id="menu-topright" class="menu"><li id="menu-item-1141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1086 current_page_item menu-item-1141"><a href="https://www.ingmarmed.com/">Home</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://www.ingmarmed.com/company/">Company</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://www.ingmarmed.com/events/">Events</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://www.ingmarmed.com/blog/">News</a></li>
+<li id="menu-item-5860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5860"><a href="https://www.ingmarmed.com/distributors/">Distributors</a></li>
+<li id="menu-item-10302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10302"><a href="https://www.ingmarmed.com/store/">Store</a></li>
+<li id="menu-item-34" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="https://www.ingmarmed.com/contact-us/">Contact Us</a></li>
+</ul></div>					<div class="clear"></div>
+				</nav><!-- .site-navigation .main-navigation -->
+				<div class="clear"></div>
+			</div>
+			<div class="col-sm-12">
+				<h2>Respiratory Simulation Specialists
+
+<div class="search-container">
+	<form action="https://www.ingmarmed.com/" method="get" id="searchform">
+		<input id="s" name="s" type="search" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}">
+	</form>
+</div></h2>
+
+			</div>
+		</div> <!-- col-6 -->
+	</div> <!-- row -->
+</div> <!-- Container -->
+</div> <!-- header -->
+	<div class="purple hidden-print">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="navbar">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- Be sure to leave the brand out there if you want it shown -->
+						    <!-- Place everything within .navbar-collapse to hide it until above 768px -->
+						<!--<div id="access" class="nav-collapse collapse navbar-responsive-collapse">-->
+													<!-- </div>/.nav-collapse -->
+
+							<nav role="navigation" id="access" class="nav-collapse collapse navbar-responsive-collapse">
+								<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-1616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1616"><a href="https://www.ingmarmed.com/how-we-help/">Who We Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-1621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1621"><a href="https://www.ingmarmed.com/how-we-help/respiratory-care-educators/">Educators</a></li>
+	<li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1619"><a href="https://www.ingmarmed.com/how-we-help/researchers/">Researchers</a></li>
+	<li id="menu-item-1618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1618"><a href="https://www.ingmarmed.com/how-we-help/engineers/">Engineers</a></li>
+</ul>
+</li>
+<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1631"><a href="https://www.ingmarmed.com/products/">Products</a>
+<ul class="sub-menu">
+	<li id="menu-item-8263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8263"><a href="https://www.ingmarmed.com/products/overview/">Products Overview</a></li>
+	<li id="menu-item-2002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2002"><a href="https://www.ingmarmed.com/products/asl-5000/">ASL 5000 Breathing Simulator</a></li>
+	<li id="menu-item-10034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10034"><a href="https://www.ingmarmed.com/products/simman-3g-lung-kit/">Lung Solution for SimMan – New!</a></li>
+	<li id="menu-item-1961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1961"><a href="https://www.ingmarmed.com/products/respisim-pvi-alternative/">RespiSim System</a></li>
+	<li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1949"><a href="https://www.ingmarmed.com/products/quicklung-notebook-test-lung/">QuickLung</a></li>
+	<li id="menu-item-1954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1954"><a href="https://www.ingmarmed.com/products/breather-option-for-the-quicklung-test-lung/">QuickLung Breather</a></li>
+	<li id="menu-item-1945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="https://www.ingmarmed.com/products/neolung/">NeoLung</a></li>
+	<li id="menu-item-1633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1633"><a href="https://www.ingmarmed.com/products/adultpediatric-demo-lung/">Adult/Pediatric Demo Lung</a></li>
+	<li id="menu-item-1794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1794"><a href="https://www.ingmarmed.com/products/linear/">Linear Test Lung</a></li>
+	<li id="menu-item-1978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1978"><a href="https://www.ingmarmed.com/products/respitrainer-advance/">RespiTrainer Advance</a></li>
+	<li id="menu-item-1948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1948"><a href="https://www.ingmarmed.com/products/parabolic-resistor-ring/">Parabolic Resistor Ring</a></li>
+</ul>
+</li>
+<li id="menu-item-6531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6531"><a href="https://www.ingmarmed.com/site-training/training-options/">Training</a>
+<ul class="sub-menu">
+	<li id="menu-item-8251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8251"><a href="https://www.ingmarmed.com/site-training/training-options/">Training Options</a></li>
+	<li id="menu-item-8252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8252"><a href="https://www.ingmarmed.com/?page_id=6549">Customer-Site Training</a></li>
+	<li id="menu-item-9539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9539"><a href="https://www.ingmarmed.com/site-training/live-distance-training-2/">Live Distance Training</a></li>
+	<li id="menu-item-8253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8253"><a href="https://www.ingmarmed.com/site-training/live-distance-training-registration/">Webinars</a></li>
+</ul>
+</li>
+<li id="menu-item-1986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1986"><a href="https://www.ingmarmed.com/support/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-8265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8265"><a href="https://www.ingmarmed.com/support/overview-support/">Support Overview</a></li>
+	<li id="menu-item-11915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11915"><a href="https://www.ingmarmed.com/support/consulting-services/">Consulting Services</a></li>
+	<li id="menu-item-3149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3149"><a href="https://www.ingmarmed.com/support/asl-5000-training-support/">ASL 5000 Support</a></li>
+	<li id="menu-item-11214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11214"><a href="https://www.ingmarmed.com/support/asl-5000-lung-solution-support/">ASL 5000 Lung Solution Support</a></li>
+	<li id="menu-item-6024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6024"><a href="https://www.ingmarmed.com/support/respisim-support/">RespiSim System Support</a></li>
+	<li id="menu-item-7337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7337"><a href="https://www.ingmarmed.com/support/respipatient-support/">RespiPatient Support</a></li>
+	<li id="menu-item-7334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7334"><a href="https://www.ingmarmed.com/support/quicklung-breather-support/">QuickLung Breather Support</a></li>
+	<li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"><a href="https://www.ingmarmed.com/support/downloads/">Downloads</a></li>
+	<li id="menu-item-6708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6708"><a href="https://www.ingmarmed.com/support/faqs/">FAQ Overview</a></li>
+</ul>
+</li>
+<li id="menu-item-1994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1994"><a href="https://www.ingmarmed.com/user-stories/">User Stories</a>
+<ul class="sub-menu">
+	<li id="menu-item-5423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5423"><a href="https://www.ingmarmed.com/user-stories/overview-2/">Overview</a></li>
+	<li id="menu-item-12419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12419"><a href="https://www.ingmarmed.com/user-stories/the-lung-solution-is-a-winner-at-st-elizabeth-healthcare/">The Lung Solution is a Winner at St. Elizabeth Healthcare</a></li>
+	<li id="menu-item-12167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12167"><a href="https://www.ingmarmed.com/user-stories/respisim-is-state-of-the-art-at-laurel-tech/">RespiSim is State-of-the-Art at Laurel Tech</a></li>
+	<li id="menu-item-12013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12013"><a href="https://www.ingmarmed.com/user-stories/asl-5000-lung-solution-greenville/">ASL 5000 Lung Solution Expands Horizons in Greenville</a></li>
+	<li id="menu-item-9791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9791"><a href="https://www.ingmarmed.com/user-stories/effectiveness-of-mechanical-ventilation-boot-camp/">Mechanical Ventilation Boot Camp</a></li>
+	<li id="menu-item-7532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7532"><a href="https://www.ingmarmed.com/user-stories/in-vitro-aerosol-drug-delivery-research/">In Vitro Aerosol Drug Delivery Research</a></li>
+	<li id="menu-item-7167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7167"><a href="https://www.ingmarmed.com/user-stories/simulation-from-bench-to-clinical-practice/">Simulation: From Bench to Clinical Practice</a></li>
+	<li id="menu-item-7104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7104"><a href="https://www.ingmarmed.com/user-stories/mean-airway-pressure-generated-by-hhfnc/">Mean Airway Pressure Generated by HHFNC</a></li>
+	<li id="menu-item-5977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5977"><a href="https://www.ingmarmed.com/user-stories/finding-time-hands-learning/">Finding Time for Hands-on Learning</a></li>
+	<li id="menu-item-5801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5801"><a href="https://www.ingmarmed.com/user-stories/ventilator-emergencies-workshop/">Ventilator Emergencies Workshop</a></li>
+	<li id="menu-item-5270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5270"><a href="https://www.ingmarmed.com/user-stories/prost/">Delivery of Neonatal Nasal CPAP</a></li>
+	<li id="menu-item-5256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5256"><a href="https://www.ingmarmed.com/user-stories/moody/">Differences in Ventilator Performance Characteristics and Patient Response</a></li>
+	<li id="menu-item-4762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4762"><a href="https://www.ingmarmed.com/user-stories/automated-product-verification-carefusion/">Automated Product Verification at CareFusion</a></li>
+	<li id="menu-item-5802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5802"><a href="https://www.ingmarmed.com/user-stories/tang/">Ventilator Development using the ASL 5000 Breathing Simulator</a></li>
+</ul>
+</li>
+<li id="menu-item-7566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7566"><a href="https://www.ingmarmed.com/get-started/">Get Started</a></li>
+</ul></div>								<div class="clear"></div>
+							</nav><!-- .site-navigation .main-navigation -->
+						</div><!-- /.navbar -->
+					<div class="clear"></div>
+				</div> <!-- col-12 -->
+			</div> <!-- row -->
+		</div><!-- container -->
+	</div> <!-- purple -->
+	<div class="clear"></div>
+
+
+<div class="slide-container">
+
+	<div class="wrap">
+
+		<ul class="bxslider bxslider-new">
+
+			
+					
+						<li>
+
+							<div class="left">
+
+								<h1>New Lungs for SimMan!</h1>
+								<p>The ASL 5000™ Lung Solution for SimMan® enables you to simulate a spontaneously breathing patient supported on a ventilator.</p>
+								<a href="https://www.ingmarmed.com/products/simman-3g-lung-kit/"><span class="linkText">Learn More</span></a>
+
+							</div> <!-- end left -->
+							<div class="right">
+
+								<img src="https://www.ingmarmed.com/wp-content/uploads/2018/02/LS-Carousel-Image9.png" />
+
+							</div> <!-- right -->
+						</li>
+
+					
+					
+						<li>
+
+							<div class="left">
+
+								<h1>It's All About the Lungs!</h1>
+								<p>IngMar Medical's respiratory simulators and test lungs are used worldwide to provide hands-on clinician training, test ventilator performance, and accelerate research and development. </p>
+								<a href="https://www.ingmarmed.com/get-started/"><span class="linkText">Get Started!</span></a>
+
+							</div> <!-- end left -->
+							<div class="right">
+
+								<img src="https://www.ingmarmed.com/wp-content/uploads/2013/09/NeedleDecompressionTrsp-e1437494965466-1-e1476887585442-469x361.png" />
+
+							</div> <!-- right -->
+						</li>
+
+					
+					
+						<li>
+
+							<div class="left">
+
+								<h1>Software 3.6 Adds Ease to Simulation Training</h1>
+								<p>Software 3.6 for the RespiSim® System features a new QuickChoice Menu for simple respiratory simulation scenario set up. It's as easy as 1-2-3!</p>
+								<a href="https://www.ingmarmed.com/products/respisim-pvi-alternative/whats-new-in-software-3-6/"><span class="linkText">Learn More</span></a>
+
+							</div> <!-- end left -->
+							<div class="right">
+
+								<img src="https://www.ingmarmed.com/wp-content/uploads/2013/09/sliderPeople-470x361.png" />
+
+							</div> <!-- right -->
+						</li>
+
+					
+		</ul>
+
+	</div>
+
+</div>
+
+<style>
+	.slide-container {
+		background: url('https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/slider.jpg') repeat-x;
+	}
+	.slide-container .wrap {
+		width: 100%;
+		max-width: 940px;
+		margin: 0 auto;
+	}
+	@media (min-width: 768px) {
+		.slide-container .wrap {
+    	max-width: 728px;
+		}
+	}
+	@media (min-width: 992px) {
+		.slide-container .wrap {
+			max-width: 940px;
+		}
+	}
+	.slide-container .wrap .bx-wrapper {
+		    background: url('https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/sliderFade.png') bottom center no-repeat;
+	}
+	.slide-container .wrap .bx-wrapper .bx-viewport {
+		height: auto!important;
+	}
+	.slide-container .bx-slider {
+
+	}
+	.slide-container .bx-slider li {
+
+	}
+	.slide-container .left {
+		float: none;
+		width: 100%;
+		padding: 20px 0;
+	}
+	@media (min-width: 768px) {
+		.slide-container .left {
+			float: left;
+			width: 50%;
+			padding: 25px 0;
+		}
+	}
+	@media (min-width: 992px) {
+		.slide-container .left {
+			padding: 40px 0 20px 0;
+		}
+	}
+	.slide-container .left h1 {
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Merriweather', serif;
+		color: #FFFFFF;
+		font-weight: normal;
+		text-shadow: 2px 1px 0px rgba(0,0,0,0.3);
+		margin-bottom: 25px;
+		border: none;
+	}
+	@media (min-width: 768px) {
+		.slide-container .left h1 {
+			text-align: left;
+			font-size: 23px;
+		}
+	}
+	@media (min-width: 992px) {
+		.slide-container .left h1 {
+			font-size: 35px;
+		}
+	}
+	.slide-container .left p {
+		font-size: 19px;
+		margin: 0 0 25px 0;
+	}
+	@media (min-width: 768px) {
+		.slide-container .left p {
+			font-size: 14px;
+			margin: 0 0 20px 0;
+		}
+	}
+	@media (min-width: 992px) {
+		.slide-container .left p {
+			font-size: 19px;
+			margin: 0 0 25px 0;
+		}
+	}
+	.slide-container .left a {
+		font-size: 16px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 1px 0px rgba(0,0,0,0.3);
+    margin-top: 20px;
+	}
+	.slide-container .right {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		.slide-container .right {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+	}
+</style>
+
+
+<div class="container homeContent">
+	<div class="row">
+
+	<div class="col-sm-4 hidden-print homeLeft">
+		<h1>WHO WE HELP...</h1>
+		<a href="http://www.ingmarmed.com/how-we-help/respiratory-care-educators/"><img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/educatorsHome.jpg" class="img-responsive helpImages"/></a>
+		<a href="http://www.ingmarmed.com/how-we-help/researchers/"><img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/researchHome.jpg" class="img-responsive helpImages"/></a>
+		<a href="http://www.ingmarmed.com/how-we-help/engineers/"><img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/engineersHome.jpg" class="img-responsive helpImages"/></a>
+	<div class="eventsHome">
+			<h1>EVENTS</h1>
+
+												<div class="blog">
+											<span>
+												<span class="eventDate">Jan 26-30, 2019 - </span>
+
+													<a href="https://www.ingmarmed.com/events/imsh-2019/" class=""><span class="eventHeading">IMSH 2019</span></a>
+											</span>
+										</div> <!-- blog -->
+									</div>
+
+	</div>
+	<div class="col-sm-8">
+	<div class="homeRight">
+
+		<h1>RECENT NEWS</h1>
+
+																					
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/visit-ingmar-at-imsh-2019/" rel="bookmark" title="Permanent Link to Visit IngMar at IMSH 2019 ">Visit IngMar at IMSH 2019 </a></h2>
+										<p>Don’t miss out. Here are three reasons to visit IngMar at IMSH 2019 (booth 825) in San Antonio, TX January [&hellip;] <a href="https://www.ingmarmed.com/visit-ingmar-at-imsh-2019/" title="Visit IngMar at IMSH 2019 " class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/webinar-test-automation-interface-tai/" rel="bookmark" title="Permanent Link to Webinar: Test Automation Interface (TAI)">Webinar: Test Automation Interface (TAI)</a></h2>
+										<p>Learn how you can save time and gain consistency with true automated device testing. Please join us for an informative webinar where [&hellip;] <a href="https://www.ingmarmed.com/webinar-test-automation-interface-tai/" title="Webinar: Test Automation Interface (TAI)" class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/asl-5000-in-the-news-at-cleveland-clinic/" rel="bookmark" title="Permanent Link to ASL 5000 in the News at Cleveland Clinic">ASL 5000 in the News at Cleveland Clinic</a></h2>
+										<p>Practice makes perfect, but how to practice for high-risk scenarios which occur only rarely? Physicians at the Cleveland Clinic have [&hellip;] <a href="https://www.ingmarmed.com/asl-5000-in-the-news-at-cleveland-clinic/" title="ASL 5000 in the News at Cleveland Clinic" class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/webinar-using-the-asl-5000-lung-solution-for-simman-to-manage-a-tension-pneumothorax/" rel="bookmark" title="Permanent Link to Webinar: Managing a Pneumothorax with the ASL 5000 Lung Solution for SimMan">Webinar: Managing a Pneumothorax with the ASL 5000 Lung Solution for SimMan</a></h2>
+										<p>Would you like to watch a tension pneumothorax scenario using the ASL 5000™ Lung Solution for SimMan®?  The scenario will begin [&hellip;] <a href="https://www.ingmarmed.com/webinar-using-the-asl-5000-lung-solution-for-simman-to-manage-a-tension-pneumothorax/" title="Webinar: Managing a Pneumothorax with the ASL 5000 Lung Solution for SimMan" class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/new-lleap-software-plugin-version-2-4-11-for-the-simman-platform/" rel="bookmark" title="Permanent Link to New LLEAP Software Plugin, Version 2.4.11 for the SimMan® Platform">New LLEAP Software Plugin, Version 2.4.11 for the SimMan® Platform</a></h2>
+										<p>IngMar Medical is pleased to announce the release of its new LLEAP Software Plugin, version 2.4.11 for the SimMan® Platform. [&hellip;] <a href="https://www.ingmarmed.com/new-lleap-software-plugin-version-2-4-11-for-the-simman-platform/" title="New LLEAP Software Plugin, Version 2.4.11 for the SimMan® Platform" class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+								<div class="blog">
+
+										<h2><a href="https://www.ingmarmed.com/webinar-advanced-verification-of-the-asl-5000-and-measurement-uncertainty/" rel="bookmark" title="Permanent Link to Webinar: Measurement Uncertainty and Advanced Verification of the ASL 5000">Webinar: Measurement Uncertainty and Advanced Verification of the ASL 5000</a></h2>
+										<p>View the recording of Measurement Uncertainty and Advanced Verification of the ASL 5000™. Periodic calibration of your ASL 5000 ensures that you [&hellip;] <a href="https://www.ingmarmed.com/webinar-advanced-verification-of-the-asl-5000-and-measurement-uncertainty/" title="Webinar: Measurement Uncertainty and Advanced Verification of the ASL 5000" class="read-more">Read More</a></p>
+
+
+									<div class="clear"></div>
+								</div>
+								
+	</div>
+	
+	</div>
+	<!-- <div class="col-sm-12">
+		<div class="homeRight president">
+			<h1></h1>
+						<div class="clear"></div>
+		</div>
+	</div> -->
+	<div class="clear"></div>
+
+
+	</div> <!-- container -->
+</div> <!-- row -->
+
+<div class="footer1">
+		<div class="container footer_logo">
+		<div class="row">
+			<div class="col-sm-6 left  hidden-print">
+				<h1>CONTACT US</h1>
+				<div class="row">
+					<div class="col-sm-5">
+						<h3>Mailing Address:</h3>
+						<p>5940 Baum Blvd. </br>
+						Pittsburgh, PA 15206</p>
+						<div class="clear"></div>
+
+					</div> <!-- col-5 -->
+					<div class="col-sm-7 ">
+						<p><span class="contact">Tel:</span> 800.583.9910 or 412.441.8228</p>
+						<p><span class="contact">Fax:</span> 412.441.8404</p>
+						<p><span class="contact">Email:</span>
+
+							<script>
+								emailE=('info@' + 'ingmarmed.com')
+								document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+							</script>
+
+						</p>
+					</div> <!-- col-7-->
+					 <div class="clearfix visible-xs-block"></div>
+				<div class="col-sm-7">
+					<a href="#inline-1" class="mailListButton" rel="wp-video-lightbox" ><!-- <img src="https://www.ingmarmed.com/wp-content/themes/ingmar/img/shared/mailingList.jpg" class="img-responsive"/> -->Join Our Mailing List</a>
+				</div>
+				<div class="col-sm-5">
+					<div class="socialMedia">
+						<div style="margin-top:15px;">
+							<script src="//platform.linkedin.com/in.js" type="text/javascript">
+							  lang: en_US
+							</script>
+						</div>
+						<a href="https://www.facebook.com/pages/IngMar-Medical/168074926539951" target="_blank" class="facebookIcon">Facebook</a>
+						<a href="https://twitter.com/IngMarMedical" target="_blank" class="twitterIcon">Twitter</a>
+						<a href="https://www.linkedin.com/company/ingmar-medical" target="_blank" class="linkedinIcon">Linkedin</a>
+						<a href="https://vimeo.com/user13180034/videos" target="_blank" class="vimeoIcon">Vimeo</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+			<div class="col-sm-6 hidden-print">
+				<div class="col-12 footer_nav">
+
+
+					<ul class="menu-footer-container">
+						<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1086 current_page_item menu-item-1282"><a href="https://www.ingmarmed.com/">Home</a></li>
+<li id="menu-item-1283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="https://www.ingmarmed.com/how-we-help/">Who We Help</a></li>
+<li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://www.ingmarmed.com/company/">Company</a></li>
+<li id="menu-item-1285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285"><a href="https://www.ingmarmed.com/products/">Products</a></li>
+<li id="menu-item-1287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1287"><a href="https://www.ingmarmed.com/support/">Support</a></li>
+<li id="menu-item-1288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"><a href="https://www.ingmarmed.com/blog/">News</a></li>
+<li id="menu-item-1289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1289"><a href="https://www.ingmarmed.com/user-stories/">User Stories</a></li>
+<li id="menu-item-1290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1290"><a href="https://www.ingmarmed.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-1291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1291"><a href="https://www.ingmarmed.com/get-started/">Get Started</a></li>
+<li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="https://www.ingmarmed.com/company/legal-2/">Privacy Policy</a></li>
+<li id="menu-item-5862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5862"><a href="https://www.ingmarmed.com/site-training/">Training</a></li>
+<li id="menu-item-5861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5861"><a href="https://www.ingmarmed.com/distributors/">Distributors</a></li>
+					</ul>
+				</div>
+				<div class="col-12 footer_nav">
+					<p class="certified">IngMar Medical is ISO 9001:2015 Certified <br/>(Registration Nr. <a href="https://www.ingmarmed.com/wp-content/uploads/2017/12/IngMar_ISO-9001-Certificate-2016-2019.pdf" target="_blank">74 300 3727</a>)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer2">
+	<div class="container">
+		<div class="row">
+
+			<footer>
+			<div class="col-6">
+					<span class="copyright">&copy; 2019 IngMar Medical. All rights reserved.</span>
+				</div>
+				<div class="col-6 bottom_right">
+					<span class="imagebox">Site by <a href="http://imagebox.com" title="Imagebox.com" target="_blank">Imagebox</a></span>
+				</div>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<div id="inline-1" class="mailingList" style="display:none;">
+	<div class="formContent">
+		<h1>Sign Up Today</h1>
+		<p>Join our mailing list for the latest news and updates in respiratory simulation.</p>
+		
+                <div class='gf_browser_gecko gform_wrapper' id='gform_wrapper_15' ><form method='post' enctype='multipart/form-data'  id='gform_15'  action='/'>
+                        <div class='gform_body'><ul id='gform_fields_15' class='gform_fields top_label form_sublabel_below description_below'><li id='field_15_1'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label gfield_label_before_complex'  >Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_name'>
+                                    <input name='input_1' id='input_15_1' type='text' value='' class='medium' tabindex='49'  aria-required="true" aria-invalid="false" />
+                                </div></li><li id='field_15_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_15_2' >Organization<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_15_2' type='text' value='' class='medium'  tabindex='50'  aria-required="true" aria-invalid="false" /></div></li><li id='field_15_3'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_15_3' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_15_3' type='text' value='' class='medium' tabindex='51'   aria-required="true" aria-invalid="false"/>
+                        </div></li><li id='field_15_4'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Area of interest:<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_15_4'><li class='gchoice_15_4_1'>
+								<input name='input_4.1' type='checkbox'  value='Education'  id='choice_15_4_1' tabindex='52'  />
+								<label for='choice_15_4_1' id='label_15_4_1'>Education</label>
+							</li><li class='gchoice_15_4_2'>
+								<input name='input_4.2' type='checkbox'  value='Engineering'  id='choice_15_4_2' tabindex='53'  />
+								<label for='choice_15_4_2' id='label_15_4_2'>Engineering</label>
+							</li><li class='gchoice_15_4_3'>
+								<input name='input_4.3' type='checkbox'  value='Research'  id='choice_15_4_3' tabindex='54'  />
+								<label for='choice_15_4_3' id='label_15_4_3'>Research</label>
+							</li></ul></div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_15' class='gform_button button' value='Submit' tabindex='55' onclick='if(window["gf_submitting_15"]){return false;}  window["gf_submitting_15"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_15"]){return false;} window["gf_submitting_15"]=true;  jQuery("#gform_15").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_15' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='15' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_15' value='WyJbXSIsImNjNWI3ZTI3Yjg5YmYzZTQ3ODMwNDdlMjQ3M2VjOTgzIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_15' id='gform_target_page_number_15' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_15' id='gform_source_page_number_15' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.ingmarmed.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.ingmarmed.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 15) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [15, 1]) } ); </script>	</div>
+</div>
+
+</div><!--.site-->
+
+
+<div class="gdpr gdpr-overlay"></div>
+<div class="gdpr gdpr-privacy-bar" style="display:none;">
+	<div class="gdpr-wrapper">
+		<div class="gdpr-content">
+			<p>Our website, Ingmarmed.com, uses Google Analytics and cookies in order to measure and analyze traffic to optimize our products and services for our customers. Please review our Privacy Policy and click the I Agree button to indicate your consent.</p>
+		</div>
+		<div class="gdpr-right">
+							<ul class="gdpr-cookie-categories">
+																	<li class="gdpr-cookie-categories-item">
+							<input type="checkbox" id="gdpr-cookie-category-necessary" class="gdpr-cookie-category" data-category="necessary" name="allowed_cookie_categories" value="User Consent"  checked='checked' >
+							<label for="gdpr-cookie-category-necessary">User Consent</label>
+						</li>
+																											</ul>
+						<div class="gdpr-buttons">
+				<button class="gdpr-preferences" type="button">Privacy Preferences</button>
+				<button class="gdpr-agreement" type="button">I Agree</button>
+			</div>
+			<span class="gdpr-close"></span>
+		</div>
+	</div>
+</div>
+
+<div class="gdpr gdpr-privacy-preferences">
+	<div class="gdpr-wrapper">
+		<form method="post" class="gdpr-privacy-preferences-frm">
+			<input type="hidden" name="action" value="gdpr_update_privacy_preferences">
+			<input type="hidden" id="update-privacy-preferences-nonce" name="update-privacy-preferences-nonce" value="f71afd66c9" /><input type="hidden" name="_wp_http_referer" value="/" />			<header>
+				<div class="gdpr-box-title">
+					<h3>Privacy Preference Center</h3>
+					<span class="gdpr-close"></span>
+				</div>
+			</header>
+			<div class="gdpr-mobile-menu">
+				<button type="button">Options</button>
+			</div>
+			<div class="gdpr-content">
+				<div class="gdpr-tabs">
+					<ul class="">
+						<li><button type="button" class="gdpr-tab-button gdpr-active" data-target="gdpr-consent-management">Consent Management</button></li>
+																			<li><button type="button" class="gdpr-tab-button gdpr-cookie-settings" data-target="necessary">Cookie Settings</button>
+								<ul class="gdpr-subtabs">
+									<li><button type="button" data-target="necessary" >User Consent</button></li>								</ul>
+							</li>
+											</ul>
+					<ul class="gdpr-policies">
+																													<li><a href="https://www.ingmarmed.com/company/legal-2/" target="_blank">Privacy Policy</a></li>
+																		</ul>
+				</div>
+				<div class="gdpr-tab-content">
+					<div class="gdpr-consent-management gdpr-active">
+						<header>
+							<h4>Consent Management</h4>
+						</header>
+						<div class="gdpr-info">
+							<p>We only collect the minimum information necessary in order to process your orders, and to identify ways in which IngMar Medical can improve the array of products and services we offer to our customers. We maintain purchasing information indefinitely, as some of our customers have requested long retention times of their purchasing information. This provides traceability in the event of service required for a legacy product.</p>
+																								<div class="gdpr-cookies-used">
+										<div class="gdpr-cookie-title">
+											<p>Privacy Policy</p>
+																							<span class="gdpr-always-active">Required</span>
+												<input type="hidden" name="user_consents[]" value="privacy-policy" checked style="display:none;">
+																					</div>
+										<div class="gdpr-cookies">
+											<span>Please review our Privacy Policy, before proceeding to the website.</span>
+										</div>
+									</div>
+																					</div>
+					</div>
+																<div class="necessary">
+							<header>
+								<h4>User Consent</h4>
+							</header><!-- /header -->
+							<div class="gdpr-info">
+								<p>Cookies are used for site traffic analysis and optimization purposes.</p>
+																	<div class="gdpr-cookies-used">
+										<div class="gdpr-cookie-title">
+											<p>Cookies Used</p>
+																																		
+												<label class="gdpr-switch">
+													<input type="checkbox" class="gdpr-cookie-category" data-category="necessary" name="approved_cookies[]" value="[&quot;Google Analytics&quot;]"  checked='checked'>
+													<span class="gdpr-slider round"></span>
+													<span class="gdpr-switch-indicator-on">ON</span>
+													<span class="gdpr-switch-indicator-off">OFF</span>
+												</label>
+																					</div>
+										<div class="gdpr-cookies">
+											<span>Google Analytics</span>
+										</div>
+									</div>
+																							</div>
+						</div>
+											<div class="advertising">
+							<header>
+								<h4>Advertising</h4>
+							</header><!-- /header -->
+							<div class="gdpr-info">
+								<p></p>
+																							</div>
+						</div>
+											<div class="analytics">
+							<header>
+								<h4>Analytics</h4>
+							</header><!-- /header -->
+							<div class="gdpr-info">
+								<p></p>
+																							</div>
+						</div>
+											<div class="other">
+							<header>
+								<h4>Other</h4>
+							</header><!-- /header -->
+							<div class="gdpr-info">
+								<p></p>
+																							</div>
+						</div>
+									</div>
+				<input type="hidden" name="all_cookies" value="[&quot;Google Analytics&quot;]">
+			</div>
+			<footer>
+				<input type="submit" value="Save Preferences">
+			</footer>
+		</form>
+	</div>
+</div>
+
+<div class="gdpr gdpr-general-confirmation">
+	<div class="gdpr-wrapper">
+		<header>
+			<div class="gdpr-box-title">
+				<h3></h3>
+				<span class="gdpr-close"></span>
+			</div>
+		</header>
+		<div class="gdpr-content">
+			<p></p>
+		</div>
+		<footer>
+			<button class="gdpr-ok">OK</button>
+		</footer>
+	</div>
+</div>
+
+<!-- DO NOT COPY THIS SNIPPET! &mdash; HubSpot Identification Code -->
+<script type="text/javascript">
+(function(d,w) {
+w._hsq = w._hsq || [];
+w._hsq.push(["setContentType", "standard-page"]);
+})(document, window);
+</script>
+<!-- End of HubSpot Identification Code &mdash; DO NOT COPY THIS SNIPPET! -->
+
+<!-- Start of Async HubSpot Analytics Code for WordPress v1.2.1 -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4349604.js"></script>
+<!-- End of Async HubSpot Analytics Code -->
+	<div style="display:none">
+	</div>
+<div class="sticky-popup"><div class="popup-wrap"><div class="popup-header"><span class="popup-title">Contact Us<div class="popup-image"></div></span></div><div class="popup-content"><div class="popup-content-pad">
+                <div class='gf_browser_gecko gform_wrapper' id='gform_wrapper_31' ><a id='gf_31' class='gform_anchor' ></a><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_31' id='gform_31'  action='/#gf_31'>
+                        <div class='gform_body'><ul id='gform_fields_31' class='gform_fields top_label form_sublabel_below description_below'><li id='field_31_1'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_1' >Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_31_1' type='text' value='' class='large'  tabindex='49' placeholder='Name' aria-required="true" aria-invalid="false" /></div></li><li id='field_31_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_2' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_31_2' type='text' value='' class='large' tabindex='50'  placeholder='Email' aria-required="true" aria-invalid="false"/>
+                        </div></li><li id='field_31_3'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_3' >Phone<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_phone'><input name='input_3' id='input_31_3' type='text' value='' class='large' tabindex='51' placeholder='Phone' aria-required="true" aria-invalid="false" /></div></li><li id='field_31_5'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_5' >Company<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_5' id='input_31_5' type='text' value='' class='large'  tabindex='52' placeholder='Company' aria-required="true" aria-invalid="false" /></div></li><li id='field_31_6'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_6' >Country<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_6' id='input_31_6' type='text' value='' class='large'  tabindex='53' placeholder='Country' aria-required="true" aria-invalid="false" /></div></li><li id='field_31_4'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_31_4' >Describe your respiratory simulation needs…<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_4' id='input_31_4' class='textarea medium' tabindex='54' placeholder='Describe your respiratory simulation needs…' aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_31' class='gform_button button' value='Submit' tabindex='55' onclick='if(window["gf_submitting_31"]){return false;}  window["gf_submitting_31"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_31"]){return false;} window["gf_submitting_31"]=true;  jQuery("#gform_31").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=31&amp;title=&amp;description=&amp;tabindex=49' />
+            <input type='hidden' class='gform_hidden' name='is_submit_31' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='31' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_31' value='WyJbXSIsImNjNWI3ZTI3Yjg5YmYzZTQ3ODMwNDdlMjQ3M2VjOTgzIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_31' id='gform_target_page_number_31' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_31' id='gform_source_page_number_31' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_31' id='gform_ajax_frame_31'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 31, 'https://www.ingmarmed.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_31').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_31');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_31').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;if(is_form){jQuery('#gform_wrapper_31').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_31').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_31').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_31').offset().top); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_31').val();gformInitSpinner( 31, 'https://www.ingmarmed.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [31, current_page]);window['gf_submitting_31'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_31').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_31').offset().top);jQuery(document).trigger('gform_confirmation_loaded', [31]);window['gf_submitting_31'] = false;}, 50);}else{jQuery('#gform_31').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [31, current_page]);} );} );</script><script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.ingmarmed.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.ingmarmed.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 31) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }jQuery('#input_31_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [31, 1]) } ); </script>
+</div></div></div></div>			<script type="text/javascript">
+				jQuery( document ).ready(function() {	
+					if (/*@cc_on!@*/true) { 						
+						var ieclass = 'ie' + document.documentMode; 
+						jQuery( ".popup-wrap" ).addClass(ieclass);
+					} 
+					jQuery( ".sticky-popup" ).addClass('sticky-popup-right');
+					
+					var contwidth = jQuery( ".popup-content" ).outerWidth()+2;      	
+			      	jQuery( ".sticky-popup" ).css( "right", "-"+contwidth+"px" );
+
+			      	jQuery( ".sticky-popup" ).css( "visibility", "visible" );
+
+			      	jQuery('.sticky-popup').addClass("open_sticky_popup_right");
+			      	jQuery('.sticky-popup').addClass("popup-content-bounce-in-right");
+			      	
+			        jQuery( ".popup-header" ).click(function() {
+			        	if(jQuery('.sticky-popup').hasClass("open"))
+			        	{
+			        		jQuery('.sticky-popup').removeClass("open");
+			        		jQuery( ".sticky-popup" ).css( "right", "-"+contwidth+"px" );
+			        	}
+			        	else
+			        	{
+			        		jQuery('.sticky-popup').addClass("open");
+			          		jQuery( ".sticky-popup" ).css( "right", 0 );		
+			        	}
+			          
+			        });		    
+				});
+			</script>
+			<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<link rel='stylesheet' id='gforms_reset_css-css'  href='https://www.ingmarmed.com/wp-content/plugins/gravityforms/css/formreset.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_datepicker_css-css'  href='https://www.ingmarmed.com/wp-content/plugins/gravityforms/css/datepicker.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://www.ingmarmed.com/wp-content/plugins/gravityforms/css/formsmain.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://www.ingmarmed.com/wp-content/plugins/gravityforms/css/readyclass.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://www.ingmarmed.com/wp-content/plugins/gravityforms/css/browsers.css?ver=2.4.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201905'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.ingmarmed.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=3.5.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=3.5.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_dd148247f77c5820d591b38dbf307032","fragment_name":"wc_fragments_dd148247f77c5820d591b38dbf307032"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.js?ver=3.5.3'></script>
+<script type='text/javascript'>
+		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+			jQuery( 'body' ).trigger( 'jetpack-lazy-images-load' );
+		} );
+	
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"home","leadinPluginVersion":"7.0.1"};
+/* ]]> */
+</script>
+<script type='text/javascript' async defer src='//js.hs-scripts.com/4349604.js?integration=wordpress&#038;ver=5.0.3'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2019Janaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/themes/ingmar/js/site.js?ver=34525432543233331114325344511134354765476474657'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/themes/ingmar/js/bootstrap.min.js?ver=3215'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/wp-embed.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gravityforms/js/jquery.json.js?ver=2.4.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following: ","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.ingmarmed.com\/wp-content\/plugins\/gravityforms\/images"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gravityforms/js/gravityforms.js?ver=2.4.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gravityforms/js/datepicker.js?ver=2.4.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/plupload/moxie.js?ver=1.3.5'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-includes/js/plupload/plupload.js?ver=2.1.9'></script>
+<script type='text/javascript' src='https://ingmarmed.agilecrm.com/stats/min/agile-min.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+_agile.set_account("bbr83d3sivichnso5hj836b4k4","ingmarmed"); _agile_execute_web_rules();_agile.track_page_view();
+</script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.js?ver=2.4.3'></script>
+<script type='text/javascript' src='https://www.ingmarmed.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.4.3'></script>
+<div style="display:none;">
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1064792624;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1064792624/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</div>
+
+	<script src="https://www.ingmarmed.com/wp-content/themes/ingmar/js/jquery.bxslider.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+	<style>
+
+		.myPopupHeader {
+			background-color: #5E5597!important;
+		}
+
+		.myPopup {
+			writing-mode: horizontal-tb!important;
+			transform: rotate(270deg)!important;
+			position: absolute;
+			left: -44px;
+			top: 189px;
+			font-family: 'Merriweather', serif;
+			font-weight: 500;
+    	letter-spacing: 1px;
+    	font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		.popup-content-pad {
+			padding: 10px 20px!important;
+		}
+
+		#gform_fields_31 {
+			padding: 0!important;
+		}
+
+		#field_31_1 > label, #field_31_2 > label, #field_31_3 > label, #field_31_4 > label, #field_31_5 > label, #field_31_6 > label {
+			display: none!important;
+		}
+
+		#field_31_1, #field_31_2, #field_31_3, #field_31_4, #field_31_5, #field_31_6 {
+			margin-top: 0;
+		}
+
+		#input_31_1, #input_31_2, #input_31_3, #input_31_4, #input_31_5, #input_31_6 {
+			padding: 5px;
+    	border: 1px solid #ccc;
+			margin: 0 0 10px 0;
+		}
+
+		#input_31_4 {
+			height: 50px!important;
+		}
+
+		#gform_31 .gform_footer {
+			padding: 10px 0;
+			margin: 0;
+		}
+
+		li.bxsliderLI {
+			background-position: right top 50%!important;
+			margin-left: 0px!important;
+		}
+
+			li.bxsliderLI.bx-clone {
+				padding: 0 25px 0 0;
+			}
+			.leftSide h1, .leftSide p .leftSide a {
+
+			}
+
+		.bxsliderLI {
+			background-position:right -9999px center;
+		}
+		@media (min-width: 768px) {
+  		.bxsliderLI {
+    		background-position: 340px center;
+		  }
+		}
+		@media (min-width: 992px) {
+  		.bxsliderLI {
+    		background-position: right -50px center;
+		  }
+		}
+
+		.bx-wrapper .bx-pager {
+			position: relative;
+			top: -35px;
+		}
+
+
+
+		.linkText {
+			float: none;
+			background: url('https://www.ingmarmed.com/wp-content/themes/ingmar/img/home/arrow.png');
+			background-repeat: no-repeat;
+			background-position: right center;
+			padding: 0 30px 0 0;
+		}
+		@media (min-width: 768px) {
+  		.linkText {
+    		float: left;
+		  }
+		}
+
+		.slider p {
+			margin-bottom: 25px;
+		}
+
+
+		#access a {
+    	padding: 0 12px;
+		}
+		@media (min-width: 768px) {
+  		#access a {
+    		padding: 0 12px;
+		  }
+		}
+		@media (min-width: 992px) {
+  		#access a {
+    		padding: 0 30px;
+		  }
+		}
+
+		.wp-caption img {
+			border-bottom: solid 8px #79B364;
+		}
+
+		.wp-caption img.no-green {
+			border-bottom: none;
+		}
+
+		.bx-controls {
+
+		}
+		@media (min-width: 768px) {
+			.bx-controls {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+
+		.bx-wrapper .bx-pager {
+			top: -15px;
+		}
+
+
+		.bx-wrapper .bx-pager.bx-default-pager a {
+			margin: 0 5px;
+		}
+		@media (min-width: 768px) {
+			.bx-wrapper .bx-pager.bx-default-pager a {
+				margin: 0 10px 0 0;
+			}
+		}
+
+		.date-hidden {
+			display: none!important;
+		}
+
+		div#hs-eu-cookie-confirmation {
+			display: none!important;
+		}
+
+		</style>
+
+
+
+
+</body>
+</html>

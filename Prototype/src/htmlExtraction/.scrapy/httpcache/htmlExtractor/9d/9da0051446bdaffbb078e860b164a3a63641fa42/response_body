@@ -1,0 +1,28 @@
+
+# Rover is a bad dog
+User-agent: Roverbot
+Disallow: /
+
+ 
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+ 
+User-agent: Teleport Pro
+Disallow: /
+
+# EmailSiphon is a hunter/gatherer which extracts email addresses for spam-mailers to use
+User-agent: EmailSiphon
+Disallow: /
+
+# directed to all spiders, not just Scooter
+User-agent: *		
+Disallow: /mailform/
+Disallow: /database/
+Disallow: /databases/
+Disallow: /AB/
+Disallow: /cgi-bin/
+Disallow: /Perl/
+Disallow: /GoScouting/
+Disallow: /webstats/
+Disallow: /discuss/

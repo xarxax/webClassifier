@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+<link rel='stylesheet' type='text/css' href='styles.css' />
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script type='text/javascript' src='menu_jquery.js'></script>
+    
+<script language="JavaScript">
+$(document).ready(function(){
+      $("#includedContent").load("menu.html"); 
+   });
+   
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function noRightClick(){
+             if(event.button==2){
+                 document.oncontextmenu =function(){
+                 return false;
+              }
+         }
+}
+
+//-->
+</script>
+<style type="text/css">
+
+
+
+a.links{  color:#808080; text-decoration:none; font-weight:bold;}
+a.links:active { color:#808080; }
+a.links:hover { }
+</style>
+</head>
+<body onmousedown="return noRightClick()" link="#333333" vlink="#333333" alink="#333333" onLoad="MM_preloadImages('Picture/M_Home_2.gif','Picture/M_Wpos_2.gif','Picture/M_Apos_2.gif','Picture/M_Services_2.gif','Picture/M_App_2.gif','Picture/M_Res_2.gif','Picture/M_Car_2.gif','Picture/M_New_2.gif','Picture/M_Site_2.gif','Picture/M_Con_2.gif')" topmargin="0" leftmargin="5">
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='Whypos.html'><span>Why POS</span></a>
+      <ul>
+         <li><a href='Proposition.html'><span>POS  Valiue Proposition</span></a></li>
+         <li><a href='Quality.html'><span>POS Quality Process</span></a></li>
+         <li><a href='Technology.html'><span>POS Technology</span></a></li>
+         <li><a href='Voice.html'><span>Voice from our clients</span></a></li>
+         <li class='last'><a href='Exceed.html'><span>EXCEED</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>About POS</span></a>
+      <ul>
+         <li><a href='vision.html'><span>POS Vision </span></a></li>
+	   <!-- Ladda : 23 July 2018 : Comment because change management team	 -->
+        <!-- 
+		<li><a href='Management.html'><span>Management</span></a> </li> 
+        <li><a href='Management_2.html'><span>Management Team</span></a></li>  
+        <li class='last'><a href='#'><span>Visualize our office</span></a></li> 
+	   -->
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='Services.html'><span>Service</span></a>
+      <ul>
+         <li><a href='Payroll.html'><span>Payroll Service</span></a></li>
+         <li><a href='Accounting.html'><span>Accounting Service</span></a></li>
+         <li><a href='Paybles.html'><span>Payables Disbursement</span></a></li>
+         <li class='last'><a href='Billing.html'><span>Billings & Collections</span></a></li>
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='Approach.html'><span>Approach & Methodology</span></a>
+      <ul>
+         <li><a href='ADIOS.html'><span>ADIOS Methodology</span></a></li>
+         <li class='last'><a href='Exceed.html'><span>Exceed</span></a></li>
+      </ul>
+   </li>
+   
+   <li><a href='Careers.html'><span>Careers</span></a></li>
+   
+   <li class='has-sub'><a href='New.html'><span>News & Events</span></a>
+      <ul>
+         <li><a href='NewUp.html'><span>POS Charity Project</span></a></li>
+         <li class='last'><a href='NewSSX.html'><span>News Update</span></a></li>
+      </ul>
+   </li>
+   
+   <li ><a href='sitemap.html'><span>Site map</span></a></li>
+ 
+   <li class='last'><a href='Contact.html'><span>Contact us</span></a></li>
+</ul>
+</div>
+
+<!--  Content-->
+
+<table border="0" cellpadding="0" cellspacing="0" width="750" height="1480">
+  <!-- MSTableType="layout" -->
+ 
+	<tr>
+    <td valign="top" colspan="9"><!-- MSCellType="ContentHead" -->
+      <p>
+        
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="750" height="140">
+            <param name="movie" value="Picture/new2.swf">
+            <param name=quality value=High>
+            <param name="wmode" value="transparent">
+            <embed src="Picture/new2.swf" quality=High pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="750" height="140" wmode="transparent"></embed>  </object>  
+ 
+      
+         </td>
+    <td></td>
+    <td height="140"></td>
+    </tr>
+	<tr>
+    <td colspan="7" bgcolor="#007CC0" style="margin-left: 10" align="left"><img border="0" src="Picture/POS-no-BG.gif" width="259" height="65" align="top"></td>
+    <td colspan="2" rowspan="2" align="left" bgcolor="#007CC0" style="margin-left: 10"><!-- MSCellType="ContentHead" -->
+        <p align="center"><img src="Picture/BCP.jpg" width="230" height="106" align="middle"></td>
+    <td rowspan="2"></td>
+		<td height="100" rowspan="2"></td>
+  </tr>
+	<tr>
+	  <td colspan="7" bgcolor="#007CC0" style="margin-left: 6" align="left"><font face="Arial" size="4" color="#FFFFFF"> &nbsp;Welcome to... Professional Outsourcing Solutions</font></td>
+  </tr>
+	<tr>
+		<td colspan="9">
+		<p style="margin-left: 5px"><font face="Arial" style="font-size: 8pt">
+		You are here:<a href="index.html"><span style="text-decoration: none"> 
+		<font color="#FF6600">Home</font></span></a></font></td>
+		<td></td>
+		<td height="30"></td>
+  </tr>
+	<tr>
+    <td valign="top" rowspan="2"><!-- MSCellType="NavBody" -->
+        <img border="0" src="Picture/2-6_CL.JPG" width="158" height="236"></td>
+    <td valign="top" rowspan="9"><!-- MSCellType="ContentBody" -->
+&nbsp;</td>
+    <td valign="top" colspan="4" rowspan="2" style="text-align: left; margin-left: 3; margin-right: 3; margin-top:12"><!-- MSCellType="ContentBody" -->
+      <p style="margin-top: 12px">
+        <B><FONT face=Arial>Get more time and resources to focus</FONT></B><BR>
+                  <B><FONT face=Arial>on your core competencies</FONT></B><BR>
+                  <BR>
+                <FONT face=Arial size=2>Whether you are a listed company burdened with old processes and outdated legacy systems, a middle-market company that needs to re-engineer business processes to remain competitive or a growth company that lacks the business processes and technology systems needed for credibility and success, our </FONT><FONT face=Arial color=#00ff00 
+            size=2><A 
+            href="file:///X:/WN%20Data/Outsourcing%20Folder/Marketing/MarketOfferingsOutsourcingServices-OpenDocument.htm" 
+            tppabs="http://www.andersen.com/website.nsf/content/MarketOfferingsOutsourcingServices?OpenDocument"><FONT 
+            color=#ff6600>
+		</FONT><FONT 
+            color=#ff6600>
+		<a tppabs="http://www.andersen.com/website.nsf/content/MarketOfferingsOutsourcingServices?OpenDocument" href="Services.html">
+		<font color="#FF6600">
+		<a tppabs="http://www.andersen.com/website.nsf/content/MarketOfferingsOutsourcingServices?OpenDocument" target="_blank" href="Services.html">
+		<font color="#FF6600">outsourcing services</font></a></font></a></FONT><a tppabs="http://www.andersen.com/website.nsf/content/MarketOfferingsOutsourcingServices?OpenDocument" target="_blank" href="Services.html"><font color="#FF6600"></A></font></a></FONT><FONT face=Arial 
+            size=2><font color="#FF6600"> </font>are tailored to meet the unique needs of your<span class="style3"> business.</span></FONT><span style="color: #000000"><FONT face=Verdana style="font-size: 8.5pt">.</FONT></span></td>
+    <td valign="top" rowspan="9" colspan="2"><!-- MSCellType="ContentBody" -->
+&nbsp;</td>
+    <td valign="top" bgcolor="#8CC6FF" style="color: #000000; margin-top: 0; margin-bottom: 6" align="left"><!-- MSCellType="NavBody2" -->
+        <p style="margin-left: 7px; margin-right: 7px; margin-top: 10px; margin-bottom: 15px" align="left"> <span style="LETTER-SPACING: -1pt"><b> <font face="Arial" color="#ffffff" size="6">Survival of the focused..</font></b></span></p>
+        <p style="margin-left: 7px; margin-right: 7px; margin-top: 10px; margin-bottom: 15px" align="left"> <b><font face="Arial" style="font-size: 8.5pt">Success today requires ruthless focus on what you do best. Anything less endanger your survival.</font></b></p>
+        <p style="MARGIN: 10px 7px 15px" align="left"><b> <font face="Arial" style="font-size: 8.5pt">That's why companies outsource their finance and accounting to POS. Whether it's critical reporting, high-volume transaction processing like payroll or A/P, or managing your entire finance or back office operation. We provide highly evolved skills. </font></b></p>
+        <p style="MARGIN: 10px 7px 15px" align="left"><b> <font face="Arial" style="font-size: 8.5pt">We'll help you complete better and survive longer, That makes us the natural selection.</font></b></p></td>
+    	<td></td>
+    	<td height="328"></td>
+  </tr>
+	<tr>
+    <td valign="top" align="center"><FONT face=Arial size=2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></td>
+		<td></td>
+		<td height="53"></td>
+  </tr>
+	<tr>
+    <td valign="top" rowspan="2"><!-- MSCellType="NavBody" -->
+        <b><font face="Arial">Web</font></b> <b><font face="Arial">link</font></b></td>
+    <td valign="top"><!-- MSCellType="ContentBody" -->
+        <B><FONT face=Arial>Highlights</FONT></B></td>
+    <td valign="top" rowspan="7"><!-- MSCellType="ContentBody" -->
+&nbsp;</td>
+    <td valign="top" colspan="2"><!-- MSCellType="ContentBody" -->
+&nbsp;</td>
+    <td valign="top" align="center"><p align="left"><B><FONT face=Arial>News &amp; 
+	Events</FONT></B></td>
+		<td></td>
+		<td height="20"></td>
+  </tr>
+	<tr>
+    <td valign="top" rowspan="2"><!-- MSCellType="ContentBody" -->
+        <FONT face=Arial size=2> 
+    <IMG 
+            src="Picture/bar-grey.gif" 
+            tppabs="http://www.andersen.com/resource2.nsf/AssetsByDescription/bar_grey/$file/bar-grey.gif" width="145" height="11"></FONT></td>
+    <td valign="top" rowspan="2" colspan="2"><!-- MSCellType="ContentBody" -->
+        <FONT face=Arial size=2> 
+    <IMG 
+            src="Picture/bar-grey.gif" 
+            tppabs="http://www.andersen.com/resource2.nsf/AssetsByDescription/bar_grey/$file/bar-grey.gif" width="145" height="11"></FONT></td>
+    	<td valign="top" rowspan="2">
+        <FONT face=Arial size=2> 
+    <IMG 
+            src="Picture/bar-grey.gif" 
+            tppabs="http://www.andersen.com/resource2.nsf/AssetsByDescription/bar_grey/$file/bar-grey.gif" width="240" height="11"></FONT></td>
+		<td></td>
+		<td height="1"></td>
+  </tr>
+	<tr>
+    <td valign="top"><!-- MSCellType="NavBody" -->
+<FONT face=Arial size=2> 
+    <IMG 
+            src="Picture/bar-grey.gif" 
+            tppabs="http://www.andersen.com/resource2.nsf/AssetsByDescription/bar_grey/$file/bar-grey.gif" width="150" height="11"></FONT></td>
+		<td></td>
+		<td height="19"></td>
+  </tr>
+	<tr>
+    <td valign="top" rowspan="4"><!-- MSCellType="NavBody" -->
+        <a target="_blank" href="http://www.krisdika.go.th/">
+        <img border="0" src="Picture/krisidka%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.dbd.go.th/main.php?filename=index">
+        <img border="0" src="Picture/dbd%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.rd.go.th/publish/index.html">
+        <img border="0" src="Picture/rd3.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.fap.or.th/">
+        <img border="0" src="Picture/icaat%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.set.or.th/th/index.html">
+        <img border="0" src="Picture/set%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.sso.go.th/">
+        <img border="0" src="Picture/sso%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="https://www.bot.or.th/Thai/Landing/Pages/LongLiveTheKingRama10.aspx">
+        <img border="0" src="Picture/bot.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.kodmhai.com/">
+        <img border="0" src="Picture/codm%20copy.jpg" width="158" height="38"></a><br>
+        <a target="_blank" href="http://www.mol.go.th/">
+        <img border="0" src="Picture/mol%20copy.jpg" width="158" height="38"></a></td>
+    <td valign="top" style="text-align: left; margin-left: 2; margin-right: 2; margin-bottom:6; margin-top:0" rowspan="4"><!-- MSCellType="ContentBody" -->
+        <p style="margin-top: 0; margin-bottom: 6px">
+<font color="#000000" face="Arial" style="font-weight: 700" size="2">
+<span style="text-decoration: none">POS product sheet is 
+available </span></font></p>
+	<p style="margin-top: 0; margin-bottom: 6px">
+	<font face="Arial" style="font-size: 9pt">POS product sheets provides an 
+	overview of our services offered and&nbsp;client value delivered. The 
+	product sheet is available in a&nbsp; ready-to-print PDF format.&nbsp; </font></p>
+	<p style="margin-top: 0; margin-bottom: 6px"><b><font face="Arial" size="2">
+	The Solution for the New Economy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></b></p>
+	<p style="margin-top: 0; margin-bottom: 6px">
+	<font face="Arial" style="font-size: 9pt">The article discuss how the war 
+	for F&amp;A talent is causing companies to turn to outsourcing to achieve 
+	best-in-class performance.</font><p style="margin-top: 0; margin-bottom: 6px">
+	<p style="margin-top: 0; margin-bottom: 6px">
+	<font face="Arial" style="font-size: 9pt">
+	<a target="_blank" href="Files/Outsourcing%20The%20Solution%20for%20the%20New%20Economy.pdf">
+	<font color="#FF6600">You may download the document here.</font></a></font><p style="margin-top: 0; margin-bottom: 6px">
+	<font size="1" color="#3399FF">(require Adobe Acrobat)</font><font face="Arial" style="font-size: 9pt"><br>
+	&nbsp;</font></td>
+    <td valign="top" style="margin-top: 0; margin-bottom: 6" colspan="2" rowspan="4"><!-- MSCellType="ContentBody" -->
+        <p style="margin-top: 0; margin-bottom: 6px"><b>
+<font face="Arial" size="2">Best Practices</font></b><font face="Arial" size="2">
+</font></p>
+	<p style="margin-top: 0; margin-bottom: 6px">
+	<font face="Arial" style="font-size: 9pt">POS identifies the following Best 
+	Practices as efficient and effective control process for:</font></p>
+	<ul type="square" style="margin-left: 15; margin-right: 0; margin-top: 0; margin-bottom: 3">
+		<li>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font face="Arial" style="font-size: 9pt">
+		<a target="_blank" href="Files/AR%20Controls%20Eval.pdf">
+		<font color="#FF6600">Customer credit and Account 
+		receivable</font></a><font color="#FF6600">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font></font></li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font face="Arial" style="font-size: 9pt">
+		<a target="_blank" href="Files/AP%20Controls%20Eval.pdf">
+		<font color="#FF6600">Account Payable</font></a><font color="#FF6600">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font></font></li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font face="Arial" style="font-size: 9pt">
+		<a target="_blank" href="Files/Payroll%20Controls%20Eval.pdf">
+		<font color="#FF6600">Payroll</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font face="Arial" style="font-size: 9pt">
+		<a target="_blank" href="Files/Fin%20Rept%20Controls%20Eval.pdf">
+		<font color="#FF6600">Financial Receptive Evaluation</font></a><font color="#FF6600">&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></li>
+	</ul>
+	<p></td>
+	
+    	 <td valign="top" style="border-bottom:1px solid #ECE9D8; margin-bottom: 0; margin-top:0; border-left-width:1px; border-right-width:1px; border-top-width:1px" colspan="2">
+		 
+		 <!--<font face="Arial" style="font-size: 10pt"><b><a target="_blank" href="BCP\POSbcp2012.html" style="text-decoration: none"><font color="#000000">POS Live Test of Business Continuity Plan 2013</font></a></b></font>-->
+		<!--<font face="Arial" style="font-size: 9pt"><span style="margin-top: 3px; margin-bottom: 6px"><img src="Picture/new_1.gif" ></span><br>-->
+		<!--<font face="Arial" style="font-size: 8.5pt"><u><a href="BCP\POSbcp2013.html"><img border="0" src="BCP/DSC00472.JPG" align="left" width="150" height="84"></a></u></font>--><!--</font><br>-->
+<!--		</p>
+		 		<br>
+		 		<br>
+		 		<br>
+		        <br>-->
+        <font face="Arial" style="font-size: 10pt"><b><a target="_blank" href="Files/Wat Luangpeng.pdf" style="text-decoration: none"><font color="#000000">POS Charity Project</font></a></b></font>
+		<font face="Arial" style="font-size: 9pt"><span style="margin-top: 3px; margin-bottom: 6px"><img src="Picture/new_1.gif" ></span><br>
+		This year, POS Group representative went to Wat Luang Peng school,<br>
+		Chachengchao<font face="Arial" style="font-size: 8.5pt"><u><a href="http://www.pos.co.th/NewUp.html"><font color="#FF6600">read more</font></a></u></font></font><br>
+<a href="Files/Wat Luangpeng.pdf"><img border="0" src="Picture/DSC05629.JPG" width="149" height="75" align="left"></a>
+</p>
+		 		<br>
+		 		<br>
+		 		<br>
+		        <br>
+                <p style="margin-top: 3px; margin-bottom: 6px"><font face="Arial" style="font-size: 10pt"><b><a target="_blank" href="NewSSX.html" style="text-decoration: none"><font color="#000000">News update</font></a></b></font><img src="Picture/new_1.gif" ><br>
+                  <a href="NewSSX.html"><img border="0" src="Picture/newspaper.jpg" width="149" height="75" align="left"></a></p>
+                <br>
+				<br>
+           		<br>
+				<br>
+		     <p style="margin-top: 3px; margin-bottom: 6px">
+		<font face="Arial" style="font-size: 10pt"><b>
+		<font color="#000000">&nbsp;</font></b></font><br>
+		
+		<!--<img src="Picture/brochure.jpg" width="139" height="66" border="1">&nbsp;<a target="_blank" href="Files/BROCHURE.pdf"><font face="Arial" style="font-size: 8.5pt" color="#FF6600">read more</font></a>&nbsp;<a href="Files/BROCHURE.zip"><font face="Arial" style="font-size: 8.5pt" color="#FF6600">download</font></a><br><br>
+		<img src="Picture/myHR-Blueprint.jpg" width="139"  border="1">&nbsp;<a target="_blank" href="Files/DATASHEET.pdf"><font face="Arial" style="font-size: 8.5pt" color="#FF6600">read more</font></a>&nbsp;<a href="Files/DATASHEET.zip"><font face="Arial" style="font-size: 8.5pt" color="#FF6600">download</font></a>-->	       </p>
+
+		        <p style="margin-top: 3px; margin-bottom: 6px"><br>
+  	  </p>	  </td>
+		<td height="165"></td>
+  </tr>
+	<tr>
+	  <td valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #ECE9D8" colspan="2"><p style="margin-top: 3px; margin-bottom: 6px"><font face="Arial" style="font-size: 10pt"><b><font color="#000000">Newsletter: Payroll Newsletter. </font></b></font><img src="Picture/new_1.gif" ></p>
+	    <p style="margin-top: 0; margin-bottom: 0"> <!--<a href="javascript:MM_openXXdetail('New/Vol-17/indexnew.html','','scrollbars=yes,width=800,height=600' )"align='center' class='txt10' >-->
+        <a href="New/Vol-36/Newsletter36.swf"> <img border="0" src="New/Vol-36/01-1-1.jpg" width="75" height="100" align="left"></a></p>
+	    <p style="margin-top: 0; margin-bottom: 6px"> <font face="Arial" style="font-size: 9pt">&quot; <b><font color="#77A224"> <a href="New/Insight.html" style="text-decoration: none"> <font color="#77A224">Payroll Newsletter</font></a></font><font color="#990000"> </font></b>&quot; is designed not only 
+	      to serve as a knowledge sharing form POS but also to use as a 
+	      communication tool between POS and you.</font></p>
+      <p style="margin-bottom: 6px; margin-top:2px"><font face="Arial" style="font-size: 9pt"> Payroll Newsletter our new newsletter made exclusively for our valued customers. </font> <font color="#FF0000"><font face="Arial"> <a target="_blank" href="New/Vol-36/Newsletter36.swf"> <font color="#FF6600" style="font-size: 8.5pt">read more</font></a></font><font face="Arial" style="font-size: 8.5pt"> </font><font face="Arial" style="font-size: 9pt"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font> </font><a href="New/Insight.html"><font face="Arial" style="font-size: 8.5pt" color="#FF6600">download</font></a></td>
+	  <td height="88"></td>
+  </tr>
+	<tr>
+
+	<td valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #ECE9D8" colspan="2">
+		<p style="margin-top: 3px; margin-bottom: 6px"><b>
+		<a target="_blank" href="http://www.positioningmag.com/prnews/prnews.aspx?id=59325" style="text-decoration: none; font-size:10pt">
+		<font color="#000000" face="Arial">POS News on Positioning Magazine</font></a></b></p>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font color="#0000FF" face="Arial" size="2"><b>
+		<a target="_blank" href="http://www.positioningmag.com/prnews/default.aspx?page=2">
+		<img border="0" src="Picture/webBCPXXX.jpg" width="189" height="108" align="left"></a><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		On Oct 6, 2010</b></font></p>
+		<p style="margin-top: 0; margin-bottom: 6px">
+		<font face="Arial" size="2">POS - ISO 27001 : 2005 Certificate</font><br><font face="Arial" style="font-size: 9pt">Previous News:</font>&nbsp;<a target="_blank" href="http://www.positioningmag.com/PRNews/PRNews.aspx?id=84746"><font color="#FF6600" style="font-size: 8.5pt" face="Arial">Jan 26,2010</font></a></td>
+
+		<td height="88"></td>
+  </tr>
+	<tr>
+		<td valign="top" colspan="2">
+	<p style="margin-top: 6px; margin-bottom: 6px"><b><font face="Arial" size="2">
+	Zero defects alerts</font></b></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font color="#0000FF"><img border="0" src="Picture/1.gif" width="80" height="81" align="left"></font></p>
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+      <p style="margin-top: 0; margin-bottom:6px"> <font face="Arial" size="2"><b>
+		<font color="#0000FF">No errors. No surprises.</font> </b><br>
+        We strive for zero defects service.&nbsp;This series of Zero defects alerts 
+		provides important reminders of key practices and procedures from the 
+		firm's existing policies and guidance to help our staff DELIVER THE BEST</font></td>
+		<td height="184"></td>
+  </tr>
+	<tr>
+    <td valign="middle" colspan="5"><!-- MSCellType="ContentFoot" -->
+        <p align="left"><B><FONT face=Arial size=2>Professional Outsourcing Solutions Ltd.</FONT></B><font face="Arial"><span style="FONT-SIZE: 9pt"><b><font color="#0046b0"><br>
+        </font></b></span></font><font face="Arial" size="1">No.2 Soi Rongmuang 5, Rongmuang Road, <br>
+        Rongmuang Sub District, Pathum Wan District <br>
+        Bangkok 10330, Thailand <br>
+        Tel 66 2646-4222 Fax 66 2646-4200 </font></p></td>
+    	<td valign="bottom" colspan="5">
+		<p align="right"><FONT face=arial size=1><br>
+		<a href="http://WWW.POS.CO.TH">WWW.POS.CO.TH</a><br>
+		&copy; 2006 Professional Outsourcing Solutions. All rights 
+      reserved
+      <!-- OPENTRACKER HTML START -->
+<script defer src="http://server1.opentracker.net/?site=www.pos.co.th"></script><noscript>
+        <a href="http://www.opentracker.net" target="_blank"><img src="http://img.opentracker.net/?cmd=nojs&site=www.pos.co.th" alt="hit counter" border="0"></a></noscript>
+<!-- OPENTRACKER HTML END --></FONT></td>
+		<td height="77"></td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="10">
+      <table width="745" border="0" cellspacing="0" cellpadding="0" id="table1">
+        <tr>
+          <td><div align="center" class="style9">
+			<p style="margin-top: 12px"><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Home</span></a></font><font face="Arial" style="font-size: 8pt"> |  
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/Whypos.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Why POS</span></a></font><font face="Arial" style="font-size: 8pt"> |
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/History.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			About POS</span></a></font><font face="Arial" style="font-size: 8pt"> |
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/Services.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Services</span></a></font><font face="Arial" style="font-size: 8pt"> |
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/Approach.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Approach &amp; Methodology</span></a><span style="font-size: 8pt; font-weight: 400"> </span></font>
+			<font face="Arial" style="font-size: 8pt"> |			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/Careers.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Careers</span></a><span style="font-size: 8pt; font-weight: 400"> </span></font>
+			<font face="Arial" style="font-size: 8pt"> |			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/New.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			News &amp; Events</span></a><span style="font-size: 8pt; font-weight: 400"> </span></font>
+			<font face="Arial" style="font-size: 8pt"> |			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/sitemap.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Sitemap</span></a><span style="font-size: 8pt; font-weight: 400"> </span></font>
+			<font face="Arial" style="font-size: 8pt"> |			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/Contact.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Contact US</span></a></font><font face="Arial" style="font-size: 8pt"><br>
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="payroll-outsourcing-thailand.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Payroll Outsourcing Thailand</span></a></font><font face="Arial" style="font-size: 8pt">  
+			|  
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="accounting-outsourcing-thailand.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Accounting Outsourcing Thailand</span></a></font><font face="Arial" style="font-size: 8pt">  
+			|  
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="hr-outsourcing-thailand.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			HR Outsourcing Thailand</span></a></font><font face="Arial" style="font-size: 8pt">  
+			|  
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/payroll-service-thailand.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Payroll service Thailand</span></a></font><font face="Arial" style="font-size: 8pt"><br>
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="bookkeeping-service-thailand.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Bookkeeping service Thailand</span></a></font><font face="Arial" style="font-size: 8pt"><a href="bookkeeping-service-thailand.html" style="text-decoration: none"><font color="#000000"> </font> </a>
+			<!-- Ladda : 23 July 2018 : Comment because change management team	 -->
+			<!-- |  
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="useful.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Useful </span></a></font><font face="Arial" style="font-size: 8pt"> |
+			</font><font face="Arial">
+			<a onMouseOver="this.style.color='#FF6600';" onMouseOut="this.style.color='#333333';" target="_blank" href="http://www.pos.co.th/partner.html">
+			<span style="text-decoration: none; font-size: 8pt; font-weight: 400">
+			Partner</span></a></font>
+			 -->
+			</div>		</td>
+        </tr>
+      </table>      	</td>
+		<td height="56"></td>
+	</tr>
+	<tr>
+		<td width="158"></td>
+		<td width="6"></td>
+		<td width="164"></td>
+		<td width="5"></td>
+		<td width="65"></td>
+		<td width="89"></td>
+		<td width="4"></td>
+		<td width="11"></td>
+		<td width="249"></td>
+		<td width="1"></td>
+		<td height="1" width="1"></td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+# /robots.txt file for http://www.mahr.com/
+# mail webmaster@mahr.com for constructive criticism
+
+User-agent: *

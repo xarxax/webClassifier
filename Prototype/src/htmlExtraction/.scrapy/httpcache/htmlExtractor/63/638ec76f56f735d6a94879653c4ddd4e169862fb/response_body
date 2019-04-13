@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<meta name="google-site-verification" content="2tU3Qy7iCEaItFA1XRqf6JAeTNZ34U8kvGoOIkU2u8I" />
+<title>PlasmaCAM Cutting Systems</title>
+
+<script type="text/javascript"> var vv_account_id = 'iCkwYbz6Ys'; var vv_BaseURL = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com/FrontEndWeb/" : "http://frontend.id-visitors.com/FrontEndWeb/");document.
+write(unescape("%3Cscript src='" + vv_BaseURL + "Scripts/liveVisit.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript"> try {document.write(unescape("%3Cscript src='" + new_url +"' type='text/javascript'%3E%3C/script%3E"));} catch( err ) {}</script>
+
+<meta name="description" content="CNC Plasma Cutters used for cutting artistic metal shapes and custom parts. Visit to get a free demo video of this Plasma Cutting System." />
+<script src="./SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="./AC_RunActiveContent.js" language="javascript"></script>
+<link href="./style.css" rel="stylesheet" type="text/css">
+<link href="./SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixRt #sidebar1 { width: 220px; }
+</style>
+<![endif]-->
+
+<!--[if IE 6]>
+<style type="text/css">
+#machspecs {
+position:absolute;
+top:105px;
+left:0px;
+margin-bottom:10px;
+}
+#endmach {
+margin-top:670px;
+}
+</style>
+<![endif]-->
+
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixRt #sidebar1 { padding-top: 30px; }
+.twoColFixRt #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->	 
+<script type="text/javascript" src="jquery/jquery-1.2.3.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<link href="css/jMyCarousel.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jMyCarousel.min.js"></script>
+<!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+<script language="JavaScript1.1">
+// check for new versions of js -->
+javascriptVersion1_1 = true;
+</script>
+</head>
+<body>
+<script type="text/javascript">
+$(function() {  
+    $(".JMyCarousel").jMyCarousel({  
+        visible: '816px',  
+        eltByElt: true,
+		speed: 500,
+		circular: false
+    });
+	 
+	$('.img_click').click(function () {
+		$("#maincontent-html").fadeOut("slow");
+		var cid = $(this).attr("id")
+		//alert(cid);
+		
+		$.post("index-image-load.php", { thumbindex: cid },
+ 			function(data){
+			$("#maincontent-html").html(data);
+			$("#maincontent-html").fadeIn("slow");
+    		//alert("Data Loaded: " + data + "\nData Sent: " + cid);
+  		});
+	});
+	
+	$('.next').css('background-image','url(images/carousel/arrow_right.gif)');
+	$('.next').css('background-repeat','no-repeat');
+	$('.prev').css('background-image','url(images/carousel/arrow_left.gif)');
+	$('.prev').css('background-repeat','no-repeat');
+
+	$('.prev').css('width','38px');
+	$('.next').css('width','38px');
+	$('.prev').css('height','48px');
+	$('.next').css('height','48px');
+
+	
+});
+
+//if user has flash plugin installed redirect to flash version
+if (pluginlist.indexOf("Flash")!=-1&&0!=1) {
+	var version = getFlashVersion().split(',').shift();
+	//if flash version is 8 or higher send to flash version
+	if (version > 7) {
+		var reURL = 'http://www.plasmacam.com/indexfla.php';
+//		var reURL = 'http://www.plasmacam.com/indexfla.php';
+		//this is the redirect, uncomment for use to redirect to flash
+		if(javascriptVersion1_1) {
+  			window.location.replace(reURL);
+		} else {
+  			window.location = reURL;
+		}
+	}
+}
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="menu" align="center" style="height: 140px; padding: 2px;">
+	<div id="header">
+		<a href="http://www.plasmacam.com"><img id="logo" src="./images/logonew.png" border="0" alt="PlasmaCAM CNC Plasma Cutting Systems"/></a>
+		<div id="demovideo">
+			<a href="./demovideo.php"><img src="./images/demovideo/demo-video.png" alt="PlasmaCAM CNC Plasma Cutting Machine Video"/>Click here to get a FREE Demo Video!</a>
+		</div>
+		<span style="float: left; width: 240px;">
+		<div id="phone">719-676-2700</div>
+		</span>
+	</div>
+	<div id="topmenu">
+		<ul>
+			<li><a href="./index.php">Home</a></li>
+			<li><a href="./projects-index.php">Articles</a></li>
+			<li><a href="./products-index.php">Uses</a></li>
+			<li><a href="./demovideo.php">Demo Video</a></li>
+		</ul>
+	</div>
+</div>
+<br style="clear:both;" />
+  <div align="center">
+  <div id="maincontent-html"><img src="js-stream/CatGate-4swf.jpg" /><br />  </div>
+	<div class="JMyCarousel">
+    <ul>
+     <li><a href='#'><img src='swf-stream/CatGate-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='2'></a></li>
+<li><a href='#'><img src='swf-stream/Highlights-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='5'></a></li>
+<li><a href='#'><img src='swf-stream/Skybike-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='4'></a></li>
+<li><a href='#'><img src='swf-stream/HVAC-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='20'></a></li>
+<li><a href='#'><img src='swf-stream/Bfly-Bench-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='6'></a></li>
+<li><a href='#'><img src='swf-stream/EddiePaul-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='7'></a></li>
+<li><a href='#'><img src='swf-stream/Bison-WOOD-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='9'></a></li>
+<li><a href='#'><img src='swf-stream/Bucket-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='10'></a></li>
+<li><a href='#'><img src='swf-stream/LeavesCutting-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='11'></a></li>
+<li><a href='#'><img src='swf-stream/Sculpture-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='12'></a></li>
+<li><a href='#'><img src='swf-stream/Stagecoach-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='13'></a></li>
+<li><a href='#'><img src='swf-stream/ArtDisc-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='14'></a></li>
+<li><a href='#'><img src='swf-stream/White-table-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='1'></a></li>
+<li><a href='#'><img src='swf-stream/DemoVideo-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='22'></a></li>
+<li><a href='#'><img src='swf-stream/Hotch-thumb2.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='23'></a></li>
+<li><a href='#'><img src='swf-stream/wheeler-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='24'></a></li>
+<li><a href='#'><img src='swf-stream/video-heavy-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='26'></a></li>
+<li><a href='#'><img src='swf-stream/vid-dhc-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='27'></a></li>
+<li><a href='#'><img src='swf-stream/vid-hvac-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='28'></a></li>
+<li><a href='#'><img src='swf-stream/vid-parts-thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='29'></a></li>
+<li><a href='#'><img src='swf-stream/pumpkins.png' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='32'></a></li>
+<li><a href='#'><img src='swf-stream/software2_thumb.jpg' width='200' style='border:none; padding:0px 2px;' height='125' class='img_click' id='31'></a></li>
+	</ul>
+    </div>
+	
+  </div>
+
+
+<a href="./specs.php" style="font-size:12px;">Technical Information</a> | <a href="./comlogin.php" style="font-size:12px;" target="_blank">Owners Community</a><br />
+
+<span style="font-size:10px;">Copyright &copy;2008  PlasmaCAM, Inc.</span>
+
+
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-624984-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/1093.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</body>
+<script type="text/javascript"> var vv_account_id = 'iCkwYbz6Ys'; var vv_BaseURL = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com/FrontEndWeb/" : "http://frontend.id-visitors.com/FrontEndWeb/");document.
+write(unescape("%3Cscript src='" + vv_BaseURL + "Scripts/liveVisit.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript"> try {document.write(unescape("%3Cscript src='" + new_url +"' type='text/javascript'%3E%3C/script%3E"));} catch( err ) {}</script>
+</html>

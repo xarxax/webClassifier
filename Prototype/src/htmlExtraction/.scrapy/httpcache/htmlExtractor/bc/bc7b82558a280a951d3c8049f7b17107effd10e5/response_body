@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Employer Resources Northwest > Home</title>
+	<link href="/?action=css" rel="stylesheet">
+	<link href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<script src="/?action=javascript"></script>
+	<!--[if lte IE 8]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</head>
+<body>
+
+
+
+<!--NOTES from 8/19/13:
+	- there is a new link in the <nav> - I did not add it to this file but the styles are adjusted and work fine once it is added
+			- Please add "Groups" between "training" and "Contact"	
+-->
+
+
+
+
+			<div class="colfull bgcolor4">
+				<header>
+					<div class="brand push5">
+						<a href="/"><img src="http://ernwest.com/core/templates/ernwest/web/images/icons/ERNwest_logo.png" alt="Employee Resources" /></a>
+					</div><!--closing of brand-->
+					<div class="headercolR">
+							<div class="cta ctapr pushd5">
+								<div class="ctaR ctaw135">
+		
+				<a href="/login" class="dshadow" title="Client Login">
+					Client Login
+				</a>
+											
+								</div>
+							</div><!--closing of cta-->
+						<nav>
+							<ul><li><a href="/" target="_self"  class="navLine on">Home</a></li><li><a href="http://ernwest.com/what-we-do" target="_self"  class="navLine ">What We Do</a></li><li><a href="http://ernwest.com/who-we-are" target="_self"  class="navLine ">Who We Are</a></li><li><a href="http://ernwest.com/training" target="_self"  class="navLine ">Training</a></li><li><a href="http://ernwest.com/contact" target="_self"  class="navLine ">Contact</a></li><li><a href="https://www.linkedin.com/company/employer-resources-northwest" target="_blank"  class="">Blog</a></li></ul>
+						</nav>
+					</div><!--closing of col3-7 for the nav wrapper -->
+				</header>
+				<div class="clear"></div>
+			</div><!--closing of colfull for header bg-->
+		
+<!--NOTES from 8/19/13
+	- Changed wrapper to indexWrapper 
+		-Removed the col3-fourth so the slideshow would go full width
+	- Slideshow is a static img but the client will still be able to change the image, text, and link
+	
+-->
+
+
+
+
+<!-- TODO: build carousel for group(client) logos -->
+<div class="bg3"><!--drop shadow for the header--></div>
+<div class="colfull bg2">
+	<div class="indexwrapper">
+			<div id="slideshow">
+
+				
+							
+				<div class="slide">
+					<a href="http://www.ernwest.com/core/files/ernwest/uploads/files/2015-2016_ERNwest_Release-fillable.pdf"><img src="http://ernwest.com/core/files/ernwest/presentation/e925a62fff4db194503af842d10152c0.jpg" alt="Home page welcome Photo">
+												<div class="slideCopy ">
+							<h1>WA workers' compensation that works for you</h1>	
+						</div><!--closing of slideCopy-->
+						
+						
+<!--NOTE:  NEW btn -->												
+						<div class="slideCta">Get started Today</div>
+						
+						
+					</a>							
+				</div><!--closing of slide-->
+				
+				
+
+
+			
+				
+<!-- Original slideshow 
+	
+						 -->
+		
+<!-- 					 -->
+				
+<!--
+					<div class="slide">
+						<a href="http://www.ernwest.com/core/files/ernwest/uploads/files/2015-2016_ERNwest_Release-fillable.pdf"><img src="http://ernwest.com/core/files/ernwest/presentation/e925a62fff4db194503af842d10152c0.jpg" alt="Home page welcome Photo"></a>
+													<div class="slideCopy ">
+							<h1>WA workers' compensation that works for you</h1>	
+						</div>
+					</div>
+					
+-->
+								
+				<div class="clear"></div>
+			</div><!--closing of slideshow id-->
+		
+		
+<!--NOTE:  The fset1 is different than the original layout.  It is generating a title, small description, and youTube video.  The <a> is different too-->		
+		
+		<div class="colfull pushd35 fset1Wrapper">
+			<div class="fset1">
+	<div class="col3-5">
+				<h1>What We Believe</h1>
+				<p>We believe that with ERNwest's assistance, Washington's expensive, frustrating, and inefficient workers' compensation system can be transformed into one that is cost-effective for the employers and supportive of the safety and health of their employees.</p>
+				<a class="btn" href="/who-we-are">See More</a>
+			</div>				
+				<div class="col2-5 pushd20">
+<!-- 					<iframe class="f_right" width="365" height="208" src="/core/files/ernwest/uploads/ernwest_wb.swf" frameborder="0" allowfullscreen></iframe> -->
+<!-- 		<embed src="/core/files/ernwest/uploads/ernwest_wb.swf" width="365" height="208" allowfullscreen play="false"></embed> -->
+<object width="365" height="208">
+	<param name="movie" value="/core/files/ernwest/uploads/ernwest_wb.swf">
+	<param name="autoplay" value="false">
+	<param name="autostart" value="false">
+	<embed src="/core/files/ernwest/uploads/ernwest_wb.swf" width="365" height="208" type="application/x-shockwave-flash" autoplay="false" flashvars="autoplay=false&play=false" menu="false"></embed>
+</object>
+
+				</div>
+			</div><!--closing of fset1-->
+			<div class="clear"></div>
+		</div><!--closing of colfull for the fset1-->
+		<div class="colfull pushd20">
+			<div class="fset2">
+				<div class="col2-9 push15">
+					<h1>Upcoming Training</h1>
+						<p>
+	ERNwest offers a wide range of training to help you get the support you need. &nbsp;Please click one of the links to sign up today.</p>
+						<a href="/training" class="btnLg" style="margin-top: 15px;" >View all training</a>
+				</div><!--closing of col2-9-->
+				<div id="training_list">
+					<div class="fset2dark">
+						<div class="colfourth">
+							<h4>DATE</h4>
+						</div><!--closing of colfourth for left column-->
+						<div class="colhalf push10">
+							<h4>NAME</h4>
+						</div><!--closing of colhalf - center column-->
+						<div class="colfifth">
+							<h4>LOCATION</h4>
+						</div><!--closing of colfifth  -  right column-->
+					</div><!--closing of colfull with fset2dark-->
+					<!--closing of - column 1-->
+	
+	
+	
+<!--NOTE:  
+	- Please a last to the last training_item in this list.  It will remove the bottom-border.  
+	- Also, the functionality to have it generate both fset2light and fset2dark is not required here any more. 
+		- If it would be easier, I added the padding and border styling to training_item so fset2light and fset2dark are not necessary.
+	
+	
+-->	
+	
+	
+	
+					
+							<div class="fset2light training_item">
+								<div class="colfourth">
+									<h5>01/15/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=461" class="training_links">OSHA Recordkeeping  - Nuts and Bolts, 2018</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2dark training_item">
+								<div class="colfourth">
+									<h5>01/16/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=465" class="training_links">WA Hospitality Assoc - Retro Participant Introduction</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2light training_item">
+								<div class="colfourth">
+									<h5>01/24/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=464" class="training_links">OSHA Recordkeeping  - E - Reporting, 2018</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2dark training_item">
+								<div class="colfourth">
+									<h5>02/05/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=470" class="training_links">Understanding Industrial Insurance Rates *</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2light training_item">
+								<div class="colfourth">
+									<h5>02/07/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=468" class="training_links">What Is Retro *</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2dark training_item">
+								<div class="colfourth">
+									<h5>02/13/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=466" class="training_links">WA Hospitality Assoc - Retro Participant Introduction</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2light training_item">
+								<div class="colfourth">
+									<h5>02/26/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=473" class="training_links">Using Kept on Salary and Modified Duty Effectively </a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+						
+							<div class="fset2dark training_item">
+								<div class="colfourth">
+									<h5>03/05/19</h5>
+								</div><!--closing of colfourth for left column-->
+								<div class="colhalf push10">
+									<a href="/training-workshop&amp;id=471" class="training_links">Understanding Industrial Insurance Rates *</a>
+								</div><!--closing of colhalf - center column-->
+								<div class="colfourth">
+									<p>Online</p>
+								</div><!--closing of colfifth  -  right column-->
+							</div><!--closing of colfull with fset2light-->
+											
+				</div><!--closing of training_list-->
+
+			
+<!--NOTE:  The view all functionality has been removed. I decided to comment out the code just in case the client decides they want it back...-->			
+			<!--
+<div class="viewall">
+				<div class="colfull">
+					<a href="#" id="view_training">
+						<img class="push5" src="http://ernwest.com/core/templates/ernwest/web/images/icons/dwnArrow.png" alt="View More Classes" />
+						VIEW MORE CLASSES
+						<img src="http://ernwest.com/core/templates/ernwest/web/images/icons/dwnArrow.png" alt="View More Classes" />
+					</a>
+				</div>
+			</div>
+-->
+			<!--closing of - VIEW MORE CLASSES-->
+			</div><!--closing of fset2-->			
+			<div class="clear"></div>
+		</div><!--closing of colfull-->
+		<div class="colfull bgcolor5">
+			<div class="groupWrapper">
+				<h1>Groups We Manage</h1>
+				<ul id="client_logos">
+				 
+				<ul class="slide_group">
+					<a href="/wbba-program"><li><img src="/core/files/ernwest/uploads/logos/LSW_Logo.jpg" alt="LSW Program" title="LSW Program" /></li></a>
+					<a href="/wfia-program"><li><img src="/core/files/ernwest/uploads/logos/WFIA_Logo.jpg" alt="WFIA Program" title="WFIA Program" /></li></a>
+					<a href="/whca-program"><li><img src="/core/files/ernwest/uploads/logos/WHCA_Logo.jpg" alt="WHCA Program" title="WHCA Program" /></li></a>
+				</ul>
+				<ul class="slide_group">
+					<a href="/wspa-program"><li><img src="/core/files/ernwest/uploads/logos/WSPA_Logo.jpg" alt="WSPA Program" title="WSPA Program" /></li></a>
+					<a href="/wha-program"><li><img src="/core/files/ernwest/uploads/logos/WHA_Logo.jpg" alt="WHA Program" title="WHA Program" /></li></a>
+				</ul>
+				 
+				</ul>
+				<div class="groupBtns">
+					<div id="groupLeft"></div>
+					<div id="groupRight"></div>
+				</div><!--closing of groupBtns-->
+			</div><!--closing of groupWrapper-->
+
+
+<!--NOTE:
+	- The "View More" button is no longer needed...once again, I thought I would leave it just in case the client changes their mind
+	- Instead of view all, it is more like a slideshow that when you click on the right/left arrows, the logos slide into view.
+		- SEE the .groupWrapper - groupBtns
+-->
+			
+<!--
+			<div class="viewall f_left col2-9">
+				<div class="colfull">
+					<a href="#" id="view_logos">
+						<img class="push5" src="http://ernwest.com/core/templates/ernwest/web/images/icons/dwnArrow.png" alt="View More Classes" />
+						VIEW MORE
+						<img src="http://ernwest.com/core/templates/ernwest/web/images/icons/dwnArrow.png" alt="View More Classes" />
+					</a>
+				</div>
+			</div>
+-->	
+			<div class="clear"></div>
+		</div><!--closing of colfull -->
+	</div><!--closing of indexWrapper-->
+</div><!--closing of colfull for content / body area-->
+
+<div class="colfull bg4">
+	<footer>
+		<div class="footernav">
+			<div class="col6 push25">
+				<ul><li><a class="headline" href="http://ernwest.com/who-we-are" target="_self">WHO WE ARE</a></li><li><a href="http://ernwest.com/history" target="_self">HISTORY</a></li><li><a href="http://ernwest.com/client-accolades" target="_self">TESTIMONIALS</a></li><li><a href="http://ernwest.com/careers" target="_self">CAREERS</a></li></ul>			</div><!--closing of col6 for column 1 in footernav-->
+			<div class="col5 push25">
+				<ul><li><a class="headline" href="http://ernwest.com/what-we-do" target="_self">WHAT WE DO</a></li><li><a href="http://ernwest.com/individual-retros" target="_self">INDIVIDUAL ACCOUNT MANAGEMENT</a></li><li><a href="http://ernwest.com/safety-loss-control" target="_self">SAFETY & LOSS CONTROL</a></li><li><a href="http://ernwest.com/legal-services" target="_self">LEGAL SERVICES</a></li><li><a href="http://ernwest.com/claims-management" target="_self">CLAIMS MANAGEMENT</a></li><li><a href="http://ernwest.com/group-retro" target="_self">GROUP RETRO</a></li><li><a href="http://ernwest.com/return-to-work" target="_self">RETURN TO WORK</a></li><li><a href="http://ernwest.com/stay-at-work-program" target="_self">STAY AT WORK PROGRAM</a></li></ul>			</div><!--closing of col5 for column 2 in footernav-->
+			<div class="col5 push25">
+				<ul><li><a class="headline" href="http://ernwest.com/training" target="_self">TRAINING</a></li><li><a href="http://ernwest.com/safety-workshops" target="_self">SAFETY TRAINING</a></li><li><a href="http://ernwest.com/in-person-training" target="_self">IN-PERSON TRAINING</a></li><li><a href="http://ernwest.com/webinar-training" target="_self">WEBINAR TRAINING</a></li></ul>			</div><!--closing of col5 for column 2 in footernav-->
+			<div class="col6 push25">
+				<ul><li><a class="headline" href="http://ernwest.com/group-retro" target="_self">GROUP RETRO</a></li><li><a href="http://ernwest.com/wbba-program" target="_self">LSW PROGRAM</a></li><li><a href="http://ernwest.com/wfia-program" target="_self">WFIA PROGRAM</a></li><li><a href="http://ernwest.com/whca-program" target="_self">WHCA PROGRAM</a></li><li><a href="http://ernwest.com/wspa-program" target="_self">WSPA PROGRAM</a></li><li><a href="wha-program\" target="_self">WHA PROGRAM</a></li></ul>			</div><!--closing of col6 for column 4 in footernav-->
+			<div class="col8">
+				<ul><li><a class="headline" href="/what-we-do">MORE</a></li><li><a href="http://ernwest.com/contact" target="_self">CONTACT</a></li><li><a href="http://ernwest.com/careers" target="_self">CAREERS</a></li></ul>			</div><!--closing of col8 for column 5 in footernav-->
+		</div>
+		<div class="colfull copyright">
+			<p>&copy; Copyright 2019 Employer Resources Northwest. All rights reserved. </p>
+		</div>
+		<div class="clear"></div>
+	</footer>	
+</div><!--closing of footer colfull with the bg4-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45453307-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

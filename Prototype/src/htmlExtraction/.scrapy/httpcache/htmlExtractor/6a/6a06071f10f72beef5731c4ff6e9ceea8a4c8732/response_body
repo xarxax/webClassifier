@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Medstaff Alternatives - Homepage</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="ie6.css" />
+<![endif]-->
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/home/about_nav_on.gif','images/home/careers_nav_on.gif','images/home/clients_nav_on.gif','images/home/contact_nav_on.gif')">
+
+<div class="container">
+
+<div class="logo"><img src="images/home/logo.gif" alt="MedStaff Alternatives" /></div>
+
+<div class="home_number">
+<ul>
+<li><img src="images/home/phone_number.gif" width="154" height="19" /></li>
+	<li></li>
+	
+</ul>
+</div>
+
+<div class="home_navigation">
+<ul>
+	<li><a href="about.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('about','','images/home/about_nav_on.gif',1)"><img src="images/home/about_nav.gif" alt="About Us" name="about" width="106" height="36" border="0" id="about" /></a></li>
+	<li><a href="search/apply.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('apply','','images/home/apply_nav_on.gif',0)"><img src="images/home/apply_nav.gif" alt="Apply" name="apply" width="86" height="36" border="0" id="apply" /></a></li>
+    <li><a href="careers.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('careers','','images/home/careers_nav_on.gif',1)"><img src="images/home/careers_nav.gif" alt="Careers" name="careers" width="98" height="36" border="0" id="careers" /></a></li>
+    <li><a href="clients.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('clients','','images/home/clients_nav_on.gif',1)"><img src="images/home/clients_nav.gif" alt="Clients" name="clients" width="92" height="36" border="0" id="clients" /></a></li>
+    <li><a href="contact.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','images/home/contact_nav_on.gif',1)"><img src="images/home/contact_nav.gif" alt="Contact Us" name="contact" width="117" height="36" border="0" id="contact" /></a></li>
+    <li></li>
+</ul>
+</div>
+
+<div class="main_photo"><img src="images/home/main_photo.jpg" /></div>
+
+<div class="column1">
+
+<div class="careers" onclick="window.open('careers.php','_self')">If you are looking for truly outstanding career opportunities, <a href="careers.php">explore a future</a> with MedStaff Alternatives a unique healthcare staffing company that is making a difference.</div>
+
+<div class="referral_bonus" onclick="window.open('search/refer.php','_self')">Refer a friend and get paid! Learn more...</div>
+
+</div>
+
+
+<div class="column2">
+
+<div class="search_jobs">
+<div class="search_form">
+
+<p class="intro_search_jobs">Search for our latest jobs.</p>
+
+    <form method="GET" action="search/search.php">
+<input type="hidden" name="new_search" value="1">
+<input type="hidden" name="action" value="search_jobs">
+		<p><strong>Keyword:</strong>
+		  <input class="textfield" type="text" name="keyword" />
+		
+		<p><strong>Profession:</strong>
+   		  <select name="industry" class="textfield184">
+			<option value="" selected>ALL</option>
+			<option value="RN">RN</option>
+<option value="ST">ST</option>
+<option value="SPD">SPD</option>
+<option value="RADIOLOGY">RADIOLOGY</option>
+<option value="THERAPY">THERAPY</option>
+<option value="RESPIRATORY">RESPIRATORY</option>
+<option value="LPN">LPN</option>
+<option value="ADMIN">ADMIN</option>
+<option value="PHARMACY">PHARMACY</option>
+<option value="TECHNICIAN">TECHNICIAN</option>
+        </select>
+        
+        <p><strong>Specialty:</strong>
+        <select name="job_type" class="textfield184">
+			<option value="" selected>ALL</option>
+			<option value="ADMIN">ADMIN</option>
+<option value="ANESTHESIOLOGY">ANESTHESIOLOGY</option>
+<option value="CARDIAC CATH LAB">CARDIAC CATH LAB</option>
+<option value="CLINIC">CLINIC</option>
+<option value="DIALYSIS">DIALYSIS</option>
+<option value="ENDO">ENDO</option>
+<option value="ER">ER</option>
+<option value="GI LAB">GI LAB</option>
+<option value="ICU CCU">ICU CCU</option>
+<option value="INTERVENTIONAL RADIOLOGY">INTERVENTIONAL RADIOLOGY</option>
+<option value="MEDICAL RECORDS">MEDICAL RECORDS</option>
+<option value="MED SURG">MED SURG</option>
+<option value="NURSE EDUCATOR">NURSE EDUCATOR</option>
+<option value="OCC HEALTH">OCC HEALTH</option>
+<option value="ONCOLOGY">ONCOLOGY</option>
+<option value="OPEN HEART">OPEN HEART</option>
+<option value="OR">OR</option>
+<option value="OT">OT</option>
+<option value="OTA">OTA</option>
+<option value="PACU">PACU</option>
+<option value="PHARMACIST">PHARMACIST</option>
+<option value="PT">PT</option>
+<option value="PTA">PTA</option>
+<option value="RAD-CT">RAD-CT</option>
+<option value="RAD-DIAG">RAD-DIAG</option>
+<option value="RAD-MAMMO">RAD-MAMMO</option>
+<option value="RAD-MRI">RAD-MRI</option>
+<option value="RAD-NUC MED">RAD-NUC MED</option>
+<option value="RAD-RAD THERAPY">RAD-RAD THERAPY</option>
+<option value="RAD-SONO">RAD-SONO</option>
+<option value="RAD-SPEC PROC">RAD-SPEC PROC</option>
+<option value="RESPIRATORY THERAPIST">RESPIRATORY THERAPIST</option>
+<option value="SPD">SPD</option>
+<option value="SUBACUTE">SUBACUTE</option>
+<option value="TELE">TELE</option>
+			</select>
+        
+  		<p><strong>Location:</strong>
+    	<select name="state" class="textfield184">
+			<option value="" selected>ALL</option>
+				<option value="Chicago - City North">Chicago - City North</option>
+	<option value="Chicago - City South">Chicago - City South</option>
+	<option value="Chicago - North Suburbs">Chicago - North Suburbs</option>
+	<option value="Chicago - Northwest Suburbs">Chicago - Northwest Suburbs</option>
+	<option value="Chicago - South Suburbs">Chicago - South Suburbs</option>
+	<option value="Chicago - Southwest Suburbs">Chicago - Southwest Suburbs</option>
+	<option value="Chicago - West Suburbs">Chicago - West Suburbs</option>
+	<option value="Indiana - Northwest">Indiana - Northwest</option>
+			</select>
+    	<input type="image" src="images/home/search_jobs_button.gif" name="submit" value="Search" class="search_button"/>
+</form>
+</div>
+</div>
+
+<div class="apply_now"><a href="search/apply.php"><img src="images/home/apply_now.gif" alt="Apply Now" /></a></div>
+
+</div>
+
+<div class="column3">
+<img src="images/home/news_use_title.gif" width="329" height="52" class="news_use_header" />
+
+<div class="news_use">
+
+<P><div style="width:300px; margin-bottom:5px;">
+<div><strong>2018 Third Quarter Strong   </strong></div>
+
+<div style="text-align:left; padding:3px; margin-top:3px; margin-bottom:3px; border-top:1px solid #D3D3D3;">
+                                          <p>Market Report,&nbsp;November&nbsp;2018</p> <div style="text-align:right;margin-top:-10px"><a href="#" onclick="window.open('http://medstaffalternatives.com/cutenews/show_news.php?subaction=showfull&amp;id=1307461376&amp;archive=&amp;template=', '_News', 'HEIGHT=400,WIDTH=620,resizable=yes,scrollbars=yes');return false;">read more... </a></div></div>
+</div><div style="width:300px; margin-bottom:5px;">
+<div><strong>Looking To Switch Agencies or For Extra Money?</strong></div>
+
+<div style="text-align:left; padding:3px; margin-top:3px; margin-bottom:3px; border-top:1px solid #D3D3D3;">
+                                           <p>November 2018</p> <div style="text-align:right;margin-top:-10px"><a href="#" onclick="window.open('http://medstaffalternatives.com/cutenews/show_news.php?subaction=showfull&amp;id=1284754763&amp;archive=&amp;template=', '_News', 'HEIGHT=400,WIDTH=620,resizable=yes,scrollbars=yes');return false;">read more... </a></div></div>
+</div><div style="width:300px; margin-bottom:5px;">
+<div><strong>Having Employment Options is Smart Business  </strong></div>
+
+<div style="text-align:left; padding:3px; margin-top:3px; margin-bottom:3px; border-top:1px solid #D3D3D3;">
+       <p>More Money....Less Taxes<br></p> <div style="text-align:right;margin-top:-10px"><a href="#" onclick="window.open('http://medstaffalternatives.com/cutenews/show_news.php?subaction=showfull&amp;id=1255785758&amp;archive=&amp;template=', '_News', 'HEIGHT=400,WIDTH=620,resizable=yes,scrollbars=yes');return false;">read more... </a></div></div>
+</div><!-- News Powered by CuteNews: http://cutephp.com/ --></p>
+
+</div>
+
+
+<div class="social_media"><img src="images/home/social_media.gif" width="175" height="38" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,0,124,38" href="http://www.facebook.com/pages/MedStaff-Alternatives/100274830053220" target="_blank" alt="Facebook" />
+    <area shape="rect" coords="137,1,174,38" href="http://www.linkedin.com/company/2492001" target="_blank" alt="LinkedIn" />
+  </map>
+</div>
+</div>
+
+<div class="footer"><p><a href="about.php">about us</a> | <a href="search/apply.php">apply</a> | <a href="careers.php">careers</a> | <a href="clients.php">clients</a> | <a href="contact.php">contact us</a><br>
+  site by <a href="http://www.biersmacreative.com" target="_blank">biersma creative</a></p> 
+  <a href="http://www.qualitycheck.org/qualityreport.aspx?hcoid=404320&amp;x=cert" target="_blank"><img src="images/home/joint_commission.gif" /></a>
+  <p>&copy; 2016 MedStaff Alternatives</p></div>
+
+</div>
+</body>
+</html>

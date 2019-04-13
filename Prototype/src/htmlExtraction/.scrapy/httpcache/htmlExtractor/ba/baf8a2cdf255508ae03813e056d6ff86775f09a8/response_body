@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<title>Error 404 - Page not found</title>
+<meta name="robots" content="noindex" />
+<style type="text/css">
+body {
+	background: #630 url(../images/bg/bg.jpg) repeat-y center top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+}
+#outer {
+	width: 760px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.5), inset #fff 1px 1px 0px;
+	background: rgba(204, 204, 204, 0.8) url(../images/bg/gridbg.gif);
+}
+#inner {
+	background: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px 20px 20px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid #999;
+	box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.75);
+}
+#inner h1 {
+	color: #630;
+	font-size: 170%;
+}
+
+#inner h2 {
+	color: #630;
+	font-size: 120%;
+}
+
+#inner p {
+	margin: 0px 0px 0.5em;
+}
+
+#inner a.button {
+	background: #630;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 8px rgba(50, 50, 50, 0.75);
+	border-top: 1px solid #c96;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #c96;
+}
+#inner a.button:hover, #inner a.button:active {
+	border-top: 1px solid #000;
+	border-right: 1px solid #c96;
+	border-bottom: 1px solid #c96;
+	border-left: 1px solid #000;
+	background: #963;
+	box-shadow: inset 2px 2px 2px rgba(50, 50, 50, 0.25);
+}
+.pic {
+	float: left;
+  width: 200px;
+  height: 195px;
+ 	background: url(../images/error/heathcliff.png);
+}
+</style>
+<!-- Put the following javascript before the closing </head> tag. -->
+<script>
+  (function() {
+    var cx = '013274054005615694137:nqyupojvaru';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="outer">
+  <div id="inner">
+    <div class="pic"></div>
+    <h1>&#8220;By God, it's a 404 Error!&#8221;</h1>
+    <h2>(That means &#8216;page not found&#8217;)</h2>
+    <p>Unfortunately the page you were looking for has not been found.</p>
+    <p>You may have followed a broken link, an outdated search result, or there may be an error on our site. </p>
+    <p>If you typed in a URL, please make sure you have typed it correctly.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Alternately, you can:</p>
+    <p>&nbsp;</p>
+    <p> <a href="http://www.wuthering-heights.co.uk/" class="button">Go to the home page</a>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp; <a href="http://www.wuthering-heights.co.uk/sitemap.php" class="button">&nbsp;&nbsp;Go to the site map&nbsp;&nbsp;</a></p>
+    <p>&nbsp;</p>
+    <p>or search the site:</p>
+    <!-- Place this tag where you want both of the search box and the search results to render -->
+    <gcse:search></gcse:search>
+  </div>
+</div>
+</body>
+</html>

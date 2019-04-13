@@ -1,0 +1,126 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Welcome to metamasa online</title></head>
+<body>
+
+<div align="right">
+<font face="arial" size="1">
+<SCRIPT language=JavaScript>
+var day="";
+var month="";
+var ampm="";
+var ampmhour="";
+var myweekday="";
+var year="";
+mydate = new Date();
+myday = mydate.getDay();
+mymonth = mydate.getMonth();
+myweekday= mydate.getDate();
+weekday= myweekday;
+myyear= mydate.getFullYear();
+year = myyear;
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!-- Begin-->
+var day="";
+var month="";
+var ampm="";
+var ampmhour="";
+var myweekday="";
+var year="";
+mydate = new Date();
+myday = mydate.getDay();
+mymonth = mydate.getMonth();
+myweekday= mydate.getDate();
+weekday= myweekday;
+myyear= mydate.getFullYear();
+year = myyear;
+myhours = mydate.getHours();
+ampmhour  =  (myhours > 12) ? myhours - 12 : myhours;
+ampm =  (myhours >= 12) ? ' PM' : ' AM';
+mytime = mydate.getMinutes();
+myminutes =  ((mytime < 10) ? ':0' : ':') + mytime;
+if(myday == 0)
+day = " Sunday, ";
+else if(myday == 1)
+day = " Monday, ";
+else if(myday == 2)
+day = " Tuesday, ";
+else if(myday == 3)
+day = " Wednesday, ";
+else if(myday == 4)
+day = " Thursday, ";
+else if(myday == 5)
+day = " Friday, ";
+else if(myday == 6)
+day = " Saturday, ";
+if(mymonth == 0) {
+month = "January ";}
+else if(mymonth ==1)
+month = "February ";
+else if(mymonth ==2)
+month = "March ";
+else if(mymonth ==3)
+month = "April ";
+else if(mymonth ==4)
+month = "May ";
+else if(mymonth ==5)
+month = "June ";
+else if(mymonth ==6)
+month = "July ";
+else if(mymonth ==7)
+month = "August ";
+else if(mymonth ==8)
+month = "September ";
+else if(mymonth ==9)
+month = "October ";
+else if(mymonth ==10)
+month = "November ";
+else if(mymonth ==11)
+month = "December ";
+document.write(ampmhour + "" + myminutes + ampm)
+document.write(" - " + day + month);
+document.write(myweekday + ", " + year)
+</SCRIPT>
+</font>
+</div>
+	
+<div align="center">
+<table>
+		<tr>
+			<!--<td><a onclick="addA()" href="http://www.mifx.com/aa/open-demo-account.php?adv=31" title="OPEN DEMO ACCOUNT" target=_blank><img src="adv.gif" height="550px" border="0"></a></td>-->
+			<td><a href="index2.htm"><img src="gambar\title.jpg" border="0" alt="Click here to Enter"></a></td>
+			<!--<td><a onclick="addC()" href="http://www.mifx.com/aa/open-live-account.php?adv=31" title="OPEN LIVE ACCOUNT" target=_blank><img src="adv.gif" height="550px" border="0"></a></td>-->
+		</tr>
+</table>
+
+</div>
+
+
+<div align="center">
+<font size="1" face="arial">Last Updated January 10th, 2001<br>
+Copyright © 2000-<script>document.write(year)</script> - PT. Metamasa Mitramandiri&trade; - All rights reserved<br />
+</div>
+
+<!--<div align="right">
+<font size="1" face="arial">Best viewed in<br>800 x 600 monitor<br>with medium text size<br>
+<a href="http://www.microsoft.com/window/ie"><img src="ielogo.gif" border=0 align="right"></a>
+</div>
+
+<p><a href="http://member.bcentral.com/cgi-bin/fc/fastcounter-login?1993994" target="_top"><img border="0" src="http://fastcounter.bcentral.com/fastcounter?1993994+3987995"></a> times accessed.
+</p>-->
+</font>
+</body></html>
+
+
+<script>
+
+  function addA() {
+ window.location.href = "index.php?id=A";
+  }
+  function addB() {
+   window.location.href = "index.php?id=B";
+  }
+  function addC() {
+    window.location.href = "index.php?id=C";
+  }
+</script>

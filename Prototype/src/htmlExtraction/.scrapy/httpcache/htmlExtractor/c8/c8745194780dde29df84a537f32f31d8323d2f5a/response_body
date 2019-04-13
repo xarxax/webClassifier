@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="icon" type="image/png" href="images/fav.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kincaid's Fish, Chop & Steak House</title>
+			<meta name="google-site-verification" content="91uVoUPz7aFzoRgXATee_T6QgWc9tu1pVu9r3zA0RvA" />
+	<link href="_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="_css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css">
+	<link href="_css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+	<link href="_css/extras.css?v=3" rel="stylesheet" type="text/css">
+		<link href="_css/menuSP.css" rel="stylesheet" type="text/css" />
+	<link href="_css/rewards.css" rel="stylesheet" type="text/css">
+	<!-- Add Special Events CSS -->
+	<link href="_css/specialEvents.css?v=3" rel="stylesheet" type="text/css" />
+
+
+	<script type="text/javascript">
+		IS_MOBILE = false;
+		DATENOW_YMD = 20190128;
+	</script>
+
+</head>
+<body>
+
+
+
+
+
+
+	<div id="sliderWrap" class="relative">
+		<div class="relativecontainer">
+
+			<!-- //NAVBAR -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<div class="menu-logo" style="display:none;">
+				<div class="menu-logo-wrap"><a href="index.php"><img src="images/kincaids_sm.png" width="118" height="43" /></a></div>
+			</div>
+		</div>
+		<div class="navbarWrap">
+			<div id="navbar-collapse-main" class="collapse navbar-collapse">
+				<ul id="menu-main-menu" class="nav navbar-nav">
+					<li class="menu-item"><a href="reservations.php" class="res" title="reservations">reservations</a></li>
+                    <li class="menu-item"><a href="menu.php" class="men" title="menu">menu</a></li>
+                    <li class="menu-item"><a href="takeout-catering.php" class="tak" title="takeout and catering">Takeout & Catering</a></li>
+                    <li class="menu-item"><a href="events.php" class="eve" title="Our Events">Our events</a></li>
+                    <li class="menu-item"><a href="group-dining.php" class="gro" title="groups">Groups</a></li>
+					<li class="menu-item"><a href="rewards.php" class="rew" title="rewards">rewards</a></li>
+					<!-- -->
+					<li class="dropdown nav-dropdown">
+						<a href="location.php" class="loc dropdown-toggle" title="location" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
+						<ul class="dropdown-menu">
+																								<li><a href="location.php?c=bloomington">Bloomington</a></li>
+																																<li><a href="location.php?c=burlingame">Burlingame</a></li>
+																																<li><a href="location.php?c=oakland">Oakland</a></li>
+																																<li><a href="location.php?c=redondobeach">Redondo Beach</a></li>
+																																<li><a href="location.php?c=stpaul">St. Paul</a></li>
+																					</ul>
+					</li>
+				</ul>
+			</div>
+			<span class="subnav">current location: <span class="highlight"><a href="#" id="results" class="custom-block toggleClickResults">Select a Location</a></span></span>
+			<!-- -->
+			<div id="resultswrap" style="display:none;">
+				<div class="rowWrap"><h5 class="mt5 mb5 cWhite">Locations<span class="fauxBtn toggleClick" id="results">X</span></h5></div>
+				<div class="rowWrap mb5"><button onclick="GetLocation()" class="btn btn-block btn-tiny">click here to auto detect</button></div>
+				<div id="scrollbar" class="rowWrap">
+																		<div class="rowMain">
+								<div class="locTop"><span id="bloomington" class="strong cCaps refreshClick">Bloomington</span></div>
+								<div class="locMid"><p class="extraStrong">952-921-2255</p><p class="small">8400 Normandale Lake Blvd.<br /> Bloomington, MN 55437</p></div>
+								<div class="locLow text-center">
+									<a href="menu.php?c=bloomington" class="btn btn-sm clr btn-centered btn-loc">menu</a>
+									<a href="events.php?c=bloomington" class="btn btn-sm clr btn-centered btn-loc">events</a>
+									<a href="reservations.php?c=bloomington" class="btn btn-sm clr btn-centered btn-loc">reservations</a>								</div>
+							</div>
+																								<div class="rowMain">
+								<div class="locTop"><span id="burlingame" class="strong cCaps refreshClick">Burlingame</span></div>
+								<div class="locMid"><p class="extraStrong">650-342-9844</p><p class="small">60 Bay View Place<br /> Burlingame, CA 94010</p></div>
+								<div class="locLow text-center">
+									<a href="menu.php?c=burlingame" class="btn btn-sm clr btn-centered btn-loc">menu</a>
+									<a href="events.php?c=burlingame" class="btn btn-sm clr btn-centered btn-loc">events</a>
+									<a href="reservations.php?c=burlingame" class="btn btn-sm clr btn-centered btn-loc">reservations</a>								</div>
+							</div>
+																								<div class="rowMain">
+								<div class="locTop"><span id="oakland" class="strong cCaps refreshClick">Oakland</span></div>
+								<div class="locMid"><p class="extraStrong">510-835-8600</p><p class="small">1 Franklin Street<br /> Oakland, CA 94607</p></div>
+								<div class="locLow text-center">
+									<a href="menu.php?c=oakland" class="btn btn-sm clr btn-centered btn-loc">menu</a>
+									<a href="events.php?c=oakland" class="btn btn-sm clr btn-centered btn-loc">events</a>
+									<a href="reservations.php?c=oakland" class="btn btn-sm clr btn-centered btn-loc">reservations</a>								</div>
+							</div>
+																								<div class="rowMain">
+								<div class="locTop"><span id="redondobeach" class="strong cCaps refreshClick">Redondo Beach</span></div>
+								<div class="locMid"><p class="extraStrong">310-318-6080</p><p class="small">500 Fishermans Wharf<br /> Redondo Beach, CA 90277</p></div>
+								<div class="locLow text-center">
+									<a href="menu.php?c=redondobeach" class="btn btn-sm clr btn-centered btn-loc">menu</a>
+									<a href="events.php?c=redondobeach" class="btn btn-sm clr btn-centered btn-loc">events</a>
+									<a href="reservations.php?c=redondobeach" class="btn btn-sm clr btn-centered btn-loc">reservations</a>								</div>
+							</div>
+																								<div class="rowMain">
+								<div class="locTop"><span id="stpaul" class="strong cCaps refreshClick">St. Paul</span></div>
+								<div class="locMid"><p class="extraStrong">651-602-9000</p><p class="small">380 St. Peter Street #125<br /> St. Paul, MN 55102</p></div>
+								<div class="locLow text-center">
+									<a href="menu.php?c=stpaul" class="btn btn-sm clr btn-centered btn-loc">menu</a>
+									<a href="events.php?c=stpaul" class="btn btn-sm clr btn-centered btn-loc">events</a>
+									<a href="reservations.php?c=stpaul" class="btn btn-sm clr btn-centered btn-loc">reservations</a>								</div>
+							</div>
+															</div>
+			</div>
+			<!-- -->
+		</div>
+	</div>
+</nav>
+			<!-- //Slider -->
+			<ul class="homeslider">
+				<li><img src="images/slider/kincaids.jpg" alt="Kincaids" /></li>
+			</ul>
+
+			<!-- // -->
+			<div class="floatbox">
+				<div class="relativewrap">
+					<span class="floatlogo"><a href="index.php"><img src="images/kincaids.png" width="348" height="127" alt="Kincaids"></a></span>
+					<span class="floattitle cCaps">FISH, CHOP &amp; STEAK HOUSE</span>
+                    <span class="floatdesc">Artfully serving quality steaks, and fresh and innovative seafood since 1986.</span>
+            <span class="floatdesc">Enjoy daily lunch, dinner or perhaps a special business or romantic occasion in our warm and inviting dining room.</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- //main button -->
+<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 promoWrap text-center">
+						<div class="row">
+							<div class="col-md-12" style="padding-top:20px;">
+								<div class="col-md-8 col-md-offset-2 text-center mt20"><h1 class="section-heading titleFont">KINCAIDS RESTAURANT</h1>
+  <p>Each Kincaid's restaurant is uniquely local.</p>
+<p>Explore how your Kincaid's brings local to life. Please join our longtime friends who have enjoyed many fond memories over the years as our guests.</p>
+</div> 
+
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="staticbgalt">
+      <div class="menuWrap">
+      	<div class="container lineshadowwrap lineshadow">
+			<div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading text-center cWhite strong">Announcements</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="promoWrap">         
+<h3>View our events, promotions and specials.</h3>
+<p><a href="events.php" class="btn btn-block btn-secondary">view promotions</a></p>
+<p>&nbsp;</p>
+      
+  </div>
+					</div>
+				</div></div>
+		</div>
+	</section>
+
+
+	<div class="clear"></div>
+
+<section id="newsletter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+            <div class="col-lg-6 text-right pt5">
+						<h4 class="white">Sign up for exclusive offers: </h4>
+					</div>
+                    <div class="col-lg-6 pt5">
+						<div class="col-md-6 mt10"><a href="https://www.r-u-i.com/subscribe.php" target="_blank" class="btn btn-secondary btn-block brdr">Subscribe</a></div>					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="bg-footer lineshadowtopborder">
+		<div class="container fullwidth">
+			<div class="container">
+            <div class="row footer">
+					<div class="col-md-12 text-center">
+						<p><a href="index.php">Home</a> | <a href="reservations.php">Reservations</a> | <a href="menu.php">Menu</a> | <a href="takeout-catering.php">Takeout & Catering</a> | <a href="events.php">Our Events</a> | <a href="group-dining.php">Groups</a> | <a href="giftcards.php">Gift Cards</a> | <a href="rewards.php">Rewards</a> | <a href="location.php">Locations</a></p>					</div>
+				</div>
+				<div class="row footer">
+					<div class="col-lg-4 social text-left">
+						<div class="blk">
+			<p><strong>Locations:</strong><br>
+												<a href="./location.php?c=bloomington" class="btn btn-sm btn-block btn-default brdr">Bloomington</a>
+																<a href="./location.php?c=burlingame" class="btn btn-sm btn-block btn-default brdr">Burlingame</a>
+																<a href="./location.php?c=oakland" class="btn btn-sm btn-block btn-default brdr">Oakland</a>
+																<a href="./location.php?c=redondobeach" class="btn btn-sm btn-block btn-default brdr">Redondo Beach</a>
+																<a href="./location.php?c=stpaul" class="btn btn-sm btn-block btn-default brdr">St. Paul</a>
+									</p>
+	</div>
+<div class="blk" style="margin-bottom:20px;">
+	<ul>
+		<li>		<li>		<li>		<li><a href="" class="not-active" target="_blank"><img src="https://storage.googleapis.com/ubereats/UberEATS_badge_horizontal_mobile.png" alt="ubereats" style='height: 42px;' /></a></li></li>
+	</ul>
+</div>
+<div class="blk">
+  <ul>
+  <li>DOWNLOAD OUR LOYALTY APP</li>
+    <li><a href="https://itunes.apple.com/us/app/ru-rewards/id1364728245" target="_blank"><img src="images/apple-store-black-135x45.png" height="45" alt="Apple Store"></a></li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.paytronix.client.android.app.rui" target="_blank"><img src="images/google-play-badge-151x45.png" height="45" alt="Apple Store"></a></li>
+  </ul>
+</div>					</div>
+                    <div class="col-lg-8 hours">
+											</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+		<div class="container lineshadow lowerfooter">
+			<div class="row footer">
+	<div class="col-sm-4"> <a href="http://www.r-u-i.com" target="_blank"><img src="images/rui-family-1-375x150.png" width="375" height="150" class="img-responsive" alt="Restaurants Unlimited Brands"></a>
+	</div>
+	<div class="col-sm-4"> <a href="http://www.r-u-i.com" target="_blank"><img src="images/rui-family-2-375x150.png" width="375" height="150" class="img-responsive" alt="Restaurants Unlimited Brands"></a>
+	</div>
+	<div class="col-sm-4"> <a href="http://www.r-u-i.com" target="_blank"><img src="images/rui-family-3-375x150.png" width="375" height="150" class="img-responsive" alt="Restaurants Unlimited Brands"></a>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-sm-5 col-md-4 text-left">
+		<p class="small">Copyright &copy; 2019 Restaurants Unlimited, Inc.</p>
+	</div>
+	<div class="col-sm-3 col-md-4 text-center">
+		<p class="small"><a href="https://restaurantsunlimited.peoplematter.jobs/" onclick="trackOutboundLink('https://restaurantsunlimited.peoplematter.jobs/'); return false;" target="_blank">careers</a> | <a href="http://www.r-u-i.com/privacy-policy.php" onclick="trackOutboundLink('http://www.r-u-i.com/privacy-policy.php'); return false;" target="_blank">privacy policy</a></p>
+	</div>
+	<div class="col-sm-4 text-right">
+		<p class="icon-rui"><a href="http://www.r-u-i.com" onclick="trackOutboundLink('http://www.r-u-i.com'); return false;" target="_blank">learn more about RUI</a></p>
+	</div>
+</div>
+		</div>
+		<!-- /.bg-footer -->
+	</footer>
+
+
+<!-- jQuery library -->
+<script src="_js/jquery-2.1.4.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="_js/html5.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- //scripts -->
+<script type="text/javascript" src="_js/functions.js?v=2"></script>
+<script type="text/javascript" src="_js/bootstrap.min.js"></script>
+<script type="text/javascript" src="_js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="_js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="_js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="_js/jquery.media.js"></script>
+
+<!-- //carousel -->
+<script type="text/javascript" src="bxslider/jquery.bxslider.min.js"></script>
+<link href="bxslider/jquery.bxslider.css?id=2" rel="stylesheet" />
+
+<script>
+	jQuery(document).ready(function($){
+
+		$("#scrollbar").mCustomScrollbar({
+			scrollButtons:{ enable:true	}
+		});
+		$('.refreshClick').click(function(event) {
+
+			event.preventDefault();
+			var linkID = $(this).attr('id');
+
+			url = "/index.php?c=" + linkID;
+			//window.location.replace(url);
+			window.location.href = url;
+
+		});
+		$('.toggleClickResults').click(function(event) {
+			event.preventDefault();
+			var linkID = $(this).attr('id');
+			var boxID = '#'+linkID+'wrap';
+			//			console.warn(boxID);
+			if ($(boxID).is(":visible")) {
+				//$(boxID).hide();
+				$(boxID).slideUp('fast', function() {
+					// Animation complete.
+				});
+			} else {
+				$(boxID).slideDown(function() {
+					// Animation complete.
+					$("#scrollbar").mCustomScrollbar("update");
+				});
+			}
+		});
+
+	});
+</script>
+
+<script>
+	jQuery(document).ready(function($){
+		$('.resbutton').click(function(event) {
+			event.preventDefault();
+			if ($('#reswrap').is(":visible")) {
+				$('html,body').animate({ scrollTop: $('#reswrap').offset().top }, 'slow');
+			} else {
+				$('#reswrap').slideDown('slow', function() {
+					// Animation complete.
+				});
+				$('html,body').animate({ scrollTop: $('#reswrap').offset().top }, 'slow');
+			}
+		});
+		var date = new Date();
+		date.setDate(date.getDate());
+		$('.resdate').datepicker({
+			format: 'mm/dd/yyyy',
+			startDate: date,
+			todayHighlight: true
+		});
+	});
+	$(function() {
+		$('#RestaurantID').change(function() {
+			var x = $(this).val();
+			// update the hidden input's value
+			$('#RestaurantReferralID').val(x);
+		});
+	});
+	function checkrestable(sendform){
+		//alert("i: "+rid +"j: "+resparty)
+		if (sendform.RestaurantID.value == "" || sendform.RestaurantReferralID.value == ""){
+			alert("No location selected!");
+			return false;
+		}
+				trackReservation('desktop');
+		$("#resModal").modal("show");
+			}
+</script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-25221513-1', 'auto');
+	ga('send', 'pageview');
+
+	/*** tracks a click on an outbound link ***/
+	var trackReservation = function(mode){
+		if (!ga.q) {
+			ga('send', 'event', 'reservation', 'submit', mode, {'transport': 'beacon','hitCallback': function(){}});
+		}
+	};
+
+	/*** tracks a click on an outbound link : onclick="trackOutboundLink('http://'); return false;" ***/
+	var trackOutboundLink = function(url){
+		if (ga.q) {
+			// Google Analytics is blocked
+			// document.location = url;
+			window.open(url);
+		} else {
+			ga('send', 'event', 'outbound', 'click', url, {'transport': 'beacon','hitCallback': function(){}});
+			window.open(url);
+		}
+	}
+</script>
+
+<script>
+			window.onload = function ()
+	{
+		// get user's location
+		GetLocation();
+	};
+		function GetLocation ()
+	{
+		// HTML5/W3C Geolocation
+		if ( navigator.geolocation )
+		{
+			navigator.geolocation.getCurrentPosition( UserLocation, DefaultLocation, {timeout:10000,maximumAge:120000} );
+		}
+		else
+			console.log("Geolocation is not supported by this browser.");
+	}
+
+	// Callback function for error
+	function DefaultLocation()
+	{
+		/*DEFAULT: BURLINGAME*/
+		//NearestCity( 37.591768, -122.342912 );
+	}
+
+	// Callback function for asynchronous call to HTML5 geolocation
+	function UserLocation( position )
+	{
+		NearestCity( position.coords.latitude, position.coords.longitude );
+	}
+
+	// Convert Degress to Radians
+	function Deg2Rad( deg ) {
+		return deg * Math.PI / 180;
+	}
+
+	function PythagorasEquirectangular( lat1, lon1, lat2, lon2 )
+	{
+		lat1 = Deg2Rad(lat1);
+		lat2 = Deg2Rad(lat2);
+		lon1 = Deg2Rad(lon1);
+		lon2 = Deg2Rad(lon2);
+		var R = 6371; // km
+		var x = (lon2-lon1) * Math.cos((lat1+lat2)/2);
+		var y = (lat2-lat1);
+		var d = Math.sqrt(x*x + y*y) * R;
+		return d;
+	}
+
+	//var lat=20; // user's latitude
+	//var lon=40; // user's longitude
+
+	var cities= [
+		["bloomington", 44.853160, -93.355625],
+		["burlingame", 37.591768, -122.342912],
+
+		["oakland", 37.793591, -122.276306],
+		["redondobeach", 33.840701, -118.391978],
+		["stpaul", 44.945583, -93.095756]
+	];
+
+	function NearestCity( latitude, longitude )
+	{
+		var mindif=99999;
+		var closest;
+
+		for (index = 0; index < cities.length; ++index) {
+			var dif =  PythagorasEquirectangular( latitude, longitude, cities[ index ][ 1 ], cities[ index ][ 2 ] );
+			if ( dif < mindif )
+			{
+				closest=index;
+				mindif = dif;
+			}
+		}
+
+		//		nearest location
+		//      alert( cities[ closest ] );
+		url = "/index.php?c=" + cities[ closest ][ 0 ];
+		window.location.replace(url);
+		console.log('geolocationset');
+
+	}
+</script>
+
+
+<!--Monsido-->
+  <script type="text/javascript">
+    var _monsido = _monsido || [];
+    _monsido.push(['_setDomainToken', 'QqZxDQJ72CHuB3U3qinm0Q']);
+    _monsido.push(['_withStatistics', 'true']);
+  </script>
+  <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			$('.homeslider').bxSlider({
+				infiniteLoop: false,
+				hideControlOnEnd: true,
+				pager: false,
+				auto: true,
+				mode: 'fade',
+				captions: false
+			});
+
+			$('.scrollDown').click(function() {
+				$('html,body').animate({ scrollTop:  $('.mainBtn').offset().top }, 'slow');
+			});
+
+		});
+	</script>
+
+	
+
+</body>
+</html>

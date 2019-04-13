@@ -1,0 +1,162 @@
+<html><!-- #BeginTemplate "/Templates/basic_template.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29395633-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- #BeginEditable "doctitle" -->
+<title>Wholesale Fudge & candy Products - The Fudgery</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="keywords" content="fudge, the fudgery, wholesale fudge, fudge showcases, quality fudge, chocolate fudge, maple fudge, vanilla fudge, home made fudge, fudge manufacture, fudge factory">
+<meta name="description" content="We "wholesale only" our quality gourmet fudge
+to retailers across Canada.">
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+
+<!-- #BeginEditable "headarea" -->
+
+<script language="JavaScript">
+//define global var and functions
+var myform;
+var total;
+
+function dototal()
+{
+  total=0;
+  myform = document.forms[0];
+  var ierror = false;
+  for (i=31; i< (document.forms[0].length -4); i++)
+  {
+   len = myform.elements[i].length;
+   mytext= myform.elements[i].value;
+   if ((mytext == "")){mytext="0";}
+   result = parseInt(mytext);
+   if (mytext <0)
+   { alert("Please enter non negative numbers"); ierror=true;}
+   if ((! result) && (mytext !="0"))
+   { alert("Please enter numbers only");  ierror=true;
+      myform.elements[i].focus(); myform.elements[i].select();}
+   total = total + parseInt(mytext);
+   //(myform.elements[i].value);
+  }
+  var txt_total = (myform.length) -3;
+  if (ierror)
+     myform.elements[txt_total].value = "Error";
+  else
+   myform.elements[txt_total].value = total;
+
+}
+//end imu stuff ----->
+</script>
+
+
+<!-- #EndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="00" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/nav_images/nav1_on.jpg','images/nav_images/nav2_on.jpg','images/nav_images/nav3_on.jpg','images/nav_images/nav4_on.jpg','images/nav_images/nav5_on.jpg','images/nav_images/nav6_on.jpg','images/nav_images/nav7_on.jpg','images/nav_images/fudge-making_on.jpg','images/nav_images/fudge-fundraising_on.jpg')">
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/header.jpg" width="700" height="109" border="0" alt="The Fudgery - makers of fine quality, gourmet fudge!"></td>
+  </tr>
+</table>
+<table width="690" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="164" valign="top"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/nav_images/nav1_on.jpg',1)"><img name="Image2" border="0" src="images/nav_images/nav1_off.jpg" width="164" height="36" alt="Gourmet Fudge Home Page"></a><a href="html/wholesale.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/nav_images/nav2_on.jpg',1)"><img name="Image3" border="0" src="images/nav_images/nav2_off.jpg" width="164" height="33" alt="Wholesale Fudge"></a><a href="html/flavours.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/nav_images/nav3_on.jpg',1)"><img name="Image4" border="0" src="images/nav_images/nav3_off.jpg" width="164" height="34" alt="Fudge Flavors Available"></a><a href="html/showcases.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/nav_images/nav4_on.jpg',1)"><img name="Image5" border="0" src="images/nav_images/nav4_off.jpg" width="164" height="34" alt="Merchandising Showcases"></a><a href="html/faqs.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/nav_images/nav5_on.jpg',1)"><img name="Image6" border="0" src="images/nav_images/nav5_off.jpg" width="164" height="33" alt="FAQs - Fudge Asked Questions"></a><a href="html/retail.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fudgemaking','','images/nav_images/fudge-making_on.jpg',1)"><img src="images/nav_images/fudge-making_off.jpg" alt="How the Fudgery Makes their homemade Fudge" name="fudgemaking" width="164" height="33" border="0" id="fudgemaking"></a><a href="html/fundraising.php" onMouseOver="MM_swapImage('fundraising','','images/nav_images/fudge-fundraising_on.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="images/nav_images/fudge-fundraising_off.jpg" alt="Fudge Fundraising for schools, organizations, churches, sports teams" name="fundraising" width="164" height="33" border="0" id="fundraising"></a><a href="html/order.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/nav_images/nav6_on.jpg',1)"><img name="Image7" border="0" src="images/nav_images/nav6_off.jpg" width="164" height="33" alt="Wholesale Order Form"></a><a href="html/contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/nav_images/nav7_on.jpg',1)"><img name="Image8" border="0" src="images/nav_images/nav7_off.jpg" width="164" height="33" alt="Contact the Fudgery"></a><img src="images/nav_images/nav_foot.jpg" width="164" height="94"></td>
+    <td width="526" valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="20">
+        <tr valign="top">
+          <td><!-- #BeginEditable "mainbody" -->
+            <div align="center"><br>
+              <font face="Arial, Helvetica, sans-serif" size="4" color="#990000"><i><b><font size="5">Welcome
+              to The Fudgery Shoppe!</font></b></i></font></div>
+            <p align="center"><b><font size="3">Home to One of the World's Finest
+            Fudges!</font></b></p>
+            <p align="center">            <img src="images/the-fudgery-gourmet-fudge.jpg" alt="Welcome to The Fudgery Shoppe: Home to One of the World's Finest Fudges! The best Wholesale fudge in Canada and the US" width="400" height="274" border="1"></p>
+            <p align="center">
+            <b>Your Interest Is?</b></p>
+            <p align="center">
+            <font size="5"><u><b><font color="#FF0000">
+            <a href="html/retail.html"><font size="4"><u>
+            </u></font></a></font></b></u>
+            <u><b><font color="#0000FF"><a href="html/wholesale.html">
+            <font size="4"><u>
+            <span style="text-decoration: overline">WHOLESALE</span></u></font></a></font></b></u>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><u>
+            <font size="4" color="#990000"><a href="html/fundraising.php">
+            <span style="text-decoration: overline underline"><font size="4">FUNDRAISING</font></span></a></font></u></b></font></p>
+            <p align="center">            <font size="5"><u><b><font color="#FF0000"><a href="html/retail.html"><font size="4"><u><span style="text-decoration: overline">OUR FUDGE MAKING PROCESS</span></u></font></a></font></b></u></font>            </p>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="690" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="139">&nbsp;</td>
+    <td width="551" align="center">
+      <table width="100%" border="0" cellspacing="0" cellpadding="20">
+        <tr align="center">
+          <td>
+            <p>| <a href="index.html">Home Page</a> | <a href="html/wholesale.html">Wholesale</a>
+              | <a href="html/flavours.html">Flavours</a> | <a href="html/showcases.html">Showcases</a>
+              | <a href="html/retail.html">Fudge Making Process </a> <br>
+              | <a href="html/faqs.html">FAQs</a> | <a href="html/order.php">Order
+            Form</a> | <a href="fundraising.php">Fudge Fundraising </a> | <a href="html/contact.html">Contact Us</a> | <a href="html/privacy-policy.htm">Privacy Policy</a> </p>
+            <p><span class="tiny"><b>The Fudgery Shoppe is a division of
+            Brittles 'n More Ltd.<br>
+              Makers of fine quality, gourmet fudge!</b><br>
+              180 Frobisher, Unit #2, Waterloo, Ontario N2V 2A2<br>
+              Office: 519-884-3505 &#8226;&nbsp;Toll-Free: 1-888-235-5552 &#8226;&nbsp;Fax:
+            519-884-9854 &#8226; Toll-Free Fax : 1-877-680-2715</span></p>
+            <p><span class="tiny">Contents &amp; Images Copyright&copy; The Fudgery
+              Shoppe 2003-2014</span> <br>
+              <font size="-2">
+              <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#116;&#104;&#101;&#102;&#117;&#100;&#103;&#101;&#114;&#121;&#046;&#099;&#097;" target="_blank">            </a></font></p>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

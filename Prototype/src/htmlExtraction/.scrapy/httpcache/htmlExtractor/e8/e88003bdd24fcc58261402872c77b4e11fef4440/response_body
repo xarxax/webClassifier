@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>Benkert Group</title>
+	<!-- 
+    	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 												  	Webumsetzung 2017 by        
+                                              ______                    _       _   
+                                              |  ___|                  (_)     | |  
+                                              | |_ _____  ___ __   ___  _ _ __ | |_ 
+                                              |  _/ _ \ \/ / '_ \ / _ \| | '_ \| __|
+                                              | || (_) >  <| |_) | (_) | | | | | |_ 
+                                              \_| \___/_/\_\ .__/ \___/|_|_| |_|\__|
+                                                           | |                      
+                                                           |_|                      
+                
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            
+    -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Benkert exklusiv -->
+ 
+	<link href="bower_components/jquery_ui/jquery-ui.min.css" rel="stylesheet">
+    <link href='css/fonts.css' rel="stylesheet">
+	  <link href='css/benkert.css' rel="stylesheet">
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Browserweiche für IE -->
+
+    <link href='bower_components/font-awesome/css/font-awesome.min.css' rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body id='startBody'>
+  	<div class='container onlyOnMobile text-center'>
+    	<img src="images/benkert_logo.png" width="121" height="200">
+    </div>
+  	<div class='container notOnMobile'>
+    	<div class='row' id='kontaktMenu'>
+        		<div class='col-lg-7'>
+                	<ul class='nav navbar-nav'>                    	
+                        <li class='myfirst'><a href='#' class='kontaktOpen' data-bereich="DE">Deutschland</a></li>
+                        <li><a href='#' class='kontaktOpen' data-bereich="UK">Vereinigtes Königreich</a></li>
+                        <li><a href='#' class='kontaktOpen' data-bereich="MA">Malaysia</a></li>
+                        <li><a href='#' class='kontaktOpen' data-bereich="CH">VR China</a></li>
+                    </ul>	
+                </div>
+                <div class='col-lg-4'>
+                	<ul class='nav navbar-nav' id='submenu'>
+                    	<li class='myfirst'><a href='en/index.php' class='benkert-link-small' id='langSwitch'>EN - DE</a></li>
+                        <!-- <li><a href='#' class='benkert-link-small'>Login</a></li> -->
+                    </ul>
+                </div>
+        </div>
+     </div>
+     <div class='container-fluid' id='Menucontent'>
+    	<div class='container'>
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Navigation ein-/ausblenden</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>                
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="onlyOnMobile"></li>
+                  <li class='myfirst'><a href="#Technologien">Technologien</a></li>
+                  <li><a href="#Produkte">Produkte</a></li>
+                  <li><a href="#UeberUns">Über uns</a></li>
+                  <li><a href="#Bibliothek">Bibliothek</a></li>
+                  <li><a href="#Kontakt">Kontakt</a></li>
+                  <li><a href="#" class='imprintOpen'>Impressum</a></li>
+                  <li class="dropdown onlyOnMobile">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Standorte<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class='kontaktOpen' data-bereich="DE">Deutschland</a></li>
+                      <li><a href="#" class='kontaktOpen' data-bereich="UK">Vereinigtes Königreich</a></li>
+                      <li><a href="#" class='kontaktOpen' data-bereich="MA">Malaysia</a></li>
+                      <li><a href="#" class='kontaktOpen' data-bereich="CH">PR China</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown onlyOnMobile">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sprache/Language<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="en/index.php" >English</a></li>
+                    </ul>
+                  </li>                  
+                </ul>   
+                <!-- <a href='http://www.facebook.de' target="blank" id='faceBook' class='notOnMobile'></a>-->
+                <div id="benkert_logo"></div>
+              </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+          </nav>
+		</div>        
+    </div>
+    <div class='container-fluid' id='MainContainer'>
+    		<div class='container'>
+		        <div class='row'>
+                    <div class='col-lg-4 col-md-4 col-sm-6'>
+                        <h2 class='headerSlogan'>ALWAYS<br />AT THE<br />TOP</h2>                        
+                        <p class='headerTeaser'>WIR BELIEFERN DIE<br />CIGARETTENINDUSTRIE MIT<br />MUNDSTÜCKBELAGPAPIER<br />ALLER ART.<br />WELTWEIT. 
+                        <br /><a href='#Produkte' class='benkertLink'>Mehr erfahren</a></p>          
+                    </div>
+                    <div class='col-lg-8 col-md-8 col-sm-6'>
+                        <div class='circleBase circlediv'>
+                           <p>&nbsp;</p>
+<!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves /> <w:TrackFormatting /> <w:HyphenationZone>21</w:HyphenationZone> <w:PunctuationKerning /> <w:ValidateAgainstSchemas /> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF /> <w:LidThemeOther>DE</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables /> <w:SnapToGridInCell /> <w:WrapTextWithPunct /> <w:UseAsianBreakRules /> <w:DontGrowAutofit /> <w:SplitPgBreakAndParaMark /> <w:EnableOpenTypeKerning /> <w:DontFlipMirrorIndents /> <w:OverrideTableStyleHps /> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> <m:mathPr> <m:mathFont m:val="Cambria Math" /> <m:brkBin m:val="before" /> <m:brkBinSub m:val=" " /> <m:smallFrac m:val="off" /> <m:dispDef /> <m:lMargin m:val="0" /> <m:rMargin m:val="0" /> <m:defJc m:val="centerGroup" /> <m:wrapIndent m:val="1440" /> <m:intLim m:val="subSup" /> <m:naryLim m:val="undOvr" /> </m:mathPr></w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"   DefSemiHidden="false" DefQFormat="false" DefPriority="99"   LatentStyleCount="375"> <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 2" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 3" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 4" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 5" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 6" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 7" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 8" /> <w:LsdException Locked="false" Priority="9" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="heading 9" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 6" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 7" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 8" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index 9" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 1" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 2" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 3" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 4" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 5" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 6" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 7" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 8" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" Name="toc 9" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Normal Indent" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="footnote text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="annotation text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="header" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="footer" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="index heading" /> <w:LsdException Locked="false" Priority="35" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="caption" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="table of figures" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="envelope address" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="envelope return" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="footnote reference" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="annotation reference" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="line number" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="page number" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="endnote reference" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="endnote text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="table of authorities" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="macro" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="toa heading" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Bullet" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Number" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Bullet 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Bullet 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Bullet 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Bullet 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Number 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Number 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Number 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Number 5" /> <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Closing" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Signature" /> <w:LsdException Locked="false" Priority="1" SemiHidden="true"    UnhideWhenUsed="true" Name="Default Paragraph Font" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text Indent" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Continue" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Continue 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Continue 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Continue 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="List Continue 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Message Header" /> <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Salutation" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Date" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text First Indent" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text First Indent 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Note Heading" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text Indent 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Body Text Indent 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Block Text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Hyperlink" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="FollowedHyperlink" /> <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong" /> <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Document Map" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Plain Text" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="E-mail Signature" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Top of Form" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Bottom of Form" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Normal (Web)" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Acronym" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Address" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Cite" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Code" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Definition" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Keyboard" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Preformatted" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Sample" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Typewriter" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="HTML Variable" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Normal Table" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="annotation subject" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="No List" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Outline List 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Outline List 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Outline List 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Simple 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Simple 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Simple 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Classic 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Classic 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Classic 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Classic 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Colorful 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Colorful 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Colorful 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Columns 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Columns 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Columns 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Columns 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Columns 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 6" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 7" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Grid 8" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 4" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 5" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 6" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 7" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table List 8" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table 3D effects 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table 3D effects 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table 3D effects 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Contemporary" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Elegant" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Professional" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Subtle 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Subtle 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Web 1" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Web 2" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Web 3" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Balloon Text" /> <w:LsdException Locked="false" Priority="39" Name="Table Grid" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Table Theme" /> <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text" /> <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading" /> <w:LsdException Locked="false" Priority="61" Name="Light List" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3" /> <w:LsdException Locked="false" Priority="70" Name="Dark List" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1" /> <w:LsdException Locked="false" SemiHidden="true" Name="Revision" /> <w:LsdException Locked="false" Priority="34" QFormat="true"    Name="List Paragraph" /> <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote" /> <w:LsdException Locked="false" Priority="30" QFormat="true"    Name="Intense Quote" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5" /> <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6" /> <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6" /> <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6" /> <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6" /> <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6" /> <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6" /> <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6" /> <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6" /> <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6" /> <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6" /> <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6" /> <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6" /> <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6" /> <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6" /> <w:LsdException Locked="false" Priority="19" QFormat="true"    Name="Subtle Emphasis" /> <w:LsdException Locked="false" Priority="21" QFormat="true"    Name="Intense Emphasis" /> <w:LsdException Locked="false" Priority="31" QFormat="true"    Name="Subtle Reference" /> <w:LsdException Locked="false" Priority="32" QFormat="true"    Name="Intense Reference" /> <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title" /> <w:LsdException Locked="false" Priority="37" SemiHidden="true"    UnhideWhenUsed="true" Name="Bibliography" /> <w:LsdException Locked="false" Priority="39" SemiHidden="true"    UnhideWhenUsed="true" QFormat="true" Name="TOC Heading" /> <w:LsdException Locked="false" Priority="41" Name="Plain Table 1" /> <w:LsdException Locked="false" Priority="42" Name="Plain Table 2" /> <w:LsdException Locked="false" Priority="43" Name="Plain Table 3" /> <w:LsdException Locked="false" Priority="44" Name="Plain Table 4" /> <w:LsdException Locked="false" Priority="45" Name="Plain Table 5" /> <w:LsdException Locked="false" Priority="40" Name="Grid Table Light" /> <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark" /> <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful" /> <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 1" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 1" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 1" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 2" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 2" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 2" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 3" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 3" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 3" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 4" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 4" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 4" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 5" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 5" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 5" /> <w:LsdException Locked="false" Priority="46"    Name="Grid Table 1 Light Accent 6" /> <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6" /> <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6" /> <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6" /> <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6" /> <w:LsdException Locked="false" Priority="51"    Name="Grid Table 6 Colorful Accent 6" /> <w:LsdException Locked="false" Priority="52"    Name="Grid Table 7 Colorful Accent 6" /> <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark" /> <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful" /> <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 1" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 1" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 1" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 2" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 2" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 2" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 3" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 3" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 3" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 4" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 4" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 4" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 5" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 5" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 5" /> <w:LsdException Locked="false" Priority="46"    Name="List Table 1 Light Accent 6" /> <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6" /> <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6" /> <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6" /> <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6" /> <w:LsdException Locked="false" Priority="51"    Name="List Table 6 Colorful Accent 6" /> <w:LsdException Locked="false" Priority="52"    Name="List Table 7 Colorful Accent 6" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Mention" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Smart Hyperlink" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Hashtag" /> <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"    Name="Unresolved Mention" /> </w:LatentStyles> </xml><![endif]--><!--[if gte mso 10]> <mce:style><!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Normale Tabelle"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-parent:""; 	mso-padding-alt:0cm 5.4pt 0cm 5.4pt; 	mso-para-margin:0cm; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman",serif;} --> <!--[endif] -->
+<h2 class="MsoNormal" style="mso-outline-level: 1;"><strong>Tipping Paper von Benkert in 2019-</strong><strong> viele interessante Neuigkeiten.</strong></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="_mcePaste" class="mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;"><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="267"> <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal" /> <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" /> <w:LsdException Locked="false" Priority="39" Name="toc 1" /> <w:LsdException Locked="false" Priority="39" Name="toc 2" /> <w:LsdException Locked="false" Priority="39" Name="toc 3" /> <w:LsdException Locked="false" Priority="39" Name="toc 4" /> <w:LsdException Locked="false" Priority="39" Name="toc 5" /> <w:LsdException Locked="false" Priority="39" Name="toc 6" /> <w:LsdException Locked="false" Priority="39" Name="toc 7" /> <w:LsdException Locked="false" Priority="39" Name="toc 8" /> <w:LsdException Locked="false" Priority="39" Name="toc 9" /> <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" /> <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title" /> <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" /> <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle" /> <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong" /> <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis" /> <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" /> <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" /> <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" /> <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote" /> <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6" /> <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" /> <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" /> <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" /> <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" /> <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title" /> <w:LsdException Locked="false" Priority="37" Name="Bibliography" /> <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" /> </w:LatentStyles> </xml><![endif]--><!--[if gte mso 10]> <mce:style><!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Normale Tabelle"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-qformat:yes; 	mso-style-parent:""; 	mso-padding-alt:0cm 5.4pt 0cm 5.4pt; 	mso-para-margin-top:0cm; 	mso-para-margin-right:0cm; 	mso-para-margin-bottom:10.0pt; 	mso-para-margin-left:0cm; 	line-height:115%; 	mso-pagination:widow-orphan; 	font-size:11.0pt; 	font-family:"Calibri","sans-serif"; 	mso-ascii-font-family:Calibri; 	mso-ascii-theme-font:minor-latin; 	mso-hansi-font-family:Calibri; 	mso-hansi-theme-font:minor-latin; 	mso-bidi-font-family:"Times New Roman"; 	mso-bidi-theme-font:minor-bidi;} --> <!--[endif] --></div>                       </div>
+                    </div>
+                </div>
+		   </div>
+    </div>
+	<div class='container-fluid' id='MainBlueTeaser'>
+    	<div class='container'>
+        	<div class='row'>
+            	<div class='col-lg-12'>
+                 	 <p><span class="BlueTeaserBig">Benkert produziert Mundst&uuml;ckbelagpapier aller Art. </span> Unsere Produktpalette reicht von Korkbel&auml;gen bis hin zu hochkomplexen Druckbildern und umfasst elektrostatische Perforation sowie Laserperforation. Unsere Werke in Europa und Asien bedienen sowohl internationale Konzerne als auch regionale und lokale Cigarettenhersteller. Ein sorgf&auml;ltig entwickeltes und gruppen&uuml;bergreifend angewandtes Qualit&auml;tsmanagementsystem tr&auml;gt weltweit Sorge, dass die in der Branche geforderten Qualit&auml;tsstandards zuverl&auml;ssig eingehalten werden.</p>                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- 
+    
+      _______        _                 _             _            
+     |__   __|      | |               | |           (_)           
+        | | ___  ___| |__  _ __   ___ | | ___   __ _ _  ___ _ __  
+        | |/ _ \/ __| '_ \| '_ \ / _ \| |/ _ \ / _` | |/ _ \ '_ \ 
+        | |  __/ (__| | | | | | | (_) | | (_) | (_| | |  __/ | | |
+        |_|\___|\___|_| |_|_| |_|\___/|_|\___/ \__, |_|\___|_| |_|
+                                                __/ |             
+                                               |___/          
+    
+    --> 
+    <div class='container' id='Technologien'>
+    	<div class='row'>
+        	<div class='col-lg-12 text-center'>
+            	<span class='BenkertUnderline'>UNSERE TECHNOLOGIEN</span><br />
+                <p class='text-left'>Zukunftsorientierte Investitionen in modernste Technologien und ein gut ausgebildetes, engagiertes Team machen uns weltweit zu einem bewährten und leistungsstarken Partner unserer Kunden.</p>
+            </div>            
+        </div>        
+        <p></p>
+        <div class='row'>
+        	<div class='col-lg-4 col-md-12 col-sm-12 col-xs-12 technologieBlock'>
+            	<img src='images/technologie01.png' class='technologieImage' alt="Qualitätsmanagement" title="Qualitätsmanagement">
+                <h3>Qualitätsmanagement</h3>
+                <div class='BlockUnderline'></div>
+                <p>In allen Produktionsstätten existiert eine Methodik, welche allumfassend von Wareneingang bis zur Lieferung die Qualität bewertet und dokumentiert.</p>
+                <a href='#' class='technologie' data-id='1'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+                
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+            	<img src='images/technologie02.png' class='technologieImage'  alt="Tiefdruck" title="Tiefdruck">
+                <h3>Tiefdruck</h3>
+                <div class='BlockUnderline'></div>
+                <p>Zunehmend wird das Mundstückbelagpapier zu einem Element der Cigarette, das der Markendifferenzierung dient.</p>
+                <a href='#' class='technologie' data-id='2'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+           		<img src='images/technologie03.png' class='technologieImage'  alt="Laser Perforation" title="Laser Perforation">
+                <h3>Laser Perforation</h3>
+                <div class='BlockUnderline'></div>
+                <p>An der Entwicklung der Laserperforation war Benkert aktiv beteiligt.</p>
+               <a href='#' class='technologie' data-id='3'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>
+        </div>
+        <div class='row'>
+        	<div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+            	<img src='images/technologie04.png' class='technologieImage' alt="Elektrostatische Perforation" title="Elektrostatische Perforation">
+                <h3>Elektrostatische Perforation</h3>
+                <div class='BlockUnderline'></div>
+                <p>Als Begründer der elektrostatischen Perforation kann die Benkert Group auf eine lange Erfahrung mit diesen Produkten zurückblicken.</p>
+                <a href='#' class='technologie' data-id='4'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+                
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+            	<img src='images/technologie05.png' class='technologieImage' alt="Schneiden" title="Schneiden">
+                <h3>Schneiden</h3>
+                <div class='BlockUnderline'></div>
+                <p>Mittels der Rollenschneider werden die gedruckten Großrollen zu Bobinen verarbeitet.</p>
+                <a href='#' class='technologie' data-id='5'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+           		<img src='images/technologie06.png' class='technologieImage' alt="Folienprägetechnik" title="Folienprägetechnik">
+                <h3>Folienprägetechnik</h3>
+                <div class='BlockUnderline'></div>
+                <p>Beim Einsatz von Heißprägefolien wird eine meist metallische Schicht von einer Trägerfolie auf den Mundstückbelag übertragen.</p>
+               <a href='#' class='technologie' data-id='6'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>
+        </div>
+        <div class='row'>
+        	<div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+            	<img src='images/technologie07.png' class='technologieImage' alt="Farbherstellung" title="Farbherstellung">
+                <h3>Farbherstellung</h3>
+                <div class='BlockUnderline'></div>
+                <p>Mittels der eigenen Farbherstellung besitzt Benkert ein eigenes Know-how und kann gezielt auf spezielle Anforderungen eingehen. </p>
+                <a href='#' class='technologie' data-id='7'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+                
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  technologieBlock'>
+            	<img src='images/technologie08.png' class='technologieImage' alt="Abluftreinigung" title="Abluftreinigung">
+                <h3>Abluftreinigung</h3>
+                <div class='BlockUnderline'></div>
+                <p>Seit vielen Jahren engagiert sich Benkert in Projekten zur Reduzierung des Verbrauchs natürlicher Ressourcen.</p>
+                <a href='#' class='technologie' data-id='8'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>            
+        </div>
+    </div>    
+    <!-- 
+      _____               _       _    _       
+     |  __ \             | |     | |  | |      
+     | |__) | __ ___   __| |_   _| | _| |_ ___ 
+     |  ___/ '__/ _ \ / _` | | | | |/ / __/ _ \
+     | |   | | | (_) | (_| | |_| |   <| ||  __/
+     |_|   |_|  \___/ \__,_|\__,_|_|\_\\__\___|
+                                               
+        
+    -->    
+    <div id='parallax01'></div>
+    <div class='container' id='Produkte'>
+    	<div class='row'>
+        	<div class='col-lg-12 text-center'>
+            	<span class='BenkertUnderline'>UNSERE PRODUKTE</span><br />
+                <p class='text-left'>An allen Standorten fertigen wir auf hochmodernen Druckanlagen das ganze Spektrum von Mundstückbelägen. Neben traditionellen Korkdesigns und hochkomplexen Belägen mit bis zu sechs Farben liefern wir zudem Ausführungen mit Heißprägefolie. Hochleistungsperforationsanlagen runden unser Angebot ab.</p>
+            </div>            
+        </div>        
+        <p></p>
+        <div class='row'>
+        	<div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  produktBlock'>
+            	<img src='images/Produkte_1_P1010069_b.jpg' class='produktImage' alt="Korkbeläge" title="Korkbeläge">
+                <h3>Korkbeläge</h3>
+                <div class='BlockUnderline'></div>
+                <p>Beläge mit Korkmuster werden standardmäßig auf gelbem Grundpapier mit der Möglichkeit zu individuellen Anpassung mit einer oder zwei Überdruckfarben produziert.</p>    
+                <a href='#' class='produkte' data-id='1'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>            
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  produktBlock'>
+            	<img src='images/Produkte_2_P1010106_b.jpg' class='produktImage'  alt="Mehrfachbeläge" title="Mehrfachbeläge">
+                <h3>Mehrfarbige Beläge</h3>
+                <div class='BlockUnderline'></div>
+                <p>Mehrfarbige Mundstückbeläge bieten vielfältige Möglichkeiten zur Markendifferenzierung. Benkert ist in der Lage, Beläge mit bis zu sechs Farben zu drucken. </p>
+                <a href='#' class='produkte' data-id='2'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+            </div>
+            <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  produktBlock'>
+           		<img src='images/Produkte_3_DSCN2888_k.jpg' class='produktImage'  alt="Folienprägetechnik" title="Folienprägetechnik">
+                <h3>Folienprägetechnik</h3>
+                <div class='BlockUnderline'></div>
+                <p>Heißprägetechnik verleiht Premiumprodukten ein luxuriöses Erscheinungsbild und gilt bei der Gestaltung der Marken als wichtiges Unterscheidungsmerkmal.</p>
+                <a href='#' class='produkte' data-id='3'>Mehr erfahren <img src='images/linkArrow.png' width="13" height="13" alt='Mehr erfahren' title="Mehr erfahren"></a>
+                
+            </div>
+        </div>
+    </div>
+    <!--
+    
+      _   _ _                                 
+     (_) (_) |                                
+     | | | | |__   ___ _ __   _   _ _ __  ___ 
+     | | | | '_ \ / _ \ '__| | | | | '_ \/ __|
+     | |_| | |_) |  __/ |    | |_| | | | \__ \
+      \___/|_.__/ \___|_|     \__,_|_| |_|___/
+                                              
+    
+    -->
+    
+    <div id='parallax02'></div>
+    <div class='container' id='UeberUns'>
+    	<div class='row'>
+        	<div class='col-lg-12 text-center'>
+            	<span class='BenkertUnderline'>ÜBER UNS</span><br />
+                <p class='text-left'>An unseren weltweit vier Standorten verbinden wir jahrzehntelange Erfahrung und Kompetenz mit kundenorientierten Lösungen. Wir bieten unseren Kunden Produkte sowie technisch-kommerziellen Support  höchster Qualität. Wir sind da, wo unsere Kunden uns brauchen.</p>
+            </div>            
+        </div> 
+        <div class='row'>
+        	<div class='col-lg-12'>
+            	<img src="images/benkert_weltweit.jpg" id='benkertWeltweit' usemap="#landkarte">
+                <img src="images/benkert_weltweit.jpg" id='benkertWeltweitResponsive'>
+                <map name="landkarte">
+    				<area shape="rect" coords="439,147,474,182" href="#UeberUns" class='kontaktOpen' data-bereich="UK" alt="Vereinigtes Königreich" title="Vereinigtes Königreich">
+                    <area shape="rect" coords="480,170,515,205" href="#UeberUns" class='kontaktOpen' data-bereich="DE" alt="Deutschland" title="Deutschland">
+                    <area shape="rect" coords="839,254,874,289" href="#UeberUns" class='kontaktOpen' data-bereich="CH" alt="China" title="China">
+                    <area shape="rect" coords="780,335,815,370" href="#UeberUns" class='kontaktOpen' data-bereich="MA" alt="Malaysia" title="Malaysia">
+               </map>
+            </div>
+        </div>        
+    </div>
+    <!--
+    
+      ____  _ _     _ _       _   _          _    
+     |  _ \(_) |   | (_)     | | | |        | |   
+     | |_) |_| |__ | |_  ___ | |_| |__   ___| | __
+     |  _ <| | '_ \| | |/ _ \| __| '_ \ / _ \ |/ /
+     | |_) | | |_) | | | (_) | |_| | | |  __/   < 
+     |____/|_|_.__/|_|_|\___/ \__|_| |_|\___|_|\_\
+     
+    -->
+    <div id='parallax03'></div>
+    <div class='container' id='Bibliothek'>
+    	<div class='row'>
+        	<div class='col-lg-12 text-center'>
+            	<span class='BenkertUnderline'>Bibliothek</span><br />
+                <p class='text-left'>Unsere Bibliothek gibt derzeit Einblick in unsere Firmenrichtlinien und ISO-Zertifikate.</p>
+            </div>            
+        </div> 
+  		<p></p>
+        <div class='row'>
+        	<div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  bibliothekBlock'>					
+        	    	<img src='bibliothekImage/2.png' class='bibliothekImage' alt='Corporate Guidelines' title='Corporate Guidelines'>
+            	    <h3>Corporate Guidelines</h3>
+                	<div class='BlockUnderline'></div> 
+	                <br clear='all'><a href='#' class='BibliothekOpen' data-id='1'>Mehr erfahren <img src='images/linkArrow.png' width='13' height='13' alt='Mehr erfahren' title='Mehr erfahren'></a>                             
+        	    </div><div class='col-lg-4 col-md-12 col-sm-12 col-xs-12  bibliothekBlock'>					
+        	    	<img src='bibliothekImage/1.png' class='bibliothekImage' alt='ISO Zertifikate' title='ISO Zertifikate'>
+            	    <h3>ISO Zertifikate</h3>
+                	<div class='BlockUnderline'></div> 
+	                <br clear='all'><a href='#' class='BibliothekOpen' data-id='2'>Mehr erfahren <img src='images/linkArrow.png' width='13' height='13' alt='Mehr erfahren' title='Mehr erfahren'></a>                             
+        	    </div>                    	            
+        </div>
+    </div>
+    <!--
+      _  __           _        _    _   
+     | |/ /          | |      | |  | |  
+     | ' / ___  _ __ | |_ __ _| | _| |_ 
+     |  < / _ \| '_ \| __/ _` | |/ / __|
+     | . \ (_) | | | | || (_| |   <| |_ 
+     |_|\_\___/|_| |_|\__\__,_|_|\_\\__|
+                                        
+    -->
+    <div id='parallax04'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-12 text-center' style='margin-top:120px;'>
+                    <h2 class='BenkertWhite'>UNSER GUT AUSGEBILDETES UND<br />HOCHMOTIVIERTES TEAM HILFT IHNEN GERNE,<br />IHRE PROJEKTE ZU VERWIRKLICHEN.<br />SPRECHEN SIE UNS AN.</h4>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class='container' id='Kontakt'>
+    	<div class='row'>
+        	<div class='col-lg-12 text-center'>
+            	<span class='BenkertUnderline'>Kontakt</span><br />                
+            </div>            
+        </div>         
+  		<p></p>
+        <div class='row'>
+        	<div class='col-lg-2'></div>
+            <div class='col-lg-4'>
+            	<h6><a href='#Kontakt' class='openKontaktFormular' data-bereich="DE">Deutsche Benkert GmbH & Co. KG</a></h6>
+                <img src='images/ic_call_black_24dp.png' width="24" height="24" class='kImage'> Telefon: +49 2323 145 0<br />
+                <img src='images/ic_email_black_24dp.png' width="24" height="24" class='kImage'> E-Mail: info.de(at)benkert-group.com            
+            </div>
+            <div class='col-lg-4'>
+            	<h6><a href='#Kontakt' class='openKontaktFormular' data-bereich="CH">Zhejiang Benkert Tipping Paper Co., Ltd</a></h6>
+                <img src='images/ic_call_black_24dp.png' width="24" height="24" class='kImage'> Telefon: +86 573 83 28 63 40<br />
+                <img src='images/ic_email_black_24dp.png' width="24" height="24" class='kImage'> E-Mail: info.cn(at)benkert-group.com    
+            </div>
+            <div class='col-lg-2'></div>
+        </div>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <div class='row'>
+        	<div class='col-lg-2'></div>
+            <div class='col-lg-4'>
+            	<h6><a href='#Kontakt' class='openKontaktFormular' data-bereich="UK">Benkert UK Ltd</a></h6>
+                <img src='images/ic_call_black_24dp.png' width="24" height="24" class='kImage'> Telefon: +44 1259 76 26 96<br />
+                <img src='images/ic_email_black_24dp.png' width="24" height="24" class='kImage'> E-Mail: info.uk(at)benkert-group.com            
+            </div>
+            <div class='col-lg-4'>
+            	<h6><a href='#Kontakt' class='openKontaktFormular' data-bereich="MA">Benkert (Malaysia) SDN.BHD.</a></h6>
+                <img src='images/ic_call_black_24dp.png' width="24" height="24" class='kImage'> Telefon: +60 3 58 82 40 10<br />
+                <img src='images/ic_email_black_24dp.png' width="24" height="24" class='kImage'> E-Mail: info.my(at)benkert-group.com    
+            </div>
+            <div class='col-lg-2'></div>
+        </div>
+    </div>
+    <!-- 
+      ______          _            
+     |  ____|        | |           
+     | |__ ___   ___ | |_ ___ _ __ 
+     |  __/ _ \ / _ \| __/ _ \ '__|
+     | | | (_) | (_) | ||  __/ |   
+     |_|  \___/ \___/ \__\___|_|  
+
+    -->
+    <footer>
+    <div id='upBtn'><a href='#startBody'></a></div>
+    <div class='container-fluid' id='footer'>
+    	
+    	<div class='container' id='footerText'>
+        <div id='upBtn'><a href='#startBody'></a></div>
+    	<div class='row'>
+          <div class='col-lg-8'>
+              Deutsche Benkert GmbH & Co. KG − Telefon: +49 2323 145 0 − E-Mail: info.de(at)benkert-group.com <!-- <a href='http://www.facebook.de'><img src="images/facebook.png" width="20" height="20"></a>-->
+          </div>
+          <div class='col-lg-4 text-right'>
+              <a href='#' class='imprintOpen'>Impressum</a> | 
+			  <a href='#' class='dsOpen'>Datenschutz</a>
+          </div>
+       </div>
+       </div>
+    </div>
+    <div class='container-fluid' id='footerFP'>
+    	Webumsetzung 2017 by <a href='http://www.foxpoint.de'>Foxpoint</a>
+    </div>
+    </footer>
+    <!-- 
+    
+       _____            _             _   
+      / ____|          | |           | |  
+     | |     ___  _ __ | |_ ___ _ __ | |_ 
+     | |    / _ \| '_ \| __/ _ \ '_ \| __|
+     | |___| (_) | | | | ||  __/ | | | |_ 
+      \_____\___/|_| |_|\__\___|_| |_|\__|
+                                          
+                                          
+    
+    -->
+    <div id='contentBereich'>
+    	<div class='container-fluid'>
+              <div class='row' id='CB_topBereichWhite'>
+              </div>
+              <div class='row' id='CB_Menu'>
+     	          <div class='container'>
+                      <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'><a href='#' id='ContentBereichBack'>Zurück</a></div>
+                      <div class='col-lg-4 col-md-3 col-sm-3 col-xs-6   text-right' id='picture_menu'>
+                          <a href='#' id='prevPicture'><img src='images/left.png' width="18" height="22" alt='zurück' title="zurück" /></a>                    
+                          <a href='#' id='nextPicture'><img src='images/right.png' width="18" height="22" alt='vor' title="vor" /></a>
+                      </div>
+                      <div class='col-lg-4 text-right' id='leer_menu'>
+                          
+                      </div>
+                      <div class='col-lg-4 text-right'>                	
+                          <img src="images/benkert_logo.png" width="111" height="190" id='CB_BenkertLogo'>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class='container'>
+              <div class='row'>
+                  <div class='col-lg-4'>
+                      <span class='CB_BenkertUnderline' id="CB_Headline"></span>
+                      <div id='CB_Content'>
+                          <div id='waitingContent'><i class="fa fa-spinner fa-spin fa-4x" aria-hidden="true"></i></div>
+                      </div>
+                  </div>
+                  <div class='col-lg-8' id='CB_Image'>
+                      
+                  </div>
+              </div>
+          </div>
+        
+        <footer id="CB_footer">
+        	
+        </footer>        
+    </div>
+        <!-- 
+    
+       _____            _             _   
+      / ____|          | |           | |  
+     | |     ___  _ __ | |_ ___ _ __ | |_ 
+     | |    / _ \| '_ \| __/ _ \ '_ \| __|
+     | |___| (_) | | | | ||  __/ | | | |_ 
+      \_____\___/|_| |_|\__\___|_| |_|\__| FULL 
+                                          
+                                          
+    
+    -->
+    <div id='contentBereichFull'>
+    	<div class='container-fluid'>
+              <div class='row' id='CBF_topBereichWhite'>
+              </div>
+              <div class='row' id='CBF_Menu'>
+     	          <div class='container'>
+                      <div class='col-lg-4'><a href='#' id='CBF_Back'>Zurück</a></div>
+                      <div class='col-lg-4 text-right' id='leer_menu'>
+                          
+                      </div>
+                      <div class='col-lg-4 text-right'>                	
+                          <img src="images/benkert_logo.png" width="111" height="190" id='CB_BenkertLogo'>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class='container'>
+              <div class='row'>
+                  <div class='col-lg-12'>
+                      <span class='CB_BenkertUnderline' id="CBF_Headline"></span>
+                      <div id='CBF_Content'>
+                          <div id='waitingContentFull'><i class="fa fa-spinner fa-spin fa-4x" aria-hidden="true"></i></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+        <footer id="CBF_footer">
+        	
+        </footer>        
+    </div>
+    <!-- 
+        _  __           _        _    _   
+       | |/ /          | |      | |  | |  
+       | ' / ___  _ __ | |_ __ _| | _| |_ 
+       |  < / _ \| '_ \| __/ _` | |/ / __|
+       | . \ (_) | | | | || (_| |   <| |_ 
+       |_|\_\___/|_| |_|\__\__,_|_|\_\\__| 
+                                    
+    
+    -->
+    <div id='kontaktBereich'>
+   		 <div class='container-fluid'>
+			<div class='row' id='CB_topBereichWhite'>
+            </div>
+            <div class='row' id='CB_Menu'>
+            	<div class='container'>
+                  <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4 '><a href='#' id='KontaktBereichBack'>Zurück</a></div>
+                  <div class='col-lg-4 col-md-3 col-sm-3 col-xs-6  text-right' id='kontakt_switch_menu'>
+                       <a href='#' id='prevKontakt'><img src='images/left.png' width="18" height="22" alt='zurück' title="zurück" /></a>                    
+                       <a href='#' id='nextKontakt'><img src='images/right.png' width="18" height="22" alt='vor' title="vor" /></a>
+                  </div>
+                  <div class='col-lg-4 text-right'>                	
+                      <img src="images/benkert_logo.png" width="111" height="190" id='KB_BenkertLogo'>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class='container'>
+       		 <div class='row'>
+            	<div class='col-lg-12' id='kontaktKarte'>
+                	<span id='kontaktMaps'></span>
+                    
+                </div>
+            </div>
+        </div>        
+        <div class='container' id="KB_ContentBereich" >  	
+        	<div class='row'>
+            	<div class='col-lg-4' id='KB_Text'>
+                	
+                </div>
+                <div class='col-lg-8'>                	
+                    <div id='kontaktBild'>    
+                    	                	
+                    </div>
+                    <div class='row'>
+                    	<div class='col-lg-6' id='KB_Anschrift'>
+                        	
+                        </div>
+                        <div class='col-lg-6' id='KB_Kontakt'>
+                        	
+                        </div>
+                    </div>
+                    <div id='kontaktBild2'>    
+                    	                	
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="CB_footer">
+        	
+        </footer>
+    </div>   
+   <!-- 
+   
+    _  __           _        _    _     ______                         _            
+   | |/ /          | |      | |  | |   |  ____|                       | |           
+   | ' / ___  _ __ | |_ __ _| | _| |_  | |__ ___  _ __ _ __ ___  _   _| | __ _ _ __ 
+   |  < / _ \| '_ \| __/ _` | |/ / __| |  __/ _ \| '__| '_ ` _ \| | | | |/ _` | '__|
+   | . \ (_) | | | | || (_| |   <| |_  | | | (_) | |  | | | | | | |_| | | (_| | |   
+   |_|\_\___/|_| |_|\__\__,_|_|\_\\__| |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|   
+                                                                                    
+   
+   -->
+   
+    <div id='KontaktFormular'>
+    	<div class='container-fluid'>
+			<div class='row' id='KF_topBereichWhite'>
+            </div>
+            <div class='row' id='KF_Menu'>
+	            <div class='container'>
+    	        	<div class='col-lg-4  col-md-4 col-sm-4 col-xs-4'><a href='#' id='KontaktFormularBack'>Zurück</a></div>
+        	        <div class='col-lg-4  col-md-3 col-sm-3 col-xs-6   text-right' id='kontaktF_switch_menu'>
+                       <a href='#' id='prevKontaktF'><img src='images/left.png' width="18" height="22" alt='zurück' title="zurück" /></a>                    
+                       <a href='#' id='nextKontaktF'><img src='images/right.png' width="18" height="22" alt='vor' title="vor" /></a>
+                  </div>
+    	            <div class='col-lg-4 text-right'>                	
+        	            <img src="images/benkert_logo.png" width="111" height="190" id='KF_BenkertLogo'>
+            	    </div>
+                </div>
+            </div>
+        </div>
+         <div class='container' id='KF_Karte'>
+       		 <div class='row'>
+            	<div class='col-lg-12' id='kontaktFormularKarte'>                	
+                </div>
+            </div>
+        </div>
+        <div class='container'>
+        	<div class='row' id='KF_Formular'>
+            	<div class='col-lg-8'>
+                	<form name='Kontakt' action="" method="post" id='KontaktFormularForm'>
+                    <span class='BenkertUnderlineLeft'>Nehmen Sie Kontakt zu uns auf</span><br />
+                	<div class='row'>
+                    	<div class='col-lg-6'>
+                        	<label for ="mailName">Name <span class='pflicht'>*</span></label>
+                            <input type="text" class='form-control benkertInput' name='mailName' id='mailName' value="" required>
+                        </div>
+                        <div class='col-lg-6'>
+                        	<label for ="mailEMail">E-Mail <span class='pflicht'>*</span></label>
+                            <input type="email" class='form-control benkertInput' name='mailEMail' id='mailEMail' value="" required>
+                        </div>
+                    </div>
+                    <div class='row'>
+                    	<div class='col-lg-12'>
+                        	<label for ="mailSubject">Betreff <span class='pflicht'>*</span></label>
+                            <input type="text" class='form-control benkertInput' name='mailSubject' id='mailSubject' value="" required>
+                        </div>
+                    </div>
+                     <div class='row'>
+                    	<div class='col-lg-12'>
+                        	<label for ="mailBody">Ihre Nachricht <span class='pflicht'>*</span></label>
+                            <textarea class='form-control' name='mailBody' id='mailBody'></textarea>
+                            <input type='hidden' name='mailTo' id='mailTo' value=''>
+                        </div>
+                    </div>
+                    <p style='margin-top:20px;'></p>
+                    <div class='row'>	                    
+                        <div class='col-lg-3 text-left' id='cptchaImage'><img src="mycaptcha/get_captcha.php"></div>
+                        <div class='col-lg-3 text-left'><small>Sicherheitsabfrage: Bitte die Zeichen des blauen Feldes rechts eintragen.</small></div>
+                        <div class='col-lg-6 text-right'>
+                          <div class="form-group" id='capture_group'>
+                              <input type="text" name="captcha" class='form-control benkertInput' id="captcha" value="" title="Captcha" placeholder="Sicherheitstext" required>
+                          </div>
+                        </div>
+                    </div>
+						<div class='row'><div class='col-lg-12'><hr /></div></div>	
+					<div class='row'>
+						<div class='col-lg-3'><input type='checkbox' id='datenschutzCheck' value="-1" required><span class='pflicht'>*</span></div>
+						<div class='col-lg-9' id='DSerklaerung'>Sie erklären sich damit einverstanden, daß Ihre Daten zur Bearbeitung Ihres Anliegens verwendet werden. Weitere Informationen und Widerrufshinweise finden Sie in der Datenschutzerklärung. Das Kontaktformular wird über eine sichere SMTP-Emailadresse versendet.</div>
+						
+					</div>
+                    <div class='row notOnMobile'>
+	                    <div class='col-lg-4 text-left'><button class='btn btn-benkert sendMail'>Senden</button></div>
+                    </div>
+                    <div class='row onlyOnMobile'>
+	                    <div class='col-lg-12 col-xs-12 text-left'><button class='btn btn-benkert btn-block sendMail'>Senden</button></div>
+                    </div>
+                     <div class='row onlyOnMobile'>
+                     <div class='col-lg-12 col-xs-12 text-left'><br><br></div>
+
+                     </div>
+                    </form>
+                    <div id='KontaktFormularSend'>Vielen Dank, wir werden uns umgehend um Ihr Anliegen kümmern.</div>
+                </div>
+                <div class='col-lg-4' id='KF_KontaktText'>
+                	                        
+                </div>
+            </div>
+        </div>
+        <footer id="KF_footer">
+        	
+        </footer>
+    </div>        
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-3.2.1.min.js"></script>
+    <script src="bower_components/jquery_ui/jquery-ui.min.js"></script>
+    <script src="bower_components/jquery.smooth-scroll.min.js"></script>
+    <script src="js/benkert.js"></script>
+    <script src="js/benkertKontaktFormular.js"></script>
+    <script src="js/benkertKontakt.js"></script>
+	<script src="js/benkertTechnologie.js"></script>
+    <script src="js/benkertProdukte.js"></script>
+    <script src="js/benkertBibliothek.js"></script>
+    <script src="js/benkertImprint.js"></script>  
+    	<!-- 
+    	   _____                 _    _      ____             
+          / ____|               | |  (_)    |  _ \            
+         | |     ___   ___   ___| | ___  ___| |_) | __ _ _ __ 
+         | |    / _ \ / _ \ / __| |/ / |/ _ \  _ < / _` | '__|
+         | |___| (_) | (_) | (__|   <| |  __/ |_) | (_| | |   
+          \_____\___/ \___/ \___|_|\_\_|\___|____/ \__,_|_|   
+    -->
+    <link rel="stylesheet" type="text/css" href="js/jquery.cookiebar.css" />
+	<script type="text/javascript" src="js/jquery.cookiebar.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108622863-1"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.cookieBar({
+				});
+				if(jQuery.cookieBar('cookies')){
+ 					 //Google Analytics hier hin (Nicht Anonym)
+					 <!-- Global site tag (gtag.js) - Google Analytics -->
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					
+					  gtag('config', 'UA-108622863-1');
+				} else {
+  				    //Google Analytics hier hin (Anonym)
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+					ga('create', 'UA-108622863-1', 'auto');
+					ga('require', 'displayfeatures');
+					ga('require', 'linkid', 'linkid.js');
+					ga('set', 'anonymizeIp', true);
+					ga('send', 'pageview');
+
+				}
+			});
+		</script>  
+  </body>
+</html>

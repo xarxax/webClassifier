@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>404</title>
+</head>
+    <script language="javascript">
+var secs = 5; //倒计时的秒数
+var URL ;
+function Load(url){
+URL = url;
+for(var i=secs;i>=0;i--)
+{
+   window.setTimeout('doUpdate(' + i + ')', (secs-i) * 1000);
+}
+}
+function doUpdate(num)
+{
+	if(num == 0) { window.location = URL; }
+document.getElementById('ShowDiv').innerHTML = '(automatic return to the home page in '+num+' seconds)' ;
+
+}
+</script>
+    <link rel="stylesheet" type="text/css" href="/images/404/css/main.css" />
+  <body onload="Load('/')">
+<div class="errornum fontz" >
+<div class="errornum1"><img src="/images/404/images/error404.png" /></div>
+<div class="errornum2">
+<div class="errornum3"><img src="/images/404/images/errorlogo.png" /></div>
+<div class="errornum4">
+<div class="errornum5">Sorry, this page does not exist. 
+Please return to the home page.</div>
+<p id="ShowDiv">(automatic return to the home page in three seconds)</p>
+<div class="errornum5">You Can</div>
+<ul class="errornum6">
+<li><a href="/">Return Home</a></li>
+<li><a href="/contact-us_d3">Contact Us</a></li>
+<li><a href="/products">Products Categories</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+</div>
+
+</body>  
+  
+    
+</html>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Zend Framework Default Application</title>
+</head>
+<body>
+  <h1>An error occurred</h1>
+  <h2>Page not found</h2>
+
+  
+  <h3>Exception information:</h3>
+  <p>
+      <b>Message:</b>Invalid controller specified (robots.txt)  </p>
+
+  <h3>Stack trace:</h3>
+  <pre>#0 /home/gw587494/public_html/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/gw587494/public_html/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/gw587494/public_html/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/gw587494/public_html/index.php(28): Zend_Application->run()
+#4 {main}  </pre>
+
+
+  
+  <h3>Request Parameters:</h3>
+  <pre>array (
+  'controller' => 'robots.txt',
+  'action' => 'index',
+  'module' => 'front',
+)  </pre>
+  </body>
+</html>-->

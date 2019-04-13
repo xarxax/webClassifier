@@ -1,0 +1,611 @@
+
+Deprecated: Function set_magic_quotes_runtime() is deprecated in /home/sites/machinemonitoring.co.uk/public_html/textpattern/lib/txplib_db.php on line 14
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+	
+	<meta name="description" content="Providing routine condition monitoring and asset reliability services to industries in the UK, Machine Monitoring Systems Ltd are specialists in thermal imaging, vibration analysis and other areas of maintenance management." />
+<meta name="keywords" content="Condition monitoring, asset reliability, oil analysis, thermal imaging, vibration analysis, laser alignment, acoustic emission testing, machine maintenance, reliability management, maintenance management, machine monitoring, uk" />
+	
+	<meta name="google-site-verification" content="IZQ06PBJiqw2UAYYQIc9lXIwUOF7RVx_Zms3wuPdsVs" />
+
+  <meta name="revisit-after" content="10 days" />
+  <meta name="copyright" content="" />
+  <meta name="company" content="Machine Monitoring Ltd" />
+  
+	<link rel="Shortcut Icon" type="image/ico" href="http://www.XXXXXXXX.co.uk/favicon.ico" />
+	
+	<title>Condition Monitoring and Asset Reliability Services from Machine Monitoring Systems Ltd UK</title>
+
+	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+	<script type="text/javascript"></script>
+  <!--
+  <link rel="stylesheet" href="c/simple.css" type="text/css" media="screen"  />
+  <style type="text/css" media="screen">@import url("c/global.css");</style>
+  -->
+  <!-- import with quotes and brackets hides css from:
+    Netscape 4.x, Win IE 3, Win IE 4, Mac IE 4.01, Mac IE 4.5, Konqueror 2.1.2, Win Amaya 5.1
+  -->
+  
+  <!-- save as simple.css -->
+  <style type="text/css" media="screen">
+    /* 
+    ** Safe for Netscape 4 and other browsers that don't understand @import
+    ** Look for override in @imported stylesheet
+    ** www.compulsivedesign.co.uk
+    **
+    */
+    body, h1, h2, h3, h4, h5, h6, th, td, dd, ol, ul, li, p {
+    	font-family: Arial, Helvetica, Sans-serif;
+    }
+    body {
+    	margin: 0;
+    	padding: 0 5% 5% 5%;
+    	background-color: #fff;
+    	background-image: url(http://www.compulsivedesign.co.uk/permanent/upgrade.gif); /* use full url so both ie45mac and nn4 can find it */
+    	background-repeat: no-repeat;
+    	background-position: top left;
+    }
+    		
+    a:link {
+    }
+    a:visited {
+    }
+    a:active {
+    }
+    a:hover { /* hover doesn't work in nn4 */
+    }
+    h1 {
+    	font-size: 150%;
+    }
+    h2 {
+    	font-size: 120%;
+    }
+    h3, h4, h5, h6 {
+    	font-size: 100%;
+    }
+    img {
+    	border: 0;
+    }
+    th, td, dd, ol, ul, li {
+    	font-size: 80%;
+    	line-height: 120%;
+    }
+    p {
+    	font-size: 80%;
+    	line-height: 120%;
+    }
+    pre {
+    	font-family: monospace;
+    	font-size: 80%;
+    }
+    strong, b {
+    	font-weight: bold;
+    }
+  </style>
+  <!-- end simple.css -->
+
+
+  <!-- save as global.css -->
+	<style type="text/css" media="screen">
+    /*
+    ** Proper CSS for capable browsers
+    ** www.compulsivedesign.co.uk
+    */
+
+    body { 
+    	margin: 0;
+    	padding: 0;
+    	font-family: Arial, Helvetica, Sans-serif;
+    	font-size: 76%;/* font sizing in ems - make global font size changes here */
+    	/* note: at 75% and lower, opera goes to a nice small size, but moz and ie pc change almost not at all. 76% is as small as you can go and remain consistent accross browsers */
+    	color: #000;
+			background: #dc1a1a url("http://www.machinemonitoring.co.uk/i/ibg.gif") repeat-y top left;
+    }
+    a {
+    	text-decoration: none;
+    	color: #000;
+    }
+    a:link {
+    }
+    a:visited {
+    }
+    a:active {
+    }
+    a:hover {
+    }
+		h1, h2, h3, h4, h5, h6 {
+			font-family: Helvetica, Arial, sans-serif;
+		}
+    h1 {
+    	font-size: 2.0em;
+			text-shadow: #999 1px 1px 2px;
+    	margin: 1.5em 0 0.2em 0;
+    }
+    h2 {
+    	font-size: 1.7em;
+			text-shadow: #fff 1px 1px 2px;
+    	margin: 1.5em 0 0.2em 0;
+    }
+    h3, h4, h5, h6 {
+    	font-size: 1.1em;
+			text-shadow: none;
+    	margin: 0.5em 0 0.2em 0;
+    }
+    img {
+     border: 0;
+     padding: 0;
+     margin-bottom: 0;
+    }
+    th, td, dd, ol, ul, li {
+      font-size: 1.0em;
+    	line-height: 1.8em;
+    	margin-top: 0.2em;
+    	margin-bottom: 0.1em; 
+    }
+    p {
+    	font-size: 1.0em;
+    	line-height: 140%;
+    	margin: 0.2em 0 1.2em 0;
+    }
+    pre { /* mozilla 1.0, 1.1, 1.2.1 and netscape 7.0, 7.01 make this way too small prior mozilla and netscape are ok. */
+    	font-family: monospace;
+    	font-size: 1.0em;
+    }
+    strong, b {
+    	font-weight: bold;
+    }
+
+    .hidden { display: none; }
+    
+
+    #colleft {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+    	width: 195px;
+			margin: 0;
+			padding: 10px 20px 0 20px;
+			color: #fff;
+    }
+		* html #colleft {
+			width: 235px;
+			w\idth: 195px;
+		}
+		#colleft img {
+			margin-bottom: 2em;
+		}
+		#colleft ol {
+			margin: 0;
+			padding: 0;
+		}
+		#colleft ol a {
+			display: block;
+			padding: 0.5em 1em;
+			border-top: 1px solid #3f3f3f;
+			font-weight: bold;
+			color: #fff;
+			text-shadow: #999 1px 1px 1px;
+		}
+		#colleft ol a:hover {
+			text-decoration: none;
+			color: #fff;
+			background-color: #dc1a1a;
+		}
+		#colleft ol ol a {
+			padding: 0 0 0 2em;
+			border: none;
+			font-weight: normal;
+		}
+		#colleft ol ol a:hover {
+			background-color: #c61717;
+		}
+		#colleft li {
+			margin: 0;
+			list-style: none;
+		}
+		* html #colleft li {
+			display: inline;
+		}
+		
+		
+		#colmid {
+			position: absolute;
+			top: 0px;
+			left: 235px;
+			width: 470px;
+			padding: 0 40px 0 40px;
+		}
+		* html #colmid {
+			width: 550px;
+			w\idth: 470px;
+		}
+		
+		#topnav {
+			float: left;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: #efefef;
+		}
+		#topnav li { 
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+		#topnav a {
+			float: left;
+			display: block;
+			padding: 10px 0.8em 10px 0.8em;
+			text-decoration: none;
+			font-weight: bold;
+			background-color: #efefef;
+		}
+		#topnav a:hover {
+			color: #fff;
+			background-color: #dc1a1a;
+		}
+		#topnav a.highlight {
+			color: #dc1a1a;
+		}
+		#topnav a.highlight:hover {
+			color: #fff;
+			background-color: #dc1a1a;
+		}
+		
+		#content {
+			float: left;
+			width: 100%;
+			padding: 0;
+			margin-top: 0;
+		} 
+		#content ul, #content ol {
+    	margin-top: 0.2em;
+			margin-bottom: 1.2em;
+		}
+		#content a {
+			text-decoration: underline;
+		}
+		#content a:hover {
+			background-color: #dc1a1a;
+			color: #fff;
+			text-decoration: none;
+		}
+		#content table {
+      border-collapse: collapse;
+			border: none;
+		}
+		#content td, #content th {
+			border-bottom: 1px solid #ccc;
+      border-spacing: 0;
+		}
+		#content th {
+			border-top: 1px solid #ccc;
+		}
+
+    #content table.grid td, #content table.grid th {
+    	border-left: 1px dotted #ccc;
+    	border-right: 1px dotted #ccc;
+    }
+		
+		#content fieldset {
+			border: none;
+			padding: 0;
+		}
+		#content legend {
+			display: none;
+		}
+		#content input#name, #content input#company, #content input#phone, #content input#email {
+			margin-bottom: 1em;
+		}
+		#breadcrumb {
+			margin-top: 2em;
+			padding: 0;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+		}
+		#breadcrumb p {
+			margin: 0;
+			padding: 0.4em 0;
+		}
+		#breadcrumb a {
+			padding: 0.4em 0.2em;
+		}
+		
+		
+		#colright {
+			position: absolute;
+			top: 0px;
+			left: 785px;
+			width: 190px;
+			padding-left: 25px;
+		}
+		* html #colright {
+			width: 215px;
+			w\idth: 190px;
+		}
+		.vcard {
+			margin: 20px 0 30px 0;
+		}
+		.vcard a:hover {
+			background-color: #fff;
+		}
+		.vcard .org {
+			font-weight: bold;
+		}
+		.vcard .adr {
+			margin: 0 0 0.5em 0;
+		}
+		.vcard .email {
+			text-decoration: underline;
+		}
+		.vcard a.email:hover {
+			text-decoration: none;
+		}
+		#news {
+			padding: 0;
+			background: url("http://www.machinemonitoring.co.uk/i/iredboxmid.gif") repeat-y top center;
+		}
+		#news a:hover {
+			background-color: #fff;
+		}
+		
+		#news h3 {
+			margin: 0;
+			padding: 0.7em 15px 0.5em 15px;
+			font-size: 100%;
+			text-transform: uppercase;
+			text-shadow: #dc1a1a 1px 1px 2px;
+			background: url("http://www.machinemonitoring.co.uk/i/iredboxtop.gif") no-repeat top center;
+			border-bottom: 1px solid #c71818;
+		}
+		#news .story {
+			margin: 0;
+			padding: 0.5em 15px 0 15px;
+		}
+		#news .story h4 {
+			font-size: 100%;
+			text-shadow: none;
+		}
+		#news #newsmore {
+			padding: 0 15px 1.5em 15px;
+			background: url("http://www.machinemonitoring.co.uk/i/iredboxbottom.gif") no-repeat bottom center;
+		}
+		#news #newsmore a {
+			padding: 0.4em 0.2em;
+			text-decoration: underline;
+			font-style: italic;
+		}
+		#news #newsmore a:hover {
+			background-color: #fff;
+			text-decoration: none;
+		}
+		#testimonials {
+			margin: 20px 0 0 0;
+			padding: 0;
+			background: url("http://www.machinemonitoring.co.uk/i/iredboxmid.gif") repeat-y top center;
+		}
+		#testimonials h3 {
+			padding: 20px 15px 0 15px;
+			font-size: 100%;
+			text-transform: uppercase;
+			text-shadow: #dc1a1a 1px 1px 2px;
+			background: url("http://www.machinemonitoring.co.uk/i/iredbubtop.gif") no-repeat top center;
+		}
+		#testimonials p {
+			padding: 0 15px 0 15px;
+		}
+		#testimonials #testimonialsmore {
+			padding: 0 15px 50px 15px;
+			background: url("http://www.machinemonitoring.co.uk/i/iredbubbottom.gif") no-repeat bottom center;
+		}
+		#testimonials #testimonialsmore a {
+			padding: 0.4em 0.2em;
+			text-decoration: underline;
+			font-style: italic;
+		}
+		#testimonials #testimonialsmore a:hover {
+			background-color: #fff;
+			text-decoration: none;
+		}
+		.framed {
+			border: 1px solid #ccc;
+			padding: 5px;
+		}
+
+    /*
+    ** HACKS
+    */
+ 
+    /* -------------------------------------------
+     * clearfix: hack to clear floats - http://www.positioniseverything.net/easyclearing.html
+     */
+    .clearfix:after {
+        content: "."; 
+        display: block; 
+        height: 0; 
+        clear: both; 
+        visibility: hidden;
+    }
+    
+    .clearfix {display: inline-table;}
+    
+    /* Hides from IE-mac Only IE-win sees this. \*/
+    * html .clearfix {height: 1%;}
+    .clearfix {display: block;}
+    /* End hide from IE-mac */
+
+    /*
+     * end clearfix
+     * -------------------------------------------
+     */
+    
+
+    
+    /* -------------------------------------------
+     * Fix IE Win doubled margin bug - http://www.positioniseverything.net/explorer/doubled-margin.html
+     */
+     
+    /* Hide from IE5-mac. Only IE-win sees this. \*/
+    * html .fixmargin {
+       display: inline;
+    }
+    /* 
+     * End IE Win doubled margin bug fix
+     * -------------------------------------------
+     */
+    
+    /*
+    ** END HACKS
+    */
+	</style>
+  <!-- end global.css -->
+  
+  <!-- IE Win expanding box hack, see: http://positioniseverything.net/explorer/expandingboxbug.html -->
+  <!--[if IE]>
+  <style type="text/css">
+    body { word-wrap: break-word; }
+  </style>
+  <![endif]-->
+</head>
+
+<body>
+<div id="colleft">
+  <a href="#content" class="hidden" title="Skip to content" accesskey="2">Skip to content</a>
+	<a href="/" title="Machine Monitoring Systems Homepage"><img src="http://www.machinemonitoring.co.uk/i/ilogo.gif" alt="Machine Monitoring homepage [logo]" /></a>
+	
+	<!-- <ol class="section_list clearfix">
+	<li><a href="http://www.machinemonitoring.co.uk/additional/">Additional Information</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/careers/">Careers</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/case_studies/">Testimonials</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/criticality/">Criticality</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/home/">Home</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/industries/">Industries</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/login/">Client Login</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/protected/">Password Protected</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/reliability/">Reliability</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/services/">Services</a></li>
+	<li><a href="http://www.machinemonitoring.co.uk/training/">Training</a></li>
+</ol> -->
+	<ol>
+		<li><a rel="home" href="http://www.machinemonitoring.co.uk/">Home</a></li>
+		<li><a href="http://www.machinemonitoring.co.uk/services/">Services</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/training/">Training</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/industries/">Industries</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/reliability/">Reliability</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/criticality/">Criticality</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/additional/">Additional Information</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/case_studies/">Testimonials</a></li>
+		
+		<li><a href="http://www.machinemonitoring.co.uk/careers/">Careers</a></li>
+		
+	</ol>
+</div>
+
+<div id="colmid">
+	<ul id="topnav">
+		<li><a href="http://www.machinemonitoring.co.uk/news/">News</a></li>
+		<li><a href="http://www.machinemonitoring.co.uk/links/">Links</a></li>
+		<li><a href="http://www.machinemonitoring.co.uk/contact/">Contact Us</a></li>
+		<!-- ><a href="ftp://machinemonitoring.ftpstream.com/" class="highlight">Client Login</a> -->
+		<li><a href="http://www.machinemonitoring.co.uk/login/" class="highlight">Client Login</a></li>
+	</ul>
+
+	<div id="content" class="clearfix">
+		
+			
+	<h2>Machine Monitoring Systems-helping improve asset&#160;reliability</h2>
+	<p><img src="/images/42.jpg" alt="" /></p>
+
+	<table>
+		<tr>
+			<td style="text-align:right;"><img src="http://www.machinemonitoring.co.uk/images/74.jpg" title="PCN Training [logo]" alt="PCN Training [logo]" /> </td>
+			<td><a href="http://www.bindt.org/Certification/PCN_News"><span class="caps">PCN</span> Training</a></td>
+		</tr>
+	</table>
+
+	<p>Since its creation in 1990 Machine Monitoring Systems Ltd (<span class="caps">MMS</span>) has grown to become the foremost provider of condition monitoring and asset reliability services in the UK.</p>
+
+	<p><span class="caps">MMS</span> provides a professional and comprehensive suite of services to all types of industry. Improving the reliability of your assets is our main goal and to do this we deploy a variety of condition based maintenance tools.</p>
+
+	<p>With a nation-wide team of skilled specialist engineers, <span class="caps">MMS</span> is unique in offering quality and cost effective services on an international basis to support your business.</p>
+
+	<p>This has been achieved by employing experienced and trained personnel and by developing long term partnerships with our clients.  Industries supported include major production companies from Paper to Food, Power and Water Utilities, Facilities Managers and Building Service Providers.</p>
+
+	<p>With a typical (minimum) <span class="caps">ROI</span> of 10:1 no manufacturer or utility can ignore the potential cost of having unreliable assets. An asset reliability improvement program can improve the health and reliability of assets while at the same time reducing maintenance costs. Both add considerable value to any business.</p>
+
+	<p>Talking of asset reliability, consider <strong>E-ON</strong>, one of the world&#8217;s largest providers of energy, with power plants all over the UK, providing essential heat and power to many industries. Asset reliability is critical to <strong>E-ON</strong>&#8216;s success and <span class="caps">MMS</span> is playing a big part in that success. Contact us to hear the full story.</p>
+
+	<p><strong>Worldwide Reliability Services</strong></p>
+
+	<p>Now in conjunction with our European partners <span class="caps">MMS</span> has formed Global Reliability Services Group. This partnership recognises that the case for improving asset reliability has never been stronger &#8211; no matter where you are in today&#8217;s global economy. </p>
+
+	<p>What if the value of more reliable assets could be unlocked throughout the entire global operations of a business using a common set of proven tools and processes and from a single source? </p>
+
+	<p>This is the goal that Global Reliability Services Group (<span class="caps">GRS</span> Group) has set itself.</p>
+
+	<p>Our role is to provide condition monitoring and asset maintenance services by harnessing the skills of our worldwide partners to deploy a common approach to improving the reliability of assets.</p>
+
+	<p>Each member has a high quality reputation in their geographical and specialist areas and has the resources, knowledge and experience to develop and operate effective condition monitoring, maintenance and reliability programs. Our individual and collective success is founded on our ability to exceed client expectations &#8211; every time.</p>
+
+	<p><img src="/images/110.jpg" alt="" /></p>
+
+
+
+		
+		
+		
+		
+		
+	</div>
+</div>
+
+<div id="colright">
+	<div class="vcard">
+	 <a class="url fn hidden" href="http://www.machinemonitoring.co.uk/"></a>
+	 <div class="org"><a href="http://feeds.technorati.com/contacts/http://www.machinemonitoring.co.uk/" title="Download our vCard">Machine Monitoring Systems Ltd</a></div>
+	 <div class="adr">
+	  <span class="street-address">Hanger 1 Springfield Park</span><br />
+		<span class="extended-address">PO Box 612</span><br />
+	  <span class="locality">Abingdon</span> <br />
+	  <span class="region">Oxfordshire, UK</span><br />
+	  <span class="postal-code">OX14 9GU</span>
+	  <span class="country-name hidden">United Kingdom</span>
+	 </div>
+	 <p>Call.&nbsp;<span class="tel">+44 (0)1865 820454</span><br />
+	 
+	 <a class="email" href="mailto:office@machinemonitoring.co.uk">Send a message</a></p>
+	</div>
+	
+	<div id="news">
+<h3>News</h3>
+<div class="story">
+
+<h4>Lin&#160;retires</h4>
+	<p>Lin Skelton is well known to many of our customers as their first point of contact with <span class="caps">MMS</span>. But now, having put off retirement several times, she has finally decided that holidaying is better than working! </p>
+
+	<p>In the 12 years she has worked here she has taken on so many roles:- scheduler, training coordinator, order processor, PA, office manager etc. In fact there were very few tasks that Lin didn&#8217;t take on and all completed with a smile and her customary professionalism. </p>
+
+	<p>We shall miss you Lin but wish you the best for the future.</p>
+
+</div>
+
+<div id="newsmore"><a href="http://www.machinemonitoring.co.uk/news/">More news...</a></div>
+</div>
+	
+</div>
+
+
+</div>
+</body>
+</html>

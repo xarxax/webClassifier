@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="keywords" content="cnc machining, machining, cnc, machine shop, milling, horizontal milling, vertical milling, precision milling, cnc machines, cnc machinery, turning Lathes, turning centers, tooling, vertical lathes" />
+        <meta name="description" content="CNC Machining provide for over 40 plus years. Coley's, Inc. has provided industry with the highest quality machining ranging from simple production parts to complex 4th axis applications. Ohio" />
+        <title>Coleys CNC Machining</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
+<!--<link rel="stylesheet" href="/includes/perfect-scrollbar/perfect-scrollbar.css" />-->
+<link rel="stylesheet" href="/includes/interface.css?v3">
+<link rel="stylesheet" href="/includes/animate.css">
+<link rel="stylesheet" href="/includes/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="/coleys-cms/fancybox/jquery.fancybox.min.css" media="screen" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="/includes/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/coleys-cms/fancybox/jquery.fancybox.min.js"></script>
+<script src="/includes/interface.js?v3"></script>
+<!--<script src="/includes/perfect-scrollbar/perfect-scrollbar.js" ></script>-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+	</head>
+
+	<body id="page" class="page-template-home">
+<div id="page-overlay-menu" class="page-overlays"></div>
+<div id="page-nav-container">
+	<div id="page-nav">
+		<div class="logo"><img src="/images/logo-coleys-cnc-machining.png" /></div>
+		<div id="mobilemenu">
+<a href="/" id="mobilemenu-home" class="mobilemenu active">Home</a><a href="/cnc-machining-capabilities/" id="mobilemenu-capabilities" class="mobilemenu">CNC/Machining <br/>Capabilities</a><a href="/about-coleys/" id="mobilemenu-about" class="mobilemenu">About <br/>Coleys</a><a href="/employment/" id="mobilemenu-employment" class="mobilemenu">Employment <br/>Opportunities</a>		</div>
+
+		<div class="header-top"><a href="tel:+18888105051" class="nav_phone">1-888-810-5051</a><a href="/gallery/" class="nav-utility">Gallery</a><a href="/quote/" class="nav-utility">Request Quote</a><a href="/contact/" class="nav-utility">Contact</a>		</div>
+		<div class="header-bottom"><div class="logo-iso"><a href="/content/Coleys-ISO9001-2015-certificate.pdf" target="_blank" title="Click to view ISO 9001 2015 Certificate (pdf)"><img src="/images/iso-9000-certified.png?V2" /></a></div><div id="btn-mobilemenu"><span></span><span></span><span></span><div>MENU</div></div>
+<div id="nav-home" class="nav active"><a href="/">Home</a></div><div id="nav-capabilities" class="nav"><a href="/cnc-machining-capabilities/">CNC/Machining <br/>Capabilities</a></div><div id="nav-about" class="nav"><a href="/about-coleys/">About <br/>Coleys</a></div><div id="nav-employment" class="nav"><a href="/employment/">Employment <br/>Opportunities</a></div>		</div>
+	</div>
+	<div class="bluebar"></div>
+</div>
+<div id="page-content" class="page-content">
+<script>
+
+testimonials = "";
+
+function playtestimonials() {
+	next = $(".testimonial-controls span").index($(".testimonial-controls span.active")) + 1;
+	if (next == $(".testimonial-controls span").length) {
+		next = 0;
+	}
+	$(".testimonial-controls span").eq(next).click();
+	testimonials = setTimeout("playtestimonials();",5000);
+}
+
+
+$(document).ready(function() {
+
+
+     $(".capabilities-icons a").hover(function(e) {
+          $(this).children("img").addClass("animated flip");
+     }, function(e) {
+          $(this).children("img").removeClass("animated flip")
+     });
+
+     if ($(".testimonial-controls span").length > 1) {
+		$(".testimonial-controls span").click(function() {
+			if (testimonials) clearTimeout(testimonials);
+			$(".testimonial-controls span").removeClass("active");
+			clicked = $(".testimonial-controls span").index(this);
+			$(".testimonial-controls span").eq(clicked).addClass("active");
+			$(".testimonial:visible").fadeOut(500,function() {
+				$(this).hide();
+				$(".testimonial").eq(clicked).fadeIn(500,function() {
+					$(this).show();
+				});
+			});
+		});
+		testimonials = setTimeout("playtestimonials();",5000);
+	}
+
+});
+</script>
+
+<div class="slider-image"><video id="video" muted autoplay loop>
+     <source src="/images/VIDEO.webm" type="video/webm">
+     <source src="/images/VIDEO.mp4" type="video/mp4">
+</video></div><div class="slider-container"><div class="slider-intro animated flipInX"><a href="/cnc-machining-capabilities/" class="slider-button">VIEW CAPABILITIES</a>Precision machining for<div>trucking, military, hydraulic, mining,<br/>plumbing, electrical, automation,<br/>pump, aerospace, &amp; transportation</div>high-demand industries</div></div>
+
+<div class="capabilities-container"><div class="capabilities"><div class="capabilities-text">Superior results and services through superior equipment, processes, and expertise.<br/><em><strong>Explore our capabilities:</strong></em></div><div class="capabilities-icons-spacer"><div class="capabilities-icons"><a href="/cnc-machining-capabilities/#turning-centers"><img src="/images/icon-turning-centers.png" /><br/>Turning <br/>Centers</a><a href="/cnc-machining-capabilities/#horizontal-milling"><img src="/images/icon-horizontal-milling.png" /><br/>Horizontal<br/>Milling</a><a href="/cnc-machining-capabilities/#vertical-milling"><img src="/images/icon-vertical-milling.png" /><br/>Vertical<br/>Milling</a><a href="/cnc-machining-capabilities/#cad-cam-programming"><img src="/images/icon-cad-cam-programming.png" /><br/>CAD/CAM<br/>Programming</a><a href="/cnc-machining-capabilities/#inspection-services"><img src="/images/icon-inspection-services.png" /><br/>Inspection<br/>Services</a><a href="/cnc-machining-capabilities/#special-services"><img src="/images/icon-special-services.png" /><br/>Special<br/>Services</a><a href="/cnc-machining-capabilities/#swiss-and-screw-machining"><img src="/images/icon-swiss-and-screw-machining.png" /><br/>Swiss<br/>&amp; Screw</a></div></div></div></div>
+
+<div class="content-container">
+     <div class="content-main">
+          <div class="home-intro">An <span class="blue">Ohio-proud</span>, <span class="red">scalable</span> machining facility with limited-run, <br/>high-volume, and custom production capabilities.</div>
+
+          <div class="home-box full-circle"><img src="/images/icon-full-circle.png" /><div class="red-box"><h2>FULL CIRCLE COMMITMENT</h2>
+          Our commitment to customer service is fulfilled by delivering quality products as specified and on-time at a competitive price while also embracing employee development and engaging our community.
+               <a href="/about-coleys/" class="morebutton">MORE</a>
+          </div></div>
+
+          <div class="home-box usa-facility"><img src="/images/icon-usa-flag.png" /><div class="red-box"><h2>USA PRODUCTION FACILITY</h2>
+          Operating 24-hours a day, Coley's lean, expanded facility houses over 50 high-capacity CNC machining, turning, and high-speed sawing centers, and in-house prototype and fixture department, and our inspection lab.
+          <a href="/about-coleys/" class="morebutton">MORE</a>
+          </div></div>
+     </div>
+
+     <div class="special-feature"><div class="h3-line"></div><h3>PROJECT GALLERY</h3>
+          <div class="feature-content">Tour our project gallery for a preview of our production capabilities by industry or application.</div>
+          <div id="feature-gallery"><div class="gallery-photos"><a class="gallery-photo" href="/content/gallery/large/IMG_0156.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0156.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0048.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0048.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0901.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0901.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/Work%20Pics%2010-28-09%20015.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/Work%20Pics%2010-28-09%20015.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_1026.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_1026.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0114.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0114.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0073.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0073.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/Pipe%20083.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/Pipe%20083.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/Shop%20Pics%201-5-12%20076.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/Shop%20Pics%201-5-12%20076.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/LAT11035%20008.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/LAT11035%20008.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/Shop%20Pics%201-5-12%20110.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/Shop%20Pics%201-5-12%20110.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0908.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0908.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0948.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0948.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0159.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0159.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0047.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0047.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0145.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0145.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0076.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0076.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/IMG_0259.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/IMG_0259.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/Shop%20Pictures%206-8-12%20029.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/Shop%20Pictures%206-8-12%20029.jpg);"></div></a><!--NO BREAK --><a class="gallery-photo" href="/content/gallery/large/TOYODA%20MILL%20002.jpg" rel="prettyPhoto[gallery]"><div style="background-image:url(/content/gallery/small/TOYODA%20MILL%20002.jpg);"></div></a><!--NO BREAK --></div></div><a href="/gallery/" class="greybutton">VIEW FULL GALLERY</a>
+     </div>
+
+
+
+</div>
+</div>
+<div class="testimonials-container">
+	<div class="testimonial-icon"><div></div></div><div class="testimonials"><div class="testimonial">
+				<div class="quotation">Coleys fabricated, inspected, and delivered our custom parts on-time and at a highly-competitive price.  Thanks!</div>
+				<div class="attribution">&mdash; Robert G.</div></div><div class="testimonial">
+				<div class="quotation">Coleys fabricated, inspected, and delivered our custom parts on-time and at a highly-competitive price.  Thanks!</div>
+				<div class="attribution">&mdash; Andrew H.</div></div><div class="testimonial-controls"><span class="active"></span><span></span></div></div></div>
+	<div class="request-quote-box"><div><img src="/images/icon-clipboard.png" />Complete our online quote request form for an expertly-prepared estimate on Coleys solutions.<br/><a href="/quote/" class="whitebutton">REQUEST QUOTE</a></div></div>
+
+
+     <div class="building">
+          <div class="building-box"><img src="/images/icon-50-years.png" /><div><img src="/images/building-entrance.jpg" /><div><h4 class="centered">ABOUT COLEYS</h4>For over 50 years, Coleys Inc. has provided high-demand, low-tolerance industries with superior quality machining.  Our services range from simple drilling of production-ready parts to the complex fabrication of intricate designs.  We invite you to learn more. <a href="/about-coleys/" class="morebutton red">MORE</a></div></div></div>
+     </div>
+	    </div>
+	    <div id="saveprompt"></div>
+	    <div id="loading-spinner"></div>
+		<div id="footer">
+			<div><img class="footer-logo" src="/images/logo-coleys-grey.png" /><img class="footer-logo" src="/images/logo-automatic-parts-grey.png" /><br/>
+			<strong>Coleys Inc., CNC Machining Services</strong><br/>
+			1775 Liberty Avenue, Vermilion, OH 44089<br/>
+			&copy;2019 Coleys, Inc. &nbsp;All Rights Reserved &nbsp; | &nbsp;<a href="/privacy/">Privacy</a>
+			</div>
+	    	</div>
+<input type="hidden" id="pageurl" value="/"/>
+<script>
+var wto = wto || [];
+wto.push(['setWTID', 'coleys']);
+wto.push(['webTraxs']);
+
+(function() {
+  var wt = document.createElement('script');
+  wt.src = document.location.protocol + '//www.webtraxs.com/wt.php';
+  wt.type = 'text/javascript';
+  wt.async = true;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wt, s);
+})();
+</script>
+<input type="hidden" id="pageurl" value="/" />
+    </body>
+</html>

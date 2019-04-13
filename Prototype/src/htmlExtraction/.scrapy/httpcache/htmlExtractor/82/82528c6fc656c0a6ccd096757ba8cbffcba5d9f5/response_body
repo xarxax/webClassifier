@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>KNP House Brand</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<link href="KNPstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/tab_history_on.gif','images/tab_profile_on.gif','images/tab_products_on.gif','images/tab_quality_on.gif','images/tab_recipe_on.gif','images/tab_feedback_on.gif','images/tab_contactus_on.gif')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="577" valign="top"><table width="800" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="545" valign="top"><table width="800" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top"><img src="images/knp_top.jpg" width="800" height="88"></td>
+              </tr>
+              <tr>
+                <td><table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td height="17" valign="top"><img src="images/orange_space.gif" width="1" height="17"></td>
+                      <td valign="top"><a href="index.htm"><img src="images/tab_home_on.gif" width="60" height="17" border="0"></a></td>
+                      <td align="right" valign="top"><a href="history.htm" target="_top" onMouseOver="MM_nbGroup('over','tab_history_off','images/tab_history_on.gif','',1)"><img src="images/tab_history_off.gif" name="tab_history_off" width="60" height="17" border="0"></a></td>
+                      <td align="right" valign="top"><a href="profile.htm" target="_top" onClick="MM_nbGroup('down','group1','Image1','',1)" onMouseOver="MM_nbGroup('over','Image1','images/tab_profile_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_profile_off.gif" name="Image1" width="60" height="17" border="0" id="Image1"></a></td>
+                      <td align="right" valign="top"><a href="products.htm" target="_top" onClick="MM_nbGroup('down','group1','Image2','',1)" onMouseOver="MM_nbGroup('over','Image2','images/tab_products_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_products_off.gif" name="Image2" width="60" height="17" border="0" id="Image2"></a></td>
+                      <td align="right" valign="top"><a href="quality.htm" target="_top" onClick="MM_nbGroup('down','group1','Image3','',1)" onMouseOver="MM_nbGroup('over','Image3','images/tab_quality_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_quality_off.gif" name="Image3" width="60" height="17" border="0" id="Image3"></a></td>
+                      <td align="right" valign="top"><a href="recipe.htm" target="_top" onClick="MM_nbGroup('down','group1','Image4','',1)" onMouseOver="MM_nbGroup('over','Image4','images/tab_recipe_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_recipe_off.gif" name="Image4" width="60" height="17" border="0" id="Image4"></a></td>
+                      <td align="right" valign="top"><a href="feedback.htm" target="_top" onClick="MM_nbGroup('down','group1','Image5','',1)" onMouseOver="MM_nbGroup('over','Image5','images/tab_feedback_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_feedback_off.gif" name="Image5" width="60" height="17" border="0" id="Image5"></a></td>
+                      <td align="right" valign="top"><a href="contactus.htm" target="_top" onClick="MM_nbGroup('down','group1','Image6','',1)" onMouseOver="MM_nbGroup('over','Image6','images/tab_contactus_on.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/tab_contactus_off.gif" name="Image6" width="60" height="17" border="0" id="Image6"></a></td>
+                      <td valign="top"><img src="images/knp_top2.jpg" width="319" height="17" border="0" usemap="#Map"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td valign="top"><img src="images/knp_top3.gif" width="800" height="9"></td>
+              </tr>
+            </table> 
+            <table width="800" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="180" height="442" align="center" valign="top" bgcolor="#FFF7D0"><table width="180" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><img src="images/blank.gif" width="180" height="25"></td>
+                    </tr>
+                    <tr> 
+                      <td></td>
+                    </tr>
+                    <tr> 
+                      <td align="center"><img src="images/knp_inside_squre.jpg" width="83" height="173"></td>
+                    </tr>
+                  </table></td>
+                <td width="616" valign="top"><table width="617" border="0" cellpadding="0" cellspacing="0">
+                    <tr> 
+                      <td colspan="3" align="right"><img src="images/knp_top4.jpg" width="316" height="41"></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3" valign="top"><img src="images/blank.gif" width="617" height="1"></td>
+                    </tr>
+                    <tr> 
+                      <td height="408"><img src="images/blank.gif" width="30" height="8"></td>
+                      <td width="557" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><table width="557" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="328" align="center" valign="top"><table width="300" border="0" cellspacing="0" cellpadding="3">
+                                      <tr> 
+                                        <td colspan="4" align="center"><img src="images/products_home.jpg" width="295" height="48"></td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Almonds</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Fish Curry Powder</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Cardamom</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Biriyani Powder</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Sambar Powder</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Garam Masala</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Cinnamon Powder</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Chilli Powder</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Dosai Mix</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Channa Dhall</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Cumin Powder</td>
+                                        <td width="10" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="130">Turmeric Powder</td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="20" align="center"><font color="#CC0000">&#8226;</font></td>
+                                        <td width="140">Gram Dhall</td>
+                                        <td width="10">&nbsp;</td>
+                                        <td width="130"><a href="products.htm"><b>More...</b></a></td>
+                                      </tr>
+                                    </table>
+                                    <br> <br> <table width="295" border="0" cellspacing="0" cellpadding="8">
+                                      <tr> 
+                                        <td height="100" valign="top" bgcolor="#EAF3E4"><strong>Profile</strong><br>
+                                          As part of its expansion programme, 
+                                          the company together with its sister 
+                                          company, Suriya Trading Enterprise (S) 
+                                          Pte Ltd, moved to a wholly owned 1,000 
+                                          square meter factory building located 
+                                          at the Woodlands East Industrial Estate.<br>
+                                          <a href="profile.htm"><strong>More... 
+                                          </strong></a></td>
+                                      </tr>
+                                    </table></td>
+                                  <td width="229" align="center" valign="top"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                      
+                                      
+                                      <tr> 
+                                        <td align="right" valign="top"><a href="goldvoucher.htm" target="_parent"><img src="images/goldVoucher.jpg" width="200" height="94"></a></td>
+                                      </tr>
+                                      
+                                      <tr> 
+                                        <td>&nbsp;</td>
+                                      </tr>
+                                      
+                                      <tr> 
+                                        <td align="right" valign="top"><img src="images/recipe_home.jpg" width="200" height="70"></td>
+                                      </tr>
+                                      <tr> 
+                                        <td align="center" valign="top" bgcolor="D6D5E8"><table width="195" border="0" cellspacing="0" cellpadding="4">
+                                            <tr> 
+                                              <td width="48" align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td width="131">Fish Curry</td>
+                                            </tr>
+                                            <tr> 
+                                              <td align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td>Mutton Curry</td>
+                                            </tr>
+                                            <tr> 
+                                              <td align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td>Chicken Biriyani</td>
+                                            </tr>
+                                            <tr> 
+                                              <td align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td> Biriyani Rice</td>
+                                            </tr>
+                                            <tr> 
+                                              <td align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td>Chicken Kuruma</td>
+                                            </tr>
+                                            <tr> 
+                                              <td align="right"><strong><font color="#660099">&raquo;</font></strong></td>
+                                              <td>Vegetable Soup</td>
+                                            </tr>
+                                            <tr> 
+                                              <td>&nbsp;</td>
+                                              <td><a href="recipe.htm"><strong>More... 
+                                                </strong></a></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <p style="margin-top:10px;font-size:13px; font-weight:bold; color:red; float:left; width:100%; margin-bottom:10px; line-height:14px;margin-left:15px;">
+                                    Festive Recipes
+                                </p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="Kashmiripulao.htm" target="_parent"> KASHMIRI PULAO </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="threadfinFish.htm" target="_parent"> THREADFIN FISH COOKED WITH HOUSE BRAND KURUMA MASALA </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="muttonkebab.htm" target="_parent"> MUTTON KEBAB </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="drychillichicken.htm" target="_parent"> DRY CHILLI CHICKEN </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="garammasalachicken.htm" target="_parent"> GARAM  MASALA CHICKEN </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="muttonspinachgravy.htm" target="_parent"> MUTTON COOKED WITH SPINACH GRAVY </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="punjabichickenkabab.htm" target="_parent"> PUNJABI STYLE CHICKEN KEBAB </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="spicedfish.htm" target="_parent"> BANANA LEAF WRAPPED CURRIED SPICED FISH RECIPE </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="malaiprawnkuruma.htm" target="_parent"> MALAI PRAWN KURUMA </a></p>
+                                <p style="margin:0px; padding:0px; margin-bottom:7px; width:100%;margin-left:15px;"><a style="font-size:10px; font-weight:bold; color:Blue;" href="malabarchikencurry.htm" target="_parent"> MALABAR CHICKEN CURRY </a></p>
+                               
+                            </td>
+                          </tr>
+                         
+                          <tr>
+                            <td height="110" align="center"><table width="530" border="0" cellspacing="0" cellpadding="1">
+                                <tr>
+                                  <td height="68" align="center" valign="top"><img src="images/homebanner.jpg" width="530" height="80"></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table> </td>
+                      <td><img src="images/blank.gif" width="30" height="8"></td>
+                    </tr>
+                  </table></td>
+                <td width="3" bgcolor="FFD40D"><img src="images/blank.gif" width="3" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top" bgcolor="FFD40D"><img src="images/blank.gif" width="1" height="3"></td>
+        </tr>
+        <tr> 
+          <td height="38" align="center" bgcolor="#CC0000"><font color="#EFEFEF">All 
+            rights&copy;reserved by KNP Trading Private Limited<br>
+            Site design : Rajaneesh</font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="269,2,304,15" href="index.htm">
+</map>
+</body>
+</html>

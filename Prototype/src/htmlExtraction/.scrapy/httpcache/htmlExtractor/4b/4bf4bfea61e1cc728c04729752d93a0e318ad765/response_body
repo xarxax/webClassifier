@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head profile="http://gmpg.org/xfn/11">
+        <title>Schilling Forge - Metal Forging &amp; Impression </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        <meta name="robots" content="all" />
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+	    <link rel='stylesheet' href='style.css' type='text/css' media='' />
+		
+		<!--[if IE 6]>
+			<link rel='stylesheet' href='style-ie.css' type='text/css' media='' />
+		<![endif]-->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jcarousel.js"></script>
+        <script type="text/javascript">
+            function mycarousel_initCallback(carousel)
+            {
+                jQuery('#products-next').bind('click', function()
+                {
+                    carousel.next();
+                    return false;
+                });
+                jQuery('#products-prev').bind('click', function()
+                {
+                    carousel.prev();
+                    return false;
+                });                
+            };
+            
+            // Ride the carousel...
+            jQuery(document).ready(function()
+            {
+                jQuery("#products").jcarousel(
+                {
+                    scroll: 1,
+                    initCallback: mycarousel_initCallback,
+                    // This tells jCarousel NOT to autobuild prev/next buttons
+                    buttonNextHTML: null,
+                    buttonPrevHTML: null
+                });
+            });
+        </script>
+    </head>
+    <body>
+    	<div id='main'>
+			<div id='header'>
+				<p id='header-contact'>606 Factory Avenue, Syracuse, NY 13208 | (315) 454-4421</p>
+				<a href='home.html'><img src="images/logo.png" class="logo"></a>
+			</div>
+			<p id='tagline'>Old world pride, quality and craftsmanship are forged into every product.</p>
+			<div id='main-content'>
+				<div id='left'>
+					<div class="links-mobile">
+						<div class="centered">
+							<a href="catalog-request.html">Request a catalog</a> |
+							<a href="contact-us.html">Contact us</a> | 
+							<a href="privacy.html">Privacy policy</a>
+						</div>
+					</div>
+					<h1>Forging by Schilling Forge</h1>
+					<p class='intro'>
+						Schilling Forge has been a valued supplier of precision forgings for more than 25 years. 
+						Operating 11 forging hammers and 5 screw presses; we work with both hot and warm forgings, 
+						and supply a wide variety of products to many industries.
+					</p>
+					<p>
+						Continuing in our German forging heritage, we specialize in close-tolerance, shallow cavity 
+						forgings. From our selection of more than 700 patterns, forgings are supplied in stainless 
+						steel, alloy steels, and plain carbon steel, however, high-tech or specialty alloys may also 
+						be used to suit your requirements. Our products are normally supplied in a "stress relieved" 
+						and straightened condition ready to be finished. Schilling Forge, however, does not provide 
+						secondary machining for a "finished" or consumer ready product.
+					</p>
+					<p>
+						We maintain a fully functional toolroom which includes multi-axis CNC milling machines, wire 
+						EDM, digitizing, grinding, and heat treating capabilities. Our experience and capabilities allow 
+						us to respond quickly to new product requests and assist current forging producers to expand 
+						their existing capacity.
+					</p>
+				</div>
+				<div id='right'>
+					<div id="links">
+						<a href="catalog-request.html">Request a catalog</a> |
+						<a href="contact-us.html">Contact us</a> | 
+						<a href="privacy.html">Privacy policy</a>
+					</div>
+					<div id='main-img'>
+						<img src='images/collage.jpg' class='responsive-image' alt='The Schilling Forge facility in Syracuse, NY' />
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+    	</div>			
+		<div class="samples-head">
+			<h2>Product Samples</h2>
+		</div>
+		<div id='product-samples'>
+			<ul id='products'>
+				<li><img src='images/forgings/endoscopic_handles.jpg' /><br />Endoscopic handles</li>
+				<li><img src='images/forgings/forceps.jpg' /><br />Forceps</li>
+				<li><img src='images/forgings/grooming_scissors.jpg' /><br />Grooming scissors</li>
+				<li><img src='images/forgings/hand_tools.jpg' /><br />Hand tools</li>
+				<li><img src='images/forgings/industrial_scissors.jpg' /><br />Industrial scissors</li>
+				<li><img src='images/forgings/knives.jpg' /><br />Knives</li>
+				<li><img src='images/forgings/lineman_equip.jpg' /><br />Lineman equipment</li>
+				<li><img src='images/forgings/office_scissors.jpg' /><br />Office scissors</li>
+				<li><img src='images/forgings/ortho-dental.jpg' /><br />Ortho/Dental</li>
+				<li><img src='images/forgings/sewing_scissors.jpg' /><br />Sewing scissors</li>
+				<li><img src='images/forgings/surgical_scissors.jpg' /><br />Surgical scissors</li>
+				<li><img src='images/forgings/turbine_blades.jpg' /><br />Turbine blades</li>
+			</ul>
+			<a href='#' id='products-prev'>&laquo; Previous</a>
+			<a href='#' id='products-next'>Next &raquo;</a>
+		</div>	
+	<p id='footer'>&copy;<script>document.write(new Date().getFullYear())</script> Schilling Forge, Inc. All Rights Reserved.</p>
+    </body>
+</html>

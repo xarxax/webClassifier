@@ -1,0 +1,26 @@
+# Robots.txt file created by http://www.webtoolcentral.com
+# For domain: http://codyscoop.com
+
+# All robots will spider the domain
+User-agent: *
+Disallow:
+
+# Disallow directory /wp/g/
+User-agent: *
+Disallow: /wp/g/
+
+# Disallow directory /g/
+User-agent: *
+Disallow: /g/
+
+User-agent: *
+Disallow: ?g=
+
+User-agent: *
+Crawl-delay: 30 or higher
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /

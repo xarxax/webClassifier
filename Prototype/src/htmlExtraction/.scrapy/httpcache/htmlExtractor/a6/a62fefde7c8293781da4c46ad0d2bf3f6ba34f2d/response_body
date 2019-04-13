@@ -1,0 +1,1113 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_14-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_16-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_1-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_11-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_10-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_7-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_8-ooaaa" /><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_6-ooaaa" /><title>
+	U.S. Premium Beef
+</title>
+  <script type="text/javascript">
+    var scrollEveryms = 35;
+    var scrollBy = 1;
+    var waitBeforeScrolling = 2500;
+    var nRowsUT;
+    var nRowsNews;
+    var scrollAmtUT;
+    var scrollAmtNews;
+    var currentRowUT = 0;
+    var currentRowNews = 0;
+    var maxScrollTopUT;
+    var maxScrollTopNews;
+    var initContent = '';
+
+    function scrollUT() {
+      if (scrollAmtUT > 0) {
+        var newPos = ((document.getElementById('divUnitTradingContent').scrollTop + scrollBy) > maxScrollTopUT) ? maxScrollTopUT : (document.getElementById('divUnitTradingContent').scrollTop + scrollBy);
+        if (newPos < maxScrollTopUT) {
+          scrollAmtUT -= scrollBy;
+          document.getElementById('divUnitTradingContent').scrollTop = newPos;
+          if (scrollAmtUT > 0) {
+            window.setTimeout('scrollUT()', scrollEveryms);
+          } else {
+            ++currentRowUT;
+            if (currentRowUT == nRowsUT) {
+              currentRowUT = 0;
+              scrollAmtUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows[currentRowUT].offsetHeight;
+              window.setTimeout('scrollToTopUT()', waitBeforeScrolling);
+            } else {
+              scrollAmtUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows[currentRowUT].offsetHeight;
+              window.setTimeout('scrollUT()', waitBeforeScrolling);
+            }
+          }
+        } else {
+          ++currentRowUT;
+          if (currentRowUT == nRowsUT) {
+            currentRowUT = 0;
+            window.setTimeout('scrollToTopUT()', waitBeforeScrolling);
+          } else {
+            window.setTimeout('scrollUT()', waitBeforeScrolling);
+          }
+          scrollAmtUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows[currentRowUT].offsetHeight;
+        }
+      } else {
+        ++currentRowUT;
+        if (currentRowUT == nRowsUT) {
+          currentRowUT = 0;
+          window.setTimeout('scrollToTopUT()', waitBeforeScrolling);
+        } else {
+          window.setTimeout('scrollUT()', waitBeforeScrolling);
+        }
+        scrollAmtUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows[currentRowUT].offsetHeight;
+      }
+    }
+
+    function scrollNews() {
+      if (scrollAmtNews > 0) {
+        var newPos = ((document.getElementById('divUSPBNewsContent').scrollTop + scrollBy) > maxScrollTopNews) ? maxScrollTopNews : (document.getElementById('divUSPBNewsContent').scrollTop + scrollBy);
+        if (newPos < maxScrollTopNews) {
+          scrollAmtNews -= scrollBy;
+          document.getElementById('divUSPBNewsContent').scrollTop = newPos;
+          if (scrollAmtNews > 0) {
+            window.setTimeout('scrollNews()', scrollEveryms);
+          } else {
+            ++currentRowNews;
+            if (currentRowNews == nRowsNews) {
+              currentRowNews = 0;
+              scrollAmtNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows[currentRowNews].offsetHeight;
+              window.setTimeout('scrollToTopNews()', waitBeforeScrolling);
+            } else {
+              scrollAmtNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows[currentRowNews].offsetHeight;
+              window.setTimeout('scrollNews()', waitBeforeScrolling);
+            }
+          }
+        } else {
+          ++currentRowNews;
+          if (currentRowNews == nRowsNews) {
+            currentRowNews = 0;
+            window.setTimeout('scrollToTopNews()', waitBeforeScrolling);
+          } else {
+            window.setTimeout('scrollNews()', waitBeforeScrolling);
+          }
+          scrollAmtNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows[currentRowNews].offsetHeight;
+        }
+      } else {
+        ++currentRowNews;
+        if (currentRowNews == nRowsNews) {
+          currentRowNews = 0;
+          window.setTimeout('scrollToTopNews()', waitBeforeScrolling);
+        } else {
+          window.setTimeout('scrollNews()', waitBeforeScrolling);
+        }
+        scrollAmtNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows[currentRowNews].offsetHeight;
+      }
+    }
+
+    function scrollToTopUT() {
+      document.getElementById('divUnitTradingContent').scrollTop = 0;
+      window.setTimeout('scrollUT()', waitBeforeScrolling);
+    }
+
+    function scrollToTopNews() {
+      document.getElementById('divUSPBNewsContent').scrollTop = 0;
+      window.setTimeout('scrollNews()', waitBeforeScrolling);
+    }
+
+    function showScrollingDetail(itemType) {
+      document.getElementById('divNavMenu').style.display = 'none';
+      pcScrollingItemsDetail.Show();
+      pgcDetail.SetActiveTab(pgcDetail.GetTab(itemType == 'N' ? 0 : 1));
+    }
+
+    function scrollingDetailClosed() {
+      document.getElementById('divNavMenu').style.display = '';
+    }
+
+    function page_onload() {
+      nRowsUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows.length;
+      if (document.getElementById('divUnitTradingContent').scrollHeight > document.getElementById('divUnitTradingContent').clientHeight) {
+        scrollAmtUT = document.getElementById('ctl00_phMainContent_tblUnitTradingContent').rows[currentRowUT].offsetHeight;
+        document.getElementById('divUnitTradingContent').style.height = (scrollAmtUT * 2).toString() + 'px';
+        maxScrollTopUT = document.getElementById('divUnitTradingContent').scrollHeight - document.getElementById('divUnitTradingContent').clientHeight;
+        window.setTimeout('scrollUT()', waitBeforeScrolling);
+        //alert(document.getElementById('divUnitTradingContent').scrollTop);
+      }
+
+      nRowsNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows.length;
+      if (document.getElementById('divUSPBNewsContent').scrollHeight > document.getElementById('divUSPBNewsContent').clientHeight) {
+        scrollAmtNews = document.getElementById('ctl00_phMainContent_tblUSPBNewsContent').rows[currentRowNews].offsetHeight;
+        document.getElementById('divUSPBNewsContent').style.height = (scrollAmtNews * 2).toString() + 'px';
+        maxScrollTopNews = document.getElementById('divUSPBNewsContent').scrollHeight - document.getElementById('divUSPBNewsContent').clientHeight;
+        window.setTimeout('scrollNews()', waitBeforeScrolling);
+      }
+
+      showInitContent();
+    }
+
+    function emailUs() {
+      pcEmailUs.SetContentUrl('SendEmailDX.aspx?ID=11&T=10&RV=N');
+      pcScrollingItemsDetail.Hide();
+      document.getElementById('divNavMenu').style.display = 'none';
+      pcEmailUs.Show();
+    }
+
+    function closeEmailUs() {
+      pcEmailUs.Hide();
+    }
+
+    function emailUsClosed() {
+      document.getElementById('divNavMenu').style.display = '';
+    }
+
+    function showInitContent() {
+      switch (initContent) {
+        case 'Videos':
+          showVideos();
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+<link href="USPB.css" rel="stylesheet" type="text/css" /><link href="USPB_H.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+
+
+    function contentBodyOnload() {
+      //positionNavMenu();
+      window.setTimeout('rotateImage()', 5000);
+      try {
+        page_onload();
+      } 
+      catch (e) {
+      }
+    }
+
+    function positionNavMenu() {
+      var leftPos = ((document.body.clientWidth - document.getElementById('hdrImage').width) / 2) + 53;
+      if (leftPos < 53) leftPos = 53;
+      document.getElementById('divNavMenu').style.left = leftPos + 'px';
+    }
+
+    function beforePrint() {
+      document.getElementById('ImageRotator_639_394').style.position = 'absolute';
+      document.getElementById('ImageRotator_639_394').style.left = '-1000px';
+    }
+
+    function afterPrint() {
+      document.getElementById('ImageRotator_639_394').style.position = 'static';
+      document.getElementById('ImageRotator_639_394').style.left = '';
+    }
+
+    var currentImageIndex = 1;
+    var currentImageOpac;
+    var nHomeImages = 7;
+    var pathAdj = '';
+
+    var imgHome_0 = new Image(639, 394);
+    imgHome_0.src = 'Images/Home8_2x2.jpg';
+    var durHome_0 = 5000;
+    var imgHome_1 = new Image(639, 394);
+    imgHome_1.src = 'Images/Home1_2x2.jpg';
+    var durHome_1 = 5000;
+    var imgHome_2 = new Image(639, 394);
+    imgHome_2.src = 'Images/Home3_2x2.jpg';
+    var durHome_2 = 5000;
+    var imgHome_3 = new Image(639, 394);
+    imgHome_3.src = 'Images/Home4_2x2.jpg';
+    var durHome_3 = 5000;
+    var imgHome_4 = new Image(639, 394);
+    imgHome_4.src = 'Images/Home6_2x2.jpg';
+    var durHome_4 = 5000;
+    var imgHome_5 = new Image(639, 394);
+    imgHome_5.src = 'Images/Home9_2x2.jpg';
+    var durHome_5 = 5000;
+    var imgHome_6 = new Image(639, 394);
+    imgHome_6.src = 'Images/Home7_2x2.jpg';
+    var durHome_6 = 5000;
+
+    function rotateImage() {
+      // Set the image's containing div's background to image's source if current image source is not an SWF
+      document.getElementById('divHomeRImage').style.backgroundImage = 'url(\'' + pathAdj + document.getElementById('imgHomeRImage').src + '\')';
+
+      // Set opacity of image to hide it
+      changeOpac(0);
+
+      // Set image source to next image in sequence
+      stmt = 'document.getElementById(\'imgHomeRImage\').src = imgHome_' + currentImageIndex + '.src;';
+      eval(stmt);
+
+      // fade in the new image if prev image is not a SWF
+      fadein();
+    }
+
+    function changeOpac(newOpac) {
+      var o = document.getElementById('imgHomeRImage');
+      o.style.opacity = (newOpac / 100);
+      o.style.mozopacity = (newOpac / 100);
+      o.style.KhtmlOpacity = (newOpac / 100);
+      o.style.filter = 'alpha(opacity=' + newOpac + ')';
+      currentImageOpac = newOpac;
+    }
+
+    function fadein() {
+      var newOpac = currentImageOpac + 5;
+      if (newOpac > 100) newOpac = 100;
+      changeOpac(newOpac);
+      if (newOpac < 100) {
+        window.setTimeout('fadein()', 20);
+      } else {
+        stmt = 'rdelay = durHome_' + currentImageIndex + ';';
+        eval(stmt);
+        ++currentImageIndex;
+        if (currentImageIndex == nHomeImages) currentImageIndex = 0;
+        window.setTimeout('rotateImage()', rdelay);
+      }
+    }
+
+    function showVideos() {
+      pcVideos.SetContentUrl('YTVideos.aspx');
+      pcVideos.Show();
+    }
+
+  </script>
+</head>
+<body onload="return contentBodyOnload()">
+  <div id="ctl00_divScript" style="display:none">
+    <script type="text/javascript">
+      var GAID = 'UA-10319752-6';
+    </script>
+  </div>
+  <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTUwNTA5Mzk3Mw9kFgJmD2QWBgIBD2QWAgICD2QWAmYPFQwpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnQpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQpY3RsMDBfcGhNYWluQ29udGVudF90YmxVbml0VHJhZGluZ0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnQmY3RsMDBfcGhNYWluQ29udGVudF90YmxVU1BCTmV3c0NvbnRlbnRkAgMPZBYCZg8VAQ1VQS0xMDMxOTc1Mi02ZAIFD2QWCAIBD2QWDAIBDxYCHglpbm5lcmh0bWxlZAIDDzwrAAgBAA8WAh4PRGF0YVNvdXJjZUJvdW5kZ2RkAgUPPCsACAEADxYCHwFnZGQCBw88KwAIAQAPFgIfAWdkZAIJDzwrAAgBAA8WAh8BZ2RkAgsPPCsACAEADxYCHwFnZGQCAw8WAh8ABQQyMDE5ZAIFD2QWBAIFDzwrAAgBAA8WAh8BZ2QWAmYPZBYCZg9kFgJmD2QWAgIBD2QWAmYPZBYCZg9kFgICAQ9kFgICAQ88KwAHAQAPFgQfAWceDl8hVXNlVmlld1N0YXRlZ2QWAmYPZBYCAgEPZBYEZg9kFgJmD2QWAmYPZBYCAgEPZBYCAgEPPCsAHAIADxYCHwFnZBg8KwAGAQUUKwACZGQWAgIBD2QWAmYPZBYCZg9kFgJmD2QWAgULRFhNYWluVGFibGUPZBYQBQpEWERhdGFSb3cwD2QWAgUJdGNjZWxsMF80D2QWAmYPZBYCZg9kFgJmDxUBXjxhIGhyZWY9IkRvY3VtZW50SXRlbS5hc3B4P0lEPTExNCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LXNpemU6MTBwdCI+QmUgUHJvYWN0aXZlIEJRQTwvYT5kBQpEWERhdGFSb3cxD2QWAgUJdGNjZWxsMV80D2QWAmYPZBYCZg9kFgJmDxUBazxhIGhyZWY9IkRvY3VtZW50SXRlbS5hc3B4P0lEPTEyMiIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LXNpemU6MTBwdCI+UHJvcG9zZWQgVVNEQSBNYXR1cml0eSBDaGFuZ2U8L2E+ZAUKRFhEYXRhUm93Mg9kFgIFCXRjY2VsbDJfNA9kFgJmD2QWAmYPZBYCZg8VAX08YSBocmVmPSJEb2N1bWVudEl0ZW0uYXNweD9JRD0xMjMiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iZm9udC1zaXplOjEwcHQiPkZpc2NhbCBZZWFyIDIwMTggU2Vjb25kIFF1YXJ0ZXIgRWFybmluZ3MgTGV0dGVyPC9hPmQFCkRYRGF0YVJvdzMPZBYCBQl0Y2NlbGwzXzQPZBYCZg9kFgJmD2QWAmYPFQFrPGEgaHJlZj0iRG9jdW1lbnRJdGVtLmFzcHg/SUQ9MTI1IiB0YXJnZXQ9Il9ibGFuayIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0Ij5CZWVmIFRyYWRlIFJlc3VtZXMgd2l0aCBDaGluYTwvYT5kBQpEWERhdGFSb3c0D2QWAgUJdGNjZWxsNF80D2QWAmYPZBYCZg9kFgJmDxUBfTxhIGhyZWY9IkRvY3VtZW50SXRlbS5hc3B4P0lEPTEyNiIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LXNpemU6MTBwdCI+Q2VydGlmaWVkIEFuZ3VzIEJlZWYgTGl2ZSBTcGVjaWZpY2F0aW9ucyBDaGFuZ2U8L2E+ZAUKRFhEYXRhUm93NQ9kFgIFCXRjY2VsbDVfNA9kFgJmD2QWAmYPZBYCZg8VAW48YSBocmVmPSJEb2N1bWVudEl0ZW0uYXNweD9JRD0xMjciIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iZm9udC1zaXplOjEwcHQiPlV0aWxpemluZyBMZWFzZWQgRGVsaXZlcnkgUmlnaHRzPC9hPmQFCkRYRGF0YVJvdzYPZBYCBQl0Y2NlbGw2XzQPZBYCZg9kFgJmD2QWAmYPFQFyPGEgaHJlZj0iRG9jdW1lbnRJdGVtLmFzcHg/SUQ9MTI5IiB0YXJnZXQ9Il9ibGFuayIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0Ij5TYW0gSGFuZHMgTmFtZWQgU3RvY2ttYW4gb2YgdGhlIFllYXI8L2E+ZAUKRFhEYXRhUm93Nw9kFgIFCXRjY2VsbDdfNA9kFgJmD2QWAmYPZBYCZg8VAY8BPGEgaHJlZj0iRG9jdW1lbnRJdGVtLmFzcHg/SUQ9MTMwIiB0YXJnZXQ9Il9ibGFuayIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0Ij5NYXJmcmlnIEdsb2JhbCBGb29kcyBBY3F1aXJlcyBPd25lcnNoaXAgSW50ZXJlc3QgSW4gTmF0aW9uYWwgQmVlZjwvYT5kAgEPZBYCZg9kFgJmD2QWAgIBDzwrABwCAA8WAh8BZ2QYPCsABgEFFCsAAmRkZAIHDzwrAAgBAA8WAh8BZ2RkAgcPPCsACAEADxYCHwFnZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgsFF2N0bDAwJG5hdm1lbnUkcHVBYm91dFVzBRtjdGwwMCRuYXZtZW51JHB1VVNQQk5hdHVyYWwFFWN0bDAwJG5hdm1lbnUkcHVHcmlkcwUWY3RsMDAkbmF2bWVudSRwdVZpZGVvcwUXY3RsMDAkbmF2bWVudSRwY01hcmtldHMFKmN0bDAwJHBoTWFpbkNvbnRlbnQkcGNTY3JvbGxpbmdJdGVtc0RldGFpbAU0Y3RsMDAkcGhNYWluQ29udGVudCRwY1Njcm9sbGluZ0l0ZW1zRGV0YWlsJHBnY0RldGFpbAVAY3RsMDAkcGhNYWluQ29udGVudCRwY1Njcm9sbGluZ0l0ZW1zRGV0YWlsJHBnY0RldGFpbCRndk5ld3NJdGVtcwVEY3RsMDAkcGhNYWluQ29udGVudCRwY1Njcm9sbGluZ0l0ZW1zRGV0YWlsJHBnY0RldGFpbCRndkN1cnJlbnRPZmZlcnMFHWN0bDAwJHBoTWFpbkNvbnRlbnQkcGNFbWFpbFVzBQ5jdGwwMCRwY1ZpZGVvc8Jd3O9H3uoCUjgWhQZMMHev44n/tNDUWmOOQQgqP9ic" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=FMQ20_6p69v3wPJs6TCo7n8YVpT5P_1BWBhProR0DOcf77IS1UuFXRbOMXZ_A2PpPzozLaY1Hy0rS1Z6LutqBuozfIQK61x_SZt2QIECF6Q1&amp;t=636765464300000000" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAcPpV/K6RJpi+KKbGOPbp92n/RJ2SIKJWdbHzFA02BTVMIG1pMnKFsEFU1LJPIAHm//KBSaD9J2W4qIA8QFeLlQREGhJ+Vv6NSV8iiMi3+sbFHD2nPvXnvAYJuot7+Webe1B8IYFJHO10EoBL9Exh6JXBxtQk1wpSeQU9Yc0iZOSTkuaptRxfqCO8v4T4CC/HE=" />
+</div>
+    <div id="divOuter" style="display: block; position: relative; left: 50%; float: left">
+      <div style="display: block; position: relative; left: -50%; float: left">
+        
+	<script language="javascript" type="text/javascript">
+function goto(page, target) {
+	if (target == '_blank') {
+		window.open(page);
+	} else {
+		document.location = page;
+	}
+}
+	</script> 
+  <div id="divNavMenu" style="position:absolute; left:50px; top:175px; width:125px; z-index:15">
+    <div class="menuOption" onclick="document.location = 'Home.aspx'">Home</div>
+    <div id="mnuAboutUs" class="menuOption"><span id="spnAboutUs">About Us</span></div>
+    <div id="mnuHowToMarket" class="menuOption" onclick="document.location = 'HowToMarket.aspx'">How To Market Cattle Through USPB</div>
+    <div class="menuOption" onclick="document.location = 'HowToBuyOrSell.aspx'">How To Buy or Sell USPB Units</div>
+    <div class="menuOption" onclick="document.location = 'HowToLease.aspx'">How to Lease USPB Delivery Rights</div>
+    <div class="menuOption" onclick="document.location = 'Membership.aspx'">Associate Application</div>
+    <div id="mnuGrids" class="menuOption"><span id="spnGrids">USPB Grids</span></div>
+    <div id="mnuNat" class="menuOption"><span id="spnNatSM">USPB NatureSource Program</span></div>
+    <div class="menuOption" onclick="document.location = 'QualifiedFYSS.aspx'">USPB Qualified Custom Feedyards &amp; Seedstock Suppliers</div>
+    <div id="mnuVideos" class="menuOption" onclick="showVideos()"><span id="ctl00_navmenu_spnNewVideo" style="color:#ff0000; font-style:italic"></span>USPB Videos</div>
+    <div class="menuOption" onclick="document.location = 'ProducerEducationForum.aspx'">Producer Education Forum</div>
+    <div id="mnuMarkets" class="menuOption"><span id="spnMarkets">The Markets</span></div>
+    <div class="menuOption" onclick="document.location = 'ContactUs.aspx'">Contact Us</div>
+    <div class="menuOption" onclick="document.location = 'Links.aspx'">Links</div>
+  </div>
+<input type="hidden" id="ctl00_navmenu_puAboutUsWS" name="ctl00_navmenu_puAboutUsWS" value="0:0:-1:-10000:-10000:0:200:0:1:0:0:0" /><script id="dxis_2090157582" src="/DXR.axd?r=1_187-ooaaa" type="text/javascript"></script><script id="dxis_1816411190" src="/DXR.axd?r=1_101-ooaaa" type="text/javascript"></script><script id="dxis_1956267534" src="/DXR.axd?r=1_180-ooaaa" type="text/javascript"></script><script id="dxis_697394521" src="/DXR.axd?r=1_98-ooaaa" type="text/javascript"></script><script id="dxis_1684917575" src="/DXR.axd?r=1_172-ooaaa" type="text/javascript"></script><script id="dxis_1042035385" src="/DXR.axd?r=1_170-ooaaa" type="text/javascript"></script><script id="dxis_636795378" src="/DXR.axd?r=1_181-ooaaa" type="text/javascript"></script><script id="dxis_2113155769" src="/DXR.axd?r=1_178-ooaaa" type="text/javascript"></script><script id="dxis_1821753248" src="/DXR.axd?r=1_120-ooaaa" type="text/javascript"></script><script id="dxis_224150191" src="/DXR.axd?r=1_154-ooaaa" type="text/javascript"></script><script id="dxis_1962915749" src="/DXR.axd?r=1_130-ooaaa" type="text/javascript"></script><script id="dxis_2096805797" src="/DXR.axd?r=1_137-ooaaa" type="text/javascript"></script><div id="ctl00_navmenu_puAboutUs_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-contentWrapper">
+			<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+				
+      <div class="menuFlyout" style="width:250px">
+	      <table cellpadding="2" cellspacing="0" style="table-layout:fixed; width:250px">
+				  <tr>
+					  <td class="menuOption" onclick="goto('Aboutus.aspx','')" style="width:250px">About Us</td>
+				  </tr>
+		      <tr>
+			      <td class="menuOption" onclick="goto('MissionStatement.aspx','')" style="width:250px">USPB Mission Statement</td>
+		      </tr>
+		      <tr>
+			      <td class="menuOption" onclick="goto('History.aspx','')" style="width:250px">USPB History</td>
+		      </tr>
+		      <tr>
+			      <td class="menuOption" onclick="goto('BoardMembers.aspx','')" style="width:250px">USPB Board Members</td>
+		      </tr>
+		      <tr>
+			      <td class="menuOption" onclick="goto('Staff.aspx','')" style="width:250px">USPB Staff</td>
+		      </tr>
+		      <tr>
+					  <td class="menuOption" onclick="goto('FAQ.aspx','')" style="width:250px">USPB FAQs</td>
+		      </tr>
+		      <tr>
+					  <td class="menuOption" onclick="goto('FeaturesAndBenefits.aspx','')" style="width:250px">USPB Features and Benefits</td>
+		      </tr>
+  	    </table>
+  	  </div>
+    
+			</div>
+		</div>
+	</div>
+</div><script id="dxss_1466574039" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_navmenu_puAboutUs',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_navmenu_puAboutUs');
+window['ctl00_navmenu_puAboutUs'] = dxo;
+dxo.uniqueID = 'ctl00$navmenu$puAboutUs';
+dxo.popupAnimationType='slide';
+dxo.popupHorizontalAlign='OutsideRight';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=200;
+dxo.height=0;
+dxo.defaultWindowPopupElementIDList=['spnAboutUs'];
+dxo.AfterCreate();
+
+//-->
+</script>
+<input type="hidden" id="ctl00_navmenu_puUSPBNaturalWS" name="ctl00_navmenu_puUSPBNaturalWS" value="0:0:-1:-10000:-10000:0:200:0:1:0:0:0" /><div id="ctl00_navmenu_puUSPBNatural_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-contentWrapper">
+			<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+				
+	    <div id="div1" class="menuFlyout" style="width:300px">
+		    <table id="ctl00_navmenu_puUSPBNatural_Table1" cellpadding="2" cellspacing="0" style="table-layout:fixed">
+					<tr>
+						<td class="menuOption" style="width:300px"><a class="menuOption" href="DocumentItem.aspx?ID=120" target="_blank"><img src="Images/pdf.gif" alt="" style="border:none" />&nbsp;USPB NatureSource Information Sheet</a></td>
+					</tr>
+				</table>
+				
+		  </div>
+    
+			</div>
+		</div>
+	</div>
+</div><script id="dxss_1932085008" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_navmenu_puUSPBNatural',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_navmenu_puUSPBNatural');
+window['ctl00_navmenu_puUSPBNatural'] = dxo;
+dxo.uniqueID = 'ctl00$navmenu$puUSPBNatural';
+dxo.popupAnimationType='slide';
+dxo.popupHorizontalAlign='OutsideRight';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=200;
+dxo.height=0;
+dxo.defaultWindowPopupElementIDList=['spnNatSM'];
+dxo.AfterCreate();
+
+//-->
+</script>
+
+<input type="hidden" id="ctl00_navmenu_puGridsWS" name="ctl00_navmenu_puGridsWS" value="0:0:-1:-10000:-10000:0:200:0:1:0:0:0" /><div id="ctl00_navmenu_puGrids_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-contentWrapper">
+			<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+				
+	    <div id="divfoGrids" class="menuFlyout">
+		    <table id="ctl00_navmenu_puGrids_tblGridSamples" cellpadding="2" cellspacing="0" style="table-layout:fixed">
+					<tr>
+						<td class="menuOption" style="width:140px;"><a class="menuOption" href="DocumentItem.aspx?ID=34" target="_blank" /><img src="Images/pdf.gif" alt="" style="border:none" />&nbsp;USPB Base</a>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="menuOption" style="width:140px;"><a class="menuOption" href="DocumentItem.aspx?ID=58" target="_blank" /><img src="Images/pdf.gif" alt="" style="border:none" />&nbsp;NatureSource&reg;</a>&nbsp;</td>
+					</tr>
+				</table>
+				
+        <div style="display:none;border: 1px solid #000000; height:60px; width:450px; background-color: #FFFF66; font-family: Arial; font-size: 8pt; position:absolute; top:9px; left:-150px; z-index:4000" id="divfoGridsARDL">
+          <table>
+            <tr>
+              <td style="width:160px; height:60px">
+                <div style="width:160px; height:11px"></div>
+                <div style="width:160px; height:38px; background-image:url('Images/get_adobe_reader.png'); cursor:pointer" onclick="window.open
+      ('http://www.adobe.com/go/EN_US-H-GET-READER')"></div>
+                <div style="width:160px; height:11px"></div>
+              </td>
+              <td style="width:276px; vertical-align:middle; height:60px">Adobe Reader is required for this document.  If you don't already have it installed on your computer, <a href="http://www.adobe.com/go/EN_US-H-GET-READER" target="_blank">click here</a> to install it for free.</td>
+              <td style="width:10px"><img src="Images/dragpanel_close_mo.gif" style="cursor:pointer; border:none" onclick="divfoGridsARDL.style.display = 'none'" alt="" /></td>
+            </tr>
+          </table>
+        </div>
+		  </div>
+    
+			</div>
+		</div>
+	</div>
+</div><script id="dxss_1251033629" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_navmenu_puGrids',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_navmenu_puGrids');
+window['ctl00_navmenu_puGrids'] = dxo;
+dxo.uniqueID = 'ctl00$navmenu$puGrids';
+dxo.popupAnimationType='slide';
+dxo.popupHorizontalAlign='OutsideRight';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=200;
+dxo.height=0;
+dxo.defaultWindowPopupElementIDList=['spnGrids'];
+dxo.AfterCreate();
+
+//-->
+</script>
+
+<input type="hidden" id="ctl00_navmenu_puVideosWS" name="ctl00_navmenu_puVideosWS" value="0:0:-1:-10000:-10000:0:200:0:1:0:0:0" /><div id="ctl00_navmenu_puVideos_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-contentWrapper">
+			<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+				
+      <div id="divfoVideos" class="menuFlyout">
+        <table id="ctl00_navmenu_puVideos_tblVideos" cellpadding="2" cellspacing="0" style="table-layout:fixed">
+				</table>
+				
+      </div>
+    
+			</div>
+		</div>
+	</div>
+</div><script id="dxss_1376872598" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_navmenu_puVideos',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_navmenu_puVideos');
+window['ctl00_navmenu_puVideos'] = dxo;
+dxo.uniqueID = 'ctl00$navmenu$puVideos';
+dxo.popupAnimationType='slide';
+dxo.popupHorizontalAlign='OutsideRight';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=200;
+dxo.height=0;
+dxo.defaultWindowPopupElementIDList=['spnVideos'];
+dxo.AfterCreate();
+
+//-->
+</script>
+
+<input type="hidden" id="ctl00_navmenu_pcMarketsWS" name="ctl00_navmenu_pcMarketsWS" value="0:0:-1:-10000:-10000:0:200:0:1:0:0:0" /><div id="ctl00_navmenu_pcMarkets_PW-1" class="dxpcLite dxpclW" style="width:200px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-contentWrapper">
+			<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+				
+	    <div class="menuFlyout" style="width:650px">
+			  <table cellpadding="2" cellspacing="0" style="table-layout:fixed">
+				  <tr>
+					  <td style="width:250px" class="menuOptionHead">Boxed Beef...</td>
+					  <td style="width:200px" class="menuOptionHead">USDA Cash Cattle Reports...</td>
+					  <td style="width:200px" class="menuOption" onclick="goto('http://www.cbot.com/cbot/pub/page/0,3181,972,00.html','_blank')">Chicago Board of Trade</td>
+				  </tr>
+				  <tr>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_xb402.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;USDA Morning Report</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct121.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Kansas Daily Report</td>
+					  <td class="menuOption" onclick="goto('http://www.futuresource.com/','_blank')">Commodity News</td>
+				  </tr>
+				  <tr>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_xb403.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;USDA Afternoon Report</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct157.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Kansas Weekly Report</td>
+					  <td class="menuOption" onclick="goto('http://www.kcbt.com/','_blank')">Kansas City Board of Trade</td>
+				  </tr>
+				  <tr>
+					  <td class="menuOptionHead">Chicago Mercantile Exchange...</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct118.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Texas Daily Report</td>
+					  <td class="menuOption" onclick="goto('CSSpread.aspx','')">USDA's Choice Select Spread</td>
+				  </tr>
+				  <tr>
+					  <td class="menuOption" onclick="goto('http://www.cmegroup.com/trading/agricultural/livestock/live-cattle.html','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Live Cattle Futures and Options</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct156.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Texas Weekly Report</td>
+					  <td class="menuOption" onclick="goto('http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1020','_blank')">USDA Cattle on Feed Reports</td>
+				  </tr>
+				  <tr>
+					  <td class="menuOption" onclick="goto('http://www.cmegroup.com/trading/agricultural/livestock/feeder-cattle.html','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Feeder Cattle Futures and Options</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct124.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Nebraska Daily Report</td>
+					  <td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					  <td>&nbsp</td>
+					  <td class="menuOption" onclick="goto('http://www.ams.usda.gov/mnreports/lm_ct158.txt','_blank')">&nbsp;&nbsp;&nbsp;&nbsp;Nebraska Weekly Report</td>
+					  <td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+					  <td>&nbsp;</td>
+				  </tr>
+			  </table>
+	    </div>
+    
+			</div>
+		</div>
+	</div>
+</div><script id="dxss_1336493805" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_navmenu_pcMarkets',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_navmenu_pcMarkets');
+window['ctl00_navmenu_pcMarkets'] = dxo;
+dxo.uniqueID = 'ctl00$navmenu$pcMarkets';
+dxo.popupAnimationType='slide';
+dxo.popupHorizontalAlign='OutsideRight';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=200;
+dxo.height=0;
+dxo.defaultWindowPopupElementIDList=['spnMarkets'];
+dxo.AfterCreate();
+
+//-->
+</script>
+
+
+        <div style="height:428px; width:850px">
+          <img src="Images/Home1_1x1.jpg" alt="" style="border:none; height:428px; width:850px" />
+        </div>
+        <table cellspacing="0" cellpadding="0" style="table-layout:fixed; width:850px">
+          <tr>
+            <td style="width:211px; height:394px">
+              <img src="Images/Home1_2x1.jpg" style="border:none; height:394px; width:211px" />
+            </td>
+            <td style="width:639px; height:394px">
+              <div id="divHomeRImage" style="width: 639px; height: 394px">
+                <img id="imgHomeRImage" src="Images/Home1_2x2.jpg" style="border:none; height:394px; width:639px" />
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div style="height:64px; width:850px">
+          <img src="Images/Home1_3x1.jpg" alt="" style="border:none; height:64px; width:850px" />
+        </div>
+        <div class="copyright" style="width:850px">
+        &copy; Copyright <span id="ctl00_spnCRYear">2019</span> U.S. Premium Beef, LLC&nbsp;&nbsp;All
+        Rights Reserved</div>
+        <div style="position:relative;top:-620px;left:260px; width:300px; border:none; z-index:10">
+          
+  <div>
+    <p style="margin-top: 0px; margin-bottom: 4px">
+      At U.S. Premium Beef, we take beef very seriously. Our unitholders and associates
+      from 36 states share a belief that quality beef begins at the ranch and ends with
+      satisfied consumers. They've made a commitment to select the right genetics and
+      to use the best possible production practices--from the ranch to mealtime--to produce
+      consistent, high-quality beef.
+    </p>
+    <p style="margin-top: 0px; margin-bottom: 4px">
+      This website will help you learn how you can join the more than 2,100 associates
+      of U.S. Premium Beef to earn greater profits for producing beef designed for today's
+      consumers.</p>
+    <p style="margin-top: 0px; margin-bottom: 4px">
+      U.S. Premium Beef continues to accept new producers who want to earn premiums for
+      producing better quality beef.
+    </p>
+    <p style="margin-top: 0px; margin-bottom: 4px">
+      Through 2017, we have purchased more than <b>13.8 million head of cattle</b> from those producers.
+      The average premium above the cash market in 2017 was <b>$49.12 per head</b>.  
+      Through 2017, producers who have marketed cattle through our company have earned <b>more
+      than $475 million in premiums</b> above the cash market.
+      And, our producer-owners have realized economic benefit of the value-added earnings
+      generated by our investment in National Beef.  In short, our program is working for 
+      producers as we planned.</p>
+    <p style="margin-top: 0px; margin-bottom: 4px">
+      If you'd like to market your cattle through U.S. Premium Beef, click on <a href="HowToMarket.aspx">
+        How to Market Cattle Through USPB</a> to learn how easy it is to join and ship
+      cattle.</p>
+    <br />
+    <table style="margin-left:5px; background-color: #d9dfde; width: 520px; border-collapse:collapse; cursor:pointer" title="Click for details">
+      <tr>
+        <td style="width: 260px; color: #00008b; font-weight: bold; text-align: left; border: 1pt solid #000000" onclick="showScrollingDetail('T')">
+          Current USPB Unit Offers
+        </td>
+        <td style="width: 260px; color: #dd0000; font-weight: bold; text-align: left; border: 1pt solid #000000" onclick="showScrollingDetail('N')">
+          USPB News
+        </td>
+      </tr>
+      <tr>
+        <td style="border-left:1pt solid #000000; border-right:1pt solid #000000; border-bottom:1pt solid #000000">
+          <div id="divUnitTradingContent" style="height:26px; width:260px; overflow: hidden; border:0px" onclick="showScrollingDetail('T')">
+            <table id="ctl00_phMainContent_tblUnitTradingContent" style="background-color: #d9dfde; width:100%; border-collapse:collapse; border:0px; border-spacing:0; padding:0px">
+	<tr class="ri_odd">
+		<td style="height:13px;">Offer to Buy 750 Class B units at $206.00</td>
+	</tr>
+	<tr class="ri_even">
+		<td style="height:13px;">Offer to Buy 1000 Class B units at $200.00</td>
+	</tr>
+</table>
+
+          </div>
+        </td>
+        <td style="border-left:1pt solid #000000; border-right:1pt solid #000000; border-bottom:1pt solid #000000">
+          <div id="divUSPBNewsContent" style="height:26px; width:260px; overflow:hidden" onclick="showScrollingDetail('N')">
+            <table id="ctl00_phMainContent_tblUSPBNewsContent" style="background-color: #d9dfde; width:100%">
+	<tr class="ri_odd">
+		<td style="height:13px;">Be Proactive BQA</td>
+	</tr>
+	<tr class="ri_even">
+		<td style="height:13px;">Proposed USDA Maturity Change</td>
+	</tr>
+	<tr class="ri_odd">
+		<td style="height:13px;">Fiscal Year 2018 Second Quarter Earnings Letter</td>
+	</tr>
+	<tr class="ri_even">
+		<td style="height:13px;">Beef Trade Resumes with China</td>
+	</tr>
+	<tr class="ri_odd">
+		<td style="height:13px;">Certified Angus Beef Live Specifications Change</td>
+	</tr>
+	<tr class="ri_even">
+		<td style="height:13px;">Utilizing Leased Delivery Rights</td>
+	</tr>
+	<tr class="ri_odd">
+		<td style="height:13px;">Sam Hands Named Stockman of the Year</td>
+	</tr>
+	<tr class="ri_even">
+		<td style="height:13px;">Marfrig Global Foods Acquires Ownership Interest In National Beef</td>
+	</tr>
+</table>
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000000; height:20px; font-weight:bold; font-size:18pt; text-align:center; vertical-align: middle" colspan="2"><a href="DocumentItem.aspx?ID=131" target="_blank" style="font-weight: bold; font-size:11pt">Beef Quality Assurance Requirements</a></td>
+      </tr>
+    </table>
+  </div>
+  <br />
+  <br />
+  <input type="hidden" id="ctl00_phMainContent_pcScrollingItemsDetailWS" name="ctl00_phMainContent_pcScrollingItemsDetailWS" value="0:0:-1:-10000:-10000:0:700:550:1:0:0:0" /><div id="ctl00_phMainContent_pcScrollingItemsDetail_PW-1" class="dxpcLite dxpclW" style="height:550px;width:700px;z-index:10000;cursor:default;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-header dxpc-withBtn" style="cursor:move;-moz-user-select:none;">
+			<div class="dxpc-closeBtn">
+				<img class="dxWeb_pcCloseButton" src="/DXR.axd?r=1_19-ooaaa" alt="[Close]" />
+			</div><div class="dxpc-headerContent">
+				<span class="dxpc-headerText dx-vam"> </span>
+			</div><b class="dx-clear"></b>
+		</div><div class="dxpc-contentWrapper">
+			<div class="dxpc-content">
+				
+        <input type="hidden" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetailATI" name="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetailATI" value="0" /><div class="dxtcLite dxtcSys dxtc-init dxtc-top" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail" style="height:500px;width:670px;">
+					<ul class="dxtc-strip dxtc-stripContainer">
+						<li class="dxtc-leftIndent">&nbsp;</li><li class="dxtc-tab dxtc-lead" onclick="return aspxTCTClick(event, &#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail&#39;, 0)" style="display:none;"><a class="dxtc-link" style="color:#DD0000;font-size:10pt;font-weight:bold;"><span class="dx-vam">USPB News</span></a></li><li class="dxtc-activeTab dxtc-lead"><a class="dxtc-link" style="color:#DD0000;font-size:10pt;font-weight:bold;"><span class="dx-vam">USPB News</span></a></li><li class="dxtc-spacer">&nbsp;</li><li class="dxtc-tab" onclick="return aspxTCTClick(event, &#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail&#39;, 1)"><a class="dxtc-link" style="color:DarkBlue;font-size:10pt;font-weight:bold;"><span class="dx-vam">Current Unit Trading Offers</span></a></li><li class="dxtc-activeTab" style="display:none;"><a class="dxtc-link" style="color:DarkBlue;font-size:10pt;font-weight:bold;"><span class="dx-vam">Current Unit Trading Offers</span></a></li><li class="dxtc-rightIndent">&nbsp;</li>
+					</ul><div class="dxtc-content">
+						<div>
+							<div>
+								
+                  <div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_divNewsItems">
+                    <br /><br />
+                    <div style="margin-left:10px">
+                      <table class="dxgvControl" cellspacing="0" cellpadding="0" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems" border="0" style="border-style:None;border-collapse:collapse;border-collapse:separate;">
+									<tr>
+										<td><table id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXMainTable" class="dxgvTable" cellspacing="0" cellpadding="0" onclick="aspxGVTableClick(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems&#39;, event);" border="0" style="width:100%;border-collapse:collapse;empty-cells:show;">
+											<tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow0" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell0_4" class="dxgv" style="width:525px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=114" target="_blank" style="font-size:10pt">Be Proactive BQA</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow1" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell1_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=122" target="_blank" style="font-size:10pt">Proposed USDA Maturity Change</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow2" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell2_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=123" target="_blank" style="font-size:10pt">Fiscal Year 2018 Second Quarter Earnings Letter</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow3" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell3_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=125" target="_blank" style="font-size:10pt">Beef Trade Resumes with China</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow4" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell4_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=126" target="_blank" style="font-size:10pt">Certified Angus Beef Live Specifications Change</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow5" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell5_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=127" target="_blank" style="font-size:10pt">Utilizing Leased Delivery Rights</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow6" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell6_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=129" target="_blank" style="font-size:10pt">Sam Hands Named Stockman of the Year</a>
+                            </td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXDataRow7" class="dxgvDataRow">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_tccell7_4" class="dxgv" style="border-left-width:0px;border-right-width:0px;border-bottom-width:0px;">
+                              <a href="DocumentItem.aspx?ID=130" target="_blank" style="font-size:10pt">Marfrig Global Foods Acquires Ownership Interest In National Beef</a>
+                            </td>
+											</tr>
+										</table><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_IADD" class="dxGridView_gvDragAndDropArrowDown" src="/DXR.axd?r=1_19-ooaaa" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_IADU" class="dxGridView_gvDragAndDropArrowUp" src="/DXR.axd?r=1_19-ooaaa" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_IDHF" class="dxGridView_gvDragAndDropHideColumn" src="/DXR.axd?r=1_19-ooaaa" alt="Hide" style="position:absolute;visibility:hidden;top:-100px;" /><div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+											<table class="dxgvLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="height:100%;border-collapse:collapse;">
+												<tr>
+													<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_TL">Loading&hellip;</span></td>
+												</tr>
+											</table>
+										</div><div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_LD" class="dxgvLoadingDiv" style="display:none;z-index:29999;position:absolute;">
+
+										</div><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvNewsItems$DXSelInput" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXSelInput" /><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvNewsItems$DXKVInput" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXKVInput" value="[]" /><table id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_DXStyleTable" border="0" style="display:none;">
+											<tr>
+												<td></td>
+											</tr><tr class="dxgvEditingErrorRow">
+												<td class="dxgv" data-colSpan="1" style="border-right-width:0px;"></td>
+											</tr><tr class="dxgvSelectedRow">
+												<td></td>
+											</tr><tr class="dxgvFocusedRow">
+												<td></td>
+											</tr><tr class="dxgvFocusedGroupRow">
+												<td></td>
+											</tr><tr>
+												<td class="dxgvBatchEditCell dxgv"></td><td class="dxgvBatchEditModifiedCell dxgv"></td><td class="dxgvBatchEditCell dxgvBatchEditModifiedCell dxgv"></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr>
+										</table><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvNewsItems$CallbackState" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems_CallbackState" value="BwIHAgIERGF0YQZKAgAAAAAIAAAACAAAAAAAAAAIAAAAAAQAAAACSUQCSUQDAAABDURvY3VtZW50VGl0bGUORG9jdW1lbnQgVGl0bGUHAAABDUN1c3RvbUNvbnRlbnQOQ3VzdG9tIENvbnRlbnQHAAABEEhhc0N1c3RvbUNvbnRlbnQSSGFzIEN1c3RvbSBDb250ZW50AwAAAQAAAAAHAAcABwAHAAb//wMHcgcCEEJlIFByb2FjdGl2ZSBCUUEMAwcABwAHAAb//wMHegcCHVByb3Bvc2VkIFVTREEgTWF0dXJpdHkgQ2hhbmdlDAMHAAcABwAG//8DB3sHAi9GaXNjYWwgWWVhciAyMDE4IFNlY29uZCBRdWFydGVyIEVhcm5pbmdzIExldHRlcgwDBwAHAAcABv//Awd9BwIdQmVlZiBUcmFkZSBSZXN1bWVzIHdpdGggQ2hpbmEMAwcABwAHAAb//wMHfgcCL0NlcnRpZmllZCBBbmd1cyBCZWVmIExpdmUgU3BlY2lmaWNhdGlvbnMgQ2hhbmdlDAMHAAcABwAG//8DB38HAiBVdGlsaXppbmcgTGVhc2VkIERlbGl2ZXJ5IFJpZ2h0cwwDBwAHAAcABv//AweBBwIkU2FtIEhhbmRzIE5hbWVkIFN0b2NrbWFuIG9mIHRoZSBZZWFyDAMHAAcABwAG//8DB4IHAkFNYXJmcmlnIEdsb2JhbCBGb29kcyBBY3F1aXJlcyBPd25lcnNoaXAgSW50ZXJlc3QgSW4gTmF0aW9uYWwgQmVlZgwDBwACBVN0YXRlB0YHBQcEAgAHAwIABwICAAcBAgAHAAIBBwAHAAcABwACAAUAAACACQIABwAJAgACAAMHBAIABwACAQcIBwACAAIBBwAHAAcA" /></td>
+									</tr>
+								</table><script id="dxss_1465481142" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientGridView('ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems');
+window['ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvNewsItems',arg,aspxCallback,'ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvNewsItems',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvNewsItems';
+dxo.callBacksEnabled=true;
+dxo.pageRowCount=8;
+dxo.pageRowSize=10;
+dxo.pageIndex=-1;
+dxo.pageCount=1;
+dxo.selectedWithoutPageRowCount=0;
+dxo.filteredSelectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.allowSelectByRowClick=false;
+dxo.allowSelectSingleRowOnly=false;
+dxo.allowMultiColumnAutoFilter=false;
+dxo.indentColumnCount=0;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'ID',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',1,-1,'DocumentTitle',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',2,-1,'CustomContent',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',3,-1,'HasCustomContent',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',4,-1,'',1,'',0,0,0,1,0,0,0)];
+dxo.editState=0;
+dxo.editMode=2;
+dxo.searchPanelFilter='';
+dxo.AfterCreate();
+
+//-->
+</script>
+                    </div>
+                  </div>
+                
+							</div>
+						</div><div style="display:none;">
+							<div>
+								
+                  <br /><br />
+                  <div style="margin-left:10px">
+                    <table class="dxgvControl" cellspacing="0" cellpadding="0" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers" border="0" style="font-size:10pt;border-collapse:collapse;border-collapse:separate;">
+									<tr>
+										<td><table id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXMainTable" class="dxgvTable" cellspacing="0" cellpadding="0" onclick="aspxGVTableClick(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, event);" border="0" style="width:100%;border-collapse:collapse;empty-cells:show;">
+											<tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXHeadersRow0">
+												<td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_col0" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, this, event);" style="width:65px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td>Offer Type</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_col1" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, this, event);" style="width:300px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td>Unit Class</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_col2" title="Units Currently Available" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, this, event);" style="width:50px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td># Units</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_col3" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, this, event);" style="width:65px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td>Price</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td><td id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_col4" title="Offer Expiration Date" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown(&#39;ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers&#39;, this, event);" style="width:60px;border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+													<tr>
+														<td>Exp Date</td><td style="width:1px;text-align:right;"><span class="dx-vam">&nbsp;</span></td>
+													</tr>
+												</table></td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXDataRow0" class="dxgvDataRow">
+												<td class="dxgv" style="font-size:10pt;">Buy</td><td class="dxgv" style="font-size:10pt;">Class B</td><td class="dxgv" align="right" style="font-size:10pt;">750</td><td class="dxgv" align="right" style="font-size:10pt;">$206.00</td><td class="dxgv" style="font-size:10pt;border-right-width:0px;">01/30/19</td>
+											</tr><tr id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXDataRow1" class="dxgvDataRow">
+												<td class="dxgv" style="font-size:10pt;border-bottom-width:0px;">Buy</td><td class="dxgv" style="font-size:10pt;border-bottom-width:0px;">Class B</td><td class="dxgv" align="right" style="font-size:10pt;border-bottom-width:0px;">1000</td><td class="dxgv" align="right" style="font-size:10pt;border-bottom-width:0px;">$200.00</td><td class="dxgv" style="font-size:10pt;border-right-width:0px;border-bottom-width:0px;">03/01/19</td>
+											</tr>
+										</table><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_IADD" class="dxGridView_gvDragAndDropArrowDown" src="/DXR.axd?r=1_19-ooaaa" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_IADU" class="dxGridView_gvDragAndDropArrowUp" src="/DXR.axd?r=1_19-ooaaa" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_IDHF" class="dxGridView_gvDragAndDropHideColumn" src="/DXR.axd?r=1_19-ooaaa" alt="Hide" style="position:absolute;visibility:hidden;top:-100px;" /><div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+											<table class="dxgvLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="font-size:10pt;height:100%;border-collapse:collapse;">
+												<tr>
+													<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="font-size:10pt;padding-left:0px;"><span id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_TL">Loading&hellip;</span></td>
+												</tr>
+											</table>
+										</div><div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_LD" class="dxgvLoadingDiv" style="display:none;z-index:29999;position:absolute;">
+
+										</div><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvCurrentOffers$DXSelInput" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXSelInput" /><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvCurrentOffers$DXKVInput" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXKVInput" value="[]" /><table id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_DXStyleTable" border="0" style="display:none;">
+											<tr>
+												<td></td>
+											</tr><tr class="dxgvEditingErrorRow">
+												<td class="dxgv" data-colSpan="5" style="border-right-width:0px;"></td>
+											</tr><tr class="dxgvSelectedRow">
+												<td></td>
+											</tr><tr class="dxgvFocusedRow">
+												<td></td>
+											</tr><tr class="dxgvFocusedGroupRow">
+												<td></td>
+											</tr><tr>
+												<td class="dxgvBatchEditCell dxgv" style="font-size:10pt;"></td><td class="dxgvBatchEditModifiedCell dxgv" style="font-size:10pt;"></td><td class="dxgvBatchEditCell dxgvBatchEditModifiedCell dxgv" style="font-size:10pt;"></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr><tr class="dxgvDataRow">
+												<td></td>
+											</tr>
+										</table><input type="hidden" name="ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvCurrentOffers$CallbackState" id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers_CallbackState" value="BwIHAgIERGF0YQY/AQAAAAACAAAAAgAAAAAAAAACAAAAAAUAAAAJT2ZmZXJUeXBlCk9mZmVyIFR5cGUHAAABDFVuaXRDbGFzc1R4dA5Vbml0IENsYXNzIFR4dAcAAAEOUmVtYWluaW5nVW5pdHMPUmVtYWluaW5nIFVuaXRzAwAAAQVQcmljZQVQcmljZQUAAAEORXhwaXJhdGlvbkRhdGUPRXhwaXJhdGlvbiBEYXRlCAAAAQMAAAARVW5pdENsYXNzVHh0U2hvcnQIUG9zdERhdGUDU2VxBwAHAAcABwAG//8HAgNCdXkHAgdDbGFzcyBCAwbuAgUDeFAAAAAAAAAAAAAAAAACAAgCBABwSit4htYIBwAHAAb//wcCA0J1eQcCB0NsYXNzIEIDBugDBQMgTgAAAAAAAAAAAAAAAAIACAIEAPCuIwue1ggCBVN0YXRlB0YHBQcAAgEHAQIBBwICAQcDAgEHBAIBBwAHAAcABwACAAUAAACACQIABwAJAgACAAMHBAIABwACAQcCBwACAAIBBwAHAAcA" /></td>
+									</tr>
+								</table><script id="dxss_671130324" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientGridView('ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers');
+window['ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvCurrentOffers',arg,aspxCallback,'ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_gvCurrentOffers',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail$gvCurrentOffers';
+dxo.callBacksEnabled=true;
+dxo.pageRowCount=2;
+dxo.pageRowSize=10;
+dxo.pageIndex=-1;
+dxo.pageCount=1;
+dxo.selectedWithoutPageRowCount=0;
+dxo.filteredSelectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.allowSelectByRowClick=false;
+dxo.allowSelectSingleRowOnly=false;
+dxo.allowMultiColumnAutoFilter=false;
+dxo.indentColumnCount=0;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'OfferType',1,'',0,1,0,1,0,0,0),
+new ASPxClientGridViewColumn('',1,-1,'UnitClassTxt',1,'',0,1,0,1,0,0,0),
+new ASPxClientGridViewColumn('',2,-1,'RemainingUnits',1,'',0,1,0,1,0,0,0),
+new ASPxClientGridViewColumn('',3,-1,'Price',1,'',0,1,0,1,0,0,0),
+new ASPxClientGridViewColumn('',4,-1,'ExpirationDate',1,'',0,1,0,1,0,0,0)];
+dxo.editState=0;
+dxo.editMode=2;
+dxo.searchPanelFilter='';
+dxo.AfterCreate();
+
+//-->
+</script>
+                  </div>
+                <br /><br /><br />
+                <span style="font-size:10pt; font-weight:bold">Unit Trading Site:</span>&nbsp;<a style="font-size:10pt" href="http://www.agstocktrade.com/index.php?option=com_content&task=view&id=22&Itemid=38&company_id=11" target="_blank">www.AgStockTrade.com</a><br /><br />
+                <span style="font-size:10pt; font-weight:bold">Click for Match History:</span>
+                <br /><br />
+                <div style="margin-left:10px">
+                  <a style="font-size:10pt" href="http://www.agstocktrade.com/index.php?option=com_content&task=view&id=44&Itemid=78&share_id=18" target="_blank">Class A - Delivery Rights Available During Transition Period Starting 8/27/2017</a><br /><br />
+                  <a style="font-size:10pt" href="http://www.agstocktrade.com/index.php?option=com_content&task=view&id=44&Itemid=78&share_id=19" target="_blank">Class A - Delivery Rights Available Starting 1/1/2018 - Delivery Year 2018</a><br /><br />
+                  <a style="font-size:10pt" href="http://www.agstocktrade.com/index.php?option=com_content&task=view&id=44&Itemid=78&share_id=20" target="_blank">Class B</a>
+                </div>
+                <br /><br />
+                For more information, please contact USPB at 866-877-2525 or <a href="javascript:emailUs()">email us</a>.
+                
+							</div>
+						</div>
+					</div>
+				</div><b class="dx-clear"></b><div id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+					<table class="dxtcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="height:100%;border-collapse:collapse;">
+						<tr>
+							<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail_TL">Loading&hellip;</span></td>
+						</tr>
+					</table>
+				</div><script id="dxss_1122608295" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail',[[['dxtc-tabHover',''],['',''],['T0','T1'],['','T']],[['dxtc-activeTabHover',''],['',''],['AT0','AT1'],['','T']]]);
+aspxAddDisabledItems('ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail',[[['dxtcLiteDisabled',''],['',''],['T0','AT0','T1','AT1'],['','T']]]);
+
+var dxo = new ASPxClientPageControl('ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail');
+window['pgcDetail'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail',arg,aspxCallback,'ctl00_phMainContent_pcScrollingItemsDetail_pgcDetail',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$phMainContent$pcScrollingItemsDetail$pgcDetail';
+dxo.CreateTabs([['',,,,],['',,,,]]);
+dxo.AfterCreate();
+
+//-->
+</script>
+      
+			</div>
+		</div>
+	</div>
+</div><div id="ctl00_phMainContent_pcScrollingItemsDetail_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+</div><div id="ctl00_phMainContent_pcScrollingItemsDetail_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+	<table class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="height:100%;border-collapse:collapse;">
+		<tr>
+			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_phMainContent_pcScrollingItemsDetail_TL">Loading&hellip;</span></td>
+		</tr>
+	</table>
+</div><div id="ctl00_phMainContent_pcScrollingItemsDetail_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_862139805" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_phMainContent_pcScrollingItemsDetail',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_phMainContent_pcScrollingItemsDetail');
+window['pcScrollingItemsDetail'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$phMainContent$pcScrollingItemsDetail',arg,aspxCallback,'ctl00_phMainContent_pcScrollingItemsDetail',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$phMainContent$pcScrollingItemsDetail';
+dxo.CloseUp.AddHandler(function (s, e) { scrollingDetailClosed() });
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.allowDragging=true;
+dxo.width=700;
+dxo.height=550;
+dxo.AfterCreate();
+
+//-->
+</script>
+  <input type="hidden" id="ctl00_phMainContent_pcEmailUsWS" name="ctl00_phMainContent_pcEmailUsWS" value="0:0:-1:-10000:-10000:0:800:600:1:0:0:0" /><div id="ctl00_phMainContent_pcEmailUs_PW-1" class="dxpcLite dxpclW" style="height:600px;width:800px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow">
+		<div class="dxpc-header dxpc-withBtn">
+			<div class="dxpc-closeBtn">
+				<img class="dxWeb_pcCloseButton" src="/DXR.axd?r=1_19-ooaaa" alt="[Close]" />
+			</div><div class="dxpc-headerContent">
+				<span class="dxpc-headerText dx-vam">Send Email</span>
+			</div><b class="dx-clear"></b>
+		</div><div class="dxpc-contentWrapper">
+			<div class="dxpc-content">
+				&nbsp;&nbsp;
+			</div>
+		</div>
+	</div>
+</div><div id="ctl00_phMainContent_pcEmailUs_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+</div><div id="ctl00_phMainContent_pcEmailUs_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+	<table class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="height:100%;border-collapse:collapse;">
+		<tr>
+			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_phMainContent_pcEmailUs_TL">Loading&hellip;</span></td>
+		</tr>
+	</table>
+</div><div id="ctl00_phMainContent_pcEmailUs_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_356887653" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_phMainContent_pcEmailUs',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_phMainContent_pcEmailUs');
+window['pcEmailUs'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$phMainContent$pcEmailUs',arg,aspxCallback,'ctl00_phMainContent_pcEmailUs',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$phMainContent$pcEmailUs';
+dxo.CloseUp.AddHandler(function (s, e) { emailUsClosed() });
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=800;
+dxo.height=600;
+dxo.AfterCreate();
+
+//-->
+</script>
+
+        </div>      
+      </div>
+    </div>
+	  <input type="hidden" id="ctl00_pcVideosWS" name="ctl00_pcVideosWS" value="0:0:-1:-10000:-10000:0:700:520:1:0:0:0" /><div id="ctl00_pcVideos_PW-1" class="dxpcLite dxpclW" style="height:520px;width:700px;cursor:default;z-index:10000;display:none;visibility:hidden;">
+	<div class="dxpc-mainDiv dxpc-shadow" style="background-color:#ECEBED;">
+		<div class="dxpc-header dxpc-withBtn">
+			<div class="dxpc-closeBtn">
+				<img class="dxWeb_pcCloseButton" src="/DXR.axd?r=1_19-ooaaa" alt="[Close]" />
+			</div><div class="dxpc-headerContent">
+				<span class="dxpc-headerText dx-vam">USPB Videos</span>
+			</div><b class="dx-clear"></b>
+		</div><div class="dxpc-contentWrapper">
+			<div class="dxpc-content">
+				&nbsp;&nbsp;
+			</div>
+		</div>
+	</div>
+</div><div id="ctl00_pcVideos_DXPWMB-1" class="dxpcModalBackLite" style="z-index:9999;">
+
+</div><div id="ctl00_pcVideos_LP" align="center" style="left:0px;top:0px;z-index:30000;display:none;">
+	<table class="dxpcLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="height:100%;border-collapse:collapse;">
+		<tr>
+			<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_19-ooaaa" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;"><span id="ctl00_pcVideos_TL">Loading&hellip;</span></td>
+		</tr>
+	</table>
+</div><div id="ctl00_pcVideos_LD" class="dxpcLoadingDiv dxlpLoadingDiv dx-ft" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1229609448" type="text/javascript">
+<!--
+aspxAddHoverItems('ctl00_pcVideos',[[['dxpc-closeBtnHover'],[''],['HCB-1']]]);
+
+var dxo = new ASPxClientPopupControl('ctl00_pcVideos');
+window['pcVideos'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$pcVideos',arg,aspxCallback,'ctl00_pcVideos',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$pcVideos';
+dxo.CloseUp.AddHandler(function (s, e) { pcVideos.SetContentUrl('about:blank') });
+dxo.popupAnimationType='fade';
+dxo.popupHorizontalAlign='WindowCenter';
+dxo.popupVerticalAlign='WindowCenter';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.width=700;
+dxo.height=520;
+dxo.AfterCreate();
+
+//-->
+</script>
+  
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+</form>
+  <script type="text/javascript">
+    if (GAID != '') {
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+  </script>
+  <script type="text/javascript">
+    try {
+      if (GAID != '') {
+        var pageTracker = _gat._getTracker(GAID);
+        pageTracker._trackPageview();
+      }
+    } catch (err) { }
+  </script>
+</body>
+</html>

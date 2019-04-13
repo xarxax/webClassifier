@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+<title>404_INFO-</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="refresh" content="5;url=">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/Public/Css/home//en/all.css" />
+</head>
+<body class="bj_four">
+	<div class="four">
+    	<div class="top">
+        	<div class="logo"><a href=""><img src="/Uploads/image/" width="134" height="34" /></a></div>
+            <div class="lang"><a class="en" href="/index.php?l=en-us">ENGLISH</a></div>
+        </div>
+        <div class="content">
+        	<h4>404</h4>
+            <p><label id="timesm">5</label>404_SORRY。</p>
+            <p><a class="f_back" href="">404_BACK</a></p>
+        </div>
+    </div>
+    <p align="center"></p>
+</body>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('timesm'),href = "";
+
+var interval = setInterval(function(){
+	var time = --wait.innerHTML;
+	(time == 0) && (location.href = href);
+}, 1000);	
+})();
+</script>
+</html>

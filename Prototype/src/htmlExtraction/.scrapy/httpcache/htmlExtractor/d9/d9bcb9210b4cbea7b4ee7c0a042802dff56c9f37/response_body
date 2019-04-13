@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<title>Loyalty Marketing | Rewards Programs</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="http://www.kobie.com/wp-content/themes/kobieweb/style.css" />
+<link rel="stylesheet" type="text/css" href="http://www.kobie.com/wp-content/themes/kobieweb/styles/colors.css" />
+<link rel="stylesheet" type="text/css" href="http://www.kobie.com/wp-content/themes/kobieweb/styles/responsive.css" />
+<link rel="stylesheet" type="text/css" href="http://www.kobie.com/wp-content/themes/kobieweb/styles/home.css" />
+<link rel="stylesheet" type="text/css" href="http://www.kobie.com/wp-content/themes/kobieweb/styles/fonts.css" />
+
+<link rel="shortcut icon" href="favicon.ico">
+<link type="text/plain" rel="author" href="http://www.kobie.com/humans.txt" />
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/kobie.js"></script>
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/modernizr.js"></script>
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/respond.js"></script>
+<script src="https://cdn.optimizely.com/js/10053048710.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="http://www.kobie.com/wp-content/themes/kobieweb/js/cycle.js"></script>
+
+
+<script type="text/javascript">
+// Scroll navigation
+$(document).ready(function() {
+	$('a.scroll-to-welcome').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#welcome', 800 );
+	});
+	$('a.scroll-to-expertise').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#expertise', 800 );
+	});
+	$('a.scroll-to-services').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#services', 800 );
+	});
+	$('a.scroll-to-people').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#people', 800 );
+	});
+	$('a.scroll-to-insight').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#insight', 800 );
+	});
+	$('a.scroll-to-contact').click(function(event) {
+		event.preventDefault();
+		$.scrollTo('#contact', 800 );
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#home-carousel ul').cycle({
+	    fx:     'fade',
+	    speed:  'fast',
+	    timeout: 0,
+	    speed:  1000,
+	    timeout: 2500,
+	    next:   '.home-carousel-next',
+	    prev:   '.home-carousel-previous',
+	    containerResize: false,
+  		slideResize: false,
+  		fit: 1
+	});
+
+	// timeouts per slide (in seconds)
+	var timeouts = [26,8,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,20,1];
+	function calculateTimeout(currElement, nextElement, opts, isForward) {
+    	var index = opts.currSlide;
+    	return timeouts[index] * 100;
+	}
+
+	$('#welcome div.tagline ul').cycle({
+	    fx: 'fade',
+	    speed:  200,
+	    //timeout: 100,
+	    cleartypeNoBg: true,
+	    containerResize: false,
+  		slideResize: false,
+  		nowrap: true,
+  		timeoutFn: calculateTimeout,
+  		fit: 1,
+  		end: function() { $('div#welcome').addClass('slideshow-done'); }
+
+	});
+});
+</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Experience loyalty marketing with Kobie Marketing. We are the industry leaders in customer reward programs and loyalty marketing solutions."/>
+<link rel="canonical" href="http://www.kobie.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Loyalty Marketing | Rewards Programs" />
+<meta property="og:description" content="Experience loyalty marketing with Kobie Marketing. We are the industry leaders in customer reward programs and loyalty marketing solutions." />
+<meta property="og:url" content="http://www.kobie.com/" />
+<meta property="og:site_name" content="Kobie Marketing" />
+<meta property="og:image" content="http://www.kobie.com/wp-content/uploads/kobie-kdot-og-logo.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Experience loyalty marketing with Kobie Marketing. We are the industry leaders in customer reward programs and loyalty marketing solutions." />
+<meta name="twitter:title" content="Loyalty Marketing | Rewards Programs" />
+<meta name="twitter:image" content="http://www.kobie.com/wp-content/uploads/kobie-kdot-og-logo.jpg" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.kobie.com\/","name":"Kobie Marketing","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.kobie.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Kobie Marketing &raquo; Loyalty Marketing | Reward Programs | Kobie Marketing Comments Feed" href="http://www.kobie.com/home/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.3.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.3.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-584275-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-584275-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.kobie.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/www.kobie.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.kobie.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.3.0'></script>
+<link rel='https://api.w.org/' href='http://www.kobie.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.kobie.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='http://www.kobie.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.kobie.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.kobie.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.kobie.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.kobie.com%2F&#038;format=xml" />
+</head>
+<body class="home page-template page-template-home-template page-template-home-template-php page page-id-7 page-parent red">
+
+
+
+
+
+
+
+	<div id="fixed-navigation">
+		<div id="videoModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close" onclick="pauseVid()">X</a>
+				<video id="kobie_vid" preload="auto" controls width="639" height="359">
+				    <source src="/wp-content/uploads/kobie_video/kobie_commercial_update.mp4" type="video/mp4">
+				    <source src="/wp-content/uploads/kobie_video/kobie_commercial.webm" type="video/webm">
+				    <source src="/wp-content/uploads/kobie_video/kobie_commercial.ogg" type="video/ogg">
+				</video>
+			</div>
+		</div>
+		<!-- Video Script -->
+		<script type="text/javascript">
+			var vid = document.getElementById("kobie_vid");
+			function pauseVid() {
+			    vid.pause();
+					vid.currentTime = 0;
+			}
+			function playVid() {
+			    vid.play();
+			}
+		</script>
+		<div class="wrapper">
+			<div id="mobile-header">
+				<h1><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/logo-mobile.png" alt="Kobie Marketing"/></h1>
+				<h2><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/mobile-nav-toggle.png" alt="Toggle Mobile Navigation"/></h2>
+			</div>
+			<div id="navigation">
+				<ul id="main-nav">
+					<li class="home"><a href="http://www.kobie.com">Home</a></li>
+					<li class="services"><a href="http://www.kobie.com/our-services">Services</a></li>
+					<li class="technology"><a href="http://www.kobie.com/our-services/technology">Tech<span>nology</span></a></li>
+					<li class="clients"><a href="http://www.kobie.com/clients">Clients</a></li>
+					<li class="people"><a href="http://www.kobie.com/our-people">People</a></li>
+					<li class="insight"><a href="http://www.kobie.com/insight">Insight</a></li>
+					<li class="partnerships"><a href="http://www.kobie.com/partnerships">Partners<span>hips</span></a></li>
+					<li class="video"><a href="#videoModal" onclick="playVid(); _gaq.push(['_trackEvent', 'modal_video', 'clicked']);" >KOBIE IN 30 SECONDS <span><img src="/wp-content/uploads/kobie_video/kobie_video_play_icon.png" alt="Kobie in 30 Seconds"></span></a></li>
+					<li class="twitter">
+						<a href="http://twitter.com/#!/kobie_marketing" target="_blank"></a>
+						<div class="tooltip">
+							<div class="tooltip-content">
+								<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>C:\inetpub\wwwroot\KobieWeb2\wp-content\themes\kobieweb\functions.php</b> on line <b>548</b><br />
+							</div>
+						</div>
+					</li>
+					<li class="news"><a href="http://www.kobie.com/press">News</a></li>
+					<li class="blog"><a href="http://blog.kobie.com">Blog</a></li>
+					<li class="contact"><a href="http://www.kobie.com/contact-us">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- /fixed-navigation -->
+	<div class="alert-dropin bg-gray new-privacy-policy" style="z-index: 91;">
+		<div class="wrapper" style="position: relative;">
+			<div>
+				<p class="text-white text-tiny margin-bottom-small" style="max-width: 725px;">We use cookies to offer you a better browsing experience, analyze site traffic, personalize content, emails and newsletters. View our <a href="/privacy/" target="_blank">Privacy Policy</a> for more information on how we use and protect your personal data.</p>
+				<p class="text-tiny">
+					<a href="javascript:void(0)" class="link margin-left-zero" onclick="setCookie('acceptedNewCookieTermsAug2018', 'true', 1000); $(this).parents('.alert-dropin').removeClass('loaded');">I agree.</a>
+				</p>
+			</div>
+			<div class="close">
+				<a href="#">
+					<img src="/wp-content/themes/kobieweb/images/close_icon_new.png" alt="Close">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="main-content">
+		
+<div class="fraud_modal">
+	<div class="close"><a href="#"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/close_icon_new.png" alt="Close"></a></div>
+	<div class="left">
+		<span>What's the cost of</span>
+		<span>loyalty fraud</span>
+		<span>to <strong>your</strong> business?</span>
+	</div>
+	<div class="left">
+		<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/kdot_new.png" alt="Kobie">
+	</div>
+	<p>Finance, Fraud &amp; Findings Report 2018</p>
+	<a href="/reviews" class="btn-outline">Download Now</a>
+</div>
+
+<div class="section" id="welcome">
+			<div class="wrapper">
+
+
+				<div class="content">
+					<div class="tagline">
+						<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/kobie-logo-home.png" alt="Kobie Marketing, the Loyalty Experience Company"/>
+						<ul>
+							<li class="first"><h1>Kobie is <em>the</em> <strong>loyalty</strong> <span>experience company</span></h1></li>
+							<li><h1>Are you looking for...</h1></li>
+							<li><h1>Are you looking for... <span><strong>Data driven marketing</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Evolutionary thinking</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Strategic partnerships</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Flexible infrastructure</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Customer centricity</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Optimized Revenue</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Incremental spend</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Actionable insights</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>New customers</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>A Holistic approach</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>High volume processing</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Scalability</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Flexible Integration</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Industry expertise</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Measurable results</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Strategic horizons</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Omnichannel loyalty</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>More Share of wallet</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Increased Store Traffic</strong></span></h1></li>
+							<li><h1>Are you looking for... <span><strong>Flawless execution</strong></span></h1></li>
+							<li><h1>Experience the <strong>difference</strong></h1></li>
+							<li><h1>Experience <strong>loyalty</strong>&reg;</h1></li></ul>
+					</div>
+				</div>
+			</div>
+			<div class="next-section">
+				<a href="#" class="scroll-to-expertise">What can Kobie <span>do for you?</span></a>
+			</div>
+		</div><!-- /welcome -->
+
+		<div class="section" id="expertise">
+			<div class="wrapper">
+				<div class="content">
+					<div class="sidebar-left">
+						<h1><a href="http://www.kobie.com/clients">Our <span>expertise</span></a></h1>
+						<h3>Over 25 Years in the Loyalty Industry</h3>
+						<p>What could a quarter of a century of experience do for you? A lot. We know the best practices and tried-and-true initiatives that will work for your brand and its loyalty program. With our deep industry knowledge, our work spans across multiple business categories. Choose an industry to see how we can help you.</p>
+						<h3>A sampling of Kobie's clients:</h3>
+						<div id="home-carousel">
+																					<ul>
+																														<li><a href="http://www.kobie.com/clients/telecommunications/verizon/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Verizon.png" alt="Verizon" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/financial-services/bank-of-america/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_BankofAmerica.png" alt="Bank of America" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/att_2016_logo_sm.png" alt="AT&#038;T" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/travel-and-hospitality/amc-theatres/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_AMC.png" alt="AMC Theatres" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/american-eagle-outfitters-logo_sm.png" alt="American Eagle" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Citi_sm.png" alt="Citi" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/retail/bjs/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_BJs.png" alt="BJ&#8217;s Restaurant &#038; Brewhouse" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/VirginAmerica-logo.svg_sm.png" alt="Virgin America" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Seaworld.png" alt="SeaWorld" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Frontier_Communications_Corporation_logo_2016_sm.png" alt="Frontier" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/mastercard_logo_sm.png" alt="MasterCard" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/telecommunications/cellular-one/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Comcast.png" alt="Comcast" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/MarriottInternational_sm.png" alt="Marriott" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/jetblue-airways_sm.png" alt="JetBlue" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/TGI-Fridays_logo_sm.png" alt="Friday&#8217;s" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_maurices-logo.png" alt="Maurice&#8217;s" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/HiltonHotelsLogo.svg_sm.png" alt="Hilton" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_RCCL.png" alt="Royal Caribbean Cruise Lines" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/financial-services/rbc-royal-bank/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_RBCRoyalBank.png" alt="RBC Royal Bank" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/catalina-logo_sm.png" alt="Catalina" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_BuschGardens.png" alt="Busch Gardens" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/cablevision_sm.png" alt="Cablevision" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Comcast_logo_2012_sm.png" alt="Comcast" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/BestWestern-logo_sm.png" alt="Best Western" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/LEGO_logo_sm.png" alt="Lego" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/fcb-logo.png" alt="First Citizens Bank" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/lifestyle/lucasfilm/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_LucasFilms.png" alt="Lucasfilm LTD" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/InterContinental_Hotels_Group.svg_sm.png" alt="Intercontinental Hotels Group" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Ascena-Retail-Group_sm.png" alt="Ascena Retail Group" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Time_Warner_Cable_logo.svg_sm.png" alt="Time Warner Cable" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/choice-privileges-logo_sm.png" alt="Choice Privileges" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/at-home-logo-2015_sm.png" alt="At Home" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/Emirates_logo_sm.png" alt="Emirates" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/LaQuintaInn_sm.png" alt="La Quinta Inns &#038; Suites" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/lufthansa-transparent_sm.png" alt="Lufthansa" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/telecommunications/fairpoint-communications/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_FairPoint.png" alt="Fairpoint Communications" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/financial-services/rbc-bank/"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/rbc-logo_sm.png" alt="RBC Bank" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/lifestyle/sweat-equity/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_SweatEquity.png" alt="Sweat Equity" /></a></li>
+																																					<li><a href="http://www.kobie.com/clients/retail/melitta/"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Melitta.png" alt="Melitta" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_MXT.png" alt="MXT Card Services" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_KForce.png" alt="K-Force" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_PGT.png" alt="PGT" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Advanta.png" alt="Advanta" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/grohe-logo-transparent_sm.png" alt="Grohe" /></a></li>
+																																					<li><a href="#" class="nolink"><img src="http://www.kobie.com/wp-content/uploads/Logos_Client_Avery.png" alt="Avery" /></a></li>
+																					</ul>
+														
+							<a class="home-carousel-previous"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/home-carousel-previous-arrow.png" alt="Previous"/></a>
+							<a class="home-carousel-next"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/home-carousel-next-arrow.png" alt="Next"/></a>
+						</div>
+					</div>
+					<div class="main-right">
+						     					<ul class="industries">
+     						<li><a href="http://www.kobie.com/clients/financial-services/">Financial Services</a></li><li><a href="http://www.kobie.com/clients/telecommunications/">Telecommunications</a></li><li><a href="http://www.kobie.com/clients/travel-and-hospitality/">Travel &amp; Hospitality</a></li><li><a href="http://www.kobie.com/clients/restaurant-and-dining/">Restaurant &amp; Dining</a></li><li><a href="http://www.kobie.com/clients/retail/">Retail</a></li><li><a href="http://www.kobie.com/clients/entertainment/">Entertainment</a></li><li><a href="http://www.kobie.com/clients/lifestyle/">Lifestyle &amp; Consumer Packaged Goods</a></li><li><a href="http://www.kobie.com/clients/b2b/">B2B</a></li>     					</ul>
+
+     									</div>
+				</div>
+			</div>
+			<div class="next-section">
+				<a href="#" class="scroll-to-services">End-to-end <span>loyalty solutions</span></a>
+			</div>
+		</div><!-- /expertise -->
+
+		<div class="section" id="services">
+			<div class="wrapper">
+				<div class="content">
+					<h1><a href="http://www.kobie.com/our-services">Our <span>services</span></a></h1>
+					<ul>
+						<li>
+							<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-strategy.png" alt="Strategy" />
+							<h3><strong>Strategy</strong></h3>
+							<p>Right brain, left brain and the place where best-in-class marketing is born - the middle. From building the business case for loyalty and validating its economic viability to delivering world-renowned marketing campaigns and customer experience enhancements, we’ll help you design and implement the best strategy for your brand.</p>
+							<a href="http://www.kobie.com/our-services/strategy" class="btn btn-red">Be strategic</a>
+						</li>
+						<li>
+							<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-technology.png" alt="Technology" />
+							<h3><strong>Technology</strong></h3>
+							<p>Your business is constantly evolving. The same too goes for our technology. Ranked best in the industry, our robust, real-time, fully-customizable proprietary software, Kobie Alchemy®, offers unparalleled security and privacy standards required for business. It also integrates seamlessly with your IT shop.</p>
+							<a href="http://www.kobie.com/our-services/technology" class="btn btn-blue">Discover Kobie Alchemy&reg;</a>
+						</li>
+						<li>
+							<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-program-management.png" alt="Program Management" />
+							<h3><strong>Program Management</strong></h3>
+							<p>You'll work with a team of industry experts who will become an extension of your staff. From client services and creative execution to our ability to drive strategic partnerships, we’ll help your program become a huge success. And then some.</p>
+							<a href="http://www.kobie.com/our-services/program-management" class="btn btn-green">Make it happen</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="next-section">
+				<a href="#" class="scroll-to-people">Passion starts here <span>meet the team</span></a>
+			</div>
+		</div><!-- /services -->
+
+		<div class="section" id="people">
+			<div class="wrapper">
+				<div class="content">
+					<div class="sidebar-left">
+						<h1><a href="http://www.kobie.com/our-people">Our <span>people</span></a></h1>
+						<h3>We are Kobie</h3>
+						<p>We <strong>are</strong> our people and we constantly recruit top-notch experts in all fields. From technical development to creative execution, we accept nothing but the best: enthusiastic, energetic and devoted to delivering first-class work each and every day. Better yet, you can count on them to be an extension of your own staff. Our team is your team. And we aim to win.</p>
+						<a href="http://www.kobie.com/our-people" class="btn btn-blue">Meet the team</a>
+					</div>
+					<div class="main-right">
+											<ul>
+																					<li><a href="http://www.kobie.com/our-people/strategic-services/marc-berman/">
+								<img src="http://www.kobie.com/wp-content/uploads/mberman_S.jpg" alt="Marc Berman"/>
+								<div class="info">Marc Berman<span>Senior Consultant</span></div>
+								</a></li>
+																					<li><a href="http://www.kobie.com/our-people/client-services/zachary-postans/">
+								<img src="http://www.kobie.com/wp-content/uploads/Zach_Postans_Light_S.jpg" alt="Zachary Postans"/>
+								<div class="info">Zachary Postans<span>Senior Account Manager</span></div>
+								</a></li>
+																					<li><a href="http://www.kobie.com/our-people/client-services/carrie-mann/">
+								<img src="http://www.kobie.com/wp-content/uploads/cmann_S.jpg" alt="Carrie Mann"/>
+								<div class="info">Carrie Mann<span>Senior Director of Client Services</span></div>
+								</a></li>
+																					<li><a href="http://www.kobie.com/our-people/customer-experience/evan-blake/">
+								<img src="http://www.kobie.com/wp-content/uploads/Evan_Blake_SDark.jpg" alt="Evan Blake"/>
+								<div class="info">Evan Blake<span>Director of Client Engagement</span></div>
+								</a></li>
+																					<li><a href="http://www.kobie.com/our-people/marketing-and-communications/traci-aline-brooks/">
+								<img src="http://www.kobie.com/wp-content/uploads/TraciB_S.png" alt="Traci Aline Brooks"/>
+								<div class="info">Traci Aline Brooks<span>QA Tester</span></div>
+								</a></li>
+																					<li><a href="http://www.kobie.com/our-people/human-resources/lauren-lo-armstrong/">
+								<img src="http://www.kobie.com/wp-content/uploads/lo_S.png" alt="Lauren (LO) Armstrong"/>
+								<div class="info">Lauren (LO) Armstrong<span>Content Manager</span></div>
+								</a></li>
+													</ul>
+						<!--<div class="more-kobie-people">
+							<a href="http://www.kobie.com/our-people">More Kobie people</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="next-section">
+				<a href="#" class="scroll-to-contact">Get in touch <span>with us</span></a>
+			</div>
+		</div><!-- /people -->
+
+		<!--Insight temporarily off 9.29.14
+		<div class="section" id="insight">
+			<div class="wrapper">
+				<div class="content">
+					<h1><a href="http://www.kobie.com/insight">Our <span>insight</span></a></h1>
+					<div class="sidebar-left">
+						<div class="latest-post">
+						An error has occurred, which probably means the feed is down. Try again later.						<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/latest-post-arrow.png" class="latest-post-arrow"/>
+						</div>
+						<a href="http://blog.kobie.com" class="muse"><img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/muse-link.png" alt="Muse, blog.kobie.com"/></a>
+					</div>
+					<div class="main-right">
+						<h3>Whitepapers, articles &amp; presentations</h3>
+						<ul class="insight-list" id="b2b">
+																				<ul>
+																																				<li>
+				        			<img src="http://www.kobie.com/wp-content/uploads/VIPs_definition_recognition_appreciation.png" alt="VIPS DEFINITION, RECOGNITION AND APPRECIATION." />
+				        			<h4><a href="http://www.kobie.com/thought-leadership/VIPs_Definition_Recognition_Appreciation.pdf" ><span>Aug 14</span>VIPS DEFINITION, RECOGNITION AND APPRECIATION.</a></h4>
+
+				        		</li>
+																																				<li>
+				        			<img src="http://www.kobie.com/wp-content/uploads/newsletter_thumb_august.jpg" alt="August 2015" />
+				        			<h4><a href="http://www.kobie.com/newsletter/archive/August_2015/" ><span>Aug 13</span>August 2015</a></h4>
+
+				        		</li>
+																																				<li>
+				        			<img src="http://www.kobie.com/wp-content/uploads/history-of-loyalty-cover.jpg" alt="The History of Loyalty" />
+				        			<h4><a href="http://www.kobie.com/thought-leadership/history-of-loyalty.pdf" ><span>Jul 22</span>The History of Loyalty</a></h4>
+
+				        		</li>
+																																				<li>
+				        			<img src="http://www.kobie.com/wp-content/uploads/newsletter_thumb_july.jpg" alt="July 2015" />
+				        			<h4><a href="http://www.kobie.com/newsletter/archive/July_2015/" ><span>Jul 16</span>July 2015</a></h4>
+
+				        		</li>
+														</ul>
+																			</div>
+				</div>
+			</div>
+			<div class="next-section">
+				<a href="#" class="scroll-to-contact">Get in touch <span>with us</span></a>
+			</div>
+		</div> -->
+		<!-- /insight -->
+
+
+		<div class="section" id="contact">
+			<div class="wrapper">
+				<div class="content">
+					<h1><a href="http://www.kobie.com/contact-us">Contact <span>us</span></a></h1>
+					<h3 style="color:#333333; margin-bottom:50px;">Have a Q? We’ve got the A.</h3>
+					<ul>
+						<li>
+							<a href="http://www.kobie.com/contact-us">
+								<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-contact-telephone.png" alt="Contact us by telephone."/>
+								Telephone
+							</a>
+						</li>
+						<li>
+							<a href="http://www.kobie.com/contact-us">
+								<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-contact-email.png" alt="Contact us by email."/>
+								Email
+							</a>
+						</li>
+						<li>
+							<a href="http://www.kobie.com/newsletter">
+								<img src="http://www.kobie.com/wp-content/themes/kobieweb/images/home/icon-contact-newsletter.png" alt="Read our newsletter."/>
+								Newsletter
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- /contact -->
+
+</div><!-- /main-content -->
+
+<div id="pre-footer">
+	<div class="wrapper">
+	</div>
+</div><!-- /pre-footer -->
+
+
+	<div id="footer">
+		<div class="wrapper">
+			<div class="search">
+				<form role="search" method="get" id="searchform2" action="http://www.kobie.com/">
+    				<div>
+    					<input type="text" onfocus="if(this.value == 'search kobie.com') this.value = '';" onblur="if(this.value=='') this.value='search kobie.com';" value="search kobie.com" name="s" id="s2" />
+       					<input type="submit" id="searchsubmit2" value="" />
+    				</div>
+				</form>
+			</div>
+			<ul class="links">
+				<li>
+					<ul>
+						<li><a href="http://www.kobie.com">Home</a></li>
+						<li><a href="http://www.kobie.com/our-services">Services</a></li>
+						<li><a href="http://www.kobie.com/our-services/technology">Tech<span>nology</span></a></li>
+						<li><a href="http://www.kobie.com/clients">Clients</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="http://www.kobie.com/our-people">People</a></li>
+						<li><a href="http://www.kobie.com/insight">Insight</a></li>
+						<li><a href="http://www.kobie.com/about-us">About</a></li>
+						<li><a href="http://www.kobie.com/partnerships">Partners<span>hips</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="http://www.kobie.com/press">Press</a></li>
+						<li><a href="http://www.kobie.com/careers">Careers</a></li>
+						<li><a href="http://www.kobie.com/awards">Awards</a></li>
+						<li><a href="http://blog.kobie.com">Blog</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<!--<li class="newsletter">-->
+						<li>
+							<a href="http://www.kobie.com/newsletter">Newsletter</a>
+							<!--<div class="tooltip">
+								<div class="tooltip-content" style="height:42px;">
+									<form method="post" action="http://www.pages04.net/kobiemarketinginc/newsletter/Optin_Embed" pageId="14497018" siteId="190839" parentPageId="14497017" >
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                        <td >
+                                        <div style="position: relative; overflow: hidden; width:160px; padding:8px;" id="container_EMAIL">
+
+
+                                        <input type="text" name="Email" id="control_EMAIL" label="Email" value=" Email" onfocus="if(this.value == ' Email') { this.value = ''; }" class="textInput defaultText" style="margin-top:2px; padding:3px; height: 15px; width: 95px;">
+                                        <input type="submit" style="width: 60px; text-align: center; cursor: pointer; border: 0; border-left: solid 1px #000000; height: 21px; padding: 0; -webkit-border-top-right-radius: 30px; -webkit-border-bottom-right-radius: 30px; -moz-border-radius-bottomright: 30px; -moz-border-radius-topright: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; background: #ffffff; text-transform: uppercase; position: absolute; top: 10px; right: 10px; display: block; " value="Submit" />
+
+                                        </div>
+                                        </td>
+                                        </tr>
+
+
+                                        <input type="hidden" name="formSourceName" value="StandardForm"><input type="hidden" name="sp_exp" value="yes"></table></form>
+
+								</div>
+							</div>-->
+						</li>
+						<li><a href="http://www.kobie.com/contact-us">Contact</a></li>
+						<li><a href="http://www.kobie.com/privacy">Privacy</a></li>
+						<li><a href="http://www.kobie.com/sitemap">Sitemap</a></li>
+					</ul>
+				</li>
+			</ul>
+			<br style="clear:both; height:0;"/>
+			<div class="copyright">
+				<ul>
+					<li class="linkedin">
+						<a href="http://linkedin.com/company/kobie-marketing" target="_blank"><span>LinkedIn</span></a>
+						<div class="tooltip">
+							<div class="tooltip-content">
+								<a href="http://linkedin.com/company/kobie-marketing">Find us on LinkedIn!</a>
+															</div>
+						</div>
+					</li>
+					<li class="twitter">
+						<a href="http://twitter.com/#!/kobie_marketing" target="_blank"><span>Twitter</span></a>
+						<div class="tooltip">
+							<div class="tooltip-content">
+								<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>C:\inetpub\wwwroot\KobieWeb2\wp-content\themes\kobieweb\functions.php</b> on line <b>548</b><br />
+							</div>
+						</div>
+					</li>
+					<li class="kobie-blog">
+						<a href="http://blog.kobie.com" target="_blank"><span>Kobie Blog</span></a>
+						<div class="tooltip">
+							<div class="tooltip-content">
+								Read the Kobie Blog!							</div>
+						</div>
+					</li>
+					<li class="facebook">
+						<a href="http://www.facebook.com/pages/Kobie-Marketing-Inc/122558394467169" target="_blank"><span>Facebook</span></a>
+						<div class="tooltip">
+							<div class="tooltip-content">
+								<a href="http://www.facebook.com/pages/Kobie-Marketing-Inc/122558394467169">Friend us on Facebook!</a>
+															</div>
+						</div>
+					</li>
+				</ul>
+				<p>&copy; 2019 Kobie Marketing, Inc.</p>
+			</div>
+		</div>
+	</div><!-- /footer -->
+
+<script type='text/javascript' src='http://www.kobie.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+
+
+<!-- Google Analytics -->
+<script>
+	function getUrlParameter(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	};
+
+	var trackingID = "";
+	var commonID = getUrlParameter("CommonID");
+	
+	switch(window.location.hostname) {
+		case "kobieweb.dev.kobie.com":
+			trackingID = "UA-584275-37";
+			break;
+		case "kobieweb.qa.kobie.com":
+			trackingID = "UA-584275-36";
+			break;
+		case "www.kobie.com":
+			trackingID = "UA-584275-1";
+			break;
+		default:
+			trackingID = "UA-584275-1";
+	}
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', trackingID, 'auto');
+	ga('set', 'forceSSL', true);
+	if(commonID.length > 0) {
+		ga('set', 'dimension1', commonID);
+	}
+	ga('send', 'pageview', location.pathname);
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript">
+    adroll_adv_id = "CFUZHSBH4NCRFAM4UHEVOF";
+    adroll_pix_id = "CIPJCV7M2VAGBPTVQJFEEV";
+    /* OPTIONAL: provide email to improve user identification */
+    /* adroll_email = "username@example.com"; */
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
+
+<!-- pardot implementation -->
+<script type="text/javascript">
+piAId = '592521';
+piCId = '17941';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+</body>
+</html>

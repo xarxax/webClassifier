@@ -1,0 +1,854 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+    <title>Welcome To Niagara Specialty Metals - Niagara Specialty Metals</title>
+    
+    
+    
+        <base href="http://www.nsm-ny.com/"/>
+    
+
+<!-- start layouts/put_meta.cfm -->
+
+
+
+<meta name="description" content="Niagara Specialty Metals is a manufacturer of tool steels, high speed steels, martensitic stainless steels, powdered metals and controlled expansion alloys including aerospace grades."/>
+<meta name="Keywords" content=""/>
+
+
+<!-- end layouts/put_meta.cfm --> 
+    
+    
+    <!-- REQUIRED - Qforms provides the javascript form field error checking -->
+    
+
+
+<script type="text/javascript" src="includes/qforms/lib/qforms.js?v=2"></script>
+
+<script type="text/javascript">
+	<!--//
+	// set the path to the qForms directory
+	qFormAPI.setLibraryPath("includes/qforms/compressed/");
+	// this loads all the default libraries
+	qFormAPI.include("*");
+	// load the "Bits" add-on library
+	qFormAPI.include("bits");
+
+	
+//Test float fields to make sure they are proper floats (allows negative numbers)
+function __IsNumericfloat()
+{
+// For foreign currencies, change the decimal to a comma on the next line:
+var ValidChars = "01213456789.-";
+var IsNumber = true;
+var Char ;
+var sText = this.value;
+var numDecimals = 0;
+
+for (i = 0; i < sText.length && IsNumber == true; i++)
+{
+Char = sText.charAt(i);
+if (ValidChars.indexOf(Char) == -1)
+{
+IsNumber = false;
+}
+//Checks for minus sign
+if (Char == '-' && i > 0)
+{
+IsNumber = false;
+}
+//Checks to make sure there is only 1 decimal point in the number
+// For foreign currencies, change the decimal to a comma on the next line:
+if (Char == '.')
+{
+numDecimals = numDecimals + 1;
+}
+}
+
+if (numDecimals > 1 || IsNumber == false)
+{
+this.error = "The field " +
+this.description + " does not contain a valid number";
+}
+}
+
+_addValidator("IsNumericfloat",__IsNumericfloat);
+
+function __QuantityMult(num) {
+ // Check to make sure a product quantity being ordered is a multiple of a specfic value
+ if( this.value % num != 0) {
+  // error message
+  this.error = "The " + this.description + " field must";
+  this.error += " be a multiple of " + num;
+ }
+}
+  
+_addValidator("isQuantityMult", __QuantityMult);
+//-->
+</script>
+	
+
+
+
+    <script type="text/javascript" src="includes/statusbarmessage.js"></script>
+
+    
+
+
+<!-- Favicons  ================================================== -->
+
+
+<!-- end layouts/put_layouthead.cfm -->
+
+<!-- Holds the CSS, closes Head tag, creates BODY tag -->
+
+
+
+
+
+
+
+<!-- default store css file -->
+<link rel="stylesheet" href="css/bootstrap.css" id="bootstrap">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css?v=660" id="style">
+
+<!-- Kickstart menus -->
+
+
+
+
+
+
+<!-- custom CSS from Color Palette -->
+<style>
+
+
+	body.boxed, body.fullwidth {
+	background: url(images/bkgds/bkgd_default.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;}
+
+
+body, 
+div, 
+p, 
+td, 
+li, 
+span {color:#333333} 
+table.cart {background:#ffffff} 
+table.cart td {color:#242215} 
+table.cart thead {background-color:#012966} 
+table.cart thead th, table.cart thead td {color:#ffffff} 
+.required input, input.required, .required textarea, textarea.required {color:#ff3300} 
+table.cart tr.even, table.cart tr.alt, table.cart tr:nth-of-type(even) {
+    background: #dddddd; } 
+
+
+/* put button text color back to white */
+a.button {color:white}
+
+</style>
+
+
+
+
+<link rel="stylesheet" href="css/jetmenu.css" id="jetmenu">
+
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.scrollbar.css">
+<link rel="stylesheet" href="css/navigation.css" id="navigation">  
+
+<link rel="stylesheet" href="css/custom.css" id="custom">
+<link rel="stylesheet" href="css/footer.css" id="footer">
+
+<link href="css/camera.css" rel="stylesheet">
+<link href="css/google-map.css" rel="stylesheet">
+
+
+
+<!-- Moderizer script, required for Foundation -->
+<script src="js/vendor/modernizr.js"></script>
+
+<!-- added by put_homefeatured.cfm -->
+	<link href="css/hooks_home.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- added by put_rcol_featvideo.cfm -->
+<style>
+.fvideo-body {
+	display:block;
+	height:auto;
+	width: 300px;
+	max-width: 300px;
+	float: right;
+}
+H3.fvideo-title {
+    font: 18px 'Fira Sans', arial, helvetica, sans-serif;
+	font-weight:600;
+	line-height:22px;
+	color:#ff7900;
+	text-align: left;
+	display: inline-block;
+}
+H3.fvideo-title a:hover {
+	color:#0f366f;
+	text-decoration: underline;
+}
+H3.fvideo-title a {
+	color:#ff7900;
+	text-decoration:none;
+}
+
+.fvideo-details {
+    font-size: 14px 'Fira Sans', arial, helvetica, sans-serif;
+	color:#333;
+	font-weight: 400;
+	text-align:left;
+	float:right;
+	padding-bottom:8px;
+}
+
+.fvideo-details a {
+    font-size: 14px 'Fira Sans', arial, helvetica, sans-serif;
+	color:#ff7900;
+	font-weight: 500;
+	text-align:right;
+	float:right;
+}
+.fvideo-details a:hover {
+	color:#0f366f;
+}
+
+
+fieldset {
+  border: 1px solid #ffcb7f;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 22px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+}
+
+</style>
+<!-- added by put_rcol_featserv.cfm -->
+<style>
+.fservice-body {
+	display:block;
+	height:auto;
+	width: 300px;
+	max-width: 300px;
+	float: right;
+}
+H3.fservice-title {
+    font: 18px 'Fira Sans', arial, helvetica, sans-serif;
+	font-weight:600;
+	line-height:22px;
+	color:#ff7900;
+	text-align: left;
+	display: inline-block;
+}
+H3.fservice-title a:hover {
+	color:#0f366f;
+	text-decoration: underline;
+}
+H3.fservice-title a {
+	color:#ff7900;
+	text-decoration:none;
+}
+
+.fservice-details {
+    font-size: 14px 'Fira Sans', arial, helvetica, sans-serif;
+	color:#333;
+	font-weight: 400;
+	text-align:left;
+	float:right;
+	padding-bottom:8px;
+}
+
+.fservice-details a {
+    font-size: 14px 'Fira Sans', arial, helvetica, sans-serif;
+	color:#ff7900;
+	font-weight: 500;
+	text-align:right;
+	float:right;
+}
+.fservice-details a:hover {
+	color:#0f366f;
+}
+
+
+fieldset {
+  border: 1px solid #ffcb7f;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 22px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+}
+
+</style>
+</head>
+
+
+
+<!-- start layouts/put_body.cfm -->
+<body class="boxed">
+<!-- end layouts/put_body.cfm -->
+
+
+
+
+<!-- Holds all content -->
+<div id="wrapper">
+
+    <!-- Top Bar - small bar at top -->
+    
+<div id="dtop-bar">
+	<div class="row container">
+	
+		<!-- Top Bar Menu -->
+			
+			<div class="medium-12 columns text-right hide-for-small hide-for-print">
+				
+					<ul class="dtop-bar-menu">
+		            	
+			
+			
+
+			<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=users.manager" onmouseover="dmim('My Account'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		My Account </a></li><li>&nbsp;<span style="color:white;">|</span>&nbsp;</li> 
+			
+			
+
+			<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=shopping.basket" onmouseover="dmim('View Cart'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		View Cart </a></li> 
+						<li>&nbsp;<span style="color:white;">|</span>&nbsp;</li>
+						<li>&nbsp;<span style="color:white;font-size:14px;font-weight:700;">Phone: 800-424-0048</span>&nbsp;</li>
+					</ul>
+			</div>
+
+	</div>
+</div>
+
+    
+    <!-- Header - logo and other items -->
+    
+
+
+
+
+
+
+
+
+
+<header class="header header-two">
+  <div class="header-wrapper">
+	<div class="container">
+	  <div class="row">
+		<div class="col-xs-6 col-md-2 col-lg-3 logo-box">
+		  <div class="logo">
+		  	
+
+
+
+ 
+			
+
+<!-- start layouts/put_sitelogo.cfm -->
+<div id="putsitelogo" class="layouts">
+
+		<!-- customtags/putimage.cfm -->
+		<a href="http://www.nsm-ny.com/index.cfm" onmouseover="dmim('Home'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;"><img src="/images/logo_niagara.jpg" border="0" alt="Home" class="imglogo" /></a> 
+</div>
+<!-- end layouts/put_sitelogo.cfm -->		
+			
+			
+			
+		  </div>
+		</div><!-- .logo-box -->
+		
+		<div class="col-xs-6 col-md-10 col-lg-9 right-box">
+		  <div class="right-box-wrapper">
+			<div class="header-icons" style="padding-right:15px;">
+			  <div class="search-header hidden-600">
+				<a href="#">
+				  <svg x="0" y="0" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+					<path d="M12.001,10l-0.5,0.5l-0.79-0.79c0.806-1.021,1.29-2.308,1.29-3.71c0-3.313-2.687-6-6-6C2.687,0,0,2.687,0,6
+					s2.687,6,6,6c1.402,0,2.688-0.484,3.71-1.29l0.79,0.79l-0.5,0.5l4,4l2-2L12.001,10z M6,10c-2.206,0-4-1.794-4-4s1.794-4,4-4
+					s4,1.794,4,4S8.206,10,6,10z"></path>
+					<image src="img/png-icons/search-icon.png" alt="" width="16" height="16" style="vertical-align: top;">
+				  </svg>
+				</a>
+			  </div><!-- .search-header -->
+			  
+			 <div class="phone-header hidden-600">
+				<a href="#">
+				  <svg x="0" y="0" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+					<path d="M11.001,0H5C3.896,0,3,0.896,3,2c0,0.273,0,11.727,0,12c0,1.104,0.896,2,2,2h6c1.104,0,2-0.896,2-2
+					c0-0.273,0-11.727,0-12C13.001,0.896,12.105,0,11.001,0z M8,15c-0.552,0-1-0.447-1-1s0.448-1,1-1s1,0.447,1,1S8.553,15,8,15z
+					M11.001,12H5V2h6V12z"></path>
+					<image src="img/png-icons/phone-icon.png" alt="" width="16" height="16" style="vertical-align: top;">
+				  </svg>
+				</a>
+			  </div><!-- .phone-header -->
+			</div><!-- .header-icons -->
+			
+			<div class="primary">
+			  <div class="navbar navbar-default" role="navigation">
+				<button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target=".primary .navbar-collapse">
+				  <span class="text">Menu</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				
+				<!-- Start: Primary navigation --><nav class="collapse collapsing navbar-collapse"><ul class="nav navbar-nav navbar-center"><li class=""><a href="http://www.nsm-ny.com/index.cfm" title="Home">HOME</a></li><!-- DropPosition --><li class="parent megamenu promo"><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=104" title="Products">PRODUCTS</a><ul class="sub"><li class="sub-wrapper"><div class="sub-list"><div class="box"><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=26" title="Stainless Steel">STAINLESS STEEL</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=27" title="Knife Steels">KNIFE STEELS</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=28" title="Tool Steel">TOOL STEEL</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=29" title="CPM Tool Steel Grades">CPM TOOL STEEL GRADES</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=30" title="Special Purpose Tool Steels">SPECIAL PURPOSE TOOL STEELS</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=31" title="High Speed Tool Steel">HIGH SPEED TOOL STEEL</a></li></ul></div><!-- .box --><div class="box"><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=32" title="Powder Form">POWDER FORM</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=33" title="Authorized Distributors">AUTHORIZED DISTRIBUTORS</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=35" title="NSM Data Sheets">NSM DATA SHEETS</a></li></ul></div><!-- .box --></div><!-- .sub-list --><div class="promo-block bg"><h3><a href="index.cfm?fuseaction=page.display&amp;page_id=28">Featured Product</a></h3><a href="index.cfm?fuseaction=page.display&amp;page_id=28"><img class="replace-2x" src="/images/NavPromo/nav_fpo1.jpg" width="100%" alt="Featured Product" style="max-width:300px;"></a></div><!-- .promo-block --></li><!-- sub-wrapper --></ul><!-- sub --></li><!-- DropPosition --><li class="parent megamenu promo"><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=105" title="Services">SERVICES</a><ul class="sub"><li class="sub-wrapper"><div class="sub-list"><div class="box"><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=36" title="Annealing">ANNEALING</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=37" title="Descaling">DESCALING</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=38" title="Flattening">FLATTENING</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=39" title="Hot Rolling Mills">HOT ROLLING MILLS</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=40" title="Sawing, Shearing and Cutting">SAWING, SHEARING AND CUTTING</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=41" title="Conversion Services">CONVERSION SERVICES</a></li></ul></div><!-- .box --></div><!-- .sub-list --><div class="promo-block bg"><h3><a href="index.cfm?fuseaction=page.display&amp;page_id=40">Featured Service</a></h3><a href="index.cfm?fuseaction=page.display&amp;page_id=40"><img class="replace-2x" src="/images/NavPromo/nav_fpo.jpg" width="100%" alt="Featured Service" style="max-width:300px;"></a></div><!-- .promo-block --></li><!-- sub-wrapper --></ul><!-- sub --></li><!-- DropPosition --><li class="parent category"><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;category_id=1" title="Shop Online">SHOP ONLINE</a><ul class="sub"><li class="sub-wrapper"><div class="sub-list"><div class="box"><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=2" title="154-CM">154-CM</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=49" title="416">416</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=3" title="440-C">440-C</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=74" title="6-4 Titanium">6-4 Titanium</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=9" title="CPM® - 154">CPM® - 154</a></li></ul><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=69" title="CPM® 20-CV">CPM® 20-CV</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=8" title="CPM® 3-V®">CPM® 3-V®</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=50" title="CPM® 4-V®">CPM® 4-V®</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=64" title="CPM® Cru-Wear®">CPM® Cru-Wear®</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=11" title="CPM® D-2">CPM® D-2</a></li></ul><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=5" title="CPM® M-4">CPM® M-4</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=6" title="CPM® S30-V">CPM® S30-V</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=7" title="CPM® S35-VN">CPM® S35-VN</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=78" title="CPM® S60-V">CPM® S60-V</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=59" title="CPM® S90-V">CPM® S90-V</a></li><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_ID=10" title="D-2">D-2</a></li></ul></div></div></li></ul><li class="parent"><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=42" title="About Us">ABOUT US</a><ul class="sub"><li class="sub-wrapper"><div class="sub-list"><div class="box"><ul><li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=23" title="History">HISTORY</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&amp;page_id=25" title="Tour">TOUR</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&amp;Category_id=77" title="Video Library">VIDEO LIBRARY</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=users.staff" title="Staff Login">STAFF LOGIN</a></li> <li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.contactUs" title="Contact Us">CONTACT US</a></li></ul></div><!-- .box --></div><!-- .sub-list --><div class="promo-block bg"></div><!-- .promo-block --></li><!-- sub-wrapper --></ul><!-- sub --></li><!-- DropPosition --></ul><!-- nav --></nav><!-- End: Primary navigation -->
+	  
+				
+			  </div>
+			</div><!-- .primary -->
+		  </div>
+		</div>
+		
+		<div class="phone-active col-sm-9 col-md-9">
+		  <a href="#" class="close"><span>close</span>x</a>
+		  <span class="calltitle">Call Us</span> <strong>800-424-0048</strong>
+		</div>
+		<div class="search-active col-sm-9 col-md-9">
+		  <a href="#" class="close"><span>close</span>x</a>
+		  
+		  <form action="http://www.nsm-ny.com/index.cfm?fuseaction=page.searchResults" method="post" class="search-form">
+		  
+			<input class="search-string form-control" type="search" placeholder="Enter Keyword, product name or item# here..." name="search-string">
+			<button class="search-submit">
+			  <svg x="0" y="0" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+				<path fill="#231F20" d="M12.001,10l-0.5,0.5l-0.79-0.79c0.806-1.021,1.29-2.308,1.29-3.71c0-3.313-2.687-6-6-6C2.687,0,0,2.687,0,6
+				s2.687,6,6,6c1.402,0,2.688-0.484,3.71-1.29l0.79,0.79l-0.5,0.5l4,4l2-2L12.001,10z M6,10c-2.206,0-4-1.794-4-4s1.794-4,4-4
+				s4,1.794,4,4S8.206,10,6,10z"></path>
+				<image src="img/png-icons/search-icon.png" alt="" width="16" height="16" style="vertical-align: top;">
+			  </svg>
+			</button>
+		  </form>
+		  
+		</div>
+	  </div><!--.row -->
+	</div>
+  </div><!-- .header-wrapper -->
+</header><!-- .header -->
+
+
+      
+    <!-- breadcrumbs --> 
+	
+
+<!-- start includes/put_parentstring.cfm -->
+<div class="row container breadcrumbtrail">
+	<div class="small-12 column">
+
+	<ul class="breadcrumbs"><li><a href="http://www.nsm-ny.com/index.cfm" onmouseover="dmim('Welcome To'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;">Home</a></li> </ul> 
+    </div>
+    
+    
+   
+
+</div>
+<!-- end includes/put_parentstring.cfm -->
+
+		<div class="clear" style="margin-bottom:12px;"></div>
+	  
+
+	<!-- All content -->  
+    <div class="row" style="padding-left:15px;padding-right:15px;">   
+        <div class="medium-8 columns">
+              
+            <!-- start page/dsp_page.cfm --><div id="dsppage" class="page"><!-- customtags/puttitle.cfm --><div id="pageTitle"><h1 class="page">Welcome To <span class="title2">Niagara Specialty Metals</span></h1></div><!-- allows you to add javascript to text editor without rewrite --><!-- customtags/puttext.cfm --><div class="mainpage">Niagara Specialty Metals is a manufacturer of tool steels, high speed steels, martensitic stainless steels and controlled expansion alloys. We also provide conversion processing for Titanium, temperature and corrosion resistant metals, electronic alloys and other super alloys. We are a unique specialty steel manufacturer unlike any other in North America. Our extensive equipment andflexible manufacturing processes enable us to accept orders from 1 lb to 10,000 lbs. Each order is processed to the exact requirements of our customer. If your requirements involve the manufacturing of parts from flat steel, in any form and in any quantity, Niagara Specialty Metals is your source for unmatched reliability.</div><!-- category/catcore_catheader_only.cfm --></div><div style="padding-bottom:24px;"></div><!-- end page/dsp_page.cfm --> 
+			<div class="clear" style="margin-bottom:10px;"></div>
+			
+			
+			
+				<div class="index_block">
+				
+
+
+
+	
+<div class="camera_wrap camera_black_skin" id="camera_wrap">
+	
+					<div data-src="/images/carousel/carousel_slide1.jpg" data-link="index.cfm?fuseaction=page.display&page_id=38">
+						<div class="camera_caption fadeIn">
+							<div class="right_slider_side sl_1">
+							<div class="mainSubhead">Start to Finish</div>
+							<div class="mainTitle">PRECISE AND FLAT</div>
+							<p>To make the first step in your process as easy as possible,  finished products are precision flattened. We can also remove scale, or machine the surface to minimize thickness variations and eliminate surface defects.</p>
+							  <div align="right" class="sl-read-more" style="padding-right:10px;">
+							  <a href="index.cfm?fuseaction=page.display&amp;page_id=38"><button type="button" class="btn btn-carousel"><strong>Learn More &raquo;</strong></button></a></div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-src="/images/carousel/carousel_slide2.jpg" data-link="index.cfm?fuseaction=page.display&page_id=40">
+						<div class="camera_caption fadeIn">
+							<div class="right_slider_side sl_1">
+							<div class="mainSubhead">Custom Made</div>
+							<div class="mainTitle">CUTTING CAPABILITIES</div>
+							<p>Our cutting capabilities are extensive. We have a 3kW CNC laser to cut sheets up to .300 inches thick and two abrasive water jets that will cut basically any material up to 4" thick.</p>
+							  <div align="right" class="sl-read-more" style="padding-right:10px;">
+							  <a href="index.cfm?fuseaction=page.display&amp;page_id=40"><button type="button" class="btn btn-carousel"><strong>Learn More &raquo;</strong></button></a></div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-src="/images/carousel/carousel_slide3.jpg" data-link="index.cfm?fuseaction=page.display&page_id=23">
+						<div class="camera_caption fadeIn">
+							<div class="right_slider_side sl_1">
+							<div class="mainSubhead">Employee Owned</div>
+							<div class="mainTitle">OVER 30 YEARS OF SPECIALIZED SERVICE</div>
+							<p>Niagara Specialty Metals is employee-owned, so each person in our staff gives your order special treatment, from start to finish. Everyone here has a stake in doing our best to serve you.</p>
+							  <div align="right" class="sl-read-more" style="padding-right:10px;">
+							  <a href="index.cfm?fuseaction=page.display&amp;page_id=23"><button type="button" class="btn btn-carousel"><strong>Learn More &raquo;</strong></button></a></div>
+							</div>
+						</div>
+					</div>
+					
+</div>		
+<div class="clearfix" style="margin-bottom:24px;"></div>
+
+				</div>
+			
+			<div class="clear" style="margin-bottom:40px;"></div>
+			
+			     
+			
+			
+			
+			
+			
+			 
+			
+			
+			
+			
+			
+			
+			<div class="clear" style="margin-top:30px;"></div>
+			
+			
+        </div>
+		
+		
+		<div align="right" class="medium-4 columns right" style="padding-top:5px;padding-left:20px;text-align:left;">
+			
+			
+	<div style="float:right;">
+		
+		
+		<a href="http://www.nsm-ny.com/click.cfm?ID=2"><img src="/images//bannerads/banner_onlinestore.jpg" border="0" alt="Shop Online Now!" style="max-width:100%;"></a>
+			
+	</div>
+	<div class="clearfix" style="margin-bottom:36px;"></div>
+
+
+	<div class="row">
+	
+		<div class="small-12 columns">	
+			<div class="fvideo-body">
+			<div style="display:block;">
+		    
+		        <fieldset>
+		        <legend><h4>FEATURED VIDEO</h4></legend>
+				
+				<a href="index.cfm?fuseaction=feature.display&amp;feature_ID=1&amp;ParentCat=77" title="Take a Sneak Peak into Niagara Specialty Metals">
+				<img class="replace-2x" src="/images/rcolumn/video.jpg" width="100%" alt="Take a Sneak Peak into Niagara Specialty Metals" style="max-width:285px;position:relative;z-index:1;padding-bottom:6px;">
+				</a>
+				<h3 class="fvideo-title"><a href="index.cfm?fuseaction=feature.display&amp;feature_ID=1&amp;ParentCat=77" title="Take a Sneak Peak into Niagara Specialty Metals">TAKE A SNEAK PEAK INTO NIAGARA SPECIALTY METALS</a></h3>
+				<p class="fvideo-details">Watch our extensive equipment and flexible manufacturing processes in action.<br />
+				
+				<a href="index.cfm?fuseaction=feature.display&amp;feature_ID=1&amp;ParentCat=77" title="Take a Sneak Peak into Niagara Specialty Metals" style="float:right;margin-bottom: -20px;"><strong>View Video &raquo;</strong></a></p>
+				</fieldset>
+				
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix" style="margin-bottom:30px;"></div>
+
+	<div class="clearfix" style="margin-bottom:15px;"></div>
+	
+			
+		</div>
+    </div>
+   
+   <!-- Footer -->  
+   
+	<div class="clearfix" style="margin-bottom:30px;"></div>
+	
+
+
+
+
+<div id="footer-container">
+	<div class="row">
+		<div class="small-12">
+				<div class="nav">
+					<div class="footer">
+					 
+					  <div class="footer-cols-wrapper">
+						  <div class="footer-address">
+						  
+							
+							<img src="images/logo_niagara_blue.jpg" width="100%" height="114" alt="" border="0" style="margin-top:18px;max-width:150px;"><br />
+							
+								<div class="footer-text18" style="margin-top:3px;">Niagara Specialty Metals<a href="http://www.nsm-ny.com/index.cfm?fuseaction=home.admin"><img src="images/spacer.gif" width="10" height="10" alt="" border="0"></a></div><br/>
+							
+								<div class="footer-text">12600 Clarence Center Road<br/>
+Akron, NY 14001 &nbsp;|&nbsp; <a href="mailto&#58;accounting&#64;nsm-ny&#46;com">Send Email</a> </div> 
+						</div>
+					  
+					  
+						<div class="footer-col">			
+							<h4>QUICK LINKS</h4>
+							<div class="footer-col-content">
+								<ul style="margin:0;padding:0;padding-right:15px;">
+									
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&category_id=1" onmouseover="dmim('Shop Online'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		Shop Online </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&page_id=105" onmouseover="dmim('Services'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		Services </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&page_id=43" onmouseover="dmim('Shipping Rates'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		Shipping Rates </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=users.manager" onmouseover="dmim('My Account'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		My Account </a></li> 
+								</ul>							
+							</div>
+						</div>
+						
+						<div class="footer-col">
+							<h4>COMPANY INFORMATION</h4>
+							<div class="footer-col-content">
+								<ul style="margin:0;padding:0;padding-right:15px;">
+									
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&page_id=42" onmouseover="dmim('About Us'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		About Us </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&page_id=23" onmouseover="dmim('History'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		History </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=category.display&Category_id=77" onmouseover="dmim('Video Library'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		Video Library </a></li> 
+		
+		<li><a href="http://www.nsm-ny.com/index.cfm?fuseaction=page.contactUs" onmouseover="dmim('Contact Us'); return document.returnValue;" onmouseout="dmim(''); return document.returnValue;" >
+		
+		Contact Us </a></li> 
+								</ul>
+							</div>
+						</div>
+						
+						
+						
+						<div class="footer-col last">
+							<table width="250" cellspacing="0" cellpadding="4" border="0" align="right">
+							<tr>
+							    <td align="center" valign="bottom" style="padding-top:12px;">
+								<!-- SSL tag. Do not edit. -->
+									
+							</td>
+							</tr>
+							<tr>
+							    <td colspan="2" align="right"><img src="images/cc.png" width="161" alt="" border="0" style="padding-top:4px;"></td>
+							</tr>
+							<tr><td colspan="2" align="right" style="text-align:right;">
+							
+							<div class="footer-copyright" style="padding-top:12px;">&copy;1998-2019 Niagara Specialty Metals. <br />
+							All Rights Reserved. &nbsp;|&nbsp; <a class="link" href="http://www.nsm-ny.com/index.cfm?fuseaction=page.display&page_id=107">Legal</a></div>
+							
+							
+							</td></tr>
+							</table>
+
+						</div>
+						
+								
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dsp_footer -->
+
+</div><!-- end wrapper -->
+
+
+<!-- TRACKING CODE -->
+
+<!-- google tracking code -->
+
+
+<!-- JAVASCRIPT (required) -->
+<script src="js/jquery/jquery-1.11.3.min.js"></script>
+
+<script src="js/jquery/bootstrap.min.js"></script>
+<script src="js/jquery/jquery.imagesloaded.min.js"></script>
+<script src="js/jquery/jquery.appear.js"></script>
+<script src="js/jquery/jquery.easing.1.3.js"></script>
+<script src="js/jquery/SmoothScroll.js"></script>
+<script src="js/jquery/jquery.scrollbar.min.js"></script>
+<script src="js/jquery/main.js"></script>
+
+
+
+
+<!-- load foundation scripts -->
+<script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+
+
+	<link type="text/css" href="css/camera.css" rel="stylesheet" id="camera" media="all" />
+	<script type="text/javascript" src="js/jquery/camera.js"></script>
+
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#camera_wrap').camera({
+			alignment: 'topLeft',
+			height: '58%',
+			minHeight: '100%',
+			loader : false,
+			navigation: false,
+			fx: 'simpleFade',
+			navigationHover: false,
+			thumbnails: false,
+			playPause: false
+			});
+		});    
+	</script>
+
+<!-- Responsive tables --->
+
+
+
+<!-- slick slider :: http://kenwheeler.github.io/slick/ -->
+
+
+				
+<script src="js/vendor/hoverIntent.js"></script>  <!-- cart hover/hide -->
+<script>
+	$(document).ready(function(){
+
+	  
+	  // Cart
+	  //----------------------------------------//
+
+		$("#cart").hoverIntent({
+			sensitivity: 3,
+			interval: 60,
+			over: function () {
+				$('.cart-list', this).fadeIn(200);
+				$('.cart-btn a.button', this).addClass('hovered');
+			},
+			timeout: 220,
+			out: function () {
+				$('.cart-list', this).fadeOut(100);
+				$('.cart-btn a.button', this).removeClass('hovered');
+			}
+		});
+		
+		
+		//	Back To Top Button
+		//----------------------------------------//
+
+		var pxShow = 600; // height on which the button will show
+		var fadeInTime = 400; // how slow / fast you want the button to show
+		var fadeOutTime = 400; // how slow / fast you want the button to hide
+		var scrollSpeed = 400; // how slow / fast you want the button to scroll to top.
+
+		jQuery(window).scroll(function(){
+			if(jQuery(window).scrollTop() >= pxShow){
+				jQuery("#backtotop").fadeIn(fadeInTime);
+			} else {
+				jQuery("#backtotop").fadeOut(fadeOutTime);
+			}
+		});
+			 
+		jQuery('#backtotop a').click(function(){
+			jQuery('html, body').animate({scrollTop:0}, scrollSpeed); 
+			return false; 
+		}); 
+
+
+
+		/*---------------------------------
+			MENU Dropdowns
+		-----------------------------------*/
+		$('ul.menu').each(function(){
+			// add the menu toggle
+			$(this).prepend('<li class="menu-toggle"><a href="#"><span class="icon" data-icon="Y"></span> Menu</a></li>');
+	
+			// find menu items with children.
+			$(this).find('li').has('ul').addClass('has-menu')
+			.find('a:first').append('<span class="arrow">Ê</span>');
+		});
+	
+		$('ul.menu li').hover(function(){
+			$(this).find('ul:first').stop(true, true).fadeIn('fast');
+			$(this).addClass('hover');
+		},
+		function(){
+			$(this).find('ul').stop(true, true).fadeOut('slow');
+			$(this).removeClass('hover');
+		});
+
+
+
+
+
+	  
+	});
+</script>
+
+
+
+
+
+
+<!-- lay_home -->         
+</body>
+</html> 

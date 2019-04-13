@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Wiper Supply Services Limited</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="generator" content="nopCommerce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />   
+
+    
+    <link href="/Themes/WS-CoreTheme/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/WS-CoreTheme/Content/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/WS-CoreTheme/Content/css/theme-styles.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/WS-CoreTheme/Content/css/theme-styles-responsive.css" rel="stylesheet" type="text/css" />
+<link href="/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+<link href="/Plugins/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="/Plugins/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Themes/WS-CoreTheme/Content/js/head.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="/Scripts/public.common.js" type="text/javascript"></script>
+<script src="/Scripts/public.ajaxcart.js" type="text/javascript"></script>
+<script src="/Themes/WS-CoreTheme/Content/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Plugins/Widgets.NivoSlider/Scripts/jquery.nivo.slider.js" type="text/javascript"></script>
+
+    
+    
+    
+    
+    
+<link rel="shortcut icon" href="http://www.wipersupply.com/favicon.ico" />
+    <!--Theme Designed by nopAccelerate Themes - http://www.nopAccelerate.com/themes/ -->
+    <!--Copyright (c) 2014-->
+        <!--[if lt IE 9]>
+               <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> 
+        <![endif]-->  
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+
+<div class="ajax-loading-block-window" style="display: none">
+</div>
+<div id="dialog-notifications-success" title="Notification" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Error" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification">
+    <span class="close" title="Close">&nbsp;</span>
+</div>
+
+
+
+<div class="master-wrapper-page container">
+    
+    <div class="master-wrapper-content">
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        
+
+<nav class="top-menu" role="navigation">
+    <div class="headerlinks">
+        
+        <div class="header-links">
+            <ul class="nav navbar-right">
+                
+                
+                    <li><a href="/register" class="ico-register">Register</a></li>
+                    <li><a href="/login" class="ico-login">Log in</a></li>
+                                                    <li id="topcartlink" class="dropdown cart-full-screen">
+                        <a href="/cart" class="ico-cart dropdown-toggle">
+                            <span class="cart-label">Sample Request Basket</span>
+                            <span class="cart-qty">(0)</span>
+                            
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+You have no items in your shopping basket.        </div>
+    </div>
+</li>
+
+                        </ul>
+                    </li>
+                                    <li class="cart-small-screen"><a href="/cart" class="ico-cart">Basket</a></li>
+                                    <li>
+                        <a href="/wishlist" class="ico-wishlist">
+                            <span class="wishlist-label">Wishlist</span>
+                            <span class="wishlist-qty">(0)</span>
+                        </a>
+                    </li>
+                
+            </ul>
+</div>
+
+        
+        
+    </div>
+</nav>
+<div class="header">
+    <div class="row">
+        <div class="col-sm-7">
+            
+            <div class="header-logo">
+                <a href="/" class="logo">
+                    <img title="" class="img-responsive" alt="Wiper Supply Services" src="/Themes/WS-CoreTheme/Content/images/wipersupplywide.png">
+                    
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="header-selectors-wrapper">
+                <div class="search-box pull-right">
+                    
+<form action="/search" class="navbar-form navbar-left" method="get" onsubmit="return check_small_search_form()">    <div class="form-group">
+        <input type="text" class="search-nav form-control ui-autocomplete-input" id="small-searchterms" autocomplete="off" value="Search store" name="q" />
+        
+        <input type="submit" class="btn search-box-button" value="" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#small-searchterms").focus(function() {
+                    if (this.value == 'Search store') {
+                        this.value = '';
+                    }
+                });
+
+                $("#small-searchterms").blur(function() {
+                    if (this.value == '') {
+                        this.value = 'Search store';
+                    }
+                });
+            });
+            function check_small_search_form() {
+                var search_terms = $("#small-searchterms");
+                if (search_terms.val() == ""|| search_terms.val() == "Search store") {
+                    alert('Please enter some search keyword');
+                    search_terms.focus();
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+        
+            <script type="text/javascript">
+                $(function() {
+                    $('#small-searchterms').autocomplete({
+                            delay: 500,
+                            minLength: 3,
+                            source: '/catalog/searchtermautocomplete',
+                            appendTo: '.search-box',
+                            select: function(event, ui) {
+                                $("#small-searchterms").val(ui.item.label);
+                                setLocation(ui.item.producturl);
+                                return false;
+                            }
+                        })
+                        .data("ui-autocomplete")._renderItem = function(ul, item) {
+                            var t = item.label;
+                            //html encode
+                            t = htmlEncode(t);
+                            return $("<li></li>")
+                                .data("item.autocomplete", item)
+                                .append("<a>" + t + "</a>")
+                            .appendTo(ul);
+                    };
+                });
+            </script>
+        
+
+        
+    </div>
+</form>
+                </div>
+                <div class="header-selectors">
+                    
+                    <div class="currency-selector">
+                        
+                    </div>
+                    <div class="language-selector">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="header-bottom">
+            <div class="header-menu">
+                
+
+
+<nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button data-target="#mobile-menu" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+    </div>
+    
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="mobile-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            
+            <li><a href="/"><i class="fa fa-home fa-fw"></i></a></li>
+         <li>
+            <a href="/colour-coded-hygiene">Colour-Coded &amp; Wetwipes
+            
+            </a>
+         </li>
+         <li>
+            <a href="/automotive-bodyshop">Bodyshop &amp; Valeting
+            
+            </a>
+         </li>
+         <li>
+            <a href="/low-lint-spirit-wipes">Low-Lint Wiping
+            
+            </a>
+         </li>
+         <li>
+            <a href="/industrial-wipes">Industrial Wipes
+            
+            </a>
+         </li>
+         <li>
+            <a href="/cliniclean-wipes">CliniClean Products
+            
+            </a>
+         </li>
+         <li>
+            <a href="/care-wipes-towels">Care Wipes &amp; Towels
+            
+            </a>
+         </li>
+         <li>
+            <a href="/spill-control-products">Spill Control
+            
+            </a>
+         </li>
+                            <li><a href="/contact-us-2">Contact Us</a></li>
+                <li><a href="/find-us">How to FIND US</a></li>
+                <li><a href="/trading-terms">Trading Terms</a></li>
+                <li><a href="/new-account-application-form">New Account Application Form</a></li>
+                <li><a href="/conditions-of-use">Sample Requests - Conditions of Use</a></li>
+                       
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+            </div>
+        </div>
+        
+        
+        <div class="ajax-loading-block-window" style="display: none">
+            <div class="loading-image">
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                
+<div class="col-md-12">
+    
+    
+<div class="page home-page">
+    <div class="page-body">
+        
+
+<div class="slider-wrapper theme-custom">
+    <div id="nivo-slider" class="nivoSlider">
+                    <a href="/">
+                <img src="http://www.wipersupply.com/content/images/thumbs/0005158.jpeg" data-thumb="http://www.wipersupply.com/content/images/thumbs/0005158.jpeg" data-transition="" alt="" title="Wiper Supply Services Limited" />
+            </a>
+
+                    <a href="/">
+                <img src="http://www.wipersupply.com/content/images/thumbs/0005159.jpeg" data-thumb="http://www.wipersupply.com/content/images/thumbs/0005159.jpeg" data-transition="" alt="" title="Wiper Supply Services Limited" />
+            </a>
+
+                    <a href="/">
+                <img src="http://www.wipersupply.com/content/images/thumbs/0005160.jpeg" data-thumb="http://www.wipersupply.com/content/images/thumbs/0005160.jpeg" data-transition="slideInLeft" alt="" title="Wiper Supply Services Limited" />
+            </a>
+
+                    <a href="/">
+                <img src="http://www.wipersupply.com/content/images/thumbs/0005161.jpeg" data-thumb="http://www.wipersupply.com/content/images/thumbs/0005161.jpeg" data-transition="" alt="" title="Wiper Supply Services Limited" />
+            </a>
+
+                    <a href="/">
+                <img src="http://www.wipersupply.com/content/images/thumbs/0005162.jpeg" data-thumb="http://www.wipersupply.com/content/images/thumbs/0005162.jpeg" data-transition="" alt="" title="Wiper Supply Services Limited" />
+            </a>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#nivo-slider').nivoSlider();
+    });
+</script>
+
+            <div class="topic-html-content from-panel">
+            <div class="topic-html-content-title panel-heading">
+                <h1>
+                    Welcome to Wiper Supply Services Ltd – Disposable cleaning &amp; wiping cloths for almost every wiping need.</h1>
+            </div>
+        <div class="topic-html-content-body panel-body">
+            <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Hygienic Disposable Cleaning &amp; Wiping Products for Almost Every Wiping Job!</strong></span></p>
+<p style="text-align: center;"><em><span style="font-size: 12pt;">At <a href="http://www.wipersupply.com">www.wipersupply.com</a> we've a massive range of disposable cleaning and wiping cloths</span></em></p>
+<p style="text-align: center;"><strong><span style="font-size: 10pt;"><em>If you know a product "by name", use the "Search Store" box above</em></span></strong></p>
+        </div>
+    </div>
+
+    
+        
+            <div class="home-page-category-grid row">
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/colour-coded-hygiene" title="Show products in category Colour-Coded &amp; Wetwipes"> Colour-Coded &amp; Wetwipes</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/colour-coded-hygiene" title="Show products in category Colour-Coded &amp; Wetwipes">
+                            <img alt="Picture for category Colour-Coded &amp; Wetwipes" src="http://www.wipersupply.com/content/images/thumbs/0003168_colour-coded-wetwipes_250.jpeg" title="Show products in category Colour-Coded &amp; Wetwipes" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/automotive-bodyshop" title="Show products in category Bodyshop &amp; Valeting"> Bodyshop &amp; Valeting</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/automotive-bodyshop" title="Show products in category Bodyshop &amp; Valeting">
+                            <img alt="Picture for category Bodyshop &amp; Valeting" src="http://www.wipersupply.com/content/images/thumbs/0003195_bodyshop-valeting_250.jpeg" title="Show products in category Bodyshop &amp; Valeting" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/low-lint-spirit-wipes" title="Show products in category Low-Lint Wiping"> Low-Lint Wiping</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/low-lint-spirit-wipes" title="Show products in category Low-Lint Wiping">
+                            <img alt="Picture for category Low-Lint Wiping" src="http://www.wipersupply.com/content/images/thumbs/0003226_low-lint-wiping_250.jpeg" title="Show products in category Low-Lint Wiping" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/industrial-wipes" title="Show products in category Industrial Wipes"> Industrial Wipes</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/industrial-wipes" title="Show products in category Industrial Wipes">
+                            <img alt="Picture for category Industrial Wipes" src="http://www.wipersupply.com/content/images/thumbs/0003258_industrial-wipes_250.jpeg" title="Show products in category Industrial Wipes" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/cliniclean-wipes" title="Show products in category CliniClean Products"> CliniClean Products</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/cliniclean-wipes" title="Show products in category CliniClean Products">
+                            <img alt="Picture for category CliniClean Products" src="http://www.wipersupply.com/content/images/thumbs/0003298_cliniclean-products_250.jpeg" title="Show products in category CliniClean Products" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/care-wipes-towels" title="Show products in category Care Wipes &amp; Towels"> Care Wipes &amp; Towels</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/care-wipes-towels" title="Show products in category Care Wipes &amp; Towels">
+                            <img alt="Picture for category Care Wipes &amp; Towels" src="http://www.wipersupply.com/content/images/thumbs/0003321_care-wipes-towels_250.jpeg" title="Show products in category Care Wipes &amp; Towels" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item-box col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="category-item">
+                        <h3 class="title">
+                            <a href="/spill-control-products" title="Show products in category Spill Control"> Spill Control</a>
+                        </h3>
+                        <div class="picture">
+                            <a href="/spill-control-products" title="Show products in category Spill Control">
+                            <img alt="Picture for category Spill Control" src="http://www.wipersupply.com/content/images/thumbs/0005181_spill-control_250.jpeg" title="Show products in category Spill Control" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+    
+</div>
+
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+    $(document).ready(function () {
+        $('#eu-cookie-bar-notification').show();
+
+        $('#eu-cookie-ok').click(function () {
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: '/eucookielawaccept',
+                dataType: 'json',
+                success: function (data) {
+                    $('#eu-cookie-bar-notification').hide();
+                },
+                failure: function () {
+                    alert('Cannot store value');
+                }
+            });
+    });
+    });
+</script>
+<div id="eu-cookie-bar-notification" class="eu-cookie-bar-notification">
+    <div class="content">
+        <div class="text">Cookies help us deliver our services. By using our services, you agree to our use of cookies.</div>
+        <input type="button" class="ok-button btn btn-primary" id="eu-cookie-ok" value="OK">
+        
+    </div>
+</div>
+        
+    </div>
+</div>
+<div id="footerContainer">
+    <div class="container">
+        
+<div class="footer">
+    <div class="footer-top">
+        <div class="footer-zone row">
+            <div class="column information col-sm-3 col-md-3">
+                <h3>Information</h3>
+                <ul class="nav nav-list">
+                        <li><a href="/sitemap">Sitemap</a></li>
+                                            <li><a href="/bs-en-iso-9001-2008-certificate">BS EN ISO 9001-2015 Certificate</a></li>
+                        <li><a href="/health-safety-information-germbuster">H &amp; S Info - Germbuster</a></li>
+                        <li><a href="/health-safety-information-novette-super">H &amp; S Info - Novette</a></li>
+                        <li><a href="/health-safety-information-wetwipes">H &amp; S Info - Other Wetwipes</a></li>
+                        <li><a href="/information-for-customers-and-suppliers">Company Background &amp; Information</a></li>
+                        <li><a href="/trading-terms">Trading Terms</a></li>
+                        <li><a href="/new-account-application-form">New Account Application Form</a></li>
+                    <li><a href="/contactus">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="column customer-service col-sm-3 col-md-3">
+                <h3>Customer service</h3>
+                <ul class="nav nav-list">
+                    <li><a href="/search">Search</a> </li>
+                        <li><a href="/news">News</a></li>
+                                                                                    <li><a href="/recentlyviewedproducts">Recently viewed products</a></li>
+                                                                <li><a href="/newproducts">New products</a></li>
+                                            <li><a href="/contact-us-2">Contact Us</a></li>
+                        <li><a href="/find-us">How to FIND US</a></li>
+                </ul>
+            </div>
+            <div class="column my-account col-sm-3 col-md-3">
+                <h3>My account</h3>
+                <ul class="nav nav-list">
+                    <li><a href="/customer/info" class="account">My account</a></li>
+                        <li><a href="/order/history">Sample Request Orders</a></li>
+                                            <li><a href="/customer/addresses" class="">Addresses</a></li>
+                                            <li><a href="/cart" class="ico-cart">Sample Request Basket</a></li>
+                                            <li><a href="/wishlist" class="ico-wishlist">Wishlist</a></li>
+                                            <li><a href="/privacy-notice">Privacy notice</a></li>
+                        <li><a href="/conditions-of-use">Sample Requests - Conditions of Use</a></li>
+                </ul>
+            </div>
+            <div class="column follow-us col-sm-3 col-md-3">
+                <h3>Follow us</h3>
+                <ul class="nav nav-list">
+                                                                <li class="rss"><a href="/news/rss/1">RSS</a></li>
+                                                        </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="row">
+            <div class="col-md-12 footer-store-theme">
+                <div class="footer-disclaimer">
+                    Copyright &copy; 2019 Wiper Supply Services. All rights reserved.
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+<!-- Google code for Analytics tracking -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-0000000-0']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+Sitemap: https://www.payrollnetwork.com/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /comments/
+Disallow: /category/*/*
+Disallow: */trackback/
+Disallow: */feed/
+Disallow: */comments/
+Disallow: /test/
+Disallow: /plesk-stat/
+Allow: /wp-content/uploads/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /

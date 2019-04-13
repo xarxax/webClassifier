@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<title>Industrial Machinery new and used machine tools for sale, parts and service for Bridgeport mills, new and used cnc mills, lathes, shears, press brakes, ironworkers and fabrication machinery.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="milling accessories lathe accessories digital readouts inspection measuring accessories material handling saw accessories grinder accessories material storage drill accessories & parts electrical supplies fix-it-uppers & parts machines computer software lathe parts hoses sewing machines building accessories tanks maintenance equipment vises battery chargers new machine tools,used machine tools,machine tools,trade-ins,machinery service,machine tool parts,machinery,saw blade,cnc knee mill,mill,anilam,cnc turning center,cnc lathe,blanchard grinder,grinder,horizontal boring mill,lathe,cnc drilling machine,twin spindle,cnc routers,machine tool auction,machine tool liquidations,ebay,new machinery,used machinery,used bridgeport knee mill,bridgeport cnc mill,bridgeport vertical mill,bridgeport mill,haas machine tool" />
+<meta name="description" content="Industrial Machinery new and used machine tools for sale thousands of machine tools in stock with parts and service for all machine tools from bridgeport mills, lathes and fabrication machinery - milling accessories lathe accessories digital readouts inspection measuring accessories material handling saw accessories grinder accessories material storage drill accessories & parts electrical supplies fix-it-uppers & parts machines computer software lathe parts hoses sewing machines building accessories tanks maintenance equipment vises battery chargers new machine tools,used machine tools,machine tools,trade-ins,machinery service,machine tool parts,machinery,saw blade,cnc knee mill,mill,anilam,cnc turning center,cnc lathe,blanchard grinder,grinder,horizontal boring mill,lathe,cnc drilling machine,twin spindle,cnc routers,machine tool auction,machine tool liquidations,ebay,new machinery,used machinery,used bridgeport knee mill,bridgeport cnc mill,bridgeport vertical mill,bridgeport mill,haas machine tool" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="The Zen Cart&trade; Team and Eclipse Graphics" />
+<meta name="generator" content="shopping cart program by Zen Cart&trade;, http://www.zen-cart.com eCommerce" />
+<meta name="verify-v1" content="kERfkFHPu8I6nr+xZbLiaSZ421bi1jbEUz+5oExZm6s=" >
+
+<base href="http://industrialmachinery.com/store/" />
+
+<link rel="stylesheet" type="text/css" href="includes/templates/imstore/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/imstore/css/stylesheet_additional_images.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/imstore/css/stylesheet_betterCategoriesEzInfo.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/imstore/css/stylesheet_css_buttons.css" />
+<link rel="stylesheet" type="text/css" media="print" href="includes/templates/imstore/css/print_stylesheet.css" />
+<script type="text/javascript"><!--//<![CDATA[
+if (typeof zcJS == "undefined" || !zcJS) {
+  window.zcJS = { name: 'zcJS', version: '0.1.0.0' };
+};
+
+zcJS.ajax = function (options) {
+  options.url = options.url.replace("&amp;", "&");
+  var deferred = $.Deferred(function (d) {
+      var securityToken = '665a85599fda07b228045e026d74634e';
+      var defaults = {
+          cache: false,
+          type: 'POST',
+          traditional: true,
+          dataType: 'json',
+          timeout: 5000,
+          data: $.extend(true,{
+            securityToken: securityToken
+        }, options.data)
+      },
+      settings = $.extend(true, {}, defaults, options);
+
+      d.done(settings.success);
+      d.fail(settings.error);
+      d.done(settings.complete);
+      var jqXHRSettings = $.extend(true, {}, settings, {
+          success: function (response, textStatus, jqXHR) {
+            d.resolve(response, textStatus, jqXHR);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              console.log(jqXHR);
+              d.reject(jqXHR, textStatus, errorThrown);
+          },
+          complete: d.resolve
+      });
+      $.ajax(jqXHRSettings);
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+   var response = jqXHR.getResponseHeader('status');
+   var responseHtml = jqXHR.responseText;
+   var contentType = jqXHR.getResponseHeader("content-type");
+   switch (response)
+     {
+       case '403 Forbidden':
+         var jsonResponse = JSON.parse(jqXHR.responseText);
+         var errorType = jsonResponse.errorType;
+         switch (errorType)
+         {
+           case 'ADMIN_BLOCK_WARNING':
+           break;
+           case 'AUTH_ERROR':
+           break;
+           case 'SECURITY_TOKEN':
+           break;
+
+           default:
+             alert('An Internal Error of type '+errorType+' was received while processing an ajax call. The action you requested could not be completed.');
+         }
+       break;
+       default:
+        if (jqXHR.status === 200 && contentType.toLowerCase().indexOf("text/html") >= 0) {
+         document.open();
+         document.write(responseHtml);
+         document.close();
+         }
+     }
+   });
+
+  var promise = deferred.promise();
+  return promise;
+};
+zcJS.timer = function (options) {
+  var defaults = {
+    interval: 10000,
+    startEvent: null,
+    intervalEvent: null,
+    stopEvent: null
+
+},
+  settings = $.extend(true, {}, defaults, options);
+
+  var enabled = new Boolean(false);
+  var timerId = 0;
+  var mySelf;
+  this.Start = function()
+  {
+      this.enabled = new Boolean(true);
+
+      mySelf = this;
+      mySelf.settings = settings;
+      if (mySelf.enabled)
+      {
+          mySelf.timerId = setInterval(
+          function()
+          {
+              if (mySelf.settings.intervalEvent)
+              {
+                mySelf.settings.intervalEvent(mySelf);
+              }
+          }, mySelf.settings.interval);
+          if (mySelf.settings.startEvent)
+          {
+            mySelf.settings.startEvent(mySelf);
+          }
+      }
+  };
+  this.Stop = function()
+  {
+    mySelf.enabled = new Boolean(false);
+    clearInterval(mySelf.timerId);
+    if (mySelf.settings.stopEvent)
+    {
+      mySelf.settings.stopEvent(mySelf);
+    }
+  };
+};
+//]] --></script>
+
+</head>
+
+<body id="indexHomeBody">
+
+<div id="mainWrapper">
+
+<!--bof-branding display-->
+<div id="logoWrapper">
+    <div><div id="logo"><a href="http://industrialmachinery.com/store/"><img src="includes/templates/imstore/images/IMlogo.jpg" alt="Industrial Machinery Online Machine tool and parts Store [home link]" title=" Industrial Machinery Online Machine tool and parts Store [home link] " width="488" height="121" /></a></div><div id="logo2"><img src="includes/templates/imstore/images/contact_logo.jpg" alt=""></div></div>
+</div>
+<!--eof-branding display-->
+<!--bof-header logo and navigation display-->
+<div id="headerWrapper">
+<!--bof-navigation display-->
+<!--<div id="navMainWrapper">-->
+<div id="navMain">
+    <ul id="navMain2">
+    <li><a href="http://industrialmachinery.com/store/">Home</a></li>
+    <li><a href="http://industrialmachinery.com/store/index.php?main_page=advanced_search">Search Inventory</a></li>
+    <li><a href="http://industrialmachinery.com/store/index.php?main_page=page&id=2&chapter=4">Parts & Service Department</a></li>
+    <li><a href="http://industrialmachinery.com/store/index.php?main_page=page&id=1&chapter=6">Company Profile</a></li>
+    <li><a href="http://industrialmachinery.com/store/index.php?main_page=page&id=4&chapter=7">Asset Liquidation Services</a></li>
+        <li><a href="https://industrialmachinery.com/store/index.php?main_page=login&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Log In</a></li>
+
+</ul>
+</div>
+<!--</div>-->
+<!--eof-navigation display-->
+<!--eof-header logo and navigation display-->
+
+<!--bof-optional categories tabs navigation display-->
+<!--eof-optional categories tabs navigation display-->
+
+<!--bof-header ezpage links-->
+<!--eof-header ezpage links-->
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="contentMainWrapper">
+  <tr>
+
+ <td id="navColumnOne" class="columnLeft" style="width: 150px">
+<div id="navColumnOneWrapper" style="width: 150px"><!--// bof: ezpages //-->
+<div class="leftBoxContainer" id="ezpages" style="width: 150px">
+<h3 class="leftBoxHeading" id="ezpagesHeading">SITE NAVIGATION</h3>
+<div id="ezpagesContent" class="sideBoxContent">
+<ul style="margin: 0; padding: 0; list-style-type: none;">
+<li><div class="betterEzpages"><a href="http://www.industrialmachinery.com"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Home</a></div></li>
+<li><div class="betterEzpages"><a href="http://industrialmachinery.com/store/index.php?main_page=advanced_search&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Search Inventory</a></div></li>
+<li><div class="betterEzpages"><a href="http://www.industrialmachinery.com/store/index.php?main_page=contact_us"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Contact Us</a></div></li>
+<li><div class="betterEzpages"><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=18&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />The Trade Up Policy</a></div></li>
+<li><div class="betterEzpages"><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=23&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Finance</a></div></li>
+<li><div class="betterEzpages"><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=26&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Consignment</a></div></li>
+<li><div class="betterEzpages"><a href="http://www.youtube.com/user/industrialmachinery" target="_blank"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Video Library !</a></div></li>
+</ul>
+</div></div>
+<!--// eof: ezpages //-->
+
+<!--// bof: categories //-->
+<div class="leftBoxContainer" id="categories" style="width: 150px">
+<h3 class="leftBoxHeading" id="categoriesHeading">Inventory</h3>
+<div id="categoriesContent" class="sideBoxContent">
+<div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1134&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Machine Tooling & Accessories</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1133&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Notchers</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=892&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Air Compressors - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=851&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Blast Cabinets - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=985&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Brakes - New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=849&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Deburring & Beveling Machines</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=871&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Drills - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1019&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Dust Collectors</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=873&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />EDM - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=390&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Electrical Equipment</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=997&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Flangers - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=996&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Forklifts - New & Used.</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Grinders - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=886&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Honing Machines - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=647&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Indexers New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=22&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Inspection, Measuring & Layout</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=825&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Ironworkers</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1076&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Jig Bore</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1022&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Jig Grinders - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=905&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Keyseaters - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Lathes New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1026&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Lapping Machines</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=197&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Material Handling</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1114&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Media Air Cleaners</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Milling Machines - New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1102&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Misc. Equipment</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1128&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />OBI Punch Press</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=945&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Pipe Threaders</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=959&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Plasma Cutting - New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Presses - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=906&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Punching Machines - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=979&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Rolls - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=991&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Routers New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=896&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Sanders - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Saws - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1124&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Scales</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=942&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Shears - New & Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=986&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Sheet Metal Machines</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=946&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Slotters</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1004&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Structural Fabrication Machinery</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=989&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Tube Bending Machines</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=957&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Water Jets - New and Used</a></div><div class="betterCategories"><a class="category-top" href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=935&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />Welding - New & Used</a></div><div class="betterCategories"><a class="category-links" href="http://industrialmachinery.com/store/index.php?main_page=products_new&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65"><img src="includes/templates/imstore/images/1x1_transparent.gif" alt="" width="1" height="1" />New Products ...</a></div></div></div>
+<!--// eof: categories //-->
+
+</div></td>
+    <td valign="top">
+<!-- bof  breadcrumb -->
+    <div id="navBreadCrumb">Home
+</div>
+<!-- eof breadcrumb -->
+
+
+<!-- bof upload alerts -->
+<!-- eof upload alerts -->
+
+  <div class="centerColumn" id="indexDefault">
+<h1 id="indexDefaultHeading"></h1>
+
+
+<!-- deprecated - to use - uncomment<div id="" class="content">This is the main define statement for the page for english when no template defined file exists. It is located in: <strong>/includes/languages/english/index.php</strong></div>
+-->
+
+<!-- deprecated - to use - uncomment<div id="" class="content">Define your main Index page copy here.</div>
+-->
+
+<div id="indexDefaultMainContent" class="content"><table align="center" border="0" cellpadding="0" cellspacing="0" width="561">
+	<tbody>
+		<tr>
+			<td colspan="7" height="18" valign="middle">
+			<div align="center"><strong>New and Used Milling machines for sale, Bridgeport Mills, CNC Milling, Lathe, CNC Lathes, Drills, Surface Grinders, Saws, Bandsaws and more!</strong></div>
+			</td>
+		</tr>
+		<tr>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_823"><img align="top" alt="New illing machines for sale and Used Milling Machines for sale Bridgeport type knee mills" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/kneemill.gif" vspace="2" width="70" /></a></td>
+			<td width="81"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826"><img align="top" alt="New milling machines and used vertical milling machines for sale Heavy duty milling machines" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HMILL.gif" vspace="2" width="70" /></a></td>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_848"><img align="top" alt="New CNC Milling machines for sale used CNC Millling machines for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/cnckneemill.gif" vspace="2" width="70" /></a></td>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_1071"><img align="top" alt="New and used vertical machining center VMC's or Vertical Machining Centers for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/VMC.gif" vspace="2" width="70" /></a></td>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_900"><img align="top" alt="New and used vertical boring mill and Vertical Turret Lathes for Sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCBRIDGEMILLS.gif" vspace="2" width="70" /></a></td>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_924"><img alt="New and used horizontal machining centers for sale HMC machines" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HMC.gif" vspace="2" width="70" /></a></td>
+			<td width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=832"><img align="top" alt="New and used vertical boring mill and Vertical Turret Lathes for Sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/VBM.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824_1121"><img alt="New and Used CNC Vertical Lathes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCVTL.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824_820"><img align="top" alt="New lathes for sale and used lathes lathes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/lathe.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824_868"><img alt="New CNC lathes and Used CNC lathes slant bed and flat bed cnc lathes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCSLANT.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824_867"><img align="top" alt="New cnc lathes and used flat bed cnc lathes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCFLAT.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=824_865"><img alt="New turret lathes and used turret lathes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/TURRETLATHES.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_889"><img align="top" alt="New horizontal boring mills and used horizontal boring mills for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HBM.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=page&amp;id=10&amp;chapter=0"><img alt="Learn about the centroid cnc control for cnc milling machines and cnc lathes" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CENTROID.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=826_982"><img align="top" alt="New CNC Horizontal boring mills and used cnc horizontal boring mills for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCHBM.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=871"><img align="top" alt="New drill presses and used drills for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/drill.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=871_885"><img align="top" alt="Honing Machinery new and used for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/multispindledrills.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=871_872"><img align="top" alt="New radial drills and used radial drills for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/radialdrill.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_878"><img align="top" alt="New surface grinders and used surface grinders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/surfgrinder.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_732"><img align="top" alt="New tool and cutter grinder and used tool and cutter grinders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/tgrinder.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=946"><img align="top" alt="New and Used Vertical Slotters for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/VERTICALSLOTTERS.jpg" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_879"><img alt="New OD Grinders and used O.D. grinders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ODGRINDER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_880"><img alt="New ID grinders and used i.d. grinders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/IDGRINDER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_917"><img align="top" alt="Honing Machinery new and used for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ROTARYGRINDERS.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=731_923"><img alt="New pedestal grinders and used pedestal grinders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/PEDGRINDER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com"><img alt="New timesavers and used TIMESAVERS for sale or Large Belt sander for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/TIMAESAVERS.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=896"><img alt="New belt sander or Disc sander - used belt and disc sanders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/belt-disc.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=905"><img align="top" alt="New keyseaters and used keyseaters for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/keyseater.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214_869"><img align="top" alt="New Horizontal bandsaws and used horizontal bandsaws for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/horzbandsaw.gif" vspace="2" width="70" /></a></td>
+			<td height="5" width="81"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214_881"><img align="top" alt="New vertical bandsaws and used vertical bandsaws for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/VERTSAW.gif" vspace="2" width="70" /></a></td>
+			<td height="5" width="80"><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214_891"><img align="top" alt="New cold saws and used cold saw - new abrasive saws for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/coldsaw.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214_928"><img align="top" alt="New tilt frame saws and used tilt frame bandsaws for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/TILTFRAME.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=214_921"><img alt="New cut off saws and used abrasive cut off saws for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ABRASIVESAW.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=873"><img align="top" alt="New EDM and used edm machine for sale or EDM" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/edm.gif" vspace="2" width="70" /></a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="7" height="24" valign="middle">
+			<div align="center"><strong>New and Used Fabrication Press Brakes, Shears, Ironworkers, Plasma, Lasers, Plate Rolls Tube Benders Air Compressors, Punch Presses For Sale.</strong></div>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=825_821"><img align="top" alt="New ironworkers and used ironworker machines for sale " border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ironworker.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=985"><img align="top" alt="New manaul hand brake and used hand brakes or sheet metal brakes for sale " border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/handbrake.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=985_1035"><img align="top" alt="Honing Machinery new and used for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/BoxPan.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=985_893"><img align="top" alt="New press brakes and used press brakes - CNC Press brakes for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/pressbrake.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=942_944"><img align="top" alt="New shears and used sheet metal shear - hydraulic shears for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/sheetmetalshear.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=942_943"><img align="top" alt="New shears and used plate metal shears - cnc shears for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/PLATEmetalshear.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=892"><img align="top" alt="New air compressors and used air compressors for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ac.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=957"><img alt="New water jet and used water jet cutting systems for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/WATERJET.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=959_960"><img align="top" alt="New cnc plasma cutting system and used cnc plasma cutting systems machines for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCPLASMA.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=991"><img align="top" alt="New cnc ruter and used cnc routers for sale " border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCROUTER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=958"><img align="top" alt="New laser system and used laser cutting systems for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/LASER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=979_994"><img alt="New slip rolls and used metal slip rolls for sale for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/sliproll.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=979_981"><img align="top" alt="New plate rolls and used metal plate rolls for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/platerolls.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=979_980"><img alt="New angl rolls and used metal angle rolls for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ANGLEROLL.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919_987"><img align="top" alt="Used Arbor Presses and New Arbor presses for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/ARBORPRESSES.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919_1003"><img align="top" alt="Used H frame Presses for sale and New H frame presss and used H Frame Presses for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HFRAME.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919_1002"><img align="top" alt="Used OBI Presses for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/OBIPRESSES.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=886http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919_1045"><img align="top" alt="Used 4 Post presses and new 4 post presses for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/4POSTPRESSES.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=919_1039"><img align="top" alt="used straight side presses for sale and new straight side presses" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/STRAIGHTSIDEPRESS.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=935"><img align="top" alt="New welders and used welders for sale and welding supplies" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/WELDERS.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=996"><img alt="New and used material handling equipment and fork lifts for sale" src="/Mainimages/ICONS/ICON2/FORKLIFTS.jpg" style="border-width: 0px; border-style: solid; margin: 2px 5px; width: 70px; height: 70px;" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=906_1041"><img align="top" alt="Used hand turret punch for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HANDTURRETPUNCH.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=906_907"><img align="top" alt="used single end punches for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/SINGLEENDPUNCH.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=906"><img align="top" alt="New cnc turret punches and used cnc turret punches for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/CNCTURRETPUNCH.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=906_908"><img align="top" alt="used turret punches for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/TURRETPUNCH.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=935_941"><img align="top" alt="new and used Ovens and heat treat ovens for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/WELDINGPOSTIONERS.jpg" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1004"><img alt="New structural steel and used STRUCTURAL FABRICATION machinery for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/STRUCTURALFAB.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=986"><img align="top" alt="SHEETMETAL FABRICATION TOOLS NEW AND USED FOR SALE" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/SHEETMETAL.gif" vspace="2" width="70" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=886"><img align="top" alt="Honing Machinery new and used for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/HONING.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=849_963"><img alt="New and used Deburring and Beveling Machines for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/DEBURRING.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=989"><img align="top" alt="New and used Tube Benders for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/TUBEBENDER.gif" vspace="2" width="70" /></a></td>
+			<td><a href="http://www.industrialmachinery.com/store/index.php?main_page=index&amp;cPath=1032"><img align="top" alt="new and used Ovens and heat treat ovens for sale" border="0" height="70" hspace="5" src="/Mainimages/ICONS/iconnew/OVENS.gif" vspace="2" width="70" /></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td colspan="7">
+			<table align="left" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td align="left" valign="top"><a name="ft1"></a><img height="23" src="/Mainimages/newfeature-tab.gif" width="562" /></td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" width="560">
+						<p><strong><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=12&amp;chapter=0">Looking for NEW OR USED Bridgeport mills or Bridgeport parts ?</a></strong> Look here for a List of our current <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=12&amp;chapter=0">NEW AND USED Bridgeport mills</a> and <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=12&amp;chapter=0">Bridgeport mill parts</a> we have in stock <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=12&amp;chapter=0">Click to view new and used Bridgeport Mills</a></p>
+
+						<p><img align="left" alt="Machinery Video how to video machine tools metal working machinery video library" height="100" src="/Mainimages/video1.gif" width="85" />Our <a href="http://www.youtube.com/user/industrialmachinery">machine tool video library</a> is now online. Industrial Machinery is adding new videos daily to our extensive video library. Industrialmachinery.com is your No.1 source for viewing machine tool demonstrations online. All types of machine tools new and used in our inventory can be seen running under power and cutting material. Watch video&#39;s on the following types of new and used machine tools: lathe, cnc lathe, mill, boring mill, cnc mill, vertical machining center, press brake, shear, saws, laser cutting system, plasma cutting system and much more only at industrialmachinery.com. With over 100 video&#39;s now online you will find the video links next to the machine listing in our <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=6&amp;chapter=0">search inventory</a> and you can browse all of our video&#39;s in our new <a href="http://www.youtube.com/user/industrialmachinery">video library at industrialmachinery.com</a></p>
+
+						<p><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=4&amp;chapter=7">Auctions</a>, <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=4&amp;chapter=7">appraisals</a> and <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=4&amp;chapter=7">Plant Liquidations</a>: Industrial Machinery can provide you with these services for your business. With over <strong>20 years of providing quality appraisal services, auctions and plant liquidations.</strong> find out how industrial machinery can get the most out of your corporate assets. <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=4&amp;chapter=7"><strong>Click to find out more!</strong></a></p>
+
+						<p><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=11&amp;chapter=0"><img align="right" alt="New and Used Edwards Ironworkers for sale" border="0" height="50" hspace="3" src="/Mainimages/ironworker2.gif" width="50" /></a><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=11&amp;chapter=0">Edwards Ironworkers models prices specifications and video&#39;s </a>. Prices online for Edwards ironworkers available here at Industrial Machinery. Edwards<strong> Ironworkers</strong>,<em> &quot;the fastest growing Ironworker Manufacturer in the United States&quot;,</em>has a full line of ironworkers as shown on this web site. Edwards ironworkers available at the best and<strong> lowest price</strong></p>
+
+						<p><a href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=5"><img align="right" alt="New Digital readouts for sale at Industrial Machinery" border="0" height="50" hspace="6" src="/Mainimages/newCOLL.jpg" width="72" /><img align="right" alt="Newall Digital Readout for sale available at Industrial Machinery" border="0" height="50" src="/Mainimages/newalLOGO.gif" width="247" /></a><a href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=5">Newall Digital Readout</a> - Linear Encoder Distributor. Designed to handle the toughest shop conditions, Newall&#39;s Digital Readout Systems are unmatched in the industry for quality and durability. <a href="http://industrialmachinery.com/store/index.php?main_page=index&amp;cPath=5">click to read more.</a></p>
+
+						<p><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=13&amp;chapter=2"><img align="right" alt="How to set up a New Saw Blade maintenance and techiques articles" border="0" height="63" src="/Mainimages/SVGLBmini.gif" width="100" /></a><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=13&amp;chapter=2">Metal Cutting Saw Blade Maintenance Article</a>. Breaking in a new saw blade:<font color="#000099">&nbsp;</font><a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=13&amp;chapter=2">Blade break-in</a> is one of the most critical areas of <b>band sawing</b> procedures when striving to achieve the most economical and ... <a href="http://industrialmachinery.com/store/index.php?main_page=page&amp;id=13&amp;chapter=2">Click here to continue!</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</div>
+
+</div>
+</td>
+
+<td id="navColumnTwo" class="columnRight" style="width: 150px">
+<div id="navColumnTwoWrapper" style="width: 150px"><!--// bof: bannerboxall //-->
+<div class="rightBoxContainer" id="bannerboxall" style="width: 150px">
+<h3 class="rightBoxHeading" id="bannerboxallHeading">NEWS</h3>
+<div id="bannerboxallContent" class="sideBoxContent centeredContent"></div></div>
+<!--// eof: bannerboxall //-->
+
+<!--// bof: information //-->
+<div class="rightBoxContainer" id="information" style="width: 150px">
+<h3 class="rightBoxHeading" id="informationHeading">Buying Information</h3>
+<div id="informationContent" class="sideBoxContent">
+<ul style="margin: 0; padding: 0; list-style-type: none;">
+<li><div class="betterInformation"><a href="http://industrialmachinery.com/store/index.php?main_page=shippinginfo&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Shipping &amp; Returns</a></div></li>
+<li><div class="betterInformation"><a href="http://industrialmachinery.com/store/index.php?main_page=privacy&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Privacy Notice</a></div></li>
+<li><div class="betterInformation"><a href="http://industrialmachinery.com/store/index.php?main_page=conditions&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Conditions of Use</a></div></li>
+<li><div class="betterInformation"><a href="https://industrialmachinery.com/store/index.php?main_page=contact_us&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Contact Us</a></div></li>
+<li><div class="betterInformation"><a href="http://industrialmachinery.com/store/index.php?main_page=site_map&amp;zenid=6pq52ibpsksk5jh8s0lsoe7n65">Site Map</a></div></li>
+</ul>
+</div></div>
+<!--// eof: information //-->
+
+</div></td>
+  </tr>
+</table>
+
+
+
+<!--bof-navigation display -->
+<div id="navSuppWrapper">
+<div id="navSupp">
+<ul>
+<li><a href="http://industrialmachinery.com/store/">Home</a></li>
+</ul>
+</div>
+</div>
+<!--eof-navigation display -->
+
+<!--bof-ip address display -->
+<div id="siteinfoIP">Your IP Address is:   37.223.62.144</div>
+<!--eof-ip address display -->
+
+<!--bof-banner #5 display -->
+<!--eof-banner #5 display -->
+
+<!--bof- site copyright display -->
+<div id="siteinfoLegal" class="legalCopyright">Copyright &copy; 2019 <a href="http://www.industrialmachinery.com" target="_blank">Industrial Machinery</a>. Powered by <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a></div>
+<!--eof- site copyright display -->
+
+
+</div>
+<!--bof- parse time display -->
+<!--eof- parse time display -->
+<!--bof- banner #6 display -->
+<!--eof- banner #6 display -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7046089-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

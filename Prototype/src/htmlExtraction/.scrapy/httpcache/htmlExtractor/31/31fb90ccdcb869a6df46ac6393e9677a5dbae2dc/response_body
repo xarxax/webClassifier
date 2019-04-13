@@ -1,0 +1,294 @@
+
+<script language="javascript" TYPE="text/javascript">
+var message='Copyright ©2019  - RE/MAX Consultants Realty - http://palm-aire.com';
+
+function onKeyDown(e) {
+	var e = e ? e : window.event;
+	var key;
+	
+	if (e.keyCode)
+		key = String.fromCharCode(e.keyCode);
+	else if (typeof(e.which) != 'undefined')
+		key = String.fromCharCode(e.which);
+	
+	if (key)
+	{
+		key = key.toLowerCase();
+		
+		if(e.ctrlKey && ((key == 'a') || (key == 'c') || (key == 'v')))
+		{
+			e.cancelBubble = true;
+			e.returnValue = false;
+			if (e.stopPropagation)
+			{
+				e.stopPropagation();
+				e.preventDefault();
+			}	
+		}
+	}
+} 
+function rightclick(e) {
+	var e = e ? e : window.event;
+	
+	if (e.ctrlKey)
+	{
+		e.cancelBubble = false;
+		e.returnValue = true;
+	}
+	else
+	{
+		alert(message);
+		e.cancelBubble = true;
+		e.returnValue = false;
+		if (e.stopPropagation)
+		{
+			e.stopPropagation();
+			e.preventDefault();
+		}	
+	}
+}
+
+function domAttachEvent(evt, func, obj)
+{
+	if (obj.addEventListener)
+	{
+		obj.addEventListener(evt, func, false);
+	}
+	else if (obj.attachEvent)
+	{
+		obj.attachEvent('on' + evt, func);
+	}	
+}
+
+domAttachEvent('contextmenu', rightclick, document);
+domAttachEvent('keydown', onKeyDown, document);
+
+function noselect() {  
+	document.body.attachEvent('onselectstart', rfalse); } 
+
+function rfalse() {
+	return false;
+}
+</script>
+<!-- #999999 -->
+<style type="text/css">
+A:link {color:#333333;}
+A:visited {color:#333333;}
+A:hover {text-decoration: none; color:#333333;}
+.bodystyle
+	{
+	background : transparent;
+	
+	}
+.text {
+	font-family: Verdana;
+	font-size: 11px;
+	color:#333333;
+	text-decoration: none;	
+}
+.textHF {
+	font-family: Verdana;
+	font-size: 11px;
+	color:#333333;
+	text-decoration: none;	
+}
+.celltext {
+	font-family: Verdana;
+	font-size: 11px;
+	
+	color:#333333;
+	
+	text-decoration: none;
+	
+	BORDER: #999999 1px solid;	
+	
+}
+.celltext A:link{color:#333333;}
+.celltext A:visited{color:#333333;}
+.celltext A:hover{color:#333333;}
+.celltextInventory {
+	font-family: Verdana;
+	font-size: 11px;
+	
+	color:#333333;
+	
+	text-decoration: none;
+	
+	BORDER: #999999 1px solid;	
+	
+}
+.celltextcolor {
+	font-family: Verdana;
+	font-size: 11px;
+	
+	color:#333333;
+	
+	text-decoration: none;
+	
+	BORDER: #999999 1px solid;	
+	
+	background : #e5e5e5;
+}
+.textcolor {
+	font-family: Verdana;
+	font-size: 11px;
+	color:#333333;
+	text-decoration: none;
+	background : #e5e5e5;
+}
+.celltextBOLDcolor {
+	font-family: Verdana;
+	font-size: 11px;
+	
+	color:#333333;
+	
+	text-decoration: none;
+	font-weight: bold;
+	
+	BORDER: #999999 1px solid;
+	
+	background : #e5e5e5;
+}
+.agentPopup {
+	font-family: Verdana;
+	font-size: 11px;
+	
+	color:#333333;
+	
+	text-decoration: none;
+	font-weight: bold;
+	
+	background : #e5e5e5;
+	text-align:center;
+	padding-bottom: 5px;
+}
+.celltextBOLD {
+	font-family: Verdana;
+	font-size: 11px;
+	color:#333333;
+	text-decoration: none;
+	font-weight: bold;
+	
+	BORDER: #999999 1px solid;
+	
+}
+.textBOLD {
+	font-family: Verdana;
+	font-size: 11px;
+	color:#333333;
+	text-decoration: none;
+	font-weight: bold;
+}
+.srhBox {
+	BORDER: #999999 1px solid;
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana;
+	BACKGROUND-COLOR: #FFFFFF;
+	TEXT-DECORATION: none;	
+}
+
+.hiddenText {
+	BORDER: 1px none black;
+	FONT-SIZE: 11px;
+	COLOR: #333333;
+	FONT-FAMILY: Verdana;
+	BACKGROUND-COLOR: transparent;
+	font-weight:bold;
+	TEXT-DECORATION: none;
+	text-align:center;
+}
+
+.srhBoxpage {
+	BORDER: #999999 1px solid;
+	FONT-SIZE: 11px;
+	COLOR: #333333;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	
+}
+SELECT {
+	FONT: 11px Verdana;
+	TEXT-TRANSFORM: none;
+	COLOR: #333333;
+	background : #FFFFFF;
+	/*width : 150px;*/
+}
+
+.searchfield { 
+    position:relative;
+    bottom:2px;	
+    FONT: 11px Verdana;
+    color: #333333
+ }
+.title {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333333;
+}
+.celltitlecolor {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+	color: #333333;
+	
+	BORDER: #999999 1px solid;
+	
+	background : #e5e5e5;
+}
+.brLogo[class]
+{
+	background-image: url(images/black.png);
+	background-repeat: no-repeat;
+	width: 95px;
+	height: 21px;
+}
+.brLogo { 
+	background-repeat: no-repeat;
+	width: 95px;
+	height: 21px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/black.png') ;
+}
+</style>
+
+<html>
+<head>
+<title>Joe Klock Sr. - The KlockWorks, Inc.</title>
+</head>
+<body bgcolor="#FFFFFF" background="images/bottom-bg.jpg" text="#333333" link="#666666" vlink="#666666" alink="#666666" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/spacer.gif">
+  <tr>
+    <td width="774"><img src="images/top-header.gif" width="774" height="150" border="0"></td>
+    <td width="100%" background="images/top_bg2.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="150" valign="top"><div align="left"><img src="images/menu.gif" width="120" height="400" border="0" usemap="#Map3"></div></td>
+          <td valign="top"><p>
+              <iframe src="map.htm" frameborder="0" width="100%" height="500"></iframe><!--// stuff //-->
+            </p></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<map name="Map3">
+  <area shape="rect" coords="1,216,116,240" href="frame-contact.htm">
+  <area shape="rect" coords="1,189,116,213" href="frame-info_links.htm">
+  <area shape="rect" coords="1,136,117,158" href="frame-management-tips.htm">
+  <area shape="rect" coords="2,109,117,132" href="frame-sales-tips.htm">
+  <area shape="rect" coords="1,84,119,107" href="frame-stuff-sale.htm">
+  <area shape="rect" coords="-1,56,117,80" href="frame-stuff-free.htm">
+  <area shape="rect" coords="-1,28,116,51" href="frame-about.htm">
+  <area shape="rect" coords="1,2,117,24" href="index.asp">
+  <area shape="rect" coords="-5,162,110,186" href="frame-opinion-pieces.htm">
+</map>
+</body>
+</html>

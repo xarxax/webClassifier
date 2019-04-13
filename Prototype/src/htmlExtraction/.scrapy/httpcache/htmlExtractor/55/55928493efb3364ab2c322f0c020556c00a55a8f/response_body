@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TV Chef - Alan Coxon - Food Archaeologist - Buy Vinegars Online</title>
+<meta name="Description" content="Coxons Kitchen - Alan Coxon TV Chef and world class chef, selling a innovative brand of Vinegars, Vinaigre and other products.">
+<meta name="keywords" content="alan, coxon, coxons, kitchen, vinegars, vinaigre, ale gar, roman vinaigre, pickles, chutneys, tv, chef, celebrity">
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<LINK rel="stylesheet" type="text/css" name="stylesheet" href="stylesheet.css">
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jqueryslidemenu.js"></script>
+<script src="includes/swfobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages2=new Array() //2nd array set example. Remove or add more sets as needed.
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages2[0]=['images/banners/20150302_1723183731.jpg', 'http://www.foodbyalancoxon.com', '_new'];fadeimages2[1]=['images/banners/20110208_1482962828.jpg', 'http://www.foodbyalancoxon.com', '_new'];fadeimages2[2]=['images/banners/20121101_2049328809.jpg', 'http://www.alancoxon.com/contact.php', '_new'];fadeimages2[3]=['images/banners/20190119_1838981287.jpg', 'http://www.alancoxon.com/contact.php', '_new'];fadeimages2[4]=['images/banners/20190119_341259970.jpg', 'http://www.alancoxon.com/contact.php', '_new'];
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+
+
+
+if (displayorder && displayorder == 'R')
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+else if (displayorder && displayorder == 'Rs'){
+displayorder = Math.floor(Math.random() * theimages.length);
+theimages = theimages.slice(displayorder).concat(theimages.slice(0, displayorder));
+}
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (var p=0;p<theimages.length;p++){
+
+
+
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+</head>
+
+
+<body>
+<div align="center">
+  <table width="768" border="0" cellpadding="0" cellspacing="0" background="images/body_bg.jpg">
+    <!--DWLayoutTable-->
+    <tr>
+      <td width="768" height="360" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="768" height="101" valign="top"><img src="images/topbar.jpg" width="768" height="101"></td>
+          </tr>
+          <td>
+<div id="myslidemenu" class="jqueryslidemenu">
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="news.php">News</a></li>
+<li><a href="profile.php">Profile</a></li>
+<li><a href="cookbooks.php">Cookbooks</a></li>
+<li><a href="historic.php">Historic Food</a>
+  <ul>
+  <li><a href="pickles.php">Pickles and Chutneys</a></li>
+  <li><a href="ale.php">Ale Gar Vinaigre</a></li>
+  <li><a href="ancient.php">Ancient Greek Vinaigre</a></li>
+  <li><a href="roman.php">Roman Vinaigre</a></li>
+  </ul>
+</li>
+<li><a href="recipes.php">Recipes</a></li>
+<li><a href="contact.php">Contact Alan</a></li>
+<li class="store"><a href="store.php">Online Store</a></li>
+</ul>
+<br style="clear: left">
+</div>
+</td>          <tr>
+            <td height="233" valign="top"><img src="images/page_bar_new.jpg" width="768" height="233"></td>
+          </tr>
+                  </table></td>
+    </tr>
+    <tr>
+      <td height="321" valign="top"><div align="left">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <!--DWLayoutTable-->
+            <tr>
+              <td width="12" height="625" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <!--DWLayoutTable-->
+                <tr>
+                  <td width="12" height="625">&nbsp;</td>
+                  </tr>
+              </table></td>
+              <td width="364" valign="top" class="text"><p><br>
+                  <table width='100%' border='0' cellpadding='0'>
+          <tr>
+            <td align='left'><span class='bodytext'><h3><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span class="bluetitle"><span style="font-weight: normal;"><span style="color: #000000;"><em class="bluetitle"><span style="color: #000000;">Multi Award Winning Chef, Culinary Consultant, Author,&nbsp;</span></em></span></span></span></span></span><span class="bodytext"><span style="color: #0000ff;"><span style="color: #000000;"><span class="bluetitle"><span style="font-weight: normal;"><span style="color: #000000;"><em class="bluetitle"><span style="color: #000000;">Food Archaeologist, TV Presenter, Food &amp; Travel writer, International judge, International TEDx Speaker, Moderator&nbsp; and culinary innovator</span></em></span></span></span></span></span></span><strong style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"><em>.<br /></em></strong></span></h3><br />
+<h3><span style="font-size: small;"><span style="color: #0000ff;">*Filmed more than 1,250 TV food and travel shows to&nbsp; &nbsp; &nbsp; date (screened around the world).&nbsp;<br />*Written 5 Cookbooks to date (2 award winning)<br />*Voted top 10 favorite TV chef presenters in a BBC&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; world wide Poll.</span></span></h3><br />
+<h3><span style="font-size: small;"><strong style="font-size: small;"><span style="color: #0000ff;">Awarded</span></strong>&nbsp;"The Maitrise Escoffier"&nbsp;&nbsp;<br /><strong style="font-size: small;"><span style="color: #0000ff;">Awarded</span></strong>&nbsp;the ACF "Palmes Culinaire"<br /><strong style="font-size: small;"><span style="color: #0000ff;">Awarded</span> </strong>A "Disciple of Escoffier"</span></h3><br />
+<h3><span style="font-size: small;"><span style="color: #0000ff;">British Ambassador</span> for Food and gastronomy.&nbsp;&nbsp;<br /><span style="color: #0000ff;">Ambassador</span> "Chefs World Summit" (Monte Carlo).<br /><span style="color: #0000ff;">TEDx </span>Speaker (Monte Carlo).</span></h3><br />
+<h3><span style="font-size: small;"><span style="color: #0000ff;">Speaker</span> at the Creative Chefs Summit Kiev (Ukraine)<br /><span style="color: #0000ff;">Speaker </span>at the Belgrade Food Show (Serbia)<br /><span style="color: #0000ff;">Speaker</span> at the iTQi Taiwan Awards Ceremony (Taiwan)<br /><span style="color: #0000ff;">Speaker </span>and host of the iTQi awards (Brussels)<br /><span style="color: #0000ff;">Speaker</span> and Moderator at the Chefs World Summit (Monte Carlo)<br /><span style="color: #0000ff;">Member</span> of the British Royal Academy of Culinary Arts<br /><span style="color: #0000ff;">Member</span> of British Guild of Food Writers<br /><span style="color: #0000ff;">Member</span> of the International Travel Writers Alliance<br /><span style="color: #0000ff;">Member</span> o<span style="color: #0000ff;" lang="EN-US"><span style="color: #000000;">f the World Gourmet Society</span></span></span></h3><br />
+<h3><span style="font-size: small;"><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span></strong>&nbsp;of 5 International gold awards for Fat sculpture<br /><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span></strong>&nbsp;of&nbsp; 2 iTQi "Superior Taste Award"(Brussels)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span></strong>&nbsp;of the Anuga Taste Innovation Award (Germany)<br /><span style="color: #0000ff;"><strong style="font-size: small;">Winne</strong>r</span> of the coveted "Winner of Winners" (UK) Gold&nbsp;Excellence in food and drink Award&nbsp;(UK)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span>&nbsp;</strong>of the MBA "Entrepreneur of the year" Award<br /><span style="color: #0000ff;"><strong style="font-size: small;">Winner</strong>&nbsp;</span>of the Innovative Product of the Year Award&nbsp;(UK)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span>&nbsp;</strong>of the "Best potato recipe of the world"&nbsp;(Peru)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Winner</span></strong>&nbsp;of the "Midlands Innovation&nbsp;of the Year Award&nbsp;(uk)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Finalist</span></strong>&nbsp;of the ACF "Development chef of the year award&nbsp;(UK)<br /><strong style="font-size: small;"><span style="color: #0000ff;">Finalist</span></strong>&nbsp;for Midlands Exporter of the year (UK).<br /><strong style="color: #0000ff; font-size: small;"><span style="color: #0000ff;">Judge</span></strong>&nbsp;for the iTQi&nbsp;Food Awards&nbsp;(Brussels) 2010-2019&nbsp;.&nbsp;<br /><strong style="font-size: small;"><span style="color: #0000ff;">Judge</span>&nbsp;</strong>of the&nbsp;"Tsingtao Legacy of Taste" Best Chinese Restaurant of the Year Awards" .<br /><strong style="font-size: small;"><span style="color: #0000ff;">Host</span> ot the Tsintao Restaurant Awards&nbsp;</strong>.<br /><span style="color: #0000ff;"><strong style="font-size: small;">Judge</strong>&nbsp;</span>of the "British Guild of Food Writers Book Awards"&nbsp;<br /><strong style="font-size: small;"><span style="color: #0000ff;">Dragon</span></strong> for the British Ecotrophilia Awards&nbsp;<br /><span style="color: #0000ff;">Host</span> for the Disciple of Escoffier UK inaugurations.&nbsp;</span></h3><br />
+<h3><span style="font-size: small;"><strong style="font-family: arial, helvetica, sans-serif;"><span style="color: #000000;"><span style="color: #0000ff;">British Ambassador for Food and Drink supporting the GREAT campaign.&nbsp;</span><br /></span></strong><img style="color: #0000ff; font-size: small;" src="../images/foodisgreat.jpg" alt="Food is Great" width="300" height="435" /><br /></span></h3><br />
+<h3><span style="font-size: small;"><span class="bluetitle">Creator of the Unique, multi award winning,&nbsp;mediaeval 15th century old English &ldquo;Ale-Gar &copy; .The original British Balsamic.<br /></span></span><span style="font-size: small;"><span class="bluetitle"><span style="color: #ff0000;">"The most&nbsp;unique&nbsp;ingredient&nbsp;to be created this century".</span></span><em style="color: #0000ff; font-size: small;"><span style="color: #0000ff;"><span class="bluetitle">&nbsp;</span></span><br /></em></span></h3><br />
+<span style="font-size: small;"><em style="color: #0000ff; font-size: small;"><img src="../images/alanhome2.jpg" alt="Ale Gar" width="250" height="300" /><br /></em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br /></span><br />
+<h3><span style="font-size: small;"><span style="color: #000000;">With many years of experience in all aspects of food, hospitality, retail and media, Alan supports quality food producers in the development of their own products as well as gain consumer brand exposure around the UK and many parts of the world.</span></span></h3><br />
+<div><span style="font-size: small;"><span style="color: #000000;">Alan has developed global contacts with both the retailer and distribution networks helping companies get to market.<br />In addition to assisting companies enter the retail market, Alan has thousands of chef and hospitality contacts and links around the&nbsp; world.<br />Opening doors for food companies and obtain potential sales routes and contacts within these sectors.</span></span></div><br />
+<h3><span style="font-size: small;"><span style="color: #000000;"><span style="color: #0000ff;">Alans other consultancy services include..</span>.<br />Recicpe / product development<br />Food photography<br />Food tresting and consultancy advice<br />Private catering and events<br />Culinary Cookery Demonstrations<br />Talks<br />Event and award ceremony hosting.<br />Chef summit moderating<br />Filming food and travel shows for TV and social media marketing.<br />Public, afterdinner and event talks and speeches<br />Alan travels the world cooking for British Ambassadores, VIP`s and celebrities.<br />Delivers cookery demonstrations bringing food and history to life in a fun interactive stlye.</span></span></h3><br />
+<h3><span style="font-size: small;"><strong style="font-size: small; color: #0000ff;">Ranked amongst the Top 10&nbsp;TV Chefs of the world by BBC world</strong><span style="color: #0000ff;"> viewers:</span></span></h3><br />
+<h3><span style="font-size: small;">Alan has starred in TV shows across the globe, cooked for kings, Queens and celebrities and is&nbsp;an inspiration in countless kitchens.&nbsp;<br />The combination of his in-depth culinary knowledge combined with&nbsp;his infectious passion for sharing has seen him rise to the top of his game &nbsp;winning a multitude of awards for his writing, culinary innovations,presentations,and fat sculptures.&nbsp;<br />..................................................................................<br />TV Show Links</span></h3><br />
+<h3><span style="font-size: small;">Birmingham to Bombay (FoodNetwork)</span></h3><br />
+<div><span style="font-size: small;"><span style="color: #0000ff;">fr=mcafee&amp;type=C211GB0D20150514&amp;p=yu+tube+Birmingham+to+bombay</span></span></div><br />
+<h3><span style="font-size: small;">Ever Wondered About Food BBC2</span></h3><br />
+<h3><span style="font-size: small;"><a href="http://www.bbc.co.uk/pressoffice/pressreleases/stories/2003/09_september/24/ou_food.shtml"><span style="font-size: small;"><span style="color: #0000ff;">http://www.bbc.co.uk/pressoffice/pressreleases/stories/2003/09_september/24/ou_food.shtml</span></span></a></span></h3><br />
+<h3><span style="font-size: small;">Selection of shows filmed in China Fish 4 Yu</span></h3><br />
+<div><span style="font-size: small;"><span style="font-size: small;"><a href="https://www.youtube.com/user/alancoxon"><span style="color: #0000ff;">https://www.youtube.com/user/alancoxon</span></a> </span></span></div><br />
+<div><span style="font-size: small;"><br /></span></div><br />
+<div><span style="font-size: small;"><span style="color: #000000;"><strong>TED X speech</strong></span>&nbsp;</span><a style="font-family: " href="https://www.youtube.com/watch?v=pGsvIkP6fkE">https://www.youtube.com/watch?v=pGsvIkP6fkE</a><span style="color: #1f497d; font-family: ">&nbsp;&nbsp;</span></div><br />
+<div><span style="color: #1f497d; font-family: "><br /></span></div><br />
+<div><span style="font-size: small;"><span style="background-color: #f5f8fa; color: #14171a; white-space: pre-wrap;"><strong>Dinning in Serbia</strong></span></span></div><br />
+<a class="twitter-timeline-link" style="background: #f5f8fa; color: #3300ff; outline: 0px; white-space: pre-wrap;" title="https://www.instagram.com/p/Bs0EqMxjlT4/" dir="ltr" rel="nofollow noopener" href="https://t.co/BWjazFk0qI" target="_blank"><span style="font-size: small;"><span class="invisible" style="line-height: 0;">https://www.</span><span class="js-display-url">instagram.com/p/Bs0EqMxjlT4/</span><span class="tco-ellipsis"><span class="invisible" style="line-height: 0;">&nbsp;</span></span></span></a><span style="color: #14171a; font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; white-space: pre-wrap; background-color: #f5f8fa;"> </span><br />
+<h3><span style="font-size: small;">For more information about the book, please visit ....</span></h3><br />
+<h3><span style="font-size: small;"><a style="font-size: small;" href="http://booksbyalancoxon.com/shop/from-birmingham-to-bombay/pt-2-punjab-amritsar-goa-bombay/#.VRlpLPzF-So" target="_blank">http://booksbyalancoxon.com/&hellip;/pt-2-punjab-amritsar-goa-bo&hellip;/&hellip;<br /></a><a style="font-size: small;" href="http://booksbyalancoxon.com/">http://booksbyalancoxon.com/</a><span style="color: #800000;">&nbsp;<br /></span>Food range www.foodbyalancoxon.com&nbsp; &nbsp;<br /><a style="font-size: small;" href="http://foodbyalancoxon.com/">http://foodbyalancoxon.com/</a><span style="color: #0000ff;">&nbsp;<br /></span>Ale Gar &nbsp;<a style="font-size: small;" href="http://www.alegar.co.uk/">http://www.alegar.co.uk/</a></span></h3><br />
+<h3><span style="font-size: small;"><a style="font-size: small;" href="http://www.alegar.co.uk/"><br /></a><img style="color: #000000; font-size: 10px;" src="images/div2.jpg" alt="" width="364" height="4" /><br />Alan Coxon is copyright and trade mark protected&nbsp;&copy;<br />Coxon`s Kitchen ltd is copyright and trademark protected &copy;&nbsp;<br />Ale-Gar is copyright and trade mark protected&nbsp;&copy;<br />Ancient Greek Vinaigre is copyright and trademark &nbsp;protected&copy;<br />Parsley Productions is copyright and trademark protected&nbsp;&copy;<br />Roman Vinaigre is copyright and trademark protected&nbsp;&copy;<br />From Birmingham to Bombay is copyright and trademark protected&nbsp;&copy;<br />Street food inc&nbsp;&copy;&nbsp;</span></h3><br />
+<h3>Briexit cheese&nbsp;<span style="font-size: 1.17em;">&copy;</span></h3><br />
+<h3><span style="font-size: small;"><a class="twitter-follow-button" style="font-size: xx-small;" href="https://twitter.com/alancoxon">Follow @alancoxon</a><br /></span><br />
+<div><strong><span style="font-size: small;"> </span></strong></div><br />
+<div><br />
+<h2><br />
+<div><br />
+<div><br />
+<div><span class="bodytext"><span style="font-size: small;"><span style="font-family: arial, helvetica, sans-serif;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><br />
+<h2><span style="color: #000000;"> </span></h2><br />
+</span></span></span></span></span></span></div><br />
+<h3><span class="bodytext"><span style="font-size: small;"><br />
+<div><span style="color: #0000ff;"> </span></div><br />
+<div><span style="color: #0000ff;"><span style="color: #0000ff;"> </span></span></div><br />
+</span></span><br />
+<div><br />
+<div><br />
+<div><span style="font-size: xx-small;"><span style="font-size: xx-small;"><span style="font-size: small;"> </span><br />
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 1818px; width: 1px; height: 1px; overflow: hidden;"><span style="font-size: small;"><br />
+<script type="text/javascript"><!--<br />
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');<br />
+// --></script><br />
+</span></div><br />
+<br /></span></span></div><br />
+</div><br />
+</div><br />
+</h3><br />
+</div><br />
+</div><br />
+</h2><br />
+</div><br />
+</h3></span></td>
+          </tr>
+        </table>                <br>
+                <img src="images/div2.jpg" width="364" height="4"><br>
+                  <img src="images/3together.jpg" alt="Vinagres" width="300" height="203"><br>
+                  <br>
+                    <span class="bluetextbold"><br>
+              The multi award winning Unique 15th century Mediaeval Old English Ale-Gar , Roman and Ancient Greek Vinaigres. Click <a href="http://www.alancoxon.com/historic.php">here</a> for more info</span></p>
+              <p>&nbsp;</p></td>
+              <td width="392" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <!--DWLayoutTable-->
+                <tr>
+                  <td width="19" height="318">&nbsp;</td>
+                    <td width="373" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <!--DWLayoutTable-->
+                      <tr>
+                        <td width="373" height="318" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <!--DWLayoutTable-->
+                          <tr>
+                            <td width="373" height="19" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                              <!--DWLayoutTable-->
+                              <tr>
+                                <td width="373" height="19">&nbsp;</td>
+                                    </tr>
+                              </table></td>
+                              </tr>
+                          <tr>
+                            <td height="299" align="center" valign="top">
+                            <center> 
+<div id="flvplayer"></div>
+<script type="text/javascript">
+	var so = new SWFObject("mpw_player.swf", "swfplayer", "325", "280", "9", "#000000");
+	so.addVariable("flv", "alan_coxon_dvd_pal.flv");
+	so.addVariable("jpg","imagen.jpg");
+	//so.addVariable("autoplay","true");
+	so.addParam("allowFullScreen","true");
+	so.write("flvplayer");
+</script>
+
+</noscript>
+</center>
+</td>
+                      </tr>
+                          </table>                        </td>
+                      </tr>
+                      
+                      
+                        </table></td>
+              </tr>
+                <tr>
+                  <td height="267">&nbsp;</td>
+                    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <!--DWLayoutTable-->
+                      <tr>
+                        <td width="373" height="267" valign="top"><table width="100%" border="0">
+                          <!--DWLayoutTable-->
+                          <tr>
+                            <td width="367" height="134" valign="top"><table width="100%" border="0">
+                                    <tr>
+                                      <td width="18%">&nbsp;</td>
+                                      <td width="64%" class="text"><table width='100%' border='0' cellpadding='0'>
+          <tr>
+            <td align='left'><span class='bodytext'><span class="bodytext"><br />
+<div><span style="font-size: small;">follow alan on twitter &nbsp;@alancoxon&nbsp;</span></div><br />
+<div><span style="font-size: small;"><span style="font-family: arial, helvetica, sans-serif;"><span style="color: #0000ff;"> </span></span></span></div><br />
+<div><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: medium;"> </span></span></span></div><br />
+<div><strong style="font-size: medium; color: #0000ff;"><img src="../images/alanhome.jpg" alt="" /></strong></div><br />
+<div><strong style="font-size: medium;">Alan is available for.......</strong></div><br />
+<h3><span style="font-size: medium;"><em><span style="font-size: small;">Culinary consultancy<br /></span></em></span><em><span style="font-size: small;">Corporate Cookery shows and events<br /></span></em><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Product and marketing consultancy<br /></span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">TV Presenter/Director and Producer food specialist&nbsp;&nbsp;<br /></span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Restaurant and hotel Consultancy work<br /> </span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Recipe development work<br /></span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Food Photography&nbsp;<br /></span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Culinary training and motivational coaching<br /></span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="font-size: small;"><em><span style="font-size: small;">Media presentation coaching<br /> </span></em></span></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">TV presenting<br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">Voice over work<br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">Radio Broadcasting / presenting<br /> </span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">Food and travel writing, features and articles<br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">Chef/ Private dinner Parties  / outside catering functions<br /> </span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">Culinary competition Judging<br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">After dinner speaking / hosting<br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;"><span style="color: #000000;">TV Production, producer and conceptual development. <br /></span></span></em></span></span></span><span style="font-size: small;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="font-size: small;"><em><span style="font-size: small;">For information on booking Alan please e-mail info@alancoxon.com&nbsp;</span></em></span></span></span></span></span></h3><br />
+<div><span style="color: #0000ff; font-size: small;">.......................................................................................</span></div><br />
+<div><em style="color: #0000ff;"><span style="font-size: small;"><span style="color: #000000;">Stats: Alan`s websites currently attract over <strong>7</strong><strong>50,000 +</strong> visitors per annum and growing!.</span></span></em></div><br />
+<div><em style="color: #0000ff;"><span style="font-size: small;"><span style="color: #000000;"><em style="color: #0000ff; font-size: x-small;"><span style="font-size: small;"><span style="color: #000000;">Alan writes for 1 UK magazine with a distribution to over 45,000 readers per month.</span></span></em><br /></span></span></em></div><br />
+<div><em style="color: #0000ff;"><span style="font-size: small;"><span style="color: #000000;">Alan has <strong>over 15,000 </strong>followers on Twitter and facebook +</span></span></em></div><br />
+<div><span style="color: #0000ff;"><span style="font-size: small;"><span style="color: #000000;"><strong style="font-style: italic;">4,000+ connections</strong><em>&nbsp;on linked-in and over <strong>120,000</strong>&nbsp;</em><em>followers and readers on trip advisor.</em></span></span></span></div><br />
+<div><br /><em style="font-size: x-small; color: #0000ff;"><span style="font-size: small;"><span style="color: #000000;"><br />
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 515px; width: 1px; height: 1px; overflow: hidden; display: inline !important;"><a class="twitter-share-button" href="https://twitter.com/share">eet</a></div><br />
+</span></span></em></div><br />
+<div><span style="color: #0000ff; font-size: x-small;"><em><span style="font-size: small;"><span style="color: #000000;"><br />
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 515px; width: 1px; height: 1px; overflow: hidden;"><br />
+<script type="text/javascript"><!--<br />
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');<br />
+// --></script><br />
+</div><br />
+</span></span></em></span><br />
+<div><em style="font-size: medium;">Twitter&nbsp;<a class="twitter-follow-button" href="https://twitter.com/alancoxon">&nbsp;@alancoxon</a></em></div><br />
+<div><span style="font-size: medium;">Facebook alancoxon1</span></div><br />
+<div><span style="font-size: medium;">linkedin AlanCoxon&nbsp;&nbsp;</span></div><br />
+<div><span style="font-size: medium;"><em><br />
+<script type="text/javascript"><!--<br />
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');<br />
+// --></script><br />
+</em></span></div><br />
+</div><br />
+<div><span style="font-size: x-small;"><span style="font-size: xx-small;"><em><span style="font-size: medium;"> </span><br />
+<div><br />
+<div><span style="font-size: medium;"><br />
+<script type="text/javascript"><!--<br />
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');<br />
+// --></script><br />
+</span></div><br />
+<div><span style="font-size: xx-small;"><br /></span></div><br />
+</div><br />
+<div style="font-size: xx-small;"><br />
+<script type="text/javascript"><!--<br />
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');<br />
+// --></script><br />
+</div><br />
+</em></span></span></div><br />
+</span></span></td>
+          </tr>
+		  <tr>
+		  <td height='15'></td>
+		  </tr>
+        <tr><td align="center">
+<script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages2, 200, 400, 0, 12000, 0, "Rs")
+</script>
+</td></tr></table></td>
+                                      <td width="18%">&nbsp;</td>
+                                    </tr>
+                                    </table></td>
+                              </tr>
+                          <tr>
+                            <td height="127"></td>
+                              </tr>
+                          
+                          
+                        
+                        
+                        
+                          </table></td>
+                        </tr>
+                      
+                      
+                      
+                      
+                      
+                        </table></td>
+              </tr>
+                
+                
+              </table></td>
+            </tr>
+        </table>
+      </div></td>
+    </tr>
+    <tr>
+      <td height="36" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="768" height="36" valign="bottom"><img src="images/bottom_bar.jpg" width="768" height="36" border="0" usemap="#Map"></td>
+          </tr>
+            </table></td>
+    </tr>
+  </table>
+</div>
+<map name="Map">
+  <area shape="rect" coords="584,14,750,33" href="http://www.creative-soup.com">
+</map>
+</body>
+</html>

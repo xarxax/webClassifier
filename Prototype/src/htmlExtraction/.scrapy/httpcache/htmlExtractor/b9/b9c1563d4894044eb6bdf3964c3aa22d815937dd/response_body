@@ -1,0 +1,27 @@
+
+<html>
+<head>
+<title>Relocate</title>
+<script language="javascript">
+	var url = window.location.href;
+	if (url.charAt(url.length - 1) != "/")
+		url = url + "/";
+	var s = url.indexOf("//") + 2;
+	var e = url.indexOf("@");
+	if (e > 0) {
+		var atpart = url.substring(s, e);
+		var newurl = url.substring(0, s) + url.substring(e + 1 , url.length);
+		window.location = newurl + "~" + atpart + "/";
+	} else {
+		window.location= url + "index.html";
+	}
+</script>
+<meta http-equiv="refresh" content="4" url="index.html">
+</head>
+<body>
+<noscript>
+Sorry, your browser does not support Java Script.
+</noscript>
+</body>
+</html>
+		

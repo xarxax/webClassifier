@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>:: Welcome To Complete Medical Supplies  ::</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Css Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" /> 
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" href="css/flexslider.css" /> 
+        <!-- Css Files -->
+        <!-- Js Files -->
+        <script src="js/tether.min.js"></script>  
+        <script src="js/bootstrap.js" </script>
+        <script src="js/bootstrap.min.js" </script>
+        <!-- Js Files -->
+        <script src="js/jquery-1.5.1.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            var J = jQuery.noConflict();
+        </script>
+        <script src="js/loopedslider.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            J(function () {
+                J('#loopedSlider').loopedSlider({
+                    autoStart: 5000,
+                    restart: 7500
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="js/jquery.shuffleLetters.js"></script>
+        <script src="js/script.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>  
+        <script src="js/jquery.readmore.js"></script>  
+        <script src="js/jquery.prettyPhoto.js"></script>  
+        <script src="js/jquery.validate.min.js"></script>  
+        <script src="js/jquery.flexslider-min.js"></script> 
+        <script>
+            $(function () {
+                // run the currently selected effect
+                function runEffect() {
+                    // get effect type from
+                    var selectedEffect = $("#effectTypes").val();
+
+                    // most effect types need no options passed by default
+                    var options = {};
+                    // some effects have required parameters
+                    if (selectedEffect === "scale") {
+                        options = {percent: 0};
+                    } else if (selectedEffect === "size") {
+                        options = {to: {width: 200, height: 60}};
+                    }
+
+                    // run the effect
+                    $("#effect").toggle(selectedEffect, options, 500);
+                }
+                ;
+
+                // set effect from select menu value
+                $("#button").click(function () {
+                    runEffect();
+                    $(this).toggleClass('active');
+                });
+            });
+        </script>
+        <script language="javascript">
+            function newwindow() {
+
+                $("#modal33").show();
+            }
+
+            function newwindow2() {
+                $("#modal33").hide();
+            }
+
+            function forgotpswd() {
+                var showme = document.getElementById("forgotpswd");
+                showme.style.visibility = "visible";
+            }
+
+            function forgotpswd2() {
+                var showme = document.getElementById("forgotpswd");
+                showme.style.visibility = "hidden";
+            }
+
+            function openEmail() {
+
+                $("#mailing2").show();
+            }
+
+            function closeMail() {
+                $("#mailing2").hide();
+            }
+
+            function openRequestAccess() {
+                $("#requestAccess").show();
+                $("#loginW").hide();
+            }
+            function closeRequestAccess() {
+                $("#requestAccess").hide();
+            }
+            function openReset() {
+                $("#resetPassword").show();
+            }
+            function closeReset() {
+                $("#resetPassword").hide();
+            }
+            function openLogin() {
+                $("#loginW").show();
+            }
+            function closeLogin() {
+                $("#loginW").hide();
+            }
+
+        </script>
+        <link rel="stylesheet" href="css/custom.css" />
+        <script type="text/javascript">
+            var CaptchaCallback = function () {
+                if ($('#recaptcha-one').length) {
+                    grecaptcha.render('recaptcha-one', {'sitekey':   '6Lc7poAUAAAAAKwDMgTMHeOjteFl7YQRazkriXWo'});
+                }                                                     
+                if ($('#recaptcha-two').length) {                     
+                    grecaptcha.render('recaptcha-two', {'sitekey':   '6Lc7poAUAAAAAKwDMgTMHeOjteFl7YQRazkriXWo'});
+                }                                                     
+                if ($('#recaptcha-three').length) {                   
+                    grecaptcha.render('recaptcha-three', {'sitekey': '6Lc7poAUAAAAAKwDMgTMHeOjteFl7YQRazkriXWo'});
+                }                                                     
+                if ($('#recaptcha-four').length) {                    
+                    grecaptcha.render('recaptcha-four', {'sitekey':  '6Lc7poAUAAAAAKwDMgTMHeOjteFl7YQRazkriXWo'});
+                }                                                     
+                if ($('#recaptcha-five').length) {                    
+                    grecaptcha.render('recaptcha-five', {'sitekey':  '6Lc7poAUAAAAAKwDMgTMHeOjteFl7YQRazkriXWo'});
+                }
+            };
+        </script>
+        <!--test start-->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-103806264-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!--test end-->
+        <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+    </head>
+    <body>
+        <div style="display: none;" class="loader-wrapper">
+            <div class="cTable">
+                <div class="table-row">
+                    <div>
+                        <div class="sk-spinner sk-spinner-wave">
+                            <div class="sk-rect1"></div>
+                            <div class="sk-rect2"></div>
+                            <div class="sk-rect3"></div>
+                            <div class="sk-rect4"></div>
+                            <div class="sk-rect5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer-header">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="images/logo-n1.png" alt="Logo" class="logo">
+                        </div>
+
+                        <div class="col-sm-7">
+                            <nav class="top_menu" style="float:right;">
+
+                                <ul class="login">
+                                    <li class="active" id="home"><a href="index.php">Home</a></li>
+                                    <li id="login"><a href="#" onclick="openLogin()">Complete-Connect<sup>TM</sup> Login</a></li>
+                                    <li id="open"><a onclick="newwindow()">Open An Account</a></li>
+                                    <li id="help"><a href="index.php?act=showRequestInfo">Help</a></li>
+                                </ul>
+
+                            </nav>
+                            <h2>Health Product Manufacturer, Importer & Master Wholesaler</h2>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-sm-7">
+
+                            <nav class="navbar navbar-default">
+                                <h3 class="menu_name">Menu</h3>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>				
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav main-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown"  href="#">About Us </a>
+                                            <ul class="dropdown-menu">
+
+                                                <li><a href="index.php?act=showCompanyOverview">Company Overview </a></li>
+
+                                                <li><a href="index.php?act=showCoreValues">Core Values and Mission</a></li>
+                                                <li><a href="index.php?act=showNews">Company News</a></li>
+                                                <li><a href="index.php?act=showEvents">Events &amp; Conventions</a></li>
+                                                <li><a href="index.php?act=showAffiliations">Affiliations</a></li>
+
+
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown"  href="#">Products </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a target="_blank" href="https://interlink.completemedical.com/search.asp">Product Search</a></li>
+                                                <li><a href="index.php?act=showCategories">Product Categories</a></li>
+                                                <li><a href="index.php?act=showBlueJay">Blue Jay<sup>TM</sup> An Elite Healthcare Brand</a></li>
+                                                <!--<li><a href="index.php?act=Pages.showMylight">Mylight</a></li>-->
+                                                <li><a href="index.php?act=Pages.showObusForme">Obus Forme<sup>&#174;</sup> The Back and Neck Pain Solution</a></li>
+                                                <!--<li><a href="index.php?act=showProductExclusives">Product Exclusives</a></li>-->
+                                                <li><a href="index.php?act=showCatalog">Product Catalogs for Online Viewing</a></li>
+                                                <li><a href="index.php?act=showNewProducts">New Products</a></li>
+                                                <li><a href="index.php?act=showVendor">Vendor Portal</a></li>
+
+                                            </ul>
+                                        </li> 
+                                        <li><a class="dropdown-toggle" data-toggle="dropdown"  href="#">Services and Solutions</a>
+
+                                            <ul class="dropdown-menu">
+
+                                                <!--<li><a href="index.php?act=showMarketing">Private Label Marketing</a></li>-->
+                                                <!--<li><a href="index.php?act=showCustomWebsites">Custom Websites</a></li>-->
+                                                <li><a href="index.php?act=showCompleteConnect">Complete-Connect<sup>TM</sup> 
+                                                        24/7 Online Ordering and Customer Service</a></li>
+                                                <li><a href="index.php?act=showShipping"> Service Areas and Shipping Methods</a></li>
+                                                <li><a href="index.php?act=showDeliveryZone">Local Complete Medical Truck Delivery Area</a></li>
+                                                <li><a href="index.php?act=Pages.showDropShipment">Drop shipping</a></li>
+                                                <li><a href="index.php?act=Pages.showDataFeed">Product Data feed</a></li>
+
+
+
+
+
+
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-toggle" data-toggle="dropdown"  href="#">Contact Us</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="index.php?act=showRequestInfo">Customer Service/Help Center</a></li> 
+                                                <li><a href="index.php?act=showSalesRepresentative">Local Sales Representative</a></li>
+                                                <li><a href="index.php?act=showBidRequest">Special Pricing/Bid Request </a></li>
+                                                <!--<li><a href="index.php?act=showRequestCatalog">Request A Catalog</a></li>-->
+                                                <li><a href="index.php?act=showCareers">Careers</a></li>
+                                                <li><a href="index.php?act=showLocations">Locations</a></li>
+
+                                            </ul>
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="call">1-800-242-2674 </div>
+                            <div class="msg2"><a href="#" onclick="openEmail()">Join Mailing List</a> </div>
+                            <div class="msg"><a href="#" onclick="openEmail()">Join E-mail List</a> </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="block block-list">
+                        <div class="block-title">
+                            <a style="text-decoration: none;" target="_blank" href="https://interlink.completemedical.com/search.asp"><strong><span> Product Search <img src="images/cat-arrow.png"> </span></strong></a>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="block block-cart">
+                        <div class="container-fluid">
+                            <div class="block-title2"> 
+                                <strong><span>Complete-Connect<sup>TM</sup> Login</span></strong>
+                            </div> 
+                            <div class="block-content">
+                                <div class="click">Your 24/7 Online Order and Information System</div>
+                                <form action="https://interlink.completemedical.com/login.asp" method="post" name="form1" id="form1" target="_blank">
+                                    <input type="text" placeholder="Account #" class="form-control text-input" name="usercode" />
+                                    <input type="password" placeholder="Password" class="form-control text-input"name="password" />
+                                    <li class="forgetpswd"><a href="#" onclick="openReset()">Forgot Password</a></li>
+                                    <a href="#" class="btn btn-upper btn-primary read-more" onclick="form1.submit()">Login</a>
+                                    <ul class="register">
+                                        <li><a style="margin-bottom: 0px;" href="index.php?act=showCompleteConnect">Complete-Connect<sup>TM</sup> Full Details</a></li>
+                                        <li><a href="#" onclick="openRequestAccess()">Request Access to Complete-Connect<sup>TM</sup></a></li>
+                                        <li><a onclick="newwindow()" style="margin-bottom: 0px;" href="#">Open an Account with Complete Medical</a></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block block-poll"> 
+                        <div class="block-poll-left">
+                            <h3>We Manufacture</h3>
+                            <p id="text">
+                                <a href="index.php?act=showBlueJay" class="blujay">
+                                    Learn more about Blue Jay<sup>TM</sup> An Elite Healthcare Brand of Products</a>
+                            </p>		
+                        </div>
+                        <div class="block-poll-right">
+                            <a class="images" href="index.php?act=showBlueJay"><img src="images/blue-jay.png"></a>
+                        </div>
+                    </div>
+                    <div class="block block-poll">
+                        <div class="block-poll-left">
+                            <h3>CATALOGS</h3>
+                            <p id="text"><a href="index.php?act=showCatalog"> View Our<br> E-Catalogs<br /> Online </a></p>		
+                        </div>
+                        <div class="block-poll-right">
+                            <a class="images" href="index.php?act=showCatalog"><img src="images/e-catalog-banner.png"></a>
+                        </div>
+                    </div>
+                    <div class="block block-poll">
+                        <h3>STAY CONNECTED</h3>
+                        <p >
+                            <a href="https://www.facebook.com/completemedicalsupplies/" target="_blank" class="iconsConnected"><img src="images/icon_facebook.png"></a>
+                            <a href="https://www.youtube.com/user/CompleteMedicalSupp" target="_blank" class="iconsConnected"><img src="images/icon_youtube.png"></a>
+                            <a href="#" class="iconsConnected" target="_blank"><img src="images/icon_linkedin.png"></a>
+                        </p>		
+
+                    </div>
+
+                    <div class="block block-poll">
+                        <h3>SAVE BIG</h3>
+                        <p>Receive Special Discounts, Flash Sales, </br> E-Mails and Promotions</p>		
+
+                        <div class="clear"></div>
+                        <p id="join" onclick="openEmail()"><img src="images/@1.png" width="40"> Join Our E-Mail List</p>		 
+                        <div class="clear"></div>
+                        <p id="join" onclick="openEmail()" style="margin-bottom:5px;"><img src="images/msg2.png" width="45">  Join Our Mailing List</p>		 
+                    </div>
+                </div>
+
+                <div class="col-sm-9">
+    <div class="col-main"> 
+        <div class="slider">
+            <div id="slider" class="flexslider">
+                <ul class="slides">
+                    
+                    <li class=""><a href="uploads/slides/pdf_107.pdf" target="_blank" ><img src="uploads/slides/107.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_104.pdf" target="_blank" ><img src="uploads/slides/104.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_105.pdf" target="_blank" ><img src="uploads/slides/105.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_103.pdf" target="_blank" ><img src="uploads/slides/103.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_106.pdf" target="_blank" ><img src="uploads/slides/106.jpg"  /></a></li>
+                    
+                    <li class=""><a href="#" target="_blank" ><img src="uploads/slides/102.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_100.pdf" target="_blank" ><img src="uploads/slides/100.jpg"  /></a></li>
+                    
+                    <li class=""><a href="https://interlink.completemedical.com/itemdet.asp?itemnum=BJ210161&conum=001" target="_blank" ><img src="uploads/slides/99.jpg"  /></a></li>
+                    
+                    <li class=""><a href="uploads/slides/pdf_98.pdf" target="_blank" ><img src="uploads/slides/98.jpg"  /></a></li>
+                    
+                    <li class=""><a href="#" target="_blank" ><img src="uploads/slides/97.jpg"  /></a></li>
+                    
+
+                </ul>
+            </div>
+            <div id="carousel" class="flexslider">
+                <ul class="slides">
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_107.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_104.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_105.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_103.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_106.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_102.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_100.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_99.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_98.jpg" height="82"  /></a></li>
+                    
+                    <li class=""><a href="#" ><img src="uploads/slides/t_97.jpg" height="82"  /></a></li>
+                    
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <br clear="all">
+        <div class="banner_shipping">
+            <h3>We Are a Health Product Manufacturer,</br>
+                Importer and Master Wholesaler.</h3>
+            <h4>To learn about our products, CALL US at 800-242-2674.</br>  
+                Our knowledgable sales representatives look forward to helping you!</h4>
+        </div>
+        <div class="block block-poll" id="three">
+            <div class="news_img"><a href="index.php?act=showCatalog"><img src="images/online.png"   /></a></div>
+            <ul id="online-link">
+                <li>Full Line Catalog</li>
+                <li>Product Line Catalogs </li>
+                <li>Product Specification Forms </li>
+                <li><a href="index.php?act=showCatalog">... and much more !  </a></li>
+            </ul> 
+        </div> 
+    </div> 
+</div>
+</div> 
+<!--Announcement-->
+
+<div class="floaty" style="display:none">
+    <a class="close" href="#">X</a>
+    <h3 class="block-title2">{an.title}</h3>
+    {subtitle}
+    <div class="content">{an.image} <p>{an.content}</p>
+
+
+    </div>
+</div>
+<!--Announcement-->
+
+
+<script language="javascript">
+    $("#catalogs_small").hide();
+
+
+    $(window).load(function () {
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 180,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: true,
+            slideshow: '1',
+            slideshowSpeed: '6000',
+            sync: "#carousel",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        
+
+
+        $(".close").click(function (e) {
+            e.preventDefault();
+            $(this).parent().hide(400);
+        })
+
+    });
+</script> 
+
+            </div><!--row -->
+        </div><!--container-->	
+        </div>		
+        <div class="footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/footer-logo.png" class="footer-logo">
+                            <address>© Copyright 2017 All Rights Reserved.<br> </address>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="footer">
+                            <div class="col-md-3">
+                                <h5>About Us</h5>
+                                <ul >
+
+                                    <li><a href="index.php?act=showCompanyOverview">Company Overview </a></li>
+
+                                    <li><a href="index.php?act=showCoreValues">Core Values and Mission</a></li>
+                                    <li><a href="index.php?act=showNews">Company News</a></li>
+                                    <li><a href="index.php?act=showEvents">Events &amp; Conventions</a></li>
+                                    <li><a href="index.php?act=showAffiliations">Affiliations</a></li>
+
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Products</h5>
+                                <ul>
+                                    <li><a target="_blank" href="https://interlink.completemedical.com/search.asp">Product Search</a></li>
+                                    <li><a href="index.php?act=showCategories">Product Categories</a></li>
+                                    <li><a href="index.php?act=showBlueJay">Blue Jay<sup>TM</sup> <i>An Elite Healthcare Brand</i></a></li>
+                                    <li><a href="index.php?act=Pages.showObusForme">ObusForme<sup>&#174;</sup>&nbsp;&nbsp;The Back and Neck Pain Solution</a></li>
+                                    <li><a href="index.php?act=showCatalog">E-Catalogs Online</a></li>
+                                    <li><a href="index.php?act=showNewProducts">New Products</a></li>
+                                    <li><a href="index.php?act=showVendor">Vendor Portal</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Services and Solutions</h5>
+                                <ul >
+                                    <li><a href="index.php?act=showCompleteConnect">Complete-Connect<sup>TM</sup></a></li>
+                                    <li><a href="index.php?act=showShipping"> Service Areas & Shipping Methods</a></li>
+                                    <li><a href="index.php?act=showDeliveryZone">Local Complete Medical Truck Delivery Area</a></li>
+                                    <li><a href="index.php?act=Pages.showDropShipment">Drop shipment</a></li>
+                                    <li><a href="index.php?act=Pages.showDataFeed">Product Data feed</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Contact Us</h5>						
+
+
+                                <ul >
+                                    <li><a href="index.php?act=showRequestInfo">Customer Service / Help Center</a></li> 
+                                    <li><a href="index.php?act=showSalesRepresentative">Local Sales Representative</a></li>
+                                    <li><a href="index.php?act=showBidRequest">Special Discount Pricing / Bid Request </a></li>
+                                    <li><a href="index.php?act=showCareers">Careers</a></li>
+                                    <li><a href="index.php?act=showLocations">Locations</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--modals-->
+                <!-- Complete-Connect™ Form -->
+                <div id="modal33" class="popup">
+                    <a href="#" class="close" onclick="newwindow2()"><img src="images/close.png" width="32" height="32"></a>
+                    <div class="block block-cart">
+                        <div class="block-title2"> 
+                            <strong><span>Open an Account</span></strong>
+                        </div>
+                        <p style="margin-top:5px;margin-bottom:5px;">Complete the form and you will receive an email with the correct credit application</p>
+                        <div class="block-content azul" style="margin-top:-10px;">
+                            <form action="index.php?act=doOpenAccount" method="post" name="form11" id="form11">
+
+
+
+                                <label class="required">Full Name <em>*</em></label>
+                                <input type="text" class="text-input" name="name"id="name" required="required" >
+                                    <label class="required">Corporate Name <em>*</em></label>
+                                    <input type="text"  class="text-input" name="company_name" id="company_name"  required="required">
+
+
+                                        <label class="required">Address<em>*</em></label>
+                                        <input type="text" placeholder="" class="text-input" name="address" required="required">
+                                            <label class="required">City <em>*</em></label>
+                                            <input type="text" class="text-input" name="city" required="required">
+                                                <label class="required">State <em>*</em></label>
+                                                <input type="text" class="text-input" name="state" required="required">
+                                                    <label class="required">Zip Code <em>*</em></label>
+                                                    <input type="text" class="text-input" name="zip" required="required">
+
+
+                                                        <label class="required">Direct Telephone number # <em>*</em></label>
+                                                        <input type="text" class="text-input"  name="telephone" required="required">
+
+                                                            <label class="required">Email Address <em>*</em></label>
+                                                            <input type="text"  class="text-input"  name="email" required="required">
+                                                                <label class="required">Website <em>*</em></label>
+                                                                <input type="text"  class="text-input"  name="website" required="required">
+
+                                                                    <label class=" long"> Are you a Professional or Reseller? (Check both if applicable)<em style="float: none; position: inherit;">*</em></label>
+                                                                    <label class=" long">
+                                                                        <div class="one_line"><input type="checkbox" name="professional" id="account_holder" value="Professional" > Professional </div> <span style="font-size:9px;">(Products are used by your organization and will not be resold) </span> <br>
+                                                                            <div class="clear"></div>
+                                                                            <div class="one_line"><input name="reseller" type="checkbox" id="account_holder" value="Reseller" > Reseller</div> <span style="font-size:9px;">(Products will be bought and resold by my organization) </span>
+                                                                    </label><br clear="all">
+
+                                                                        <label class=" long">Payment Terms <em style="float: none; position: inherit;">*</em></label><br>
+                                                                            <label class="long">
+                                                                                <div class="one_line" style="line-height: 18px !important;   margin-top: 2px;">
+                                                                                    <input type="radio" name="payment" id="account_holder" value=" We are applying for Net 30 Terms"  
+
+                                                                                           title="Please select a 'Payment Term' option" required="required"> We are applying for Net 30 Terms</div> <div class="clear"></div>
+                                                                                <div class="one_line" style="line-height: 18px !important;   margin-top: 4px;">
+                                                                                    <input name="payment" type="radio" id="account_holder" value="We prefer to pay by credit card"
+
+                                                                                           title="Please select a 'Payment Term' option" required="required"> We prefer to pay by credit card </div>
+                                                                            </label>
+
+                                                                            <br clear="all">
+                                                                                <div id="recaptcha-two"></div>
+                                                                                <br clear="all">
+                                                                                    <p class="required">* Required Fields</p>
+                                                                                    <a href="#" onclick="$('#commit').click()" class="btn btn-upper btn-primary read-more">Submit</a>
+                                                                                    <input type="submit" id="commit" style="display:none" value="Submit" />
+                                                                                    </form>
+
+
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <!-- Complete-Connect™ Form end -->
+
+                                                                                    <!-- Complete-Connect™ Form -->
+                                                                                    <div id="mailing2" class="popup">
+                                                                                        <a href="#" class="close" onclick="closeMail()"><img src="images/close.png" width="32" height="32"></a>
+                                                                                        <div class="block block-cart">
+                                                                                            <div class="block-title2"> 
+                                                                                                <strong><span>Join Our Email <img src="images/ico_email2.png"> or Mailing <img src="images/ico_mailing2.png"> List</span></strong>
+                                                                                                                </div>
+                                                                                                                <div class="block-content azul">
+                                                                                                                    <form action="index.php?act=doEmailList" method="post" name="f44" id="f44">
+                                                                                                                        <div >
+                                                                                                                            Add me to:
+                                                                                                                        </div>
+
+                                                                                                                        <label class="required long" style="margin-left:0px;width:95% !important;">
+                                                                                                                            <div style="margin-top:10px;"></div>
+                                                                                                                            <input type="checkbox" name="addMe1" value="Email List"  style="margin-top:15px;float:left;margin-right:8px;"/> <img src="images/ico_email2.png" style="float:left;margin-right:8px;"> Email List<br>
+                                                                                                                                    <i style="font-size:12px;">Receive disconts, sales, flash sales and coupon codes to your email address</i>
+                                                                                                                                    </label>
+                                                                                                                                    <label class="required long" style="margin-left:0px;width:95% !important;">	
+                                                                                                                                        <div style="margin-top:10px;"></div>
+                                                                                                                                        <input type="checkbox" name="addMe2" value="Mailing List" style="margin-top:8px;float:left;margin-right:8px;" /> <img src="images/ico_mailing2.png" style="float:left;margin-right:8px;"> Mailing List<br>
+                                                                                                                                                <i style="font-size:12px;">Receive our monthly sales flyer to your corporate location</i>
+                                                                                                                                                <div style="margin-top:10px;"></div>								
+
+                                                                                                                                                </label>
+
+                                                                                                                                                <label class="required">Full Name <em>*</em></label>
+                                                                                                                                                <input type="text" placeholder="" class="text-input" name="name"id="name" >
+                                                                                                                                                    <label class="required">Corporate Name <em>*</em></label>
+                                                                                                                                                    <input type="text" placeholder="" class="text-input" name="company_name" id="company_name" >
+
+
+                                                                                                                                                        <label class="required">Address<em>*</em></label>
+                                                                                                                                                        <input type="text" placeholder="" class="text-input" name="address" required="required">
+                                                                                                                                                            <label class="required">City <em>*</em></label>
+                                                                                                                                                            <input type="text" class="text-input" name="city">
+                                                                                                                                                                <label class="required">State <em>*</em></label>
+                                                                                                                                                                <input type="text" class="text-input" name="state">
+                                                                                                                                                                    <label class="required">Zip Code <em>*</em></label>
+                                                                                                                                                                    <input type="text" class="text-input" name="zip">
+
+
+                                                                                                                                                                        <label class="required">Direct Telephone number # <em>*</em></label>
+                                                                                                                                                                        <input type="text" class="text-input"  name="telephone" required="required">
+
+                                                                                                                                                                            <label class="required">Email Address <em>*</em></label>
+                                                                                                                                                                            <input type="text"  class="text-input"  name="email" required="required">
+                                                                                                                                                                                <label class="required">Website <em>*</em></label>
+                                                                                                                                                                                <input type="text"  class="text-input"  name="website" required="required">
+                                                                                                                                                                                    <label class="required" style="clear:left;">Brief Description of <br> Your Company</label>
+                                                                                                                                                                                    <textarea class="text-input"  name="description" required="required" rows="4"></textarea><br><br><br><br>
+                                                                                                                                                                                                    <label class="required" style="clear:left;">Additional Notes<br><i>Optional</i></label>
+                                                                                                                                                                                                    <textarea class="text-input"  name="notes" required="required" rows="4"></textarea>
+
+
+
+                                                                                                                                                                                                    <label class="required long">Are you a Existing Account Holder?</label><br>
+                                                                                                                                                                                                        <label class="required long" style="width:95% !important;">
+                                                                                                                                                                                                        <input type="radio" name="account_holder" value="No" /> No
+                                                                                                                                                                                                        <input type="radio" name="account_holder" value="Yes" /> Yes
+                                                                                                                                                                                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="smallText">If yes, enter your account number</span> <input type="text" name="account_number" size="10" />
+                                                                                                                                                                                                        </label>
+
+
+
+                                                                                                                                                                                                        <label class="required long" style="margin-left:0px;">Are you a Professional or Reseller?<em>*</em> <i>(Check both if applicable)</i></label>
+                                                                                                                                                                                                        <label class="required long" style="margin-left:80px;">
+                                                                                                                                                                                                        <input type="checkbox" name="areyou1" value="Professional" />Professional<br>
+                                                                                                                                                                                                        <i style="font-size: 0.7em">(Products are used by your organization and will not be resold)</i><br>
+                                                                                                                                                                                                        <input type="checkbox" name="areyou2" value="Reseller" /> Reseller</br>
+                                                                                                                                                                                                        <i style="font-size: 0.7em">(Products will be bought and resold by my organization)</i></br>
+
+
+
+                                                                                                                                                                                                        </label>
+                                                                                                                                                                                                        <br clear="all">
+                                                                                                                                                                                                        <div id="recaptcha-five"></div>
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                        <p class="required">* Required Fields</p>
+                                                                                                                                                                                                        <a href="#" onclick="$('#f44').submit()" class="btn btn-upper btn-primary read-more">Submit</a>
+                                                                                                                                                                                                        <p></p>
+
+                                                                                                                                                                                                        </form>
+
+
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Complete-Connect™ Form end -->
+
+
+
+                                                                                                                                                                                                        <!-- Complete-Connect™ Form -->
+                                                                                                                                                                                                        <div id="requestAccess" class="popup" style="">
+                                                                                                                                                                                                        <a href="#" class="close" onclick="closeRequestAccess()"><img src="images/close.png" width="32" height="32"></a>
+                                                                                                                                                                                                        <div class="block block-cart">
+                                                                                                                                                                                                        <div class="block-title2"> 
+                                                                                                                                                                                                        <strong><span>Request Access to Complete Connect<sup>TM</sup></span></strong>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="block-content">
+                                                                                                                                                                                                        <br clear="all" />
+                                                                                                                                                                                                        <p class="smaller">
+                                                                                                                                                                                                        Complete-Connect<sup>TM</sup> is our 24/7 online ordering and information system.
+                                                                                                                                                                                                        All Complete Medical Supplies customers can utilize Complete-Connect<sup>TM</sup>.
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        <form name="form212" id="form212" action="index.php?act=doRequestAccess2" method="post" enctype="multipart/form-data">
+
+
+                                                                                                                                                                                                        <p class="empty"> 
+                                                                                                                                                                                                        <label class="required">Corporate Name</label>
+                                                                                                                                                                                                        <input type="text" placeholder="" class=" text-input" name="company_name"id="category" >
+
+                                                                                                                                                                                                        <label class="required">Account Number <em>*</em></label>
+                                                                                                                                                                                                        <input type="text" placeholder="" class=" text-input" name="account" id="location" >
+
+
+                                                                                                                                                                                                        <label class="required">Contact Name <em>*</em></label>
+                                                                                                                                                                                                        <input type="text" class=" text-input" name="contact_name" required="required">
+
+
+                                                                                                                                                                                                        <label class="required">Direct Telephone number # <em>*</em></label>
+                                                                                                                                                                                                        <input type="text" class=" text-input"  name="phone" required="required">
+
+                                                                                                                                                                                                        <label class="required">Email Address <em>*</em></label>
+                                                                                                                                                                                                        <input type="text"  class=" text-input"  name="email" required="required">
+
+                                                                                                                                                                                                        <label class="required">Desired Password<em>*</em><br /> <i>Up to 8 characters</i></label>
+                                                                                                                                                                                                        <input type="password" maxlength="8"  class=" text-input"  name="password" required="required">
+                                                                                                                                                                                                        <label class="required" style="clear:left;">Additional Notes<br><i>Optional</i></label>
+                                                                                                                                                                                                        <textarea class="text-input"  name="notes" required="required" rows="4"></textarea>
+
+
+
+
+                                                                                                                                                                                                        <p></p>
+                                                                                                                                                                                                        <br clear="all">
+                                                                                                                                                                                                        <div id="recaptcha-three"></div>
+                                                                                                                                                                                                        <br clear="all">
+                                                                                                                                                                                                        <p align="right">You will receive a notification with your login ID
+                                                                                                                                                                                                        and password.</p>
+                                                                                                                                                                                                        <p class="required">* Required Fields</p>
+                                                                                                                                                                                                        <a href="#" onclick="form212.submit();" class="btn btn-upper btn-primary read-more">Submit</a>
+                                                                                                                                                                                                        <p></p>
+                                                                                                                                                                                                        </form>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Complete-Connect™ Form end -->
+
+                                                                                                                                                                                                        <!-- Login Form -->
+                                                                                                                                                                                                        <div id="loginW" class="popup" style="">
+                                                                                                                                                                                                        <a href="#" class="close" onclick="closeLogin()"><img src="images/close.png" width="32" height="32"></a>
+                                                                                                                                                                                                        <div class="block block-cart">
+                                                                                                                                                                                                        <div class="block-title2" style="margin-bottom:20px;"> 
+                                                                                                                                                                                                        <strong><span style="font-size:15.5px;">LogIn to Complete-Connect<sup>TM</sup>
+                                                                                                                                                                                                        <br>
+                                                                                                                                                                                                        24/7 Online Ordering and Customer Service</span>
+                                                                                                                                                                                                        </strong>
+
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="block-content">
+                                                                                                                                                                                                        <br clear="all" />
+                                                                                                                                                                                                        <p class="smaller">
+                                                                                                                                                                                                        14,000+ Medical, Homecare, Ergonomic and Healthcare Products 
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        <form name="form2" id="form2" target="_blank" action="https://interlink.completemedical.com/login.asp" method="post">
+                                                                                                                                                                                                        <p class="empty"> 
+                                                                                                                                                                                                        <input type="text" placeholder="Account #" class="form-control text-input" name="usercode">
+                                                                                                                                                                                                        <input type="password" placeholder="Password" class="form-control text-input"name="password">
+                                                                                                                                                                                                        <li class="forgetpswd"><a href="#" onclick="closeLogin();
+                                                                                                                                                                                                                openReset()">Forgot Password</a></li>
+                                                                                                                                                                                                        <a href="#" class="btn btn-upper btn-primary read-more" onclick="form2.submit()">Login</a>
+                                                                                                                                                                                                        <ul class="register">
+                                                                                                                                                                                                        <li><a href="index.php?act=showCompleteConnect" style="margin-bottom: 0px;">Complete-Connect<sup>TM</sup> Full Details</a></li>
+                                                                                                                                                                                                        <li><a href="#" onclick="openRequestAccess()">Request Access to Complete-Connect<sup>TM</sup></a></li>
+                                                                                                                                                                                                        <!--<li><a href="index.php?act=showLoginCreate">Request Access to Complete-Connect<sup>TM</sup></a></li>-->
+                                                                                                                                                                                                        <li><a onclick="newwindow()" style="margin-bottom: 0px;" href="#">Open an Account with Complete Medical? </a></li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        <p></p>
+                                                                                                                                                                                                        </form>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- Login end -->
+                                                                                                                                                                                                        <!-- reset password-->
+                                                                                                                                                                                                        <div id="resetPassword" class="popup" style="">
+                                                                                                                                                                                                        <a href="#" class="close" onclick="closeReset()"><img src="images/close.png" width="32" height="32"></a>
+                                                                                                                                                                                                        <div class="block block-cart">
+                                                                                                                                                                                                        <div class="block-title2"> 
+                                                                                                                                                                                                        <strong><span>Complete-Connect<sup>TM</sup> Forgot Password</span></strong>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="block-content">
+                                                                                                                                                                                                        <br clear="all" />
+                                                                                                                                                                                                        <p class="smaller">
+                                                                                                                                                                                                        Complete-Connect<sup>TM</sup> is our 24/7 online ordering and information system.<br>
+                                                                                                                                                                                                        If you have forgotten your password, please complete the form below.
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        <form name="form331" id="form331" action="index.php?act=doForgot" method="post" enctype="multipart/form-data">
+
+
+                                                                                                                                                                                                        <p class="empty"> 
+                                                                                                                                                                                                        <label class="required">Full Name</label>
+                                                                                                                                                                                                        <input type="text" placeholder="" class=" text-input" name="name"id="name" >
+
+                                                                                                                                                                                                        <label class="required">Corporate Name</label>
+                                                                                                                                                                                                        <input type="text" placeholder="" class=" text-input" name="company_name"id="company_name" >
+
+                                                                                                                                                                                                        <label class="required">Account Number <em>*</em></label>
+                                                                                                                                                                                                        <input type="text" placeholder="" class=" text-input" name="account_number" id="account_number" >
+
+
+                                                                                                                                                                                                        <label class="required">Email Address <em>*</em></label>
+                                                                                                                                                                                                        <input type="text"  class=" text-input"  name="email" required="required">											
+
+                                                                                                                                                                                                        <label class="required">Direct Telephone number # <em>*</em></label>
+                                                                                                                                                                                                        <input type="text" class=" text-input"  name="telephone" required="required">
+
+
+
+                                                                                                                                                                                                        <label class="required">Password Reset Request<em>*</em><br /> <i>8 characters maximum</i></label>
+                                                                                                                                                                                                        <input type="password" maxlength="8"  class=" text-input"  name="password" required="required">
+                                                                                                                                                                                                        <label class="required" style="clear:left;">Additional Notes<br><i>Optional</i></label>
+                                                                                                                                                                                                        <textarea class="text-input"  name="notes"  rows="4"></textarea>
+                                                                                                                                                                                                        <p></p>
+                                                                                                                                                                                                        <div id="recaptcha-four"></div>
+                                                                                                                                                                                                        <p></p>
+                                                                                                                                                                                                        <br clear="all">
+                                                                                                                                                                                                        <br clear="all">
+                                                                                                                                                                                                        <p align="right">We will contact  you to confirm your password reset</p>
+                                                                                                                                                                                                        <p class="required">* Required Fields</p>
+                                                                                                                                                                                                        <a href="#" onclick="form331.submit();" class="btn btn-upper btn-primary read-more">Submit</a>
+                                                                                                                                                                                                        <div style="float:left">
+                                                                                                                                                                                                        Not registered for Complete-Connect<sup>TM</sup>?<br>
+                                                                                                                                                                                                        <a href="#" onclick="closeReset();
+                                                                                                                                                                                                                openRequestAccess()">Click here</a> to register.
+
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </form>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <!-- reset password end -->
+
+                                                                                                                                                                                                        <!-- livehelp -->	
+                                                                                                                                                                                                        <!--Start of Tawk.to Script-->
+                                                                                                                                                                                                        <!--                                                                                                                                                                                                        <script type="text/javascript">
+                                                                                                                                                                                                        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                                                                                                                                                                                                        (function () {
+                                                                                                                                                                                                        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                                                                                                                                                                                                        s1.async = true;
+                                                                                                                                                                                                        s1.src = 'https://embed.tawk.to/5526a5911151398463e34db9/default';
+                                                                                                                                                                                                        s1.charset = 'UTF-8';
+                                                                                                                                                                                                        s1.setAttribute('crossorigin', '*');
+                                                                                                                                                                                                        s0.parentNode.insertBefore(s1, s0);
+                                                                                                                                                                                                        })();
+                                                                                                                                                                                                        </script>-->
+                                                                                                                                                                                                        <!--Start of Tawk.to Script-->
+                                                                                                                                                                                                        <script type="text/javascript">
+                                                                                                                                                                                                        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                                                                                                                                                                                                        (function () {
+                                                                                                                                                                                                        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                                                                                                                                                                                                        s1.async = true;
+                                                                                                                                                                                                        s1.src = 'https://embed.tawk.to/58e25e26f7bbaa72709c3ea4/default';
+                                                                                                                                                                                                        s1.charset = 'UTF-8';
+                                                                                                                                                                                                        s1.setAttribute('crossorigin', '*');
+                                                                                                                                                                                                        s0.parentNode.insertBefore(s1, s0);
+                                                                                                                                                                                                        })();
+                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                        <!--End of Tawk.to Script-->
+                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                        $("#contactForm,#f44,#formCareer,#form212,#form331,#form11").submit(function (e) {
+                                                                                                                                                                                                        $(".loader-wrapper").css('display', 'block');
+                                                                                                                                                                                                        });
+                                                                                                                                                                                                        </script>
+                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                        </html>

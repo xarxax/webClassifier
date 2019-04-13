@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="/Content/css?v=XcUHjp11Eh2Or1zGt8yZAnBdTx_f1XnLhtB8HVo7WW01" rel="stylesheet"/>
+
+	<script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+	<link href="/Content/themes/base/css?v=YfG0rbCQuqF3rBsbknb6vK86z-xdqhRzpxyPo7oZEdo1" rel="stylesheet"/>
+
+	<script src="/bundles/jquery?v=l_2JQLDpEf4NHz4ob7KHLjmeRFnOogKHIQKkMQQ4Chs1"></script>
+
+	<script src="/bundles/jqueryui?v=tG29gr4b89aZuHZhwb2RRduOLQe69zZ-D0yHV7Mp9SM1"></script>
+
+	<script src="/bundles/bootstrap?v=S9-VFjJll7-h6B6vedKZxuNRBdqXLY3XTPKv3OQRv1w1"></script>
+
+
+	<script src="/Scripts/drift.js"></script>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }
+
+				;
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '321839051628223');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=321839051628223&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+	<script src="/Scripts/App/Ajax.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('li.active').removeClass('active');
+            $('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+        });
+    </script>
+
+    <header>
+        
+<div class="container">
+    <div class="row bottom20" style="position: relative;">
+        <div class="col-md-2"> 
+            <a href="/"> <img src="/images/BLR-Logo-2018.png" width="175" > </a>
+        </div>
+
+        <div id="headerSocial" class="col-md-2 col-md-offset-8" style=""> 
+            <a href="https://www.facebook.com/BusinessAndLegalResources/" target="_blank"><img src="/images/facebook.jpg?crc=4240369328" alt="" width="22" height="22"></a>
+            <a href="https://twitter.com/BLR_INC" target="_blank"><img src="/images/twitter.jpg?crc=521673758" alt="" width="22" height="22"></a>
+            <a href="https://www.linkedin.com/company/blr" target="_blank"><img src="/images/linkedin.jpg?crc=399735605" alt="" width="22" height="22"></a>
+        </div>
+    </div>
+</div>
+
+    </header>
+
+    <div class="navbar navbar-inverse navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div id="spy-scroll-id" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">  
+                    <li class="active"><a href="/">Home</a></li> 
+                    <li class="dropdown">
+                        <a href="/About">About BLR</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/About/Leadership">Leadership</a> </li>
+                            <li><a href="/About/History">History</a></li>
+                            <li><a href="/About/Careers">Work at BLR</a> </li>
+                            <li><a href="/About/News">Press</a> </li>
+                        </ul>
+                    </li>
+
+                    <li id="solutionsTab"> <a href="/Solutions/TrainingAndDevelopment">Solutions</a>  </li>
+                    <li id="marketsTab"><a href="/Markets/HumanResources">Markets</a></li>
+                    <li><a href="/blr-events">Events</a></li>  
+                    <li><a href="//store.blr.com/" target="_blank">Store</a>  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        
+
+<link href="/Content/Home.css" rel="stylesheet" />
+
+<title>BLR® — Solutions for Employment, Safety and Environmental Compliance  | BLR.com</title>
+<meta name="keywords" content="BLR, Business and Legal Reports, Business and Legal Resources, Compliance and Training Solutions" />
+<meta name="description" content="BLR is a leading provider of compliance and training solutions in the hr-employment (DOL), compensation, safety (OSHA) and environmental (EPA) areas" />
+
+<div class="container">
+    <div class="row text-center" style="min-height:120px; ">
+        <div id="hrHero" class="col-xs-12 col-sm-6 col-md-3 pushLeft" style="margin-left:11px; padding-right:0px; padding-left:0px;">
+            <div class="hvrbox">
+                <img class="mt-hover-reveal-img" src="/images/hr.jpg" alt="HR">
+                <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                    <div class="hvrbox-text">
+                        <div class="hoverRevealTitle">HR</div>
+                        <div class="hoverRevealDesc">Industry-leading, award-winning solutions for Human Resource professionals prepared by lawyers 
+                        and industry experts.</div>
+                        <a class="grayButton" href="/Markets/HumanResources">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ehsHero" class="col-xs-12 col-sm-6 col-md-3 pushLeft" style="padding-right:0px; padding-left:0px;">
+            <div class="hvrbox">
+                <img src="/images/ehs.jpg" alt="" >  
+                <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                    <div class="hvrbox-text">
+                        <div class="hoverRevealTitle">EHS</div>
+                        <div class="hoverRevealDesc">Tools and resources that make managing safety and environmental programs easier than ever before.</div>
+                        <a class="grayButton" href="/Markets/EHS">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="LDHero" class="col-xs-12 col-sm-6 col-md-3 pushLeft" style="padding-right:0px; padding-left:0px;" >
+            <div class="hvrbox">
+                <img src="/images/l&d.jpg" alt="L&amp;D">
+                <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                    <div class="hvrbox-text">
+                        <div class="hoverRevealTitle">L&amp;D</div>
+                        <div class="hoverRevealDesc">Award-winning interactive online courses and custom training solutions to align with your organization’s unique training goals.</div>
+                        <a class="grayButton" href="/Markets/LearningAndDevelopment">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="LegalHero" class="col-xs-12 col-sm-6 col-md-3 pushLeft" style="padding-right:0px; padding-left:0px;">
+            <div class="hvrbox">
+                <img src="/images/legal.jpg" alt="Legal">
+                <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                    <div class="hvrbox-text">
+                        <div class="hoverRevealTitle">Legal</div>
+                        <div class="hoverRevealDesc">Legal, legislative, and political intelligence for attorneys, business leaders, elected officials, 
+                        and lobbyists.  </div>
+                        <a class="grayButton" href="/Markets/Legal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="upcomingEvents" class="row top30" style="margin-right:0px;">
+    <div class="col-sm-12 scrollingImgBkg" style="min-height:347px; padding-right:0px;">
+        <div class="blackBackground">
+            <div class="container" style="display: block; vertical-align: middle; min-height:357px; ">
+                <p class="subHeadWhite top20"><span class="underline">Upcoming Events </span></p>
+
+                <div class="row top30">
+                            <div class="col-xs-6 col-sm-4 text-left xs-events">
+
+                                <p>
+                                    <a target="_blank" href="//store.blr.com/talentcon">
+                                        <img src="//store.blr.com/media/catalog/product//c/r/cr-307-talentcon-2019-logo--265x265.jpg" alt="" style="background-color:white; border-radius: 10px;" width="135"  />
+                                    </a>
+                                </p>
+                                <div class="textWhite xs-eventsDesc">
+
+
+                                    <p>March 12, 2019</p>
+                                    <p class="upcomingEventDesc"><a target="_blank" style="color:white; text-decoration:none;" href="//store.blr.com/talentcon">TalentCon 2019</a></p>
+                                
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 text-left xs-events">
+
+                                <p>
+                                    <a target="_blank" href="//store.blr.com/workplace-violence-symposium">
+                                        <img src="//store.blr.com/media/catalog/product//c/r/cr-167-wv03---wvps-2019-logos-refresh-change-135x135.jpg" alt="" style="background-color:white; border-radius: 10px;" width="135"  />
+                                    </a>
+                                </p>
+                                <div class="textWhite xs-eventsDesc">
+
+
+                                    <p>March 14, 2019</p>
+                                    <p class="upcomingEventDesc"><a target="_blank" style="color:white; text-decoration:none;" href="//store.blr.com/workplace-violence-symposium">Workplace Violence Prevention Symposium 2019</a></p>
+                                
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 text-left xs-events">
+
+                                <p>
+                                    <a target="_blank" href="//store.blr.com/safety-summit">
+                                        <img src="//store.blr.com/media/catalog/product//4/1/41383-safety-summit-2019-logo-135x135_1.jpg" alt="" style="background-color:white; border-radius: 10px;" width="135"  />
+                                    </a>
+                                </p>
+                                <div class="textWhite xs-eventsDesc">
+
+
+                                    <p>April 08, 2019</p>
+                                    <p class="upcomingEventDesc"><a target="_blank" style="color:white; text-decoration:none;" href="//store.blr.com/safety-summit">Safety Summit 2019</a></p>
+                                
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="featuredSolutions" class="row featuredSol" style="margin-right:0px;" >
+    <div class="container">
+        <p class="subHeadDarkGray top20"><span class="underline">Featured Solutions </span> </p>
+        <div id="solutionsContent" class="row top30">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+				<div id="blr-carousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="//store.blr.com/hrhero" target="_blank"><img src="../images/Image_Slider/CR-827_NewProductBanners_HRHero_744x234_final.png" class="img-responsive" style="border-radius: 10px;" /></a>
+						</div>
+						<div class="item">
+							<a href="//store.blr.com/employee-handbook-builder" target="_blank"><img src="../images/Image_Slider/CR-827_NewProductBanners_handbook_744x234_final.png" class="img-responsive" style="border-radius: 10px;" /></a>
+						</div>
+						<div class="item">
+							<a href="//interactive.blr.com/All-Access" target="_blank"><img src="../images/Image_Slider/CR-1186_TrainingToday-All-Access-Banner-Ads_744x234.jpg" class="img-responsive" style="border-radius: 10px;" /></a>
+						</div>
+						<div class="item">
+							<a href="//interactive.blr.com/safety-toolbox-talks" target="_blank"><img src="../images/Image_Slider/CR-827_NewProductBanners_toolbox_744x234_final.png" class="img-responsive" style="border-radius: 10px;" /></a>
+						</div>
+						<div class="item">
+							<a href="//www.blr.com/Subscribe" target="_blank"><img src="../images/Image_Slider/38465_NewsletterSliderRedesign_FINAL.JPG" class="img-responsive" style="border-radius: 10px;" /></a>
+						</div>
+					</div>
+					<ol class="carousel-indicators">
+						<li data-target="#blr-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#blr-carousel" data-slide-to="1"></li>
+						<li data-target="#blr-carousel" data-slide-to="2"></li>
+						<li data-target="#blr-carousel" data-slide-to="3"></li>
+						<li data-target="#blr-carousel" data-slide-to="4"></li>
+					</ol>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+
+<div id="aboutBLR">
+    <div class="scrollingImgBkg" style="min-height:500px;">
+        <div class="blackBackground">
+            <div class="container">
+                <div class="row" style="padding-top:50px; padding-bottom:50px; ">
+                    <div class="col-xs-12 col-sm-6 col-md-4 text-center" >  
+                        <div id="workAtBLR" class="cardContainer">
+                            <a href="/About/Careers">
+                                <img src="/images/work-card-web.jpg?crc=4196790757" alt="" width="315" height="452" style="-webkit-border-radius: 10px 10px 10px 10px;">
+                            </a>
+                            <div class="cardCaption">
+                                <p class="captionHeader"><span class="underline">Work At BLR</span></p>
+                                <p class="captionText">Your new career starts here! Learn more about job opportunities with BLR.</p>
+                            </div>
+                        </div>          
+                       
+                    </div>
+                    <div id="advertise" class="col-xs-12 col-sm-6 col-md-4 text-center"> 
+                        <div class="cardContainer">
+                            <a href="http://www.blrmedia.com">
+                                <img src="/images/advertise-card-web.jpg?crc=4009556788" alt="" width="315" height="452" style="-webkit-border-radius: 10px 10px 10px 10px;">
+                                <div class="cardCaption">
+                                    <p class="captionHeader"><span class="underline">Advertise with Us</span></p>
+                                    <p class="captionText">Drive sales, get new leads, and increase brand awareness by reaching key decision makers and buyers.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="partner" class="col-xs-12 col-sm-6 col-md-4 text-center">  
+                        <div class="cardContainer">
+                            <a href="/Custom-Solutions">
+                                <img src="/images/puzzle-card-crop.jpg?crc=4185562812" alt="" width="315" height="452" style="-webkit-border-radius: 10px 10px 10px 10px;">
+                                <div class="cardCaption">
+                                    <p class="captionHeader"><span class="underline">Become a Partner</span></p>
+                                    <p class="captionText">
+                                        Learn more about our Partnership Program that provides your business with the right mix of products and support so
+                                        you can grow your market presence and increase your sales.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="custTestimonials top30" style="background-color: #F2F2F2;">
+    <div class="container" style="padding-bottom:50px;">
+        <div class="row top30">
+            <div class="col-sm-12">
+                <p class="textLargeGray">Our focus is always on our customers. But don’t take our word for it.<br>Hear what our valued clients are saying about us.</p>
+            </div>
+        </div>
+        <div class="row top20">
+            <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div id="testimonialMegan" class="col-xs-12 col-sm-6 col-md-6 text-center"> 
+                <div class="wistia_embed wistia_async_0ihca8dmdb popover=true popoverContent=html wistia_embed_initialized" id="wistia-0ihca8dmdb-1">
+                    <div id="wistia_33.thumb_container" class="wistia_click_to_play" >
+                        <a href="#"> <img src="/images/megan-b.jpg?crc=3940581390" alt="" class="img-responsive" style="border-radius:10px; margin: 0 auto;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                <div class="wistia_embed wistia_async_bktyeulg8t popover=true popoverContent=html">
+                    <a href="#"> <img src="/images/errol_test.jpg?crc=3800368670" alt="" class="img-responsive" style="border-radius:10px; margin: 0 auto;"/> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="customers">
+    <div class="container">
+        <div class="row">
+            <p class="subHeadDarkGray top20"><span class="underline">Our Customers</span></p>
+        </div>
+        <div class="row top20 bottom20">
+            <div id="blrCustomers" class="col-xs-12">
+                <div class="carousel slide" id="customersCarousel">
+                    <div class="carousel-inner">
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Adelante.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/AmericanShooter.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Carters.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Cassling.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/CCI.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/CDC.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Corning.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/CovenantHouse.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Elmers.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Emplicity.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/EVOMerchant.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/EYE.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/General-Atomics.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Hearthstone.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/HelpingUp.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Hicks.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Interstates.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/JBT-Jetway.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/KCP-L.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Lactalis.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/LaGuardia.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/McQuay.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Memic.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Mid-Continent.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/MiltiFamily.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Milwaukee.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Missouri-Ent.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/OshKosh.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/PGPI.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/PRo-telligent.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/RonJon.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/ROWE.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/SabaDirect.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Safety-National.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/SAMA.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/SaraLee.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/Skirball.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/SuddenLink.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-xs-3">
+                                        <img src="/images/Customers/WebsterUniversity.gif" class="img-responsive" style="margin:0 auto;" />
+
+                                </div>
+                            </div>
+                    </div>
+                    <a class="left carousel-control" href="#customersCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#customersCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#customersCarousel').carousel({
+        interval: 5000
+    })
+    $("#blrCustomers .carousel .item").first().addClass("active");
+
+    $('#blrCustomers .carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        var next2 = next.next();
+        if (!next2.length) {
+            next2 = $(this).siblings(':first');
+        }
+        next2.children(':first-child').clone().appendTo($(this));
+
+        var next3 = next2.next();
+        if (!next3.length) {
+            next3 = $(this).siblings(':first');
+        }
+        next3.children(':first-child').clone().appendTo($(this));
+    });
+</script>
+
+<style type="text/css">
+    .carousel-inner .item.left.active {  transform: translateX(-25%); }
+    .carousel-inner .item.right.active { transform: translateX(25%);  }
+    .carousel-inner .item.next { transform: translateX(25%); }
+    .carousel-inner .item.prev { transform: translateX(-25%); }
+    .carousel-inner .item.right, .carousel-inner .item.left { transform: translateX(0); }
+    .carousel-control.left, .carousel-control.right { background-image: none; }
+    .glyphicon-chevron-left { left:20% !important; }
+    .glyphicon-chevron-right { right:20% !important; }
+</style>
+
+
+
+        <footer>
+            <link href="/Content/footer.css" rel="stylesheet" />
+
+<div id="globalFooter">
+    <div class="container" id="innerGlobalFooter">
+        <div class="row top20 bottom20">
+            <div class="col-xs-2">
+                <img src="/images/BLR_footerLogo.png" alt="" width="121" height="52">
+            </div>
+            <div class="col-xs-1 col-xs-offset-9" >
+                <a href="#top"><img src="/images/pasted-svg-42x42.svg?crc=4066925469" alt="" data-mu-svgfallback="images/pasted%20svg%2042x42_poster_.png?crc=63822262" width="42" height="42"></a>
+            </div>
+        </div>
+        <div class="row top20">
+            <div class="col-md-2">
+                <span class="footerSubHeadGray">Site Map</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-2 footerlink">
+                <p><a href="/">Home</a> </p>
+                <p><a href="/About">About BLR</a></p>
+                <div style="margin-left:20px;">
+                    <p><a href="/About/Careers">Work at BLR</a></p>
+                    <p><a href="/About/Leadership">Leadership</a></p>
+                    <p><a href="/About/History">History</a></p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-2 footerlink">
+                <p><a class="nonblock" href="/Solutions/TrainingAndDevelopment">Solutions</a></p>
+                <p><a class="nonblock" href="/blr-events">Events</a></p>
+                <p><a href="https://account.blr.com/Login.aspx">My Account </a></p> 
+                <p><a href="/About/Legal-Terms">Terms &amp; Conditions </a></p>
+                <p><a href="/About/Legal-Privacy">Privacy Policy</a></p>
+                <p><a href="/About/Legal-Disclaimer">Disclaimer</a></p>
+                <p><a href="/About/Contact">Contact Us</a></p>
+                <p><a href="http://www.blrmedia.com" class="nonblock">Advertising</a></p>
+                <p><a href="/Custom-Solutions">Partners</a></p>
+            </div>
+            <div class="col-xs-6 col-xs-offset-6 col-md-2 col-md-offset-0 footerlink col-xs-top-20">
+                <p><a href="/Markets/HumanResources">Markets</a></p>
+                <p><a href="/Markets/HumanResources">Human Resources</a></p>
+                <p><a href="/Markets/EHS">EHS</a></p>
+                <p><a href="/Markets/LearningAndDevelopment">Learning &amp; Development</a></p>
+                <p><a href="/Markets/Legal">Legal</a></p>
+            </div>
+            <div class="col-xs-12 col-md-3 col-md-offset-2 footerlink col-xs-top-20">
+                <p>© 2019 BLR®, a <a class="nonblock" href="http://www.simplifycompliance.com">Simplify <br/> Compliance</a> business. 
+                <br>All rights reserved. <br>100 Winners Circle, Suite 300, Brentwood, TN 37027 <br>800-727-5257</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright" style="font-size: 8pt; color:#bfbfbf; display:block; text-align:center;">
+CT-WEB01
+</div>
+        </footer>
+    </div>
+
+    
+
+    
+<script type="text/javascript">
+    function readCookieGAS(name) {
+        var nameEQ = name + '=';
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+        return null;
+    }
+
+    function getGAID() {
+        var utma = self.readCookieGAS('__utma');
+        var id = '';
+        if (utma !== null) {
+        utma = utma.split('.');
+        if (utma.length == 6)
+        id = utma[1];
+        }
+        return id;
+    }
+
+     var _gas = _gas || [];
+     _gas.push(['_setAccount', 'UA-384524-30']);
+    _gas.push(['_setAccount', 'UA-42701306-1']);
+    _gas.push(['_setAllowLinker', true]);
+    _gas.push(['_setDomainName', 'blr.com']);
+    _gas.push(['_setDomainName', 'trac360.com']);
+    _gas.push(['_setDomainName', 'hrhero.com']);
+    _gas.push(['_setDomainName', 'hrlaws.com']);
+    _gas.push(['_setDomainName', 'mleesmith.com']);
+    _gas.push(['_setDomainName', 'aeisonline.com']);
+    _gas.push(['_setDomainName', 'strategichrsummit.com']);
+    _gas.push(['_setDomainName', 'celuonline.com']);
+    _gas.push(['_setDomainName', 'ca-safety.com']);
+    _gas.push(['_setDomainName', 'calemployerresources.com']);
+    _gas.push(['_setDomainName', 'employeradvice.com']);
+    _gas.push(['_setDomainName', 'alalaws.com']);
+    _gas.push(['_setDomainName', 'employerscounsel.net']);
+    _gas.push(['_setDomainName', 'tamcle.com']);
+    _gas.push(['_setDomainName', 'tennesseeattorneysmemo.com']);
+    _gas.push(['_setDomainName', 'tnjournal.net']);
+    _gas.push(['_setDomainName', 'hrimmall.com']);
+    _gas.push(['_setDomainName', 'blrgreenteam.com']);
+    _gas.push(['_gasMultiDomain', 'click']);
+    _gas.push(['_setCustomVar', 1, 'GA Visitor ID', getGAID(), 1]);
+    
+    _gas.push(['_trackPageview']);
+    _gas.push(['_gasTrackOutboundLinks']);
+    (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = '//www.blr.com/js/gas-1.10.1.min.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+</script>
+
+
+<!-- BEGIN IBM TRACKING CODE -->
+<meta name="com.silverpop.brandeddomains" content="www.pages02.net,account.blr.com,admins.blr.com,aeisonline.com,alalaws.com,blog.blr.com,
+      blogs.hrhero.com,blr.com,blr.mkt8036.com,blr.tradepub.com,blrmedia.com,boyensuniversity.com,calosha.blr.com,catalog.blr.com,celuonline.com,
+      compensation.blr.com,compsolutions.blr.com,ehsdailyadvisor.blr.com,employerscounsel.net,enviro.blr.com,events.blr.com,flsa.smarthrmanager.com,
+      forumevents.com,handbookbuilder.blr.com,hr.blr.com,hrchallenge.blr.com,hrdailyadvisor.blr.com,hrhero.com,hrlaws.com,hrleadershipexchange.com,
+      hrsolutions.blr.com,humphreyonthehill.tnjournal.net,interactive.blr.com,itdailyadvisor.blr.com,jobdescriptionmanager.blr.com,
+      lddailyadvisor.blr.com,leadershipdailyadvisor.blr.com,live.blr.com,marketingdailyadvisor.blr.com,mleesmith.com,my.trac360.com,nsc.blr.com,
+      oshachallenge.blr.com,page.blr.com,peoplesystems.blr.com,psc.blr.com,recruitcon.blr.com,recruitingdailyadvisor.blr.com,regupdate.blr.com,
+      research.ehsdailyadvisor.com,research.hrdailyadvisor.com,research.hrhero.com,research.itdailyadvisor.com,research.leadershipdailyadvisor.blr.com,
+      research.leadershipdailyadvisor.com,research.recruitingdailyadvisor.com,research.salesandmarketingdailyadvisor.blr.com,
+      research.trainingdailyadvisor.com,safety.blr.com,safetyculture.blr.com,safetydecisionsmagazine.com,safetysummit.blr.com,salarysearch.blr.com,
+      salesandmarketingdailyadvisor.blr.com,smarthrmanager.com,sso.blr.com,statelaws.hr.blr.com,store.blr.com,store.hrhero.com,
+      store.regcompliancewatch.com,tamcle.com,tennesseeattorneysmemo.com,thompson.blr.com,thrive.blr.com,thrivelive.blr.com,tnjournal.net,
+      topics.hrhero.com,totalsecuritydailyadvisor.blr.com,trac360.com,training.blr.com,trainingdailyadvisor.blr.com,trainingsolutions.blr.com,
+      trainingtoday.blr.com,workforcelearning.blr.com,workplaceviolence.blr.com,www.blr.com,www.overtimeanswers.com" />
+
+<script src='https://www.sc.pages02.net/lp/static/js/iMAWebCookie.js?5bff7538-1533f3c6bcd-3f3d5eceea4051b7c82d96ba93c1b04e&h=www.pages02.net' type='text/javascript'></script>
+<!-- END IBM TRACKING CODE -->
+<!-- Start Lytics Script -->
+<script type="text/javascript">
+	window.jstag = function () {
+		function t(t) { return function () { return t.apply(this, arguments), this } } function n() {
+			var n = ["ready"].concat(c.call(arguments)); return t(function () { n.push(c.call(arguments)), this._q.push(n) }
+
+			)
+		} var i = { _q: [], _c: {}, ts: (new Date).getTime(), ver: "2.0.0" }, c = Array.prototype.slice; return i.init = function (t) { return i._c = t, t.synchronous || i.loadtagmgr(t), this }
+
+			, i.loadtagmgr = function (t) { var n = document.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = t.url + "/api/tag/" + t.cid + "/lio.js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(n, i) }
+
+			, i.ready = n(), i.send = n("send"), i.mock = n("mock"), i.identify = n("identify"), i.pageView = n("pageView"), i.bind = t(function (t) { i._q.push([t, c.call(arguments, 1)]) }
+
+			), i.block = t(function () { i._c.blockload = !0 }
+
+			), i.unblock = t(function () { i._c.blockload = !1 }
+
+			), i
+	}(), window.jstag.init(
+		{ cid: "5b487d7344896314cb844385751b12e4", url: "//c.lytics.io", min: true, loadid: false }
+
+	);
+</script>
+<!-- End Lytics Script -->
+
+</body>
+</html>

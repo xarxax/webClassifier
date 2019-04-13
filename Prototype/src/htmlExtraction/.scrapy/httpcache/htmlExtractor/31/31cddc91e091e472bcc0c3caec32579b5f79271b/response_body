@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<TITLE>QSINet Medical / Dental</TITLE>
+<META NAME="Author"		CONTENT="LKH">
+<META NAME="Created"		CONTENT="04/01/02">
+<META NAME="Filename"		CONTENT="index.htm">
+<META NAME="Revised by"		CONTENT="LKH">
+<META NAME="Revised"		CONTENT="8/12/03">
+<META name="keywords"		CONTENT="QSINet, qsinet, QSInet, qsii, qsiNet, qsi net, patient connectivity, edi/connectivity services, doctors, dentist">
+<META name="description"	CONTENT="Welcome to QSINet - a revolutionary way that dentists/doctors approach practice management.">
+<script><!--
+var here = document.location.href;
+if(here.match(/prattmed.com/i))
+	document.location.href = "http://www.prattmed.com";
+else if(here.match(/quic.qsii.com/i))
+	document.location.href = "http://quic.qsii.com";
+else if(here.match(/riversidedentalgroup.com/i))
+        document.location.href = "http://www.riversidedentalgroup.com";
+else if(here.match(/prismdrs.com/i))
+        document.location.href = "http://www.prismdrs.com";
+else if(here.match(/drmarkle.com/i))
+        document.location.href = "http://www.drmarkle.com";
+else if(here.match(/wtdental.com/i))
+        document.location.href = "http://www.wtdental.com";
+else if(here.match(/cddentists.com/i))
+        document.location.href = "http://www.cddentists.com";
+else if(here.match(/detroitfamilydental.com/i))
+        document.location.href = "http://www.detroitfamilydental.com";
+else if(here.match(/thedentistplace.com/i))
+        document.location.href = "http://www.thedentistplace.com";
+else if(here.match(/bergdental.com/i))
+        document.location.href = "http://www.bergdental.com";
+
+
+function setCookie(name, value) {
+	var now = new Date();
+	var date = new Date(now.getTime() + 30*24*60*60*1000);
+	var cookieDate = date.toGMTString();
+	var orealCookie = name + "=" + escape(value) + ";expires=" + cookieDate;
+	document.cookie = orealCookie;
+	//alert(orealCookie);
+}
+
+function readCookie(name) {
+	var cookies = document.cookie;
+	var start = cookies.indexOf(name + "=");
+	if(start == -1) {
+		//alert("cookie not found");
+	}
+	start = cookies.indexOf("=", start) + 1;
+	var end = cookies.indexOf(";", start);
+	if(end == -1) {
+		end = cookies.length;
+	}
+
+	var value = unescape(cookies.substring(start,end));
+	return value;
+}
+
+function jumptoPage() {
+	if(document.form1.choice[0].checked == false && document.form1.choice[1].checked == false) {
+		alert("Select either Medical or Dental to enter the site.");
+	}
+	else {
+	if(document.form1.choice[0].checked) {
+		if(document.form1.goaway.checked)
+			setCookie("remember", "medical");
+		else
+			document.cookie = "";
+		document.location.href="index_med.htm";
+	}
+	else if(document.form1.choice[1].checked) {
+		if(document.form1.goaway.checked)
+			setCookie("remember", "dental");
+		else
+			document.cookie = "";
+		document.location.href="index_den.htm";
+	}
+}
+}
+
+
+var whereto = readCookie("remember");
+
+if(whereto == "medical") {
+	setCookie("remember", "medical");
+	//alert("Going medical!");
+	document.location.href="index_med.htm";
+}
+else if(whereto == "dental") {
+	setCookie("remember", "dental");
+	//alert("Going dental!");
+	document.location.href="index_den.htm";
+}
+
+//--></script>
+<script language="JavaScript" src="jscript/common.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080">
+
+<br><br>
+<form name="form1">
+<table align="center" width="531" height=334 cellpadding="0" cellspacing="0" border="0" background="images/qsinetbg.jpg">
+<tr><td valign=bottom>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="choice"><font color="#6D82BD" face="Arial,Helvetica" size=3><b>Medical</b></font><P>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="choice"><font color="#6D82BD" face="Arial,Helvetica" size=3><b>Dental</b></font><p>
+	&nbsp;<p>
+	&nbsp;&nbsp;&nbsp;<input type="checkbox" name="goaway"><font face="arial" size=1 color=#234466><b>Remember my choice and skip this page next time.</b>
+	&nbsp;&nbsp;
+	<a href="javascript:jumptoPage()"><img src="images/btn_go.gif" border=0 alt="Enter" align=top name="enter"></a></font><br>
+</td></tr></table>
+</form>
+
+<div align=center>
+<table cellpadding=1 cellspacing=0 border=0 width=550>
+  <tr><td bgcolor=#ccccff>
+	<table cellpadding=0 cellspacing=0 border=0 width=100%>
+		<tr><td align=center bgcolor=#ffffff valign=center>
+			<font face="verdana, helvetica, arial" size="1" color=#3030ff>Patient Connectivity&nbsp;&#149;&nbsp;
+			Practice Services&nbsp;&#149;&nbsp;
+			EDI/Connectivity Services&nbsp;&#149;&nbsp;
+			Support & Training</font>
+		</td></tr>
+	</table>
+  </td></tr>
+</table>
+</div>
+<br>
+<div align="center">
+    <font face="verdana, helvetica, arial" size="1">
+   &#169; <script><!--printYear();//--></script>2015 Quality Systems Inc. 
+        | <a href="http://www.qsii.com/terms.shtml" target="_new">Terms &amp; Conditions</a>
+        | <a href="http://www.qsii.com/privacy.shtml" target="_new">Privacy Policy</a>
+        | <a href="http://www.qsii.com/legal_notices.shtml" target="_new">Legal Notices</a>
+    </font>
+</div>
+</BODY>
+</HTML>

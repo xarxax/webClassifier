@@ -1,0 +1,227 @@
+<html>
+<head>
+	<title>karlschnell.de - Partner der Nahrungsmittelindustrie</title>
+	<!-- Content gibt Mime-Type an -->
+	<meta NAME="PRAGMA" CONTENT="NO-CACHE">
+	<!-- Nur fuer Seiten die haeufig aktualisiert werden! -->
+	<!-- An Proxy-Agenten: Datei bitte nicht auf Proxy-Server speichern! -->
+	<meta http-equiv="expires" content="0">
+	<meta name="description" content="Karl Schnell, Partner der Nahrungsmittelindustrie">
+	<meta name="keywords" content="Zerkleinerungstechnik, Fülltechnik, Anlagentechnik, Anwendungstechnik">
+  	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="28 days">
+  	<meta name="date" content="2005-02-01">
+	<meta name="Copyright" content="KRALL-DESIGN 2010">
+	<!-- Copyright by Niels Thude, Krall Grafische Werkstaette, www.freche-werbung.de -->
+	<link rel="SHORTCUT ICON" href="http://www.karlschnell.de/favicon.ico">
+ 	<link rel="STYLESHEET" type="text/css" href="00_styles/standard.css">
+	<style>
+	<!--
+
+		BODY			{	margin:0px; padding:0px;
+						 	background-image:url(00_picts/0_startseite/hg.gif);
+						}
+		TD				{	font-size:1px; line-height:1px; }
+		.KS_KOPF		{	margin-top:19px; }
+		.B_AUSSEN		{	background-image:url(00_picts/0_startseite/b_hg_aussen.gif); }
+		.B_LINKS		{	background-image:url(00_picts/0_startseite/b_hg_li.gif); }
+		.B_RECHTS		{	background-image:url(00_picts/0_startseite/b_hg_re.gif); }
+		.B_MITTE_0		{	background-image:url(00_picts/0_startseite/b_mitte_logo_0.jpg); }
+		.B_MITTE_1		{	filter:Alpha(opacity=0); opacity:0; MozOpacity:0; KhtmlOpacity:0; }
+		.B_LINKS_LINIEN	{	margin-top:120px; }
+		.B_RECHTS_TAB	{	margin-top:120px; }
+
+	//-->
+	</style>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+    <!--
+
+		var gStandardStatus		= 'Karl Schnell'; window.defaultStatus = gStandardStatus
+
+		var gKS = new Array()
+			gKS.ANI = new Array()
+			gKS.ANI.StartWartenMS = 500  // Ms-Warten nach Laden aller Elemente, bevor Animation startet.
+			gKS.ANI.SchritteMax   = 50   // Anzahl Maximaler Animationsschritte
+			gKS.ANI.SchrittMS	  = 40   // Schritt-Intervall in Ms ( 25 Schritte pro Sekunde = 40 )
+			gKS.ANI.F_VerzStart   = 0.2  // Start-Verzoegerungs-Faktor ( 0 = linear )
+			gKS.ANI.F_VerzZiel    = 2    // Ziel-Verzoegerungs-Faktor ( 0 = linear )
+
+		function KS_START() {
+			// Deckungsstufen-Array
+			gKS.DECKUNGSSTUFEN = new Array()
+			var xSchritte    = gKS.ANI.SchritteMax - 1
+			var xFaktorStart = gKS.ANI.F_VerzStart + 1
+			var xFaktorZiel  = gKS.ANI.F_VerzZiel  + 1
+			for (var xAktSchritt=0;xAktSchritt<=xSchritte;xAktSchritt++) {
+				var xFaktor = xAktSchritt / xSchritte
+				gKS.DECKUNGSSTUFEN[xAktSchritt] = Math.round(  100*((Math.pow(xFaktor,xFaktorStart)*(1-xFaktor))+((1-Math.pow(1-xFaktor,xFaktorZiel))*xFaktor))  )
+			}
+			while(gKS.DECKUNGSSTUFEN[0]==gKS.DECKUNGSSTUFEN[1]) {
+				gKS.DECKUNGSSTUFEN.shift()
+			}
+			while(gKS.DECKUNGSSTUFEN[gKS.DECKUNGSSTUFEN.length-1]==gKS.DECKUNGSSTUFEN[gKS.DECKUNGSSTUFEN.length-2]) {
+				gKS.DECKUNGSSTUFEN.pop()
+			}
+			// ENDE Deckungsstufen-Array
+			var xZEIT = Math.floor( (new Date().getTime()) / (1000*60) )
+			var xA_HREFS = document.getElementsByName('SP_LINK')
+			for ( var X=0 ; X<xA_HREFS.length ; X++ ) {
+				var xString = xA_HREFS[X].href.split( '?x=' )
+				xString[1] = xString[1].substring( 1 , xString[1].length )
+				xA_HREFS[X].href = xString[0] + '?x=' + xZEIT + xString[1]
+			}
+			var xA_BILDER = document.getElementsByName('SP_BILD')
+			gKS.SPRACHEN_NOCH_LADEN = xA_BILDER.length
+			gKS.SPRACHBILDER = new Array()
+			gKS.SPRACHBILDER[0] = '#'
+			for ( var X=0 ; X<xA_BILDER.length ; X++ ) {
+				var xNr = X+1
+				xA_BILDER[X].NUMMER = xNr
+				gKS.SPRACHBILDER[xNr] = new Array()
+				gKS.SPRACHBILDER[xNr].PFAD_0 = new Image()
+				gKS.SPRACHBILDER[xNr].PFAD_0.src = xA_BILDER[X].src
+				gKS.SPRACHBILDER[xNr].PFAD_1 = new Image()
+				gKS.SPRACHBILDER[xNr].PFAD_1.onload = function() { KS_SPRACHE_GELADEN() }
+				gKS.SPRACHBILDER[xNr].PFAD_1.src = ( (''+xA_BILDER[X].src).split('_0.') ).join('_1.')
+			}
+		}
+
+		function KS_PICOVER ( nOBJ , nOuOv ) {
+			if (nOBJ.NUMMER) {
+				nOBJ.src = ( nOuOv>0 ) ? gKS.SPRACHBILDER[nOBJ.NUMMER].PFAD_1.src : gKS.SPRACHBILDER[nOBJ.NUMMER].PFAD_0.src
+			}
+		}
+
+		function KS_SPRACHE_GELADEN() {
+			gKS.SPRACHEN_NOCH_LADEN --
+			if (gKS.SPRACHEN_NOCH_LADEN<=0) {
+				gKS.ANI_AKT_POS = 0
+				gKS.ANIMATION = window.setTimeout( 'KS_STARTE_ANIMATION()' , gKS.ANI.StartWartenMS )
+			}
+		}
+
+		function KS_STARTE_ANIMATION() {
+			gKS.ANIMATION = window.setInterval( 'KS_ANIMATION()' , gKS.ANI.SchrittMS )
+		}
+
+		function KS_ANIMATION() {
+			gKS.ANI_AKT_POS ++
+			if (gKS.ANI_AKT_POS<gKS.DECKUNGSSTUFEN.length) {
+				var xDECK = gKS.DECKUNGSSTUFEN[gKS.ANI_AKT_POS]/100
+				with (BILD_ANIMATION.style) {
+					opacity=xDECK; MozOpacity=xDECK; KhtmlOpacity=xDECK; filter='Alpha(opacity='+gKS.DECKUNGSSTUFEN[gKS.ANI_AKT_POS]+')'
+				}
+			} else {
+				window.clearInterval( gKS.ANIMATION )
+			}
+		}
+
+    //-->
+    </SCRIPT>
+</head>
+<body onload="KS_START()">
+	<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+	<tr height="102">
+	    <td>&nbsp;</td>
+	    <td width="180">&nbsp;</td>
+	    <td width="538" align="center" valign="top"><img class="KS_KOPF" src="00_picts/0_startseite/ks_karl_schnell_kopf.png" width="429" height="64" alt="" border="0"></td>
+	    <td width="180">&nbsp;</td>
+	    <td>&nbsp;</td>
+	</tr>
+	<tr height="460">
+	    <td class="B_AUSSEN">&nbsp;</td>
+	    <td class="B_LINKS" width="180" valign="top">
+			<img class="B_LINKS_LINIEN" src="00_picts/0_startseite/b_li_linien.png" width="180" height="153" alt="" border="0">
+		</td>
+	    <td class="B_MITTE_0" width="538"><img class="B_MITTE_1" id="BILD_ANIMATION" src="00_picts/0_startseite/b_mitte_logo_1.jpg" width="538" height="460" alt="" border="0"></td>
+	    <td class="B_RECHTS" width="180" valign="top">
+			<table cellspacing="0" cellpadding="0" border="0" class="B_RECHTS_TAB">
+			<tr>
+			    <td><img src="00_picts/0_startseite/b_re_linie_oben.png" width="180" height="7" alt="" border="0"></td>
+			</tr><tr>
+			    <td><a href="home.html?x=0&sp=de" name="SP_LINK"><img name="SP_BILD" onmouseout="KS_PICOVER(this,0)" onmouseover="KS_PICOVER(this,1)" src="00_picts/0_startseite/b_sprache_de_0.png" width="180" height="27" alt="" border="0"></a></td>
+			</tr><tr>
+			    <td><a href="home.html?x=0&sp=en" name="SP_LINK"><img name="SP_BILD" onmouseout="KS_PICOVER(this,0)" onmouseover="KS_PICOVER(this,1)" src="00_picts/0_startseite/b_sprache_en_0.png" width="180" height="27" alt="" border="0"></a></td>
+			</tr><tr>
+			    <td><a href="home.html?x=0&sp=fr" name="SP_LINK"><img name="SP_BILD" onmouseout="KS_PICOVER(this,0)" onmouseover="KS_PICOVER(this,1)" src="00_picts/0_startseite/b_sprache_fr_0.png" width="180" height="27" alt="" border="0"></a></td>
+			</tr><tr>
+			    <td><a href="home.html?x=0&sp=es" name="SP_LINK"><img name="SP_BILD" onmouseout="KS_PICOVER(this,0)" onmouseover="KS_PICOVER(this,1)" src="00_picts/0_startseite/b_sprache_es_0.png" width="180" height="27" alt="" border="0"></a></td>
+			</tr><tr>
+			    <td><a href="home.html?x=0&sp=ru" name="SP_LINK"><img name="SP_BILD" onmouseout="KS_PICOVER(this,0)" onmouseover="KS_PICOVER(this,1)" src="00_picts/0_startseite/b_sprache_ru_0.png" width="180" height="27" alt="" border="0"></a></td>
+			</tr><tr>
+			    <td><img src="00_picts/0_startseite/b_re_linie_unten.png" width="180" height="12" alt="" border="0"></td>
+			</tr>
+			</table>
+		</td>
+		<td class="B_AUSSEN">&nbsp;</td>
+	</tr>
+	<tr>
+	    <td>&nbsp;</td>
+	    <td width="180">&nbsp;</td>
+	    <td width="538">&nbsp;</td>
+	    <td width="180">&nbsp;</td>
+	    <td>&nbsp;</td>
+	</tr>
+	</table>
+<!-- google_ad_section_start 
+
+Automatenwolf Automatic Grinder Hachoir automatique Picadora automática Brecher Breaker Concasseur Quebradora CIP-Anlage CIP Unit
+Station nettoyage NEP Dispositivo CIP Cremierbehälter Creaming Tank Cuve de crémage Depósito de crema Diafragma Diaphragm Diaphragme Diafragma
+Diafragma mit Koextrusion Coextrision for diaphragm Diaphragme avec co-extrusion Diafragma para coextrusión FD Automaten
+FD automats (automatic machines) automates FD Autómatas FD Feinstzerkleinerer emulsifier affineur Emulsificadora Feinstzerkleinerung
+emulsification affinage Emulsificación Förderband Belt Conveyor Tapis de transfert Cinta transportadora Fördergerät conveyor
+engin de manutention, appareil de poussage Equipo de transporte Förderpumpe Transfer pump Pompe de transfert Bomba de suministro
+Fördersatz pump set Jeu de poussage Unidad de suministro Förderschnecke Screw Conveyor Vis de transfert Rosca transportadora
+Fördersystem (Pumpe) pump system système de poussage Sistema de suministro Formband Forming Belt Tapis de formage Cinta de molde
+Frischfleisch fresh meat viande fraîche	Carne fresca Füller filler poussoir Embutidora Füller stuffer poussoir Embutidora
+Füllmaschine filling machine poussoir Máquina embutidora Füllwolf 130 Grinder Head 130 Tête de broyage 130 Picadora de rellenado 130
+Gebrauchtmaschine used machine, second hand machine	machine d’occasion Máquina usada Gefrierfleischbrecher (siehe Brecher)
+Frozen Block Breaker Concasseur Quebradora de carne congelada Hebevorrichtung Lifting Device Elévateur Dispositivo elevador
+Homogenisierbehälter homogenizing bin homogénéiseur Homogeneizadora Käsebrecher Cheese Breaker Concasseur à fromage Quebradora de queso
+Kochautomat	boiling machine	automate de cuisson Autómata de cocción Koextrusion coextrusion	co-extrusion Coextrusión Kombiwolf KS 400
+Combi Grinder KS 400 Hachoir combiné KS 400 Picadora combinada KS 400 Kontinuierliche Erhitzungsanlage Ligne de cuisson en continu Equipo UHT
+Labormaschine laboratory machine (cooker) cuiseur Máquina para laboratorio Lochplatte hole plate grille Disco perforado Maschinenbau
+machine construction constructions mécaniques Construcción de maquinaria Messergehäuse cutting housing bâti des couteaux Caja de cuchillas
+Messerklinge knife blade (siehe insert blade) lame Hoja de cuchilla Messerkopf knife head porte-couteaux Cabezal portacuchillas Messernachstellung
+knife readjustment Messerplatte knife plate plateau de supportage de couteaux Placa portacuchillas Messerwelle cutting shaft arbre des couteaux
+Árbol de cuchillas Mischbehälter mixer bin cuve de mélange Depósito de mezclado Mischer blender (siehe mixer) mélangeur Mezcladoras
+Mischer Mixer Mélangeur Mezcladora Mischwolf Mixer Grinder Mélangeur-hachoir Mezcladora-picadora Muldenband troughed belt tapis en auge
+Cinta transportadora cóncava Nutzvolumen effective volume volume utile Volumen útil Paddelwelle paddle-shaft arbre à pagaie
+Eje con pala Palettenaufnahme pallet charge porte-palettes Carga de paletas Palettenbrecher pallet breaker concasseur à palettes
+Quebradora de paletas Palettenwender Pallet Inverter System	Retouneur de palettes Girador de paletas Portioniergerät portioning unit
+unité de portionnement Equipo de porcionado Produktsilo	product silo silo Silo de producto Prozessautomat process automat automate de proces
+Autómata de proceso Prozesslinie process line ligne de process Línea de proceso Pufferbehälter Storage bin cuve tampon Depósito temporal
+Pumpe pump pompe Bomba Reinigungspodest cleaning platform plate-forme de nettoyage Plataforma de limpieza Restentleerung residual discharging
+vidange en fin de cuve Vaciado de residuos Rohware raw material marchandise non manufacturée producto crudo Rohwurst Dry sausage saucisse crue
+Charcutería Rollenbahn Roller Conveyor Convoyeur à rouleaux rostfreie Ausführung stainless design exécution inoxydable Construcción inoxidable
+rostfreier Stahl stainless steel acier inoxydable Acero inoxidable Rotationsschneider Rotation Cutter Dispositif de coupe rotatif Cortador rotativo
+Rührwerk agitator agitateur Agitador Schaltanlage switchbox	installation électrique, installation de la distribution électrique Instalación de mando
+Schleifmaschine Grinding machine Rectifieuse Rectificadora Schleppkettenförderer Chain Conveyor Tapis à tasseaux Transportador por cadena de arrastre
+Schmelzkäse Processed cheese Fromage fondu Queso fundido Schmelzkäsekocher laboratory machine (cooker) cuiseur à fromage fondu Cocedor de queso fundido
+Schnecke worm vis Tornillo sin fin Schneckenwellen worm shafts arbres à vis pleine Ejes de tornillo sin fin Schneideffekt cutting effect
+effet de coupe	Efecto de corte Schneidgehäuse Cutting housing bâti de coupe Bastidor de corte Schneidring cutting ring	anneau de coupe
+anillo el corte Schneidsatz cutting set	jeu de coupe Unidad de corte Schneidsystem cutting system système de coupe Sistema de corte
+Schraubenwellen screw-shaft	arbres à rubans Ejes helicoidales Schüssel hopper récipient Depósito Schüsselkutter bowl cutter	cutter Cúter de depósito
+Schwenkeinrichtung Swivel unit dispositif de pivotement Equipo giratorio Senkrecht-Förderschnecke Vertical Screw Conveyor Vis de transfert verticale
+Rosca transportadora vertical Servomotor Servo motor Servo-moteur Servomotor Silo Sonderausrüstung special equipment équipement spécial
+Equipamiento especial Spiralband Spiral ribbon ruban de soudure Cinta en espiral SPS-Steuerung PLC control commande automate Mando con control PLC
+Standardisierungslinie standardization line ligne de standardisation Línea de estandarización Stollenband cleat conveyor convoyeur Cinta ahuecada
+Temperatur Überwachung Temperature supervision contrôle de la température Control de temperatura Tiernahrung petfood alimentation,
+aliments pour animaux Alimentos para animales Totalvolumen total volume	volume total Volumen total Transportband belt convoyeur à bande 
+Cinta transportadora Trichterinhalt hopper capacity contenu de la trémie Contenido del embudo UHT Anlage (Kontinuierliche Erhitzungsanlage)
+sterilization unit	ligne UHT	Equipo UHT Universalzerkleinerer Universal Emulsifier Broyeur universel Emulsificador universal Vakuum vacuum
+vide Vacío Vakuumanlage vacuum system installation à vide, sytème de vide Instalación de vacío Vakuumbehälter vacuum tank cuve sous vide
+Depósito al vacío Vakuumfüller Vacuum Filler Poussoir sous vide Embutidora al vacío Vakuummischer (siehe Mischer) Vacuum mixer
+mélangeur sous vide	Mezcladora al vacío Vakuumpumpe Vacuum pump pompe à vide Bomba de vacío Vakuumtrichter vacuum hopper trémie sous vide
+Embudo de vacío Verschleißteil wear part pièce d’usure Pieza de desgaste Vorerhitzung pre-heating préchauffage, préchauffe Precalentamiento
+Vorsatzgerät accessories accessoires Equipo adicional Vorzerkleinerung precutting prébroyage adelante fragmentación Wägezelle load cell
+cabine de balance Elemento para pesar Wasserdosierung water dosing unit dosage d'eau Dosificado de agua Weichkäse Soft cheese fromage à pâte molle
+Queso tierno Welle shaft arbre Eje Wiegefuß weighing system pied de pesage Base del sistema de pesado Winkelwolf Angle Grinder
+Hachoir à angle	Picadora angular Wolf grinder hachoir Picadora Wolfschnecke worm vis du hachoir Tornillo sin fin picador Zerkleinerer
+mincer affineur Emulsificadora Zerkleinerungstechnik emulsifying technology technique d'affinage Técnica de emulsificación Zubehör
+special equipment équipements, accessoires Accesorios Zubringerschnecke feeding screw vis d’amenée Tornillo sin fin de alimentación
+Zuführbehälter Feed Hopper Cuve d'alimentation Depósito de alimentación Zuführschnecke feeding screw vis d’amenée Tornillo sin fin de alimentación
+
+ google_ad_section_end --> 
+</body>
+</html>

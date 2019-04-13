@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Valdez Spice - Home</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/camera.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+      <script src="js/camera.js"></script>
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+     <script  src="js/jquery.touchSwipe.min.js"></script>
+     <script>
+     
+     
+      $(document).ready(function(){
+      jQuery('#camera_wrap').camera({
+        loader: false,
+        pagination: true,
+        thumbnails: false,
+        height: '28.3125%',
+        caption: false,
+        navigation: true,
+        fx: 'mosaic'
+      });   
+      
+    });  
+     
+ $(window).load (
+    function(){$('.carousel1').carouFredSel({auto: false, prev: '.prev',next: '.next', width: 940, items: {
+      visible : {min: 1,
+       max: 4
+},
+height: 'auto',
+ width: 220,
+
+    }, responsive: true, 
+    
+    scroll: 1, 
+    
+    mousewheel: false,
+    
+    swipe: {onMouse: true, onTouch: true}});
+    
+    } );   
+    jQuery(function(){
+      $().UItoTop({ easingType: 'easeOutQuart' });
+    });      
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
+</head>
+     <body class="page1">
+     <div class="main">
+<!--==============================header=================================-->
+ <header> 
+ <div class="container_12">
+  <div class="grid_12">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Valdez Spice">        </a>      </h1>    
+   <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+                   <li class="current "><a href="index.html">Home</a></li>
+                   <li><a href="#">About Us</a><ul>
+                        <li><a href="ourstory.html">Our Story</a></li>
+                        <li><a href="ourteam.html">Our Team</a></li>
+                        <li><a href="ourfacility.html">Our Facility</a></li>
+                        <li><a href="newsletters.html">Newsletters</a></li>
+                        <!--<li><a href="#">Careers</a></li>  -->                      
+                     </ul></li>
+                   <li><a href="#">R&amp;D</a><ul>
+                   		<li><a href="rdinfo.html">Research &amp; Development</a></li>
+                        <li><a href="VS_Documents/Valdez Spice Product List 2017.pdf" target="_blank">R&amp;D Blends</a></li>
+                        <li><a href="VS_Documents/VS_New_Customer_Handbook_Terms_Conditions_2016.pdf" target="_blank">Terms &amp; Conditions</a></li>                        
+                   </ul></li>
+                   <li><a href="qainfo.html">Food Safety</a></li>
+                   <li><a href="contactus.html">Contact Us</a></li>
+                 </ul>
+          </nav>
+            <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  <div class="slider_wrapper">
+      <div id="camera_wrap" class="">
+        <div data-src="images/slide.jpg">
+          <div class="caption fadeIn">
+            Custom Blending and Packaging
+          </div>
+        </div>
+        <div data-src="images/slide.jpg">
+          
+          <div class="caption fadeIn">Experienced R&amp;D Staff
+            
+          </div>
+        </div>
+        <div data-src="images/slide.jpg">
+          <div class="caption fadeIn">Extensive Quality Assurance</div>
+        </div>
+        <div data-src="images/slide.jpg">
+         <div class="caption fadeIn">Innovative Flavors &amp; Products</div>
+        </div>
+      </div>
+  </div>
+</header>
+
+<!--=======content================================-->
+<div class="content page1">
+<div class="page1_block">
+  <div class="container_12">
+    <div class="grid_3">
+      <div class="banner maxheight">
+        <div class="ban_title maxheight1">OUR<br>
+STORY <br>
+</div>
+        <strong><a href="ourstory.html">The Valdez Corporation is a private label company specializing in custom blending and packaging.  We provide quality product for over 300 customers nationwide.</a></strong>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="banner maxheight ">
+        <div class="ban_title maxheight1">RESEARCH<br>
+&amp;<br> DEVELOPMENT</div>
+        <strong><a href="rdinfo.html">We can work with your proprietary recipes, create customized blends, or match an existing dry product you may be currently using.</a></strong>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="banner maxheight">
+        <div class="ban_title maxheight1">FOOD<br>SAFETY<br/>
+&amp; QUALITY</div>
+        <strong><a href="qainfo.html">We maintain a robust and thorough HACCP based food safety system.  The Valdez Corporation assures the safety of its products.</a></strong>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="banner maxheight">
+        <div class="ban_title maxheight1">OUR<br>
+FACILITY</div>
+        <strong><a href="ourfacility.html">We recently moved in to a newly built and customized facility that includes a new RD/QA lab, more production rooms and increased warehouse space.</a></strong>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container_12 ">
+    <div class="grid_5 maxheight2">
+     <!-- <h2> Blending Spices <br>
+        for More Than<br>  
+<span>30</span> Years</h2> -->
+ <h2> SpeciaLty  <br>
+        Blends and<br>  
+ Packaging</h2>
+      <p class="col1 p1">The Valdez Corporation specializes in dry flavor and seasoning blends, including, but not limited to, dip mixes, soup mixes, and bakery products. Our capabilities include custom blends, in-house blends, and repacks for bulk spices and herbs. We can accommodate both bulk and portion packing. <a href="contactus.html"><strong>Contact us</strong></a> for more information! </p>      
+    </div>
+    <div class="grid_3 maxheight2">
+      <img src="images/page1_img1.jpg" alt="" class="img_inner">
+      <div class="cont_phone">972 242 7660</div>
+      <div class="cont_address"> 13951 Senlac Drive, Suite 100<br>
+      Dallas, TX 75234</div>
+    </div>
+    <div class="grid_3 prefix_1 ver maxheight2">
+        <ul class="list">
+          <li><a href="ourteam.html"><span>Our</span>              
+          team</a></li>
+          <li><a href="newsletters.html"><br/>view <br>
+          our<span>newsletters</span></a></li>
+          
+          
+        </ul>
+    </div>
+  </div>
+  <!--<div class="bottom_block">
+    <div class="container_12">
+      <div class="grid_12">
+        <a href="#" class="prev"></a><a href="#" class="next"></a>
+       <div class="car_div">
+          <ul class="carousel1">
+            <li>
+              <time datetime="2013-01-01">July 25, <span>2013</span></time>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut.</a>
+            </li>
+            <li>
+              <time datetime="2013-01-01">July 20, <span>2013</span></time>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut.</a>
+            </li>
+            <li>
+              <time datetime="2013-01-01">July 15, <span>2013</span></time>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut.</a>
+            </li>
+            <li>
+              <time datetime="2013-01-01">July 10, <span>2013</span></time>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut.</a>
+            </li>
+            <li>
+              <time datetime="2013-01-01">July 05, <span>2013</span></time>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+</div>
+
+
+<!--==============================footer=================================-->
+</div>
+<footer>    
+   <div class="container_12">
+    
+      <div class="grid_5 fright maxheight3">
+     <!-- <ul>
+        <li><a href="#">S. Hemisphere Harvest</a></li>
+        <li><a href="#">Estate Ale</a></li>
+        <li><a href="#">Hoptimum</a></li>
+        <li><a href="#">Ovila Abbey Ales</a></li>
+      </ul> -->
+       
+      </div>
+      <div class="grid_2 fright maxheight3">
+       <!-- <ul>
+          <li><a href="#">Ruthless Rye</a></li>
+          <li><a href="#">Summerfest</a></li>
+          <li><a href="#">Tumbler</a></li>
+          <li><a href="#">Celebration Ale</a></li>
+          <li><a href="#">Bigfoot</a></li>
+        </ul> -->
+        
+      </div>
+      <div class="grid_2 fright maxheight3">
+       <!-- <ul>
+          <li><a href="#">Pale Ale</a></li>
+          <li><a href="#">Torpedo</a></li>
+          <li><a href="#">Kellerweis</a></li>
+          <li><a href="#">Porter</a></li>
+          <li><a href="#">Stout</a></li>
+        </ul> -->
+      </div>
+      <div class="grid_3 ">
+      <div class="copy">    
+        <a class="footer_logo " href="index.html">
+          <img src="images/footer_logo.png"  alt="">
+        </a><br/>
+        &copy; 2017 </div>
+      
+    </div>
+    <div class="clear"></div>
+    </div>
+</footer>
+</body>
+</html>

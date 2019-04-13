@@ -1,0 +1,972 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Cel and Production Art Network - Buy Animation/Anime and Comic Artwork - Free Gallery Hosting - Rubberslug
+</title><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="/styles/reset-min.css" rel="stylesheet" type="text/css" /><link href="/styles/base-min.css" rel="stylesheet" type="text/css" /><link href="/styles/fonts-min.css" rel="stylesheet" type="text/css" /><link href="/styles/960.css" rel="stylesheet" type="text/css" /><link href="/styles/core.css" rel="stylesheet" type="text/css" /><link href="/styles/style.css" rel="stylesheet" type="text/css" />
+ 
+  <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/scripts/DD_belatedPNG_0.0.8a-min.js"></script>
+  <script language="javascript" type="text/javascript" src="/scripts/jquery.cookie.js"></script>
+  <script language="javascript" type="text/javascript" src="/scripts/jquery.hoverIntent.minified.js"></script>
+  <script language="javascript" type="text/javascript" src="/scripts/jquery.slidingmessage.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/scripts/jquery.metadata.js"></script>
+  <!--<script language="javascript" type="text/javascript" src="/scripts/jquery.lazyload.mini.js"></script>-->
+<script type="text/javascript">
+  // pngfix
+  $(document).ready(function() {
+   //  DD_belatedPNG.fix('.png, .banner');
+    var message = "";
+    if (message != "") {
+      $.showMessage(message, messageOptions);
+    }
+    window.setInterval('Reconnect()', 600000); 
+  });
+
+  var messageOptions = { id: 'message_from_top',
+    position: 'top',
+    size: 50,
+    backgroundColor: '#FFF',
+    delay: 3000,
+    speed: 500,
+    fontSize: '24px'
+  };
+
+  function Reconnect() {
+    $.get("/refresh.aspx" + Math.round(Math.random() * 10000));
+    $.get("/refresh.asp?" + Math.round(Math.random() * 10000));
+  }
+  
+
+</script>
+
+
+  
+  
+<meta name="description" content="Host a free gallery and buy and sell rare cels and production artwork from Japanese anime, Western animation, comics, and more." />
+<meta name="google-site-verification" content="sEAGUoKpwLH4KRi6L8okQHOj_HunhU4LlQTnotLdlOM" />
+<link type="text/css" rel="stylesheet" href="/styles/default.css" />
+<style>
+body 
+{
+    background: repeat-x url('/styles/ui/bg_main.jpg') 50% 0px ;
+    	background-color:#43494a;
+}
+
+.bluebox_arrow {
+display:block;
+text-align:center;
+}
+</style>
+
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+  <div class="container_12">
+     <!-- <form action="/search/" method="get">
+    <div id="header">
+    <div class="grid_6"><b>Search </b>
+    <input name="s" id="searchBox" type="text" />
+    <input type="submit" value="Go" />
+
+    </div>
+   
+    <br class="clear" />
+    </div>
+    </form>-->
+    
+    <div id="navigation" class="clearfix">
+    
+    <div class="left" style="margin-left:10px; width:180px; padding-top:2px;" >
+    <a href="/"><img class="png" src="/images/rs_logo.png" width="180" height="30" alt="anime cel gallery"  /></a>
+    </div>
+    
+
+    <div class="left clearfix" style="padding-left:60px; width:250px;">
+    <form action="/search/" method="get">
+     <input type="text" class="textbox left" style="width:150px;" name="s"/>
+     <input class="button" type="submit" value="Search" />
+     </form>
+      </div>
+    
+    <div style="text-align:right; float:right; width:450px; margin-right:10px; margin-top:2px;">
+    <div id="mainNavigationContainer" >
+    <ul class="horizontal" id="mainNavigation2" >
+    <li><a id="gallery" class="bold" href="/gallery/">Galleries</a> </li>
+    <li><img class="png" src="/images/core_nav_divider.png" /></li>
+    <li><a id="market" class="bold" href="/shop/">Market</a></li>
+    <li><img class="png" src="/images/core_nav_divider.png" /></li>
+    <li><a id="community" class="bold"  href="/community/">Community</a></li>
+    <li><img class="png"  src="/images/core_nav_divider.png" /></li>
+    <li><a id="resources" class="bold" href="/resource/">Resources</a></li>
+    <li><img class="png"  src="/images/core_nav_divider.png" /></li>
+    <li><a style="padding-right:0;" id="profile" class="bold" href="/member/">Account</a></li>
+    </ul>
+    </div>
+    </div>
+    
+    </div>
+          <form name="aspnetForm" method="post" action="Default.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NzIzNzA1MTJkZL4k01c6LMPf7i+8YykM1pJJse86" />
+</div>
+
+    <div id="main" class="container_12 clearfix">
+
+        
+  
+
+<script type="text/javascript">
+
+  var currentTab;
+
+  $(function() {
+    initializeHandlers();
+    initializeUI();
+
+    // deprecated?
+   /* $('.updatedGallery').each(function() {
+      $(this).qtip({
+        content: { url: 'galleryUpdate.aspx', data: { id: $(this).attr('rel')} },
+        show: { when: { event: 'mouseover' }, effect: { length: 0} },
+        hide: 'mouseout',
+        position: {
+          corner: { target: 'bottomLeft', tooltip: 'topLeft' },
+          adjust: { x: 20, y: 5 }
+        },
+        style: { width: 200 }
+      });
+    });*/
+  });
+
+  function initializeUI() {
+    currentTab = "galleryTab";
+    var cookie = $.cookie('home_thumbnails');
+
+    if (cookie != null && cookie == "hide") {
+      $("#showThumbs").attr("checked", false);
+      $(".thumbnails").hide();
+      $(".seriesList").show();
+      $(".updatedGallery").unbind('mousemove');
+      $(".updatedGallery").unbind('mouseover');
+    }
+  }
+
+  function initializeHandlers() {
+    $("#showThumbs").click(function() {
+      if ($(this).is(":checked")) {
+        $(".thumbnails").show();
+        $.cookie('home_thumbnails', 'show', { expires: 10000, path: '/' });
+        $(".seriesList").hide();
+        setUpdatedGalleryHandler();
+      }
+      else {
+        $(".thumbnails").hide();
+        $.cookie('home_thumbnails', 'hide', { expires: 10000, path: '/' });
+        $(".seriesList").stop(true, true);
+        $(".seriesList").show();
+        $(".updatedGallery").unbind('mousemove');
+        $(".updatedGallery").unbind('mouseover');
+      }
+    });
+
+
+    $("#updateNav a").click(function() {
+      showTab($(this).attr("id"));
+    });
+
+    setUpdatedGalleryHandler();
+
+  }
+
+  function setUpdatedGalleryHandler() {
+    var config = {
+      over: function() {
+        $(this).find(".seriesList").slideDown(200);
+      },
+      timeout: 200,
+      out: function() {
+        $(this).find(".seriesList").slideUp(200);
+      }
+    }
+    $(".updatedGallery").hoverIntent(config);
+  }
+
+  function showTab(tabName) {
+    if (tabName != currentTab) {
+      $("#" + currentTab).removeClass("selected");
+      $("#" + currentTab + "Arrow").hide();
+      $("#" + currentTab + "Content").hide();
+      currentTab = tabName;
+      $("#" + currentTab).addClass("selected");
+      $("#" + currentTab + "Arrow").show();
+      $("#" + currentTab + "Content").show();
+    }
+  }
+  
+
+</script>
+
+
+<div id="ctl00_ctl00_mcp_pcp_introPublic">
+	
+<div style="position:relative; height:80px;">
+<div style="position:absolute; background-color:#000; left:-10px; width:980px;">
+<div style="font-family:arial; font-size:16px; line-height:1.4em; padding:10px 20px;">
+<a href="/welcome/signup.aspx" class="bold">Sign up now</a> to join the world's largest animation and comic art collector network.<br/><b>Design</b> a free gallery, <b>shop</b> the art market, and <b>share</b> with friends. 
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+<div class="grid_4" style="line-height:1.4em;" >
+<div style="width:290px;">
+<div style="background-color:#e2e2e2;padding:10px;">
+<a id="ctl00_ctl00_mcp_pcp_featureImage" href="http://nett.rubberslug.com/"><img src="http://rubberslug.s3.amazonaws.com/feature/ppzooztvoz_m.jpg" style="border-width:0px;" /></a>
+</div>
+<img src="/images/home_feature_arrow.png" class="png" alt="feature gallery" style="display:block; margin-left:20px; margin-bottom:10px;"/>
+
+<div style="margin-bottom:1.4em;">
+<h2>Nett's Cels</h2>
+<p class="headline"></p>
+<p><a class="bold" href="http://nett.rubberslug.com/">Visit Featured Gallery »</a><br/>
+<a class="bold" href="/info/feature.aspx">How do I get my gallery featured?</a></p>
+</div>
+
+<div style="height:1px; background-color:#999; margin:10px 0;"></div>
+<div style="margin-bottom:1.4em;">
+<h2>Welcome to Rubberslug v3!</h2>
+<p>Hello! Welcome to the website overhaul
+that's been in progress for the last six months. A lot of stuff has
+been changed and improved.</p>
+<p class="clearfix"><a class="button" href="/news/">Read More</a></p>
+</div>
+
+<div style="height:1px; background-color:#999; margin:10px 0;"></div>
+
+<div style="margin-bottom:1.4em;">
+<h2>Donate to Japan</h2>
+<p>Win cool stuff from Rinkya and help Japanese tsunami victims. Free commission on selected Yahoo Japan auctions!</p>
+<p class="clearfix"><a class="button" href="http://www.anime-beta.com/phpBB/viewtopic.php?p=334573#334573">Read More</a></p>
+</div>
+
+<div style="height:1px; background-color:#999; margin:10px 0;"></div>
+
+
+<div style="margin:1.4em 0;">
+<h2>Live Chat</h2>
+
+<p style="margin-bottom:10px;">Chat with your fellow collectors and get live streaming site updates. Currently in chat:</p>
+
+<div class="headline"><div class="left smallAvatar"></div><div style="padding-top:5px; width:200px;" class="left bold">tza22</div><div class="clear"></div></div>
+
+<p class="clearfix"><a href="/chat/" class="button" />Join Chat</a></p>
+
+
+</div>
+
+<div style="height:1px; background-color:#999; margin:10px 0;"></div>
+
+
+<div style="margin:1.4em 0;">
+<h2>Now that the new version of Rubberslug is live, what would you most like to see worked on first? </h2>
+<style type="text/css">
+  .pollOption 
+  {
+    margin:5px 0;
+  }
+</style>
+<div id="ctl00_ctl00_mcp_pcp_poll_VotePanel">
+	
+<div class="headline clearfix">
+<div class="pollOption"><input type="radio" name="vote" value="35" id="poll35" />&nbsp; &nbsp;<label for="poll35">Gallery (tag support, filter options,etc)</label></div><div class="pollOption"><input type="radio" name="vote" value="36" id="poll36" />&nbsp; &nbsp;<label for="poll36">Market (transactions, streamline uploading, etc.) </label></div><div class="pollOption"><input type="radio" name="vote" value="37" id="poll37" />&nbsp; &nbsp;<label for="poll37">Forum (better formatting, filtering) </label></div><div class="pollOption"><input type="radio" name="vote" value="38" id="poll38" />&nbsp; &nbsp;<label for="poll38">Search (restoration/improvement of other search methods) </label></div><div class="pollOption"><input type="radio" name="vote" value="39" id="poll39" />&nbsp; &nbsp;<label for="poll39">Other Community Features (chat, blog, other gallery modules) </label></div><div class="pollOption"><input type="radio" name="vote" value="40" id="poll40" />&nbsp; &nbsp;<label for="poll40">Stability (page speed, bandwidth reduction)</label></div><div class="pollOption"><input type="radio" name="vote" value="41" id="poll41" />&nbsp; &nbsp;<label for="poll41">Something Else (tell us in the forum!)</label></div>
+<br/>
+<input type="submit" name="ctl00$ctl00$mcp$pcp$poll$Submit" value="Vote" id="ctl00_ctl00_mcp_pcp_poll_Submit" class="button" />
+<a id="ctl00_ctl00_mcp_pcp_poll_pollLink" class="button" href="/board/thread/3022/poll--new-rubberslug-is-live--what-s-next-/">Go to Forum Thread</a>
+</div>
+
+</div>
+
+
+<div class="headline">
+
+</div>
+
+</div>
+
+<!--
+<div class="blueBox">
+<h2>Support the Site</h2>
+<p>Donate via Paypal</p>
+<p>Follow us on facebook</p>
+</div>
+<div style="height:10px;"></div>
+-->
+
+
+</div>
+</div>
+
+<div class="grid_8">
+<div style="margin-bottom:5px; font-weight:bold;">
+<ul class="horizontal left" id="updateNav">
+<!--<li><div style="padding:4px 20px 6px 10px; margin-right:5px; font-weight:bold; color:#CCC;">Latest Updates</div></li>-->
+<li><a href="#" class="selected" id="galleryTab">Galleries</a>
+<div class="bluebox_arrow" id="galleryTabArrow" ><img src="/images/bluenav_arrow.png" width="11" height="8" alt="arrow"/></div></li>
+<li><a href="#" id="marketTab">Market</a>
+<div class="bluebox_arrow" id="marketTabArrow" style="display:none;" ><img src="/images/bluenav_arrow.png" width="11" height="8" alt="arrow"/></div></li>
+<li><a href="#" id="forumTab">Forum</a>
+<div class="bluebox_arrow" id="forumTabArrow" style="display:none;" ><img src="/images/bluenav_arrow.png" width="11" height="8" alt="arrow"/></div></li>
+<li style="margin-right:10px;"><a href="#" id="blogTab">Blogs</a>
+<div class="bluebox_arrow" id="blogTabArrow" style="display:none;" ><img src="/images/bluenav_arrow.png" width="11" height="8"  alt="arrow"/></div></li>
+</ul>
+
+<div style="width:145px; float:right;"><div style="display:block; padding:4px 0px 6px; text-align:center;"><input type="checkbox" id="showThumbs" checked="checked" style="vertical-align:-2px;" /> &nbsp; <label for="showThumbs">Show Thumbnails</label></div></div>
+
+<div class="clear"></div>
+</div>
+
+
+<div id="galleryTabContent">
+
+
+<div style="float:right; overflow:auto;"></div>
+<div class="clear"></div>
+
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl00_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/8dda1de63db04822ad0af44f57d2f3c3/1060917-8326815-1109.png);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://floralys77.rubberslug.com/">Lost in Translation</a><br/>
+<span class="small">by <b>floralys77</b><br/>17 hours ago</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl00_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://floralys77.rubberslug.com/gallery/inv_info.asp?ItemID=424510" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/8/dda1de63db04822ad0af44f57d2f3c3/2t0w3ci10y_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl00_thumbnailList_ctl01_itemThumb" class="thumbnail" href="http://floralys77.rubberslug.com/gallery/inv_info.asp?ItemID=424509" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/8/dda1de63db04822ad0af44f57d2f3c3/dzct9yjmyl_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl00_thumbnailList_ctl02_itemThumb" class="thumbnail" href="http://floralys77.rubberslug.com/gallery/inv_info.asp?ItemID=424506" style="max-height:75px;margin-right:0px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/8/dda1de63db04822ad0af44f57d2f3c3/u87om9qw5p_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl00_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://floralys77.rubberslug.com/gallery/master_query.asp?SeriesID=48587">Dragon ball </a> (3)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl01_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/bfeeb75a2b584057bb802ad47c14b23a/1158135-2744259-banner_site_2.jpg);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://davidcels.rubberslug.com/">DavidsCels</a><br/>
+<span class="small">by <b>durclin</b><br/>23 hours ago</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl01_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://davidcels.rubberslug.com/gallery/inv_info.asp?ItemID=424505" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/feeb75a2b584057bb802ad47c14b23a/76gcqbybsx_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl01_thumbnailList_ctl01_itemThumb" class="thumbnail" href="http://davidcels.rubberslug.com/gallery/inv_info.asp?ItemID=424504" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/feeb75a2b584057bb802ad47c14b23a/l17fbrygoh_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl01_thumbnailList_ctl02_itemThumb" class="thumbnail" href="http://davidcels.rubberslug.com/gallery/inv_info.asp?ItemID=424503" style="max-height:75px;margin-right:0px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/feeb75a2b584057bb802ad47c14b23a/q36hiyv8m9_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl01_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://davidcels.rubberslug.com/gallery/master_query.asp?SeriesID=52028">Ghost in the Shell</a> (3)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl02_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/8a2d66a5076f400491652454e2959748/109653-4860454-banner.jpg);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://kyocels.rubberslug.com/">My Land Gallery</a><br/>
+<span class="small">by <b>Kyouko</b><br/>Yesterday at 8:15 AM</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl02_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://kyocels.rubberslug.com/gallery/inv_info.asp?ItemID=424502" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/8/a2d66a5076f400491652454e2959748/4p8qa56ufu_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl02_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://kyocels.rubberslug.com/gallery/master_query.asp?SeriesID=6697">Maison Ikkoku</a> (1)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl03_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/b010ce284add47b8917fa2f0e423cc5d/1147901-9442220-link%20botan.jpg);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://sarangallery.rubberslug.com/">Saran's Gallery</a><br/>
+<span class="small">by <b>Saran</b><br/>Yesterday at 1:59 AM</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl03_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://sarangallery.rubberslug.com/gallery/inv_info.asp?ItemID=424501" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/010ce284add47b8917fa2f0e423cc5d/1hqmodm39e_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl03_thumbnailList_ctl01_itemThumb" class="thumbnail" href="http://sarangallery.rubberslug.com/gallery/inv_info.asp?ItemID=424500" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/010ce284add47b8917fa2f0e423cc5d/xe218t2v4a_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl03_thumbnailList_ctl02_itemThumb" class="thumbnail" href="http://sarangallery.rubberslug.com/gallery/inv_info.asp?ItemID=424499" style="max-height:75px;margin-right:0px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/b/010ce284add47b8917fa2f0e423cc5d/dua61lgb3m_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl03_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://sarangallery.rubberslug.com/gallery/master_query.asp?SeriesID=51901">BORUTO *NEW* Orochimaru</a> (3)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl04_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/34a6a2ba12ba4bb88f0bf5f9aa3bc30e/1098376-2680727-Harry%20ab%20logo.jpg);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://thingsleftinthefridge.rubberslug.com/">Toys in my Attic</a><br/>
+<span class="small">by <b>Kickin_kenny</b><br/>Yesterday at 10:03 PM</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl04_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://thingsleftinthefridge.rubberslug.com/gallery/inv_info.asp?ItemID=424498" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/3/4a6a2ba12ba4bb88f0bf5f9aa3bc30e/9n45xqy83y_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl04_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://thingsleftinthefridge.rubberslug.com/gallery/master_query.asp?SeriesID=52027">Tokyo Ghoul</a> (1)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+<div class="topCap"></div>
+<div class="updatedGallery blackBox padded">
+<div style="overflow:auto;">
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl05_siteThumb" class="left largeAvatar" style="background-image:url(http://www.rubberslug.com/user/49d45b42b5614669bde9060fba148d2e/518360-3216625-bckeg78eddf.jpg);"></div>
+
+<div class="blockMetadata">
+<a class="bold" href="http://blackmirror.rubberslug.com/">Black Mirror</a><br/>
+<span class="small">by <b>Shemp</b><br/>Yesterday at 2:04 PM</span>
+</div>
+
+<div class="blockContent">
+
+<div class="thumbnailContainer thumbnails">
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl05_thumbnailList_ctl00_itemThumb" class="thumbnail" href="http://blackmirror.rubberslug.com/gallery/inv_info.asp?ItemID=424491" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/4/9d45b42b5614669bde9060fba148d2e/skemmiivz7_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl05_thumbnailList_ctl01_itemThumb" class="thumbnail" href="http://blackmirror.rubberslug.com/gallery/inv_info.asp?ItemID=424490" style="max-height:75px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/4/9d45b42b5614669bde9060fba148d2e/4frvyhvbjy_rst.jpg" style="border-width:0px;" /></a>
+
+<a id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl05_thumbnailList_ctl02_itemThumb" class="thumbnail" href="http://blackmirror.rubberslug.com/gallery/inv_info.asp?ItemID=424489" style="max-height:75px;margin-right:0px;overflow:hidden;"><img src="http://rubberslug.s3.amazonaws.com/user/4/9d45b42b5614669bde9060fba148d2e/m8xoxdihow_rst.jpg" style="border-width:0px;" /></a>
+
+<div class="clear"></div>
+</div>
+
+<div id="ctl00_ctl00_mcp_pcp_galleryUpdate_GalleryGrid_ctl05_seriesContainer">
+	
+<p class="seriesList" style="display:none; margin:10px 0 5px;">Updated: <a href="http://blackmirror.rubberslug.com/gallery/master_query.asp?SeriesID=5647">Dragon Ball Z - Dragonball</a> (3)</p>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bottomCap"></div>
+
+
+<div style="float:right; margin-top:10px; overflow:auto;"></div>
+<div class="clear"></div>
+<a class="button text-center" style="float:none; margin:0;" href="/gallery/updated/">See More Updated Galleries</a>
+</div>
+
+<div id="marketTabContent" style="display:none;">
+
+
+<div class="topCap transparent"></div>
+<div class="blackBox transparent" style="padding:5px 10px;">
+
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl00_marketItemImage" href="/shop/item.aspx?i=6266"><img src="http://rubberslug.s3.amazonaws.com/shop/4f456def36.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl00_marketItemLink"></a><br/>
+$150.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl01_marketItemImage" href="/shop/item.aspx?i=6265"><img src="http://rubberslug.s3.amazonaws.com/shop/331f789dbe.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl01_marketItemLink"></a><br/>
+Best Offer</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl02_marketItemImage" href="/shop/item.aspx?i=6264"><img src="http://rubberslug.s3.amazonaws.com/shop/804998b2a2.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl02_marketItemLink"></a><br/>
+$550.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl03_marketItemImage" href="/shop/item.aspx?i=6263"><img src="http://rubberslug.s3.amazonaws.com/shop/7e878968b5.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl03_marketItemLink"></a><br/>
+$550.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl04_marketItemImage" href="/shop/item.aspx?i=6262"><img src="http://rubberslug.s3.amazonaws.com/shop/e01bd829a2.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl04_marketItemLink"></a><br/>
+$550.00</p>
+</div>
+<div class="clear"></div>
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl05_marketItemImage" href="/shop/item.aspx?i=6261"><img src="http://rubberslug.s3.amazonaws.com/shop/3df6573d3a.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl05_marketItemLink"></a><br/>
+Best Offer</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl06_marketItemImage" href="/shop/item.aspx?i=6260"><img src="http://rubberslug.s3.amazonaws.com/shop/0865cebe58.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl06_marketItemLink"></a><br/>
+$400.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl07_marketItemImage" href="/shop/item.aspx?i=6259"><img src="http://rubberslug.s3.amazonaws.com/shop/fda16f6572.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl07_marketItemLink"></a><br/>
+$100.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl08_marketItemImage" href="/shop/item.aspx?i=6258"><img src="http://rubberslug.s3.amazonaws.com/shop/143039d731.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl08_marketItemLink"></a><br/>
+$20.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl09_marketItemImage" href="/shop/item.aspx?i=6252"><img src="http://rubberslug.s3.amazonaws.com/shop/d55e9c46b0.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl09_marketItemLink"></a><br/>
+$80.00</p>
+</div>
+<div class="clear"></div>
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl10_marketItemImage" href="/shop/item.aspx?i=6251"><img src="http://rubberslug.s3.amazonaws.com/shop/ca4a003b60.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl10_marketItemLink"></a><br/>
+$150.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl11_marketItemImage" href="/shop/item.aspx?i=6250"><img src="http://rubberslug.s3.amazonaws.com/shop/d7aa9f0e6c.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl11_marketItemLink"></a><br/>
+$400.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl12_marketItemImage" href="/shop/item.aspx?i=6249"><img src="http://rubberslug.s3.amazonaws.com/shop/22b7736d9c.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl12_marketItemLink"></a><br/>
+$180.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl13_marketItemImage" href="/shop/item.aspx?i=6248"><img src="http://rubberslug.s3.amazonaws.com/shop/ca488d721f.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl13_marketItemLink"></a><br/>
+$30.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl14_marketItemImage" href="/shop/item.aspx?i=6247"><img src="http://rubberslug.s3.amazonaws.com/shop/4684e6926c.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl14_marketItemLink"></a><br/>
+$150.00</p>
+</div>
+<div class="clear"></div>
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl15_marketItemImage" href="/shop/item.aspx?i=6246"><img src="http://rubberslug.s3.amazonaws.com/shop/ef230e22a3.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl15_marketItemLink"></a><br/>
+$200.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl16_marketItemImage" href="/shop/item.aspx?i=6245"><img src="http://rubberslug.s3.amazonaws.com/shop/6847d4e069.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl16_marketItemLink"></a><br/>
+$120.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl17_marketItemImage" href="/shop/item.aspx?i=6244"><img src="http://rubberslug.s3.amazonaws.com/shop/14bf41694b.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl17_marketItemLink"></a><br/>
+$50.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl18_marketItemImage" href="/shop/item.aspx?i=6243"><img src="http://rubberslug.s3.amazonaws.com/shop/c6c1df6abf.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl18_marketItemLink"></a><br/>
+$30.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl19_marketItemImage" href="/shop/item.aspx?i=6242"><img src="http://rubberslug.s3.amazonaws.com/shop/4e4cd85ed8.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl19_marketItemLink"></a><br/>
+$40.00</p>
+</div>
+<div class="clear"></div>
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl20_marketItemImage" href="/shop/item.aspx?i=6241"><img src="http://rubberslug.s3.amazonaws.com/shop/bef103de57.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl20_marketItemLink"></a><br/>
+$50.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl21_marketItemImage" href="/shop/item.aspx?i=6240"><img src="http://rubberslug.s3.amazonaws.com/shop/24ed72a665.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl21_marketItemLink"></a><br/>
+$40.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl22_marketItemImage" href="/shop/item.aspx?i=6238"><img src="http://rubberslug.s3.amazonaws.com/shop/b89e3c7571.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl22_marketItemLink"></a><br/>
+$50.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl23_marketItemImage" href="/shop/item.aspx?i=6237"><img src="http://rubberslug.s3.amazonaws.com/shop/0d5a8f82db.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl23_marketItemLink"></a><br/>
+$100.00</p>
+</div>
+
+
+<div style="float:left; margin:0px 0px 20px 0px; width:120px; text-align:center;">
+
+<div class="thumbnail border"><div style="max-height:100px; overflow:hidden;"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl24_marketItemImage" href="/shop/item.aspx?i=6236"><img src="http://rubberslug.s3.amazonaws.com/shop/904ca6f028.jpg" style="border-width:0px;" /></a></div></div>
+<p style="margin-right:10px;" class="noSpace"><a id="ctl00_ctl00_mcp_pcp_marketUpdate_updateMarket_ctl24_marketItemLink"></a><br/>
+Best Offer</p>
+</div>
+
+<div class="clear"></div>
+</div>
+<div class="bottomCap transparent"></div>
+<a class="button text-center" style="float:none; margin:0;" href="/shop/updated/">See More Market Items</a>
+</div>
+
+<div id="forumTabContent" style="display:none;">
+<div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar" style="background-image: url('http://www.rubberslug.com/user/8708c7de5e5142629e37f9f56ee96750/1098726-3599032-goku.png');"></div><div class="left" style="width:160px; margin-right:20px;"><b>derekmudd</b><br/><span class="small">Jan 21 at 11:53 AM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/4174/dragon-ball-z-gt---trigun-cels-on-ebay/" style="display:block; margin-bottom:.5em;">Dragon Ball Z/GT & Trigun Cels on Ebay</a><p>Last price update.. prices good until Feb 15.<br/><br/>These are cross-posted. Buyer pays actual shipping, please contact me first if shipping is required outside of the US. <br/><br/>Kamehameha Goku -- $450 (Sold):<br/>http://spacecowboy.rubberslug.com/gallery/inv_info.asp?ItemID=405959<br/>...</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19073">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div><div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar" style="background-image: url('http://www.rubberslug.com/user/8dda1de63db04822ad0af44f57d2f3c3/1060917-8326815-1109.png');"></div><div class="left" style="width:160px; margin-right:20px;"><b>floralys77</b><br/><span class="small">Jan 03 at 2:38 PM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/3624/gallery-open-to-offers/" style="display:block; margin-bottom:.5em;">Gallery open to offers</a><p>krouri_sofiane@hotmail.fr<br/><br/><br/>Interested in your dragon ball cels :D</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19071">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div><div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar" style="background-image: url('http://www.rubberslug.com/user/0f650812796942aea01f57d98be61e56/138192-3788813-TITLE BANNER.JPG');"></div><div class="left" style="width:160px; margin-right:20px;"><b>reithejelly</b><br/><span class="small">Jan 01 at 8:40 PM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/4176/stemcels-open-to-offers/" style="display:block; margin-bottom:.5em;">STEMCELS open to offers</a><p>The majority of my collection needs a new home!  Feel free to make offers on anything EXCEPT Cardcaptor Sakura, Miyuki-chan in Wonderland, or Rainbow Brite.  Everything else is fair game.<br/><br/>http://stemcels.rubberslug.com<br/>reithejelly[at]gmail[.]com</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19069">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div><div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar" style="background-image: url('http://www.rubberslug.com/user/faf19813e109444383ab3274b4c2c663/795846-4199793-ava01.jpg');"></div><div class="left" style="width:160px; margin-right:20px;"><b>Wendy</b><br/><span class="small">Dec 31 at 4:47 AM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/4175/dbz-gallery-for-sale/" style="display:block; margin-bottom:.5em;">DBZ gallery for sale</a><p>Hi everyone, <br/><br/>I'm posting this in several areas but I just wanted to let people know I've added a lot of cels to my webshop: https://royallycrimson.jimdo.com/cels-for-sale/<br/><br/>After 14 years of on and off collecting I think it's finally time to call it quits. I'm keeping a small c...</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19067">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div><div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar" style="background-image: url('http://www.rubberslug.com/user/8499d9b5289f4ddc8e965b641e5f0534/367284-5666574-nadiav.jpg');"></div><div class="left" style="width:160px; margin-right:20px;"><b>Princess Nadia</b><br/><span class="small">Dec 03 at 1:56 PM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/4173/new-cels-posted-at-asylum-anime--/" style="display:block; margin-bottom:.5em;">New cels posted at ASYLUM ANIME!!</a><p>My beautiful AMG cel has arrived safely! <br/>I enjoyed treating myself to this one :-)<br/><br/>Thank you so much!</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19065">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div><div class="topCap"></div><div class="blackBox" style="padding:5px 10px; overflow:auto;"><div class="left largeAvatar"></div><div class="left" style="width:160px; margin-right:20px;"><b>xavito</b><br/><span class="small">Nov 02 at 4:26 PM</span></div>
+<div class="left" style="width:360px;"><a class="bold" href="/board/thread/4167/prices-added-and-reduced/" style="display:block; margin-bottom:.5em;">Prices added and reduced</a><p>Hi, are the dragon ball cels still for sale? thanks</p><a class="bold small" href="/board/post.aspx?mode=reply&c=general&p=19063">Reply</a></div>
+<div class="clear"></div></div>
+<div class="bottomCap"></div>
+<a class="button text-center" style="float:none; margin:0;" href="/board/latest/">See More Forum Threads</a>
+</div>
+
+<div id="blogTabContent" style="display:none;">
+
+
+<div class="topCap"></div>
+<div class="blackBox" style="padding:5px 10px; ">
+
+<div id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl00_siteThumb" class="left largeAvatar"></div>
+
+<div style="float:left; width:160px; margin-right:20px;">
+<div><a class="bold" href="http://pixel.rubberslug.com/">Pixel's Randomness</a><br/>
+
+<span class="small" style="font-weight:normal;">by <b>Pixel</b><br/>
+Jan 17 at 9:17 PM</span></div>
+</div>
+
+<div style="float:left; width:360px;">
+<p><a href="http://pixel.rubberslug.com/gallery/weblog.asp">Back at Full Speed</a></p>
+<p>Finally got the replacement for my main video card back.
+
+Seems to work pretty good so far. I hope this one stays stable.
+
+As for produ</p>
+<p><span class="small"><a id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl00_blogComment" class="bold" href="http://www.rubberslug.com/gallery/weblog_comment.aspx?sn=pixel&amp;w=7371">Comment</a> &nbsp;&#183;&nbsp; Jan 17 at 9:17 PM</span></p>
+</div>
+<div class="clear"></div>
+
+
+</div>
+<div class="bottomCap"></div>
+
+
+<div class="topCap"></div>
+<div class="blackBox" style="padding:5px 10px; ">
+
+<div id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl01_siteThumb" class="left largeAvatar"></div>
+
+<div style="float:left; width:160px; margin-right:20px;">
+<div><a class="bold" href="http://pixel.rubberslug.com/">Pixel's Randomness</a><br/>
+
+<span class="small" style="font-weight:normal;">by <b>Pixel</b><br/>
+Jan 10 at 7:02 PM</span></div>
+</div>
+
+<div style="float:left; width:360px;">
+<p><a href="http://pixel.rubberslug.com/gallery/weblog.asp">A Basic Solution</a></p>
+<p>I was able to source a relatively simple video card that I can use while waiting for the faulty primary card to be sorted out.
+
+The one I</p>
+<p><span class="small"><a id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl01_blogComment" class="bold" href="http://www.rubberslug.com/gallery/weblog_comment.aspx?sn=pixel&amp;w=7370">Comment</a> &nbsp;&#183;&nbsp; Jan 10 at 7:02 PM</span></p>
+</div>
+<div class="clear"></div>
+
+
+</div>
+<div class="bottomCap"></div>
+
+
+<div class="topCap"></div>
+<div class="blackBox" style="padding:5px 10px; ">
+
+<div id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl02_siteThumb" class="left largeAvatar"></div>
+
+<div style="float:left; width:160px; margin-right:20px;">
+<div><a class="bold" href="http://pixel.rubberslug.com/">Pixel's Randomness</a><br/>
+
+<span class="small" style="font-weight:normal;">by <b>Pixel</b><br/>
+Jan 08 at 12:44 PM</span></div>
+</div>
+
+<div style="float:left; width:360px;">
+<p><a href="http://pixel.rubberslug.com/gallery/weblog.asp">More Fun With PC's</a></p>
+<p>Bleh, it would seem that the replacement video card is ALSO faulty. *sigh* I'm left scrambling for a usable replacement while waiting for y</p>
+<p><span class="small"><a id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl02_blogComment" class="bold" href="http://www.rubberslug.com/gallery/weblog_comment.aspx?sn=pixel&amp;w=7369">Comment</a> &nbsp;&#183;&nbsp; Jan 08 at 12:44 PM</span></p>
+</div>
+<div class="clear"></div>
+
+
+</div>
+<div class="bottomCap"></div>
+
+
+<div class="topCap"></div>
+<div class="blackBox" style="padding:5px 10px; ">
+
+<div id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl03_siteThumb" class="left largeAvatar"></div>
+
+<div style="float:left; width:160px; margin-right:20px;">
+<div><a class="bold" href="http://pixel.rubberslug.com/">Pixel's Randomness</a><br/>
+
+<span class="small" style="font-weight:normal;">by <b>Pixel</b><br/>
+Jan 01 at 2:48 PM</span></div>
+</div>
+
+<div style="float:left; width:360px;">
+<p><a href="http://pixel.rubberslug.com/gallery/weblog.asp">Back in Action</a></p>
+<p>Happy New Year everybody! I finally got my PC back in action-the new case came all the way from Hong Kong, which was interesting for sure.</p>
+<p><span class="small"><a id="ctl00_ctl00_mcp_pcp_blogUpdate_blogUpdates_ctl03_blogComment" class="bold" href="http://www.rubberslug.com/gallery/weblog_comment.aspx?sn=pixel&amp;w=7368">Comment</a> &nbsp;&#183;&nbsp; Jan 01 at 2:48 PM</span></p>
+</div>
+<div class="clear"></div>
+
+
+</div>
+<div class="bottomCap"></div>
+
+<a class="button text-center" style="float:none; margin:0;" href="/community/">See More Updated Blogs</a>
+</div>
+
+</div>
+
+
+
+<br class="clear space20" />
+
+
+
+          
+    </div>
+      
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKQl46aDQLNr+/CDzLQqBv+ouWrc4GZSQy27zDgtcsb" />
+</div></form>
+    <div style="height:50px;"></div>
+    
+    </div> <!-- container_12 -->
+
+    <div class="push"></div>
+
+  </div>
+    
+  <div id="footer">
+    <div id="footerContent" class="container_12">
+    <div class="grid_12">
+    <p style="font-size:11px; margin-bottom:.5em;">Rubberslug &copy 2019. This site is intended for viewers over 18 years of age.</p> 
+    <!--<p>Cache: 568</p>-->
+    <p style="font-size:11px;">
+<a href="/">home</a>
+&#160;&#160;-&#160;&#160;
+<a href="/gallery/">galleries</a>
+&#160;&#160;-&#160;&#160;
+
+<a href="/news/">news</a>
+&#160;&#160;-&#160;&#160;
+<a href="/board/">forum</a>
+&#160;&#160;-&#160;&#160;
+<a href="/shop/">shop</a>
+&#160;&#160;-&#160;&#160;
+<a href="/resource/">resources</a>
+&#160;&#160;-&#160;&#160;
+<a href="/member/">my account</a>
+&#160;&#160;-&#160;&#160;
+<a href="/info/privacy.aspx">privacy policy</a>
+&#160;&#160;-&#160;&#160;
+<a href="/info/contact.aspx">send feedback</a>
+</p>
+</div>
+    </div>
+  </div>
+
+
+<div id="bottomFixed">
+<div id="bottomContainer">
+<div id="bottomContent">
+
+Welcome! <a href="/welcome/login.aspx">Login</a> or <a href="/welcome/signup.aspx">Register</a>
+
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2045308-1']);
+  _gaq.push(['_setDomainName', '.rubberslug.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

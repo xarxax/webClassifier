@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.2.0.60623 -->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+<meta name="description" content="Tudor Glass - Specialist manufacturer of kiln formed curved and convex glass, quality glass display cases, mirror glass and decor frames, mounting apparatus for memorabilia.">
+<meta name="keywords" content="glass curved bent bend bending curve counter convex domed portrait frame bubble old display mount picture framing cricket bat ball tennis golf baseball bat mounting china cabinet radius old sheet frames circle circular mirror mirrors silver silvering cleaner replacement framed memorablia glass display cases football cap sport sports sporting quality antique antiqued soccer solar parabolic concave dish">
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainer64a996b47ada4b0fad4da07c54992940").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+            
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slide64a996b47ada4b0fad4da07c549929400": {
+    "bgimage" : "url('images/slide64a996b47ada4b0fad4da07c549929400.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide64a996b47ada4b0fad4da07c549929401": {
+    "bgimage" : "url('images/slide64a996b47ada4b0fad4da07c549929401.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide64a996b47ada4b0fad4da07c549929402": {
+    "bgimage" : "url('images/slide64a996b47ada4b0fad4da07c549929402.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 4500,
+                speed: 500,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator64a996b47ada4b0fad4da07c54992940"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+jQuery(function ($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainerweb_original_portrait_oval").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+            
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideweb_original_portrait_oval0": {
+    "bgimage" : "url('images/slideweb_original_portrait_oval0.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideweb_original_portrait_oval1": {
+    "bgimage" : "url('images/slideweb_original_portrait_oval1.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 5600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorweb_original_portrait_oval"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { border-top-width:1px;border-top-style:dashed;border-top-color:#BFBFBF;margin-top: 5px;margin-bottom: 5px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 {
+    position: relative;
+        width: 338px;
+    height: 228px;
+        }
+
+.default-responsive .art-header .art-slidecontainer64a996b47ada4b0fad4da07c54992940,
+.responsive .art-header .art-slidecontainer64a996b47ada4b0fad4da07c54992940
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainer64a996b47ada4b0fad4da07c54992940 {
+  position: absolute !important;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .art-slide-item {
+    -webkit-transition: 500ms ease-in-out opacity;
+    -moz-transition: 500ms ease-in-out opacity;
+    -ms-transition: 500ms ease-in-out opacity;
+    -o-transition: 500ms ease-in-out opacity;
+    transition: 500ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .active, .art-slidecontainer64a996b47ada4b0fad4da07c54992940 .next, .art-slidecontainer64a996b47ada4b0fad4da07c54992940 .prev {
+    display: block;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .active {
+    opacity: 1;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .next, .art-slidecontainer64a996b47ada4b0fad4da07c54992940 .prev {
+    width: 100%;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .next.forward, .art-slidecontainer64a996b47ada4b0fad4da07c54992940 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainer64a996b47ada4b0fad4da07c54992940 .active.back {
+    opacity: 0;
+}
+
+
+.art-slide64a996b47ada4b0fad4da07c549929400 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929400.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929400 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929400.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929400 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929400.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929400 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929400.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929400 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929400.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide64a996b47ada4b0fad4da07c549929401 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929401.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929401 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929401.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929401 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929401.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929401 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929401.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929401 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929401.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide64a996b47ada4b0fad4da07c549929402 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929402.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929402 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929402.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929402 {
+    background-image:  url('images/slide64a996b47ada4b0fad4da07c549929402.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide64a996b47ada4b0fad4da07c549929402 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929402.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide64a996b47ada4b0fad4da07c549929402 {
+    background-image: url('images/slide64a996b47ada4b0fad4da07c549929402.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigator64a996b47ada4b0fad4da07c54992940 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 209px;
+  left: 85.5%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigator64a996b47ada4b0fad4da07c54992940
+{
+background: #BFBFBF;background: transparent;background: transparent;background: transparent;background: transparent;-svg-background: transparent;background: transparent;
+-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigator64a996b47ada4b0fad4da07c54992940 > a
+{
+background: #808080;background: #808080;background: #808080;background: #808080;background: #808080;-svg-background: #808080;background: #808080;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigator64a996b47ada4b0fad4da07c54992940 > a.active
+{
+background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;-svg-background: #347FA2;background: #347FA2;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #255B74;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigator64a996b47ada4b0fad4da07c54992940 > a:hover
+{
+background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;-svg-background: #347FA2;background: #347FA2;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #4EA0C6;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+
+.art-slidecontainerweb_original_portrait_oval {
+    position: relative;
+        width: 298px;
+    height: 397px;
+        }
+
+.default-responsive .art-header .art-slidecontainerweb_original_portrait_oval,
+.responsive .art-header .art-slidecontainerweb_original_portrait_oval
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainerweb_original_portrait_oval {
+  position: absolute !important;
+}
+
+.art-slidecontainerweb_original_portrait_oval .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainerweb_original_portrait_oval .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainerweb_original_portrait_oval .active, .art-slidecontainerweb_original_portrait_oval .next, .art-slidecontainerweb_original_portrait_oval .prev {
+    display: block;
+}
+
+.art-slidecontainerweb_original_portrait_oval .active {
+    opacity: 1;
+}
+
+.art-slidecontainerweb_original_portrait_oval .next, .art-slidecontainerweb_original_portrait_oval .prev {
+    width: 100%;
+}
+
+.art-slidecontainerweb_original_portrait_oval .next.forward, .art-slidecontainerweb_original_portrait_oval .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainerweb_original_portrait_oval .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainerweb_original_portrait_oval .active.back {
+    opacity: 0;
+}
+
+
+.art-slideweb_original_portrait_oval0 {
+    background-image:  url('images/slideweb_original_portrait_oval0.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideweb_original_portrait_oval0 {
+    background-image:  url('images/slideweb_original_portrait_oval0.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideweb_original_portrait_oval0 {
+    background-image:  url('images/slideweb_original_portrait_oval0.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideweb_original_portrait_oval0 {
+    background-image: url('images/slideweb_original_portrait_oval0.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideweb_original_portrait_oval0 {
+    background-image: url('images/slideweb_original_portrait_oval0.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideweb_original_portrait_oval1 {
+    background-image:  url('images/slideweb_original_portrait_oval1.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideweb_original_portrait_oval1 {
+    background-image:  url('images/slideweb_original_portrait_oval1.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideweb_original_portrait_oval1 {
+    background-image:  url('images/slideweb_original_portrait_oval1.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideweb_original_portrait_oval1 {
+    background-image: url('images/slideweb_original_portrait_oval1.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideweb_original_portrait_oval1 {
+    background-image: url('images/slideweb_original_portrait_oval1.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorweb_original_portrait_oval {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 378px;
+  left: 88.59%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorweb_original_portrait_oval
+{
+background: #BFBFBF;background: transparent;background: transparent;background: transparent;background: transparent;-svg-background: transparent;background: transparent;
+-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorweb_original_portrait_oval > a
+{
+background: #808080;background: #808080;background: #808080;background: #808080;background: #808080;-svg-background: #808080;background: #808080;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigatorweb_original_portrait_oval > a.active
+{
+background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;-svg-background: #347FA2;background: #347FA2;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #255B74;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigatorweb_original_portrait_oval > a:hover
+{
+background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;background: #347FA2;-svg-background: #347FA2;background: #347FA2;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #4EA0C6;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+
+<h1 class="art-headline">
+    <a href="#">Tudor Glass</a>
+</h1>
+<h2 class="art-slogan">Curved &amp; Convex Glass</h2>
+
+
+
+
+
+                
+                    
+</header>
+<div class="art-sheet clearfix">
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="products.html">Products</a><ul><li><a href="products/convex-glass.html">Convex glass</a></li><li><a href="products/curved-glass.html">Curved glass</a></li><li><a href="products/glass-display-cases.html">Glass display cases</a></li><li><a href="products/sports-memorabilia-mounting.html">Sports memorabilia mounting</a></li><li><a href="products/olde-world-sheet.html">Olde world sheet</a></li><li><a href="products/specialty-picture-framing-glass.html">Specialty picture framing glass</a></li><li><a href="products/frames.html">Frames</a></li><li><a href="products/mirrors-silvering.html">Mirrors &amp; silvering</a></li><li><a href="products/miscellaneous-items.html">Miscellaneous items</a></li></ul></li><li><a href="photo-gallery.html">Photo gallery</a></li><li><a href="downloads.html">Downloads</a></li><li><a href="specials.html">Specials</a></li><li><a href="specials-photos.html">Specials Photos</a></li><li><a href="links.html">Links</a></li><li><a href="news.html">News</a></li><li><a href="about-us.html">About us</a></li><li><a href="contact-us.html">Contact us</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader">Home</h2>
+                                                
+                                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <div class="image-caption-wrapper" style="width: 100%"><div id="64a996b47ada4b0fad4da07c54992940" style="position: relative; display: inline-block; z-index: 0; margin: 10px;  border-style: solid; border-color: #000000; border-width: 1px;  " class="art-collage">
+<div class="art-slider art-slidecontainer64a996b47ada4b0fad4da07c54992940" data-width="338" data-height="228">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slide64a996b47ada4b0fad4da07c549929400" >
+
+
+</div>
+<div class="art-slide-item art-slide64a996b47ada4b0fad4da07c549929401" >
+
+
+</div>
+<div class="art-slide-item art-slide64a996b47ada4b0fad4da07c549929402" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator64a996b47ada4b0fad4da07c54992940" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+        </div>
+        <p><span style="font-weight: bold;">Welcome to our website !</span></p>
+        <p>         </p>
+        <div><font style="font-size: small;"><i>We specialise in new and replacement <span style="font-weight: bold;">kiln formed glass</span> products . . . convex glass, china cabinet (and other) bends.</i></font></div>
+        <div><span style="font-size: small;"><i><br></i></span></div>
+        <div><span style="font-size: small;"><i>We also manufacture glass display cases, supply specialty frames and mirrored glass, plus numerous other items for display of personal / sporting memorabilia.</i></span></div>
+        <div><span style="font-style: italic;"><br></span></div>
+        <div><font style="font-size: small;"><i>We hope you find something of interest or assistance while browsing the site . . . ple</i></font><span style="font-size: small;"><i>ase contact us for&nbsp;more information&nbsp;<span style="font-size: small;"><i>or to place an order</i></span>.</i></span></div><div><span style="font-size: small;"><i><br></i></span></div><div><span style="font-style: italic;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . . Thanks for your interest and visit.</span><span style="font-size: small;"><i><br></i></span></div>
+    </div><div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <p style="text-align: left;"> </p>
+<div id="web_original_portrait_oval" style="position: relative; display: inline-block; z-index: 0; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;  border-style: solid; border-color: #000000; border-width: 1px;  " class="art-collage">
+<div class="art-slider art-slidecontainerweb_original_portrait_oval" data-width="298" data-height="397">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideweb_original_portrait_oval0" >
+
+
+</div>
+<div class="art-slide-item art-slideweb_original_portrait_oval1" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorweb_original_portrait_oval" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+         
+         
+         
+        <p style="text-align: left;"><br><span style="font-weight: bold; font-size: 14px; font-style: italic; color: #DB0609;">&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-weight: bold; font-style: italic;"><span style="font-size: 14px; color: rgb(219, 6, 9);">&nbsp; &nbsp;</span><span style="color: #DD0816;">&nbsp;</span><a href="specials.html" target="_blank"><span style="color: rgb(221, 8, 22); ">** LATEST CLEARANCE SPECIALS **</span></a><span style="color: rgb(219, 6, 9);"><span style="color: rgb(221, 8, 22);"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="specials.html" target="_blank"><span style="color: rgb(221, 8, 22); ">** CLICK HERE **</span></a></span></span></span></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout-br layout-item-0">
+</div></div>
+                                
+                
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 16%">
+        <ul>
+        <li style="text-align: left;"><span style="font-weight: bold; font-family: Verdana;">Postal address :</span></li>
+        <li style="text-align: left;"><span style="font-family: Verdana;">Tudor Glass</span></li>
+        <li style="text-align: left;"><span style="font-family: Verdana;">PO Box 202</span></li>
+        <li style="text-align: left;"><span style="font-family: Verdana;">Happy Valley</span></li>
+        <li style="text-align: left;"><span style="font-family: Verdana;">South Australia 5159</span></li>
+        <li style="text-align: left;"><span style="font-family: Verdana;">AUSTRALIA</span></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-3" style="width: 22%">
+        <ul>
+        <li style="text-align: left;">
+        <h3 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: left;"><span style="color: rgb(18, 18, 18); text-align: center;"><span style="font-family: Verdana; font-size: 13px;">Phone / Fax / Email / Web</span></span></h3>
+        <ul>
+        <li style="text-align: left;">&nbsp; Phone &nbsp; (+ 61 8) 8387 3588</li>
+        <li style="text-align: left;">Facsimile (+ 61 8) 8311 5272</li>
+        </ul>
+        <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: left;"><span style="color: rgb(9, 21, 27);">Email - <a href="mailto:sales@tudorglass.com.au">sales@tudorglass.com.au</a></span><br></p>
+        <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: left;"><span style="color: rgb(9, 21, 27);">&nbsp;Web - <a href="http://www.tudorglass.com.au">www.tudorglass.com.au</a></span></p>
+        </li>
+        <li style="text-align: left;"><span style="font-family: Verdana;"></span></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-4" style="width: 20%">
+        <p style="text-align: center;"><br></p><p style="text-align: center;">Copyright © 2012 Tudor Glass<br></p>
+        <p style="text-align: center;"><span style="text-align: right;">All Rights Reserved</span></p><p style="text-align: center;"><span style="text-align: right;"></span></p>
+        <p style="text-align: left;"><span style="color: rgb(9, 21, 27);"></span></p>
+    </div><div class="art-layout-cell layout-item-5" style="width: 42%">
+        <p class="MsoNormal" style="text-align: left;"><span style="font-family: 'Times New Roman', Georgia, Times, serif; font-size: 14px; font-style: italic; font-weight: bold;">"Hi Gentlemen,&nbsp;Just a quick note to congratulate you on a job well done, so&nbsp;Well Done!&nbsp;<br></span><span style="font-family: 'Times New Roman', Georgia, Times, serif; font-size: 14px; font-style: italic; font-weight: bold;">I viewed the enclosure yesterday whilst at the TKI Building and it is very impressive.&nbsp;Again well done gents."</span></p>
+        <p class="MsoNormal" style="text-align: right;"><span style="font-family: Tahoma;">Large&nbsp;</span><span style="font-family: Tahoma;">format glass display case . . . <a href="products/glass-display-cases.html">More info here</a> . . .</span></p>
+    </div>
+    </div>
+</div>
+</div>
+
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>

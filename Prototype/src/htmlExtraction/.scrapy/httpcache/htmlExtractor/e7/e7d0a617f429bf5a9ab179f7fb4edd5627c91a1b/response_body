@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nunes Farms</title>
+<link rel="stylesheet" type="text/css" href="/css/main1.css"><script language="JavaScript" type="text/javascript">
+<!--
+// PHP Layers Menu 3.1.1 (C) 2001-2003 Marco Pratesi (marco at telug dot it)
+
+DOM = (document.getElementById) ? 1 : 0;
+NS4 = (document.layers) ? 1 : 0;
+// We need to explicitly detect Konqueror
+// because Konqueror 3 sets IE = 1 ... AAAAAAAAAARGHHH!!!
+Konqueror = (navigator.userAgent.indexOf("Konqueror") > -1) ? 1 : 0;
+// We need to detect Konqueror 2.2 as it does not handle the window.onresize event
+Konqueror22 = (navigator.userAgent.indexOf("Konqueror 2.2") > -1 || navigator.userAgent.indexOf("Konqueror/2.2") > -1) ? 1 : 0;
+Opera = (navigator.userAgent.indexOf("Opera") > -1) ? 1 : 0;
+Opera5 = (navigator.userAgent.indexOf("Opera 5") > -1 || navigator.userAgent.indexOf("Opera/5") > -1) ? 1 : 0;
+Opera6 = (navigator.userAgent.indexOf("Opera 6") > -1 || navigator.userAgent.indexOf("Opera/6") > -1) ? 1 : 0;
+Opera56 = Opera5 || Opera6;
+IE = (navigator.userAgent.indexOf("MSIE") > -1) ? 1 : 0;
+IE = IE && !Opera;
+IE5 = IE && DOM;
+IE4 = (document.all) ? 1 : 0;
+IE4 = IE4 && IE && !DOM;
+
+//-->
+</script>
+
+<script language="JavaScript" type="text/javascript" src="/bluecms/modules/flyout_menu/libjs/layersmenu-library.js"></script>
+<script language="JavaScript" type="text/javascript" src="/bluecms/modules/flyout_menu/libjs/layersmenu.js"></script>
+<!-- PHP Layers Menu 3.1.1 (C) 2001-2003 Marco Pratesi (marco at telug dot it) -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+menuTopShift = 6;
+menuRightShift = 7;
+menuLeftShift = 2;
+
+var thresholdY = 5;
+var abscissaStep = 140;
+
+toBeHidden = new Array();
+toBeHiddenLeft = new Array();
+toBeHiddenTop = new Array();
+
+listl = [];
+var numl = listl.length;
+
+father = new Array();
+for (i=1; i<=7; i++) {
+	father["L" + i] = "";
+}
+father_keys = [];
+father_vals = [];
+for (i=0; i<father_keys.length; i++) {
+	father[father_keys[i]] = father_vals[i];
+}
+
+lwidth = new Array();
+var lwidthDetected = 0;
+
+function moveLayers() {
+	if (!lwidthDetected) {
+		for (i=0; i<numl; i++) {
+			lwidth[listl[i]] = getOffsetWidth(listl[i]);
+		}
+		lwidthDetected = 1;
+	}
+	if (IE4) {
+		for (i=0; i<numl; i++) {
+			setWidth(listl[i], abscissaStep);
+		}
+	}
+	var vermenu1TOP = getOffsetTop('vermenu1L1');
+	var vermenu1HEIGHT = getOffsetHeight('vermenu1L1');
+
+}
+
+back = new Array();
+for (i=1; i<=7; i++) {
+	back["L" + i] = 0;
+}
+
+// -->
+</script>
+
+<!-- PHP Layers Menu 3.1.1 (C) 2001-2003 Marco Pratesi (marco at telug dot it) -->
+ <link rel='stylesheet' href='/css/layersmenu-gtk2.css' type='text/css' />
+
+<meta name="google-site-verification" content="nGJTgcwKXDYMi2YG2EuMHYUcTePEYQM4ZwtcHzLyAys" 
+</head>
+<body>
+<table width="956" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top" bgcolor="#FFFFFF">
+<table border="0" cellspacing="0" cellpadding="0" class="table1">
+<tr>
+<td align="center"><a href="/index.php"><img src="/images/1logo.gif" alt="Nunes Farms Almonds" width="222" height="152" border="0" /></a></td>
+</tr>
+<tr>
+<td height="33" background="/images/1navbg.jpg" class="nav">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="horbar">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div id="vermenu1L1" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/about" onmouseover="shutdown();" title="ABOUT US"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />ABOUT US&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L2" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/shop" onmouseover="shutdown();" title="GO SHOPPING"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />GO SHOPPING&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L3" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/almond" onmouseover="shutdown();" title="ALMOND GOODNESS"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />ALMOND GOODNESS&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L4" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/news" onmouseover="shutdown();" title="NEWS"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />NEWS&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L5" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/contactus" onmouseover="shutdown();" title="CONTACT US"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />CONTACT US&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L6" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/cart" onmouseover="shutdown();" title="CART"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />CART&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+<td>
+<div id="vermenu1L7" class="horbaritem" onmouseover="clearLMTO();" onmouseout="setLMTO();">
+<a href="/sections/search" onmouseover="shutdown();" title="SEARCH"><img
+align="top" src="/bluecms/modules/flyout_menu/images/transparent.png" width="1" height="16" border="0"
+alt="" />SEARCH&nbsp;&nbsp;&nbsp;</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<!-- PHP Layers Menu 3.1.1 (C) 2001-2003 Marco Pratesi (marco at telug dot it) -->
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+loaded = 1;
+// -->
+</script>
+
+<!-- PHP Layers Menu 3.1.1 (C) 2001-2003 Marco Pratesi (marco at telug dot it) -->
+</td>
+</tr>
+<tr>
+<td class="main"><table width="1142" height="3913" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td valign="top">
+            <div align="center">             </div>
+            <h1 align="center">&nbsp;</h1>
+            <h1 align="center"><font color="#339966" size="7"><font color="#ffcc00">Welcome to Nunes Farms!</font></font></h1>
+            <h1 align="center"><font color="#993366" size="5"><font size="6"><font color="#99cc00">-enjoy the taste of eating right-</font> </font></font></h1>
+            <p align="center"><img alt="" src="/images/photo.JPG" width="667" height="500" /></p>
+            <p><font color="#333366" size="5">The trees on our ranch are continuing to grow beautiful almonds that are getting firmer and healthier by the day.&nbsp; They are nearing the end of their maturation with the shell hardening, the nut forming and the flavor developing.&nbsp; Soon, the hull, which is the fuzzy green outer-most layer while on the tree, will slowly start to split, exposing the almond shell and allowing it to dry.&nbsp; This begins the countdown to harvest!</font></p>
+            <p align="center"><img alt="" src="/images/IMG_6488-CE-Almonds-before-crack-1024x617.jpg" width="677" height="407" /><br />
+            </p>
+            <p>&nbsp;</p>
+            <div align="center"><img src="/images/Green Almond Tree 2.jpg" alt="" width="375" height="500" /><br />
+            </div>
+            <font color="#339966"><font size="6"><em><strong><br />
+            <br />
+            </strong></em></font></font>
+            <div align="center">
+            <h3 align="left"><font size="4">Thank you for shopping Nunes Farms Almonds! </font><br />
+            </h3>
+            </div>
+            <br />
+            <h1 align="center"><font><strong><font><strong><font><strong><font color="#cc99ff" size="6"><strong><img src="/images/IMG_3068.JPG" alt="" width="673" height="504" /></strong></font></strong></font></strong></font></strong></font><font color="#000000"><font><font><font size="6"><font size="2"></font></font></font></font></font><font color="#000000"><font size="2"><br />
+            &nbsp;&nbsp; </font><font><font><font size="6"><font size="2">nunes farms ranch during harvest<br />
+            </font></font></font></font></font></h1>
+            <div align="center"><font color="#ff9900"><font size="3"><strong><font color="#339966"><font color="#333399">             <img alt="" src="/images/Ranch Photo Spring Trees Hills.jpg" width="523" height="391" /></font></font></strong></font></font>             </div>
+            <div align="center"><strong>             &nbsp;&nbsp; <font size="2">nunes farms ranch during the early spring</font></strong><br />
+            </div>
+            <h1 align="center"><font color="#993366" size="5"><font size="6">&nbsp;<br />
+            </font></font></h1>
+            <font color="#ff9900"><font size="3"><strong><font color="#339966"><font color="#333399">             </font></font></strong></font></font><br />
+            <font color="#ff9900"><font size="3"><em><strong><font color="#339966"><font color="#3366ff">             </font></font></strong></em></font></font><font color="#ff9900"><font size="3"></font></font>
+            <p>             </p>
+            <div align="center">                          </div>
+            <font color="#800080">             </font>                                                                              </td>
+            <td width="8">&nbsp;&nbsp; <br />
+            </td>
+            <td class="home" style="text-align: justify;" valign="top" background="/images/1olive.jpg">
+            <p><font color="#ffffff" size="+2"><strong>Treat Yourself</strong></font><font color="#ffffff"><br />
+            <br />
+            <font size="3">             Delight in the difference of Nunes Farms&rsquo; homegrown nuts and handmade confections. With your first taste, you will experience the quality and freshness that we pride ourselves on. Then, sit back and take your time to savor the variety of flavors that we&rsquo;ve created just for you. Naturally good for you and delicious too, our almonds might just be the perfect food!</font><br />
+            <font size="5"><br />
+            We're farmers. We're family. <br />
+            </font></font></p>
+            <p><font color="#ffffff"><br />
+            </font><font color="#ffffff" size="5"><strong>Taste the Harvest!</strong></font></p>
+            <hr size="2" width="100%" />
+            <p align="center"><strong><font size="4"><em><font color="#ff99cc" size="2"></font></em></font></strong></p>
+            <p><font color="#ffffff" size="+2"><strong>Hea<font size="+2">lthy Eating</font> Tip<br />
+            </strong></font></p>
+            <div align="justify"><font color="#ffffff" size="3">Remember to keep <strong>Nunes Farms</strong> freshly roasted almonds on hand for a quick-and-easy snack during your busy day!</font><font size="3">&nbsp;</font><font color="#ffffff"><font size="3"> The calcium and protein-rich treat will satisfy your hunger and keep you fuller, longer. </font><br />
+            </font><br />
+            <hr size="2" width="100%" />
+            <font color="#ffffff" size="+2"><strong>Wholesalers</strong></font><br />
+            </div>
+            <p><a href="http://www.nunesfarmswholesale.com"><font color="#ffffff"><strong><img src="/images/wholesale2.jpg" alt="" align="right" width="75" height="74" border="0" /></strong></font></a></p>
+            <div align="left"><strong><font size="4"><em><font color="#333333" size="2"></font></em></font></strong><font color="#ffffff"><strong>Wholesale customers, <br />
+            please visit us at <br />
+            <br />
+            </strong><strong><a href="http://www.nunesfarmswholesale.com">nunesfarmswholesale.com</a></strong></font> <br />
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" height="8">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="#d4e85d">
+            <table summary="" width="100%" cellspacing="0" cellpadding="5" border="0">
+                <tbody>
+                    <tr>
+                        <td><strong><img src="/images/h_plant(1).gif" alt="" align="left" width="67" height="100" /></strong><font color="#663300"></font></td>
+                        <td width="30%"><strong><font color="#663300">Did You Know?</font></strong><font color="#663300"><br />
+                        When compared with other tree nuts, almonds have the highest concentration of protein, calcium and fiber. <a href="/sections/almond">Read full story.</a></font></td>
+                        <td width="67"><strong><img src="/images/h_news(1).gif" alt="" /></strong></td>
+                        <td width="30%"><strong><font color="#663300">Spotlight</font></strong><font color="#663300"><br />
+                        Almonds shown to lower the risk of developing diabetes and cardiovascular disease </font><br />
+                        <a href="/sections/news">Read full story.</a></td>
+                        <td width="67"><strong><img src="/images/h_whybuy(1).gif" alt="" /></strong></td>
+                        <td width="30%"><strong><font color="#663300">Why Buy Nunes Farms?</font></strong><font color="#663300"><br />
+                        Because we grow, roast, season and ship our products to you. We're a family business, farming for generations... </font><a href="/sections/whybuy">Read more.</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+            <p><img src="/images/1dots.gif" alt="" width="844" height="4" /></p>
+            <p><a href="/sections/products/almonds"><img src="/images/1h_almonds.jpg" alt="Almonds The quintessential food.  In-shell, Raw, Roasted &amp; Seasoned" width="199" height="114" border="0" /></a><a href="/sections/products/SnackBags"><img src="/images/1h_snacks.jpg" alt="Snacks Healthy or delectable, snacks to satisfy all of your cravings" width="205" height="114" border="0" /></a><a href="/sections/products/gifts"><img src="/images/1h_gifts.jpg" alt="Gifts Our Variety of quality products make gift giving a pleasure" width="218" height="114" border="0" /></a><a href="/sections/products/confections"><img src="/images/1h_confections.jpg" alt="Confections From Irresistible Toffee Crunch Almonds to decadent Rocky Road" width="217" height="114" border="0" /></a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<map name="Map" id="Map">
+<area coords="45,226,163,337" shape="RECT" href="/sections/shop" /></map></td>
+</tr>
+</table></td>
+<td width="22" valign="top" background="/images/1rightbg.jpg"><img src="/images/1righttop.jpg" alt="Nunes Farms Almonds" width="22" height="59" /></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="/images/1btmmenu.gif" alt="Nunes Farms Almonds" width="561" height="39" border="0" usemap="#Map2" /></td>
+<td width="22" background="/images/1rightbg.jpg">&nbsp;</td>
+</tr>
+<tr>
+<td height="26" background="/images/1btmbg.jpg"><img src="/images/1leftbtm.jpg" alt="Nunes Farms Almonds" width="28" height="26" /></td>
+<td width="22" height="26"><img src="/images/1rightbtm.jpg" alt="Nunes Farms Almonds" width="22" height="26" /></td>
+</tr>
+</table>
+<map name="Map2" id="Map2"><area shape="rect" coords="-12,5,38,31" href="/index.php" />
+<area shape="rect" coords="43,5,104,33" href="/sections/about" />
+<area shape="rect" coords="110,6,184,31" href="/sections/shop" />
+<area shape="rect" coords="191,7,302,30" href="/sections/almond" />
+<area shape="rect" coords="307,7,383,32" href="/sections/contactus" />
+</map><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8818284-1");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>

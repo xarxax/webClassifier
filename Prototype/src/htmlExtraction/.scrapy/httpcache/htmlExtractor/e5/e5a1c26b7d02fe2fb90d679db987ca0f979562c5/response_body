@@ -1,0 +1,438 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Set-Cookie" content="cookie=set; path=/">
+<meta name="Description" content="FLASH 5 Energy Foods - Energy Bars and Energy Drinks with real gourmet taste appeal.The FLASH 5 Energy Concept seeks the perfect balance of carbohydrates,protein,functional fats,fiber,vitamins, minerals, and dymamite Gourmet Taste.">
+<meta name="Keywords" content="energy bars, energy drink, energy shakes, power bar, nutrition, health, diet, energy bar, meal replacement, protein, carbohydrate, ">
+<title>FLASH 5 Energy Foods - Energy Bars and Energy Drinks</title>
+<SCRIPT LANGUAGE="JavaScript">
+function leave() {
+Who();
+// Count();
+When();
+}
+</SCRIPT>
+
+<SCRIPT language="javascript">
+
+<!-- Sheilds up
+// Image Flipper -  Cameron Gregory - cameron@bloke.com
+// http://www.bloke.com/
+// http://www.bloke.com/javascript/Flipper/
+// http://www.bloke.com/javascript/Flipper/link.html
+
+function changeImage(r,i)
+{
+r.src=i;
+}
+
+function goFlipURL()
+{
+  document.location = urlSet[currentFlip];
+}
+
+function flipFlipper(imageSet,speed)
+{
+  currentFlip ++;
+  if (currentFlip == imageSet.length)
+    currentFlip=0;
+  changeImage(document.flip,imageSet[currentFlip]);
+  setTimeout("flipFlipper(imageSet,speed)", speed)
+}
+
+function FlipperLong(width,height,s,images)
+{
+/* si: start index 
+** i: current index
+** ei: end index
+** cc: current count
+*/
+ speed = s;
+ si = 0; 
+ ci=0;
+ cc=0;
+ imageSet = new Array();
+ ei = images.length;
+  for (i=1;i<ei;i++) {
+    if (images.charAt(i) == ' ') {
+      imageSet[cc] = images.substring(si,i);
+      cc++;
+      si=i+1;
+      }
+    }
+  currentFlip = 0;
+   
+ document.write("<img name='flip'");
+ if (width >0)
+    document.write("width="+width);
+ if (height >0)
+    document.write(" height=" +height);
+  document.writeln(" src=" +imageSet[0]+ ">");
+
+  setTimeout("flipFlipper(imageSet,speed)", speed)
+}
+
+function Flipper(width,height,images)
+{
+  speed=5000;
+  FlipperLong(width,height,speed,images);
+}
+
+
+function FlipperLinkLong(width,height,s,images,urls)
+{
+/* si: start index 
+** i: current index
+** ei: end index
+** cc: current count
+*/
+ speed = s;
+ imageSet = new Array();
+ urlSet = new Array();
+
+ si = 0; 
+ ci=0;
+ cc=0;
+ ei = images.length;
+  for (i=1;i<ei;i++) {
+    if (images.charAt(i) == ' ') {
+      imageSet[cc]= images.substring(si,i);
+      cc++;
+      si=i+1;
+      }
+    }
+
+ si = 0; 
+ ci=0;
+ ccu=0;
+ ei = urls.length;
+  for (i=1;i<ei;i++) {
+    if (urls.charAt(i) == ' ') {
+      urlSet[ccu]= urls.substring(si,i);
+      ccu++;
+      si=i+1;
+      }
+    }
+
+  currentFlip = 0;
+   
+ document.write("<a href=\"javascript:goFlipURL()\"><img name='flip'");
+ document.write("<img name='flip'");
+ if (width >0)
+    document.write("width="+width);
+ if (height >0)
+    document.write(" height=" +height);
+  document.writeln(" src=" +imageSet[0]+ "></a>");
+
+  setTimeout("flipFlipper(imageSet,speed)", speed)
+}
+
+function FlipperLink(width,height,images,urls)
+{
+  speed=5000;
+  FlipperLinkLong(width,height,speed,images,urls);
+}
+
+// sheilds down -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+
+
+// var expDays = 30;
+var exp = new Date(); 
+// exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+exp.setTime(exp.getTime() + (1000*60*15));
+function Who(info){
+var VisitorName = GetCookie('VisitorName')
+if (VisitorName == null) {
+window.open('http://www.flash-5.com/popup.htm','','height=600,width=575,screenX=25,screenY=25,top=25,left=25');
+// VisitorName = prompt("Who are you?");
+VistorName = "true"
+SetCookie ('VisitorName', VisitorName, exp);
+}
+return VisitorName;
+}
+function When(info){
+var rightNow = new Date()
+var WWHTime = 0;
+WWHTime = GetCookie('WWhenH')
+WWHTime = WWHTime * 1
+var lastHereFormatting = new Date(WWHTime);
+var intLastVisit = (lastHereFormatting.getYear() * 10000)+(lastHereFormatting.getMonth() * 100) + lastHereFormatting.getDate()
+var lastHereInDateFormat = "" + lastHereFormatting;
+var dayOfWeek = lastHereInDateFormat.substring(0,3)
+var dateMonth = lastHereInDateFormat.substring(4,11)
+var timeOfDay = lastHereInDateFormat.substring(11,16)
+var year = lastHereInDateFormat.substring(23,25)
+var WWHText = dayOfWeek + ", " + dateMonth + " at " + timeOfDay
+SetCookie ("WWhenH", rightNow.getTime(), exp)
+return WWHText
+}
+function Count(info){
+var WWHCount = GetCookie('WWHCount')
+if (WWHCount == null) {
+WWHCount = 0;
+}
+else{
+WWHCount++;
+}
+SetCookie ('WWHCount', WWHCount, exp);
+return WWHCount;
+}
+function set(){
+VisitorName = prompt("Who are you?");
+SetCookie ('VisitorName', VisitorName, exp);
+SetCookie ('WWHCount', 0, exp);
+SetCookie ('WWhenH', 0, exp);
+}
+function getCookieVal (offset) {  
+var endstr = document.cookie.indexOf (";", offset);  
+if (endstr == -1)    
+endstr = document.cookie.length;  
+return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name) {  
+var arg = name + "=";  
+var alen = arg.length;  
+var clen = document.cookie.length;  
+var i = 0;  
+while (i < clen) {    
+var j = i + alen;    
+if (document.cookie.substring(i, j) == arg)      
+return getCookieVal (j);    
+i = document.cookie.indexOf(" ", i) + 1;    
+if (i == 0) break;   
+}  
+return null;
+}
+function SetCookie (name, value) {  
+var argv = SetCookie.arguments;  
+var argc = SetCookie.arguments.length;  
+var expires = (argc > 2) ? argv[2] : null;  
+var path = (argc > 3) ? argv[3] : null;  
+var domain = (argc > 4) ? argv[4] : null;  
+var secure = (argc > 5) ? argv[5] : false;  
+document.cookie = name + "=" + escape (value) + 
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+((path == null) ? "" : ("; path=" + path)) +  
+((domain == null) ? "" : ("; domain=" + domain)) +    
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {  
+var exp = new Date();  
+exp.setTime (exp.getTime() - 1);  
+var cval = GetCookie (name);  
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+//  End -->
+</SCRIPT>
+<style fprolloverstyle>A:hover {color: #FF0000; font-family: Arial}
+</style>
+<meta name="Microsoft Border" content="tlb">
+</head>
+
+<body topmargin="0" link="#800080"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+  <table border="0" width="230" cellspacing="0" cellpadding="0" height="57">
+    <tr>
+      <td height="45" width="183"><font face="Arial">
+      <img border="0" src="images/layouttoptitle.GIF" width="183" height="66"></font></td>
+      <td width="162" height="45" valign="top"><font face="Arial">
+      <img border="0" src="images/layouttopmid.GIF" width="162" height="50"></font></td>
+      <td width="258" height="45" valign="top"><font face="Arial"><SCRIPT language="javascript">
+     Flipper(258,50, "layouttopscroll1.GIF layouttopscroll2.GIF layouttopscroll3.GIF layouttopscroll4.GIF");
+      </SCRIPT></font></td>
+      <td width="19" height="45" valign="top"><font face="Arial">
+      <img border="0" src="images/layouttopend.GIF" width="18" height="50"></font></td>
+    </tr>
+  </table>
+  
+</td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+        <table border="0" width="1" cellspacing="0" cellpadding="0" height="1">
+          <tr>
+            <td width="6" height="1"><font face="Arial">
+            <img border="0" src="images/layoutsidegrey.GIF" width="6" height="198"></font></td>
+            <td width="83" background="images/layoutsideback.jpg" height="1">
+              <table border="0" width="100%" cellspacing="0" cellpadding="0" height="186">
+                <tr>
+                  <td width="100%" height="6"><b><i><a href="index.shtml"><font size="2" face="Arial">Main</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../products/"><font size="2" face="Arial">Products</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../company/"><font size="2" face="Arial">Company</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../onlinestore/"><font size="2" face="Arial">Web
+                    Store</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i>
+                  <font face="Arial" size="2">
+                  <a href="../../products/available.htm">Available At</a></font></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../sponsorship/"><font size="2" face="Arial">Sponsorship</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../links/"><font size="2" face="Arial">Links</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../wholesale/"><font size="2" face="Arial">Wholesale</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i><a href="../../contact/"><font size="2" face="Arial">Contact
+                    Us</font></a></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"><b><i>
+                  <font face="Arial" size="2">
+                  <a href="http://www.nutri-nation.com">Private Brand</a></font></i></b></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="18"></td>
+                </tr>
+              </table>
+            </td>
+            <td width="1" valign="top" height="1"><font face="Arial">
+            <img border="0" src="images/layoutsidegrid.GIF" width="18" height="198"></font></td>
+          </tr>
+          <tr>
+            <td width="20" colspan="3" height="35" valign="top"><font face="Arial">
+            <img border="0" src="images/layoutsidebottom.GIF" width="107" height="12"></font></td>
+          </tr>
+        </table>
+      
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="5" id="AutoNumber1">
+          <tr>
+      <td width="138" height="1">
+      </td>
+            <td width="4">&nbsp;</td>
+          </tr>
+          <tr>
+      <td width="138" height="0">
+      &nbsp;</td>
+            <td width="4">&nbsp;</td>
+          </tr>
+          <tr>
+      <td width="138" height="1">
+      <p align="center"><font face="Arial Black" size="2">TRUST THE</font><i><b><font face="Arial Black" size="5">
+      </font><a href="products/drinks.htm">
+      <font face="Arial Black" style="font-size: 21pt">THRUST</font><font face="Arial Black" size="5">
+      </font><font face="Arial Black" size="2">THIRST QUENCHER</font></a></b></i></td>
+            <td width="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="138">
+            <p align="center">&nbsp;</p>
+            <p align="center"><b><font face="Arial" size="4">
+            <a href="onlinestore">Web Store NOW OPEN</a></font></b></p>
+            </td>
+          </tr>
+        </table>
+      
+</td><td valign="top" width="24"></td><!--msnavigation--><td valign="top">
+
+<div align="left">
+  <table border="0" width="230" cellspacing="0" cellpadding="0" height="57" style="border-collapse: collapse" bordercolor="#111111">
+    <tr>
+      <td height="45" width="183">&nbsp;</td>
+      <td width="162" height="45" valign="top">&nbsp;</td>
+      <td width="258" height="45" valign="top">&nbsp;</td>
+      <td width="19" height="45" valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4" width="628">
+        <table border="0" width="621" cellspacing="0" cellpadding="0" height="119">
+          <tr>
+            <td width="514" valign="top" rowspan="2" height="119">
+              <div align="left">
+              <table border="0" width="100%" cellspacing="1" cellpadding="2" height="399" style="border-collapse: collapse" bordercolor="#111111">
+                <tr>
+                  <td width="100%" height="36" colspan="2">
+                    <p align="center"><b><i><font face="Arial">Welcome to
+                    Flash-5.com, the home of the great tasting Flash 5 Energy
+                    Bars and Drinks.</font></i></b></td>
+                </tr>
+                <tr>
+                  <td width="62%" height="175" rowspan="2">
+                    <p align="justify"><font face="Arial"><b><i><font size="2">The FLASH 5 Nutritional Concept</font></i></b><font size="2"> is rooted in sports nutritional science, food technology,
+                    and…<b>surprise,… the gourmet food arts.</b> We deliver <b><i> "serious energy and nutrition with serious gourmet taste."</i></b> Our products are made from premium quality real
+                    food ingredients including fruit, juice, oats, rice, and soy. Each product is enriched with vitamins,
+                    minerals and herbs to meet demanding world standards for nutritional supplements and energy foods.
+                    </font></font></td>
+                  <td width="38%" height="16" valign="top">
+                    <font face="Arial"><b><i><font size="2">Now Available in NEW 
+                    6 packs!</font></i></b></font></td>
+                </tr>
+                <tr>
+                  <td width="38%" height="154" valign="top">
+                    <a href="products">
+                    <img border="0" src="products/6packclassic.jpg" width="201" height="154"></a></td>
+                </tr>
+                <tr>
+                  <td width="100%" height="169" colspan="2">
+                    <p align="center"><font face="Arial"><i><b>Introducing Flash 
+                    5's Newest Products:</b></i></font></p>
+                    <p><a href="products/trail.htm">
+                    <img border="0" src="TrailBox%20lower.jpg" width="186" height="159" align="left"></a><a href="products/drinks.htm"><img border="0" src="images/thrustbag.jpg" width="262" height="208" align="right"></a><font size="1" face="Arial">FLASH 
+                    5 Trail Bars.&nbsp; &quot;No Coating, Won't Melt&quot;</font></p>
+                    <p align="right"><font face="Arial" size="1">FLASH 5 <i>
+                    THRUST </i>Thirst Quencher</font></td>
+                </tr>
+              </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="107" height="39" valign="top">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="626" cellspacing="0" height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0">
+    <tr>
+      <td height="1" width="455" colspan="2">
+      <map name="FPMap0">
+      <area href="products/drinks.htm" shape="polygon" coords="136, 34, 256, 8, 316, 12, 333, 60, 326, 126, 296, 95, 187, 119, 186, 152, 159, 148, 136, 29, 137, 29">
+      <area href="products/trail.htm" shape="polygon" coords="149, 94, 61, 91, 12, 107, 22, 173, 104, 176, 160, 157, 143, 90">
+      <area href="products/bars.htm" shape="polygon" coords="336, 69, 331, 128, 377, 150, 439, 161, 449, 96, 383, 72">
+      </map>
+      <img border="0" src="Flash5Spread.jpg" usemap="#FPMap0" width="488" height="227"></td>
+    </tr>
+    <tr>
+      <td height="1" width="105">
+        <p align="center"></td>
+      <td width="350" height="1"></td>
+    </tr>
+    </table>
+</div>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="left">
+  <table border="0" width="776" cellspacing="0" height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0">
+    <tr>
+      <td width="771" height="8" align="center"><font size="1" face="Arial">| <a href="index.shtml">Main</a> | <a href="../../products/">Products</a> | <a href="../../company/">Company</a>
+        | <a href="../../onlinestore/">Web Store</a> | <a href="../../events/">Events</a>
+        | <a href="../../sponsorship/">Sponsorship</a> | <a href="../../news/">News</a> | <a href="../../links/">Links</a> | <a href="wholesale">Wholesale</a>
+        | <a href="../../contact/">Contact Us</a> |</font></td>
+    </tr>
+    <tr>
+      <td width="771" height="21" bgcolor="#FFFFFF" align="center">
+        <p align="center"><font size="1" face="Arial">&nbsp;© 1999<i> FLASH 5
+        Energy Foods</i>&nbsp;&nbsp;&nbsp;&nbsp; All Rights Reserved</font></p>
+      </td>
+    </tr>
+  </table>
+  </div>
+
+</td></tr><!--msnavigation--></table></body>
+
+
+</html>

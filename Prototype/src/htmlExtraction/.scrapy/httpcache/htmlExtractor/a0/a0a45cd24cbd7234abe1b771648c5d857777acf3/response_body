@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ARCHON Industries | Processing Industry Solutions & Equipment</title>
+<META NAME="DESCRIPTION" CONTENT="ARCHON Industries specializes in solutions and equipment for the processing industry including sight glasses, process equipment, wash down stations and brewery equipment.">
+<META NAME="KEYWORDS" CONTENT="Archon Industries">
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+/***********************************************
+* Switch Menu script- by Martial B of http://getElementById.com/
+* Modified by Dynamic Drive for format & NS4/IE4 compatibility
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
+var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page only
+
+if (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+		if(el.style.display != "block"){ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu") //DynamicDrive.com change
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}
+
+function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49360056-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+
+<table width="100" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="1" height="100%" align="right" valign="top" bgcolor="#336699"><img src="image/spacer.gif" width="1" height="1" /></td>
+    <td align="center" valign="top"><table width="780" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr> 
+          <td align="left" valign="top"><table width="780" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="28" colspan="3" align="left" valign="top" background="image/top_bg.gif">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="310" align="right" valign="middle" background="image/logo_bg.gif"><img src="image/logo.gif" alt="" width="85" height="82" border="0" usemap="#Map" /></td>
+                <td width="231" align="left" valign="top"><img src="image/logo2.gif" alt="Sight Glasses and Processing equipments" width="440" height="103" /></td>
+                <td width="239" align="center" valign="middle"><img src="20than.jpg" width="239" height="103" alt="20thanniversary" /></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td  valign="top"><table width="780" height="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td width="178" align="center" valign="top"><!-- #BeginLibraryItem "/Library/LeftMnu_Full.lbi" --><table width="178" border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td align="left" valign="top"><a href="/index.asp"><img src="/image/homepict.jpg" width="113" border="0"></a></td>
+  </tr>
+                    <tr> 
+                      <td align="left" valign="top"><img src="/image/btn_products1.gif" alt="" width="178" height="49" /></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top"><!-- #BeginLibraryItem "/Library/LeftMnu.lbi" --><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="10%">&nbsp;</td>
+                            <td width="90%" align="left" valign="top"><table width="100%" height="100%" border="0" cellpadding="2" cellspacing="0">
+                                <tr> 
+                                  <td align="left" valign="middle"> 
+                                    <!-- Keep all menus within masterdiv-->
+                                    <div id="masterdiv"> 
+                                      <div class="menutitle" onclick="SwitchMenu('sub1')">Observation 
+                                        Equipment</div>
+                                      
+              <span class="submenu" id="sub1"> <font color="#000000">
+			  - <a href="/ObsEquip/AllPrd.asp">View all </a><br />
+			  - <a href="/ObsEquip/Sightglass/MainSightGL.asp">Sight Glasses </a><br />
+              - <a href="/ObsEquip/Sightflow/MainSightFl.asp">Sight Flow Indicators</a><br />
+              - <a href="/ObsEquip/Lights/MainLights.asp">Lights for Sight Glasses</a><br />
+              - <a href="/ObsEquip/LiquidLG/MainLiqlevelG.asp">Liquid Level Gauges</a><br />
+              - <a href="/ObsEquip/Armored/MainArmored.asp">Armored Level Gauges</a> 
+              </font></span> 
+              <div class="menutitle" onclick="SwitchMenu('sub2')">Process 
+                                        Equipment </div>
+              <span class="submenu" id="sub2"> 
+			  - <a href="/ProcessEquip/AllPrd.asp">View All</a><br />
+			  - <a href="/ProcessEquip/Manways/MainManway.asp" class="test">Manways</a><br />
+              - <a href="/ProcessEquip/SprayBalls/MainSprayBall.asp">Spray Balls</a><br />
+              - <a href="/ProcessEquip/Valves/MainValves.asp">Valves - Ball and 
+              Butterfly</a><br />
+              - <a href="/ProcessEquip/Sanitary/MainSanitary.asp">SMS 
+              Fittings </a><br />
+              - <a href="/ProcessEquip/DINFit/MainDin.asp">DIN Fittings </a>              </span> 
+              <div class="menutitle" onclick="SwitchMenu('sub3')">Washdown 
+                                        Equipment</div>
+              <span class="submenu" id="sub3">
+			  - <a href="/Washdown/AllPrd.asp">View All</a><br />
+			  - <a href="/Washdown/2010/2010_desc.asp">Steam 
+              and Water Mixing Station</a> <br />
+              - <a href="/Washdown/HCMX-TC/Deter_desc.asp">Thermostatically Controlled Mixing 
+              Station</a><br />
+			  - <a href="/Washdown/HCMX/HCMX_desc.asp">Hot and Cold Water 
+              Mixing Station</a><br />
+              - <a href="/Washdown/Accessories/Acc_desc.asp">Accessories</a><br />
+              </span> 
+              <div class="menutitle" onclick="SwitchMenu('sub4')">Miscellaneous 
+                                        Equipment</div>
+                                      
+              <span class="submenu" id="sub4">
+			  - <a href="/MiscEquipment/AllPrd.asp">View All</a><br />
+			  - <a href="/MiscEquipment/Main_GageGlass.asp">Gauge 
+              Glass and Gaskets </a><br />
+                                      </span><span class="submenu" id="sub5"><br />
+                                      </span> </div></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="middle"><img src="/image/new.jpg" width="31" height="30"></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="middle"><a href="/BreweryEquipment/Main_Brewery.asp" class="SubTleLink">Brewery Equipment</a></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="middle">&nbsp;</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table><!-- #EndLibraryItem --></td>
+                    </tr>
+                    <tr> 
+                      <td align="left" valign="top"><table width="178" border="0" cellspacing="1">
+                        <tr>
+                          <th scope="col"><table width="170" border="0" cellspacing="4">
+                            <tr>
+                              <th align="center" scope="col"><a href="/Misc/custservice.asp"><img src="/image/btn_customer_service.gif" alt="" width="165" height="32" border="0" /></a></th>
+                            </tr>
+                            <tr>
+                              <td align="center"><a href="/Misc/quote_generic.asp"><img src="/image/btn_quotation.gif" alt="" width="165" height="32" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a href="/PDF_Spec/docmain.asp"><img src="/image/btn_doc.gif" alt="" width="165" height="32" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a href="/Misc/news.asp"><img src="/image/btn_news.gif" alt="" width="165" height="32" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a href="/Misc/contactus.asp"><img src="/image/btn_contact.gif" alt="" width="165" height="32" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                              <td height="20" align="center">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a href="http://www.facebook.com/pages/Archon-Industries-Inc/118151304903959" target="_blank"><img src="/image/facebook.jpg" width="100" height="30" border="0"></a></td>
+                            </tr>
+                          </table></th>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table>
+<!-- #EndLibraryItem --><table width="146" height="132" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="165" height="50" align="center" valign="middle"><div align="center">&nbsp;&nbsp;<a href="/Misc/catalogreq.asp"> <img src="image/img1.gif" alt="" width="127" height="42" border="0" /></a></div></td>
+                    </tr>
+                  </table>
+                  <table width="100%" height="69"  border="0" cellspacing="8">
+                    <tr>
+                      <th scope="col"><a href="/Misc/ArchonCreditCardAuthorization.pdf" target="_blank"><img src="/image/card1.gif" alt="" width="48" height="28" border="0" /></a></th>
+                      <th scope="col"><a href="/Misc/ArchonCreditCardAuthorization.pdf" target="_blank"><img src="/image/card2.gif" alt="" width="48" height="28" border="0" /></a></th>
+                      <th scope="col"><a href="/Misc/ArchonCreditCardAuthorization.pdf" target="_blank"><img src="/image/card3.gif" alt="" width="48" height="28" border="0" /></a></th>
+                    </tr>
+                  </table>                  <p>&nbsp;</p>
+                <p>&nbsp;</p></td>
+                <td width="602" align="left" valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="3">
+                    <tr> 
+                      <td width="590" colspan="2" align="left" valign="top"><table width="100%"  border="0" cellspacing="5" cellpadding="5">
+                        <tr>
+                          <td align="center" valign="top"><table width="100%"  border="0" cellspacing="3" cellpadding="3">
+                               <tr align="center">
+                                    <th width="400%" height="20" colspan="4" class="GeneralBold" scope="col"><div align="center">Click
+                                              on the left menu to access our
+                                              products information </div></th>
+                                </tr>
+                               <tr align="center" valign="bottom">
+                                 <th height="120" colspan="4" valign="top" align"center" scope="col"><table border="0" cellspacing="3" cellpadding="3">
+                                   <tr>
+                                     <td width="50" align="center" valign="top"><a href="/PDF_Spec/07-01-14-RT12.pdf" target="_new"><img src="image/AddIndexPage-Guns.jpg" alt="Spray Nozzle" width="174" height="294" border="0" /></a></td>
+                                     <td align="center" valign="top"><a href="http://www.archonind.com/ObsEquip/Sightflow/MainSightFl.asp"><img src="image/AddIndexPage.jpg" width="174" height="294" border="0" /></a></td>
+                                     <td width="206" align="center" valign="top"><a href="http://archonind.com/ObsEquip/LiquidLG/MainLiqlevelG.asp"><img src="image/TV55-ADD.jpg" alt="Tubular Gauge Valve" width="174" height="294" border="0" /></a></td>
+                                     </tr>
+                                  </table></th>
+                               </tr>
+                               <tr valign="top" class="GeneralBold" >
+                                 <th height="25" colspan="4" align="center" scope="col"><span class="heading1"><img src="/image/btn_newCatalog.jpg" width="550" height="25" /></span></th>
+                               </tr>
+                               <tr valign="top" class="GeneralBold" >
+                                 <th height="120" colspan="4" align="center" scope="col"><table border="0" cellspacing="3" cellpadding="3">
+                                   <tr>
+                                     <td width="130" align="center"><a href="/PDF_Spec/MAGNETICCATALOG.pdf" target="_blank"><img src="/image/MAGNETICCATALOG.jpg" alt="Complete line of Pressure and non-pressure manways with or without ASME certification in Stainless Steel material" width="92" height="117" border="0" align="top" /></a></td>
+                                     <td width="130" align="center"><a href="/PDF_Spec/LevelGaugeCatalog.pdf" target="_blank"><img src="/image/LevelGaugeCatalog.jpg" alt="Complete line of liquid level gauges " width="92" height="117" border="0" align="top" /></a></td>
+                                     <td width="130" align="center"><a href="/PDF_Spec/ZimmerlinCatalog.pdf" target="_blank"><img src="/image/Zim.jpg" alt="Complete line of Pressure and non-pressure manways with or without ASME certification in Stainless Steel material" width="92" height="117" border="0" align="top" /></a></td>
+                                     <td width="130" align="center"><a href="/PDF_Spec/Washdown_Website.pdf" target="_blank"><img src="/image/Wash.jpg" alt="Complete line of Hot and Cold Water mixing stations and Steam and Water Mixing Stations in Bronze and Stainless Steel Materia large selection of Spray Guns and Washdown Accessories and durable and economical hose" width="92" height="117" border="0" align="top" /></a></td>
+                                     <td width="130" align="center"><a href="/PDF_Spec/LLG_CATALOG_Binded_website.pdf" target="_blank"><img src="/image/armoredlevelgauge_catalog.jpg" alt="Complete line of Hot and Cold Water mixing stations and Steam and Water Mixing Stations in Bronze and Stainless Steel Materia large selection of Spray Guns and Washdown Accessories and durable and economical hose" width="92" height="117" border="0" align="top" /></a></td>
+                                     </tr>
+                                   <tr>
+                                     <td width="130" align="center"><span class="General1">Magnetic Liquid Level Gauges</a></span></td>
+                                     <td width="130" align="center"><span class="General1">Liquid Level <br />
+                                       Gauges</span></td>
+                                     <td width="130" align="center"><span class="General1">Manways</span></td>
+                                     <td width="130" align="center"><span class="General1">Washdown Equipment</span></td>
+                                     <td width="130" align="center"><span class="General1">Armored Liquid Level Gauges </span></td>
+                                     </tr>
+                                   <tr>
+                                     <td width="130" align="center">&nbsp;</td>
+                                     <td width="130" align="center">&nbsp;</td>
+                                     <td width="130" align="center">&nbsp;</td>
+                                     <td width="130" align="center"><a href="/PDF_Spec/Washdown_WebsiteSP.pdf" target="_new">Espa&ntilde;ol</a></td>
+                                     <td width="130" align="center"><a href="http://www.archonind.com/PDF_Spec/LLG_030111_Final.pdf" target="_blank"><img src="image/datasheet.gif" alt="Armored Level Gauge data Sheet" width="92" height="25" border="0" /></a></td>
+                                     </tr>
+                                  </table></th>
+                               </tr>
+                               <tr valign="top" class="GeneralBold" >
+                                 <th height="25" colspan="4" align="center" scope="col"><span class="heading1"><img src="/image/btn_newSiliconeHose.jpg" alt="Silicone Hoses " width="550" height="25" /></span></th>
+                               </tr>
+                               <tr valign="top" class="GeneralBold" >
+                                 <th height="25" colspan="4" align="center" scope="col"><table width="100%"  border="0" cellspacing="2" cellpadding="2">
+                                   <tr>
+                                     <td width="33%" height="111" align="center" valign="middle"><div align="center"><a href="http://www.gecitech.com" target="_blank"><img src="/image/Gecitech_Hoses.jpg" width="108" height="124" border="0" /></a></div></td>
+                                     <td width="3%">&nbsp;</td>
+                                     <td width="64%" align="left"><ul>
+                                         <li class="heading1">Sanitary Silicone Hose</li>
+                                         <li class="heading1">Rubber Hose</li>
+                                         <li class="heading1">Sanitary Fittings </li>
+                                       </ul>
+                                         <p align="center" class="GeneralBold"><a href="http://www.gecitech.com/us/en/Products/Hoses/mcategoryususen.asp" target="_blank">Check our HIGH PURITY FLOW PRODUCTS </a></p></td>
+                                   </tr>
+                                 </table></th>
+                                </tr>
+                          </table></td>
+                          </tr>
+                        <tr>
+                          <td >&nbsp;</td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td align="left" valign="top" background="image/footer_bg.gif"><!-- #BeginLibraryItem "/Library/BotGeneral.lbi" --><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr align="left" valign="top">
+              <td width="2%">&nbsp;</td>
+              <td width="53%" valign="top" class="General2"><a href="/Misc/registration.asp" class="b">Registration</a> |<a href="/Misc/login.asp" class="b"> Login </a>| <a href="/Shipping/shipping1.asp" class="b">Check Shipment</a> | <a href="/Misc/tradeshow.asp" class="b">Trade Shows</a> | <a href="/Misc/sitemap.asp" class="b">Sitemap</a> | <a href="/Misc/links.asp" class="b">Links</a></td>
+              <td width="24%">&nbsp;</td>
+              <td width="21%" class="General2">357 Spook Rock Road<br />
+      Suffern, 
+      NY 10901<br />
+      Tel: (845)368-3600<br />
+      Fax: (845)368-3040<br />
+      <a href="/Misc/contactus.asp">Contact Us</a></td>
+            </tr>
+          </table><!-- #EndLibraryItem --></td>
+        </tr>
+      </table></td>
+    <td width="1" height="100%" align="left" valign="top" bgcolor="#336699"><img src="image/spacer.gif" width="1" height="1" /></td>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="rect" coords="-1,-1,84,82" href="/index.asp" />
+</map>
+
+<div style="position: absolute; left: -5529px;">2014 Rolex Replica Watches cheap for sale. Best Swiss Rolex,Breitling,Omega watches here
+<a href="http://www.replicaus.net/">Replica Rolex</a>
+<a href="http://www.idoreplicas.net/">Rolex Replica</a>
+<a href="http://www.discoverseagrove.com/home-new.html">Swiss Replica Watches</a>
+<a href="http://www.discoverseagrove.com/potters/index.html">Replica Watches</a> 
+<a href="http://www.ckm.gen.tr/Cheap-Replica-watch.html">Fake Watches</a>
+<a href="http://www.easternmarket-dc.org/img/flags/flakrw.html">Rolex Watches</a>    
+<a href="http://www.easternmarket-dc.org/img/flb-best.html">Fake Rolex Watches</a>
+<a href="http://www.easternmarket-dc.org/img/flags/flag_jpy.html">Swiss Replica Watches</a>
+</div>
+
+
+
+</body>
+</html>

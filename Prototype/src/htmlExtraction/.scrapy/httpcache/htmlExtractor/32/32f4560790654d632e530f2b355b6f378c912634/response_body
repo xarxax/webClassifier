@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /wp-content/uploads/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /?s=*
+Disallow: /wp-content/
+Disallow: /wp-content/uploads/*.php*
+
+User-agent: Googlebot
+Allow: /*.js*
+Allow: /*.css*
+Allow: /wp-content/*.js*
+Allow: /wp-content/*.css*
+Allow: /wp-includes/*.js*
+Allow: /wp-includes/*.css*
+Allow: /wp-content/plugins/*.css*
+Allow: /wp-content/plugins/*.js*
+Allow: /wp-content/plugins/*ajax*
+Allow: /wp-content/themes/*.css*
+Allow: /wp-content/themes/*.js*
+Allow: /wp-content/themes/*ajax*
+Allow: /wp-content/themes/*/images/
+Allow: /wp-content/themes/*/templates/
+Allow: /wp-content/plugins/*/images/
+Allow: /wp-content/uploads/
+Disallow: /wp-content/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/uploads/*.php*
+Disallow: /?s=*
+
+Sitemap:https://www.guesttracker.com/sitemap.xml
+					

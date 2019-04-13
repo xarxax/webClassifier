@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.extend.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="/js/spin.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/venobox/venobox.css" media="screen">
+<script type="text/javascript" src="/js/venobox/venobox.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.extend.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+<style type="text/css">
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /*body, .header, .resourcesTopNavBar { zoom: 90%;}*/
+        .c2 .con { width: 1310px; }
+        /*.resourcesPage .resourcesTopNavBar{top: 74px;}*/
+        body { zoom: 1 !important; }
+        .resourcesPage .resourcesLeftNavBar li { margin-left: -64px; }
+        .resourcesPage .resourcesLeftNavBar li.innermost.selected { margin-left: -72px; }
+        .resourcesPage .resourcesLeftNavBar li li.innermost.selected { margin-left: -92px; }
+        .resourcesPage .resourcesLeftNavBar li li li.innermost.selected { padding-left: 56px; margin-left: -102px; }
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var isIE11 = navigator.userAgent.indexOf("Trident/11.0") > 0;
+
+        if ($(window).width() < 1350 && !isIE11) {
+            $('body').animate({ 'zoom': 0.9 }, 0);
+        }
+    });
+</script>
+
+
+<script type="text/javascript">
+    $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return (results && results[1]) || null;
+    }
+
+    $(document).ready(function () {
+        $(window).keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+            }
+        });
+
+        $('.searchTxt').watermark('Search');
+    });
+
+    // loading animation
+    spinner = new Spinner({
+        lines: 0 // The number of lines to draw
+        , length: 14 // The length of each line
+        , width: 6 // The line thickness
+        , radius: 10 // The radius of the inner circle
+        , scale: 1 // Scales overall size of the spinner
+        , corners: 1 // Corner roundness (0..1)
+        , color: '#000' // #rgb or #rrggbb or array of colors
+        , opacity: 0.25 // Opacity of the lines
+        , rotate: 0 // The rotation offset
+        , direction: 1 // 1: clockwise, -1: counterclockwise
+        , speed: 1 // Rounds per second
+        , trail: 60 // Afterglow percentage
+        , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+        , zIndex: 2e9 // The z-index (defaults to 2000000000)
+        , className: 'spinner' // The CSS class to assign to the spinner
+        , top: '50%' // Top position relative to parent
+        , left: '50%' // Left position relative to parent
+        , shadow: true // Whether to render a shadow
+        , hwaccel: false // Whether to use hardware acceleration
+        , position: 'fixed' // Element positioning
+    })
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-45872175-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+<script type="text/javascript" src="http://www.55-trk-srv.com/js/83798.js" ></script>
+<noscript><img src="http://www.55-trk-srv.com/83798.png" style="display:none;" /></noscript>
+
+<title>
+	Asia Pacific Offset is the global leader in print management. APOL, color printing, books, magazine, overseas printing, premier printer, USA, UK, Spain, Australia, New Zealand, Hong Kong, printing in China, printing in Hong Kong, bookmaking
+</title><meta name="description" content="Asia Pacific Offset Ltd (APOL) have an enthusiasm for books and printing that is reflected in our work ethic and our dedication to our work. We transform our clients' visions into beautiful tangible products. We specialize in the craft of bookmaking. For two decades, Asia Pacific Offset has produced books and printed media of the highest quality." /><meta name="google-site-verification" content="5wy8g7xY8bs4ZpFR9EwC8YnYFXMSfsT1gptzDsJJ6DY" /><link rel="stylesheet" type="text/css" href="css/fonts.css" /><link rel="stylesheet" type="text/css" href="css/style.css?v=6" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".portBlogFrame .defFrame img.under").on("mouseenter", function () {
+                $(this).hide();
+                $(this).siblings(".over").show();
+            })
+            $(".portBlogFrame .defFrame img.over").on("mouseleave", function () {
+                $(this).hide();
+                $(this).siblings(".under").show();
+            });
+        });
+    </script>
+</head>
+<body class="homePage">
+    <form name="form1" method="post" action="default.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTgzMjYwODg4MGRkngXN9Ng87V30JDZS2yyqX9HAAw8=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+        
+
+
+
+<div class="header">
+    <div class="con">
+        <div class="left">
+            <a href="/">
+                <img alt="" src="/images/webDesign/mainLogo.png" style="width: 300px;" /></a>
+        </div>
+        <div class="right">
+            <ul>
+                <li ><a href="/resources.aspx">Resources</a></li>
+                <li ><a href="/company.aspx">Company</a></li>
+                <li ><a href="/portfolio.aspx">Portfolio</a></li>
+                <li ><a href="/blog.aspx">Blog</a></li>
+                <li ><a href="/contact.aspx">Contact</a></li>
+                <li ><a href="/subscription/Subscribe.aspx">Subscribe</a></li>
+
+                <li class="eng"><a href="#"><i>English</i><div class="arrow-down"></div>
+                </a>
+                    <div class="submenuContainer">
+                        <div class="arrow-up"></div>
+                        <ul class="submenu">
+                            <li>
+                                <a href="http://www.asiapacificoffset.com:80/default.aspx?lang=en">
+                                <div>English</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.asiapacificoffset.com:80/default.aspx?lang=es">
+                                <div>Español</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.asiapacificoffset.com:80/default.aspx?lang=fr">
+                                <div>Français</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.asiapacificoffset.com:80/default.aspx?lang=pt">
+                                <div>Português</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+        <div class="mainContent">
+            <div class="pro">
+                
+                <p style="font-size: 54px; font-family: ACaslonPro Italic; line-height: 64px; margin: 180px auto 88px auto;">
+                    Asia Pacific Offset is the global<br /><span style="color: #FC4237;">leader</span> in print management.
+                </p>
+                <p style="font-size: 20px;">Transforming your design vision into <a href="/portfolio.aspx">beautiful product</a>.</p>
+            </div>
+
+
+            <table class="portBlogFrame">
+                <tr>
+                    <td colspan="6" style="padding-top: 30px;"></td>
+                </tr>
+                <tr id="portBlogRow1">
+	<td colspan="2"><div class="itemFrame">
+		<a href="/portfolio_individual.aspx?pid=PORT000058" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/portfolio/Ediciones-Urano.Todos-los-animales-creeeecen-1.jpg');">
+
+		</div><div class="nameFrame">Todos los animals creeecen!<span class="articleType">Portfolio</span></div></a>
+	</div></td>
+	<td colspan="2"><div class="itemFrame">
+		<a href="/blog_individual.aspx?bid=BLOG000134" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/blog/636849415156778603.jpg');">
+
+		</div><div class="nameFrame">Kung Hei Fat Choi!<span class="articleType">Blog</span></div></a>
+	</div></td>
+	<td class=" defFrame" colspan="2"><a href="#"><div class="imgFrame">
+		<img class=" under" src="/images/webDesign/main/row1DefEn.png" style="border-width:0px;" /><img class=" over" src="/images/webDesign/main/row1DefEnH.png" style="border-width:0px;" />
+	</div></a></td>
+</tr>
+
+                <tr id="portBlogRow2">
+	<td colspan="3"><div class="itemFrame">
+		<a href="/portfolio_individual.aspx?pid=PORT000045" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/portfolio/PowerHouse.Gowanus-Waters-1.jpg');">
+
+		</div><div class="nameFrame">Gowanus Water<span class="articleType">Portfolio</span></div></a>
+	</div></td>
+	<td colspan="3"><div class="itemFrame">
+		<a href="/portfolio_individual.aspx?pid=PORT000039" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/portfolio/635827640957399202.jpg');">
+
+		</div><div class="nameFrame">Back In The Day Bakery: Made With Love<span class="articleType">Portfolio</span></div></a>
+	</div></td>
+</tr>
+
+                <tr id="portBlogRow3">
+	<td class=" defFrame" colspan="2"><a href="#"><div class="imgFrame">
+		<img class=" under" src="/images/webDesign/main/row3DefEn.png" style="border-width:0px;" /><img class=" over" src="/images/webDesign/main/row3DefEnH.png" style="border-width:0px;" />
+	</div></a></td>
+	<td colspan="2"><div class="itemFrame">
+		<a href="/portfolio_individual.aspx?pid=PORT000005" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/portfolio/635826647334779665.jpg');">
+
+		</div><div class="nameFrame">American Odysseys: Writings by New Americans<span class="articleType">Portfolio</span></div></a>
+	</div></td>
+	<td colspan="2"><div class="itemFrame">
+		<a href="/blog_individual.aspx?bid=BLOG000133" class="itemLink"><div class="imgFrame" style=" background-image: url('http://www.asiapacificoffset.com/images/cms/blog/636615129266985841.jpg');">
+
+		</div><div class="nameFrame">For the Love of Mom!<span class="articleType">Blog</span></div></a>
+	</div></td>
+</tr>
+
+            </table>
+
+            <a class="styledBtn1" href="/portfolio.aspx">View Our Complete Portfolio</a><br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="c1">
+                <div class="con">
+                    <ul>
+                        <li>
+                            <img class="rule" src="images/webDesign/main/rule1.png" alt="" />
+                            <p>
+                                <b>Art of Bookmaking</b>
+                                <br />
+                                <br />
+                                —<br />
+                                <br />
+                                Enthusiastic purveyors of a timeless craft, we'll help you to transform your vision into a work of art.
+                            </p>
+                        </li>
+
+                        <li>
+                            <img class="rule" src="images/webDesign/main/rule2.png" alt="" />
+                            <p>
+                                <b>Quality Materials</b>
+                                <br />
+                                <br />
+                                —<br />
+                                <br />
+                                We'll help you select materials taking into account the texture, visual appeal, durability, and the environmental impact of each element.
+                            </p>
+                        </li>
+
+                        <li>
+                            <img class="rule" src="images/webDesign/main/rule3.png" alt="" />
+                            <p>
+                                <b>Print Partners</b>
+                                <br />
+                                <br />
+                                —<br />
+                                <br />
+                                We will be your partners every step of the way. We will collaborate and guide you through product development, manufacturing, and logistics.
+                            </p>
+                        </li>
+
+                        <li>
+                            <img class="rule" src="images/webDesign/main/rule4.png" alt="" />
+                            <p>
+                                <b>Friendly Service</b>
+                                <br />
+                                <br />
+                                —<br />
+                                <br />
+                                We have an enthusiasm for books and printing that is reflected in our work ethic and our dedication to our work.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="map">
+                <div class="con">
+                    <div class="left">
+                        <p class="p1">We transform our client's visions into beautiful products.</p>
+                        <p>&nbsp;</p>
+                        <p class="p2">
+                            Our sales team supports our clients in all aspects of every project. We have offices in the <a href="/contact.aspx?oid=4">USA</a>, <a href="/contact.aspx?oid=10">UK</a>, <a href="/contact.aspx?oid=11">Spain</a>, <a href="/contact.aspx?oid=12">Australia</a>, <a href="/contact.aspx?oid=13">New Zealand</a>, and China/ Hong Kong.
+                        </p>
+                        <p>&nbsp;</p>
+                        <a class="contactUsFrame" href="/contact.aspx" style="text-decoration: none;">
+                            <p class="p3 redOnHover">Contact Your Local Office</p>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <img src="images/webDesign/map.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="footer">
+    <div class="con">
+        <table class="footerSubFrame">
+            <tr>
+                <td class="navFrame" rowspan="2">
+                    <a href="/">
+                        <img style="max-width: 276px;" src="/images/webDesign/APOLOffset.png" alt="" /></a>
+                    <table id="socialFooter">
+                        <tr>
+                            <td><a href="https://www.facebook.com/asiapacificoffsetinc/">
+                                <img src="/images/webDesign/social/facebook.png" alt="Facebook" title="Facebook" /></a></td>
+                            <td><a href="https://www.instagram.com/apo_printing/">
+                                <img src="/images/webDesign/social/instagram.png" alt="Instagram" title="Instagram" /></a></td>
+                            <td><a href="https://www.linkedin.com/company-beta/8641715/">
+                                <img src="/images/webDesign/social/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a></td>
+                            <td><a href="https://twitter.com/APO_printing">
+                                <img src="/images/webDesign/social/twitter.png" alt="Twitter" title="Twitter" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="btn">
+                        <input id="searchTxt" class="searchTxt" type="text" />
+                        <a class="searchBtn" href="#"></a>
+                    </div>
+
+                    <ul class="navList">
+                        <li><a href="/resources.aspx">Resources</a></li>
+                        <li><a href="/company.aspx">Company</a></li>
+                        <li><a href="/portfolio.aspx">Portfolio</a></li>
+                        <li><a href="/blog.aspx">Blog</a></li>
+                        <li><a href="/contact.aspx">Contact</a></li>
+                        
+                        <li><a href="/subscription/Subscribe.aspx">Subscribe</a></li>
+                        <li><a href="/resources/AsiaPacificOffsetTermsandConditions.pdf" target="_blank">Terms</a></li>
+
+                        <li class="login"><a href="http://apol-mercury.1010printing.com:96/moon/moonWeb/login.aspx?ReturnUrl=%2fmoon%2fmoonWeb%2fdefault.aspx" style="color: gray;">Login</a></li>
+                    </ul>
+                </td>
+                <td class="officeFrame">
+                    <b>New York, NY</b><br />
+                    <p>
+                        62 Rivington St., Suite 2B
+                        <br />
+                        New York, NY 10002
+                    </p>
+                    Tel: +1-212-941-8300<br />
+                    Fax: +1-212-941-9810
+                </td>
+                <td class="officeFrame">
+                    <b>Washington DC</b><br />
+                    <p>
+                        1312 Q St. NW, Suite B
+                        <br />
+                        Washington, DC 20009
+                    </p>
+                    Tel: +1-202-462-5436<br />
+                    Fax: +1-202-986-4030
+                </td>
+                <td class="officeFrame">
+                    <b>San Francisco, CA</b><br />
+                    <p>
+                        870 Market St., Suite 801<br />
+                        San Francisco, CA 94102
+                    </p>
+                    Tel: +1-415-433-3488<br />
+                    Fax: +1-415-433-3489
+                </td>
+                <td class="officeFrame">
+                    <b>Ann Arbor, MI</b><br />
+                    <p>
+                        1768 Oakmont Court<br />
+                        Ann Arbor, MI 48108
+                    </p>
+                    Tel: +1-734-223-6218
+                </td>
+            </tr>
+            <tr>
+                <td class="officeFrame">
+                    <b>London, UK</b><br />
+                    <p>
+                        20 Mortlake High Street
+                        <br />
+                        London SW14 8JN
+                        <br />
+                        United Kingdom<br />
+                        <br />
+                        Tel: +44 (0) 203 170 8700<br />
+                    Fax: +44 (0) 203 170 8704
+                </td>
+                <td class="officeFrame">
+                    <b>Barcelona, Spain</b><br />
+                    <p>
+                        C/Tamarit 104,esc.D,ent-2.<br />
+                        08015 Barcelona, Spain
+                    </p>
+                    Tel: +34-93-327-8-837<br />
+                    Fax: +34-93-325-48-26
+                </td>
+                <td class="officeFrame">
+                    <b>Auckland, New Zealand</b><br />
+                    <p>
+                        57 Norfolk Street<br />
+                        Ponsonby, Auckland 1021<br />
+                        New Zealand
+                    </p>
+                    Tel: +64 (09) 378-4971
+                </td>
+                <td class="officeFrame">
+                    <b>Sydney, Australia</b><br />
+                    <p>
+                        16 Clements Drive<br />
+                        Avoca Beach, NSW 2251
+                        <br />
+                        Australia
+                    </p>
+                    Tel: +61 (02) 4382-6174<br />
+                    Fax: +61 (02) 4311-3774
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var SUBSCRIPTION_FREQ = 1;
+
+    $(document).ready(function () {
+        $(".searchBtn").on("click", function () {
+            if ($(".searchTxt").val().length < 3) {
+                alert("Please input aleast 3 words in order to search");
+                return false;
+            }
+            location = "/search_result.aspx?keywords=" + $(".searchTxt").val();
+            return false;
+        });
+
+        $(".searchTxt").on("keyup", function (e) {
+            if (e.keyCode == 13) {
+                $(".searchBtn").click();
+            }
+        });
+
+        /* Subscription settings */
+        $('.subscribeUs').venobox({
+            //framewidth: '0px',        // default: ''
+            frameheight: '300px',       // default: ''
+            bgcolor: 'transparent',         // default: '#fff'
+            titleattr: '',    // default: 'title'
+        });
+
+        //open confirmation box
+        if (getQueryString("subscribeAction") == "confirm" && typeof ($('.confirmSubscribe').attr("href")) !== "undefined" && $('.confirmSubscribe').attr != null) {
+            //$('.confirmSubscribe').venobox({
+            //    //framewidth: '0px',        // default: ''
+            //    frameheight: '150px',       // default: ''
+            //    bgcolor: 'transparent',         // default: '#fff'
+            //    titleattr: '',    // default: 'title'
+            //});
+            //$(".confirmSubscribe").venobox().trigger('click');
+            var queryStr = window.location.href.slice(window.location.href.indexOf('?'));
+            window.location.href = '/subscription/Confirmed.aspx' + queryStr;
+        }
+        else if (getQueryString("subscribeAction") == "unsubscribe" && typeof ($('.unsubscribe').attr("href")) !== "undefined" && $('.unsubscribe').attr != null) {
+            //$('.unsubscribe').venobox({
+            //    //framewidth: '0px',        // default: ''
+            //    frameheight: '150px',       // default: ''
+            //    bgcolor: 'transparent',         // default: '#fff'
+            //    titleattr: '',    // default: 'title'
+            //});
+            //$(".unsubscribe").venobox().trigger('click');
+            var queryStr = window.location.href.slice(window.location.href.indexOf('?'));
+            window.location.href = '/subscription/Unsubscribed.aspx' + queryStr;
+        }
+        
+    });
+</script>
+<a id="footer1_confirmSubscribe" class="confirmSubscribe" data-type="iframe" style="display: none;"></a>
+<a id="footer1_unsubscribe" class="unsubscribe" data-type="iframe" style="display: none;"></a>
+
+
+
+    </form>
+</body>
+</html>

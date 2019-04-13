@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : Core 3.2.1
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>CHL Medical Partners – An Early Stage Healthcare Services Investor</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="css/print.css" rel="stylesheet" type="text/css" media="print"/>
+		<script src="scripts/rollover.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/supersized.core.css" type="text/css" media="screen" />
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/supersized.core.3.2.1.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					start_slide             :   0,			// Start slide (0 is random)
+					new_window				:	1,			// Image links open in new window/tab
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components
+					slides 					:  	[			// Slideshow Images
+														{image : 'images/pic1.jpg', title : ''},
+														{image : 'images/pic2.jpg', title : ''}  
+														
+												]
+					
+				});
+		    });
+		    
+		</script>
+
+
+<script language="javascript">
+
+var quote = new Array()
+quote[0] = 'images/hm_btm_img3a.jpg'
+quote[1] = 'images/hm_btm_img3b.jpg'
+quote[2] = 'images/hm_btm_img3c.jpg'
+quote[3] = 'images/hm_btm_img3d.jpg'
+
+var j = 0
+var p = quote.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = quote[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){document.write('<img src="'+quote[whichImage]+'"class="hm_team">');}
+</script>
+
+
+
+
+
+		
+		
+	</head>
+
+<body>
+
+<div class="wrapper">
+<!--webbot bot="Include" U-Include="header_hm.htm" TAG="BODY" startspan -->
+
+<a href="index.html"><img src="images/logo.png" class="logo" /></a>
+
+<a href="https://filesend.chlmedical.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1x','','images/nav/lplogin2.png',1)" >
+<img src="images/nav/lplogin1.png" alt="HOME" name="Image1x" id="Image1x" class="login"/></a>
+
+<!--
+<a href="http://64.78.1.160/downloadsHP/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1x','','images/nav/lplogin2.png',1)" target="_blank">
+<img src="images/nav/lplogin1.png" alt="HOME" name="Image1x" id="Image1x" class="login"/></a>
+-->
+
+<!--webbot bot="Include" endspan i-checksum="61416" -->
+
+</div>
+
+<div class="hdr_bar"></div>
+
+<div class="wrapper">
+
+	<div class="navdiv">
+	
+	<a href="about/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','images/nav/about2.png',1)">
+	<img src="images/nav/about1.png" alt="ABOUT" name="Image2" id="Image2" class="nav"/></a>
+	
+	<a href="team/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/nav/team2.png',1)">
+	<img src="images/nav/team1.png" alt="TEAM" name="Image3" id="Image3" class="nav"/></a>
+	
+	<a href="themes/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','images/nav/themes2.png',1)">
+	<img src="images/nav/themes1.png" alt="THEMES" name="Image1" id="Image1" class="nav"/></a>
+	
+	<a href="portfolio/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/nav/portfolio2.png',1)">
+	<img src="images/nav/portfolio1.png" alt="PORTFOLIO" name="Image4" id="Image4" class="nav"/></a>
+	
+	<a href="news/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/nav/news2.png',1)">
+	<img src="images/nav/news1.png" alt="NEWS" name="Image5" id="Image5" class="nav"/></a>
+	
+	<a href="contact/index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/nav/contact2.png',1)">
+	<img src="images/nav/contact1.png" alt="CONTACT" name="Image6" id="Image6" class="nav"/></a>
+	
+	</div>
+
+
+				
+
+</div>
+		<div class="box_fade">
+				<div class="wrapper">
+				<img src="images/tagline.png" />
+				</div>
+		</div>
+
+
+<!--webbot bot="Include" U-Include="footer_hm.htm" TAG="BODY" startspan -->
+
+
+
+<div class="footer_hm">
+
+		<div class="wrapper">
+
+			<div class="box1"><a href="about/index.html"><img src="images/hm_btm_1.png" /></a><br/>
+				<p class="box_copy">CHL Medical Partners is a private 
+				investment firm focused on starting and growing healthcare services businesses.</p>
+				<div class="more"><a href="about/index.html">more</a></div>
+			</div>
+			
+			<div class="box2"><a href="portfolio/index.html"><img src="images/hm_btm_img2.jpg" /></a><br/>
+				<p class="box_copy">Learn 
+					about the innovative, market leading healthcare services 
+					companies that CHL helped create 
+					and finance.</p>
+				<div class="more"><a href="portfolio/index.html">more</a></div>
+			</div>
+			
+			<div class="box3"><a href="team/index.html" class="boxes"><script language="javascript">showImage();</script></a><br/>
+				<p class="box_copy">Our Principals collectively have over 100 years of 
+				investment experience and have led over 100 investments.</p>
+				<div class="more"><a href="team/index.html">more</a></div>
+			</div>
+		</div>			
+			<div style="clear:both;"></div> 
+
+	
+			<div class="ftr">
+			
+				<a class="ftr_txt" href="index.html">Home</a>
+				<a class="ftr_txt" href="about/index.html">About</a>
+				<a class="ftr_txt" href="team/index.html">Team</a>
+				<a class="ftr_txt" href="themes/index.html">Themes</a>
+				<a class="ftr_txt" href="portfolio/index.html">Portfolio</a>
+				<a class="ftr_txt" href="news/index.html">News</a>
+				<a class="ftr_txt" href="contact/index.html">Contact</a>
+				
+				<br/><br/><br/>
+		
+				&copy;CHL Medical Partners. All Rights Reserved.
+			</div>
+
+</div>
+
+
+<!--webbot bot="Include" endspan i-checksum="41555" -->
+
+</body>
+</html>

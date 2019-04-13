@@ -1,0 +1,41 @@
+User-Agent: *
+Crawl-delay:5
+
+User-Agent: bingbot
+Crawl-delay: 10
+
+User-Agent: linkdexbot
+Disallow: *
+
+# Block  MegaIndex.ru
+User-agent: MegaIndex.ru/2.0
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: megaIndex.ru
+Disallow: /
+
+User-Agent: *
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-config.php
+Disallow: /wp-content/blogs.dir/
+Disallow: /wp-content/uploads/
+Disallow: /cgi-bin/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/mu-plugins/
+Disallow: /wp-content/w3tc-config/
+Disallow: /trackback/
+Disallow: /comments/
+Disallow: */trackback/
+Disallow: */comments/
+Disallow: wp-login.php
+Disallow: wp-signup.php
+Disallow: xmlrpc.php
+
+User-Agent: AhrefsBot
+disallow: /

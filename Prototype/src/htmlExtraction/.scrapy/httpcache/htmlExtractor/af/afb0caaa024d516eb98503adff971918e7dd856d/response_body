@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118957586-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118957586-1');
+	</script>
+
+    <!-- Basic Page Needs
+=========================================================================-->
+    <title>APOZA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="title" content="APOZA" />
+    <meta name="description" content='Apoza provides various kinds of medical and dental products, including sterilizers, dental curing light, etc. APOZA strives to discover more holistic, innovative and comprehensive solutions to enhance dental and medical operating experiences.'  />
+    <meta name="keywords" content="Autoclave sterilizer,Medical equipment,Medical equipment suppliers,Ozone sterilizer,Sterilizer cabinet,Portable sterilizer" />
+    <meta name="author" content="web design + development by Artie| http://www.artiedesign.com.tw // powered by Artie" />
+    <meta name="copyright" content="apoza©2018. All Rights Reserved." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico">
+    <!-- CSS
+=========================================================================-->
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- swiper輪播 -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.set.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.set_responsive.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-other.css" media="screen" />
+    <!-- for -->
+    <!-- Javascript/JQuery
+=========================================================================-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/sForm.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.gotop.js"></script>
+    <!-- 回頂部 js-->
+    <script src="js/main.js"></script>
+    <!--pages-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/owl.carousel.js"></script>
+    <!-- swiper輪播 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- fancybox -->
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <!-- goTop -->
+    <script src="js/goTop.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // camera slider輪播設定(API設定參考：http://www.pixedelic.com/plugins/camera/)
+        jQuery('#camera_wrap').camera({
+            loader: false,
+            pagination: false,
+            thumbnails: false,
+            height: '40%',
+            minHeight: '200',
+            caption: false,
+            navigation: true,
+            //預設1.5秒自動切換
+            time: 1500,
+            //場景切換速度
+            transPeriod: 1500,
+            fx: 'mosaic'
+        });
+		/*
+        jQuery('#camera_wrap_mobile').camera({
+            loader: false,
+            pagination: false,
+            thumbnails: false,
+            height: '40%',
+            minHeight: '200',
+            caption: false,
+            navigation: true,
+            //預設1.5秒自動切換
+            time: 1500,
+            //場景切換速度
+            transPeriod: 1500,
+            fx: 'mosaic'
+        });
+		*/
+        // swiper slider輪播設定
+        var swiper = new Swiper('#sw_web', {
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 0,
+            loop: true,
+            breakpoints: {
+                767: {
+                    pagination: '.swiper-pagination',
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
+        });
+
+        // 手機版
+        var Mswiper = new Swiper('#sw_mobile', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 0,
+            effect: 'fade'
+        });
+
+        // fancybox 初始化
+        $('.fancybox').fancybox();
+    });
+    $(window).ready(function() {
+        $("#owl").owlCarousel({
+
+            navigation: true,
+            slideSpeed: 300,
+            pagination: false,
+            paginationSpeed: 400,
+            singleItem: true
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1, 
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+    });
+    </script>
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+    
+    <![endif]-->
+    <!-- Font
+=========================================================================-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="page1" id="top">
+    <!--==============================header=================================-->
+    <header><link rel="stylesheet" href="css/navigation.css">
+<!--<script src="js/jquery.mobilemenu.js"></script>-->
+<script src="js/superfish.js"></script>
+
+<div class="container_12 contx">
+	<div class="grid_12">
+		<h1>
+			<a href="./">
+				<img src="images/logo.png" alt="Your Happy Family">
+			</a>
+		</h1>
+		<div class="menu_block">
+			<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+				<ul class="sf-menu">
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/">HOME</a>
+							                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/about.php">ABOUT</a>
+							                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/products.php">PRODUCTS</a>
+															<ul>
+																			<li><a href="http://apoza.com/products.php?cat_id=uKyZ4wsTa4xhk2rf9Fn4J4PXfvNvsuhK" title="Autoclave" >Autoclave</a></li>
+																			<li><a href="http://apoza.com/products.php?cat_id=GxcfEL8kI3ZyvCU9hnPxDp8kZfATaWHK" title="Ozone Device" >Ozone Device</a></li>
+																			<li><a href="http://apoza.com/products.php?cat_id=4FyB9pic6rbsAv5QWhBSjnM2jkYKz3gs" title="LED Curing Light" >LED Curing Light</a></li>
+																			<li><a href="http://apoza.com/products.php?cat_id=zj0tdTv34JbQ7UA2jmEfZngK17EBuiES" title="Bleaching Unit" >Bleaching Unit</a></li>
+																	</ul>
+							                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/references.php">REFERENCES</a>
+							                                                            <ul>
+									<li><a href="http://apoza.com/references.php?type_id=1" title="Distributors">Distributors</a></li>
+									<li><a href="http://apoza.com/references.php?type_id=2" title="Users">Users</a></li>
+								</ul>
+                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/news.php">NEWS</a>
+							                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/certificate.php">CERTIFICATE</a>
+							                            						</li>
+					                                                                                                    						<li class=''>
+							<a href="http://apoza.com/contact.php">CONTACT</a>
+							                            						</li>
+										
+				</ul>
+			</nav>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<!-- nav -->
+<nav id="main-navbar" class="visible-xs">
+    <!-- navigation-header when small screen -->
+    <div class="navigation-header">
+        <!-- burger-icon when small screen -->
+        <a href="#" class="burger-icon toggle-navbar burger-left">
+            <span></span><span></span><span></span>
+        </a>
+        <!-- /burger-icon -->
+    </div>
+    <!-- /navigation-header -->
+    <!-- navbar-nav, main-navbar -->
+    <ul class="navbar navigation-nav" id="navbar">
+								<li><a class="" href="http://apoza.com/index.php">HOME</a></li>
+											<li><a class="" href="http://apoza.com/about.php">ABOUT</a></li>
+											<li class="dropdown">
+				<a class="dropdown-toggle" href="http://apoza.com/products.php">PRODUCTS&nbsp;&nbsp;&or;</a>
+				<ul>
+										<li><a href="http://apoza.com/products.php?cat_id=uKyZ4wsTa4xhk2rf9Fn4J4PXfvNvsuhK">Autoclave</a></li>
+										<li><a href="http://apoza.com/products.php?cat_id=GxcfEL8kI3ZyvCU9hnPxDp8kZfATaWHK">Ozone Device</a></li>
+										<li><a href="http://apoza.com/products.php?cat_id=4FyB9pic6rbsAv5QWhBSjnM2jkYKz3gs">LED Curing Light</a></li>
+										<li><a href="http://apoza.com/products.php?cat_id=zj0tdTv34JbQ7UA2jmEfZngK17EBuiES">Bleaching Unit</a></li>
+									</ul>
+			</li>
+            					            <li class="dropdown">
+				<a class="dropdown-toggle" href="http://apoza.com/references.php">REFERENCES&nbsp;&nbsp;&or;</a>
+				<ul>
+                    <li><a href="http://apoza.com/references.php?type_id=1" title="Distributors">Distributors</a></li>
+                    <li><a href="http://apoza.com/references.php?type_id=2" title="Users">Users</a></li>
+				</ul>
+			</li>
+											<li><a class="" href="http://apoza.com/news.php">NEWS</a></li>
+											<li><a class="" href="http://apoza.com/certificate.php">CERTIFICATE</a></li>
+											<li><a class="" href="http://apoza.com/contact.php">CONTACT</a></li>
+					    </ul>
+    <!-- /navbar-nav -->
+</nav>
+<!-- /nav -->
+<script src="js/navigation.js"></script></header>
+    <!--==============================slider=================================-->
+    <!-- web/pad輪播 -->
+    <div class="slider_wrapper">
+        <div id="camera_wrap" class="sw-xs">
+									<div data-src="Uploads/ad/t8LsJ5WKU202ne2EiuhtKN51FHXUKtP8_rqt4idE79HXqLTU.png" data-link='http://www.apoza.com/products_detail.php?the_id=YHKV6uLVDaMnyi1K9s603Ayi5H2Lepx3' data-target='_blank'></div>
+												<div data-src="Uploads/ad/n7A4RwpaNP6ATzCIebPNbFjVBPBIWSM0_8rwQfZLFUfBj112.png" data-link='http://www.apoza.com/products_detail.php?the_id=FZB1mgDC5hu3pwknd6d3hwc87mp8zcE8' data-target='_blank'></div>
+												<div data-src="Uploads/ad/dPdQy5h5fddfbcY8C9s6aIGL83JHkmsq_b15JU3KFvS4en1g.png" data-link='http://www.apoza.com/products_detail.php?the_id=CRWsG8LuYm3C6SeuT8KXsB1rsqGNgqeI' data-target='_blank'></div>
+						        </div>
+    </div>
+    <!-- web/pad輪播 -->
+    <!-- phone輪播 -->
+    <div id="sw_mobile" class="swiper-container">
+        <div class="swiper-wrapper">
+									 <div class="swiper-slide">
+                <a href="http://www.apoza.com/products_detail.php?the_id=YHKV6uLVDaMnyi1K9s603Ayi5H2Lepx3"
+								target="_blank" class="banner_mb" style="background-image: url(Uploads/ad/t8LsJ5WKU202ne2EiuhtKN51FHXUKtP8_Yf2gUIeKdQB2rYF.png);"></a>
+            </div>
+												 <div class="swiper-slide">
+                <a href="http://www.apoza.com/products_detail.php?the_id=FZB1mgDC5hu3pwknd6d3hwc87mp8zcE8"
+								target="_blank" class="banner_mb" style="background-image: url(Uploads/ad/n7A4RwpaNP6ATzCIebPNbFjVBPBIWSM0_N0fQFwb7duG8Cw1.png);"></a>
+            </div>
+												 <div class="swiper-slide">
+                <a href="http://www.apoza.com/products_detail.php?the_id=CRWsG8LuYm3C6SeuT8KXsB1rsqGNgqeI"
+								target="_blank" class="banner_mb" style="background-image: url(Uploads/ad/dPdQy5h5fddfbcY8C9s6aIGL83JHkmsq_ZLerbhzexXT0x1L.png);"></a>
+            </div>
+						        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <!-- phone輪播 end -->
+    <!--==============================Content=================================-->
+    <div class="content">
+        <div class="page1_block">
+            <!--==============================TOP=================================-->
+
+            <!--==============================SERVICE=================================-->
+            <div class="service">
+                <div class="container_12">
+                    <div class="service_tit">
+                        <h1 class="font-05"><span>WHY</span>CHOOSE US</h1>
+                    </div>
+                <!-- Swiper -->
+                    <div id="sw_web" class="swiper-container">
+                        <div class="swiper-wrapper">
+                                                                                    <div class="swiper-slide">
+                                <div class="grid_4">
+                                    <img src="Uploads/ad/Fk3DTchSY7qtuLgyig9n935VkEJVmNIR_5zeUh9A1f3grFEp.png" alt="EXPERTISE">
+                                    <div class="title">
+                                                                                    EXPERTISE
+                                                                            </div>
+                                    <p>
+                                        Accumulated skills and enhanced product quality from the experience, our products have supplied to over 60 countries and acquired satisfactions from over 400 thousand dentists.
+                                    </p>
+                                </div>
+                            </div>
+                                                                                                                <div class="swiper-slide">
+                                <div class="grid_4">
+                                    <img src="Uploads/ad/qgQYnWXKxgyZmsbiHVy4hqM6cskPbWSr_fhb4UeKkPKgS66E.png" alt="RELIABLE">
+                                    <div class="title">
+                                                                                    RELIABLE
+                                                                            </div>
+                                    <p>
+                                        We carefully listen and response through technological integration to provide the best treatment experience for dentists, doctors and their patients.
+                                    </p>
+                                </div>
+                            </div>
+                                                                                                                <div class="swiper-slide">
+                                <div class="grid_4">
+                                    <img src="Uploads/ad/ACIW6G5pmncKK7jzbbmhysEFpdwLc4JC_suc31wespuqkIsi.png" alt="INNOVATION">
+                                    <div class="title">
+                                                                                    INNOVATION
+                                                                            </div>
+                                    <p>
+                                        Strive to discover more holistic, innovative and comprehensive solutions to support dental, medical and cosmetology practices.
+                                    </p>
+                                </div>
+                            </div>
+                                                                                </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                                            </div>
+                </div>
+            </div>
+        </div>
+        <!--==============================MID=================================-->
+        
+            <!--============================== PRODUCTS =================================-->
+            <div class="products">
+                <div class="container_12">    
+                    <div class="grid_12">
+                        <div class="products_tit">
+                            <h3 class="font-05">PRODUCT<span>HIGHLIGHTS</span></h3>
+                        </div>                
+                    </div>
+                    
+                                        <div class="grid_3 box">
+                        <a href="products_detail.php?the_id=YHKV6uLVDaMnyi1K9s603Ayi5H2Lepx3">
+                            <div class="photo">
+                                <img src="Uploads/article/YHKV6uLVDaMnyi1K9s603Ayi5H2Lepx3_17NVutJWtrcQz3u.png" alt="Ozone STA V-600" class="img_inner">
+                                <span></span>
+                            </div>
+                            
+                            <div class="text1 upp">Ozone STA V-600</div>
+                        </a>
+                        BRAND NEW! <br />Discover your Favorite Disinfector!<br />No need of Consumables!<br />Without Heat &amp; Water!
+                    </div>
+                                        <div class="grid_3 box">
+                        <a href="products_detail.php?the_id=6Md6UmHIU1ZUaNdyckNc2YDj05gky7Ct">
+                            <div class="photo">
+                                <img src="Uploads/article/6Md6UmHIU1ZUaNdyckNc2YDj05gky7Ct_IJsxVY5JSXtTABf.png" alt="Ozone DTA J-500 Plus" class="img_inner">
+                                <span></span>
+                            </div>
+                            
+                            <div class="text1 upp">Ozone DTA J-500 Plus</div>
+                        </a>
+                        Ozone Therapy + Sterilizer = 2 in 1 Device
+                    </div>
+                                        <div class="grid_3 box">
+                        <a href="products_detail.php?the_id=FZB1mgDC5hu3pwknd6d3hwc87mp8zcE8">
+                            <div class="photo">
+                                <img src="Uploads/article/FZB1mgDC5hu3pwknd6d3hwc87mp8zcE8_293cezJ0G36Unfa.png" alt="AD7 Mini Autoclave" class="img_inner">
+                                <span></span>
+                            </div>
+                            
+                            <div class="text1 upp">AD7 Mini Autoclave</div>
+                        </a>
+                        A MUST-HAVE portable sterilizer specially designed for the handpiece!
+                    </div>
+                                        <div class="grid_3 box">
+                        <a href="products_detail.php?the_id=CRWsG8LuYm3C6SeuT8KXsB1rsqGNgqeI">
+                            <div class="photo">
+                                <img src="Uploads/article/CRWsG8LuYm3C6SeuT8KXsB1rsqGNgqeI_055G3FZUVVmQDvc.png" alt="NewClave Autohouse AD7 Prima 17L/22L" class="img_inner">
+                                <span></span>
+                            </div>
+                            
+                            <div class="text1 upp">NewClave Autohouse AD7 Prima 17L/22L</div>
+                        </a>
+                        100% fully sterilization and excellent drying performance.
+                    </div>
+                                    </div>
+            </div>
+           
+            <!--============================== PAGE BANNER =================================-->
+            <div class="page_bn">
+                <div class="container_12">
+                    <div class="grid_12">
+                        <h1 class="font-05">INNOVATION</h1>
+                        <p class="grid_6 font-04">APOZA strives to discover more holistic, innovative and comprehensive solutions to enhance dental and medical operating experiences.
+                        </p>
+                    </div>
+                </div>
+                <span id="rwd-page-banner"><img src="images/page_bn_people.png"></span>
+            </div>
+            <!--============================== NEWS =================================-->
+            <div class="news">
+                <div class="container_12">
+                    <div class="grid_12">
+                        <div class="news_tit">
+                            <h3 class="font-05"><span>LATEST</span>NEWS</h3>
+                        </div>                  
+                        <!---->
+                                                                                                                                            
+                            <div class="grid_4 alpha box">
+                                <a href="news_detail.php?the_id=J1wrBXu2cqD4vdIW0IxyEMLf40DwJprm">
+                                    <div class="photo">
+                                        <img src="Uploads/timeinfo/J1wrBXu2cqD4vdIW0IxyEMLf40DwJprm_apiz6J0iwpfZC5Q.jpg" alt="NEW Ozone Disinfection Cabinet!" />
+                                        <span></span>             
+                                    </div>
+
+                                    <div class="news_date">2018.09.01</div>
+
+                                    <div class="text1 upp">
+                                        NEW Ozone Disinfection Cabinet!
+                                    </div>
+                                </a>
+
+
+                                Discover your Favorite Disinfector!<br />No need of Consumables!<br />Without Heat &amp; Water!
+                            </div>
+                                                                                                                                            
+                            <div class="grid_4  box">
+                                <a href="news_detail.php?the_id=idm2gnjBsXiUMMmW40PuJGVZtPEVC5JK">
+                                    <div class="photo">
+                                        <img src="Uploads/timeinfo/idm2gnjBsXiUMMmW40PuJGVZtPEVC5JK_VccbeED8pDzFZAZ.jpg" alt="Website Refurbished" />
+                                        <span></span>             
+                                    </div>
+
+                                    <div class="news_date">2018.03.28</div>
+
+                                    <div class="text1 upp">
+                                        Website Refurbished
+                                    </div>
+                                </a>
+
+
+                                APOZA strives to offer better and valuable customer experiences, and your support is esteemed and essential to us.
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            
+            <!--============================== CERTIFICATE =================================-->
+            <div class="certificate">
+                <div class="container_12">
+                    <div class="grid_12">
+                    <div class="certificate_tit">
+                        <h3 class="font-05">CERTIFICATE</h3>
+                    </div>   
+                    <ul class="logos">
+                                                                                                                                            
+                                                        <li class="grid_3 alpha">
+                                <!-- 模式一 另開視窗 -->
+                                                                
+                                    <figure><img src="Uploads/article/SAMTQinRW76dibsLYZQh8jFg3jbkjAu6_hnW2w36Z3s2R5QR.jpg"></figure>
+                                    <figure class="logo_bk"><img src="Uploads/article/SAMTQinRW76dibsLYZQh8jFg3jbkjAu6_hnW2w36Z3s2R5QR.jpg"></figure>
+                                
+                                                                
+                            </li>
+                                                                                                                                                                        
+                                                         <li class="grid_3 ">
+                                <!-- 模式二 lightbox視窗 -->
+                                <a class="fancybox" 
+                                    href="Uploads/article/Et5BaAxMXJe5VmW2W3spyfCLdjENRI9q_zMmr9Y4x3cHSrUp.jpg" 
+                                    data-fancybox-group="gallery" 
+                                    title="German Patent"
+                                >
+                                    <figure><img src="Uploads/article/Et5BaAxMXJe5VmW2W3spyfCLdjENRI9q_13U6tfLiTQhD64z.jpg"></figure>
+                                    <figure class="logo_bk"><img src="Uploads/article/Et5BaAxMXJe5VmW2W3spyfCLdjENRI9q_13U6tfLiTQhD64z.jpg"></figure>
+                                </a>
+                            </li>
+                                                                                                                                                                        
+                                                         <li class="grid_3 ">
+                                <!-- 模式二 lightbox視窗 -->
+                                <a class="fancybox" 
+                                    href="Uploads/article/aztk3wzVPeBUJZcV8uK3TG3HynzdghYg_HVwSP5xJ3PIRnp2.jpg" 
+                                    data-fancybox-group="gallery" 
+                                    title="Japan Patent"
+                                >
+                                    <figure><img src="Uploads/article/aztk3wzVPeBUJZcV8uK3TG3HynzdghYg_GfxDGZnj8P4GD0v.png"></figure>
+                                    <figure class="logo_bk"><img src="Uploads/article/aztk3wzVPeBUJZcV8uK3TG3HynzdghYg_GfxDGZnj8P4GD0v.png"></figure>
+                                </a>
+                            </li>
+                                                                                                                                                                        
+                                                        <li class="grid_3 omega">
+                                <!-- 模式一 另開視窗 -->
+                                                                
+                                    <figure><img src="Uploads/article/DtMSpH6AJ4cx6xrgQHADG3EY9QtEHiX0_CEVQeViSSkdNLyY.jpg"></figure>
+                                    <figure class="logo_bk"><img src="Uploads/article/DtMSpH6AJ4cx6xrgQHADG3EY9QtEHiX0_CEVQeViSSkdNLyY.jpg"></figure>
+                                
+                                                                
+                            </li>
+                                                                        </ul>
+                    <a class="btn view" href="certificate.php">VIEW ALL</a>
+                    <div class="hor"></div>
+                    </div>
+                </div>
+                <span class="certificate_bg_l"><img src="images/page_bg_hand_l.png"></span>
+                <span class="certificate_bg_r"><img src="images/page_bg_hand_r.png"></span>
+                <div class="cearfix"></div>
+            </div>
+            
+    </div>
+    <!-- Go top
+================================================== -->
+    <!-- GO top -->
+    <div class="scrollToTop"></div>
+    <!--==============================footer=================================-->
+    <footer>
+
+    <div class="container_12">
+        <div class="grid_6">
+            <ul class="menu">
+                <li><a href="./">HOME</a></li>
+                <li><a href="about.php">ABOUT</a></li>
+                <li><a href="products.php">PRODUCTS</a></li>
+                <li><a href="references.php">REFERENCES</a></li>
+                <li><a href="news.php">NEWS</a></li>
+                <li><a href="certificate.php">CERTIFICATE</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="grid_6">
+            <div class="company_info">
+    			                <span class="font-05">APOZA ENTERPRISE CO., LTD.</span>
+    			    			
+    			                <span>6F, 657, Chung-Cheng Road, Hsin-Chuang District, 24257 New Taipei City, Taiwan, R.O.C.</span>
+    			                
+    			    			<span>Phone：+886-2-2901-0620</span>
+    			    			
+    			                <span>E-mail：<a href="mailto:apoza@apoza.com.tw">apoza@apoza.com.tw</a></span>
+    			            </div>
+        </div>
+    </div>
+</footer>
+
+    <section id="booking" style="display: none;">
+        <div class="">
+            <img src="images/partner/02.jpg">
+        </div>
+    </section>
+</body>
+
+</html>

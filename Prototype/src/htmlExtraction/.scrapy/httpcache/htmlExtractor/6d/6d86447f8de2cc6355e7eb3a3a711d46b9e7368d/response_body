@@ -1,0 +1,89 @@
+# robots exclusion file 
+
+# disallow become.com/site_owners.html robot access to entire site
+User-agent: BecomeBot
+Disallow: /
+
+# disallow nameprotect.com robot access to entire site
+User-agent: NPBot
+Disallow: /
+
+# disallow AipBot robot access to entire site
+User-agent: AipBot
+Disallow: /
+
+# disallow iconsurf.com robot access to entire site
+User-agent: IconSurf
+Disallow: /
+
+# disallow picsearch.com robot access to entire site
+User-agent: psbot
+Disallow: /
+
+# disallow GNU Wget free software package for retrieving 
+# files using HTTP, HTTPS and FTP access to entire site
+User-agent: Wget
+Disallow: /
+
+# disallow FunWebProducts robot access to entire site
+User-agent: FunWebProducts
+Disallow: /
+
+# disallow semanticdiscovery robot access to entire site
+User-agent: semanticdiscovery
+Disallow: /
+
+# disallow lachesis robot access to entire site
+User-agent: lachesis
+Disallow: /
+
+# disallow TurnitinBot robot access to entire site
+User-agent: TurnitinBot
+Disallow: /
+
+# disallow OmniExplorer_Bot robot access to entire site
+User-agent: OmniExplorer_Bot
+Disallow: /
+
+# disallow LinkWalker robot access to entire site
+User-agent: linkwalker
+Disallow: /
+
+# disallow nimblecrawler robot access to entire site
+UserAgent: nimblecrawler
+Disallow: /
+
+UserAgent: SBIder
+Disallow: /
+
+UserAgent: twiceler
+Disallow: /
+
+UserAgent: YahooSeeker
+Disallow: /
+
+UserAgent: Findlinks
+Disallow: /
+
+UserAgent: Wget
+Disallow: /
+
+# all other robots use this
+User-agent: *
+Disallow: /stats/
+Disallow: /logs/
+Disallow: /cgi-bin/
+Disallow: /cgi-logs/
+Disallow: /act/
+Disallow: /ec_demo/
+Disallow: /nav/
+Disallow: /inc/
+Disallow: /licensedcare/
+Disallow: /support/errors
+Disallow: /support/errors/ec
+Disallow: /images/
+Disallow: /aspnet_client/
+Disallow: /ssl/
+Disallow: /ExpoCharger/
+Disallow: /expocadweb/
+Disallow: /database/

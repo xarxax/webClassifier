@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>MedCompliance | Medicare &amp; Medicaid</title>
+
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/favicon.ico?1548715558" type="image/x-icon"/>
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/apple-touch-icon-57x57-precomposed.png?1548715558">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/apple-touch-icon-72x72-precomposed.png?1548715558">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/apple-touch-icon-72x72-precomposed.png?1548715558">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/apple-touch-icon-144x144-precomposed.png?1548715558">
+
+    <!-- Third-Party CSS -->
+    <!--<link href="/assets/bower/aos/dist/aos.css?1548715558" rel="stylesheet">-->
+    <link href="/assets/bower/animate.css/animate.min.css?1548715558" rel="stylesheet">
+    <link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/css/bootstrap.min.css?1548715558" rel="stylesheet">
+    <link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/css/superfish.css?1548715558" rel="stylesheet">
+    <link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/fontello/css/fontello.css?1548715558" rel="stylesheet">
+
+    <!-- Color Scheme css -->
+    <link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/css/style.css?1548715558" rel="stylesheet">
+    <link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/css/color_scheme.css?1548715558" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="https://www.medcompliance.com/assets/bower/sweetalert2/dist/sweetalert2.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- JQUERY -->
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/jquery-2.2.4.min.js?1548715558"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://www.medcompliance.com/assets/bower/sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link href="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/rs-plugin/css/settings.css?1548715558" media="screen" rel="stylesheet">
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/rs-plugin/js/jquery.themepunch.plugins.min.js?1548715558"></script>
+    <script type="text/javascript" src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/rs-plugin/js/jquery.themepunch.revolution.min.js?1548715558"></script>
+
+    <!-- ShareThis -->
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a0ba6e08fde000011c13417&product=inline-share-buttons"></script>
+
+    <style>
+    .refresh-animate {
+        -animation:        spin .7s infinite linear;
+        -webkit-animation: spin2 .7s infinite linear;
+    }
+    @-webkit-keyframes spin2 {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes  spin {
+        from { transform: scale(1) rotate(0deg); }
+        to { transform: scale(1) rotate(360deg); }
+    }
+</style>
+</head>
+    <body>
+            <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-xs-10">
+                    <a href="/" id="logo"></a>
+                    <small class="hidden-xs" style="color: #fff; margin-left: 60px; margin-top: -5px; display: block;">In compliance with Medicare &amp; Medicaid regulations</small>
+                </div>
+                <div class="col-md-7 col-sm-6 col-xs-2">
+                    <ul id="top_nav" class="pull-right hidden-xs">
+                        <!--<li><a href="#">About</a></li>-->
+                        <li><a href="#" id="login_top" data-toggle="modal" data-target="#contact-modal">Contact Us</a></li>
+                                                <!--<mod>
+                            <div class="pull-right hidden-xs" style="margin-top: -10px; margin-left: 10px;">
+                                <a href="#" class="button_top" id="login_top" data-toggle="modal" data-target="#login-modal">Login</a>
+                            </div>
+                        </mod>-->
+                    </ul>
+                </div>
+            </div>
+    </header><!-- End header -->
+            <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="mobnav-btn"></div>
+                    <ul class="sf-menu">
+                        <li><a href="https://www.medcompliance.com">Home</a></li>
+                                                    <li><a href="https://www.medcompliance.com/services/education">Education</a></li>
+                                                    <li><a href="https://www.medcompliance.com/services/cdm-review">CDM Review</a></li>
+                                                    <li><a href="https://www.medcompliance.com/services/or-surgery-case-leveling">OR/Surgery Case Leveling</a></li>
+                                                    <li><a href="https://www.medcompliance.com/white-paper">White Paper</a></li>
+                                                    <li><a href="https://www.medcompliance.com/tools/lookup">CCI-MUE-IP Lookup Tool</a></li>
+                                            </ul>
+
+                    <!--<div class="col-md-3 pull-right hidden-sm hidden-xs">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"></span>
+                            </form>
+                        </div>
+                    </div><!-- End search -->
+
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+        <div class="modal fade" id="login-modal">
+    <div class="modal-dialog" role="document" style="width: 400px;">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-body" style="width: 400px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="login">
+                            <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/logo-dark.png?1548715558" alt="" style="margin: 0 auto; display: block; width: 100%; height: 40px;">
+                            <hr>
+                            <form id="login-form" action="https://www.medcompliance.com/admin/login">
+                                <input type="hidden" name="_token" value="PtWetKfm0WLGP0pAuaft86pkdzrAvOlaMlPyaVf2">
+                                <div class="form-group">
+                                    <input type="text" name="email" class=" form-control " placeholder="Email Address">
+                                    <span class="input-icon"><i class=" icon-user"></i></span>
+                                </div>
+                                <div class="form-group" style="margin-bottom:5px;">
+                                    <input type="password" class=" form-control" placeholder="Password" style="margin-bottom:5px;">
+                                    <span class="input-icon"><i class="icon-lock"></i></span>
+                                </div>
+                                <p class="small">
+                                    <a href="#">Forgot Password?</a>
+                                </p>
+                                <a href="#" class="button_fullwidth" onclick="$('#login-form').submit();">Log in</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal fade" id="contact-modal">
+    <div class="modal-dialog" role="document" style="width: 700px;">
+        <div class="modal-content" style="width: 700px;">
+            <div class="modal-body" style="width: 700px;">
+                <div class="row">
+                    <div id="subscribe_home" style="background: #fff; margin: 0px; padding: 0px;">
+                        <div style="display: none">
+                            <div id="message-contact-home"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="login">
+                                <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/logo-dark.png?1548715558" alt="" style="margin: 0 auto; display: block; width: 300px; height: 40px;">
+                                <hr>
+                                <h2 style="margin-bottom: 20px;">Contact Us</h2>
+                                <form method="post" action="https://www.medcompliance.com/contact-form" id="contactform_home">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control style_2" id="firstname" name="firstname" placeholder="Name">
+                                                <span class="input-icon"><i class="icon-user"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control style_2" id="lastname" name="lastname" placeholder="Last Name">
+                                                <span class="input-icon"><i class="icon-user"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="email" id="email" name="email" class="form-control style_2" placeholder="Email">
+                                                <span class="input-icon"><i class="icon-email"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" id="phone" name="phone" class="form-control style_2" placeholder="Phone number">
+                                                <span class="input-icon"><i class="icon-phone"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea style="height: 100px;" type="text" id="message" name="message" class="form-control style_2" placeholder="Optional message to Medcompliance"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12" style="margin: 0px;">
+                                        <div class="form-group pull-right" style="margin: 0px;">
+                                            <button class="button_subscribe" id="submit-contact-home">Send</button>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </nav>
+        
+    <section class="tp-banner-container">
+    <div class="tp-banner">
+        <ul class="sliderwrapper">
+            <li data-transition="zoomout" data-slotamount="4" data-masterspeed="1000">
+                <img src="https://www.medcompliance.com/images/nurse-1700x600.jpg" alt="slidebg2" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                <div class="tp-caption medium_light_white skewfromrightshort customout"
+                     data-x="740"
+                     data-y="136"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="500"
+                     data-start="800"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 4; text-shadow: 1px 1px 3px #000;font-weight: bold;">CDM - Charge Description Master
+                </div>
+                <div class="tp-caption medium_thin_white skewfromleftshort customout"
+                     data-x="920"
+                     data-y="202"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="1400"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 7; text-shadow: 1px 1px 3px #000;">&bull; Cleanup
+                </div>
+                <div class="tp-caption medium_thin_white skewfromleftshort customout"
+                     data-x="920"
+                     data-y="240"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="1800"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 7; text-shadow: 1px 1px 3px #000;">&bull; Conversion
+                </div>
+                <div class="tp-caption medium_thin_white skewfromleftshort customout"
+                     data-x="920"
+                     data-y="278"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2200"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 7; text-shadow: 1px 1px 3px #000;">&bull; Optimization
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="920"
+                     data-y="330"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2400"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000; font-size: 28px;">Learn about Charge Description Master cleanup
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="920"
+                     data-y="358"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2600"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000;font-size: 28px;">& how to prevent revenue loss, permanently.
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="1220"
+                     data-y="403"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2600"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000;font-size: 28px;">
+                    <a href="https://www.medcompliance.com/services/cdm-review" class="button_top" style="color: #fff;">Read more about CDM Reviews</a>
+                </div>
+            </li>
+
+            <li data-transition="zoomout" data-slotamount="4" data-masterspeed="1000">
+                <img src="https://www.medcompliance.com/images/nursing-partnership-1700x600.jpg" alt="slidebg2" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                <div class="tp-caption medium_light_white skewfromrightshort customout"
+                     data-x="1080"
+                     data-y="96"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="500"
+                     data-start="800"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 4; text-shadow: 1px 1px 3px #000; font-weight: bold;">CDM
+                </div>
+                <div class="tp-caption large_bold_white skewfromleftshort customout"
+                     data-x="1080"
+                     data-y="152"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="1100"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 7; text-shadow: 1px 1px 3px #000;">Education
+                </div>
+                <div class="tp-caption small_thin_white  customin customout"
+                     data-x="1080"
+                     data-y="240"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="500"
+                     data-start="1300"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; font-size: 25px; text-shadow: 1px 1px 3px #000;">
+
+                    Our curriculum focuses on all of the <br>
+                    major areas which are expected by each <br>
+                    department to stay current with today's <br>
+                    rules & regulations.
+
+                </div>
+
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="1080"
+                     data-y="390"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2400"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000; font-size: 28px;">Learn about CDM Education & how your
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="1080"
+                     data-y="418"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2600"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000;font-size: 28px;">hospital can benefit from our programs.
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="1220"
+                     data-y="473"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="2600"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000;font-size: 28px;">
+                    <a href="https://www.medcompliance.com/services/education" class="button_top" style="color: #fff;">Read more about CDM Education</a>
+                </div>
+            </li>
+
+            <li data-transition="zoomout" data-slotamount="4" data-masterspeed="1000" style="background: url(https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/timer.png?1548715558);">
+
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="150"
+                         data-y="25"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="654"
+                         data-start="179"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/st-jude.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="380"
+                         data-y="25"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="590"
+                         data-start="440"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/bristow.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="610"
+                         data-y="25"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="909"
+                         data-start="459"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/gbscorp.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="840"
+                         data-y="25"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="675"
+                         data-start="411"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/hackensack-meridian.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="150"
+                         data-y="145"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="313"
+                         data-start="538"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/rsmus.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="380"
+                         data-y="145"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="772"
+                         data-start="399"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/st-peters.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="610"
+                         data-y="145"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="655"
+                         data-start="129"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/montrose.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="840"
+                         data-y="145"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="422"
+                         data-start="290"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/valley-view-and-western.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="120"
+                         data-y="265"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="480"
+                         data-start="246"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/mangold.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="380"
+                         data-y="265"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="426"
+                         data-start="410"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/ithcare.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="610"
+                         data-y="265"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="609"
+                         data-start="130"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/dhs-la-county.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="840"
+                         data-y="265"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="542"
+                         data-start="261"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/central-florida-health.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="150"
+                         data-y="385"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="374"
+                         data-start="304"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/medoak.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="380"
+                         data-y="385"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="481"
+                         data-start="254"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/inova.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="610"
+                         data-y="385"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="418"
+                         data-start="457"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/crystal.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                                                        <div class="tp-caption medium_light_white skewfromrightshort customout"
+                         data-x="840"
+                         data-y="385"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="504"
+                         data-start="320"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4; font-weight: bold;">
+                        <img src="https://www.medcompliance.com/images/clients/wheaton.png" style="height: auto; max-height: 80px; max-width: 200px;">
+                    </div>
+                
+                <div class="tp-caption medium_light_white skewfromrightshort customout"
+                     data-x="1080"
+                     data-y="96"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="500"
+                     data-start="800"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 4; color: #000;">Our
+                </div>
+                <div class="tp-caption large_bold_white skewfromleftshort customout"
+                     data-x="1080"
+                     data-y="152"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="1100"
+                     data-easing="Back.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 7; color: #000;">Clients
+                </div>
+                <div class="tp-caption small_thin_white  customin customout"
+                     data-x="1080"
+                     data-y="240"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="500"
+                     data-start="1300"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; font-size: 17px; color: #000;">
+                    <ul class="list_ok">
+                        <li>Quickly resolve CDM compliance and reimbursement issues.</li>
+                        <li>Reduce denials and risks for fraud.</li>
+                        <li>Shorten revenue cycles and help cut operating costs.</li>
+                    </ul>
+
+                </div>
+                <div class="tp-caption medium_thin_white  customin customout"
+                     data-x="1080"
+                     data-y="340"
+                     data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                     data-speed="300"
+                     data-start="1000"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="500"
+                     data-endeasing="Power4.easeIn"
+                     data-captionhidden="on"
+                     style="z-index: 8; text-shadow: 1px 1px 3px #000;font-size: 28px;">
+                    <a href="https://www.medcompliance.com/white-paper" class="button_top" style="color: #fff;">Read more</a>
+                </div>
+            </li>
+
+        </ul>
+        <div class="tp-bannertimer"></div>
+    </div>
+</section><!-- End slider -->
+
+    <section id="main-features" data-aos="flip-left" data-aos-easing="ease-out-back">
+    <div class="divider_top_black"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-10 col-md-offset-1 text-center">
+                <h2>Why Us</h2>
+                <p class="lead">
+                    MedCompliance is a firm believer in information integrity. <br>
+                    <strong>"On Going Education and Daily Reconciliation"</strong> is the key to a hospital's financial success.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="feature">
+                    <i class="icon-trophy"></i>
+                    <h3>100% Success Rate</h3>
+                    <p>
+                        The past 23 clients gross revenue increased on an average by $8,000,000 with an average client ROI of 150 to 1.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature">
+                    <i class=" icon-plane"></i>
+                    <h3>Versatility</h3>
+                    <p>
+                        Ability to perform <strong style="color: white;">onsite</strong> or <strong style="color: white;">offsite</strong> reviews with monthly maintenance programs to insure your systems integrity.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature">
+                    <i class="icon-mic"></i>
+                    <h3>Experience</h3>
+                    <p>
+                        Experienced with all types of medical facilities such as: profit, not for profit, acute, children's, long term care, rehabilitation, critical access, faith based, rural, skilled nursing, independent, chain, governmental and Indian Health. We work hand in hand with hospitals, attorneys, CPA firms, physicians, individuals, consultants, product developers, collection agencies and third party intermediaries/insurance companies.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature">
+                    <i class="icon-terminal"></i>
+                    <h3>Superior Technology</h3>
+                    <p>
+                        We use the latest hospital system conversions, such as: Epic, Siemens, McKesson (Star 2000 & Horizon), Cerner, Meditech and GE Healthcare (Interventional Radiology & Cath Lab).
+                    </p>
+                </div>
+            </div>
+        </div><!-- End row -->
+        <div class="row" style="margin-top: 30px;">
+            <div class=" col-md-10 col-md-offset-1 text-center">
+                <p class="lead">
+                    All our services are at a reasonable rate and we guarantee our results in writing or you receive a full refund.
+                    <br><br>
+
+                    <strong style="font-size: 24px;">We always find lost revenue.</strong>
+                </p>
+            </div>
+        </div>
+    </div><!-- End container -->
+</section><!-- End main-features -->
+
+    <section id="main-features_white" style="box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.66);">
+    <div class="divider_top_black" style="transform: rotate(180deg);"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" data-aos="zoom-out-down">
+
+                <h2>Our Process</h2>
+
+                <p class="lead"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div style="text-align:center;">
+                    <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/number_1_small.png?1548715558" width="85" alt="" data-aos="zoom-out-down" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="250">
+                </div>
+                <p data-aos="flip-left" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="250">
+                    We begin by performing a full review of your hospital's Order Entry, Subsystems and CDM.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div style="text-align:center;">
+                    <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/number_2_small.png?1548715558" width="85" alt="" data-aos="zoom-out-down" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="500">
+                </div>
+                <p data-aos="flip-left" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="500">
+                    The next step is to review every CDM line with the correct departments for accuracy, compliance and revenue opportunities.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div style="text-align:center;">
+                    <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/number_3_small.png?1548715558" width="85" alt="" data-aos="zoom-out-down" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="750">
+                </div>
+                <p data-aos="flip-left" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="750">
+                    Create a solid plan of continued education for your hospital's personnel.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <div style="text-align:center;">
+                    <img src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/img/number_4_small.png?1548715558" width="85" alt="" data-aos="zoom-out-down" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="1000">
+                </div>
+                <p data-aos="flip-left" data-aos-easing="ease-in-back" data-aos-duration="500" data-aos-delay="1000">
+                    A copy of the results are delivered to the department director for further review.
+                </p>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+</section><!-- End main-features -->
+
+        
+    <footer>
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Subscribe to our Newsletter for the latest news.</h3>
+                    <div id="message-newsletter">
+                    </div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
+                        <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
+                        <button id="submit-newsletter" class=" button_outline"> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+-->
+        <div class="container" id="nav-footer">
+            <div class="row text-left">
+                <div class="col-md-3 col-sm-3">
+                    <!--<h4>Guidelines</h4>
+                    <ul>
+                        <li><a href="#">Guidelines 1</a></li>
+                        <li><a href="#">Guidelines 2</a></li>
+                        <li><a href="#">Guidelines 3</a></li>
+                        <li><a href="#">Guidelines 4</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <!--<h4>Education</h4>
+                    <ul>
+                        <li><a href="#">Education 1</a></li>
+                        <li><a href="#">Education 2</a></li>
+                        <li><a href="#">Education 3</a></li>
+                        <li><a href="#">Education 4</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <!--<h4>Getting Started</h4>
+                    <ul>
+                        <li><a href="#">Started 1</a></li>
+                        <li><a href="#">Started 2</a></li>
+                        <li><a href="#">Started 3</a></li>
+                        <li><a href="#">Started 4</a></li>
+                    </ul>-->
+                </div><!-- End col-md-4 -->
+                <div class="col-md-3 col-sm-3">
+                    <!--<ul id="follow_us">
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class=" icon-google"></i></a></li>
+                    </ul>-->
+                    <ul>
+                        <li><span class="phone" style="font-family: Arial;">(305) 604-7931</span><br>
+                            <small>Jessy Huebner MAT CHFP CEO</small>
+                        </li>
+                        <li>Questions? <a href="mailto:jessy@medcompliance.com">jessy@medcompliance.com</a></li>
+                    </ul>
+                </div><!-- End col-md-4 -->
+            </div><!-- End row -->
+        </div>
+        <div id="copy_right">MedCompliance Services, Inc. © 2019</div>
+    </footer>
+
+    <div id="toTop">Back to top</div>
+
+    <!-- OTHER JS -->
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/superfish.js?1548715558"></script>
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/bootstrap.min.js?1548715558"></script>
+    <!--<script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/retina.min.js?1548715558"></script>-->
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/assets/validate.js?1548715558"></script>
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/jquery.placeholder.js?1548715558"></script>
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/functions.js?1548715558"></script>
+    <script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/classie.js?1548715558"></script>
+    <!--<script src="https://www.medcompliance.com/assets/theme/learn/html/color_scheme_2/fullwidth/js/uisearch.js?1548715558"></script>-->
+
+    <script>
+        /*new UISearch(document.getElementById('sb-search'));*/
+    </script>
+
+    <!-- Animated On Scroll (AOS) DISABLED (Needs mobile debugging) -->
+    <!--<script src="/assets/bower/aos/dist/aos.js?1548715558"></script>-->
+    <script>
+        /*$(function ()
+        {
+            AOS.init({
+                once: true
+            });
+        });*/
+    </script>
+
+    <script type="text/javascript">
+
+    var revapi;
+
+    jQuery(document).ready(function() {
+
+           revapi = jQuery('.tp-banner').revolution(
+            {
+                delay:9000,
+                startwidth:1700,
+                startheight:600,
+                hideThumbs:true,
+                navigationType:"none",
+                fullWidth:"on",
+                forceFullWidth:"on"
+            });
+
+    });	//ready
+
+    </script>
+
+    </body>
+</html>

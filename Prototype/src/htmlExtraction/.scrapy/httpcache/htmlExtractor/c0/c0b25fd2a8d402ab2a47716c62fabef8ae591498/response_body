@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- metatags -->
+<!-- InstanceBeginEditable name="meta" -->
+<title>Circle Grid Analysis</title>
+<meta name="Keywords" content="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain,deformation;tool and die,stress limit diagram,strain of sheet metal,rolling direction of sheet metal,strain analysis report,forming limit curve,thinning report,analysis of deformation,stamping plants,hydroforming,sheet metal fracture,fmti systems,">
+<meta name="abstract" content="FMTI Systems inc. manufactures hardware and develops software to automate sheet metal surface strain measurements. These low cost tools are exceptionally suitable for quality control in the stamping plants, developing forming limit curve data for new materials and research laboratories.">
+<!-- InstanceEndEditable -->
+<!-- /metatags -->
+
+
+<!-- language -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!-- /language -->
+
+
+<!-- styles -->
+<link title="default" href="Site/styles/misc/styles.css" 	rel="stylesheet" type="text/css" />
+<link title="default" href="Site/styles/fonts.css" 	rel="stylesheet" type="text/css" />
+<link title="default" href="Library/logo/css/logo.css" 		rel="stylesheet" type="text/css" />
+<!-- /styles -->
+
+
+<!-- editable styles -->
+<!-- InstanceBeginEditable name="styles" -->
+<link title="default" href="Site/styles/primary.css" rel="stylesheet" type="text/css" />
+<link title="default" href="Site/styles/columns/2_column.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- /editable styles -->
+
+
+<!-- responsive styles -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link title="default" href="Site/styles/misc/responsive.css" rel="stylesheet" type="text/css" id="mobileSheet" /> 
+<!-- /responsive styles -->
+
+<!-- hidden -->
+
+<!-- InstanceBeginEditable name="hide_components" -->
+<style>
+
+
+
+#leftinfo 		{visibility:visible;}
+#centerinfo 	{visibility:visible;}
+#rightinfo 		{visibility:visible;}
+</style>
+<!-- InstanceEndEditable -->
+
+<!-- /hidden -->
+
+
+<!-- variables -->
+<!-- InstanceBeginEditable name="rootLocation" -->
+<script type='text/javascript'>
+// if this page is in:
+//   the root folder, then set this variable to ./
+//   a sub folder one level deep, then set this variable to ../
+//   a sub folder two levels deep, then set this variable to ../../
+var rootLocation = "./";
+</script>
+<!-- InstanceEndEditable -->
+<!-- /variables -->
+
+
+<!-- scripts -->
+<script type='text/javascript' src="Site/javascript/jquery-1.5.1.min.js"></script> 
+<script type='text/javascript' src="Site/javascript/jquery.cookie.js"></script> 
+<script type='text/javascript' src="Site/javascript/pxgradient-1.0.1.jquery.js"></script>
+<script type='text/javascript' src="Site/javascript/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="Site/javascript/special_functions.js"></script>
+<script type="text/javascript" src="Site/javascript/hoverIntent.js"></script>
+<script type="text/javascript" src="Site/javascript/superfish.js"></script>
+<!-- InstanceBeginEditable name="misc scripting" -->
+<!-- InstanceEndEditable -->
+<!-- /scripts -->
+
+
+<!-- ie -->
+<!-- InstanceBeginEditable name="ie6-9 scripting" -->
+
+<!-- IE Styles and Scripts-->
+<!--[if lt IE 9]>
+<link 	title="default" 		rel="stylesheet" 			type="text/css"	href="Site/styles/ie/ie.css" />
+<link 	title="mobile" 			rel="alternate stylesheet" 	type="text/css" href="Site/styles/ie/mobile.css" />
+<link 	title="narrow" 			rel="alternate stylesheet" 	type="text/css" href="Site/styles/ie/narrow.css" />
+<link 	title="standard"		rel="alternate stylesheet" 	type="text/css" href="Site/styles/ie/standard.css" />
+<script type='text/javascript' 	src="Site/javascript/html5.js"></script>
+<script type='text/javascript' 	src="Site/javascript/dynamiclayout.js" ></script>
+<![endif]-->
+
+<!-- IE6 transparent PNG -->
+<!--[if lte IE 6]>
+<script type='text/javascript' 	src="Site/javascript/supersleight-min.js"></script>
+<![endif]-->
+
+<!-- InstanceEndEditable -->
+
+
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="advertising_top" -->
+<!-- InstanceEndEditable -->
+
+
+<!-- bdy wrapper -->
+<div id="bdy_wrapper">
+
+
+<!-- main -->
+<div id="main">
+
+
+<!-- header -->
+<header id="headerTop">
+	<div id="headerInner">
+
+				<hgroup>
+					<!-- seo1 -->
+					<h1 id="seo_1">
+						<!-- InstanceBeginEditable name="seo_1" -->Home<!-- InstanceEndEditable -->
+					</h1>
+					<!-- /seo1 -->
+						
+					<!-- seo2 -->
+					<h2 id="seo_2">
+						<!-- InstanceBeginEditable name="seo_2" -->of the world unique point and shoot strain measurement system.<!-- InstanceEndEditable -->
+					</h2>
+					<!-- /seo2 -->
+				</hgroup>
+				
+				
+				<!-- optional_content -->
+				<div id="optional_content">
+				<!-- InstanceBeginEditable name="optional_content" -->
+				<hgroup>
+					<h3>Header Content Region</h3>
+					<h4>Insert text, image or banner ads here, or just delete this text and leave this area blank!</h4>
+				</hgroup>
+				<!-- InstanceEndEditable -->
+				</div >
+				<!-- /optional content -->
+
+	
+	<!-- InstanceBeginEditable name="header_wrapper" -->
+
+				<!-- nivo_slider -->
+				<div id="nivo_slider"><!-- #BeginLibraryItem "/Library/component-nivo-slider/nivo-slider.lbi" -->
+
+<div id="slider-wrapper">
+         
+<div id="slider" class="nivoSlider">
+<!-- image 1: --> <a href="products.htm"><img src="Site/imagesfmti/ga200meas-900.jpg" 		alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain" 	title="#image1" /></a>
+<!-- image 2: --> <a href="software.htm#cga"><img src="Site/imagesfmti/cga-900.jpg" alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain,deformation;tool and die,stress limit diagram," 	title="#image2" /></a>
+<!-- image 3: --> <a href="software.htm#sga"><img src="Site/imagesfmti/sga-900.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,square grid analysis,rolling direction,strain of sheet metal" 	title="#image3" /></a>
+<!-- image 4: --> <a href="software.htm#report"><img src="Site/imagesfmti/report-900.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image4" /></a>
+<!-- image 5: --> <a href="software.htm#thinning"><img src="Site/imagesfmti/thinning-900.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report,Thinning Report" 	title="#image5" /><a href="../../software.htm#incremental"><img src="Site/imagesfmti/TTT-900.jpg" 		alt="Incremental Grid Analysis,forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image6" /></a></a>
+<!-- image 6: --><!-- image 7: --> <a href="software.htm#stitching"><img src="Site/imagesfmti/stitching-900.jpg" 		alt="surface strain,stress limit diagram,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image7" /></a>
+<!-- image 8: --> <a href="software.htm#browser"><img src="Site/imagesfmti/browser-900.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image8" /></a>
+<!-- image 9: --> <a href="software.htm#polkadot"><img src="Site/imagesfmti/polkadotgrid-900.jpg" 		alt="Polka Dot Grid,forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image9" /></a>
+</div> 
+
+<div id="slidercover"></div>
+<div id="image1" class="nivo-html-caption"><h3>Grid Analyzers</h3><p>Automatic surface strain measurement</p><div class="slider_readmore"><a href="products.htm">View Page</a></div> </div>
+<div id="image2" class="nivo-html-caption">  <h3>Circle Grid Analysis</h3><p>Automatic hollow circle grid measurement with manual override</p><div class="slider_readmore"><a href="software.htm#cga">View Page</a></div></div><div id="image3" class="nivo-html-caption"><h3>Square Grid Analysis</h3><p>Automatic hollow sqaure grid measurement with manual override</p><div class="slider_readmore"><a href="software.htm#sga">View Page</a></div> </div>
+<div id="image4" class="nivo-html-caption"><h3>Customary Report</h3><p>Customary report including all measured strains, date and time stamp, FLD, material data and more...</p><div class="slider_readmore"><a href="software.htm#report">View Page</a></div></div>
+<div id="image5" class="nivo-html-caption"><h3>Thinning Report</h3><p>FLC  expressed in the major-minor strains or thickness -minor strains coordinates</p><div class="slider_readmore"><a href="software.htm#thinning">View Page</a></div></div>
+<div id="image6" class="nivo-html-caption"><h3>Incemental Grid Analysist</h3><p>Customary report including all measured strain date, time stamp, FLD and material data</p><div class="slider_readmore"><a href="software.htm#incremental">View Page</a></div></div>
+<div id="image7" class="nivo-html-caption"><h3>Fracture Stiching</h3><p>Stitching function allows measurement of the fracture strains</p><div class="slider_readmore"><a href="software.htm#stitching">View Page</a></div></div>
+<div id="image8" class="nivo-html-caption"><h3>Deformation Browser</h3><p>Our unique Deformation Browser software tool designed for die tryout applications</p><div class="slider_readmore"><a href="software.htm#browser">View Page</a></div></div>
+<div id="image9" class="nivo-html-caption"><h3>Polka Dot Grid</h3><p>The Polka Dot grid option provide a quick and accurate single grid element measurement of grids used by some 3D systems.</p><div class="slider_readmore"><a href="software.htm#polkadot">View Page</a></div>
+       			
+            </div>
+			<!-- image 8: title and captions -->                                              
+       
+</div>
+
+    <script type="text/javascript" src="Site/javascript/jquery.nivo.slider.js"></script>
+
+
+<script type="text/javascript">
+jQuery(window).load(function() {
+  // init the nivo slider on the #slider div
+  jQuery('#slider').nivoSlider();
+  
+  // override the hover effects for the bullets
+  jQuery('.nivo-control').hover(
+    function() {jQuery(this).customAnimate({ opacity: 1.00 }, 300, 'linear')},
+    function() {jQuery(this).customAnimate({ opacity: 0.50 }, 100, 'linear')});
+
+});
+</script>
+	
+
+<!-- #EndLibraryItem --></div>
+				<!-- /nivo_slider -->
+
+				<!-- nivo_slider_small -->
+				<div id="nivo_slider_small"><!-- #BeginLibraryItem "/Library/component-nivo-slider-small/nivo-slider-small.lbi" -->
+
+<div id="slider-wrapper2">
+        
+<div id="slider2" class="nivoSlider2">
+            
+<!-- image 1: --> <a href="products.htm"><img src="Site/imagesfmti/ga200meas-380.jpg" 		alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain" 	title="#image1" /></a>
+<!-- image 2: --> <a href="software.htm#cga"><img src="Site/imagesfmti/cga-380.jpg" 		alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain,deformation;tool and die,stress limit diagram," 	title="#image2" /></a>
+<!-- image 3: --> <a href="software.htm#sga"><img src="Site/imagesfmti/sga-380.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,square grid analysis,rolling direction,strain of sheet metal" 	title="#image3" /></a>
+<!-- image 4: --> <a href="software.htm#incremental"><img src="Site/imagesfmti/ttt-380.jpg" 		alt="Incremental Grid Analysis,forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image4" /></a>
+<!-- image 5: --> <a href="software.htm#stitching"><img src="Site/imagesfmti/stitching-380.jpg" 		alt="surface strain,stress limit diagram,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image5" /></a>
+<!-- image 6: --> <a href="software.htm#thinning"><img src="Site/imagesfmti/thinning-380.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report,Thinning Report" 	title="#image6" /></a>
+<!-- image 7: --> <a href="software.htm#report"><img src="Site/imagesfmti/report-380.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image7" /></a>
+<!-- image 8: --> <a href="software.htm#browser"><img src="Site/imagesfmti/browser-380.jpg" 		alt="forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image8" /></a>
+<!-- image 9: --> <a href="software.htm#polkadot"><img src="Site/imagesfmti/polkadotgrid-380.jpg" 		alt="Polka Dot Grid,forming limit diagram, FLC,forming severity,surface strain,stress limit diagram,rolling direction,strain of sheet metal,analysis of deformation,strain analysis report" 	title="#image9" /></a>
+</div>
+
+<div id="slidercover2"></div>
+          
+        </div>
+    <script type="text/javascript" src="Site/javascript/jquery.nivo.slider.small.js"></script>
+
+
+<script type="text/javascript">
+jQuery(window).load(function() {
+  // init the nivo slider on the #slider div
+  jQuery('#slider2').nivoSlider();
+  
+  // override the hover effects for the bullets
+  jQuery('.nivo-control').hover(
+    function() {jQuery(this).customAnimate({ opacity: 1.00 }, 300, 'linear')},
+    function() {jQuery(this).customAnimate({ opacity: 0.50 }, 100, 'linear')});
+
+});
+</script>
+	
+<!-- #EndLibraryItem --></div>
+				<!-- /nivo_slider_small -->
+
+				<!-- themed_object -->
+				<div id="themed_object"><!-- #BeginLibraryItem "/Library/themed-object/themed-object.lbi" -->
+
+<img src="Site/themed_images/themed_object.png" alt="themed object">
+
+
+
+<!-- #EndLibraryItem --></div>
+				<!-- /themed_object -->
+
+				<!-- text_logo -->
+				<div id="text_logo"><!-- #BeginLibraryItem "/Library/logo/wrappers/logo-wrapper.lbi" -->
+
+<script type="text/javascript" src="Library/logo/js/logo.js"></script>
+	
+      <div class="websitename"><!-- #BeginLibraryItem "/Library/logo/logo.lbi" -->
+
+
+<a href="index.htm">FMTI SYSTEMS Inc.</a>
+
+
+
+
+<!-- #EndLibraryItem --></div>
+
+
+
+
+
+
+<!-- #EndLibraryItem --></div>
+				<!-- /text_logo -->
+
+				<!-- graphic_logo -->
+				<div id="graphic_logo"><!-- #BeginLibraryItem "/Library/logo/graphic-logo.lbi" -->
+
+<!-- add logo graphic here -->
+
+<!-- add logo graphic here -->
+
+<p>&nbsp;</p>
+
+<!-- #EndLibraryItem --></div>
+				<!-- /graphic_logo -->
+
+				<!-- logo_tagline -->
+				<div id="logo_tagline"><!-- #BeginLibraryItem "/Library/logo/logo-tagline.lbi" -->
+		
+&quot;Forming Measurement Tool Inovations&quot;<!-- #EndLibraryItem --></div>
+				<!-- /logo_tagline -->
+
+			    <!-- G10-Component-Swap:mega-menu -->
+				<!-- menu_top --><!-- #BeginLibraryItem "/Library/menu-top/wrappers/menu-top-wrapper.lbi" -->
+<nav id="menu_top">
+<div id="menu">
+<div class="menu_bg">
+<div class="sf-menu-wrapper-top">
+<!-- DO NOT EDIT ABOVE THIS LINE -->
+<!-- DO NOT EDIT ABOVE THIS LINE -->
+<!-- DO NOT EDIT ABOVE THIS LINE --><!-- #BeginLibraryItem "/Library/menu-top/menu-top.lbi" -->
+
+
+<ul id="MenuBarTop">
+    <li><a href="index.htm">Home</a></li>
+	<li><a href="about.htm">About</a></li>  
+	<li><a href="products.htm">Products</a>
+	  <ul>
+  		<li><a href="products.htm#analyzers">Grid Analyzers</a></li>
+  		<li><a href="products.htm#parts">Parts</a>	</li>
+	  </ul>
+    <li><a href="Software.htm">Software</a> 
+    <ul>
+		<li><a href="Software.htm#cga">Circle Grid Analysis (CGA)</a></li>
+		<li><a href="Software.htm#sga">Square Grid Analysis (SGA)</a></li>
+		<li><a href="Software.htm#incremental">Incremental Grid Analysis (TTT)</a></li>
+        <li><a href="Software.htm#stiching">Stitching</a></li>
+		<li><a href="Software.htm#thinning">Thinning Report</a></li>
+		<li><a href="Software.htm#report">Strain Report</a></li>
+        <li><a href="Software.htm#browser">Deformation Browser</a></li>
+		<li><a href="Software.htm#polkadot">Polka Dot Grid Analysis (PDA)</a></li>
+    </ul>
+
+	<li><a href="videos.htm">Videos</a>
+    <ul>
+		<li><a href="videos.htm#trailer">Trailer</a></li>
+		<li><a href="videos.htm#hardware">Hardware</a></li>
+        <li><a href="videos.htm#gettingstarted">Getting Started</a></li>
+        <li><a href="videos.htm#measuring">Measuring Strain</a></li>
+        <li><a href="videos.htm#reports">Reports</a></li>
+        <li><a href="videos.htm#grids">Grids</a></li>
+        <li><a href="videos.htm#lens">Lens Adjustments</a></li>
+
+	</ul>    
+	
+
+	<li><a href="more.htm">More...</a><ul>
+		<li><a href="more.htm#customers">Customers</a></li>
+		<li><a href="more.htm#publications">Publications</a></li>
+        <li><a href="more.htm#technotes">Technical Notes</a></li>
+
+	</ul>
+	</li>		<!-- numo horizontal links -->
+</ul>
+
+<script type="text/javascript">
+//var MenuBarTop = new Spry.Widget.MenuBar("MenuBarTop");
+
+</script>
+
+<!-- #EndLibraryItem --><!-- DO NOT EDIT BELOW THIS LINE -->
+<!-- DO NOT EDIT BELOW THIS LINE -->
+<!-- DO NOT EDIT BELOW THIS LINE -->
+</div>
+<script type="text/javascript">
+		   jQuery("div.sf-menu-wrapper-top > ul").addClass("sf-menu");
+</script>
+
+</div><div class="menu_bg_right"></div>
+</div>
+</nav>
+<!-- #EndLibraryItem --><!-- /menu_top -->
+			    <!-- /G10-Component-Swap:mega-menu -->
+
+				<!-- news_ticker -->
+				<div id="news_ticker"><!-- #BeginLibraryItem "/Library/news-ticker/wrappers/news-ticker-wrapper.lbi" -->
+
+<script type="text/javascript" src="Site/javascript/webwidget_slideshow_common.js"></script>
+<script type="text/javascript">
+            jQuery(function() {
+                jQuery("#webwidget_slideshow_common1").webwidget_slideshow_common({
+                    slideshow_transition_effect: 'slide_down',//slide_left slide_down fade_in
+                    slideshow_time_interval: '15000',
+                    slideshow_window_width: '500',
+                    slideshow_window_height: '23',
+                    slideshow_border_style: 'none',//dashed dotted double groove hidden inset none outset ridge solid
+                    slideshow_border_size: '0',
+                    slideshow_border_color: '#AEDFE6',
+                    slideshow_border_radius: '5',
+                    slideshow_padding_size: '3',
+                    slideshow_background_color: 'transparent'
+                });
+            });
+        </script>
+        
+        
+        
+        
+<div id="webwidget_slideshow_common1" class="webwidget_slideshow_common"><!-- #BeginLibraryItem "/Library/news-ticker/news-ticker.lbi" -->
+
+<!-- #EndLibraryItem --><div style="clear: both"></div>
+</div>
+
+<!-- #EndLibraryItem --></div>
+				<!-- /news_ticker -->
+
+				<!-- google-search -->
+				
+				<!-- /google-search-->
+
+				<!-- bookmark -->
+				<div id="bookmark">
+				<!-- #BeginLibraryItem "/Library/social-networking/bookmark.lbi" -->
+<!-- #EndLibraryItem --></div>
+				<!-- /bookmark -->
+
+				<!-- twitter_facebook -->
+				<div id="twitter_facebook"><!-- #BeginLibraryItem "/Library/social-networking/twitter-facebook-linkedIN.lbi" -->
+<!-- #EndLibraryItem --></div>
+				<!-- /twitter_facebook -->
+
+				<!-- get_in_touch -->
+				<div id="get_in_touch"><!-- #BeginLibraryItem "/Library/extras/get-in-touch.lbi" -->
+
+<a href="contact.htm"><img src="Site/graphics/get_in_touch.png" class="getintouch" alt="get in touch" style="border-style: solid; border-width: 0px" /></a>
+
+<!-- #EndLibraryItem --></div>
+				<!-- /get_in_touch -->
+
+				<!-- zoom_menu_component -->
+				<div id="zoom_menu_component"><!-- #BeginLibraryItem "/Library/menu-zoom/zoom-menu.lbi" -->
+  
+  <script type='text/javascript' src='Site/javascript/jquery.jqDock.min.js'></script>
+  <script type='text/javascript'>
+  <!--
+  jQuery(function($){
+/*********************
+** JQDOCK SETUPS... **
+*********************/
+    //apply jqDock to each of the demo menus, setting varying options for each one...
+    $('div.demo').each(function(i){ //opts updated so as not to use null as 'don't override default' - jQuery v1.2.5 changed extend() to not ignore nulls!
+        var opts = { align:        [ 'bottom', 'right', 'top' , 'middle', 'left', 'center' ][i] || 'bottom' //default
+                   , size:         [  48     ,  48    ,  48   ,  48     ,  36   ,  60      ][i] || 36       //default
+                   , distance:     [  60     ,  60    ,  60   ,  60     ,  48   ,  80      ][i] || 54       //default
+                   , coefficient : [  1.5    ,  1.5   ,  1.5  ,  1      ,  1.5  ,  1.5     ][i] || 1.5      //default
+                   , labels:       [  true   ,  'mc'  ,  true ,  'br'   ,  true ,  false   ][i] || false    //default
+                   , duration:     500 //default
+                     //for menu1 and menu7, set a function to use the 'alt' attribute if present, else construct a PNG path from the 'src'...
+                   , source:       (i==0 || i==6) ? function(i){ return (this.alt) ? false : this.src.replace(/(jpg|gif)$/,'png'); } : false //default
+                   };
+        $(this).jqDock(opts);
+      });
+ 
+    $('div.demo a>img').not($('#menu1 a>img')).bind('click', function(){
+        var Href = $(this).parent().get(0).href;
+ 
+        if(Href && !/^javascript:/i.test(Href)){ //change location...
+          location.href = Href;
+        }else{ //trigger a click handler?...
+          $(this).parent().trigger('click');
+        }
+        return false;
+      });
+  });
+  // -->
+  </script>
+
+  
+<div id='menu1' class='demo'></div>
+<div id='menu2' class='demo'></div>
+<div id='menu3' class='demo'></div>
+
+  
+<div id='zoom_menu' class='demo'>
+
+<a title="About Us" 	href="about.htm">				<img src='Site/themed_images/zoom_about.png' 			alt='Zoom About Us' /></a>
+<a title="Contact" 		href="contact.htm">			<img src='Site/themed_images/zoom_contact.png' 		alt='Zoom Contact' /></a>
+<a title="Services" 	href="services.htm">			<img src='Site/themed_images/zoom_services.png' 		alt='Zoom Services' /></a>
+<a title="Sitemap" 		href="sitemap.htm">			<img src='Site/themed_images/zoom_sitemap.png' 		alt='Zoom Sitemap' /></a>
+
+</div>
+
+<!-- #EndLibraryItem --></div>
+				<!-- /zoom_menu_component -->
+
+				<!-- custom_component1 -->
+				<div id="custom_component1">
+				<!-- #BeginLibraryItem "/Library/custom-components/custom-component1.lbi" -->
+
+
+<!-- #EndLibraryItem --></div>
+				<!-- /custom_component -->
+
+				<!-- custom_component2 -->
+				<div id="custom_component2">
+				<!-- #BeginLibraryItem "/Library/custom-components/custom-component2.lbi" -->
+
+
+<!-- #EndLibraryItem --></div>
+				<!-- /custom_component -->
+
+				<!-- custom_component3 -->
+				<div id="custom_component3">
+				<!-- #BeginLibraryItem "/Library/custom-components/custom-component3.lbi" -->
+
+
+<!-- #EndLibraryItem --></div>
+				<!-- /custom_component -->
+
+				<!-- back_to_top -->
+				<div class="back_to_top"><a id="top"></a></div>
+				<!-- /back_to_top -->
+
+	<!-- InstanceEndEditable -->
+	</div>
+</header> 
+<!-- /header -->
+
+
+
+	<div class="clear"></div>
+	
+	
+	
+<!-- main content -->
+<div id="main_content">
+
+
+
+<!-- InstanceBeginEditable name="advertising_1" -->
+<!-- InstanceEndEditable -->
+
+
+
+	<div class="clear"></div>
+
+
+
+<!-- info boxes -->
+<aside id="leftinfo">
+	<div class="boxi">
+		<div class="boxi_inner">
+		<!-- InstanceBeginEditable name="left_info" --><!-- #BeginLibraryItem "/Library/news-boxes/info-left.lbi" -->
+<h3>Grid Analyzers</h3>
+
+<div class="centerpic">
+
+<a href="products.htm" title="Model 200 Grid Analyzers for automated strain measurement">
+<img src="Site/imagesfmti/ga200meas-260.jpg" alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain" />
+</a>
+
+</div>
+<!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+		</div>	
+	</div>
+</aside>
+				
+				
+<!-- centerinfo -->
+<aside id="centerinfo">
+	<div class="boxi">
+		<div class="boxi_inner">
+		<!-- InstanceBeginEditable name="center_info" --><!-- #BeginLibraryItem "/Library/news-boxes/info-center.lbi" -->
+<h3>Software</h3>
+ 
+<div class="centerpic">
+
+<a href="software.htm" title="Includes automatic grid measurement, plotting date on FLD, generate thinning reports, and more.....">
+<img src="Site/imagesfmti/cga-meas-260.jpg" alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain,deformation;tool and die,stress limit diagram," />
+</a></div><!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+		</div>	
+	</div>
+</aside>
+
+
+
+<!-- rightinfo -->
+<aside id="rightinfo">
+	<div class="boxi">
+		<div class="boxi_inner">
+		<!-- InstanceBeginEditable name="right_info" --><!-- #BeginLibraryItem "/Library/news-boxes/info-right.lbi" -->
+<h3>and More....</h3>
+
+<div class="centerpic">
+
+<a href="more.htm" title="Costomers, Technical Notes and more...."><img name="andmore" src="Site/imagesfmti/more.jpg" alt="circle grid analysis,forming limit diagram, FLC,forming severity,surface strain,deformation;tool and die,stress limit diagram,">
+</a>
+
+</div>					
+
+<!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+		</div>	
+	</div>
+</aside>
+<!-- /info boxes -->
+
+	<div class="clear"></div>
+	
+	
+
+<!-- InstanceBeginEditable name="advertising_2" -->
+<!-- InstanceEndEditable -->
+
+
+<!-- column bgs -->
+<div id="columns_top"></div>
+<div id="columns_bg">
+
+<!-- column1 -->
+<section id="column1">
+<!-- InstanceBeginEditable name="column1" -->
+
+
+				<!-- sidemenu -->
+				<nav class="sidemenu">
+					<div class="box1">
+						<div class="box1_inner"><!-- #BeginLibraryItem "/Library/menu-side/wrappers/menu-side-wrapper.lbi" -->
+<div class="sf-menu-wrapper-side">
+<!-- DO NOT EDIT ABOVE THIS LINE -->
+<!-- DO NOT EDIT ABOVE THIS LINE -->
+<!-- DO NOT EDIT ABOVE THIS LINE --><!-- #BeginLibraryItem "/Library/menu-side/menu-side.lbi" -->
+
+<h3>Main Menu:</h3>
+<div class="sf-menu-wrapper-side">
+<ul id="MenuBarSide">
+    <li><a href="index.htm">Home</a></li>
+	<li><a href="about.htm">About</a></li>  
+	<li><a href="products.htm">Products</a>
+	  <ul>
+  		<li><a href="products.htm#analyzers">Grid Analyzers</a></li>
+  		<li><a href="products.htm#parts">Parts</a>	</li>
+	  </ul>
+    <li><a href="Software.htm">Software</a>
+    <ul>
+		<li><a href="Software.htm#cga">Circle Grid Analysis (CGA)</a></li>
+		<li><a href="Software.htm#sga">Square Grid Analysis (SGA)</a></li>
+		<li><a href="Software.htm#incremental">Incremental Grid Analysis (TTT)</a></li>
+        <li><a href="Software.htm#stiching">Stitching</a></li>
+		<li><a href="Software.htm#thinning">Thinning Report</a></li>
+		<li><a href="Software.htm#report">Strain Report</a></li>
+        <li><a href="Software.htm#browser">Deformation Browser</a></li>
+		<li><a href="Software.htm#polkadot">Polka Dot Grid Analysis (PDA)</a></li>
+	</ul>
+    
+        <li><a href="videos.htm">Videos</a>
+     <ul>
+		<li><a href="videos.htm#trailer">Trailer</a></li>
+		<li><a href="videos.htm#hardware">Hardware</a></li>
+        <li><a href="videos.htm#gettingstarted">Getting Started</a></li>
+        <li><a href="videos.htm#measuring">Measuring Strain</a></li>
+		<li><a href="videos.htm#reports">Reports</a></li>
+        <li><a href="videos.htm#grids">Grids</a></li>
+        <li><a href="videos.htm#lens">Lens Adjustments</a></li>
+	</ul>  
+	
+    <li><a href="more.htm">More...</a><ul>
+		<li><a href="more.htm#customers">Customers</a></li>
+		<li><a href="more.htm#publications">Publications</a></li>
+        <li><a href="more.htm#technotes">Technical Notes</a></li>
+
+	</ul>
+	</li>		<!-- numo horizontal links -->
+</ul>
+
+
+<script type="text/javascript">
+//var MenuBarSide = new Spry.Widget.MenuBar("MenuBarSide");
+</script>
+
+<div class="clear" style=" clear:both"></div>
+</div>
+
+<!-- #EndLibraryItem --><!-- DO NOT EDIT BELOW THIS LINE -->
+<!-- DO NOT EDIT BELOW THIS LINE -->
+<!-- DO NOT EDIT BELOW THIS LINE -->
+</div>
+<script type="text/javascript">
+		    jQuery("div.sf-menu-wrapper-side > ul").addClass("sf-menu sf-vertical");
+</script>
+
+<!-- #EndLibraryItem --></div>
+					</div>
+				</nav>
+				<!-- /sidemenu -->
+
+				<!-- numo box left -->
+
+				<!-- whatsnew -->
+				<aside class="whatsnew">
+					<div class="box1"> 
+						<div class="box1_inner"><!-- #BeginLibraryItem "/Library/news-boxes/whats-new.lbi" -->
+<!--
+<h3>Whats New</h3>
+
+<a href="../../products.htm" class="sidepic">
+<img src="../../Site/imagesfmti/ga200-380.jpg" alt="Grid Analyzer Model 200" />
+</a>
+
+<p>Model 200 with enchanced features and 30% lighter. Released with software version 8.11, December 12, 2017</p>
+-->
+<!-- #EndLibraryItem --></div>
+					</div>
+				</aside>
+				<!-- /whatsnew -->
+
+				<!-- currentnews -->
+				<aside class="currentnews">
+					<div class="box1"> 
+						<div class="box1_inner"><!-- #BeginLibraryItem "/Library/news-boxes/current-news.lbi" -->
+<!-- #EndLibraryItem --></div>
+					</div>
+				</aside>
+				<!-- /currentnews -->
+
+				<!-- recentevents -->
+				<aside class="recentevents">
+					<div class="box1"> 
+						<div class="box1_inner"><!-- #BeginLibraryItem "/Library/news-boxes/recent-events.lbi" -->
+<!-- #EndLibraryItem --></div>
+					</div>
+				</aside>
+				<!-- /recentevents -->
+
+<!-- InstanceEndEditable -->
+</section>
+<!-- /column1 -->
+				
+				
+<!-- column2 -->
+<section id="column2">
+
+
+			<!-- box4 -->
+				<article class="box4">
+					<div class="box4_inner">
+
+				<!-- InstanceBeginEditable name="body1" -->
+
+<!-- numo box right -->
+
+<!-- numo features box -->
+
+<h3>Strain Measurement</h3>
+<p>FMTI Systems inc. manufactures hardware and develops software to   automate sheet metal surface strain measurements. These low cost tools   are exceptionally suitable for quality control in the stamping plants,   developing forming limit curve data for new materials and research   laboratories. Grid analysis can be done quickly with the results drawn   immediately on the Forming Limit Diagram as well as Stress Limit Diagram   (SLD). Our Grid Analyzers are currently used in the automotive   industry, by tool and die developers, and parts and material suppliers.   This is also ideal for measuring stress and strain of sheet metal for   "six sigma" implementations. </p>
+<p>&nbsp;</p>
+
+				<!-- InstanceEndEditable -->
+					</div>
+				</article>
+				<!-- box4 -->
+
+</section>
+<!-- /column2 -->
+				
+				
+<!-- column3 -->
+<section id="column3">
+<!-- InstanceBeginEditable name="column3" -->
+
+				<!-- optional box ... to enable ... delete this line
+					<div class="box1">
+
+						<h3>Heading</h3>
+						<p>This is where you would add your text, images, or advertising banner</p>
+
+					</div>
+				/optional box  ... to enable ... delete this line  -->
+
+<!-- InstanceEndEditable -->
+</section>
+<!-- /column3  -->
+			
+			
+<!-- column4 -->
+<section id="column4">
+<!-- InstanceBeginEditable name="column4" -->
+
+				<!-- optional box ... to enable ... delete this line
+					<div class="box1">
+
+						<h3>Heading</h3>
+						<p>This is where you would add your text, images, or advertising banner</p>
+
+					</div>
+				/optional box  ... to enable ... delete this line  -->
+
+<!-- InstanceEndEditable -->
+</section>
+<!-- /column4  -->
+
+
+
+	<div class="clear"></div>
+	
+
+</div>
+<div id="columns_bottom"></div>
+
+<!-- /column bgs -->
+
+	
+	
+<!-- InstanceBeginEditable name="advertising_3" -->
+<!-- InstanceEndEditable -->
+
+
+
+	<div class="clear"></div>
+
+		
+
+</div>
+<!--/content -->
+
+
+</div>
+<!--/main -->
+
+
+
+<!-- advertising -->
+<section id="advertising_wrapper">
+	<div id="advertising"></div>
+</section >
+<!-- /advertising -->
+
+
+
+	<div class="clear"></div>
+
+
+
+<!-- backtotop -->
+<section id="backtotop">
+	<!-- InstanceBeginEditable name="back_to_top" --><!-- #BeginLibraryItem "/Library/extras/back-to-top.lbi" -->
+
+<div class="backtotop"> 
+<a title="Back to Top" href="javascript:moveToTop()"><img src="Site/graphics/back-top.png" style="border-width: 0px; width: 100px; height: 40px" alt="slide up button" /></a>
+</div>
+
+<!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+</section>
+<!-- /backtotop -->
+
+
+
+	<div class="clear"></div>
+	
+	
+	
+<!-- footer -->
+<footer id="footer_bg"><div id="footer"><div class="footer">
+	
+		<!-- InstanceBeginEditable name="footer" -->
+
+
+			<!-- footerleft -->
+				<section id="footerleft"><!-- #BeginLibraryItem "/Library/footer/footer-left.lbi" -->
+<ul>
+<li class="git_address">Hamilton, Ontario, Canada</li>
+</ul>
+
+<!-- #EndLibraryItem --></section>
+			<!-- /footerleft -->
+
+			<!-- footercenter -->
+				<section id="footercenter"><!-- #BeginLibraryItem "/Library/footer/footer-center.lbi" -->
+
+<ul>
+<li class="git_phone">Phone: (905) 381-0257</li>
+</ul>
+<!-- #EndLibraryItem --></section>
+			<!-- /footercenter -->
+
+
+			<!-- footerright -->
+				<section id="footerright"><!-- #BeginLibraryItem "/Library/footer/footer-right.lbi" -->
+<ul>
+<li class="git_email">email: <a href="mailto:sales@fmtisystems.com">sales@fmtisystems.com</a></li>
+</ul>
+
+<!-- #EndLibraryItem --></section>
+			<!-- /footerright -->
+
+
+<div class="clear"></div>
+
+
+		<!-- InstanceEndEditable -->
+		
+	</div></div>
+	
+</footer>
+<!-- /footer -->
+
+
+<section id="copyright">
+
+	<!-- InstanceBeginEditable name="copyright" --><!-- #BeginLibraryItem "/Library/footer/copyright.lbi" -->
+	
+<p>Copyright 2018. FMTI Systems Inc. All Rights Reserved.</p>
+<!--
+<div id="removeStyle">View Full Site</div>
+-->
+<!-- #EndLibraryItem --><!-- InstanceEndEditable -->
+
+</section>
+
+
+
+<!-- adsense -->
+<section id="adsense">
+
+	<div id="adsense_wrapper"></div>
+	
+</section>
+<!-- /adsense -->
+
+
+<!-- special1 -->
+<section id="special1"></section> 
+<!-- /special1 -->
+
+
+<!-- special2 -->
+<section id="special2"></section>
+<!-- /special2 --></div>
+<!-- /bdy wrapper -->
+</body>
+<!-- InstanceEnd --></html>
+

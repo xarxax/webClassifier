@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<title>DeTech Pumps Works</title>
+		<meta name="keywords" content="Submersible aerator|Submersible mixer|Chopper pump|Submersible sewage pump|Submersible grinder pump|Screw impeller sewage pump|Line shaft turbine pump|Mixed & axial flow pump|vortex pump|Sludge circulating pump|End suction pump|	Fire fighting pump set">
+		<meta name="description" content="DeTech Pumps Works Focus on providing Submersible aerator，Submersible mixer，Chopper pump，Submersible sewage pump，Submersible grinder pump，Screw impeller sewage pump，Line shaft turbine pump，Mixed & axial flow pump，vortex pump，Sludge circulating pump，End suction pump，Fire fighting pump set">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/container.css"/>
+		<link rel="stylesheet" href="css/swiper.css"/>
+	</head>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/index.js"></script>
+		   <script type="text/javascript">
+// 		window.onload=function(){
+			$(document).ready(function(){
+			$.ajaxSetup({  
+			    async : false  
+			});
+			$.get("/teacher/listAllSchedule.do?rows=10", function(result){
+				var data=JSON.parse(result);
+				var rows=data.rows;
+				if(rows.length==1){
+					var temp="<img class='swiper-slide' src='"+rows[0].schedulename+"' alt='' />";
+					$("#swiper-slide-parent").removeClass();
+					$("#swiper-slide").append(temp);
+					$("#swiper-button-prev").removeClass();
+					$("#swiper-button-next").removeClass();
+				}else{
+					var temp="";
+					for(var i=0;i<rows.length;i++){
+						 temp=temp+"<img class='swiper-slide' src='"+rows[i].schedulename+"' alt='' />";
+					}
+					$("#swiper-slide").append(temp);
+				}
+				
+			  });
+			$.get("/news/findAll.do?rows=1&search_language=1&typeid=1", function(result){
+				var data=JSON.parse(result);
+				var rows=data.rows;
+				if(rows.length==1){
+					var content=rows[0].content;
+					if(content.indexOf('<img src="')>0){
+					var index_a=content.indexOf('<img src="')+10;
+					var index_b=content.indexOf('/>',index_a);
+					var index_c=content.indexOf('"',index_a);
+					var imgsrc=content.substring(index_a,index_c);
+					content=content.substring(0,index_a-10)+content.substring(index_b+2,content.length);
+					$("#indexNewsImg").attr("src",imgsrc);
+					}
+					$("#indexNewsContent").html(content);
+					$("#indexNewsTitle").html(rows[0].title);
+					
+					$("#indexNewsDetail").attr("href","html/news_details.html?id="+rows[0].id);
+				}
+				
+			  });
+		    var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        keyboardControl: true,
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        autoplay: 3000
+		    });
+			$.get("/resource/findAll.do?rows=10&search_language=1&favtimes=1", function(result){
+				var data=JSON.parse(result);
+				var rows=data.rows;
+				var length;
+				if(rows.length>3){
+					length=3;
+				}else{
+					length=rows.length;
+				}
+				for(var i=0;i<length;i++){
+					var temp="<a href='html/products_details.html?id="+rows[i].id+"'><li><img src='"+rows[i].filename+"' alt=''/><p>"+rows[i].resourcename+"</p></li></a>";
+					$("#productShow").append(temp);
+				}
+				
+			  });
+		});
+		</script>
+	<body>
+		<!--头部-->
+		<div class="top minWidth">
+			<div class="search_box maxWidth minWidth">
+				<div class="tell"><i></i>+86 25 57503299</div>
+				<div class="search"><input id="productName" type="text" placeholder="Product search" /><i onclick="productsearch()"></i>|</div>
+				<div class="language">
+					<i></i>
+					<a class="Chinese" href="/pc_chinese/index.html">中 文</a>
+					<a class="English" href="###" style="display: none;">English</a>
+				</div>
+			</div>
+		</div>
+		<!-- logo 导航-->
+		<div class="mainNav minWidth">
+			<div class="logo_nav maxWidth minWidth">
+				<div class="logo"><img src="img/logo.png" alt="" /></div>
+				<div class="nav">
+					<a href="index.html">HOME</a>
+					<a href="html/about_us.html">ABOUT US</a>
+					<a href="html/products.html">PRODUCTS</a>
+					<a href="html/news_list.html">NEWS</a>
+					<a href="html/contact.html">CONTACT</a>
+				</div>
+			</div>
+		</div>
+		<!--轮播 产品介绍-->
+		<div class="carousel_product minWidth">
+			<div class="swiper-container carousel_box"  id="swiper-slide-parent">
+				<div class="swiper-wrapper" id="swiper-slide">
+ 					<!--<img class="swiper-slide" id ="img1" src="img/banner_1.jpg" alt="" /> 
+ 					<img class="swiper-slide" id="img2" src="img/banner_1.jpg" alt="" /> 
+ 					<img class="swiper-slide" id="img3" src="img/banner_1.jpg" alt="" /> -->
+				</div>
+				<!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <div id="swiper-button-next" class="swiper-button-next"></div>
+		        <div id="swiper-button-prev" class="swiper-button-prev"></div>
+			</div>
+			<div class="product_box">
+				<div class="product maxWidth minWidth">
+					<div class="product_title">Product recommendation</div>
+					<div class="product_img">
+						<ul id="productShow">
+<!-- 							<a href="html/products_details.html"> -->
+<!-- 								<li><img src="img/product_1.jpg" alt="" /> -->
+<!-- 								<p>WQ Pump Description</p> -->
+<!-- 							</li></a> -->
+<!-- 							<a href="html/products_details.html"> -->
+<!-- 								<li class="product_img_1"><img src="img/product_1.jpg" alt="" /> -->
+<!-- 								<p>WQ Pump Description</p> -->
+<!-- 							</li></a> -->
+<!-- 							<a href="html/products_details.html"> -->
+<!-- 								<li class="product_img_1"><img src="img/product_1.jpg" alt="" /> -->
+<!-- 								<p>WQ Pump Description</p> -->
+<!-- 							</li></a> -->
+						</ul>
+					</div>
+					<a href="html/products.html"><div class="product_details"><i></i></div></a>
+				</div>
+			</div>
+		</div>
+		<!--公司简介 新闻-->
+		<div class="abstract_news minWidth maxWidth">
+			<div class="abstract">
+				<p class="abstract_title">Welcome to Pumps</p>
+				<p class="abstract_content">DeTech Pumps Works, main products are submersible sewage pump, submersible mixer & aerator, submersible propeller pump. It utilize the latest technology for wide </p>
+				<p class="abstract_content">range of application, like raw water, industrial waste water, dewatering etc.We have many years experience to producethese products EU pump company, and exported</p> 
+				<p class="abstract_content">these products worldwide.And nowadays we can supply these products with our brand or as an OEM factory .and exported these products worldwide.And nowadays</p>
+		        <p class="abstract_content">we can supply these products with our brand or as an OEM factory. ...</p>
+				<div class="abstract_more">
+					<a href="html/about_us.html">more</a>
+				</div>
+			</div>
+			<div class="news_introduce">
+				<div class="news_introduce_title">News</div>
+				<div class="news_introduce_img"><img id ="indexNewsImg" src="" alt="" /></div>
+				<div class="news_introduce_content">
+				<p id="indexNewsTitle" class="news_introduce_content_title"></p> 
+				<div id="indexNewsContent"></div>
+<!-- 					<p class="news_introduce_content_title">Press Archive 2015</p> -->
+<!-- 					<p class="news_introduce_content_box">DeTech Pump Co. Ltd., main products are submersible sewage pump, submersible mixer & aerator, submersible </p> -->
+<!-- 					<p class="news_introduce_content_box">propeller pump. It utilize the latest technology</p>  -->
+<!--                     <p class="news_introduce_content_box">for wide range of application, like raw water, industrial waste water, dewatering etc.We have many years experience to produce these products, since 1985,we collaborated with EU</p> -->
+					<div class="news_introduce_more">
+						<a id ="indexNewsDetail" href="html/news.html"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div>
+			<div class="bottom_box minWidth">
+				<div class="bottom minWidth maxWidth">
+					<div class="bottom_copyright">苏ICP备10000071-3号 Copyright©2016. DeTech Pumps Works All Rights Reserved
+</div>
+					<div class="console_login"><a href="view/login.jsp">Console login ></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="social_contact_icon">
+			<a href="https://www.facebook.com/DeTechpumps" target="_blank"><div class="facebook"><img src="img/F.png" alt="" /></div></a>
+			<a href="https://plus.google.com/u/0/105256196756253167879" target="_blank"><div class="google"><img src="img/G.png" alt="" /></div></a>
+			<a href="https://www.linkedin.com/in/henry-zhang-a587b488/" target="_blank"><div class="linyin"><img src="img/I.png" alt="" /></div></a>
+			<a href=" https://www.instagram.com/detechpumps/" target="_blank"><div class="google"><img src="img/ins_icon.png" alt="" /></div></a>
+			<a href="###" target="_blank"><div class="google"><img src="img/youtube_icon.png" alt="" /></div></a>
+			<a href="mailto:sales@lanshenpumps.com"><div class="email"><img src="img/email2.png" alt="" /></div></a>
+		</div>
+<div align="center" style="margin;0 auto;">
+<script id="jsgovicon" src="http://odr.jsdsgsxt.gov.cn:8081/mbm/app/main/electronic/js/govicon.js?siteId=a4efca9199d547f3a1032a8e0584d45e&width=100&height=137&type=1" type="text/javascript" charset="utf-8"></script>
+</div>
+	</body>
+
+
+</html>

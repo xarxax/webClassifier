@@ -1,0 +1,30 @@
+# This file is for autonomous client agents visiting 
+# URL:http://www.fasthealth.com or other branded sites
+# This is retrieved by webcrawlers (a.k.a. spiders, bots or client agents) that 
+# conform to a defacto standard. 
+# See URL:http://info.webcrawler.com/mak/projects/robots/robots.html
+# also see document metatag standards 
+# at URL:http://www.w3.org/Search/9605-Indexing-Workshop/ReportOutcomes/Spidering.txt
+# 
+# -----------------------------------------------------------------------------
+#User-agent: *
+#Disallow: /
+#User-agent: msnbot
+#Disallow: /
+User-agent: Slurp
+Disallow: /
+User-agent: grub-client-1.2.1
+Disallow: /
+User-agent: *
+# Crawl-delay is in seconds
+Crawl-delay: 30
+Disallow: /cgi-bin/
+Disallow: /fastportal/
+Disallow: /oscar/
+Disallow: /reports/
+#Disallow: /css/
+Disallow: /orders/
+Disallow: /genhos/
+Disallow: /old_store_backup/
+Disallow: /citypages/
+

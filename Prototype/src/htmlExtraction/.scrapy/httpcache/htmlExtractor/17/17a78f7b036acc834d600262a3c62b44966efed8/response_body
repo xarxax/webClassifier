@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="verify-v1" content="1U0dvVy4zh3fd7u5iJAWZC5FUrqwMxXm4I0i53xZ/Tg=" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="CSS/Style.css" media="screen" />
+<!--[if lte IE 6]>
+    <link type="text/css" rel="stylesheet" href="CSS/StyleIE6.css" media="screen" />
+<![endif]-->
+<title>Liquor inventory software, Liquor inventory control - SCANNABAR INC </title>
+<meta name="description" content="In business since 1998, we have become a leading provider of Liquor inventory management systems to bars, nightclubs, hotels, and restaurants spanning from North America to Europe."/>
+<meta name="keywords" content="liquor management software, liquor management softwares, liquor management solution, liquor management solutions, liquor management system, liquor management systems, restaurant inventory management, restaurant inventory managements, bar management software, bar management softwares, bar management solution, bar management solutions, bar management system, bar management systems, hospitality management software, hospitality management softwares"/>
+<meta name="robots" content="All,INDEX"/>
+<meta name="resource-type" content="document"/>
+<meta name="distribution" content="global"/>
+<meta name="classification" content="Software"/>
+<meta name="rating" content="General"/>
+<meta name="language" content="en-us"/><script type="text/javascript">
+/***********************************************
+* Drop Down/ Overlapping Content- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Drop Down/ Overlapping Content: http://www.dynamicdrive.com
+//Last updated: Nov 22nd, 07
+
+var dropdowncontent={
+	delaybeforehide: 200, //set delay in milliseconds before content box disappears onMouseout (1000=1 sec)
+	disableanchorlink: true, //when user clicks on anchor link, should it be disabled?
+
+	getposOffset:function(what, offsettype){
+		return (what.offsetParent)? what[offsettype]+this.getposOffset(what.offsetParent, offsettype) : what[offsettype]
+	},
+
+	isContained:function(m, e){
+		var e=window.event || e
+		var c=e.relatedTarget || ((e.type=="mouseover")? e.fromElement : e.toElement)
+		while (c && c!=m)try {c=c.parentNode} catch(e){c=m}
+		if (c==m)
+			return true
+		else
+			return false
+	},
+
+	show:function(anchorobj, subobj, e){
+		if (!this.isContained(anchorobj, e)){
+			var horizontaloffset=(subobj.dropposition[0]=="left")? -(subobj.offsetWidth-anchorobj.offsetWidth) : 0 //calculate user added horizontal offset
+			var verticaloffset=(subobj.dropposition[1]=="top")? -subobj.offsetHeight : anchorobj.offsetHeight //calculate user added vertical offset
+			subobj.style.left=this.getposOffset(anchorobj, "offsetLeft") + horizontaloffset + "px"
+			subobj.style.top=this.getposOffset(anchorobj, "offsetTop")+verticaloffset+"px"
+			subobj.style.clip=(subobj.dropposition[1]=="top")? "rect(auto auto auto 0)" : "rect(0 auto 0 0)" //hide drop down box initially via clipping
+			subobj.style.visibility="visible"
+			subobj.startTime=new Date().getTime()
+			subobj.contentheight=parseInt(subobj.offsetHeight)
+			if (typeof window["hidetimer_"+subobj.id]!="undefined") //clear timer that hides drop down box?
+				clearTimeout(window["hidetimer_"+subobj.id])
+			this.slideengine(subobj, (subobj.dropposition[1]=="top")? "up" : "down")
+		}
+	},
+
+	curveincrement:function(percent){
+		return (1-Math.cos(percent*Math.PI)) / 2 //return cos curve based value from a percentage input
+	},
+
+	slideengine:function(obj, direction){
+		var elapsed=new Date().getTime()-obj.startTime //get time animation has run
+		if (elapsed<obj.glidetime){ //if time run is less than specified length
+			var distancepercent=(direction=="down")? this.curveincrement(elapsed/obj.glidetime) : 1-this.curveincrement(elapsed/obj.glidetime)
+			var currentclip=(distancepercent*obj.contentheight)+"px"
+			obj.style.clip=(direction=="down")? "rect(0 auto "+currentclip+" 0)" : "rect("+currentclip+" auto auto 0)"
+			window["glidetimer_"+obj.id]=setTimeout(function(){dropdowncontent.slideengine(obj, direction)}, 10)
+		}
+		else{ //if animation finished
+			obj.style.clip="rect(0 auto auto 0)"
+		}
+	},
+
+	hide:function(activeobj, subobj, e){
+		if (!dropdowncontent.isContained(activeobj, e)){
+			window["hidetimer_"+subobj.id]=setTimeout(function(){
+				subobj.style.visibility="hidden"
+				subobj.style.left=subobj.style.top=0
+				clearTimeout(window["glidetimer_"+subobj.id])
+			}, dropdowncontent.delaybeforehide)
+		}
+	},
+
+ init:function(anchorid, pos, glidetime){
+		var anchorobj=document.getElementById(anchorid)
+		var subobj=document.getElementById(anchorobj.getAttribute("rel"))
+		subobj.dropposition=pos.split("-")
+		subobj.glidetime=glidetime || 1000
+		subobj.style.left=subobj.style.top=0
+		anchorobj.onmouseover=function(e){dropdowncontent.show(this, subobj, e)}
+		anchorobj.onmouseout=function(e){dropdowncontent.hide(subobj, subobj, e)}
+		if (this.disableanchorlink) anchorobj.onclick=function(){return false}
+		subobj.onmouseout=function(e){dropdowncontent.hide(this, subobj, e)}
+	}
+}
+</script>
+</head>
+
+<body>
+<table class="siteWrapper" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+	<td style="height: 114px">
+    <table class="topMenu" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    	<td style="width: 230px;" align="left"><a href="index.php"><img src="Image/logoTop.gif" alt="Scannabar, Hospitality Management Solutions" /></a></td>
+        <td style="width: 473px; float:left" align="left">
+        <!-- TOP MENU -->
+        <div style="position: absolute; z-index: 1">
+        <object width="473" height="205">
+        <param name="movie" value="Button/menu.swf" />
+        <param name="quality" value="high" />
+        <param name="wmode" value="transparent" />
+        <embed src="Button/menu.swf" wmode="transparent" quality="high" width="473" height="205">
+        </embed>
+        </object>
+        </div>
+        <td>
+        
+        </td>
+        <td class="topMenu" style="width: 287px; text-align:center" align="left">
+        <div class="BTNTop">
+        <div class="topBTNHome"><a href="index.php"><img name="home" src="Image/BTNHomeOff.gif" onmouseover="this.src='Image/BTNHomeOver.gif'" onmouseout="this.src='Image/BTNHomeOut.gif'" alt="Home page" /><br/><a href="index.php" onmouseover="home.src='Image/BTNHomeOver.gif'" onmouseout="home.src='Image/BTNHomeOut.gif'">Home</a>
+        </div>
+        <div class="topBTNContact"><a href="index.php?page=18"><img name="contact" src="Image/BTNContactOff.gif" onmouseover="this.src='Image/BTNContactOver.gif'" onmouseout="this.src='Image/BTNContactOut.gif'" alt="Contact us" /></a><br/><a href="index.php?page=18" onmouseover="contact.src='Image/BTNContactOver.gif'" onmouseout="contact.src='Image/BTNContactOut.gif'">Contact Us</a>
+        </div>
+        <div class="topBTNSiteMap"><a href="index.php?page=17"><img name="siteMap" src="Image/BTNSiteMapOff.gif" onmouseover="this.src='Image/BTNSiteMapOver.gif'" onmouseout="this.src='Image/BTNSiteMapOut.gif'" alt="Sitemap" /></a><br/><a href="index.php?page=17" onmouseover="siteMap.src='Image/BTNSiteMapOver.gif'" onmouseout="siteMap.src='Image/BTNSiteMapOut.gif'">Site map</a>
+        </div>
+        <div class="topBTNLanguages"><a id="mainMenu1" rel="subMenu1" onmouseover="languages.src='Image/BTNLanguagesOver.gif'" onmouseout="languages.src='Image/BTNLanguagesOut.gif'"><img name="languages" src="Image/BTNLanguagesOff.gif" onmouseover="this.src='Image/BTNLanguagesOver.gif'" onmouseout="this.src='Image/BTNLanguagesOut.gif'" alt="Language button" /></a></div>
+			<div class="topCurrentBTNLanguages">
+            	English
+            </div>
+
+			<div id="subMenu1" class="topSUBBTNLanguages">
+            	<div><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+				<div><a href="../FR/">Fran&ccedil;ais</a></div>
+				<div><a href="../ES/">Espa&ntilde;ol</a></div>
+			</div>
+
+        
+       <!-- <div class="topBTNLanguages"><a href="../FR/"><img name="languages" src="Image/BTNLanguagesOff.gif" onmouseover="this.src='Image/BTNLanguagesOver.gif'" onmouseout="this.src='Image/BTNLanguagesOut.gif'" alt="Language button" /></a><br/><a href="../FR/" onmouseover="languages.src='Image/BTNLanguagesOver.gif'" onmouseout="languages.src='Image/BTNLanguagesOut.gif'">Fran&ccedil;ais</a>-->
+       		<script type="text/javascript">
+		//Call dropdowncontent.init(anchorID, positionString, glideduration) at the end of the page:
+		dropdowncontent.init("mainMenu1", "right-bottom", 300);
+		</script>
+        </div>
+        </div>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+<tr>
+	<td style="height: 352px; vertical-align: top">
+    <div class="contentWrapper">
+    <!-- CONTENT HERE!!! -->
+    <table border="0" cellpadding="0" cellspacing="0">
+<tr>
+   	<td rowspan="3"><div id="SlideShowDiv"><object width="621" height="352"><param name="movie" value="SlideShow.swf"><param name="wmode" value="transparent"><param name="quality" value="high"><embed src="SlideShow.swf" wmode="transparent" quality="high" width="621" height="352"></embed></object></div></td>
+    <td>
+    <object width="369" height="117"><param name="movie" value="Button/BTNLiquorModule.swf"><param name="wmode" value="transparent"><param name="quality" value="high"><embed src="Button/BTNLiquorModule.swf" wmode="transparent" quality="high" width="369" height="117"></embed></object></td>
+</tr>
+<tr>
+   	<td>
+    <object width="369" height="118"><param name="movie" value="Button/BTNWineModule.swf"><param name="quality" value="high"><embed src="Button/BTNWineModule.swf" quality="high" width="369" height="118"></embed></object></td>
+</tr>
+<tr>
+  	<td>
+    <object width="369" height="117"><param name="movie" value="Button/BTNBeerModule.swf"><param name="quality" value="high"><embed src="Button/BTNBeerModule.swf" quality="high" width="369" height="117"></embed></object></td>
+</tr>
+</table>    </div>
+    </td>
+</tr>
+<tr>
+	<td style="background-image:url(Image/BGMenuBottom.gif); background-repeat:repeat-x; height: 129px;">
+    <table class="menuBottom" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    	<td><div class="BTNCallUs"><a href="index.php?page=18"><img src="Image/BTNCallUs.jpg" alt="Call us today for more information regarding our Liquor Inventory products" /></a></div></td>
+        <td><div class="BTNDemo"><a href="index.php?page=19"><img src="Image/BTNDemoOff.gif" onmouseover="this.src='Image/BTNDemoOver.gif'" onmouseout="this.src='Image/BTNDemoOut.gif'" alt="View web live demo about our Liquor Inventory products" /></a></div></td>
+        <td><div class="BTNWhy"><a href="index.php?page=6"><img src="Image/BTNWhyOff.gif" onmouseover="this.src='Image/BTNWhyOver.gif'" onmouseout="this.src='Image/BTNWhyOut.gif'" alt="Why ScannaBar?" /></a></div></td>
+        <td><div class="BTNTestimonials"><a href="index.php?page=8"><img src="Image/BTNTestimonialsOff.gif" onmouseover="this.src='Image/BTNTestimonialsOver.gif'" onmouseout="this.src='Image/BTNTestimonialsOut.gif'" alt="Read some testimonials about our Liquor Inventory software and other products." /></a></div></td>
+        <td><div class="BTNVideos"><a href="index.php?page=7"><img src="Image/BTNVideosOff.gif" onmouseover="this.src='Image/BTNVideosOver.gif'" onmouseout="this.src='Image/BTNVideosOut.gif'" alt="Check some videos about our Liquor Inventory control products" /></a></div></td>
+        <td><div class="BTNFAQ"><a href="index.php?page=20"><img src="Image/BTNFAQOff.gif" onmouseover="this.src='Image/BTNFAQOver.gif'" onmouseout="this.src='Image/BTNFAQOut.gif'" alt="Read some FAQ on our Liquor Inventory products" /></a></div></td>
+    </tr>
+    </table>
+    </td>
+</tr>
+<!-- FOOTER -->
+<tr>
+	<td class="footer" style="padding-top: 7px; padding-bottom:14px;">
+	<h1 class="footer">
+	Scannabar, liquor, beer and wine inventory specialists for over 10 years
+	</h1>
+	Scannabar's liquor inventory software helps put liquor inventory control in place; Scannabar's wine inventory software coupled with our liquor control software <br />
+	offer you a complete liquor inventory system for all your needs. With our complete inventory control package you can track your liquor, beer and wine <br />
+	in a fraction of the time. The Scannabar software helps simplify the task of taking inventory and allows you to save time and money.
+	</td>
+</tr><tr>
+	<td class="footer" style="padding-bottom: 14px;">
+    <a href="index.php?page=11">Liquor Software</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=12">Wine Software</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=13">Beer &amp; Dry Goods software</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=14">Leasing</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=6">Why Scannabar?</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=7">Videos</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=8">Testimonials</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=15">FAQ</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=16">Downloads</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=4">Partners</a>
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    <a href="index.php?page=5">Dealers Wanted</a>
+    </td>
+</tr>
+<tr>
+	<td class="footer">
+    <div style="float: right; margin-top: -1px; margin-right: 214px;"><a href="http://www.domaineplus.com" target="_blank"><img src="Image/logoDomainePlus.gif" alt="DomainePlus.com" /></a></div>
+    <div style="float: right;">
+    COPYRIGHT 2009 &copy; SCANNABAR INC
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    All Right Reserved
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    Web Hosting &amp; design
+    <img class="dot" src="Image/dot.gif" alt="spacers dots" />
+    </div>
+    </td>
+</tr>
+<tr>
+	<td style="height: 100%">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-7672518-2");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</body>
+</html>

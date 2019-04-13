@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Morningstar Document Research: SEC filings</title>
+		<style id="antiClickjack">body{display:none !important;}</style>
+<script type="text/javascript">
+	if (self === top) {
+		var antiClickjack = document.getElementById("antiClickjack");
+		antiClickjack.parentNode.removeChild(antiClickjack);
+	} else {
+		top.location = self.location;
+	}
+</script>
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="description" content="Morningstar Document Research streamlines public company research by providing navigation tools for its global and SEC filings database. Users can choose to search by keyword with the help of multiple filters or use advanced multi-criteria queries to pinpoint content within a document. The pre-formulated searches in Knowledge Base jumpstart the search process for hot topics and industry-specific issues. Users can also save searches and automatically receive real-time document alerts." />
+		<meta name="keywords" content="SEC filings,SEC filings search,SEC filing,SEC,XBRL,Annual report,Quarterly report,Proxy,10K,10-K,10-Q,10Q,8-K,8K,S-1,S1,EDGAR,Corporate research,Beneficial ownership,Insider trading,10-K Wizard,Wizard, 10K Wizard" />
+		
+
+		<style>
+html {
+    color: #666;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a image{
+	border: 0;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 11px;
+    color: #000000;
+    background: url("/images/Red_ends.png") repeat-x scroll center top transparent;
+	width: 100%
+}
+
+#pagewrap {
+    margin: 0 auto;
+	background: url("/images/mdr_login_background.png") no-repeat scroll center top transparent;
+}
+
+#mdr-red-end-left {
+    background: url("/images/Red_ends.png") repeat-x scroll center top transparent;
+	position: absolute;
+	height:419px;
+	width:22%;
+}
+
+#mdr-red-end-right {
+    background: url("/images/Red_ends.png") repeat-x scroll center top transparent;
+	position: absolute;
+	height:419px;
+	width:31px;
+	left:1249px;
+}
+
+#content-background {
+	background: url('/images/Diagonal-ptn.png') repeat-x scroll center top transparent;
+    margin-top: 30px;
+	width:100%
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 955px;
+    font-size: 11px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-clear {
+    clear: both;
+}
+
+#morningstar-logo {
+    padding-top: 20px;
+}
+
+#top {
+    padding-top: 35px;
+}
+
+h2#mdr-main-content {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p.mdr-main-content {
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 4px;
+}
+
+div#mdr-content-left {
+    width: 535px;
+    color: #ffffff;
+}
+
+div#mdr-content-right {
+    width: 370px;
+    color: #ffffff;
+}
+
+div#mdr-main-content-sep {
+    height: 23px;
+}
+
+input.login-input {
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid #D6D6D6;
+    padding: 1px;
+    height: 22px;
+	width: 145px;
+}
+
+.login-select-box {
+    border: 1px solid #D6D6D6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    width: 158px;
+    height: 22px;
+}
+
+#login-reminder-password {
+    padding-top: 6px;
+}
+
+.login-container-sep {
+    padding-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold-10px {
+    font-weight: bold;
+	font-size: 10px;
+}
+
+#bottom {
+    padding-top: 20px;
+}
+
+.grey-bold {
+    font-weight: bold;
+    color: #666666;
+	font-size: 10px;
+}
+
+.grey-10px {
+    color: #666666;
+    font-size: 10px;
+}
+
+.grey {
+    color: #666666;
+}
+
+#sample-search {
+    width: 175px;
+}
+
+#recent-documents {
+    width: 370px;
+}
+
+#document-coverage {
+    width: 175px;
+}
+
+#document-coverage-items {
+    width: 167px;
+}
+
+#comp-content {
+    width: 175px;
+}
+
+.bottom-title {
+    padding-bottom: 5px;
+}
+
+#bottom-sep-1 {
+    width: 20px;
+    height: 10px;
+    float: left;
+}
+
+#bottom-sep-2 {
+    width: 20px;
+    height: 10px;
+    float: left;
+}
+
+#bottom-sep-3 {
+    width: 20px;
+    height: 10px;
+    float: left;
+}
+
+.bottom-content {
+    line-height: 15px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+.login-select {
+    padding: 3px 0;
+}
+
+table#document-coverage-table tr td {
+    padding: 2px 0 5px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+table#document-coverage-table tr td.no-border {
+    padding: 2px 0 10px 0;
+    border-bottom: 0px;
+}
+
+.document-coverage-type {
+    width: 95px
+}
+
+.comp-content-items {
+    padding-bottom: 5px;
+    font-size: 10px;
+    line-height: 15px
+}
+
+.hr {
+    height: 1px;
+    background-color: #666666;
+    border: none;
+}
+
+#mdr-assistance {
+    color: #666666;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+#footerloginnotes {
+    color: #999999;
+	font-size: 10px;
+}
+
+#home-footer-sep {
+    height: 40px;
+}
+
+#forgot-password-txt {
+    padding-left: 38px;
+	padding-top: 2px;
+}
+
+#mdr-subscription-content {
+    background-color: #FFFFFF;
+    display: none;
+    position: absolute;
+    top: 0;
+	left:50%;
+        margin-left: -415px;
+    width: 809px;
+    z-index: 1003;
+	box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subscription-image{
+	padding: 30px 0 5px 0;
+}
+
+.subscription-image-description{
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 17px;
+}
+
+#mdr-login-button{
+	padding-bottom: 8px;
+}
+
+.ui-dialog .ui-dialog-buttonpane{
+background:none repeat scroll 0 0 #FFFFFF;
+border-top:1px solid #98A1BC;
+color:#000000;
+margin: 0px;
+}
+.ui-dialog.ui-widget-content{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #ffffff;
+	color:#000000;
+	margin: 0px;
+	-moz-box-shadow: 8px 8px 5px #000000;
+	-webkit-box-shadow: 8px 8px 5px #000000;
+	box-shadow: 8px 8px 5px #000000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#000000');
+	 padding: 10px 10px 10px 0px;
+}
+
+.ui-dialog-titlebar .ui-widget-header{
+    background:none repeat scroll 0 0 #FFFFFF;
+}
+
+.ui-dialog-titlebar-close{
+	display: none;
+}
+
+.login-input-double{
+	 border: 1px solid #D6D6D6;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    height: 22px;
+    padding: 1px;
+	width: 355px;
+}
+
+.ui-dialog .ui-dialog-content {
+    border: 0 none;
+    
+}
+
+#forgot-password-link{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.mdr-subscription-overlay{
+	position: absolute;
+	top: 0;
+	left:0;
+	opacity: 0.56;
+	filter: alpha(opacity = 56);
+	background-color: #000000;
+	height: 828px;
+	display: none;
+	z-index: 1002;
+	width: 100%
+}
+
+#login-error-message{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10px;
+	padding-top: 10px;
+	line-height: 15px;
+}
+
+.login-date{
+	font-size: 10px;
+	color: #cc0000;
+}
+
+.recent-documents-items{
+	padding: 4px 0 4px 0;
+}
+
+
+		</style>
+		
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23203092-2']);
+_gaq.push(['_setDomainName', '10kwizard.com']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+	
+	</head>
+	<body>
+				<div id="pagewrap">
+			<div class="content">
+				<div id="header">
+					<div class="float-left">
+						<img src="/images/logo-product.png" alt="Morningstar Document Research login logo" />
+					</div>
+					<div class="float-right">
+						<div id="morningstar-logo">
+							<img src="/images/logo-site.png" alt="morningstar logo" />
+						</div>
+						
+					</div>
+					<div class="float-clear"></div>
+				</div>
+					<div id="top">
+						<div id="mdr-content">
+							<div class="float-left" id="mdr-content-left">
+								<p style="font-size:14px; line-height:19px" class="mdr-main-content">
+									Morningstar will be retiring Morningstar Document Research's web-based
+									service (MDR) on Aug. 31, 2016. The MDR website (documentresearch.morningstar.com)
+									will remain active until that date. Your subscription will expire at the
+									end of its current term.
+								</p>
+								<div id="mdr-main-content-sep" style="height:5px"></div>
+								<p style="font-size:14px; line-height:19px" class="mdr-main-content">
+									We want to give you ample notice and help minimize any disruption to your
+									business. We are working with Intelligize, the industry standard for SEC
+									compliance and legal research, to offer special terms for any client who'd
+									like to transition to its platform once your Morningstar subscription expires. 
+								</p>
+								<div id="mdr-main-content-sep" style="height:5px"></div>
+								<p style="font-size:14px; line-height:19px" class="mdr-main-content">
+									For more information about Intelligize, visit the company's website,
+									<a style="color: #ffffff" href="http://www.intelligize.com">http://www.intelligize.com</a>. You can
+									contact Intelligize at 888-215-6512 or
+									<a style="color: #ffffff" href="mailto:information@intelligize.com">information@intelligize.com</a>.
+								</p>
+								<div id="mdr-main-content-sep" style="height:5px"></div>
+								<p style="font-size:14px; line-height:19px" class="mdr-main-content">
+									If you have any questions regarding this retirement, please contact
+									Morningstar Product Support at
+									<a style="color: #ffffff" href="mailto:documentresearch_support@morningstar.com">documentresearch_support@morningstar.com</a>
+									or 1-800-365-4608 ext. 1. 
+								</p>
+							</div>
+							<div class="float-right" id="mdr-content-right"/>
+						</div>
+					<div class="float-clear"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

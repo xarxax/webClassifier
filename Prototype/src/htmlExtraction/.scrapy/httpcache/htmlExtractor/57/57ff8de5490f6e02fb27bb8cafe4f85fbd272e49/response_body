@@ -1,0 +1,636 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Campground Reservation Software -- Campground Master</title>
+<META NAME="description" CONTENT="Campground Software for reservation management at campgrounds, RV parks, resorts and more.">
+<META NAME="keywords" CONTENT="reservation management software,program,rv park management,campground management,rv park software,campground software,reservation,manager,guest,booking,campground,rv,park,resort,property,management,system">
+  
+<META NAME="copyright" CONTENT="Copyright 2001-2008, Cottonwood Software">
+<META HTTP-EQUIV="Window-target" CONTENT="_top">
+<META HTTP-EQUIV="pragma" content="no-cache">
+<META NAME="author" CONTENT="Cottonwood Software">
+
+  <link rel="shortcut icon" href="https://campgroundmaster.com/favicon.ico" type="image/vnd.microsoft.icon"> 
+
+<script type="text/javascript">
+/***********************************************
+* Chrome CSS Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+//** Chrome Drop Down Menu- Author: Dynamic Drive (http://www.dynamicdrive.com)
+
+//** Updated: July 14th 06' to v2.0
+	//1) Ability to "left", "center", or "right" align the menu items easily, just by modifying the CSS property "text-align".
+	//2) Added an optional "swipe down" transitional effect for revealing the drop down menus.
+	//3) Support for multiple Chrome menus on the same page.
+
+//** Updated: Nov 14th 06' to v2.01- added iframe shim technique
+
+//** Updated: July 23rd, 08 to v2.4
+	//1) Main menu items now remain "selected" (CSS class "selected" applied) when user moves mouse into corresponding drop down menu. 
+	//2) Adds ability to specify arbitrary HTML that gets added to the end of each menu item that carries a drop down menu (ie: a down arrow image).
+	//3) All event handlers added to the menu are now unobstrusive, allowing you to define your own "onmouseover" or "onclick" events on the menu items.
+	//4) Fixed elusive JS error in FF that sometimes occurs when mouse quickly moves between main menu items and drop down menus
+
+
+var cssdropdown={
+disappeardelay: 250, //set delay in miliseconds before menu disappears onmouseout
+dropdownindicator: '<img src="images/down.gif" border="0" />', //specify full HTML to add to end of each menu item with a drop down menu
+enableswipe: 1, //enable swipe effect? 1 for yes, 0 for no
+enableiframeshim: 1, //enable "iframe shim" in IE5.5/IE6? (1=yes, 0=no)
+
+//No need to edit beyond here////////////////////////
+
+dropmenuobj: null, asscmenuitem: null, domsupport: document.all || document.getElementById, standardbody: null, iframeshimadded: false, swipetimer: undefined, bottomclip:0,
+
+getposOffset:function(what, offsettype){
+	var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+	var parentEl=what.offsetParent;
+	while (parentEl!=null){
+		totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+		parentEl=parentEl.offsetParent;
+	}
+	return totaloffset;
+},
+
+swipeeffect:function(){
+	if (this.bottomclip<parseInt(this.dropmenuobj.offsetHeight)){
+		this.bottomclip+=10+(this.bottomclip/10) //unclip drop down menu visibility gradually
+		this.dropmenuobj.style.clip="rect(0 auto "+this.bottomclip+"px 0)"
+	}
+	else
+		return
+	this.swipetimer=setTimeout("cssdropdown.swipeeffect()", 10)
+},
+
+css:function(el, targetclass, action){
+	var needle=new RegExp("(^|\\s+)"+targetclass+"($|\\s+)", "ig")
+	if (action=="check")
+		return needle.test(el.className)
+	else if (action=="remove")
+		el.className=el.className.replace(needle, "")
+	else if (action=="add" && !needle.test(el.className))
+		el.className+=" "+targetclass
+},
+
+showhide:function(obj, e){
+	this.dropmenuobj.style.left=this.dropmenuobj.style.top="-500px"
+	if (this.enableswipe==1){
+		if (typeof this.swipetimer!="undefined")
+			clearTimeout(this.swipetimer)
+		obj.clip="rect(0 auto 0 0)" //hide menu via clipping
+		this.bottomclip=0
+		this.swipeeffect()
+	}
+	obj.visibility="visible"
+	this.css(this.asscmenuitem, "selected", "add")
+},
+
+clearbrowseredge:function(obj, whichedge){
+	var edgeoffset=0
+	if (whichedge=="rightedge"){
+		var windowedge=document.all && !window.opera? this.standardbody.scrollLeft+this.standardbody.clientWidth-15 : window.pageXOffset+window.innerWidth-15
+		this.dropmenuobj.contentmeasure=this.dropmenuobj.offsetWidth
+		if (windowedge-this.dropmenuobj.x < this.dropmenuobj.contentmeasure)  //move menu to the left?
+			edgeoffset=this.dropmenuobj.contentmeasure-obj.offsetWidth
+	}
+	else{
+		var topedge=document.all && !window.opera? this.standardbody.scrollTop : window.pageYOffset
+		var windowedge=document.all && !window.opera? this.standardbody.scrollTop+this.standardbody.clientHeight-15 : window.pageYOffset+window.innerHeight-18
+		this.dropmenuobj.contentmeasure=this.dropmenuobj.offsetHeight
+		if (windowedge-this.dropmenuobj.y < this.dropmenuobj.contentmeasure){ //move up?
+			edgeoffset=this.dropmenuobj.contentmeasure+obj.offsetHeight
+			if ((this.dropmenuobj.y-topedge)<this.dropmenuobj.contentmeasure) //up no good either?
+				edgeoffset=this.dropmenuobj.y+obj.offsetHeight-topedge
+		}
+	}
+	return edgeoffset
+},
+
+dropit:function(obj, e, dropmenuID){
+	if (this.dropmenuobj!=null) //hide previous menu
+		this.hidemenu() //hide menu
+	this.clearhidemenu()
+	this.dropmenuobj=document.getElementById(dropmenuID) //reference drop down menu
+	this.asscmenuitem=obj //reference associated menu item
+	this.showhide(this.dropmenuobj.style, e)
+	this.dropmenuobj.x=this.getposOffset(obj, "left")
+	this.dropmenuobj.y=this.getposOffset(obj, "top")
+	this.dropmenuobj.style.left=this.dropmenuobj.x-this.clearbrowseredge(obj, "rightedge")+"px"
+	this.dropmenuobj.style.top=this.dropmenuobj.y-this.clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+1+"px"
+	this.positionshim() //call iframe shim function
+},
+
+positionshim:function(){ //display iframe shim function
+	if (this.enableiframeshim && typeof this.shimobject!="undefined"){
+		if (this.dropmenuobj.style.visibility=="visible"){
+			this.shimobject.style.width=this.dropmenuobj.offsetWidth+"px"
+			this.shimobject.style.height=this.dropmenuobj.offsetHeight+"px"
+			this.shimobject.style.left=this.dropmenuobj.style.left
+			this.shimobject.style.top=this.dropmenuobj.style.top
+		}
+	this.shimobject.style.display=(this.dropmenuobj.style.visibility=="visible")? "block" : "none"
+	}
+},
+
+hideshim:function(){
+	if (this.enableiframeshim && typeof this.shimobject!="undefined")
+		this.shimobject.style.display='none'
+},
+
+isContained:function(m, e){
+	var e=window.event || e
+	var c=e.relatedTarget || ((e.type=="mouseover")? e.fromElement : e.toElement)
+	while (c && c!=m)try {c=c.parentNode} catch(e){c=m}
+	if (c==m)
+		return true
+	else
+		return false
+},
+
+dynamichide:function(m, e){
+	if (!this.isContained(m, e)){
+		this.delayhidemenu()
+	}
+},
+
+delayhidemenu:function(){
+	this.delayhide=setTimeout("cssdropdown.hidemenu()", this.disappeardelay) //hide menu
+},
+
+hidemenu:function(){
+	this.css(this.asscmenuitem, "selected", "remove")
+	this.dropmenuobj.style.visibility='hidden'
+	this.dropmenuobj.style.left=this.dropmenuobj.style.top=0
+	this.hideshim()
+},
+
+clearhidemenu:function(){
+	if (this.delayhide!="undefined")
+		clearTimeout(this.delayhide)
+},
+
+addEvent:function(target, functionref, tasktype){
+	if (target.addEventListener)
+		target.addEventListener(tasktype, functionref, false);
+	else if (target.attachEvent)
+		target.attachEvent('on'+tasktype, function(){return functionref.call(target, window.event)});
+},
+
+startchrome:function(){
+	if (!this.domsupport)
+		return
+	this.standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body
+	for (var ids=0; ids<arguments.length; ids++){
+		var menuitems=document.getElementById(arguments[ids]).getElementsByTagName("a")
+		for (var i=0; i<menuitems.length; i++){
+			if (menuitems[i].getAttribute("rel")){
+				var relvalue=menuitems[i].getAttribute("rel")
+				var asscdropdownmenu=document.getElementById(relvalue)
+				this.addEvent(asscdropdownmenu, function(){cssdropdown.clearhidemenu()}, "mouseover")
+				this.addEvent(asscdropdownmenu, function(e){cssdropdown.dynamichide(this, e)}, "mouseout")
+				this.addEvent(asscdropdownmenu, function(){cssdropdown.delayhidemenu()}, "click")
+				try{
+					menuitems[i].innerHTML=menuitems[i].innerHTML+" "+this.dropdownindicator
+				}catch(e){}
+				this.addEvent(menuitems[i], function(e){ //show drop down menu when main menu items are mouse over-ed
+					if (!cssdropdown.isContained(this, e)){
+						var evtobj=window.event || e
+						cssdropdown.dropit(this, evtobj, this.getAttribute("rel"))
+					}
+				}, "mouseover")
+				this.addEvent(menuitems[i], function(e){cssdropdown.dynamichide(this, e)}, "mouseout") //hide drop down menu when main menu items are mouse out
+//        this.addEvent(menuitems[i], function(){cssdropdown.delayhidemenu()}, "click") //hide drop down menu when main menu items are clicked on
+			}
+		} //end inner for
+	} //end outer for
+	if (window.createPopup && !window.XmlHttpRequest &&!this.iframeshimadded){ //if IE5.5 to IE6, create iframe for iframe shim technique
+		document.write('<IFRAME id="iframeshim"  src="" style="display: none; left: 0; top: 0; z-index: 90; position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)" frameBorder="0" scrolling="no"></IFRAME>')
+		this.shimobject=document.getElementById("iframeshim") //reference iframe object
+		this.iframeshimadded=true
+	}
+} //end startchrome
+
+}</script>
+
+<SCRIPT LANGUAGE=JAVASCRIPT>
+<!--
+if (top.frames.length!=0)
+  top.location=self.document.location;
+// -->
+</SCRIPT>
+
+<script language="JavaScript" src="https://secure.comodo.net/trustlogo/javascript/trustlogo.js" type="text/javascript">
+</script>
+
+<style type="text/css"><!--
+body { font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 80%; font-weight: normal; 
+		 color: #1F1F1F; background-color: #e8e8e8;
+		 background-image: url(images/bg-page-4.gif); }
+		 
+.autoctr {margin-left: auto; margin-right: auto;}
+.maintbl {margin-left: auto; margin-right: auto; border: 2px solid #3F5581; background-color: white; }
+		 
+td.pgbody {background-color: white; }	
+td.hdrtop {height: 120px; background-image: url(images/bg-hdg-top.gif);}	
+td.hdrmenu {height: 30px; background-image: url(images/bg-hdg-menu.gif);} 
+td.ftrmenu {border-top: 1px solid #95A8B7; background-color: #e1e8f3; padding: 4px 0 6px 0;}
+
+.verd-gray-200 {font-family: Verdana, Arial, Trebuchet MS, sans-serif; font-size: 200%; color: #595959; } 	 
+.verd-gray-175 {font-family: Verdana, Arial, Trebuchet MS, sans-serif; font-size: 175%; color: #595959; } 	 
+.verd-gray-150 {font-family: Verdana, Arial, Trebuchet MS, sans-serif; font-size: 150%; color: #595959; } 	 
+.verd-gray-135 {font-family: Verdana, Arial, Trebuchet MS, sans-serif; font-size: 135%; color: #595959; font-weight: bold;} 	 
+
+.treb-blue-225 {font-family: Trebuchet MS, Arial, sans-serif; font-size: 225%; color: #1c4494; } 	 
+.treb-blue-175 {font-family: Trebuchet MS, Arial, sans-serif; font-size: 175%; color: #1c4494; } 	 
+.treb-blue-150 {font-family: Trebuchet MS, Arial, sans-serif; font-size: 150%; color: #1c4494; } 	 
+.treb-blue-125 {font-family: Trebuchet MS, Arial, sans-serif; font-size: 125%; color: #1c4494; } 	 
+
+.treb-gray-150 {font-family: Trebuchet MS, Arial, sans-serif; font-size: 150%; color: #595959; } 	 
+
+.arial-brown-150 {font-family: Arial, Verdana, sans-serif; font-size: 150%; color: #4E4D29; } 
+
+.arial-tan-200 {font-family: Arial, Verdana, sans-serif; font-size: 200%; color: #949350; } 	 
+.arial-tan-175 {font-family: Arial, Verdana, sans-serif; font-size: 175%; color: #949350; } 	 
+.arial-tan-150 {font-family: Arial, Verdana, sans-serif; font-size: 150%; color: #949350; } 
+
+.arial-brown-150 {font-family: Arial, Verdana, sans-serif; font-size: 150%; color: #4E4D29; } 
+
+div.sidebar-hdg {font-family: Trebuchet MS, Arial, sans-serif; font-weight: bold; font-size: 125%; color: #1c4494; padding: 0; 
+                     margin-bottom: 3px;} 	 
+div.sidebar-text {font-family: Arial, sans-serif; margin-top: 0; margin-bottom: 30px; font-size: 90%; }
+div.quotebox {background-color: #E6E6E6; color: #2C2C2C; margin: 1px 1px 30px 1px; padding: 5px 7px 5px 10px; border: 4px double #8A8A8A; font-size: 100%;}	
+div.sidebartranbox {text-align: center; margin: 15px 30px 20px 20px; padding: 0;
+				font-family: Trebuchet MS, Arial, sans-serif; font-weight: bold; font-size: 120%;}	
+
+
+div.hdrtagtext {font-size: 18px; font-weight: bold; color: #3E3E3E;}
+
+.pagebody {padding: 5px 10px 5px 15px;}
+
+div.bluebox {border: 2px solid #758DB0; background-color: #E3E8EF; color: #122C61;
+				margin: 5px 10px 2px 10px; padding: 10px;}	 
+div.tanbox {border: 2px solid #949350; background-color: #ECEBDB; color: #404022;
+				padding: 10px;}	 
+div.graybox {border: 2px solid #595959; background-color: #E6E6E6; color: #2C2C2C;
+				margin: 5px 0 2px 10px; padding: 10px;}	
+div.transbox {text-align: center; margin: 15px 0px 20px 0px; padding: 0;
+				font-family: Trebuchet MS, Arial, sans-serif; font-weight: bold; font-size: 120%;}	
+div.transbox2 {margin: 0px 0px 0px 0px; padding: 0; font-family: Arial, sans-serif; font-size: 85%;}	
+				
+div.tanhdg {border: 1px solid #D1D0A7; margin-left: 0; padding: 5px 0 5px 12px; background-color: #EFEEDE;
+			 font-size: 130%; font-weight: bold; color: #4E4D29; }								 
+
+div.tanhdgtrebblue {border: 1px solid #D1D0A7; margin-left: 0; padding: 2px 0 2px 5px; background-color: #EFEEDE;
+			 font-family: Trebuchet MS, Arial, sans-serif; font-size: 150%; font-weight: bold; color: #1c4494;}								 
+
+a.goldbtn {color: #262626; text-decoration: none;}
+a.goldbtn:link {color: #262626; text-decoration: none;}
+a.goldbtn:visted {color: #262626; text-decoration: none;}
+a.goldbtn:hover {color: #e00000; text-decoration: none;}
+a.goldbtn:active {color: #262626; text-decoration: none;}
+
+a.orangebtn {color: #262626; text-decoration: none;}
+a.orangebtn:link {color: #262626; text-decoration: none;}
+a.orangebtn:visted {color: #262626; text-decoration: none;}
+a.orangebtn:hover {color: #204DA8; text-decoration: none;}
+a.orangebtn:active {color: #262626; text-decoration: none;}
+
+a.brownbtn {color: #FFFFD0; text-decoration: none;}
+a.brownbtn:link {color: #FFFFD0; text-decoration: none;}
+a.brownbtn:visted {color: #FFFFD0; text-decoration: none;}
+a.brownbtn:hover {color: Yellow; text-decoration: none;}
+a.brownbtn:active {color: #FFFFD0; text-decoration: none;}
+
+a.graybtn {color: #0E234D; text-decoration: none;}
+a.graybtn:link {color: #0E234D; text-decoration: none;}
+a.graybtn:visted {color: #0E234D; text-decoration: none;}
+a.graybtn:hover {color: Yellow; text-decoration: none;}
+a.graybtn:active {color: #0E234D; text-decoration: none;}
+
+a.cgmenuftr {text-align: center; padding: 0 8px 0 8px;
+			font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #3f5581; text-decoration: underline;}
+a.cgmenuftr:link {color: #3f5581; text-decoration: underline;}
+a.cgmenuftr:visted {color: #3f5581; text-decoration: underline;}
+a.cgmenuftr:hover {color: #0099FF; text-decoration: underline;}
+a.cgmenuftr:active {color: #3f5581; text-decoration: underline;}
+
+a.cgblue {color: #204DA8; text-decoration: underline;}
+a.cgblue:link {color: #204DA8; text-decoration: underline;}
+a.cgblue:visted {color: #204DA8; text-decoration: underline;}
+a.cgblue:hover {color: #376DD9; text-decoration: underline;}
+a.cgblue:active {color: #204DA8; text-decoration: underline;}
+
+a {color: #204DA8; text-decoration: underline;}
+a:link {color: #204DA8; text-decoration: underline;}
+a:visted {color: #204DA8; text-decoration: underline;}
+a:hover {color: #376DD9; text-decoration: underline;}
+a:active {color: #204DA8; text-decoration: underline;}
+
+a.cgtan {color: #666537; text-decoration: underline;}
+a.cgtan:link {color: #666537; text-decoration: underline;}
+a.cgtan:visted {color: #666537; text-decoration: underline;}
+a.cgtan:hover {color: #376DD9; text-decoration: underline;}
+a.cgtan:active {color: #666537; text-decoration: underline;}
+
+a.cgtannoul {color: #666537; text-decoration: none; 	font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+a.cgtannoul:link {color: #666537; text-decoration: none;}
+a.cgtannoul:visted {color: #666537; text-decoration: none;}
+a.cgtannoul:hover {color: #376DD9; text-decoration: none;}
+a.cgtannoul:active {color: #666537; text-decoration: none;}
+
+.homebtn {border-left: 1px solid #3F5581;}
+.copyrt {font: italic 10px Arial, sans-serif; padding: 5px 0 10px 0; text-align: center; color: #333333;}
+
+
+
+/*  Forces vertical scrollbar even if content of page is not long enough.  
+    Prevents jumping in FireForx and Opera due to the scrollbar popping 
+	 in and out pushing centered content in.    */
+html { height: 100%; margin-bottom: 1px; }
+.chromestyle{ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; width: 99%; }
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+                    content: ".";  display: block; height: 0; clear: both; visibility: hidden; }
+
+.chromestyle ul{ width: 100%; padding: 4px 0; margin: 0; text-align: center; /*set value to "left", "center", or "right"*/ }
+.chromestyle ul li{ display: inline; }
+.chromestyle ul li a{ color: white; padding: 4px 10px; margin: 0; text-decoration: none; border-right: 1px solid #3F5581; }
+.chromestyle ul li a:link{ color: white; padding: 4px 10px; margin: 0; text-decoration: none; border-right: 1px solid #3F5581; }
+.chromestyle ul li a:visited{ color: white; padding: 4px 10px; margin: 0; text-decoration: none; border-right: 1px solid #3F5581; }
+.chromestyle ul li a:hover{ color: Yellow; text-decoration: none; }
+.chromestyle ul li a:active{ color: white; padding: 4px 10px; margin: 0; text-decoration: none; border-right: 1px solid #3F5581; }
+    
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{ position:absolute; top: 0; border: 1px solid #3F5581; /*THEME CHANGE HERE*/
+              border-bottom-width: 0; font: normal 12px Verdana; line-height:18px; z-index:100; background-color: #ecf1f8; width: 160px; visibility: hidden;
+              filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/
+              }
+.dropmenudiv a{ width: auto; display: block; text-indent: 3px; border-bottom: 1px solid #3F5581; /*THEME CHANGE HERE*/
+             padding: 2px 0; text-decoration: none; font-weight: bold; color: #3E3E3E; }
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%; }
+
+* html .dropmenudiv a:hover{ /*IE only hack*/
+width: 100%; }
+
+.dropmenudiv a:link{ width: auto; display: block; text-indent: 3px; border-bottom: 1px solid #3F5581; /*THEME CHANGE HERE*/
+             padding: 2px 0; text-decoration: none; font-weight: bold; color: #3E3E3E; }
+.dropmenudiv a:visited{ width: auto; display: block; text-indent: 3px; border-bottom: 1px solid #3F5581; /*THEME CHANGE HERE*/
+             padding: 2px 0; text-decoration: none; font-weight: bold; color: #3E3E3E; }
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+             background-color: #FFFFCA; }
+.dropmenudiv a:active{ width: auto; display: block; text-indent: 3px; border-bottom: 1px solid #3F5581; /*THEME CHANGE HERE*/
+             padding: 2px 0; text-decoration: none; font-weight: bold; color: #3E3E3E; }
+--></style>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<br>  <!--  This BR gives blank space at top of page, before header  -->
+
+<table width="750" cellpadding="0" cellspacing="0" border="0" class="maintbl"> <!-- **** originally width 100%, changed for single BG image **** -->
+
+<!-- common heading and menu for most pages -->
+
+
+<!--  Light blue header and images/text in header area  -->
+  <tr valign="top"><td class="hdrtop">
+    <center>
+    <div>
+    <img src="images/campground-master2.gif" alt="Campground Master" height="39" width="401" border="0" style="margin: 17px 0 3px 0;">
+    </div>
+    <div class="hdrtagtext">
+    Reservation Software for RV Parks and Campgrounds
+    </div>
+    <div>
+    <img src="images/by-cottonwood-software.gif" alt="by Cottonwood Software" height="19" width="191" border="0" style="margin: 6px 0 0 0;">
+    </div>
+    </center>
+  </td></tr>
+<!-- Main Navigation Menu in Dark Blue Bar -->	
+  <tr valign="top">
+    <td class="hdrmenu">
+    <center>
+    <div class="chromestyle" id="chromemenu">
+    <ul>
+    <li><a href="index.html" class="homebtn">Home</a></li>
+    <li><a rel="menudemo">FREE Demo</a></li>   <!-- href="free_demo.html" -->
+    <li><a rel="menufeatures">Features</a></li>  <!-- href="features.html"  -->
+    <li><a rel="menupurchase">Purchase</a></a></li>	<!-- href="order.html"  -->
+    <li><a rel="menusupport">Support</a></li>  <!-- href="support.html"  -->
+    <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </div>
+    </center>
+
+    <!-- Free Demo drop down menu -->                                                   
+    <div id="menudemo" class="dropmenudiv" style="width: 190px;">
+    <a href="free_demo.html">Download a Demo</a>
+    <a href="order_demo.html">Order a Demo on CD</a>
+    <a href="quickstart.html">Quick-Start Tour</a>
+    <a href="zip/campground_master_information.pdf" target="_brochure">Download a Brochure</a>
+    <a href="free_trial.html">Free 30-day Trial</a>
+    </div>
+
+    <!-- Features drop down menu -->                                                   
+    <div id="menufeatures" class="dropmenudiv" style="width: 280px;">
+    <a href="features.html">Features & Benefits</a>
+    <a href="maps.html">&nbsp; &nbsp; --> Maps</a>
+    <a href="online.html">&nbsp; &nbsp; --> Online Reservations</a>
+    <a href="creditcards.html">&nbsp; &nbsp; --> Credit Card Processing</a>
+    <a href="pos.html">&nbsp; &nbsp; --> Point of Sale</a>
+    <a href="networking.html">&nbsp; &nbsp; --> Networking</a>
+    <a href="buying.html">Buying Guide</a>
+    <a href="faq.html">Frequently Asked Questions</a>
+    <a href="why.html">Why choose Campground Master?</a>
+    <a href="testimonials.html">Comments from Customers</a>
+    <a href="quickstart.html">Quick-Start Tour</a>
+    <a href="uses.html">Marinas/Motels/Kennels/Flea Markets...</a>
+    </div>
+
+    <!-- Purchase drop down menu -->                                                
+    <div id="menupurchase" class="dropmenudiv" style="width: 160px;">
+    <a href="order.html">Pricing</a>
+    <a href="order_procedure.html">Ordering Information</a>
+    <a href="hardware_pricing.html">P.O.S. Hardware</a>
+    <a href="upgrade.html">Order Upgrade</a>
+    </div>
+
+    <!-- Support drop down menu -->                                                
+    <div id="menusupport" class="dropmenudiv" style="width: 220px;">
+    <a href="support.html">Support Information</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="copying.html">Installing on a new computer</a>
+    <a href="download_upgrade.html">Upgrading to a new version</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="releasenotes.html">Release Notes</a>
+    <a href="newsletter_join.html">Newsletters</a>
+    <a href="http://campgroundmaster.com/forum14/" target="_forum">User's Forum</a>
+    <a href="requirements.html">System Requirements</a>
+    </div>
+
+    <script type="text/javascript">
+    cssdropdown.startchrome("chromemenu")
+    </script>
+
+  </td></tr>
+
+  <tr><td class="pagebody">  <!--  Main part of page, with white background  -->
+
+    <h1 class="verd-gray-135" style="margin-top: 10px; margin-bottom: 0px;">Reservation Software for Campgrounds and RV Parks</h1>
+
+    <p style="margin-top: 10px;">
+    <a href="maps.html"><img src="images/screen-shot-2.jpg" height="230" width="270" align="right"  border=0 alt="Maps screen shot"></a>
+      Campground Master can simplify the task of reservation management for 
+      any campground or RV resort, or any kind of hospitality or rental business. 
+      If you're still using a wall chart and paper forms, we can help you make the 
+      transition to a computerized system as quick and easy as possible.
+    </p>
+    <p>
+      With its emphasis on ease of use and flexibility, Campground Master helps you manage 
+      your business the way you want. We encourage you to <A href="free_demo.html">download the free demo</a> and try our software 
+      free of charge, so you can see for yourself how simple it is to customize and operate.
+    </p>
+    <p>
+    <br><b>Where to Start?</b>
+    <br><br>
+      A brief overview is presented below, but be sure to check the "Features" menu above for more information. If you're anxious to
+      get going but don't know where to start, check the <a href="buying.html"><b>Buying Guide</b></a> to find out how to get a <b>FREE 30-day trial</b>.
+      <br><br>
+    </p>
+
+
+    <div class="tanhdg" style="width: 95%">
+    <center>
+    Ideal for any size of business -- and any size of budget.
+    </center>
+    </div>
+
+       <div class="bluebox" style="font-size: 85%; width: 220px; float: right; margin-top: 10px; margin-left: 5px;" >
+       <h2 class="treb-blue-150" style="padding: 0; margin: 0; margin-bottom: 3px;">Download a Brochure</h2>
+       You can <a href="zip/campground_master_information.pdf" class="cgblue" target="_new">download a PDF document</a>
+       containing most of the information on this web site, so you can print it out
+       and review at your convenience (about 30 pages total).
+       <br><br>
+       A <a href="zip/brochure_2_pages.pdf" class="cgblue" target="_new">2-page flyer</a> is also available if you need a quick illustrated summary.
+       <br><br>
+
+
+       <h2 class="treb-blue-150" style="padding: 0; margin-bottom: 3px;">Why Choose Us?</h2>
+       If you want to get right to the primary question of why Campground Master is the best choice for you, 
+       <a href="why.html">click here to find out!</a>
+
+         <div class="graybox" style="margin: 1px; margin-top: 35px; padding: 5px 7px 5px 10px; border: 4px double #8A8A8A; color: #3D3D3D; font-size: 110%;">
+            "...I tried many before yours and in my mind your are the only one that knows what campground owners need.  
+              &nbsp We love your program and find it complete with all the frills but still easy to operate."<br>
+         <div style="margin-top: 2px; font-size: 80%; font-style: italic;">
+         - S. Foro, <br>Whispering Pines Campsites & RV Park
+         </div>
+         <div style="margin-top: 5px; font-size: 80%;">
+         <a href="testimonials.html">More comments...</a></div>
+         </div>
+       </div>
+
+
+      <p style="margin-top: -1px;">
+      <UL>
+      <LI>Easy to use and learn -- most campgrounds can be up and running within a day.
+      <br> <br>
+      <LI>Minimal computing power needed -- can be used on nearly any computer that runs Windows XP or later.
+      <br> <br>
+      <LI>Extremely flexible database supports any type of rentable space or items, custom transaction categories, payment types, and more.
+      <br> <br>
+      <LI>Only <b>$795</b> for a standalone system, no matter how many campsites or rooms you have. (<a href="order.html">More info</a>).
+      <br> <br>
+      <LI><b>No per-site setup costs</b> -- We don't require you to pay for system setup and map design like some other companies do.
+                  Setting up the database yourself is easy (especially with the help of our support team), and you can use any map graphics you might already have.
+                  Of course if you want us to create a map (at an extra cost), that's an option too.
+                  
+      <br> <br>
+      <LI>Includes a very detailed printed manual, plus quick-start tutorials.  (The full user manual is also available as instant program help -- 
+      just press the F1 key at any place in the program to "call for help").
+      <br> <br>
+      <LI><a href="support.html"><b>Support</b></a> by phone or E-mail, 7 days a week!  Our <b>personal</b> support (no automated "support tickets") 
+      has been highly praised by our customers.
+      </UL>
+      <br>
+      <br>
+      <br>
+      </p>
+
+    <div class="tanhdg" style="width: 95%">
+    <center>
+    Dynamic Report tabs present the information you need most, instantly.
+    </center>
+    </div>
+
+      <br>
+      <a href="images/screenshot1.gif"><img src="images/screen-shot-1.jpg" height="230" width="270" align="right" border=0 alt="grid screen shot"></a>
+      
+      <p style="margin-top: -1px;">
+      <UL>
+      <LI>Reports are available with a single click, and any report can be printed as-is or with various formatting options.
+      <br> <br>
+      <LI>View occupancy in grid format, Arrivals list, Departures list, On-Site, Payments Due, and more with single clicks.
+      <br> <br>
+      <LI> <b>Customizable dynamic maps</b> -- update them anytime you like with built-in tools.  <a href="maps.html">Click here to see sample maps</a>.
+      <br> <br>
+      <LI>Comprehensive reservation and transaction tracking, including date, time, and operator.
+      <br> <br>
+      <LI>Saves all customer information for easy recall on return visits.
+      <br> <br>
+      <LI>Walk-ins can be handled with just a few clicks of the mouse.
+      <br> <br>
+      <LI>Printed receipts & forms, E-mail messages, labels, reports, dialogs and menus can be customized within the program.
+      <br> <br>
+      <LI><b>Many more features...</b><a href="features.html">read on...</a>
+      </UL>
+
+    <br>
+
+    <div style="margin-left:20px;">
+    <h2 class="treb-blue-150" style="margin: 0 0 1px 0;">Still have questions?</h2>
+
+    <p style="margin-top: 5px;">
+    <font style="margin-top: 10px;"> Try the list of <a href="faq.html">Frequently Asked Questions</a></font>, <a href="buying.html">Buying Guide</a>, or <a href="contact.html">Contact Us</a> directly.
+    </div>
+    
+    <br>
+
+
+  </td></tr>  <!-- End Main part of page, with white background  --> 
+
+  <!--  TD to hold navigation links across bottom of page  -->
+  <tr>
+  <td class="ftrmenu">
+    <center>
+    <div>
+    <a href="campsoft.html" class="cgmenuftr">Home</a>
+    <a href="free_demo.html" class="cgmenuftr">Free Demo</a>
+    <a href="features.html" class="cgmenuftr">Features</a>
+    <a href="order.html" class="cgmenuftr">Ordering Info</a>
+    <a href="support.html" class="cgmenuftr">Support</a>
+    <a href="contact.html" class="cgmenuftr">Contact Us</a>
+    </div>
+    </center>
+  </td></tr>
+
+</table> <!--  End Table to hold the entire centered webpage -->
+
+
+<div class="copyrt">
+Copyright 2001-2018 by Cottonwood Software, LLC, All Rights Reserved
+&nbsp; &nbsp; <a href="privacy.html">Privacy Policy</a>
+<br>
+Campground Master is a registered trademark of Cottonwood Software, LLC
+</div>
+
+
+
+</body>
+</html>

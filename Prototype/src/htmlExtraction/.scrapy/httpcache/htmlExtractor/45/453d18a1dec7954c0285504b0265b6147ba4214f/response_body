@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="WineQuest">
+   <meta name="keywords" content="wine, beer, liquor, management">
+   <title>WineQuest</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie6.css" />
+<![endif]-->
+<script type="text/javascript" src="wineinsight/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="wineinsight/js/jquery.url.js"></script>
+<script type="text/javascript" src="common.js"></script>
+
+</head>
+<body class="home">
+<div id="boxes">
+	<div id="dialog" class="window">
+		<div id="popupbox">
+			<form name="top100-form" id="top100-form" method="post">
+			<h3>WELCOME TO WINEQUEST</h3>
+				<p>WineQuest has more than 125,000 expertly reviewed wines in our <strong>Proprietary Beverage Database</strong>. To view a list of our Top 100 wines most commonly in the lists of our customers, please provide the following information:</p>
+				<div class="popup-inputs">
+
+					<div class="name">
+						<h4 class="name">YOUR NAME:</h4>
+						<input class="name" name="name" size="14" />
+					</div>
+
+					<div class="company">
+						<h4 class="company">COMPANY:</h4>
+						<input class="company" name="company" size="14" />
+					</div>
+
+					<div class="email">
+				 		<h4 class="email">EMAIL:</h4>
+						<input class="email" name="email" size="14" />
+					</div>
+
+				</div>
+
+				<div id="login-submit">
+						<div id="popup-submit">
+								<input class="submit right" type="image" src="images/login_btn.png" />
+								<button type="submit"> GO</button>
+						</div>
+						<!-- Uncomment if you want an x to close the popup
+						<a href="#"class="close"/>x</a> -->
+				</div>
+				<div id="popupbox-error"></div>
+			</form>
+		</div>
+	</div><!-- end dialog -->
+
+</div><!-- end boxes -->
+<div id="slickbox">
+  <div id="error">
+    <form id="sendmail" method="post">
+      <label>
+        <strong>ERROR: </strong>
+        <span id="bad_logon_message"></span>
+        <span id="login_help">
+          | <strong>HELP:</strong> Get login instructions emailed to you now:
+          <input type="text" id="email" name="email"/>
+        </span>
+      </label>
+      <a><input type="image" src="images/error-button.gif" id="errorbutton"></a>
+    </form>
+  </div>
+</div>
+<div id="login">
+  <form name="login-form" method="post" id="login-form">
+    <div class="client-signin">
+      <ul>
+        <li><a href="#">CLIENT LOGIN:</a></li>
+        <li><label for="myusername" class="login-label">username:</label><input type="text" name="myusername" id="myusername" class="login-input" value=""/></li>
+        <li><label for="mypassword" class="login-label">password:</label><input type="password" name="mypassword" id="mypassword" class="login-input" /></li>
+        <li><a><input type="image" src="images/login_btn.png" class="right"/></a></li>
+        <li><a class="login-contact" href="contact.php">CONTACT US</a></li>
+    </div> <!--Client Signin-->
+  </form>
+</div>
+<div id="mask"></div>
+<div id="loading"><img src="images/bigrotation2.gif"></div>
+
+<div id="container">
+	<div id="header">
+
+	<div id="logo_container">
+		<div id="logo"><a href="index.php"><img src="images/winequest_logo.png" title="WineQuest Home"></a></div>
+		<div id="t_logo"><a href="https://twitter.com/#!/winequest" target="wqmobile"><img src="images/t_button.png" title="Twitter page"></a></div>
+		<div id="f_logo"><a href="http://www.facebook.com/winequest" target="wqmobile"><img src="images/f_logo.png" title="Facebook page"></a></div>
+		<div id="appstore"><a href="http://itunes.apple.com/us/app/winequest/id523235593?mt=8" target="wqmobile"><img src="images/appstore.png" title="App Store"></a></div>
+		<div id="wqappicon"><a href="http://itunes.apple.com/us/app/winequest/id523235593?mt=8" target="wqmobile"><img src="images/wqappicon.60.png" 
+title="App Store"></a></div>
+	</div>
+
+	<div id="nav">
+    <ul><li id="solutions" class="first"><a href="solutions.php">Solutions</a></li><li id="customers" class=""><a href="customers.php">Customers</a></li><li id="about" class="last"><a href="about.php">About Us</a></li></ul>	</div>
+
+
+	</div> <!-- end of header-->
+  <div id="copy">
+				&nbsp;
+<!--
+    <h2>Manage</h2>
+    <h3>Your Wine Program and...</h3>
+    <ul>
+      <li>Increase wine sales</li>
+      <li>Minimize dead stock</li>
+      <li>Keep wine menus fresh and dynamic</li>
+      <li>Develop accurate wine inventory roster</li>
+      <li>Simplify wine selection for Banquets and Catering</li>
+      <li>Educate your staff</li>
+      <li>Improve guest satisfaction</li>
+    </ul>
+    <div class="clear"></div>
+-->
+  </div>
+	<div id="trio">
+
+		<div id="left">
+				<div class="trioHeaderA">RESTAURANTS/HOTELS</div>
+				<div class="trioHeaderB">Wine Menu Manager</div>
+				<div class="learnMore"><a href="solutions.php">&raquo Learn More</a></div>
+				<p>
+						<strong>Increase your wine sales and guest satisfaction</strong>
+						through balanced wine lists, dynamic menus, and staff training available in our online system.
+				</p>
+		</div>
+
+		<div id="middle">
+				<div class="trioHeaderA">EXTENSIVE</div>
+				<div class="trioHeaderB">Wine Database</div>
+				<div id="middle-top">
+      <a href="#dialog" name="modal" id="top-wines">Top Wines</a>
+				</div>
+				<div class="learnMore"><a href="solutions.php#bevdb">&raquo Learn More</a>
+</div>
+				<p>
+						<strong>Our Proprietary Wine Database</strong>
+						contains the world's largest selection of flavor profiled wines. 
+						<br>
+						<br>
+						<br>
+						<strong>Products in<br>
+						our database:</strong><br>
+				</p>
+      <div id="counter">
+								<span class="first">3</span>
+								<span class="second">6</span>
+								<span class="third">4</span>
+								<span class="fourth">9</span>
+								<span class="fifth">3</span>
+								<span class="sixth">1</span>
+						</div>
+		</div>
+
+		<div id="right">
+				<div class="trioHeaderA">PREDICTIVE</div>
+				<div class="trioHeaderB">Analytics</div>
+				<div class="learnMore"><a href="wqm.php">&raquo Learn More</a></div>
+				<p>
+						<strong>Will I like this wine?™</strong>
+				</p>
+				<p style="margin-top: -5px;">
+						The first and the best at 1:1 predictive wine analytics.  Our technology generates accurate preferential predictions by matching individual consumer wine flavor preferences and aversions to product-specific flavor attributes. <br>
+				</p>
+		</div>
+	<div class="clear"></div>
+  </div>
+
+
+		<div id="logos">
+			<img alt="footer-logos" src="images/footer-logos.png">
+		</div>
+
+		<div id="footer">
+			 	<div id="copyright">&#169 2012 WineQuest, LLC.</div>
+      <ul><li id="solutions" class="first"><a href="solutions.php">Solutions</a></li><li id="customers" class=""><a href="customers.php">Customers</a></li><li id="about" class=""><a href="about.php">About Us</a></li><li id="contact" class="last"><a href="contact.php">Contact Us</a></li></ul>		</div>
+
+
+</div>
+</body>
+</html>

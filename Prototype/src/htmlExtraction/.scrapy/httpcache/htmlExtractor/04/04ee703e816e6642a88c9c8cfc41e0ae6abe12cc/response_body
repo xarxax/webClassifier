@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Problem Solving Products, Inc. - O-rings, Seals in Kalrez, FKM fluoroelastomer, Nitrile, other elastomers.</title>	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Problem Solving Products carries o-rings, seals, custom molded rubber parts, wipers, diaphragm and valves in all types of materials including Kalrez, FKM fluoroelastomer, Simriz, nitrile, buna-n, silicone, rubber, neoprene, polyurethane, TFE and FEP encapsulated elastomers." />
+<meta name="keywords" content="dupont kalrez,kalrex resistance,kalrez availability,kalrez chemical compatibility,kalrez chemical process,kalrez chemical properties,kalrez comparison chart
+kalrez compatibility chart,kalrez critical properties,kalrez distributor,kalrez dupont,kalrez fda,kalrez fda approved,kalrez fda compliance,kalrez ffkm,kalrez food,kalrez gas,kalrez high temperature o-rings,kalrez industries,kalrez low temperature limit,kalrez oil,kalrez oil and gas,kalrez o-ring availability,kalrez o-ring sizes,kalrez o-rings,kalrez parts availability,kalrez pharm,kalrez pharmaceutical,kalrez properties,kalrez sanitary seals,kalrez seals,kalrez semicon,kalrez semiconductor,kalrez temperature,kalrez temperature rating,kalrez working temperature,o-ring kalrez,ultrapure trilobe seal,zalak seals." />
+<script src="includes/respond.js"></script>
+<script src="includes/html5.js"></script>
+<link href="includes/styles.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="flexi_slider/flexslider.css" type="text/css" media="screen"/>
+<link href="includes/meanmenu.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="includes/ddsmoothmenu.css"/>
+<link href="includes/media.css" type="text/css" rel="stylesheet"/>
+<script src="flexi_slider/jquery.js"></script>
+<script src="flexi_slider/jquery.flexslider-min.js"></script>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+<link type="text/css" rel="Stylesheet" href="validity-master/src/jquery.validity.css"/>
+        
+        
+         <script type="text/javascript">           
+          
+           $(document).ready(function () {                
+               $("#request_a_quote").click(function(){     
+                    if(fnRequestQuoteValidation()){
+                        $('#rfqform').submit();
+                    }                  
+                   
+               }); 
+			   if($("#cmb_seal_inside_diameter").val() == "Other" || $("#cmb_seal_inside_diameter").val()=="Not Selected"){ $("#txt_seal_depth_other").attr("disabled", false);	 }		
+			   else{ $("#txt_seal_depth_other").val(''); $("#txt_seal_depth_other").attr("disabled", true);	 }
+			   
+			   if($("#seal_outside").val() == "Other" || $("#seal_outside").val() == "Not Selected") {$("#seal_outside_other").attr("disabled", false); }			
+			   else{ $("#seal_outside_other").val(''); $("#seal_outside_other").attr("disabled", true);	}			   
+
+			   
+			   if($("#seal_crosssection").val() == "Other" || $("#seal_crosssection").val() == "Not Selected"){	$("#seal_crosssection_other").attr("disabled", false);	}		
+			   else{ $("#seal_crosssection_other").val(''); $("#seal_crosssection_other").attr("disabled", true);}	
+			   
+			   if($("#seal_depth").val() == "Other" || $("#seal_depth").val() == "Not Selected") { $("#seal_depth_other").attr("disabled", false); }			
+			   else{ $("#seal_depth_other").val(''); $("#seal_depth_other").attr("disabled", true);	}
+			   
+			   $("#cmb_seal_inside_diameter").change(function(){
+					
+					if($(this).val() == "Other" || $(this).val() == "Not Selected"){ $("#txt_seal_depth_other").attr("disabled", false);	}		
+					else {$("#txt_seal_depth_other").val(''); $("#txt_seal_depth_other").attr("disabled", true);}			
+			   });
+			   
+			   $("#seal_outside").change(function(){				
+					if($(this).val() == "Other" || $(this).val() == "Not Selected"){ $("#seal_outside_other").attr("disabled", false);	}		
+					else { $("#seal_outside_other").val(''); $("#seal_outside_other").attr("disabled", true);	}		
+			   });
+			   
+			   $("#seal_crosssection").change(function(){			
+				if($(this).val() == "Other" || $(this).val() == "Not Selected"){ $("#seal_crosssection_other").attr("disabled", false);	}		
+				else{ $("#seal_crosssection_other").val(''); $("#seal_crosssection_other").attr("disabled", true);}			
+			   });
+			   
+			   $("#seal_depth").change(function(){				
+				if($(this).val() == "Other" || $(this).val() == "Not Selected"){ $("#seal_depth_other").attr("disabled", false);		}	
+				else{ $("#seal_depth_other").val(''); $("#seal_depth_other").attr("disabled", true);	}		
+			   });
+             }); 
+                
+              function fnRequestQuoteValidation(){
+                $.validity.start();
+                if ($("#rd_request_option_1").is(":checked")) {
+                    /*$("#txt_seal_request_identifier")
+                        .require("Request Identifier is required ");                    
+                    $("#txt_seal_part_number")
+                        .require("txt_seal_part_number is required ")*/			
+                    $("#cmb_seal_seal_type")
+                        .require("Seal Type is required ");  
+					$("#txt_quantity")
+                        .require("Quantity is required ");
+                    /*$("#cmb_seal_dash_number")
+                        .require("AS568 Dash Number is required "); 
+                    $("#txt_seal_materials")
+                        .require("Materials is required "); 
+                    $("#txt_seal_application")
+                        .require("Application is required ");  
+                    $("#cmb_seal_hear_about_us")
+                        .require("How did you hear about us is required "); */ 
+					if($("#cmb_seal_seal_type").val() == "Other"){
+						$("#seal_type_other")
+							.require("Other seal type value is required ");  
+					}
+                }
+                if ($("#rd_request_option_2").is(":checked")) {
+                    if(document.rfqform.elements['radio_o_ring_quality'][2].checked==true){
+                        $("#txt_o_ring_quality")
+                        .require("Other Quality value is required ");   
+                     }    
+                    
+                      var chk_length=document.rfqform.elements['chbx_o_ring_special[]'].length;
+                      for(i=0;i<chk_length;i++){
+                     if(document.rfqform.elements['chbx_o_ring_special[]'][i].value=='other' && document.rfqform.elements['chbx_o_ring_special[]'][i].checked==true){
+ $("#txt_o_ring_special")
+                        .require("Other value for Special Requirement is required ");  
+}
+                      }    
+
+                    
+
+
+
+                    /*$("#o_ring_ident")
+                        .require("Request Identifier is required ");                    
+                     $("#o_ring_partnum")
+                        .require("Part Number is required "); */ 
+		     $("#cmb_o_ring_seal_type")
+                        .require("Material Type is required "); 
+                     $("#txt_o_ring_durometer")
+                        .require("Durometer is required ");
+						
+					 /*$("#txt_o_ring_color")
+                        .require("Color is required ");                     
+                     $("#txt_o_ring_quantity")
+                        .require("Quantity is required "); 
+                     $("#o_ring_aboutus")
+                        .require("How did you hear about us ");*/ 
+						
+		     if($("#cmb_o_ring_seal_type").val() == "Other"){
+		   	$("#cmb_o_ring_seal_type_other")
+                		.require("Other Material type value is required ");  
+		     }  
+                         
+
+                }
+                if ($("#rd_request_option_3").is(":checked")) {
+                  /*$("#custom_ident")
+                        .require("Request Identifier is required ");*/  
+                    $("#txt_custom_pNumber")
+                        .require("Part Number is required "); 
+                   /* $("#txt_custom_rLevel")
+                        .require("Rev Level is required ");  
+                    $("#txt_custom_pDescription")
+                        .require("Part Description is required ");   
+                    $("#txt_custom_pApplication")
+                        .require("Part Application is required "); */ 
+                    $("#cmb_custom_seal_type")
+                        .require("Material Type is required ");
+					if($("#cmb_custom_seal_type").val() == "Other"){
+						$("#cmb_custom_seal_type_other")
+							.require("Other Material type value is required ");  
+					} 
+					$("#txt_custom_durometer")
+                        .require("Durometer is required "); 
+					if(document.rfqform.elements['radio_custom_quality'][2].checked==true){
+                        $("#txt_custom_quality")
+                        .require("Other Quality value is required ");   
+                     } 	
+					
+					var chk_length=document.rfqform.elements['chbx_custom_special[]'].length;
+                      for(i=0;i<chk_length;i++){
+                     if(document.rfqform.elements['chbx_custom_special[]'][i].value=='other' && document.rfqform.elements['chbx_custom_special[]'][i].checked==true){
+ $("#txt_custom_special")
+                        .require("Other value for Special Requirement is required ");  
+}
+                      }    
+                       
+                    /*$("#txt_custom_color")
+                        .require("Color is required "); */
+                    $("#txt_custom_eau")
+                        .require("Estimated Annual Usage is required "); 
+                    /*$("#txt_custom_quantity")
+                        .require("Quote Quantities is required ");  
+                    $("#txt_custom_additional")
+                        .require("Additional Information is required ");  */
+                    $("#txt_custom_dueDate")
+                        .require("Quote Due is required ");    
+                    /*$("#custom_aboutus")
+                        .require("How did you hear about us is required ");*/
+						
+					
+                }
+                var result = $.validity.end();  
+                return result.valid; 
+                } 
+           
+     
+             $(document).ready(function () {               
+               $("#back_option").click(function(){  
+			   $.validity.start();
+                      show_request_option('Back');        
+               });  
+             });   
+            
+            $(document).ready(function () {               
+               $("#next_option").click(function(){  
+                  if(fnRequestOptionValidation()){
+                   show_request_option('next');
+                 }
+               });  
+             });   
+         
+            function fnRequestOptionValidation()
+             {    
+               $.validity.start();
+                 $("#txt_email_address")
+                        .require("Email Address")
+                        .match("email"); 
+                 $("#request_quotation_first_name")
+                        .require("First Name is required ");  
+                 $("#request_quotation_last_name")
+                        .require("Last Name  is required ");   
+                /*$("#request_quotation_address ")
+                        .require("Address is required "); 
+                $("#request_quotation_city")
+                        .require("City is required "); 
+                $("#request_quotation_state")
+                        .require("State is required ");*/ 
+                $("#request_quotation_zipcode")
+                        .require("zipcode is required ");                 
+                var result = $.validity.end();  
+                return result.valid;                      
+             }  
+
+
+            $(document).ready(function () {               
+               $("#contact").click(function(){   
+                   if(fncontactUsValidation()){
+                       $('#ContactForm').submit();
+                   }
+               });  
+            }); 
+           function fncontactUsValidation(){ 
+             $.validity.start();
+             $("#txt_email_address")
+                   .require("Email address is required ")
+                   .match("email");  
+             $("#cmb_reason")
+                        .require("Contact reason is required "); 
+              $("#txt_message")
+                        .require("Message is required "); 
+              var result = $.validity.end();
+              return result.valid;      
+           }            
+      </script>
+      
+<link rel="stylesheet" href="/includes/catalog.css"/>
+<style type="text/css">
+body,td,th {
+	font-family: "din_mediumregular";
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<script type="text/javascript" src="/includes/jquery.numeric.js"></script>
+</head>
+<body>
+<div id="main">
+	<div class="head_main">
+		<div class="header">
+			<div class="head_bg">
+				<div class="logo">
+					<a href="http://www.pspglobal.com/"><img src="images/logo.png" alt=""/></a>	
+				</div>
+				<div class="head_right">
+				  <div class="search_section">
+				    <div class="top_menu">
+				      <div class="logpad"> <a href="inquiry.html">Request a Quote</a> </div>
+				      <br/>
+				      <span style="color: #030303">303-758-2728</span> </div>
+			      </div>
+			  </div>
+			</div>
+			
+		</div>
+
+
+
+	</div><!--   head section End here   -->
+<div class="top-cyber-badge"><a href="cyber-cert.html"><img src="images/cyber-badge-sml.png" alt="Cyber Essentials Certified" title="Cyber Essentials Certified"></a></div>
+<div class="menu_pad">
+<div class="menu_section">
+<div id="smoothmenu1" class="ddsmoothmenu">
+<ul>
+  <li>
+	  <a href="http://www.pspglobal.com/">Home</a>
+
+     
+
+  </li>
+  <li>
+    <a href="about-us.html">About</a>
+
+  </li>
+  <li>
+    <a href="/kalrez/index.html">Kalrez&reg; O-rings Seals</a>
+
+     <ul><li class="title"><a href="/kalrez/index.html">- Kalrez&reg; o-rings, seals</a></li><li class="title"><a href="/kalrez-o-rings/critical-properties.html">- Critical Properties</a></li><li class="title"><a href="/kalrez-o-rings/index.html">- Compatibility Chart</a></li><li class="title"><a href="/kalrez-o-rings/zalak-high-performance-seals.html">- Zalak&reg; Seals </a></li><li class="title"><a href="/kalrez-o-rings/o-rings-parts-availability.html">- Availability of parts</a></li><li class="title"><a href="/kalrez-o-rings/industries.html">- Kalrez&reg; industries</a></li>
+     
+     <li class="title"><a href="/kalrez-o-rings/chemical-processing.html">- Chemical process</a></li>
+     <li class="title"><a href="/kalrez-o-rings/semiconductor-industry.html">- Semiconductor</a></li>
+     <li class="title"><a href="/kalrez-o-rings/ultrapure-cleaning.html">- Ultrapure™ Post-Cleaning and Packaging</a></li>
+     <li class="title"><a href="/kalrez-o-rings/trilobe-seal.html">- Kalrez&reg; TriLobe™ Seals</a></li>
+     <li class="title"><a href="/kalrez-o-rings/pharmaceutical-food.html">- Pharmaceutical and Food Handling Applications</a></li>
+     <li class="title"><a href="/kalrez-o-rings/sanitary-seals.html">- Kalrez&reg; Sanitary O-rings and Seals</a></li>
+     <li class="title"><a href="/kalrez-o-rings/fda-compliance.html">- FDA Statement of Compliance</a></li>
+     <li class="title"><a href="/kalrez-o-rings/oil-gas-industries.html">- Oil and Gas Industries</a></li>
+     <li class="title"><a href="/kalrez-news-2/index.html">- Kalrez&reg; News</a></li>
+     </ul>
+
+  </li>
+  <li>
+    <a href="custom-rubber.html">Custom Rubber</a>
+
+     <ul><li class="title"><a href="molding-capabilities.html">Molding Capabilities</a></li><li class="title"><a href="custom-compounding.html">Custom Compounding</a></li><li class="title"><a href="molding-technologies.html">Molding Technologies</a></li><li><a href="compression.html">Compression</a></li><li><a href="transfer.html">Transfer</a></li><li><a href="injection.html">Injection</a></li></ul>
+
+  </li>
+  <li>
+    <a href="o-rings-and-related-products.html">O-Rings</a>
+
+     <ul><li class="title"><a href="o-rings.html">O-Rings</a></li><li class="title"><a href="quattro-seals.html">Quattro&trade; Seals</a></li><li class="title"><a href="teflon-encapsulated-o-rings.html">Teflon® Encapsulated O-Rings</a></li><li class="title"><a href="back-up-rings.html">Back Up Rings</a></li><li><a href="standard-back-up-ring.html">Standard Back Up Ring</a></li><li><a href="contoured-back-up-ring.html">Contoured Back Up Ring</a></li></ul>
+
+  </li>
+  <li>
+    <a href="seals.html">Seals</a>
+
+     <ul><li class="title"><a href="rod-seals.html">Rod Seals</a></li><li><a href="unloaded-u-cup.html">Unloaded U-Cup</a></li><li><a href="loaded-u-cup.html">Loaded U-Cup</a></li><li><a href="premium-loaded-u-cup.html">Premium Loaded U-Cup</a></li><li><a href="spring-energized-seals.html">Spring Energized</a></li><li><a href="buffer-seals.html">Buffer</a></li><li class="title"><a href="piston-seals.html">Piston Seals</a></li><li><a href="t-seal.html">T-Seal</a></li><li><a href="capped-t-seal.html">Capped T-Seal</a></li><li><a href="urethane-cap-tseals.html">Urethane Cap</a></li><li><a href="ptfe-seals.html">PTFE</a></li><li><a href="loaded-u-cup-piston-seal.html">Loaded U-Cup</a></li><li><a href="o-ring-loaded-piston-seals.html">O-Ring Loaded</a></li><li><a href="asymmetrical-unloaded-u-cup-piston-seal.html">Asymmetrical Unloaded U-Cup</a></li><li><a href="grooved-piston-seal.html">Grooved</a></li><li><a href="symmetrical-u-cup-piston-seal.html">Symmetrical U-Cup</a></li><li class="title"><a href="wipers.html">Wipers Seals</a></li><li><a href="an-wiper.html">AN</a></li><li><a href="d-style-wipers.html">D Style</a></li><li><a href="metal-clad-wiper.html">Metal Clad</a></li><li><a href="dual-purpose-wipers.html">Dual Purpose</a></li><li class="title"><a href="wear-guides.html">Wear guides</a></li><li><a href="molded-wear-guide.html">Molded Wear Guide</a></li><li><a href="precision-wear-guide.html">Precision Wear Guide</a></li><li><a href="step-cut-wear-guide.html">Step Cut Wear Guide</a></li><li class="title"><a href="gaskets.html">Gaskets</a></li></ul>
+
+  </li>
+  <li>
+    <a href="machined-plastics.html">Machined Plastics</a>
+
+     <ul><li class="title"><a href="rotary-machined-plastic-seals.html">Rotary Seals</a></li><li><a href="spring-energized-rotary-machined-plastic-seals.html">Spring Energized Rotary</a></li><li><a href="o-ring-energized-rotary-machined-plastic-seals.html">O-Ring Energized Rotary</a></li><li class="title"><a href="reciprocating-machined-plastic-seals.html">Reciprocating Seals</a></li><li><a href="spring-energized-reciprocating-machined-plastic-seals.html">Spring Energized </a></li><li><a href="oring-energized-reciprocating-seals.html">O-Ring Energized</a></li><li class="title"><a href="face-seals.html">Face Seals</a></li><li><a href="id-face-seals.html">ID Face Seals</a></li><li><a href="od-face-seals.html">OD Face Seals</a></li><li><a href="hw-internal-face-seals.html">HW Internal Face</a></li></ul>
+
+  </li>
+  
+  <li>
+    <a href="materials.html">Materials</a>
+
+     <ul><li class="title"><a href="rubber.html">Rubber</a></li><li class="title"><a href="stocked-compounds.html">Stocked Compounds</a></li><li class="title"><a href="materials-machined-plastics.html">Machined Plastics</a></li></ul>
+
+  </li>
+  <li>
+    <a href="technical.html">Technical</a>
+
+     <ul><li class="title"><a href="design-recommendations.html">Design Recommendations</a></li><li><a href="211.html">Groove Design Chart for PTFE O-Rings</a></li><li><a href="groove-design-chart-for-quattro-seals.html">Groove Design Chart for Quattro Seals<sup>TM</sup></a></li><li><a href="assets/files/StaticO-RingGlands.pdf" target="_blank">Static O-Ring Glands</a></li><li><a href="assets/files/DynamicO-RingGlands.pdf" target="_blank">Dynamic O-Ring Glands</a></li><li class="title"><a href="sizing-charts.html">Sizing Charts</a></li><li><a href="rubber-contoured-back-up-oring-size-chart.html">Rubber Contoured Backup Ring Size Chart</a></li><li><a href="split-ptfe-backup-oring-size-chart.html">Split PTFE Backup Ring Size Chart</a></li><li><a href="as568-o-rings.html">AS568 O-Rings</a></li><li><a href="oring-for-straight-thread-tube-fitting-bosses.html">O-Rings For Straight Thread Tube Fitting Bosses</a></li><li class="title"><a href="tolerances.html">Tolerances</a></li><li><a href="custom-molded-product-tolerances.html">Custom Molded Product Tolerances</a></li><li><a href="tolerances-for-metric-o-rings.html">Tolerances for Metric O-Rings </a></li><li class="title"><a href="rubber-basics.html">Rubber Basics</a></li><li><a href="list-of-common-abbreviation.html">List of Common Abbreviations Used by the Rubber Industry</a></li><li><a href="glossary-of-rubber-terms.html">Glossary of Rubber Terms</a></li><li><a href="how-to-read-astm-rubber-specification.html">How to Read an ASTM Rubber Specification</a></li><li class="title"><a href="faq.html">FAQs</a></li><li><a href="frequently-asked-questions.html">Frequently Asked Questions</a></li></ul>
+
+  </li>
+  <li>
+    <a href="services.html">Services</a>
+
+     <ul><li class="title"><a href="engineering-services.html">Engineering Services</a></li><li><a href="design-assistance.html">Design Assistance</a></li><li><a href="material-selection.html">Material Selection</a></li><li><a href="cad.html">Computer Aided Design</a></li><li><a href="reverse-engineering.html">Reverse Engineering</a></li><li class="title"><a href="quality-services.html">Quality Services</a></li><li><a href="incoming-quality-inspection.html">Incoming Quality Inspection</a></li><li><a href="ppap-documentation.html">Production Part Approval Process (PPAP)</a></li><li><a href="regulatory-practices.html">Regulatory Practices</a></li><li><a href="imds.html">International Material Data System (IMDS)</a></li><li><a href="iso-9001-certified.html">ISO 9001 Certified</a></li><li class="title"><a href="sales-and-inventory-support.html">Sales &amp; Inventory Support</a></li><li><a href="vendor_managed_inventory.html">Vendor Managed Inventory (VMI)</a></li><li><a href="electronic-data-interchange.html">Electronic Data Interchange (EDI)</a></li><li class="title"><a href="coatings.html">Coatings</a></li></ul>
+
+  </li>
+  <li class="last">
+    <a href="inquiry.html">Contact</a>
+
+     
+
+  </li>
+</ul>
+
+				
+			</div>
+</div>
+</div>
+
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+	var jQue=jQuery.noConflict();
+	//$.noConflict();
+
+	jQue(window).load(function($) {
+		jQue('.flexslider').flexslider({slideshowSpeed: 5000});
+	});
+</script>
+
+<!-- -->
+
+<div class="content_pad"><!--   Content section start here   -->
+    <div class="content_sec">
+        <div class="banner"><!--   Banner section start here   -->
+            <div class="flexslider">
+                <ul class="slides">
+                   
+                   <li><img src="/assets/files/homepage1a.jpg"/> <div class="flex-caption"><span class="title">Kalrez&reg; O-rings  <br> Seals</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li>
+                        
+                        
+                         <li><img src="/assets/files/homepage1b.jpg"/> <div class="flex-caption"><span class="title">Kalrez&reg; O-rings  <br> Seals</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li>
+                        
+                        <li><img src="/assets/files/homepage1c.jpg"/> <div class="flex-caption"><span class="title">Kalrez&reg; O-rings  <br> Seals</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li>
+                   
+                   
+                    <li><img src="/assets/files/homepage1.png"/> <div class="flex-caption"><span class="title">Kalrez&reg; O-rings  <br> Seals</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li>
+                        
+                        
+                        <li><img src="/assets/files/homepage2.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/homepage3.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/homepage4.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/20141121_homepage5.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/20141153_homepage6.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/20141214_homepage7.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/20141429_homepage8.png"/> <div class="flex-caption"><span class="title">Precision, Rubber <br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li><li><img src="/assets/files/O-Rings.jpg"/> <div class="flex-caption"><span class="title">Precision, Rubber<br> &amp; Plastic Products</span><p><ul><li>We carry o-rings, seals, custom molded rubber parts, wipers, diaphragm, valves and u-cups in all types of materials including Kalrez®, Viton™, Simriz®, nitrile (buna-n), neoprene, rubber, silicone, polyurethane, TFE and FEP encapsulated elastomers.</li></ul></p></div>
+                        </li>
+                </ul>
+            </div>
+            <div class="btm_box_section">
+               
+               <div class="box">
+                    <div class="box_content">
+                        <h1>Kalrez®<br>
+O-rings Seals</h1>
+                     	<a href="http://www.pspglobal.com/kalrez/index.html"><p>We are a DuPont Authorized Distributor of Kalrez O-rings</p></a>
+                    </div>
+                    <img src="/images/kalrez_img.jpg" alt=""/>
+              </div>
+               
+              <div class="box">
+                <div class="box_content">
+                        <h1>Custom Molded <br/>Rubber </h1>
+                        <ul>
+                            <li><a href="custom-rubber.html">Custom<br/> capabilities</a></li>
+                            <li><a href="design-assistance.html">Design assistance</a></li>
+                            <li><a href="ask-an-engineer.html">Ask an engineer</a></li>
+                        </ul>
+                    </div>
+                    <img src="/images/homepagecustomrubber.jpg" alt=""/>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <h1>O-Rings</h1>
+                        <ul>
+                            <li><a href="o-rings.html">O-Rings</a></li>
+                            <li><a href="quattro-seals.html">Quattro Seals</a></li>
+                            
+<!--<li><a href="oring-kits.html">O-Ring Kits</a></li>-->
+                            <li><a href="back-up-rings.html">Back Up Rings</a></li>
+                        
+<!--<li><a href="o-rings.html">O-Rings</a></li><li><a href="quattro-seals.html">Quattro Seals&trade;</a></li><li><a href="teflon-encapsulated-o-rings.html">Teflon® Encapsulated O-Rings</a></li><li><a href="back-up-rings.html">Back-Up Rings</a></li>-->
+                        </ul>
+                    </div>
+                    <img src="/images/o_ring_img.jpg" alt=""/>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <h1>Seals</h1>
+                        <ul>
+                            <li><a href="rod-seals.html">Rod Seals</a></li><li><a href="piston-seals.html">Piston Seals</a></li><li><a href="wipers.html">Wipers</a></li><li><a href="wear-guides.html">Wear Guides</a></li><li><a href="gaskets.html">Gaskets</a></li>
+                        </ul>
+                    </div>
+                    <img src="/images/seals_img.jpg" alt=""/>
+                </div>
+                <div class="box">
+                    <div class="box_content">
+                        <h1>Engineered <br/>Plastics</h1>
+                     	<a href="machined-plastics.html"><p>We can move your drawing from concept to production</p></a>
+                    </div>
+                    <img src="/images/custom_product_img.jpg" alt=""/>
+                </div>
+                
+                
+                
+          </div>
+</div>
+</div>
+<div style="clear:both;"></div>
+
+<div class="footer_pad">
+   <div class="footer_outer">
+<div class="spon-list">
+                    <ul>
+                        <li><a href="javascript:void(0);" target="_blank"><img src="images/ul-icon.png" alt="" border="0"/></a></li>
+                        <li><a href="javascript:void(0);" target="_blank"><img src="images/nsf-icon.png" alt="" border="0"/></a></li>
+                    </ul>
+</div>
+<div class="social-links">
+
+<a href="https://www.facebook.com/psp.orings.and.seals/" target="_blank" title="facebook"><img width="25" src="images/facebook.png" alt="facebook"/></a>
+<a href="https://twitter.com/PSPGlobal" target="_blank" title="Twitter"><img width="25" src="images/twitter.jpg" alt="Twitter"/></a>
+<a href="https://www.youtube.com/channel/UCTkeLL_1u8lUqnbvhULzvOA" target="_blank" title="Youtube"><img width="30" src="http://www.jroyal.com/images/youtube.png" alt="Youtube"/></a><a href="https://plus.google.com/111197526055628540738" target="_blank" title="Google Plus"><img width="25" src="images/google.jpg" alt="Google Plus"/></a>
+
+</div>
+        <div class="footer">
+			<div class="foot-center">
+                    <div class="foot_link">
+  
+    <a href="http://www.pspglobal.com/">Home</a>
+       <span>|</span> 
+  
+    <a href="about-us.html">About</a>
+       <span>|</span> 
+  
+    <a href="custom-rubber.html">Custom Rubber</a>
+       <span>|</span> 
+  
+    <a href="o-rings-and-related-products.html">O-Rings</a>
+       <span>|</span> 
+  
+    <a href="seals.html">Seals</a>
+       <span>|</span> 
+  
+    <a href="machined-plastics.html">Machined Plastics</a>
+       <span>|</span> 
+  
+    <a href="jroyal-precision-products.html">Precision Products</a>
+       <span>|</span> 
+  
+    <a href="materials.html">Materials</a>
+       <span>|</span> 
+  
+    <a href="technical.html">Technical</a>
+       <span>|</span> 
+  
+    <a href="services.html">Services</a>
+       <span>|</span> 
+  
+    <a href="inquiry.html">Contact</a>
+</div>
+
+                
+                <div class="btm_copy">
+                    
+<div class="foot_address">7108 S. Alton Way, Unit I - Centennial, Colorado 80112 &#8226; &nbsp;<a href="privacy-policy.html">Privacy Policy</a> &#8226; &nbsp;<a href="terms-conditions.html">Terms &amp; Conditions</a> &#8226; &nbsp;</div>
+               <div class="flo_l pad7">&copy;<script language="javascript">
+                        var dt = new Date();
+                        var p_year = dt.getFullYear();
+                        document.write(p_year);
+                        </script>  
+               PSP, Inc.. All rights reserved
+                    </div>
+                </div>
+        	</div>
+			
+
+	  </div>
+
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="includes/jquery-1.9.1.js"> </script>
+<script src="includes/jquery.meanmenu.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    jQuery('.menu_section #smoothmenu1').meanmenu();
+});
+</script>
+<script type="text/javascript" src="validity-master/validity.js"> </script>
+
+
+<script type="text/javascript" language="javascript" src="includes/ddsmoothmenu.js"></script>
+
+
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+
+
+
+<script language="JavaScript">
+<!--
+
+var message="Warning! Unauthorized Access!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+
+<script language=JavaScript>
+<!--
+
+var message="Contact PSP - Unauthorized Access";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3973694-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Script From Mae Heu which is Lead Forensics reverse IP-tracking software used by one of our parent companies -->
+<script type="text/javascript" src="http://www.jsnzoe301m.com/js/112291.js" ></script> <noscript><img alt="" src="http://www.jsnzoe301m.com/112291.png" style="display:none;" /></noscript>
+<!-- End Script From Mae Heu which is Lead Forensics reverse IP-tracking software used by one of our parent companies -->
+
+
+</body>
+</html>

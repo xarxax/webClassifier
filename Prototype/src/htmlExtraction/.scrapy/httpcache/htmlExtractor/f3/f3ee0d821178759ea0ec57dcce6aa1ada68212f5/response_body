@@ -1,0 +1,193 @@
+
+
+
+<!--
+
+ ---------------------------------------
+|  WEB8 - CMS 2007                      |
+|  Attention8 - Opmærksomhedsbureau     |
+|  Mail: info@attention8.dk             |
+|  Tlf.: +45 86145567                   |
+|  www.attention8.dk                    |
+ ---------------------------------------
+
+-->
+<br>
+<html>
+	<head>
+		<title>Dry-Bag A/S</title>
+    	<META NAME="Robots" content="index,follow">
+    	<META HTTP-EQUIV="Cache-Control" content="no-cache">
+    	<meta name="keywords" content="tørringsmidler,packline,pillow,pack,dry,bag,drybag,pillowpack,kantbeskytter,bånd,spænder,luftpuder,fyldepistol,surringer,last,skralder,balsnor,bølgepap,lashing,presenninger,sikring,anders bendt,dalargade,bag III">
+    	<meta name="description" content="Dry-Bag A/S - Tørringsmidler, Last skralder, Kantbeskyttere, Bånd og spænder, Luftpuder & fyldepistoler, Surringer, Balsnor, Bølgepap, Lashing og presenninger">
+
+		<!-- JavaScript funktioner -->
+	
+	<script type="text/javascript" src="js/drop_down.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/requiredversion.js"></script>
+	<script type="text/vbscript" src="js/detect.vbs"></script>
+	<script type="text/javascript" src="js/detectflash.js"></script>
+	<script type="text/javascript" src="js/confirmflash.js"></script>
+	<script type="text/javascript" src="js/detectbrowser.js"></script>
+	
+<!-- Slut pï¿½JavaScript funktioner -->		
+		<link rel="stylesheet" type="text/css" href="css/generelt.css">
+		<link rel="stylesheet" type="text/css" href="css/rss.css">
+		<link rel="stylesheet" type="text/css" href="css/vertikal_menu.css">
+		<link rel="stylesheet" type="text/css" href="skabeloner/generelt.css">
+<script type="text/javascript">
+<!--
+if(BrowserDetect.browser == "Explorer")
+{
+document.write('<link rel="stylesheet" type="text/css" href="css/menu-ie.css">');
+document.write('<link rel="stylesheet" type="text/css" href="skabeloner/1-ie.css">');
+}
+else if (BrowserDetect.browser == "Safari")
+{
+document.write('<link rel="stylesheet" type="text/css" href="css/menu-sa.css">');
+document.write('<link rel="stylesheet" type="text/css" href="skabeloner/1-sa.css">');
+}
+else
+{
+document.write('<link rel="stylesheet" type="text/css" href="css/menu.css">');
+document.write('<link rel="stylesheet" type="text/css" href="skabeloner/1.css">');
+}
+//document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '!</p>');
+// -->
+
+function sendRes()
+{
+
+	var values=screen.width+ 'x'+screen.height+';'+document.body.clientWidth+ 'x'+document.body.clientHeight
+	SetCookie("browser_info",values,1);
+	
+}
+function SetCookie(cookieName,cookieValue,nDays) {
+ var today = new Date();
+ var expire = new Date();
+ if (nDays==null || nDays==0) nDays=1;
+ expire.setTime(today.getTime() + 3600000*24*nDays);
+ document.cookie = cookieName+"="+escape(cookieValue)
+                 + ";expires="+expire.toGMTString();
+}
+
+</script>
+    </head>
+<body style="text-align:center;" onLoad="sendRes();">
+
+<!-----------------------------------------------------------
+
+HERUNDER KALDES DE ï¿½SKEDE FUNKTIONER Pï¿½DE ï¿½NKEDE PLADSER
+NB. HUSK AT ALLE FUNKTIONER Fï¿½ST SKAL Vï¿½E INKLUDERET I
+MASTER_INCLUDE FILEN.
+ 
+------------------------------------------------------------>
+<div class="site">
+    <div class="ramme" style="background-color:#ffcb05;">
+
+    	<!-- Topgrafik -->
+      	<div class="topbanner" id="topbanner">
+    	   <div><img src='image/topbanner/default.jpg' alt='' height='95px;' width='780px;' /></div>
+<script type="text/javascript"><!--
+	document.getElementById('topbanner').style.width="780px";
+	document.getElementById('topbanner').style.height="95px";
+--></script>
+
+	<div onClick="window.location.href='index.php';" style="position:absolute; left:0; top:0px; width:780px; height:95px; z-index:98;">
+		<img src="image/design/transperant.png" border="0" alt="" width="780px" height="95px">
+	</div>
+
+    	</div>
+
+    	<!-- Hovedmenu -->
+
+    	<div class="menu">
+
+    		<!-- Venstre -->
+
+    		<div class="menu_venstre">
+                    <table cellpadding="0" cellspacing="0" style="margin-left: auto;margin-right: auto;">
+        <tr>
+            <td class="lang" style="border-color:ffffff;">
+            <a class="lang" href="lang.php?menu_id=1&lang=da">DK</a>
+        	</td>
+        	
+        	<td class="lang" style="border-color:ffffff;">
+            <a class="lang" href="lang.php?menu_id=1&lang=uk">UK</a>
+        	</td>
+    
+        	<td class="lang2" style="border-color:ffffff;">
+            <a class="lang" href="lang.php?menu_id=1&lang=es">ES</a>
+            </td>
+        </tr>
+    </table>
+        	</div>
+
+            <!-- Midt -->
+
+    		<div class="menu_midt">
+    			<!-- horizontal menu -->
+<ul class="nav" id="nav"><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=11" >Dry-Bag A/S</a></li><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=13" >Mo ler</a></li><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=12" >Produkts</a></li><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=14" >Contakt</a></li><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=16" >News</a></li><li  class="sub"><a class="a1" style="*width: 1px;"  href="/index.php?menu_id=17" >Private</a></li></ul>
+<!-- slut pÃ¥ horizontal menu -->
+
+<!-- rediger menu -->
+
+<table border='0' cellspacing='0' cellpadding='0' width="75">
+    <tr>
+        <td>
+        </td>
+        <td>
+<!-- Print ikon -->
+    &nbsp;&nbsp;&nbsp;<a href='funktioner/print_version.php?menu_id=1&printNow=yes' onclick="window.open(this.href,'','scrollbars=yes, height=450, width=510, top=20, left=20');return false;"><img src='image/design/print.gif' alt='Print'></a>&nbsp;&nbsp;&nbsp;		<a href="login.php?menu_id=1"><img src="image/design/login.jpg" alt="Log ind"></a>
+	
+        </td>
+    </tr>
+</table>
+<!-- slut pï¿½rediger menu -->
+    			    		</div>
+    	</div>
+
+    	<!-- Indhold -->
+
+      	<div class="midt">
+
+            <!-- Venstre margin -->
+            
+            <div class="venstrespalte" style="background-color:#ffcb05;"><br><table cellpadding='0' cellspacing='0' border='0'><tr><td class='niv1'><a href='index.php?menu_id=19' class='a_ver'>Dry-Bag TÃ¸rringsmidler</a></td></tr><tr><td class="niv2"><a href="index.php?menu_id=25"  class="b_ver" >Dry-BagÂ® 2000 - 1000gram til container</a></td></tr><tr><td class="niv2"><a href="index.php?menu_id=117"  class="b_ver" >Dry-BagÂ® III emballage</a></td></tr><tr><td class='niv1'><a href='index.php?menu_id=144' class='a_ver'>Luftpuder</a></td></tr><tr><td class='niv1'><a href='index.php?menu_id=140' class='a_ver'>FAQ</a></td></tr><tr><td class='niv1'><a href='index.php?menu_id=141' class='a_ver'>BÃ¸lgepap</a></td></tr></table></div>
+
+            <!-- Indholds tekst til midten -->
+
+            <div class="indholdsboks">
+                <div class="rammetop" style="background-image:url(image/design/bg_indholdtop.jpg);">&nbsp;</div>
+                <div class="rammemidt" id='ramme' style="background-color:fff0c7; background-image:url(image/design/bg_indhold_stempel.jpg); background-repeat: no-repeat;"><div ><div ><div ><div ><a name="172" ></a><img src="/image/forside_pict2.jpg"><br/></div><a name="5" ></a>
+<h1>Godssikring</h1><p><br></p><ul><li><strong><em>TÃ¸rremidler - TÃ¸rreposer</em></strong></li><li><strong><em>Kantlister</em></strong></li><li><strong><em>Luftpuder </em></strong></li><li><strong><em>Surringssystem - Strapping</em></strong></li><li><strong><em>BÃ¸lgepap</em></strong></li><li><strong><em>Ballesnor </em></strong></li></ul><p><strong><em><br></em></strong></p>
+
+<br/></div><a name="146" ></a>
+<img src="image/Banner_groen_99x32.gif"><a href="http://www.findsmiley.dk/721640">http://www.findsmiley.dk/721640</a>
+
+<br/></div>
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr></table></div></div>
+                <div class="adresse" style="background-image:url(image/design/bg_indhold.jpg);"><div style='border-top:solid 0px #000000; width:100%; *width:90%; *padding-top:5px;'><p class='bundlinie' style='padding-bottom:6px; margin-bottom:-0px;'>
+Dry-Bag A/S, Sumatravej 6, DK-8000 Aarhus C, Denmark<br>Tel. +45 86 19 05 00&nbsp;<a href="mailto:dry-bag@desiccant.com">dry-bag@desiccant.com</a><a href="mailto:info@attention8.dk"></a><br>
+
+</p></div></div>
+            </div>
+
+            <!-- Hojre margin -->
+		<div class="hoejrespalte" style="background-image:url(image/design/bg_hojrespalte_stempel2.jpg); background-repeat: no-repeat;">
+
+            
+        </div>
+        
+    </div>
+</div>
+<div class="venstrespaltebund" style="background-color:#ffffff;"><a class="link" href="http://www.budi.dk/" target="_blank"><font size="1" color="#cccccc">Web by Buddig & Jugel</font></a></div>
+
+</body>
+</html>

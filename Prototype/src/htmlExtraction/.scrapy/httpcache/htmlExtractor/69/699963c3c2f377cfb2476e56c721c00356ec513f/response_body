@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="shortcut icon" href="/wp-content/themes/twentyeleven-child/images/favicon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+          <!-- 123 -->
+    <title style="text-transform:capitalize;">EMI Strategic Marketing</title>
+    
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--  <script src="/wp-content/themes/twentyeleven-child/javascript/jquery-1.10.2.min.js"></script>
+  <script src="/wp-content/themes/twentyeleven-child/javascript/jquery-1.10.2.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" media="all" href="http://emiboston.com/wp-content/themes/twentyeleven-child/style.css" />
+
+  <link rel="pingback" href="http://emiboston.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://emiboston.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#registration_form").validate({
+							rules: {
+									customer_name: {
+											required: true,
+											minlength: 2
+									},
+									
+									phone: {
+											digits:true,
+											minlength: 10
+									},
+									email: {
+											required: true,
+											email: true
+									},
+									company: {
+											required: true,
+											
+									}
+									
+
+							},
+							messages: {
+									customer_name: "Please enter your name.",
+									phone: "Please enter valid phone number.",
+									email: "Please enter a valid email address.",
+									company: "Please enter your Firm.",
+									}
+	});
+	
+	<!--pdf view-->
+	$('.pdf-view').on('click', function() {
+	  var label = $( this ).attr('title');
+	  /*alert(label);*/
+	  ga('send', 'event', 'PDF', 'click', label);
+	});
+
+  });
+</script>
+
+<style type="text/css">
+	#registration_form label.error { 
+	clear: both;
+    color: #FF0000;
+    display: inline;
+    float: none;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: top;
+    width: 220px; }
+	#registration_form p { clear: both; }
+	#registration_form td {margin-bottom:10px;}
+	#registration_form .submit { margin-left: 12em; }
+	#registration_formem { font-weight: bold; padding-right: 1em; vertical-align: top; }
+</style>
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="EMI Strategic Marketing &raquo; Feed" href="http://emiboston.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="EMI Strategic Marketing &raquo; Comments Feed" href="http://emiboston.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="EMI Strategic Marketing &raquo; Home Comments Feed" href="http://emiboston.com/home/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/emiboston.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='http://emiboston.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-my-login-css'  href='http://emiboston.com/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://emiboston.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://emiboston.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themeMyLogin = {"action":"","errors":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://emiboston.com/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.min.js'></script>
+<link rel='https://api.w.org/' href='http://emiboston.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://emiboston.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://emiboston.com/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="http://emiboston.com/" />
+<link rel='shortlink' href='http://emiboston.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://emiboston.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Femiboston.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://emiboston.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Femiboston.com%2F&#038;format=xml" />
+	
+<style type="text/css" media="screen">
+	#rotator {
+		position: relative;
+		width: 640px;
+		height: 480px;
+		margin: 0; padding: 0;
+		overflow: hidden;
+	}
+</style>
+	
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FFF; }
+</style>
+	<!-- For technology page form
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  </?php include_once('form-action-redesign_acs.php'); ?>-->
+  
+ </head>
+ <body class="home page-template-default page page-id-875 custom-background singular two-column right-sidebar">
+  <div id="page" class="hfeed">
+   <div style="height: 80px;">
+    <a href="/"><img src="/wp-content/themes/twentyeleven-child/images/emi-logo-masthead.gif" width="131" height="31" alt="EMI" id="emi_logo" /></a>
+    <div id="nav">
+         <ul id="nav_list">
+<li class="page_item page-item-2723"><a href="http://emiboston.com/logout/">Log Out</a></li>
+<li class="page_item page-item-2725"><a href="http://emiboston.com/lostpassword/">Lost Password</a></li>
+<li class="page_item page-item-2724"><a href="http://emiboston.com/register/">Register</a></li>
+<li class="page_item page-item-2726"><a href="http://emiboston.com/resetpass/">Reset Password</a></li>
+<li class="page_item page-item-939 page_item_has_children"><a href="http://emiboston.com/who-we-are/">Who We Are</a>
+<ul class='children'>
+	<li class="page_item page-item-893"><a href="http://emiboston.com/who-we-are/careers/">Careers</a></li>
+	<li class="page_item page-item-886 page_item_has_children"><a href="http://emiboston.com/who-we-are/giving-back/">Giving Back</a>
+	<ul class='children'>
+		<li class="page_item page-item-3209"><a href="http://emiboston.com/who-we-are/giving-back/rotating-banner-demo/">Rotating Banner Demo</a></li>
+		<li class="page_item page-item-2093"><a href="http://emiboston.com/who-we-are/giving-back/test/">test</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-879 page_item_has_children"><a href="http://emiboston.com/who-we-are/management/">Management</a>
+	<ul class='children'>
+		<li class="page_item page-item-1730"><a href="http://emiboston.com/who-we-are/management/anthony-nygren/">Anthony Nygren</a></li>
+		<li class="page_item page-item-2782"><a href="http://emiboston.com/who-we-are/management/charlene-paradise/">Charlene Paradise</a></li>
+		<li class="page_item page-item-1732"><a href="http://emiboston.com/who-we-are/management/david-ehrenthal/">David Ehrenthal</a></li>
+		<li class="page_item page-item-1733"><a href="http://emiboston.com/who-we-are/management/greg-smith/">Greg Smith</a></li>
+		<li class="page_item page-item-1727"><a href="http://emiboston.com/who-we-are/management/ken-lubar/">Ken Lubar</a></li>
+		<li class="page_item page-item-1728"><a href="http://emiboston.com/who-we-are/management/mark-malloy/">Mark Malloy</a></li>
+		<li class="page_item page-item-1731"><a href="http://emiboston.com/who-we-are/management/mark-ronan/">Mark Ronan</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-941 page_item_has_children"><a href="http://emiboston.com/what-we-do/">What We Do</a>
+<ul class='children'>
+	<li class="page_item page-item-897"><a href="http://emiboston.com/what-we-do/awards/">Awards</a></li>
+	<li class="page_item page-item-895"><a href="http://emiboston.com/what-we-do/clients/">Clients</a></li>
+	<li class="page_item page-item-888 page_item_has_children"><a href="http://emiboston.com/what-we-do/work/">Work</a>
+	<ul class='children'>
+		<li class="page_item page-item-1717"><a href="http://emiboston.com/what-we-do/work/fifththird/">FifthThird</a></li>
+		<li class="page_item page-item-1714"><a href="http://emiboston.com/what-we-do/work/greater-boston-chamber-of-commerce/">Greater Boston Chamber of Commerce</a></li>
+		<li class="page_item page-item-1712"><a href="http://emiboston.com/what-we-do/work/intuit-financial-services/">Intuit Financial Services</a></li>
+		<li class="page_item page-item-1716"><a href="http://emiboston.com/what-we-do/work/salliemae/">SallieMae</a></li>
+		<li class="page_item page-item-1711"><a href="http://emiboston.com/what-we-do/work/state-street-global-advisors/">State Street Global Advisors</a></li>
+		<li class="page_item page-item-1713"><a href="http://emiboston.com/what-we-do/work/suntrust-cardival/">SunTrust Cardival</a></li>
+		<li class="page_item page-item-1715"><a href="http://emiboston.com/what-we-do/work/superbanker/">SuperBanker</a></li>
+		<li class="page_item page-item-1710"><a href="http://emiboston.com/what-we-do/work/verizon/">Verizon</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1742"><a href="http://emiboston.com/what-we-do/marketing-for-sales/">Marketing for Sales</a></li>
+	<li class="page_item page-item-1677 page_item_has_children"><a href="http://emiboston.com/what-we-do/market-focus/">Market Focus</a>
+	<ul class='children'>
+		<li class="page_item page-item-3296"><a href="http://emiboston.com/what-we-do/market-focus/banking/">Banking</a></li>
+		<li class="page_item page-item-1685 page_item_has_children"><a href="http://emiboston.com/what-we-do/market-focus/benefits-and-retirement/">Benefits and Retirement</a>
+		<ul class='children'>
+			<li class="page_item page-item-2522"><a href="http://emiboston.com/what-we-do/market-focus/benefits-and-retirement/four-strategies-to-win-the-hears-and-minds-of-your-advisor-channel-and-grow-share/">Four Strategies to Win the Hearts and Minds of Your Advisor Channel &#8211; and Grow Share</a></li>
+		</ul>
+</li>
+		<li class="page_item page-item-1687"><a href="http://emiboston.com/what-we-do/market-focus/investments/">Investments</a></li>
+		<li class="page_item page-item-1689"><a href="http://emiboston.com/what-we-do/market-focus/payments/">Payments</a></li>
+		<li class="page_item page-item-3264"><a href="http://emiboston.com/what-we-do/market-focus/software/">Software</a></li>
+		<li class="page_item page-item-1683 page_item_has_children"><a href="http://emiboston.com/what-we-do/market-focus/technology/">Technology</a>
+		<ul class='children'>
+			<li class="page_item page-item-2371"><a href="http://emiboston.com/what-we-do/market-focus/technology/5-fundamental-changes-to-improve-channel-marketing/">5 Fundamental Changes to Improve Channel Marketing</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-947 page_item_has_children"><a href="http://emiboston.com/how-we-think/">How We Think</a>
+<ul class='children'>
+	<li class="page_item page-item-877"><a href="http://emiboston.com/how-we-think/blog/">Blog</a></li>
+	<li class="page_item page-item-899"><a href="http://emiboston.com/how-we-think/thought-leadership/">Thought Leadership</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2108"><a href="http://emiboston.com/login/">Login</a></li>
+	 </ul>
+    	 <ul id="nav_list">
+	 </ul>
+    </div>
+    <div id="social_links"><a href="http://twitter.com/emistrategic"><img src="/wp-content/themes/twentyeleven-child/images/twitter-icon-masthead.gif" width="23" height="24" alt="Twitter"></a> <a href="http://linkedin.com/company/emi-strategic-marketing"><img src="/wp-content/themes/twentyeleven-child/images/linkedin-icon-masthead.gif" width="23" height="24" alt="Linked In"></a> <a href="http://facebook.com/pages/EMI-Strategic-Marketing/199881693358315"><img src="/wp-content/themes/twentyeleven-child/images/facebook-icon-masthead.gif" width="23" height="24" alt="Facebook Page"></a></div>
+    <div id="address">15 Broad Street, Boston, MA 02109<br>617.224.1101</div>
+   </div>
+   <div id="main">
+		<div id="primary">
+			<div id="content" role="main">
+                           
+				
+					<article id="post-875" class="post-875 page type-page status-publish has-post-thumbnail hentry">
+<div id="home-banner">
+<div><p>Accelerating your marketing, building sales momentum 
+and fueling growth with deep domain expertise.</p>
+<a href="/what-we-do/">Read more.</a></div>
+</div>
+	
+					
+							</div><!-- #content -->
+                 <div id="verticals">
+      <div id="vertical_header">Market Focus</div>
+      <!--<div class="vertical"><a href="/what-we-do/market-focus/commercial-banking"><img src="/wp-content/themes/twentyeleven-child/images/markets-commercial-banking-btn.gif" width="130" height="65" alt="Commercial Banking"></a></div>
+      <div class="vertical"><a href="/what-we-do/market-focus/retail-banking"><img src="/wp-content/themes/twentyeleven-child/images/markets-retail-banking-btn.gif" width="130" height="65" alt="Retail Banking"></a></div>-->
+      <div class="vertical"><a href="/what-we-do/market-focus/banking"><img src="/wp-content/themes/twentyeleven-child/images/market_focus_links_1.jpg" width="151" height="65" alt="Banking"></a></div>
+      <div class="vertical"><a href="/what-we-do/market-focus/software"><img src="/wp-content/themes/twentyeleven-child/images/market_focus_links_2.jpg" width="141" height="65" alt="Software"></a></div>
+      <div class="vertical"><a href="/what-we-do/market-focus/technology"><img src="/wp-content/themes/twentyeleven-child/images/market_focus_links_3.jpg" width="160" height="65" alt="Technology"></a></div>
+<!--      <div class="vertical"><a href="/what-we-do/market-focus/benefits-and-retirement"><img src="/wp-content/themes/twentyeleven-child/images/benefits.jpg" width="130" height="65" alt="Benefits and Retirement"></a></div>-->
+      <div class="vertical"><a href="/what-we-do/market-focus/investments"><img src="/wp-content/themes/twentyeleven-child/images/market_focus_links_4.jpg" width="164" height="65" alt="Investments"></a></div>
+      <div class="vertical"><a href="/what-we-do/market-focus/payments"><img src="/wp-content/themes/twentyeleven-child/images/market_focus_links_5.jpg" width="164" height="65" alt="Payments"></a></div>
+      <!--
+      <div class="vertical"><img src="/wp-content/themes/twentyeleven-child/images/blank_intersection.jpg" width="40" height="65" alt=""></div>
+      -->
+     </div>
+    </div><!-- #primary -->
+    <div id="sidebar">
+     <img src="/wp-content/themes/twentyeleven-child/images/emi-blog-icon.gif" width="22" height="22"><br>
+<p><a href="/notes-from-fintech-connect-2019-data-security-has-value-but-isnt-a-value-prop" style="color: #3c98e9;"><span style="color: #000000;">Notes from FinTech Connect 2019: Data Security Has Value, But Isn’t a Value Prop</span> Go&nbsp;&gt;</a></p><p><a href="/expanding-beyond-traditional-retail-footprints-to-capture-commercial-banking-growth" style="color: #3c98e9;"><span style="color: #000000;">Expanding Beyond Traditional Retail Footprints to Capture Commercial Banking Growth</span> Go&nbsp;&gt;</a></p><p><a href="/accelerate-commercial-loan-growth-through-vertical-industry-targeting" style="color: #3c98e9;"><span style="color: #000000;">Accelerate Commercial Loan Growth Through Vertical Industry Targeting</span> Go&nbsp;&gt;</a></p>     <img src="/wp-content/themes/twentyeleven-child/images/twitter-icon.gif" width="22" height="22">
+    </div>
+		</div><!-- #primary -->
+
+    <br style="clear: left;"/>
+    <br />
+    <span id="legal">&copy; 2019 EMI Strategic Marketing &middot; 617.224.1101 &middot; <a href="mailto:info@emiboston.com">info@emiboston.com</a></span>
+   </div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+	</footer><!-- #colophon -->
+<!--</div> #page -->
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#rotator").cycle({ 
+	    fx: 'fade',
+	    timeout: 3000,
+	    speed: 1000,
+	    pause: 1,
+	    fit: 1
+	});
+});
+</script>
+
+<script type='text/javascript' src='http://emiboston.com/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='http://emiboston.com/wp-content/plugins/wp-cycle/jquery.cycle.all.min.js'></script>
+<script type='text/javascript' src='http://emiboston.com/wp-includes/js/wp-embed.min.js'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2254603-1', 'emiboston.com');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

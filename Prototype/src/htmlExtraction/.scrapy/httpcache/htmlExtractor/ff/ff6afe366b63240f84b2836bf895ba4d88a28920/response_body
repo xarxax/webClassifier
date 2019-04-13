@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<title>Lenticular Printing | BIG3D.com - Lenticular postcards, posters and murals.</title>
+
+<script type="text/javascript">
+if (screen.width < 574) {
+ var ref = document.referrer;
+ var urls = new Array("http://Big3D.com","http://Big3D.com/sitemap.html");
+ var n = ref.match(urls[0]);
+ var m = ref.match(urls[1]);
+ if ((m!==null) || (n!==null)) {
+ stop;
+ }
+ else if (ref=='') {
+ var r = confirm("Small Display Detected.\nClick \"OK\" for MOBILE NAVIGATION");
+ if (r==true) {
+  window.location = "http://Big3D.com/sitemap.html";
+  }
+  else {
+  stop ;
+ }
+ }
+ else
+ {
+ window.location = "http://Big3D.com/sitemap.html";
+ }
+}
+</script>
+
+
+<script type="text/javascript"><!--
+
+var img_array=new Array();
+img_array[0]="iconz/wmi1.png";
+img_array[1]="iconz/wmi2.png";
+img_array[2]="iconz/wmi3.png";
+
+
+var steps=15;			// How many steps would you like for fading?. Max is 100, min is 1.
+var gap=75;			// How long would you like the delay between each frame (in 1/1000 ths of a second)? Min is 1, max should be no more than 10000 (10 seconds).
+var show_img_gap=3000;		// How long would you like to show the image for before it starts to fade out again.
+var hide_img_gap=75;		// How long would you like to hide the image for before it starts to fade in again.
+
+steps=(steps<1 || steps>100)?15:Math.round(steps);
+gap=(gap<1)?75:Math.round(gap);
+show_img_gap=(show_img_gap<1)?75:Math.round(show_img_gap);
+hide_img_gap=(hide_img_gap<1)?75:Math.round(hide_img_gap);
+
+function controler_of_fade(){
+
+  n=0;
+  m=0;
+  img_num=0;
+  fading="in";
+  fade();
+
+}
+
+function fade(){
+
+  document.getElementById("fader").src=img_array[img_num];
+
+  m=Math.round(n/steps*100);
+
+//  m=Math.round(Math.pow((n/steps*Math.pow(100,(1/2))),2));		// Uncomment the beginning of this line for a different fade effect. It will spend more time faded in than faded out.
+
+  document.getElementById("fader").style.filter="alpha(opacity="+m+")";	// IE fade.
+  document.getElementById("fader").style.MozOpacity=m/100;		// Gecko fade.
+  document.getElementById("fader").style.Opacity=m/100;			// Standards fade.
+
+  n+=(fading=="in")?1:(-1);
+
+  if(n==steps+1){
+    n-=2;
+    fading="out";
+    setTimeout("fade()",show_img_gap);
+  }
+  else if(n==0){
+    fading="in";
+    img_num++;
+    if(img_num==img_array.length){img_num=0;}
+    setTimeout("fade()",hide_img_gap);
+  }
+  else{
+    setTimeout("fade()",gap);
+  }
+
+}
+
+//--></script>
+
+
+
+<script src="thumbnailviewer.js" type="text/javascript">
+/***********************************************
+* Image Thumbnail Viewer Script- � Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+
+
+<SCRIPT TYPE="text/javascript" SRC="slideshow.js"></script>
+
+<SCRIPT type="text/javascript">
+<!--
+SLIDES = new slideshow("SLIDES");
+
+s = new slide();
+s.src =  "images/slideshow1.jpg";
+s.text = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src =  "images/slideshow2.jpg";
+s.text = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src =  "images/slideshow3.jpg";
+s.text = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src =  "images/slideshow4.jpg";
+s.text = "";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src =  "images/slideshow5.jpg";
+s.text = "";
+SLIDES.add_slide(s);
+
+//-->
+</SCRIPT>
+
+
+<META   NAME="KEYWORDS" content="lenticular, linticular, レンチキュラー, lenticulares, lintecules, big3d, 3D, 3 dimensional, rotating, print, printing, dimentional, 
+graphics, large, big3d.com, superior graphics, photicular, 
+3-D, quality, Fresno, California, trade show, trial, exhibits, display, courtroom,
+photo, enlargements, litigation, charts, graphs, backdrop, backlit, presentation,
+point-of-purchase, POS, POP, banners, small, slides, digital, poster, encad, ink-jet,
+laser, retail, lightbox, mural, animation, Tom Saville,
+visual, effects, printed, material, poster, depthography, 4D,
+signage, motion, flip, morphing, zooming, advertising, stickers,
+badges, toys, holographic, promotion, marketing, tools, mouse pad,
+business, laser, hologram, Duratrans, postcard, bookmark">
+<META   NAME="robots" content="index, follow">
+<META   NAME="DESCRIPTION" content="Lenticular Printing | Specializing in lenticular 3D animated graphics from postcards to posters to murals">
+<META   NAME="ABSTRACT" content="Big3D.COM - Lenticular Print Graphics">
+<META   HTTP-EQUIV="Content-Language" content="en-US">
+<META   NAME="LANGUAGE" content="en-us">
+<META   HTTP-EQUIV="Content-Type" content="text/html;CHARSET=iso-8859-1">
+<META   NAME="ALIAS" content="http://www.Big3D.com">
+<META   NAME="OWNER" content="Big3D.com | Tom@Big3D.com">
+<META   NAME="RESOURCE-TYPE" content="document">
+<META   NAME="DISTRIBUTION" content="universal">
+<META   NAME="copyright" content="COPYRIGHT 2019 - BIG3D.COM - ALL RIGHTS RESERVED">
+<META   HTTP-EQUIV="Reply-to" content="Tom@Big3D.com">
+<META   NAME="authoring_tool" content="Fingers/Brain">
+<META   HTTP-EQUIV="expires" content="Tue, 31 Jan 2023 08:00:00 PST">
+<META   HTTP-EQUIV="Bookmark" content="http://www.big3d.com">
+<META   NAME="URL" content="http://www.big3d.com">
+<link rel="canonical" href="http://www.big3d.com">
+
+
+<link rel="stylesheet" type="text/css" href="layout.css">
+<meta name="verify-v1" content="o5jQLwrq8dW3i0j+dxg9uD3FA+6MT3fL6hgKG17sQ3E=" />
+</head>
+
+
+
+<body onload="controler_of_fade();">
+
+<table border="0" cellpadding="0" cellspacing="0" bordercolor="#46688A">
+<tr>
+<td>
+
+<table background="iconz/banner.jpg" width="720" border="0" cellpadding="0" cellspacing="0" >
+<tr><td><div><img id="fader" src="iconz/wmi1.png" alt="We make lenticular fast, easy and affordable" align="right" width="420">
+<script type="text/javascript">
+<!--
+document.getElementById("fader").style.filter="alpha(opacity=0)";
+document.getElementById("fader").style.MozOpacity=0;
+document.getElementById("fader").style.Opacity=0;
+//--></script>
+</div></td>
+<td><table><tr><td><font color="#FFFFFF" size="2">
+
+
+Lenticular Rush Service
+<br>&#149; Posters tomorrow
+<br>&#149; Mural in three days
+<br>&#149; Postcards in three days
+<br>&#149; 10 Days is standard
+</font></td>
+<td><img src="iconz/YesWeCan300x300.png" height="90" alt="Yes We Can"></td></tr></table>
+
+</td></tr></table></td>
+</tr></table></td>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" bordercolor="#46688A" id="jsfx_float1" style="position:absolute;left:0;top:0;">
+<tr>
+<td><a href="index.shtml"><img src="http://www.big3d.com/iconz/Big3Dphonelogo.png" border="0" alt="Big3D.com Worldwide" title="Lenticular Printing by Big3D.com"></a></td>
+</tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="index.shtml">
+<font face="arial" size="1" color="#A1D0FF">
+&nbsp; <B>HOME</B>
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/tab.jpg"><FONT color="#FFFFFF" FACE="arial" size="1">&nbsp;
+<B>LENTICULAR EXPLAINED</B>   
+</font></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<A href="works.shtml">
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; How It Works
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="effect.shtml">                 
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Effect Types
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="capabilities.shtml">          
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Production Capabilities
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="hdlenticular.shtml">          
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; HD Lenticular
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/tab.jpg"><FONT color="#FFFFFF" FACE="arial" size="1">&nbsp;
+<B>ART &amp; FILE SPECS</B>                    
+</font></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="designing.shtml">                                                            
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Designing for Lenticular
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="filespecs.shtml">
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; File Specifications
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="upload.shtml">
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Upload Files
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/tab.jpg"><font color="#FFFFFF" face="arial" size="1">&nbsp;
+<b>ABOUT BIG3D</b>
+</font></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="contact.shtml">
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Contact Us
+</font></a></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="green.shtml">
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Green Statement
+</font></a></td>
+        </tr><tr> 
+
+<td width="180" height="16" valign="middle" align="left" background="iconz/tab.jpg"><FONT color="#FFFFFF" FACE="arial" size="1">&nbsp;
+<B>AGENCIES &amp; DEALERS</B>
+</font></td>
+        </tr><tr>
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+<a href="integrity.shtml">                                                    
+<font face="arial" size="2" color="#A1D0FF">
+&nbsp; Integrity &amp; Service
+</font></a></td>
+
+	</tr><tr>
+<td>
+<a href="http://es.big3d.com"><img src="iconz/espanol.gif" border="0" alt="Español"></a>
+<a href="http://fr.big3d.com"><img src="iconz/francais.gif" border="0" alt="Français"></a>
+<a href="http://jp.big3d.com"><img src="iconz/japanese.gif" border="0" alt="日本語"></a>
+</td>
+
+
+
+        </tr><tr> 
+<td width="180" height="16" valign="middle" align="left" background="iconz/tab.jpg">
+<FONT color="#FFFFFF" FACE="arial" size="1">&nbsp;
+<B>NEWSLETTER</B>
+</font></td>
+</tr><tr>
+
+
+<!--Newsletter Sign Up Link-->
+
+<td width="180" height="16" valign="middle" align="left" background="iconz/button.jpg">
+&nbsp; <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=a9m55ctab&p=oi&m=1120012284736&sit=idwahqnjb&f=c0d6045b-58c9-4087-9587-fbe91a2014fe" target="_new">
+<font face="arial" size="2" color="#A1D0FF">Sign up &amp; stay informed</font></a></td>
+
+
+</tr></table>
+
+
+<!-- ****** START OF SCRIPT - COMPRESSED TO SAVE SPACE + EASY CUT'n'PASTE *** -->
+<script type="text/javascript">
+/********************************************************************
+ * You may use this code for free on any web page provided that     *
+ * these comment lines and the following credit remain in the code. *
+ * Keep In View (c) JavaScript-FX. (www.javascript-fx.com)          *
+ ********************************************************************/
+JSFX_KeepInView = function(id){
+	var getPageY=function(el){return(el==null)?0:el.offsetTop+getPageY(el.offsetParent);};
+	var getScrollTop=function(){return document.body.scrollTop||document.documentElement.scrollTop};
+	var el=document.getElementById(id);if(el==null)return;
+	if(el.style.position=="absolute"){el.startPageTop=-el.offsetTop;el.currentX=el.offsetLeft;el.currentY=el.offsetTop;}
+	else{el.style.position="relative";el.startPageTop=getPageY(el);el.currentX=el.currentY=0;};
+	el.floatInView=function(){
+		var targetY=(getScrollTop()>this.startPageTop)?getScrollTop()-this.startPageTop:0;
+		this.currentY+=(targetY-this.currentY)/4;this.style.top=this.currentY+"px";};
+	setInterval('document.getElementById("'+id+'").floatInView()',40);
+};for(var i=0 ; i<4 ; i++)JSFX_KeepInView ("jsfx_float"+i); 
+</script>
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="720">  
+<tr>
+
+<td valign="top" align="center">
+
+<div style="align: center;>
+<h1 align="center"><big>Lenticular Printing by Big3D.com</big></h1>
+</div>
+
+<br>
+<div style="padding:0px; align: center; width: 400px; border:solid 2px #000000";>
+<font color="#990000" face="Candara, Calibri, Tahoma, Verdana" size="5">
+<a href="rush.shtml">New!! Successful Rush Stories</a>
+</font>
+</div>
+
+<table cellspacing="20"><tr><td>
+
+<table border="1" border-color="#000000" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="330" height="330">
+<tr><td valign="top">
+
+<font color="#990000" face="Candara, Calibri, Tahoma, Verdana" size="5"><b><center><a href="artmuseums.shtml">Art &amp; Museums</center></b></font>
+ 
+
+<ul>
+<img src="images/fieldmuseum.gif" alt="Lenticular Field Museum Poster" width="150"  hspace="5" border="2" align="right">
+<li>Museum Displays
+<li>Museum Signage
+<li>Art Murals
+<li>Artists' Posters
+<li>Art Postcards
+<li>Bookmarks
+<li>Event Mailer
+</ul>
+
+</a>
+</p></td>
+</tr></table>
+
+</td><td>
+
+<table border="1" border-color="#000000" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="330" height="330">
+<tr><td valign="top">
+<font color="#990000" face="Candara, Calibri, Tahoma, Verdana" size="5"><b><center><a href="largeformat.shtml">Trade Show Displays &amp; Murals</center></b></font> 
+<ul>
+<li>Booth Signage
+<li>Any Size Murals
+<li>Pre-Show Mailers
+<li>Handouts
+<li><b>10' Tall Panels</b>
+</ul>
+<img src="images/fulltrailershot.jpg" alt="Dale Earnhardt Lenticular Trailer" align="right" width="310" hspace="5" border="2">
+</a>
+</p></td>
+</tr></table>
+
+</td></tr><tr><td>
+
+<table border="1" border-color="#000000" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="330" height="380">
+<tr><td valign="top">
+<font color="#990000" face="Candara, Calibri, Tahoma, Verdana" size="5"><b><center><a href="smallformat.shtml">Mailers & Things</center></b></font>
+<img src="images/biometrics1.gif" alt="Biometrics Lenticular Bookmark" align="right" hspace="5" border="2" vspace="10"> 
+<ul>
+<li>Bookmarks
+<li>Business Cards
+<li>Buttons
+<li>Cards
+<li>Danglers / Hangtags
+<li>Event Badges
+<li>Inserts
+<li>Lanyards
+<li>Postcards
+<li>Tip-Ons
+</ul>
+<img src="images/pursuitforce2.gif" alt="Sony Pursuit Force Lenticular Postcard" width="180" hspace="25" border="2">
+</a>
+</p></td>
+</tr></table>
+
+
+
+
+</td><td>
+
+<table border="1" border-color="#000000" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="330" height="380">
+<tr><td valign="top">
+<font color="#990000" face="Candara, Calibri, Tahoma, Verdana" size="5"><b><center><a href="mediumformat.shtml">Posters &amp; Signage</center></b></font>
+ 
+<ul>
+<li>Bus/Transit Shelters
+<li>Movie Posters
+<li>POP Displays
+<li>Window Signage
+<li>Metro Stations
+<li>In-Store Product Display
+</ul>
+<center>
+<img src="images/shelter1.jpg" alt="Lenticular bus shelter poster" width="250" hspace="5" border="2">
+</center>
+</a>
+</p></td>
+</tr></table>
+
+</td></tr></table>
+
+
+
+
+
+<!-- TRACKING SCRIPT CETRK -->
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0005/6193.js"> </script>
+
+</body>
+</html>
+
+
+

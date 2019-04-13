@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>The Wodehouse Society</title>
+        <link rel="stylesheet" type="text/css" href="defaultStyle.css"/>
+        <link rel="shortcut icon" href="TWS.jpg" type="image/jpeg"/>
+        <script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnLUUqXONx5hoikjn9eyxvBgIPybz4TNM">
+		</script>
+        <script src="Javascript/slideShowList.js"></script>
+        <script src="Javascript/markerclusterer.js"></script>
+        <script src="Javascript/main.js"></script>
+    </head>
+    <body class="yui3-skin-sam">
+        <div id="containerBlock">
+            <div class="banner">
+                <div class="siteTitle">
+                    <img id="mainTitle" src="Images/TWSTitle.png" alt="The Wodehouse Society"/>
+                </div>
+            </div>
+            <div id="subBanner">
+                <div id="tableOfContents">
+                    <h2 class="toc"> Contents </h2>
+                    <a id="welcome" href="welcome.html" target="mainWindowFrame" class="inactiveTab"> Welcome </a>
+                    <a id="events" href="events.php" target="mainWindowFrame" class="inactiveTab">Events</a>
+                    <a id="pgwInfo" href="pgwInfo.html" target="mainWindowFrame" class="inactiveTab"> About P.G. Wodehouse</a>
+                    <a id="societyInfo" href="societyInfo.html" target="mainWindowFrame" class="inactiveTab"> About The Society</a>
+                    <a id="membershipInfo" href="membershipInfo.html" target="mainWindowFrame" class="inactiveTab"> Membership</a>
+                    <a id="plumLinesInfo" href="plumLinesInfo.html" target="mainWindowFrame" class="inactiveTab">Plum Lines</a>
+                    <a id="conventionsInfo" href="conventionsInfo.html" target="mainWindowFrame" class="inactiveTab">Conventions</a>
+                    <a id="regionalChaptersInfo" href="regionalChaptersInfo.php" target="mainWindowFrame" class="inactiveTab">Regional Chapters</a>
+                    <a id="pgwNetInfo" href="pgwNetInfo.html" target="mainWindowFrame" class="inactiveTab">PGWnet</a>
+                    <a id="twsccInfo" href="twsccInfo.html" target="mainWindowFrame" class="inactiveTab">TWS Cricket Club</a>
+                    <a id="linksToOtherResources" href="linksToOtherResources.html" target="mainWindowFrame" class="inactiveTab">Other Wodehouse Sites</a>
+
+                </div>
+                <div id="mainWindow" class="justified">
+	                <noscript>
+	                	<iframe name="mainWindowFrame" src="welcome.html"></iframe>
+                	</noscript>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer">
+            <div id="leftFooter">
+                <p style="background-color: ivory;"> ©2019 The Wodehouse Society</p>
+            </div>
+            <div id="rightFooter">
+                <p> 
+                	<a class="sidebar" target="_blank" href="sidebar/contactUs.php">Click here</a>
+					to e-mail us.
+                </p>
+            </div>
+        </div>
+        <div id="sidebarInfo">
+        </div>
+    </body>
+    <script>
+		var targetId = "welcome";
+    </script>
+</html>

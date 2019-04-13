@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HYLIE</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="default.css" rel="stylesheet" type="text/css" />
+<script src="js/AppFunctions.js" type="text/javascript"></script>
+<link href="Js_Menu/css/js_menu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="Js_Menu/js/jquery-1.5.2.js"></script>
+<script type="text/javascript" >var jq = jQuery.noConflict();</script>
+<script type="text/javascript">	 
+jq(document).ready(function()
+{
+	
+	jq('#nav_capab').bind(
+	{
+		mouseenter: function()
+		{
+			jq(this).children('.js_menu').stop(true, true).fadeIn();
+		},
+		mouseleave: function()
+		{
+			jq('.js_menu').stop(true, true).fadeOut();
+		}
+	});
+	
+	jq('.js_menu_item').bind(
+	{
+		click: function()
+		{
+			var url = jq(this).children('.js_menu_item_link').text();
+			document.location = url;
+		}
+	})
+	
+	
+});
+</script>
+<link href="an/css/fly_text.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="an/js/timers.js"></script>
+<script type="text/javascript" src="an/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="an/js/jquery.cycle.all.2.74.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+jq(document).ready(function() {
+	
+	jq(document).oneTime(250,function(){start();},0);
+	
+	var ini_flyText = function(){jq('.text_can_do, .text_hylie').animate({opacity:0},1);};ini_flyText();	
+	
+	var start = function(){
+	
+		jq('.text_can_do').stop(true, true).animate({
+			left:'45%',
+			opacity:1
+		},4000,'easeOutExpo');
+			
+		jq('.text_hylie').stop(true, true).animate({
+			right:'46%',
+			opacity:1
+		},4000,'easeOutExpo');	
+		
+	};	
+
+    jq('#matrix1').cycle({
+		sync: 1,
+		delay:600,
+		speed:2000,
+		timeout: 5000,
+		fx: 'fade'
+	});
+    jq('#matrix2').cycle({
+		sync: 1,
+		delay:1500,
+		speed:3000,
+		timeout: 4500,
+		fx: 'fade'
+	});
+    jq('#matrix3').cycle({
+		sync: 1,
+		delay:200,
+		speed:3000,
+		timeout: 5200,
+		fx: 'fade'
+	});
+    jq('#matrix4').cycle({
+		sync: 1,
+		delay:1800,
+		speed:3000,
+		timeout: 4000,
+		fx: 'fade'
+	});
+    jq('#matrix5').cycle({
+		sync: 1,
+		delay:-4000,
+		speed:2000,
+		timeout: 5600,
+		fx: 'fade'
+	});
+    jq('#matrix6').cycle({
+		sync: 1,
+		delay:-800,
+		speed:3000,
+		timeout: 3300,
+		fx: 'fade'
+	});
+
+});
+//-->
+</script>
+
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js" type="text/javascript"></script>
+<script src="js/effects.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/Futura_500.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//Cufon.replace('h3', { fontFamily: 'Futura' });
+</script>
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<link href="fleXcroll/recommended_styles/minimal/flexcrollstyles.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src="fleXcroll/recommended_styles/minimal/flexcroll.js"></script>
+</head>
+
+<body>
+<div align="center" id="page_container">
+	<div align="center" id="bkgd_container">
+		<div id="header_bkgd"></div><div id="content_bkgd"></div><div id="footer_bkgd"><img src="images/footer.jpg" width="940" height="45" border="0" alt="Hylie" /></div>
+	</div>
+	<div align="center" id="body_container">
+		<div id="header_panel" align="left">
+			<div id="header_logo">
+				<img src="images/Hylie-Masthead.jpg" alt="HYLIE" width="940" height="121" border="0" usemap="#Map">
+				<map name="Map" id="Map">
+					<area shape="rect" coords="291,7,638,110" href="index.html" />
+				</map>
+			</div>
+			<div id="nav_container">
+				<div id="nav_bumper" class="nav_bumper"></div>
+				<div id="nav_home" class="nav_home" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('index.html');"><span class="alt">HOME</span></div>
+				<div id="nav_about" class="nav_about" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('about.html');"><span class="alt">ABOUT</span></div>
+				<div id="nav_history" class="nav_history" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('history.html');"><span class="alt">HISTORY</span></div>
+				<div id="nav_quality" class="nav_quality" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('quality.html');"><span class="alt">QUALITY</span></div>
+				<div id="nav_custsvc" class="nav_custsvc" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('customer_service.html');"><span class="alt">CUSTOMER SERVICE</span></div>
+				<div id="nav_capab" class="nav_capab" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" ><span class="_alt" style="display:block; height:40px; width:100%;" onclick="GoToPage('capabilities.html');">&nbsp;</span>
+                <div class="js_menu">
+                    <p class="js_menu_item">STAMPINGS<span class="js_menu_item_link">capabilities_stampings.html</span></p>
+                    <p class="js_menu_item">BATTERY COMPONENTS<span class="js_menu_item_link">capabilities_battery_components.html</span></p>
+                    <p class="js_menu_item">EYELETS<span class="js_menu_item_link">capabilities_eyelets.html</span></p>
+                    <p class="js_menu_item">CAPS &amp; CANS<span class="js_menu_item_link">capabilities_caps_cans.html</span></p>
+                 </div>
+                </div>
+				<!-- <div id="nav_news" class="nav_news" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('news_press.html');"><span class="alt">NEWS & PRESS</span></div> -->
+				<div id="nav_contact" class="nav_contact" onmouseover="SetMouseOverNav(this.id);" onmouseout="SetMouseOutNav(this.id);" onclick="GoToPage('contact.html');"><span class="alt">CONTACT</span></div>
+			</div>
+		</div>
+		<div id="content_panel_home">
+		
+	
+		
+  <div class="stage">
+    <!--Start [ Fly Text Holder ]-->
+    <div class="fly_text_holder">
+      <span class="text_can_do"><img src="an/images/an_cando.png" width="278" height="32" /></span>
+      <span class="text_hylie"><img src="an/images/an_hylie.png" width="315" height="33" /></span>
+    </div>
+    <!--End [ Fly Text Holder ]-->
+    <!--Start [ Layout ]-->
+    <div class="matrix">
+		<!-- Save for Web Slices (home_matrix_dummy.png) -->
+		<table id="Table_01" width="573" height="281" border="0" cellpadding="0" cellspacing="0" style="background-color:#333" >
+			<tr>
+				<td colspan="11">
+					<img src="images/spacer.gif" width="573" height="8" alt=""></td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="images/spacer.gif" width="9" height="266" alt=""></td>
+				<td rowspan="3" width="150" height="266" >
+					<div id="matrix1">
+						<img src="an/images/matrix1-1.jpg" width="150" height="266" />
+						<img src="an/images/matrix1-2.jpg" width="150" height="266" />
+						<img src="an/images/matrix1-3.jpg" width="150" height="266" />
+					</div>
+				</td>
+				<td rowspan="3">
+					<img src="images/spacer.gif" width="9" height="266" alt=""></td>
+				<td>
+					<div id="matrix2">
+					<img src="an/images/matrix2-1.jpg" width="117" height="129">
+					<img src="an/images/matrix2-2.jpg" width="117" height="129">
+					<img src="an/images/matrix2-3.jpg" width="117" height="129">
+					</div>
+				</td>
+				<td>
+					<img src="images/spacer.gif" width="9" height="129" alt=""></td>
+				<td colspan="3">
+					<div id="matrix3">
+					<img src="an/images/matrix3-1.jpg" width="159" height="129">
+					<img src="an/images/matrix3-2.jpg" width="159" height="129">
+					<img src="an/images/matrix3-3.jpg" width="159" height="129">
+					</div>
+				</td>
+				<td>
+					<img src="images/spacer.gif" width="8" height="129" alt=""></td>
+				<td>
+					<div id="matrix4">
+					<img src="an/images/matrix4-1.jpg" width="104" height="129">
+					<img src="an/images/matrix4-2.jpg" width="104" height="129">
+					<img src="an/images/matrix4-3.jpg" width="104" height="129">
+					</div>
+				</td>
+				<td rowspan="3">
+					<img src="images/spacer.gif" width="8" height="266" alt=""></td>
+			</tr>
+			<tr>
+				<td colspan="7">
+					<img src="images/spacer.gif" width="397" height="8" alt=""></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="matrix6">
+						<img src="an/images/matrix6-1.jpg" width="210" height="129">
+						<img src="an/images/matrix6-2.jpg" width="210" height="129">
+						<img src="an/images/matrix6-3.jpg" width="210" height="129">
+					</div>
+				</td>
+				<td>
+					<img src="images/spacer.gif" width="9" height="129" alt=""></td>
+				<td colspan="3">
+					<div id="matrix5">
+						<img src="an/images/matrix5-1.jpg" width="178" height="129">
+						<img src="an/images/matrix5-2.jpg" width="178" height="129">
+						<img src="an/images/matrix5-3.jpg" width="178" height="129">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="11">
+					<img src="an/images/matrix_15.jpg" width="573" height="6" alt=""></td>
+			</tr>
+			<tr>
+				<td>
+					<img src="an/images/spacer.gif" width="9" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="150" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="9" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="117" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="9" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="84" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="9" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="66" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="8" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="104" height="1" alt=""></td>
+				<td>
+					<img src="an/images/spacer.gif" width="8" height="1" alt=""></td>
+			</tr>
+		</table>
+		<!-- End Save for Web Slices -->
+			</div>
+    <!--End [ Layout ]-->
+  </div>
+  <!--End [ Stage ]-->
+
+
+		</div>
+		<div id="footer_panel">
+			<div id="footer">
+				<div style="height:40px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup_div" style="display:none;">
+	<div id="popup_container">
+	<div align="right"><a class="close_button" href="javascript:HidePopup();">close X</a></div>
+	<div style="height:15px;"></div>
+	<div id="popup_movie" align="center"></div>
+	<div style="height:15px;"></div>
+	<div id="popup_title" align="center"></div>
+	</div>
+</div>
+<script src="js/nav.js" type="text/javascript"></script>
+<script type="text/javascript">
+var currentLocation = 'nav_home';
+InitNav(currentLocation);
+</script>
+</body>
+</html>

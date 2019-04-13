@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cool Dog | Fundeliciously COOL Ice Cream&trade;</title>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/nav_rollovers.js"></script>
+<script type="text/javascript" src="scripts/preload.js"></script>
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<!--[if lt IE 7]>
+
+<script type="text/javascript" src="scripts/png_rollover_fix.js"></script>
+
+<style type="text/css">
+div.secondary_windows .l {
+	background:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src="images/home/home_purchase.png", sizingMethod="image");background-repeat:no-repeat;
+ }
+ 
+div.secondary_windows .r {
+	background:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src="images/home/home_contact.png", sizingMethod="image");background-repeat:no-repeat;
+}
+div.secondary_windows .c {
+	background:none;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src="images/home/home_food.png", sizingMethod="image");background-repeat:no-repeat;	
+}
+</style>
+
+<![endif]-->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+$(function() {
+  $("#nav img.rollover").hover(function() {
+    $(this).attr("src", $(this).attr("src").split("_off.").join("_on."));
+	$("#hilt_bar img").attr("src", "images/home/home_hilt_on.png");
+	  }, function() {
+    $(this).attr("src", $(this).attr("src").split("_on.").join("_off."));
+	$("#hilt_bar img").attr("src", "images/home/home_hilt_off.png");
+  });
+});
+
+// SUBNAV ROLLOVERS
+$(function() {
+  $("#secondary_nav a.rollover").hover(function() {
+    $(this).addClass("active");
+  }, function() {
+    $(this).removeClass("active");
+  });
+});
+
+
+// Clickable Block
+$(document).ready(function(){
+	$(".secondary_windows div").click(function(){
+	  window.location=$(this).find("a").attr("href"); return false;
+	});
+});
+
+
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+<div id="main_content">
+  <div id="logo"><a href="./index.php"><img src="images/all/logo.png" alt="Cool Dog | Fundeliciously COOL Ice Cream" width="357" height="113" /></a></div>
+  <div id="nav">
+    <div><a href="about/index.php"><img class="rollover" id="about" src="images/all/nav_about_off.png" alt="About Cool Dog" /></a></div>
+    <div><a href="purchase/index.php"><img class="rollover" id="purchase" src="images/all/nav_purchase_off.png" alt="How To Purchase" /></a></div>
+  	<div><a href="food/index.php"><img class="rollover" id="food" src="images/all/nav_food_off.png" alt="Food Service & Distribution" /></a></div>
+    <div id="last"><a href="contact/index.php"><img class="rollover" id="contact" src="images/all/nav_contact_off.png" alt="Contact Us" /></a></div>
+  </div>
+  <div id="hilt_bar"><img src="images/home/home_hilt_off.png" id="hilt" alt="" /></div>
+  <div id="window_main">
+    <div><img src="images/home/main_window.png" alt="It's not a hot dog, it's a cool dog! Premium vanilla ice cream in a delicious sponge cake bun!" width="675" height="310" /></div>
+    <div id="home_learn_more">
+      <p><a href="about/index.php">Want to learn more? Read On</a></p></div>
+  </div>
+  <div class="secondary_windows">
+    <div class="l png">
+      <!-- HOW TO PURCHASE -->
+      <a href="purchase/index.php">
+      <p>Got your eye out for<br />
+      more <i>COOL DOGS?</i></p>
+      <p>We'll tell you how<br /> 
+      you can get them.</p></a>    </div>   
+    <div class="c png">
+      <!-- FOOD SERVICE & DISTRIBUTION -->
+      <a href="food/index.php">
+      <p>Get the scoop on<br />
+      how to sell <i>COOL<br />
+      DOGS</i> and see<br /> 
+      who already is.</p></a>    </div>                
+    <div class="r png">
+      <!-- CONTACT US -->
+      <a href="contact/index.php">
+      <p>Have a question?<br />
+      Want to give a suggestion?</p>
+      <p>Here's how to get<br /> 
+      in touch with us.</p></a>    </div>                   
+  </div>
+</div>
+</div>
+</body>
+</html>

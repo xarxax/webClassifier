@@ -1,0 +1,641 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="sfFrontendHtml" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale = 1.0" /><meta name="Generator" content="Sitefinity 9.2.6200.0 PE" /><link rel="canonical" href="http://www.kantarhealth.com" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+	(function() {var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';})();
+</script><link href="/Telerik.Web.UI.WebResource.axd?d=H6vyAKwqrw4tuYCggXl23Mc3lN93FDvAZ2j3AVGMqOEmaqlVObRYBOkgWo_6-rIPUbH5Be75KPv0OUx4cgXS0kRzwWYvW5RmxBS6zmiSniQGJY3ssC8_BDyQ60Vz1i0yyF6_Cw2&amp;t=636638369700000000&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity.Resources%2c+Version%3d9.2.6200.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a9540f265-c918-463e-95d1-134a48200f7f%3a7a90d6a%3a83fa35c7%3a850288ef" type="text/css" rel="stylesheet" /><link href="/Sitefinity/Public/ResponsiveDesign/layout_transformations.css?pageDataId=ea95bcc4-9bd2-6c6e-a38a-ff00001c4c1a&amp;pageSiteNode=E995BCC4-9BD2-6C6E-A38A-FF00001C4C1A/01965e7a-1939-4d77-8a07-03cef2a587f3/SitefinitySiteMap" type="text/css" rel="stylesheet" /><link href="/Sitefinity/WebsiteTemplates/KantarHealth/App_Themes/KHReloaded/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all" /><link href="/Sitefinity/WebsiteTemplates/KantarHealth/App_Themes/KHReloaded/css/mainRel.css?v=1.2" type="text/css" rel="stylesheet" media="all" /><link href="Styles/Phone.css" type="text/css" rel="stylesheet" media="all and (max-width:767px)" /><title>
+	Home | Kantar Health
+</title><meta name="description" content="Kantar Health provides consulting and research to communicate the value and potential for products and services that fall under healthcare regulation and legislation." /></head>
+<body>
+    <form method="post" action="./" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl15_TSM" id="ctl15_TSM" value="" />
+<input type="hidden" name="ctl16_TSSM" id="ctl16_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTM1MDg0ODg1ZGSuMZewFHXD8pMNhqHlFPm7gLHtzg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="http://ajax.aspnetcdn.com/ajax/4.6/1/WebForms.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.WebForm_PostBackOptions||document.write('<script type="text/javascript" src="/WebResource.axd?d=Cr6NY1haBII3CUWgTf-vRxkAVYzK1FJ6XORbJp5zHXYb1faJ2WnIXBUQYE-i4nGMszzp_Bd8NNpxf0uVdI32lDKWS0A1&amp;t=636638369700000000"><\/script>');//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"en","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-Infinity","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"Infinity","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135575200000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM dd, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM dd, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM dd","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM, yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"A.D.",null,0]};//]]>
+</script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjax.debug.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=t1rNQaI7A95XEw4BGDg64jTPY9pxCron1068BriZHycJoeZmB-mQo7x8suakztx3snuOhowFWVRESvWh9nHUKSE7_PjXv-COn4AYHFPrBbWcn9CyK2KXyW0U7VYOQFGqsg287CvV10owhD_QMQDmO9dfA4criHpLVp3yQrk7j3V47ouR0&t=c328a10"><\/script>');//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjaxWebForms.debug.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.Sys && Sys.WebForms)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=bnZeUsMf9dODMoY1UoADFNu8y-9jMLEso5W2QTNjnpgEKQYpt-cfoqk-VxrxqXXfCUMvKjzwrsMPR1OFHnHZ3QNKHLmUvO_HxhjEu8jSY2GWi4d6Oj5B_zre59ObLfZHpGnKPWtrb3ctM44whpLeUJzYwXs1i6irI7sce1b4EspOfhXO0&t=c328a10"><\/script>');//]]>
+</script>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="http://kendo.cdn.telerik.com/2016.2.714/js/kendo.all.min.js" type="text/javascript"></script>
+<script src="http://kendo.cdn.telerik.com/2016.2.714/js/kendo.web.min.js" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl15_TSM&amp;compress=0&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Sitefinity%2c+Version%3d9.2.6200.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3abfb0424e-5fe6-47a3-84cc-c3b68251b9f2%3a3b9a1b05%3bTelerik.Sitefinity.Search.Impl%2c+Version%3d9.2.6200.0%2c+Culture%3dneutral%2c+PublicKeyToken%3db28c218413bdf563%3aen%3a4fa37f71-339d-456f-a2ff-91140553c7cf%3a7561727d" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="91C01FCB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAWsQLweGFp9SvMr0JS1x9vuW655V4ZUqX+y62eAQqc2/IMTww2Lf4FhRiCDvbW37hoUPyeYcQwoQdtwCDx7wNW7zIc8zOO4vHLeaY5/7DNluas/dyCXZFbtw2XelPZAO0m4QC1N" />
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl15', 'aspnetForm', [], [], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="ctl15" id="ctl15" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("ctl15", "ctl15");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+
+
+
+        <div id="PublicWrapper" class="sfPublicWrapper">        
+            <div id="T93D5A9E9001_Col00" class="sf_colsIn headerWrapper" data-sf-element="Container" data-placeholder-label="Header Wrapper"><div id="T93D5A9E9002_Col00" class="sf_colsIn container header" data-sf-element="Container" data-placeholder-label="Header"><div id="T93D5A9E9020_Col00" class="sf_colsIn logo" data-sf-element="Container" data-placeholder-label="Logo"><div class='sfContentBlock'><a href="http://www.kantarhealth.com"><img src="/images/KH_Misc/kantarhealthlogo.png?sfvrsn=4" alt="Kantar Health" title="Kantar Health" /></a>
+
+
+</div>
+</div>
+<div id="T93D5A9E9021_Col00" class="sf_colsIn mobileIconLg" data-sf-element="Container" data-placeholder-label="Mobile Icon"><div class='sfContentBlock'><div id="nav-icon2">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+</div>
+</div>
+<div id="T93D5A9E9022" class="searchWrapper">
+	
+<div class="search">
+    <fieldset id="T93D5A9E9022_ctl00_ctl00_main" class="sfsearchBox">
+        <input name="T93D5A9E9022$ctl00$ctl00$searchTextBox" type="text" value="Search" id="T93D5A9E9022_ctl00_ctl00_searchTextBox" class="sfsearchTxt" onfocus="if (this.value == &#39;Search&#39;) {this.value=&#39;&#39;; this.style.color=&#39;#666666&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value=&#39;Search&#39;; this.style.color=&#39;#666666&#39;;}" />
+        <input type="submit" name="T93D5A9E9022$ctl00$ctl00$searchButton" value="" onclick="return false;" id="T93D5A9E9022_ctl00_ctl00_searchButton" class="sfsearchSubmit" rel="search-btn" />
+    </fieldset>
+    <!--<p><a href="#">Advanced search</a></p>-->
+</div>
+</div>
+</div>
+
+</div><div id="T93D5A9E9003_Col00" class="sf_colsIn mainContentWrapper" data-sf-element="Container" data-placeholder-label="Main Content Wrapper"><div id="T93D5A9E9004_Col00" class="sf_colsIn mainNavWrapper" data-sf-element="Container" data-placeholder-label="Main Nav Wrapper"><div id="T93D5A9E9005_Col00" class="sf_colsIn container mainNavInner" data-sf-element="Container" data-placeholder-label="Main Nav Inner"><div id="T93D5A9E9023" class="searchWrapper">
+	
+<div class="search">
+    <fieldset id="T93D5A9E9023_ctl00_ctl00_main" class="sfsearchBox">
+        <input name="T93D5A9E9023$ctl00$ctl00$searchTextBox" type="text" value="Search" id="T93D5A9E9023_ctl00_ctl00_searchTextBox" class="sfsearchTxt" onfocus="if (this.value == &#39;Search&#39;) {this.value=&#39;&#39;; this.style.color=&#39;#666666&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value=&#39;Search&#39;; this.style.color=&#39;#666666&#39;;}" />
+        <input type="submit" name="T93D5A9E9023$ctl00$ctl00$searchButton" value="" onclick="return false;" id="T93D5A9E9023_ctl00_ctl00_searchButton" class="sfsearchSubmit" rel="search-btn" />
+    </fieldset>
+    <!--<p><a href="#">Advanced search</a></p>-->
+</div>
+</div>
+
+
+<div class="sfNavWrp primaryNav ">
+     
+    
+    
+     
+
+    <ul id="T93D5A9E9013_ctl00_ctl00_navigationUl" class="">
+        
+                        <li>
+                            <a href="http://www.kantarhealth.com/hero">Solutions</a>
+                            <ul id="T93D5A9E9013_ctl00_ctl00_ctl02_ctl00_childNodesContainer">
+                        <li>
+                            <a href="http://www.kantarhealth.com/hero">Hero Framework</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="solutions/brandplus-framework">Brand Plus Framework</a>
+                            
+                        </li>
+                    </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="expertise">Expertise</a>
+                            <ul id="T93D5A9E9013_ctl00_ctl00_ctl02_ctl01_childNodesContainer">
+                        <li>
+                            <a href="expertise/commercial-planning">Commercial Planning </a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="expertise/launch-excellence">Launch Excellence</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="expertise/market-access">Market Access</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="expertise/oncology">Oncology</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="expertise/real-world-evidence">Real-World Evidence</a>
+                            
+                        </li>
+                    </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="insights-perspectives">Insights & Perspectives</a>
+                            <ul id="T93D5A9E9013_ctl00_ctl00_ctl02_ctl02_childNodesContainer">
+                        <li>
+                            <a href="/insights-perspectives?type=Article">Articles</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="http://blog.kantarhealth.com">Blog</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="/insights-perspectives?type=Infographic">Infographics</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="/insights-perspectives?type=White Paper">White Papers</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="/insights-perspectives?type=Report">Reports</a>
+                            
+                        </li>
+                    </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="our-work">Our Work</a>
+                            <ul id="T93D5A9E9013_ctl00_ctl00_ctl02_ctl03_childNodesContainer">
+                        <li>
+                            <a href="/insights-perspectives?type=Case Study">Case Studies</a>
+                            
+                        </li>
+                    
+                        <li>
+                            <a href="our-work/clinical-publications">Clinical Publications</a>
+                            
+                        </li>
+                    </ul>
+                        </li>
+                    
+    </ul>
+</div>
+
+
+
+
+
+
+<div class="sfNavWrp sfNavTreeviewWrp auxNav">
+    
+    
+    
+    
+
+    <ul id="T93D5A9E9014_ctl00_ctl00_navigationUl" class="sfNavTreeview sfNavList">
+        
+                            <li>           
+                                <a href="/about-us">About Us</a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="/careers">Careers</a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="/events">Events</a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="/global-offices">Global Offices</a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="/news-room">News Room</a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="http://my.khapps.com/" target="_blank">Subscription Data </a>          
+                                
+                            </li>                                        
+                        
+                            <li>           
+                                <a href="/contact-us">Contact Us</a>          
+                                
+                            </li>                                        
+                        
+    </ul>
+</div>
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+                                                    {
+                                                        'K': 'PageTitle',
+                                                        'V': document.title
+                                                    },
+                                                    {
+                                                        'K': 'PageUrl',
+                                                        'V': location.href
+                                                    }
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.expand(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+</script>
+</div>
+
+</div>
+<div id="T93D5A9E9006_Col00" class="sf_colsIn mainContent" data-sf-element="Container" data-placeholder-label="Main Content"><div id="C002_Col00" class="sf_colsIn mainContentHeader" data-sf-element="Container" data-placeholder-label="Main Content Header"><div id="C003_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Main Content Header Content"><div class='sfContentBlock'><h1 class="text-center">CATALYSTS DRIVING SUCCESSFUL
+DECISIONS IN LIFE SCIENCES</h1>
+
+
+</div>
+</div>
+
+</div>
+<div id="C004_Col00" class="sf_colsIn firstReadWrapper" data-sf-element="Container" data-placeholder-label="First Read Wrapper">
+
+        <div class="dirCarousel">
+            <div class="jcarousel-wrapper">
+                <!-- Carousel -->
+                <div class="jcarousel">
+                    <!-- items -->
+                    <ul class="jItems">
+    
+                            <li class="firstread dark">
+                            <div class="itemInner" style="background-image: url(/images/heroimages/kh_hero_framework_slider_images_v1-2.jpg?sfvrsn=6)"></div>
+                                <div class="itemContentWrapper container">
+                                    <div class="itemContent"  style="max-width:550px">
+                                        <h2 class="title">Introducing <br />HERO Framework™</h2>
+                                        <p class="subtext"> Advancing and improving health through deep human insight.</p>
+                                        <a class="cta baseButton" href='http://www.kantarhealth.com/hero/'>Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="firstread dark">
+                            <div class="itemInner" style="background-image: url(/images/sliderimages/kh_hp_slider_realize.jpg?sfvrsn=0)"></div>
+                                <div class="itemContentWrapper container">
+                                    <div class="itemContent"  style="max-width:550px">
+                                        <h2 class="title">ACHIEVE COMMERCIAL SUCCESS</h2>
+                                        <p class="subtext">Pinpoint market need and leverage opportunities to establish or grow your brand</p>
+                                        <a class="cta baseButton" href='/expertise/commercial-planning'>Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="firstread dark">
+                            <div class="itemInner" style="background-image: url(/images/heroimages/kh_hp_slider_adapt.jpg?sfvrsn=4)"></div>
+                                <div class="itemContentWrapper container">
+                                    <div class="itemContent"  style="max-width:550px">
+                                        <h2 class="title">ADAPT TO THE FUTURE OF HUMAN HEALTH </h2>
+                                        <p class="subtext">Delivering the best insights starts with innovative thinking</p>
+                                        <a class="cta baseButton" href='/patient-ecosystems'>Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="firstread light">
+                            <div class="itemInner" style="background-image: url(/images/sliderimages/kh_hp_slider_ecosystem.jpg?sfvrsn=0)"></div>
+                                <div class="itemContentWrapper container">
+                                    <div class="itemContent"  style="max-width:550px">
+                                        <h2 class="title">MAKING SENSE OF THE HEALTHCARE ECOSYSTEM</h2>
+                                        <p class="subtext">Consulting, research and data to provide evidence of your products’ value</p>
+                                        <a class="cta baseButton" href='/expertise/real-world-evidence'>Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="jcarouselNav">
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                </div>
+                <p class="jcarousel-pagination">
+                    
+                </p>
+
+            </div>
+        </div>
+    
+
+
+</div>
+<div id="C005_Col00" class="sf_colsIn container homeCallouts" data-sf-element="Container" data-placeholder-label="Callout Wrapper"><div class="sf_cols homeCallouts">
+    <div class="sf_colsOut sf_3cols_1_33" style="width: 33%;">
+        <div id="C044_Col00" class="sf_colsIn sf_3cols_1in_33">
+
+
+<div class="homeCallout">
+            <div >
+              <h2>Case Study</h2>
+              <h3>Classic Market Research Coupled with Unique Framework Yields Valuable Patient Insights for New Oncology Therapies</h3>
+<a href="http://www.kantarhealth.com/docs/uk-newsletter/final-parkinson-s-patient-research-case-study.pdf?sfvrsn=0"></a>
+
+                
+            </div>
+
+    
+
+</div>
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_3cols_2_34" style="width: 34%;">
+        <div id="C044_Col01" class="sf_colsIn sf_3cols_2in_34">
+
+
+<div>
+
+        <div  class="homeCallout">
+
+            <h2>Latest Blog Post</h2>
+            <h3>Profiling South Korean Statin Users Leads to Better Outcomes</h3>
+            <a href="http://www.kantarhealth.com/blog/junghwa-lee/2018/12/07/profiling-south-korean-statin-users-leads-to-better-outcomes"></a>
+
+
+            
+        </div>
+
+</div>
+
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_3cols_3_33" style="width: 33%;">
+        <div id="C044_Col02" class="sf_colsIn sf_3cols_3in_33">
+
+
+<div class="homeCallout">
+<h2>Featured Report</h2>
+            <h3>Applying the Science of Marketing to the Art of Brand Building</h3>
+            <a href="http://info.kantarhealth.com/marketing-science-and-brand-building"></a>
+
+    
+
+</div>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div id="C007_Col00" class="sf_colsIn homeCtaBanner" data-sf-element="Container" data-placeholder-label="Home Cta Banner"><div id="C008_Col00" class="sf_colsIn container text-center" data-sf-element="Container" data-placeholder-label="Home CTA Banner Content"><div class='sfContentBlock'><span>LET'S DISCUSS YOUR NEEDS</span> <a class="baseButton" href="/contact-us">CONTACT US</a>
+
+
+</div>
+</div>
+
+</div>
+<div id="C009_Col00" class="sf_colsIn container homeTabWrapper" data-sf-element="Container" data-placeholder-label="Home Tabs Wrapper">
+<div class="homeTabHeader">
+    <!-- Nav tabs -->
+    <ul role="tablist">
+        <li class="active"><a data-toggle="tab" role="tab" href="#news">NEWS</a></li>
+        <li><a data-toggle="tab" role="tab" href="#events">EVENTS</a></li>
+        <li><a data-toggle="tab" role="tab" href="#careers">CAREERS</a></li>
+    </ul>
+</div>
+<div class="tabContent">
+    <div class="tab-content">
+        <div class="tab-pane" id="news">
+            
+            
+                    <ul>
+                
+                    <li><a class="cta" href='/news-room/2018/12/12/kantar-health-named-one-of-best-companies-to-work-for-in-greater-china-by-great-place-to-work' target='_self'>Kantar Health Named One of "Best Companies to Work for&reg; in Greater China" by Great Place to Work&reg;</a></li>
+                
+                    <li><a class="cta" href='/news-room/2018/11/16/obesity-among-diabetics-on-the-rise-in-urban-india-new-study-finds' target='_self'> Obesity Among Diabetics on the Rise in Urban India, New Study Finds</a></li>
+                
+                    <li><a class="cta" href='/news-room/2018/09/19/medicine-affordability-mental-health-and-opioid-abuse-rank-as-toughest-global-health-challenges-new-report-says' target='_self'>Medicine Affordability, Mental Health and Opioid Abuse Rank as Toughest Global Health Challenges, New Report Says</a></li>
+                
+                    <li><a class="cta" href='/news-room/2018/05/23/kantar-healths-jessica-santos-to-receive-ispor-service-award' target='_self'>Kantar Health's Jessica Santos to Receive ISPOR Service Award</a></li>
+                
+                    </ul>
+                
+        </div>
+        <div class="tab-pane" id="events">
+            
+                    <ul>
+                
+                    <li><a class="cta" href='/events/2019/01/30/default-calendar/qrca-presentation'>QRCA Presentation by Colleen Welsh-Allen</a></li>
+                
+                    <li><a class="cta" href='/events/2019/02/06/default-calendar/pharma-market-research-conference'>Pharma Market Research Conference</a></li>
+                
+                    <li><a class="cta" href='/events/2019/05/18/default-calendar/ispor-2018'>ISPOR 2019</a></li>
+                
+                    <li><a class="cta" href='/events/2019/08/24/default-calendar/ispe-congress'>ISPE  Congress</a></li>
+                
+                    </ul>
+                
+        </div>
+        <div class="tab-pane" id="careers">
+            <ul>
+    <li><a href="http://www.kantarhealth.com/careers">Learn what it takes to become a Catalyst</a></li>
+    <li><a href="https://ldd.tbe.taleo.net/ldd03/ats/careers/v2/jobSearch?act=redirectCwsV2&amp;cws=162&amp;org=KANTARSSA">View open positions</a></li>
+    <li><a href="mailto:info@kantarhealth.com">Contact our Talent Team</a></li>
+    <li><a href="/creating-brighter-futures">See how we're making a difference</a></li>
+</ul>
+        </div>
+    </div>
+</div>
+<div id="C016_Col00" class="sf_colsIn homeTabsForm" data-sf-element="Container" data-placeholder-label="Insights Form"><div class='sfContentBlock'><h3>subscribe for insights</h3>
+
+
+</div>
+
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({ 
+    css: '',
+    portalId: '485061',
+    formId: '4453e19b-42f9-42d7-a30a-d1627157f3ae'
+  });
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div id="T93D5A9E9007_Col00" class="sf_colsIn footerWrapper" data-sf-element="Container" data-placeholder-label="Footer Wrapper"><div id="T93D5A9E9008_Col00" class="sf_colsIn container footer" data-sf-element="Container" data-placeholder-label="Footer"><div class='socialLinks'><ul>
+    <li><a class="twitterLink" target="_blank" href="http://twitter.com/Kantar_Health"> </a> </li>
+    <li><a class="googlePlus" target="_blank" href="//plus.google.com/+KantarhealthWPP"></a> </li>
+    <li><a class="linkedinLink" target="_blank" href="http://linkedin.com/company/kantar-health"> </a> </li>
+    <li><a class="blogLink" href="/blog"> </a> </li>
+</ul>
+
+
+</div>
+
+
+
+
+<div class="sfNavWrp sfNavHorizontalWrp footerNav ASP.templates_telerik_sitefinity_resources_templates_frontend_navigation_horizontallist_ascx">
+    
+    
+      
+    
+     
+    <ul class="sfNavHorizontal sfNavList">
+        
+                        <li>
+                            <a href="/terms-conditions">Terms & Conditions</a>          
+                        </li>
+                    
+                        <li>
+                            <a href="/privacy-policy">Privacy Policy</a>          
+                        </li>
+                    
+                        <li>
+                            <a href="/modern-slavery-statement">Modern Slavery Statement</a>          
+                        </li>
+                    
+                        <li>
+                            <a href="/site-map">Site Map</a>          
+                        </li>
+                    
+    </ul>
+</div>
+<div class='footerCopyright'>&copy; 2019 Kantar Health, A Kantar Company
+
+
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+_linkedin_data_partner_id = "114233";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=114233&fmt=gif" />
+</noscript>
+
+        </div>
+    
+<script type="text/javascript" src="/ResourcePackages/Bootstrap/assets/dist/js/bootstrap.min.js"></script><script type="text/javascript" src="/Sitefinity/WebsiteTemplates/KantarHealth/App_Themes/KHReloaded/js/customRel.js?v=1.1"></script><!-- Start of Google Analytics Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26160839-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End of Google Analytics Code -->
+
+
+
+  <!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/485061.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl16_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Sitefinity.Resources, Version=9.2.6200.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:9540f265-c918-463e-95d1-134a48200f7f:7a90d6a:83fa35c7:850288ef';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"everything","language":null,"minSuggestLength":3,"resultsUrl":"/search-results","searchButton":$get("T93D5A9E9022_ctl00_ctl00_searchButton"),"searchTextBox":$get("T93D5A9E9022_ctl00_ctl00_searchTextBox"),"suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions","wordsMode":0}, null, null, $get("T93D5A9E9022"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Sitefinity.Services.Search.Web.UI.Public.SearchBox, {"disableSuggestions":true,"indexCatalogue":"everything","language":null,"minSuggestLength":3,"resultsUrl":"/search-results","searchButton":$get("T93D5A9E9023_ctl00_ctl00_searchButton"),"searchTextBox":$get("T93D5A9E9023_ctl00_ctl00_searchTextBox"),"suggestionFields":"Title,Content","suggestionsRoute":"/restapi/search/suggestions","wordsMode":0}, null, null, $get("T93D5A9E9023"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

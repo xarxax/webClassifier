@@ -1,0 +1,1557 @@
+<html>
+
+
+
+<head>
+
+<title>WTOPharma.com</title>
+
+<STYLE>.small {
+
+	FONT-SIZE: 8pt
+
+}
+
+.forminput {
+
+	BACKGROUND-COLOR: #E6E6FF; COLOR: #000066; FONT-FAMILY: arial, Helvetica, sans-serif; FONT-SIZE: 10pt; FONT-WEIGHT: 400
+
+}
+
+</STYLE>
+
+<SCRIPT language="JavaScript" >
+
+function msg121Client()
+
+{
+
+	var company="wtopharma";
+
+	var msg121RootUrl="http://165.21.82.40:8080/msg121";
+
+	var url="client.jsp?company="+company+"&referer=http://165.21.82.40:8080";
+
+	var MSIEIndex = navigator.userAgent.indexOf("MSIE");
+
+	var MacIndex = navigator.userAgent.indexOf("Mac");
+
+	var swidth=window.screen.width;
+
+	var sheight=window.screen.height;
+
+	var currentDate = new Date();
+
+	var winTitle = "MSG121Client_"+currentDate.getTime();
+
+	if(MSIEIndex!=-1){
+
+		var width=240;
+
+		var height=412;
+
+		var sx=swidth-width-10;
+
+		var sy=0;
+
+		var s="";
+
+		if(MacIndex!=-1){
+
+			s="toolbar=no,directories=no,resizable=no,scrollbars=no,width="+width+",height="+height+",top=0,left="+sx;
+
+		}
+
+		else{
+
+			s="toolbar=no,directories=no,resizable=yes,scrollbars=no,width="+width+",height="+height+",top=0,left="+sx;
+
+		}
+
+		msg121window = window.open("",winTitle,s);
+
+		msg121window.location.href=msg121RootUrl+"/client/ie/"+url;
+
+	
+
+	}
+
+	else{
+
+		var width=240;
+
+		var height=412;
+
+		var sx=swidth-width-10;
+
+		var sy=0;
+
+		var s="toolbar=no,directories=no,resizable=no,scrollbars=no,width="+width+",height="+height+",screenY=0,screenX="+sx;
+
+		var msg121window = window.open(msg121RootUrl+"/client/netscape/"+url,winTitle,s);
+
+		msg121window.focus();
+
+	}
+
+}
+
+</script>
+
+</head>
+
+
+
+<body background="images/pgbg.jpg" bgcolor="#f0f4ef">
+
+<script type="text/javascript" language="JavaScript">
+
+/********************************************************************************
+
+Copyright (C) 1999 Thomas Brattli
+
+This script is made by and copyrighted to Thomas Brattli at www.bratta.com
+
+Visit for more great scripts. This may be used freely as long as this msg is intact!
+
+I will also appriciate any links you could give me.
+
+********************************************************************************/
+
+//Default browsercheck, added to all scripts!
+
+function checkBrowser(){
+
+	this.ver=navigator.appVersion
+	this.dom=document.getElementById?1:0
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom)?1:0;
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+	this.ie4=(document.all && !this.dom)?1:0;
+	this.ns6=(this.dom && parseInt(this.ver) >= 6) ?1:0;
+	this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie5 || this.ie4 || this.ie6 || this.ns4 || this.ns5 || this.ns6)	
+	return this
+
+}
+
+bw=new checkBrowser()
+
+
+
+</script>
+
+<p>
+
+<script language="JavaScript1.2" src="coolmenus1.js">
+
+/*******************************************************************************
+
+Copyright (c) 1999 Thomas Brattli (www.bratta.com)
+
+
+
+eXperience DHTML coolMenus - Get it at www.bratta.com
+
+Version 2.0
+
+This script can be used freely as long as all copyright messages are
+
+intact. Visit www.bratta.com/dhtml for the latest version of the script.
+
+
+
+These are the varibles you have to set to customize the menu.
+
+*******************************************************************************/
+
+</script>
+
+<script>
+
+/********************************************************************************
+
+Variables to set.
+
+
+
+Remember that to set fontsize and fonttype you set that in the stylesheet
+
+above!
+
+********************************************************************************/
+
+
+
+//Making a menu object
+
+oMenu1=new menuObj('oMenu1') //Place a name for the menu in there. Must be uniqe for each menu
+
+
+
+//Setting menu object variables
+
+
+
+//Style variables NOTE: The stylesheet have been removed. Use this instead! (some styles are there by default, like position:absolute ++)
+
+oMenu1.clMain='padding:5px; font-family:arial; font-size:12px; font-weight:bold' //The style for the main menus
+
+oMenu1.clSub='padding:5px; font-family:arial; font-size:12px' //The style for the submenus
+
+oMenu1.clSubSub='padding:5px; font-family:arial; font-size:12px' //The style for the subsubmenus
+
+oMenu1.clAMain='text-decoration:none; color:ff6600' //The style for the main links
+
+oMenu1.clASub='text-decoration:none; color:000000' //The style for the sub links
+
+oMenu1.clASubSub='text-decoration:none; color:ffff00' //The style for the subsub links
+
+
+
+//Background bar properties
+
+oMenu1.backgroundbar=0 //Set to 0 if no backgroundbar
+
+oMenu1.backgroundbarfromleft=-850 //The left placement of the backgroundbar in pixel or %
+
+oMenu1.backgroundbarfromtop=60 //The top placement of the backgroundbar  in pixel or %
+
+oMenu1.backgroundbarsize="100%" //The size of the bar in pixel or %
+
+oMenu1.backgroundbarcolor="000000" //The backgroundcolor of the bar
+
+
+
+oMenu1.mainheight=22 //The height of the main menuitems in pixel or %
+
+oMenu1.mainwidth=95//The width of the main menuitems  in pixel or %
+
+
+
+/*These are new variables. In this example they are set like the previous version*/
+
+oMenu1.subwidth=170 // ** NEW ** The width of the submenus
+
+oMenu1.subheight=20 //The height if the subitems in pixel or % 
+
+
+
+oMenu1.subsubwidth=150// ** NEW ** The width of the subsubmenus in pixel or % 
+
+oMenu1.subsubheight=oMenu1.subheight //** NEW ** The height if the subsubitems in pixel or % 
+
+
+
+
+
+//Writing out the style for the menu (leave this line!)
+
+oMenu1.makeStyle()
+
+
+
+oMenu1.subplacement=oMenu1.mainheight //** NEW ** Relative to the main item
+
+oMenu1.subsubXplacement=oMenu1.subwidth/1 //** NEW ** The X placement of the subsubmenus, relative to the sub item
+
+oMenu1.subsubYplacement=3 //** NEW ** The Y placement of the subsubmenus, relative to the sub item
+
+
+
+oMenu1.mainbgcoloroff='E6E6FF' //The backgroundcolor of the main menuitems
+
+oMenu1.mainbgcoloron='#E6E6FF' //The backgroundcolor on mouseover of the main menuitems
+
+oMenu1.subbgcoloroff='BDB5E1' //The backgroundcolor of the sub menuitems
+
+oMenu1.subbgcoloron='#9966cc' //The backgroundcolor on mouseover of the sub menuitems
+
+oMenu1.subsubbgcoloroff='#9966cc'//The backgroundcolor of the subsub menuitems
+
+oMenu1.subsubbgcoloron='#000000' //The backgroundcolor on mouseover of the subsub menuitems
+
+oMenu1.stayoncolor=0 //Do you want the menus to stay on the mouseovered color when clicked?
+
+
+
+
+oMenu1.menuspeed=5 //The speed of the clipping in px
+
+oMenu1.menusubspeed=2 //The speed of the submenus clipping in px
+
+
+
+oMenu1.menurows=1 //Set to 0 if you want rows and to 1 if you want columns
+
+
+
+oMenu1.menueventon="mouse" //Set this to "mouse" if you want the menus to appear onmouseover, set it to "click" if you want it to appear onclick
+
+oMenu1.menueventoff="mouse" //Set this to "mouse" if you them to disappear onmouseout, if not set it to "click"
+
+
+
+//Placement of the menuitems
+
+
+
+//Example in %:
+
+//oMenu1.menuplacement=new Array("20%","40%","60%","50%","65%") //Remember to make the arrays contain as many values as you have main menuitems
+
+
+
+//Example in px: (remember to use the ' ' around the numbers)
+
+//oMenu1.menuplacement=new Array(10,200,300,400,500)
+
+
+
+//Example right beside eachother (only adding the pxbetween variable)
+
+oMenu1.menuplacement=0
+
+
+
+//If you use the "right beside eachother" you cant how many pixel there should be between each here
+
+oMenu1.pxbetween=1 //in pixel or %
+
+
+
+//And you can set where it should start from the left here
+
+oMenu1.fromleft=65//in pixel or %
+
+
+
+//This is how much from the top the menu should be.
+
+oMenu1.fromtop=105//in pixel or %
+
+
+
+/********************************************************************************
+
+Construct your menus below
+
+********************************************************************************/
+
+
+
+//MAIN 0
+
+//Main items:
+// makeMain(MAIN_NUM,'TEXT','LINK','FRAME_TARGET') (set link to 0 if you want submenus of this menu item)
+
+oMenu1.makeMain(0,'Services',0)
+	//Sub items:
+	// makeSub(MAIN_NUM,SUB_NUM,'TEXT','LINK',TOTAL,'FRAME_TARGET') (set link to 0 if you want submenus of this menu item)
+	oMenu1.makeSub(0,0,'Industry News',"agrinews.jsp",2)
+	oMenu1.makeSub(0,1,'Currency Converter',"phconverter.jsp",2)
+
+	
+		//SubSub items:
+		// makeSubSub(MAIN_NUM,SUB_NUM,SUBSUB_NUM,'TEXT','LINK',TOTAL,'FRAME_TARGET')
+		oMenu1.makeSubSub(0,0,0,'Agriculture',"agrinews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,1,'Chemicals',"chemnews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,2,'Bio-technology',"bionews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,3,'Trade News',"tradenews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,4,'Pharmaceuticals',"pharmanews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,5,'Health Care',"healthc.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,6,'Health Care Management',"healthcm.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,7,'Medical Research',"medicalres.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,8,'Medical Informatics',"medicalinfo.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,9,'Veterinary',"vetnews.jsp",'#',11)
+		oMenu1.makeSubSub(0,0,10,'Pharmaceuticals',"Globallinks.jsp",11)
+
+
+
+
+
+
+
+
+/********************************************************************************
+
+End menu construction
+
+********************************************************************************/
+
+		
+
+		
+
+//When all the menus are written out we initiates the menu
+
+oMenu1.construct()	
+
+</script>
+
+<DIV ID="overDiv" STYLE="position: absolute; visibility: hide; z-index: 1; left: 12; top: 0; width: 651; height: 19"></DIV>
+
+
+
+<SCRIPT LANGUAGE="JavaScript" SRC="overlib.js"></SCRIPT>
+
+<div style="position: absolute; left: 114; top: 11; width: 197; height: 19">
+
+<SCRIPT>                     
+
+mydate = new Date();
+
+myday = mydate.getDay();
+
+mymonth = mydate.getMonth();
+
+myweekday= mydate.getDate();
+
+weekday= myweekday;
+
+myyear= mydate.getYear();
+
+year = myyear;
+
+
+
+if(myday == 0)
+
+        day = " Sunday, "      
+
+
+
+else if(myday == 1)
+
+      day = " Monday, "
+
+
+
+else if(myday == 2)
+
+        day = " Tuesday, "   
+
+
+
+else if(myday == 3)
+
+        day = " Wednesday, "   
+
+
+
+else if(myday == 4)
+
+        day = " Thursday, "
+
+
+
+else if(myday == 5)
+
+        day = " Friday, "
+
+
+
+else if(myday == 6)
+
+        day = " Saturday, "
+
+
+
+if(mymonth == 0)
+
+         month = "January "
+
+
+
+else if(mymonth ==1)
+
+         month = "February "
+
+
+
+else if(mymonth ==2)
+
+        month = "March "
+
+
+
+else if(mymonth ==3)
+
+       month = "April "
+
+
+
+else if(mymonth ==4)
+
+         month = "May "
+
+
+
+else if(mymonth ==5)
+
+         month = "June "
+
+
+
+else if(mymonth ==6)
+
+         month = "July "
+
+
+
+else if(mymonth ==7)
+
+       month = "August "
+
+
+
+else if(mymonth ==8)
+
+      month = "September "
+
+
+
+else if(mymonth ==9)
+
+     month = "October "
+
+
+
+else if(mymonth ==10)
+
+     month = "November "
+
+
+
+else if(mymonth ==11)
+
+     month = "December"
+
+
+
+document.write("<b><p align=left><font size=-1>"+ month);
+
+document.write(myweekday+","+ day+ year+"</font></b>");
+
+
+
+</SCRIPT></div>
+
+
+
+
+
+<div style="width: 216; height: 19; position: absolute; left: 445; top: 14">
+
+ <span style="position: absolute; left: -79; top: -12">
+
+ <applet code="hscroll.class" align="left" width="394" height="27">
+
+<param name="bgcolor"value="255,255,255">
+
+<param name="desc0" value="Analgesic & Anti-inflammatory Agents,Anthelmintics,Anti-Arrhythmic Agents,Antibacterial Agents,Anticoagulants,Antidepressants,Antidiabetics Agents,Antiepileptics,Antifungal Agents,Antigout Agents,Antihistamines,Antihypertensive Agents,Antimalarials,Antimuscarinic gents,Antimycobacterial Agents,Antineoplastic Agents and Immunosuppressants,Antiprotozoal Agents,Antithyroid Agents,Antiviral Agents,Anxiolytic Sedatives Hypnotics & Neurileptics,Astringents,Beta-Adrenoceptor Blocking Agents,Blood Products & Substitutes,Cardiac Inotropic Agents,Chelating Agents Antidotes & Antagonists,Colouring Agents,Contrast Media,Corticosteroids,Cough Suppressants Expectorants & Mucolytics,Dermatological Agents,Diagnostic Agents,Disinfectants,Diuretics,Dopaminergic Antiparkinsonian Agents,Ergot Alkaloids & Derivatives,Gastro-Intestinal Agents,General Anaesthetics,Glycerol Glycol & acrogols,Haemostatics,Hypothalamic & Pituitary Hormones,Iron & Iron Compounds,Lipid Regulating Agents,Local Anaesthetics,Muscle Relaxants,Nutritional Agents & Vitamines,Opioid Analgesics,Prostaglandins,Sex Hormones,Sodium Cromoglycate & Related Anti-Allergic Agents,Stabilising & Anorectics,Stimulants & Anorectics,Sympathomimetics,Thyroid Agents,Vasodilators,Xanthines">
+
+<param name="desc1" value="|">
+
+<param name="desc2" value="|">
+
+<param name="desc3" value="">
+
+<param name="desturl3" value="web_effects.htm">
+
+<param name="fontstyle" value="bold">
+
+<param name="hlcolor" value="0,0,0">
+
+<param name="Notice" value="Marquee">
+
+<param name="puasemargin" value="5">
+
+<param name="scrolldelay" value="13">
+
+<param name="scrolljump" value="1">
+
+<param name="size" value="12">
+
+<param name="textcolor" value="102,102,103">
+
+<param name="yoffset" value="2">
+
+</applet>
+
+
+
+ </span>
+
+
+
+</div>
+
+<span style="position: absolute; left: 11; top: 0"><span>
+
+<map name="FPMap0">
+
+<area href="index.html" shape="rect" coords="247, 56, 304, 70">
+
+<area href="trading1.jsp?service_request=multiplesearch&service_type=new&search_order=ORDER%20BY%20postdate%20DESC&pageSize=10&tablenames=pharma_passive_seller@pharma_passive_buyer&search_type=contains" shape="rect" coords="341, 38, 428, 61">
+
+<area shape="rect" coords="440, 39, 527, 61" href="phintermtrading.jsp?service_request=multiplesearch&service_type=new&search_order=ORDER%20BY%20postdate%20DESC&pageSize=10&tablenames=phinterm_passive_seller@phinterm_passive_buyer&search_type=contains">
+
+<area href="phnews.jsp" shape="rect" coords="532, 38, 577, 62">
+
+<area href="index.html" shape="rect" coords="234, 78, 312, 99">
+
+<area href="phcontact_us.jsp" shape="rect" coords="398, 79, 479, 100">
+
+<area href="phabout_us.jsp" shape="rect" coords="487, 76, 562, 102">
+
+<area href="phlogin.jsp" shape="rect" coords="569, 76, 650, 101">
+
+<area shape="rect" coords="658, 77, 730, 102" href="faq.jsp">
+
+<area href="phhealth_display_topics.jsp?service_request=search&service_type=new&search_order=order+by+id_no+DESC&search_type=begins+with&table_name=pharma_forum_topic&pageSize=10" shape="rect" coords="319, 76, 396, 99">
+
+<area href="phtradeexpo1.jsp" shape="rect" coords="580, 40, 671, 59">
+<area href="pharmapersonal.jsp" shape="rect" coords="678, 41, 750, 61"></map><IMG border=0 src="images/header05.gif" usemap="#FPMap0" width="755" height="103" ></span>   </span><BR><BR><BR><BR><BR>
+<div align="left">
+<table width="728"><tr>
+    <td width="179"></td>
+      <td width="539" align="right">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Arial" size="1">For the
+
+        avoidance of doubt, this site is not linked or associated with the World
+
+        Trade Organisation in any manner whatsoever</font>
+
+       
+
+      </td>
+  </tr></table>
+</div>
+<div align="left">
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tr>
+
+    </tr>
+
+  </table>
+
+</div>
+
+<SCRIPT language=JavaScript>
+
+<!--// Hide from old browsers
+
+var ToolBar_Supported = ToolBar_Supported;
+
+if (ToolBar_Supported != null && ToolBar_Supported == true)
+
+{
+
+	TBDownLevelDiv.style.display ='none';
+
+	drawToolbar();
+
+}
+
+//-->
+
+</SCRIPT>
+
+<table border="0" cellspacing="1" width="732" cellpadding="8" height="531">
+
+  <tr>
+
+    <td height="165" valign="top" width="172">
+
+     
+
+        <center>
+
+       <!-- <table border="0" cellpadding="0" cellspacing="0" width="145" height="118">
+
+          <tr>
+
+        <td width="56" height="25" valign="top"><font size="1" face="Arial">User
+
+          ID:</font></td>
+
+        <td width="85" height="25" valign="top"><input type="text" name="userid" size="11"></td>
+
+          </tr>
+
+          <tr>
+
+        <td width="56" height="25" valign="top"><font size="1" face="Arial">Password:</font></td>
+
+        <td width="85" height="25" valign="top"><input type="password" name="password" size="11">
+
+        </td>
+
+          </tr>
+
+          <tr>
+
+            <td colspan="2" width="143" height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <INPUT type=image border="0" src="images/go.gif" value=Submit width="41" height="20"><br>
+
+              &nbsp;&nbsp; &nbsp;<font face="Arial" size="1">To
+
+          change Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+          &nbsp;<font color="#6F46B9">&nbsp;</font><font color="#008000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <a href="phchangepwform.jsp"><font color="000000">Click Here</font></a><font color="000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">
+
+              &nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;</font></font></td>
+
+          </tr>
+
+        </table>--></center>&nbsp;&nbsp;&nbsp; <a href="help.jsp"><img src="images/pill_anime.gif" width="107" height="24" border="0">
+
+     
+
+        </a>
+
+     
+
+        <center>
+
+       <span class="SmallWelcome"><br>
+
+       Please<font color="#FF6600">  <a class="wlink" href="phlogin.jsp"><strong><u><font color="FF6600">sign
+
+       in</font></u></strong></a></font> or&nbsp;<a class="wlink" href="phlogin.jsp"><br>
+
+       <font color="#FF6600"><b>create an account</b></font><br>
+
+       </a>&nbsp;if you're a new user.<br>
+
+       </span>
+
+        </center>
+
+
+
+        <div align="center">
+
+          <center>
+
+          <table border="0" cellpadding="0" cellspacing="0" width="97%">
+
+            <tr>
+
+              <td width="100%">
+
+
+
+        <p align="center">&nbsp;</td>
+
+            </tr>
+
+          </table>
+
+          </center>
+
+        </div>
+
+
+
+    </td>
+
+    <td height="165" valign="top" width="536">
+
+
+        <p align="justify"><FONT face=Arial size=2>The Leading&nbsp; B2B international
+
+      WTOPharma.com&nbsp;<B><SUP> </SUP></B>Exchange<i>Plus</i> encompassing the
+
+      pillars of the E-commerce Components with an enriching spectrum of
+
+      Pharmaceutical Raw Materials, Sevices and Views.<br>
+
+      WTOPharma.com is a community oriented e-incubating platform where
+
+      Pharmaceutical and Medical people exchange Pharmaceutical Raw Materials
+
+      Intermediates, Herbal Products, Gelatins/Capsules, Newly developed medicine
+
+      Excess Stocks, Career and ideas(Forum)<br>
+
+        <font color="#FF6600"><strong><u>Search Raw Materials&nbsp; By
+
+        Category</u></strong></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </FONT><font face="Arial" size="2"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><a href="phmore.jsp"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></a></font></span><font color="#000000"><span style="font-size: 12.0pt; font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+
+        </span></font><a href="phmore.jsp"><font color="#FF6600"><strong>More</strong></font></a></font>
+        </p>
+
+      <div align="center">
+
+        <center>
+
+        <table border="0" cellpadding="0" cellspacing="0" width="97%" height="17">
+
+          <tr> <form method="POST" action="trading1.jsp">
+
+
+
+            <input type="hidden" name="service_request" value="multiplesearch">
+
+   <input type="hidden" name="service_type" value="new">
+
+   <input type="hidden" name="search_order" value="ORDER BY postdate DESC">
+
+   <input type="hidden" name="pageSize" value="10">
+
+   <input type="hidden" name="tablenames" value="pharma_passive_seller pharma_passive_buyer ">
+
+     <input type="hidden" name="search_type" value="begins with">
+
+
+
+
+
+            <td width="100%" height="17">
+
+              <select size="1" class="forminput" name="product_cat">
+
+   <option selected value="Select">---------------------------Select 
+   Category-----------------------</option>
+
+
+
+    <option value="Analgesic Anti-inflammatory Agents ">Analgesic 
+    Anti-inflammatory Agents </option>
+
+    <option value="Anti-Arrhythmic Agents ">Anti-Arrhythmic Agents </option>
+
+    <option value="Antibacterial Agents ">Antibacterial Agents </option>
+
+    <option value="Anticoagulants ">Anticoagulants </option>
+
+    <option value="Antineoplastic Agents and Immunosuppressants ">Antineoplastic 
+    Agents and Immunosuppressants </option>
+
+    <option value="Antiprotozoal Agents ">Antiprotozoal Agents </option>
+
+    <option value="Astringents ">Astringents </option>
+
+     <option value="Anthelmintics ">Anthelmintics </option>
+
+    <option value="Antimalarials ">Antimalarials </option>
+
+     <option value="Antidepressants">Antidepressants</option>
+
+    <option>Antidiabetics Agents </option>
+
+    <option value="Antigout Agents ">Antigout Agents </option>
+
+    <option value="Antimuscarinic Agents ">Antimuscarinic Agents </option>
+
+    <option value="Antimycobacterial Agents ">Antimycobacterial Agents </option>
+
+    <option value="Antithyroid Agents ">Antithyroid Agents </option>
+
+    <option value="Antiviral Agents ">Antiviral Agents </option>
+
+     <option value="Antiepileptics ">Antiepileptics </option>
+
+    <option value="Antihistamines">Antihistamines</option>
+
+    <option value="Anxiolytic Sedatives Hypnotics  Neurileptics ">Anxiolytic 
+    Sedatives Hypnotics Neurileptics </option>
+
+    <option value="Antifungal Agents">Antifungal Agents </option>
+
+    <option value="Antihypertensive Agents">Antihypertensive Agents </option>
+
+     <option value="Beta-Adrenoceptor Blocking Agents ">Beta-Adrenoceptor 
+     Blocking Agents </option>
+
+    <option value="Blood Products Substitutes ">Blood Products Substitutes </option>
+
+    <option value="Contrast Media ">Contrast Media </option>
+
+     <option value="Cardiac Inotropic Agents ">Cardiac Inotropic Agents </option>
+
+    <option value="Chelating Agents Antidotes Antagonists ">Chelating Agents 
+    Antidotes Antagonists </option>
+
+    <option value="Colouring Agents ">Colouring Agents </option>
+
+     <option value="Corticosteroids ">Corticosteroids </option>
+
+    <option value="Cough Suppressants Expectorants Mucolytics ">Cough 
+    Suppressants Expectorants Mucolytics </option>
+
+    <option value="Diagnostic Agents ">Diagnostic Agents </option>
+
+    <option value="Disinfectants ">Disinfectants </option>
+
+    <option value="Dermatological Agents ">Dermatological Agents </option>
+
+    <option value="Diuretics ">Diuretics </option>
+
+    <option value="Dopaminergic Antiparkinsonian Agents ">Dopaminergic 
+    Antiparkinsonian Agents </option>
+
+    <option value="Ergot Alkaloids Derivatives ">Ergot Alkaloids Derivatives </option>
+
+    <option value="General Anaesthetics ">General Anaesthetics </option>
+
+    <option value="Glycerol Glycol  Macrogols">Glycerol Glycol Macrogols</option>
+
+    <option value="Gastro-Intestinal Agents ">Gastro-Intestinal Agents </option>
+
+    <option value="Haemostatics">Haemostatics</option>
+
+     <option value="Hypothalamic Pituitary Hormones ">Hypothalamic Pituitary 
+     Hormones </option>
+
+    <option value="Iron Iron Compounds">Iron Iron Compounds</option>
+
+    <option value="Lipid Regulating Agents ">Lipid Regulating Agents </option>
+
+    <option value="Local Anaesthetics ">Local Anaesthetics </option>
+
+    <option value="Muscle Relaxants ">Muscle Relaxants </option>
+
+    <option value="Nutritional Agents Vitamines">Nutritional Agents Vitamines</option>
+
+    <option value="Opioid Analgesics ">Opioid Analgesics </option>
+
+    <option value="Prostaglandins ">Prostaglandins </option>
+
+    <option value="Stabilising Anorectics ">Stabilising Anorectics </option>
+
+    <option>Stimulants Anorectics </option>
+
+    <option value="Sex Hormones ">Sex Hormones </option>
+
+    <option value="Sodium Cromoglycate Related Anti-Allergic Agents ">Sodium 
+    Cromoglycate Related Anti-Allergic Agents </option>
+
+     <option value="Sympathomimetics ">Sympathomimetics </option>
+
+    <option value="Thyroid Agents ">Thyroid Agents </option>
+
+    <option value="Vasodilators ">Vasodilators </option>
+
+    <option value="Xanthines ">Xanthines </option>
+
+   
+
+    
+
+  </select>&nbsp;&nbsp;&nbsp; <input type="submit" value="Go">
+
+           
+
+</td></form>
+
+          </tr>
+
+        </table>
+
+        </center>
+
+      </div>
+
+      </td>
+
+  </tr>
+
+  <tr>
+
+    <td height="332" valign="top" width="172">
+
+    <div align="center">
+
+      <center>
+
+      <table border="0" cellpadding="0" cellspacing="0" width="1" height="272">
+
+        <tr>
+
+          <td width="172" height="26" bgcolor="#E6E6FF"><A HREF="trading1.jsp?service_request=multiplesearch&service_type=new&search_order=ORDER%20BY%20postdate%20DESC&pageSize=10&tablenames=pharma_passive_seller@pharma_passive_buyer&search_type=contains" onMouseOver="drc('View Existing online Raw Materials from Buyers and Sellers.','Raw Materials'); return true;" onMouseOut="nd(); return true;"><img border="0" src="images/raw_materials.gif" width="158" height="24"></a></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="26" bgcolor="#E6E6FF"><A HREF="phintermtrading.jsp?service_request=multiplesearch&service_type=new&search_order=ORDER%20BY%20postdate%20DESC&pageSize=10&tablenames=phinterm_passive_seller@phinterm_passive_buyer&search_type=contains" onMouseOver="drc('View Existing online Intermediates from Buyers and Sellers.','Intermediates'); return true;" onMouseOut="nd(); return true;"><img border="0" src="images/intermediates.gif" width="158" height="24"></a></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="30" bgcolor="#E6E6FF"><a href="phtradeexpo1.jsp"><img border="0" src="images/visit_expo.gif" width="158" height="24"></a></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="30" bgcolor="#E6E6FF"><a href="phvirtual.jsp"><img border="0" src="images/create_expo.gif" width="158" height="24"></a></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="30" bgcolor="#E6E6FF"><img border="0" src="images/careers.gif" width="158" height="24">
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="26" bgcolor="#E6E6FF"><A HREF="indlink.jsp" onMouseOver="drc('Useful Health Care Sites .','Industry Links'); return true;" onMouseOut="nd(); return true;"><img border="0" src="images/industrial_link.gif" width="158" height="24"></a></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="26" bgcolor="#E6E6FF"><a HREF="phmarketmakers.jsp" onMouseOver="drc('Register to be a Market Maker to facilitate Global trade by seeking Buyers and Sellers.','Market Makers'); return true;" onMouseOut="nd(); return true;"><img border="0" src="images/market_makers.gif" width="158" height="24"></a></td>
+
+          
+
+          
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="30" bgcolor="#E6E6FF"><font color="#006699"><a href="reslib.jsp"><img border="0" src="images/research_lib.gif" width="158" height="24"></a>&nbsp;&nbsp;</font></td>
+
+        </tr>
+
+        <tr>
+
+          <td width="172" height="30" bgcolor="#E6E6FF"><font color="#FF0000"><a href="medicaldc.jsp">
+          <img src="images/med_dict.gif" border="0" width="158" height="24"></a>&nbsp;&nbsp;</font></td>
+
+        </tr>
+
+        <tr>
+
+        <td width="172" height="21" bgcolor="#E6E6FF">
+
+          
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          
+
+        </td>
+
+        </tr>
+        <tr>
+
+        <td width="172" height="21" bgcolor="#E6E6FF">
+
+          
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="images/zabira_powered.gif" width="151" height="52"></td>
+
+        </tr>
+        <tr>
+
+        <td width="172" height="4" bgcolor="#E6E6FF">
+
+          
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          
+
+        </td>
+
+        </tr>
+        <tr>
+
+          <td width="172" height="1" valign="top" bgcolor="#E6E6FF">
+
+          <TABLE bgColor=#000000 border=0 cellPadding=0 cellSpacing=0 height="1">
+
+<TR>
+
+
+<FORM method=GET action="http://www.google.com/search">
+  <td height="1" valign="top" bgcolor="#E6E6FF" width="142">
+&nbsp;</td></tr></TABLE>
+</FORM>
+          </td>
+          </tr>
+          <tr>
+
+        <td width="172" height="1" bgcolor="#E6E6FF">
+
+          
+
+        </td>
+
+          </tr>
+          <tr>
+    <td width="172" bgcolor="#E6E6FF" height="31">
+    <p align="center">
+
+
+
+        <font face="Arial"><a href="http://www.wtopharma.com/send_friend.jsp"><font color="000000">Recommend
+
+              our site to&nbsp;friends/business partners</font></a><b>&nbsp;</b></font></td>
+          </tr>
+
+      </table>
+
+      </center>
+
+    </div>
+
+    </td>
+
+    <td height="332" valign="top" width="536">
+
+      <div align="left">
+
+        <table border="0" cellpadding="0" cellspacing="0" width="521">
+
+          <tr>
+
+           <form method="POST" action="trading1.jsp">
+
+
+
+            <input type="hidden" name="service_request" value="multiplesearch">
+
+   <input type="hidden" name="service_type" value="new">
+
+   <input type="hidden" name="search_order" value="ORDER BY postdate DESC">
+
+   <input type="hidden" name="pageSize" value="10">
+
+   <input type="hidden" name="tablenames" value="pharma_passive_seller pharma_passive_buyer ">
+
+     <input type="hidden" name="search_type" value="begins with">
+
+
+
+            <td width="224">
+
+<FONT face=Arial size=2><u><font color="#FF6600"><b><strong>Partners&nbsp;</strong></b></font></u><a href="http://www.wtopharma.com/phinvestor.jsp"><b><strong><font color="#FF6600">
+
+            <u>
+
+            &amp; Investors
+
+            </u></font></strong></b></a></FONT>
+
+           
+
+</td></form>
+
+
+
+           <td align="right" width="297">
+
+
+
+&nbsp;</tr>
+
+          <tr>
+
+          <td width="521" height="48" valign="top" colspan="2"><font face="Arial" size="2">&nbsp;
+            WTOPharma.com
+
+            invites like minded organisations with interest in the&nbsp; HealthCare&nbsp;&nbsp;industry to forge strategic alliances in this<br>
+            &nbsp; Global Initiative.<br>
+
+            <a href="phinvestor.jsp"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span><font color="#000000">Strategic
+
+            Partners and Investors</font></a><font color="#000000"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="index.2.gif" alt="*" v:shapes="_x0000_i1025" width="12" height="12">
+
+            </span></font><a href="phservicepartner.jsp"><font color="#000000">Our Preferred Service Partners</font></a><font color="#000000"><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></font> </td>
+
+          </tr>
+
+          <tr>
+
+            <td width="224"><font face="Arial" size="2"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span></font> 
+              <a href="ssearchres.jsp?service_request=search&amp;service_type=new&amp;search_order=ORDER+BY+product_name&amp;table_name=pharma_products&amp;search_type=begins+with&amp;pageSize=20"><font face="Arial" size="2" color="#000000">View
+
+              Product List&nbsp;</font></a><b><strong><u><font face="Arial" size="2" color="#FF6600">Sellers</font></u></strong></b></td>
+
+            <td width="297" align="center">
+            <p align="left"><font face="Arial" size="2"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span></font> <a href="http://www.wtopharma.com/bsearchres.jsp?service_request=search&amp;service_type=new&amp;search_order=ORDER+BY+product_name&amp;table_name=pharma_products&amp;search_type=begins+with&amp;pageSize=20"><font face="Arial" size="2" color="#000000">View
+
+              Products List&nbsp;</font></a><b><strong><u><font face="Arial" size="2" color="#FF6600">Buyers&nbsp;</font></u></strong></b></td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2"><B><font color="#FF6600"><strong><u><a href="phtradeexpo1.jsp"><font color ="FF6600" face="Arial" size="2">PharmaExpo</font></a></u></strong></font></B><strong><u><font color="#FF6600"><a href="phtradeexpo1.jsp"><font face="Arial" size="2"><b>
+
+              </b><font color="FF6600"> Free Admission</font></font></a></font></u></strong><font face="Arial" size="2"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span></font><font color="#000000"><font face="Arial" size="2">Submit
+
+              </font><font size="2">Advertisement .Provide Free</font>
+            <font size="2">booth.</font></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2"></td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2">
+
+              <div align="center">
+
+                <center>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                  <tr>
+
+                    <td width="100%" bgcolor="#FFFFFF"><strong><a href="phrelated_sites.jsp"><font face="Arial" size="2" color="#FF6600">Related
+
+              Sites</font></a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <font face="Arial" size="2"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span><font color="#000000"><span style="font-size: 12.0pt; font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+
+              </span></font><a href="http://www.wtopharma.com/phrelated_sites.jsp"><font color="#000000">Our
+
+              Founding&nbsp; Members and Related Sites</font></a></font></td>
+
+                  </tr>
+
+                </table>
+
+                </center>
+
+              </div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2">
+
+            </td>
+
+          </tr>
+
+<tr>
+
+            <td width="521" colspan="2" align="left"><strong><u><font face="Arial" size="2" color="#FF6600">A
+
+              Few Words to our Buyers and Sellers</font></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+
+</tr>
+
+<tr>
+
+            <td width="521" colspan="2"></td>
+
+</tr>
+
+<tr>
+
+            <td width="521" colspan="2" align="left"><font face="Arial" size="2">
+
+            <a href="phinvestor.jsp"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span></a><font color="#000000"><span style="font-size: 12.0pt; font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+
+              </span></font><a href="http://www.wtopharma.com/phseller2.jsp"><font color="#000000">Letter
+
+              to Existing Sellers</font></a><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font><a href="phinvestor.jsp"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+
+EN-US;mso-bidi-language:AR-SA"><font color="#000000"><img src="index.1.gif" alt="*" v:shapes="_x0000_i1025" border="0" width="12" height="12"></font></span></a><font color="#000000">
+
+              </font><a href="http://www.wtopharma.com/phintroduction.jsp"><font color="#000000">Letter
+
+              to Buyers and New Sellers&nbsp;</font></a><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;</font></font></td>
+
+</tr>
+
+<tr>
+
+            <td width="521" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+</tr>
+
+<tr>
+
+            <td width="521" colspan="2">
+
+<span style="mso-spacerun: yes"><font face="Arial" size="2">Seller, please note:&nbsp;If
+
+your&nbsp;price that is being offered in our <u>trading site</u> is acceptable
+
+to our buyer, we will require a recent Certificate of Analysis and sample from
+
+you for our buyer's evaluation.</font></span>
+
+
+
+            </td>
+
+</tr>
+
+          <tr>
+
+            <td width="521" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+          </tr>
+
+          <tr>
+
+            <td width="521" colspan="2" align="left"><font SIZE="1" COLOR="#808080">&nbsp;</font><font face="Arial" size="2">If you have a list of product
+
+            inquiries to be made at any one-point of time, you may also&nbsp;fax
+
+            your queries 759-1877 or e-mail us at <a href="mailto:sales@wtopharma.com"><font color="#FF6600">sales@wtopharma.com</font></a>
+
+            or <a href="mailto:contact@wtopharma.com"><font color="#FF6600">contact@wtopharma.com</font></a>.
+
+            Our Customer Service Officer will then post your offers and
+
+            inquiries on-line on your behalf.<span style="mso-spacerun: yes">&nbsp;</span></font></td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+    </td>
+
+  </tr>
+
+</table>
+<table width="100%" height="309"> <tr>
+
+            <td height="1"><font SIZE="1" COLOR="#808080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              </font><font face="Arial" size="3" color="#FF6600"><b><strong>
+              Founding Members and Sister Organizations&nbsp;&nbsp;&nbsp;&nbsp;</strong></b></font></td>
+
+          </tr>
+
+    <td width="970" height="345">
+    <div align="center">
+
+      <center>
+
+<div align="center">
+
+<center>
+
+<table border="0" cellspacing="1" width="773" height="77">
+
+<!--  <tr>
+
+    <td width="171" height="21" valign="top">
+
+      
+
+    </td>
+
+    <td width="566" height="21" colspan="3"><B><FONT color=#000000 face=Arial>    &nbsp;</FONT><font size="3" color="#000000"><FONT face=Arial>    
+
+      </FONT></font><i><font face="Times New Roman" size="5" color="#818181">Founding Members and Sister Organizations</font></i></B></td>
+
+  </tr>-->
+
+  <tr>
+
+    <td width="161" rowspan="3" height="63" valign="top">
+
+    <table border="0" cellspacing="0" width="162" height="180" cellpadding="0" bgcolor="#E6E6FF" style="border-collapse: collapse" bordercolor="#111111">
+
+        <tr>
+
+<TD width="162" height="75" bgcolor="#E6E6FF">
+
+
+
+<p align="center">
+<A HREF="http://www.google.com/">
+<IMG SRC="http://www.google.com/logos/Logo_40wht.gif" 
+border="0" ALT="Google" align="absmiddle" width="117" height="53"></A>
+<INPUT TYPE=text name=q size=15 maxlength=255 value=""></p>
+<p align="center">
+<INPUT type=submit name=btnG VALUE="Search"></p>
+<p>
+
+
+
+</TD>
+
+</tr>
+
+        <tr>
+
+          <td width="162" height="21" valign="top">
+
+          &nbsp;
+
+          </td>
+
+        </tr>
+
+      </table>  
+
+    
+
+      
+
+    </td>
+
+ <td width="259" height="51" valign="top" align="center">&nbsp;&nbsp;<a href="http://www.zagro.com"><img src="images/zagro_logo.gif" border="1" width="188" height="63"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td width="313" height="51" valign="middle"><a href="http://www.agroconnect.com" target="_parent"><img border="1" src="images/Agroconnect.gif" align="center" width="200" height="66"></a></td>
+
+  </tr>
+
+  <tr>
+
+    <td width="259" height="1" valign="top" align="right"><br>
+
+      &nbsp;
+
+
+
+      <a href="http://www.zuelligpharma.com" target="new"><img border="1" src="images/zuellig.gif" align="middle" width="188" height="63" ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td width="313" height="1" valign="middle"><a href="http://www.zagro.com/more.asp#instruments" target="_parent"><br>
+
+      </a><a href="http://www.zagro.com/more.jsp#instruments" target="_parent">
+
+      <img border="1" src="images/PacLab.gif" align="middle" width="200" height="61"></a><a href="http://www.zagro.com/more.asp#instruments" target="_parent"><br>
+
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+    <td width="259" height="13" valign="top" align="center"><a href="http://www.goldcoin.com.sg" target="new">
+
+      <img border="1" src="images/goldcoin.gif" width="188" height="63" ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td width="313" height="13" valign="middle"> <a href="http://www.vetsquare.com"> <img src="images/VetLogo300dpi.gif" width="201" height="63" border="1"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+  </tr>
+
+    <td height="6" width="161">
+
+</table>
+
+</center>
+
+</div>
+
+    <div align="center">
+
+      <center><table width="754">
+
+        <td align="center" width="746"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          &nbsp;&nbsp;&nbsp;
+
+          </font><a href="http://www.wtopharma.com/Terms.htm#disclaimer"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Disclaimer</font></a>
+
+          <a href="http://www.wtopharma.com/Terms.htm"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Legal</font></a>
+
+          <a href="http://www.wtopharma.com/Terms.htm#privacy"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Privacy</font></a>
+
+          <a href="http://www.wtopharma.com/phcontact_us.jsp"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Contact</font></a>
+
+          <a href="http://www.wtopharma.com/phfee_table.jsp"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Fee
+
+          Table</font></a> <a href="http://www.wtopharma.com"><font color="#8261af" face="Arial, Helvetica, sans-serif" size="1">Home</font></a>
+
+          <font color="#000000" size="1">Copyright 2000. All rights reserved&nbsp;
+
+          WTOPharma.com.</font></table>
+
+      </center>
+
+    </div>
+
+      </center>
+
+    </div>
+
+<br>
+
+&nbsp;
+
+</FORM>
+<table>
+
+
+      </table>
+
+
+    </table>
+
+
+</body>

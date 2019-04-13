@@ -1,0 +1,1269 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Seastrom Manufacturing
+</title><meta name="description" content="Seastrom Manufacturing" /><meta name="keywords" content="Flat Washers, Spring Clips, Custom Parts, Manufacturer, Fasteners" />
+
+
+    <!--// for linked in //-->
+    <meta property="og:title" content="Seastrom" /><meta property="og:description" content="Description of shared article" /><meta property="og:url" content="https://www.seastrom-mfg.com/SeastromLogo.html" /><meta property="og:image" content="https://www.seastrom-mfg.com/App_Themes/seastrom_logo_header.png" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="_Scripts/general.js" type="text/javascript"></script>
+     <link rel="icon" type="image/ico" href="https://www.seastrom-mfg.com/favicon.ico" /><link rel="icon" type="image/ico" href="https://www.seastrom-mfg.com/favicon.ico" />
+
+    <script type="text/javascript">
+        function disableHomeSearchGroup() {
+            document.getElementById('ctl00_btnHomeSearch').disabled = true;
+        }
+        function enableHomeSearchGroup() {
+            document.getElementById('ctl00_btnHomeSearch').disabled = false;
+        }
+        function createCookie(name, value, days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            }
+            else var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        var stillOver = false;
+        function showSearchPopup() {
+            try {
+                stillOver = true;
+                document.getElementById('SearchByTypeMenu').style.display = 'block';
+                document.getElementById('SearchByTypeMenu').style.zIndex = '100000';
+                document.getElementById('PopupSearchMenu').style.height = '220px';
+            } catch (x) { }
+        }
+
+        function toggleSearch(obj) {
+            //$(obj).toggleClass('blue');
+            //$('#ctl00_HomeSearchBox').slideToggle("fast");
+            $(".btn-search").click();
+        }
+
+        function toggleCart(obj) {
+            $(obj).toggleClass('blue');
+            $('.cart-options').slideToggle("fast");
+        }
+
+        function hideSearchPopup() {
+            try {
+                document.getElementById('SearchByTypeMenu').style.display = 'none';
+                document.getElementById('SearchByTypeMenu').style.zIndex = '0';
+                document.getElementById('PopupSearchMenu').style.height = '0px';
+            } catch (x) { }
+        }   
+
+        function openMenu(obj) {
+            //$(obj).next().slideToggle();
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeMenu(obj) {
+            //$(obj).parent().parent().slideToggle();
+            document.getElementById("myNav").style.height = "0%";
+        }
+
+        function menuCloseSoon() {
+            stillOver = false;
+            setTimeout("closeIfNotOver()", 1000);
+        }
+
+        function closeIfNotOver() {
+            if (stillOver == false)
+                hideSearchPopup();
+        }
+
+        function getObUpperLeft(obj) {
+            var curLeft = curTop = 0;
+            if (obj.offsetParent) {
+                curLeft = obj.offsetLeft
+                curTop = obj.offsetTop
+                //alert("objName= " + obj.id + "  offsetLeft= " + obj.offsetLeft + "  offsetTop= " + obj.offsetTop + "  hasLayout= " + obj.currentStyle.hasLayout);
+                while (obj = obj.offsetParent) {
+                    //alert("objName= " + obj.id + "  offsetLeft= " + obj.offsetLeft + "  offsetTop= " + obj.offsetTop + "  hasLayout= " + obj.currentStyle.hasLayout);
+                    curLeft += obj.offsetLeft
+                    curTop += obj.offsetTop
+                }
+            }
+            //alert(curLeft);
+            return [curLeft, curTop];
+        }
+
+        function placeMenu() {
+            try {
+                if (document.getElementById('popmen') != null) {
+                    document.getElementById('PopupSearchMenu').style.display = 'none';
+                    return;
+                }
+
+                document.getElementById('PopupSearchMenu').style.display = 'block';
+
+                lnk = document.getElementById('ctl00_CategoryPanel_RPC');
+                mnu = document.getElementById('PopupSearchMenu');
+                mnu.style.left = (getObUpperLeft(lnk)[0] + 25).toString() + 'px';
+
+                hideSearchPopup();
+            } catch (x) { }
+        }
+
+        
+    </script>
+    <script>
+        //Control for foot nav on mobile display
+        $(document).ready(function () {
+            $('.footer h3').on("click keydown", function () {
+                if ($(window).width() < 650)
+                    $(this).next().slideToggle("fast");
+            });
+            $(".form input").keypress(function (e) {
+                var keycode = e.charCode || e.keyCode;
+                if (keycode == '13') {
+                    e.preventDefault();
+                    $(".primary").click();
+                }
+            });
+        });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25045295-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Industrial Quick Search Referring Site Stats web tools statistics hit counter code -->
+<script type="text/javascript" id="wa_u"></script>
+<script type="text/javascript">//<![CDATA[
+wa_account="8C9A9E8C8B8D909292999C90"; wa_location=14;
+wa_pageName=location.pathname;  // you can customize the page name here
+document.cookie='__support_check=1;path=/';wa_hp='http';
+wa_rf=document.referrer;wa_sr=window.location.search;
+wa_tz=new Date();if(location.href.substr(0,6).toLowerCase()=='https:')
+wa_hp='https';wa_data='&an='+escape(navigator.appName)+ 
+'&sr='+escape(wa_sr)+'&ck='+document.cookie.length+
+'&rf='+escape(wa_rf)+'&sl='+escape(navigator.systemLanguage)+
+'&av='+escape(navigator.appVersion)+'&l='+escape(navigator.language)+
+'&pf='+escape(navigator.platform)+'&pg='+escape(wa_pageName);
+wa_data=wa_data+'&cd='+
+screen.colorDepth+'&rs='+escape(screen.width+ ' x '+screen.height)+
+'&tz='+wa_tz.getTimezoneOffset()+'&je='+ navigator.javaEnabled();
+wa_img=new Image();wa_img.src=wa_hp+'://loc1.hitsprocessor.com/statistics.asp'+
+'?v=1&s='+wa_location+'&eacct='+wa_account+wa_data+'&tks='+wa_tz.getTime();
+document.cookie='__support_check=1;path=/;expires=Thu, 01-Jan-1970 00:00:01 GMT';
+document.getElementById('wa_u').src=wa_hp+'://loc1.hitsprocessor.com/track.js'; //]]>
+</script>
+<!-- End Industrial Quick Search Referring Site Stats statistics web tools hit counter code -->
+
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//www.webtraxs.com/trxscript.php' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+_trxid = "seastrom";
+webTraxs();
+</script>
+<noscript><img src="https://www.webtraxs.com/webtraxs.php?id=seastrom&st=img" alt=""></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011522715"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1011522715');
+</script>
+<script async src="//185430.tctm.co/t.js"></script>
+    <link href="/css/master.css" rel="stylesheet" type="text/css" /></head>
+
+<body>
+
+    <script>
+    if(navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./)) {
+        $('body').on("mousewheel", function () {
+            event.preventDefault();
+            var wd = event.wheelDelta;
+            var csp = window.pageYOffset;
+            window.scrollTo(0, csp - wd);
+        });
+    }
+    </script>
+
+    <form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY1NDU2MTA1Mg9kFgJmD2QWAgIDD2QWBGYPDxYCHgRUZXh0BQVMb2dpbmRkAgEPDxYCHwAFCFJlZ2lzdGVyZGRk/Vn2ykpFbK63Bhj+/AkgBNJIYrs=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKU8NH2CQL2/YrVAwK1mq7aBgKAm+uCAgKhj8uwDuKJrURN4n54SaoSDYnsnujx6G7s" />
+</div>
+    <div align="center" id="FullBody" style="width:100%;height:100%">
+        <div id="MasterContent" align="center" class="MasterContent">
+            <div align="center" style="background-color: transparent">
+                
+                    <div id="Navigation">
+                        <div class="mobile-header">
+                          <a href="/default.aspx"><img src="Images/email/seastrom_logo.png" alt="Seastrom logo"></a>
+                          <i class="material-icons notranslate" onclick="openMenu(this)">menu</i>
+                          <div id="myNav" class="overlay">
+                            <i class="material-icons notranslate" onclick="closeMenu(this)">close</i>
+                            <div class="overlay-content">
+                              <a href="/default.aspx">Home</a>
+                              <a href="/quick_search.aspx">Search</a>
+                              <a href="/custom_capabilities.aspx">Custom Capabilities</a>
+                              <a href="/standardhardware.aspx">Standard Hardware</a>
+                              <a href="/militarymenu.aspx">Military Hardware</a>
+                              <a href="/standardwashers.aspx">Standard Washers</a>
+                              <a href="/engineering_resources.aspx">Engineering</a>
+                              <a href="/about_seastrom.aspx">About Us</a>
+                              <a href="/contact_us.aspx">Contact Us</a>
+                              <a href="/customer_service.aspx">Customer Service</a>
+                              <a href="/login.aspx">Login</a>
+                              <a href="/newaccount.aspx">Register</a>
+                              <a href="/viewcart.aspx">View Cart</a>
+                              <a href="/confirmation.aspx">Checkout</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header">
+                            <a href="/default.aspx" class="logo">
+                                <img alt="Seastrom Manufacturing Co., Inc." src="Images/email/seastrom_logo.png" />
+                            </a>
+                            
+							<div class="contact-block">
+                                <a href="tel:1-800-634-2356" class="contact-info"><i class="material-icons notranslate">phone</i> 800-634-2356</a> 
+                                <a href="mailto:info@seastrom-mfg.com" class="contact-info"><i class="material-icons notranslate">email</i> info@seastrom-mfg.com</a>  
+                                <div style="display:flex;align-items:center;justify-content:space-between;">
+                                    <i style="font-size:18px; vertical-align:middle;" class="material-icons notranslate">person</i>
+                                    <a id="ctl00_hlnkLogin" class="contact-info" href="javascript:__doPostBack('ctl00$hlnkLogin','')">Login</a>
+                                    |
+                                    <a id="ctl00_hlnkCreate" class="contact-info" href="javascript:__doPostBack('ctl00$hlnkCreate','')">Register</a>
+                                </div>
+							</div>
+							
+                            <div class="sub-nav">
+                                
+                                
+                                <div id="ctl00_HomeSearchGroup" class="HomeSearch">
+	
+                                       
+                                    <input name="ctl00$HomeSearchBox" type="text" id="ctl00_HomeSearchBox" placeholder="Enter keyword or PN" />
+                                    <input type="submit" name="ctl00$btnHomeSearch" value="Submit" id="ctl00_btnHomeSearch" class="btn-search" style="width:200px;" />
+                                
+</div>
+                                <i class="material-icons blue notranslate" tabindex="0" onclick="toggleSearch(this)">search</i>
+                                <i class="material-icons notranslate" tabindex="0" onclick="toggleCart(this);">shopping_cart</i>
+                                <div class="cart-options">
+                                    <a id="ctl00_HyperLink3" href="viewcart.aspx">View Cart</a>
+                                    <a id="ctl00_HyperLink4" href="confirmation.aspx">Checkout</a>
+                                </div>
+                                <a href="default.aspx"><i class="material-icons notranslate">home</i></a>
+                            </div>
+                        </div>
+                <div id="navbar">
+                  <ul id="nav">
+                    <li><a href="/custom_capabilities.aspx">Custom Capabilities</a> 
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="custom_capabilities_detail.aspx?cap=stamping">Precision Stamping</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=cnc">CNC Machining</a></li>
+						  <li><a href="custom_capabilities_detail.aspx?cap=swisscnc">Swiss CNC Automatic Lathe</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=spindle">Multi Spindle Screw Machine</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=fourslide">Four Slide</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=laserengraving">Laser Part Marking</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=waterjet">Water Jet</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=packaging">Special Packaging</a></li>
+                          <li><a href="custom_capabilities_detail.aspx?cap=engineering">Engineering</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li> <a href="standardhardware.aspx">Standard Hardware</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="subcategories.aspx?pl=Bus+Bars">Bus Bars</a></li>
+                          <li><a href="subcategories.aspx?pl=Clamps+amp;+Brackets">Clamps & Brackets</a></li>
+                          <li><a href="subcategories.aspx?pl=Expansion+Plugs">Expansion Plugs</a></li>
+                          <li><a href="productresults.aspx?pl=formed+nut&pc=nuts,+formed&qs=2720&sp=wb_getallproductdetailsbylinecatpnp">Formed Nuts</a></li>
+                          <li><a href="subcategories.aspx?pl=Ground+Straps">Ground Straps</a></li>
+                          <li><a href="hjmenu.aspx">Hiram Jones Terminals</a></li>
+                          <li><a href="subcategories.aspx?pl=Jumpers">Jumpers</a></li>
+                          <li><a href="militarymenu.aspx">Military Hardware</a></li>
+                          <li><a href="subcategories.aspx?pl=Nut+Strips">Nut Strips</a></li>
+                          <li><a href="productresults.aspx?pl=push-on+nut&pc=nuts,+push-on&qs=2713&sp=wb_getallproductdetailsbylinecatpnp">Push-On Nuts</a></li>
+                          <li><a href="subcategories.aspx?pl=Retaining+Rings">Retaining Rings</a></li>
+                          <li><a href="subcategories.aspx?pl=Solder+Lugs">Solder Lugs</a></li>
+                          <li><a href="subcategories.aspx?pl=Solid+State+Insulators">Solid State Insulators</a></li>
+                          <li><a href="productresults.aspx?pl=spacers&pc=stand+off+spacers&qs=5690,5691,5692,5693,5795&sp=wb_getallproductdetailsbylinecatpnp">Spacers</a></li>
+                          <li><a href="subcategories.aspx?pl=Spring+Clips">Spring Clips</a></li>
+                          <li><a href="subcategories.aspx?pl=Tags">Tags</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li> <a href="/militarymenu.aspx">Military Hardware</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="/subcategories.aspx?pl=Military+Parts&pc=AN&sp=WB_getMilSubCategoryInfo_PL">AN</a></li>
+                          <li><a href="/subcategories.aspx?pl=Military+Parts&pc=M&sp=WB_getMilSubCategoryInfo_PL">M</a></li>
+                          <li><a href="/subcategories.aspx?pl=Military+Parts&pc=MS&sp=WB_getMilSubCategoryInfo_PL">MS</a></li>
+                          <li><a href="/subcategories.aspx?pl=Military+Parts&pc=NAS&sp=WB_getMilSubCategoryInfo_PL">NAS</a></li>
+                          <li class="last"><a href="/aerospace.aspx">Aircraft/Aerospace Industry Approved</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li> <a href="standardwashers.aspx">Standard Washers</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="washersearch.aspx?type=all">Round Flat Washers</a></li>
+						  <li><a href="washercategories.aspx?pl=Laminated+Shims">Laminated Washers</a></li>
+                          <li><a href="washersearch.aspx?type=standard">ANSI Standard Washers</a></li>
+                          <li><a href="prepackaged_washers.aspx?pl=Prepackaged+Washers">Pre-Packaged Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Centering+Washers">Centering Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=clipped+washers&pc=washers,+clipped&qs=5738&sp=wb_getallwasherdetailsbylinecatpnp&ct=5738:++Clipped+Washer">Clipped Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Countersunk+Washers">Countersunk Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=washers,+c&pc=washers,+c&qs=5626,5726&sp=wb_getallwasherdetailsbylinecatpnp&ct=5626-Style+1+amp;+2,+5726-Style+1+amp;+2:+C+Washer">C-Shaped Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=D+Shaped+Washers">D-Shaped Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=d+shaped+hole+washers&pc=washers,+d+shaped+hole&qs=5735&sp=wb_getallwasherdetailsbylinecatpnp&ct=5735:++D+Shaped+Hole+Washer">D-Shaped Hole Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=finishing+washers&pc=washers,+finishing&qs=5725&sp=wb_getallwasherdetailsbylinecatpnp&ct=5725:++Finishing+Washer">Finishing Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=flattened+shaft+washers&pc=washers,+flattened+shaft&qs=5731&sp=wb_getallwasherdetailsbylinecatpnp&ct=5731:++Flattened+Shaft+Washer">Flattened Shaft Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=hexagonal+hole+washers&pc=washers,+hexagonal+hole&qs=5732&sp=wb_getallwasherdetailsbylinecatpnp&ct=5732:++Hexagonal+Hole+Washer">Hexagonal Hole Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Key+Washers">Key Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Lock+Washers">Lock Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Notch+Washers">Notch Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=rectangular+washers&pc=washers,+rectangular&qs=5729&sp=wb_getallwasherdetailsbylinecatpnp&ct=5729:++Rectangular+Washer">Rectangular Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Retaining+Washers">Retaining Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Retention+Washers">Retention Washers</a></li>
+                          <li><a href="shoulder_washers.aspx">Shoulder Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=split+washers&pc=washers,+split&qs=5627,5727&sp=wb_getallwasherdetailsbylinecatpnp&ct=5627-Style+1+amp;+2,+5727-Style+1+amp;+2:++Split+Washer">Split Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Spherical+Washers">Spherical Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Spring+Washers">Spring Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=square+washers&pc=washers,+square&qs=5733&sp=wb_getallwasherdetailsbylinecatpnp&ct=5733:++Square+Washer">Square Washers</a></li>
+                          <li><a href="washerresults.aspx?pl=square+hole+washers&pc=washers,+square+hole&qs=5730&sp=wb_getallwasherdetailsbylinecatpnp&ct=5730:++Square+Hole+Washer">Square Hole Washers</a></li>
+                          <li><a href="washercategories.aspx?pl=Tab+Washers">Tab Washers</a></li>
+                          <li class="last"><a href="washerresults.aspx?pl=terminal+cup+washers&pc=washers,+terminal+cup&qs=5737&sp=wb_getallwasherdetailsbylinecatpnp&ct=5737:++Terminal+Cup+Washer">Terminal Cup Washers</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                 
+                    <li> <a href="/engineering_resources.aspx">Engineering</a>
+                      
+                    </li>  
+                    <li> <a href="/about_seastrom.aspx">About Us</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li> <a href="/contact_us.aspx">Contact Us</a> </li>
+                          <li><a href="/about_seastrom.aspx">About Us</a></li>
+                          <li><a href="/testimonials.aspx">Testimonials</a></li>
+                          <li><a href="/eco.aspx">Environmental Statement</a></li>
+                          <li><a href="/careers.aspx">Careers</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li> <a href="/customer_service.aspx">Customer Service</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="/careers.aspx">Careers</a></li>
+                          <li><a href="/satisfaction_survey.aspx">Customer Satisfaction Survey</a></li>
+                          <li><a href="/credit_application.aspx">Credit Application</a></li>
+                          <li><a href="/certification.aspx">Certification and Compliance</a></li>
+                          <li><a href="/terms.aspx">Terms & Conditions</a></li>
+                          <li><a href="/eco.aspx">Environmental Statement</a></li>
+                          <li><a href="/faqs.aspx">Seastrom FAQs</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                            <!--<div style="background-color:#f00; text-align:center; color:#fff">The entire Southern Idaho phone grid is currently down.<br />Please email us at <a href="mailto:info@seastrom-mfg.com" style="color:#000">Info@Seastrom-MFG.com</a> for assistance.<br />We apologize for the inconvenience.</div>-->
+                          
+                            
+<link href="/css/info.css" rel="stylesheet" type="text/css" />
+  <div class="content" style="background:white;">
+
+        <div id="banner-holder">
+            <button type="button" onclick="moveLeft();" class="left"><</button>
+
+            <div id="banner-std" class="slide hidden">
+                <span id="banner-textstd">What to expect from Seastrom<br /><br /><i class="smalltxt">More stocked product, over 110 million pieces in stock<br />Lower pricing on standard products<br />More raw material on hand<br />Shorter lead times</i><br /><br /></span>
+            </div>
+
+            <div id="banner-material" class="slide hidden">
+                <span id="banner-textmaterial">Seastrom manufactures with hard to find materials!<br /><i class="tinytxt"><br /><i>Nickel Alloys</i>:<br />Inconel ® 600, 601, 625 & 718<br />Monel ® 400, R-405, K-500<br />AL-6XN ®, Alloy 20, Hastelloy C276<br /><br /><i>Cobalt Alloys:</i><br />Alloy 188, Waspaloy<br /><br /><i>Stainless Steel Alloys:</i><br />Nitronic 50, 60<br /><br /><i>Duplex Stainless Steel:</i><br />2205, 2507, Zeron ® 100</i></span>
+            </div>
+            
+            <div id="banner2" class="slide hidden">
+                <span id="banner-text2">From Design To Reality<br /><br /><i class="smalltxt">We can create the custom products you need</i><br /><br /><a href="custom_capabilities.aspx" class="btn btn-secondary txtleft">LEARN MORE</a></span>
+            </div>
+            
+            
+            
+          
+                
+            <button type="button" onclick="moveRight();" class="right">></button>
+
+            <div class="slide-pos">
+                <span class="pos" onclick="moveToPos(0);">-</span>
+                <span class="pos" onclick="moveToPos(1);">-</span>
+                <span class="pos" onclick="moveToPos(2);">-</span>
+                
+                
+            </div>
+            
+        </div>
+       
+      <div class="background">
+        <p class="mid-text lg"><span class="gold">what</span> we do</p>
+        <div class="row space-around" style="margin:50px 0 50px 0">
+        <div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=stamping" class="dark-tint"><img src="images/stamping.jpg" data-original="images/stamping.jpg" alt="stamping machine"><p class="card-img-title card-title mid-text white">Precision Stamping</p></a>
+          
+          <a href="custom_capabilities_detail.aspx?cap=stamping" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+		<div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=cnc" class="dark-tint"><img src="images/cnc.jpg" data-original="images/cnc.jpg" alt="cnc machine"><p class="card-img-title card-title mid-text white">CNC Machining</p></a>         
+          
+          <a href="custom_capabilities_detail.aspx?cap=cnc" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+        <div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=swisscnc" class="dark-tint"><img src="images/Capabilities/swiss-cnc-small.jpg" data-original="images/Capabilities/swiss-cnc-first-half.jpg" alt=" swiss cnc machine"><p class="card-img-title card-title mid-text white">Swiss CNC Automatic Lathe</p></a>         
+          
+          <a href="custom_capabilities_detail.aspx?cap=swisscnc" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+        
+      </div>
+      <div class="row space-around" style="margin:50px 0 50px 0">
+		<div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=spindle" class="dark-tint"><img src="images/multi-spindle.jpg" data-original="images/multi-spindle.jpg" alt="multi spindle machine"><p class="card-img-title card-title mid-text white">Multi Spindle Screw Machining</p></a>
+          
+          <a href="custom_capabilities_detail.aspx?cap=spindle" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+		
+        <div class="col width-third card">
+          <a href="/custom_capabilities_detail.aspx?cap=fourslide" class="dark-tint"><img src="images/fourslide-machine.jpg" data-original="images/fourslide-machine.jpg" alt="fourslide machine"><p class="card-img-title mid-text card-title white">Four-Slide</p></a>
+          <a href="/custom_capabilities_detail.aspx?cap=fourslide" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+        <div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=waterjet" class="dark-tint"><img src="images/waterjet-machine.jpg" data-original="images/waterjet-machine.jpg" alt="waterjet machine"><p class="card-img-title mid-text card-title white">Water Jet</p></a>
+          <a href="custom_capabilities_detail.aspx?cap=waterjet" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+	  
+	  <div class="row space-around" style="margin:50px 0 50px 0">
+		<div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=laserengraving" class="dark-tint"><img src="images/laser-machine.jpg" data-original="images/laser-machine.jpg" alt="laser engraving machine"><p class="card-img-title card-title mid-text white">Laser Part Marking</p></a>
+          
+          <a href="custom_capabilities_detail.aspx?cap=laserengraving" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+		
+        <div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=packaging" class="dark-tint"><img src="images/package-machine.jpg" data-original="images/package-machine.jpg" alt="package machine"><p class="card-img-title mid-text card-title white">Special Packaging</p></a>
+          <a href="custom_capabilities_detail.aspx?cap=packaging" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+        <div class="col width-third card">
+          <a href="custom_capabilities_detail.aspx?cap=engineering" class="dark-tint"><img src="images/engineer.jpg" data-original="images/engineer.jpg" alt="waterjet machine"><p class="card-img-title mid-text card-title white">Engineering</p></a>
+          <a href="custom_capabilities_detail.aspx?cap=engineering" class="btn alt-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+	  
+      <p class="mid-text lg">what you can <span class="gold">expect</span></p>     
+      </div>
+        
+     
+    <div class="bgimg-3">
+    <div style="position:relative;">
+      <div class="arrow-down"></div>
+    </div>
+    <div class="caption">
+      <span class="border">Products You Can<br /> Depend On<br /><br /><i class="smalltxt">Search through our product catalog</i> <br /><br /><a href="productdirectory.aspx" class="btn btn-secondary txtleft">VIEW CATALOG</a></span>
+    </div>
+    <div class="right-content">
+        <div class="col">
+            <div class="row card">
+          <a href="standardwashers.aspx" class=""><p class="mid-text card-title white">Standard Washers</p><span class="btn primary">LEARN MORE</span></a>
+        </div>
+        <div class="row card">
+          <a href="standardhardware.aspx" class=""><p class="mid-text card-title white">Standard Hardware</p><span class="btn primary">LEARN MORE</span></a>
+        </div>
+        <div class="row card">
+          <a href="militarymenu.aspx" class=""><p class="mid-text card-title white">Military Hardware</p><span class="btn primary">LEARN MORE</span></a>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+    <style>
+		.alt-btn{
+			padding: 9px;
+		}
+		.card{
+			padding-bottom:40px;
+		}
+        .mid-text.lg{
+          margin:45px 0;
+        }
+        .slide-pos{
+            position:absolute;
+            display:flex;
+            z-index:500;
+            bottom:0;
+            width:100%;
+            padding:15px 0;
+            justify-content:center;
+        }
+        .slide-pos > span{
+            transition:.2s ease-in;
+            color:white;
+            background-color:white;
+            border-radius:100%;
+            display:block;
+            width:15px;
+            height:15px;
+            z-index:500;
+            margin:0 7px;
+            opacity:.4;
+            cursor:pointer;
+        }
+
+        .pos.black {
+            color:black;
+            background-color:black;
+        }
+
+        .slide-pos > span:hover{
+            background-color:#000;
+            color:#000;
+            opacity:.8;
+        }
+        
+        #banner-holder button {
+            outline:none;
+            transition:.2s ease-in-out;
+            position:absolute;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:bold;
+            top:42.5%;
+            z-index:1000;
+            font-size:26px;
+            border:none;
+            padding:15px 22px;
+            border-radius:100%;
+            opacity:.4;
+            color:#222;
+            background-color:unset;
+            background-color:white;
+        }
+        #banner-holder button:hover{
+            background-color:black;
+            color:white;
+            opacity:.8;
+            cursor:pointer;
+        }
+       
+        button.left{
+            left:0;
+        }
+        button.right{
+            right:0;
+        }
+        .slide{
+            transition:.2s ease-in-out;            
+            height:630px;
+            width:100%;
+            display:flex;
+            align-items:center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:absolute;
+        }
+        .smalltxt{
+          font-size:28px;
+        }
+       
+        #banner1{
+            background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),url(/Images/VintagePresses.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #banner2nd {
+            background:linear-gradient(
+      rgba(125, 125, 125, 0.1), 
+      rgba(125, 125, 125, 0.1)
+    ),url(/Images/rings.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-end;
+        }
+
+        #banner-cnc {
+            background:linear-gradient(
+      rgba(125, 125, 125, 0.1), 
+      rgba(125, 125, 125, 0.1)
+    ),url(/Images/slide-cnc.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-start;
+        }
+        #banner-std {
+            background:linear-gradient(
+      rgba(125, 125, 125, 0.1), 
+      rgba(125, 125, 125, 0.1)
+    ),url(/Images/slide-standard_product.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-end;
+        }
+
+        #banner-material {
+            background:linear-gradient(
+      rgba(125, 125, 125, 0.1), 
+      rgba(125, 125, 125, 0.1)
+    ),url(/Images/slide-newmaterial.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-start;
+        }
+
+        #banner2{
+            background:linear-gradient(
+              rgba(0, 0, 0, 0.5), 
+              rgba(0, 0, 0, 0.5)
+            ),url(/Images/slide-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-end;
+        }
+        #banner3{
+            background:url(/Images/ISOAS9-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items:center;
+            justify-content:flex-start;
+        }
+        #banner4{
+            background-image:url(/Images/custom-slide.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .slide > span{
+            font-family:'Times New Roman';
+            width:100%;
+            font-size:60px;
+            padding:15px;
+            color:white;
+            font-weight:bold;
+            letter-spacing:2px;
+            z-index:1;
+        }
+
+        #banner-text2nd {
+            width:37%;
+            margin-right:5%;
+            text-align:left;
+        }
+
+        #banner-textcnc {
+            width:60%;
+            margin-left:7%;
+            text-align:left;
+        }
+
+        #banner-textstd {
+            width:60%;
+            margin-right:5%;
+            text-align:right;
+        }
+
+        #banner-textmaterial {
+            width:70%;
+            margin-left:5%;
+            text-align:left;
+        }
+
+        #banner2 #banner-text2{
+            width:30%;
+            margin-right:10%;
+            text-align:right;
+        }
+
+        #banner3 #banner-text3{
+            width:40%;
+            margin-right:5%;
+            text-align:right;
+        }
+        
+
+        .right-content{
+            position:absolute;
+            width:40%;
+            right:0;
+            margin-right:5%;
+            top:6%;
+        }
+        
+        .right-content .card{
+            margin:5px 0;
+            padding:0;
+            width:100%;
+            height:225px;
+            background:transparent;
+            background:rgba(218,165,32,.6);
+        }
+
+        .right-content .card-title{
+          position:inherit;
+          text-align:center;
+          font-style:italic;
+          font-family:f;
+          
+        }
+
+        .right-content .primary{
+          width:auto;
+        }
+
+        .right-content .card > a {
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;
+        }
+
+        .right-content .card .alt-btn{
+            position:inherit;
+        }
+
+        .slideRightIn{
+           
+            z-index:500;
+            opacity:1;
+            animation: slideRight;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+
+        .shownFlip{
+           
+            z-index:500;
+            opacity:1;
+            animation: flipIn;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+
+        .shownZoom{
+           
+            z-index:500;
+            opacity:1;
+            animation: zoomIn;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+        .hide{
+            /*z-index:-1000;*/
+            opacity:0;
+            animation: fadeOut;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+        .hidden{
+            opacity:0;
+        }
+        #banner-holder{
+            position:relative;
+            width:100%;
+            height:600px;
+            background:black;
+            opacity:.9;         
+        }
+        .slide::before {
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: calc(50% - 30px);
+    position: absolute;
+    border-bottom: 30px solid #fff;
+    border-right: 30px solid transparent;
+   
+  }
+  .slide::after {
+    bottom: 0;
+    left: calc(50%);
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid transparent;
+  }
+  .ontop{
+      z-index:1000000;
+  }
+
+        .delayFadeIn{
+            animation: fadeIn;
+            animation-duration:1s;
+            animation-iteration-count:1;
+        }
+
+        .fadeIn{
+          /*animation: fadeIn;
+          animation-duration:.8s;
+          animation-iteration-count:1;*/
+        }
+
+        .slideLeftIn{
+            z-index:500;
+            opacity:1;
+            animation: leftIn;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+
+        .slideLeftOut{
+            /*z-index:-1000;*/
+            opacity:0;
+            animation: leftOut;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+
+        .slideRightOut{
+            /*z-index:-1000;*/
+            opacity:0;
+            animation: rightOut;
+            animation-duration:.8s;
+            animation-iteration-count:1;
+        }
+
+       .arrow-down {
+          width: 0; 
+          height: 0;
+        
+          left: calc(50% - 30px); 
+          bottom:0;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-top: 30px solid white;
+        }
+
+       .tinytxt {
+           font-size:22px;
+       }
+
+        @keyframes leftOut{
+            0% {
+                opacity:1;
+                left: 0;
+            }
+            90%{
+                opacity:1;
+            }
+            100% {
+                opacity:0;
+                left: -2000px;
+            }
+        }
+
+        @keyframes rightOut{
+            0% {
+                opacity:1;
+                left: 0;
+            }
+            90%{
+                opacity:1;
+            }
+            100% {
+                opacity:0;
+                left: 100%;
+            }
+        }
+        
+
+        @keyframes slideRight {
+            0% {
+                opacity: 1;
+                left: -2000px;
+            }
+
+            100% {
+                opacity: 1;
+                left: 0;
+            }
+        }
+        @keyframes flipIn {
+            0% {
+                opacity: 0;
+                transform: scaleY(0); 
+            }
+            100%{
+                opacity:1;
+                transform:scaleY(1);
+            }
+        }
+        @keyframes fadeOut{
+            0% {
+                opacity:1;
+           }
+           100% {
+               opacity:0;
+               display:none;
+           }
+        }
+        .dxrpControl_Aqua {
+            overflow:hidden;
+        }
+
+        @keyframes zoomIn{
+            0%{
+                opacity:0;
+                transform:scale(0);
+            }
+            100%{
+                opacity:1;
+                transform:scale(1);
+            }
+        }
+        @keyframes flipVert{
+            0%{
+                opacity:0;
+                top:-300px;
+                transform:scaleY(-1);
+            }
+            100%{
+                top:0;
+                opacity:1;
+                transform:scaleY(1);
+            }
+        }
+
+        @keyframes leftIn{
+             0% {
+                opacity:1;
+                left: 100%;
+            }
+
+            100% {
+                
+                left: 0;
+            }
+        }
+
+
+        /*delayed animations*/
+        @keyframes fadeIn{
+            0%{
+                opacity:0;
+            }
+            50%{
+                opacity:0;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+@media screen and (max-width: 650px) {
+    .slide::before {
+        display:none;
+    }
+    .slide::after {
+        display:none;
+    }
+    .slide > span {
+      width:100%!important;
+      font-size:35px!important;
+      text-align:center!important;
+      margin:0!important;
+    }
+    .right-content{
+      width:90%;
+      position:initial;
+      margin:0;
+    }
+    .caption{
+     display:none;
+    }
+    
+}
+</style>
+
+    <script>
+        //polyfill for conatains
+        Array.prototype.contains = function (needle) {
+            for (i in this) {
+                if (this[i] === needle) return true;
+            }
+            return false;
+        }
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+        }
+
+        var slideIndex = 0;//getRandomIntInclusive(0,5);
+        var timer;
+        var stop = 0;
+        var start = 0;
+        var curId = "";
+        sliderMain();
+        function sliderMain(dir)
+        {
+            var x = document.getElementsByClassName("slide");
+            var y = document.getElementsByClassName("pos");
+
+            //if (dir == null)
+            //{
+                if (start == 1)
+                {
+                    for (var i = 0; i < x.length; i++)
+                    {
+                        if (!x[i].classList.contains("hide") && !x[i].classList.contains("hidden"))
+                        {
+                            x[i].className = "slide hide";
+                            x[i].childNodes[1].className = "hide";
+                        }
+                        if (y[i].className == "pos black")
+                            y[i].className = "pos";
+                    }
+                }
+                
+                start = 1;
+            //}
+            //else
+            //{
+            //    if(curId != "")
+            //    {
+            //        var banner = document.getElementById(curId);
+                   
+            //        if (dir == "left") {
+            //            banner.className = "slide hide";
+            //            banner.childNodes[1].className = "hide";
+            //            y[banner.id.substring(6, 7) - 1].className = "pos";
+            //        }
+            //        else {
+            //            banner.className = "slide hide";
+            //            banner.childNodes[1].className = "hide";
+            //            y[banner.id.substring(6, 7) - 1].className = "pos";
+            //        }
+            //    }
+                
+            //}
+         
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            if (dir == null)
+            {
+                if (slideIndex == 1) {
+                    x[slideIndex - 1].className = "slide fadeIn";
+                    x[slideIndex - 1].childNodes[1].className = "delayFadeIn";
+                }
+                else if (slideIndex == 2 || slideIndex == 4) {
+                    x[slideIndex - 1].className = "slide fadeIn";
+                    x[slideIndex - 1].childNodes[1].className = "delayFadeIn";
+                }
+                else {
+                    x[slideIndex - 1].className = "slide fadeIn";
+                    x[slideIndex - 1].childNodes[1].className = "delayFadeIn";
+                }
+            }
+            else
+            {
+                if (dir == "left")
+                {
+                    x[slideIndex - 1].className = "slide fadeIn";
+                    x[slideIndex - 1].childNodes[1].className = "delayFadeIn";
+                }
+                else
+                {
+                    x[slideIndex - 1].className = "slide fadeIn";
+                    x[slideIndex - 1].childNodes[1].className = "delayFadeIn";
+                }
+            }
+          
+            curId = x[slideIndex - 1].id;
+            y[slideIndex - 1].className = "pos black";
+                
+            if (stop == 0)
+                timer = setTimeout(sliderMain, 10000);
+        }
+        function moveRight()
+        {
+            stop = 1;
+            clearTimeout(timer);
+            sliderMain("right");
+        }
+
+        function moveLeft()
+        {
+            stop = 1;
+            slideIndex -= 2;
+            if (slideIndex < 0)
+                slideIndex = 2;
+            clearTimeout(timer);
+            sliderMain("left");
+        }
+
+        function moveToPos(index)
+        {
+            stop = 1;
+            slideIndex = index;
+            clearTimeout(timer);
+            sliderMain();
+        }
+
+        document.getElementById("banner-holder").onmouseenter = function (event) {
+            clearTimeout(timer);
+        };
+        document.getElementById("banner-holder").onmouseleave = function (event) {
+            clearTimeout(timer);
+            if(stop == 0)
+                timer = setTimeout(sliderMain, 5000);
+        }
+    </script>
+
+        
+    <input id="popmen" type="hidden" value="nonmenu" />
+
+                            <div id="Footer" class="footer">
+      
+                                <div class="row footnav">
+             
+      <div class="col">
+        <h3 tabindex="0">Contact Us</h3>
+        <ul>
+          <li><a href="tel:1-800-634-2356"><i class="material-icons notranslate">call</i>1-800-634-2356</a></li>
+          <li><a href="mailto:info@seastrom-mfg.com"><i class="material-icons notranslate">email</i>info@seastrom-mfg.com</a></li>
+          
+          <li><a onclick="return false;"><i class="material-icons notranslate">location_on</i>456 Seastrom St, Twin Falls, ID 83301</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3 tabindex="0">Custom Capabilities</h3>
+        <ul>
+          <li><a href="/custom_capabilities_detail.aspx?cap=stamping">Precision Stamping</a></li>
+          <li><a href="/custom_capabilities_detail.aspx?cap=cnc">CNC Machining</a></li>
+          <li><a href="/custom_capabilities_detail.aspx?cap=spindle">Multi Spindle Screw Machine</a></li>
+          <li><a href="/custom_capabilities_detail.aspx?cap=fourslide">Four Slide</a></li>
+          <li><a href="/custom_capabilities_detail.aspx?cap=laserengraving">Laser Part Marking</a></li>
+          <li><a href="/custom_capabilities_detail.aspx?cap=waterjet">Water Jet</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3 tabindex="0">Product Directory</h3>
+        <ul>
+          <li><a href="standardwashers.aspx">Washers</a></li>
+          <li><a href="standardhardware.aspx">Fasteners / Assembly hdwr.</a></li>
+          <li><a href="militarymenu.aspx">Military hdwr.</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3 tabindex="0">Company Info</h3>
+        <ul>
+          <li><a href="/about_seastrom.aspx">About Us</a></li>
+          <li><a href="/credit_application.aspx">Credit Application</a></li>
+          <li><a href="/certification.aspx">Certification and Compliance</a></li>
+          <li><a href="/terms.aspx">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3 tabindex="0">Purely Custom</h3>
+        <ul>
+          <li><a href="https://purelycustomfit.com/">Bike Fitting</a></li>
+          <li><a href="https://www.purelycustom.com/">Bike Accessories</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row certs">
+      <div class="col">
+        <ul>
+          <li><a onclick="return false;"><img src="Images/logos/PMA100.png" alt="Precision Metalforming Association"></a></li>
+          <li><a href="iso_9001.aspx"><img src="Images/logos/ISO100.png" alt="ISO 100 Compliant"></a></li>
+          <li><a onclick="return false;"><img src="Images/logos/AS9100Certified100.png" alt="AS 9100 Compliant"></a></li>
+          <li><a href="eco.aspx"><img src="images/eco_link2.png" alt="Environmental Statement"></a></li>
+          <li><a onclick="return false;"><img src="Images/logos/MadeInTheUSA250.png" alt="Made in USA"></a></li>
+          <li><a href="/rohs.aspx"><img src="Images/logos/rohs-compliant100.png" alt="ROHS Compliant"></a></li>
+          <li><a href="/dfars.aspx"><img src="Images/logos/DFARScompliant100.png" alt="DFARS Compliant"></a></li>
+          <li><a onclick="return false;"><img src="Images/logos/ffl_footer.png" alt="Federal Firearms License"></a></li>
+          <li><a onclick="return false;"><img src="Images/logos/ITARCircle100.png" alt="ITAR Compliant"></a></li>
+          <li><a onclick="return false;"><img src="Images/logos/CageCode100.png" alt="Cage Code"></a></li>
+        </ul>
+      </div>
+        <div class="cards">
+           <img src="images/icon-payment-visa.png" alt="icon-payment-visa">
+           <img src="images/icon-payment-mastercard.png" alt="icon-payment-mastercard">
+           <img src="images/icon-payment-discover.png" alt="icon-payment-discover">
+           <img src="images/icon-payment-amex.png" alt="icon-payment-amex">
+       </div>
+        <p>Use of this site acknowledges agreement of our <a href="terms.aspx" style="color:black;font-weight:bold;">Terms and 
+        Conditions</a>. All website design, text, graphics, and the selection and 
+        arrangement thereof, are the property of Seastrom Manufacturing Co., Inc. and 
+        are Copyright ©2019 Seastrom Manufacturing Co., Inc. All Rights Reserved. 
+        SEASTROM, SEASTROM MANUFACTURING and the Seastrom logo are trademarks owned by 
+        Seastrom Manufacturing Co., Inc.
+        </p>
+       
+    </div>
+                                
+                            </div>
+                   
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

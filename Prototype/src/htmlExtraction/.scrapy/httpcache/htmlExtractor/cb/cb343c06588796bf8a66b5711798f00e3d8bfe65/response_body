@@ -1,0 +1,36 @@
+###############################
+# Welcome to those who have taken the time
+# to read this little file. This is the
+# robots.txt file for this website 
+#
+# addresses all robots by using wild card *
+#
+#
+User-agent: favorstarbot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Baiduspider
+User-agent: Baiduspider-video
+User-agent: Baiduspider-image
+Disallow: /
+
+User-agent: *
+Disallow: /html-inc/invoices
+
+#
+User-agent: *
+#
+# list folders robots are not allowed to index
+Disallow: /images/
+
+#
+# list specific files robots are not allowed to index
+#
+#Disallow: /contact.htm
+#
+# End of robots.txt file. Have a Nice Day
+#
+###############################

@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='emcoder.css' title='SMS Stylesheet'>
+<meta name="description" content="CMS HCFA AMA EM CPT Documentation Guidelines compliance software  Point, click, comply with E&amp;M Coder Evaluation and Management software by Spring Management Systems">
+<meta name="keywords" content="HCFA,AMA,Medicare,OIG,CPT,CPT-4,E/M,EM,compliance audit,Evaluation and Management,1994 1997 Evaluation and Management Documentation Guidelines,coding software,encoder,hospital compliance,AAPC,AHIMA,MGMA,JAMA,ACEP,ACP,AAFP,E/M Audit,EM Coder,EM Calculator,family practice,healthcare,E/M coding,EM level,E&amp;M code,inteli,cpc,aapc,aafp,CMS,E&amp;M Coder,electronic E/M tool,audit etool,electronic medical record audit,medical coding auditing,E/M">
+<title>E&M Coder</title>
+
+<!--Make sure page contains valid doctype at the very top!-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="stepcarousel.js">
+
+/***********************************************
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+<style type="text/css">
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+border: 5px solid black;
+overflow: scroll; /*leave this value alone*/
+width: 210px; /*Width of Carousel Viewer itself*/
+height: 210px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 5px; /*margin around each panel*/
+width: 190px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+</style>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+	galleryid: 'mygallery', //id of carousel DIV
+	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+	panelclass: 'panel', //class of panel DIVs each holding content
+	autostep: {enable:false, moveby:1, pause:3000},
+	panelbehavior: {speed:800, wraparound:true, persist:false},
+	defaultbuttons: {enable: true, moveby: 1, leftnav: ['images/leftarrow.jpg', -5, 80], rightnav: ['images/rightarrow.jpg', -20, 80]},
+	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+	contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+})
+
+</script>
+
+
+
+</head>
+
+<body bgcolor="#6699cc">
+<center>
+
+<table width="1024" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<IMG SRC="images/tabhome.jpg" WIDTH=1024 HEIGHT=162 BORDER=0 ALT="" USEMAP="#emcodertabset_Map">
+<MAP NAME="emcodertabset_Map">
+<AREA SHAPE="rect" ALT="" COORDS="921,118,1012,138" HREF="contactus.php">
+<AREA SHAPE="rect" ALT="" COORDS="822,114,910,151" HREF="aboutus.php">
+<AREA SHAPE="rect" ALT="" COORDS="734,113,820,151" HREF="faq.php">
+<AREA SHAPE="rect" ALT="" COORDS="643,115,731,152" HREF="resources.php">
+<AREA SHAPE="rect" ALT="" COORDS="555,113,641,151" HREF="products.php">
+<AREA SHAPE="rect" ALT="" COORDS="465,114,553,150" HREF="index.html">
+</MAP>
+</td>
+</tr>
+</table>
+
+<!-- Main Page -->
+<table bgcolor="#ffffff" width="1024" border="0" cellpadding="0" cellspacing="0">
+<tr>
+ <!--Left column -->
+ <td align="center" valign="top" width="240">
+ 
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+	  <td align="center" height="280">
+     <script language="JavaScript"><!--
+     /* Define image files for random image outside browser version condition. */
+     var randomimg = new Array(7);
+     randomimg[1] = "images/piccomputerlady.jpg";
+     randomimg[2] = "images/piccomputerlady.jpg";
+
+     var imgno = Math.round(Math.random() * 2);
+     if (imgno == 0){
+      imgno = 1;
+     }
+     document.write('<img align="center" valign="middle" src="' + randomimg[imgno] + '" name="random" border="0">');
+     // -->
+     </script>
+	  
+		</td>
+	 </tr>
+	 <tr>
+	   <td align="center">
+		 	<font face="Verdana" size="2">
+      <a class="graphic" href="screens.php" onMouseOver="document.random.src='images/picscreenview.jpg';" onMouseOut="document.random.src='images/piccomputerlady.jpg';"><br>
+      <img src="images/buttonscreenview.jpg" alt="Click here to view Sample Screens" border="0"></a><br>
+      <a class="graphic" href="reportsamples.php" onMouseOver="document.random.src='images/picreports.jpg';" onMouseOut="document.random.src='images/piccomputerlady.jpg';">
+      <img src="images/buttonsamplerepts.jpg" alt="Click here to view Sample Reports" border="0"></a><br>
+      <a class="graphic" href="qaudit.php"  onMouseOver="document.random.src='images/picqaudit.jpg';" onMouseOut="document.random.src='images/piccomputerlady.jpg';">
+      <img src="images/buttonqaudit.jpg" alt="Quality Audit Tool" border="0"></a><br>
+      <a class="graphic" href="downloadtrial.php"  onMouseOver="document.random.src='images/picemcodertrial.jpg';" onMouseOut="document.random.src='images/piccomputerlady.jpg';">
+      <img src="images/buttonfreetrial.jpg" alt="Click here to download E&M Coder" border="0"></a><br>
+		 </td>
+	 </tr>
+	 <tr>
+	   <td align="center">
+
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	   <td align="center">
+		   <br><br>
+			 <!--Carousel code-->
+			 <div id="mygallery" class="stepcarousel">
+			 <div class="belt">
+
+			 <div class="panel">
+			 <img src="images/tips.jpg" />
+			 </div>
+			 
+			 <div class="panel">
+			 <img src="images/tip1.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip2.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip3.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip4.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip5.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip6.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip7.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip8.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip9.jpg" />
+			 </div>
+
+			 <div class="panel">
+			 <img src="images/tip10.jpg" />
+			 </div>
+
+			 </div>
+			 </div>
+
+<!--
+<p>
+<b>Current Panel:</b> <span id="statusA"></span> <b style="margin-left: 30px">Total Panels:</b> <span id="statusC"></span>
+</p>
+-->
+
+	 		 <p id="mygallery-paginate" style="width: 200px; text-align:center">
+			 <img src="opencircle.png" data-over="graycircle.png" data-select="closedcircle.png" data-moveby="1" />
+			 </p>
+
+<!--
+<p>
+<a href="javascript:stepcarousel.stepBy('mygallery', -1)">Back 1 Panel</a> <a href="javascript:stepcarousel.stepBy('mygallery', 1)" style="margin-left: 80px">Forward 1 Panel</a> <br />
+
+<a href="javascript:stepcarousel.stepTo('mygallery', 1)">To 1st Panel</a> <a href="javascript:stepcarousel.stepBy('mygallery', 2)" style="margin-left: 80px">Forward 2 Panels</a>
+</p>			
+
+<!--Carousel Code End-->		 
+
+			</td>
+		</tr>		 
+	 </table>
+
+
+
+
+
+		 </td>
+	 </tr>
+	 </table>
+					
+  </td>
+
+  <!--Middle column -->
+  <td valign="top">
+
+		<table border="0" cellpadding="0" cellspacing="6">
+		 <tr>
+		  <td valign="top" align="center">
+		  <img src="images/emcoder13header.jpg" alt="New EMCoder with QAudit!">
+		  </td>
+		 </tr>
+		 <tr>
+		 <td><font face="Arial" size="2">
+		 <br>
+		 We know how important it is for the professional coder to have updated tools that provide accurate 
+		 and consistent coding which in turn produce reliable reimbursement.  Our new E&M Coder utilizes the most recent and up-to-date E/M Codes as documented in the <b>American
+		 Medical Association Current Procedural Terminology: CPT<sup>®</sup> 2017 Manual for Evaluation and
+		 Management</b>.
+		 <br><br>
+		 With easier access to all screens, our Professional Edition includes the same functions and reliability as our previous package but with the following enhancements: 
+		 <br><br>
+		 <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">Current 2017 E/M Codes<br>
+     <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">NEW: Ability to enter 'units' when auditing procedural CPTs<br>
+     <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">NEW: Ability to use ICD-10s only, after Oct 1, 2015<br>
+     <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">Updated reports<br>
+     <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">Supports high resolution monitors<br>
+		 <img src="images/check.bmp"><img src="images/spacer.gif" width="10" height="5">2014 E/M Trends<br>
+		</font>
+		<p align="center">
+		 <a class="inpage" href="products.php"><img src="images/buttonlearnmore.jpg" border="0" alt=""></a>
+	   <br><br>
+		 <img src="images/quote1.jpg" alt=""><br><br>
+		 <a target="_blank" href="http://help.emcoder.com/new/ReportFeatures2010.swf"><img src="images/buttonnewreports.jpg" alt="" border="0"></a>
+ 	 </p>
+		</td>
+		</tr>
+	 </table>
+
+	</td>
+	
+  <!--Right column -->	 
+  <td valign="top" align="center" width="300" bgcolor="#ffffff">
+	 <!--
+	 <table cellpadding="2" cellspacing="3" border="1" width="100%">
+	 <tr><td align="center"><img src="images/ourapologies.jpg" alt="Our Apologies"></td></tr>
+	 <tr><td align="center"><font face="Arial" size="2" color="#000000">Recently our website service provider experienced technical difficulties that 
+	 closed down our site for several days. We apologize for any inconvenience this may have caused and we are currently making
+	 contingency plans to prevent this from happening again in the future.</font>
+	 </td></tr>
+	 <tr><td align="center" height="30"><font face="Arial" size="2"><b>Thank you for your patience!</b></font></td></tr>
+	 </table>
+	 <hr color="#6699cc" size="5" width="50%">
+	 <img src="images/2008exhibitors.jpg" alt="2008 AAPC Conference Orlando" width="200"><br>
+	 <font face="Arial" size="2" color="#000000">
+	 Thank you to all who visited our booth at AAPC 2008 Orlando.  Congratulations to our drawing winners:<br><br> 
+	 Monica L, Orlando, FL<br> 
+   Betsy M, Lindley, NJ <br>
+   Rhonda B, Birmingham, AL<br><br>
+	 -->
+	 <img src="images/2007trendsdata.jpg" border="0" align="center">
+	 <!--<a href="trendsdata.php"><img src="images/2007trendsbutton.jpg" border="0" align="center"></a>-->
+	 <br><br>
+<link href="widget.css" rel="stylesheet" />
+<script src="http://data.springsoftmedical.com/Content/npiwidget/widget.js"></script>
+<div id="ssoft-widget-container" style="background-color: #136163;">
+    <p>Type an NPI number below to see your EM trend data.</p>
+    <div id="ssoft-widget-inputs">
+        <input type="text" id="ssoft-widget-input" maxlength="10" placeholder="1851480719" value="1851480719"><button id="ssoft-widget-button" onclick="ssoftwidgetbuttonclick();">Search</button>
+    </div>
+    <div id="ssoft-widget-linkcontainer" style=""><p>Powered by <a id="ssoft-widget-link" href="http://www.springsoftmedical.com">SpringSoftMedical</a></p></div>
+</div>
+		<br><br>
+	 <a href="http://www.ceumanager.com"><img src="images/ceumanagerad.jpg" alt="CEUManager" border="0" align="center"></a>
+<!--
+ <tr>
+	 <td>
+	 &nbsp;
+	 </td>
+	 </td>
+	 <td colspan="2" align="center">
+<OBJECT classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0' WIDTH='600' HEIGHT='400' ID='player' ALIGN=''>
+	<PARAM NAME=movie VALUE='http://help.emcoder.com/new/ReportFeatures2010.swf?rqPresentationID=TestPresentation'>
+	<PARAM NAME=quality VALUE='best'>
+	<PARAM NAME=scale VALUE='show all'>
+	<PARAM NAME=menu VALUE='false'>
+	<PARAM NAME=FlashVars VALUE='vBgColor=0x87BBD0'>
+	<EMBED WIDTH='600' HEIGHT='400' src='http://help.emcoder.com/new/ReportFeatures2010.swf?rqPresentationID=TestPresentation' NAME='player' quality='best' scale='show all'  ALIGN='' FlashVars='vBgColor=0x87BBD0' TYPE='application/x-shockwave-flash' PLUGINSPAGE='http://www.macromedia.com/go/getflashplayer' swLiveConnect='true' menu='false'>
+	</EMBED>
+</OBJECT> 	 </td>
+ </tr>
+-->
+
+</table>
+
+<!-- Footer -->
+<table bgcolor="#ffffff" width="1024" height="30" cellpadding="5" cellspacing="10" border="0">
+<tr>
+<td valign="middle" align="center" bgcolor="#669999">
+<font face="Arial" size="2" color="#cccccc">
+<a class="footer" href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;
+<a class="footer" href="products.php">Products</a>&nbsp;&nbsp;|&nbsp;
+<a class="footer" href="chapterservices.php">Chapter Services</a>&nbsp;&nbsp;|&nbsp;
+<a class="footer" href="troubleshooting.php">Troubleshooting</a>&nbsp;&nbsp;|&nbsp;
+<a class="footer" href="upgrades.php">Upgrades</a>&nbsp;&nbsp;|&nbsp;
+<a class="footer" href="contactus.php">Contact Us</a>
+</td>
+</tr>
+</table>
+
+<table bgcolor="#ffffff" width="1024" height="35" cellpadding="5" cellspacing="0" border="0">
+<tr>
+<td valign="middle" align="right" bgcolor="#6699cc">
+<font face="Arial" size="2" color="#cccccc">Copyright EMCoder.com, 2014.  All rights reserved.</font>  
+</td>
+<td valign="middle" align="center" bgcolor="#6699cc">
+<font face="Arial" size="2" color="#cccccc">&nbsp;</font>  
+</td>
+<td valign="middle" align="center" bgcolor="#6699cc">
+<font face="Arial" size="2" color="#cccccc">Spring Management Systems, Inc  3830 Packard, Suite 200, Ann Arbor, MI 48108</font>  
+</td>
+</tr>
+</table>
+
+<!--Google Analytics Tracking-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-398821-4', 'emcoder.com');
+  ga('send', 'pageview');
+
+</script>
+
+		
+</body>
+</html>

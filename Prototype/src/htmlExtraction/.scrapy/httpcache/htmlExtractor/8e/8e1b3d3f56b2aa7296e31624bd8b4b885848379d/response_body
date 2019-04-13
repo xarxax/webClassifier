@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /link.php?*
+Disallow: /*.js
+Disallow: /lb.html

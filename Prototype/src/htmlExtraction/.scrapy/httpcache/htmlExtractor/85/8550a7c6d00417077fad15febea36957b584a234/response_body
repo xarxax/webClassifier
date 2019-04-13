@@ -1,0 +1,35 @@
+#Disallow some path for all search engine boot
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /wp-admin
+Disallow: /wp-includes
+Disallow: /wp-content/plugins
+Disallow: /wp-content/upgrade
+Disallow: /wp-content/backup-*
+Disallow: /wp-content/themes
+Disallow: /images/
+Disallow: /feed
+#Disallow: /category/*/*
+Disallow: */feed
+Disallow: /search/*/*
+Disallow: /*.js$
+Disallow: /*.inc$
+Disallow: /*.css$
+#Disallow: /*?*
+#Disallow: /*?
+Disallow: /clients
+Allow: /wp-content/uploads
+Disallow: /client_space
+Disallow: /hr
+
+# Allow Google Image in entire site
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+
+# Allow Google AdSense in entire site
+User-agent: Mediapartners-Google*
+Disallow:
+Allow: /*
+
+Sitemap: http://www.esdandassociates.com/sitemap.xml.gz

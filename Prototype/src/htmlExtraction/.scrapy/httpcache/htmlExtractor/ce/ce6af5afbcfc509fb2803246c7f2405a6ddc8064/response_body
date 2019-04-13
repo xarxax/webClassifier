@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Landmark Health Solutions - Home Page</title>
+<META name="description" content="Landmark offers health care management and consulting services to hospitals, short term rehabilitation centers, nusing homes, skilled nursing centers as well as assisted living facilities.">
+<META NAME="keywords" CONTENT=" healthcare consulting firm, healthcare management services, joint Commission survey, survey compliance, accreditation, credentialing, peer review, MDS and PPS requirements, survey preparation">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="menu_style.css" type="text/css" />
+<link rel="stylesheet" href="cssverticalmenu.css" type="text/css" />
+
+<script type="text/javascript" src="niftycube.js"></script>
+<script type="text/javascript">
+<!--
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var i=0; i<menuids.length; i++){
+  var ultags=document.getElementById(menuids[i]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[i]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  
+Nifty("div.cornersrc");
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+
+</head>
+<body>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-57075555-1', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+
+		</script>
+		
+  <div class="container">
+    <div class="header">
+    </div>
+    <div class="menuarea">
+      <div class="centerit">
+        <div id="menu">
+			<span class="firstone"><a class="color0 centerit" href="http://www.landmarkhealth.com">Home</a></span>
+			<span class="secondone"><a class="color1 centerit" href="http://www.landmarkmanagementsolutions.com">Landmark Management (LMS)</a></span>
+			<span class="thirdone"><a class="color2 centerit" href="http://www.landmarkhealthconsulting.com">Landmark Consulting (LHS)</a></span>
+			<span class="fourthone"><a class="color3 centerit" href="http://www.landviewtherapy.com">Landview Therapy</a></span>
+			<span class="lastone"><a class="color4 centerit" href="http://www.landstonerecruitment.com">Landstone Recruitment</a></span>
+		</div>
+      </div>
+    </div>
+	<div style="clear: both;"></div>
+    <div class="mainarea">
+      <div class="menucolumn">
+       <div class="sidebarmenu">
+		<ul id="sidebarmenu1">
+		   <li><a href='index.php'>About Us</a></li>
+		   <li><a href='philosophy.php'>Philosophy</a></li>
+		   <li><a href='history.php'>Business & History</a></li>
+		   <li><a href='serviceslist.php'>Services</a></li>
+		   <li><a href='#'>Our Team</a>
+		    <ul>
+		      <li><a href='profile.php'>Management Profile</a></li>
+		      <li><a href='principals.php'>Principals</a></li>
+			  <li><a href='senior-managers.php'>Senior Management</a></li>
+		    </ul>
+		   </li>
+		   <li><a href='case-studies.php'>Case Studies</a></li>
+		   <li><a href='contacts.php'>Contacts</a></li>
+		   <li><a href='affiliates.php'>Affiliates</a></li>
+		   <li><a href='facilities.php'>Facilities</a></li>
+		</ul>
+		<p>&nbsp;&nbsp;&nbsp;<a href="sitemap.php">Site Map</a></p>
+		<p>&nbsp;&nbsp;&nbsp;<a href="privacy.php">Privacy Policy</a></p>
+		<p><img src="images/puzzle.jpg" /></p>
+       </div>
+      </div>
+      <div class="maincolumn">
+      <br />
+        <span class="largetext">Healthcare Management Services</span><br />
+        <p>Landmark is a New England based owner, operator and management services provider dedicated to the Seniors Housing & Rehabilitative Care Industry.  With particular concentration and specialized resource capacity in the skilled nursing sector, Landmark’s unique experience qualifications and business history has contributed to its valued reputation for achieving results.   The hallmark of Landmark’s operating philosophy is its integrated approach to the business - where optimal and sustainable results are predicated on the interdisciplinary delivery of resident care and health care services.</p>
+        <p>Landmark is represented by its affiliate enterprises - each representing a distinct yet interdependent business discipline.  These include Landmark Management Services (Operations Management); Landmark Health Solutions (Consulting Services); Landview Therapy Services (Rehabilitation Programming); and Landstone Recruitment (Professional Staffing Services).  Collectively, Landmark’s professional services team constitutes the full array of resources needed to meet the demands of our industry.</p>
+        <p><img src="images/triangle1_2.jpg" align="right" />
+
+	    <span class="largetext">Industry Leaders Offering Solid Healthcare Solutions </span><br />
+        <p><img align="left" alt="" src="images/1_p2.jpg" valign="top" />The benefits and successes our clients realize are substantial and significant. We are confident that our  consulting experience and company resources can help your organization achieve remarkable growth and change. Landmark specializes in solving many complex issues that healthcare administrators and managers face in today's ever-changing business environment. Our healthcare consultants are highly skilled professionals who can implement improvements in operations, offer strategic comprehensive on-site support to leadership and optimize staff performance value to the organization while enhancing overall job satisfaction. We can meet any challenge you are currently facing and help you achieve the successful outcomes you are looking for. </p>
+        </p>
+      </div>
+      <div class="rightcolumn">
+      <br />
+		  <div class="cornersrc">
+		      <p class="centerit">
+		         <span class="largetext">Landmark</span><br />
+		  		  57 Wingate St.<br />
+		  		  Haverhill, MA 01832<br />
+		            978.372.4004<br />
+              </p>
+		  </div>
+      </div>
+
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+  </div>
+  <div class="footer">
+    <div class="footinfo">
+      Landmark, 57 Wingate Street, Haverhill, MA 01832<br />
+      &copy; 2013 Landmark - All rights reserved.
+    </div>
+    <div class="twitter">
+      <img src="images/twitter_logo.png" border="0" />
+    </div>
+    <div class="facebook">
+      <img src="images/facebook_logo.jpg" border="0" />
+    </div>
+  </div>
+</body>
+</html>

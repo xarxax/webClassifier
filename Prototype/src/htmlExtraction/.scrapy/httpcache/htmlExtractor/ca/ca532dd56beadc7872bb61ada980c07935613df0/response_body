@@ -1,0 +1,641 @@
+ 
+
+<HTML>
+<HEAD>
+<TITLE>Iowa Land Title Association</TITLE>
+<STYLE>
+body {
+	background-color: #E6E6E6;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+	background-image: url(images/bkg.gif);
+
+
+}
+.userWelcome {
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+}
+.navOutline {
+	background-color: #072F67;
+	font-size: 1px;
+
+}
+.navHighlight {
+	background-color: #FFFFFF;
+	font-size: 1px;
+
+}
+.navBkg {
+	background-color: #0A3F8A;
+	background-image: url(images/bkg_nav.gif);
+	font-size: 10px;
+
+
+}
+.content {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: black;
+}
+
+.contentWhite {
+	color : White;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+.contentHome {
+	background-color: #FFFFFF;
+	font-size: 10px;
+	background-image: url(images/bkg_Home_content.gif);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+
+
+
+}
+.leftNavHdg {
+	font-size: 15px;
+	font-weight: bold;
+	color: #0A3F8A;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.leftNavText {
+	font-size: 11px;
+	color: #0A3F8A;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.leftNavLoginForm {
+	font-size: 10px;
+	color: #0A3F8A;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+}
+.contentHeader {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+}
+.footer {
+
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.footerLine {
+	font-size: 1px;
+	background-color: #999999;
+
+}
+.p1px {
+	font-size: 1px;
+}
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006699;
+	font-weight: bold;
+}
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006699;
+	font-weight: bold;
+}
+a:hover {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #972700;
+	font-weight: bold;
+}
+a:active {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #972700;
+	font-weight: bold;
+}
+.leftNavHOME {
+
+	background-color: #AFC9ED;
+	background-image: url(images/bkg_leftNav.gif);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.leftNavSUB {
+	background-color: #AFC9ED;
+	background-image: url(images/bkg_leftNavSUB.gif);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+
+}
+.contentSUB {
+
+	background-color: #FFFFFF;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.leftNavSelected {
+	font-size: 10px;
+	color: #006699;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	font-weight: bold;
+
+
+}
+.leftNavLine {
+
+	font-size: 11px;
+	color: #0A3F8A;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+.leftNavUnderline {
+	font-size: 1px;
+	background-color: #FFFFFF;
+
+}
+a.subNav:link {
+	font-size: 10px;
+	color: #006699;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.subNav:visited {
+	font-size: 10px;
+	color: #006699;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.subNav:hover {
+	font-size: 10px;
+	color: #972700;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.subNav:active {
+	font-size: 10px;
+	color: #972700;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+.subIMGtext {
+
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.contentIntrotext {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #0E3F8E;
+
+}
+
+ .FormText12
+ {
+ 	color : Black;
+ 	font-family : Verdana, Arial, Helvetica, sans-serif;
+ 	font-size : 12px;
+ }
+ 
+  .FormText
+ {
+ 	color : Black;
+ 	font-family : Verdana, Arial, Helvetica, sans-serif;
+ 	font-size : 11px;
+ }
+
+ .FormButton
+ {
+ 	color : #000066;
+ 	font-family : Verdana, Arial, Helvetica, sans-serif;
+ 	font-size : 11px;
+ 	font-weight : bold;
+ 	height : 26px;
+ 	line-height : 16px;
+ 	text-align : center;
+ 	vertical-align : middle;
+ }
+ 
+.signinbuttonUp {
+background: url(images/btn_signIn_0.gif);
+width: 53px;
+height: 20px;
+border: none;
+}
+
+.signinbuttonOver {
+background: url(images/btn_signIn_1.gif); 
+width: 53px; 
+height: 20px; 
+border: none;
+}
+
+.signinbuttonDown {
+background: url(images/btn_signIn_0.gif); 
+width: 53px; 
+height: 20px; 
+border: none; 
+}
+
+.updatebuttonUp {
+background: url(images/btn_update.gif);
+width: 54px;
+height: 19px;
+border: none;
+}
+
+.updatebuttonOver {
+background: url(images/btn_update-over.gif); 
+width: 54px; 
+height: 19px; 
+border: none;
+}
+
+.updatebuttonDown {
+background: url(images/btn_update.gif); 
+width: 54px; 
+height: 19px; 
+border: none; 
+}
+
+.submitbuttonUp {
+background: url(images/btn_submit.gif);
+width: 54px;
+height: 19px;
+border: none;
+}
+
+.submitbuttonOver {
+background: url(images/btn_submit-over.gif); 
+width: 54px; 
+height: 19px; 
+border: none;
+}
+
+.submitbuttonDown {
+background: url(images/btn_submit.gif); 
+width: 54px; 
+height: 19px; 
+border: none; 
+}
+
+.continuebuttonUp {
+background: url(images/btn_continue.gif);
+width: 65px;
+height: 19px;
+border: none;
+}
+
+.continuebuttonOver {
+background: url(images/btn_continue-over.gif); 
+width: 65px; 
+height: 19px; 
+border: none;
+}
+
+.continuebuttonDown {
+background: url(images/btn_continue.gif); 
+width: 65px; 
+height: 19px; 
+border: none; 
+}
+
+ .Row1Color {
+	background-color: #F1F0EB;
+}
+
+ .Row2Color {
+	background-color: #D3E1F7;
+}
+
+ .bgHorizBand {
+	background-image: url(../images/subNav_divider.gif);
+	background-repeat: repeat-x;
+	height: 7px;
+	line-height : 12px;
+}
+
+</STYLE><script language="JavaScript">
+
+//Functions controlling rollovers
+function imgOver(img,replace) {
+	if (curnt_sel_img != img){
+   	document.images[img].src = replace;
+	}
+}
+
+function imgOut(img,replace) {
+	if (curnt_sel_img != img){
+	document.images[img].src = replace; 
+	} 
+}
+
+
+//THIS FUNCTION PREVENTS SELECTED IMAGE FROM CHANGING STATES ON ROLLOVER AND RESETS THE IMAGE WHEN ANOTHER 
+//IMAGE IS SELECTED
+
+var curnt_sel_img = "NONE";
+var curnt_sel_gif = "NONE";
+var curnt_NoNsel_gif = "NONE";
+
+
+function Reset_Img(img,replace,nonSelect) {
+	//alert(curnt_sel_gif);
+	if (curnt_NoNsel_gif == "NONE"){
+
+		eval("document."+img+".src = replace");
+		curnt_sel_img = img;
+		curnt_NoNsel_gif = nonSelect;
+		
+	}
+
+	else if (curnt_NoNsel_gif != "NONE"){
+		//alert('i work');
+		//alert(curnt_sel_img);
+		//alert(curnt_NoNsel_gif);
+		eval("document."+curnt_sel_img+".src = curnt_NoNsel_gif");
+		eval("document."+img+".src = replace");
+		curnt_sel_img = img;
+		curnt_NoNsel_gif = nonSelect;
+	}
+}
+</SCRIPT>
+<script language="JavaScript" src="http://www.thetitlereport.com/scripts-syn/newswire-banner.js"></script>
+
+<script LANGUAGE=JAVASCRIPT TYPE="text/javascript" >
+<!--
+
+function _CF_onError(form_object, input_object, object_value, error_message)
+    {
+	alert(error_message);
+       	return false;	
+    }
+
+
+function _CF_hasValue(obj, obj_type)
+    {
+    if (obj_type == "TEXT" || obj_type == "PASSWORD")
+	{
+    	if (obj.value.length == 0) 
+      		return false;
+    	else 
+      		return true;
+    	}
+    else if (obj_type == "SELECT")
+	{
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj.options[i].selected)
+			return true;
+		}
+
+       	return false;	
+	}
+    else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX")
+	{
+
+		if (obj.checked)
+			return true;
+		else
+       		return false;	
+	}
+    else if (obj_type == "RADIO" || obj_type == "CHECKBOX")
+	{
+
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj[i].checked)
+			return true;
+		}
+
+       	return false;	
+	}
+	}
+
+function  _CF_checkCFForm_1(_CF_this)
+    {
+    if  (!_CF_hasValue(_CF_this.username, "TEXT" )) 
+        {
+        if  (!_CF_onError(_CF_this, _CF_this.username, _CF_this.username.value, "Pleae Enter Your Username"))
+            {
+            return false; 
+            }
+        }
+
+    if  (!_CF_hasValue(_CF_this.password, "PASSWORD" )) 
+        {
+        if  (!_CF_onError(_CF_this, _CF_this.password, _CF_this.password.value, "Pleae Enter Your Password"))
+            {
+            return false; 
+            }
+        }
+
+    return true;
+    }
+
+//-->
+</script>
+</HEAD>
+
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<TABLE width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR><TD width="98"><a href="index.cfm"><img src="images/logo.gif" width="98" height="101" border="0"></a></TD>
+<TD width="379"><a href="index.cfm"><img src="images/logo_text.gif" width="379" height="101" border="0"></a></TD>
+<TD width="278" align="right" valign="top">
+
+
+<TABLE width="275" border="0" cellspacing="0" cellpadding="0">
+<TR><TD align="right"><BR><a href="index.cfm" onMouseOver="imgOver('home','images/btn_home-over.gif');window.status='';return true" onMouseOut="imgOut('home','images/btn_home.gif');window.status='';return true"><img src="images/btn_home.gif" name="home" width="49" height="12" border="0" id="home"></a></TD></TR>
+
+<TR><TD height="45" align="right" class="p1px"><img src="images/spacer.gif" width="1" height="1"></TD></TR>
+
+<TR><TD align="right" class="userWelcome">Welcome Guests</TD></TR>
+
+<TR class="p1px"><TD height="10">&nbsp;</TD></TR>
+</TABLE>
+
+
+</TD></TR>
+</TABLE>
+
+<TABLE width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR><TD height="1" class="navOutline"><img src="images/spacer.gif"></TD></TR>
+
+<TR><TD height="1" class="navHighlight"><img src="images/spacer.gif"></TD></TR>
+
+<TR><TD nowrap class="navBkg"><a href="about_us_history1.cfm" onMouseOver="imgOver('abo','images/nav_aboutUs_1.gif');window.status='About Us';return true" onMouseOut="imgOut('abo','images/nav_aboutUs_0.gif');window.status='';return true"> 
+<img src="images/nav_aboutUs_0.gif" alt="About Us" name="abo" width="65" height="24" border="0" id="abo"></a> 
+<a href="join_us_benefits.cfm" onMouseOver="imgOver('joi','images/nav_joinUs_1.gif');window.status='Join Us';return true" onMouseOut="imgOut('joi','images/nav_joinUs_0.gif');window.status='';return true"> 
+<img src="images/nav_joinUs_0.gif" alt="Join Us" name="joi" width="50" height="24" border="0" id="joi"></a> 
+<a href="events_list.cfm" onMouseOver="imgOver('eve','images/nav_events_1.gif');window.status='Events';return true" onMouseOut="imgOut('eve','images/nav_events_0.gif');window.status='';return true"> 
+<img src="images/nav_events_0.gif" alt="Events" name="eve" width="49" height="24" border="0" id="eve"></a> 
+<a href="resources.cfm" onMouseOver="imgOver('resources','images/nav_resources_1.gif');window.status='Resources';return true" onMouseOut="imgOut('resources','images/nav_resources_0.gif');window.status='';return true"> 
+<img src="images/nav_resources_0.gif" alt="resources" name="pub" width="70" height="24" border="0" id="resources"></a> 
+<a href="ilta_store.cfm" onMouseOver="imgOver('store','images/nav_store_1.gif');window.status='ILTA Store';return true" onMouseOut="imgOut('store','images/nav_store_0.gif');window.status='';return true"> 
+<img src="images/nav_store_0.gif" alt="ILTA Store" name="store" width="66" height="24" border="0" id="store"></a> 
+<a href="links_national.cfm" onMouseOver="imgOver('lin','images/nav_links_1.gif');window.status='Links';return true" onMouseOut="imgOut('lin','images/nav_links_0.gif');window.status='';return true"> 
+<img src="images/nav_links_0.gif" alt="Links" name="lin" width="40" height="24" border="0" id="lin"></a> 
+<a href="member_search.cfm" onMouseOver="imgOver('mem','images/nav_memberSearchPUB_1.gif');window.status='Member Search';return true" onMouseOut="imgOut('mem','images/nav_memberSearchPUB_0.gif');window.status='';return true"> 
+<img src="images/nav_memberSearchPUB_0.gif" alt="Member Search" name="mem" width="93" height="24" border="0" id="mem"></a>
+<a href="job_board.cfm" onMouseOver="imgOver('job','images/nav_jobBoard_1.gif');window.status='';return true" onMouseOut="imgOut('job','images/nav_jobBoard_0.gif');window.status='';return true">
+<img src="images/nav_jobBoard_0.gif" alt="Job Board" name="job" width="66" height="24" border="0" id="job"></a>
+<a href="photos.cfm" onMouseOver="imgOver('photos','images/nav_photos_1.gif');window.status='';return true" onMouseOut="imgOut('photos','images/nav_photos_0.gif');window.status='';return true"> 
+<img src="images/nav_photos_0.gif" alt="Photos" name="photos" width="59" height="24" border="0" id="photos"></a>
+<a href="#" onMouseOver="imgOver('com','images/nav_commitees_1.gif');window.status='';return true" onMouseOut="imgOut('com','images/nav_commitees_0.gif');window.status='';return true"></a>
+<a href="#" onMouseOver="imgOver('leg','images/nav_legislative_1.gif');window.status='';return true" onMouseOut="imgOut('leg','images/nav_legislative_0.gif');window.status='';return true"></a> 
+</TD></TR>
+
+<TR><TD height="1"  class="navHighlight"><img src="images/spacer.gif"></TD></TR>
+
+<TR><TD height="1" class="navOutline"><img src="images/spacer.gif"></TD></TR>
+</TABLE>
+
+
+
+<TABLE width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR><TD width="281" height="410" align="center" valign="top" class="leftNavHOME">
+<TABLE width="274" border="0" cellspacing="0" cellpadding="0">
+<TR><TD>&nbsp;</TD></TR>
+</TABLE>
+
+<TABLE width="200" border="0" cellspacing="0" cellpadding="0">
+<TR><TD width="254" height="21" valign="top" class="leftNavHdg">member search</TD></TR>
+
+<TR><TD width="254" class="leftNavText">Search for Members by Company, City, or County.</TD></TR>
+
+<TR><TD width="254" height="35"> <a href="member_search.cfm" onMouseOver="imgOver('go1','images/btn_go_1.gif');window.status='';return true" onMouseOut="imgOut('go1','images/btn_go_0.gif');window.status='';return true">
+<img src="images/btn_go_0.gif" alt="Member Search" name="go1" width="30" height="21" border="0" id="go1"></a></TD></TR>
+
+<TR><TD width="254" valign="middle"><img src="images/leftNav_line.gif" width="200" height="1"></TD></TR>
+</TABLE>
+
+
+<TABLE width="200" border="0" cellspacing="0" cellpadding="0">
+<TR><TD width="254" height="21" valign="top" class="leftNavHdg">title search</TD></TR>
+
+<TR><TD width="254" class="leftNavText">Order Your Title Search Here.</TD></TR>
+
+<TR><TD width="254" height="35"> <a href="member_search_title.cfm" onMouseOver="imgOver('go2','images/btn_go_1.gif');window.status='';return true" onMouseOut="imgOut('go2','images/btn_go_0.gif');window.status='';return true">
+<img src="images/btn_go_0.gif" alt="Title Search" name="go2" width="30" height="21" border="0" id="go2"></a></TD></TR>
+
+<TR><TD width="254" valign="middle"><img src="images/leftNav_line.gif" width="200" height="1"></TD></TR>
+</TABLE>
+
+
+<FORM NAME="CFForm_1" ACTION="login.cfm" METHOD=POST onSubmit="return _CF_checkCFForm_1(this)">
+<TABLE width="200" border="0" cellspacing="0" cellpadding="0">
+<TR><TD width="254" height="21" valign="top" class="leftNavHdg">member sign-in</TD></TR>
+
+<TR><TD width="254" valign="bottom" class="leftNavLoginForm">username</TD></TR>
+
+<TR><TD width="254"><INPUT TYPE="text" NAME="username" CLASS="FormText12" STYLE="width:145px" MAXLENGTH="70"></TD></TR>
+
+<TR><TD width="254" valign="bottom" class="leftNavLoginForm">password</TD></TR>
+
+<TR><TD width="254"><INPUT TYPE="password" NAME="password" CLASS="FormText12" STYLE="width:145px" MAXLENGTH="8"></TD></TR>
+
+<TR><TD width="254" height="35" valign="middle">
+<INPUT TYPE="submit" VALUE="" CLASS="signinbuttonUp" TITLE="Submit" onMouseOver="this.className='signinbuttonOver'" onMouseOut="this.className='signinbuttonDown'"></TD></TR>
+
+<TR><TD width="254" valign="middle" class="leftNavText"><a href="forgot_password.cfm">Trouble logging in? Click here.</a><br /><br /></TD></TR>
+
+<TR><TD width="254" valign="middle" height="30"><a href="contact_us.cfm" onMouseOver="imgOver('contact2','images/btn_contact_us-over.gif');window.status='';return true" onMouseOut="imgOut('contact2','images/btn_contact_us.gif');window.status='';return true"><img src="images/btn_contact_us.gif" border="0" id="contact2"></A></TD></TR>
+
+<TR><TD width="254" height="30" valign="middle"><a href="events_list.cfm" onMouseOver="imgOver('events2','images/btn_events-over.gif');window.status='';return true" onMouseOut="imgOut('events2','images/btn_events.gif');window.status='';return true"><img src="images/btn_events.gif" border="0" id="events2"></A></TD></TR>
+
+<TR><TD width="254" height="30" valign="middle"><a href="ilta_store.cfm" onMouseOver="imgOver('order','images/btn_order_blue_book-over.gif');window.status='';return true" onMouseOut="imgOut('order','images/btn_order_blue_book.gif');window.status='';return true"><img src="images/btn_order_blue_book.gif" border="0" id="order"></A></TD></TR>
+
+
+<TR><TD width="254" align="center"><a href="http://www.alta.org" target="_blank"><img src="images/alta_logo.gif" style="margin: 10px 0;border:0;" /></a></TD></TR>
+
+</TABLE>
+</FORM>
+</TD>
+<TD width="476" height="420" valign="top" class="contentHome">
+
+<img src="images/home_capital.jpg" width="476" height="196">
+<TABLE width="476" border="0" cellspacing="0" cellpadding="0">
+<TR>
+	<TD width="31" class="contentHeader">&nbsp;</TD>
+	<TD width="414" valign="bottom" class="contentHeader"></TD>
+	<TD width="31" class="contentHeader">&nbsp;</TD>
+</TR>
+<TR>
+	<TD width="31" class="content">&nbsp;</TD>
+	<TD width="414" valign="top" class="content">
+	
+	<iframe width="476" height="268" src="https://www.youtube.com/embed/L5lSLhNAOGk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	<p align="center"><font size="2"><font color="#000066"><font color="#000000"><em><font face="impact,chicago"><font face="terminal,monaco"><font face="helvetica" size="3" style="background-color: #ffffff"><strong>The Iowa Land Title Association (ILTA) is the recognized voice of the real estate title industry in the State of Iowa.&nbsp; ILTA sets the standards of professional excellence and technical competence for the lasting&nbsp;benefit of the&nbsp;public <br />and the title industry.</strong></font></font></font></em>&nbsp;<br /><br /></font></font></font><font face="verdana,geneva" color="#990000"><font color="#ff9966"><font face="arial,helvetica,sans-serif" color="#990000"><font face="Verdana" color="#000080"><font color="#6600ff"><font color="#000000"><font style="background-color: #ffffff" color="#00cc66"><font color="#000000"><font color="#990000"><em><strong><font size="2"><br /></font></strong></em></font></font></font></font><font color="#990000"><br /></font></font></font></font></font></font></p><p align="left"><font face="verdana,geneva" color="#990000"><font color="#ff9966"><font color="#0000ff"><font color="#000080"><font face="comic sans ms,sand" color="#000000"><font size="2"><strong><font face="Verdana">Become an<font color="#000066">&nbsp;</font></font></strong><font face="verdana,geneva" color="#990000"><em><strong>ILTA&nbsp;</strong></em></font></font><font color="#990000"><font color="#990000"><font color="#990000"><font face="verdana,geneva"><strong><font size="2"><em>Certified Land Title Professional!</em>&nbsp; <font color="#000000">Learn more about the program and designation on the&nbsp;</font></font></strong></font></font></font><font color="#000080"><font color="#000000"><font face="verdana,geneva" color="#000000"><strong><em><font size="2">Resources Page or by accessing the </font><a href="http://www.iowalandtitle.org/documents/ILTA%20Brochure%202018.pdf" target="_blank"><font size="2" color="#990000">ILTA CLTP BROCHURE</font></a></em></strong></font><font face="verdana,geneva"><font size="2"><font color="#000000"><strong><em>.</em></strong></font>&nbsp;&nbsp;<br /></font></font></font></font></font><font face="verdana,geneva"><strong><br /><font size="2">Contact an ILTA CLTP: &nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="5">&nbsp;&nbsp; </font></strong><font color="#990000"><strong><font color="#990000"><font color="#990000"><font color="#990000"><font size="2"><a href="http://www.iowalandtitle.org/documents/CLTPReport020319.pdf" target="_blank"><font size="3"><font color="#990000">CERTIFIED</font><font color="#990000"> LAND TITLE PROFESSIONALS</font></font></a><font size="3">    &nbsp;</font></font><font size="2">&nbsp;</font></font><font size="2">&nbsp;</font></font><font size="2">&nbsp;</font></font></strong></font></font></font></font></font></font></font><strong><font size="2"> </font></strong><br /><font face="verdana,geneva" color="#990000"><font color="#ff9966"><font face="arial,helvetica,sans-serif" color="#990000"><font face="Verdana" color="#000080"><font color="#6600ff"><font color="#000000"><br /><font style="background-color: #ffffff" color="#00cc66"><font color="#000000"><font color="#990000"><font color="#000000"><strong><font size="2"><font color="#990000">ILTA CLTP COURSES AT UNI 2019 SCHEDULE:</font></font></strong></font></font></font></font></font></font></font></font></font></font></p><p align="left"><font face="verdana,geneva" color="#990000"><font color="#ff9966"><font face="arial,helvetica,sans-serif" color="#990000"><font face="Verdana" color="#000080"><font color="#6600ff"><font color="#000000"><font style="background-color: #ffffff" color="#00cc66"><font color="#000000"><font color="#990000"><font color="#000000"><strong><font size="2">Chain of Title: Voluntary Alienation - March 29, 2019<br />Chain of Title: Involuntary Alienation - June 14, 2019<br />Legal Descriptions -&nbsp;September 13, 2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Legal Entities &amp; Special Circumstances - November 1, 2019<br />&nbsp;&nbsp; </font></strong></font><font size="2"><em><strong>Registration Available Soon!<br /></strong></em><font color="#000000"><strong>&nbsp;</strong><strong><font face="verdana,geneva" color="#990000"><font color="#ff9966"><font face="arial,helvetica,sans-serif" color="#990000"><font face="Verdana" color="#000080"><font color="#6600ff"><font color="#000000"><font style="background-color: #ffffff" color="#00cc66"><font color="#000000"><font color="#990000"><font size="2"><font color="#000000"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080"><font color="#cc6600"><font color="#ff9900"><font color="#ff9900"><font face="verdana,geneva"><font color="#990000"><font color="#000000"><font color="#990000"><font color="#990000"><font color="#000000"><font size="2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><font size="2"><strong>&nbsp;<br /></strong></font></font></font><font size="2"><strong><font color="#000000">ILTA Annual Convention - May 5 - 7, 2019<br />&nbsp;&nbsp; Holiday Inn Jordan Creek, West Des Moines</font><br />&nbsp;<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></strong></font></font></font></font></font></font></font></font></font><font color="#000080"><font color="#cc6600"><font color="#ff9900"><font color="#ff9900"><font face="verdana,geneva"><font color="#990000"><font color="#000000"><font color="#990000"><font color="#000000"><br /></font></font><font color="#990000"><u>MEMBERS: Login and Register on the Events Page<br /></u>&nbsp;&nbsp;<u>for the&nbsp;ILTA Legislative Day Breakfast<br /></u>&nbsp; <u>Wednesday, February 6th at the State Capitol</u></font><br /><br />ILTA Board Meeting - February 5, 2019<br />&nbsp;&nbsp; IFA Office, Des Moines&nbsp;&nbsp; <a href="https://secure2.associationsonline.com/amos/ilta/admin/" target="_blank">AGENDA</a> <br /><br /><a href="resources_title.cfm"><font face="verdana,geneva" size="2" color="#000000"><strong>Title Plant Certification Program Details</strong></font></a><br /><br /><br /></font></font></font></font></font></font></font><font color="#000080"><font color="#cc6600"><strong><font color="#000080"><font color="#990000"><font face="verdana,geneva"><font face="verdana,geneva" size="2">ILTA / ALTA Principles of Fair Conduct:</font> <br /><br /></font></font></font></strong></font></font></strong></font></font></font></font></font></font></font></font></font></font></font></strong></font></font></font></font></font></font></font></font></font></font></font></p><font color="#000080"><font face="arial,helvetica,sans-serif" color="#cc6600"><strong><font color="#000080"><font face="georgia,palatino" color="#990000"><ul><li><font face="verdana,geneva" size="1" color="#000000"><em><strong>To engage only in business practices that are lawful and consistent with a high standard of ethical behavior.</strong></em></font></li><li><font face="verdana,geneva" size="1" color="#000000"><em><strong>To encourage a culture of compliance within their organizations for federal and state laws that govern the title insurance business and title-related services, and for these Principles.</strong></em></font></li><li><font face="verdana,geneva" size="1" color="#000000"><em><strong>To treat consumers in a fair and ethical manner.</strong></em></font></li><li><font face="verdana,geneva" size="1" color="#000000"><em><strong>To provide consumers with timely and comprehensive information regarding their policies, services, products, and prices so as to enable consumers to shop effectively among providers of title-related services.</strong></em></font></li><li><font face="verdana,geneva" size="1" color="#000000"><em><strong>To encourage and assist consumers to be educated purchasers of title insurance and title-related services.</strong></em></font></li></ul><p style="color: #000000; font-size: 9pt" align="left">&nbsp;</p></font></font></strong></font></font>
+	
+	</TD>
+	<TD width="31" class="content">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD></TR>
+
+<TR><TD height="1" colspan="2" class="navBkg"><img src="images/spacer.gif"></TD></TR>
+
+<TR><TD height="15" colspan="2" class="navBkg">&nbsp;</TD></TR>
+</TABLE>
+
+<TABLE width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR><TD height="45" align="center" class="footer">Copyright&copy;2019. Iowa Land Title Association<BR>Powered by: <a href="http://associationsonline.com" TARGET="_blank">AMO - Association Managment Online</a> | <a href=## onClick="window.open('terms.cfm','new_window','width=515,height=500,scrollbars=yes').focus();">Terms of Use</a></TD></TR>
+<TR><TD height="1" class="footerLine"><img src="images/spacer.gif"></TD></TR>
+</TABLE>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19192555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<TABLE width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR><TD height="84" align="center"> 
+		<a href="http://www.American-Abstract.com" target="new"><img src="https://secure2.associationsonline.com/amos/ilta/banners/17_banner.gif" border=0></a>
+		
+
+
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE ALIGN="center">
+<TR><td class="white12" align="left" width="200">
+<div style="margin-left : 10px; background-color:#FFFFFF;" >
+<script language="JavaScript" src="http://www.thetitlereport.com/scripts/newswire_homestead.js"></script>
+</div>
+</TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>

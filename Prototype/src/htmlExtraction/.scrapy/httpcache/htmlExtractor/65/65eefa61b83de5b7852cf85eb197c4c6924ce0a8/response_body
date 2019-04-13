@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Progressive Microtechnology Inc</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="js/jquery-ui-1.8.9.custom.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/supposition.js"></script>
+<script type="text/javascript" src="js/customscripts.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.slideshow').cycle({ // see http://malsup.com/jquery/cycle/ for jQuery cycle options
+		fx:  'fadeZoom', // options are: blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, scrollUp, scrollDown, scrollLeft, scrollRight, scrollHorz, scrollVert, shuffle, slideX, slideY, toss, turnUp, turnDown, turnLeft, turnRight, uncover, wipe, zoom
+		timeout: 6000, // how long slides are shown in ms
+    	speed:  1000, // how long transition takes in ms
+		easing: 'easeInOutBack', // options are: easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+		pause: 1,
+		pauseOnPagerHover: 1, // pause slideshow when mouse hovers
+		prev:   '#slideprev', 
+    	next:   '#slidenext', 	
+		after:   onAfter,
+		sync: 1, // set to 1 to see two slides at the same time during transition
+		autostop: 0, // this is set to 1 to stop on a specific slide which can be set on the next option
+		autostopCount: 0, // set this to the slide you want to stop on or is autostop is enabled above
+		pager: '#slidenav' // container element for optional slideshow navigation. If you don't want navigation, delete the #slidenav div in the code
+		});
+	});
+function onAfter(curr, next, opts) {
+   var index = opts.currSlide;
+   	$('#slideprev')[index == 0 ? 'hide' : 'show']();
+    $('#slidenext')[index == opts.slideCount - 1 ? 'hide' : 'show'](); 
+};
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-672735-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<div id="headerwrap" class="fullwidth">
+  <div id="header" class="container_12">
+    <div class="grid_4" style="vertical-alignment:top;"> <a href="/"><img src="images/logo.png" alt="PMI Logo" height="105" id="logo" style="vertical-alignment:center;" /></a> </div>
+    <div class="grid_8">
+      <p>Order tomorrow's technology today!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Toll Free: 800-325-7636</span><br><span>FL: 904-797-1050</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>OH: 513-782-5050</span></p>
+	  <p>Questions?  Chat now!&nbsp;&nbsp;&nbsp;
+	  <!-- mibew button --><a href="http://www.scanpmi.com/livehelp/client.php?locale=en&amp;style=silver" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open(&#039;http://www.scanpmi.com/livehelp/client.php?locale=en&amp;style=silver&amp;url=&#039;+escape(document.location.href)+&#039;&amp;referrer=&#039;+escape(document.referrer), 'mibew', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="http://www.scanpmi.com/livehelp/b.php?i=mibew&amp;lang=en" border="0" width="163" height="61" alt=""/></a><!-- / mibew button -->
+	  </p>
+    </div>
+  </div>
+</div>
+<div id="navwrap" class="fullwidth">
+  <div id="nav" class="container_12"><!-- #BeginLibraryItem "Library/navigation.lbi" -->
+    <div class="grid_8 mobile-hidden">
+      <ul class="sf-menu">
+        <li><a class="homelink" href="index.html"></a></li>
+        <li><a href="#">Products<span class="desc">Find your solution here</span></a>
+          <ul>
+            <!-- Start kit section -->
+            <li><a href="products.php?sub=kits">Bundles & Systems</a>
+              <ul>
+                <li><a href="products.php?sub=kits">ALL Bundles</a></li>
+                <li><a href="products.php?sub=kits&amp;sub2=tracking">Tracking Bundles</a></li>
+                <li><a href="products.php?sub=kits&amp;sub2=labeling">Labeling Bundles</a></li>
+                <li><a href="products.php?sub=kits&amp;sub2=idcard">ID Card Bundles</a></li>
+              </ul>
+            </li>
+            <!-- Start Labels, Ribbons, Cards section -->
+            <li><a href="products.php?sub=printmedia">Labels, Ribbons, Cards</a>
+              <ul>
+                <li><a href="products.php?sub=printmedia">ALL PRINT MEDIA</a></li>
+                <li><a href="products.php?sub=printmedia&amp;sub2=labels">Label Media</a></li>
+                <li><a href="products.php?sub=printmedia&amp;sub2=ribbons">Ribbon Media</a></li>
+                <li><a href="products.php?sub=printmedia&amp;sub2=cards">Card Media</a></li>
+                <li><a href="http://scanpmi.com/ZebraSearch.html">Search Media</a></li>
+              </ul>
+            </li>
+            <!-- Start Printers section -->
+            <li><a href="products.php?sub=printers">Printers</a>
+              <ul>
+                <li> <a href="products.php?sub=printers">ALL PRINTERS</a></li>
+                <li><a href="products.php?sub=printers&amp;sub2=low">Low Volume</a></li>
+                <li><a href="products.php?sub=printers&amp;sub2=medium">Medium to High Volume</a></li>
+                <li><a href="products.php?sub=printers&amp;sub2=card">Card Printers</a></li>
+                <li><a href="products.php?sub=printers&amp;sub2=wideweb">Wide Web Industrial</a></li>
+              </ul>
+            </li>
+            <!-- Start Scanners section -->
+            <li><a href="products.php?sub=scanners">Scanners</a>
+              <ul>
+                <li><a href="products.php?sub=scanners">ALL SCANNERS</a></li>
+                <li><a href="products.php?sub=scanners&amp;sub2=laser">Laser Scanners</a></li>
+                <li><a href="products.php?sub=scanners&amp;sub2=linear">Linear Scanners</a></li>
+                <li><a href="products.php?sub=scanners&amp;sub2=wand">Wand Scanners</a></li>
+                <li><a href="products.php?sub=scanners&amp;sub2=area">Area Imager Scanners</a></li>
+                <li><a href="products.php?sub=scanners&amp;sub2=keyboard">Card Reader & POS Equipment</a></li>
+              </ul>
+            </li>
+            <!-- Start Terminals section -->
+            <li><a href="products.php?sub=portable">Mobile Devices</a>
+              <ul>
+                <li><a href="products.php?sub=portable">MOBILE DEVICES</a></li>
+                <li><a href="products.php?sub=portable&amp;sub2=honeywell">Honeywell</a></li>
+                <li><a href="products.php?sub=portable&amp;sub2=unitech">Unitech</a></li>
+                <li><a href="products.php?sub=portable&amp;sub2=motorola">Motorola</a></li>
+                <li><a href="products.php?sub=portable&amp;sub2=datalogic">Datalogic</a></li>
+              </ul>
+            </li>
+            <!-- Start Software section -->
+            <li><a href="products.php?sub=software">Software</a>
+              <ul>
+                <li><a href="products.php?sub=software">ALL SOFTWARE </a></li>
+                <li><a href="products.php?sub=software&amp;sub2=evidence">Evidence Management Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=asset">Asset Management Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=label">Barcode Label Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=checkin">Check In / Check Out Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=inventory">Inventory Management Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=cardprinter">Plastic Card Printer Software</a></li>
+                <li><a href="products.php?sub=software&amp;sub2=pdt">Portable Data Terminal Software</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">About Us<span class="desc">Who We Are</span></a></li>
+        <li><a href="contact.php">Contact<span class="desc">Our Email</span></a></li>
+      </ul>
+    </div>
+    <div class="grid_4">
+      <ul>
+        <li class="socialmediaicons"> <a class="facebook" href="https://www.facebook.com/groups/54171493233/"></a> <a class="youtube" href="http://www.youtube.com/user/EvidenceTracker"></a></li>
+      </ul>
+    </div>
+  <!-- #EndLibraryItem --></div>
+</div>
+<div id="slidewrap" class="fullwidth">
+  <div class="container_12 slidebackground">
+    <div class="slidernav"><a id="slideprev" href="#" style="display:none;"></a><a id="slidenext" href="#" style="display:none;"></a></div>
+    <div class="slideshow slide930">
+      
+	  
+	  <div class="slideshowitem"> <img class="alignleft" src="images/evidencetrackerinaction310x250.jpg" width="306" height="250" alt=""/>
+        <div class="slidertopcontent">
+          <p>Law Enforcement - Take control of your Evidence Room.</p>
+        </div>
+        <div class="sliderbottomcontent"> <a href="products.php?sub=kits&amp;sub2=tracking"><img class="alignright" src="images/go-button.png" width="183" height="60" alt="Go"></a>
+          <p>Save countless hours! Streamline evidence management. Find out how PMI Evidence Tracker&trade; can inventory your Evidence Room at over 1000 pieces an hour. </p>
+        </div>
+      </div>
+	  
+	  
+      <div class="slideshowitem"> <img class="alignleft" src="images/watch.png" width="310" height="250" alt=""/>
+        <div class="slidertopcontent">
+          <p>Save valuable time with our barcoding solutions!</p>
+        </div>
+        <div class="sliderbottomcontent"> <a href="#"><img class="alignright" src="images/go-button.png" width="183" height="60" alt="Go"></a>
+          <p>Click to read how our electronic inventory tracking, labeling, and Point-Of-Sale solutions can save you valuable time.</p>
+        </div>
+      </div>
+      
+	  
+    </div>
+    <div id="slidenav"></div>
+  </div>
+</div>
+<div id="topfeaturewrap" class="fullwidth">
+  <div id="topfeature" class="container_12">
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=kits"><img class="alignleft" src="images/kits.jpg" width="75" height="75" alt=" ">
+      <h4>Bundles & Systems</h4>
+      <p class="itemdescription55">Click here to explore the options to get you started barcoding.</p>
+	  </a>
+    </div>
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=printmedia"><img class="alignleft" src="images/media.jpg" width="75" height="75" alt=" ">
+      <h4>Media</h4>
+      <p class="itemdescription55">Labels, Ribbons, Cards... All your print media needs to keep running your business...</p>
+	  </a>
+    </div>
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=software"><img class="alignleft" src="images/software.jpg" width="75" height="75" alt=" ">
+      <h4>Software</h4>
+      <p class="itemdescription55">More types of barcoding software than you can shake a stick at.</p>
+	  </a>
+    </div>
+  <div class="clear"></div>    
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=printers"><img class="alignleft" src="images/printers.jpg" width="75" height="75" alt=" ">
+      <h4>Barcode Printers</h4>
+      <p class="itemdescription55">Desktop label printers, card printers, industrial printers...</p>
+      </a>
+    </div>
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=scanners"><img class="alignleft" src="images/scanners.jpg" width="75" height="75" alt=" ">
+      <h4>Barcode Scanners</h4>
+      <p class="itemdescription55">Hand scanners, Bluetooth, 802.11, USB, DB-25 Serial. 2D, 1D, Laser, Linear</p>
+      </a>
+    </div>
+    <div class="grid_4"> <a class="linkbutton rounded" href="products.php?sub=portable"><img class="alignleft" src="images/portable.jpg" width="75" height="75" alt=" ">
+      <h4>Mobile Devices</h4>
+      <p class="itemdescription55">Data Terminals, Linear, 2D, Docking, 802.11, Cellular data, Windows Mobile</p>
+      </a>
+    </div>
+
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="contentwrap" class="fullwidth">
+  <div id="content" class="container_12 toprounded">
+    <div class="spacer40"></div>
+    <div class="grid_8">
+      <h2>Message from the owner</h2>
+<p><strong> Progressive Microtechnology, Inc.</strong> (PMI)  has been serving the needs of the barcode industry since 1984 as a software developer and a dealer of barcode equipment and supplies. We have also been providing law enforcement with the easiest to use, most flexible evidence management system for the past 16 years. We are a Veteran-owned small business and <a href="http://nefla.bbb.org/codbrep.html?wlcl=y&amp;id=154154755&amp;cons=y">a member of the Better Business Bureau</a>. PMI carries a full range of barcode products from all the major manufacturers. We are dedicated to serving you professionally with our whatever-it-takes attitude, while providing terrific savings on barcode scanners, label printers, barcode readers, software, portable data collectors, barcode labels, ribbons and other related products. Thank you for visiting our site!</p>
+      <p>Best Regards,</p>
+              <p><img src="images/SuzanneSig.jpg" alt="Signature block: Suzanne Alex" width="150" height="58" style="border:0;"></p>
+              <p>Suzanne Alex</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="grid_4" style="alignment:center;"><a href="http://nefla.bbb.org/codbrep.html?wlcl=y&amp;id=154154755&amp;cons=y"><img src="images/bbb.jpg"  alt=""></a></div>
+    <div class="spacer40"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div id="footerwrap" class="fullwidth">
+  <div id="footer" class="container_12">
+    <div class="grid_6">Copyright &copy; 2013 Progressive Microtechnology Inc.</div>
+    <div class="grid_6 alignright"><a href="aboutus.html">About Us</a> | <a href="contact.php">Contact Us</a> | <a href="privacy.html">Privacy</a></div>
+    <div class="clear"></div>
+  </div>
+</div>
+</body></html>

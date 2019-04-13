@@ -1,0 +1,336 @@
+
+
+<html>
+<head>
+<title>H E M K O - Customized online registration software for Event &amp; Marketing Professionals!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta Name="Description" Content="Online Registration for the Event And Marketing Professionals">
+<meta Name="Keywords" Content="online registration, internet registration, online meeting registration,
+web registration, web meeting registration, online conference registration, meetings, conference, 
+corporate meetings, meeting planners, association events, PCMA, ASAE, IAEM, tradeshow software, 
+meeting registration, show management, expo, hemko, hemkosys.com, hemco, online marketing, emarketing,
+palm pilots, event palm guides, surveys, email marketing"> 
+
+
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+function Validate(theForm)
+{
+
+if (theForm.userid.value == "")
+  {
+    alert("Please enter your user ID.");
+    theForm.userid.focus();
+    return (false);
+  }
+  
+if (theForm.password.value == "")
+  {
+    alert("Please enter your password.");
+    theForm.password.focus();
+    return (false);
+  }
+}  
+  
+//-->
+</script>
+<link rel="stylesheet" href="hemkostyle.css">
+
+
+</head>
+
+<body bgcolor="#CCCC99" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="graphics/background.gif" text="#666666" link="#003366" vlink="#006699" alink="#0033CC" onLoad="MM_preloadImages('graphics/cube_over.gif')">
+<table width="740" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="left" valign="top"> 
+    <td colspan="11"><img src="graphics/top01.gif" width="740" height="20"></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td rowspan="2" width="20" height="80"><img src="graphics/top02.gif" width="20" height="80"></td>
+    <td rowspan="2" width="20" height="80"><img src="graphics/top03.gif" width="20" height="80"></td>
+    <td width="75" height="55"><img src="graphics/cube_on.gif" width="75" height="55"></td>
+    <td width="75" height="55"><a href="solutions.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('services','','graphics/cube_over.gif',1)"><img name="services" border="0" src="graphics/cube_off.gif" width="75" height="55"></a></td>
+    <td width="75" height="55"><a href="resources.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('solution','','graphics/cube_over.gif',1)"><img name="solution" border="0" src="graphics/cube_off.gif" width="75" height="55"></a></td>
+    <td width="75" height="55"><a href="support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('products','','graphics/cube_over.gif',1)"><img name="products" border="0" src="graphics/cube_off.gif" width="75" height="55"></a></td>
+    <td width="75" height="55"><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','graphics/cube_over.gif',1)"><img name="about" border="0" src="graphics/cube_off.gif" width="75" height="55"></a></td>
+    <td width="75" height="55"><a href="contact.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','graphics/cube_over.gif',1)"><img name="contact" border="0" src="graphics/cube_off.gif" width="75" height="55"></a></td>
+    <td rowspan="2" width="210" height="80"><a href="home.asp"><img src="graphics/logo.gif" width="210" height="80" border="0"></a></td>
+    <td rowspan="2" width="20" height="80"><img src="graphics/top04.gif" width="20" height="80"></td>
+    <td rowspan="2" width="20" height="80"><img src="graphics/top05.gif" width="20" height="80"></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="75" height="25"><img src="graphics/home_on.gif" width="75" height="25"></td>
+    <td width="75" height="25"><img src="graphics/solutions_off.gif" width="75" height="25" border="0"></td>
+    <td width="75" height="25"><img src="graphics/resources_off.gif" width="75" height="25" border="0"></td>
+    <td width="75" height="25"><img src="graphics/support_off.gif" width="75" height="25" border="0"></td>
+    <td width="75" height="25"><img src="graphics/about_off.gif" width="75" height="25"></td>
+    <td width="75" height="25"><img src="graphics/contact_off.gif" width="75" height="25"></td>
+  </tr>
+</table>
+<table width="740" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="left" valign="top"> 
+    <td width="22" background="graphics/left_bgd.gif"><img src="graphics/blank.gif" width="22" height="10"></td>
+    <td width="198" bgcolor="#FFFFFF"> 
+    
+    
+    
+      <table width="198" border="0" cellspacing="0" cellpadding="0">
+        <tr align="left" valign="top"> 
+          <td colspan="2">
+          <!--<img src="graphics/human11.gif" width="198" height="235" border="0">//-->
+          <script language="JavaScript" src="random2.js"></script></td>
+        </tr>
+        
+	  <!--                <tr align="left" valign="middle">           <td width="30"><img src="graphics/submenucube_off.gif" width="30" height="20"></td>          <td width="168"><a href="#" class="submenuLink">Submenu #1 </a></td>        </tr>        <tr align="left" valign="middle">           <td colspan="2"><img src="graphics/submenubar.gif" width="198" height="1"></td>        </tr>        <tr align="left" valign="middle">           <td width="30"><img src="graphics/submenucube_on.gif" width="30" height="20"></td>          <td width="168" class="submenu">Submenu #2 </td>        </tr>        <tr align="left" valign="middle">           <td colspan="2"><img src="graphics/submenubar.gif" width="198" height="1"></td>        </tr>        <tr align="left" valign="middle">           <td width="30"><img src="graphics/submenucube_off.gif" width="30" height="20"></td>          <td width="168"><a href="#" class="submenuLink">Submenu #3 </a></td>        </tr>      </table>           //--> 
+     
+	  </table>
+     
+      <table width="198" border="0" cellspacing="15" cellpadding="0">
+        <tr>
+          <td>
+            <form method="post" action="home.asp?ID1=L" name="clientlogin" onsubmit="return Validate(this)">
+              <table width="138" border="0" cellspacing="0" cellpadding="0">
+                <tr align="left" valign="top"> 
+                  <td colspan="3"><img src="graphics/box_clientlogin.gif" width="138" height="20"></td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td width="10" background="graphics/box_left.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+                  <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif" valign="bottom"><img src="graphics/blank.gif" width="118" height="4"><img src="graphics/userid.gif" width="75" height="12"></td>
+                  <td width="10" background="graphics/box_right.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td width="10" background="graphics/box_left.gif">&nbsp;</td>
+                  <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif"> 
+                    <input type="text" name="userid" size="10" maxlength="30">
+                  </td>
+                  <td width="10" background="graphics/box_right.gif">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td width="10" background="graphics/box_left.gif">&nbsp;</td>
+                  <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif" valign="bottom"><img src="graphics/password.gif" width="75" height="12"></td>
+                  <td width="10" background="graphics/box_right.gif">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td width="10" background="graphics/box_left.gif">&nbsp;</td>
+                  <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif"> 
+                    <input type="password" name="password" size="10" maxlength="30">
+                  </td>
+                  <td width="10" background="graphics/box_right.gif">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td width="10" background="graphics/box_left.gif">&nbsp;</td>
+                  <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif" valign="bottom"> 
+                    <div align="center"><img src="graphics/blank.gif" width="50" height="5"><br>
+                      <input type="image" border="0" name="login" src="graphics/login.gif" width="54" height="26">
+                    </div>
+                  </td>
+                  <td width="10" background="graphics/box_right.gif">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="top"> 
+                  <td colspan="3"><img src="graphics/box_bottom.gif" width="138" height="10"></td>
+                </tr>
+              </table>
+            </form>
+                        
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="340" bgcolor="#FFFFFF"> 
+      <table width="340" border="0" cellspacing="15" cellpadding="0">
+        <tr align="left" valign="top"> 
+          <td> 
+            <p><img src="graphics/blank.gif" width="310" height="1"><br>
+              <img src="graphics/_home.gif" width="275" height="50"></p>
+
+<!--
+
+	<p class="body">
+	<font size= +1>
+	<b>PlanetReg Users
+	<br>
+	24 FEB 2011 9:30 AM MST
+	<br>
+	We apologize for any inconvenience but we are experiencing a temporary interruption in the PlanetReg service.  The problem is being 
+	worked on at this time and the service will be restored as soon as possible. 
+	</b>
+	</font>	
+	</p>
+//-->
+            <p class="body">Hemko is a provider of technology tools for 
+				event and marketing professionals.  
+				From online registration to eMarketing,
+				Hemko can help you deliver returns on your web investment.
+
+				
+				<br><br>
+				<p class="body"> <b>Hemko's PlanetReg</b>
+				<br>
+				Online event registration made easy.  We have registered thousands of people for events
+				and conferences over the web.  Check out our <a href="http://www.planetReg.com">
+				online event registration software</a> or test out an online reg demo.  
+				New to online registration?  
+				<a href="onlineregFB.asp">Review the features and benefits.</a>
+				<br><br>
+				<p class="body"> <b> eMarketing</b>
+				<br>
+				Increase traffic and sales with an online marketing promotion.
+				From online sweepstakes and customer surveys to targeted email marketing, 
+				Hemko has just the marketing tool for your organization.  
+				<a href="emarketing.asp">Review the possibilities.</a>
+				<br><br>
+				
+				
+				<p class="body"> <b> Exhibitor Solutions</b>
+				<br>
+				Is your organization looking for a way to boost
+				booth traffic? A web based promotion
+				can make your next tradeshow effort a success.
+				Hemko also offers web based tools that help 
+				you organize the logistics for your next
+				tradeshow experience. <a href="exhibitor.asp">Take a look.</a>
+				We also develop custom 
+				web applications.
+				
+				<br><br>
+				
+				</p>
+            </td>
+        </tr>
+        <tr align="center" valign="bottom">
+        	<td> 	<font size="1" face="verdana,arial,helvetica">
+			&copy; 2012 Hemko, All Rights Reserved. <br>
+			<a href="privacy.asp">Privacy</a> | <a href="security.asp">Security</a> | <a href="refunds.asp">Refunds</a> | <a href="refunds.asp">Shipping</a>
+		</td>
+        </tr>
+      </table>
+    </td>
+    <td bgcolor="#FFFFFF"> 
+    
+    
+      <table width="158" border="0" cellspacing="10" cellpadding="0">
+        <tr> 
+          <td><img src="graphics/blank.gif" width="138" height="1"></td>
+        </tr>
+        
+        <!--
+        
+        <tr> 
+          <td> 
+            <table width="138" border="0" cellspacing="0" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td colspan="3"><img src="graphics/box_whatnew.gif" width="138" height="20"></td>
+              </tr>
+              <tr align="left" valign="top"> 
+                <td width="10" background="graphics/box_left.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+                <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif"><img src="graphics/blank.gif" width="118" height="8"><br>
+                  <span class="newsbit"><strong>Palm Pilot Event Guides</strong><br>
+                   Let your attendees have all your
+                   event info at their fingertips.
+                   Find out how Hemko can help you enhance
+                   the event experience by making
+                   your conference details 
+                   available for your attendees' palm pilots.
+                   <a href="palm.asp">More info</a> &gt;&gt;
+                   </span></td>
+                <td width="10" background="graphics/box_right.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+              </tr>
+              <tr align="left" valign="top"> 
+                <td colspan="3"><img src="graphics/box_bottom.gif" width="138" height="10"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+        
+        //-->
+        
+          <td> 
+          <br>
+            <table width="138" border="0" cellspacing="0" cellpadding="0">
+              <tr align="left" valign="top"> 
+                <td colspan="3"><img src="graphics/box_highlights.gif" width="138" height="20"></td>
+              </tr>
+              <tr align="left" valign="top"> 
+                <td width="10" background="graphics/box_left.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+                <td width="118" bgcolor="#E5EAEF" background="graphics/box_middle.gif"><img src="graphics/blank.gif" width="118" height="8"><br>
+                 
+                  
+                  <span class="newsbit"><b>Customer Story </b><br>
+                  KLA-Tencor saved a bundle with an
+                  online badge and housing system.
+                   <br><a href="customer.asp">More info</a> &gt;&gt;
+                  </span>
+                
+		<br><br>
+
+<!--
+                 <span class="newsbit"><b>Credit Card Issue?</b><br>
+					Not sure why your card was charged?
+                   <br><a href="CCinfo.asp">More info</a> &gt;&gt;
+                  </span>
+  
+
+		<br><br>
+//-->
+
+                 <span class="newsbit"><b>Online Payment</b><br>
+                Pay your EMS or ARS fee online
+                   <br><a href="payment.asp">Pay now</a> &gt;&gt;
+                  </span>
+  
+	<br><br>
+
+                 <span class="newsbit"><b>DB/C consulting</b><br>
+                 Hemko has over 25 years experience building 
+				business solutions in the DB/C language (also know as Databus or PL/B)
+                   <br><a href="databus.asp">More info</a> &gt;&gt;
+                  </span>
+
+
+                  </td>
+                <td width="10" background="graphics/box_right.gif"><img src="graphics/blank.gif" width="10" height="10"></td>
+              </tr>
+              <tr align="left" valign="top"> 
+                <td colspan="3"><img src="graphics/box_bottom.gif" width="138" height="10"></td>
+              </tr>
+            </table>
+            
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="22" background="graphics/right_bgd.gif"><img src="graphics/blank.gif" width="22" height="10"></td>
+  </tr>
+</table>
+<table width="740" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="left" valign="top"> 
+    <td width="740"><img src="graphics/bottom.gif" width="740" height="50"></td>
+  </tr>
+</table>
+</body>
+</html>
+

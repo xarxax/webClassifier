@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+	<html lang="en-GB" dir="ltr">
+	<head>
+		<!--
+            ##########################################
+            ## redWEB ApS                     		##
+            ## Blangstedgaardsvej 1                 ##
+            ## 5220 Odense SØ                       ##
+            ## Danmark                              ##
+            ## email@redweb.dk             			##
+            ## http://www.redweb.dk          		##
+            ## Dato: 2015-07-21                  ##
+            ##########################################
+        -->
+
+		<base href="http://www.robert.com/robots.txt" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="robots" content="noindex,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="msapplication-TileColor" content="#b91d47" />
+	<meta name="msapplication-TileImage" content="http://www.robert.com/templates/redcomponent/favicons/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="http://www.robert.com/templates/redcomponent/favicons/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="http://www.robert.com/templates/redcomponent/favicons/mstile-150x150.png" />
+	<meta name="msapplication-square310x310logo" content="http://www.robert.com/templates/redcomponent/favicons/mstile-310x310.png" />
+	<title>The page you requested was not found on our site</title>
+	<link href="/" rel="canonical" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon-160x160.png" rel="icon" sizes="160x160" type="image/png" />
+	<link href="http://www.robert.com/templates/redcomponent/favicons/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png" />
+	<link href="/templates/redcomponent/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/media/system/css/modal.css?102148ea3eb7a379f5f1ceaba56577c9" rel="stylesheet" type="text/css" />
+	<link href="/media/com_redslider/css/redslider.min.css" rel="stylesheet" type="text/css" />
+	<link href="/media/redslider_sections/section_standard/css/redslider.section_standard.min.css" rel="stylesheet" type="text/css" />
+	<link href="/media/redslider_sections/section_video/css/redslider.section_video.min.css" rel="stylesheet" type="text/css" />
+	<link href="/media/redcore/lib/flexslider/flexslider.min.css" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"250a2492d16c158bdc857be3e4019984","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/redcore/lib/jquery.min.js" type="text/javascript"></script>
+	<script src="/media/redcore/lib/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="/media/redcore/lib/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?102148ea3eb7a379f5f1ceaba56577c9" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?102148ea3eb7a379f5f1ceaba56577c9" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?102148ea3eb7a379f5f1ceaba56577c9" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?102148ea3eb7a379f5f1ceaba56577c9" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?102148ea3eb7a379f5f1ceaba56577c9" type="text/javascript"></script>
+	<script src="/media/com_redslider/js/redslider.min.js" type="text/javascript"></script>
+	<script src="/media/redcore/lib/flexslider/jquery.flexslider.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+			(function($){
+				$(document).ready(function () {
+					$('#redslider-94 > .carousel').flexslider({});
+				});
+			})(jQuery);
+		
+			(function($){
+				$(document).ready(function () {
+					$('#redslider-94 > .slider').flexslider({"animation":"fade","slideshow":true,"pauseOnHover":false,"slideshowSpeed":5000,"animationSpeed":1500,"directionNav":false,"controlNav":false});
+				});
+			})(jQuery);
+		
+	</script>
+
+
+<link rel="stylesheet" href="http://www.robert.com/templates/redcomponent/css/style.css?v=1.06" type="text/css" />
+<link rel="stylesheet" href="http://www.robert.com/templates/redcomponent/css/editor.css?v=1.06" type="text/css" />
+<link rel="stylesheet" href="/templates/redcomponent/wright/css/font-awesome.min.css?v=1.06" type="text/css" />
+
+
+	</head>
+	<body class="is_unknown v_unknown on_unknown b_jdefault h_jdefault id_101 home rev_1.4.1.1">
+    
+	<div class="container top">
+        <div id="top-menu" class="col-sm-9">
+            		<div class="moduletable lang-switcher">
+						<ul class="nav menu navbar-nav">
+<li class="item-154 deeper dropdown parent"><a  data-toggle="collapse" class="lang" href="#wul_5c4db16c1e4f9" >Language<b class="caret"></b></a><ul id="wul_5c4db16c1e4f9" class="dropdown-menu collapse"><li class="item-198"><a  href="http://www.robert.com/arab/" >العربية</a></li><li class="item-192"><a  href="http://roberthalal.fr/" >Français</a></li><li class="item-197"><a  href="http://roberthalal.de/" >Deutsch</a></li></ul></li></ul>
+		</div>
+	
+        </div>
+    </div>
+    <div class="container relative">
+        
+        <header id="header">
+            <div class="row clearfix">
+                <div id="logo" class="col-md-3"><a href="http://www.robert.com/" class="image"><h2>Robert.com</h2><img src="http://www.robert.com/templates/redcomponent/images/logo.png" alt="" title="" /></a></div>
+                <div class="clear"></div>
+            </div>
+            <div id="main-menu" class="col-sm-12">
+                                    
+                    <div class="wrapper-menu">
+					<nav id="menu" class="navbar navbar-default"  role="navigation">
+						<div class=""><div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+						  <span class="sr-only">Toggle navigation</span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						</button>
+					</div><div class="collapse navbar-collapse" id="nav-menu" >
+					<ul class="nav menu navbar-nav">
+<li class="item-107"><a href="/best-in-taste" >Best In Taste</a></li><li class="item-108"><a href="/100-halal" >100% Halal</a></li><li class="item-109 parent"><a  href="/products/chilled-sausages" >Robert Products</a></li><li class="item-110 parent"><a href="/delicious-recipes" >Delicious Recipes</a></li><li class="item-111 parent"><a href="/about-robert" >About Robert</a></li></ul>
+
+				</div></div></nav></div>
+                            </div>
+        </header>
+    </div>
+    <div class="container main">
+					
+			<div id="featured">
+						<div class="moduletable">
+						<div id="redslider-94" class="redslider2  flexslider rstyle1" >
+    <!-- Main slider -->
+    <div class="slider" >
+            <ul class="slides">
+                                            <li class="standard_slide">
+                    <div class="slide-img" >
+                                                    <div class="bg-img" style="background-image: url(http://www.robert.com/images/forsiden/robert-halal-food-2.jpg);"></div>
+                                            </div>
+                </li>
+                                                            <li class="standard_slide">
+                    <div class="slide-img" >
+                                                    <div class="bg-img" style="background-image: url(http://www.robert.com/images/forsiden/robert-halal-food-3.jpg);"></div>
+                                            </div>
+                </li>
+                                                            <li class="standard_slide">
+                    <div class="slide-img" >
+                                                    <div class="bg-img" style="background-image: url(http://www.robert.com/images/forsiden/robert-halal-food-4.jpg);"></div>
+                                            </div>
+                </li>
+                                                            <li class="standard_slide">
+                    <div class="slide-img" >
+                                                    <div class="bg-img" style="background-image: url(http://www.robert.com/images/forsiden/robert-halal-food-15.jpg);"></div>
+                                            </div>
+                </li>
+                                                            <li class="standard_slide">
+                    <div class="slide-img" >
+                                                    <div class="bg-img" style="background-image: url(http://www.robert.com/images/forsiden/robert-halal-food-14.jpg);"></div>
+                                            </div>
+                </li>
+                                    </ul>
+            </div>
+    <!-- End main slider -->
+
+    <!-- Thumbnails slider -->
+        <!-- End thumbnails slider -->
+</div>		</div>
+	
+			</div>
+		
+						<div id="main-content" class="row">
+			
+			
+			
+			<section class="col-md-12" id="main">
+												
+				<div id="system-message-container">
+	</div>
+<h1>Bad karma: we can't find that page!</h1>
+<p>You asked for <strong>http://www.robert.com/robots.txt</strong>, but despite our computers looking very hard, we could not find it. What happened ?</p>
+<ul>
+<li>the link you clicked to arrive here has a typo in it</li>
+<li>or somehow we removed that page, or gave it another name</li>
+<li>or, quite unlikely for sure, maybe you typed it yourself and there was a little mistake ?</li>
+</ul>
+<h4>It's not the end of everything though : you may be interested in the following pages on our site:</h4>
+<p><ul><li><a href="/reditem/itemdetail/www-google-com/humans-txt">reditem/itemdetail/www-google-com/humans-txt</a></li><li><a href="/reditem/itemdetail/http-/www-google-com/humans-txt">reditem/itemdetail/http-/www-google-com/humans-txt</a></li><li><a href="/reditem/categorydetail/www-google-com/humans-txt/2">reditem/categorydetail/www-google-com/humans-txt/2</a></li><li><a href="/reditem/itemdetail/hthttpttp-/www-google-com/humans-txt">reditem/itemdetail/hthttpttp-/www-google-com/humans-txt</a></li><li><a href="/reditem/categorydetail/http-/www-google-com/humans-txt/2">reditem/categorydetail/http-/www-google-com/humans-txt/2</a></li></ul></p>
+<p>&nbsp;</p>
+							</section>
+			
+			
+		</div>
+							</div>
+
+	
+	<div class="wrapper-footer">
+	    <div class="container">
+            <footer class="footer" id="footer" >
+									<div class="row">    <div class="module logo  hidden-xs mod_1 first no_title col-sm-3">
+                    
+
+<div class="custom"  >
+    <p style="text-align: center;"><img src="/templates/redcomponent/images/logo_small.png" /></p>
+<p style="text-align: center;">Copyright © Robert Damkjaer Ltd.<br /><a target="_blank" href="/images/firma/robert-privacy-policy.pdf"><span style="color: #ffffff;">Privacy Policy</span></a></p></div>
+                </div>
+    <div class="module robert-portrait  hidden-xs mod_2 no_title col-sm-2">
+                    
+
+<div class="custom"  >
+    <p><img src="/templates/redcomponent/images/robert-sh.png" /></p></div>
+                </div>
+    <div class="module logo visible-xs mod_3 no_title col-sm-0">
+                    
+
+<div class="custom"  >
+    <p style="text-align: center;"><img src="/templates/redcomponent/images/logo_small.png" /></p></div>
+                </div>
+    <div class="module text-block  hidden-xs mod_4 no_title col-sm-3">
+                    
+
+<div class="custom"  >
+    <h3>HISTORY OF ROBERT</h3>
+<p><span class="reditem_editor reditem_editor_1">Robert Damkjaer Ltd. is a third generation family-owned company.</span></p>
+<p><a href="/about-robert">Read more</a></p></div>
+                </div>
+    <div class="module text-block  mod_5 no_title col-sm-3">
+                    
+
+<div class="custom"  >
+    <h3>FURTHER INFORMATION</h3>
+<p>We will be pleased to send you further information about the Robert products.</p>
+<p><a href="/contact">Contact us</a></p></div>
+                </div>
+    <div class="module logo visible-xs mod_6 last no_title col-sm-0">
+                    
+
+<div class="custom"  >
+    <p style="text-align: center;">Copyright © Robert Damkjaer Ltd.</p>
+<p style="text-align: center;">Privacy Policy</p></div>
+                </div>
+</div>
+				            </footer>
+		</div>
+	</div>
+
+    
+
+	
+<script src='http://www.robert.com/templates/redcomponent/js/js.js?v=1.03' type='text/javascript'></script>
+<script src='/templates/redcomponent/wright/js/bootstrap.js?v=1.03' type='text/javascript'></script>
+<script src='/templates/redcomponent/wright/js/utils.js?v=1.03' type='text/javascript'></script>
+</body>
+	</html>

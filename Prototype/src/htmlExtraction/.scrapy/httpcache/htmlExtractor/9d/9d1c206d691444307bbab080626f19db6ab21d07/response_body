@@ -1,0 +1,32 @@
+# Check with http://tool.motoricerca.info/robots-checker.phtml
+# Crawl delay is seconds
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: Slurp
+Crawl-delay: 3600
+
+User-agent: VoilaBot*
+Crawl-delay: 43200
+
+User-agent: voilabot*
+Crawl-delay: 43200
+
+User-agent: voilabot
+Crawl-delay: 43200
+
+User-agent: voilabot beta 1.2
+Crawl-delay: 43200
+
+User-agent: Exabot
+Crawl-delay: 43200
+
+User-agent: *
+Disallow: /redirect.php
+Disallow: /contacts.php
+Disallow: /guide/ps_advertise.php
+Disallow: /vac_ads.php

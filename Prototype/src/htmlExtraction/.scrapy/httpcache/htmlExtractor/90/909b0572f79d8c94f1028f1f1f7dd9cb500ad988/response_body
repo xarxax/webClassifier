@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	KenJo Markets
+</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script type="text/javascript" src="/js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style.css" />
+
+    
+    <script type="text/javascript">
+        function RedirectToCoupon() {
+            if ("geolocation" in navigator) { //check geolocation available 
+                var options = {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 0
+                };
+                var buildUrl = function (lat, lon) {
+                    
+                    var url = 'http://offer.tobc.co/offerviewer/redirect.aspx',
+                    
+                    //var url = 'http://offer-sandbox1.tobc.co/offerviewer/redirect.aspx',
+                        propertyCode = 'kenjo_Restricted',
+                        distribService = 'sms',
+                        distribTarget = getUniqueId();
+                    url = url + '?property_code=' + propertyCode + '&distribService=' + distribService + '&distribTarget=' + distribTarget;
+                    if (lat && lon) {
+                        url += '&lat=' + lat + '&lon=' + lon;
+                    }
+                    return url;
+                }
+                //try to get user current location using getCurrentPosition() method
+                navigator.geolocation.getCurrentPosition(
+                    function success(position) {
+                        var url = buildUrl(position.coords.latitude, position.coords.longitude);
+                        location.href = url;
+                    }
+                    , function error(err) {
+                        switch (err.code) {
+                            case 1:
+                            case 2:
+                            case 3:
+                            default:
+                                //alert("Unable to determine your location.  Please refresh and try again.");
+                                var url = buildUrl();
+                                location.href = url;
+                        }
+                    }, options);
+            } else {
+                alert("Your browser doesn't support geolocation!");
+            }
+
+
+            function getUniqueId() {
+                var key = '__unique',
+                    uniqueId = getCookie('__unique');
+                if (uniqueId) {
+                    return uniqueId;
+                }
+                uniqueId = createGuid();
+                setCookie(key, uniqueId);
+                return uniqueId;
+            }
+            function createGuid() {
+                function s4() {
+                    return Math.floor((1 + Math.random()) * 0x10000)
+                        .toString(16)
+                        .substring(1);
+                }
+                return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+            }
+
+            function getCookie(key) {
+                return document.cookie.replace(new RegExp("(?:(?:^|.*;\s*)" + key + "\s*\=\s*([^;]*).*$)|^.*$"), "$1");
+            }
+
+            function setCookie(key, val) {
+                document.cookie = key + "=" + val + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            }
+        }        
+    </script>
+    
+	
+	<link rel="stylesheet" type="text/css" href="/css/bx_styles.css"/>
+	<script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="/js/jquery.bxSlider.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#slider').bxSlider({
+				mode: 'fade',
+				auto: true,
+				pager: true
+			});
+		});
+	</script>
+	
+
+</head>
+<body id="ctl00_ctl00_body" class="home">
+	<form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg0MDkyODAxNA9kFgJmD2QWAmYPZBYCAgMPFgIeBWNsYXNzBQRob21lFgICAQ9kFgQCAQ9kFgICAw8WAh4LXyFJdGVtQ291bnQCBRYKZg9kFgJmDxUDPS9jb250cm9scy92aWV3SW1hZ2UuYXNoeD90eXBlPXNsaWRlc2hvdyZJRD0xMSZ3PTk4MCZ5Y3JvcD0zNTAAAGQCAQ9kFgJmDxUDPS9jb250cm9scy92aWV3SW1hZ2UuYXNoeD90eXBlPXNsaWRlc2hvdyZJRD0xMCZ3PTk4MCZ5Y3JvcD0zNTAAAGQCAg9kFgJmDxUDPC9jb250cm9scy92aWV3SW1hZ2UuYXNoeD90eXBlPXNsaWRlc2hvdyZJRD04Jnc9OTgwJnljcm9wPTM1MAAAZAIDD2QWAmYPFQM8L2NvbnRyb2xzL3ZpZXdJbWFnZS5hc2h4P3R5cGU9c2xpZGVzaG93JklEPTcmdz05ODAmeWNyb3A9MzUwAABkAgQPZBYCZg8VAzwvY29udHJvbHMvdmlld0ltYWdlLmFzaHg/dHlwZT1zbGlkZXNob3cmSUQ9OSZ3PTk4MCZ5Y3JvcD0zNTAAAGQCAw9kFgICAQ9kFgwCAw8WAh4EVGV4dGVkAgUPFgIfAQICFgRmD2QWAmYPFQQCMTELSmFuIDgsIDIwMTgCMTEjM1JEIENoYW5jZSBMb3R0ZXJ5IGF0IEtlbkpvIE1hcmtldHNkAgIPZBYCZg8VBAIzMAxOb3YgMjIsIDIwMTcCMzAbS2VuSm8gRm91bmRhdGlvbiBSZWNvZ25pemVkZAIJDxYCHwIFVDxwPlRoZXJlIGFyZSBjdXJyZW50bHkgbm8gdXBjb21pbmcgZXZlbnRzIG9yIHByb21vdGlvbnMuIFBsZWFzZSBjaGVjayBiYWNrIHNvb24uPC9wPmQCCw8WAh8BZmQCDw8WAh8CBT88cD5UaGVyZSBhcmUgY3VycmVudGx5IG5vIHNwZWNpYWxzLiBQbGVhc2UgY2hlY2sgYmFjayBzb29uLjwvcD5kAhEPFgIfAWZkZHbopfSmBLTzSYGGsPfVU2OfKImE" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+		<div id="wrap">
+			<div id="header">
+				<div id="top">
+					<div class="floatRight" style="padding-top:5px; text-align:right; width:170px; position:relative; z-index:0;margin-bottom:-47px;">
+						<p style="margin-right:16px;"><script type="text/javascript">
+		                              					document.write(dateString());
+						</script></p>
+					</div>
+					<div class="floatLeft" style="margin-right:210px;">
+						<a href="/"><img src="/images/header/logo.jpg" alt="KenJo Markets" width="228" height="83" border="0" /></a>
+					</div>
+					<div class="floatLeft" style="margin-top:-15px;">
+						<script language="javascript" type="text/javascript">
+							function changeSlogan() {
+								var mod = 1;
+								if (document.getElementById) {
+									setInterval(changeText, 15000);
+									function changeText() {
+										var s = document.getElementById("slogan");
+										if (mod % 2 == 0) {
+											s.innerHTML = "At KenJo Markets, Everyone understands it’s “The Little Things”, that count.";
+										} else {
+											s.innerHTML = "When you see the Running Indian, we want you to think about Convenience not Inconvenience.";
+										}
+										mod++;
+									}
+								}
+							}
+							window.onload = changeSlogan;
+						</script>
+						<h3 id="slogan" style="width:150px;">At KenJo Markets, Everyone understands it’s “The Little Things”, that count.</h3>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>
+						<li id="homeLI"><a href="/">Home</a></li>
+						<li id="locationsLI"><a href="/locations.aspx">Locations</a></li>
+						<li id="careersLI"><a href="/careers.aspx">Careers</a></li>
+						<li id="specialsLI"><a href="/specials/">Specials</a></li>
+						<li id="affiliatesLI"><a href="/affiliates.aspx">Affiliates</a></li>
+						<li id="contactLI"><a href="/contact.aspx">Contact Us</a></li>
+						<li id="rewardLI" ><a href="/loyalty/">KenJo Rewards</a></li>
+                        <li id="couponLI" class="last"><a href="#" onclick="RedirectToCoupon()">Coupons</a></li>
+					</ul>
+				</div>
+				
+	<div id="slider">
+		
+		
+				<div><img src="/controls/viewImage.ashx?type=slideshow&ID=11&w=980&ycrop=350" alt="" title="" /></div>
+			
+				<div><img src="/controls/viewImage.ashx?type=slideshow&ID=10&w=980&ycrop=350" alt="" title="" /></div>
+			
+				<div><img src="/controls/viewImage.ashx?type=slideshow&ID=8&w=980&ycrop=350" alt="" title="" /></div>
+			
+				<div><img src="/controls/viewImage.ashx?type=slideshow&ID=7&w=980&ycrop=350" alt="" title="" /></div>
+			
+				<div><img src="/controls/viewImage.ashx?type=slideshow&ID=9&w=980&ycrop=350" alt="" title="" /></div>
+			
+	</div>
+
+			</div>
+			<div id="content">
+				
+	
+	<div id="grayBG">
+		<div class="col-one3rd">
+			<div class="pad">
+				<h2>News</h2>
+				<div class="floatLeft">
+					<p><a href="/news/"><img src="/images/icons/news.jpg" alt="News" width="76" height="64" /></a></p>
+					<p class="more"><a href="/news/">more news</a></p>
+				</div>
+				<div style="margin-left:95px;">
+					
+					
+					
+							<h4><a href="/news/?id=11">Jan 8, 2018</a></h4>
+							<p><a href="/news/?id=11">3RD Chance Lottery at KenJo Markets</a></p>
+						<hr />
+							<h4><a href="/news/?id=30">Nov 22, 2017</a></h4>
+							<p><a href="/news/?id=30">KenJo Foundation Recognized</a></p>
+						
+				</div>
+			</div>
+		</div>
+		<div class="col-one3rd">
+			<div class="pad">
+				<h2>Events / Promotions</h2>
+				<div class="floatLeft">
+					<p><a href="/events/"><img src="/images/icons/events.jpg" alt="Events / Promotions" width="76" height="64" /></a></p>
+					<p class="more"><a href="/events/">more events</a></p>
+				</div>
+				<div style="margin-left:105px;">
+					
+					<p>There are currently no upcoming events or promotions. Please check back soon.</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-one3rd">
+			<div class="pad">
+				<h2>Monthly Specials</h2>
+				<div class="floatLeft" style="margin-right:0;">
+					<p><a href="/specials/"><img src="/images/icons/specials.jpg" alt="Monthly Specials" width="76" height="64" /></a></p>
+					<p class="more"><a href="/specials/">more specials</a></p>
+				</div>
+				<div style="margin-left:105px;">
+					
+					<p>There are currently no specials. Please check back soon.</p>
+					
+				</div>
+			</div>
+		</div>
+		<p class="clear"></p>
+	</div>
+	<div class="pad">
+		<img src="/images/Kenjo-Store.jpg" width="250" height="139" class="floatLeft brd" alt="Kenjo Markets" />
+		<h2><span class="orange large">Company</span> Profile</h2>
+		<p>KenJo Inc. began in 1977 with its first market in Pigeon Forge, Tennessee. The company has since expanded to 38 locations located throughout East Tennessee, with the headquarters located in Maryville, Tennessee. KenJo Markets features Marathon, Shell, Exxon, Mobil and Citgo gasoline products, and convenient store merchandise; including beer, cigarettes, dairy products, candy, and soft drinks. Each location also carries deli food items such as sandwiches, hotdogs, and our specialty, The Super Grandaddy Sandwich. Many of our locations are co-branded with fast food restaurants, including Hardee's, Buddy's Bar-b-q, Blimpie Subs & Salads, and TCBY Treats.</p>
+		<div class="alignCenter">
+			<h3 style="clear:both;" class="orange">Mission Statement:</h3>
+			<h4>To provide Quality Products, Competitive Prices, and Fast, Friendly, and Efficient Service.</h4>
+		</div>
+	</div>
+
+
+				<div class="clear"></div>
+			</div>
+			<div id="footer">
+				<div class="pad">
+					<a href="http://www.saratogaus.com/internet/" target="_blank"><img src="http://www.saratogaus.com/images/logo/whiteonDkGray.gif" alt="Website and hosting by Saratoga Technologies, Inc." border="0" style="float:right; margin:15px 0 0 0;" /></a>
+					<img src="/images/icons/envelope.jpg" alt="" style="margin:10px 20px 5px 0; float:left;" />
+					<p><span class="green">E-mail:</span> <a href="mailto:info@downeyoil.com">info@downeyoil.com</a></p>
+					<p><span class="green">Company Address:</span> <span class="gray">P.O. Box 4848 Maryville, TN  37802</span></p>
+					<p>Copyright &copy; <script type="text/javascript">document.write(yearString(2009))</script> Downey Oil. All Rights Reserved. <a href="/privacy.aspx">Privacy Policy</a></p>
+					<ul>
+						<li class="first"><a href="/">Home</a></li>
+						<li><a href="/locations.aspx">Locations</a></li>
+						<li><a href="/careers.aspx">Careers</a></li>
+						<li><a href="/specials/">Specials</a></li>
+						<li><a href="/affiliates.aspx">Affiliates</a></li>
+						<li><a href="/contact.aspx">Contact Us</a></li>
+						<li><a href="/loyalty/">KenJo Rewards</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+
+					var _gaq = _gaq || [];
+					_gaq.push(['_setAccount', 'UA-30822023-1']);
+					_gaq.push(['_trackPageview']);
+
+					(function () {
+						var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					})();
+				</script>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

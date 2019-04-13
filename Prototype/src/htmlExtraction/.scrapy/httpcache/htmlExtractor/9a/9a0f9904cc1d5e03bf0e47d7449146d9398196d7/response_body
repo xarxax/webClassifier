@@ -1,0 +1,77 @@
+# robot exclusion for site
+# The file consists of one or more records separated by one or more blank lines
+
+User-agent: *
+# Disallow: /dev
+# Disallow: /c/*/dev
+Disallow: /w/
+Crawl-delay: 30
+
+User-agent: AhrefsBot
+Disallow: / 
+
+### XoviBot
+User-agent: XoviBot
+Disallow: /
+
+### SemrushBot
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: SemrushBot-SI
+Disallow: /
+
+#Baiduspider
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-image
+Disallow: /
+
+User-agent: Baiduspider-video
+Disallow: /
+
+User-agent: Baiduspider-news
+Disallow: /
+
+User-agent: Baiduspider-favo
+Disallow: /
+
+User-agent: Baiduspider-cpro
+Disallow: /
+
+User-agent: Baiduspider-ads
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Yahoo! Slurp
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: OrangeBot
+Disallow: /
+
+### UA: Contacts Crawler (+http://www.scrapinghub.com)
+# Host: hetzner.de
+# 138.201.0.0 - 138.201.255.255
+# 138.201.0.0/16
+###
+
+User-agent: scrapybot
+Disallow: /
+
+User-agent: Contacts-Crawler
+Disallow: /
+
+#User-agent:
+#Disallow: /

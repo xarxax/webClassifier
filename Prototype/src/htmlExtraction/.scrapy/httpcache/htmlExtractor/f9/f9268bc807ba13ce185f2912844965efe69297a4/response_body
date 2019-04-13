@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="ハイテック株式会社。ハム・ソーセージ充填システムの開発・製造から販売までを手がける国内シェアNO.1企業です。" />
+<meta name="keywords" content="ハイテック株式会社,ソーセージ,ハム,sausage,ham,stuffing,casing,linking,hanging,充填システム,横浜," />
+<title>ハイテック株式会社　--ハム・ソーセージ充填システム 開発、販売--</title>
+
+<!--jQuery Mega Drop Down Menu-->
+<link href="css/dcmegamenu.css" rel="stylesheet" type="text/css" />
+<!--ページ全体-->
+<link rel="stylesheet" type="text/css" href="base.css" />
+
+<!--jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!--jQuery Mega Drop Down Menu-->
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='js/jquery.dcmegamenu.1.3.3.js'></script>
+
+<script type="text/javascript">
+	$(document).ready(function($){
+		/* jQuery Mega Drop Down Menu */
+		$('#mega-menu-1').dcMegaMenu({
+			rowItems: '3',
+			effect: 'fade',
+			speed: 'fast'
+		});
+		});
+
+</script>
+
+<!--jQuery wideslider-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function(){
+    $setElm = $('.wideslider');
+    baseWidth = 940;
+    baseHeight = 340;
+    minWidth = 320;
+    slideSpeed = 700;
+    delayTime = 5000;
+    easing = 'linear';
+    autoPlay = '1'; // notAutoPlay = '0'
+    flickMove = '1'; // notFlick = '0'
+    btnOpacity = 0.5;
+    pnOpacity = 0.5;
+    ua = navigator.userAgent;
+    $(window).load(function(){
+        $setElm.find('img').css({display:'block'});
+        $setElm.each(function(){
+            targetObj = $(this);
+            targetObj.children('ul').wrapAll('<div class="wideslider_base"><div class="wideslider_wrap"></div><div class="slider_prev"></div><div class="slider_next"></div></div>');
+            var findBase = targetObj.find('.wideslider_base'),
+            findWrap = targetObj.find('.wideslider_wrap'),
+            findPrev = targetObj.find('.slider_prev'),
+            findNext = targetObj.find('.slider_next');
+            var pagination = $('<div class="pagination"></div>');
+            targetObj.append(pagination);
+            var baseList = findWrap.find('li'),
+            baseListLink = findWrap.find('li').children('a'),
+            baseListCount = findWrap.find('li').length;
+            baseList.each(function(i){
+                $(this).css({width:(baseWidth),height:(baseHeight)});
+                pagination.append('<a href="javascript:void(0);" class="pn'+(i+1)+'"></a>');
+            });
+            var findPagi = targetObj.find('.pagination');
+            setSlide();
+            function setSlide(){
+                windowWidth = $(window).width();
+                findList = findWrap.find('li');
+                setParts = (findBase,findWrap,findPrev,findNext,$setElm);
+                setWrapLeft = parseInt(findWrap.css('left'));
+                setlistWidth = findList.find('img').width();
+                setLeft = setWrapLeft / setlistWidth;
+                if(windowWidth < baseWidth){
+                    if(windowWidth > minWidth){
+                        findList.css({width:(windowWidth)});
+                        var reImgHeight = findList.find('img').height();
+                        findList.css({height:(reImgHeight)});
+                        setParts.css({height:(reImgHeight)});
+                    } else if(windowWidth <= minWidth){
+                        findList.css({width:(minWidth)});
+                        var reImgHeight = findList.find('img').height();
+                        findList.css({height:(reImgHeight)});
+                        setParts.css({height:(reImgHeight)});
+                    }
+                } else if(windowWidth >= baseWidth){
+                    findList.css({width:(baseWidth),height:(baseHeight)});
+                    setParts.css({height:(baseHeight)});
+                }
+ 
+                setWidth = findList.find('img').width();
+                setHeight = findList.find('img').height();
+                baseWrapWidth = (setWidth)*(baseListCount);
+ 
+                ulCount = findWrap.find('ul').length;
+                if(ulCount == 1){
+                    var makeClone = findWrap.children('ul');
+                    makeClone.clone().prependTo(findWrap);
+                    makeClone.clone().appendTo(findWrap);
+                    findWrap.children('ul').eq('1').addClass('mainList');
+                    var mainList = findWrap.find('.mainList').children('li');
+                    mainList.eq('0').addClass('mainActive')
+ 
+                    allListCount = findWrap.find('li').length;
+                }
+                allLWrapWidth = (setWidth)*(allListCount),
+                posAdjust = ((windowWidth)-(setWidth))/2;
+                findBase.css({left:(posAdjust),width:(setWidth),height:(setHeight)});
+                findPrev.css({left:-(posAdjust),width:(posAdjust),height:(setHeight),opacity:(btnOpacity)});
+                findNext.css({right:-(posAdjust),width:(posAdjust),height:(setHeight),opacity:(btnOpacity)});
+                findWrap.css({width:(allLWrapWidth),height:(setHeight)});
+                findWrap.children('ul').css({width:(baseWrapWidth),height:(setHeight)});
+                posResetNext = -(baseWrapWidth)*2,
+                posResetPrev = -(baseWrapWidth)+(setWidth);
+                adjLeft = setWidth * setLeft;
+                findWrap.css({left:(adjLeft)});
+            }
+            findWrap.css({left:-(baseWrapWidth)});
+            var pnPoint = pagination.children('a'),
+            pnFirst = pagination.children('a:first'),
+            pnLast = pagination.children('a:last'),
+            pnCount = pagination.children('a').length;
+
+            if(ua.search(/iPhone/) != -1 || ua.search(/iPad/) != -1 || ua.search(/iPod/) != -1 || ua.search(/Android/) != -1){
+                pnPoint.css({opacity:(pnOpacity)});
+            } else {
+                pnPoint.css({opacity:(pnOpacity)}).hover(function(){
+                    $(this).stop().animate({opacity:'1'},300);
+                }, function(){
+                    $(this).stop().animate({opacity:(pnOpacity)},300);
+                });
+            }
+ 
+            pnFirst.addClass('active');
+            pnPoint.click(function(){
+                if(autoPlay == '1'){clearInterval(wsSetTimer);}
+                var setNum = pnPoint.index(this),
+                moveLeft = ((setWidth)*(setNum))+baseWrapWidth;
+                findWrap.stop().animate({left: -(moveLeft)},slideSpeed,easing);
+                pnPoint.removeClass('active');
+                $(this).addClass('active');
+                activePos();
+                if(autoPlay == '1'){wsTimer();}
+            });
+ 
+            if(autoPlay == '1'){wsTimer();}
+ 
+            function wsTimer(){
+                wsSetTimer = setInterval(function(){
+                    findNext.click();
+                },delayTime);
+            }
+            findNext.click(function(){
+                findWrap.not(':animated').each(function(){
+                    if(autoPlay == '1'){clearInterval(wsSetTimer);}
+                    var posLeft = parseInt($(findWrap).css('left')),
+                    moveLeft = ((posLeft)-(setWidth));
+                    findWrap.stop().animate({left:(moveLeft)},slideSpeed,easing,function(){
+                        var adjustLeft = parseInt($(findWrap).css('left'));
+                        if(adjustLeft <= posResetNext){
+                            findWrap.css({left: -(baseWrapWidth)});
+                        }
+                    });
+ 
+                    var pnPointActive = pagination.children('a.active');
+                    pnPointActive.each(function(){
+                        var pnIndex = pnPoint.index(this),
+                        listCount = pnIndex+1;
+                        if(pnCount == listCount){
+                            pnPointActive.removeClass('active');
+                            pnFirst.addClass('active');
+                        } else {
+                            pnPointActive.removeClass('active').next().addClass('active');
+                        }
+                    });
+                    activePos();
+ 
+                    if(autoPlay == '1'){wsTimer();}
+                });
+            }).hover(function(){
+                $(this).stop().animate({opacity:((btnOpacity)+0.1)},100);
+            }, function(){
+                $(this).stop().animate({opacity:(btnOpacity)},100);
+            });
+ 
+            findPrev.click(function(){
+                findWrap.not(':animated').each(function(){
+                    if(autoPlay == '1'){clearInterval(wsSetTimer);}
+ 
+                    var posLeft = parseInt($(findWrap).css('left')),
+                    moveLeft = ((posLeft)+(setWidth));
+                    findWrap.stop().animate({left:(moveLeft)},slideSpeed,easing,function(){
+                        var adjustLeft = parseInt($(findWrap).css('left')),
+                        adjustLeftPrev = (posResetNext)+(setWidth);
+                        if(adjustLeft >= posResetPrev){
+                            findWrap.css({left: (adjustLeftPrev)});
+                        }
+                    });
+ 
+                    var pnPointActive = pagination.children('a.active');
+                    pnPointActive.each(function(){
+                        var pnIndex = pnPoint.index(this),
+                        listCount = pnIndex+1;
+                        if(1 == listCount){
+                            pnPointActive.removeClass('active');
+                            pnLast.addClass('active');
+                        } else {
+                            pnPointActive.removeClass('active').prev().addClass('active');
+                        }
+                    });
+                    activePos();
+ 
+                    if(autoPlay == '1'){wsTimer();}
+                });
+            }).hover(function(){
+                $(this).stop().animate({opacity:((btnOpacity)+0.1)},100);
+            }, function(){
+                $(this).stop().animate({opacity:(btnOpacity)},100);
+            });
+ 
+            function activePos(){
+                var posActive = findPagi.find('a.active');
+                posActive.each(function(){
+                    var posIndex = pnPoint.index(this),
+                    setMainList = findWrap.find('.mainList').children('li');
+                    setMainList.removeClass('mainActive').eq(posIndex).addClass('mainActive');
+                });
+            }
+ 
+            $(window).on('resize',function(){
+                if(autoPlay == '1'){clearInterval(wsSetTimer);}
+                setSlide();
+                if(autoPlay == '1'){wsTimer();}
+            }).resize();
+ 
+            if(flickMove == '1'){
+                var isTouch = ('ontouchstart' in window);
+                findWrap.on(
+                    {'touchstart mousedown': function(e){
+                        if(findWrap.is(':animated')){
+                            e.preventDefault();
+                        } else {
+                            if(autoPlay == '1'){clearInterval(wsSetTimer);}
+                            if(!(ua.search(/iPhone/) != -1 || ua.search(/iPad/) != -1 || ua.search(/iPod/) != -1 || ua.search(/Android/) != -1)){
+                                e.preventDefault();
+                            }
+                            this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
+                            this.leftBegin = parseInt($(this).css('left'));
+                            this.left = parseInt($(this).css('left'));
+                            this.touched = true;
+                        }
+                    },'touchmove mousemove': function(e){
+                        if(!this.touched){return;}
+                        e.preventDefault();
+                        this.left = this.left - (this.pageX - (isTouch ? event.changedTouches[0].pageX : e.pageX) );
+                        this.pageX = (isTouch ? event.changedTouches[0].pageX : e.pageX);
+                        $(this).css({left:this.left});
+                    },'touchend mouseup mouseout': function(e){
+                        if (!this.touched) {return;}
+                        this.touched = false;
+ 
+                        var setThumbLiActive = pagination.children('a.active'),
+                        listWidth = parseInt(baseList.css('width')),leftMax = -((listWidth)*((baseListCount)-1));
+ 
+                        if(((this.leftBegin)-30) > this.left && (!((this.leftBegin) === (leftMax)))){
+                            $(this).stop().animate({left:((this.leftBegin)-(listWidth))},slideSpeed,easing,function(){
+                                var adjustLeft = parseInt($(findWrap).css('left'));
+                                if(adjustLeft <= posResetNext){
+                                    findWrap.css({left: -(baseWrapWidth)});
+                                }
+                            });
+ 
+                            setThumbLiActive.each(function(){
+                                var pnIndex = pnPoint.index(this),
+                                listCount = pnIndex+1;
+                                if(pnCount == listCount){
+                                    setThumbLiActive.removeClass('active');
+                                    pnFirst.addClass('active');
+                                } else {
+                                    setThumbLiActive.removeClass('active').next().addClass('active');
+                                }
+                            });
+                            activePos();
+                        } else if(((this.leftBegin)+30) < this.left && (!((this.leftBegin) === 0))){
+                            $(this).stop().animate({left:((this.leftBegin)+(listWidth))},slideSpeed,easing,function(){
+                                var adjustLeft = parseInt($(findWrap).css('left')),
+                                adjustLeftPrev = (posResetNext)+(setWidth);
+                                if(adjustLeft >= posResetPrev){
+                                    findWrap.css({left: (adjustLeftPrev)});
+                                }
+                            });
+                            setThumbLiActive.each(function(){
+                                var pnIndex = pnPoint.index(this),
+                                listCount = pnIndex+1;
+                                if(1 == listCount){
+                                    setThumbLiActive.removeClass('active');
+                                    pnLast.addClass('active');
+                                } else {
+                                    setThumbLiActive.removeClass('active').prev().addClass('active');
+                                }
+                            });
+                            activePos();
+                        } else {
+                            $(this).stop().animate({left:(this.leftBegin)},slideSpeed,easing);
+                        }
+                        compBeginLeft = this.leftBegin;
+                        compThisLeft = this.left;
+                        baseListLink.click(function(e){
+                            if(!(compBeginLeft == compThisLeft)){
+                                e.preventDefault();
+                            }
+                        });
+                        if(autoPlay == '1'){wsTimer();}
+                    }
+                });
+            }
+            setTimeout(function(){setSlide();},500);
+        });
+    });
+});
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header">
+
+      <h1><a href="http://www.hitec-jp.com/"><img src=jpg/logo02.jpg alt="ハイテック株式会社" width="155" height="40"></a></h1>
+
+
+ 	<div id="hnav">
+ 
+      <ul>
+        <li><a href="http://www.hitec-jp.com/index.html"><img src="gif/navi_home.gif" width="60" height="10"  alt="ホーム"></a></li>
+        <li><a href="http://www.hitec-jp.com/contactus/sitemap.html"><img src="gif/navi_sitemap.gif" width="90" height="10"  alt="サイトマップ"></a></li>
+        <li><a href="http://www.hitec-jp.com/en/index.html" target="_blank"><img src="gif/navi_english.gif" width="80" height="10"  alt="ENGLISH"></a></li>
+        <li><a href="http://www.hitec-jp.com/cn/index.html" target="_blank"><img src="gif/navi_chinese.gif" width="60" height="10"  alt="CHINESE"></a></li>
+        <!--<li><img src="png/null.png" width="22" height="14"  alt="日本の国旗"/></li>
+        <li><a href="http://www.hitec-jp.com/"><img src="png/jp.png" width="22" height="14"  alt="日本の国旗"/></a></li>
+        <li><a href="http://www.hitec-usa.com/" target="_blank"><img src="png/us.png" width="22" height="14"  alt="アメリカの国旗"/></a></li>
+        <li><a href="http://hitec-th.com/" target="_blank"><img src="png/th.png" width="22" height="14"  alt="タイランドの国旗"/></a></li>
+        <li><a href="http://www.hitec-cn.com/" target="_blank"><img src="png/cn.png" width="22" height="14"  alt="中国の国旗"/></a></li>-->
+      </ul>
+    </div><!--/hnav-->
+
+    </div><!--/header-->	
+
+
+	<!--メガメニュー-->
+	<ul id="mega-menu-1" class="mega-menu">
+		<li>
+			<a href="#">会社概要</a>
+                        <ul>
+				<li><a href="http://www.hitec-jp.com/company/index.html">会社概要</a></li>
+				<li><a href="http://www.hitec-jp.com/company/greeting.html">社長あいさつ</a></li>
+				<li><a href="http://www.hitec-jp.com/company/philosophy.html">企業理念</a></li>
+				<li><a href="http://www.hitec-jp.com/company/history.html">沿革</a></li>
+				<li><a href="http://www.hitec-jp.com/company/recruitment.html">人材募集</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">製品一覧</a>
+			<ul>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a1">全ケーシングソーセージ<br>真空高速定寸定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/vacuumlinkwel.html">バキューム　リンクウェル／<br>バキューム　リンクウェル-L</a></li>						
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a2">全ケーシングソーセージ<br>高速定寸定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/linkwel.html">リンクウェル／リンクウェル-L</a></li>
+						<li><a href="http://www.hitec-jp.com/product/linkwel-x.html">リンクウェル-X／リンクウェル-XL</a></li>
+						<li><a href="http://www.hitec-jp.com/product/linkwel-g2.html">リンクウェル-G2</a></li>						
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a3">天然腸ソーセージ<br>高速定寸定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/machwel.html">マックウェル</a></li>						
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a3">ソーセージ高速定寸定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/machwel-revo.html">マックウェル　リボルバー</a></li>
+						<li><a href="http://www.hitec-jp.com/product/machwel-revo-colla.html">マックウェル　リボルバー<br>コラーゲン自動供給装置付き</a></li>						
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a4">ソーセージ高速定寸充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/machwel-m3.html">マックウェル　マークⅢ</a></li>						
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a5">真空定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/stuffwel50.html">スタッフウェル 50</a></li>
+						<li><a href="http://www.hitec-jp.com/product/stuffwel219.html">スタッフウェル 219</a></li>
+						<li><a href="http://www.hitec-jp.com/product/stuffwel222.html">スタッフウェル 222</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a6">ソーセージ高速自動充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/m10m20.html">HITEC M-10／HITEC M-20</a></li>
+						<li><a href="http://www.hitec-jp.com/product/m10xm20x.html">HITEC M-10X／HITEC M-20X</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a7">全自動ソーセージ<br>ピーリングマシン</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/sabre-20.html">セーバー 20</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a8">ハム定量充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/hamler-720.html">ハムラー 720</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a9">真空原木充填機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/vacuumhamler-1320.html">バキュームハムラー 1320</a></li>
+					</ul>
+				</li>
+                                <li><a href="http://www.hitec-jp.com/product/index.html#a10">食品移送ポンプ</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/sps-120v.html">SPS-120V</a></li>
+						<li><a href="http://www.hitec-jp.com/product/sps-200v.html">SPS-200V</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a11">定圧装置</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/eq-6.html">EQ-6V／EQ-12V</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html#a12">糸縛り機</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/product/tyingmachine.html">糸縛り機</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/product/index.html">製品一覧</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/catalog/index.html">カタログ ダウンロード</a></li>
+						<li><a href="http://www.hitec-jp.com/product/index.html">製品一覧</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.hitec-jp.com/info/index.html">製品に関するお知らせ</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/info/index.html">製品に関する重要なお知らせ</a></li>
+						<li><a href="http://www.hitec-jp.com/support/index.html">新機能に関するお知らせ</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+　　　　　　　  <li>
+			<a href="#">資材調達</a>
+                        <ul>
+				<li><a href="http://www.hitec-jp.com/procure/index.html">基本方針</a></li>
+				<li><a href="http://www.hitec-jp.com/procure/flow.html">資材調達の流れ</a></li>
+				<li><a href="http://www.hitec-jp.com/procure/entry.html">エントリー</a></li>
+			</ul>
+		</li>
+　　　　　　　  <li>
+			<a href="#">ニュース</a>
+                        <ul>
+				<li><a href="http://www.hitec-jp.com/news/index.html">ニュース一覧</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2018.html">2018年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2017.html">2017年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2016.html">2016年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2015.html">2015年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2014.html">2014年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2013.html">2013年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2012.html">2012年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2011.html">2011年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2010.html">2010年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2009.html">2009年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2008.html">2008年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2007.html">2007年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2006.html">2006年</a></li>
+				<li><a href="http://www.hitec-jp.com/news/2005.html">～2005年</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">海外代理店</a>
+            <ul>
+
+				<li><a href="#">北米・南米地域</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/agent/america.html">アメリカ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/america.html">カナダ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/brasil.html">ブラジル</a></li>
+				            <!--<li><a href="http://www.hitec-jp.com/agent/chile.html">チリ</a></li>-->
+						<li><a href="http://www.hitec-jp.com/agent/mexico.html">メキシコ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/venezuela.html">ベネズエラ</a></li>
+                                                <li><a href="http://www.hitec-jp.com/agent/argentina.html">アルゼンチン</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">グァテマラ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">ホンジュラス</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">エル サルバドル</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">ニカラグア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">コスタリカ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southamerica.html">パナマ</a></li>						
+					</ul>
+				</li>
+
+				<li><a href="#">欧州・アフリカ地域</a>
+					<ul>
+				            <!--<li><a href="http://www.hitec-jp.com/agent/finland.html">フィンランド</a></li>-->
+						<li><a href="http://www.hitec-jp.com/agent/france.html">フランス</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/greece.html">ギリシャ</a></li>
+				            <!--<li><a href="http://www.hitec-jp.com/agent/romania.html">ルーマニア</a></li>-->
+						<li><a href="http://www.hitec-jp.com/agent/turkey.html">トルコ</a></li>
+					    <!--<li><a href="http://www.hitec-jp.com/agent/spain.html">スペイン</a></li>-->
+						<li><a href="http://www.hitec-jp.com/agent/russia.html">ロシア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/lithuania.html">リトアニア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/lithuania.html">ラトビア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/lithuania.html">エストニア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/southafrica.html">南アフリカ</a></li>						
+					</ul>
+				</li>
+
+				<li><a href="#">アジア・オセアニア地域</a>
+					<ul>
+						<li><a href="http://www.hitec-jp.com/agent/thailand.html">タイ</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/qingdao.html">中国</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/taiwan.html">台湾</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/korea.html">韓国</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/philippines.html">フィリピン</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/malaysia.html">マレーシア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/indonesia.html">インドネシア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/papua_new_guinea.html">パプアニューギニア</a></li>
+						<li><a href="http://www.hitec-jp.com/agent/australia.html">オーストラリア</a></li>
+					        <li><a href="http://www.hitec-jp.com/agent/newzealand.html">ニュージーランド</a></li>						
+					</ul>
+				</li>
+				<li><a href="#">海外代理店一覧</a>
+                                        <ul>
+						<li><a href="http://www.hitec-jp.com/agent/index.html">海外代理店一覧</a></li>						
+					</ul></li>
+
+			</ul>
+		</li>
+                <li>
+			<a href="#">お問合せ</a>
+                        <ul>
+				<li><a href="http://www.hitec-jp.com/contactus/index.html">お問合せ</a></li>
+				<li><a href="http://www.hitec-jp.com/contactus/sitemap.html">サイトマップ</a></li>
+			</ul>
+		</li>
+	</ul>
+<!--/メガメニュー-->
+
+
+
+	<div id="breadcrumb" >
+       <!-- HOME>slider インデックス以外のページに使うなり♪ -->
+	</div><!--/Breadcrumb-->
+</div><!--/wrapper-->
+
+
+
+<div id="wrapper2">
+
+
+	<div class="wideslider">
+		<ul>
+			<li><a href="#1"><img src="slider/no1.jpg" alt="" /></a></li>
+			<li><a href="http://www.hitec-jp.com/product/vacuumlinkwel.html"><img src="slider/no2.jpg" alt="バキューム リンクウェル" /></a></li>
+			<li><a href="http://www.hitec-jp.com/product/sabre-20.html"><img src="slider/no3.jpg" alt="セーバー20" /></a></li>
+			<li><a href="http://www.hitec-jp.com/product/sps-120v.html"><img src="slider/no4.jpg" alt="SPS-120V" /></a></li>
+
+			<!--<li><a href="#2"><img src="slider/no2.jpg" alt="" /></a></li>-->
+			<!--<li><a href="#3"><img src="slider/no3.jpg" alt="" /></a></li>-->
+			<!--<li><a href="#4"><img src="slider/no4.jpg" alt="" /></a></li>-->
+			<!--<li><a href="#5"><img src="slider/no5.jpg" alt="" /></a></li>-->
+			<!--<li><a href="#6"><img src="slider/no6.jpg" alt="" /></a></li>-->
+			<!--<li><a href="#9"><img src="slider/no9.jpg" alt="" /></a></li>-->
+		</ul>
+	</div><!--/.wideslider-->
+
+
+
+
+
+</div><!--/wrapper2-->
+
+
+
+
+
+
+
+<div id="wrapper3">
+    
+	<div id="btitle" ><!--各INDEXへ-->
+		<ul>
+			<!--<li><a href="contactus/index.html" class="hover_img2"><img src="jpg/index_contactus.jpg" width="220" height="100"  alt="お問合せ" class="hover_img1"/></a></li>-->
+			<li><a href="news/index.html" class="hover_img2"><img src="jpg/index_news.jpg" width="220" height="100"  alt="ニュース" class="hover_img1"/></a></li>
+			<li><a href="product/index.html" class="hover_img2"><img src="jpg/index_product.jpg" width="220" height="100"  alt="製品一覧" class="hover_img1"/></a></li>
+                        <li><a href="http://www.tenji.tv/contents/21266/"target="_blank" class="hover_img2"><img src="jpg/index_internet-tenjikai.jpg" width="220" height="100"  alt="インターネット展示会" class="hover_img1"/></a></li>
+                        <li><a href="catalog/index.html" class="hover_img2"><img src="jpg/index_catalog.jpg" width="220" height="100"  alt="カタログダウンロード" class="hover_img1"/></a></li>             
+               
+		</ul>
+
+
+	</div><!--各INDEXへ -->
+
+
+
+
+  <div id="bulletinboard" >
+    	<h2><img src="jpg/news01_bg_up.jpg" width="700" height="40"  alt="news"/></h2>
+
+	  <ul class="ul_news01">
+
+<li>2019.1.15</li>
+              <li class="li_news01"><a href="http://www.foodpackthailand.com/en/"target="_blank"><img src="jpg/foodpackasia_2019.jpg" border="0" width="468" height="82" alt="FOOD PACK ASIA 2019" align=""></a><br>
+『 FOOD PACK ASIA 2019 』に出展いたします。詳しくは<a href="http://www.foodpackthailand.com/en/"target="_blank">【公式HP】</a>をご覧ください。<br>
+○会期：2019年2月13日(水)～2月16日(土)　○会場：タイ（バンコク）</li>
+
+<li>2019.1.8</li>
+              <li class="li_news01"><a href="http://www.ippexpo.org/"target="_blank"><img src="jpg/ippexpo2019_banner.jpg" border="0" width="468" height="78" alt="2019 IPPE" align=""></a><br>
+『 2019 IPPE 』に出展いたします。詳しくは<a href="http://www.ippexpo.org/"target="_blank">【公式HP】</a>をご覧ください。<br>
+○会期：2019年2月12日(火)～2月14日(金)　○会場：アメリカ（アトランタ）</li>
+
+<li>2019.1.7</li>
+              <li class="li_news01"><a href="http://www.mobacshow.com/index.html"target="_blank"><img src="jpg/mobacshow2019_banner.jpg" border="0" width="458" height="122" alt="MOBAC SHOW 2019" align=""></a><br>
+『 MOBAC SHOW 2019 』に出展いたします。詳しくは<a href="http://www.mobacshow.com/index.html"target="_blank">【公式HP】</a>をご覧ください。<br>
+○会期：2019年2月20日(水)～2月23日(土)　○会場：幕張メッセ</li>
+
+<li>2018.12.6</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_12">タイの子会社「HITEC FOOD EQUIPMENT CO., LTD.」が事務所を移転しました。</a></li>
+
+<!--<li>2018.10.22</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_11">『 ALLPACK INDONESIA 2018 』に出展しました。</a></li>
+
+<li>2018.10.15</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_10">『 AGROPRODMASH 2018 』に出展しました。</a></li>
+
+<li>2018.10.1</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_9">『 SOUZAI JAPAN 2018 』に出展しました。</a></li>
+
+<li>2018.09.25</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_8">『 CIMIE 2018 』に出展しました。</a></li>
+
+<li>2018.06.20</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_7">『 ProPak Asia 2018 』に出展しました。</a></li>
+
+<li>2018.06.20</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_6">『 FOOMA JAPAN 2018 国際食品工業展 』に出展しました。ご来場ありがとうございました。</a></li>
+
+<li>2018.06.19</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_5">HITEC FOOD EQUIPMENT CO.,LTD. が、『Food Focus Thailand』に掲載されました。</a></li>
+
+<li>2018.05.08</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_4">『 Food and Hotel Asia 2018（FHA 2018）』に出展しました。</a></li>
+
+<li>2018.04.16</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_3">『 第43回食肉産業展2018 』に出展しました。</a></li>
+
+<li>2018.03.13</li>
+              <li class="li_news01">グリス（BEL-RAY NO-TOX CLEAR GREASE No.2）の販売価格を改定させていただくことになりました。
+                         詳しくは<a href="http://www.hitec-jp.com/info/info_6.html">『製品に関する重要なお知らせ』</a>をご覧ください。</a></li>
+
+<li>2018.03.05</li>
+              <li class="li_news01"><a href="http://www.hitec-jp.com/news/2018.html#2018_2">HITEC FOOD EQUIPMENT CO.,LTD. が、『ASIA MARKET REVIEW』に掲載されました。</a></li>
+
+<li>2018.02.26</li>
+              <li class="li_news01">出張修理費用につきまして、価格を改定をさせていただくことになりました。<br>
+                         詳しくは<a href="http://www.hitec-jp.com/info/info_5.html">『製品に関する重要なお知らせ』</a>をご覧ください。</a></li>
+
+<li>2018.02.09</li>
+              <li class="li_news01">
+                         <a href="http://www.hitec-jp.com/news/2018.html#2018_1">『 FOOD PACK ASIA 2018 』に出展しました。</a></li>-->
+
+             
+    	<p><img src="jpg/news01_bg_un.jpg" width="700" height="40"  alt=""/></p>
+	  </ul>
+
+
+        
+        
+  </div><!--/bulletinboard-->     
+  
+
+ 	  <ul class="ul_link">
+　　　　　　<li><a href="company/index.html"><img src="jpg/index_company.jpg" width="220" height="100"  alt="会社概要" class="hover_img1"/></a></li>
+　　　　　　<li><a href="info/index.html" class="hover_img2"><img src="jpg/index_info.jpg" width="220" height="100"  alt="製品に関する重要なお知らせ" class="hover_img1"/></a></li>
+　　　　　　<li><a href="support/index.html" class="hover_img2"><img src="jpg/index_support.jpg" width="220" height="100"  alt="新機能に関するお知らせ" class="hover_img1"/></a></li>
+　　　　　　<li><li><a href="agent/index.html"><img src="jpg/index_agent.jpg" width="220" height="100"  alt="海外代理店一覧" class="hover_img1"/></a></li>
+　　　　　　<li><a href="procure/index.html"><img src="jpg/index_procure.jpg" width="220" height="100"  alt="資材調達" class="hover_img1"/></a></li>
+	</ul>     
+
+ </div><!--/wrapper3-->
+
+ 
+<div id="wrapper4">
+        <p><img src="jpg/ad_contact.jpg" width="940" height=""  alt="お気軽にお問合せください"/></p>
+    <a href="mailto:eigyo@hitec-jp.com">
+        <img src="jpg/ad_contact_eigyo_01.jpg" width="940" height="" alt="機械・部品に関するお問合せ、お見積のご依頼、カタログのご請求" onmouseover="this.src='jpg/ad_contact_eigyo_02.jpg'" onmouseout="this.src='jpg/ad_contact_eigyo_01.jpg'">
+    </a>
+    <a href="mailto:production@hitec-jp.com">
+        <img src="jpg/ad_contact_product_01.jpg" width="940" height="" alt="資材調達に関するお問合せ" onmouseover="this.src='jpg/ad_contact_product_02.jpg'" onmouseout="this.src='jpg/ad_contact_product_01.jpg'">
+    </a>
+    <a href="mailto:info@hitec-jp.com">
+        <img src="jpg/ad_contact_info_01.jpg" width="940" height="" alt="採用に関するお問合せ" onmouseover="this.src='jpg/ad_contact_info_02.jpg'" onmouseout="this.src='jpg/ad_contact_info_01.jpg'">
+    </a>
+        <p><img src="jpg/ad_contact_hitec.jpg" width="940" height=""  alt="ハイテック,住所"/></p>
+</div> 
+
+
+	<div id="contactinformation" >
+   	<!--<p><img src="jpg/news_bg_up_no.jpg" width="940" height="40"  alt=""/></p>-->
+        <!--<p><img src="jpg/ad_title_2017newyear.jpg" width="940" height="170"  alt="2017年新年ごあいさつ"/>-->
+    	<!--<p><img src="jpg/news_bg_un.jpg" width="940" height=""  alt="40"/></p>-->
+  </div><!--/contactinformation-->
+
+
+
+<div id="footer">
+	<div id="footer_inner">
+		<ul class="subsidiar">
+			<li><h2 class="stitle">子会社</h2>
+			</li>
+            <li><a href="http://www.hitec-usa.com/" target="_blank">HITEC FOOD EQUIPMENT,INC.</a></li>
+			<li class="gyoukan">アメリカ・カナダ</li>
+            <li><a href="http://hitec-th.com/" target="_blank">HITEC FOOD EQUIPMENT CO.,LTD.</a></li>
+			<li class="gyoukan">タイ</li>
+            <li><a href="http://www.hitec-cn.com/" target="_blank">HITEC (QINGDAO) FOOD MACHINERY CO., LTD.</a></li>
+			<li class="gyoukan">中国</li>
+        </ul>
+		<ul class="bothamerica">
+			<li><h2 class="stitle">北米・南米地域</h2></li>
+            <li><a href="http://www.hitec-jp.com/agent/america.html">アメリカ・カナダ</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/brasil.html">ブラジル</a></li>
+        <!--<li><a href="http://www.hitec-jp.com/agent/chile.html">チリ</a></li>-->
+	    <li><a href="http://www.hitec-jp.com/agent/mexico.html">メキシコ</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/venezuela.html">ベネズエラ</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/argentina.html">アルゼンチン</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/southamerica.html">グァテマラ</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southamerica.html">ホンジュラス</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southamerica.html">エル　サルバドル</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southamerica.html">ニカラグア</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southamerica.html">コスタリカ</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southamerica.html">パナマ</a></li>
+        </ul>
+
+		<ul class="europaafrica">
+			<li><h2 class="stitle">欧州・アフリカ地域</h2></li>
+        <!--<li><a href="http://www.hitec-jp.com/agent/finland.html">フィンランド</a></li>-->
+	    <li><a href="http://www.hitec-jp.com/agent/france.html">フランス</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/greece.html">ギリシャ</a></li>
+        <!--<li><a href="http://www.hitec-jp.com/agent/romania.html">ルーマニア</a></li>-->
+            <li><a href="http://www.hitec-jp.com/agent/turkey.html">トルコ</a></li>
+	<!--<li><a href="http://www.hitec-jp.com/agent/spain.html">スペイン</a></li>-->
+            <li><a href="http://www.hitec-jp.com/agent/russia.html">ロシア</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/lithuania.html">リトアニア</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/lithuania.html">ラトビア</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/lithuania.html">エストニア</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/southafrica.html">南アフリカ</a></li>   
+        </ul>
+		<ul class="asiaoceania">
+			<li><h2 class="stitle">アジア・オセアニア地域</h2></li>
+            <li><a href="http://www.hitec-jp.com/agent/thailand.html">タイ</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/qingdao.html">中国</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/taiwan.html">台湾</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/korea.html">韓国</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/philippines.html">フィリピン</a></li>
+            <li><a href="http://www.hitec-jp.com/agent/malaysia.html">マレーシア</a></li>
+        <!--<li><a href="http://www.hitec-jp.com/agent/malaysia02.html">マレーシア02</a></li>-->
+            <li><a href="http://www.hitec-jp.com/agent/indonesia.html">インドネシア</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/papua_new_guinea.html">パプアニューギニア</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/australia.html">オーストラリア</a></li>
+	    <li><a href="http://www.hitec-jp.com/agent/newzealand.html">ニュージーランド</a></li>
+        </ul>
+
+  
+
+
+		<ul class="fnav">
+        <li><a href="http://www.hitec-jp.com/index.html">▶ ホーム</a></li>
+        <li><a href="http://www.hitec-jp.com/en/index.html" target="_blank">▶ ENGLISH</a></li>
+        <li><a href="http://www.hitec-jp.com/cn/index.html" target="_blank">▶ 中文</a></li>
+        <li><a href="http://www.hitec-jp.com/contactus/sitemap.html">▶ サイトマップ</a></li>
+        </ul>
+
+
+
+
+
+		<address>
+			Copyright&copy; 2002 HITEC CO.,LTD. All Rights Reserved.
+		</address>         
+
+	</div>	<!--/footer_inner-->
+</div>	<!--/footer-->
+
+</body>
+</html>

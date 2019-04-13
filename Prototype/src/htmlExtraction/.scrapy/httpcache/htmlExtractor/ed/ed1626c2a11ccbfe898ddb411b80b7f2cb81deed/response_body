@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>NGC</title>
+	<meta name="description" content="DestineTechnologies">
+	<meta name="author" content="DestineTechnologies">
+	
+    <!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+	================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	
+	<!-- Custom Fonts -->
+ <!--   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+<!--	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/menu.css">->
+
+	<!-- Dharmin Starts-->
+	<style>
+	
+        * {box-sizing:border-box}
+        body {font-family: Verdana,sans-serif;}
+        .mySlides {display:none}
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+	<!-- Dharmin Ends-->
+	<!--Dharmin 02/12 Starts-->
+	<style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+<!--  margin: 5px 2px;-->
+  height: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-whatsapp {
+  background: #66f02c;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+</style>
+
+	     <link rel="stylesheet" href="css/style1.css">   
+	   
+	<!--Dharmin 02/12 Ends-->
+	
+</head>
+
+<body>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="js/index1.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <section class="content-box box-4">
+        <div class="zerogrid">
+            <div class="post" style="margin-bottom:0px;padding-bottom:10px;padding-top:10px;">
+                <div class="col-1-2">
+				    <div class="wrapper" style="padding:0px 60px 0px 60px;">
+					    <img style="width:200px;" src="./images/NGClogo.jpg">
+					</div>
+				</div>
+				<div class="col-1-2">
+				    <div class="wrapper" style="padding:5px 60px 0px 60px;">
+					    <h3>N.Gandhi & Co.</h3>
+						    <a href="mailto:marketing@ngandhi.com">marketing@ngandhi.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<header>
+    <div id='cssmenu' style="background-color:#f58634">
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+            <!--<li><a href='#'><span></span></a></li>
+            <li><a href='#'>HOME</a></li>
+            <li><a href='#'>ABOUT</a></li>
+            <li><a href='#'>PRODUCTS</a>
+            <ul>
+                <li><a href='#'>Product 1</a>
+                <ul>
+                    <li><a href='#'>Sub Product</a></li>
+                    <li><a href='#'>Sub Product</a></li>
+                </ul>
+                </li>
+                <li><a href='#'>Product 2</a>
+                <ul>
+                    <li><a href='#'>Sub Product</a></li>
+                    <li><a href='#'>Sub Product</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a href='#'>BIO</a></li>
+            <li><a href='#'>VIDEO</a></li>
+            <li><a href='#'>GALLERY</a></li>
+            <li><a href='#'>CONTACT</a></li>-->
+            <li><a href='index.php'><span>Home</span></a></li>
+            <li><a href='#'><span>Products</span></a>
+            <ul>
+                <li class='has-sub'><a href='#'><span>Precision Balls</span></a>
+                <ul>
+                    <li ><a href='#'><span>Metallic Balls</span></a><ul>
+                    <li><a href='ferrous.php'><span>Ferrous Balls</span></a></li>
+					<li><a href='nferrous.php'><span>Non Ferrous Balls</span></a></li>
+				</ul></li>
+					<li><a href='#'><span>Non Metallic Balls</span></a>  
+					<ul>
+					<li><a href='ceramic.php'><span>Ceramic Balls</span></a></li>
+					<li><a href='glass.php'><span>Glass Balls</span></a></li>
+					<li><a href='plasticballs.php'><span>Plastic Balls</span></a></li>
+					</ul></li>
+				</ul>
+				</li>
+                <li class='last'><a href='s2balls.php'><span>AISI S-2 Tool Steel Balls</span></a>	 </li>
+				<li class='last'><a href='s2rollers.php'><span>AISI S-2 Tool Steel Rollers</span></a>	 </li>
+				<li class='last' ><a href='grinding.php'><span>Grinding Media</span></a></li>					 
+			</ul>
+			</li>
+			<li><a href='applications.php'><span>Applications</span></a></li>
+			<li><a href='aboutus.php'><span>About Us</span></a></li>
+			<li><a href='qc.php'><span>QC</span></a></li>
+			<li><a href='warehouse.php'><span>Warehouse</span></a></li>
+			<li class=' has-sub'><a href='#'><span>Downloads</span></a>
+			<ul>
+			    <li class='last'><a href='ngc brochure 1.pdf'><span>Company Brochure</span></a>	</li>
+		        <li class='has-sub'><a href='#'><span>Ferrous Metal Charts</span></a>
+		        <ul>
+		            <li><a href='pdfs/FER01Dimensional.pdf'><span> - Dimensional Conversion Chart (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/FER02HighCarbon.pdf'><span> - High Carbon Chrome Alloy  (pdf)</span></a></li>
+					<li><a href='pdfs/FER03ThroughHardened.pdf'><span> - High Carbon Steel (Through Hardened) (pdf)</span></a></li>
+					<li><a href='pdfs/FER04Case Hardened.pdf'><span> - Low Carbon Steel (Case Hardened) (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/FER05SS302.pdf'><span> - Stainless Steel AISI 302 304 304L (Austenitic)  (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/FER06SS316.pdf'><span> - Stainless Steel AISI 316 316L (Austenitic) (pdf)</span></a></li>
+					<li><a href='pdfs/FER07SS420.pdf'><span> - Stainless Steel AISI 420  420C (Martensitic)  (pdf)</span></a></li>
+					<li><a href='pdfs/FER08SS440.pdf'><span> - Stainless Steel AISI 440C (Martensitic) (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/FER09technical.pdf'><span> - technical data (pdf)</span></a></li>
+				</ul>
+				</li>
+				<li class='has-sub'><a href='#'><span>Non Ferrous Metal Charts</span></a>
+				<ul>
+				    <li><a href='pdfs/NF01Alloy20Balls.pdf'><span> - Alloy 20 Balls(pdf)</span></a></li>
+					<li class='last'><a href='pdfs/NF02BrassBalls.pdf'><span> - Brass Balls  (pdf)</span></a></li>
+					<li><a href='pdfs/NF03CopperBalls.pdf'><span> - Copper Balls (pdf)</span></a></li>
+					<li><a href='pdfs/NF04DimensionalConversion.pdf'><span> - Dimensional Conversion Chart (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/NF05HastelloyC276.pdf'><span> - Hastelloy C276 Alloy Balls  (pdf)</span></a></li>
+                    <li class='last'><a href='pdfs/NF06Inconel625.pdf'><span> - Inconel 625 Alloy Balls (pdf)</span></a></li>
+					<li><a href='pdfs/NF07Inconel825.pdf'><span> - Inconel 825 Alloy Balls  (pdf)</span></a></li>
+					<li><a href='pdfs/NF08MonelK400.pdf'><span> - Monel K 400 Alloy Balls (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/NF09MonelK500.pdf'><span> - Monel K 500 Alloy Balls (pdf)</span></a></li>
+                    <li><a href='pdfs/NF10technical.pdf'><span> - technical data (pdf)</span></a></li>
+					<li><a href='pdfs/NF11TitaniumAlloys.pdf'><span> - Titanium Alloys  (pdf)</span></a></li>
+					<li><a href='pdfs/NF12Tungsten Carbide Cobalt Binder.pdf'><span> - Tungsten Carbide Cobalt Binder (pdf)</span></a></li>
+					<li><a href='pdfs/NF13Tungsten Carbide nickel Binder.pdf'><span> - Tungsten Carbide nickel Binder (pdf)</span></a></li>
+					</ul>
+					</li>
+					<li class='has-sub'><a href='#'><span>Ceramic Charts</span></a>
+					<ul>
+					<li><a href='pdfs/CB01ceramicballs.pdf'><span> - Ceramic Balls - Properties of Materials (pdf)</span></a></li>
+					<li class='last'><a href='pdfs/CB02Dimensional.pdf'><span> - Dimensional Conversion Chart  (pdf)</span></a></li>
+					<li><a href='pdfs/CB03technical.pdf'><span> - Technical Data (pdf)</span></a></li>
+					</ul>
+					</li>
+					<li class='has-sub'><a href='#'><span>Glass Charts</span></a>
+					<ul>
+						<li><a href='pdfs/GB01GlassBalls.pdf'><span> - Glass Balls - Chemical Compositions (pdf)</span></a></li>
+						<li class='last'><a href='pdfs/GB02Dimensional.pdf'><span> - Dimensional Conversion Chart  (pdf)</span></a></li>
+						<li><a href='pdfs/GB03technical.pdf'><span> - Technical Data (pdf)</span></a></li>
+					</ul>
+					</li>
+					<li class='last'><a href='plasticballs.pdf'><span>Plasic Balls Chart</span></a>	 </li>
+                    <li class='has-sub'><a href='#'><span>Burnishing Media Charts</span></a>
+					<ul>
+					    <li><a href='pdfs/BM01Burnishing.pdf'><span> - Burnishing Media (pdf)</span></a></li>
+						<li class='last'><a href='pdfs/BM02CERAMIC.pdf'><span> - Ceramic Balls - Grinding Media  (pdf)</span></a></li>
+					    <li><a href='pdfs/BM03GLASS.pdf'><span> - Glass Balls - Grinding Media (pdf)</span></a></li>
+					</ul>
+					</li>
+				</ul>
+			</li>
+		<li class='last'><a href='contact.php'><span>Contact</span></a></li>
+	    </ul>
+    </div>
+</header>
+     
+</body>
+<!--<div class="wrap-body">
+    <div class="header">
+		<div id='cssmenu' style="background-color:#f58634" >
+		    <ul id='pic01'>
+		        <li><a href='#'><span></span></a></li>
+		        <li><a href='index.php'><span>Home</span></a></li>
+			    <li class=' has-sub'><a href='#'><span>Products</span></a>
+			    <ul>
+			        <li class='has-sub'><a href='#'><span>Precision Balls</span></a>
+			        <ul>
+			            <li ><a href='#'><span>Metallic Balls</span></a></li>
+					    <li><a href='ferrous.php'><span> - Ferrous Balls</span></a></li>
+						<li class='last'><a href='nferrous.php'><span> - Non Ferrous Balls</span></a></li>
+					    <li ><a href='#'><span>Non Metallic Balls</span></a>  </li>
+						<li><a href='ceramic.php'><span> - Ceramic Balls</span></a></li>
+						<li><a href='glass.php'><span> - Glass Balls</span></a></li>
+						<li class='last'><a href='plasticballs.php'><span> - Plastic Balls</span></a></li>
+					</ul>
+					</li>
+        			<li class='last'><a href='s2balls.php'><span>AISI S-2 Tool Steel Balls</span></a></li>
+					<li class='last'><a href='s2rollers.php'><span>AISI S-2 Tool Steel Rollers</span></a></li>
+					<li class='last' ><a href='grinding.php'><span>Grinding Media</span></a></li>					 
+			    </ul>
+			    </li>
+			    <li class='last'><a href='#'><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>--><div class="icon-bar">
+  <a href="#"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/ngc_gandhi"><i class="fa fa-twitter"></i></a> 
+  <a href="linkedin.com/company/ngandhi"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/dharmeshgandhingc/"><i class="fa fa-instagram"></i></a> 
+  <a href="https://wa.me/+919136132011"><i class="fa fa-whatsapp"></i></a> 
+</div>
+
+
+	<marquee style="background-color:white">HIGH PRECISION BALLS & ROLLERS</marquee>
+		<!--////////////////////////////////////Container-->
+		<section id="container">
+			<div class="wrap-container">
+				<!-----------------content-box-1-------------------->
+				<section class="content-box boxstyle-1 box-1" >
+					<div class="zerogrid">
+						<div class="row wrap-box"><!--Start Box-->
+							<!--<div class="col-1-2">-->
+								<!--<div class="wrap-col">
+									<center>
+										<img src="plasticnew.jpg">
+									</center>
+								</div>-->
+								 <div class="slideshow-container" style="max-width:100%">
+                                        <div class="mySlides fade">
+                                                <div class="numbertext">1 / 6</div>
+                                                <img src="images/ngchp1.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Text</div>-->
+                                                </div>
+                                                
+                                                <div class="mySlides fade">
+                                                <div class="numbertext">2 / 6</div>
+                                                <img src="images/ngchp2.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Two</div>-->
+                                                </div>
+                                                
+                                                <div class="mySlides fade">
+                                                <div class="numbertext">3 / 6</div>
+                                                <img src="images/ngchp3.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Three</div>-->
+                                                </div>
+                                                       <div class="mySlides fade">
+                                                <div class="numbertext">4 / 6</div>
+                                                <img src="images/ngchp4.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Three</div>-->
+                                                </div>
+                                                       <div class="mySlides fade">
+                                                <div class="numbertext">5 / 6</div>
+                                                <img src="images/ngchp5.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Three</div>-->
+                                                </div>
+                                                       <div class="mySlides fade">
+                                                <div class="numbertext">6 / 6</div>
+                                                <img src="images/ngchp6.jpg" style="width:100%">
+                                                <!--<div class="text">Caption Three</div>-->
+                                                </div>
+                                                <br>
+
+                                        <div style="text-align:center">
+                                        <span class="dot"></span> 
+                                        <span class="dot"></span> 
+                                        <span class="dot"></span> 
+                                         <span class="dot"></span> 
+                                        <span class="dot"></span> 
+                                        <span class="dot"></span> 
+                                    </div>
+
+                            </div>
+							<!--</div>-->
+							<!--<div class="col-1-2">  -->
+								<div class="wrap-col">
+									<div class="row">
+						<!--				<div class="t-center" style="padding-top: 60px;">
+											<div class="header">
+												<div class="wrapper">
+													<h2 class="color-blue" style="font-color:#f58634" >About Us</h2>
+												</div>
+											</div>
+											-->
+											<p align='justify'>For over three decades, N Gandhi & Co. has supplied a wide array of metallic and non-metallic balls (ceramics, glass & plastic), S2 Balls, rollers and grinding media to serve a wide range of applications across sectors like automobiles, aeronautics, cosmetics, chemicals and more.</p>
+                                                <p align='justify'></p>
+                                                <p align='justify'>With a long-standing commitment to quality and excellence, thanks to sustained industry-centric experience and expertise across hundreds of crucial applications and processes, the company has achieved leadership status with a client base that extends all over India to overseas.</p>
+
+						                <!--<a href="#" class="button" >More Details</a>   -->
+										</div>
+									</div>
+								</div>
+					<!--		</div>-->
+							
+						</div>
+					</div>
+				</section>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+		<hr class="line">
+		<!--////////////////////////////////////Footer-->
+		<footer>
+			<div class="wrap-footer">
+				<div class="zerogrid">
+					<div class="row">
+							<div class="col-1-3">
+							<div class="wrap-col">
+								<ul class="quick-link" style="display:grid">
+									<li><a href="ferrous.php">Ferrous Balls</a></li>
+									<li><a href="nferrous.php">Non Ferrous Balls</a></li>
+									<li><a href="ceramic.php">Ceramic Balls</a></li>
+									<li><a href="glass.php">Glass Balls</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col" >
+								<ul  class="quick-link" style="display:grid">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li><a href="#"><i ><img style="width:100px;" src="./images/ngc logo.jpg"></i></a>
+									</li>
+								
+								
+								</ul>
+							</div>
+						</div>	<div class="col-1-3">
+						<div class="wrap-col">
+								<ul class="quick-link" style="display:grid">
+									<li><a href="plasticballs.php">Plastic Balls</a></li>
+									<li><a href="s2balls.php">AISI S-2 Tool Steel Balls</a></li>
+									<li><a href="s2rollers.php">AISI S-2 Tool Steel Rollers</a></li>
+									<li><a href="grinding.php">Grinding Media</a></li>
+								</ul>
+							</div>
+						</div>
+											<div class="row">
+							<div class="col-1-3">
+							<div class="wrap-col">
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="wrap-col">
+								
+									<ul >
+
+									<li><a href="https://www.facebook.com/ngandhico/"><i class="fa fa-facebook"style=" margin: 5px 2px;"></i></a>
+									</li>
+									<li><a href="https://twitter.com/ngc_gandhi"><i class="fa fa-twitter" style=" margin: 5px 2px;"></i></a>
+									</li>
+									<li><a href="linkedin.com/company/ngandhi"><i class="fa fa-linkedin"style=" margin: 5px 2px;"></i></a>
+									</li>
+									<li><a href="https://www.instagram.com/dharmeshgandhingc/"><i class="fa fa-instagram"style=" margin: 5px 2px;"></i></a>
+									</li>
+									<li><a href="https://wa.me/+919136132011"><i class="fa fa-whatsapp"style=" margin: 5px 2px;"></i></a>
+									</li>
+									</ul>
+								
+								
+								
+								
+								    <p><a href='pdfs/Disclaimer.pdf'>Disclaimer</a></p>
+								<p> by:<a href="http://www.destinetechnologies.in" target="_blank" rel="nofollow">Destine</a> </p>
+							</div>
+							</div>
+						</div>	<div class="col-1-3">
+							<div class="wrap-col">
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</footer>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</div>
+</body>
+</html>

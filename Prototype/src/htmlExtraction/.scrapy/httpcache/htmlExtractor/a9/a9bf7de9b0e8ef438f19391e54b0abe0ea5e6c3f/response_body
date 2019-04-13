@@ -1,0 +1,275 @@
+
+<html>
+<head>
+<title>Menu Covers @ Cleveland Menu Printing - Custom Menu Covers, Menu Jackets, Restaurant Menus, Menu Design</title>
+<meta name="description" content="Cleveland Menu Printing designs, prints and produces high quality menus and custom menu covers including leather, metal, copper, aluminum, wood. View hundreds of samples online.">
+<meta name="keywords" content="Menus, Cleveland, Menu Printing, Menu Covers, Menu Jackets, Menu Design, Custom Menu Covers, Metal Menu Covers, Country Club Menus, Hotel Menus, Hospitality Menus, Restaurant Menus, Catering Menus, Stock Menus">
+<link rel="stylesheet" type="text/css" href="Styles\CMCS.css">
+
+<script language="javascript" src="jsrsClient.js"></script>
+
+<script language="javascript">
+<!--
+function clear_nav()
+{
+	jsrsPOST = false;
+	jsrsExecute( 'jsrsUpdateNavigation.asp', null, 'ClearHistory', '1859018' );
+	return;
+}
+//-->
+</script>
+
+
+	<script language='javascript'>
+
+		function ImageRotator(sImageID) {
+			this.ImageID = sImageID;
+			this.ImageType = 'src';
+			this.PhotoSet = [];
+			this.CurrentIndex = 0;
+			this.Timer = null;
+			this.TimerIsRunning = false;
+			this.TimerInterval = 5000;
+
+			window[this.ImageID] = this;
+
+			this.NextImage = function() {
+				this.CurrentIndex == this.PhotoSet.length - 1 ? this.CurrentIndex = 0 : this.CurrentIndex++;
+				this.ChangeImage();
+				if (this.TimerIsRunning) this.ResetRotation();
+			}
+
+			this.PreviousImage = function() {
+				this.CurrentIndex == 0 ? this.CurrentIndex = this.PhotoSet.length - 1 : this.CurrentIndex--;
+				this.ChangeImage();
+				if (this.TimerIsRunning) this.ResetRotation();
+			}
+
+			this.StartRotation = function() {
+				this.Timer = setInterval("window." + this.ImageID + ".NextImage()", this.TimerInterval);
+				this.TimerIsRunning = true;
+			}
+
+			this.StopRotation = function() {
+				clearInterval(this.Timer);
+				this.TimerIsRunning = false;
+			}
+
+			this.ResetRotation = function() {
+				this.StopRotation();
+				this.StartRotation();
+			}
+
+			this.ToggleRotation = function() {
+				this.TimerIsRunning ? this.StopRotation() : this.StartRotation();
+			}
+
+			this.ChangeImage = function() {
+				if (this.ImageType == 'backgroundImage')
+					document.getElementById(this.ImageID).style.backgroundImage = 'url(' + this.PhotoSet[this.CurrentIndex] + ')';
+				else
+					document.getElementById(this.ImageID).src = this.PhotoSet[this.CurrentIndex];
+			}
+		}
+
+		function TogglePlayButton(oBtn)
+		{
+			if (oBtn.src == '/Images/design11/play.gif')
+				oBtn.src = '/Images/design11/pause.gif';
+			else
+				oBtn.src = '/Images/design11/play.gif';
+		}
+
+		var r1 = new ImageRotator('Rotate1');
+		r1.ImageType = 'backgroundImage';
+		r1.PhotoSet = ['/Images/design11/rotate1/1.jpg'
+			, '/Images/design11/rotate1/2.jpg'
+			, '/Images/design11/rotate1/3.jpg'
+			, '/Images/design11/rotate1/4.jpg'
+			, '/Images/design11/rotate1/5.jpg'
+			, '/Images/design11/rotate1/6.jpg'
+			];
+
+		var r2 = new ImageRotator('Rotate2');
+		r2.PhotoSet = ['/Images/design11/rotate2/combine1.jpg'
+			, '/Images/design11/rotate2/combine2.jpg'
+			, '/Images/design11/rotate2/combine3.jpg'
+			];
+
+	</script>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0" onload="clear_nav();r1.StartRotation();r2.StartRotation();" style="background-image: url(/Images/design11/shadow_background.gif); background-position: center; background-repeat: repeat-y">
+
+<style type="text/css">
+a.cat_link:link {font-size:10pt; font-weight: normal; color:#918F8F; text-decoration: none}
+a.cat_link:visited {font-size:10pt; font-weight: normal; color:#918F8F; text-decoration: none}
+a.cat_link:hover {font-size:10pt; font-weight: normal; color:#918F8F; text-decoration: underline}
+a.cat_link:active {font-size:10pt; font-weight: normal; color:#918F8F; text-decoration: none}
+
+.cat_header_link 
+{
+	color: #FFFFFF;
+	background: #88898C;
+	font-size: 8pt;
+	padding: 9px;
+	text-align: center;
+}
+
+#nav_container
+{
+	background-color: #84210F;
+	height: 48px;
+	text-align: left;
+}
+
+ul#nav
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#nav li
+{
+	display: inline;
+}
+
+ul#nav li a
+{
+	background-position: left top;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9000px;
+	position: absolute;
+	outline: none;
+	width: 164px;
+	height: 48px;
+	top: 0px;
+}
+
+ul#nav a.samples
+{
+	background-image: url(/Images/design11/sample_menus.gif);
+	left: 28px;
+}
+ul#nav a.services
+{
+	background-image: url(/Images/design11/services.gif);
+	left: 215px;
+}
+ul#nav a.customer_care
+{
+	background-image: url(/Images/design11/customer_care.gif);
+	left: 410px;
+}
+ul#nav a.contact
+{
+ 	background-image: url(/Images/design11/contact_us.gif);
+	left: 625px;
+}
+
+</style>
+
+<center>
+<div style="width: 800px; margin-left: auto; margin-right: auto">
+	<div id="Rotate1" style="width: 800px; text-align: left; background-color: #231F20; background-image: url(/Images/design11/rotate1/1.jpg); background-repeat: no-repeat; background-position: top right;">
+		<div style="float: right; margin: 3px;">
+			<img src='/Images/design11/previous.gif' style='cursor:hand;cursor:pointer; vertical-align:middle' onClick="r1.PreviousImage(); r2.PreviousImage();" border=0 />
+			<img src='/Images/design11/pause.gif' style='cursor:hand;cursor:pointer; vertical-align:middle' onClick="r1.ToggleRotation(); r2.ToggleRotation(); TogglePlayButton(this);" border=0 id="pause_image" />
+			<img src='/Images/design11/next.gif' style='cursor:hand;cursor:pointer; vertical-align:middle' onClick="r1.NextImage(); r2.NextImage();" border=0 />
+		</div>
+		<img src="/Images/design11/logo.png" width="477" height="223" alt="Cleveland Menu Printing, Inc." class="pngfix" style="margin-left: 24px;" /><br />
+		<div style="height:88px;"></div>
+		<A HREF="http://www.clevelandmenu.com/menu_close_out.asp" style="display:none;"><IMG SRC="/Images/design11/in_stock_menu_specials.gif" WIDTH="181" HEIGHT="88" ALT="In Stock Menu Specials" BORDER=0 style="margin-top: 15px; margin-left: 85px;"></A><br />
+		<A HREF="http://www.clevelandmenu.com/contact.asp"><img src="/Images/design11/phone.gif" width="278" height="43" alt="1-800-356-MENU" border="0" style="margin-top: 14px; margin-bottom: 14px; margin-left: 36px;" /></A>
+	</div>
+
+	<div id="nav_container">
+		<ul id="nav">
+			<li><a href="http://www.clevelandmenu.com/sample-menus/entree-menus" class="samples">Sample Menus</a></li>
+			<li><a href="http://www.clevelandmenu.com/services.asp" class="services">Services</a></li>
+			<li><a href="http://www.clevelandmenu.com/customer_care_center.asp" class="customer_care">Customer Care</a></li>
+			<li><a href="http://www.clevelandmenu.com/contact.asp" class="contact">Contact Us</a></li>
+		</ul>
+	</div>
+
+        <table cellpadding=0 cellspacing=0 border=0 width="100%">
+        <tr>
+        <td class="cat_header_link" style="padding-left: 40px;"><a href="http://www.clevelandmenu.com/sample-menus/hotels-resorts" class="cat_link" style="color: #FFFFFF;">HOTELS</a></td>
+	    <td class="cat_header_link"><a href="http://www.clevelandmenu.com/sample-menus/formal-dining" class="cat_link" style="color: #FFFFFF;">RESTAURANTS</a></td>
+	    <td class="cat_header_link"><a href="http://www.clevelandmenu.com/sample-menus/country-clubs" class="cat_link" style="color: #FFFFFF;">COUNTRY CLUBS</a></td>
+	    <td class="cat_header_link" style="padding-right: 40px;"><a href="http://www.clevelandmenu.com/sample-menus/copper-menus" class="cat_link" style="color: #FFFFFF;">STYLES</a></td>
+        </tr>
+        <tr align=center valign=top>
+        <td style="padding-top: 5px; padding-left: 40px; line-height: 13pt">
+			<a href="http://www.clevelandmenu.com/sample-menus/guest-directories" class="cat_link">Guest Directories</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/room-service-covers" class="cat_link">Room Service Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/breakfast-menus" class="cat_link">Breakfast Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/door-hangers" class="cat_link">Door Hangers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/banquet-catering" class="cat_link">Banquet &amp; Catering</a><br>
+        </td>
+        <td style="padding-top: 5px; line-height: 13pt">
+			<a href="http://www.clevelandmenu.com/sample-menus/entree-menus" class="cat_link">Entree Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/wine-covers" class="cat_link">Wine List Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/check-presenters" class="cat_link">Check Presenters</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/bar-dessert-menus" class="cat_link">Bar &amp; Dessert Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/table-tents" class="cat_link">Table Tents</a><br>
+			<!--<a href="http://www.clevelandmenu.com/pizzahut/" class="cat_link" style="font-weight: bold; color: #FF0000;"><img src="/Images/design11/pizza_hut_logo.gif" alt="" border=0 style="margin-right: 6px;" align=absmiddle>Pizza Hut Samples</a><br>-->
+	    </td>
+        <td style="padding-top: 5px; line-height: 13pt">
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-entree-menus" class="cat_link">Entree Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/bar-dessert-menu-covers" class="cat_link">Bar &amp; Dessert Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-check-presenters" class="cat_link">Check Presenters</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-wine-covers" class="cat_link">Wine Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-table-tents" class="cat_link">Table Tents</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-lexide-vinyl-covers" class="cat_link">Lexide/Vinyl Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-printed-casual-menus" class="cat_link">Printed Casual Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/banquet-presentation-covers" class="cat_link">Banquet/Presentation Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/stock-kids-menu-shells" class="cat_link">Stock Kids Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/country-clubs-pool-menus" class="cat_link">Pool Menus</a><br>
+	    </td>
+        <td style="padding-top: 5px; padding-right: 40px; line-height: 13pt">
+			<a href="http://www.clevelandmenu.com/sample-menus/aluminum-menus" class="cat_link">Aluminum Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/copper-menus" class="cat_link">Copper Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/foil-stamp-menus" class="cat_link">Foil Stamping</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/leather-menus" class="cat_link">Leather Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/lexide-menus" class="cat_link">Lexide Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/paper-menus" class="cat_link">Paper Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/plastic-menus" class="cat_link">Plastic Menus</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/wallpaper-menus" class="cat_link">Wallpaper Menu Covers</a><br>
+			<a href="http://www.clevelandmenu.com/sample-menus/wood-menus" class="cat_link">Wood Menu Covers</a><br>
+	    </td>
+        </tr>
+        </table>
+
+		<div style="width: 800px; margin-top: 40px; overflow: hidden; white-space: nowrap;">
+			<img id="Rotate2" src="/Images/design11/rotate2/combine1.jpg" width="800" height="203" alt="Menu Designs" /></div>
+        
+        <div style="padding: 50 50 100 50; color: #E0C7C3; background: #84210F; text-align: center; font-size: 14pt; font-weight: lighter; line-height: 22pt;">
+			Cleveland Menu Printing, Inc. has been serving the hospitality industry since 1930, specializing in the design and production of high quality and durable printed, leather, metal, copper, aluminum and wood menu covers. In-house production allows us to manufacture your custom menu covers to any size or shape requested.
+	        <div style="color: #B3B5B8; font-size: 11pt; font-weight: bold; margin-top: 10px;">Cleveland Menu Printing, Inc. <span style="color: #FFFFFF; padding: 0px 8px;">|</span> 1441 E. 17th St. Cleveland, OH 44114 <span style="color: #FFFFFF; padding: 0px 8px;">|</span> 1(800)356-MENU</div>
+        </div>
+</div>
+</center>
+
+<!--[if IE 6]>
+<script src="DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('.pngfix');
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4859247-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

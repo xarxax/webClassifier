@@ -1,0 +1,2468 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="en-gb" class="js ie9">
+	<![endif]-->
+	<!--[if gt IE 9]><!-->
+	<html lang="en-gb" class="js">
+		<!--<![endif]-->
+		<head>
+			<meta name="google-site-verification" content="nZLaUA60mhBm6Fl3ps6z9gLDOCZlH2SD4G9BVZrJ3PU" />
+			<meta charset="utf-8">
+			<meta content="IE=edge" http-equiv="X-UA-Compatible"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0daf5539a6","applicationID":"16727171","transactionName":"ZVJTZUJVWUoCBk1cWFwYcGJgG1NcBQRMWUMcVkJBSA==","queueTime":0,"applicationTime":254,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcFVVVQCRABUlZQAAAAVw=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+			<meta content="width=device-width, initial-scale=1.0" name="viewport">
+			
+	
+			<title>
+	Tork  | Tork UK
+</title><meta name="description" content="Tork is a brand of Essity which is a leading global hygiene and health products company that offers personal care." /><meta name="keywords" content="Tork, hygiene, health, sustainability, tissue, napkins, towels" /><meta name="robots" content="all" /><link rel="canonical" href="https://www.tork.co.uk/" />
+
+                        
+				
+			
+				
+			
+				
+			
+			
+			      <link href="https://masdpstatic.azureedge.net/tork/1.31.0.247/bundle/bundle.css" rel="stylesheet">
+			      <link href="https://masdpstatic.azureedge.net/tork/1.31.0.247/css/Print.min.css?v=1.0" media="print" rel="stylesheet">
+			      <link href="https://masdpstatic.azureedge.net/tork/1.31.0.247/css/editorial_print.min.css?v=1.0" media="print" rel="stylesheet">
+			
+			<!--[if lt IE 9]>
+			<link rel="stylesheet" href="https://masdpstatic.azureedge.net/tork/1.31.0.247/css/ie8.min.css?v=1.0">
+			<![endif]-->
+			<link href="/favicon.ico?v=1" rel="shortcut icon">
+			
+                              <script src="https://masdpstatic.azureedge.net/tork/1.31.0.247/bundle/topjs.js"></script>
+			
+			<script src="https://masdpstatic.azureedge.net/tork/1.31.0.247/js/vendor/jwplayer.min.js?v=1.0"></script>
+			<script>
+				window.TDPWeb = {
+					languageCode: '',
+					countryLanguageCode: 'en-gb'
+				};
+			</script>
+			
+			<script src="https://cdn.optimizely.com/js/5762840763.js"></script>
+            
+			
+				
+			
+				
+			
+				
+			
+		</head>
+		<body>
+			
+<script> <!-- Place before Google Tag Manager-snippet -->
+var dataLayer = dataLayer||[];
+dataLayer.push({
+  
+'businessArea': '',
+'countrySite': 'UK',
+'pageType': 'homePage'
+          });
+</script>
+
+			
+				
+			
+				
+						<!-- new script Dec 2017 -->
+
+<script>
+dataLayer.push ({
+'environment': 'LIVE'
+});
+</script>
+<!-- Google Script -->
+<script type="text/javascript" src="https://masdpanalytics.azureedge.net/main-datalayer.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVBDKTH');</script>
+<!-- End Google Tag Manager -->
+ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVBDKTH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+				
+			
+				
+			
+			
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<!--<div class="addthis_native_toolbox"></div>-->
+			<script>
+				var loadingText = 'Loading';
+			</script>
+			<form method="post" action="default.aspx" id="mainForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainForm'];
+if (!theForm) {
+    theForm = document.mainForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="m+dDUmmJic0Ela+KhKhaKAo6gzZZTX9uJiLcaXL2JnXjhKrp0zaFkeVLDBROmATJX/0jPb+O7cnkP8NGqD3sUhH2jFjeSpgxmygNSxkqkUXQrTCeppi9zZoLzYXvNJJKWhQTiWCbPGojpgW3xp3y/VtIZ/TOu8ZfYNCtfEFeJuVU80j3Tlf89na3Sj6ZrrCC9JOXzp4uAudc1Q1Fi1cxGx1C4KWHY0N6auEg3nxaEakYJU4UewaLO2XVLreSbu7PO3Pf7KgS9s09JVkjQOibEZ3ntYVETnaUdcXWVhPOnk9aimVMAyOGikt85NdteGn4nlTzBIuV89W3mZacoVs6I/PoNi5zEpi0emLWWc5FHMgDZbqPNEHgPfJO4qJQELhIPbhgUZMabTwvylFOoZwfptdTWVBoB8RmEsXGD3OVSV6xQm7EQQzBKaSFMLvYg5qQ8MBSPDC05DOubRYJo7ag7XuMEsBC1rBndscrrFV06Hjhl7mldOv9n3XJQ7j98J6Kzxl4fWLtyfqhVL8OhreI8rvATUIFOcqa2uctOqYPNlr21dALnz+RCVJBBefZ9tpPo0qVe4ReG5ELm+aIxGslnyRd7Fa+CrjmrivOQ78NUnawo6LJM70492a14x6PJ8ahORXIunFqAM0RQ6TIv+h/hcogcx97PxEx6z7FlKke5/aBdEdZkaV7WVj9B0KFVSgI+5sHdH+uJXXk8bCTNngr+zI+qnRnTgckiBSm5kaT4kVNmOxXwnB9fGt6CjkRwH9d" />
+</div>
+				<input type="hidden" name="ctl00$hdnCountryInfo" id="hdnCountryInfo" value="Tork UK" />
+				<input type="hidden" name="ctl00$hdnLanguageCode" id="hdnLanguageCode" />
+				<input type="hidden" name="ctl00$hdnPrdCounter" id="hdnPrdCounter" />
+				<input type="hidden" name="ctl00$hdnLanguageCodeForMaster" id="hdnLanguageCodeForMaster" />
+				<input type="hidden" name="ctl00$hdnJellyFishSearcher" id="hdnJellyFishSearcher" />
+				<input type="hidden" name="ctl00$hdnJellyFishIdent" id="hdnJellyFishIdent" />
+				<input type="hidden" name="ctl00$hdnReplacementText" id="hdnReplacementText" value="Replacement for" />
+				<!-- Header component depends on header.min.css and header.js -->
+				
+				
+				<header id="header" role="banner">
+	<div id="headerToolbar">
+		
+		
+		<div class="headerMessage" style="display: none;">
+			<div class="container-fluid">
+				<div class="wrap">
+					
+					
+					We use cookies to make this site work better for you. Carry on browsing if you&#39;re happy with this or find out how to manage
+					
+					 
+					Click here					<a href="#/" class="closeIcon icon-times"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="wrap">
+				
+				<a href="/" title="undefined" class="logo">
+				
+				
+				
+				
+					<img src="https://az745204.vo.msecnd.net/images-c5/381/83381/original/tork-primary-logo-2013-cmyk.png" id="headerlogoId" title="Tork_Primary_Logo_2013_CMYK small.png" alt="Tork_Primary_Logo_2013_CMYK small.png" />
+				
+				
+				
+				</a>
+				
+				<div id="toolbarList">
+					<a id="mobileNavToggle" class="visible-xs icon-circle-list" data-toggle="collapse" data-target="#mobileNav"></a>
+					
+					<div class="toolbarListGroup hidden-xs">
+						
+						<div class="toolbarListItem">
+							
+								<a href="/distributor-finder/" title="Find a distributor" class="toolbarListItem-link"><span class="toolbarListItem-text">Find a distributor</span>
+									<i class="icon icon-distributor-finder u-paddingL10"></i></a>							
+							
+						</div>
+						
+						
+						<div class="toolbarListItem">
+							<input type="hidden" name="ctl00$UCProductListIcon$hdnArticleName" id="hdnArticleName" value="Article" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdntotalcount" id="hdntotalcount" value="35" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnAddedToList" id="hdnAddedToList" value="Added to list" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnAddToList" id="hdnAddToList" value="Add to list" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdncookiemessage" id="hdncookiemessage" value="Product selection reached the maximum limit" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnField" id="hdnField" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnShoppingInfo" id="hdnShoppingInfo" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnPrdCounter" id="hdnPrdCounter" />
+<input type="hidden" name="ctl00$UCProductListIcon$hdnProductRemove" id="hdnProductRemove" />
+
+<script type="text/javascript">
+       
+    function getProductList(value) {
+        var countprd = document.getElementById('hdnPrdCounter').value;
+        var cookie = document.getElementById('hdnShoppingInfo').value;			
+        var count = document.getElementById('hdnField').value;     
+        
+        if (value.name == 'full') {
+            if (count == "" && cookie == 0) {
+
+                window.open("/product-list", "_self");
+            }
+        }
+        else if (value.name == 'mobile') {
+            if (count == "" && cookie == 0) {
+
+                window.open("/product-list", "_self");
+            }
+            else if (countprd != 0) {
+                window.open("/product-list?q=1", "_blank");
+				
+            }
+        }
+
+    }
+
+
+</script>
+
+<a id="productsTabLink" class="toolbarListItem-link prdCounter"  title='Product list' name="full" onclick="getProductList(this)">
+    <span class="toolbarListItem-text">Product list</span>
+    <i class="icon icon-file u-paddingL10"></i>
+    <span class="productCounter" id="spanProductCounter" ></span>
+</a>
+
+<div class="tab-pane" id="productsTab">
+    <div class="tabContent">
+        <div id="UCProductListIcon_div_ProductLatestItem" class="productListLatestItem">
+            
+        </div>
+        <div class="btnRow text-center">
+           <a id="shoppingListLink" target="_blank" href="/product-list/?q=1">See full product list</a>
+        </div>
+		<div class="message error text-left prd-msg" style="display: none;">
+        </div>
+    </div>
+</div>
+						</div>
+						
+					</div>
+					<div class="toolbarListGroup hidden-xs">
+						
+						<div class="toolbarListItem">
+							
+							<a href="#phoneTab" title="Contact us" >
+                                                               <i class="icon icon-phone"></i>
+                                                         </a>
+							
+							
+							<div class="tab-pane" id="phoneTab" style="opacity: 1; display: none; max-height: 601px; overflow-y: hidden;">
+								<div class="tabContent">
+									<div class="row">
+										
+										
+										
+										<div class="clearBoth"></div>
+										
+										<!-- Added a class separate Demand-1545247-Demand-Contact us phone book issue bhoopendra shukla -->
+										<div class="col-xs-12 col-sm-4 separate">
+											<h4 style="height: 48px;">
+												
+												
+												Customer Service - Telephone
+												
+												
+											</h4>
+											<p class="spanList">
+												
+												
+												
+												
+												
+												<span>01582 677570 <br/></span>
+												
+												
+												
+												
+												
+											</p>
+										</div>
+										
+										
+										<!-- Added a class separate Demand-1545247-Demand-Contact us phone book issue bhoopendra shukla -->
+										<div class="col-xs-12 col-sm-4 separate">
+											<h4 style="height: 48px;">
+												
+												
+												Customer Service - Fax
+												
+												
+											</h4>
+											<p class="spanList">
+												
+												
+												
+												
+												
+												<span>01582 677580 <br/></span>
+												
+												
+												
+												
+												
+											</p>
+										</div>
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="toolbarListItem">
+							
+							<a href="#contactTab" class="icon icon-message" title="Contact information"></a>
+							
+							
+							<div class="tab-pane" id="contactTab">
+								
+
+<div class="tabContent verticalForm">
+    <div class="ContactUs" data-email-form-handler="/Handlers/ContactUsHandler.ashx" data-contact-us-form="">
+        
+            <div>
+                <input name="ctl00$UCContactUs$hdnContactUsDefaultEmail" type="hidden" id="UCContactUs_hdnContactUsDefaultEmail" data-contact-default-email="" data-field="DefaultEmail" value="suvi.panas@sca.com" />
+                <input name="ctl00$UCContactUs$hdnHeaderContactUsForm" type="hidden" id="UCContactUs_hdnHeaderContactUsForm" data-field="IsHeaderContactUsForm" value="true" />
+                <input name="ctl00$UCContactUs$hdnEmailTemplate" type="hidden" id="UCContactUs_hdnEmailTemplate" data-field="EmailTemplate" />
+                <h4>Contact us</h4>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="UCContactUs_divContactSubjectList" class="divContactSubjectList">
+                                    <label for="contactSubject">Select your subject</label>
+                                    <div class="selectContainer">
+                                        <select name="ctl00$UCContactUs$drpdwnContactSubject" id="drpdwnContactSubject" class="ContactUs-select drpdwnContactSubject select2-offscreen" data-field="subject" data-field-validate="select" required="">
+	<option value="select_subject">Select subject</option>
+	<option value="suvi.panas@sca.com">Sales</option>
+	<option value="suvi.panas@sca.com">Marketing</option>
+	<option value="suvi.panas@sca.com">HR</option>
+
+</select>
+                                    </div>
+                                    <span class="error">Please select subject</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-firstname">First name</label>
+                                <input type="text" name="firstname" id="header-firstname" placeholder="First name" class="ContactUs-inputText txtFirstName" data-field="FirstName" data-field-validate="textNoSpecialChars" required />
+                                <span class="error">Please enter first name</span>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-lastname">Last name</label>
+                                <input type="text" name="lastname" id="header-lastname" placeholder="Last name" class="ContactUs-inputText txtLastName" data-field="LastName" data-field-validate="textNoSpecialChars" required />
+                                <span class="error">Please enter last name</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="header-email">Your email address</label>
+                                <input type="text" name="email" id="header-email" placeholder="Email address" class="ContactUs-email txtEmail" data-field="Email" data-field-validate="email" required />
+                                <span class="error">Please enter a correct email address</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-company">Company</label>
+                                <input type="text" name="company" id="header-company" placeholder="Company" class="ContactUs-inputText txtCompany" data-field="Company" data-field-validate="" required />
+                                <span class="error">Please enter company</span>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-phone">Phone</label>
+                                <input type="text" name="phone" id="header-phone" placeholder="Phone" class="ContactUs-phone txtPhone" data-field="Phone" data-field-validate="phone" required />
+                                <span class="error">Please enter phone</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="headerTextArea">Your message</label>
+                                <textarea id="headerTextArea" name="message" maxlength="500" placeholder="Message" data-field="message" data-field-validate="" required></textarea>
+                                <span class="error">Please enter your message</span>
+                                <div class="text-right">
+                                    <span class="smallPrint note textAreaCountDown">500 &nbsp;500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="g-recaptcha grecaptchaStyle" data-sitekey="6LdHcmQUAAAAAJZXxNs7h_18G0axX78qh1VVtJGR"></div>
+                                <span class="error u-marginT15">Please populate recaptcha</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formFooter">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="disclaimer u-marginB10 tosWrapper"  errormessage="Please confirm that you have read the information concerning the personal data and the terms of use.">
+    This form asks for your contact details so we can respond to your enquiry via email. Have a look at our <a href="https://www.tork.co.uk/legal-information/#paragraph-0">terms of use</a> and <a href="https://www.tork.co.uk/legal-information/#paragraph-2" target="_blank">privacy policy</a> for a detailed description of how we protect and manage your submitted data.
+    <div class="u-marginT15 u-marginMB15">
+        <div class="form-group">
+            <input id="tos" type="checkbox" name="tos" value="yes" data-field="tos" data-field-validate="checkbox" class="invalid" isrequired="true">
+            <label for="tos">
+                Yes, I have read and understood the information concerning the personal data and the terms of use.
+            </label>
+        </div>
+        <div class="error u-marginT10">Please confirm that you have read the information concerning the personal data and the terms of use.</div>
+    </div>
+</div>
+                        </div>
+                        <div class="col-xs-12">
+                            
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="text-right btnRow">
+                                <div class="message displayNone" data-contact-message=""></div>
+                                <a href="#/" class="btn_cancel" data-contact-cancel="">Close</a>
+                                <button type="submit" class="ContactUs-submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+							</div>
+						</div>
+						
+					</div>
+					<div class="toolbarListGroup hidden-xs">
+						
+						<div class="toolbarListItem">
+							
+							<a href="#searchTab" class="icon icon-magnify" title="Search"></a>
+							
+							
+							<div class="tab-pane" id="searchTab">
+								
+
+<div class="tabContent">
+    <div class="searchContainer" style="margin-left:-15px;">
+        <div id="UCSearchContainer_pnlSearchBox" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;UCSearchContainer_btnSearch&#39;)">
+	
+            <input id="hdnCategories" type="hidden"/>
+            <input name="ctl00$UCSearchContainer$txtSearch" type="text" id="UCSearchContainer_txtSearch" Placeholder="Search" />
+            <input name="ctl00$UCSearchContainer$BrandFilter" type="hidden" id="BrandFilter" value="Wausau,Ecosoft,BAYWEST,Dari-Towels,Silhouette,Optifold,Revolution,Optisource,Mighty Dry Dbl-Tough,Ultra Dubl-Tough,Sirrus,Dubl-Serv,Compatible,Optiserv Hybrid,Optiserv Accent" />
+            <input name="ctl00$UCSearchContainer$CategoryFilter" type="hidden" id="CategoryFilter" value="Spare_parts" />
+            <input type="button" name="ctl00$UCSearchContainer$btnSearch" value="Search" onclick="javascript:__doPostBack(&#39;ctl00$UCSearchContainer$btnSearch&#39;,&#39;&#39;)" id="UCSearchContainer_btnSearch" class="btn" />
+        
+</div>
+    </div>
+    <div id="suggestionBox" class="row" >
+        <div class="col-xs-6" style="padding-left:0px;">
+            <h4 style="height: 33px;">Products</h4>
+            <div id="sProducts" class="searchResults">
+            </div>
+        </div>
+        <div class="col-xs-6" style="padding-left:0px;">
+            <h4 style="height: 33px;">Other search suggestions</h4>
+            <div id="sOthers" class="searchResults">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <a id="btnViewAllResults" href="#/" class="text-left labelledIcon iconRight active">View all results<span class="icon icon-arrow_right"></span></a>
+        
+        
+
+        <a href="/about/resources/" class="text-left labelledIcon iconRight active">Looking for marketing materials<span class="icon icon-arrow_right"></span></a>
+
+         
+
+        <a href='' style='display:none;' class="text-left labelledIcon iconRight active"><span class="icon icon-arrow_right"></span></a>
+    </div>
+</div>
+
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+			<div class="mobileNavSearch">
+				
+ <div class="searchContainer">
+                    <span id="spnMobileSearch" class="icon icon-magnify"></span>
+     <input name="ctl00$UCMobileSearchContainer$txtMobileSearch" type="text" id="UCMobileSearchContainer_txtMobileSearch" class="fullWidth" Placeholder="Search" />
+ </div>
+			</div> 
+			<div id="mobileNav" class="collapse">
+			<ul class="mobileNavPrimary">
+				<li>
+					<a href="/product-mobilemenu/" title="Products">Products</a>
+				</li>
+				
+        <li>
+    
+        <div id="UCMobileTopNavigation_MobileTopNavigationRepeater_MultiItems_0">
+            <a class="mobileToolbarTrigger" href="#/">Recommendations</a>
+
+            
+                    <div class="mobileToolbarPanel">
+                        <div class="mobileToolbarPanelWrap">
+                
+
+                    <h2 class="smaller">Businesses</h2>
+                    
+                            <h4>
+                                <a href="/recommendations/businesses/healthcare/">Healthcare</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/food-service/">Food service</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/hotels/">Hotels</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/industry/">Industry</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/food-industry/">Food industry</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/office/">Office</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/businesses/facility-service-companies/">Facility service companies</a>
+                            </h4>
+                        
+                
+
+                    <h2 class="smaller">Focus areas</h2>
+                    
+                            <h4>
+                                <a href="/recommendations/focus-areas/dining/">Dining</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/focus-areas/kitchen/">Kitchen</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/focus-areas/washroom/">Washroom</a>
+                            </h4>
+                        
+                            <h4>
+                                <a href="/recommendations/focus-areas/wiping-and-cleaning/">Wiping and cleaning</a>
+                            </h4>
+                        
+                
+                    </div>
+                    </div>
+                
+
+        </div>
+        
+    
+        
+        <div id="UCMobileTopNavigation_MobileTopNavigationRepeater_SingleItem_1">
+            <a href="http://ordergbi.easyorder.eu/easyorder.b2b/index">Webshop</a>
+        </div>
+    
+        
+        <div id="UCMobileTopNavigation_MobileTopNavigationRepeater_SingleItem_2">
+            <a href="/easycube/">Tork EasyCube®</a>
+        </div>
+    
+        
+        <div id="UCMobileTopNavigation_MobileTopNavigationRepeater_SingleItem_3">
+            <a href="https://www.tork.co.uk/connect/">Tork Connect</a>
+        </div>
+    
+        </li>
+    
+
+			</ul>
+			<div id="mobileToolbar" class="mobileNavSecondary">
+				
+				<div class="mobileToolbarItem">
+					<a href="#/" class="mobileToolbarTrigger" title="Contact us">Contact us <span class="icon icon-phone"></span></a>
+					<div class="mobileToolbarPanel">
+						<div id="mobilePhonePanel" class="mobileToolbarPanelWrap">
+							<h2 class="smaller"></h2>
+							
+							
+							<h4>
+								
+								
+								Customer Service - Telephone
+								
+								
+							</h4>
+							<p>
+								
+								
+								
+								<a href='tel:01582 677570/'>01582 677570</a></br>
+								                                
+								
+								
+							</p>
+							<hr class="smallMargin">
+							
+							<h4>
+								
+								
+								Customer Service - Fax
+								
+								
+							</h4>
+							<p>
+								
+								
+								
+								<a href='tel:01582 677580/'>01582 677580</a></br>
+								                                
+								
+								
+							</p>
+							<hr class="smallMargin">
+							
+							
+						</div>
+					</div>
+				</div>
+				
+                                
+				<div class="mobileToolbarItem">
+					<a href="#/" class="mobileToolbarTrigger" title="Contact information">Contact information <span class="icon icon-message"></span></a>
+					<div id="mobileContactPanel" class="mobileToolbarPanel">
+						<div class="mobileToolbarPanelWrap">
+							
+
+<div class="tabContent verticalForm">
+    <div class="ContactUs" data-email-form-handler="/Handlers/ContactUsHandler.ashx" data-contact-us-form="">
+        
+            <div>
+                <input name="ctl00$UCContactUsMobile$hdnContactUsDefaultEmail" type="hidden" id="UCContactUsMobile_hdnContactUsDefaultEmail" data-contact-default-email="" data-field="DefaultEmail" value="suvi.panas@sca.com" />
+                <input name="ctl00$UCContactUsMobile$hdnHeaderContactUsForm" type="hidden" id="UCContactUsMobile_hdnHeaderContactUsForm" data-field="IsHeaderContactUsForm" value="true" />
+                <input name="ctl00$UCContactUsMobile$hdnEmailTemplate" type="hidden" id="UCContactUsMobile_hdnEmailTemplate" data-field="EmailTemplate" />
+                <h4>Contact us</h4>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="UCContactUsMobile_divContactSubjectList" class="divContactSubjectList">
+                                    <label for="contactSubject">Select your subject</label>
+                                    <div class="selectContainer">
+                                        <select name="ctl00$UCContactUsMobile$drpdwnContactSubject" id="drpdwnContactSubject" class="ContactUs-select drpdwnContactSubject select2-offscreen" data-field="subject" data-field-validate="select" required="">
+	<option value="select_subject">Select subject</option>
+	<option value="suvi.panas@sca.com">Sales</option>
+	<option value="suvi.panas@sca.com">Marketing</option>
+	<option value="suvi.panas@sca.com">HR</option>
+
+</select>
+                                    </div>
+                                    <span class="error">Please select subject</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-firstname">First name</label>
+                                <input type="text" name="firstname" id="header-firstname" placeholder="First name" class="ContactUs-inputText txtFirstName" data-field="FirstName" data-field-validate="textNoSpecialChars" required />
+                                <span class="error">Please enter first name</span>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-lastname">Last name</label>
+                                <input type="text" name="lastname" id="header-lastname" placeholder="Last name" class="ContactUs-inputText txtLastName" data-field="LastName" data-field-validate="textNoSpecialChars" required />
+                                <span class="error">Please enter last name</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="header-email">Your email address</label>
+                                <input type="text" name="email" id="header-email" placeholder="Email address" class="ContactUs-email txtEmail" data-field="Email" data-field-validate="email" required />
+                                <span class="error">Please enter a correct email address</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-company">Company</label>
+                                <input type="text" name="company" id="header-company" placeholder="Company" class="ContactUs-inputText txtCompany" data-field="Company" data-field-validate="" required />
+                                <span class="error">Please enter company</span>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <label for="header-phone">Phone</label>
+                                <input type="text" name="phone" id="header-phone" placeholder="Phone" class="ContactUs-phone txtPhone" data-field="Phone" data-field-validate="phone" required />
+                                <span class="error">Please enter phone</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="headerTextArea">Your message</label>
+                                <textarea id="headerTextArea" name="message" maxlength="500" placeholder="Message" data-field="message" data-field-validate="" required></textarea>
+                                <span class="error">Please enter your message</span>
+                                <div class="text-right">
+                                    <span class="smallPrint note textAreaCountDown">500 &nbsp;500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="g-recaptcha grecaptchaStyle" data-sitekey="6LdHcmQUAAAAAJZXxNs7h_18G0axX78qh1VVtJGR"></div>
+                                <span class="error u-marginT15">Please populate recaptcha</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formFooter">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="disclaimer u-marginB10 tosWrapper"  errormessage="Please confirm that you have read the information concerning the personal data and the terms of use.">
+    This form asks for your contact details so we can respond to your enquiry via email. Have a look at our <a href="https://www.tork.co.uk/legal-information/#paragraph-0">terms of use</a> and <a href="https://www.tork.co.uk/legal-information/#paragraph-2" target="_blank">privacy policy</a> for a detailed description of how we protect and manage your submitted data.
+    <div class="u-marginT15 u-marginMB15">
+        <div class="form-group">
+            <input id="tos" type="checkbox" name="tos" value="yes" data-field="tos" data-field-validate="checkbox" class="invalid" isrequired="true">
+            <label for="tos">
+                Yes, I have read and understood the information concerning the personal data and the terms of use.
+            </label>
+        </div>
+        <div class="error u-marginT10">Please confirm that you have read the information concerning the personal data and the terms of use.</div>
+    </div>
+</div>
+                        </div>
+                        <div class="col-xs-12">
+                            
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="text-right btnRow">
+                                <div class="message displayNone" data-contact-message=""></div>
+                                <a href="#/" class="btn_cancel" data-contact-cancel="">Close</a>
+                                <button type="submit" class="ContactUs-submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+						</div>
+					</div>
+				</div>
+                                
+				
+				<div class="mobileToolbarItem">
+					<a href="/distributor-finder/" title="Find a distributor">Find a distributor <span class="icon icon-distributor-finder"></span></a>				</div>
+				
+				
+				<div class="mobileToolbarItem">
+					<a title="Product list" class="prdCounter mobileProductListLink" href="#productsTab" id="productsTabLink" name="mobile" onclick="getProductList(this)">Product list<span class="icon icon-file productCounter"></span></a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div id="headerNav" class="hidden-xs no-js">
+		<div class="container-fluid">
+			<div class="wrap">
+				<div class="navItem">
+					<!-- div starts in ucProductNavigationControl -->
+					
+<a class="navItem-link" href="javascript:;">Products</a>
+<div id="productsDropdown" class="headerNavDropdown">
+    <div class="wrap headerNavDropdownContent">
+        <div class="row">
+            <div class="col-xs-6">
+                <h3 class="bigger">
+                    <span id="ProductNav_dispenserLabel">Dispensers</span></h3>
+                <table id="ProductNav_dispNavigationTable" class="linkTable">
+	<tr>
+		<td><a href=/products/dispenser/paper-towels/>Paper towels</a></td><td><a href=/products/dispenser/centrefeed/>Centrefeed</a></td>
+	</tr><tr>
+		<td><a href=/products/dispenser/reflex-centrefeed/>Reflex Centrefeed</a></td><td><a href=/products/dispenser/toilet-paper/>Toilet paper</a></td>
+	</tr><tr>
+		<td><a href=/products/dispenser/hand-sanitiser/>Hand Sanitiser</a></td><td><a href=/products/dispenser/skin-care/>Skin care</a></td>
+	</tr><tr>
+		<td><a href=/products/dispenser/washroom-accessories/>Washroom accessories</a></td><td><a href=/products/dispenser/bins/>Bins</a></td>
+	</tr><tr>
+		<td><a href=/products/dispenser/wipers-cloths/>Wipers and Cloths</a></td><td><a href=/products/dispenser/patient-care/>Patient Care</a></td>
+	</tr><tr>
+		<td><a href=/products/dispenser/napkins-tableware/>Napkins and tableware</a></td><td><a href=/products/dispenser/accessories/>Accessories</a></td>
+	</tr>
+</table>
+            </div>
+            <div class="col-xs-6">
+                <h3 class="bigger">
+                    <span id="ProductNav_consumablesLabel">Refills</span></h3>
+                <table id="ProductNav_refillsNavigationTable" class="linkTable">
+	<tr>
+		<td><a href=/products/refill/paper-towels/>Paper towels</a></td><td><a href=/products/refill/centrefeed/>Centrefeed</a></td>
+	</tr><tr>
+		<td><a href=/products/refill/reflex-centrefeed/>Reflex Centrefeed</a></td><td><a href=/products/refill/toilet-paper/>Toilet paper</a></td>
+	</tr><tr>
+		<td><a href=/products/refill/hand-sanitiser/>Hand Sanitiser</a></td><td><a href=/products/refill/skin-care/>Skin care</a></td>
+	</tr><tr>
+		<td><a href=/products/refill/washroom-accessories/>Washroom accessories</a></td><td><a href=/products/refill/bins/>Bins</a></td>
+	</tr><tr>
+		<td><a href=/products/refill/wipers-cloths/>Wipers and Cloths</a></td><td><a href=/products/refill/patient-care/>Patient Care</a></td>
+	</tr><tr>
+		<td><a href=/products/refill/napkins-tableware/>Napkins and tableware</a></td>
+	</tr>
+</table>
+            </div>
+        </div>
+    </div>
+
+					
+					<!-- Start of Product Navigation Teasers -->
+					<div class="bgGray bannerWithImages lastContainer">
+						<div class="wrap">
+							<div class="row equalHeightContainer">
+								
+								                        
+								
+								<div class="col-xs-6 bannerItem">
+									<div class="row">
+        <div class="col-xs-4">
+             
+                
+                
+				
+				
+					<img tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/829/82829/Tork_03_200x200_jpg/ad-a-glance-square.jpg" title="Ad-A-Glance.tif" alt="Ad-A-Glance.tif" />
+				
+                
+                
+            
+        </div>
+        <div class="col-xs-8"> 
+            
+                 <h4 class="noTopMargin equalHeightItem">
+                  <span class="mainMenuThreedots" style="max-height:40px;">
+                    
+                    
+                        Ad-a-Glance
+                    
+                    
+                   </span>
+                </h4>
+            
+
+             
+            <div class="equalHeightDesc">
+                <div class="mainMenuThreedots" style="max-height: 60px;">
+                    
+                        
+                            The Xpressnap AD-a-Glance feature is your window of opportunity to use the display panels to turn your dispenser into an onsite marketing tool. It's easy to use your AD-a-Glance to make a difference-both in your community and for your bottom line!
+                        
+                    
+                </div>
+            </div>
+            
+
+            <div>
+            
+            
+            
+            
+            
+            
+            
+                <a class="labelledIcon iconRight siteeditcheck" href="http://tork.co.uk/ad-a-glance/" target="_self" tridion:textonfail="False" title="Ad-a-Glance">Read more <span class="icon-arrow_right"></span>
+                </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            </div>
+           
+        </div>
+    </div>
+								</div>
+								
+								
+								                        
+								
+								<div class="col-xs-6 bannerItem">
+									<div class="row">
+        <div class="col-xs-4">
+             
+                
+                
+				
+				
+					<img tridion:targetattribute="src" tridion:type="Multimedia" src="" title="" alt="" />
+				
+                
+                
+            
+        </div>
+        <div class="col-xs-8"> 
+            
+                 <h4 class="noTopMargin equalHeightItem">
+                  <span class="mainMenuThreedots" style="max-height:40px;">
+                    
+                    
+                        Custom print
+                    
+                    
+                   </span>
+                </h4>
+            
+
+             
+            <div class="equalHeightDesc">
+                <div class="mainMenuThreedots" style="max-height: 60px;">
+                    
+                        
+                            Our napkins and tableware products have been designed to perform. But why not make them work a little harder? Did you know that 75% of the napkin users notice the print on the napkin? Custom printing is a cost-effective way to promote your brand and will help make an occasion even more special. With custom print, your possibilities are endless! We offer custom printing on all of our dispenser napkins as well as on a wide range of our conventional napkins and tableware products. Create your very own print to give a distinctive quality to placemats, cutlery pockets, Tork LinStyle® napkins, coasters, and more. Custom print helps you to create the right impression and a more memorable dining experience for your guests. For more information, please contact your local Tork sales representative.
+                        
+                    
+                </div>
+            </div>
+            
+
+            <div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                                            
+                <a href="/recommendations/focus-areas/dining/custom-print/"  class="labelledIcon iconRight siteeditcheck" target="_self" title="Custom print">Read more <span class="icon-arrow_right"></span></a>            
+
+            
+            </div>
+           
+        </div>
+    </div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Product Navigation Teasers -->
+					
+				</div>
+				<!-- closing div started in ucProductNavigationControl -->
+			</div>
+			<!-- navitem closing div -->
+			
+        <div id="UCTopNavigation_TopNavigationRepeater_DropDownContent_0">
+            <div class="navItem">
+                <a class="navItem-link" href="javascript:;">Recommendations</a>
+                <div class="headerNavDropdown" style="display: none;">
+                    <div class="wrap headerNavDropdownContent">
+                        <div class="row">
+
+                            
+                                    <div class="col-xs-6">
+                                        <h3 class="bigger">Businesses</h3>
+                                        <table class="linkTable">
+                                            <tbody>
+                                                
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/businesses/healthcare/">Healthcare</a></td>
+                                                        
+                                                    
+
+                                                        
+
+                                                        <td><a href="/recommendations/businesses/food-service/">Food service</a></td>
+                                                        </tr>
+                                                    
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/businesses/hotels/">Hotels</a></td>
+                                                        
+                                                    
+
+                                                        
+
+                                                        <td><a href="/recommendations/businesses/industry/">Industry</a></td>
+                                                        </tr>
+                                                    
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/businesses/food-industry/">Food industry</a></td>
+                                                        
+                                                    
+
+                                                        
+
+                                                        <td><a href="/recommendations/businesses/office/">Office</a></td>
+                                                        </tr>
+                                                    
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/businesses/facility-service-companies/">Facility service companies</a></td>
+                                                        </tr>
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                
+                                    <div class="col-xs-6">
+                                        <h3 class="bigger">Focus areas</h3>
+                                        <table class="linkTable">
+                                            <tbody>
+                                                
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/focus-areas/dining/">Dining</a></td>
+                                                        
+                                                    
+
+                                                        
+
+                                                        <td><a href="/recommendations/focus-areas/kitchen/">Kitchen</a></td>
+                                                        </tr>
+                                                    
+
+                                                        <tr>
+
+                                                        <td><a href="/recommendations/focus-areas/washroom/">Washroom</a></td>
+                                                        
+                                                    
+
+                                                        
+
+                                                        <td><a href="/recommendations/focus-areas/wiping-and-cleaning/">Wiping and cleaning</a></td>
+                                                        </tr>
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                
+                        </div>
+                    </div>
+                    <div id="UCTopNavigation_TopNavigationRepeater_TeaserSections_0">
+                        <div class="bgGray bannerWithImages lastContainer">
+                            <div class="wrap">
+                                <div class="row equalHeightContainer">
+                                    
+                                            <div class="col-xs-6 bannerItem">
+                                            <div class="row">
+        <div class="col-xs-4">
+             
+                
+                
+				
+				
+					<img tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/909/82909/Tork_03_200x200_jpg/sustainability-square.jpg" title="Sustainability.jpg" alt="Sustainability.jpg" />
+				
+                
+                
+            
+        </div>
+        <div class="col-xs-8"> 
+            
+                 <h4 class="noTopMargin equalHeightItem">
+                  <span class="mainMenuThreedots" style="max-height:40px;">
+                    
+                    
+                        Sustainability
+                    
+                    
+                   </span>
+                </h4>
+            
+
+             
+            <div class="equalHeightDesc">
+                <div class="mainMenuThreedots" style="max-height: 60px;">
+                    
+                        
+                            Tork is all about understanding our customers’ needs and giving them products and services that help them focus on what matters most to their business. Sustainability is an integrated part of that and of everything we do.
+                        
+                    
+                </div>
+            </div>
+            
+
+            <div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                                            
+                            
+
+            
+            </div>
+           
+        </div>
+    </div>
+                                                            
+                                                    </div>
+                                        
+                                            <div class="col-xs-6 bannerItem">
+                                            <div class="row">
+        <div class="col-xs-4">
+             
+                
+                
+				
+				
+					<img tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/854/82854/Tork_03_200x200_jpg/hand-hygiene-square.jpg" title="Hand hygiene.tif" alt="Hand hygiene.tif" />
+				
+                
+                
+            
+        </div>
+        <div class="col-xs-8"> 
+            
+                 <h4 class="noTopMargin equalHeightItem">
+                  <span class="mainMenuThreedots" style="max-height:40px;">
+                    
+                    
+                        Hygiene
+                    
+                    
+                   </span>
+                </h4>
+            
+
+             
+            <div class="equalHeightDesc">
+                <div class="mainMenuThreedots" style="max-height: 60px;">
+                    
+                        
+                            People want to know they’re staying, eating or working in a safe and clean environment. And businesses want to know they’ve done all they can to cut the risk of disruption from absence. But good hygiene is a joint effort that depends on colleagues and customers getting into the habit of effective hand washing.
+                        
+                    
+                </div>
+            </div>
+            
+
+            <div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                                            
+                <a href="/about/hygiene/"  class="labelledIcon iconRight siteeditcheck" target="_self" title="Hygiene">Read more <span class="icon-arrow_right"></span></a>            
+
+            
+            </div>
+           
+        </div>
+    </div>
+                                                            
+                                                    </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div id="UCTopNavigation_TopNavigationRepeater_SingleItem_1">
+            <div class="navItem">
+                <a class="navItem-link" href="http://ordergbi.easyorder.eu/easyorder.b2b/index">Webshop</a>
+            </div>
+        </div>
+    
+        
+        <div id="UCTopNavigation_TopNavigationRepeater_SingleItem_2">
+            <div class="navItem">
+                <a class="navItem-link" href="/easycube/">Tork EasyCube®</a>
+            </div>
+        </div>
+    
+        
+        <div id="UCTopNavigation_TopNavigationRepeater_SingleItem_3">
+            <div class="navItem">
+                <a class="navItem-link" href="https://www.tork.co.uk/connect/">Tork Connect</a>
+            </div>
+        </div>
+    
+
+			<div class="clearfix"></div>
+		</div>
+		<!-- wrap closing div -->
+	</div>
+	<!-- conatiner fluid closing div -->
+	</div>
+	<!-- headerNav fluid closing div -->
+</header>				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a id="hrefHeader"></a>
+				
+<section id="landingPage" class="viewContainer container-fluid">
+    <!-- Start of hero carousel (Bootstrap carousel) -->
+		
+
+			
+				<div class="heroCarousel">
+
+    <div id="heroCarousel" class="carousel slide">
+        <!-- Wrapper for slides -->
+        <ul class="slides">
+            
+            
+            <li id="slide0">
+                
+
+                
+                
+                
+                
+                
+
+                
+				
+                
+                    <!-- Start Component Field: {"XPath":"tcm:Content/custom:hero_carousel/custom:hero_item_list[1]/custom:image[1]"} -->
+				
+					
+						<div class="cover-image" style="background-image: url('https://az745204.vo.msecnd.net/images-c5/58/196058/Tork_12_1600x500_jpg/reflex-kitchen-wiping-superwide2-hero.jpg');" ></div>
+						<div class="cover-image ie9" style="background-image: url('https://az745204.vo.msecnd.net/images-c5/58/196058/Tork_12_1600x500_jpg/reflex-kitchen-wiping-superwide2-hero.jpg');"></div>
+					
+					
+					
+					
+					
+					<div class="wrap">
+                    
+					
+					
+					
+					
+					
+					
+                            <a class="carouselContent" href="https://www.tork.co.uk/reflex/" target="_blank"
+                               alt="">
+                            
+                            
+                            
+                            
+					
+					
+					
+					
+					
+					
+                    
+                    
+                    
+						 
+						<h2 class="h3 colorWhite heroCarouselH3">
+							
+                            
+                            
+                            
+                            Keep the kitchen going with Tork Reflex™
+                            
+                            
+                            
+                            
+						</h2>
+						 
+                        
+                        <h1 class="colorWhite">
+                        
+						
+                        
+						
+
+                                
+                                
+                                
+                                
+                                Improve flow and efficiency in your kitchen
+                                
+                                
+                                
+                                
+                                
+                       
+                        </h1>
+                        
+						
+						
+						
+						
+						
+                        
+                        
+                        <div class="carouselCTA White hidden-xs">
+                        
+                        
+
+							
+                         
+                                
+                                
+                                Find out how
+                                
+                                
+
+                             
+							
+							
+                        </div>
+                        
+						
+					
+                    </a>
+					
+					
+					
+                </div>
+                
+            </li>
+            
+            <li id="slide1">
+                
+
+                
+                
+                
+                
+                
+
+                
+				
+                
+                    <!-- Start Component Field: {"XPath":"tcm:Content/custom:hero_carousel/custom:hero_item_list[2]/custom:image[1]"} -->
+				
+					
+					
+					
+						<div class="cover-image" data-image-src="https://az745204.vo.msecnd.net/images-c5/325/189325/Tork_12_1600x500_jpg/tork-hightrafficstadium-superwide.jpg"></div>
+						<div class="cover-image ie9" data-image-src="https://az745204.vo.msecnd.net/images-c5/325/189325/Tork_12_1600x500_jpg/tork-hightrafficstadium-superwide.jpg" ></div>
+					
+					
+					
+					<div class="wrap">
+                    
+					
+					
+					
+					
+					
+					
+                            
+                            <a class="carouselContent" href="https://www.tork.co.uk/peakserve/" target="_self"
+                               alt="">
+                            
+                            
+                            
+					
+					
+					
+					
+					
+					
+                    
+                    
+                    
+						 
+                        
+						
+                        <h2 class="colorWhite heroCarouselH2">
+                        
+                        
+						
+
+                                
+                                
+                                
+                                
+                                How do you prepare for 65,000 football fans visiting the washrooms at half time?
+                                
+                                
+                                
+                                
+                                
+                       
+						
+                        </h2>
+                        
+						
+						
+						
+						
+                        
+                        
+                        <div class="carouselCTA White hidden-xs">
+                        
+                        
+
+							
+                         
+                                
+                                
+                                Find out how Zenit Arena, St. Petersburg, Russia meets the challenge
+                                
+                                
+
+                             
+							
+							
+                        </div>
+                        
+						
+					
+                    </a>
+					
+					
+					
+                </div>
+                
+            </li>
+            
+            
+        </ul>
+        <a href="" class="directionNav prev icon-arrow_left_borderless" data-direction="prev"></a>
+        <a href="" class="directionNav next icon-arrow_right_borderless" data-direction="next"></a>
+    </div>
+</div>			
+
+		
+
+			
+
+		
+    <!-- End of hero carousel (Bootstrap carousel) -->
+
+    <!-- Start of highlight promos -->
+		 
+			
+		 
+			
+				<div class="fullWidthWrap bgWhite equalHeightContainer" id="highlightPromos">
+	<div class="container-fluid">
+		<div class="wrap">
+			<div class="row">
+				
+				
+						
+						
+						
+						
+					
+					
+					
+						
+							<div class="col-xs-12 col-md-4">
+								<div class="promoItem">
+									
+									<div class="promoItemContent noTheming">
+										<h3 class="promoItemTitle bigger visible-xs hidden-sm visible-md visible-lg equalHeightItem" style="min-height: 93px;">
+											<a href="/about/hygiene/hygiene-issues-open-environment/"  class="siteeditcheck" title="">The importance of hygiene in open plan offices</a>
+										</h3>
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-12 u-marginB15">
+												<a href="/about/hygiene/hygiene-issues-open-environment/"  class="siteeditcheck"  title=""><img class="" tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/387/197387/Tork_08_700x500_jpg/hygiene-stand-open-office-rectangle.jpg" title="Hygiene-stand-open-office_original.jpg" alt="Hygiene-stand-open-office_original.jpg" /></a>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-12 hidden-md equalHeightDesc" style="min-height: 140px;">
+												<h3 class="promoItemTitle hidden-xs visible-sm">
+													<a href="/about/hygiene/hygiene-issues-open-environment/"  class="siteeditcheck" title="">The importance of hygiene in open plan offices</a>
+												</h3>
+												<div class="promoText threedots" style="word-wrap: break-word;">	
+													One of the most important factors for improving hand hygiene in an office is to provide employees with more opportunities. With the Tork Hygiene Stand placed at locations in the office with high traffic, companies can offer employees hygiene products that reduce sick leave and increase well-being. We share new data and insights into office hygiene.
+												</div>
+											</div>
+										</div>
+										<a href="/about/hygiene/hygiene-issues-open-environment/"  class="labelledIcon iconRight hidden-xs siteeditcheck" title="">Read more <span class="icon-arrow_right"></span></a>
+<a href="/about/hygiene/hygiene-issues-open-environment/"  class="labelledIcon visible-xs siteeditcheck" title="" title=""><span class="icon-arrow_right"></span></a>
+									</div>
+									
+								</div>
+							</div>	
+						
+						
+					
+					
+				
+					
+					
+					
+						
+						
+							<div class="col-xs-12 col-md-4 borderLeft">			
+								<div class="promoItem">
+									
+									<div class="promoItemContent noTheming">
+										<h3 class="promoItemTitle bigger visible-xs hidden-sm visible-md visible-lg equalHeightItem" style="min-height: 93px;">
+											<a href="/about/whytork/torkproducttesting/"  class="siteeditcheck" target="_self" title="Product Testing">Product Testing</a>
+										</h3>
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-12 u-marginB15">
+												<a href="/about/whytork/torkproducttesting/"  class="siteeditcheck" target="_self"><img class="" tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/737/169737/Tork_08_700x500_jpg/topp-wolfs-700x500.jpg" title="topp_wolfs_original.jpg" alt="topp_wolfs_original.jpg" /></a>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-12 hidden-md equalHeightDesc" style="min-height: 140px;">
+												<h3 class="promoItemTitle hidden-xs visible-sm">
+													<a href="/about/whytork/torkproducttesting/"  class="siteeditcheck" target="_self" title="Product Testing">Product Testing</a>
+												</h3>
+												<div class="promoText threedots" style="word-wrap: break-word;">
+													<div>Preparing our systems to serve generations of users.  </div>
+<div>We know that you need reliable systems so that you can focus on running your business. That’s why every system we develop goes through rigorous lab and field testing and quality controls before we introduce them to you.</div>
+												</div>
+											</div>
+										</div>
+										<a href="/about/whytork/torkproducttesting/"  class="labelledIcon iconRight hidden-xs siteeditcheck" target="_self" title="Product Testing">Read more <span class="icon-arrow_right"></span></a>
+<a href="/about/whytork/torkproducttesting/"  class="labelledIcon visible-xs siteeditcheck" target="_self" title="Product Testing"><span class="icon-arrow_right"></span></a>
+									</div>
+									
+								</div>														
+							</div>
+							<div class="col-xs-12 col-md-4 borderLeft">
+								<div class="promoItem">
+									
+									<div class="promoItemContent noTheming">
+										<h3 class="promoItemTitle bigger visible-xs hidden-sm visible-md visible-lg equalHeightItem" style="min-height: 31px;">
+											<a class="siteeditcheck" href="http://tork.co.uk/ad-a-glance/" target="_self" title="Ad-a-Glance"> 
+									
+
+									
+
+
+
+									
+
+
+									
+									
+									
+										
+
+			
+				Ad-a-Glance
+			
+		
+									
+									
+										</a>
+										</h3>
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-12 u-marginB15">
+												<a class="siteeditcheck" href="http://www.tork.hu/javaslataink/szegmensek/industry/" target="_self">
+													<a class="siteeditcheck" href="http://tork.co.uk/ad-a-glance/" target="_self"> 
+
+
+
+
+
+		
+
+          
+
+
+        	 
+			
+			
+			
+				<img class="" tridion:targetattribute="src" tridion:type="Multimedia" src="https://az745204.vo.msecnd.net/images-c5/828/82828/Tork_08_700x500_jpg/ad-a-glance-rectangle.jpg" title="Ad-A-Glance.tif" alt="Ad-A-Glance.tif" />
+			
+
+			
+			
+
+        
+	
+
+	
+	
+	
+	
+
+	
+	
+	</a>
+												</a>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-12 hidden-md equalHeightDesc">
+												<div class="promoText threedots">
+													The Xpressnap AD-a-Glance feature is your window of opportunity to use the display panels to turn your dispenser into an onsite marketing tool. It's easy to use your AD-a-Glance to make a difference-both in your community and for your bottom line!
+												</div>
+											</div>
+										</div>
+										<a class="labelledIcon iconRight hidden-xs siteeditcheck" href="http://tork.co.uk/ad-a-glance/" target="_self" title="Ad-a-Glance">       Read more <span class="icon-arrow_right"></span>
+										</a>
+
+<a class="labelledIcon visible-xs siteeditcheck" href="http://tork.co.uk/ad-a-glance/" target="_self" title="Ad-a-Glance"><span class="icon-arrow_right"></span></a>
+									</div>
+									
+								</div>
+							</div>
+						
+					
+					
+				
+				
+			</div>
+		</div>			
+	</div>
+</div> 
+			
+		 
+    <!-- End of highlight promos list -->
+
+    <div class="wrap">
+      <!-- Start of campaign module -->
+		
+			
+      
+			
+      
+      <!-- End of campaign module -->
+
+
+      <!-- Start of cross promos x7 -->
+            
+
+<div id="BusinessArea">
+<!--Start of HTML for 3 boxes-->
+            
+            <div class="promoGroup">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="promoItem rectangle">
+                                    <div class="promoItemNoDot threedots noReadMore">
+                                        <h2 class="bigger noTopMargin promobox-Head">                                                                                
+                                        
+                                            
+                                                Choose your business area
+                                            
+                                                                                                                        
+                                        </h2>
+                                        
+                                        
+                                            
+                                               <p>Tork products and services for your business</p>
+                                            
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="row">                                                        
+                            <div class="col-xs-12 col-sm-6">                            
+                                <div><!-- Start Component Field: {"XPath":"tcm:Content/custom:cross_promotions/custom:promotion[1]"} -->    
+                                    <div class="visible-xs promoItem square squareButRectangleOnMd themed green">
+    <a href="/recommendations/businesses/industry/"  class="hoverOverlay siteeditcheck" title="Industry"></a>    <div class ="promoItemContent" >
+        <h3>
+        
+                    Industry
+        
+        </h3>
+
+        <div class="hightfordotdot threedots">
+
+        
+                    Keep your production line clean and running with our handy dispensers and purpose-made cloths. 100% new, each cloth is made for a specified task yet versatile enough for multi-purpose use. Minimise downtime with our professional wiping, cleaning and polishing systems that help to speed up your regular maintenance.
+        
+        </div>
+    </div>
+    <p>
+        <a href="/recommendations/businesses/industry/"  class="labelledIcon iconRight text-right siteeditcheck" title="Industry">Read more
+        <span class="icon-arrow_right"></span></a></p>
+</div>
+
+<div class="hidden-xs promoItem square squareButRectangleOnMd themed green">
+    <a href="/recommendations/businesses/industry/"  class="hoverOverlay siteeditcheck" title="Industry"><div class ="promoItemContent" >
+        <h3>
+        
+            
+                
+                    Industry
+                
+            
+        
+        </h3>
+
+        <div class="hightfordotdot threedots">
+
+        
+            
+                
+                    Keep your production line clean and running with our handy dispensers and purpose-made cloths. 100% new, each cloth is made for a specified task yet versatile enough for multi-purpose use. Minimise downtime with our professional wiping, cleaning and polishing systems that help to speed up your regular maintenance.
+                
+            
+        
+        </div>
+    </div></a>    <p>
+        <a href="/recommendations/businesses/industry/"  class="labelledIcon iconRight text-right siteeditcheck" title="Industry">Read more
+        <span class="icon-arrow_right"></span></a></p>
+</div>
+                                </div>
+                            </div>
+                        
+                        
+                
+        <!--End of HTML for 3 boxes-->        
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        <!--Start of HTML for 3 boxes-->
+            
+                        
+                        <div><!-- Start Component Field: {"XPath":"tcm:Content/custom:cross_promotions/custom:promotion[2]"} -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="visible-xs promoItem square squareButRectangleOnMd themed purple">
+    <a href="/recommendations/businesses/healthcare/"  class="hoverOverlay siteeditcheck" title="Healthcare"></a>    <div class ="promoItemContent" >
+        <h3>
+        
+                    Healthcare
+        
+        </h3>
+
+        <div class="hightfordotdot threedots">
+
+        
+                    Every healthcare facility is dedicated to improving its patients&#39; quality of life. Our hand hygiene systems are specially developed for caregivers and cut down the risk of infection. So it’s easier for your colleagues to keep on top of hygiene and focus on what really matters – excellent standards of patient care. How can we help you to take better care of your team, your patients and your facility?
+
+        
+        </div>
+    </div>
+    <p>
+        <a href="/recommendations/businesses/healthcare/"  class="labelledIcon iconRight text-right siteeditcheck" title="Healthcare">Read more
+        <span class="icon-arrow_right"></span></a></p>
+</div>
+
+<div class="hidden-xs promoItem square squareButRectangleOnMd themed purple">
+    <a href="/recommendations/businesses/healthcare/"  class="hoverOverlay siteeditcheck" title="Healthcare"><div class ="promoItemContent" >
+        <h3>
+        
+            
+                
+                    Healthcare
+                
+            
+        
+        </h3>
+
+        <div class="hightfordotdot threedots">
+
+        
+            
+                
+                    Every healthcare facility is dedicated to improving its patients&#39; quality of life. Our hand hygiene systems are specially developed for caregivers and cut down the risk of infection. So it’s easier for your colleagues to keep on top of hygiene and focus on what really matters – excellent standards of patient care. How can we help you to take better care of your team, your patients and your facility?
+
+                
+            
+        
+        </div>
+    </div></a>    <p>
+        <a href="/recommendations/businesses/healthcare/"  class="labelledIcon iconRight text-right siteeditcheck" title="Healthcare">Read more
+        <span class="icon-arrow_right"></span></a></p>
+</div>
+                            </div>
+                            </div>
+                        </div>                    
+                    </div>
+                
+                
+        <!--End of HTML for 3 boxes-->        
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        <!--Start of HTML for 3 boxes-->
+            
+                        
+                
+                <div><!-- Start Component Field: {"XPath":"tcm:Content/custom:cross_promotions/custom:promotion[3]"} -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="hidden-xs promoItem square promoImgContainer">
+
+
+	<a href="/recommendations/focus-areas/dining/"  class="siteeditcheck hoverOverlay" title="Dining"><img src="https://az745204.vo.msecnd.net/images-c5/819/82819/Tork_07_500x500_jpg/dining-square.jpg" tridion:type="Multimedia" title="Dining.tif" alt="Dining.tif" />
+						
+						
+						
+				
+	
+	<h2 class="textOnImage bigger">
+	
+		
+			
+				Dining
+			
+		
+	
+	</h2></a></div>
+
+
+
+
+<div class="visible-xs promoItem square promoImgContainer">
+
+
+	<a href="/recommendations/focus-areas/dining/"  class="siteeditcheck hoverOverlay" title="Dining"></a>	
+	
+					
+						
+						
+						
+							<img src="https://az745204.vo.msecnd.net/images-c5/819/82819/Tork_07_500x500_jpg/dining-square.jpg" tridion:type="Multimedia" title="Dining.tif" alt="Dining.tif" />
+						
+						
+						
+				
+	
+	<h2 class="textOnImage bigger">
+	
+                Dining
+	
+	</h2>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        <!--End of HTML for 3 boxes-->
+</div>
+       <!-- End of cross promos -->
+
+</div>
+
+</section>
+
+<!-- Start of testimonial module -->
+
+
+	
+
+	
+
+
+
+	
+<div class="container-fluid">
+    <div class="row">
+         <div class="col-xs-12">
+            <div class="Carousel Testimonial" data-testimonial-carousel>
+                <ul class="slides">
+
+                    <li class="Testimonial-item"><div class="row" style="height: 100%" >
+	<div class="Testimonial-slide">
+		
+		
+				
+		
+		
+			<div class="col-xs-12 col-sm-6 u-paddingX0">
+				<div class="Testimonial-imageWrap">
+					
+					
+						<img class="Testimonial-image" src="https://az745204.vo.msecnd.net/images-c5/874/84874/Tork_09_850x350_jpg/burgerproject-landscape.jpg"  title="BurgerProject.jpg" alt="BurgerProject.jpg">
+					
+				</div>
+			</div>
+		
+			
+		<div class="col-xs-12 col-sm-6 u-paddingX0">
+			<div class="Testimonial-text">
+				
+				
+				
+					<p class="Text-quote u-colorFlirt u-fontSize21 u-bold threedots">
+						
+						
+						The one-at-a-time dispensers reduce waste and that&#39;s good for the environment, and the bottom line.
+						
+						
+					</p>
+					
+						<p class="u-colorMidnightBlue u-fontSize21">				
+							
+							
+							Michael Clift
+							
+							
+							<span class="u-block u-fontSize12">								
+								 
+								
+								
+								Executive Development Chef, Burger Project by Rockpool Group
+								
+								
+								
+							</span>
+						</p>
+					
+				
+				
+	<a href="/testimonials/burger-project/"  class="labelledIcon iconRight" >Read more<span class="icon-arrow_right"></span></a>
+			</div>
+		</div>
+	</div>
+</div></li><li class="Testimonial-item"><div class="row" style="height: 100%" >
+	<div class="Testimonial-slide">
+		
+		
+				
+		
+		
+			<div class="col-xs-12 col-sm-6 u-paddingX0">
+				<div class="Testimonial-imageWrap">
+					
+					
+						<img class="Testimonial-image" data-image-src="https://az745204.vo.msecnd.net/images-c5/311/86311/Tork_09_850x350_jpg/royal-randwick-racecourse-landscape.jpg"  title="Royal Randwick Racecourse.jpg" alt="Royal Randwick Racecourse.jpg">
+					
+				</div>
+			</div>
+		
+			
+		<div class="col-xs-12 col-sm-6 u-paddingX0">
+			<div class="Testimonial-text">
+				
+				
+				
+					<p class="Text-quote u-colorFlirt u-fontSize21 u-bold threedots">
+						
+						
+						It is all working well, especially the capacity of the Tork Elevation Toilet Paper system which is huge so we have less re-stocking and run-out.
+						
+						
+					</p>
+					
+						<p class="u-colorMidnightBlue u-fontSize21">				
+							
+							
+							Chris Wilson
+							
+							
+							<span class="u-block u-fontSize12">								
+								 
+								
+								
+								Projects Manager, Australian Turf Club 
+								
+								
+								
+							</span>
+						</p>
+					
+				
+				
+	<a href="/testimonials/"  class="labelledIcon iconRight" >Read more<span class="icon-arrow_right"></span></a>
+			</div>
+		</div>
+	</div>
+</div></li><li class="Testimonial-item"><div class="row" style="height: 100%" >
+	<div class="Testimonial-slide">
+		
+		
+				
+		
+		
+			<div class="col-xs-12 col-sm-6 u-paddingX0">
+				<div class="Testimonial-imageWrap">
+					
+					
+						<img class="Testimonial-image" data-image-src="https://az745204.vo.msecnd.net/images-c5/440/155440/Tork_09_850x350_jpg/dining-landscape.jpg"  title="Dining.jpg" alt="Dining.jpg">
+					
+				</div>
+			</div>
+		
+			
+		<div class="col-xs-12 col-sm-6 u-paddingX0">
+			<div class="Testimonial-text">
+				
+				
+				
+					<p class="Text-quote u-colorFlirt u-fontSize21 u-bold threedots">
+						
+						
+						The wall allows our customers to see the world through the eyes of the chef. And of course, our guests see that we work systematically with food preparation and have a high-quality, hygienic kitchen. Our kitchen routines are transparent and all details that constitute the workspace have been optimally designed to deliver on high expectations in terms of both hygiene and quality.
+						
+						
+					</p>
+					
+						<p class="u-colorMidnightBlue u-fontSize21">				
+							
+							
+							Sören Ledet
+							
+							
+							<span class="u-block u-fontSize12">								
+								 
+								
+								
+								Best waiter 2012
+								
+								
+								
+							</span>
+						</p>
+					
+				
+				
+	<a href="/testimonials/geranium/"  class="labelledIcon iconRight" >Read more<span class="icon-arrow_right"></span></a>
+			</div>
+		</div>
+	</div>
+</div></li><li class="Testimonial-item"><div class="row" style="height: 100%" >
+	<div class="Testimonial-slide">
+		
+		
+				
+		
+		
+			<div class="col-xs-12 col-sm-6 u-paddingX0">
+				<div class="Testimonial-imageWrap">
+					
+					
+						<img class="Testimonial-image" data-image-src="https://az745204.vo.msecnd.net/images-c5/18/85018/Tork_09_850x350_jpg/contek-1-landscape.jpg"  title="Contek 1.JPG" alt="Contek 1.JPG">
+					
+				</div>
+			</div>
+		
+			
+		<div class="col-xs-12 col-sm-6 u-paddingX0">
+			<div class="Testimonial-text">
+				
+				
+				
+					<p class="Text-quote u-colorFlirt u-fontSize21 u-bold threedots">
+						
+						
+						The Tork cleaning cloths have helped us to enhance the quality of our work without costing a single cent more
+						
+						
+					</p>
+					
+						<p class="u-colorMidnightBlue u-fontSize21">				
+							
+							
+							Wolfgang Kuhn
+							
+							
+							<span class="u-block u-fontSize12">								
+								 
+								
+								
+								Founder of CONTek IBC-Service GmbH 
+								
+								
+								
+							</span>
+						</p>
+					
+				
+				
+	<a href="/testimonials/contek/"  class="labelledIcon iconRight" >Read more<span class="icon-arrow_right"></span></a>
+			</div>
+		</div>
+	</div>
+</div></li><li class="Testimonial-item"><div class="row" style="height: 100%" >
+	<div class="Testimonial-slide">
+		
+		
+				
+		
+		
+			<div class="col-xs-12 col-sm-6 u-paddingX0">
+				<div class="Testimonial-imageWrap">
+					
+					
+						<img class="Testimonial-image" data-image-src="https://az745204.vo.msecnd.net/images-c5/930/117930/Tork_09_850x350_jpg/nascar-racing-850x350.jpg"  title="NASCAR_racing.jpg" alt="NASCAR_racing.jpg">
+					
+				</div>
+			</div>
+		
+			
+		<div class="col-xs-12 col-sm-6 u-paddingX0">
+			<div class="Testimonial-text">
+				
+				
+				
+					<p class="Text-quote u-colorFlirt u-fontSize21 u-bold threedots">
+						
+						
+						”When we used textile shop towels, we risked metal flakes getting into our 750HP motors, which is enough for the motor to explode.”
+
+						
+						
+					</p>
+					
+						<p class="u-colorMidnightBlue u-fontSize21">				
+							
+							
+							Kevin Radvany
+							
+							
+							<span class="u-block u-fontSize12">								
+								 
+								
+								
+								Team Manager for Hillman Racing
+								
+								
+								
+							</span>
+						</p>
+					
+				
+				
+	<a href="/testimonials/ready-for-nascar/"  class="labelledIcon iconRight" >Read more<span class="icon-arrow_right"></span></a>
+			</div>
+		</div>
+	</div>
+</div></li>
+               
+                </ul>
+                 
+                <a href="" class="Carousel-prev hidden-xs icon icon-arrow_left_borderless prev" data-testimonial-carousel-prev></a>
+                <a href="" class="Carousel-next hidden-xs icon icon-arrow_right_borderless next" data-testimonial-carousel-next></a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- End of testimonial module -->
+
+
+				
+				
+				
+				
+				
+				
+				<footer role="contentinfo" id="footer">
+	<div id="preFooter">
+		<div class="wrap">
+			<div class="pull-left">
+				
+					
+						<a href="/about/whytork/" title="Why Tork?">Why Tork?</a>					
+					
+				
+					
+					
+						<a href="/about/pressroom/press-release-nofilter/" title="Tork Pressroom">Tork Pressroom</a>					
+				
+					
+						<a href="/distributor-finder/" title="Find a distributor">Find a distributor</a>					
+					
+				
+			</div>
+			<div class="pull-right text-right">
+				 
+					  <a href="/markets/" title="Select country">Select country</a>				
+			</div>
+			<div class="clearfix"></div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="" id="mainFooter">
+		<div class="wrap">
+			<div class="row">
+
+
+				<div class="col-xs-12 col-sm-12 col-md-4">
+                                
+					<h3 class="colorBlack"> 
+						
+						                
+						     Information
+						
+						</h3>
+                                
+                                
+					<p>
+						
+						
+						      <p>Essity is a leading global hygiene and health company that develops, produces and sells Personal Care (Baby Care, Feminine Care, Incontinence Products and Medical Solutions), Consumer Tissue and Professional Hygiene products and solutions. More information at <a href="http://www.essity.co.uk">www.essity.co.uk</a>.</p>
+<p><a href="https://www.tork.co.uk/legal-information/#paragraph-2">Privacy Policy</a></p>
+<p><a href="https://www.tork.co.uk/legal-information/#paragraph-0">Terms of use</a></p>
+<p><a href="https://www.tork.co.uk/legal-information/#paragraph-3">Cookie information</a></p>
+						
+						<br /></p>
+                                
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h3 class="colorBlack">
+						
+						
+                                                
+                                                      Contact
+                                                
+						
+						</h3>
+					<address>
+						
+						
+                                                
+						      Essity UK Ltd
+<br />
+Southfields Road 
+<br />
+Dunstable 
+<br />
+Bedfordshire 
+<br />
+LU6 3EJ  
+<p><a href="mailto:TorkCS.UK@essity.com">TorkCS.UK@essity.com</a>
+<br />
+Tel 01582 677570
+<br />
+Fax 01582 677580</p>
+                                                
+						
+						
+					</address>
+
+   
+       
+                 
+					<h3 class="colorBlack">
+						
+						
+						Follow us
+						
+						</h3>
+
+                 
+          
+                 
+                                                         
+						<a target="_blank" href="https://www.youtube.com/user/scatorkuk/" title="Tork on YouTube" class="youtubeLink">
+							
+							
+							
+							
+								<img src="https://az745204.vo.msecnd.net/images-c5/951/85951/Tork_01_60x60_png/youtube-social-squircle-red-128px.png" tridion:type="Multimedia" 
+                                                             
+                                                                        alt="YouTube-social-squircle_red_128px.png" 
+                                                             
+                                                           />
+							
+							
+							
+						</a>                                   
+                 
+              
+        
+       
+
+       
+
+  
+       
+                 
+          
+                 
+                                                         
+						<a target="_blank" href="https://www.linkedin.com/company/tork-a-global-professional-hygiene-brand/" title="Tork on LinkedIn" class="youtubeLink">
+							
+							
+							
+							
+								<img src="https://az745204.vo.msecnd.net/images-c5/694/108694/Tork_01_60x60_png/linkedinlogo.png" tridion:type="Multimedia" 
+                                                             
+                                                                        alt="LinkedinLogo.png" 
+                                                             
+                                                           />
+							
+							
+							
+						</a>                                   
+                 
+              
+        
+       
+
+       
+
+
+
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+		
+	
+		<div class="container-fluid Footer-noBackground" id="logoFooter">
+	
+		
+                <div class="wrap">                        
+                                
+
+										
+										
+										<div class="row">
+											<div class="col-xs-12">
+											
+											
+												
+													<img class="u-marginB10" src="https://az745204.vo.msecnd.net/images-c5/771/172771/original/essity-logo-120x30.jpg" tridion:type="Multimedia" title="Essity_logo_120x30.jpg" alt="Essity logo" />
+													
+												
+											
+											
+											</div>
+										</div>
+										
+
+								
+
+                         <p>
+  
+                
+		  
+			  © 2018 Essity Hygiene and Health AB
+		   
+		 <br/>
+	
+                                                         
+                        </p>
+                </div>
+        </div></footer>				
+				
+				
+                                          <script src="https://masdpstatic.azureedge.net/tork/1.31.0.247/bundle/bundle.js"></script>                          
+				
+				<script type="text/javascript">    
+					$(document).ready(
+					function () {		
+							$('#hdnLanguageCodeForMaster')[0].value = '';
+							$('#hdnJellyFishSearcher')[0].value = 'suggest';
+							$('#hdnJellyFishIdent')[0].value = 'TOL_GB';							
+							var msEdgeMatch = /Edge\/([0-9]+)/i.exec(navigator.userAgent);
+      						if(msEdgeMatch) document.documentMode = parseInt(msEdgeMatch[1]);
+						});
+						
+				</script>	
+                                <script src='https://www.google.com/recaptcha/api.js?hl=en-gb'></script>
+				<!--<script src="https://masdpstatic.azureedge.net/tork/1.31.0.247/js/includes.min.js?v=1.0" charset="UTF-8" type="text/javascript"></script>-->
+				
+				<span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
+			
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZP2EI8FxKQoVkIeqNIfQbwQG0pgdmjoGXbfGFaLeamf2X4n7ZEHGHdRlG02N_DhmrQ2&amp;t=636765499264470882" type="text/javascript"></script>
+</form>
+			<div id="spinnerDiv" style="display:none;">
+				<img src="https://masdpstatic.azureedge.net/tork/1.31.0.247/images/spinner.gif" />
+			</div>
+			
+        <!--SITE_EDIT_INIT-->
+
+			<div class="select2-drop select2-display-none select2-drop-active" style="left: 15px; width: 290px; top: 340.6875px; bottom: auto; display: none;">
+				<div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen2_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="" aria-activedescendant="select2-result-label-121">   </div>
+				<ul class="select2-results" role="listbox" id="select2-results-2"></ul>
+			</div>
+			<div class="views">
+				<div class="visible-xs"></div>
+				<div class="visible-sm"></div>
+				<div class="visible-md"></div>
+				<div class="visible-lg"></div>
+			</div>
+
+            
+				
+			
+				
+			
+				
+			
+		</body>
+	</html>

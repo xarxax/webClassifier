@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META NAME="expires" CONTENT="31 December 2008" />
+<META NAME="keywords" content="IT-Missions, IT-Missions.com, In-Order, in order, POS, point of sales, point of sale, point-of-sale, restaurant POS, restaurant management system, Chinese restaurant and hotels, hospitality, multi-language, food and beverage, table service, quick service, tableservice ,quickservice, fast food, hotel, international, localization, global, enterprise, solution">
+<META NAME="keywords" content="iPOS, ePOS, olePOS, Linux POS, PDA, wireless, Fidelio, Fedelio, HIS, IBM, STAR, EPSON, touch screen workstation, touchscreen, keyboard, inventory, CRM, Membership, dinning behavior, catering, banqueting, HOFEX, fine dining, debit card, octopus, F&B">
+<META NAME="keywords" content="Hongkong, Hong Kong, China, PRC, Singapore, Beijing, Shanghai, Australia, Malaysia, Kuala Lumpur, Bangkok, Southeast Asia">
+<META NAME="keywords" content="餐飲, 系統, 餐飲系統, pos 餐飲系統, 餐飲系統 pda, 餐飲系統 software, 餐飲系統 restaurant pos system, pos 系統">
+<link rel="stylesheet" type="text/css" href="css/common.css?id=1548724016" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<title>IT-Missions</title>
+
+<!-- google analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? 
+"https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" ); </script> <script type="text/javascript"> var pageTracker = _gat._getTracker("UA-312227-1"); pageTracker._initData(); pageTracker._trackPageview(); </script>
+<!-- google analytics -->
+
+<style title="text/css">
+.marquee{
+	position:absolute;
+	overflow:hidden;
+	left:250px;
+	top:232px;
+	width:583px;
+	height:68px;
+	border:none;
+	background-image:url(images/bgLogos.png);
+	visibility:visible;
+	z-index:98;
+}
+
+.alertTitle{
+	text-align:left;
+	color:#c63800;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding-left:10px;
+}
+
+.alertContent{
+	color:#fff4e4;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+body{
+	scrollbar-3dlight-color:#ffdfbe;
+	scrollbar-arrow-color:#ffac5a;
+	scrollbar-base-color:#000000;
+	scrollbar-darkshadow-color:#ffc892;
+	scrollbar-face-color:#ffd7b1;
+	scrollbar-highlight-color:#ffeedd;
+	scrollbar-shadow-color:#ffdfbe;
+}
+
+</style>
+
+<script type="text/javascript">
+	/***********************************************
+	* Ultimate Fade-In Slideshow (v1.5): c Dynamic Drive (http://www.dynamicdrive.com)
+	* This notice MUST stay intact for legal use
+	* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+	***********************************************/
+</script>
+<script type="text/javascript" src="js/fade-in_slideshow.js"></script>
+<script type="text/javascript" src="js/fontdetect.js"></script>
+<script type="text/javascript">
+	focusID = "";
+	curTag = "";
+	wait4Loading = 500;
+	extraWait4Loading = wait4Loading + 500;
+	subPageTag = "";
+	isPicOff = true;
+	isNeedRefresh = false;
+	
+	function Click(inTag,inSubTag){
+		if (typeof inSubTag == "undefined") {
+			inSubTag = "";
+		}else{
+			subPageTag = inSubTag;
+		}
+		
+		if (isPicOff){
+			isPicOff = false;
+			document.getElementById('picFrame1').style.visibility="visible";
+			document.getElementById('picFrame2').style.visibility="visible";
+			document.getElementById('picFrame3').style.visibility="visible";
+			document.getElementById('picFrame4').style.visibility="visible";
+			document.getElementById('pic1').style.visibility="visible";
+			document.getElementById('clientLogos').style.visibility="visible";
+			document.getElementById('respectedClients').style.visibility="visible";
+		}
+		
+		var randNum = new Date();
+		switch (inTag){
+			case "home":
+				On("home");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Home";
+				break;
+			case "news":
+				if (subPageTag.substr(0,4)=="news"){
+					On("home");
+					document.getElementById('topicMask').style.visibility="visible";
+					document.getElementById('topicFrame').src="home.php?id="+randNum.getTime();
+					setTimeout("PageOff('topicMask');", wait4Loading);
+					document.getElementById('screenMask').style.visibility="visible";
+					document.getElementById('popupDiv').style.visibility='hidden';
+					document.getElementById('popup').src=subPageTag+".php?id="+randNum.getTime();
+					setTimeout("document.getElementById('popupDiv').style.visibility='visible';", wait4Loading);
+					document.getElementById('clipTag').innerHTML = "home";
+					document.getElementById('clipTitle').innerHTML = "home";
+					subPageTag = "";
+				}
+				break;
+			case "aboutUs":
+			case "awards":
+			case "bizPartners":
+				On("aboutUs");
+				document.getElementById('topicMask').style.visibility="visible";
+				if (subPageTag.substr(0,5)=="award"){
+					document.getElementById('topicFrame').src="awards.php?id="+randNum.getTime();
+					setTimeout("PageOff('topicMask');", wait4Loading);
+					document.getElementById('screenMask').style.visibility="visible";
+					document.getElementById('popup').src=subPageTag+".php?id="+randNum.getTime();
+					setTimeout("document.getElementById('popupDiv').style.visibility='visible';", extraWait4Loading);
+					document.getElementById('clipTag').innerHTML = inTag;
+					document.getElementById('clipTitle').innerHTML = "Awards";
+				}else{
+					document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+					setTimeout("PageOff('topicMask');", wait4Loading);
+					document.getElementById('clipTag').innerHTML = inTag;
+					switch (inTag){
+						case "aboutUs": document.getElementById('clipTitle').innerHTML = "About Us"; break;
+						case "awards": document.getElementById('clipTitle').innerHTML = "Awards"; break;
+						default: document.getElementById('clipTitle').innerHTML = "Business Partners";
+					}
+				}
+				subPageTag = "";
+				break;
+			case "solutions":
+			case "hotels":
+				On("solutions");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="hotels.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = "hotels";
+				if (inTag == "hotels"){
+					document.getElementById('clipTitle').innerHTML = "Solutions for Hotels";
+				}else{
+					document.getElementById('clipTitle').innerHTML = "Solutions";
+				}
+				break;
+			case "clubhouses":
+				On("solutions");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="clubhouses.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Solutions for Clubhouses";
+				break;
+			case "finedining":
+				On("solutions");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="finedining.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Solutions for Fine Dining Restaurant";
+				break;
+			case "chinese":
+				On("solutions");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="chinese.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Solutions for Chinese Restaurant";
+				break;
+			case "quickservices":
+				On("solutions");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="quickservices.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Solutions for Quick Services";
+				break;
+			case "products":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="ioe.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = "ioe";
+				document.getElementById('clipTitle').innerHTML = "Products";
+				break;
+			case "ioe":
+			case "ioe2":
+			case "ioe3":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "In-Order Enterprise " + inTag.substr(3);
+				break;
+			case "iol":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="iol.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "In-Order Lite";
+				break;
+			case "membership":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="membership.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Membership System";
+				break;
+			case "options":
+			case "options2":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Optional Modules " + inTag.substr(7);
+				break;
+			case "hardware":
+			case "hardware2":
+				On("products");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Hardware " + inTag.substr(8);
+				break;
+			case "clients":
+			case "clients2":
+			case "clients3":
+			case "clients4":
+			case "clients5":
+			case "clients6":
+			case "clients7":
+			case "lastClientPage":
+				if (inTag == "lastClientPage") inTag = "clients7";
+				On("clients");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Partial Job References " + inTag.substr(7);
+				break;
+			case "support":
+				On("support");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src="support.php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Support Services";
+				break;
+			case "contactUs":
+			case "itmbj":
+			case "hungze":
+			case "onepos":
+				On("contactUs");
+				if (subPageTag.substr(0,3)=="map"){
+					document.getElementById('topicMask').style.visibility="visible";
+					document.getElementById('topicFrame').src="contactUs.php?id="+randNum.getTime();
+					setTimeout("PageOff('topicMask');", wait4Loading);
+					document.getElementById('screenMask').style.visibility="visible";
+					document.getElementById('popupDiv').style.visibility='hidden';
+					document.getElementById('popup').src=subPageTag+".php?id="+randNum.getTime();
+					setTimeout("document.getElementById('popupDiv').style.visibility='visible';", wait4Loading);
+					document.getElementById('clipTag').innerHTML = "contactUs";
+					document.getElementById('clipTitle').innerHTML = "contactUs";
+					subPageTag = "";
+				}else{
+					document.getElementById('topicMask').style.visibility="visible";
+					document.getElementById('topicFrame').src="contactUs.php?tag="+inTag;
+					setTimeout("PageOff('topicMask');", wait4Loading);
+					document.getElementById('clipTag').innerHTML = inTag;
+					switch (inTag){
+						case "itmbj": document.getElementById('clipTitle').innerHTML = "Contact Beijing office"; break;
+						case "hungze": document.getElementById('clipTitle').innerHTML = "Contact Further Technology Co., Ltd."; break;
+						case "onepos": document.getElementById('clipTitle').innerHTML = "Contact One Pos Systems Sdn. Bhd."; break;
+						default: document.getElementById('clipTitle').innerHTML = "Contact Us";
+					}
+				}
+				break;
+			case "sitemap":
+				On("home");
+				isPicOff = true;
+				document.getElementById('picFrame1').style.visibility="hidden";
+				document.getElementById('picFrame2').style.visibility="hidden";
+				document.getElementById('picFrame3').style.visibility="hidden";
+				document.getElementById('picFrame4').style.visibility="hidden";
+				document.getElementById('pic1').style.visibility="hidden";
+				document.getElementById('clientLogos').style.visibility="hidden";
+				document.getElementById('respectedClients').style.visibility="hidden";
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Site Map";
+				break;
+			case "recruitPartners":
+				On("aboutUs");
+				document.getElementById('topicMask').style.visibility="visible";
+				document.getElementById('topicFrame').src=inTag+".php?id="+randNum.getTime();
+				setTimeout("PageOff('topicMask');", wait4Loading);
+				document.getElementById('clipTag').innerHTML = inTag;
+				document.getElementById('clipTitle').innerHTML = "Business Partners Recruitment";
+				break;
+			default:
+				alert("Unknown page tag - "+inTag);
+		}
+	}
+	
+	function ClickPopup(inPageID,inReflush){
+		var randNum = new Date();
+		document.getElementById('screenMask').style.visibility="visible";
+		document.getElementById('popupDiv').style.visibility='hidden';
+		document.getElementById('popup').src=inPageID+".php?id="+randNum.getTime();
+		setTimeout("document.getElementById('popupDiv').style.visibility='visible';", wait4Loading);
+		if (typeof(inReflush) != "undefined"){
+			isNeedRefresh = true;
+		}
+	}
+	
+	function ClosePopup(){
+		document.getElementById('popupDiv').style.visibility='hidden';
+		document.getElementById('screenMask').style.visibility="hidden";
+		if (isNeedRefresh){
+			isNeedRefresh = false;
+			window.frames.topicFrame.FlushSELECT();
+		}
+	}
+	
+	function PageOff(inDiv){
+		document.getElementById(inDiv).style.visibility="hidden";
+	}
+
+	function Off(inTag){
+		switch (inTag){
+			case "home": DivShowHide('mbHomeOver','hidden'); break;
+			case "aboutUs": DivShowHide('mbAboutUsOver','hidden'); break;
+			case "solutions": DivShowHide('mbSolutionsOver','hidden'); break;
+			case "products": DivShowHide('mbProductsOver','hidden'); break;
+			case "clients": DivShowHide('mbClientsOver','hidden'); break;
+			case "support": DivShowHide('mbSupportOver','hidden'); break;
+			case "contactUs": DivShowHide('mbContactUsOver','hidden'); break;
+		}
+	}
+	
+	function On(inTag){
+		if (inTag != curTag){
+			switch (curTag){
+				case "home": DivShowHide('mbHomeOn','hidden'); DivShowHide('mbHomeOver','hidden'); DivShowHide('btnHome','visible'); break;
+				case "aboutUs": DivShowHide('mbAboutUsOn','hidden'); DivShowHide('mbAboutUsOver','hidden'); DivShowHide('btnAboutUs','visible'); break;
+				case "solutions": DivShowHide('mbSolutionsOn','hidden'); DivShowHide('mbSolutionsOver','hidden'); DivShowHide('btnSolutions','visible'); break;
+				case "products": DivShowHide('mbProductsOn','hidden'); DivShowHide('mbProductsOver','hidden'); DivShowHide('btnProducts','visible'); break;
+				case "clients": DivShowHide('mbClientsOn','hidden'); DivShowHide('mbClientsOver','hidden'); DivShowHide('btnClients','visible'); break;
+				case "support": DivShowHide('mbSupportOn','hidden'); DivShowHide('mbSupportOver','hidden'); DivShowHide('btnSupport','visible'); break;
+				case "contactUs": DivShowHide('mbContactUsOn','hidden'); DivShowHide('mbContactUsOver','hidden'); DivShowHide('btnContactUs','visible'); break;
+			}
+			switch (inTag){
+				case "home": DivShowHide('mbHomeOn','visible');	DivShowHide('mbHomeOver','hidden'); DivShowHide('btnHome','hidden'); break;
+				case "aboutUs": DivShowHide('mbAboutUsOn','visible');	DivShowHide('mbAboutUsOver','hidden'); DivShowHide('btnAboutUs','hidden'); break;
+				case "solutions": DivShowHide('mbSolutionsOn','visible');	DivShowHide('mbSolutionsOver','hidden'); DivShowHide('btnSolutions','hidden'); break;
+				case "products": DivShowHide('mbProductsOn','visible');	DivShowHide('mbProductsOver','hidden'); DivShowHide('btnProducts','hidden'); break;
+				case "clients": DivShowHide('mbClientsOn','visible');	DivShowHide('mbClientsOver','hidden'); DivShowHide('btnClients','hidden'); break;
+				case "support": DivShowHide('mbSupportOn','visible');	DivShowHide('mbSupportOver','hidden'); DivShowHide('btnSupport','hidden'); break;
+				case "contactUs": DivShowHide('mbContactUsOn','visible');	DivShowHide('mbContactUsOver','hidden'); DivShowHide('btnContactUs','hidden'); break;
+			}
+			curTag = inTag;
+		}
+	}
+	
+	function Over(inTag){
+		if (curTag != inTag){
+			switch (inTag){
+				case "home": DivShowHide('mbHomeOver','visible'); break;
+				case "aboutUs": DivShowHide('mbAboutUsOver','visible'); break;
+				case "solutions": DivShowHide('mbSolutionsOver','visible'); break;
+				case "products": DivShowHide('mbProductsOver','visible'); break;
+				case "clients": DivShowHide('mbClientsOver','visible'); break;
+				case "support": DivShowHide('mbSupportOver','visible'); break;
+				case "contactUs": DivShowHide('mbContactUsOver','visible'); break;
+			}
+		}
+	}
+	
+	function DivShowHide(layerRef, inStatus){  // inStatus = [visible | hidden]
+		if (document.all){ //IS IE 4 or 5 (or 6 beta)
+			eval("document.all." + layerRef + ".style.visibility = inStatus");
+		}else
+			if (document.layers){ //IS NETSCAPE 4 or below
+				document.layers[layerRef].visibility = inStatus;
+			}else
+				if (document.getElementById && !document.all){
+					document.getElementById(layerRef).style.visibility = inStatus;
+				}
+	}
+	
+	function DivMoveTo(layerRef, inX, inY){
+		if (document.all){ //IS IE 4 or 5 (or 6 beta)
+			eval("document.all." + layerRef + ".style.left = inX");
+			eval("document.all." + layerRef + ".style.top = inY");
+		}else
+			if (document.layers){ //IS NETSCAPE 4 or below
+				document.layers[layerRef].left = inX;
+				document.layers[layerRef].top = inY;
+			}else
+				if (document.getElementById){
+					document.getElementById(layerRef).style.left = inX+'px';
+					document.getElementById(layerRef).style.top = inY+'px';
+				}
+	}
+
+	function CloseAlert(){
+		document.getElementById('alertPrompt').style.visibility='hidden';
+		document.getElementById('screenMask').style.visibility='hidden';
+		document.getElementById('alertBoxTitle').innerHTML='';
+		document.getElementById('alertBoxContent').innerHTML='';
+		document.onkeydown = ReleaseKeyEvent;
+	}
+	
+	function ReleaseKeyEvent(evt){
+		evt = (evt) ? evt : ((event) ? event : null);
+	}
+	
+	// for logo image marquee ( mQ, mQx, mQy are defined in config.php )
+	var marqueeQbgHeight=66;
+	var marqueeQ=['images/filter.gif','images/cimg50.png','images/filter.gif','images/cimg49.png','images/filter.gif','images/cimg51.png','images/filter.gif','images/cimg52.png','images/filter.gif','images/cimg4.png','images/filter.gif','images/cimg5.png','images/filter.gif','images/cimg6.png','images/filter.gif','images/cimg7.png','images/filter.gif','images/cimg11.png','images/filter.gif','images/cimg12.png','images/filter.gif','images/cimg14.png','images/filter.gif','images/cimg15.png','images/filter.gif','images/cimg16.png','images/filter.gif','images/cimg13.png','images/filter.gif','images/cimg18.png','images/filter.gif','images/cimg17.png','images/filter.gif','images/cimg19.png','images/filter.gif','images/cimg20.png','images/filter.gif','images/cimg21.png','images/filter.gif','images/cimg22.png','images/filter.gif','images/cimg23.png','images/filter.gif','images/cimg24.png','images/filter.gif','images/cimg25.png','images/filter.gif','images/cimg27.png','images/filter.gif','images/cimg28.png','images/filter.gif','images/cimg29.png','images/filter.gif','images/cimg30.png','images/filter.gif','images/cimg31.png','images/filter.gif','images/cimg32.png','images/filter.gif','images/cimg33.png','images/filter.gif','images/cimg34.png','images/filter.gif','images/cimg36.png','images/filter.gif','images/cimg37.png','images/filter.gif','images/cimg38.png','images/filter.gif','images/cimg39.png','images/filter.gif','images/cimg40.png','images/filter.gif','images/cimg41.png','images/filter.gif','images/cimg42.png','images/filter.gif','images/cimg43.png','images/filter.gif','images/cimg44.png','images/filter.gif','images/cimg45.png','images/filter.gif','images/cimg46.png','images/filter.gif','images/cimg47.png','images/filter.gif','images/cimg52.png','images/filter.gif','images/cimg48.png','images/filter.gif','images/cimg54.png'];	var marqueeQwidth=[20,134,20,113,20,107,20,173,20,79,20,117,20,87,20,95,20,70,20,96,20,96,20,103,20,106,20,96,20,62,20,70,20,106,20,106,20,70,20,106,20,51,20,106,20,106,20,65,20,92,20,60,20,106,20,78,20,94,20,106,20,106,20,38,20,106,20,106,20,114,20,106,20,106,20,120,20,123,20,114,20,106,20,106,20,128,20,173,20,95,20,110];	var marqueeQheight=[66,66,66,66,66,66,66,66,66,71,66,64,66,67,66,66,66,66,66,66,66,72,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,68,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66];/*	var marqueeQ=['images/cimg1.png','images/filter.gif','images/cimg2.png','images/empty.gif','images/cimg3.png','images/filter.gif','images/cimg4.png','images/filter.gif','images/cimg5.png','images/filter.gif','images/cimg6.png','images/filter.gif'];
+	var marqueeQwidth=[116,20,102,20,95,20,79,20,117,20,87,20];
+	var marqueeQheight=[66,66,68,66,66,66,71,66,64,66,67,66];
+*/
+	
+	function BookmarkMe(inClipPage, inClipTitle){
+		if (typeof(inClipPage) == "undefined"){
+			title = "IT-Missions.com - " + document.getElementById('clipTitle').innerHTML
+			url = "http://www.it-missions.com/" + document.getElementById('clipTag').innerHTML + ".php";
+		}else{
+			title = "IT-Missions.com - " + inClipTitle; 
+			url = "http://www.it-missions.com/" + inClipPage + ".php";
+		}
+		
+		if (window.sidebar){ // Mozilla Firefox Bookmark
+			window.sidebar.addPanel(title, url,"");
+		}else if(window.external){ // IE Favorite
+			if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
+				alert("Please bookmark the following link by pressing [ Ctrl D ]\n\n"+url);
+			else
+				window.external.AddFavorite(url, title);
+/* remarked codes does not work!!
+		}else if(window.opera && window.print){ // Opera Hotlist
+			return true;
+*/
+		}else{
+			alert("Please bookmark the following link by pressing [ Ctrl D ]\n\n"+url);
+		}
+	}
+	
+</script>
+<script type="text/javascript" src="js/marquee.js"></script>
+<script type="text/javascript" src="js/public_smo_scripts.js"></script>
+</head>
+
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" style="margin:0 0 0 0;"><div align="center" style="z-index:1"><table id="bgBase" height="630px" width="980px" cellpadding="0" cellspacing="0" border="0">
+			<tr valign="top">
+				<td height="630px" width="25px" bgcolor="#FFFFFF"> </td>
+				<td height="630px" width="41px" bgcolor="#FFFFFF"><img src="images/bgL.jpg" /></td>
+				<td height="630px" width="848px" style="background-image:url(images/bgC.jpg); background-repeat:repeat-x">
+					<div style="position:relative; top:0px; left:0px;" align="left">
+					<div id="itmlogo" style="z-index:2; position:absolute; left:12px; top:17px"><img src="images/itmlogo.jpg" style="background-image:url(images/loading.gif); background-repeat:no-repeat" /></div>
+					<div id="menubar" style="z-index:2; position:absolute; left:41px; top:53px"><img src="images/menubar.jpg" style="background-image:url(images/loading.gif); background-repeat:no-repeat" /></div>
+<!--					<div id="phones" style="z-index:2; position:absolute; left:0px; top:582px"><img src="images/phones.png" width="848" height="22" /></div>//-->
+<div id="phones" style="z-index:2; position:absolute; left:0px; top:582px"><img src="images/phoneLine.png" width="857" height="1" /></div>
+					<div id="phones" style="z-index:2; position:absolute; left:0px; top:586px"><table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="contactNo"><img src="images/bgTrans.gif" width="48px" height="8px" border="0" /><span class="contactTitle">tel:&nbsp;&nbsp;</span>(852) 2327 8286<img src="images/bgTrans.gif" width="30px" height="8px" border="0" /><span class="contactTitle">fax:&nbsp;&nbsp;</span>(852) 3119 1622<img src="images/bgTrans.gif" width="30px" height="8px" border="0" /><span class="contactTitle">support:&nbsp;&nbsp;</span>(852) 7773 2828<img src="images/bgTrans.gif" width="100px" height="8px" border="0" /></td>
+							</tr>
+							<tr><td><img src="images/bgTrans.gif" width="848px" height="20px" border="0" /></td></tr>
+					</table></div>
+					<div id="btnHome" style="z-index:99; position:absolute; left:77px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="87px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('home')" onmouseout="Off('home')" onmouseover="Over('home')" /></div>
+					<div id="btnAboutUs" style="z-index:99; position:absolute; left:165px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="106px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('aboutUs')" onmouseout="Off('aboutUs')" onmouseover="Over('aboutUs')" /></div>
+					<div id="btnSolutions" style="z-index:99; position:absolute; left:271px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="108px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('solutions')" onmouseout="Off('solutions')" onmouseover="Over('solutions')" /></div>
+					<div id="btnProducts" style="z-index:99; position:absolute; left:380px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="105px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('products')" onmouseout="Off('products')" onmouseover="Over('products')" /></div>
+					<div id="btnClients" style="z-index:99; position:absolute; left:487px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="94px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('clients')" onmouseout="Off('clients')" onmouseover="Over('clients')" /></div>
+					<div id="btnSupport" style="z-index:99; position:absolute; left:582px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="101px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('support')" onmouseout="Off('support')" onmouseover="Over('support')" /></div>
+					<div id="btnContactUs" style="z-index:99; position:absolute; left:684px; top:57px; visibility:visible"><img src="images/bgTrans.gif" width="119px" height="34px" style="cursor:hand; cursor:pointer" onclick="Click('contactUs')" onmouseout="Off('contactUs')" onmouseover="Over('contactUs')" /></div>
+					<div id="mbHomeOn" style="z-index:14; position:absolute; left:77px; top:57px; visibility:hidden"><img src="images/mbHomeOnEN.jpg" width="88px" height="34px" /></div>
+					<div id="mbAboutUsOn" style="z-index:14; position:absolute; left:164px; top:57px; visibility:hidden"><img src="images/mbAboutUsOnEN.jpg" width="108px" height="34px" /></div>
+					<div id="mbSolutionsOn" style="z-index:14; position:absolute; left:271px; top:57px; visibility:hidden"><img src="images/mbSolutionsOnEN.jpg" width="110px" height="34px" /></div>
+					<div id="mbProductsOn" style="z-index:14; position:absolute; left:380px; top:57px; visibility:hidden"><img src="images/mbProductsOnEN.jpg" width="107px" height="34px" /></div>
+					<div id="mbClientsOn" style="z-index:14; position:absolute; left:486px; top:57px; visibility:hidden"><img src="images/mbClientsOnEN.jpg" width="96px" height="34px" /></div>
+					<div id="mbSupportOn" style="z-index:14; position:absolute; left:581px; top:57px; visibility:hidden"><img src="images/mbSupportOnEN.jpg" width="103px" height="34px" /></div>
+					<div id="mbContactUsOn" style="z-index:14; position:absolute; left:683px; top:57px; visibility:hidden"><img src="images/mbContactUsOnEN.jpg" width="120px" height="34px" /></div>
+					<div id="mbHomeOver" style="z-index:13; position:absolute; left:77px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="87px" height="4px" /></div>
+					<div id="mbAboutUsOver" style="z-index:13; position:absolute; left:165px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="106px" height="4px" /></div>
+					<div id="mbSolutionsOver" style="z-index:13; position:absolute; left:271px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="108px" height="4px" /></div>
+					<div id="mbProductsOver" style="z-index:13; position:absolute; left:380px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="105px" height="4px" /></div>
+					<div id="mbClientsOver" style="z-index:13; position:absolute; left:487px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="95px" height="4px" /></div>
+					<div id="mbSupportOver" style="z-index:13; position:absolute; left:582px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="101px" height="4px" /></div>
+					<div id="mbContactUsOver" style="z-index:13; position:absolute; left:684px; top:87px; visibility:hidden"><img src="images/mbOver.gif" width="119px" height="4px" /></div>
+					<div id="clientLogos" class="marquee"></div>
+					<div id="topic" style="z-index:91; position:absolute; visibility:visible; left:0px; top:92px" align="left"><iframe id="topicFrame" name="topicFrame" width="848px" height="490px" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+					<div id="topicMask" style="z-index:92; position:absolute; visibility:visible; left:0px; top:92px; width:848px; height:490px" align="left"><img src="images/bgMask.jpg" width="848px" height="490px" /></div>
+					<div id="respectedClients" style="z-index:99; position:absolute; left:258px; top:115px"><img src="images/respectedClients.png" width="169" height="39" /></div>
+					<div id="copyright" style="z-index:2; position:absolute; left:0px; top:630px; width:100%;" class="txtCopyright">&copy;2009 IT-Missions.com Limited, All Rights Reserved.</div>
+					<div id="browser" style="z-index:2; position:absolute; left:0px; top:630px" class="txtCopyright">Support browsers: IE6+ &amp; FF2+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Best view: 1024 x 768</div>
+					<div id="picFrame1" style="z-index:99; position:absolute; left:245px; top:105px; visibility:hidden"><img src="images/picFrame1.png" width="16" height="199" /></div>
+					<div id="picFrame2" style="z-index:99; position:absolute; left:261px; top:105px; visibility:hidden"><img src="images/picFrame2.png" width="561" height="5" /></div>
+					<div id="picFrame3" style="z-index:99; position:absolute; left:822px; top:105px; visibility:hidden"><img src="images/picFrame3.png" width="16" height="199" /></div>
+					<div id="picFrame4" style="z-index:99; position:absolute; left:261px; top:299px; visibility:hidden"><img src="images/picFrame4.png" width="561" height="5" /></div>
+					<div id="pic1" style="z-index:95; position:absolute; left:245px; top:105px; visibility:visible"><script type="text/javascript">
+						var fadeImages = new Array();
+						// jsClientImages is defined in config.php
+						fadeImages=[];fadeImages[0]=['images/pic1-6.jpg', '', ''];fadeImages[1]=['images/pic1-7.jpg', '', ''];fadeImages[2]=['images/pic1-8.jpg', '', ''];fadeImages[3]=['images/pic1-4.jpg', '', ''];fadeImages[4]=['images/pic1-3.jpg', '', ''];fadeImages[5]=['images/pic1-5.jpg', '', ''];fadeImages[6]=['images/pic1-1.jpg', '', ''];fadeImages[7]=['images/pic1-2.jpg', '', ''];						//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), background color, optionalRandomOrder)
+						//new fadeshow(fadeImages, 593, 199, 0, 6000, 0, '#ffb873', "R"); // run in random order mode
+						new fadeshow(fadeImages, 593, 199, 0, 6000, 0, '#ffb873');
+					</script></div>
+<!--  replaced by facebook button
+					<div id="iconBookmark" style="z-index:2; position:absolute; left:-85px; top:300px; vertical-align:top; visibility:visible">
+						<a href="http://www.facebook.com/pages/IT-Missions/208667855822401" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="IT-Missions"></a><br/><a href="http://www.facebook.com/pages/IT-Missions/208667855822401" target="_TOP" title="IT-Missions"><img src="http://badge.facebook.com/badge/208667855822401.2066.1248559715.png" width="120" height="180" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="....Facebook ....."></a>
+					</div>
+-->
+					<div id="iconFacebook" style="z-index:2; position:absolute; left:-50px; top:480px; vertical-align:top; visibility:visible"><a href="http://www.facebook.com/pages/IT-Missions/208667855822401" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="IT-Missions"><img class="imgBtn" src="images/iconFacebook.png" width="52" height="52" title="visit our Facebook" /></a></div>
+					<div id="iconBookmark" style="z-index:2; position:absolute; left:-50px; top:530px; vertical-align:top; visibility:visible"><img class="imgBtn" src="images/iconBookmark.png" width="52" height="52" onclick="BookmarkMe()" title="bookmark this page" /></div>
+					<div id="iconSitemap" style="z-index:2; position:absolute; left:-50px; top:580px; vertical-align:top; visibility:visible"><img class="imgBtn" src="images/iconSitemap.png" width="52" height="52" onclick="Click('sitemap')" title="show site map" /></div>
+				</div>
+			</td>
+			<td height="630px" width="22px" bgcolor="#FFFFFF"><img src="images/bgR.jpg" /></td>
+			<td height="630px" width="44px" bgcolor="#FFFFFF"> </td>
+		</tr>
+	</table></div>
+	<div id="popupDiv" style="z-index:127; position:absolute; visibility:hidden; left:0px; top:0px; bottom:0px; right:0px; height:100%; width:100%; vertical-align:middle; text-align:center"><iframe id="popup" name="popup" width="100%" height="100%" frameborder="0" scrolling="auto" allowtransparency="true"></iframe></div>
+	<div id="screenMask" style="background-image:url(images/bgTransLogos.png); background-repeat:repeat; z-index:126; left:0px; top:0px; bottom:0px; right:0px; position:absolute; height:100%; width:100%; visibility:hidden"> </div>
+	<div id="alertPrompt" style="z-index:127; left:0px; top:200px; right:0px; width:100%; position:absolute; visibility:hidden; text-align:center"><table align="center" cellpadding="0px" cellspacing="0" width="300px" height="199px" style="background-image:url(images/bgAlertPrompt.png); background-repeat:repeat">
+			<tr valign="bottom">
+				<td width="300px" height="41px" class="alertTitle"><span id="alertBoxTitle" style="height:120px"></span></td>
+			</tr>
+			<tr>
+				<td width="300px" height="10px"><img src="images/bgTrans.gif" width="300px" height="10px" /></td>
+			</tr>
+			<tr valign="middle">
+				<td width="300px" height="120px" align="center" class="alertContent"><span id="alertBoxContent" style="height:120px"></span></td>
+			</tr>
+			<tr>
+				<td width="300px" height="28px" align="right">&nbsp;&nbsp;<a href="#" id="alertClose" class="navAlert" onclick="javascript:CloseAlert()">close me</a>&nbsp;&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+	<div id="clipTag" style="z-index:1; left:0px; top:250px; position:absolute; visibility:hidden">home</div>
+	<div id="clipTitle" style="z-index:1; left:0px; top:350px; position:absolute; visibility:hidden">Home</div>
+	<div id="foundFont" style="z-index:1; left:0px; top:0px; position:absolute; visibility:hidden"></div>
+	<script type="text/javascript">
+		// set mask height & width for IE6 or elder
+		if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) { //test for MSIE x.x;
+			var ieVersion=new Number(RegExp.$1) // capture x.x portion and store as a number
+			if (ieVersion <= 6){
+				document.getElementById('screenMask').style.height=screen.availHeight;
+				document.getElementById('screenMask').style.width=screen.availWidth;
+			}
+		}
+		
+		// verify whether exist Arial Narrow
+		myFont = new Detector();
+		if (myFont.test('Arial Narrow')){
+			document.getElementById('foundFont').innerHTML='true';
+		}else{
+			document.getElementById('foundFont').innerHTML='false';
+			changecss(".contactNo","fontSize","12");
+			changecss(".contactTitle","fontSize","12");
+		}
+		
+		// load page main content
+		Click('home');
+	</script>
+</body>
+</html>

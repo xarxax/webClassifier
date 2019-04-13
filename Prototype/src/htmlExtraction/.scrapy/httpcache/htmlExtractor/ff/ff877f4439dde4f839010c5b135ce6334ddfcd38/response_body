@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://thechemco.com/xmlrpc.php">
+	<title>The Chemical Company - Global Chemical Supplier</title>
+<link rel="alternate" hreflang="en" href="https://thechemco.com" />
+<link rel="alternate" hreflang="es" href="https://thechemco.com/?lang=es" />
+
+<!-- This site is optimized with the Yoast SEO plugin v4.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Sourcing and warehousing products supplying a wide variety of industries to fulfill chemicals, composites, and plastics needs."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://thechemco.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Chemical Company - Global Chemical Supplier" />
+<meta property="og:description" content="Sourcing and warehousing products supplying a wide variety of industries to fulfill chemicals, composites, and plastics needs." />
+<meta property="og:url" content="https://thechemco.com/" />
+<meta property="og:site_name" content="The Chemical Company" />
+<meta property="og:image" content="https://thechemco.com/wp-content/uploads/2015/02/TCC-Socal-Image.jpg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Sourcing and warehousing products supplying a wide variety of industries to fulfill chemicals, composites, and plastics needs." />
+<meta name="twitter:title" content="The Chemical Company - Global Chemical Supplier" />
+<meta name="twitter:site" content="@thechemicalco" />
+<meta name="twitter:image" content="https://thechemco.com/wp-content/uploads/2015/02/TCC-Socal-Image.jpg" />
+<meta name="twitter:creator" content="@thechemicalco" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/thechemco.com\/","name":"The Chemical Company","potentialAction":{"@type":"SearchAction","target":"https:\/\/thechemco.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/thechemco.com\/","sameAs":["https:\/\/www.facebook.com\/TheChemicalCompany","https:\/\/www.linkedin.com\/company\/the-chemical-company","https:\/\/www.youtube.com\/channel\/UCx0z8MGrhbXWEUNlsHTj6Ag","https:\/\/twitter.com\/thechemicalco"],"@id":"#organization","name":"The Chemical Company","logo":"https:\/\/thechemco.com\/wp-content\/uploads\/2016\/12\/tcc_curves.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Chemical Company &raquo; Feed" href="https://thechemco.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Chemical Company &raquo; Comments Feed" href="https://thechemco.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Chemical Company &raquo; The Chemical Company &#8211; Global Chemical Supplier Comments Feed" href="https://thechemco.com/chemical-company-global-chemical-supplier/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/thechemco.com\/wp-includes\/js\/wp-emoji.js?ver=5.0.3","twemoji":"https:\/\/thechemco.com\/wp-includes\/js\/twemoji.js?ver=5.0.3"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Check if two sets of Emoji characters render the same.
+	 *
+	 * @param set1 array Set of Emoji characters.
+	 * @param set2 array Set of Emoji characters.
+	 * @returns {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji".
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 56826, 55356, 56819 ],
+					[ 55356, 56826, 8203, 55356, 56819 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447 ],
+					[ 55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447 ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * She's the hero Emoji deserves, but not the one it needs right now.
+				 *
+				 * To test for support, try to render a new emoji (female superhero),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (superhero + female sign).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[55358, 56760, 9792, 65039],
+					[55358, 56760, 8203, 9792, 65039]
+				);
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='js_composer_front-css'  href='https://thechemco.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://thechemco.com/wp-includes/css/dist/block-library/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tcc-contact-forms-css'  href='https://thechemco.com/wp-content/plugins/TCC-contact-forms/TCC-contact-forms.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://thechemco.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8' type='text/css' media='all' />
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='https://thechemco.com/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-droid-serif-css'  href='https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css'  href='https://thechemco.com/wp-content/plugins/popup-maker/assets/css/site.css?ver=1.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://thechemco.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}@media all and (max-width:640px){#sliders-container{display:none !important}}
+</style>
+<link rel='stylesheet' id='pac-styles-css'  href='https://thechemco.com/wp-content/plugins/woocommerce-product-archive-customiser/assets/css/pac.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='pac-layout-styles-css'  href='https://thechemco.com/wp-content/plugins/woocommerce-product-archive-customiser/assets/css/layout.css?ver=5.0.3' type='text/css' media='only screen and (min-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='//thechemco.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.0.7' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//thechemco.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.0.7' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='//thechemco.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.0.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-click-0-css'  href='https://thechemco.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.css?ver=1' type='text/css' media='all' />
+<style id='wpml-legacy-dropdown-click-0-inline-css' type='text/css'>
+.wpml-ls-sidebars-topbar-right{background-color:#eeeeee;}.wpml-ls-sidebars-topbar-right, .wpml-ls-sidebars-topbar-right .wpml-ls-sub-menu, .wpml-ls-sidebars-topbar-right a {border-color:#cdcdcd;}.wpml-ls-sidebars-topbar-right a {color:#444444;background-color:#ffffff;}.wpml-ls-sidebars-topbar-right a:hover,.wpml-ls-sidebars-topbar-right a:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-sidebars-topbar-right .wpml-ls-current-language>a {color:#444444;background-color:#ffffff;}.wpml-ls-sidebars-topbar-right .wpml-ls-current-language:hover>a, .wpml-ls-sidebars-topbar-right .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+.wpml-ls-statics-shortcode_actions{background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel='stylesheet' id='ecwd-popup-style-css'  href='https://thechemco.com/wp-content/plugins/event-calendar-wd/css/ecwd_popup.css?ver=1.0.93_58c93643e294a' type='text/css' media='all' />
+<link rel='stylesheet' id='ecwd_font-awesome-css'  href='https://thechemco.com/wp-content/plugins/event-calendar-wd/css/font-awesome/font-awesome.css?ver=1.0.93_58c93643e294a' type='text/css' media='all' />
+<link rel='stylesheet' id='ecwd-public-css'  href='https://thechemco.com/wp-content/plugins/event-calendar-wd/css/style.css?ver=1.0.93_58c93643e294a' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='https://thechemco.com/wp-content/themes/construction/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcharming-style-css'  href='https://thechemco.com/wp-content/themes/construction-child/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcharming-fontawesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='cpsh-shortcodes-css'  href='https://thechemco.com/wp-content/plugins/column-shortcodes/assets/css/shortcodes.css?ver=0.6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-wpc_options-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CMontserrat%3A400%2C700&#038;subset=latin&#038;ver=1524586876' type='text/css' media='all' />
+<link rel='stylesheet' id='moove_gdpr_frontend-css'  href='https://thechemco.com/wp-content/plugins/gdpr-cookie-compliance/dist/styles/main.css?ver=1.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpgdprc.css-css'  href='https://thechemco.com/wp-content/plugins/wp-gdpr-compliance/assets/css/front.css?ver=1533568394' type='text/css' media='all' />
+<style id='wpgdprc.css-inline-css' type='text/css'>
+
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:before { content: 'Yes'; }
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:after { content: 'No'; }
+        
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var header_fixed_setting = {"fixed_header":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/TCC-contact-forms/TCC-contact-forms.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.0.9'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.0.9'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.0.9'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/thechemco.com","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//thechemco.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=3.0.7'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.js?ver=1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/themes/construction/assets/js/modernizr.min.js?ver=2.6.2'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/themes/construction/assets/js/libs.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/wp-gdpr-compliance/assets/vendor/micromodal/micromodal.min.js?ver=1533568394'></script>
+<link rel='https://api.w.org/' href='https://thechemco.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thechemco.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thechemco.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.3" />
+<meta name="generator" content="WooCommerce 3.0.7" />
+<link rel='shortlink' href='https://thechemco.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://thechemco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthechemco.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thechemco.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthechemco.com%2F&#038;format=xml" />
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PR3XZM"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PR3XZM');</script>
+		<!-- End Google Tag Manager -->
+		<script src="//assets.adobedtm.com/c876840ac68fc41c08a580a3fb1869c51ca83380/satelliteLib-14d9bb88062e8ed99b48e135e9885a09e16db255.js"></script>
+
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "b4f2295af1cfe956a56f53e4ce2b307d"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1606326016325051');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1606326016325051&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5950244"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5950244&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>		<script type="text/javascript">
+			var ajaxRevslider;
+			
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'ab2732f5c7';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"https://thechemco.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<meta name="generator" content="WPML ver:3.7.1 stt:1,4,2;" />
+<!--[if lt IE 9]><script src="https://thechemco.com/wp-content/themes/construction/assets/js/html5.min.js"></script><![endif]-->
+	<link rel="shortcut icon" href="https://thechemco.com/wp-content/uploads/2016/05/TCC-Favicon.png">
+<style id="theme_option_custom_css" type="text/css">
+ .header-transparent .wpc-menu > li > a { color: #D65E60 !important; } .main-navigation a { font-size: 18px!important; } .orderby { display: none !important; } .woocommerce div.product div.summary, .woocommerce #content div.product div.summary, .woocommerce-page div.product div.summary, .woocommerce-page #content div.product div.summary { float: right; width: auto; margin-bottom: 2em; } .woocommerce-active .site-header .site-header-cart { display: none; } .page-element { display: none; } /*Below sets product page copy to left offsets lack of image*/ .single-product .product .summary { width: auto; } .single-product .woocommerce-main-image { display: none; } body.home #masthead{ background: rgba(0,0,0,0.65) !important; } body.home #masthead .menu-item a{ text-shadow: 1px 1px 2px rgba(0,0,0,1) !important; } body.home #masthead .sub-menu .menu-item a{ text-shadow: 1px 1px 2px rgba(0,0,0,0) !important; } @media only screen and (max-width: 480px) { body.home #masthead{ background: rgba(0,0,0,0) !important; } body.home #masthead .menu-item a{ text-shadow: 1px 1px 2px rgba(0,0,0,0) !important; } } .woocommerce-page #content div.product div.summary { width:100%; } 
+</style>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://thechemco.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.4.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+<style type="text/css" title="dynamic-css" class="options-output">.site-header .site-branding{margin-top:10px;margin-right:0;margin-bottom:10px;margin-left:0;}.wpc-menu a{color:#0084c1;}.page-title-wrap{background-color:#f8f9f9;}a, .primary-color, .wpc-menu a:hover, .wpc-menu > li.current-menu-item > a, .wpc-menu > li.current-menu-ancestor > a,
+                                                       .entry-footer .post-categories li a:hover, .entry-footer .post-tags li a:hover,
+                                                       .heading-404, .grid-item .grid-title a:hover, .widget a:hover, .widget #calendar_wrap a, .widget_recent_comments a,
+                                                       #secondary .widget.widget_nav_menu ul li a:hover, #secondary .widget.widget_nav_menu ul li li a:hover, #secondary .widget.widget_nav_menu ul li li li a:hover,
+                                                       #secondary .widget.widget_nav_menu ul li.current-menu-item a, .woocommerce ul.products li.product .price, .woocommerce .star-rating,
+                                                       .iconbox-wrapper .iconbox-icon .primary, .iconbox-wrapper .iconbox-image .primary, .iconbox-wrapper a:hover,
+                                                       .breadcrumbs a:hover, #comments .comment .comment-wrapper .comment-meta .comment-time:hover, #comments .comment .comment-wrapper .comment-meta .comment-reply-link:hover, #comments .comment .comment-wrapper .comment-meta .comment-edit-link:hover,
+                                                       .nav-toggle-active i, .header-transparent .header-right-wrap .extract-element .phone-text, .site-header .header-right-wrap .extract-element .phone-text,
+                                                       .wpb_wrapper .wpc-projects-light .esg-navigationbutton:hover, .wpb_wrapper .wpc-projects-light .esg-filterbutton:hover,.wpb_wrapper .wpc-projects-light .esg-sortbutton:hover,.wpb_wrapper .wpc-projects-light .esg-sortbutton-order:hover,.wpb_wrapper .wpc-projects-light .esg-cartbutton-order:hover,.wpb_wrapper .wpc-projects-light .esg-filterbutton.selected,
+                                                       .wpb_wrapper .wpc-projects-dark .esg-navigationbutton:hover, .wpb_wrapper .wpc-projects-dark .esg-filterbutton:hover, .wpb_wrapper .wpc-projects-dark .esg-sortbutton:hover,.wpb_wrapper .wpc-projects-dark .esg-sortbutton-order:hover,.wpb_wrapper .wpc-projects-dark .esg-cartbutton-order:hover, .wpb_wrapper .wpc-projects-dark .esg-filterbutton.selected{color:#0084c1;}input[type="reset"], input[type="submit"], input[type="submit"], .wpc-menu ul li a:hover,
+                                                       .wpc-menu ul li.current-menu-item > a, .loop-pagination a:hover, .loop-pagination span:hover,
+                                                       .loop-pagination a.current, .loop-pagination span.current, .footer-social, .tagcloud a:hover, woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,
+                                                       .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce #respond input#submit.alt:active, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce a.button.alt:active, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce button.button.alt:active, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, .woocommerce input.button.alt:active,
+                                                       .woocommerce span.onsale, .entry-content .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav li.ui-tabs-active a, .entry-content .wpb_content_element .wpb_accordion_header li.ui-tabs-active a,
+                                                       .entry-content .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header.ui-state-active a,
+                                                       .btn, .btn:hover, .btn-primary, .custom-heading .heading-line, .custom-heading .heading-line.primary,
+                                                       .wpb_wrapper .eg-wpc_projects-element-1{background-color:#0084c1;}textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus,
+                                                       .entry-content blockquote, .woocommerce ul.products li.product a img:hover, .woocommerce div.product div.images img:hover{border-color:#0084c1;}#secondary .widget.widget_nav_menu ul li.current-menu-item a:before{border-left-color:#0084c1;}.secondary-color, .iconbox-wrapper .iconbox-icon .secondary, .iconbox-wrapper .iconbox-image .secondary{color:#d65e60;}.btn-secondary, .custom-heading .heading-line.secondary{background-color:#d65e60;}.hentry.sticky, .entry-content blockquote, .entry-meta .sticky-label,
+                                .entry-author, #comments .comment .comment-wrapper, .page-title-wrap, .widget_wpc_posts ul li,
+                                .inverted-column > .wpb_wrapper, .inverted-row, div.wpcf7-response-output{background-color:#f8f9f9;}hr, abbr, acronym, dfn, table, table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td,
+                                fieldset, select, textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"],
+                                .left-sidebar .content-area, .left-sidebar .sidebar, .right-sidebar .content-area, .right-sidebar .sidebar,
+                                .site-header, .wpc-menu.wpc-menu-mobile, .wpc-menu.wpc-menu-mobile li, .blog .hentry, .archive .hentry, .search .hentry,
+                                .page-header .page-title, .archive-title, .client-logo img, #comments .comment-list .pingback, .page-title-wrap, .page-header-wrap,
+                                .portfolio-prev i, .portfolio-next i, #secondary .widget.widget_nav_menu ul li.current-menu-item a, .icon-button,
+                                .woocommerce nav.woocommerce-pagination ul, .woocommerce nav.woocommerce-pagination ul li,woocommerce div.product .woocommerce-tabs ul.tabs:before, .woocommerce #content div.product .woocommerce-tabs ul.tabs:before, .woocommerce-page div.product .woocommerce-tabs ul.tabs:before, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs:before,
+                                .woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+                                .woocommerce table.cart td.actions .coupon .input-text, .woocommerce #content table.cart td.actions .coupon .input-text, .woocommerce-page table.cart td.actions .coupon .input-text, .woocommerce-page #content table.cart td.actions .coupon .input-text,
+                                .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register,.shop-elements i, .testimonial .testimonial-content, .breadcrumbs,
+                                .woocommerce-cart .cart-collaterals .cart_totals table td, .woocommerce-cart .cart-collaterals .cart_totals table th,.carousel-prev, .carousel-next,.recent-news-meta,
+                                .woocommerce ul.products li.product a img, .woocommerce div.product div.images img{border-color:#e9e9e9;}.site{background-color:#ffffff;}.layout-boxed{background-color:#333333;}body{font-family:"PT Sans";color:#777777;font-size:20px;}h1,h2,h3,h4,h5,h6, .font-heading{font-family:Montserrat;font-weight:normal;color:#0069b5;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1471878054961{padding-bottom: 25px !important;}.vc_custom_1462890625508{padding-bottom: 10px !important;background-color: #ffffff !important;}.vc_custom_1462890592769{padding-bottom: 20px !important;background-color: #ffffff !important;}.vc_custom_1462886291773{padding-bottom: 10px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<style id="pum-styles" type="text/css" media="all">
+	/* Popup Google Fonts */
+@import url('//fonts.googleapis.com/css?family=Acme|Montserrat');
+
+/* Popup Theme 7021: Framed Border */
+.pum-theme-7021, .pum-theme-framed-border { background-color: rgba( 255, 255, 255, 0.50 ) } 
+.pum-theme-7021 .pum-container, .pum-theme-framed-border .pum-container { padding: 18px; border-radius: 0px; border: 20px outset #dd3333; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.97 ) inset; background-color: rgba( 255, 251, 239, 1.00 ) } 
+.pum-theme-7021 .pum-title, .pum-theme-framed-border .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 32px; line-height: 36px } 
+.pum-theme-7021 .pum-content, .pum-theme-framed-border .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-7021 .pum-content + .pum-close, .pum-theme-framed-border .pum-content + .pum-close { height: 20px; width: 20px; left: auto; right: -20px; bottom: auto; top: -20px; padding: 0px; color: #ffffff; font-family: Acme; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 0.55 ) } 
+
+/* Popup Theme 7020: Cutting Edge */
+.pum-theme-7020, .pum-theme-cutting-edge { background-color: rgba( 0, 0, 0, 0.50 ) } 
+.pum-theme-7020 .pum-container, .pum-theme-cutting-edge .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 10px 25px 0px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 30, 115, 190, 1.00 ) } 
+.pum-theme-7020 .pum-title, .pum-theme-cutting-edge .pum-title { color: #ffffff; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Sans-Serif; font-size: 26px; line-height: 28px } 
+.pum-theme-7020 .pum-content, .pum-theme-cutting-edge .pum-content { color: #ffffff; font-family: inherit } 
+.pum-theme-7020 .pum-content + .pum-close, .pum-theme-cutting-edge .pum-content + .pum-close { height: 24px; width: 24px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 0px; color: #1e73be; font-family: inherit; font-size: 32px; line-height: 24px; border: 1px none #ffffff; border-radius: 0px; box-shadow: -1px 1px 1px 0px rgba( 2, 2, 2, 0.10 ); text-shadow: -1px 1px 1px rgba( 0, 0, 0, 0.10 ); background-color: rgba( 238, 238, 34, 1.00 ) } 
+
+/* Popup Theme 7019: Hello Box */
+.pum-theme-7019, .pum-theme-hello-box { background-color: rgba( 0, 0, 0, 0.75 ) } 
+.pum-theme-7019 .pum-container, .pum-theme-hello-box .pum-container { padding: 30px; border-radius: 80px; border: 14px solid #81d742; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-7019 .pum-title, .pum-theme-hello-box .pum-title { color: #2d2d2d; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Montserrat; font-size: 32px; line-height: 36px } 
+.pum-theme-7019 .pum-content, .pum-theme-hello-box .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-7019 .pum-content + .pum-close, .pum-theme-hello-box .pum-content + .pum-close { height: auto; width: auto; left: auto; right: -30px; bottom: auto; top: -30px; padding: 0px; color: #2d2d2d; font-family: inherit; font-size: 32px; line-height: 28px; border: 1px none #ffffff; border-radius: 28px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+
+/* Popup Theme 7018: Enterprise Blue */
+.pum-theme-7018, .pum-theme-enterprise-blue { background-color: rgba( 28, 93, 191, 0.41 ) } 
+.pum-theme-7018 .pum-container, .pum-theme-enterprise-blue .pum-container { padding: 11px; border-radius: 5px; border: 1px none #000000; box-shadow: 0px 10px 25px 4px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-7018 .pum-title, .pum-theme-enterprise-blue .pum-title { color: #315b7c; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 34px; line-height: 36px } 
+.pum-theme-7018 .pum-content, .pum-theme-enterprise-blue .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-7018 .pum-content + .pum-close, .pum-theme-enterprise-blue .pum-content + .pum-close { height: 28px; width: 28px; left: auto; right: 8px; bottom: auto; top: 8px; padding: 4px; color: #ffffff; font-family: inherit; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 42px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 49, 91, 124, 1.00 ) } 
+
+/* Popup Theme 7017: Light Box */
+.pum-theme-7017, .pum-theme-lightbox { background-color: rgba( 0, 0, 0, 0.60 ) } 
+.pum-theme-7017 .pum-container, .pum-theme-lightbox .pum-container { padding: 18px; border-radius: 3px; border: 8px solid #000000; box-shadow: 0px 0px 30px 0px rgba( 2, 2, 2, 1.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-7017 .pum-title, .pum-theme-lightbox .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 32px; line-height: 36px } 
+.pum-theme-7017 .pum-content, .pum-theme-lightbox .pum-content { color: #000000; font-family: inherit } 
+.pum-theme-7017 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close { height: 30px; width: 30px; left: auto; right: -24px; bottom: auto; top: -24px; padding: 0px; color: #ffffff; font-family: inherit; font-size: 24px; line-height: 26px; border: 2px solid #ffffff; border-radius: 30px; box-shadow: 0px 0px 15px 1px rgba( 2, 2, 2, 0.75 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 1.00 ) } 
+
+/* Popup Theme 7016: Default Theme */
+.pum-theme-7016, .pum-theme-default-theme { background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-7016 .pum-container, .pum-theme-default-theme .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-7016 .pum-title, .pum-theme-default-theme .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-7016 .pum-content, .pum-theme-default-theme .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-7016 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
+
+
+	
+		</style></head>
+
+<body class="home page-template-default page page-id-644 wc-pac-hide-sale-flash ecwd-theme-parent-construction ecwd-theme-child-construction-child header-header-default header-fixed-on header-transparent gecko linux wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+<div id="page" class="hfeed site">
+
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header fixed-on" role="banner">
+		<div class="header-wrap">
+			<div class="container">
+				<div class="site-branding">
+										<a href="https://thechemco.com/" title="The Chemical Company" rel="home">
+						<img src="https://thechemco.com/wp-content/uploads/2016/03/tcc_logo_WEB-1.png" alt="" />
+					</a>
+									</div><!-- /.site-branding -->
+
+				<div class="header-right-wrap clearfix">
+
+					<div class="header-widget">
+						<div class="header-right-widgets clearfix">
+
+							<div class="header-extract clearfix">
+
+																<div class="extract-element">
+									<div class="header-social">
+										<a target="_blank" href="https://twitter.com/thechemicalco" title="Twitter"><i class="fa fa-twitter"></i></a> 										<a target="_blank" href="https://www.facebook.com/TheChemicalCompany" title="Facebook"><i class="fa fa-facebook"></i></a> 										<a target="_blank" href="https://www.linkedin.com/company/the-chemical-company" title="Linkedin"><i class="fa fa-linkedin-square"></i></a> 																																																																																<a target="_blank" href="https://www.youtube.com/channel/UCx0z8MGrhbXWEUNlsHTj6Ag" title="Youtube"><i class="fa fa-youtube-play"></i></a> 																													</div>
+								</div>
+								
+																<div class="extract-element">
+									<span class="header-text"></span> <span class="phone-text primary-color">Ver En Español <a href="https://thechemco.com/?lang=es"><img class="aligncenter size-full wp-image-6110" src="https://thechemco.com/wp-content/uploads/2015/08/es.png" alt="es" width="18" height="12" /></a></span>
+								</div>
+								
+																<div class="extract-element">
+									<span class="header-text">Speak With Us Today! </span> <span class="phone-text primary-color"><a href="tel:(401) 360-2800">(401) 360-2800</a></span>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<div id="nav-toggle"><i class="fa fa-bars"></i></div>
+						<ul class="wpc-menu">	
+					   	   <li id="menu-item-875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-875"><a href="https://thechemco.com/about-tcc/">About TCC</a>
+<ul class="sub-menu">
+	<li id="menu-item-8343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8343"><a href="https://thechemco.com/shows/">Tradeshows &#038; Events</a>
+	<ul class="sub-menu">
+		<li id="menu-item-8423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8423"><a href="https://thechemco.com/afpm/">AFPM</a></li>
+		<li id="menu-item-8449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8449"><a href="https://thechemco.com/epca/">EPCA</a></li>
+		<li id="menu-item-8458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8458"><a href="https://thechemco.com/apic-2018-asia-petrochemical-industry-conference-the-chemical-company/">APIC</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5580"><a href="https://thechemco.com/lovechemistry/">Love Chemistry</a></li>
+	<li id="menu-item-7592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7592"><a href="https://thechemco.com/secure/">Security of Supply</a></li>
+	<li id="menu-item-7838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7838"><a href="https://thechemco.com/podcast/">The View: Podcast Edition</a></li>
+	<li id="menu-item-8389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8389"><a href="https://thechemco.com/compliance-environmental-policies/">Regulatory</a></li>
+</ul>
+</li>
+<li id="menu-item-884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-884"><a href="https://thechemco.com/chemical/">Products</a>
+<ul class="sub-menu">
+	<li id="menu-item-1441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1441"><a href="https://thechemco.com/featured-products/">Featured Products</a></li>
+</ul>
+</li>
+<li id="menu-item-945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-945"><a href="https://thechemco.com/the-view-from-jamestown/">The View</a>
+<ul class="sub-menu">
+	<li id="menu-item-7837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7837"><a href="https://thechemco.com/podcast/">Podcast</a></li>
+	<li id="menu-item-8049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8049"><a href="https://thechemco.com/app/">Mobile App</a></li>
+	<li id="menu-item-5727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5727"><a href="https://thechemco.com/the-view-from-jamestown/">News</a></li>
+</ul>
+</li>
+<li id="menu-item-1467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1467"><a href="https://thechemco.com/sourcing/">Sourcing</a></li>
+<li id="menu-item-880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-880"><a href="https://thechemco.com/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1860"><a href="https://thechemco.com/request-quote/">Request A Quote</a></li>
+	<li id="menu-item-6084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6084"><a href="https://thechemco.com/media-center/">Public Relations</a></li>
+</ul>
+</li>
+					    </ul>
+					</nav><!-- #site-navigation -->
+				</div>
+			</div>
+			
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		
+		
+		<div id="content-wrap" class=" full-screen">
+			<div id="primary" class="content-area-full">
+				<main id="main" class="site-main" role="main">
+
+					
+						<article id="post-644" class="post-644 page type-page status-publish has-post-thumbnail hentry">
+
+							<div class="entry-content">
+
+								<div id="wpc_5c58a63dcbe3b" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper  clearfix" style="background-image: url();margin-top: -100px;float: left; width: 100%;margin-bottom: -40px;padding-bottom: -40px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" property="stylesheet" type="text/css" media="all"><script type="text/javascript" src="https://thechemco.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?rev=5.4.5"></script><script type="text/javascript" src="https://thechemco.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?rev=5.4.5"></script>
+<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.4.5 fullwidth mode -->
+	<div id="rev_slider_5_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.5">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-19" data-transition="fade,fadefrombottom" data-slotamount="7,7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default,default" data-easeout="default,default" data-masterspeed="300,300"  data-thumb=""  data-rotate="0,0"  data-saveperformance="off"  data-title="Slide 1" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://thechemco.com/wp-content/plugins/revslider/admin/assets/images/transparent.png"  alt="" title="Train Header"  width="2017" height="1098" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-19-layer-4" 
+			 data-x="center" data-hoffset="" 
+			 data-y="center" data-voffset="" 
+						data-width="['none','none','none','none']"
+			data-height="['none','none','none','none']"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 5;"><img src="https://thechemco.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-19-at-3.09.25-PM.png" alt="" data-ww="2017px" data-hh="1098px" width="2017" height="1098" data-no-retina> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme fullscreenvideo  disabled_lc tp-videolayer" 
+			 id="slide-19-layer-5" 
+			 data-x="0" 
+			 data-y="0" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+ data-videocontrols="none" data-videowidth="100%" data-videoheight="100%" data-videomp4="https://thechemco.com/wp-content/uploads/2016/03/iphone-compression.m4v" data-videopreload="auto" data-videoloop="loopandnoslidestop" data-forceCover="1" data-aspectratio="16:9"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-captionhidden="on" 
+			data-volume="mute"
+			style="z-index: 6;"> </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption construction-large   tp-resizeme" 
+			 id="slide-19-layer-1" 
+			 data-x="center" data-hoffset="" 
+			 data-y="center" data-voffset="-19" 
+						data-width="['auto']"
+			data-height="['auto']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-captionhidden="on" 
+
+			style="z-index: 7; white-space: nowrap; color: rgba(255,255,255,1);">WELCOME </div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption construction-medium   tp-resizeme" 
+			 id="slide-19-layer-2" 
+			 data-x="center" data-hoffset="" 
+			 data-y="center" data-voffset="48" 
+						data-width="['auto']"
+			data-height="['auto']"
+ 
+			data-type="text" 
+			data-actions=''
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-captionhidden="on" 
+
+			style="z-index: 8; white-space: nowrap; color: rgba(255,255,255,1);font-family:Arial;">STRENGTHEN YOUR SUPPLY CHAIN WITH US </div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption black   tp-resizeme" 
+			 id="slide-19-layer-3" 
+			 data-x="center" data-hoffset="" 
+			 data-y="center" data-voffset="116" 
+						data-width="['auto']"
+			data-height="['auto']"
+			data-visibility="['on','on','off','off']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":3000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-captionhidden="on" 
+
+			style="z-index: 9; white-space: nowrap; font-size: 35px; line-height: px; font-weight: 700; color: rgba(0,0,0,1);font-family:Arial;"><a class="btn btn-secondary" href="http://thechemco.com/about-tcc/"><font color="white">Learn More »</font></a> </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.black,.black{color:#000;text-shadow:none}.tp-caption.construction-large,.construction-large{font-size:70px;line-height:40px;font-weight:700;font-family:\"Montserrat\";color:#ffffff;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(255,255,255);border-style:none;white-space:nowrap;letter-spacing:13px}.tp-caption.construction-medium,.construction-medium{color:#ffffff;font-weight:700;font-size:20px;line-height:20px;background-color:transparent;text-decoration:none;border-width:0px;border-color:rgb(255,255,255);border-style:none;white-space:nowrap;text-transform:uppercase;letter-spacing:2px}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+setREVStartSize({c: jQuery('#rev_slider_5_1'), gridwidth: [1230], gridheight: [650], sliderLayout: 'fullwidth'});
+			
+var revapi5,
+	tpj=jQuery;
+tpj.noConflict();			
+tpj(document).ready(function() {
+	if(tpj("#rev_slider_5_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_5_1");
+	}else{
+		revapi5 = tpj("#rev_slider_5_1").show().revolution({
+			sliderType:"hero",
+			jsFileLocation:"//thechemco.com/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"fullwidth",
+			dottedOverlay:"none",
+			delay:9000,
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:1230,
+			gridheight:650,
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner0",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:641,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				disableFocusListener:false,
+			}
+		});
+	}
+	
+});	/*ready*/
+</script>
+		</div><!-- END REVOLUTION SLIDER --></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63dd82e3" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper  clearfix" style="background-color: #0084c1;padding-top: 20px;padding-bottom: 20px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="mobile-center wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h3><span style="color: #ffffff; display: block; margin-top: 2px;">Global Chemical Supplier &amp; Distributor</span></h3>
+
+		</div>
+	</div>
+</div></div></div><div class="mobile-center wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><a title="" target="" href="http://thechemco.com/chemical/" class="btn  btn-regular btn-ghost right" style="margin-top: 0px;margin-bottom: 0px;">VIEW OUR PRODUCTS</a></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63dd8e57" class="vc_row wpb_row vc_row-fluid  mobile-no-margin-top inverted-row">
+		<div class="row_inner_wrapper  clearfix" style="padding-top: 70px;padding-bottom: 50px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb"><a title="" target=" _blank" href="https://thechemco.com/secure/"><img src="https://thechemco.com/wp-content/uploads/2018/02/black_web-homepage-3-600x300.png"></a>
+			</div>
+			<div class="featured-box-content"><h4>Security of Supply </h4>
+					<div class="featured-box-desc"><p>The Chemical Company is committed to partnering with you to secure your supply chain.</p>
+					</div>
+					<div class="featured-box-button">
+						<a title="" target=" _blank" href="https://thechemco.com/secure/" class="">Secure Your Supply</a>
+					</div>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb"><a title="" target=" _blank" href="http://thechemco.com/podcast"><img src="https://thechemco.com/wp-content/uploads/2018/03/tcc-homepage-graphic-1-600x300.png"></a>
+			</div>
+			<div class="featured-box-content"><h4>The View: Podcast Edition</h4>
+					<div class="featured-box-desc"><p>Learn more about TCC's monthly podcast series, The View from Jamestown: Podcast Edition, a monthly series on news, market trends and topics.</p>
+					</div>
+					<div class="featured-box-button">
+						<a title="" target=" _blank" href="http://thechemco.com/podcast" class="">Learn more</a>
+					</div>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb"><a title="" target=" _blank" href="https://www.facebook.com/TheChemicalCompany/"><img src="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2017-04-17-at-9.13.52-AM-600x300.png"></a>
+			</div>
+			<div class="featured-box-content"><h4>Connect with The Chemical Company </h4>
+					<div class="featured-box-desc"><p>Connect with The Chemical Company on LinkedIn, Facebook, Twitter and Instagram to stay up to date on company and market news, trends and updates.</p>
+					</div>
+					<div class="featured-box-button">
+						<a title="" target=" _blank" href="https://www.facebook.com/TheChemicalCompany/" class="">Connect with TCC</a>
+					</div>
+			</div>
+	</div></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63dda1a0" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper wpc_row_parallax clearfix" style="padding-top: 20px;padding-bottom: 20px;" data-bg="https://thechemco.com/wp-content/uploads/2016/06/polymer-additives.jpeg" data-speed="0.5"><div class="wpc_video_color_overlay" style="background-color:"></div>
+			<div class="wpc_parallax_bg" style="background-image:https://thechemco.com/wp-content/uploads/2016/06/polymer-additives.jpeg"></div>
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="mobile-center wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+<div class="text-center"><a title="" target="" href="http://thechemco.com/chemical/" class="btn  btn-regular btn-primary" style="margin-top: 50px;margin-bottom: 50px;">VIEW OUR PRODUCTS</a>
+</div></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63dda8e2" class="vc_row wpb_row vc_row-fluid inverted-row ">
+		<div class="row_inner_wrapper  clearfix" style="padding-top: 50px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="custom-heading wpb_content_element ">
+		<h2 class="heading-title"  style="color: #000000;">Recent News</h2>
+		<span class="heading-line primary"></span>
+	</div><!-- vc_grid start -->
+<div class="vc_grid-container-wrapper vc_clearfix" >
+	<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:644,&quot;style&quot;:&quot;pagination&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1534428472195-66e607c8-433a-1&quot;,&quot;items_per_page&quot;:&quot;3&quot;,&quot;auto_play&quot;:false,&quot;gap&quot;:35,&quot;speed&quot;:-1000,&quot;loop&quot;:&quot;&quot;,&quot;animation_in&quot;:&quot;&quot;,&quot;animation_out&quot;:&quot;&quot;,&quot;arrows_design&quot;:&quot;none&quot;,&quot;arrows_color&quot;:&quot;blue&quot;,&quot;arrows_position&quot;:&quot;inside&quot;,&quot;paging_design&quot;:&quot;radio_dots&quot;,&quot;paging_color&quot;:&quot;grey&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="https://thechemco.com/wp-admin/admin-ajax.php?lang=en" data-vc-post-id="644" data-vc-public-nonce="8e32b6caca">
+	</div>
+</div><!-- vc_grid end -->
+</div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63ddc20e" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper  clearfix" style="background-image: url();color: #FFFFFF;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+<div id="rev_slider_8_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.4.5 fullwidth mode -->
+	<div id="rev_slider_8_2" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.5">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-26" data-transition="fade,fadefrombottom" data-slotamount="7,7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default,default" data-easeout="default,default" data-masterspeed="300,300"  data-thumb="https://thechemco.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-19-at-3.16.28-PM-100x50.png"  data-rotate="0,0"  data-saveperformance="off"  data-title="Slide 1" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://thechemco.com/wp-content/uploads/2016/08/Screen-Shot-2016-08-19-at-3.16.28-PM.png"  alt="" title="Newport BG"  width="1617" height="970" data-bgposition="center center" data-bgfit="cover" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- BACKGROUND VIDEO LAYER -->
+		<div class="rs-background-video-layer" 
+			data-forcerewind="on" 
+			data-volume="mute" 
+			data-videowidth="100%" 
+			data-videoheight="100%" 
+			data-videomp4="http://thechemco.com/wp-content/uploads/2016/05/newport-32-gb-1.m4v" 
+			data-videopreload="auto" 
+			data-videoloop="loopandnoslidestop" 
+			data-forceCover="1" 
+			data-aspectratio="16:9" 
+			data-autoplay="true" 
+			data-autoplayonlyfirsttime="false" 
+></div>
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption construction-medium   tp-resizeme" 
+			 id="slide-26-layer-2" 
+			 data-x="56" 
+			 data-y="center" data-voffset="20" 
+						data-width="['auto']"
+			data-height="['auto']"
+			data-visibility="['on','on','on','off']"
+ 
+			data-type="text" 
+			data-actions=''
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"y:50px;opacity:0;","speed":2000,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 5; white-space: nowrap; font-size: 30px; color: rgba(255,255,255,1);font-family:Arial;">STRATEGICALLY PLACED INVENTORY NETWORK </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption rev-btn rev-withicon " 
+			 id="slide-26-layer-6" 
+			 data-x="60" 
+			 data-y="326" 
+						data-width="['auto']"
+			data-height="['auto']"
+ 
+			data-type="button" 
+			data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"https:\/\/thechemco.com\/contact-us\/","delay":""}]'
+			data-responsive_offset="on" 
+			data-responsive="off"
+			data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[12,12,12,12]"
+			data-paddingright="[35,35,35,35]"
+			data-paddingbottom="[12,12,12,12]"
+			data-paddingleft="[35,35,35,35]"
+
+			style="z-index: 6; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: rgba(255,255,255,1);font-family:arial;background-color:rgba(30,115,190,0.75);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Contact Us<i class="fa-icon-chevron-right"></i> </div>
+	</li>
+</ul>
+<div class="tp-bannertimer" style="height: 5px; background: rgba(0,0,0,0.15);"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.construction-medium,.construction-medium{color:#ffffff;font-weight:700;font-size:20px;line-height:20px;background-color:transparent;text-decoration:none;border-width:0px;border-color:rgb(255,255,255);border-style:none;white-space:nowrap;text-transform:uppercase;letter-spacing:2px}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+setREVStartSize({c: jQuery('#rev_slider_8_2'), gridwidth: [1230], gridheight: [550], sliderLayout: 'fullwidth'});
+			
+var revapi8,
+	tpj=jQuery;
+tpj.noConflict();			
+tpj(document).ready(function() {
+	if(tpj("#rev_slider_8_2").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_8_2");
+	}else{
+		revapi8 = tpj("#rev_slider_8_2").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//thechemco.com/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"fullwidth",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"on",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"on",
+				touch:{
+					touchenabled:"on",
+					touchOnDesktop:"off",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+			},
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:1230,
+			gridheight:550,
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner0",
+			stopLoop:"on",
+			stopAfterLoops:0,
+			stopAtSlide:2,
+			shuffle:"off",
+			autoHeight:"off",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}
+	
+});	/*ready*/
+</script>
+		</div><!-- END REVOLUTION SLIDER --></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63de29b9" class="vc_row wpb_row vc_row-fluid  fit-screen">
+		<div class="row_inner_wrapper  clearfix" style="padding-top: 30px;padding-bottom: 0px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="custom-heading wpb_content_element ">
+		<h2 class="heading-title"  style="color: #000000;">Certifications</h2>
+		<span class="heading-line "style="background-color: #1e73be"></span>
+	</div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="iconbox-wrapper  text-center">
+		<div class="iconbox-icon">
+				<i class="fa fa-bookmark-o " style="color: #7fb237;font-size:80px;"></i>
+		</div>
+		<h4 class="iconbox-heading">Distinguished Distributor Awards
+		</h4>
+			<div class="iconbox-desc">
+				<p>TCC has been recognized as a Distinguished Distributor by several companies including Evonik, a world leading specialty chemical company and Arkema, an international diversified chemicals manufacturer.</p>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="iconbox-wrapper  text-center">
+		<div class="iconbox-icon">
+				<i class="fa fa-flask primary" style="font-size:80px;"></i>
+		</div>
+		<h4 class="iconbox-heading">National Association of Chemical Distributors (NACD) 
+		</h4>
+			<div class="iconbox-desc">
+				<p>Receiving the NACD certification is described as distributors meeting a ``gold standard`` for quality, integrity, and leadership in the product stewardship arena. TCC has been recognized for regularly enacting programs to improve safety and reduce incidents.</p>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="iconbox-wrapper  text-center">
+		<div class="iconbox-icon">
+				<i class="fa fa-folder-open primary" style="font-size:80px;"></i>
+		</div>
+		<h4 class="iconbox-heading">ISO 14001
+		</h4>
+			<div class="iconbox-desc">
+				<p>TCC is proud to be ISO 14001 Certified as of June 2018. View TCC's regulatory page, or click the icon above to view our certification and read more. </p>
+			</div>
+	</div></div></div></div></div></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63de3b4f" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper  clearfix" style="background-color: rgba(0,89,124,0.74);padding-top: 60px;padding-bottom: 20px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="custom-heading wpb_content_element ">
+		<h2 class="heading-title"  style="color: #ffffff;">Watch Our Featured Videos!</h2>
+		<span class="heading-line primary"></span>
+	</div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471878054961"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb">
+					<a class="popup-video" href="https://www.youtube.com/watch?v=79ys7hktPJg">
+						<img src="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-06-16-at-10.16.43-AM-600x300.png">
+						<span class="video_icon"><i class="fa fa-play"></i></span>
+					</a>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb">
+					<a class="popup-video" href="https://www.youtube.com/watch?v=37cw3fy59rM">
+						<img src="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-06-16-at-10.13.35-AM-600x300.png">
+						<span class="video_icon"><i class="fa fa-play"></i></span>
+					</a>
+			</div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_content_element featured-box " >
+			<div class="featured-box-thumb">
+					<a class="popup-video" href="https://www.youtube.com/watch?v=_4TmJkBBjkU">
+						<img src="https://thechemco.com/wp-content/uploads/2015/02/customer-service-team-585x300.png">
+						<span class="video_icon"><i class="fa fa-play"></i></span>
+					</a>
+			</div>
+	</div></div></div></div></div></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id="wpc_5c58a63de5098" class="vc_row wpb_row vc_row-fluid  ">
+		<div class="row_inner_wrapper  clearfix" style="background-color: #eaeaea;padding-top: 60px;">
+			<div class="row_inner container clearfix">
+				<div class="row_full_center_content clearfix"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="custom-heading wpb_content_element ">
+		<h2 class="heading-title"  style="color: #000000;">Our Trusted Organizations</h2>
+		<span class="heading-line primary"></span>
+	</div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1462890625508 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="http://www.plasticsindustry.org/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="300" height="75" src="https://thechemco.com/wp-content/uploads/2018/07/spi-logo-300x75.png" class="vc_single_image-img attachment-medium" alt="" srcset="https://thechemco.com/wp-content/uploads/2018/07/spi-logo-300x75.png 300w, https://thechemco.com/wp-content/uploads/2018/07/spi-logo-768x192.png 768w, https://thechemco.com/wp-content/uploads/2018/07/spi-logo.png 912w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://www.afpm.org/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="300" height="132" src="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-05-10-at-9.47.15-AM-300x132.png" class="vc_single_image-img attachment-medium" alt="" srcset="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-05-10-at-9.47.15-AM-300x132.png 300w, https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-05-10-at-9.47.15-AM-768x338.png 768w, https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-05-10-at-9.47.15-AM.png 898w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1462890592769 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1462886291773"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="http://www.socma.com/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="250" height="85" src="https://thechemco.com/wp-content/uploads/2015/02/SOCMA-Logo-Web.png" class="vc_single_image-img attachment-medium" alt="" /></a>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://www.nacdonline.org/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="162" height="92" src="https://thechemco.com/wp-content/uploads/2015/02/Screen-Shot-2016-05-10-at-10.24.10-AM.png" class="vc_single_image-img attachment-medium" alt="" /></a>
+		</figure>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="custom-heading wpb_content_element " style="margin-bottom: 40px;">
+		<h2 class="heading-title"  style="color: #000000;">Sales Commentary</h2>
+		<span class="heading-line primary"></span>
+	</div>
+	<div class="testimonial_carousel_wrapper">
+			<script type="text/javascript">
+				jQuery(document).ready(function(){
+					"use strict";
+					jQuery(".testimonial_carousel_5c58a63de828d").slick({
+						rtl: false,
+						autoplay: false ,
+						autoplaySpeed: 3000 ,
+						speed: 300 ,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						draggable: false,
+						prevArrow: "<span class='carousel-prev'><i class='fa fa-angle-left'></i></span>",
+        				nextArrow: "<span class='carousel-next'><i class='fa fa-angle-right'></i></span>",
+					});
+				});
+			</script>
+		<div class="testimonial_carousel_5c58a63de828d">
+				<div class="testimonial testimonial-item inverted">
+					<div class="testimonial-content">
+						The Chemical Company (TCC) esters line covers niche to specialty applications. Over the decades TCC has grown its line of ChemFlexx &amp; NatureFlexx esters to include: specialty &amp; commoditized linear &amp; branched phthalates; non-phthalates; linear &amp; branched trimellitates; linear &amp; branched adipates; benzoates; citrates; glycol based esters; succinates, sebacates, linseed oil based, as well as soy-based primary &amp; secondary plasticizers.
+					</div>
+					<div class="testimonial-header clearfix">
+						<div class="testimonial-name font-heading">Tom Ultsch: Vice President MidWest Market</div>
+					</div>
+				</div>
+		</div>
+	</div></div></div></div>
+				</div>
+			</div>
+		</div>
+</div>
+								
+							</div><!-- .entry-content -->
+
+						</article><!-- #post-## -->
+
+					
+				</main><!-- #main -->
+			</div><!-- #primary -->
+
+			
+		</div> <!-- /#content-wrap -->
+
+
+	</div><!-- #content -->
+	
+	<div class="clear"></div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<div class="footer-connect">
+			<div class="container">
+
+								<div class="footer-social">
+					 <label class="font-heading" for="">Follow us</label> 					<a target="_blank" href="https://twitter.com/thechemicalco" title="Twitter"><i class="fa fa-twitter"></i></a> 					<a target="_blank" href="https://www.facebook.com/TheChemicalCompany" title="Facebook"><i class="fa fa-facebook"></i></a> 					<a target="_blank" href="https://www.linkedin.com/company/the-chemical-company" title="Linkedin"><i class="fa fa-linkedin-square"></i></a> 																																								<a target="_blank" href="https://www.youtube.com/channel/UCx0z8MGrhbXWEUNlsHTj6Ag" title="Youtube"><i class="fa fa-youtube-play"></i></a> 														</div>
+							</div>
+		</div>
+
+		<div class="container">
+			
+						<div class="footer-widgets-area">
+													<div class="sidebar-footer footer-columns footer-3-columns clearfix">
+													<div id="footer-1" class="footer-1 footer-column widget-area" role="complementary">
+															</div>
+														<div id="footer-2" class="footer-2 footer-column widget-area" role="complementary">
+										<aside id="recent-posts-4" class="widget widget_recent_entries">		<h3 class="widget-title">Industry News</h3>		<ul>
+											<li>
+					<a href="https://thechemco.com/understanding-importance-plasticization/">Understanding the Importance of Plasticization</a>
+									</li>
+											<li>
+					<a href="https://thechemco.com/world-antifreeze-trends-2019/">World Antifreeze Trends in 2019</a>
+									</li>
+											<li>
+					<a href="https://thechemco.com/rhine-river-water-levels-return-normal-transportation-eases/">Rhine River Water Levels Return to Normal; Transportation Eases</a>
+									</li>
+					</ul>
+		</aside>							</div>
+														<div id="footer-3" class="footer-3 footer-column widget-area" role="complementary">
+								<aside id="text-13" class="widget widget_text"><h3 class="widget-title">Contact Us</h3>			<div class="textwidget"><div class="contact-info-box">
+	<div class="contact-info-item">
+		<div class="contact-text"><i class="fa fa-map-marker"></i></div>
+		<div class="contact-value">44 Southwest Avenue<br>
+		Jamestown RI 02835
+	</div>
+	</div>
+	<div class="contact-info-item">
+		<div class="contact-text"><i class="fa fa-phone"></i></div>
+		<div class="contact-value">(401) 360-2800</div>
+	</div>
+</div></div>
+		</aside>							</div>
+												</div>
+							</div>
+					</div>
+		<div class="site-info-wrapper">
+			<div class="container">
+				<div class="site-info clearfix">
+					<div class="copy_text">
+						Copyright © 2018 The Chemical Company					</div>
+					<div class="footer-menu">
+						<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-1863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1863"><a href="https://thechemco.com/about-tcc/">About TCC</a></li>
+<li id="menu-item-6953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6953"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=j4yiwhcab&#038;p=oi&#038;m=1101917348841&#038;sit=p96in78cb&#038;f=28132d06-ea20-442f-874f-32d5a8eab758">Subscribe to The View</a></li>
+<li id="menu-item-6096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6096"><a href="https://thechemco.com/contact-us/">Contact Us Your Bulk Distributor</a></li>
+<li id="menu-item-6095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6095"><a href="https://thechemco.com/team-resources/">TCC Team Resources</a></li>
+<li id="menu-item-8444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8444"><a href="https://thechemco.com/privacy-statement/">Privacy</a></li>
+</ul></div>					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<div id="btt"><i class="fa fa-angle-double-up"></i></div>
+
+        <div id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom">
+            <div class="moove-gdpr-info-bar-container">
+
+                <div class="moove-gdpr-info-bar-content">
+                    <div class="moove-gdpr-cookie-notice">
+                        <p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <span data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p>
+                    </div>
+                    <!--  .moove-gdpr-cookie-notice -->
+                    <div class="moove-gdpr-button-holder">
+                        <button class="mgbutton moove-gdpr-infobar-allow-all" rel="nofollow">Accept</button>
+                    </div>
+                    <!--  .button-container -->
+                </div>
+            </div>
+
+        </div>
+        <!-- #moove_gdpr_cookie_info_bar  -->
+        <script type="text/javascript">_satellite.pageBottom();</script><link rel='stylesheet' property='stylesheet' id='rs-icon-set-fa-icon-css'  href='https://thechemco.com/wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css' type='text/css' media='all' />			<script type="text/javascript">
+				function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			</script>
+			<link rel='stylesheet' id='prettyphoto-css'  href='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css-css'  href='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=5.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/event-calendar-wd/js/gmap/gmap3.js?ver=1.0.93_58c93643e294a'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/event-calendar-wd/js/ecwd_popup.js?ver=1.0.93_58c93643e294a'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ecwd = {"ajaxurl":"https:\/\/thechemco.com\/wp-admin\/admin-ajax.php","ajaxnonce":"1f8a75cc54","loadingText":"Loading...","event_popup_title_text":"Event Details","plugin_url":"https:\/\/thechemco.com\/wp-content\/plugins\/event-calendar-wd","gmap_key":"AIzaSyBD9Ve0fGAn7Is7kEX5oFZE85EADy9_Sm4","gmap_style":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/event-calendar-wd/js/scripts.js?ver=1.0.93_58c93643e294a'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/thechemco.com\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8'></script>
+<script type='text/javascript' src='//thechemco.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.70'></script>
+<script type='text/javascript' src='//thechemco.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//thechemco.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=3.0.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//thechemco.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.js?ver=3.0.7'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/themes/construction/assets/js/theme.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/comment-reply.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/thechemco.com\/wp-admin\/admin-ajax.php","post_id":"644","plugin_dir":"https:\/\/thechemco.com\/wp-content\/plugins\/gdpr-cookie-compliance","is_page":"1","enabled_default":{"third_party":0,"advanced":0},"is_single":"","current_user":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js?ver=1.1.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpgdprcData = {"ajaxURL":"https:\/\/thechemco.com\/wp-admin\/admin-ajax.php","ajaxSecurity":"477138706c"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/wp-gdpr-compliance/assets/js/front.js?ver=1533568394'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/wp-embed.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"https:\/\/thechemco.com","ajax_url":"https:\/\/thechemco.com\/wp-admin\/admin-ajax.php","url_type":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/bower/twbs-pagination/jquery.twbsPagination.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://thechemco.com/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=5.1.1'></script>
+
+                
+
+        <style>
+            #moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737!important;color:#fff!important}#moove_gdpr_save_popup_settings_button:hover{background-color:#000!important}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#0084c1!important}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton{background-color:#0084c1!important;border-color:#0084c1!important}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover{background-color:#fff!important;color:#0084c1!important}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i{background-color:#0084c1!important;border:1px solid #0084c1!important}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover{color:#0084c1!important}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button{color:#000!important}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button i{color:#000!important}#moove_gdpr_cookie_modal.lity-hide{display:none}        </style>
+
+        <div id="moove_gdpr_cookie_modal" class="lity-hide">
+            <div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+                <a href="#" class="moove-gdpr-modal-close" rel="nofollow"><i class="moovegdpr-arrow-close"></i></a>
+                <div class="moove-gdpr-modal-left-content">
+                            <div class="moove-gdpr-company-logo-holder">
+                        <img src="https://thechemco.com/wp-content/uploads/2016/03/tcc_logo_WEB-1.png" alt="" class="img-responsive" />
+        </div>
+        <!--  .moove-gdpr-company-logo-holder -->
+                            <ul id="moove-gdpr-menu">
+                                                <li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+                            <button data-href="#privacy_overview" class="moove-gdpr-tab-nav"><i class="moovegdpr-privacy-overview"></i> <span>Privacy Overview</span></button>
+                        </li>
+
+                                                                            <li class="menu-item-strict-necesarry-cookies menu-item-off">
+                                <button data-href="#strict-necesarry-cookies" class="moove-gdpr-tab-nav"><i class="moovegdpr-strict-necessary"></i> <span>Strictly Necessary Cookies</span></button>
+                            </li>
+                        
+
+                                                
+                                                
+                                                                    </ul>
+
+                            <div class="moove-gdpr-branding-cnt">
+            
+		<a href="https://wordpress.org/plugins/gdpr-cookie-compliance" target="_blank" rel="noopener" class='moove-gdpr-branding'>Powered by GDPR plugin</a>
+		        </div>
+        <!--  .moove-gdpr-branding -->
+                        </div>
+                <!--  .moove-gdpr-modal-left-content -->
+                                <div class="moove-gdpr-modal-right-content">
+                    <div class="moove-gdpr-modal-title">
+
+                                                                    </div>
+                    <!-- .moove-gdpr-modal-ritle -->
+                    <div class="main-modal-content">
+
+                        <div class="moove-gdpr-tab-content">
+                            <div id="privacy_overview" class="moove-gdpr-tab-main">
+                                                                    <h3 class="tab-title">Privacy Overview</h3>
+                                                                <div class="moove-gdpr-tab-main-content">
+                                    <p>This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</p>
+<p>You can adjust all of your cookie settings by navigating the tabs on the left hand side.</p>
+                                </div>
+                                <!--  .moove-gdpr-tab-main-content -->
+                            </div>
+
+                                                            <div id="strict-necesarry-cookies" class="moove-gdpr-tab-main" style="display:none">
+                                                                        <h3 class="tab-title">Strictly Necessary Cookies</h3>
+                                    <div class="moove-gdpr-tab-main-content">
+                                        <p>Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.</p>
+                                                                                                                        <div class="moove-gdpr-status-bar ">
+                                            <form>
+                                                <fieldset>
+                                                    <label class="switch">
+                                                        <span class='gdpr-acc-link'>disable</span>
+                                                        <input type="checkbox"  value="check" id="moove_gdpr_strict_cookies">
+                                                        <span class="slider round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
+                                                    </label>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <!-- .moove-gdpr-status-bar -->
+                                                                                    <div class="moove-gdpr-tab-main-content moove-gdpr-strict-warning-message" style="margin-top: 10px;">
+                                                <p>If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.</p>
+                                            </div>
+                                            <!--  .moove-gdpr-tab-main-content -->
+                                                                                
+                                    </div>
+                                    <!--  .moove-gdpr-tab-main-content -->
+                                </div>
+                            
+                            
+                            
+                                                    </div>
+                        <!--  .moove-gdpr-tab-content -->
+                    </div>
+                    <!--  .main-modal-content -->
+                    <div class="moove-gdpr-modal-footer-content">
+                        <div class="moove-gdpr-button-holder">
+                                                        <button class="mgbutton moove-gdpr-modal-allow-all button-visible" rel="nofollow">Enable All</button>
+                            <button class="mgbutton moove-gdpr-modal-save-settings button-visible" rel="nofollow">Save Changes</button>
+                        </div>
+                        <!--  .moove-gdpr-button-holder -->
+                                            </div>
+                    <!--  .moove-gdpr-modal-footer-content -->
+                </div>
+                <!--  .moove-gdpr-modal-right-content -->
+
+                <div class="moove-clearfix"></div>
+
+            </div>
+            <!--  .moove-gdpr-modal-content -->
+        </div>
+        <!-- #moove_gdpr_cookie_modal  -->
+        </body>
+</html>

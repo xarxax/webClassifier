@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>paralegal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ 
+<script language="JavaScript">
+<!--
+ 
+function SymError()
+{
+  return true;
+}
+ 
+window.onerror = SymError;
+ 
+var SymRealWinOpen = window.open;
+ 
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+ 
+window.open = SymWinOpen;
+ 
+//-->
+</script>
+ 
+<script language="JavaScript" type="text/javascript">
+<!--
+function locate()
+{
+location="http://professional.bu.edu/cpe"
+} 
+//-->
+</script>
+</head>
+
+<body onLoad="var SymTmpWinOpen = window.open; window.open = SymWinOpen; locate(); window.open = SymTmpWinOpen;">
+ 
+</body>
+ 
+<script language="JavaScript">
+<!--
+ 
+window.open = SymRealWinOpen;
+ 
+//-->
+</script>
+ 
+</html>
+

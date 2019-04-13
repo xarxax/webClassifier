@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/maintemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>B &amp; W Tank Heads and Domes</title>
+<!-- InstanceEndEditable -->
+<link href="oneColFixCtrHdr.css" rel="stylesheet" type="text/css" />
+
+<script src="SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 3500 );
+});
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+	position:relative;
+	height: 232px;
+	width: 350px;
+	margin-top: 20px;
+	margin-left: 6px;
+	z-index: 1000;
+	float: right;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+
+<script type="text/javascript">
+function hgsubmit()
+{
+if (/\S+/.test(document.hgmailer.name.value) == false) alert ("Please provide your name.");
+else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert ("A valid email address is required.");
+ else if (/\S+/.test(document.hgmailer.comment.value) == false) alert ("Your email content is needed.");
+  else {
+       document.hgmailer.submit();
+       alert ('Thank you!\nYour email is sent.');
+       }
+}
+</script>
+
+<!-- InstanceBeginEditable name="head" -->
+
+<style type="text/css">
+<!--
+.style3 {font-weight: bold}
+-->
+</style>
+<!-- InstanceEndEditable -->
+
+
+<meta name="Keywords" content="engineered, dome tops, tank heads, compound dishing, aluminum, steel, segmented domes, Custom Pressing, Spherical heads, Hemi spherical heads, 2:1 elliptical heads, Spherical shroud gores, tuscaloosa, moundville, alabama, woman owned business, women owned business, company" />
+<meta name="Description" content="Fabrication of dome tops, tank heads, and complex compound dishing of aluminum and steel." />
+</head>
+
+<body class="oneColFixCtrHdr">
+
+<br /><div id="container">
+ <div id="header">
+  <div align="center">
+    <img src="images/bwheader.jpg" alt="Carver DeWitt Palm Tuscaloosa Northport Alabama" width="880" height="207" />
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="edf0f7">
+  <tr>
+    <td background="images/stock-photo-3321980-copper-plate.jpg"><ul id="MenuBar1" class="MenuBarHorizontal">
+      <li><a href="about.html"><strong>&nbsp;&nbsp;<span class="style3">About Us</span></strong></a> </li>
+      <li><a href="facilities.html"><strong>&nbsp;&nbsp;<span class="style3">Facilities</span></strong></a></li>
+      <li><a href="specs.html" class="style3"><strong>Specifications</strong></a></li>   
+      <li><a href="projects.html" class="style3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</strong></a></li>         
+      <li><a href="contact.html"><strong><span class="style3">&nbsp;&nbsp;Contact Us</span></strong></a> </li>
+      <li><a href="rfq.html" class="style3"><strong>Quote&nbsp;Request</strong></a></li>
+      <li><a href="index.html" class="style3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</strong></a></li>      
+    </ul></td>
+  </tr>
+</table>
+  </div>
+  <!-- end #header --></div>
+  
+  <!-- InstanceBeginEditable name="EditRegion1" -->
+  <div id="mainContent">
+      <div id="slideshow">
+    <img src="slideshow/1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="slideshow/2.jpg" alt="Slideshow Image 2" />
+    <img src="slideshow/3.jpg" alt="Slideshow Image 3" />
+    <img src="slideshow/4.jpg" alt="Slideshow Image 4" />
+    <img src="slideshow/5.jpg" alt="Slideshow Image 5" />
+    <img src="slideshow/6.jpg" alt="Slideshow Image 6" /></div>
+      <br />
+    <br />
+    <strong>B&amp;W Heads</strong> is your high speed one stop source for cold formed tank heads, segmented umbrella domes and spherical shroud gores.
+<ul>
+      <li>        2:1 Elliptical Tank Heads</li>
+      <li>        ASME Flanged and Dished Tank Heads</li>
+      <li>        Standard Flanged and Dished Tank Heads</li>
+      <li>        Dished Only Tank Heads</li>
+      <li>        Flanged Only Tank Heads</li>
+      <li>        80:10 Tank Heads</li>
+      <li>        High Crown Tank Heads</li>
+      <li>        Flanged and Shallow Tank Heads</li>
+      <li>        Segmented Domes</li>
+      <li>        Spherical Shroud Gores</li>
+</ul>
+    We offer our products in the following materials:
+    <ul>
+      <li>        Carbon Steel: SA36, SA516-70, SA387 Grade 5 Class 2 (Forming Only), SA285 Grade C (Forming Only)</li>
+      <li>        Stainless Steel: SA240T304/304L, SA240T316/316L, SA240T304H (Forming Only), SA240T904/904L (Forming Only)</li>
+      <li>        Copper: O-Temper Material (Forming Only)</li>
+      <li>        Aluminum: O-Temper Material (Forming Only)</li>
+    </ul>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div id="footer">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><span class="style3">Phone: 205-371-2212<br />
+          Fax: 205-371-6767<br />
+        Email: <a href="mailto:sales@bwheads.com">sales@bwheads.com</a></span></td>
+        <td><div align="right" class="style3">P.O. Box 248<br />
+          Moundville, AL 35474<br />
+        205-371-2212</div></td>
+      </tr>
+    </table>
+    <!-- end #footer -->
+  </div>
+<!-- end #container --></div><br /><br />
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+<!-- InstanceEnd --></html>

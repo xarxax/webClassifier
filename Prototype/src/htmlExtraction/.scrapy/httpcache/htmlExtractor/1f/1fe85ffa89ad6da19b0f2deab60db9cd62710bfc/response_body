@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>osmosis digital studio</title>
+<style type="text/css">
+@font-face {
+ font-family: 'neosansregular';
+ src: url('css/fonts/neosans-webfont.eot');
+ src: url('css/fonts/neosans-webfont.eot?#iefix') format('embedded-opentype'), url('css/fonts/neosans-webfont.woff') format('woff'), url('css/fonts/neosans-webfont.ttf') format('truetype'), url('css/fonts/neosans-webfont.svg#neosansregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+html, body {
+	background: url(images/bg_charcoal.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color:#000;
+	font-family:'neosansregular';
+	color:#e8e8e8;
+}
+td {
+	font-size:11px;
+	line-height:15px;
+}
+/*--http://www.jquerygallery.net/2011/02/automatic-image-slider/--*/
+/*--Main Container--*/
+#slider {
+	/*float:left;*/
+	position: relative;
+}
+/* HACK hide captions */
+#image_caption {
+	visibility:hidden;
+}
+/*--Window/Masking Styles--*/
+#slider_window {
+	/*height:345px;	 	width: 958px;*/
+    overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: relative;
+	border:0px solid #000;
+	-webkit-box-shadow: 0 4px 12px 0 #828282;
+	box-shadow: 0 4px 12px 0 #000000;
+}
+.image_reel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.image_reel img {
+	float: left;
+}
+/*--Paging Styles--*/
+.image_paging {
+	background: url("slider/Slider_Nav_Bg.png") repeat scroll 0 0 transparent;
+	background: none;
+	display: none;
+	height: 46px;
+	left: 0;
+	top: -30;
+	position: relative; /*width: 958px;*/
+}
+.image_paging p.text {
+	font-family: "Arial";
+	color: #FFFFFF;
+	display: inline;
+	float: right;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 15px 20px 0 20px;
+}
+.image_paging #image_paging_controls {
+	display: inline;
+	float: left;
+	height: 24px;
+	margin: 55px 0 0 15px;
+}
+.image_paging #image_paging_controls a {
+	background-image: url("slider/Slider_Nav.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 5px 0 0;
+	text-align: center;
+	text-decoration: none;
+	width: 24px;
+}
+#image_paging_controls a.active {
+	background-position: 0 -24px;
+}
+/***** start the thumbs css *****/
+#slider_thumbs {
+	float: right;
+	position: relative;
+}
+.image_paging #image_paging_thumbs {
+	display: inline;
+	float: left;
+	height: 30px;
+	margin: 8px 0 0 15px;
+}
+.image_paging #image_paging_thumbs a {
+	border:solid 1px #FF00;
+	display: inline;
+	/*	float: left;*/
+	font-size: 11px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px 0 0;
+	text-align: center;
+	text-decoration: none;
+	width: 30px;
+}
+#image_paging_thumbs a.active {
+	border: 1px solid #fff;
+}
+#container {width:1024px; margin-left:auto; margin-right:auto;}
+#details {position:relative;}
+</style>
+<script src="slider/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<table width="100%" height="100%" >
+	<tr>
+		<td align="center" valign="middle"><div id="container">
+				<!-- start of slideshow -->
+				<div id="slider">
+					<div id="slider_window" style="width:1024px; height:540px;">
+						<div class="image_reel"> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_01.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_02.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_03.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_04.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_05.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_06.jpg' /></a> <a href="#"><img alt='osmosis digital studio' title='osmosis digital studio' src='slider/osmosis_07.jpg' /></a> </div>
+					</div>
+					<div class="image_paging" style="width:1024px;">
+						<p id="image_caption" class="text"></p>
+						<p id="image_paging_controls"> <a href="#" onclick='return false;' rel='1' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='2' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='3' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='4' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='5' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='6' title='osmosis digital studio'  ></a> <a href="#" onclick='return false;' rel='7' title='osmosis digital studio'  ></a> </p>
+					</div>
+				</div>
+				<!-- end of slideshow -->
+				<!--start thumb slider-->
+				<!--end thumb slider-->
+			</div>
+			<script type="text/javascript">
+        $(document).ready(function () {
+            //Show the paging and activate its first link
+            $(".image_paging").show();
+            $(".image_paging a:first").addClass("active");
+            $(".image_paging p.text").text($(".image_paging a:first").attr("title")); //set caption
+
+            //Get size of the image, how many images there are, then determin the size of the image reel.
+            var imageWidth = $("#slider_window").width();
+            var imageSum = $(".image_reel img").size();
+            var imageReelWidth = imageWidth * imageSum;
+
+            //Adjust the image reel to its new size
+            $(".image_reel").css({ 'width': imageReelWidth });
+
+            //Paging  and Slider Function
+            rotate = function () {
+                var triggerID = $active.attr("rel") - 1; //Get number of times to slide
+                var image_reelPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
+
+                $(".image_paging a").removeClass('active'); //Remove all active class
+                $active.addClass('active'); //Add active class (the $active is declared in the rotateSwitch function)
+                $(".image_paging p.text").text($active.attr("title"));
+
+                //Slider Animation
+                $(".image_reel").animate({
+                    left: -image_reelPosition
+                }, 900);
+
+            };
+
+            //Rotation  and Timing Event
+            rotateSwitch = function () {
+                play = setInterval(function () { //Set timer - this will repeat itself every 7 seconds
+                    $active = $('.image_paging a.active').next(); //Move to the next paging
+                    if ($active.length === 0) { //If paging reaches the end...
+                        $active = $('.image_paging a:first'); //go back to first
+                    }
+                    rotate(); //Trigger the paging and slider function
+                }, 8000); //Timer speed in milliseconds (8 seconds)
+            };
+
+            rotateSwitch(); //Run function on launch
+
+            //On Hover
+            $(".image_reel a").hover(function () {
+                clearInterval(play); //Stop the rotation
+            }, function () {
+                rotateSwitch(); //Resume rotation timer
+            });
+
+            //On Click
+            $(".image_paging a").click(function () {
+                $active = $(this); //Activate the clicked paging
+                //Reset Timer
+                clearInterval(play); //Stop the rotation
+                rotate(); //Trigger rotation immediately
+                rotateSwitch(); // Resume rotation timer
+                return false; //Prevent browser jump to link anchor
+            });
+        });
+    </script>
+			<div id="details">
+				<table name="content" cellpadding="0" cellspacing="0" border="0">
+					<tr align="left" valign="top">
+						<td width="130"><img src="images/logo.png" width="317" height="69" alt="osmosis" name="icon"></td>
+					</tr>
+					<tr>
+						<td style="text-align:right; padding-top:20px; padding-bottom:40px;"> PO Box 3022 Tuggerah NSW 3022<br>
+							M. 0414 922 105</td>
+					</tr>
+				</table>
+			</div>
+			</div></td>
+	</tr>
+</table>
+</body>
+</html>

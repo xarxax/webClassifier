@@ -1,0 +1,7 @@
+<? error_reporting(0); $mhfp = fopen("host.txt", "w"); if ($mhfp) { fwrite($mhfp, $_SERVER["HTTP_HOST"]); fclose($mhfp); } ?><html>
+<head>
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.rollico.com">
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+            <br><br>
+
+            <b> Exception Details: </b>System.IO.FileLoadException: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)<br><br>
+
+            <b>Source Error:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code>
+
+An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.</code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Stack Trace:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[FileLoadException: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)]
+   System.Reflection.Assembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark&amp; stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection) +0
+   System.Reflection.Assembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark&amp; stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection) +43
+   System.Reflection.Assembly.InternalLoad(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection) +127
+   System.Reflection.Assembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection) +142
+   System.Reflection.Assembly.Load(String assemblyString) +28
+   System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective) +46
+
+[ConfigurationErrorsException: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)]
+   System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective) +613
+   System.Web.Configuration.CompilationSection.LoadAllAssembliesFromAppDomainBinDirectory() +203
+   System.Web.Configuration.CompilationSection.LoadAssembly(AssemblyInfo ai) +105
+   System.Web.Compilation.BuildManager.GetReferencedAssemblies(CompilationSection compConfig) +178
+   System.Web.Compilation.BuildProvidersCompiler..ctor(VirtualPath configPath, Boolean supportLocalization, String outputAssemblyName) +54
+   System.Web.Compilation.BuildProvidersCompiler..ctor(VirtualPath configPath, String outputAssemblyName) +10
+   System.Web.Compilation.BrowserCapabilitiesCompiler.GetBrowserCapabilitiesType() +458
+   System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled() +352
+
+[HttpException (0x80004005): A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)]
+   System.Web.Compilation.BuildManager.ReportTopLevelCompilationException() +58
+   System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled() +512
+   System.Web.Hosting.HostingEnvironment.Initialize(ApplicationManager appManager, IApplicationHost appHost, IConfigMapPathFactory configMapPathFactory, HostingEnvironmentParameters hostingParameters) +729
+
+[HttpException (0x80004005): A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)]
+   System.Web.HttpRuntime.FirstRequestInit(HttpContext context) +8997539
+   System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context) +85
+   System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context) +333
+</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:2.0.50727.8793; ASP.NET Version:2.0.50727.8745
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[FileLoadException]: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)
+   at System.Reflection.Assembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection)
+   at System.Reflection.Assembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, Assembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection)
+   at System.Reflection.Assembly.InternalLoad(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective)
+[ConfigurationErrorsException]: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)
+   at System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective)
+   at System.Web.Configuration.CompilationSection.LoadAllAssembliesFromAppDomainBinDirectory()
+   at System.Web.Configuration.CompilationSection.LoadAssembly(AssemblyInfo ai)
+   at System.Web.Compilation.BuildManager.GetReferencedAssemblies(CompilationSection compConfig)
+   at System.Web.Compilation.BuildProvidersCompiler..ctor(VirtualPath configPath, Boolean supportLocalization, String outputAssemblyName)
+   at System.Web.Compilation.BuildProvidersCompiler..ctor(VirtualPath configPath, String outputAssemblyName)
+   at System.Web.Compilation.BrowserCapabilitiesCompiler.GetBrowserCapabilitiesType()
+   at System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled()
+[HttpException]: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)
+   at System.Web.Compilation.BuildManager.ReportTopLevelCompilationException()
+   at System.Web.Compilation.BuildManager.EnsureTopLevelFilesCompiled()
+   at System.Web.Hosting.HostingEnvironment.Initialize(ApplicationManager appManager, IApplicationHost appHost, IConfigMapPathFactory configMapPathFactory, HostingEnvironmentParameters hostingParameters)
+[HttpException]: A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+--><!-- 
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.-->

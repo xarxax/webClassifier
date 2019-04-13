@@ -1,0 +1,27 @@
+Sitemap: http://www.thechemco.com/sitemap_index.xml
+
+User-agent: *
+Disallow: */wp-admin/
+Disallow: */resumes/
+Disallow: */xmlrpc.php
+Disallow: */wp-*.php
+Disallow: */trackback/
+Disallow: *?wptheme=
+Disallow: *?comments=
+Disallow: *?replytocom
+Disallow: */comment-page-
+Disallow: *?s=
+Disallow: */wp-content/plugins/
+Allow: */wp-content/uploads/
+
+User-agent: Mediapartners-Google*
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /

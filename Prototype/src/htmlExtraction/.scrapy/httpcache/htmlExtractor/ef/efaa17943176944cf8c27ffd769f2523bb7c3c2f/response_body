@@ -1,0 +1,1177 @@
+﻿﻿
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="mangels, rodas, vasilhames, glp, reservatórios, ar, eixo, traseiro, csa, manaus, três corações, fornecedores, mercado, notícias"/>
+    <meta name="description" content="Através do seu principal produto, a roda de alumínio, a Mangels atende a indústria de veículos leves. Está presente em lares brasileiros com os botijões de gás de cozinha e supre ainda a indústria de motos, caminhões, ônibus e eletrodomésticos." />    
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sakey Comunicação" />    
+
+
+    <title>MANGELS INDUSTRIAL S.A.</title>
+ 
+    <link href="http://www.mangels.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if IE 11]>
+	<link rel="stylesheet" type="text/css" href="http://www.mangels.com.br/assets/css/ie.css">
+	<![endif]-->
+  <link href="http://www.mangels.com.br/assets/css/css.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+
+<!--   	<link rel="stylesheet" href="http://www.mangels.com.br/styles.css"> -->
+  	<link rel="stylesheet" href="http://www.mangels.com.br/styles.css">
+   	<link rel="stylesheet" href="http://www.mangels.com.br/styles_mob.css">   
+   	<link rel="stylesheet" href="http://www.mangels.com.br/stylesrod.css">   
+   	<script src="http://www.mangels.com.br/assets/js/jquery-latest.min.js" type="text/javascript"></script>
+   	<script src="http://www.mangels.com.br/script.js"></script>
+<!--   	<script type="text/javascript" src="http://www.mangels.com.br/jquery-1.9.1.min.js"></script>   -->
+	<script src="http://www.mangels.com.br/assets/carousel/assets/js/jquery.js"></script>
+
+
+    
+	<!-- MENU MOBILE -->
+    <link rel="stylesheet" type="text/css" href="http://www.mangels.com.br/menu_mobile/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="http://www.mangels.com.br/menu_mobile/css/component.css" />
+	<script src="http://www.mangels.com.br/menu_mobile/js/modernizr.custom.js"></script>    
+    <script language="javascript" src="http://www.mangels.com.br/assets/js/textzoom.js" type="text/javascript"></script>
+
+    
+    <!-- CARROSSEL MARCAS SUPERMERCADO -->
+    <link href="http://www.mangels.com.br/assets/carousel/assets/css/custom.css" rel="stylesheet" type="text/css" />
+  
+    <link href="http://www.mangels.com.br/assets/carousel/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+      
+    <link href="http://www.mangels.com.br/assets/carousel/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+  
+    <link href="http://www.mangels.com.br/assets/carousel/assets/js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" />
+    
+    
+
+  <!-- COMBO BOX -->    
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.1.min.js"></script>
+
+<script type="text/javascript">
+   
+      $(document).ready(function(){
+        // Evento change no campo tipo  
+         $("select[name=tipo]").change(function(){
+            // Exibimos no campo marca antes de concluirmos
+			$("select[name=marca]").html('<option value="">Carregando...</option>');
+            // Exibimos no campo marca antes de selecionamos a marca, serve também em caso
+			// do usuario ja ter selecionado o tipo e resolveu trocar, com isso limpamos a
+			// seleção antiga caso tenha feito.
+			$("select[name=modelo]").html('<option value="">Aguardando marca...</option>');
+			// Passando tipo por parametro para a pagina ajax-marca.php
+            $.post("ajax-marca2.php",
+                  {tipo:$(this).val()},
+                  // Carregamos o resultado acima para o campo marca
+				  function(valor){
+                     $("select[name=marca]").html(valor);
+                  }
+                  )
+         })
+     	// Evento change no campo marca 
+	 	$("select[name=marca]").change(function(){
+            // Exibimos no campo modelo antes de concluirmos
+			$("select[name=modelo]").html('<option value="">Carregando...</option>');
+            // Passando marca por parametro para a pagina ajax-modelo.php
+            $.post("ajax-modelo2.php",
+                  {marca:$(this).val()},
+                  // Carregamos o resultado acima para o campo modelo
+				  function(valor){
+                     $("select[name=modelo]").html(valor);
+                  }
+                  )
+            
+         })
+	 
+	  })
+      
+</script>
+
+
+
+
+
+
+  </head>
+
+<body>
+
+ <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-69598434-1', 'auto');
+      ga('send', 'pageview');
+</script>
+
+
+
+<!-- MENU PADRÃO - APARECE PARA MAIORES QUE 992PX -->
+<div class="menu-box1 visible-md visible-lg">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-6" align="right">
+                <span class="atalho"><br><div id="" style="margin-top:6px;">
+                <a class="atalho" href="javascript: zoom(mais)" onFocus="javascript: zoom(mais)" accesskey="A" title="Aumenta 10%"> A+<span id="ksht4"></span></a>&nbsp;&nbsp;&nbsp;
+                <a class="atalho" href="javascript: index=9;zoom(mais)" onFocus="javascript: index=9;zoom(mais)" accesskey="N" title="Tamanho Normal">A<span id="ksht6"></span></a>&nbsp;&nbsp;&nbsp;
+                <a class="atalho" href="javascript: zoom(menos)" onFocus="javascript: zoom(menos)" accesskey="D" title="Diminui 10%"> A-<span id="ksht5"></span></a>
+                <input type="hidden" value="100%" id="percent" size="5" name="schriftgroesse" >
+                </div>
+                </span>
+			</div>
+            <div class="col-md-3 english" align="center">
+            	<div class="botao-loja">
+            		<a href="https://loja.mangels.com.br" target="_blank" style="text-decoration: none; color: #fff;">
+            			<img src="http://www.mangels.com.br/img/botao-loja.png" title="Loja Mangels" atl="Loja Mangels">
+            		</a>
+            	</div>
+            </div>      
+            <div class="col-md-3 form-busca" align="right">
+	            <form class="form-inline" id="form1" name="form1" method="post" action="http://www.mangels.com.br/pt/resultado" class="navbar-form default" role="search">
+                <input type="text" name="busca" id="busca" class="form-control busca-geral" placeholder="BUSCA" size="16" maxlength="30">
+                <button type="submit" class="btn btn-default">Ok</button>
+                </form>			
+            </div>
+        </div>
+        <div class="row">
+        
+		<div class="col-md-3"><a href="http://www.mangels.com.br/"><img src="http://www.mangels.com.br/img/logo.png"  border="0" class="img-responsive"></a></div>
+		<div class="col-md-9 menu-topo">
+            
+                <div id="cssmenu">
+
+               	
+			    	<ul style="float:right !important;">
+                    
+                    <li><a href="http://www.mangels.com.br/pt" class="hidden-md">Home</a>
+                    
+								        <li><a href="http://www.mangels.com.br/pt/pagina/quem-somos">Quem Somos</a>       
+					        
+			            <ul>
+						            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/premios">Prêmios</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/historia-mangels">História</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/rh">Recursos Humanos</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/sustentabilidade">Sustentabilidade</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/excelencia">Excelência</a>    
+						</li>            
+            			</li>
+        
+		           					            </ul>
+        
+            			        
+            			</li>
+            
+    								        <li><a href="http://www.mangels.com.br/pt/pagina/produtos">Produtos</a>       
+					        
+			            <ul>
+						            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/rodas">Rodas</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/vasilhames-glp">Vasilhames GLP</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/reservatorios-de-ar">Reservatórios de Ar</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/eixo-traseiro">Eixo Traseiro</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/csa-manaus">CSA Manaus</a>    
+						</li>            
+            			</li>
+        
+		           					            </ul>
+        
+            			        
+            			</li>
+            
+    								        <li><a href="http://www.mangels.com.br/pt/pagina/relacao_com_investidores">Relação com Investidores</a>       
+					        
+			            <ul>
+						            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/perfil">Perfil</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/rj">Recuperação Judicial</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/downloads">Downloads</a>    
+						</li>            
+            			</li>
+        
+		           					            </ul>
+        
+            			        
+            			</li>
+            
+    								        <li><a href="http://www.mangels.com.br/pt/pagina/fornecedores">Fornecedores</a>       
+					        
+			            <ul>
+						            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/convencao-fornecedores">Convenção de Fornecedores</a>    
+						</li>            
+            			</li>
+        
+		           					            </ul>
+        
+            			        
+            			</li>
+            
+    								        <li><a href="http://www.mangels.com.br/pt/pagina/noticias">Notícias</a>       
+					        
+            			</li>
+            
+    								        <li><a href="#">Contatos</a>       
+					        
+			            <ul>
+						            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/compradores">Compradores</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/contato">Fale Conosco</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/enderecos">Endereços</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/trabalhe-conosco">Trabalhe Conosco</a>    
+						</li>            
+            			</li>
+        
+		           		            
+			            <!-- <li class='has-sub'><a href="pt/pagina/"></a> -->
+            
+			            <li class='has-sub'><a href="http://www.mangels.com.br/pt/pagina/canal-denuncia">Canal de Denúncias</a>    
+						</li>            
+            			</li>
+        
+		           					            </ul>
+        
+            			        
+            			</li>
+            
+    					                        
+						<!--<li><a href="pt/contato">Contato</a> -->
+    				</ul>
+    			</div>
+            
+            
+            </div>      
+        </div>        
+    </div>
+</div>
+
+
+
+
+<!-- MENU PADRÃO - APARECE PARA MENORES QUE 992PX -->
+<div class="menu-box2 visible-xs visible-sm ">
+	<div class="container">
+    
+    <div class="col-md-12" align="center">
+                <span class="atalho"><br><div id="" style="margin-top:6px;">
+                <a class="atalho" href="javascript: zoom(mais)" onFocus="javascript: zoom(mais)" accesskey="A" title="Aumenta 10%"> A+<span id="ksht4"></span></a>&nbsp;&nbsp;&nbsp;
+                <a class="atalho" href="javascript: index=9;zoom(mais)" onFocus="javascript: index=9;zoom(mais)" accesskey="N" title="Tamanho Normal">A<span id="ksht6"></span></a>&nbsp;&nbsp;&nbsp;
+                <a class="atalho" href="javascript: zoom(menos)" onFocus="javascript: zoom(menos)" accesskey="D" title="Diminui 10%"> A-<span id="ksht5"></span></a>
+                <input type="hidden" value="100%" id="percent" size="5" name="schriftgroesse" >
+                </div>
+                </span>
+			</div>
+
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12"><a href="http://www.mangels.com.br/"><center><img src="http://www.mangels.com.br/img/logo.png"  border="0" class="img-responsive"></center></a></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12" align="center">
+				<div class="botao-loja">
+		    		<a href="https://loja.mangels.com.br" target="_blank" style="text-decoration: none; color: #fff;">
+            			<img src="http://www.mangels.com.br/img/botao-loja.png" title="Loja Mangels" atl="Loja Mangels">
+            		</a>
+		    	</div>            	
+            </div>
+
+
+        </div>
+
+
+                
+
+        <div class="row">
+
+        	<div class="col-sm-12  col-xs-12" align="left">
+                <form class="form-inline" id="form1" name="form1" method="post" action="http://www.mangels.com.br/pt/resultado">
+                        <br><br>
+                        
+                        <div class="" style="float: left; margin-left: 15px;"><input name="busca" type="text" class="form-control" id="busca" placeholder="Buscar"></div>
+                        <div class="" style="float: left;"><button type="submit" class="btn btn-default">OK</button></div>
+                </form>           
+			</div> 
+
+        </div>
+
+
+
+            
+            
+            </div>      
+        </div>        
+    </div>
+</div>
+
+
+
+
+<!-- MENU MOBILE -->
+
+<div id="menumobile">
+				  <div id="dl-menu" class="dl-menuwrapper visible-xs visible-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECIONE O MENU AO LADO
+						<button class="dl-trigger"></button>
+
+
+						<ul class="dl-menu">
+                        
+                                            <li><a href="http://www.mangels.com.br/pt" class="hidden-md">Home</a><hr>
+                    
+							                            <li><a href="http://www.mangels.com.br/pt/pagina/quem-somos"><b>Quem Somos</b></a><hr>
+                                
+               
+                                            
+                                <ul>
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/premios">Prêmios</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/historia-mangels">História</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/rh">Recursos Humanos</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/sustentabilidade">Sustentabilidade</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/excelencia">Excelência</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                                </ul>
+                
+                                                
+                                </li>
+                    
+                                                            <li><a href="http://www.mangels.com.br/pt/pagina/produtos"><b>Produtos</b></a><hr>
+                                
+               
+                                            
+                                <ul>
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/rodas">Rodas</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/vasilhames-glp">Vasilhames GLP</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/reservatorios-de-ar">Reservatórios de Ar</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/eixo-traseiro">Eixo Traseiro</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/csa-manaus">CSA Manaus</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                                </ul>
+                
+                                                
+                                </li>
+                    
+                                                            <li><a href="http://www.mangels.com.br/pt/pagina/relacao_com_investidores"><b>Relação com Investidores</b></a><hr>
+                                
+               
+                                            
+                                <ul>
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/perfil">Perfil</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/rj">Recuperação Judicial</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/downloads">Downloads</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                                </ul>
+                
+                                                
+                                </li>
+                    
+                                                            <li><a href="http://www.mangels.com.br/pt/pagina/fornecedores"><b>Fornecedores</b></a><hr>
+                                
+               
+                                            
+                                <ul>
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/convencao-fornecedores">Convenção de Fornecedores</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                                </ul>
+                
+                                                
+                                </li>
+                    
+                                                            <li><a href="http://www.mangels.com.br/pt/pagina/noticias"><b>Notícias</b></a><hr>
+                                
+               
+                                            
+                                </li>
+                    
+                                                            <li><a href="http://www.mangels.com.br/pt/pagina/"><b>Contatos</b></a><hr>
+                                
+               
+                                            
+                                <ul>
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/compradores">Compradores</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/contato">Fale Conosco</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/enderecos">Endereços</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/trabalhe-conosco">Trabalhe Conosco</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                    
+                                <li><a href="http://www.mangels.com.br/pt/pagina/canal-denuncia">Canal de Denúncias</a><hr>
+            
+                                </li>                    
+                                </li>
+                
+                                                                </ul>
+                
+                                                
+                                </li>
+                    
+                                                                
+						<!--<li><a href="pt/contato">Contato</a> -->
+                                
+    						</ul>
+
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+
+<!-- MENU MOBILE FIM -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://www.mangels.com.br/menu_mobile/js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>
+</div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 500000000000 !important;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><br> -->
+        <!-- <h4 class="modal-title" id="myModalLabel">Encerramento da Recuperação Judicial</h4> -->
+<!--       </div>
+      <div class="modal-body">
+
+         <div class="hidden-lg hidden-md hidden-sm visible-xs ">
+          <center>
+            <img src="http://www.mangels.com.br/pop.jpg" alt="Recuperação Judicial Mangels" title="Recuperação Judicial Mangels" width="250">
+          </center>
+        </div>
+        <div class="hidden-xs visible-md visible-lg visible-sm">
+         <center><img src="http://www.mangels.com.br/pop.jpg" alt="Recuperação Judicial Mangels" title="Recuperação Judicial Mangels"></center>
+        </div>
+      </div> -->
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div> -->
+<!--     </div>
+  </div>
+</div> -->
+
+
+
+<!-- <script type="text/javascript">
+
+$(document).ready(function() {
+   $('#myModal').modal('show');
+});
+    
+</script> -->
+
+    
+<!-- SLIDE -->
+<div id="carousel-example-generic" class="carousel slide visible-lg carroussel2" data-ride="carousel" >
+
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>    
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>        
+  </ol>
+
+	<div class="carousel-inner" role="listbox">
+    
+
+		   
+
+    	  
+            <div class="item active">
+              <center><a href="http://www.mangels.com.br/pt/pagina/quem-somos"><img src="http://www.mangels.com.br/imagens/slides/0.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="http://www.mangels.com.br/pt/pagina/excelencia"><img src="http://www.mangels.com.br/imagens/slides/0_2.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="#"><img src="http://www.mangels.com.br/imagens/slides/0_3.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="#"><img src="http://www.mangels.com.br/imagens/slides/0_5.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="http://www.mangels.com.br/pt/pagina/historia-mangels"><img src="http://www.mangels.com.br/imagens/slides/0_4.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+        
+	</div>
+
+</div>
+<!-- SLIDE -->
+
+
+
+<!-- SLIDE 1024 -->
+<div id="carousel-example-generic" class="carousel slide visible-md visible-sm carroussel3" style="float:left;" data-ride="carousel" >
+    <div class="carousel-inner" role="listbox">
+
+		   
+
+    	  
+            <div class="item active">
+              <center><a href="http://www.mangels.com.br/pt/pagina/quem-somos"><img src="http://www.mangels.com.br/imagens/slides/0.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="http://www.mangels.com.br/pt/pagina/excelencia"><img src="http://www.mangels.com.br/imagens/slides/0_2.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="#"><img src="http://www.mangels.com.br/imagens/slides/0_3.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="#"><img src="http://www.mangels.com.br/imagens/slides/0_5.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+           
+
+    	                    
+            <div class="item">
+              <center><a href="http://www.mangels.com.br/pt/pagina/historia-mangels"><img src="http://www.mangels.com.br/imagens/slides/0_4.jpg" class="img-responsive" alt="Mangels Indústria"></a></center>
+            </div>
+		            
+        
+        
+	</div>
+</div>
+<!-- SLIDE -->
+
+
+
+
+
+
+
+
+<div class="container">
+
+	<!--TEXTO DE ABERTURA-->
+	    	<br>
+        <div class="row">
+  			<div class="col-md-12">
+            	<div id="texto"> <div class="texto-inicial">Fundada em 1928, a Mangels vem mostrando sua força ao longo dos anos, estando hoje na liderança dos segmentos em que atua. Através do seu principal produto, a roda de alumínio, a Mangels atende a indústria de veículos leves. A Mangels também está presente na maioria dos lares brasileiros com os conhecidos botijões de gás de cozinha e supre ainda a indústria de motos, caminhões, ônibus e eletrodomésticos.</div></div>
+	        </div>
+		</div>
+        
+<br><br>    
+    
+
+	<!--DESTAQUES HOME MAIOR Nº 1-->    
+	<div class="row">
+	 		<div class="col-md-4 col-sm-4">
+        
+        	<div class="quadrado-titulo-destaque">
+	          	<div class="icone-destaque-b"><div class="icone-destaque"><img src="http://www.mangels.com.br/imagens/icones-home/icone-rodas.png" alt="Destaque"></img></div></div>
+    	       	<div class="titulo-destaque">RODAS</div>
+            </div>
+           	<div class="imagem-destaque visible-lg visible-md"><a href="http://www.mangels.com.br/pt/pagina/rodas"><img src="http://www.mangels.com.br/imagens/carrossel/0.jpg"  width="100%" height="380px"></img></a></div>
+           	<div class="imagem-destaque visible-sm visible-xs"><a href="http://www.mangels.com.br/pt/pagina/rodas"><img src="http://www.mangels.com.br/imagens/carrossel/0.jpg"  width="100%"></img></a></div>            
+
+           	                        
+        </div>
+        
+    
+	<!--DESTAQUES HOME - FIM --> 
+
+
+	<!--DESTAQUES HOME-->    
+
+	 		<div class="col-md-4 col-sm-4">
+        
+        	<div class="quadrado-titulo-destaque">
+	          	<div class="icone-destaque-b"><div class="icone-destaque"><img src="http://www.mangels.com.br/imagens/icones-home/icone-botijao.png" alt="Destaque"></img></div></div>
+    	       	<div class="titulo-destaque">VASILHAMES GLP</div>
+            </div>
+           	<div class="imagem-destaque visible-lg visible-md" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/vasilhames-glp"><img src="http://www.mangels.com.br/imagens/carrossel/0_1.jpg"  width="100%" height="150px"></img></a></div>
+           	<div class="imagem-destaque visible-sm visible-xs" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/vasilhames-glp"><img src="http://www.mangels.com.br/imagens/carrossel/0_1.jpg"  width="100%" ></img></a></div>            
+
+        </div>
+     		<div class="col-md-4 col-sm-4">
+        
+        	<div class="quadrado-titulo-destaque">
+	          	<div class="icone-destaque-b"><div class="icone-destaque"><img src="http://www.mangels.com.br/imagens/icones-home/icone-reservatorios.png" alt="Destaque"></img></div></div>
+    	       	<div class="titulo-destaque">RESERVATÓRIOS DE AR</div>
+            </div>
+           	<div class="imagem-destaque visible-lg visible-md" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/reservatorios-de-ar"><img src="http://www.mangels.com.br/imagens/carrossel/0_8.jpg"  width="100%" height="150px"></img></a></div>
+           	<div class="imagem-destaque visible-sm visible-xs" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/reservatorios-de-ar"><img src="http://www.mangels.com.br/imagens/carrossel/0_8.jpg"  width="100%" ></img></a></div>            
+
+        </div>
+     		<div class="col-md-4 col-sm-4">
+        
+        	<div class="quadrado-titulo-destaque">
+	          	<div class="icone-destaque-b"><div class="icone-destaque"><img src="http://www.mangels.com.br/imagens/icones-home/icone-eixotraseiro.png" alt="Destaque"></img></div></div>
+    	       	<div class="titulo-destaque">EIXO TRASEIRO</div>
+            </div>
+           	<div class="imagem-destaque visible-lg visible-md" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/eixo-traseiro"><img src="http://www.mangels.com.br/imagens/carrossel/0_2.jpg"  width="100%" height="150px"></img></a></div>
+           	<div class="imagem-destaque visible-sm visible-xs" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/eixo-traseiro"><img src="http://www.mangels.com.br/imagens/carrossel/0_2.jpg"  width="100%" ></img></a></div>            
+
+        </div>
+     		<div class="col-md-4 col-sm-4">
+        
+        	<div class="quadrado-titulo-destaque">
+	          	<div class="icone-destaque-b"><div class="icone-destaque"><img src="http://www.mangels.com.br/imagens/icones-home/icone-csa.png" alt="Destaque"></img></div></div>
+    	       	<div class="titulo-destaque">CSA MANAUS</div>
+            </div>
+           	<div class="imagem-destaque visible-lg visible-md" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/csa-manaus"><img src="http://www.mangels.com.br/imagens/carrossel/0_7.jpg"  width="100%" height="150px"></img></a></div>
+           	<div class="imagem-destaque visible-sm visible-xs" style=" margin-bottom: 30px !important;" ><a href="http://www.mangels.com.br/pt/pagina/csa-manaus"><img src="http://www.mangels.com.br/imagens/carrossel/0_7.jpg"  width="100%" ></img></a></div>            
+
+        </div>
+        </div>
+	<!--DESTAQUES HOME - FIM -->        
+    
+    
+</div>
+<br><br>
+
+<!--CARROSSEL-->    
+
+
+    <!-- carrossel de imagens dos supermercados -->
+    <div class="container-fluid carrossel-fundo" >
+    <div class="container" >
+    	<div class="row">
+        	<div class="col-md-12 titulo-carrossel">
+
+                <div id="owl-demo" class="owl-carousel">
+                       
+                        <div class="item">
+                        <a href="http://www.mangels.com.br/pt/pagina/historia-mangels"><img src="http://www.mangels.com.br/imagens/destaqueshome/0_2.jpg" alt="Mangels" /></a>
+<!--			          	<div class="icone-destaque-b-carrossel"><div class="icone-destaque-carrossel"><img src="imagens/icones-home/" alt="Destaque"></img></div></div> -->
+    			       	<div class="titulo-destaque-carrossel">HISTÓRIA</div>
+                        </div>
+                       
+                        <div class="item">
+                        <a href="http://www.mangels.com.br/pt/pagina/excelencia"><img src="http://www.mangels.com.br/imagens/destaqueshome/0_3.jpg" alt="Mangels" /></a>
+<!--			          	<div class="icone-destaque-b-carrossel"><div class="icone-destaque-carrossel"><img src="imagens/icones-home/" alt="Destaque"></img></div></div> -->
+    			       	<div class="titulo-destaque-carrossel">EXCELÊNCIA</div>
+                        </div>
+                       
+                        <div class="item">
+                        <a href="http://www.mangels.com.br/pt/pagina/trabalhe-conosco"><img src="http://www.mangels.com.br/imagens/destaqueshome/0_1.jpg" alt="Mangels" /></a>
+<!--			          	<div class="icone-destaque-b-carrossel"><div class="icone-destaque-carrossel"><img src="imagens/icones-home/" alt="Destaque"></img></div></div> -->
+    			       	<div class="titulo-destaque-carrossel">TRABALHE CONOSCO</div>
+                        </div>
+                       
+                        <div class="item">
+                        <a href="http://www.mangels.com.br/pt/pagina/relacao_com_investidores"><img src="http://www.mangels.com.br/imagens/destaqueshome/0_4.jpg" alt="Mangels" /></a>
+<!--			          	<div class="icone-destaque-b-carrossel"><div class="icone-destaque-carrossel"><img src="imagens/icones-home/" alt="Destaque"></img></div></div> -->
+    			       	<div class="titulo-destaque-carrossel">INVESTIDORES</div>
+                        </div>
+                       
+                        <div class="item">
+                        <a href="http://www.mangels.com.br/pt/pagina/sustentabilidade"><img src="http://www.mangels.com.br/imagens/destaqueshome/0_5.jpg" alt="Mangels" /></a>
+<!--			          	<div class="icone-destaque-b-carrossel"><div class="icone-destaque-carrossel"><img src="imagens/icones-home/" alt="Destaque"></img></div></div> -->
+    			       	<div class="titulo-destaque-carrossel">SUSTENTABILIDADE</div>
+                        </div>
+                                    </div>
+			
+            </div>
+		</div>
+	</div>
+    </div>
+<!--CARROSSEL FIM-->      ﻿
+    <!-- FOOTER -->
+    
+    
+    <div id="footermobile">
+	<br><br>
+    <div class="container-fluid rodape1 visible-sm visible-md visible-lg hidden-xs">
+	    <div class="container">
+        <br>
+
+            <div class="fundomenu">
+                <ul><li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/" style="color:#999;">HOME</a>
+                </li></ul>
+			</div>                
+               
+                
+		<!-- LINKS INÍCIO -->
+		        
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/pt/pagina/quem-somos"  style="color:#999;">QUEM SOMOS</a>                </li>
+                  
+                                        <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/premios"><font color="#FFFFFF"><b>PRÊMIOS</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/historia-mangels"><font color="#FFFFFF"><b>HISTÓRIA</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/rh"><font color="#FFFFFF"><b>RECURSOS HUMANOS</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/sustentabilidade"><font color="#FFFFFF"><b>SUSTENTABILIDADE</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/excelencia"><font color="#FFFFFF"><b>EXCELÊNCIA</b></font></a>                    </li>
+                    
+                                        
+                
+                </ul>
+            </div>
+                
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/pt/pagina/produtos"  style="color:#999;">PRODUTOS</a>                </li>
+                  
+                                        <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/rodas"><font color="#FFFFFF"><b>RODAS</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/vasilhames-glp"><font color="#FFFFFF"><b>VASILHAMES GLP</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/reservatorios-de-ar"><font color="#FFFFFF"><b>RESERVATÓRIOS DE AR</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/eixo-traseiro"><font color="#FFFFFF"><b>EIXO TRASEIRO</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/csa-manaus"><font color="#FFFFFF"><b>CSA MANAUS</b></font></a>                    </li>
+                    
+                                        
+                
+                </ul>
+            </div>
+                
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/pt/pagina/relacao_com_investidores"  style="color:#999;">RELAÇÃO COM INVESTIDORES</a>                </li>
+                  
+                                        <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/perfil"><font color="#FFFFFF"><b>PERFIL</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/rj"><font color="#FFFFFF"><b>RECUPERAÇÃO JUDICIAL</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/downloads"><font color="#FFFFFF"><b>DOWNLOADS</b></font></a>                    </li>
+                    
+                                        
+                
+                </ul>
+            </div>
+                
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/pt/pagina/fornecedores"  style="color:#999;">FORNECEDORES</a>                </li>
+                  
+                                        <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/convencao-fornecedores"><font color="#FFFFFF"><b>CONVENÇÃO DE FORNECEDORES</b></font></a>                    </li>
+                    
+                                        
+                
+                </ul>
+            </div>
+                
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="http://www.mangels.com.br/pt/pagina/noticias"  style="color:#999;">NOTÍCIAS</a>                </li>
+                  
+                                    
+                
+                </ul>
+            </div>
+                
+            
+           
+            <div class="fundomenu">
+                <ul>
+
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="#"  style="color:#999;">CONTATOS</a>                </li>
+                  
+                                        <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/compradores"><font color="#FFFFFF"><b>COMPRADORES</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/contato"><font color="#FFFFFF"><b>FALE CONOSCO</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/enderecos"><font color="#FFFFFF"><b>ENDEREÇOS</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/trabalhe-conosco"><font color="#FFFFFF"><b>TRABALHE CONOSCO</b></font></a>                    </li>
+                    
+                                            <li style="text-decoration:none; list-style-type:none; font-size:12px;">
+                    <a href="http://www.mangels.com.br/pt/pagina/canal-denuncia"><font color="#FFFFFF"><b>CANAL DE DENÚNCIAS</b></font></a>                    </li>
+                    
+                                        
+                
+                </ul>
+            </div>
+        		<!-- LINKS FIM -->
+        
+			<div class="fundomenu">
+                <ul>
+<!--                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="#"><font color="#FFFFFF"><i class="fa fa-comment"></i>&nbsp;CONTATO</font></a></a>
+                </li>
+-->                
+                <li style="list-style-type:none; font-size:12px; font-weight:bold; margin-bottom:5px; text-decoration:none">
+            		<a href="" data-toggle="modal" data-target="#myModal2"  style="color:#999;"><i class="fa fa-envelope"></i>&nbsp;CADASTRE SEU EMAIL</a></a>
+                </li>
+                </ul>
+			</div>
+            
+			<div class="redessociais">
+                        <a href="https://www.linkedin.com/company/mangels" target="_blank"><img src="http://www.mangels.com.br//imagens/redessociais/linkedin.png" border="0"></a>
+                        <a href="https://www.youtube.com/user/Mangelsonline" target="_blank"><img src="http://www.mangels.com.br//imagens/redessociais/youtube.png" border="0"></a>
+                        </div>
+            <br><br>
+
+	<div class="row">	
+		<div class="col-md-6">
+            		<div class="footer-credito">
+            			MANGELS © - Copyright 2019. Todos os direitos reservados
+                		<br>Desenvolvimento: <a href="http://www.sakey.com.br" target="_blank">SAKEY</a>
+            		</div>
+		</div>
+
+		<div class="col-md-6" align="right">
+			
+		</div>
+
+	</div>
+
+
+            
+		</div>
+
+
+
+	</div> 
+    </div>        
+    <!-- FOOTER FIM -->           
+
+
+    <!-- FOOTER MOBILE -->
+    
+    <div class="visible-xs">
+        <div id="footermobile_aparece">
+        <br><br>
+        <div class="container-fluid rodape1">
+            
+            <div class="container">
+    			<br>
+                <div class="redessociais">
+                                        <a href="https://www.linkedin.com/company/mangels" target="_blank"><img src="http://www.mangels.com.br/imagens/redessociais/linkedin.png" border="0"></a>
+                                        <a href="https://www.youtube.com/user/Mangelsonline" target="_blank"><img src="http://www.mangels.com.br/imagens/redessociais/youtube.png" border="0"></a>
+                                    </div><br><br>
+                <div class="footer-credito">
+            	MANGELS © - Copyright 2019. Todos os direitos reservados
+                <br>Desenvolvimento: <a href="http://www.sakey.com.br" target="_blank">SAKEY</a>
+            </div>
+		
+		
+
+            </div>
+    
+    
+        </div> 
+        </div>
+	</div>              
+    <!-- FOOTER MOBILE FIM -->     
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">CADASTRE SEU EMAIL PARA RECEBER INFORMAÇÕES DA MANGELS</h4>
+      </div>
+      <div class="modal-body">
+        <form action="http://www.mangels.com.br/pt/cadastraemail" method="post">
+        NOME:<br><input name="nome" type="text" size="30" maxlength="50" required="required" class="form-control"/><br>
+        EMAIL:<br><input name="email" type="email" size="30" maxlength="100" required="required" class="form-control"/><br><br>
+		<button type="submit" class="btn btn-primary">CADASTRAR</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+  
+
+	<script src="http://www.mangels.com.br/assets/js/bootstrap.min.js"></script>
+
+
+    <!-- SCRIPT PARA CARROUSEL DE LOGOS
+    ================================================== -->
+	<!-- <script src="http://www.mangels.com.br/assets/carousel/assets/js/jquery-1.9.1.min.js"></script> -->
+    <script src="http://www.mangels.com.br/assets/carousel/owl-carousel/owl.carousel.js"></script>
+    <!-- Demo -->
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+    });
+    </script>
+    <script src="http://www.mangels.com.br/assets/carousel/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://www.mangels.com.br/assets/carousel/assets/js/bootstrap-transition.js"></script>
+    <script src="http://www.mangels.com.br/assets/carousel/assets/js/bootstrap-tab.js"></script>
+    <script src="http://www.mangels.com.br/assets/carousel/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://www.mangels.com.br/assets/carousel/assets/js/application.js"></script>
+
+   <!-- FIM SCRIPT PARA CARROUSEL DE LOGOS
+    ================================================== -->  
+
+
+
+</body>
+</html>

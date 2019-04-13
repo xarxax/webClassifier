@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" data-soc="v14.09"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" data-soc="v14.09"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" data-soc="v14.09"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" data-soc="v14.09"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+	<title>Homepage - Iowa Academy of Family Physicians</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="en">
+
+	
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="/images/touch-icon.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/touch-icon-76.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-120.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-152.png" type="image/png">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700|Open+Sans:300,400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/public/public.css">
+
+
+	
+	
+	<script type="text/javascript" src="/js/modernizr.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="/js/global.js"></script>
+	<script type="text/javascript" src="/js/cms.js"></script>
+
+	
+
+	<script>
+	(function() {
+		var cx = '';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		'//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	})();
+	</script>
+
+</head>
+
+
+<body class="cmskey-index">
+	<div class="page">
+		<header>
+			<div class="container">
+				<a href="/" class="logo">
+					<img src="/images/logo.png" alt="Iowa Academy of Family Physicians">
+				</a>
+				
+									<a href="https://www.facebook.com/IAAFP/" class="facebook" title="Contact Us">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 27" enable-background="new 0 0 17 27" xml:space="preserve"><path d="M10.7,4.7c-0.5,0-1.1,0.7-1.1,1.6v3.1H15v4.4H9.7V27H4.6V13.7H0V9.3h4.6V6.7C4.6,3,7.2,0,10.7,0H15v4.7H10.7z"/>
+						</svg>
+					</a>
+								<a href="/contact" class="link_button" title="Contact Us">Contact Us</a>
+				
+				
+<nav class="cf">
+	<button class="c-hamburger">
+	  <span>Menu</span>
+	</button>
+	
+	<ul id="top_menu" class="top_menu">
+	
+		<li data-id="11" data-cmskey="000001">
+			<a href="/about/" target="_self" title="">About</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="14">
+					<a href="/about/" target="_self" title="About">About</a>
+				</li>
+
+			
+				<li data-id="22">
+					<a href="/board-of-directors/" target="_self" title="">Board of Directors </a>
+				</li>
+
+			
+				<li data-id="49">
+					<a href="/membership/" target="_self" title="">Membership</a>
+				</li>
+
+			
+				<li data-id="24">
+					<a href="/directions/" target="_self" title="">Directions to the IAFP Office </a>
+				</li>
+
+			
+				<li data-id="26">
+					<a href="/awards/" target="_self" title="">Awards &amp; Community Involvement </a>
+				</li>
+
+			
+				<li data-id="51">
+					<a href="/committee-volunteer-form/" target="_self" title="">Committee Volunteer Form</a>
+				</li>
+
+			
+				<li data-id="54">
+					<a href="/conflict-of-interest/" target="_self" title="">IAFP Conflict of Interest Policy</a>
+				</li>
+
+			
+				<li data-id="53">
+					<a href="/advertising-and-exhibiting/" target="_self" title="">Advertising and Exhibiting </a>
+				</li>
+
+			
+				<li data-id="52">
+					<a href="/financial-reports/" target="_self" title="">Financial Reports</a>
+				</li>
+
+			
+				<li data-id="25">
+					<a href="/family-physicians/" target="_self" title="">Family Medicine and Family Physicians </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="2" data-cmskey="events">
+			<a href="/Education/" target="_self" title="Education">Education</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="50">
+					<a href="/fmcsa-medical-examiner-certification/" target="_self" title="FMCSA Medical Examiner Certification Training ">FMCSA Medical Examiner Certification Training </a>
+				</li>
+
+			
+				<li data-id="75">
+					<a href="/physician-business-leadership/" target="_self" title="">Physician Business Leadership Certificate Program</a>
+				</li>
+
+			
+				<li data-id="76">
+					<a href="/KSA/" target="_self" title="">KSA</a>
+				</li>
+
+			
+				<li data-id="68">
+					<a href="/2019-Cruise/" target="_self" title="">2019 Cruise</a>
+				</li>
+
+			
+				<li data-id="72">
+					<a href="/2019-okoboji/" target="_self" title="">2019 Okoboji</a>
+				</li>
+
+			
+				<li data-id="55">
+					<a href="/advertising-and-exhibiting/" target="_self" title="">Advertising and Exhibiting </a>
+				</li>
+
+			
+				<li data-id="45">
+					<a href="/ibm-mandated-cme/" target="_self" title="">Iowa Board of Medicine Mandated CME </a>
+				</li>
+
+			
+				<li data-id="46">
+					<a href="/cme-requirements-for-members/" target="_self" title="">CME Requirements For Members </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="10" data-cmskey="000002">
+			<a href="/advocacy/" target="_self" title="Advocacy">Advocacy</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="16">
+					<a href="/how-to-lobby/" target="_self" title="">How to Lobby</a>
+				</li>
+
+			
+				<li data-id="17">
+					<a href="/legislators/" target="_self" title="">Contact Your Legislator </a>
+				</li>
+
+			
+				<li data-id="64">
+					<a href="/legislative-updates/" target="_self" title="">2018 Legislative Updates</a>
+				</li>
+
+			
+				<li data-id="19">
+					<a href="/end-of-session-reports/" target="_self" title="">End of Session Reports</a>
+				</li>
+
+			
+				<li data-id="18">
+					<a href="/primcare-pac/" target="_self" title="">IAFP PrimCare PAC </a>
+				</li>
+
+			
+				<li data-id="66">
+					<a href="/Rural-Loan/" target="_self" title="">Rural Loan Repayment Program</a>
+				</li>
+
+			
+				<li data-id="70">
+					<a href="/PAC-2018/" target="_self" title="2018 PrimCare PAC Contributors">2018 PrimCare PAC Contributors</a>
+				</li>
+
+			
+				<li data-id="58">
+					<a href="/pac2017/" target="_self" title="">2017 PrimCare PAC Contributors</a>
+				</li>
+
+			
+				<li data-id="20">
+					<a href="/pac2016/" target="_self" title="">2016 PrimCare PAC Contributors </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="9" data-cmskey="000003">
+			<a href="/students/" target="_self" title="">Students</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="33">
+					<a href="/iowa-family-medicine-interest-group/" target="_self" title="">University of Iowa Family Medicine Interest Group </a>
+				</li>
+
+			
+				<li data-id="32">
+					<a href="/acofp/" target="_self" title="">Des Moines University Student Chapter ACOFP</a>
+				</li>
+
+			
+				<li data-id="34">
+					<a href="/scholarships/" target="_self" title="">Scholarship Opportunities </a>
+				</li>
+
+			
+				<li data-id="36">
+					<a href="/adopt-a-student/" target="_self" title="">Adopt a Student </a>
+				</li>
+
+			
+				<li data-id="35">
+					<a href="/national-conference/" target="_self" title="">National Student and Resident Conference </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="13" data-cmskey="000009">
+			<a href="/residents/" target="_self" title="Residents">Residents</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="30">
+					<a href="/residency-programs/" target="_self" title="">Iowa Family Medicine Residency Programs </a>
+				</li>
+
+			
+				<li data-id="31">
+					<a href="/resident-council/" target="_self" title="">Iowa Family Medicine Resident's Council Officers </a>
+				</li>
+
+			
+				<li data-id="37">
+					<a href="/scholarships/" target="_self" title="">Scholarship Opportunities </a>
+				</li>
+
+			
+				<li data-id="38">
+					<a href="/national-conference/" target="_self" title="">National Student and Resident Conference </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="8" data-cmskey="000005">
+			<a href="/iafp-foundation/" target="_self" title="IAFP Foundation">Foundation</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="65">
+					<a href="/2018-Foundation-Donors/" target="_self" title="">2018 IAFP Foundation Donors</a>
+				</li>
+
+			
+				<li data-id="59">
+					<a href="/2017-foundation-donors/" target="_self" title="">2017 IAFP Foundation Donors</a>
+				</li>
+
+			
+				<li data-id="41">
+					<a href="/2016-foundation-donors/" target="_self" title="">2016 IAFP Foundation Donors </a>
+				</li>
+
+			
+				<li data-id="39">
+					<a href="/tar-wars/" target="_self" title="">Tar Wars</a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="48" data-cmskey="000046">
+			<a href="/publications/" target="_self" title="">Publications</a>
+			
+					<span class="submenu"></span>
+			<ul class="sub">
+			
+				<li data-id="74">
+					<a href="/advertising-and-exhibiting/" target="_self" title="">Advertising and Exhibiting </a>
+				</li>
+
+						</ul>
+				</li>
+
+	
+		<li data-id="12" data-cmskey="contct">
+			<a href="/contact/" target="_self" title="">Contact</a>
+			
+				</li>
+
+		</ul>
+</nav>
+
+
+				<div class="cse_box">
+					<gcse:searchbox-only resultsUrl="http://iaafp.org/search/"></gcse:searchbox-only>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="cf">
+			<section class="container">
+				
+<div class="cms-section" data-section-id="179">
+
+	<div class="cms-module cms-module-12 cms-module-data" data-module-id="659">
+	<div class="cms-module-data">
+	<script src="/js/banner.js"></script>
+
+	<div class="banners">
+
+					
+			<div class="banner">
+				<img src="/documents/banner/8.jpg" title="New Program">
+
+				
+									<a href="http://iaafp.org/adopt-a-student/" target="_self" title="New Program"></a>
+							</div>
+
+		
+					
+			<div class="banner">
+				<img src="/documents/banner/4.jpg" title="Foundation">
+
+				
+									<a href="http://iaafp.org/iafp-foundation/" target="_self" title="Foundation"></a>
+							</div>
+
+		
+					
+			<div class="banner">
+				<img src="/documents/banner/10.jpg" title="IAFP Mediterranean CME Cruise">
+
+				
+									<a href="http://iaafp.org/2019-cruise/" target="_self" title="IAFP Mediterranean CME Cruise"></a>
+							</div>
+
+		
+					
+			<div class="banner">
+				<img src="/documents/banner/11.jpg" title="Okoboji 2019">
+
+				
+									<a href="http://iaafp.org/2019-okoboji/" target="_self" title="Okoboji 2019"></a>
+							</div>
+
+		
+		
+	</div>
+
+</div></div>
+</div>
+
+
+<div class="cms-section" data-section-id="1">
+
+	<div class="cms-module cms-module-12 cms-module-text" data-module-id="1123">
+	<div class="cms-text">
+	<h1>Iowa Academy of Family Physicians</h1>
+<p>We advocate for, educate and support family physicians who improve the health and well-being of their patients, their families and their communities.</p>
+<p>More than 86% of Iowa&rsquo;s doctors who specialize in family medicine comprise our statewide association, and our membership also includes 1800 family doctors, medical residents and students.</p>
+<p>Our members are also active in lobbying for legislation that enhances the quality of care patients&nbsp;in Iowa&nbsp;receive.</p></div></div>
+</div>
+
+			</section>
+		</main>
+
+		<footer class="cf">
+			<div class="container">
+								<div class="address">
+					<span class="company_name">Iowa Academy of Family Physicians</span><br/>
+					<span>100 East Grand Avenue, Suite 240 | Des Moines, IA | 50309</span>
+										<br/><span class="phone"><strong>Phone: </strong>515-283-9370</span>
+									</div>
+				
+				
+
+				<div class="legal">Copyright &copy; 2019. All Rights Reserved.</div>
+
+				<a href="http://www.visionary.com/solutions/website-design.html" target="_blank" title="Des Moines Custom Website Design by Visionary Services" class="vsi">Iowa Web design &amp; development by <strong>Visionary</strong></a>
+			</div>
+		</footer>
+	</div>
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57086150-47', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"56969e1001","applicationID":"95762480","transactionName":"ZlFQZxBUX0QCBUVaXV8bZ0ELGlhZBwNJHUJZRA==","queueTime":0,"applicationTime":103,"atts":"ShZTEVhOTEo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Componentes Industriales</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">   
+     <link rel="stylesheet" href="css/owl.carousel.css" > 
+     <script src="js/jquery.js"></script>    
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/script.js"></script>
+     <script src="search/search.js"></script>        
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/owl.carousel.js"></script>      
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>    
+     <script src="js/sForm.js"></script>
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <link href='//fonts.googleapis.com/css?family=Asap:400' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Asap:700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+            </a>
+        </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                $("#owl").owlCarousel({
+                    items : 7,
+                    itemsDesktop : [1199, 7],
+                    itemsTablet: [995, 6],
+                    itemsTabletSmall: [767, 4],
+                    itemsMobile : [479, 3],
+                    lazyLoad : true,
+                    pagination: false,
+									  scrollPerPage: true,
+									  rewindSpeed: 100,
+                    navigation : true
+                });
+                $("#owl-1").owlCarousel({
+                    items : 3,
+                    itemsDesktop : [1199, 3],
+                    itemsTablet: [995, 3],
+                    itemsTabletSmall: [767, 1],
+                    itemsMobile : [479, 1],
+                    lazyLoad : true,
+                    pagination: true,
+										scrollPerPage: true,
+										rewindSpeed: 100,
+                    navigation : true
+                });
+                /*accordion*/
+                (function($) {
+                var allTriggers = $('.accordion > dt');
+                var allPanels = $('.accordion > dd').hide();
+                $('.accordion > dt > a').click(function() {
+                         allPanels.slideUp();
+                         $(this).parent().next().slideDown();
+                         return false;
+                });
+                $('.accordion > dt').first().addClass('active');
+                $('.accordion > dd').first().show();
+                $('.accordion > dt > span.toggle').click(function() {
+                    $this = $(this);
+                    $target =  $this.parent().next();
+                    if(!$target.hasClass('active')){
+                       allPanels.removeClass('active').slideUp();
+                       $target.addClass('active').slideDown();
+                    }
+                    $trigger =  $this.parent();
+                    if(!$trigger.hasClass('active')){
+                       allTriggers.removeClass('active');
+                       $trigger.addClass('active');
+                    }
+                  return false;
+                });
+                })(jQuery);
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59058559-1', 'auto');
+  ga('send', 'pageview');
+// #owl-1 .owl-next {position: absolute; margin-top: 140px; right: -22px; height: 50px; width: 28px; background-size: cover; }
+//	#owl-1 .owl-prev {position: absolute; margin-top: 140px; left: -22px;  height: 50px; width: 28px; background-size: cover; }
+
+</script>
+<style>
+</style>
+     </head>
+<body id="top">
+<div class="wsmenucontainer clearfix">
+  <div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft" href="#"><span></span></a></div>
+  <div class="wsmenucontent overlapblackbg"></div>
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <div class="top_border">
+        <div class="container">
+            <div class="row">
+                <div class="grid_4">
+                    <h1><a href="index.php"><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <div class="grid_4">
+                    <div class="search_box">
+                        <form id="search" action="search.php" method="GET">
+                            <input type="text" name="s" value="Search" onFocus="if (this.value == 'Search') {this.value=''}" onBlur="if (this.value == '') {this.value='Search'}">
+                            <a onClick="document.getElementById('search').submit()"><img src="images/search_btn.png" alt=""  ></a>
+                            <div class="clear"></div>      
+                        </form>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="tel">
+                    <div class="phone"><i class="fa fa-phone"></i>(502) 2312-1700</div>
+                        <span>&nbsp;</span>
+                        <a href="#"><i class="fa fa-envelope-o"></i>info@componentes.com.gt</a>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_bg">
+        <div class="container">
+            <div class="row">
+                <div >
+                   <nav>
+					 
+
+<link rel="stylesheet" type="text/css" media="all" href="menu/css/webslidemenu.css" />
+
+<script type="text/javascript" language="javascript" src="menu/js/webslidemenu.js"></script>
+
+
+
+ 
+
+
+    
+
+        <!--Menu HTML Code-->
+           <nav class="wsmenu slideLeft clearfix">
+                <ul class="mobile-sub wsmenu-list">
+                  
+                  <li><a href="index.php">INICIO</a></li>
+                  <li><a href="nosotros.php">NOSOTROS</a></li>
+                  
+                  
+                  <li><a href="productos.php"><span class="arrow">PRODUCTOS </span></a>
+                    <div class="megamenu clearfix">
+                    
+                    
+                      <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=2">Acoplamientos</a>
+                        </li>
+                                                                  <li><a href="producto.php?ID=3&ID2=2"><i class="fa fa-arrow-circle-right"></i>Lovejoy - Acoplamientos</a></li>
+                                                                                      <li><a href="producto.php?ID=7&ID2=2"><i class="fa fa-arrow-circle-right"></i>Martin - Acoplamientos</a></li>
+                                                                                      <li><a href="producto.php?ID=8&ID2=2"><i class="fa fa-arrow-circle-right"></i>Omega Rex - Acoplamientos</a></li>
+                                            <br>
+                      </ul>
+                      
+                      
+                      
+                      <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=9">Bombas Industriales</a></li>
+                        
+                                                                  <li><a href="producto.php?ID=10&ID2=9"><i class="fa fa-arrow-circle-right"></i>Fives-Fletcher  -  B.I.</a></li>
+                                                                                      <li><a href="producto.php?ID=12&ID2=9"><i class="fa fa-arrow-circle-right"></i>Milton Roy - B.I.</a></li>
+                                                                                      <li><a href="producto.php?ID=16&ID2=9"><i class="fa fa-arrow-circle-right"></i>Netzsch - B.I.</a></li>
+                                                                                      <li><a href="producto.php?ID=30&ID2=9"><i class="fa fa-arrow-circle-right"></i>Sulzer - B.I.</a></li>
+                                            <br>
+                       
+                      </ul>
+                      
+                      
+                      
+                      
+                      <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=36">Industria Alcoholera</a></li>
+                                                                  <li><a href="producto.php?ID=37&ID2=36"><i class="fa fa-arrow-circle-right"></i> Sistema de Fermentación HIFERM</a></li>
+                                                                                      <li><a href="producto.php?ID=39&ID2=36"><i class="fa fa-arrow-circle-right"></i>Sistema de Deshidratación ECOMOL</a></li>
+                                                                                      <li><a href="producto.php?ID=38&ID2=36"><i class="fa fa-arrow-circle-right"></i>Sistema de Destilación ECOFINE</a></li>
+                                                                                      <li><a href="producto.php?ID=40&ID2=36"><i class="fa fa-arrow-circle-right"></i>Tratamiento Efluentes Destilería</a></li>
+                                                                                      <li><a href="producto.php?ID=48&ID2=36"><i class="fa fa-arrow-circle-right"></i>Tratamiento Efluentes Industriales</a></li>
+                                            <br>
+                      </ul> 
+                      
+            
+            
+      <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=123">Industria Azucarera</a></li>
+                                                                  <li>
+                                          <a href="producto.php?ID=138&ID2=123"><i class="fa fa-arrow-circle-right"></i>Cristalizadores verticales</a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=149&ID2=123"><i class="fa fa-arrow-circle-right"></i>Desfibradoras de caña</a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=137&ID2=123"><i class="fa fa-arrow-circle-right"></i>Secadoras de azúcar </a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=135&ID2=123"><i class="fa fa-arrow-circle-right"></i>Tachos continuos horizontales</a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=169&ID2=123"><i class="fa fa-arrow-circle-right"></i>Telas para centrifuga intermitente</a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=136&ID2=123"><i class="fa fa-arrow-circle-right"></i>Telas para centrifugas continua</a>
+                                          </li>
+                                                                                      <li>
+                                          <a href="producto.php?ID=142&ID2=123"><i class="fa fa-arrow-circle-right"></i>Tratamiento de residuos</a>
+                                          </li>
+                                            <br>
+                      </ul>
+            
+                      
+
+                      
+                        <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=49">Instrumentación y Control</a></li>
+                                                                  <li><a href="producto.php?ID=50&ID2=49"><i class="fa fa-arrow-circle-right"></i>Clark Reliance</a></li>
+                                                                                      <li><a href="producto.php?ID=55&ID2=49"><i class="fa fa-arrow-circle-right"></i>Eriez </a></li>
+                                                                                      <li><a href="producto.php?ID=58&ID2=49"><i class="fa fa-arrow-circle-right"></i>Fives-Fletcher</a></li>
+                                                                                      <li><a href="producto.php?ID=61&ID2=49"><i class="fa fa-arrow-circle-right"></i>HunterLab </a></li>
+                                                                                      <li><a href="producto.php?ID=66&ID2=49"><i class="fa fa-arrow-circle-right"></i>Mettler Toledo</a></li>
+                                                                                      <li><a href="producto.php?ID=74&ID2=49"><i class="fa fa-arrow-circle-right"></i>SugarTek</a></li>
+                                            <br>
+                      </ul>
+                      
+                        <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=77">Manejo de Materiales</a></li>
+                                                                  <li><a href="producto.php?ID=78&ID2=77"><i class="fa fa-arrow-circle-right"></i>Eriez </a></li>
+                                                                                      <li><a href="producto.php?ID=80&ID2=77"><i class="fa fa-arrow-circle-right"></i>Martin Sprocket & Gear </a></li>
+                                                                                      <li><a href="producto.php?ID=89&ID2=77"><i class="fa fa-arrow-circle-right"></i>Maxi-Lift </a></li>
+                                            <br>
+                      </ul>
+                      
+                        <ul class="megacollink">
+                        <li class="title"><a class="one"  href="industrias.php?ID=94">Mantenimiento Industrial</a></li>
+                                                                  <li><a href="producto.php?ID=95&ID2=94"><i class="fa fa-arrow-circle-right"></i>HMC</a></li>
+                                                                                      <li><a href="producto.php?ID=96&ID2=94"><i class="fa fa-arrow-circle-right"></i>Loctite</a></li>
+                                            <br>
+                      </ul>
+                    
+                      <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=99">Medio Ambiente</a></li>
+                                                                  <li><a href="producto.php?ID=100&ID2=99"><i class="fa fa-arrow-circle-right"></i>BACKHUS EcoEngineers</a></li>
+                                                                                      <li><a href="producto.php?ID=101&ID2=99"><i class="fa fa-arrow-circle-right"></i>Doppstadt</a></li>
+                                                                                      <li><a href="producto.php?ID=104&ID2=99"><i class="fa fa-arrow-circle-right"></i>Eggersmann Group</a></li>
+                                                                                      <li><a href="producto.php?ID=106&ID2=99"><i class="fa fa-arrow-circle-right"></i>Eriez - Medio Ambiente</a></li>
+                                                                                      <li><a href="producto.php?ID=109&ID2=99"><i class="fa fa-arrow-circle-right"></i>Kemira </a></li>
+                                            <br>
+                      </ul>
+                      
+                        <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=110">Químicos </a></li>
+                                                                  <li><a href="producto.php?ID=111&ID2=110"><i class="fa fa-arrow-circle-right"></i>Kemira</a></li>
+                                                                                      <li><a href="producto.php?ID=113&ID2=110"><i class="fa fa-arrow-circle-right"></i>Praj</a></li>
+                                            <br>
+                      </ul>
+                      
+                                            <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=114">Reductores y Motoreductores</a></li>
+                                                                  <li><a href="producto.php?ID=115&ID2=114"><i class="fa fa-arrow-circle-right"></i>HANSEN Industrial Gearboxes</a></li>
+                                                                                      <li><a href="producto.php?ID=116&ID2=114"><i class="fa fa-arrow-circle-right"></i>Seisa</a></li>
+                                                                                      <li><a href="producto.php?ID=117&ID2=114"><i class="fa fa-arrow-circle-right"></i>Sumitomo Drive Technologies</a></li>
+                                            <br>
+                      </ul>
+                      
+                        <ul class="megacollink">
+                        <li class="title"><a class="one" href="industrias.php?ID=118">Separación Magnética</a></li>
+                                                                  <li><a href="producto.php?ID=211&ID2=118"><i class="fa fa-arrow-circle-right"></i>ERIEZ</a></li>
+                                            <br>
+                      </ul>
+                    
+                    </div>
+                  </li>
+                  
+                  <li><a href="proveedores.php">PROVEEDORES</a></li>
+                  <li><a href="noticias.php">NOTICIAS</a></li>
+                  <li><a href="contacto.php">CONTACTO</a></li>
+                  
+                </ul>
+              </nav>
+        <!--Menu HTML Code--> 
+    
+    
+  
+
+  
+
+                  </nav>  
+                </div>
+                
+            </div>           
+        </div>
+    </div>
+</header>
+
+<!--=======content================================-->
+
+<div id="content">
+<div id="zindex0">
+        <div  >
+            <div class="row">     
+                
+                
+
+<script src="assets/royalslider/jquery.royalslider.min.js" ></script>
+<link href="assets/royalslider/royalslider.css" rel="stylesheet">
+<link href="assets/royalslider/skins/minimal-white/rs-minimal-white.css" rel="stylesheet">
+<style type="text/css">
+<!--
+#full-width-slider {
+  width: 100%;
+  color: #000;
+}
+.coloredBlock {
+  padding: 12px;
+  background: rgba(255,0,0,0.6);
+  color: #FFF;
+   width: 200px;
+   left: 20%;
+   top: 5%;
+}
+.infoBlock {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  left: auto;
+  max-width: 25%;
+  padding-bottom: 0;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  padding: 20px;
+    color: #FFF;
+
+}
+.infoBlockLeftBlack {
+  color: #FFF;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+  right: 30px;
+  left: auto;
+}
+.infoBlock h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 3px;
+    color: #FFF;
+
+}
+.infoBlock p {
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+.infoBlock a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.photosBy {
+  position: absolute;
+  line-height: 24px;
+  font-size: 12px;
+  background: #FFF;
+  color: #000;
+  padding: 0px 10px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  top: auto;
+  border-radius: 2px;
+  z-index: 0; 
+} 
+.photosBy a {
+  color: #000;
+}
+.fullWidth {
+  max-width: 1400px;
+  margin: 0 auto 24px;
+}
+
+@media screen and (min-width:960px) and (min-height:660px) {
+  .heroSlider .rsOverflow,
+  .royalSlider.heroSlider {
+      height: 520px !important;
+  }
+}
+
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .heroSlider .rsOverflow,
+    .royalSlider.heroSlider {
+        height: 660px !important;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .royalSlider.heroSlider,
+  .royalSlider.heroSlider .rsOverflow {
+    height: 300px !important;
+  }
+  .infoBlock {
+    padding: 10px;
+    height: auto;
+    max-height: 100%;
+    min-width: 40%;
+    left: 5px;
+    top: 5px;
+    right: auto;
+    font-size: 12px;
+  }
+  .infoBlock h3 {
+     font-size: 14px;
+     line-height: 17px;
+  }
+}
+-->
+</style>
+
+<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+      <div class="rsContent">
+      <img class="rsImg"src="webcontrol/201506042324230.banner3.jpg" alt="">
+      <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+        <h4>Sumitomo Drive Techologies</h4>
+        <p>Motorreductores SM CYCLO, acoplamientos de rejilla, sprockets y cadena de rodillos en mesa alimentadora de Ingenio Azucarero.</p>
+      </div>
+    </div>
+        <div class="rsContent">
+      <img class="rsImg"src="webcontrol/201506042322060.banner4.jpg" alt="">
+      <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+        <h4>Eriez</h4>
+        <p>Separadores magnéticos para conductores de caña</p>
+      </div>
+    </div>
+        <div class="rsContent">
+      <img class="rsImg"src="webcontrol/201803131239380.Banner2.png" alt="">
+      <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+        <h4>Martin</h4>
+        <p>Los expertos en la industria confían en Martín</p>
+      </div>
+    </div>
+        <div class="rsContent">
+      <img class="rsImg"src="webcontrol/201505121451490.banner2.jpg" alt="">
+      <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+        <h4>Sulzer</h4>
+        <p>Todas las bombas Sulzer pasan por rigurosas pruebas de eficiencia y rendimiento antes de enviarse al cliente. </p>
+      </div>
+    </div>
+        <div class="rsContent">
+      <img class="rsImg"src="webcontrol/201506042320000.banner1.jpg" alt="">
+      <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+        <h4>Loctite</h4>
+        <p>Soluciones para la producción, el mantenimiento industrial y el cuidado y mantenimiento de vehículos</p>
+      </div>
+    </div>
+    </div>
+<script>
+jQuery(document).ready(function($) {
+  $('#full-width-slider').royalSlider({
+    arrowsNav: true,
+    loop: true,
+    keyboardNavEnabled: true,
+    controlsInside: false,
+    imageScaleMode: 'fill',
+    arrowsNavAutoHide: false,
+    autoScaleSlider: true, 
+    autoScaleSliderWidth: 960,     
+    autoScaleSliderHeight: 350,
+    controlNavigation: 'bullets',
+    thumbsFitInViewport: false,
+    navigateByClick: true,
+    startSlideId: 0,
+    transitionType:'move',
+    globalCaption: true,
+    deeplinking: {
+      enabled: true,
+      change: false
+    },
+    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+    imgWidth: 1400,
+    imgHeight: 680,
+	autoPlay: {
+    		// autoplay options go gere
+    		enabled: true,
+    		pauseOnHover: true,
+			pauseOnHover: true,
+			delay: 5000
+    	}
+  });
+});
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <div class="caption2">
+        <div class="container">
+            <div class="row">     
+                
+            </div>
+        </div>
+    </div>
+
+     <div class="banner1">
+			<div class="bg1 p38">
+				<div class="container">
+					<div class="row">     
+						<div class="grid_12 ">
+							<div id="owl-1" class="owl-carousel">
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201508141230530.acoples.png" alt="Acoplamientos">
+										<div><a href="industrias.php?ID=2">Acoplamientos</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042348480.bombas_industriales.jpg" alt="Bombas Industriales">
+										<div><a href="industrias.php?ID=9">Bombas Industriales</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042346440.industria_alcoholera.jpg" alt="Industria Alcoholera">
+										<div><a href="industrias.php?ID=36">Industria Alcoholera</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042350440.instrumentacion.jpg" alt="Instrumentación y Control">
+										<div><a href="industrias.php?ID=49">Instrumentación y Control</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042347210.manejo_materiales.jpg" alt="Manejo de Materiales">
+										<div><a href="industrias.php?ID=77">Manejo de Materiales</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042347440.mante_industrial.jpg" alt="Mantenimiento Industrial">
+										<div><a href="industrias.php?ID=94">Mantenimiento Industrial</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042348100.medio_ambiente.jpg" alt="Medio Ambiente">
+										<div><a href="industrias.php?ID=99">Medio Ambiente</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506042349380.quimicos.jpg" alt="Químicos ">
+										<div><a href="industrias.php?ID=110">Químicos </a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201508141233570.bombas_industrial.jpg" alt="Reductores y Motoreductores">
+										<div><a href="industrias.php?ID=114">Reductores y Motoreductores</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201510221134140.eriez portada.jpg" alt="Separación Magnética">
+										<div><a href="industrias.php?ID=118">Separación Magnética</a></div>
+									</div>
+								</div>
+																<div class="item">
+									<div class="thumb1">
+										<img src="webcontrol/201506171501250.industria azucarera.jpg" alt="Industria Azucarera">
+										<div><a href="industrias.php?ID=123">Industria Azucarera</a></div>
+									</div>
+								</div>
+								
+							</div>                              
+						</div>                              
+					</div>
+				</div>
+			</div>
+  	</div>
+  <div class="bg3">
+  <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div id="owl" class="owl-carousel">
+                                      <div class="item"><a href="http://www.martinsprocket.com/" target="_blank"><img src="webcontrol/201801310901180.Logo Martin.gif" height="30" alt="Martin"></a></div>
+                                        <div class="item"><a href="http://www.fivesgroup.com/#" target="_blank"><img src="webcontrol/201507211116570.fives.gif" height="30" alt="Fivescail"></a></div>
+                                        <div class="item"><a href="https://www.netzsch.com/es/" target="_blank"><img src="webcontrol/201507211148580.Netzsch.gif" height="30" alt="Netzsch"></a></div>
+                                        <div class="item"><a href="http://www.clarkreliance.com/" target="_blank"><img src="webcontrol/201507211059350.Sin-título-1.gif" height="30" alt="Clark"></a></div>
+                                        <div class="item"><a href="http://www.ashworth.com/" target="_blank"><img src="webcontrol/201507211222020.ashworth.gif" height="30" alt="Ashworth"></a></div>
+                                        <div class="item"><a href="http://www.backhus.com/index.php?clang=1" target="_blank"><img src="webcontrol/201805031108190.logo-backhus.gif" height="30" alt="Backhus"></a></div>
+                                        <div class="item"><a href="http://www.fergusonperf.com/" target="_blank"><img src="webcontrol/201508251945520.logo.jpg" height="30" alt="Ferguson"></a></div>
+                                        <div class="item"><a href="http://www.hmcgears.com/es/" target="_blank"><img src="webcontrol/201507211121380.hmc.gif" height="30" alt="Hmc engranajes"></a></div>
+                                        <div class="item"><a href="http://www.hunterlab.com/" target="_blank"><img src="webcontrol/201507211122000.hunter.gif" height="30" alt="HunterLab"></a></div>
+                                        <div class="item"><a href="http://interlub.com/" target="_blank"><img src="webcontrol/201507211221020.interlub.gif" height="30" alt="Interlub"></a></div>
+                                        <div class="item"><a href="http://www.kemira.com/en/Pages/default.aspx" target="_blank"><img src="webcontrol/201507211127210.Kemira.gif" height="30" alt="Kemira"></a></div>
+                                        <div class="item"><a href="http://www.ktr.com/de/home.htm" target="_blank"><img src="webcontrol/201507211220500.ktr.gif" height="30" alt="Ktr"></a></div>
+                                        <div class="item"><a href="http://www.lmipumps.com/" target="_blank"><img src="webcontrol/201507211220320.lmi.gif" height="30" alt="Lmi"></a></div>
+                                        <div class="item"><a href="http://www.lovejoy-inc.com/" target="_blank"><img src="webcontrol/201803021123000.LogoLovejoy.jpg" height="30" alt="Lovejoy inc"></a></div>
+                                        <div class="item"><a href="http://www.seisa.co.jp/en/index.html" target="_blank"><img src="webcontrol/201507211155220.seisa.gif" height="30" alt="Seisa"></a></div>
+                                        <div class="item"><a href="http://www.sumitomodrive.com/" target="_blank"><img src="webcontrol/201507211156140.sumimoto.gif" height="30" alt="Sumitomo Drive Technologies"></a></div>
+                                        <div class="item"><a href="http://www.magnaloy.com/" target="_blank"><img src="webcontrol/201507211220140.maganaloy.gif" height="30" alt="Magnaloy"></a></div>
+                                        <div class="item"><a href="http://www.ustsubaki.com/" target="_blank"><img src="webcontrol/201801251247560.201507211218440.Tsubaki.gif" height="30" alt="Tsubaki"></a></div>
+                                        <div class="item"><a href="http://www.praj.net/" target="_blank"><img src="webcontrol/201507211150580.praj.gif" height="30" alt="Praj"></a></div>
+                                        <div class="item"><a href="http://www.seniorflexonics.com/" target="_blank"><img src="webcontrol/201507211219160.Senior.gif" height="30" alt="Senior Flexonics"></a></div>
+                                        <div class="item"><a href="http://www.hansenindustrialgearboxes.com/" target="_blank"><img src="webcontrol/201507211117170.hansen.gif" height="30" alt="HANSEN Industrial Gearboxes"></a></div>
+                                        <div class="item"><a href="http://www.sulzer.com/" target="_blank"><img src="webcontrol/201507211155580.sulzer.gif" height="30" alt="Sulzer"></a></div>
+                                        <div class="item"><a href="http://doppstadt.de/en/" target="_blank"><img src="webcontrol/201507211115450.dopp.gif" height="30" alt="Doppstadt"></a></div>
+                                        <div class="item"><a href="http://gt.mt.com/lac/es/home.html" target="_blank"><img src="webcontrol/201507211148030.metter.gif" height="30" alt="METTLER TOLEDO"></a></div>
+                                        <div class="item"><a href="http://www.sugartek.com/" target="_blank"><img src="webcontrol/201507211155390.sugartek.gif" height="30" alt="Sugartek"></a></div>
+                                        <div class="item"><a href="http://www.weg.net/gt" target="_blank"><img src="webcontrol/201507211218190.weg.gif" height="30" alt="Weg"></a></div>
+                                        <div class="item"><a href="http://www.miltonroy.com/MiltonRoy/en" target="_blank"><img src="webcontrol/201507211148300.milton.gif" height="30" alt="Milton Roy"></a></div>
+                                        <div class="item"><a href="http://www.eggersmann-recyclingtechnology.com/en/" target="_blank"><img src="webcontrol/201507211116050.egger.gif" height="30" alt="Eggersmann Group"></a></div>
+                                        <div class="item"><a href="http://www.loctite.es/homepage.htm" target="_blank"><img src="webcontrol/201507211127560.loctite.gif" height="30" alt="Loctite"></a></div>
+                                        <div class="item"><a href="http://www.maxilift.com/" target="_blank"><img src="webcontrol/201507211147350.maxi.gif" height="30" alt="Maxi-Lift"></a></div>
+                                        <div class="item"><a href="http://www.eriez.com/" target="_blank"><img src="webcontrol/201507211116300.Eriez.gif" height="30" alt="Eriez"></a></div>
+                                        <div class="item"><a href="" target="_blank"><img src="webcontrol/201508141329220.veco.jpg" height="30" alt="Veco"></a></div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="bg2 p21">
+    <div class="container">
+     <div class="row">     
+            <div class="grid_3a">
+                <h6>Empresa</h6>
+                <ul class="list1">
+                    <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="proveedores.php">Proveedores</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                    
+                </ul>
+            </div>
+            <div class="grid_3a">
+                <h6>Productos</h6>
+                <ul class="list1">
+                                          <table >
+                          <tr >
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=2">Acoplamientos</a></li></td>
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=9">Bombas Industriales</a></li></td>
+                                                      </tr>
+                          <tr>                            <td style="padding-right: 30px;"><li><a href="industrias.php?ID=36">Industria Alcoholera</a></li></td>
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=123">Industria Azucarera</a></li></td>
+                                                      </tr>
+                          <tr>                            <td style="padding-right: 30px;"><li><a href="industrias.php?ID=49">Instrumentación y Control</a></li></td>
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=77">Manejo de Materiales</a></li></td>
+                                                      </tr>
+                          <tr>                            <td style="padding-right: 30px;"><li><a href="industrias.php?ID=94">Mantenimiento Industrial</a></li></td>
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=99">Medio Ambiente</a></li></td>
+                                                      </tr>
+                          <tr>                            <td style="padding-right: 30px;"><li><a href="industrias.php?ID=110">Químicos </a></li></td>
+                                                        <td style="padding-right: 30px;"><li><a href="industrias.php?ID=114">Reductores y Motoreductores</a></li></td>
+                                                      </tr>
+                          <tr>                            <td style="padding-right: 30px;"><li><a href="industrias.php?ID=118">Separación Magnética</a></li></td>
+                            <td>&nbsp;</td></tr>                    </table>
+                </ul>
+            </div>
+            <div class="grid_3a">
+                <h6>Noticias</h6>
+                <ul class="list1">
+                                        <li><a href="noticia.php?ID=4">Abrimos Sucursal en Cobán Alta Verapaz </a></li>
+                                          <li><a href="noticia.php?ID=5">Sulzer lanza la nueva gama de Bombas de Proceso SNS</a></li>
+                                          <li><a href="noticia.php?ID=6">Praj Desarrolla Nueva Tecnología Biomasa a Ethanol</a></li>
+                                          <li><a href="noticia.php?ID=1">Neltec introduce al mercado su nuevo sensor detector de masa cocida en el transportador de azúcar abajo de las centrífugas.</a></li>
+                                          <li><a href="noticia.php?ID=3">Noticia 3</a></li>
+                                      </ul>
+                       
+            </div>                       
+            <div class="grid_3a">
+            
+                <address class="address">
+                    <dl>
+                    <dt></dt>
+                        <dd>(502) 2312-1700</dd>
+                    </dl>              
+                </address>
+                <div class="copy">
+                    <span class="tr">&copy;</span>
+                    <span id="copyright-year"></span>
+                    <span>Componentes Industriales. </span><br>
+                    <a  href="http://www.webtoolstudio.com" target="_blank">Made by WebtoolStudio</a><br>
+                </div>
+            </div>  
+        </div>       
+    </div>
+</div>            
+</div>            
+
+<!--==================footer=======================-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_9">
+                <ul class="bottom_menu">
+                    <li ><a href="index.php">Inicio</a></li>
+                    <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="productos.php">Productos</a></li>
+                    <li><a href="proveedores.php">Proveedores</a></li>
+                    <li><a href="noticias.php">Noticias</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="grid_3">
+                <ul class="social-links">
+                    <li><a href="#" class="col1"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="col3"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="col4"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="contacto.php" class="col5"><i class="fa fa-envelope"></i></a></li>
+                </ul> 
+                
+            </div>
+        </div>
+    </div></footer>
+
+
+</div>
+</body>
+</html>

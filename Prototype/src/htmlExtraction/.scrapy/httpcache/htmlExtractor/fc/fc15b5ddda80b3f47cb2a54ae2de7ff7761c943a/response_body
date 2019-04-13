@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Priory Business Group PLC" />
+    <meta name="author" content="Priory Business Group PLC" />
+    <meta name="copyright" content="Priory Business Group PLC, (c) 2005 - 2011" />    
+    
+    <title>Priory Business Group PLC</title>		
+	
+    <link href="css/site.css?003" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		
+	<script type="text/javascript" language="javascript">
+	    $(document).ready(function() {
+	        var fadeduration = 500;
+	        $('#body-content-ps').hide();
+	        $('#body-content-pos').hide();
+	        $('#body-content-pd').hide();
+	        $('#quick-find-directory').hide();
+			
+			$('body').click(function(e) {
+				//alert(e.target.id);
+	            if ((e.target.id != 'quick-find') && ($('#quick-find').height() == 600)) {
+	                $('#quick-find').height(51);
+	                $('#quick-find-directory').fadeOut(fadeduration);
+	            }
+			});
+			
+	        $('#quick-find').click(function() {
+	            if ($('#quick-find').height() < 600) {
+	                $('#quick-find').height(600);
+	                $('#quick-find-directory').fadeIn(fadeduration);
+	            }
+	            else {
+	                $('#quick-find').height(51);
+	                $('#quick-find-directory').fadeOut(fadeduration);
+	            }
+	        });
+
+	        $('#ppm-rollover').mouseover(function() {
+	            $('#body-content-ppm').fadeIn(fadeduration);
+	            $('#body-content-ps').fadeOut(fadeduration);
+	            $('#body-content-pos').fadeOut(fadeduration);
+	            $('#body-content-pd').fadeOut(fadeduration);
+	        });
+
+	        $('#ps-rollover').mouseover(function() {
+	            $('#body-content-ppm').fadeOut(fadeduration);
+	            $('#body-content-ps').fadeIn(fadeduration);
+	            $('#body-content-pos').fadeOut(fadeduration);
+	            $('#body-content-pd').fadeOut(fadeduration);
+	        });
+
+	        $('#pos-rollover').mouseover(function() {
+	            $('#body-content-ppm').fadeOut(fadeduration);
+	            $('#body-content-ps').fadeOut(fadeduration);
+	            $('#body-content-pos').fadeIn(fadeduration);
+	            $('#body-content-pd').fadeOut(fadeduration);
+	        });
+
+	        $('#pd-rollover').mouseover(function() {
+	            $('#body-content-ppm').fadeOut(fadeduration);
+	            $('#body-content-ps').fadeOut(fadeduration);
+	            $('#body-content-pos').fadeOut(fadeduration);
+	            $('#body-content-pd').fadeIn(fadeduration);
+	        });
+	    });  		
+	</script>
+</head>
+
+<body>
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N3CHVN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N3CHVN');</script>
+	<!-- End Google Tag Manager -->
+
+<div id="page-body">
+	<div id="page-header">
+		<div id="top-menu">
+			<ul>
+				<li title="Home"><a href="default.htm">Home</a></li>
+				<li title="Group Websites"><a href="groupwebsites.htm">Group Websites</a></li>
+				<li title="Priory Gallery"><a href="gallery.htm">Priory Gallery</a></li>
+				<li title="News"><a href="http://www.facebook.com/prioryplc" target="_blank">News</a></li>
+				<li title="Contact Us"><a href="contact-us.htm">Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div id="contact-details">
+			<div class="contact-title">T:</div>
+			<div class="contact-number">0845 388 3874</div>
+			<div class="contact-title">E:</div>
+			<div class="contact-number"><a href="mailto:sales@prioryplc.com">sales@prioryplc.com</a></div>		
+		</div>
+		
+        <div class="socialmedia">	
+			<div class="googleplusone">
+				<!-- Place this tag where you want the +1 button to render -->
+				<g:plusone size="medium"></g:plusone>
+			</div>
+			
+            <p>Follow us on:</p>		
+            <ul>
+                <li><a href="http://www.twitter.com/prioryplc" title="Twitter" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a></li>
+                <li><a href="http://www.facebook.com/prioryplc" title="Facebook" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a></li>
+            </ul>			
+        </div>  
+		
+		<div id="quick-find">
+			<div id="quick-find-directory">
+                <h1>Take me to...</h1>
+                <div class="col1">
+                    <a href="http://www.priorystorage.co.uk" target="_blank"><img src="images/qf-priorystorage.png" alt="Priory Storage" /></a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/" target="_blank">Our Services</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/collectionanddelivery.htm" target="_blank">Collection &amp; Delivery</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/emergencyarchiveretrieval.htm" target="_blank">Emergency Archive Retrieval</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/filedocumentscanning.htm" target="_blank">File/Document Scanning</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/livefilemanagement.htm" target="_blank">Live File Management</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/livefilemanagement.htm" target="_blank">Retention Policy Management</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/itsupport.htm" target="_blank">IT Support</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/securedisposal.htm" target="_blank">Secure Disposal</a>
+                    <a href="http://www.priorystorage.co.uk/ourservices/inventorycontrol.htm" target="_blank">Inventory Control</a>
+                    <br />
+                    <a href="http://www.priorydirect.co.uk" target="_blank"><img src="images/qf-priorydirect.png" alt="Priory Direct" /></a>
+                    <a href="http://www.priorydirect.co.uk/product_single_integrated_labels.aspx" target="_blank">Single Integrated Labels</a>
+                    <a href="http://www.priorydirect.co.uk/product_double_integrated_labels.aspx" target="_blank">Double Integrated Labels</a>
+                    <a href="http://www.priorydirect.co.uk/product_treble_integrated_labels.aspx" target="_blank">Treble Integrated Labels</a>
+                    <a href="http://www.priorydirect.co.uk/product_details.aspx?productid=12214301" target="_blank">Integrated Gift Tags</a>
+                    <a href="http://www.priorydirect.co.uk/product_integrated_cards.aspx" target="_blank">Integrated Cards</a>
+                    <a href="http://www.priorydirect.co.uk/product_bullet_labels.aspx" target="_blank">Integrated Bullet Labels</a>
+                    <a href="http://www.priorydirect.co.uk/product_white_bubble_lined_bags.aspx" target="_blank">Bubble Lined Bags</a>
+                    <a href="http://www.priorydirect.co.uk/product_all_board_envelopes.aspx" target="_blank">All Board Envelopes</a>
+                    <a href="http://www.priorydirect.co.uk/product_book_wraps.aspx" target="_blank">Direct Book Wraps</a>
+                </div>
+                <div class="col2">
+                    <a href="http://www.prioryprintmanagement.co.uk" target="_blank"><img src="images/qf-prioryprintmanagement.png" alt="Priory Print Management" /></a>
+                    <a href="http://www.prioryprintmanagement.co.uk" target="_blank">Print Management</a>
+                    <a href="http://www.prioryprintmanagement.co.uk" target="_blank">Design &amp; Creative</a>
+                    <a href="http://www.prioryprintmanagement.co.uk" target="_blank">Storage &amp; Distribution</a>
+                    <a href="http://prioryplc.usersession.co.uk/login" target="_blank">Business Card Ordering</a>	
+                    <a href="http://www.prioryprintmanagement.co.uk/what-we-do.htm" target="_blank">What We Do</a>
+                    <a href="http://www.prioryprintmanagement.co.uk/contact-us.htm" target="_blank">Contact Us</a>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <a href="http://www.prioryofficesupplies.co.uk" target="_blank"><img src="images/qf-prioryofficesupplies.png" alt="Priory Office Supplies" /></a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/Office-Products-C-2" target="_blank">Office Products</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/Printer-and-Fax-Supplies-C-143" target="_blank">Office Cartridges</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/Electronics-C-4" target="_blank">Office Machines</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/Furniture-C-5" target="_blank">Furniture</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/Mailroom-Warehouse-C-163" target="_blank">Warehouse</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/evolution_ProductMenu_RecycledProducts.html" target="_blank">Recycled</a>
+                    <a href="http://www.prioryofficesupplies.co.uk/storefront/SpecialOffers" target="_blank">Special Offers</a>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page-body-top">
+		<div id="breadcrumb">Home</div>       		
+			
+		<div id="welcome">
+			<div id="welcome-left">
+				<div id="welcome-top">to Priory Business Group PLC</div>
+
+				<div id="welcome-text">
+					<p><b>Priory Business Group PLC has grown from a business forms specialist, founded 
+					in 1989, into a broad based business services group offering Print Management, Office 
+					Supplies, Archive Management and Ecommerce supplies and fulfilment through an online 
+					division &ndash; Priory Direct.</b></p>
+
+					<p>With sales offices in Aylesford & Epping and a central storage facility located 
+					near to the M20, Priory Business Group PLC services clients throughout the UK and Europe.</p>
+				</div>
+			</div>
+			
+			<div id="welcome-right">
+				<div id="fleet-vans"></div>
+			</div>
+		</div>
+						
+		<div id="body-menu">
+			<ul>
+				<li id="ppm-rollover" title="Priory Print Management"><a href="http://www.prioryprintmanagement.co.uk/" target="_blank">&nbsp;</a></li>
+				<li id="ps-rollover" title="Priory Storage"><a href="http://www.priorystorage.co.uk/" target="_blank">&nbsp;</a></li>
+				<li id="pos-rollover" title="Priory Office Supplies"><a href="http://www.prioryofficesupplies.co.uk/" target="_blank">&nbsp;</a></li>
+				<li id="pd-rollover" title="Priory Direct"><a href="http://www.priorydirect.co.uk/" target="_blank">&nbsp;</a></li>
+			</ul>
+		</div>
+			
+	</div>	
+		
+	<div id="body-content">
+		<div id="body-content-ppm">
+			<img src="images/ppm-logo.png" style="margin-bottom:7px;"/>
+				
+			<div class="body-content-top">Design, Print, Delivery, Storage &amp; Replenishment in one great service</div>
+				
+			<div class="body-content-text">
+				<p><b>Priory Print Management manages print in its broadest context; from the initial design stage, through to production, storage, fulfilment and distribution.</b></p>
+
+				<p>Knowing your requirements will be produced to the highest possible standards, on time and at competitive price levels ensures complete peace of mind and allows you to focus on core business / revenue generating activities.</p>
+					
+				<p class="contact-info">
+					<a href="http://www.prioryprintmanagement.co.uk/" target="_blank">www.prioryprintmanagement.co.uk</a><br/>
+					0845 388 3874<br/>
+					<a href="mailto:print@prioryplc.com" target="_blank">print@prioryplc.com</a>
+				</p>
+			</div>						
+		</div>		
+			
+		<div id="body-content-ps">
+			<img src="images/ps-logo.png" style="margin-bottom:1px;"/>
+				
+			<div class="body-content-top">Free up office space and maintain easy access to everything you need</div>
+				
+			<div class="body-content-text">
+				<p><b>Priory Storage has progressively built a reputation for providing a high quality archive and storage management service throughout London and the Home Counties.</b></p>
+
+				<p>We stand head and shoulders above our competitors with a personal, organised, tried and tested approach to your storage requirements. The retention of archives off-site in a conveniently located and dedicated secure storage facility provides huge cost savings to businesses and organisations.</p>
+										
+				<p class="contact-info">
+					<a href="http://www.priorystorage.co.uk/" target="_blank">www.priorystorage.co.uk</a><br/>
+					0845 388 3874<br/>
+					<a href="mailto:storage@prioryplc.com" target="_blank">storage@prioryplc.com</a>
+				</p>
+			</div>	
+		</div>	
+			
+		<div id="body-content-pos">
+			<img src="images/pos-logo.png"/>
+				
+			<div class="body-content-top">Everything your office could<br/>possibly need and more</div>
+				
+			<div class="body-content-text">
+				<p><b>Delivered promptly, efficiently and politely to your door and sometimes even to your desk.</b></p>
+					
+				<p>Over 20,000 quality products stocked ready for immediate despatch. Good old fashioned service values combined with the online stock enquiries, ordering and tracking.</p>	
+									
+				<p class="contact-info">
+					<a href="http://www.prioryofficesupplies.co.uk/" target="_blank">www.prioryofficesupplies.co.uk</a><br/>
+					0845 388 3874<br/>
+					<a href="mailto:supplies@prioryplc.com" target="_blank">supplies@prioryplc.com</a>
+				</p>	
+			</div>				
+		</div>	
+				
+		<div id="body-content-pd">
+			<img src="images/pd-logo.png" style="margin-bottom:6px;"/>
+				
+			<div class="body-content-top">Getting you ready for delivery</div>
+				
+			<div class="body-content-text">
+				<p><b>Thousands of e-tailers and multi channel retailers have made Priory Direct their supplier of choice. 
+				UK & Europe’s leading supplier of Integrated Label sheets, Bubble Lined Bags and associated mail-order packaging. 
+				Huge stocks available online 24/7 for immediate despatch.</b></p>			
+									
+				<p class="contact-info">
+					<a href="http://www.priorydirect.co.uk/" target="_blank">www.priorydirect.co.uk</a><br/>
+					0845 224 8254<br/>
+					<a href="mailto:sales@priorydirect.co.uk" target="_blank">sales@priorydirect.co.uk</a>
+				</p>	
+			</div>					
+		</div>	
+		
+		<div id="body-megagrowth50">
+			<img src="images/megagrowth50-westkentcoc-logos.png"/>
+		</div>	
+		
+		<div id="testimonials">
+			<div class="section-header">Testimonials</div>
+			
+			<div class="testimonial">
+				<div class="open-quotes-blue"></div>
+				<div id="testimonial-one">			
+					<p>Priory provides us with an extremely efficient service – tracking when we are running low of stock and warning us in good time.<br/><br/></p>
+					<p><b>Ron Grout</b></p>
+					<p>IT Manager, Saywell International</p>
+				</div>
+				<div class="close-quotes-blue"></div>
+			</div>
+			
+			<div class="testimonial">
+				<div class="open-quotes-pink"></div>
+				<div id="testimonial-two">
+					<p>We are loyal to Priory for a number of reasons including the PAMS system, the fact that they are rarely beaten on price - and Bob Pitman’s good humour.<br/><br/></p>
+					<p><b>Gary Wragg</b></p>
+					<p>LV=</p>				
+				</div>
+				<div class="close-quotes-pink"></div>
+			</div>
+		</div>		
+	</div>	
+		
+	<div id="page-footer">
+		<div id="page-footer-address">
+			Unit 2C, Aylesford<br />
+			Commercial Park ME20 7FE
+		</div>
+		<div id="page-footer-telephone">
+			<b>T</b> 0845 388 3874<br/>
+			<b>E</b> <a href="mailto:sales@prioryplc.com">sales@prioryplc.com</a>
+		</div>
+				
+		<a id="page-footer-ppm" href="http://www.prioryprintmanagement.co.uk/" target="_new"></a>
+		<a id="page-footer-pos" href="http://www.prioryofficesupplies.co.uk/" target="_new"></a>
+		<a id="page-footer-ps" href="http://www.priorystorage.co.uk/" target="_new"></a>
+		<a id="page-footer-pd" href="http://www.priorydirect.co.uk/" target="_new"></a>
+	</div>
+
+</div>	
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<title>Fire Pump service maintenance repairs overhaul of rotating and reciprocating equipment - Jem Pumps</title>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="description" content="North West based JEM Pumps are specialists in fire pumps, industrial pumps, diesel pump, and electric pumps  service, maintenance and repair; pump servicing includes diesel and electric pumps, and the overhaul of all rotating and reciprocating equipment">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<meta name="keywords" content="jem fire pumps, jem pumps,  jem fire, industrial pumps repair, industrial pumps service, industrial pumps maintenance, pump maintenance, pump service, pump repair, electric pump maintenance, diesel pump maintenance, pump overhauls, pump control equipment, pump drivers, diesel pump servicing, electric pump servicing, fire pump servicing, fire pump maintenance, fire pump service, north west fire pump service, north west fire pump maintenance, fire pump repairs, north west fire pump repairs, north west industrial pumps servicing, north west pump repairs, north west pump maintenance,  north west fire pump servicing, north west fire pump maintenance,">
+<meta name="author" content="ForteTrinity">
+<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+<link href="_includes/css/master.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="_includes/css/jquery.bxslider.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="_includes/css/animate.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="_includes/css/print.css" rel="stylesheet" type="text/css" media="print">
+<!--[if IE 7]><link href="_includes/css/ie7.css" rel="stylesheet" type="text/css" media="screen"><![endif]-->
+<!--[if IE 8]><link href="_includes/css/ie8.css" rel="stylesheet" type="text/css" media="screen"><![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="_includes/js/script.js"></script>
+<script src="_includes/js/jquery.bxslider.min.js"></script>
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="_includes/js/selectivizr.js"></script><![endif]-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+
+ controls: true,
+ pager: false,
+ auto: true,
+		pause: 5000,
+	});
+});
+</script>
+
+
+
+
+
+
+</head>
+<body class="home">
+
+
+<ul id="skiplinks">
+    <li><a href="#primary-navigation" accesskey="s">Skip to main navigation</a></li>
+    <li><a href="#primary-content" accesskey="s">Skip to main content</a></li>
+</ul>
+<header>
+ 	<div class="wrapper-h">
+	
+		<div class="header-l">
+		<div class="tophead">
+		<a href="index.php" class="logo"><img src="_includes/images/global/logo.jpg"  alt="Jem" /></a>
+			<p>A Centre of Excellence providing Field Service and Support of Rotating and Reciprocating Equipment</p>
+		</div>
+			
+		<div class="bottomhead">
+    <div id='cssmenu'>
+<ul>
+   <li  class="active"><a href='index.php'>Home</a></li>
+   <li ><a href='pumpservice.php'>SERVICE &amp; REPAIRS</a></li>
+  <!-- <li ><a href='spares.php'>SPARES &amp; ACCESSORIES</a></li>-->
+   <li ><a href='core-values.php'>COMPANY RULES</a></li>
+   <li ><a href='health.php'>HEALTH &amp; SAFETY</a></li>
+   <li ><a href='testimonials.php'>TESTIMONIALS</a></li>
+   <li ><a href='contact.php'>CONTACT</a></li>
+</ul>
+</div></div></div>
+		
+		<div class="header-r">
+			<div class="fl">Phone<br>
+01706 860534</div>
+			<div class="fr">E-mail<br>
+admin@jempumps.com</div>
+		</div>
+		
+    </div>
+</header>
+
+<div id="secondary-header">
+<div class="slide"><h1>Providing over 30 years' experience</h1></div>
+</div>
+
+<div id="showcase">
+	<ul class="bxslider">
+    	<li class="pump"><h1>Pump Service and Repairs</h1><h2>maintenance is key</h2>
+        <a href="pumpservice.php"><img src="_includes/images/global/selector.png" width="150"  alt="" class="fm"/></a>
+			<p><a href="pumpservice.php">Learn More</a></p>
+        </li>
+       <!-- <li class="spares"><h1>Spares &amp; Accessories</h1>
+        <img src="_includes/images/global/selector.png" width="208" height="81" alt="" class="fm"/></li> -->
+         <li class="house"><h1>Our Company</h1>
+         <a href="core-values.php"><img src="_includes/images/global/selector.png" width="150"  alt="" class="fm"/></a>
+		<p><a href="core-values.php">Learn More</a></p></li>
+        <li class="health"><h1>Health &amp; Safety</h1>
+         <a href="health.php"><img src="_includes/images/global/selector.png" width="150"  alt="" class="fm"/></a>
+		<p><a href="health.php">Learn More</a></p></li>
+        <li class="testimonials-s"><h1>Testimonials</h1>
+         <a href="testimonials.php"><img src="_includes/images/global/selector.png" width="150"  alt="" class="fm"/></a>
+		<p><a href="testimonials.php">Learn More</a></p></li>
+        <li class="contact"><h1>Contact Us</h1>
+         <a href="contact.php"><img src="_includes/images/global/selector.png" width="150"  alt="" class="fm"/></a>
+		<p><a href="contact.php">Learn More</a></p></li>
+    </ul>
+
+</div>
+
+
+<div id="content" class="clearfix">
+<div class="wrapper">
+    <section id="primary-content" class="clearfix">
+    <div class="fade">
+    	<h3><span class="black">Established over 30 years ago, JEM is a leading provider of field service support on rotating and reciprocating equipment in the UK and across the globe.</span></h3>
+        <p>Based in <a href="contact.php">Rochdale</a>, UK. JEM Fire Pumps Ltd is an independent company with over 30 years' experience in the Implementation and servicing of electric and diesel driven pumps.  Our service facilities are fully equipped to carry out major overhauls of pumps, drivers and associated control equipment. We carry out maintenance and service work of all equipment brands.</p>
+<p>As a company, we have learned to be at the forefront of a changing market place, where we remain responsive and flexible and ensure that our <a href="core-values.php">Company rules</a> and objectives are embedded within our organisation.</p>
+<p>We focus on the requirements of our customers and have developed the specific skills and experience to offer a superior service, competitive prices, and a wide range of innovative products.</p>
+<p>We offer an established on site or in house training and competency program, which reflects current industry changes and technical advancements. We manufacture and package bespoke equipment to customer specifications.</p>
+<p>Our office staff are friendly, efficient and will deal with any enquiry in a polite professional manner. Have a question or a problem? Just ask and we will endeavour to resolve it. 
+</p>
+</div>
+    </section>
+    <section id="secondary-content" class="clearfix">
+    <div class="fade">
+    	<img src="_includes/images/gallery/frontpage.png" width="377" height="361" alt="Pump" />
+        <img src="_includes/images/gallery/frontpage1.png" width="340" class="fr" alt="Pump" />
+    </div>
+    </section>
+    <br class="clear">
+   
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div id="mission">
+<div class="wrapper">
+<div class="zoom">
+<h3>"We at JEM take our relationship with clients very seriously and we understand a reputation that takes years to achieve is easily destroyed."</h3>
+</div>
+</div>
+</div>
+
+<div id="accreditations">
+<div class="fade">
+<p class="grey"><b>WE ARE PROUD TO BE ACCREDITED WITH THE FOLLOWING</b></p>
+	<ul class="logos">
+    	<!--<li class="con"><a href="_includes/docs/2018/ConstructionlineCert2017-2018.pdf"><span class="hiddenNav">IIP</span></a></li>-->
+        <li class="iso"><a href="_includes/docs/2018/ISO90012016-2027.pdf"><span class="hiddenNav">IIP</span></a></li>
+       <li class="fpal"><a href="_includes/docs/BritishSafetyCouncil2018-2019.pdf" target="_blank"><span class="hiddenNav">IIP</span></a></li>
+        <li class="investors"><a href="_includes/docs/Investor-in-People.pdf"><span class="hiddenNav">IIP</span></a></li>
+        <li class="iso14"><a href="_includes/docs/ISO14001_2016.pdf"><span class="hiddenNav">IIP</span></a></li>
+        <li class="bafsa"><a href="_includes/docs/BAFSA.pdf"><span class="hiddenNav">BAFSA</span></a></li>
+        <li class="nfpa"><a href="_includes/docs/NFPA.pdf"><span class="hiddenNav">NFPA</span></a></li>
+        <li class="safe"><a href="_includes/docs/SafeContractorCertificate2018-2019.pdf"><span class="hiddenNav">IIP</span></a></li>
+      </ul> 
+</div>
+</div>
+
+
+<div id="footer-fore" class="clearfix">
+	<div class="wrapper">
+		<div class="col-4 quick">
+        		<h4>Quick Links</h4>
+                	<ul class="bottommenu">
+                    	<li><a href="index.php">Home</a></li>
+						<li><a href="pumpservice.php">Pump service & repairs</a></li>
+						<li><a href="core-values.php">Company Rules</a></li>
+						<li><a href="health.php">Health & Safety</a></li>
+                        <li><a href="testimonials.php">Testimonials</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+        </div>
+		<div class="col-4">
+        		<h4>Contact Us</h4>
+                <p>JEM House<br>
+4 Rochdale Industrial Centre<br>
+Albion Road, Rochdale<br>
+OL11 4HN<br><br>
+
+Tel: 01706 860534<br>
+E-mail: <a href="mailto:admin@jempumps.com">admin@jempumps.com</a></p>
+        </div>
+		<div class="col-4">
+        		<h4>Social</h4>
+                	<p><a href="https://www.linkedin.com/company/jem-fire-pumps-ltd?trk=ppro_cprof" target="_blank"><i class="fa fa-linkedin-square lblue fa-2x"></i> Connect with us on Linked In</a></p>
+<p><a href="https://www.facebook.com/jempumps" target="_blank"><i class="fa fa-facebook-official blue fa-2x"></i> Like us on Facebook</a></p>
+			<p><a href="https://vimeo.com/209899097" target="_blank">#ThisIsRochdale</a></p>
+
+        </div>
+		<div class="col-4 sitemap">
+        		<h4>JEM</h4>
+                <p><a href="sitemap.php">Sitemap</a><br>
+</p>
+        </div>
+    </div>
+</div>
+
+<div id="accreditations-other">
+
+<!--<img src="_includes/images/logos/accreditations.jpg" width="550" alt="accreditations" />-->
+<div id="accreditations">
+<div class="fade">
+<p class="grey"><b>WE ARE PROUD TO BE ACCREDITED WITH THE FOLLOWING</b></p>
+	<ul class="logos">
+    	<!--<li class="con"><a href="_includes/docs/2018/ConstructionlineCert2017-2018.pdf"><span class="hiddenNav">IIP</span></a></li>-->
+        <li class="iso"><a href="_includes/docs/2018/ISO90012016-2027.pdf"><span class="hiddenNav">IIP</span></a></li>
+       <li class="fpal"><a href="_includes/docs/BritishSafetyCouncil2018-2019.pdf" target="_blank"><span class="hiddenNav">IIP</span></a></li>
+        <li class="investors"><a href="_includes/docs/Investor-in-People.pdf"><span class="hiddenNav">IIP</span></a></li>
+        <li class="iso14"><a href="_includes/docs/ISO14001_2016.pdf"><span class="hiddenNav">IIP</span></a></li>
+        <li class="bafsa"><a href="_includes/docs/BAFSA.pdf"><span class="hiddenNav">BAFSA</span></a></li>
+        <li class="nfpa"><a href="_includes/docs/NFPA.pdf"><span class="hiddenNav">NFPA</span></a></li>
+        <li class="safe"><a href="_includes/docs/SafeContractorCertificate2018-2019.pdf"><span class="hiddenNav">IIP</span></a></li>
+      </ul> 
+</div>
+</div>
+
+</div>
+
+<footer>
+ <div class="wrapper">
+	<p class="fl">Copyright © 2015 JEM Fire | Registered in England:
+2884266 | 
+ VAT Reg No: 606-7086-39</p>
+    <p class="fr">Site by <a href="http://www.fortetrinity.co.uk" target="_blank">Forte Trinity</a></p>
+ 
+ 
+
+ 
+ <p>
+ Fire Pump Servicing & Maintenance - Fire Pump Repairs - Industrial Pump Servicing and Repairs - Electric Pump Servicing & Repairs - Diesel Pump Servicing and Repairs - Pump Maintenance North West 
+ </p>
+ </div>
+</footer>
+
+<script src="_includes/js/jquery.viewportchecker-ver2.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.fade').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+	    offset: 200    
+	   });  
+	   
+	   jQuery('.fadeInUp').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });   
+	   
+	   jQuery('.pulse').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated pulse', // Class to add to the elements when they are visible
+	    offset: 100    
+	   }); 
+	   
+	   jQuery('.slide').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated slideInLeft', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   
+	   jQuery('.roll').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated rollIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   
+	    jQuery('.bounce').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated bounce', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   
+	    jQuery('.zoom').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated zoomIn', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   
+	    jQuery('.fadeleft').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   
+	   jQuery('.faderight').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+	   jQuery('.fadedown').addClass("invisible").viewportChecker({
+	    classToAdd: 'visible animated fadeInDownBig', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });  
+});            
+</script>
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"69ed7d8842","applicationID":"4696976","transactionName":"MhBSZQoZWEdYUhAPDgtaZUMRV19aXVQcSBENBQ==","queueTime":0,"applicationTime":0,"atts":"HldRE0IDS0k=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>

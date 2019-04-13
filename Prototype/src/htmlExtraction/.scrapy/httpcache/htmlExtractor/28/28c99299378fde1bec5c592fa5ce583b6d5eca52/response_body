@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<HTML>
+<!-- ======================================= -->
+<!--  Copyright (c) 1987-2017  -->
+<!--  SageDiagram, LLC. All Rights Reserved. -->
+<!-- ======================================= -->
+<HEAD>
+  <meta name="copyright" content="Copyright 1998-2013 SageDiagram, LLC. All Rights Reserved.">
+  <META http-equiv="Content-Script-Type" content="javascript">
+  <META name="ROBOTS" content="INDEX, FOLLOW">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <META name="KEYWORDS" content="burn diagram, burn diagrams, burn diagramming, burn treatment, burn injury, burn care, burn care, Palm OS applications, sage, computer burn diagramming, oregon burn center, Sage, SAGE II, computerized burn diagram, body diagram, surface area graphic evaluation">
+  <META name="DESCRIPTION" content="SAGE II is a free, on-line, computerized burn diagramming tool for burn-care professionals.  Written in Java, SAGE II is available to any browser running a java runtime engine.">
+  <LINK REL="SHORTCUT ICON" HREF="https://www.sagediagram.com/sage.ico">
+  <TITLE>SageDiagram.com</TITLE>
+
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="stylesheet.css">
+
+  <script language="JavaScript">
+    if (window.location.protocol!="https:") 
+      window.location="https://www.sagediagram.com";
+  
+    if (parent.document.title!="SageDiagram.com") {
+      window.location="reset.htm";
+    }
+    if (parent.frames.length > 0) {
+       parent.location.href = location.href;
+    } 
+
+    function selectTongue() {
+      if (document.tongue.myselection.selectedIndex==1) {
+         open("espanol/index.htm","_top"); }
+      if (document.tongue.myselection.selectedIndex==2) {
+         open("swedish/index.htm","_top"); }
+    }
+    function sageInfo(htmlName) {
+      newWin=window.open(htmlName, "sageInfoWin", "menubar=no,resizable=no,toolbar=no,scrollbars=yes,height=410,width=400")
+	  newWin.focus();
+    }
+    // -->
+  </script>
+  <script src=sagetwo.js>
+  </script>
+
+</HEAD>
+<BODY TEXT="#FFFFFF" BGCOLOR="#006699" link="#abe1ff" alink="#CC00CC" vlink="#abe1ff" topmargin=0 OnLoad="reDisplay();"> 
+<div align=center>
+<A NAME="topOfPage"></A> 
+<!-- ======== HEADER TABLE ================================ -->
+<div align=center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>      
+ <TR><TD VALIGN=TOP ALIGN=LEFT>     
+     <IMG SRC="images/sage_icon_blue.gif" width=19 height=26 border=0 title="about this web site..."><A HREF="about.htm"><SPAN CLASS="ITALIC1">SageDiagram.com</SPAN></A>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</TD>
+  <TD VALIGN="TOP" ALIGN="RIGHT">
+    <FORM NAME="tongue" ACTION="">
+    <select name="myselection" onChange="selectTongue();">
+      <OPTION>English</OPTION>
+      <OPTION>Spanish</OPTION>
+      <OPTION>Swedish</OPTION>
+    </select></FORM>
+ </TD></TR>
+</TABLE>
+</div>
+&nbsp;
+<div align=center>
+<!-- ======== MAIN PAGE TABLE =================================== -->
+<TABLE BORDER=0 CELLPADDING="2" CELLSPACING="0">
+  <TR>
+    <!-- ======== SAGEII COLUMN =================================== -->
+    <TD VALIGN="TOP">
+	  <div align=center>
+      <TABLE BORDER=0 CELLPADDING="2" CELLSPACING="0">      
+        <TR>
+          <TD VALIGN="TOP" ALIGN="CENTER">
+            <SPAN CLASS="TITLE2">SAGE II&#8482;</SPAN> <SPAN CLASS="BOLD1">Burn Diagramming</SPAN>
+          </TD>
+        </TR>
+        <TR>
+          <TD VALIGN="TOP" ALIGN="CENTER" BGCOLOR="#FFFFFF">
+             <A NAME="sageII"></A>
+             <TABLE BORDER=0 CELLPADDING=2 CELLSPACING=0>
+               <TR>
+                <TD VALIGN="TOP">
+                   <A HREF="scrn_ns.htm"><IMG SRC="images/sage_ns.jpg" WIDTH="150" HEIGHT="118" ALIGN="BOTTOM" BORDER="0" title="SAGE II screen sample..." ALT="SAGE II screen sample..."></A>
+                </TD>
+                <TD>&nbsp;</TD>
+                <TD VALIGN="MIDDLE" ALIGN="CENTER">
+                   <SPAN CLASS="BOLD2"><FONT COLOR="CC0033">Free</FONT> SAGE II Online Access</SPAN>
+                   <P><SPAN CLASS="ITALIC3">Sponsored in part by</SPAN>
+                   <BR><A HREF="http://www.legacyhealth.org/giving-and-support/featured-areas-to-support/the-oregon-burn-center.aspx" target="_legacy" TITLE="the Oregon Burn Center..."><IMG SRC="images/obc4.gif" WIDTH="157" HEIGHT="60" VALIGN="BOTTOM" BORDER="0" ALT="Oregon Burn Center"><A></TD>
+              </TR>
+            </TABLE>
+        </TR>  
+      </TABLE>
+	  </div>
+	  <p>
+	  <div style="width: 100%;">
+		<div align=center style="position: relative; background: #ffffff; text-align: center; max-width: 35em; padding: 15px; margin: auto;">
+			<span style="color: #aa0000;">Having trouble running SAGE II after a recent browser update?</span>
+			<br><a href="sage_2017.php" style="color: #0000aa;">See our 2017 browser note...</a>  
+		</div>
+	  </div>
+      <div align=center> 	  
+      <TABLE BORDER=0 CELLPADDING="1" CELLSPACING="0"> 
+       <TR>
+         <TD ALIGN=CENTER>
+             By accessing the SAGE II program, you agree to<BR> the sageDiagram.com site
+             <A HREF="terms.htm"><FONT COLOR="#abe1ff">Terms & Conditions</FONT></A>
+             <HR size=1>
+         </TD>
+       </TR>
+       <TR>
+         <TD ALIGN="CENTER">
+         <!-- ========LOGIN FORM=================================== -->
+         <FORM NAME="login" ACTION="https://www.sagediagram.com/phpapps/sagelogin.php" METHOD="POST" ENCTYPE="application/x-www-form-urlencoded" onSubmit="getSage(this);">
+         <INPUT TYPE="HIDDEN" NAME="recipient" SIZE="-1" VALUE="philip@sagediagram.com">
+         <INPUT TYPE="HIDDEN" NAME="subject" SIZE="-1" VALUE="SAGE II:">
+         <INPUT TYPE="HIDDEN" NAME="sageversion" SIZE="-1" VALUE="...">
+         <INPUT TYPE="HIDDEN" NAME="print_config" SIZE="-1" VALUE="email">
+         <INPUT TYPE="HIDDEN" NAME="env_report" SIZE="-1" VALUE="REMOTE_HOST,HTTP_USER_AGENT">
+         <INPUT TYPE="HIDDEN" NAME="redirect" SIZE="-1" VALUE="https://www.sagediagram.com/sage2.htm">
+         <INPUT TYPE="HIDDEN" NAME="required" SIZE="-1" VALUE="email,user_name,med_center">
+		 <INPUT TYPE="HIDDEN" NAME="sageversion" SIZE="-1" VALUE="en">
+         <INPUT TYPE="HIDDEN" NAME="sort" SIZE="-1" VALUE="alphabetic">		 
+         <TABLE BORDER=0 CELLPADDING=2 CELLSPACING=0 WIDTH="100%">
+           <TR>
+            <TD ALIGN="RIGHT">user name</TD>
+            <TD><INPUT TYPE="TEXT" NAME="user_name"></TD>
+           </TR>
+           <TR>
+            <TD ALIGN="RIGHT">medical center</TD>
+            <TD><INPUT TYPE="TEXT" NAME="med_center"></TD>
+           </TR>
+           <TR>
+            <TD ALIGN="RIGHT">e-mail</TD>
+            <TD><INPUT TYPE="TEXT" NAME="email"></TD>
+           </TR>
+           <TR>
+            <TD ALIGN="CENTER" VALIGN="TOP">access type:
+              <P><INPUT TYPE="SUBMIT" NAME="useSage" VALUE="Enter" onClick='if(!chkFields(this.form)){return false;}'></TD>
+            <TD VALIGN="TOP">
+             <TABLE BORDER=1 CELLPADDING=3 CELLSPACING=0>
+              <TR>
+               <TD ALIGN="CENTER"><B><INPUT TYPE="RADIO" NAME="getversion" VALUE="registered" onclick='window.location="https://www.sagediagram.com/sageOL/sage_login.php";'><A HREF="sage2cOnline.htm"><FONT COLOR="#abe1ff">Registered</FONT></A></B></TD>
+               <TD ALIGN="CENTER"><B><INPUT TYPE="RADIO" checked NAME="getversion" VALUE="free"><A HREF="javascript:sageInfo('freeaccess.htm');"><FONT COLOR="#abe1ff">Free</FONT></A></B></TD>
+              </TR>
+              <TR>
+               <TD BGCOLOR="#abe1ff" ALIGN="CENTER"><A HREF="javascript:sageInfo('sage2c.htm');"><SPAN CLASS="STD6">SAGE IIc</SPAN></A></TD>
+               <TD BGCOLOR="#abe1ff" ALIGN="CENTER"><A HREF="javascript:sageInfo('nativeSage.htm');"><SPAN CLASS="STD6">SAGE II </SPAN></A></TD>
+              </TR>
+             </TABLE>
+            </TD>
+           <TR>
+           <TR>
+            <TD COLSPAN=3 ALIGN="CENTER">
+              <A HREF="sagehelp.htm"><SPAN CLASS="BLD10C">SAGE II help</SPAN></A> <SPAN CLASS="STD1"> | <A HREF="links.htm"><SPAN CLASS="BLD10C">Related links</SPAN></A></span>
+              <HR size=1></TD>
+           </TR>
+         </TABLE>
+		 </FORM>
+         </TD>
+       </TR>
+      </TABLE>
+	  </div>
+      <div align=center>
+      <TABLE BORDER=0 CELLPADDING="0" CELLSPACING="0"> 
+       <TR>
+          <TD VALIGN="BOTTOM">
+            <TABLE BORDER=0 CELLPADDING=5 CELLSPACING=0>
+               <TR>
+                <TD BGCOLOR="#abe1ff" WIDTH="50%" VALIGN="MIDDLE" ALIGN="CENTER">
+                   <A HREF="sage2cOnline.htm"><SPAN CLASS="STD5">Use SAGE IIc online...</SPAN></A>   
+                </TD>
+                <TD WIDTH="50%" BGCOLOR="#FFFFFF" VALIGN="MIDDLE" ALIGN="CENTER">
+                   <A HREF="sage2cLocal.htm"><SPAN CLASS="STD5">'Local' SAGE IIc version...</SPAN></A>
+                </TD>
+               </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+      </div>
+	  &nbsp;
+	  <div align=center>
+      <!-- ========DOCUMENTATION TABLE ================ -->
+      <TABLE BORDER=0 CELLPADDING="6" CELLSPACING="0" BGCOLOR="#FFFFFF" TEXT="#000000">
+       <TR>
+        <TD VALIGN="TOP" class="box_gradient"><SPAN CLASS="STD3">
+         <B>SAGE II and SAGE IIc operate locally on the user's browser
+	     <br>and do not send any patient information back to the internet.</B>
+         <br>&nbsp;<br>
+         See our <A HREF="terms.htm"><SPAN CLASS="STD6">Terms and Conditions</SPAN></A> and <A HREF="privacy.htm"><SPAN CLASS="STD6">Privacy Policy</SPAN></A> pages for more information.
+         <br>&nbsp;<br>
+         SAGE II opens in a new window, so configurations
+	     <br>which prevent "popup" windows may also prevent access to SAGE II.   
+         <br>&nbsp;<br>
+         For general information see <A HREF="javascript:sageInfo('runSage.htm');"><SPAN CLASS="STD6">Running SAGE II on-line...</SPAN></A>
+         <BR>&nbsp;</SPAN>
+        </TD></TR>
+
+         <TR>
+          <TD BGCOLOR="#006699" VALIGN="TOP" align=center>
+           <I>We welcome all <A HREF="feedback.htm"><FONT COLOR="#abe1ff">questions and feedback...</FONT></A></I>          
+         </TD>
+       </TR>
+         <TR>
+          <TD BGCOLOR="#006699" VALIGN="TOP" align=center>
+	       <!-- ============================================ -->
+           <!--   HON - Health On the Net Foundation LINK == -->
+           <table cellspacing=2 cellpadding=2 border=0>
+            <tr>
+			 <td>
+               <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct759499" onclick="window.open(this.href); return false;" >
+	           <img src="https://www.honcode.ch/HONcode/Seal/HONConduct759499_s.gif" style="border:0px; width: 49px; height: 72px; float: left; margin: 2px;" title="This website is certified by Health On the Net Foundation. Click to verify." alt="This website is certified by Health On the Net Foundation. Click to verify." /></a></td>
+	         <td align=left width=160>
+			   This site complies with the <a href="http://www.healthonnet.org/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard</a> for trustworthy health information: <br />
+	           <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct759499" onclick="window.open(this.href); return false;">verify here.</a></td>
+            </tr>
+           </table>   	   
+         </TD>
+       </TR>	  
+      </TABLE>
+      </div>
+</TD>
+</TR>
+</TABLE>
+</div>
+<!-- ========================================================= -->
+<!--   MAIN FOOTER =========================================== -->
+
+ <SPAN CLASS="STD1">
+ <BR><A HREF="privacy.htm"><SPAN CLASS="ITALIC4">Our Privacy Policy</SPAN></A>
+ <br><a href="about.htm"><SPAN CLASS="ITALIC4">About this web site...</SPAN></a>
+ <br>
+    <SCRIPT>
+     <!--
+	 fileRevised();
+	 // hide from old browsers -->     
+    </SCRIPT>
+ <br>&nbsp;<br>
+ SAGE II, Sage2, and SageCalc are trademarks of SageDiagram, LLC.
+ <br>
+ <A HREF="about.htm"><SPAN CLASS="ITALIC4">
+ 
+ Copyright &copy; 1987 - 2019</SPAN>
+ </A> - 
+ <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#104;&#105;&#108;&#105;&#112;&#64;&#115;&#97;&#103;&#101;&#100;&#105;&#97;&#103;&#114;&#97;&#109;&#46;&#99;&#111;&#109;"><SPAN CLASS="ITALIC4">SageDiagram, LLC.</SPAN></a> 
+ <BR>All Rights Reserved.
+
+<br>&nbsp;<br>
+ [ <A HREF="#topOfPage"><SPAN CLASS="STD1">top of page</SPAN></A> ]
+</SPAN>
+</div>
+</BODY>
+</HTML>

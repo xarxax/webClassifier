@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/Master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <!-- InstanceBeginEditable name="EditRegion1" -->
+    <title>Hotel Property Management Software Systems | Hotel Reservation PMS</title>
+    <meta name="description"
+          content="#1 Trusted Hotel Property Management Software. Perfect for Hotel Booking, Reservations and More! Anand Systems (ASI) Provides A Robust Software Solution For Those In the Hospitality Industry. Learn More TODAY!" />
+    <meta name="keywords"
+          content="hotel management software, hotel pms, hotel reservation software, hotel management companies, hotel property management software, hotel pms software, hotel pms systems, hotel property management systems, software hotel, hotel management system, hotel management" />
+    <meta name="robots" content="FOLLOW,INDEX" />
+    <meta name="robots" content="noodp,noydir" />
+    <link href="https://plus.google.com/113744990233710852290" rel="publisher" />
+    <meta name="msvalidate.01" content="C46BD148E991BBDFB810893807286FDA" />
+    <link rel="publisher"
+          href="https://plus.google.com/107970749499503605481" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" type="text/css"
+          href="css/jquery.fancybox-1.3.4.css" media="screen" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/demo.css" type="text/css"
+          media="screen" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css"
+          media="screen" />
+    <script type="text/javascript" src="js/jquery.min.js" />
+    <script type="text/javascript"
+            src="https://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            var currentPosition = 0;
+            var slideWidth = 970;
+            var slides = $('.slide');
+            var numberOfSlides = slides.length;
+
+            // Remove scrollbar in JS
+            $('#slidesContainer').css('overflow', 'hidden');
+
+            // Wrap all .slides with #slideInner div
+            slides
+    .wrapAll('<div id="slideInner"></div>')
+            // Float left to display horizontally, readjust .slides width
+	.css({
+	    'float': 'left',
+	    'width': slideWidth
+	});
+
+            // Set #slideInner width equal to total width of all slides
+            $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+            // Insert controls in the DOM
+            $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
+    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+
+            // Hide left arrow control on first load
+            manageControls(currentPosition);
+
+            // Create event listeners for .controls clicks
+            $('.control')
+    .bind('click', function () {
+        // Determine new position
+        currentPosition = ($(this).attr('id') == 'rightControl') ? currentPosition + 1 : currentPosition - 1;
+
+        // Hide / show controls
+        manageControls(currentPosition);
+        // Move slideInner using margin-left
+        $('#slideInner').animate({
+            'marginLeft': slideWidth * (-currentPosition)
+        });
+    });
+
+            // manageControls: Hides and Shows controls depending on currentPosition
+            function manageControls(position) {
+                // Hide left arrow if position is first slide
+                if (position == 0) { $('#leftControl').hide() } else { $('#leftControl').show() }
+                // Hide right arrow if position is last slide
+                if (position == numberOfSlides - 1) { $('#rightControl').hide() } else { $('#rightControl').show() }
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <!-- Wrapper Starts Here  -->
+    <div id="wrapper">
+        <!--   Header Starts Here  -->
+        <div id="header">
+            <div class="logo_box">
+                <a href="https://www.anandsystems.com/">
+                    <img src="images/asi_logo.png" alt="Hotel Management Software Company"
+                         title="Hotel &amp; Motel Management Software Solution By Anand systems"
+                         width="350" height="64" border="0" />
+                </a>
+            </div>
+            <div class="header_right_container">
+                <div class="call_us">
+                    <div class="email">
+                        E-mail : info@AnandSystems.com <br />
+                        Phone : 1-800-431-4786
+                    </div>
+                </div>
+                <div class="top_links">
+                    <ul>
+                        <li>
+                            <a onclick="javascript: window.open('https://messenger.providesupport.com/messenger/asi247.html','_blank','width=743,height=680');"
+                               href="#">
+                                <img border="0" alt="Live Chat"
+                                     src="images/icon_chat.png" />
+                            </a> <a onclick="javascript: window.open('https://messenger.providesupport.com/messenger/asi247.html','_blank','width=743,height=680');"
+                                    href="#">Live Chat</a>
+                        </li>
+                        <li>
+                            <a href="hospitality/contactus.htm">
+                                <img border="0"
+                                     alt="Online Support" src="images/icon_support.png" />
+                            </a> <a href="hospitality/contactus.htm">Support</a>
+                        </li>
+                        <li>
+                            <a href="hotel_software/download_free_pms.htm">
+                                <img border="0" alt="Download" src="images/icon_download.png" />
+                            </a> <a href="hotel_software/download_free_pms.htm">Download</a>
+                        </li>
+                        <li>
+                            <a href="regions.htm">
+                                <img border="0" alt="Regions"
+                                     src="images/flag_usa.png" />
+                            </a> <a style="background: none;"
+                                    href="regions.htm">Languages</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!--  Header Ends Here  --> <!--  Navigation Starts Here -->
+        <div id="navigation_wrapper">
+            <div class="navigation">
+                <ul class="nav">
+                    <li><a id="Home" href="https://www.anandsystems.com/">Home</a></li>
+                    <li>
+                        <a id="hotel_software"
+                           href="hotel_software/hotel_software.htm">Desktop Hotel Software</a>
+                    </li>
+                    <li>
+                        <a id="cloud_sass_hotel_software"
+                           href="asi_cloud/cloud_sass_hotel_software.htm">
+                            Cloud Hotel
+                            Software
+                        </a>
+                    </li>
+                    <li>
+                        <a id="internet_reservation_software"
+                           href="online_reservation_software/internet_reservation_software.htm">
+                            Online
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a id="point_of_sale" href="hotel_software/point_of_sale.htm">
+                            Point
+                            of Sale Software
+                        </a>
+                    </li>
+                    <li><a id="services" href="services.htm">Services</a></li>
+                    <li>
+                        <a id="pricing_frontdesk_software"
+                           href="hotel_software/pricing_frontdesk_software.htm">Pricing</a>
+                    </li>
+                    <li><a id="inquireus" href="hospitality/inquireus.htm">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="clr"></div>
+        <!-- Navigation Ends Here  -->
+        <!-- InstanceBeginEditable name="EditRegion2" --> <!-- Banner Starts Here -->
+        <div id="banner_wrapper">
+            <div id="banner">
+                <div id="slider_div">
+                    <div class="tabcontainerpan">
+                        <div class="leftnavpan">
+                            <div class="asifrontdesk_title">
+                                <img src="images/asifrontdesk.png"
+                                     width="188" height="53" alt="asifrontdesk" />
+                            </div>
+                            <ul>
+                                <li class="active" id="soft">
+                                    <div class="software">Software</div>
+                                </li>
+                                <li id="hard">
+                                    <div class="hardware">Hardware</div>
+                                </li>
+                                <li id="going">
+                                    <div class="going">Going Independent</div>
+                                </li>
+                                <li id="inter">
+                                    <div class="interfaces">Interfaces</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rightsliderpan">
+                            <div class="slidepan1">
+                                <div id="main" role="main">
+                                    <div class="slider">
+                                        <div class="slider_div flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">Desktop and Cloud (SaaS)</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>
+                                                                    ASI FrontDesk Hospitality Suites available as Desktop Edition
+                                                                    and Cloud Edition (SaaS)
+                                                                </li>
+                                                                <li>
+                                                                    Comprehensive software system for management of Hotels,
+                                                                    Motels, B&B's, Resorts, Hostel, Service Apartment, Guest House etc
+                                                                    kind of rental activities
+                                                                </li>
+                                                                <li>Integrated hotel website reservation module</li>
+                                                                <li>ASI Hotel Website online hotel reservation software</li>
+                                                                <li>
+                                                                    Integrated Point of Sale (POS) module for Restaurant, Bar,
+                                                                    Gift Shop etc.
+                                                                </li>
+                                                                <li>Integrated real-time credit card processing</li>
+                                                                <li>Integrated Call Accounting &amp; Electronic Door Lock module</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/screenshotd_combine_screens.png" width="357" height="350"
+                                                             alt="Desktop and Cloud (SaaS)" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">
+                                                            ASI FrontDesk <span style="font-family: 'Brush Script MT'; font-weight: normal; font-size: 22px;">
+                                                                Hotel Software
+                                                            </span>
+                                                        </div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Very easy to use and configurable as per property</li>
+                                                                <li>Single click Reservation, Check-In &amp; Check-Out operation</li>
+                                                                <li>Hourly, Daily, Monthly and Yearly rental options</li>
+                                                                <li>Flexible rate management &amp; reservation restrictions</li>
+                                                                <li>Group, Direct Billing &amp; Travel Agent contract options</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/tpechart.png"
+                                                             width="357" height="350" alt="ASI FrontDesk Hotel Software" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">Website Reservation Engine</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Reservation Engine Match with website Theme</li>
+                                                                <li>Mobile Reservation Interface</li>
+                                                                <li>
+                                                                    Room Type Wise SouldOut, Arrival/Departure, Minimum/Maximum
+                                                                    Nights
+                                                                </li>
+                                                                <li>Multiple Rate Type with Corporate &amp; Travel Agent Rate</li>
+                                                                <li>Email &amp; Fax (USA) Confirmation</li>
+                                                                <li>Optional Paid Services</li>
+                                                                <li>Apply Promotion &amp; Package on individual Room Type</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/roomveiw.png"
+                                                             width="357" height="350" alt="Website Reservation Engine" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <!--<div class="slider_content"><br /><br /><br /><br /><br /><br />
+                                                                                                <div class="yellow_text_title">GDS / IDS &amp; OTA </div><br />
+                                                                                                <div class="slider_content_text">
+                                                                                                <p align="left">
+                                                                                               Flash View Inventory, gives the detail about available inventory for each room type for 1 week to 5 weeks period at anytime. It also provides the availability chart for getting visualize idea about occupancy position for the property. Result of this view is exportable to many popular data formats.
+                                                                                                </p>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                                <div class="slider_img"><br /><br />
+                                                                                                <img src="images/flashview.png" width="354" height="277" />
+                                                                                                <div class="clr"></div></div>-->
+                                                    <div style="width: 702px; height: 350px; padding-top: 40px;">
+                                                        <img src="images/ota_gds_logo.png" alt="Hotel Software Two Way Interfaces" />
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">ASI Point of Sale</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Very easy to use in Keyboard/Mouse and Touchscreen mode</li>
+                                                                <li>
+                                                                    Completely configurable for Restaurant, Bar, Room Service
+                                                                    etc. activity
+                                                                </li>
+                                                                <li>
+                                                                    Menu definition with item &amp; category images and happy hours
+                                                                    operation
+                                                                </li>
+                                                                <li>Single Click KOT &amp; Sale operation with inventory management</li>
+                                                                <li>
+                                                                    Interface with Kitchen Printer, Bar Code Reader, Cash Drawer
+                                                                    etc. POS hardware
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/listview.png"
+                                                             width="357" height="350" alt="ASI Point of Sale" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidepan2">
+                                <div id="main" role="main">
+                                    <div class="slider">
+                                        <div class="slider_div flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">ID &amp; Passport Scanner</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Scan driving license &amp; ID card of all USA and Canada</li>
+                                                                <li>Scan all computerized passport</li>
+                                                                <li>Works well with Canada Health card and Mexico ID</li>
+                                                                <li>Works well with 45 country driving license</li>
+                                                                <li>Scan and fill guest information in 10 seconds</li>
+                                                                <li>Makes check-in process fast, accurate and secure</li>
+                                                                <li>Very useful for legal records and credit card dispute</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/idcard_reader.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br /> <br /> <br /> <br />
+                                                        <br /> <br />
+                                                        <div class="yellow_text_title">Swipe Card Reader</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Works with all Credit Card and Debit Card</li>
+                                                                <li>Works well with ID with magnetic strips</li>
+                                                                <li>Makes card collection fast, accurate and secure</li>
+                                                                <li>Online Credit Card processing as “Card Present” transaction</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/swapcard_reader.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br /> <br /> <br /> <br />
+                                                        <br /> <br />
+                                                        <div class="yellow_text_title">Signature Pad</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Make paperless check-in process</li>
+                                                                <li>Very useful for credit card dispute</li>
+                                                                <li>Print any folio anytime with guest signature</li>
+                                                                <li>
+                                                                    Store unlimited folio &amp; registration card with guest
+                                                                    signature for lifetime.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/signaturepad.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">Computers</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Business series computer with 1 year onsite warranty</li>
+                                                                <li>Intel i3 or higher processor with graphics card</li>
+                                                                <li>High performance memory and hard drive</li>
+                                                                <li>All-In-One computer (No CPU)</li>
+                                                                <li>Windows 10 / 8 / 7 / XP</li>
+                                                                <li>Combo Package for best deal</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/computers_img.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">Point of Sale Station</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>World leading ELO brand All-In-One touch unit.</li>
+                                                                <li>High performance touch screen display</li>
+                                                                <li>Fan less CPU (No noise in restaurant / bar)</li>
+                                                                <li>Integrated swipe card reader for Credit Card</li>
+                                                                <li>20+ interface port</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/pos_station.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidepan3">
+                                <div id="main" role="main">
+                                    <div class="slider">
+                                        <div class="slider_div flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">Going Independent</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Hotel Management &amp; POS Software</li>
+                                                                <li>Website &amp; Logo Design Service</li>
+                                                                <li>Website Search Engine Optimization (SEO) Service</li>
+                                                                <li>
+                                                                    Hotel listing on popular OTA’s like Expedia, Booking.com,
+                                                                    Orbitz, etc.
+                                                                </li>
+                                                                <li>
+                                                                    Hotel listing on GDS to reach to every single IATA registered
+                                                                    travel agents.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/going_independent.png"
+                                                             width="357" height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slidepan4">
+                                <div id="main" role="main">
+                                    <div class="slider">
+                                        <div class="slider_div flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">OTA (Online Travel Agencies)</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Real time 2-way direct OTA interface from PMS</li>
+                                                                <li>No Channel Management required</li>
+                                                                <li>No Central Reservation System required</li>
+                                                                <li>No Pass-Through fees for OTA reservations</li>
+                                                                <li>No third party commission</li>
+                                                                <li>50+ popular reservation engine provider</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/ota_img.png" width="357"
+                                                             height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="slider_content">
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <br />
+                                                        <div class="yellow_text_title">GDS (Global Distribution System)</div>
+                                                        <br />
+                                                        <div class="slider_content_text">
+                                                            <ul>
+                                                                <li>Real time 2-way direct GDS interface from PMS</li>
+                                                                <li>No GDS commission plan</li>
+                                                                <li>No PMS interface fees</li>
+                                                                <li>No Contract</li>
+                                                                <li>
+                                                                    Hotel listing with Sabre, Pegasus, Amadeus, Worldspan &amp;
+                                                                    Galileo
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider_img">
+                                                        <img src="images/gds_img.png" width="357"
+                                                             height="350" alt="" />
+                                                        <div class="clr"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="news_div">
+                    <div class="news_title"><a href="hospitality/news_releases.htm">News</a></div>
+                    <div class="news_text_div">
+                        ASI announces release ASI FrontDesk & TripAdvisor - 2 Way Integration, <a href="hospitality/news_releases.htm">click for more information</a>
+                    </div>
+                    <div class="blog">
+                        <a href="https://www.anandsystems.com/blog"
+                           target="_blank"><img src="images/blog_icon.jpg" border="0" alt="" /></a>
+                    </div>
+                    <div id="connect">
+                        <a href="https://www.facebook.com/AnandSystems"
+                           target="_blank">
+                            <img src="images/icon_facebook.png" alt=""
+                                 width="28" height="28" border="0" />
+                        </a>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!--  Banner Ends Here -->
+        <!-- Special tab Starts Here -->
+        <div id="special_wrapper">
+            <div id="special">
+                <span class="special_title_text">
+                    <!--<h1>Hotel Management Software System - ASI FrontDesk</h1> -->
+                    <h1>Hotel Property Management Software Systems</h1>
+                </span>
+            </div>
+        </div>
+        <!-- Special tab Ends Here --> <!-- Four Areas of ASI Starts Here -->
+        <div id="four_area_box">
+            <!-- #BeginLibraryItem "/Library/Two_Way_Interface.lbi" -->
+            <div class="coman_area_box">
+                <div class="coman_area_icon">
+                    <img src="images/two_way_icon.png"
+                         width="66" height="66" alt="" />
+                </div>
+                <div class="coman_area_title">Two Way Interface</div>
+                <div class="two_way_content">
+                    <img src="images/logos1.gif"
+                         width="188" height="114" alt="" />
+                </div>
+                <div class="learn_more_btn">
+                    <a href="two_way_interface/ota_channel_management_software.html"
+                       target="_parent">
+                        <img src="images/learn_more.png" alt=""
+                             width="172" height="33" border="0" />
+                    </a>
+                </div>
+            </div>
+            <!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/Do_you_own_operate_multiple_properties_2.lbi" -->
+            <div class="coman_area_box">
+                <div class="coman_area_icon">
+                    <img src="images/multiple_properties.png" width="66" height="66" alt="" />
+                </div>
+                <div class="coman_area_title">
+                    Do you own/operate multiple
+                    properties?
+                </div>
+                <div class="muliple_propertie_content">
+                    <p align="left">
+                        Please check out our OPDC proudct. This product will
+                        allow you to track or manage revenue, budget, payroll, housekeeping
+                        etc., from your management office or a central location.
+                    </p>
+                </div>
+                <div class="learn_more_btn">
+                    <a href="property_management_software/reporting_software.htm"
+                       target="_parent">
+                        <img src="images/learn_more.png" alt=""
+                             width="172" height="33" border="0" />
+                    </a>
+                </div>
+            </div>
+            <!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/Untitled.lbi" -->
+            <div class="coman_area_box">
+                <div class="coman_area_icon">
+                    <img src="images/asi_cloud.png"
+                         width="66" height="66" alt="" />
+                </div>
+                <div class="coman_area_title">ASI Cloud (SaaS)</div>
+                <div class="asi_cloud_content">
+                    <ul style="text-align: left;">
+                        <li>Lower Initial Cost with Highest Data Security</li>
+                        <li>Rich Software Interface from Anywhere</li>
+                        <li>
+                            Works with Windows Computer &amp; Tablets, Apple Mac &amp;
+                            iPad and Google Android Tablets
+                        </li>
+                    </ul>
+                </div>
+                <div class="learn_more_btn">
+                    <a href="asi_cloud/cloud_sass_hotel_software.htm" target="_parent">
+                        <img src="images/learn_more.png" alt="" width="172" height="33" border="0" />
+                    </a>
+                </div>
+            </div>
+            <!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/Combo_Package.lbi" -->
+            <div class="coman_area_box">
+                <div class="coman_area_icon">
+                    <img src="images/combo_package.png"
+                         width="66" height="66" alt="" />
+                </div>
+                <div class="coman_area_title">Combo Package</div>
+                <div class="cp_content">
+                    <p align="justify">
+                        ASI offers complete combo package for hardware,
+                        software &amp; interfaces. Best value package available for complete
+                        turnkey solution for your PMS / POS need.
+                    </p>
+                    <br />
+                    <span class="red">
+                        <a href="hotel_software/hotel_software_hardware_combo.htm"
+                           target="_parent">Hotel Software (PMS) Combo</a>
+                    </span><br />
+                    <span class="red">
+                        <a href="hotel_software/point_of_sale.htm"
+                           target="_parent">Point of Sale Software Combo</a>
+                    </span>
+                    <div class="learn_more_btn">
+                        <a href="hotel_software/hotel_software_hardware_combo.htm"
+                           target="_parent">
+                            <img src="images/learn_more.png" alt=""
+                                 width="172" height="33" border="0" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- #EndLibraryItem -->
+            <div class="clr"></div>
+        </div>
+        <!-- Four Areas of ASI Starts Here --> <!-- General Information Starts Here -->
+        <div id="general_info">
+            <div class="bulet">
+                <img src="images/blue_bulet.png" width="27"
+                     height="21" alt="" />
+            </div>
+            <div class="general_info_title_text">
+                <h2 style="font-size: 26px; color: #000; font-weight: bold;">ASI FrontDesk Hotel Management Software</h2>
+            </div>
+            <div class="clr"></div>
+            <div class="general_info_content">
+                <p>
+                    Anand Systems offers a comprehensive <a href="https://www.anandsystems.com/hotel_software/hotel_software.htm" style="color: #044C7E;">Hotel Software</a> suite
+                    consisting of integrated modules for Hotel Management Software, Hotel
+                    Reservation Software, Booking Engine Software, CRS software, <a href="https://www.anandsystems.com/hotel_software/point_of_sale.htm" style="color: #044C7E;">
+                        Point Of
+                        Sale Software
+                    </a>, etc.
+                </p>
+            </div>
+        </div>
+        <!-- General Information Ends Here  --> <!-- Product Slider Starts here -->
+        <div id="product_slider">
+            <div id="pageContainer">
+                <!-- Slideshow HTML -->
+                <div id="slideshow">
+                    <div id="slidesContainer">
+                        <div class="slide">
+                            <div class="img_container" style="padding-top: 20px;">
+                                <img src="images/cd11.gif" width="103" height="138"
+                                     alt="Software - Motel Software" /> <br />
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="purpletext" align="center">
+                                            <a href="hotel_software/pricing_frontdesk_software.htm">
+                                                <strong>
+                                                    Starting
+                                                    from $300 USD
+                                                </strong>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="text_container">
+                                <div class="slider_product_title">
+                                    <h3>ASI FrontDesk Hotel Motel, Property Management Software (PMS)</h3>
+                                </div>
+                                <p align="justify">
+                                    For hotel industry, we have introduced
+                                    easy-to-use <b>hotel software</b>, known as ASI FrontDesk. A perfect
+                                    software solution for hospitality industry, this comprehensive software
+                                    suite comes integrated with modules for many aspects of hotel
+                                    management. Often referred as Property Management System in the
+                                    hospitality industry, this special class of software is ideally suited
+                                    for use at hotels, military guest houses, motels, resorts, inns, lodges,
+                                    hostel, suites, ranch, apartments, medical centers and bed and breakfast
+                                    operations. A few of the important modules that come built-in the PM
+                                    Software are: <b>Hotel Management Software</b>, Hotel Reservation
+                                    Software (Billing Software), Hotel PMS, Hotel Reception Software and Hotel
+                                    accounting software. All the modules and programs in this lodging
+                                    software are closely incorporated and come at no additional cost.<br />
+                                    Fully compatible with Microsoft Windows operating system (OS), the motel
+                                    management software, all in all, is a general purpose <b>
+                                        hospitality
+                                        software
+                                    </b> and improves the experience of both guest as well as host. This
+                                    hotel reservation software accept commission free unlimited reservation
+                                    from your website.
+                                </p>
+                                <div class="product_detail_read_more" style="padding-bottom: 10px;">
+                                    <a href="hotel_software/hotel_software.htm">
+                                        <img src="images/read_more_slider_btn.jpg" width="135" height="28"
+                                             border="0" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="slide">
+                            <div class="img_container" style="padding-top: 28px;">
+                                <img src="images/d2.jpg" width="124" height="95"
+                                     alt="Hotel Reservation Software" />
+                            </div>
+                            <div class="text_container">
+                                <div class="slider_product_title">
+                                    <h3>Hotel Reservation Software for your website - Booking Engine</h3>
+                                </div>
+                                <p align="justify">
+                                    ASI offers online hotel reservation software for
+                                    your hotel website. Reservations from your Hotel website are commission.
+                                    This is system is tightly integrated with ASI FrontDesk and provide real
+                                    time 2-way interface for inventory, rate &amp; reservation synchronization.
+                                    This booking engine also tightly integrated with TripAdvisor connect &amp;
+                                    Google Hotel Price Ads (HPA).
+                                </p>
+                                <div class="product_detail_read_more">
+                                    <a href="online_reservation_software/internet_reservation_software.htm">
+                                        <img src="images/read_more_slider_btn.jpg" width="135" height="28"
+                                             border="0" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="slide">
+                            <div class="img_container" style="padding-top: 10px;">
+                                <img src="images/d3.jpg" width="115" height="146"
+                                     alt="Software - Motel Software" />
+                            </div>
+                            <div class="text_container">
+                                <div class="slider_product_title">
+                                    <h3>ASI CRS - Direct Interface to GDS, OTA, IDS &amp; Wholesalers</h3>
+                                </div>
+                                <p align="justify">
+                                    ASI CRS is the most comprehensive hotel industry
+                                    tool to manage your 3rd party hotel motel reservations. ASI CRS offers
+                                    connection with OTA interfaces of Expedia, Hotels.com, Priceline,
+                                    Booking.com, Orbitz, RatesToGo, CheapTickets, eBooker, Hotwire and many
+                                    more. ASI CRS OTA interface is commission free to hotel owners, meaning
+                                    no pass-through fees as well as no limit on number of reservations,
+                                    which results in a significant cost saving for hotel operators. ASI CRS
+                                    also offers a tight seamless direct 2-way interface to all major Global
+                                    Distribution Systems (GDS) worldwide such as Pegasus, Sabre, Galileo,
+                                    Amadeus and others. There are no monthly PMS interface fees for
+                                    connections to GDS from our ASI CRS. Our GDS per reservation commission
+                                    fee structure is also the lowest in hotel reservation industry. ASI
+                                    offers this unique product, making our ASI FrontDesk Hotel Motel
+                                    Software the most popular product in hotel motel industry.
+                                </p>
+                                <div class="product_detail_read_more">
+                                    <a href="online_reservation_software/GDS-IDS.htm">
+                                        <img src="images/read_more_slider_btn.jpg" width="135" height="28"
+                                             border="0" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="slide">
+                            <div class="img_container" style="padding-top: 28px;">
+                                <img src="images/d4.jpg" width="122" height="93"
+                                     alt="POS Software - Point Of Sale Software" />
+                            </div>
+                            <div class="text_container">
+                                <div class="slider_product_title">
+                                    <h3>ASI Point of Sale - Point of Sale Software (POS)</h3>
+                                </div>
+                                <p align="justify">
+                                    ASI-POS is general purpose Point of Sale software
+                                    that tracks sales of retail outlets. It can be used at Hotels,
+                                    Restaurants, Bar, Resorts, Night Club, Theme Parks, Cruise Ships and
+                                    Retail Shops to manage all kind of Point of Sale (POS) activity. ASI-POS
+                                    is a standalone independent application. ASI POS tightly integrated with
+                                    Anand Systems, ASI FrontDesk. You can post all changes from your POS
+                                    centers to PMS Software.
+                                </p>
+                                <div class="product_detail_read_more">
+                                    <a href="hotel_software/point_of_sale.htm">
+                                        <img src="images/read_more_slider_btn.jpg" width="135" height="28"
+                                             border="0" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="slide">
+                            <div class="img_container" style="padding-top: 28px;">
+                                <img src="images/d5.jpg" width="173" height="98"
+                                     alt="Hotel Management Software" />
+                            </div>
+                            <div class="text_container">
+                                <div class="slider_product_title">
+                                    <h3>OPDC - Multiple Property Data Collection Software</h3>
+                                </div>
+                                <p align="justify">
+                                    We also offer OPDC, online property data colle
+                                    ction tool for hotel management companies to manage a group of hotels.
+                                    This software for hotel management companies constitutes of easy to use
+                                    tools to retrieve, store and analyze operational data to monitor and
+                                    compare performances of hotels.
+                                </p>
+                                <div class="product_detail_read_more">
+                                    <a href="property_management_software/reporting_software.htm">
+                                        <img src="images/read_more_slider_btn.jpg" width="135" height="28"
+                                             border="0" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slideshow HTML -->
+            </div>
+        </div>
+        <!--  Product Slider Ends here --> <!-- InstanceEndEditable -->
+        <!-- Footer Starts here -->
+        <div id="footer_wrapper">
+            <div id="footer">
+                <div class="quick_links">
+                    <div class="quick_links_title">Quick Links</div>
+                    <ul>
+                        <li>
+                            <a href="hotel_software/hospitality_front_desk_software.htm">
+                                ASI
+                                FrontDesk Hotel Software
+                            </a>
+                        </li>
+                        <li>
+                            <a href="online_reservation_software/internet_reservation_software.htm">
+                                Hotel
+                                Website Reservation Software
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hotel_software/point_of_sale.htm">
+                                ASI Point of
+                                Sale (POS) Software
+                            </a>
+                        </li>
+                        <li>
+                            <a href="property_management_software/reporting_software.htm">
+                                Multiple
+                                Property Data<br />
+                                Collection Software
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hospitality/hospitality_resellers.htm">
+                                Alliances/
+                                Resellers
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="sitemap">
+                    <div class="sitemap_title">Sitemap</div>
+                    <ul>
+                        <li><a href="https://www.anandsystems.com/">Home</a></li>
+                        <li><a href="hospitality/aboutus.htm">About Us</a></li>
+                        <li><a href="hospitality/inquireus.htm">Contact</a></li>
+                        <li><a href="hospitality/sitemap.htm">Sitemap</a></li>
+                        <li><a href="hospitality/privacy.htm">Disclaimer</a></li>
+                        <li><a href="hospitality/terms.html">Terms Of Use</a></li>
+
+                    </ul>
+
+                </div>
+                <!-- InstanceBeginEditable name="EditRegion5" -->
+                <div class="bottom_about">
+                    <div class="bottom_about_title">About Us</div>
+                    <p align="justify" style="line-height: 20px;">
+                        Anand Systems Inc
+                        (ASI) was founded in 1998 with headquarters in Tracy, CA, USA. With our
+                        humble beginnings with 4 installations in San Francisco Bay Area, we
+                        have come a long way with installations in over 160 countries. Our goal
+                        has been to provide a complete one-stop solution for hoteliers for all
+                        their technical requirements.
+                    </p>
+                    <br />
+                    <p align="left">
+                        <a href="hospitality/aboutus.htm"
+                           style="color: #FFFFFF;">Read More ...</a>
+                    </p>
+                    <g:plusone></g:plusone>
+                    <div style="width: 350px; float: right;">
+                        <div class="seo_breadcrumb" style="text-align: center;">
+                            <div xmlns:v="http://rdf.data-vocabulary.org/#">
+                                <span typeof="v:Breadcrumb">
+                                    <a rel="v:url" property="v:title"
+                                       href="https://www.anandsystems.com/">Anand Systems Inc.</a>
+                                </span> <span typeof="v:Breadcrumb">
+                                    <a rel="v:url" property="v:title"
+                                       href="https://www.anandsystems.com/hotel_software/point_of_sale.htm">
+                                        ASI Restaurant POS Software
+                                    </a>
+                                </span> <span typeof="v:Breadcrumb">
+                                    <a rel="v:url" property="v:title"
+                                       href="https://www.anandsystems.com/asi_cloud/cloud_sass_hotel_software.htm">
+                                        AS I cloud property management software
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- InstanceEndEditable -->
+                <div class="clr"></div>
+
+            </div>
+
+        </div>
+        <div class="clr"></div>
+        <!-- Footer Ends here --> <!-- Disclimer Starts Here -->
+        <div id="disclimer_wrapper">
+            <div id="disclimer_div">
+                Disclaimer: All logo's and trademarks
+                owned by their respective organizations, no special affiliations are
+                claimed.
+            </div>
+        </div>
+
+        <!-- Disclimer Ends Here --> <!-- Copyright Div Starts Here -->
+
+        <div id="copy_right_div">
+            <div class="copy_right">
+                Copyright 1998-
+                <script type="text/javascript">document.write(new Date().getFullYear());</script><span class="bottom_link">
+                    <a href="https://www.anandsystems.com/"
+                       target="_blank">Anand Systems Inc</a>.
+                </span> All rights reserved.
+            </div>
+
+            <div class="clr"></div>
+
+        </div>
+
+        <!--   Copyright Div Ends Here  -->
+    </div>
+    <!--   Wrapper Ends Here   -->
+    <!-- BEGIN ProvideSupport.com Text Chat Link Code -->
+    <div id="ci85Uu" style="z-index: 100; position: absolute"></div>
+    <font color="blue">
+        <div id="sc85Uu" style="display: none"></div>
+        <div id="sd85Uu" style="display: none"></div>
+        <script type="text/javascript">var se85Uu = document.createElement("script"); se85Uu.type = "text/javascript"; var se85Uus = (location.protocol.indexOf("https") == 0 ? "https" : "http") + "://image.providesupport.com/js/asi247/safe-textlink.js?ps_h=85Uu\u0026ps_t=" + new Date().getTime() + "\u0026online-link-html=Click%20Here%20-%20Agent%20Online\u0026offline-link-html=Live%20Chat%20Offline"; setTimeout("se85Uu.src=se85Uus;document.getElementById('sd85Uu').appendChild(se85Uu)", 1)</script>
+        <noscript>
+            <div style="display: none">
+                <a href="https://www.providesupport.com?messenger=asi247">
+                    Online
+                    Support Chat
+                </a>
+            </div>
+        </noscript>
+    </font>
+    <!-- END ProvideSupport.com Text Chat Link Code -->
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 816860;
+        var sc_invisible = 1;
+        var sc_security = "678d96bd";
+        var sc_https = 1;
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="web stats"
+               href="http://statcounter.com/free-web-stats/"
+               target="_blank">
+                <img class="statcounter"
+                     src="https://c.statcounter.com/816860/0/678d96bd/1/" alt="web
+stats" />
+            </a>
+        </div>
+    </noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <script src="https://www.google-analytics.com/urchin.js"
+            type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-3119470-1";
+        urchinTracker();
+    </script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-3671925-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript" language="javascript">
+        var sc_project = 816860;
+        var sc_partition = 4;
+        var sc_security = "678d96bd";
+    </script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpcf7 = { "loaderUrl": "http:\/\/bma.in\/anand_systems\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "sending": "Sending ..." };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type="text/javascript">
+        //$('#slideshow').slideshow({
+        //    timeout: 2000,
+        //    fadetime: 2000,
+        //    type: 'sequence',
+        //    pauselink: 'pause2'
+
+        //});
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#mycarousel').jcarousel();
+            jQuery('#mycarouse2').jcarousel();
+            document.getElementById('hardware').style.visibility = 'hidden';
+
+
+        });
+
+    </script>
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+
+        $(function () {
+
+            $('#slideshow').cycle({
+                fx: 'turnDown',
+                timeout: 2000,
+                delay: -1000
+            });
+
+            $('#slideshowgds').cycle({
+                fx: 'turnDown',
+                timeout: 2000,
+                delay: -1000
+            });
+
+        });
+    </script>
+    <script src="js/HeaderClassAssign.js" type="text/javascript"></script>
+    <!-- InstanceEndEditable -->
+    <div style="display: none;">
+        <div itemscope=itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">Anand Systems</span> Located at
+            <div itemprop="address" itemscope=itemscope
+                 itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">35 E 10th ST STE F</span>, <span itemprop="addressLocality">Tracy</span>, <span itemprop="addressRegion">California</span>.
+            </div>
+            <img itemprop="logo"
+                 src="https://www.anandsystems.com/images/asi_logo.png" /> Phone: <span itemprop="telephone">1-800-431-4786</span> <a href="https://www.anandsystems.com/" itemprop="url">http://www.anandsystems.com/</a>
+        </div>
+    </div>
+
+    <div id="dvPolicy" class="policy-wrapper">
+        <div class="policy-subject">By continuing to use this website you agree to the use of cookies according to our privacy policy. <a href="terms.htm" target="_blank" style="color:#fff; text-decoration:underline">Learn more</a></div>
+        <a href="javascript:void(0);" onclick="hidePolicy();" class="btn-deny">Deny</a>
+        <a href="javascript:void(0);" onclick="acceptPolicy();" class="btn-accept">Accept</a>
+    </div>
+
+</body>
+<!-- InstanceEnd -->
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Culross Global</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/lib/semantic-ui/dist/semantic.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/cg.css" />
+</head>
+<body class="pushable">
+
+    <div class="ui vertical inverted sidebar blue menu left">
+        <a class="item active" href="/">Home</a>
+        <a class="item" href="/about">About Us</a>
+        <a class="item" href="/team">Team</a>
+        <a class="item" href="/funds">Funds</a>
+        <a class="item" href="/wealthmanagement">Wealth Management</a>
+        <a class="item" href="/contact">Contact</a>
+            <a class="item" href="/account/login"><i class="icon user"></i> Login</a>
+    </div>
+    <div class="pusher">
+        <div class="ui vertically padded grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui container">
+                        <div class="ui small image">
+                            <a href="/">
+                                <img src="/img/CulrossLogo.png" alt="Culross Global Logo" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui large secondary inverted blue main menu">
+                        <div class="ui container">
+                            <a class="toc item">
+                                <i class="sidebar icon"></i>
+                            </a>
+                            <a class="item active" href="/">Home</a>
+                            <a class="item" href="/about">About Us</a>
+                            <a class="item" href="/team">Team</a>
+                            <div class="ui dropdown item " id="servicesDropdown">
+                                Services <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item"><a class="item" href="/funds">Funds</a></div>
+                                    <div class="item"><a class="item" href="/wealthmanagement">Wealth Management</a></div>
+                                </div>
+                            </div>                            
+                            <a class="item" href="/contact">Contact</a>
+                            <div class="right menu">
+                                    <a class="item" href="/account/login"><i class="icon user"></i> Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainContent">
+            
+<div class="ui fluid image removeTopMargin extraBottomMargin">
+    <img src="/img/Malta.jpg" alt="Picture of Malta" class="cgImage" />
+</div>
+
+<div class="ui stackable equal width vertically padded relaxed grid justified container">
+    <div class="row">
+        <div class="column">
+            <h1 class="ui header left aligned darkblue">Welcome to Culross Global</h1>
+        </div>
+    </div>
+    <div class="row extraBottomMargin">
+        <div class="column">
+            <p class="large text">
+                Culross Global is an independent asset management firm founded in London in 1992.  
+                We serve a diversified investor base of institutional and high net worth investors, 
+                for whom we manage a range of funds and wealth management solutions with tailored risk and return objectives.
+            </p>
+        </div>
+        <div class="column">
+            <p class="large text">
+                We launched our flagship fund, the Culross Global Fund, in 2000.  
+                We are proud of the fund’s 19 year track record during which it has won numerous industry awards.
+            </p>
+        </div>
+    </div>
+    <div class="row extraBottomMargin">
+        <div class="column">
+            <a href="/funds/CGLO">
+                <div class="ui blue inverted center aligned shoutout segment">
+                    <h2 class="ui header">Culross Global Fund</h2>
+                    <p>Our flagship fund launched in 2000</p>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/funds/CADF">
+
+                <div class="ui blue inverted center aligned shoutout segment">
+                    <h2 class="ui header">Culross Absolute Defensive Fund</h2>
+                    <p>Our conservative fund launched in 2001</p>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="/funds/CGMF">
+
+                <div class="ui blue inverted center aligned shoutout segment">
+                    <h2 class="ui header">PPF II - Culross Global Macro Fund</h2>
+                    <p>Our UCITS compliant fund launched in 2017</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="ui vertically padded footer grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui large secondary inverted blue stackable cgFooter menu">
+                        <div class="ui container">
+                            <a class="item" href="/home/terms">Terms of Use</a>
+                            <a class="item" href="/home/privacy">Privacy and Cookies Policy</a>
+                            <a class="item" href="/home/disclosures">Regulatory Disclosures</a>
+                            <a class="item" href="/contact">Contact</a>
+                            <div class="right item">
+                                <p class="small text">&copy; Culross Global 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/semantic-ui/dist/semantic.min.js"></script>
+    
+    <script src="/js/cg.js?v=2.1"></script>
+</body>
+</html>
+

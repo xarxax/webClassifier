@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>FDM of Clearwater | EDM, Toolmaking, CNC, General Machining</title>
+  <meta name="description" content="Machining shop specializing in EDM, Toolmaking, Wire EDM, CNC, General Machining, On-site Reverse-Engineering, Rosan Serrations, Mold Making, Blanchard Grinding, and more.">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.6519d306a54ce476859f.css"><style ng-transition="my-app">.sidebar[_ngcontent-sc1] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 94px;
+  width: 230px;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  transition: all 250ms ease-in-out; }
+  .sidebar[_ngcontent-sc1]   ul[_ngcontent-sc1] {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .sidebar[_ngcontent-sc1]   ul[_ngcontent-sc1]   li[_ngcontent-sc1] {
+      margin: 16px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .sidebar.open[_ngcontent-sc1] {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  .navbar-node[_ngcontent-sc1] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  height: 100%;
+  color: #212121;
+  background-color: transparent;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 250ms ease; }
+  .navbar-node.active[_ngcontent-sc1], .navbar-node[_ngcontent-sc1]:hover {
+    color: #d41317;
+    color: #690000; }
+  .navbar[_ngcontent-sc1] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #fff;
+  border-bottom: 6px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1920px;
+  z-index: 999; }
+  .navbar[_ngcontent-sc1]   .sidebar-button[_ngcontent-sc1] {
+    display: flex;
+    width: 80px;
+    position: absolute;
+    height: 88px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navbar[_ngcontent-sc1]   .sidebar-button[_ngcontent-sc1]   button[_ngcontent-sc1] {
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      padding: 24px; }
+  @media only screen and (min-width: 860px) {
+      .navbar[_ngcontent-sc1]   .sidebar-button[_ngcontent-sc1] {
+        display: none; } }
+  .navbar[_ngcontent-sc1]   .badge-left[_ngcontent-sc1] {
+    display: none;
+    position: absolute;
+    left: 48px;
+    top: 24px; }
+  .navbar[_ngcontent-sc1]   .badge-left[_ngcontent-sc1]   p[_ngcontent-sc1] {
+      font-family: 'Work Sans';
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 14px;
+      font-weight: 700; }
+  @media only screen and (min-width: 860px) {
+      .navbar[_ngcontent-sc1]   .badge-left[_ngcontent-sc1] {
+        display: block; } }
+  .navbar[_ngcontent-sc1]   .badge-right[_ngcontent-sc1] {
+    display: none;
+    position: absolute;
+    right: 48px;
+    top: 24px;
+    flex-direction: column; }
+  .navbar[_ngcontent-sc1]   .badge-right[_ngcontent-sc1]   p[_ngcontent-sc1] {
+      font-family: 'Work Sans';
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 14px;
+      font-weight: 700;
+      margin: 6px 0; }
+  @media only screen and (min-width: 860px) {
+      .navbar[_ngcontent-sc1]   .badge-right[_ngcontent-sc1] {
+        display: flex; } }
+  .navbar[_ngcontent-sc1]   .navbar-sheath[_ngcontent-sc1] {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+  .navbar[_ngcontent-sc1]   .navbar-row[_ngcontent-sc1] {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .navbar[_ngcontent-sc1]   #node-row[_ngcontent-sc1] {
+    display: none;
+    height: 68px; }
+  @media only screen and (min-width: 860px) {
+      .navbar[_ngcontent-sc1]   #node-row[_ngcontent-sc1] {
+        display: flex; } }
+  .navbar[_ngcontent-sc1]   .navbar-logo[_ngcontent-sc1] {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: 100%; }
+  .navbar[_ngcontent-sc1]   .navbar-logo[_ngcontent-sc1]   img[_ngcontent-sc1] {
+      height: 64px;
+      margin-top: 24px; }
+  @media only screen and (min-width: 860px) {
+        .navbar[_ngcontent-sc1]   .navbar-logo[_ngcontent-sc1]   img[_ngcontent-sc1] {
+          width: 280px;
+          height: 100px; } }
+  .navbar[_ngcontent-sc1]   .navbar-nodes[_ngcontent-sc1] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+  .navbar[_ngcontent-sc1]   .navbar-nodes[_ngcontent-sc1]   .navbar-node[_ngcontent-sc1] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 36px;
+      height: 100%;
+      color: #212121;
+      background-color: transparent;
+      font-family: 'Work Sans';
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 250ms ease; }
+  .navbar[_ngcontent-sc1]   .navbar-nodes[_ngcontent-sc1]   .navbar-node.active[_ngcontent-sc1], .navbar[_ngcontent-sc1]   .navbar-nodes[_ngcontent-sc1]   .navbar-node[_ngcontent-sc1]:hover {
+        color: #d41317;
+        color: #690000; }
+  .navbar[_ngcontent-sc1]   .navbar-nodes[_ngcontent-sc1]   .contact-button[_ngcontent-sc1] {
+      height: 48px;
+      min-width: 164px;
+      background-color: #d83232;
+      border-radius: 4px;
+      color: #fff;
+      margin-left: 48px; }
+  a[_ngcontent-sc1] {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Work Sans'; }
+  span[_ngcontent-sc1] {
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: rgba(0, 0, 0, 0.87); }</style><style ng-transition="my-app">.footer[_ngcontent-sc2] {
+  width: 100%;
+  height: 260px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1; }
+  .footer[_ngcontent-sc2]   .inner[_ngcontent-sc2] {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  @media only screen and (min-width: 860px) {
+      .footer[_ngcontent-sc2]   .inner[_ngcontent-sc2] {
+        flex-direction: row; } }
+  .footer[_ngcontent-sc2]   .logo[_ngcontent-sc2] {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer[_ngcontent-sc2]   .logo[_ngcontent-sc2]   img[_ngcontent-sc2] {
+      width: 100%;
+      max-width: 180px; }
+  .footer[_ngcontent-sc2]   .content[_ngcontent-sc2] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .footer[_ngcontent-sc2]   p[_ngcontent-sc2] {
+    font-size: 14px;
+    margin: .5rem;
+    font-family: 'Work Sans';
+    text-align: center; }</style><style ng-transition="my-app">.topnav[_ngcontent-sc3] {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3] {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .left[_ngcontent-sc3] {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 48px;
+      background-color: #fff; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .left[_ngcontent-sc3]   img[_ngcontent-sc3] {
+        width: 120px;
+        width: 260px;
+        margin-top: 24px; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3] {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px;
+      background-color: #f1f1f1; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .badge[_ngcontent-sc3] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .badge[_ngcontent-sc3]   p[_ngcontent-sc3] {
+          font-family: 'Work Sans';
+          color: rgba(0, 0, 0, 0.87);
+          font-weight: 600; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .nav-nodes[_ngcontent-sc3] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .nav-nodes[_ngcontent-sc3]   .nav-node[_ngcontent-sc3] {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 36px;
+          height: 100%;
+          color: #212121;
+          background-color: transparent;
+          font-family: 'Work Sans';
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 16px;
+          transition: 250ms ease; }
+  .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .nav-nodes[_ngcontent-sc3]   .nav-node.active[_ngcontent-sc3], .topnav[_ngcontent-sc3]   .inner[_ngcontent-sc3]   .right[_ngcontent-sc3]   .nav-nodes[_ngcontent-sc3]   .nav-node[_ngcontent-sc3]:hover {
+            color: #d41317; }
+  .hero[_ngcontent-sc3] {
+  width: 100%;
+  height: calc(100vh - 120px);
+  height: 400px; }
+  @media only screen and (min-width: 860px) {
+    .hero[_ngcontent-sc3] {
+      height: 500px; } }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3] {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/pics/home-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .bg-overlay[_ngcontent-sc3] {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3] {
+      width: 100%;
+      height: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 100px 16px 0;
+      flex-direction: column; }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   button[_ngcontent-sc3] {
+        border: 0;
+        outline: 0;
+        font-family: 'Work Sans';
+        padding: 8px 24px;
+        background-color: #d41317;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 36px;
+        min-width: 200px;
+        border-radius: .25em;
+        margin-top: 24px; }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   h1[_ngcontent-sc3] {
+        font-family: 'Work Sans';
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-size: 24px;
+        text-align: center; }
+  @media only screen and (min-width: 860px) {
+          .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   h1[_ngcontent-sc3] {
+            font-size: 48px; } }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   h2[_ngcontent-sc3] {
+        font-size: 18px;
+        margin: 0;
+        font-family: 'Work Sans';
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: center; }
+  @media only screen and (min-width: 860px) {
+          .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   h2[_ngcontent-sc3] {
+            font-size: 24px; } }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   a[_ngcontent-sc3] {
+        text-decoration: none;
+        color: #fff;
+        background-color: #690000;
+        border-radius: .25em;
+        padding: 0px 16px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Work Sans';
+        line-height: 36px; }
+  @media only screen and (min-width: 860px) {
+          .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   a[_ngcontent-sc3] {
+            padding: 8px 24px;
+            font-size: 18px;
+            text-transform: none; } }
+  .hero[_ngcontent-sc3]   .bg[_ngcontent-sc3]   .content[_ngcontent-sc3]   .action[_ngcontent-sc3] {
+        display: flex;
+        margin: 3rem auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center; }
+  #equipment[_ngcontent-sc3] {
+  background-color: #f1f1f1; }
+  #equipment[_ngcontent-sc3]   .equipment-action[_ngcontent-sc3] {
+    height: 224px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #equipment[_ngcontent-sc3]   button[_ngcontent-sc3] {
+    line-height: 36px;
+    padding: 8px 24px;
+    min-width: 230px;
+    background-color: #690000;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Work Sans';
+    cursor: pointer; }
+  #equipment[_ngcontent-sc3]   #vertical-edm-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_074357-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #wire-edm-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_074600-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #milling-machines-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_075713-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #grinding-equipment-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_074709-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #lathes-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_074903-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #misc-equipment-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_074931-min.jpg"); }
+  #equipment[_ngcontent-sc3]   #inspections-equipment-link[_ngcontent-sc3] {
+    background-image: url("/assets/pics/20180726_075907-min.jpg"); }
+  #equipment[_ngcontent-sc3]   a[_ngcontent-sc3] {
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+  #equipment[_ngcontent-sc3]   a[_ngcontent-sc3]   .bg-overlay[_ngcontent-sc3] {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 200ms ease; }
+  #equipment[_ngcontent-sc3]   a[_ngcontent-sc3]   button[_ngcontent-sc3] {
+      display: none;
+      transition: all 200ms ease; }
+  #equipment[_ngcontent-sc3]   a[_ngcontent-sc3]:hover   .bg-overlay[_ngcontent-sc3] {
+      background-color: rgba(0, 0, 0, 0.87); }
+  #equipment[_ngcontent-sc3]   a[_ngcontent-sc3]:hover   button[_ngcontent-sc3] {
+      display: block; }
+  section#about[_ngcontent-sc3] {
+  width: 100%;
+  background-color: #fff; }
+  section#about[_ngcontent-sc3]   .content[_ngcontent-sc3] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 24px; }
+  section#about[_ngcontent-sc3]   .content[_ngcontent-sc3]   h2[_ngcontent-sc3] {
+      font-family: 'Work Sans';
+      font-size: 48px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.26);
+      margin-bottom: 1rem; }
+  section#about[_ngcontent-sc3]   .content[_ngcontent-sc3]   p[_ngcontent-sc3] {
+      font-family: 'Work Sans';
+      line-height: 2;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.87); }
+  @media only screen and (min-width: 860px) {
+        section#about[_ngcontent-sc3]   .content[_ngcontent-sc3]   p[_ngcontent-sc3] {
+          font-size: 18px; } }
+  section#about[_ngcontent-sc3]   .content[_ngcontent-sc3]   .divider[_ngcontent-sc3] {
+      width: 80px;
+      height: 6px;
+      background-color: #690000;
+      margin-bottom: 1rem; }
+  section#about[_ngcontent-sc3]   .content[_ngcontent-sc3]   .divider-vertical[_ngcontent-sc3] {
+      width: 3px;
+      height: 80px;
+      background-color: #690000;
+      margin-top: -64px;
+      margin-bottom: 24px; }
+  section#about[_ngcontent-sc3]   .right[_ngcontent-sc3]   .bg[_ngcontent-sc3] {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/fdmhome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -900px 0; }
+  section#about[_ngcontent-sc3]   .right[_ngcontent-sc3]   .bg-overlay[_ngcontent-sc3] {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    height: 100%; }
+  .services[_ngcontent-sc3] {
+  width: 100%;
+  background-color: #fff; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3] {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   h2[_ngcontent-sc3] {
+      font-family: 'Work Sans';
+      font-size: 48px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.26);
+      margin-bottom: 1rem; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .divider[_ngcontent-sc3] {
+      width: 80px;
+      height: 6px;
+      background-color: #d41317;
+      margin-bottom: 1rem; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .service-card[_ngcontent-sc3] {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 16px;
+      height: 500px;
+      display: flex;
+      flex-direction: column; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .service-card[_ngcontent-sc3]   .card-img[_ngcontent-sc3] {
+        width: 100%;
+        height: 100%;
+        max-height: 220px;
+        background-image: url("/assets/pics/2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .service-card[_ngcontent-sc3]   .card-content[_ngcontent-sc3] {
+        width: 100%;
+        height: 100%;
+        padding: 16px 24px;
+        background-color: #f1f1f1; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .service-card[_ngcontent-sc3]   .card-content[_ngcontent-sc3]   h3[_ngcontent-sc3] {
+          font-family: 'Work Sans';
+          color: rgba(0, 0, 0, 0.87);
+          text-align: left; }
+  .services[_ngcontent-sc3]   .content[_ngcontent-sc3]   .service-card[_ngcontent-sc3]   .card-content[_ngcontent-sc3]   p[_ngcontent-sc3] {
+          font-family: 'Roboto';
+          line-height: 2;
+          color: rgba(0, 0, 0, 0.54);
+          text-align: left; }
+  .picture-section[_ngcontent-sc3] {
+  width: 100%;
+  display: flex;
+  height: 240px;
+  margin: 0; }
+  .picture-section[_ngcontent-sc3]   .bg[_ngcontent-sc3] {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/pics/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; }
+  .footer[_ngcontent-sc3] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; }
+  .footer[_ngcontent-sc3]   .inner[_ngcontent-sc3] {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .footer[_ngcontent-sc3]   .inner[_ngcontent-sc3]   p[_ngcontent-sc3] {
+      font-family: 'Roboto';
+      line-height: 2;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.87); }</style></head>
+<body>
+  <app-root class="ng-tns-c0-0" ng-version="6.1.10"><div class="page-sheath"><fdm-topbar class="ng-tns-c0-0" _nghost-sc1=""><div _ngcontent-sc1="" class="navbar"><div _ngcontent-sc1="" class="sidebar-button"><button _ngcontent-sc1="" id="sidebar-button"><i _ngcontent-sc1="" class="material-icons"> menu </i></button></div><div _ngcontent-sc1="" class="badge-left"><p _ngcontent-sc1="">Aerojet RAPWA 97 Approved</p></div><div _ngcontent-sc1="" class="badge-right"><p _ngcontent-sc1=""><a _ngcontent-sc1="" href="mailto:fdmofclearwater@aol.com"><span _ngcontent-sc1="">Email: </span>FDMofClearwater@aol.com</a></p><p _ngcontent-sc1=""><span _ngcontent-sc1="">Phone: </span>(727)-544-8801</p></div><div _ngcontent-sc1="" class="navbar-sheath"><div _ngcontent-sc1="" class="navbar-row" id="logo-row"><div _ngcontent-sc1="" class="navbar-logo"><img _ngcontent-sc1="" alt="" src="/assets/fdmlogo.svg"></div></div><div _ngcontent-sc1="" class="navbar-row" id="node-row"><div _ngcontent-sc1="" class="navbar-nodes"><a _ngcontent-sc1="" class="navbar-node active" routerlink="/" routerlinkactive="active" href="/">Home</a><a _ngcontent-sc1="" class="navbar-node" routerlink="/services" routerlinkactive="active" href="/services">Services</a><a _ngcontent-sc1="" class="navbar-node" routerlink="/equipment" routerlinkactive="active" href="/equipment">Equipment</a><a _ngcontent-sc1="" class="navbar-node" routerlink="/about" routerlinkactive="active" href="/about">About</a><a _ngcontent-sc1="" class="navbar-node" href="assets/fdmbrochure.pdf" target="_blank">Download Brochure</a><a _ngcontent-sc1="" class="navbar-node" routerlink="/contact" href="/contact">Contact Us</a></div></div></div></div><div _ngcontent-sc1="" class="sidebar" id="sidebar"><ul _ngcontent-sc1=""><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node active" routerlink="/" routerlinkactive="active" href="/">Home</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node" routerlink="/services" routerlinkactive="active" href="/services">Services</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node" routerlink="/equipment" routerlinkactive="active" href="/equipment">Equipment</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node" routerlink="/about" routerlinkactive="active" href="/about">About</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node" href="assets/fdmbrochure.pdf" target="_blank">Download Brochure</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="navbar-node" routerlink="/contact" href="/contact">Contact Us</a></li></ul></div></fdm-topbar><div class="page-container"><div class="ng-tns-c0-0 ng-trigger ng-trigger-routerTransition" style=""><router-outlet class="ng-tns-c0-0"></router-outlet><fdm-home _nghost-sc3="" class="ng-star-inserted"><div _ngcontent-sc3="" class="body"><div _ngcontent-sc3="" class="hero"><div _ngcontent-sc3="" class="bg"><div _ngcontent-sc3="" class="bg-overlay"><div _ngcontent-sc3="" class="content"><h1 _ngcontent-sc3="">Welcome to FDM of Clearwater</h1><h2 _ngcontent-sc3="">EDM, Toolmaking, CNC, General Machining, On-Site Reverse Engineering</h2><div _ngcontent-sc3="" class="action"><a _ngcontent-sc3="" routerlink="/contact" routerlinkactive="active" href="/contact">Contact Us</a></div></div></div></div></div><section _ngcontent-sc3="" class="about" id="about"><div _ngcontent-sc3="" class="row"><div _ngcontent-sc3="" class="col-xs-12 left"><div _ngcontent-sc3="" class="content"><p _ngcontent-sc3="">FDM of Clearwater wants to be your one stop source for all your machining and manufacturing needs. We know your time is valuable, that’s why we deliver the highest quality work at the fastest delivery rates, surpassed by none. We are a full service shop specializing in, but not limited to, EDM, tool making, general machining, reverse engineering and so much more.</p><p _ngcontent-sc3="">With our in house CMM, we can reverse engineer customer supplied parts and even provide them with part drawings. Our tooling and CNC capabilities provide the opportunity to save you money on short run jobs that can be multi-tooled for optimum efficiency. Services extend well into the bottling and conveyor industries. We are a support shop for many companies, both large and small, in which we manufacture parts to customer supplied specifications or reverse engineered part geometry to keep their lines running and money flowing.</p><p _ngcontent-sc3="">Everyone knows downtime means losing money. So why trust anyone else to provide you with a quick turnaround to get your equipment back up and running? Give us a call. We’re always looking to help businesses maintain their success in the manufacturing world.</p></div></div></div></section></div></fdm-home></div></div><fdm-footer class="ng-tns-c0-0" _nghost-sc2=""><div _ngcontent-sc2="" class="footer"><div _ngcontent-sc2="" class="inner"><div _ngcontent-sc2="" class="logo"><img _ngcontent-sc2="" alt="" src="/assets/fdmlogo.svg"></div><div _ngcontent-sc2="" class="content"><p _ngcontent-sc2="">© COPYRIGHT 2019 FDM of Clearwater ALL RIGHTS RESERVED</p><p _ngcontent-sc2="">10850 75th St, Largo, FL 33777</p><p _ngcontent-sc2=""><strong _ngcontent-sc2="">(727) 544-8801</strong></p></div></div></div></fdm-footer></div></app-root>
+
+
+<script type="text/javascript" src="runtime.c128a7d24a1053a490c3.js"></script><script type="text/javascript" src="polyfills.f51b78b22e61492fe707.js"></script><script type="text/javascript" src="main.5fb9c48ed8f913fea337.js"></script><script id="my-app-state" type="application/json">{}</script></body></html>

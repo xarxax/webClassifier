@@ -1,0 +1,2653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN" "https://www.w3.org/TR/xhtml 1/DTD/xhtml1-transitional.dtd">
+<!--[if gt IE 8]> <html class="ie9" lang="en"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />    
+    <meta name="google-translate-customization" content="c658242a1e553665-d4caf8e723ca0892-gee255db5dfcb55af-a" />    
+    <LINK rel="STYLESHEET" type="text/css" href="./css/nowak.css?v=5">    
+    <title>Nowak Dental Supply     
+    </title>    
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>    
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+<script type='text/javascript'> 
+// Added Global variables used by jasvascript and other functions 
+var ShowSalesmanPricing = 'N' ;
+var ShowSalesmanCustCreate = 'N' ;
+var ShowSalesmanProdCreate = 'N' ;
+var ShowInventory = 'Y' ;
+var ShowPricingWidget = '' ; 
+//Added Info for Chat 
+var ChatCustomer = 'WEBPRICE' ;
+var ChatLogon = 'WEBPRICE' ;
+var ChatSalesman = 'Brandi Nowak' ;
+var ChatID = '' ;
+// Added Web link Code ;
+var xweblink = '' ;
+var CID = 'WEBPRICE' ;
+var OID = '' ;
+var TotLines = '0' ;
+var StyleID = 'https://remotenet.nowakdental.com/nowaktemplates/nowak.css'
+var SUFFIX = '996' ;
+var image_url = 'https://remotenet.nowakdental.com/nowak/images/' ;
+var datasheet_url = 'https://remotenet.nowakdental.com/nowak/datasheets/' ;
+var DailySpecials = '' ; 
+var OrderSpecials = '';
+// Added Global script Path
+var jsscript_path = 'https://remotenet.nowakdental.com/nowaktemplates/' ;
+// Added Global menu Path - added to the Footer for this template
+// Added Global Solr Path
+var MDSSolrUrl = 'https://remotenet.nowakdental.com/solr/products/' ;
+// Added Global Specials Template
+var MDSSpecialsTemplate = '35' ;
+// Added Sales Visibility info 
+var SalesVisible ; 
+// Added Customer Item Number Support
+var intcust = '105779' ;
+var mastcust = '' ; 
+var custassoc = '' ;
+var autorec = '25000' ;
+var counthrs = '18'  ;
+var offsethrs = '-5' ;
+var ShowSalesGP = 'N' ; 
+// added for public site 
+var MDSTemplateURL = 'https://remotenet.nowakdental.com/nowaktemplates/'
+var MDSRnUrl = 'https://remotenet.nowakdental.com/MDSWEB/login996'
+
+function showpmenu() {
+ if ($("#pmenu").length < 1) {
+    // need to create div 
+    makediv("pmenu");
+  }
+//Get
+var p = $(".Psearch");
+var offset = p.offset();
+//set
+$("#pmenu").offset({ top: offset.top + 40, left: offset.left -20 });
+// $('#pmenu').css({
+//    'position': 'fixed',
+//     'top' : offset.top + 40,
+//  });
+// $("#pmenu").html($("#left_menucontent").html()) ;
+//if ($('#pmenu').length <= 1) {  
+    jQuery.ajax({
+        type: "POST",
+        url: MDSRnUrl,
+        data: "ORDERNO=888888&PAGEID=31&LOGINPATH=DL&SUBMITVAR=menuContent.html",
+        dataType: "html",
+        success: function (data) {
+            $('#pmenu').html(data);         
+        }
+    });
+//}
+// show existing side menu
+//$(".STab").click()  ;
+ $('#pmenu').css({
+    'position': 'fixed',
+    'display': 'none',
+    'z-index': '9999',
+     'top' : offset.top + 20,
+  });
+// $(element).is(":visible");   
+//$(".STab").click()  ;
+$('.Psearch').mouseover(function(){   $("#pmenu").fadeIn(); $(".STab").click()  ; });
+$("#pmenu").click(function(){    $("#pmenu").fadeOut();   });
+$("#pmenu").mouseout(function() {
+ var isHovered = $('#pmenu').is(":hover");
+ if (! isHovered ) {  $("#pmenu").fadeOut() ; }
+});
+}
+
+
+
+function showcontacts() { 
+$("#slide_holder").show();
+$(".midtab_content").hide();
+$("#midtab3").fadeIn() ;
+}
+function showcontact() {
+ var t1 = setTimeout(function() { showcontacts()}, 1000);
+} 
+ </script>                                                     
+    <!-- added styles for NW Nowak Template 5/11/17 -->     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">    
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <meta name="description" content="Nowak Dental Supplies">    
+    <meta name="robots" content="INDEX,FOLLOW">    
+    <!--[if lt IE 9]><style> body { min-width: 960px !important; }</style><![endif]-->    
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">    
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" media="all">    
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="all">    
+    <link rel="stylesheet" type="text/css" href="./css/superfish.css" media="all">    
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" media="all">    
+    <link rel="stylesheet" type="text/css" href="./css/ecommerce.css" media="all">      
+    <!-- code block for template -->     
+    <style>/* inline styles to override */
+	/* CSS Document Nowak Styles  colors - blue background: #4c86be;
+	font black color: #353535;
+	grey back ground background: #ebebeb;
+*/
+#suggitems li {
+    border: none ; 
+    display: inline;
+    float: left;
+    height: auto;
+    padding: 5px 10px 0px 0px;
+    width: 33%;
+}
+.QtyBox {
+    border: 1px solid black ; 
+}
+ #PIFBodyprodinfo { text-align: left }
+
+.header .form-search .ajaxsearch li.selected {
+	background-color: #FBFBFB
+}
+/* CSS Document */
+input, select, textarea {
+	border: solid 1px #d3d4d6;
+	font-size: 11px;
+}
+#colhdg , .rollsort {
+	/*  color: #4c86be;
+	padding: 4px 4px;
+	border: 1px solid black;
+*/
+	background: white;
+	color: #4c86be;
+	font-family: MyriadPro, 'PT Sans', 'Open Sans' , ' Arial' , sans-serif;
+	border-top: 6px solid #4c86be;
+	border-bottom: 6px solid #4c86be;
+}
+#datgrey {
+	font-size: 14px;
+}
+#lcolor1 {
+/* detail data line alternating color #1 */
+	color: #313131;
+	background: none;
+}
+#PriceContent {
+/* detail data line alternating color #1 */
+	color: #313131;
+	background: none;
+	z-index: 99010;
+}
+#lcolor2 {
+/* detail data line alternating color #2 */
+	/* background-image: url(http://hosting.tshinc.com/rn/images/bluemenu.jpg);
+	color: #FFF;
+*/
+	color: #313131;
+}
+.gobutton , .button1 , .button2 , .button3, .sendorder {
+	margin: 2px;
+	border-radius: 5px;
+	padding: 4px;
+	color: white;
+	font-size: 1.25em;
+	background: url(data: image/svg+xml;
+	base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd&#133;
+RoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjc2hhcGUtMTQtY29weS0yKSIgLz48L3N2Zz4=),
+	#4c86be;
+background: -moz-linear-gradient(90deg,
+#315a82 -25%, rgba(129, 208, 247, 0.0) 125%),
+	#4c86be;
+background: -o-linear-gradient(90deg,
+#315a82 -25%, rgba(129, 208, 247, 0.0) 125%),
+	#4c86be;
+background: -webkit-linear-gradient(90deg,
+#315a82 -25%, rgba(129, 208, 247, 0.0) 125%),
+	#4c86be;
+background: -ms-linear-gradient(90deg,
+#315a82 -25%, rgba(129, 208, 247, 0.0) 125%),
+	#4c86be;
+background: linear-gradient(0deg,
+#315a82 -25%, rgba(129, 208, 247, 0.0) 125%),
+	#4c86be;
+}
+.gobutton {
+	margin: 0px 5px 0px 5px;
+	color: white;
+}
+.sendorderhov , .gobuttonhov , .buttonhov1 , .buttonhov2 , .buttonhov3 {
+/* hover style for GO button */
+	color: #4c86be;
+	background: white;
+}
+.sendorder {
+/* send order now style for navigation buttons */
+	color: yellow;
+}
+.sendorderhov {
+/* sendordernow hover style for navigation buttons */
+	color: green;
+}
+.label {
+	color: white;
+	font-size: 10pt;
+	background-COLOR: #0D115B;
+	text-align: right
+}
+/* ############################HOME LEFT MENU STYLES ############################*/
+#left_menucontent {
+	/* width: 222px;
+*/
+	height: auto;
+	float: left;
+	background-repeat: repeat-y;
+	width: auto;
+}
+#srsearchresults {
+	float: left;
+	width: 720px;
+}
+#srfootprints {
+	color: black;
+	text-align: center;
+	font-family: "arial";
+	font-size: 11px;
+	clear: left;
+	border-bottom: 1px solid black;
+}
+/* Addl Style Sheets 09-06-12 - djf for search results page */
+#SRsortby {
+	/* width: 276px;
+*/
+	height: 25px;
+	float: left;
+	font-family: "arial";
+	font-size: 12px;
+}
+#SRitemsperpage {
+	width: auto;
+	height: 25px;
+	float: left;
+	font-family: "arial";
+	font-size: 12px;
+}
+#SRfootprints {
+	width: 720px;
+	/* width: 590px;
+	height: auto;
+	background-color: #ffffff;
+*/
+	color: #000000;
+	text-align: center;
+	font-family: "arial";
+	font-size: 11px;
+	/* float: left;
+*/
+	clear: left;
+	border-bottom: 1px solid black;
+}
+#SRsearchresults {
+	/* width: 590px;
+	height: auto;
+	background-color: #ffffff;
+*/
+	float: left;
+}
+.Salesinfo {
+	position: relative;
+	z-index: 99999;
+	background: rgb(211,211,211);
+	left: 750px;
+	top: -100px;
+	float: left;
+	display: none;
+/* Change Default Salesman mode here - set default on or off */
+}
+/* Added New Side Menu Css Styles */
+.sidemenu {
+	list-style: none;
+	width: auto;
+	color: #555555;
+	font-family: MyriadPro, 'PT Sans', 'Open Sans' , ' Arial' , sans-serif;
+	background: white;
+	font-size: 12px;
+	float: left;
+	text-align: right;
+	white-space: normal;
+	padding: 5px;
+	border: none;
+	margin: 2px;
+}
+.sidemenu2 ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	left: 200px;
+}
+.sidemenu a {
+	color: inherit;
+	height: 10px;
+	text-decoration: none;
+}
+.sidemenu li {
+	position: relative;
+	font-size: 14px;
+	display: block;
+	padding: 5px;
+}
+.sidemenu li:last-of-type {
+	border-right: none;
+}
+.sidemenu li > ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: auto;
+	display: none;
+	white-space: nowrap;
+}
+.sidemenu > li > ul {
+	left: 100%;
+	width: 100%;
+}
+.sidemenu li > a:after {
+	margin-left: 5px;
+	content: '\25BA';
+}
+.sidemenu > li > a:after {
+	margin-left: 5px;
+	content: '\25BA';
+}
+.sidemenu li > a:only-child:after {
+	margin-left: 0;
+	content: '';
+}
+.sidemenu li > ul > li {
+	border-right: none;
+	display: block;
+	background: white;
+}
+.sidemenu li:hover {
+	color: #4c86be;
+}
+.sidemenu li:hover > ul {
+	display: block;
+}
+.slsheader {
+	font-size: 18px;
+	float: right;
+	background: whitesmoke;
+	border-radius: 5px;
+	padding: 3px;
+	height: auto !important;
+}
+.GridBox {
+	width: 220px;
+	height: 310px;
+	float: left;
+	padding: 2 2 2 2;
+}
+.GridSRBodypicturewrap {
+	width: auto;
+	float: left;
+	height: auto;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.GridSRBodyiconwrap {
+	width: 70px;
+	float: left;
+	height: auto;
+	padding-left: 5px;
+}
+.GridSRbodyinstock {
+}
+.GridSRbodyproddesc {
+	font-family: "arial";
+	font-size: 11px;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	float: left;
+	width: 190px;
+	height: 105px;
+	background-color: rgba(0,0,0,0);
+}
+.GridSRbodyQTYLine {
+	width: 200px;
+	height: 175px;
+	float: right;
+	font-family: "arial";
+	font-size: 10px;
+	padding-right: 10px;
+}
+.pmessage {
+	font-style: italic;
+}
+.plabel {
+	font-style: bold;
+}
+#centeredmenu li a {
+	line-height: 20px;
+	text-decoration: none;
+	color: #555555;
+	font-family: MyriadPro, 'PT Sans', 'Open Sans' , ' Arial' , sans-serif;
+	background: white;
+	font-size: 32px;
+	font-weight: 600;
+	float: left;
+	text-align: center;
+	padding: 15px;
+}
+#centeredmenu li a:hover {
+	color: #4c86be;
+}
+.menu_normallink, .menuItem {
+	float: left;
+	padding: 0px 0px 5px 5px;
+	width: 100%;
+	border: none;
+	white-space: nowrap;
+	height: auto;
+	background: white;
+}
+.menuItem {
+	border-bottom: 6px solid #4c86be;
+}
+a.lastlink:after {
+	content: "\f107";
+	;
+	margin-right: 9px;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+a.firstlink:after {
+	content: "\f107";
+	;
+	margin-right: 9px;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+a.menu_normallink:after {
+	content: "\f107";
+	;
+	margin-right: 9px;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+.menu_normallink:hover, .menuItem:hover {
+	color: #4c86be;
+}
+.firstlink {
+	float: left;
+	padding: 0px 0px 5px 5px;
+	border: none;
+	height: auto;
+}
+.firstlink:hover {
+	background: #4c86be;
+}
+.lastlink {
+	float: left;
+	padding: 0px 0px 5px 5px;
+	background-position: right;
+	border: none;
+	height: auto;
+}
+.lastlink:hover {
+	background: #4c86be;
+}
+.quick-access {
+	padding: 5px;
+	float: none;
+	width: 100%;
+	border-top: 6px solid #4c86be;
+	border-bottom: 6px solid #4c86be;
+}
+}
+#centeredmenu {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	width: auto;
+	z-index: 100;
+	text-decoration: none;
+}
+.custom1 {
+	text-align: right;
+	color: #fff;
+	right: 5px;
+}
+.ExportOrder {
+	height: 16px;
+	width: 16px;
+}
+#currentorderwidget {
+	top: 100px;
+	z-index: 99999;
+	border-top: 6px solid #4c86be;
+	border-bottom: 6px solid #4c86be;
+}
+body div.shadow {
+	display: block;
+	height: 100%;
+	left: auto;
+	opacity: 1;
+	position: static;
+	top: auto;
+}
+/* Added SRBodyclass for line*/
+.SRBodyClass {
+	width: 720px;
+	height: 105px;
+	clear: left;
+	/* height: 97px;
+	background-color: #ffffff;
+	text-align: center;
+*/
+	border-bottom: 1px solid #000000;
+	padding-bottom: 1px;
+}
+.PIimageDetail {
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+}
+/* loaded new stuff */
+#alert {
+	color: green;
+	font-size: 14px;
+	background: white;
+}
+.validation {
+	color: #D63301;
+	background-color: #FFCCBA;
+}
+.checkoutbar {
+	margin: 12px;
+	padding: 15px;
+	width: 100%;
+}
+.EntryBoxes, .Headings {
+	width: 50%;
+	font-size: 14px;
+	font-family: arial;
+	background-color: aliceblue;
+}
+/* Added Special Price Classes for Display */
+.SpecPriceS {
+	font-size: 14px;
+	color: red
+}
+.SpecPriceF {
+	font-size: 14px;
+	color: black
+}
+.SpecPriceC {
+	font-size: 14px;
+	color: blue
+}
+#right_shortcuts {
+	float: left;
+	width: 222px;
+	padding: 15px 0px;
+}
+#right_specials {
+	float: left;
+	width: 222px;
+	padding: 15px 0px;
+	background: #ebebeb;
+}
+#right_specials h2 {
+	margin: 0 auto;
+	width: 90%;
+	color: #4c86be;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.SearchHeader {
+	font-size: 16px;
+}
+.SearchTotals {
+	color: #3C68D5;
+	font-size: 12px;
+}
+/* Added for sidebar filters 02-08-16 */
+.tabs .active {
+	background-color: #F7F7F7 !important;
+	color: black;
+}
+.tab_content {
+	display: none;
+}
+.RTab {
+	display: none;
+}
+.nosh {
+	width: 100%;
+	margin: 0 0 13px;
+	background: #ebebeb;
+	;
+	color: black
+}
+h3.nosh {
+	text-transform: none;
+	font-size: 12px;
+	text-shadow: none;
+	font-weight: 500;
+}
+h3.nosh span {
+	width: 14px;
+	height: 7px;
+	position: absolute;
+	left: 10px;
+	bottom: -7px;
+	background-position: -59px -267px;
+}
+.FAccordionButton {
+	width: 164px;
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.75em;
+	border: solid #ccc;
+	border-width: 0 0 1px;
+	color: #2c5987;
+	/* text-transform: uppercase;
+*/
+	cursor: pointer;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px font-size: 1.10em;
+	color: #12afa3;
+	padding: 5px 10px 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	border-bottom: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+.FaccordionContent a:hover, .FaccordionContent a:active {
+	background: #d9eefa;
+	text-decoration: none;
+	color: #2c5987
+}
+#Tab1,
+#Tab2 {
+}
+#Tab2 {
+	border: 1px solid #ccc;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+#FilterText {
+	font-size: 12px;
+	float: left;
+}
+.tabs li a {
+	border-radius: 10px 10px 0px 0px;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+	text-decoration: none;
+	color: white;
+	background: #848484;
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid white;
+}
+.tab_content {
+	display: none;
+}
+.tabs ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#selection li {
+	display: list-item;
+	padding-right: 0px;
+}
+#leftsidewrap {
+	width: 184px;
+	padding-right: 20px;
+	height: auto;
+	float: left;
+}
+#price a {
+	/* display: block;
+*/
+	width: 100%;
+	/* margin: 0 0 8px 8px;
+*/
+	padding: 2px 10px;
+	float: left;
+	/* border: 1px solid #ccc;
+*/
+	text-align: left;
+	font-size: 12px;
+	/* background: #fafafa;
+*/
+	/* border-radius: 3px;
+*/
+	/* -webkit-border-radius: 3px;
+*/
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+.FaccordionContent div {
+	width: 140px;
+	max-height: 190px;
+	min-height: 50px;
+	margin: 0;
+	font-size: 12px;
+	/* padding: 7px 0;
+*/
+	/* overflow-x: hidden;
+*/
+	/* overflow-y: hidden;
+*/
+	border-bottom: 1px solid #dadada;
+}
+.FaccordionContent {
+	max-height: 200px;
+	overflow-y: scroll;
+}
+#selection {
+	float: left;
+}
+.CsosText {
+	font-size: 14px;
+	font-weight: bold;
+}
+.CsosButton {
+	margin-top: -10px;
+	float: right;
+	padding: 4px 2px 4px 2px;
+	text-align: center;
+	background-color: #25558c;
+	BORDER-RIGHT: #999 1px solid;
+	BORDER-TOP: #999 1px solid;
+	BORDER-LEFT: #999 1px solid;
+	BORDER-BOTTOM: #999 1px solid;
+	FONT-SIZE: 84%;
+	FONT-WEIGHT: bold;
+	FONT-STYLE: normal;
+	COLOR: White;
+	/* FILTER: PROGID: DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='black');
+*/
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+.CsosHide {
+	display: none;
+}
+.CreateCust, .CreateProd, .ShowBackord {
+	display: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+/* ie8 */
+}
+.lazy {
+	max-width: 100%;
+	opacity: 1;
+	max-height: 95px;
+	height: auto;
+	width: auto\9;
+}
+img.lazy {
+	max-width: 100%;
+	opacity: 1;
+	max-height: 95px;
+	height: auto;
+	width: auto\9;
+}
+/* added for new auto complete */
+#bsell {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	font: menu;
+	font-size: 12px;
+	line-height: 16px;
+	Overflow: hidden;
+	text-align: left;
+}
+#bsell a {
+	text-decoration: none;
+}
+#bsell table {
+	font-size: 12px;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+#bsell table th {
+	font-size: 13px;
+	font-weight: normal;
+	background: #ebebeb;
+	;
+	border-top: 4px solid black;
+	border-bottom: 1px solid #fff;
+	padding: 8px;
+	color: black;
+}
+#bsell table td {
+	border-bottom: 1px solid black;
+	color: #669;
+	background: white;
+	border-top: 1px solid transparent;
+	padding: 4px;
+	vertical-align: top;
+	text-align: left;
+}
+#bsell table td:hover {
+	background-color: #4c86be;
+	color: white;
+}
+#bsell table td:hover a {
+	color: white;
+}
+#tsell a {
+	text-decoration: none;
+}
+#tsell table {
+	font-size: 12px;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+#tsell table th {
+	font-size: 10px;
+	font-weight: normal;
+	background: #ebebeb;
+	;
+	border-top: 4px solid black;
+	border-bottom: 1px solid #fff;
+	padding: 8px;
+	color: black;
+}
+#tsell table td {
+	border-bottom: 1px solid black;
+	color: #669;
+	background: white;
+	border-top: 1px solid transparent;
+	padding: 4px;
+	vertical-align: top;
+	text-align: center;
+}
+#tsell table td:hover {
+	background-color: #4c86be;
+	color: white;
+}
+#tsell table td:hover a {
+	color: white;
+}
+.ac_odd {
+	background-color: none;
+}
+/* Main menu settings */
+/* Top menu items */
+#centeredmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* float: right;
+*/
+	position: relative;
+	right: 50%;
+}
+#centeredmenu ul li {
+	margin: 0 0 0 1px;
+	padding: 0;
+	float: left;
+	position: relative;
+	left: 50%;
+	top: 1px;
+}
+#centeredmenu ul li a {
+	text-decoration: none;
+	color: #555555;
+	font-family: MyriadPro, 'PT Sans', 'Open Sans' , ' Arial' , sans-serif;
+	background: white;
+	font-weight: 600;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+}
+#centeredmenu ul li.active a {
+	color: #4c86be;
+}
+#centeredmenu ul li a:hover {
+/* Top menu items background colour */
+	/* background: #36f;
+	color: #fff;
+	border-bottom: 1px solid #03f;
+*/
+}
+#centeredmenu ul li:hover a,
+#centeredmenu ul li.hover a {
+/* This line is required for IE 6 and below */
+/* Top menu items background colour */
+	/* background: #36f;
+	color: #fff;
+	border-bottom: 1px solid #03f;
+*/
+}
+/* Submenu items */
+#centeredmenu ul ul {
+	display: none;
+/* Sub menus are hidden by default */
+	position: absolute;
+	top: 25px;
+	/* top: 30px;
+*/
+	left: 0px;
+	right: auto;
+/*resets the right: 50% on the parent ul */
+	/* width: 10em;
+*/
+/* width of the drop-down menus */
+}
+#centeredmenu ul ul li {
+	left: auto;
+/*resets the left: 50% on the parent li */
+	margin: 0;
+/* Reset the 1px margin from the top menu */
+	clear: left;
+	width: 100%;
+}
+#centeredmenu ul ul li a,
+#centeredmenu ul li.active li a,
+#centeredmenu ul li:hover ul li a,
+#centeredmenu ul li.hover ul li a {
+/* This line is required for IE 6 and below */
+/* resets the bold set for the top level menu items */
+/* overwrite line-height value from top menu */
+/* sub menu item horizontal lines */
+	/* font-size: 14px;
+	font-weight: normal;
+	background: #eee;
+	color: #444;
+	line-height: 1.4em;
+	border-bottom: 1px solid #ddd;
+*/
+}
+#centeredmenu ul ul li a:hover,
+#centeredmenu ul li.active ul li a:hover,
+#centeredmenu ul li:hover ul li a:hover,
+#centeredmenu ul li.hover ul li a:hover {
+/* This line is required for IE 6 and below */
+/* Sub menu items background colour */
+	/* background: #36f;
+	color: #fff;
+*/
+}
+/* Flip the last submenu so it stays within the page */
+#centeredmenu ul ul.last {
+	left: auto;
+	/* reset left: 0;
+value */
+	right: 0;
+/* Set right value instead */
+}
+/* Make the sub menus appear on hover */
+#centeredmenu ul li:hover ul,
+#centeredmenu ul li.hover ul {
+/* This line is required for IE 6 and below */
+	display: block;
+/* Show the sub menus */
+}
+#SRbodyproddesc {
+	background-color: transparent;
+}
+#SRAOButton {
+	background-color: transparent;
+}
+.block-tags {
+	border: none;
+	float: left;
+}
+.FaccordionButton {
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+	border-width: 0 0 1px;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 1.75em;
+	margin: 0;
+	padding: 5px 10px;
+	min-width: 164px;
+	color: #08436A;
+	background: #e5e5e5;
+	border-bottom: 1px solid #999999;
+}
+#FilterText {
+	font-size: 12px;
+	float: left;
+	width: 100%;
+}
+h3.nosh {
+	position: relative;
+	height: auto !important;
+	height: 1%;
+	color: #FFF;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	/* text-transform: uppercase;
+*/
+	text-shadow: rgba(122,136,37,.7) 1px 1px 0;
+	margin: 0;
+	padding: 5px 10px;
+	float: left;
+	color: white;
+	background: #ebebeb;
+	;
+}
+#pager-header span {
+	padding-left: 170px;
+}
+#pager-footer span {
+	padding-left: 170px;
+}
+#menu-icon {
+	display: block;
+	cursor: pointer;
+	padding: 0 20px;
+	margin-bottom: 3px;
+	width: 100%;
+	text-align: left;
+	background-color: #323232;
+}
+#right {
+	float: right;
+	width: auto;
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+.ac_results {
+	background: white;
+}
+.ac_odd {
+	background: white;
+}
+@media only screen and (min-width: 768px) {
+span.toggle {
+	display: none;
+}
+.footer-col-content,  .block .block-content,  .box-collateral-content {
+	height: 100% !important;
+	display: block !important;
+	opacity: 1!important;
+}
+}
+.topcartimage {
+	height: 15px;
+	width: auto;
+	padding: 0px;
+}
+.footer {
+	min-height: auto;
+	padding: 0px;
+	border: none;
+	background: none;
+}
+.footer-container {
+	background: #848484;
+}
+.footer h4 {
+	text-transform: uppercase;
+	position: relative;
+	font-size: 16px;
+	margin-bottom: 12px;
+	font-weight: 300;
+	color: white;
+}
+.footer ul li a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+.footer ul li a:hover {
+	color: #333;
+}
+.bluefooter {
+	width: 100%;
+	background: #315a82;
+	COLOR: WHITE;
+	HEIGHT: 60PX;
+	BORDER: NONE;
+	MARGIN-TOP: -15PX;
+	TEXT-ALIGN: CENTER;
+}
+#clickme:after {
+	content: "\f107";
+	margin-right: 9px;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+.topcart:before {
+	content: "\f07a";
+	float: left;
+	margin-right: 5px;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+.topcart {
+	font-size: 25px;
+	font-weight: normal;
+	font-decoration: none;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 0 !important;
+}
+.header .logo img {
+	height: 150px;
+}
+.header h1.logo {
+	MARGIN-BOTTOM: -30px;
+	MARGIN-TOP: -12PX;
+}
+.content-tabs {
+	float: left ;
+  width: 100% ; 
+}
+.banner-block {
+	overflow: hidden;
+	margin: 0 -5px;
+	margin-bottom: 19px;
+}
+.banner-block img {
+	max-width: 100%;
+}
+.banner-block li {
+	float: left;
+	width: 50%;
+	padding: 0 5px 10px;
+}
+.banner-block li a {
+	display: block;
+	border: 1px solid #999999;
+	border-bottom-color: #08436A;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	background: #E5E5E5;
+}
+.banner-block li a:hover {
+	border-color: #08436A;
+}
+.banner-block .banner-block-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 15px 17px;
+}
+.banner-block h1 {
+	font-size: 29px;
+	line-height: 29px;
+	font-weight: bold;
+	color: #08436A;
+	text-transform: uppercase;
+	margin-bottom: -3px;
+}
+.banner-block h2 {
+	font-size: 33px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #999999;
+	margin-bottom: 1px;
+}
+.banner-block p {
+	width: 63%;
+	line-height: 15px;
+	margin-bottom: 0;
+}
+.gobutton {
+	line-height: normal;
+	min-height: auto;
+	padding: 2px 10px 2px 10px;
+}
+.inputText {
+	padding: 10px
+}
+.nowak-seo-about-section {
+	width: 95%
+}
+.testimonials {
+	width: 100%;
+}
+.text-16 {
+	top: 65px;
+}
+.shop-now {
+	left: 10%;
+	min-height: 44px;
+	padding: 27px 0 25px;
+	position: absolute;
+	top: 70%;
+	width: 32.869694%;
+	background: #4c86be;
+}
+.main-container {
+	padding: 0px;
+}
+.shop-now {
+	left: 10%;
+	min-height: 44px;
+	padding: 27px 0 25px;
+	position: relative;
+	top: 70%;
+	width: 32.869694%;
+	background: #4c86be;
+}
+#datsml {
+	font-size: 14PX;
+	padding-left: 5px;
+	/* font-style: normal;
+*/
+}
+.text-6 {
+	font-size: 1.6em
+}
+	;
+.testimonials {
+	left: 0;
+	min-height: auto;
+	padding: 15px;
+	/* position: absolute;
+*/
+	top: auto;
+	width: auto;
+	background: #4c86be;
+}
+.nowak-seo-about-section {
+	/* top: 2304px;
+*/
+	width: 81.73913%;
+	font-size: 1.6em;
+	line-height: auto;
+	text-align: center;
+	padding-left: 10%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.testimonials {
+	left: 0;
+	min-height: 100px;
+	padding: 15px
+}
+.shop-now {
+	left: 60%;
+	top: 75%;
+}
+.midtabs li a {
+	border-radius: 10px 10px 0px 0px;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+	text-decoration: none;
+	color: white;
+	background: #848484;
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid white;
+}
+.midtab_content {
+	display: none;
+}
+.midtabs ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.form input, select, textarea {
+	border: solid 1px #d3d4d6;
+	font-size: 11px;
+	height: 22px;
+	line-height: 8px;
+	padding: 5px;
+	margin: 2px;
+}
+textarea {
+	border: 1px solid #D3D4D6;
+	font-size: 11px;
+	width: 300px;
+	height: 150px;
+}
+#centeredmenu {
+	margin: 0;
+	padding: 0 0 0 190px;
+	position: relative;
+	text-decoration: none;
+	/* width: 805px;
+*/
+	z-index: 100;
+	min-width: 805px;
+	width: auto;
+}
+#right_specials {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	background: #ebebeb;
+}
+h3.nosh {
+	color: red;
+}
+.top-icon-menu > div {
+	padding: 15px 25px;
+}
+#pager-header span {
+	padding-left: 10%;
+}
+#navigation {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 4px;
+	border-top: 1px solid #000;
+}
+.viewer {
+	float: right;
+	margin-top: -10px;
+} 
+    </style>                     
+    <!-- end added --> 
+<script language='JavaScript' type="text/javascript" src='./js/jqfunctions.js?v=5'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/tsh_utils.js?v=5'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/searchlib.js?v=10'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/milonic_src.js?v=5'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/custom.js?v=5'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/scripts.js?v=5'></script> 
+<script language='JavaScript' type="text/javascript" src='./js/NowakRnPublic.js?v=11'></script> 
+<script type='text/javascript'>
+if(ns4)_d.write("<script language=Javascript src='./js/mmenuns4.js?v=5'><\/script>");
+else _d.write("<script language=Javascript src='./js/mmenudom.js?v=5'><\/script>");
+ // override changepath to ask for a login
+function changepath(pstr) {
+   var image_url = "" ; 
+     $('#SpecLoader').hide();
+     $('#mask').fadeOut(1000)
+  // Check Existence of Mask and Dialog 
+  if ($("#mask").length < 1) {
+    // need to create div 
+    makediv("mask");
+  }
+  if ($("#SessLoader").length < 1) {
+    // need to create div 
+    makediv("SessLoader");
+  }
+  //Get the screen height and width  
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  //Set heigth and width to mask to fill up the whole screen  
+  $('#mask').css({
+    'width': maskWidth,
+    'height': maskHeight,
+    'position': 'absolute',
+    'left': '0',
+    'top': '0',
+    'z-index': '9000',
+    'background-color': '#000',
+    'display': 'none'
+  });
+  //transition effect   
+  $('#mask').fadeIn(1000);
+  $('#mask').fadeTo("slow", 0.8);
+  //Get the window height and width  
+  var winH = $(document).height();
+  var winW = $(window).width();
+  //Set the popup window to center  
+  $('#SessLoader').css({
+    'min-width': '300px',
+    'min-height': '500px',
+    'padding': '20px',
+    'background': 'white'
+  });
+  // $('#SessLoader').css({'width':'530px','height':'300px','padding':'0px','background': 'white'});
+  // Added Rounded corders - djf 6-28-13
+  $('#SessLoader').css({
+    '-webkit-border-radius': '50px',
+    '-moz-border-radius': '50px',
+    'border-radius': '50px',
+    'border': '2px solid #363600',
+    'background-color': '#FFFFFF',
+    '-webkit-box-shadow': '#CCCCCC 10px 10px 10px',
+    '-moz-box-shadow': '#CCCCCC 10px 10px 10px',
+    'box-shadow': '#CCCCCC 10px 10px 10px'
+  });
+  $('#SessLoader').css({
+    'display': 'none',
+    'z-index': '9999',
+    'position': 'absolute',
+    'color': 'black'
+  });
+  $('#SessLoader').html('<div style="font-family:arial;font-size:20px;"> <div style=float:right> <a href=# id="SessClose" style="padding-right: 33px;" >X</a> </div> </div> <div id="SessContent"> </div> ');
+  $('#SessLoader').css({
+    'position': 'fixed',
+    'top': '50%',
+    'left': '50%',
+    'margin-top': '-250px',
+    'margin-left': '-130px'
+  });
+  // var dummy = widgetload(parms, '#SessContent');
+    var fhtml = '' ; 
+    fhtml += '<form class="CLLoginForm" action=" ' + MDSRnUrl + '" id="LoginForm" method=post>  ' ;
+    fhtml += '<input type=hidden name=pageid value="0">                ' ;
+    fhtml += '<input type=hidden name=loginpath value=" '+ pstr + '">       <img alt="Nowak Dental Supplies" title="Nowak Dental Supplies" src="./images/RNlogocrp.jpg" /></a> <br> Please Login Below <br>       ' ;
+    fhtml += '<br><INPUT class=inputText id=username maxLength=50 size=15 name=CustomerId Placeholder="Enter Username"> ' ;
+    fhtml += '<br><INPUT class=inputText id=password type=password maxLength=50 size=15 name=Password Placeholder="Enter Password"> ' ; 
+// var PSTR = |PNO|QTY|UM^
+    fhtml += '   <br> <br>  <input type=submit class="button1" type="button" value="Login"  >  ' ;
+    fhtml += '   <br> <br>  <a onclick="javascript:regme()" href="#" >No Account? Sign Up Here </a>  ' ;
+    fhtml += '</form>   ' ;
+   //  fhtml += '   <br> Status: <div id="StatusMsg"> </div> ' ; 
+    $('#SessContent').html(fhtml) ; 
+  //transition effect  
+  $('#SessLoader').fadeIn(2000);
+  //if clicked hide
+  $('#SessClose').click(function() {
+    $('#SessLoader').hide();
+    $('#mask').fadeOut(1000)
+  });
+}
+//end added generic popup
+ // override changelist to ask for a login
+function changelist(pstr,sflag,templatename) {
+   var image_url = "" ; 
+     $('#SpecLoader').hide();
+     $('#mask').fadeOut(1000)
+  // Check Existence of Mask and Dialog 
+  if ($("#mask").length < 1) {
+    // need to create div 
+    makediv("mask");
+  }
+  if ($("#SessLoader").length < 1) {
+    // need to create div 
+    makediv("SessLoader");
+  }
+  //Get the screen height and width  
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  //Set heigth and width to mask to fill up the whole screen  
+  $('#mask').css({
+    'width': maskWidth,
+    'height': maskHeight,
+    'position': 'absolute',
+    'left': '0',
+    'top': '0',
+    'z-index': '9000',
+    'background-color': '#000',
+    'display': 'none'
+  });
+  //transition effect   
+  $('#mask').fadeIn(1000);
+  $('#mask').fadeTo("slow", 0.8);
+  //Get the window height and width  
+  var winH = $(document).height();
+  var winW = $(window).width();
+  //Set the popup window to center  
+  $('#SessLoader').css({
+    'min-width': '300px',
+    'min-height': '500px',
+    'padding': '20px',
+    'background': 'white'
+  });
+  // $('#SessLoader').css({'width':'530px','height':'300px','padding':'0px','background': 'white'});
+  // Added Rounded corders - djf 6-28-13
+  $('#SessLoader').css({
+    '-webkit-border-radius': '50px',
+    '-moz-border-radius': '50px',
+    'border-radius': '50px',
+    'border': '2px solid #363600',
+    'background-color': '#FFFFFF',
+    '-webkit-box-shadow': '#CCCCCC 10px 10px 10px',
+    '-moz-box-shadow': '#CCCCCC 10px 10px 10px',
+    'box-shadow': '#CCCCCC 10px 10px 10px'
+  });
+  $('#SessLoader').css({
+    'display': 'none',
+    'z-index': '9999',
+    'position': 'absolute',
+    'color': 'black'
+  });
+  $('#SessLoader').html('<div style="font-family:arial;font-size:20px;"> <div style=float:right> <a href=# id="SessClose" style="padding-right: 33px;" >X</a> </div> </div> <div id="SessContent"> </div> ');
+  $('#SessLoader').css({
+    'position': 'fixed',
+    'top': '50%',
+    'left': '50%',
+    'margin-top': '-250px',
+    'margin-left': '-130px'
+  });
+  // var dummy = widgetload(parms, '#SessContent');
+    var fhtml = '' ; 
+    fhtml += '<form class="CLLoginForm" action=" ' + MDSRnUrl + '" id="LoginForm" method=post>  ' ;
+    fhtml += '<input type=hidden name=pageid value="31">   ' ;
+    fhtml += '<input type=hidden name=customlist value="'+ templatename + '">  ' ;
+    fhtml += '<input type=hidden name=loginpath value="'+ pstr + '">       <img alt="Nowak Dental Supplies" title="Nowak Dental Supplies" src="./images/RNlogocrp.jpg" /></a> <br> Please Login Below <br>       ' ;
+    fhtml += '<br><INPUT class=inputText id=username maxLength=50 size=15 name=CustomerId Placeholder="Enter Username"> ' ;
+    fhtml += '<br><INPUT class=inputText id=password type=password maxLength=50 size=15 name=Password Placeholder="Enter Password"> ' ; 
+// var PSTR = |PNO|QTY|UM^
+    fhtml += '   <br> <br>  <input type=submit class="button1" type="button" value="Login"  >  ' ;
+    fhtml += '   <br> <br>  <a onclick="javascript:regme()" href="#" >No Account? Sign Up Here </a>  ' ;
+    fhtml += '</form>   ' ;
+   //  fhtml += '   <br> Status: <div id="StatusMsg"> </div> ' ; 
+    $('#SessContent').html(fhtml) ; 
+  //transition effect  
+  $('#SessLoader').fadeIn(2000);
+  //if clicked hide
+  $('#SessClose').click(function() {
+    $('#SessLoader').hide();
+    $('#mask').fadeOut(1000)
+  });
+}
+//end added generic popup
+function ordergrid(aprodno) {
+   changepath("PS") ;  
+}
+// search functions - added djf 10-27-17
+var filterstring = 'fwebtypes,fwebclasses,fwebcatgs,fwebsubcatgs' ;
+var fnamestr = 'Product Type,Class,Category,Sub Category' ;
+function loadspecials() {
+  if (MDSSpecialsTemplate !== '') {
+    var dummy = widgetload(MDSRnUrl + '?orderno=' + OID + '&CUSTOMERID=' + CID + '&LOGINPATH=HOTV&pageid=31&CUSTOMLIST=WEB*' + MDSSpecialsTemplate, '#RSdivcontainer');
+  } else {
+            $("#RSdivcontainer").html("Missing Template Id in Parameter Web Order Options") ;
+  }
+  var lp = "BRX" ; // web types 
+  var dummy = widgetload(MDSRnUrl + '?orderno=' + OID + '&CUSTOMERID=' + CID + '&LOGINPATH=' + lp + '&PAGEID=31', '#typeholder');
+}
+$(document).ready(function() {  
+ showpmenu() ; 
+ loadspecials()  
+$('.tab_content').hide();
+$(".RTab").addClass("active").show();
+$('#Tab1').fadeIn();
+// Add interactive accordion logic
+ $('div.FaccordionButton').click(function() { $(this).next().toggle( "slow" ); })
+ 	//When page loads...
+	$(".midtab_content").hide(); //Hide all content
+  var linkpass = $(location).attr('hash');
+  if (linkpass !== '') {
+      	$(linkpass).addClass("active"); //Add "active" class to selected tab
+        $(linkpass).fadeIn();
+   } else {     
+	$("ul.midtabs li:first").addClass("active").show(); //Activate first tab
+	$(".midtab_content:first").show(); //Show first tab content
+	}
+	//On Click Event
+	$("ul.midtabs li").click(function() {
+		$("ul.midtabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".midtab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn();
+		return false;
+	});
+});      
+ </script>                                         
+  </head>  
+  <body class="ps-static cms-index-index cms-home">    
+    <form method="POST" action="#"  name="login11">        
+      <input type=hidden name=CustomerId value="WEBPRICE">        
+      <input type=hidden name=orderno value="888888">        
+      <input type=hidden name=loginpath value="SR">        
+      <input type=hidden name=submitvar value="">        
+      <input type=hidden name=pageid value="2A">        
+      <input type=hidden name=itemspage value="">        
+      <input type=hidden name=Changesort value="">    
+    </form>    
+    <!-- Begine Wrapper -->    
+    <div class="wrapper ps-static en-lang-class">      
+      <noscript>        
+        <div class="global-site-notice noscript">          
+          <div class="notice-inner">            
+            <p><strong>JavaScript seems to be disabled in your browser.</strong>                
+              <br/>You must have JavaScript enabled in your browser to utilize the functionality of this website.             
+            </p>          
+          </div>        
+        </div>      
+      </noscript>      
+      <!-- Begin Page -->      
+      <div class="page">        
+        <div class="shadow">        
+        </div>        
+        <div class="swipe-left">        
+        </div>        
+        <!-- Begin Swipe -->        
+        <div class="swipe">          
+          <div class="swipe-menu">              
+            <a title="Home" class="home-link" href="#">Home</a>            
+            <ul class="links">                
+              <li class="first">                
+                <a title="My Account" href=# onclick="javascript:changepath('MYA')">My Account </a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('OE')">Shipping Information</a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('CL')">Use a Template</a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('PS')">Search for Products</a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('CO')">View Current Order</a>              
+              </li>                
+              <li>                
+              <a href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a>              
+              </li>                
+              <li class="last">                  
+                <a href="https://remotenet.nowakdental.com/">Log In </a>              
+              </li>                
+              <li>                
+              <a title="Call Us Toll Free" href="tel:+800-654-7623"> 800-654-7623 </a>              
+              </li>                
+              <li class="last">                  
+                <a title="Contact Us" href="mailto:info@nowakdental.com"> info@nowakdental.com </a>              
+              </li>            
+            </ul>            
+            <div class="footer-links-menu">              
+              <ul>                  
+                <li>                  
+                <a href=# onclick="javascript:browsepathG('BRCAS','||A02')">Top Sellers</a>                
+                </li>                  
+                <li>                
+                <a href=# onclick="javascript:browsepathG('BRCAS','||A08')">Most Popular</a>                
+                </li>                  
+                <li>                  
+                <a href=# onclick="javascript:browsepathG('BRCAS','||A01')">Latest Items</a>                
+                </li>                  
+                <li>                  
+                <a href=# onclick="javascript:browsepathG('BRCAS','||A04')">Trending Items</a>                
+                </li>                  
+                <li>                  
+                <a href=# onclick="javascript:browsepathG('BRCAS','||A05')">Best Selling Items</a>                
+                </li>              
+              </ul>              
+              <ul class="links-2">                  
+                <li>                  
+                <a href=# onclick="javascript:changepath('COO')">Check Order Status</a>                
+                </li>                  
+                <li>                  
+                <a href=# onclick="javascript:changepath('PED')">Find a Pedigree</a>                
+                </li>                  
+                <li>                  
+                <a href=# onclick="javascript:changepath('CP')">Change My Password</a>                
+                </li>              
+              </ul>            
+            </div>          
+          </div>        
+        </div>        
+        <!-- End Swipe -->        
+        <!-- Begin Top Icons -->        
+        <div class="top-icon-menu">          
+          <div class="swipe-control">              
+            <i class="fa fa-align-justify"></i>          
+          </div>          
+          <div class="topcart" title="Quick View of your cart" onclick="javascript:changepath('CO')">   0 item(s) $0.00           
+          </div>          
+          <div class="top-search">              
+            <i class="fa fa-search"></i>          
+          </div>            
+          <span class="clear">          
+          </span>        
+        </div>        
+        <!-- End Top Icons -->        
+         <div class="row">          
+          <div class="col-md-12 hidden-xs">                       
+                <div class="top-promo">FREE SHIPPING - On All Orders Over $50*             
+                </div>          
+              </div>             
+       
+        </div>        
+        <!-- Begin Header Container -->        
+        <div class="header-container">          
+          <!-- Begin Container -->          
+          <div class="container-fluid">            
+            <!-- Begin Row -->            
+            <div class="row">              
+              <!-- Begin col-xs-12 -->              
+              <div class="col-xs-12">                
+                <!-- Begin Header -->                
+                <div class="header">                  
+                  <h1 class="logo"><strong>Nowak Dental Supplies</strong>                      
+                    <a onclick="javascript:changepath('PS')" href="#" title="Nowak Dental Supplies" class="logo">                        
+                      <img alt="Nowak Dental Supplies" title="Nowak Dental Supplies" src="./images/RNlogocrp.jpg" /></a></h1>                  
+                  <!-- Begin Search Form -->                  
+                  <div id="search_mini_form" >                    
+                    <div class="form-search">                        
+                      <label for="search">Search:                       
+                      </label>                      
+                      <div id="search">                          
+                        <input type="text" placeholder="Search" id="query" name="query" style="float: left;" autocomplete="off" class="ac_input input-text">                      
+                      </div>                      
+                      <button type="submit" title="Search" class="button" onclick="javascript:TopSearch()">                          
+                        <span>                            
+                          <span>Search                            
+                          </span>                        
+                        </span>                      
+                      </button>                      
+                      <div id="search_autocomplete" class="search-autocomplete">                      
+                      </div>                    
+                    </div>                  
+                  </div>                  
+                  <!-- End Search Form -->                  
+                  <div class="clear">                  
+                  </div>                  
+                  <div class="weblockmsg">                    
+                    <!-- [WEB.LOCK.MSG] -->                  
+                  </div>                  
+                  <!-- Begin f-right -->                  
+                  <div class="f-right">                    
+                    <!-- Begin Header-Buttons -->                    
+                    <div class="header-buttons">                      
+                      <!-- added new top for template-->                      
+                      <ul class="links">                          
+                        <li>                        
+                        <p class="welcome-msg">                            
+                          <img class="topcartimage" src="./images/my_account.png" alt="">                            
+                          <a title="My Account" href=# onclick="javascript:changepath('MYA')"> Welcome to Nowak Dental. Call Us 800-654-7623  </a>                          
+                          <!-- Call Us 800-654-7623 | Email <a href="mailto:info@nowakdental.com"> info@nowakdental.com </a> -->                        
+                        </p>                        
+                        </li>                          
+                        <li>                          
+                        <a title="View Entire Web Order" href=# onclick="javascript:changepath('OE')" >                            
+                          <i class="icon-user"></i>                            
+                          <img class="topcartimage" src="./images/shopping_cart.png" alt=""> View Order  </A>                        
+                        <a id="clickme" title="Quick View of your cart" onclick="javascript:changepath('OE')">     0 item(s) $0.00 </strong>                          
+                          <div id="currentorderwidget" style="position: absolute; top: 80px; display: none; background: rgb(245, 245, 245);" >                          
+                          </div>   </a>                          
+                        <a title="Print Web Order" class="fa ExportOrder fa-print" href=# onclick="javascript:changepath('OE')"> </a>                        
+                        </li>                          
+                        <li>                          
+                        <a href="#" onclick="javascript:changepath('EO')" >                            
+                          <img class="topcartimage" src="./images/check_out_bag.png" alt=""> 1-Click Checkout </a>                        
+                        </li>                          
+                        <li>                          
+                        <a href="https://remotenet.nowakdental.com/">                            
+                          <i class="icon-home"></i>                            
+                          <img class="topcartimage" src="./images/login_2.png" alt=""> Log In </a>                        
+                        </li>                          
+                        <!-- <li> <a href="mailto:info@nowakdental.com"> <i class="icon-mail"></i> Issues? </a></li> -->                       
+                      </ul>                      
+                      <!-- end of new top for template -->                    
+                    </div>                    
+                    <!-- End Header-Buttons -->                    
+                    <div class="clear">                    
+                    </div>                  
+                  </div>                  
+                  <!-- End F-Right -->                  
+                  <!-- Begin Quick Access -->                  
+                  <div class="quick-access">                    
+                    <div id="centeredmenu">                      
+                      <!-- BEGIN HEADER_MENU -->                      
+                      <ul>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink">Deals</a>                        
+                        <ul>                            
+                          <li>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:browsepathG('BRCAS','||A02')">Top Sellers</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:browsepathG('BRCAS','||A08')">Most Popular</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:browsepathG('BRCAS','||A01')">Latest Items</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:browsepathG('BRCAS','||A04')">Trending Items</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:browsepathG('BRCAS','||A05')">Best Selling Items</a>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                          
+                <!--        <a href="#" title="Product Search" class="firstlink Psearch" xonclick='javascript:$("#tab1").toggle("slow")'   onmouseout='javascript:$(".STab").click()'   onmouseover='javascript:$(".STab").click()'  > Search by Category </a>                        
+                -->
+                      <a href="#" title="Product Search" class="firstlink Psearch" xonclick='javascript:showpmenu()'   xonmouseout='javascript:showpmenu()'   xonmouseover='javascript:showpmenu()'  > Search by Category </a>                        
+                       
+                                        </li>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink">Place an Order</a>                        
+                        <ul>                            
+                          <li>                          
+                          <a class="menuItem" href=# onclick="javascript:changepath('OE')">Shipping Information</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('CL')">Use a Template</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>                            
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('PS')">Search for Products</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('CO')">View Current Order</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:sendquote()">Email Order as Quote</a>                          
+                          </li>                            
+                          <li>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                        
+                        <a href="#" class="menu_normallink">My Account</a>                        
+                        <ul>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('MYA')">My Information</a>                          
+                          </li>                          
+                          <!--  COMMENTED OUT AS PER BRANDI.. <li> <a class="menuItem" href=# onclick="javascript:changepath('IQ')">Check What's in Stock</a></li> -->                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('CIQ')">Check My Pricing</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('COO')">Check Order Status</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('PUH')">View/Export My Purchases </a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('ARQ')">View My Invoices</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('BO')">View My Backorders</a>                          
+                          </li>                            
+                          <li>                          
+                          </li>                            
+                          <li>                          
+                          </li>                            
+                          <li>                          
+                          </li>                            
+                          <li>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('CP')">Change My Password</a>                          
+                          </li>                            
+                          <li>                            
+                          <a class="menuItem" href=# onclick="javascript:changepath('LIC')">View Our Licenses</a>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink" onclick='javascript:showcontact()' >Contact Us</a>                        
+                        <ul>                            
+                          <li>                            
+                          <a class="menuItem" href="#" onclick='javascript:showcontact()' >Contact Us</a>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink" onclick='javascript:$("#slide_holder").show();$(".midtab_content").hide();$("#midtab2").fadeIn()'>About Us</a>                        
+                        <ul>                            
+                          <li>                            
+                          <a class="menuItem" href="#" onclick='javascript:$("#slide_holder").show();$(".midtab_content").hide();$("#midtab2").fadeIn()' >About Us</a>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink" onclick='javascript:$("#slide_holder").show();$(".midtab_content").hide();$("#midtab4").fadeIn()'>FAQ</a>                        
+                        <ul>                            
+                          <li>                            
+                          <a class="menuItem" href="#" onclick='javascript:$("#slide_holder").show();$(".midtab_content").hide();$("#midtab4").fadeIn()' >FAQ</a>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                          
+                        <li>                          
+                        <a href="#" class="menu_normallink">Home</a>                        
+                        <ul>                            
+                          <li>                            
+                          <a class="menuItem" href="https://remotenet.nowakdental.com/">Home Page</a>                          
+                          </li>                            
+                          <li>                          
+                          </li>                        
+                        </ul>                        
+                        </li>                      
+                      </ul>                    
+                    </div>                    
+                    <!-- END HEADER_MENU -->                    
+                    <!-- place holder for sales info -->                    
+                    <div id=right>                    
+                    </div>                  
+                  </div>                  
+                  <!-- End Quick-Access -->                  
+                  <div class="clear">                  
+                  </div>                
+                </div>                
+                <!-- End Header -->              
+              </div>              
+              <!-- End col-xs-12 -->            
+            </div>            
+            <!-- End Row -->            
+            <div class="clear">            
+            </div>          
+          </div>          
+          <!-- End Container -->        
+        </div>        
+        <!-- End Header Container -->        
+        <div id="tsh">        
+        </div>        
+        <div id="ORDXdivcontainer" style="z-index: 99999 ;top: 115px; left: 200px; width: 900px; height: auto; background-color: #ffffff; overflow: scroll;display: none; position: absolute; border: 1px solid" >        
+        </div>        
+        <!-- Begin Nav Container for mobile -->        
+        <div class="nav-container-mobile">          
+          <!-- Begin Container -->          
+          <div class="container">            
+            <!-- Begin Row -->            
+            <div class="row">              
+              <!-- Begin col-xs-12 -->              
+              <div class="col-xs-12">                
+                <!-- Begin sf-menu-block -->                
+                <div class="sf-menu-block">                  
+                  <!-- Begin menu-icon-style -->                  
+                  <!-- <div id="menu-icon" class="menu-icon-style">Categories</div> -->                  
+                  <!-- collapse menu for phone/sidemenu -->                  
+                  <!-- End menu-icon-style<ul class="sf-menu-phone"> -->                  
+                  <!-- Added Mobile Menu -->                  
+                  <div id=nmenu>                    
+                    <label id="menu-icon" for="show-menu" class="menu-icon-style"> &nbsp; Shop By Category &nbsp;                     
+                    </label>                      
+                    <input type="checkbox" id="show-menu" role="button">                  
+                  </div>                  
+                  <!-- </ul> -->                
+                </div>                
+                <!-- End sf-menu-block -->              
+              </div>              
+              <!-- End Col Xs-12 -->            
+            </div>            
+            <!-- End Row -->            
+            <div class="clear">            
+            </div>          
+          </div>          
+          <!-- End Container -->        
+        </div>        
+        <!-- End Nav Container -->        
+        <!-- added code -->        
+        <!-- Begin Main Container col2-left-layout -->        
+        <div class="main-container col2-left-layout">          
+          <!-- Begin Division 'Container' -->          
+          <div class="container-fluid">            
+            <!-- Begin Division 'Row 1' -->            
+            <div class="row">              
+              <!-- Begin Division 'col-xs-12' -->              
+              <div class="col-xs-12">                
+                <!-- Begin Division 'Main' -->                
+                <div class="main">                  
+                  <!-- Begin Row 2 -->                  
+                  <div class="row">                    
+                    <!-- Begin Division 'col-main col-xs-12 col-sm-9' -->                    
+                    <div class="col-left sidebar col-xs-12 col-sm-3" >                                                                 
+                      <div class="block block-tags">                                                    
+                        <div class="block-content">                            
+                          <div class="custom2" >                             
+                            <div id="right_specials">                                 
+                              <p style="margin: 5px; font-size: 20px; text-align: center;" > Account Login 
+                              </p>                        
+                              <form class="CLLoginForm" action="https://remotenet.nowakdental.com/MDSWEB/login996" id="PageLoginForm" method="post">                            
+                                <input type="hidden" name="pageid" value="0">                          
+                                <input type=hidden name=submitvar value="">                          
+                                <!-- used by search pages -->                            
+                                <input type="hidden" name="loginpath" value="PS">                                                   
+                                <input style="margin: 5px; font-size: 20px; text-align: center;width: 90%" class="inputText" id="username" maxlength="50" size="15" name="CustomerId" placeholder="Enter Username">                            
+                                <br>                            
+                                <input  style="margin: 5px;font-size: 20px; text-align: center;width: 90%" class="inputText" id="password" type="password" maxlength="50" size="15" name="Password" placeholder="Enter Password">                            
+                                <br>                            
+                                <input  style="font-size: 20px; text-align: center;width: 90%" type="submit" class="button1" value="Login">                            
+                                <br>                  No Account?                            
+                                <a onclick="javascript:regme()" href="#"> Sign Up Here </a>                        
+                              </form>                            
+                            </div>                          
+                          </div>                        
+                        </div>                      
+                        <div class="block-content">                        
+                          <div class="content-tabs">                          
+                            <!-- Nav tabs -->                          
+                            <ul class="tabs">                              
+                              <li>                              
+                              <a class="SearchTabLink SPTab" href="#Tab1">Specials</a>                            
+                              </li>                              
+                              <li>                              
+                              <a class="SearchTabLink STab" href="#Tab2">Search</a>                            
+                              </li>                              
+                              <li>                            
+                              <a class="SearchTabLink RTab" href="#Tab3">Filter Results</a>                            
+                              </li>                          
+                            </ul>                          
+                            <!-- Tab panes -->                          
+                            <div class="tab_container">                            
+                              <div class="tab_content" id="Tab1">                              
+                                <div id="right_specials">        <h2>Popular Products </h2>                                
+                                  <div id="RSdivcontainer">                                
+                                  </div>                              
+                                </div>                            
+                              </div>                            
+                              <div class="tab_content" id="Tab2">                              
+                                <!-- Begin Division 'nav-container block' -->                              
+                                <div class="nav-container block">                                
+                                  <!-- Begin Division 'menu-icon-style' -->                                
+                                  <!-- <div class="menu-icon-style">Categories</div> -->                                
+                                  <!-- End Division 'menu-icon-style' -->                                
+                                  <!-- Begin Unordered List 'sf-menu-phone item' -->                                
+                                  <!-- BEGIN LEFT_MENUCONTENT -->                                
+                                  <div id='left_menucontent' >                                
+                                  </div>                                
+                                  <!-- END LEFT_MENUCONTENT -->                                
+                                  <!-- End Unordered List 'sf-menu-phone item' -->                              
+                                </div>                              
+                                <!-- End Division 'nav-container block' -->                            
+                              </div>                            
+                              <div class="tab_content" id="Tab3">                              
+                                <h3 class="nosh">Your Filters                                  
+                                  <span>                                
+                                  </span> </h3>                              
+                                <div class="FaccordionButton">                                
+                                  <ul id="selection" >                                
+                                  </ul>                              
+                                </div>                              
+                                <h3 class="nosh">Narrow Your Choices                                  
+                                  <a href="#" id="CloseFilter" > &#9650; </a>                                  
+                                  <a href="#" id="OpenFilter" > &#9660; </a>                                  
+                                  <span>                                
+                                  </span></h3>                              
+                                <div id="FilterText">                              
+                                </div>                            
+                              </div>                          
+                            </div>                        
+                          </div>                         
+                        </div>                        
+                        <div class="block block-tags hidden-xs">                          
+                          <div class="block-title"> <strong>                                
+                              <span>Help                               
+                              </span></strong>                          
+                          </div>                          
+                          <div class="block-content">                            
+                            <div class="custom2" >                              
+                              <p>                                
+                                <!--  <div style=""> <strong>Your Sales Consultant</strong> <br /> Brandi Nowak <br /> Call: <a href="#">985-960-2902</A> <br /> E-mail: <a href="mailto:info@nowakdental.com">info@nowakdental.com </a> <br /> <br /></DIV> -->                                       Main Office Phone: 800-654-7623 <br /> Main Office E-mail:                                  
+                                <a href="mailto:info@nowakdental.com">info@nowakdental.com</a> <br />                              
+                              </p>                            
+                            </div>                          
+                          </div>                        
+                        </div>                      
+                      </div>                      
+                      <!-- right content -->                    
+                    </div>                    
+                    <div class="col-main col-xs-12 col-sm-9">                       
+                      <!--<ul id="topmenu" class="midtabs"> <li> <a href="#midtab1">    Search     </a></li> <li> <a  href="#midtab2">   About Us      </a></li> <li> <a  href="#midtab3">    Contact Us    </a></li> <li> <a  href="#midtab4">    FAQ     </a></li></ul> -->                      
+                      <div id="slide_holder">                        
+                        <!-- page content goes here -->                        
+                        <div class="midtab_container">                          
+                          <div id="midtab1" class="midtab_content">                            
+                            <div class="rotating-banner">                                
+                              <img class="ivoclar-denturesshadow" src="./images/ivoclar-denturesshadow.png" alt="">                              
+                              <p class="text-16">BROWSE THE LARGEST SELECTION OF DENTURE TEETH AVAILABLE                               
+                              </p>                              
+                              <div class="shop-now">                                
+                                <p class="text-17" onclick='javascript:changepath("PS")'>SHOP NOW &gt;                                 
+                                </p>                              
+                              </div>                            
+                            </div>                            
+                            <div id="typeholder">                            
+                            </div>                          
+                          </div>                        
+                        </div>                        
+                        <div class="midtab_container">                          
+                          <div id="midtab2" class="midtab_content">                            
+                            <img src="images/NowakHistory.jpg" alt="NowakHistory.jpg, 157kB" title="NowakHistory" height="577" width="1366">                        <h1> Testimonials </h1>                                                  Hear it directly from our clients.                              
+                            <br>     At Nowak Dental Supplies, we are fortunate to work with countless outstanding dental                          laboratories, superb craftsmen,                         loyal customers and even better friends.                              
+                            <br>      We are validated in knowing our efforts to anticipate their needs                              
+                            <br>     and provide world-class customer service haven't gone unnoticed.                              
+                            <br>     Because it's not enough to preach the tenets of great service.                              
+                            <br>     At Nowak, we go out and earn it! But don't take our word for it,                              
+                            <br>     watch the video below and discover the Nowak difference.                              
+                            <br>                            
+                         <!--    <video width="800" height="600" controls>                              
+                              <source src="images/NowakTestimonial.mp4" type="video/mp4">Your browser does not support the video tag.                             
+                            </video>
+                            moved hosted video to youtube. df 11/27/17 
+                            -->
+                            
+                          <iframe width="800" height="600" src="https://www.youtube.com/embed/fe0PpltcmPI" frameborder="0" allowfullscreen></iframe>                            
+                          </div>                        
+                        </div>                        
+                        <div class="midtab_container">                          
+                          <div id="midtab3" class="midtab_content">                            <h1> Contact Us </h1>                            
+                            <div style="float: right">                                
+                              <img src="images/shawn_phone.jpg" alt="Shawn on Phone, 85kB" title="Shawn on Phone" style="height: 200px;" >                            
+                            </div>                            
+                            <p>                                
+                              <br>                           We're Always Here to Help, A Nowak family member is only a call or click away.                                
+                              <br>  At Nowak Dental Supplies, a friendly voice is always just a phone call away!                                
+                              <br>     Get ahold of one of our wonderful sales representatives                                
+                              <br>     If you have any questions concerning your order or a new product.                                
+                              <br>     And if there's anything else we can help you with,                                
+                              <br>     don't hesitate to pick up the phone and ask for Brandi or Shawn.                                
+                              <br>      We can't wait to hear from you!                               
+                              <p>  Nowak Dental Supplies, Inc.                                  
+                                <br> Phone: 1.800.654.7623                                  
+                                <br> 6716 Hwy 11                                  
+                                <br> Carriere, MS 39426                               
+                              </p>
+ <style>
+.ContactNames table {   margin: 30px auto; }
+.ContactNames th  {   font-weight: bold; padding: 10px;  text-align: left;  }
+.ContactNames td {  padding: 10px;  text-align: center; background-color: #ebebeb; }
+
+ </style>  
+ <script>
+function sendEmail(name, domain) {
+    location.href = 'mailto:' + name + '@' + domain;
+}
+// To make sure only users who have JS enabled can see the link, write them out with this:
+function writeEmailLink(realName, name, domain) {
+    document.write('<a href="javascript:sendEmail(\''
+      + name + '\', \'' + domain + '\')">');
+    document.write(realName);
+    document.write('</a>');
+} 
+ </script>                        
+<h3> Main office </h3>
+ <table class="ContactNames">
+ <tr><th> <h4> Customer Service: </h4> </th> </tr>
+<tr><td>Paula Clair    </td> <td>                    Ext: 105  </td> <td>   
+ <script> writeEmailLink('Email Paula','paula', 'nowakdental.com') ; </script> 
+ 
+  </td> </tr> 
+<tr><td>Chelsey Chessher    </td> <td>         Ext: 107     </td> <td>    
+ <script> writeEmailLink('Email Chelsey','Cchessher', 'nowakdental.com') ; </script> 
+ </td> </tr> 
+<tr><td>Christina Montis   </td> <td>            Ext: 115   </td> <td>     
+ <script> writeEmailLink('Email Christina ','Cmontis', 'nowakdental.com') ; </script> 
+   </td> </tr> 
+
+<tr><th><h4>Accounting Dept:   </h4>   </th> </tr>
+<tr><td>Cleola Ellis      </td> <td>                   Ext: 108   </td> <td> 
+  <script> writeEmailLink('Email Cleola','Cleola', 'nowakdental.com') ; </script> 
+   </td> </tr> 
+<tr><td>Kimmie Nowak     </td> <td>            Ext: 113     </td> <td>     
+   <script> writeEmailLink('Email Kimmie',' Kimberly', 'nowakdental.com') ; </script> 
+       </td> </tr> 
+<tr><th><h4>Owners:     </h4> </th> </tr>
+<tr><td>Shawn Nowak      </td> <td>            Ext: 102    </td> <td>       
+ 
+     <script> writeEmailLink('Email Shawn','Shawn', 'nowakdental.com') ; </script> 
+     </td> </tr> 
+<tr><td>Brandi Nowak     </td> <td>              Ext: 104   </td> <td>    
+       <script> writeEmailLink('Email Brandi','Brandi', 'nowakdental.com') ; </script> 
+     </td> </tr> 
+
+<tr><th><h4>Tooth Department:  </h4>   </th> </tr>
+<tr><td>Sally Quinones   </td> <td>              Ext: 117   </td> <td>    
+        <script> writeEmailLink('Email Sally','Sallyq', 'nowakdental.com') ; </script> 
+      </td> </tr> 
+
+<tr><th><h4> Tooth returns:  </h4>  </th> </tr>
+<tr><td> Jeff Dalton     </td> <td>       Ext: 103     </td> <td>    
+    <script> writeEmailLink('Email Jeff','Jeff', 'nowakdental.com') ; </script> 
+  </td> </tr> 
+
+<tr><th><h4>Outside Sales Team: </h4>  </th> </tr>
+<tr><td>Jill Spina       </td> <td>       877-481-6695   </td> <td>   
+     <script> writeEmailLink('Email Jill','Jill', 'nowakdental.com') ; </script> 
+   </td> </tr> 
+<tr><td>Emilie Ewald    </td> <td>   855-523-4483      </td> <td>   
+    <script> writeEmailLink('Email Emilie','Emilie', 'nowakdental.com') ; </script>    
+</td> </tr> 
+<tr><td>Shari Fleischer </td> <td>   855-378-0900        </td> <td> 
+    <script> writeEmailLink('Email Share','Shari', 'nowakdental.com') ; </script>   
+ </td> </tr> 
+<tr><td>Sabrina Chmieleski     </td> <td>     888-268-9330 </td> <td>
+    <script> writeEmailLink('Email Sabrina','Sabrinac', 'nowakdental.com') ; </script>   
+ </td> </tr> 
+
+</table>
+  <br>
+    <br>                       
+                              <p> Please enter your message below and we will be in touch as soon as possible.                               
+                              </p>                              
+                              <div style="float: right">                                
+                                <img src="images/nowak-contactus-map.png" alt="nowak-contactus-map.png, 85kB" title="Nowak contact us map" height="686" width="677">                              
+                              </div>                              
+                              <form name="contact" id="contact" class="form" action="//hosting.tshinc.com/cgi-bin/formmail.asp" method="post">                                  
+                                <input name="_recipients" type="hidden" value="support@tshinc.com,info@nowakdental.com" />                                  
+                                <input name="_envars" type="hidden" value="HTTP_REFERER,HTTP_USER_AGENT,REMOTE_ADDR" />                                  
+                                <input name="_redirectUrl" type="hidden" value="https://www.nowakdental.com" />                                  
+                                <input name="_subject" type="hidden" value="Contact Us from Nowak Dental " />                                
+                                <fieldset>                                  
+                                  <div class="rowElem">                                      
+                                    <input type="text" name="Subject" placeholder="Subject"  />                                  
+                                  </div>                                  
+                                  <div class="rowElem">                                      
+                                    <input type="text" name="Name" placeholder="Name"  />                                  
+                                  </div>                                  
+                                  <div class="rowElem">                                      
+                                    <input type="text" name="Company" placeholder="Company Name"  />                                  
+                                  </div>                                  
+                                  <div class="rowElem">                                      
+                                    <input type="text" name="Phone" placeholder="Phone"  />                                  
+                                  </div>                                  
+                                  <div class="rowElem">                                      
+                                    <input type="text" name="Email" placeholder="Email Address"  />                                  
+                                  </div>                                  
+                                  <div class="rowElem1">  
+<textarea rows="40" cols="30" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''" >Message</textarea>                                   
+                                  </div>                                    
+                                  <br>                                    
+                                  <br>                                    
+                                  <a class="gobutton" onclick="document.getElementById('contact').submit();">Send Your Message</a>                                
+                                </fieldset>                                  
+                                <br>                                  
+                                <br>                                  
+                                <br>                                
+                                <hr>                              
+                              </form>                          
+                          </div>                        
+                        </div>                        
+                        <div class="midtab_container">                          
+                          <div id="midtab4" class="midtab_content">                              
+                            <img src="images/Nowak-Help.jpg" alt="Nowak-Help.jpg, 182kB" title="Nowak Help" height="582" width="1370">  <h1> Policy & Procedures </h1>                              
+                            <br> All orders must be prepaid by Mastercard, or Visa. You providing us with your credit card number authorizes us to charge your credit card for dental supply order purchases. By choosing to proceed to checkout, you are agreeing to all Terms & Conditions.                              
+                            <br>                              
+                            <br> Prices listed subject to availability at time of order. We are not responsible for typographical errors.                              
+                            <br>                            
+                            <br> We can only sell to licensed dentists or dental laboratories. We are here to serve the professional dental community.                              
+                            <br>                              
+                            <br> We collect state sales tax in Mississippi.                              
+                            <br>                              
+                            <br> Refund Policy: Credits & Refund amounts will be credited to your Nowak Dental account , no checks will be issued. Due to the high cost of processing credit card transactions we are unable to refund credits to your credit card. All returns subject to a 10% restocking fee and all missing or damaged items must be reported within three days of receipt of package. Orders sent back after 60 days are subject to a 50% restocking fee. Tooth returns cannot exceed 33% of your last three months of purchases.                              
+                            <br>                              
+                            <br> If we have to pursue collection activities against you for any reason, you will be billed applicable finance charges. You will also be responsible for any lawyers fees or collection costs incurred during collection activities.                              
+                            <br>                            
+                            <br> Special orders are available for merchandise not on this site. We deal with all major dental manufacturers.                                                  <h1>   Shipping & Returns  </h1>                              
+                            <br> We do not ship to PO boxes. We only ship by FedEx Ground unless air service is requested which we will then charge your credit card for this upgrade                              
+                            <br>                              
+                            <br> Please make sure that you provide us with correct address information including street number, street name, suite number if applicable, city, state and zip code. If you provide us with incorrect address information and Fedex charges us $5.00 for address correction, you will be responsible for those charges.                              
+                            <br>                              
+                            <br> We ship to all countries our website will not process international orders though please email your item requests to one of our representatives for a freight quote. Payment for international orders must be done by Paypal or Wire Transfer.                              
+                            <br>                            
+                            <br> Returns: All returns must be received within 30 days from date of invoice. If you are returning something that you ordered in error, or just don't want, we ask you to mail the item back at your expense. If you need to return something that we sent wrong or otherwise made a mistake on, we will mail you a return label (call tag).                              
+                            <br>                              
+                            <br>                            
+                            <hr>                          
+                          </div>                        
+                        </div>                      
+                      </div>                      
+                      <div id="searchformdata" style="clear: both;" >                        
+                        <form name=template action="login996" method=post onSubmit="return process_order(0)">                            
+                          <input type=hidden name=Aprod_string value = "">                            
+                          <input type=hidden name=prod_string value = "">                            
+                          <input type=hidden name=qty_string value = "">                            
+                          <input type=hidden name=um_string value = "">                            
+                          <input type=hidden name=price_string value = "">                            
+                          <input type=hidden name=comment_string value = "">                            
+                          <input type=hidden name=manufact_string value = "">                            
+                          <input type=hidden name=aprodno value="">                            
+                          <input type=hidden name=loginpath value="SR">                            
+                          <input type=hidden name=searchflag value="N">                            
+                          <input type=hidden name=pageid value="31">                          
+                          <input type=hidden name=startptr value="1">                            
+                          <input type=hidden name=CustomerId value="WEBPRICE">                            
+                          <input type=hidden name=orderno value="888888">                            
+                          <input type=hidden name=submitvar value="">                            
+                          <input type=hidden name=searchptr value="">                            
+                          <input type=hidden name=old_loginpath value="SR">                            
+                          <input type=hidden name=prev_changesort value="price desc">                            
+                          <input type=hidden name=prev_itemspage value="10">                            
+                          <input type=hidden name=slsmno value="">                            
+                          <input type=hidden name=slsmn_id value="">                           
+                          <div class="HeaderWrap" >                                                 
+                            <div id="SRsortby">                                                        Sort By:                                    
+                              <SELECT name="Changesort" size=1>                                      
+                                <option value="aprodno asc">Product Code                                     
+                                </option>                                      
+                                <option selected value="proddesc_sort asc">Product Description                                     
+                                </option>                                      
+                                <option value="bestseller desc">Best Sellers (12mo)                                     
+                                </option>                                      
+                                <option value="hotseller desc">Hot Sellers (2mo)                                     
+                                </option>                                      
+                                <option value="createdate desc">Newest Additions                                     
+                                </option>                                      
+                                <option value="price desc">Highest Price                                     
+                                </option>                                      
+                                <option value="price asc">Lowest Price                                     
+                                </option>                                    
+                                <!--  removed option as per shawn - djf 9/26/17
+                                                                    <option value="stock asc, price desc">In Stock Items</option> -->                                  
+                              </SELECT>                                                                    
+                              <input type=button class=gobutton name="GO1" value="GO" onclick="javascript:updatesort()"  onmouseover="this.className='gobutton gobuttonhov' ; window.status='Change Sort Method'"  onmouseout="this.className='gobutton' ; window.status=''">                                                       
+                            </div>                           
+                            <div id="SRitemsperpage">                            Items per page:                                    
+                              <select name="itemspage" size=1>                                      
+                                <option value="1">1                                     
+                                </option>                                      
+                                <option selected value="10">10                                     
+                                </option>                                      
+                                <option value="15">15                                     
+                                </option>                                      
+                                <option value="25">25                                     
+                                </option>                                      
+                                <option value="50">50                                     
+                                </option>                                      
+                                <option value="100">100                                     
+                                </option>                                  
+                              </select>                                    
+                              <input type=button class=gobutton name="GO1" value="GO" onclick="javascript:updatesort()"   onmouseover="this.className='gobutton gobuttonhov' ; window.status='Change Items Per Page'"  onmouseout="this.className='gobutton' ; window.status=''">                                                                                    
+                            </div>                          
+                          </div>                          
+                          <div id="navigation">                            
+                            <ul id="toppager">                            
+                            </ul>                            
+                            <div id="pager-header" >                            
+                            </div>                          
+                          </div>                          
+                          <div id="docs">                          
+                          </div>                          
+                          <div id="navigation">                            
+                            <ul id="pager">                            
+                            </ul>                            
+                            <div id="pager-footer">                            
+                            </div>                          
+                          </div>     </td>                          
+                          </tr>                          
+                          </table>                      
+                      </div>                    
+                    </div>                    
+                    <!-- End Division 'col-main col-xs-12 col-sm-9' -->                    
+                    <!-- Begin Division 'col-left sidebar col-xs-12 col-sm-3' hide display of sidebar for template until clicked to activate -->                    
+                    <!-- <div class="col-left sidebar col-xs-12 col-sm-3" style="display: none; " > -->                    
+                    <!-- End Division 'col-left sidebar col-xs-12 col-sm-3' -->                  
+                  </div>                  
+                  <!-- End Row -->                
+                </div>                
+                <!-- End Division 'Main' -->                
+                <div class="row">                  
+                  <div class="nowak-seo-about-section">                      
+                    <strong class="text-style-4">Nowak Dental Supplies</strong>                      
+                    <br>                      
+                    <em class="text-style-5">Standing on tradition, looking to the future.                     
+                    </em>                      
+                    <br>                      
+                    <span class="text-style-6">&nbsp;                     
+                    </span>                    
+                    <br> Nowak Dental Supplies is a family owned and operated corporation, which was started in 1944 by Benny and Helen Nowak. Benny began selling to the Dentist and labs, while Helen did the office work. Through their hard work and dedication they made this company what it is today. Now a third generation of Nowaks, Owners Brandi and Shawn, have entered the business with a vision for the future. At Nowak Dental Supplies we pride ourselves in customer service and satisfaction. No runaround like some of the larger corporations. We are small enough to care about every order, but large enough to give you the service that you deserve. All in stock orders are shipped the same day as the order is received. We handle all Dental Laboratory and Dental Office products. We also do not charge shipping on orders over fifty dollars.                      
+                    <em> *exceptions for heavy items.                     
+                    </em> &nbsp;                   
+                  </div>                  
+                  <div class="testimonials group">                    
+                    <p class="text-6">"There are few people in this industry that I trust as much as Shawn Nowak and his team.                  They have been a partner to my laboratory for several years. It may be unusual for a laboratory owner to state this,                        
+                      <br>but I truly believe his ability to partner with me has helped me be sustainable in this industry.                    &nbsp;                        
+                      <br>Nowak Dental Supplies is always willing to do whatever it takes to make my job easier.                        
+                      <br>There is no team I would trust more than Nowak Dental Supplies"                        
+                      <br>                        
+                      <span class="text-style-3">- John Wilson, Sunrise Dental Studio, Yucaipa California                       
+                      </span>                    
+                    </p>                  
+                  </div>                
+                </div>              
+              </div>              
+              <!-- End Division 'col-xs-12' -->            
+            </div>            
+            <!-- End Division 'Row 1' -->          
+          </div>          
+          <!-- End Container-->        
+        </div>        
+        <!-- Main Container col2-left-layout -->        
+        </form> &nbsp;         
+        <!-- Begin Division 'footer-container' -->         
+        <div class="footer-container">          
+          <!-- Begin Division 'container' -->          
+          <div class="container-fluid">            
+            <!-- Begin Division 'row' -->            
+            <div class="row">              
+              <!-- Begin Division 'col-xs-12' -->              
+              <div class="col-xs-12">                
+                <!-- Begin Division 'footer' -->                
+                <div class="footer">                  
+                  <!-- Begin Paragraph 'back-top' -->                  
+                  <p id="back-top">                      
+                    <a href="#top">                        
+                      <span>                      
+                      </span></a>                  
+                  </p>                  
+                  <!-- End Paragraph 'back-top' -->                  
+                  <!-- Begin Division 'footer-cols-wrapper' -->                    
+                  <a class="linktag" name="contactus" > </a>                  
+                  <div class="footer-cols-wrapper">                    
+                    <!-- Begin Division *1* 'footer-col' -->                    
+                    <div class="footer-col"> <h4>Information</h4>                      
+                      <!-- Begin Division 'footer-col-content' -->                      
+                      <div class="footer-col-content">                        
+                        <ul class="links" >                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('OE')">Shipping Information</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('CL')">Use a Template</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('QO')">Order Using Item Numbers</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('PS')">Search for Products</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('CO')">View Current Order</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('OOH')">Check Orders On Hold</a>                          
+                          </li>                        
+                        </ul>                      
+                      </div>                      
+                      <!-- End Division 'footer-col-content' -->                    
+                    </div>                    
+                    <!-- End Division *1* 'footer-col' -->                    
+                    <!-- Begin Divsion *2* 'footer-col' -->                    
+                    <div class="footer-col"> <h4>Why buy from us</h4>                      
+                      <!-- Begin Division 'footer-col-content' -->                      
+                      <div class="footer-col-content">                        
+                        <ul>                            
+                          <li>                            
+                          <a href=# onclick="javascript:browsepathG('BRCAS','||A02')">Top Sellers</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:browsepathG('BRCAS','||A08')">Most Popular</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:browsepathG('BRCAS','||A01')">Latest Items</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:browsepathG('BRCAS','||A04')">Trending Items</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:browsepathG('BRCAS','||A05')">Best Selling Items</a>                          
+                          </li>                        
+                        </ul>                      
+                      </div>                      
+                      <!-- End Division 'footer-col-content' -->                    
+                    </div>                    
+                    <!-- End Division *2* 'footer-col' -->                    
+                    <!-- Begin Division *3* 'footer-col' -->                    
+                    <div class="footer-col"> <h4>My account</h4>                      
+                      <!-- Begin Division 'footer-col-content' -->                      
+                      <div class="footer-col-content">                        
+                        <ul>                            
+                          <li>                          
+                          <a href=# onclick="javascript:changepath('MYA')">My Information</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('COO')">Check Order Status</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('PED')">Find a Pedigree</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('CP')">Change My Password</a>                          
+                          </li>                            
+                          <li>                            
+                          <a href=# onclick="javascript:changepath('LIC')">View Our Licenses</a>                          
+                          </li>                        
+                        </ul>                      
+                      </div>                      
+                      <!-- End Division 'footer-col-content' -->                    
+                    </div>                    
+                    <!-- End Division *3* 'footer-col' -->                    
+                    <!-- Begin Division *4* 'footer-col contacts' -->                    
+                    <div class="footer-col contacts"> <h4>Contact Information</h4>                      
+                      <!-- Begin Division 'footer-col-content' -->                      
+                      <div class="footer-col-content">                        
+                        <p> Nowak Dental Supplies <br />                        
+                        </p> <h3>Call us:</h3>                        
+                        <p class="tel">800-654-7623                         
+                        </p> <h3>Email us:</h3>                        
+                        <p class="mail">                            
+                          <a href="mailto:info@nowakdental.com">info@nowakdental.com </a>                        
+                        </p>                      
+                      </div>                      
+                      <!-- End Division 'footer-col-content' -->                    
+                    </div>                    
+                    <!-- End Division *4* 'footer-col contacts' -->                    
+                    <!-- Begin Division *5* 'footer-col' -->                    
+                    <div class="footer-col">                      
+                      <!-- Begin Division 'block block-subscribe' -->                      
+                      <div class="block block-subscribe">                      
+                      </div>                      
+                      <!-- End Division 'block block-subscribe' -->          <h3>Send Us Feedback</h3>                      
+                      <!-- Begin Unordered List 'list-icon' -->                      
+                      <ul class="list-icon">                          
+                        <li>                        
+                        <button onclick="javascript:changepath('FB')" class="button1">Customer Survey                         
+                        </button>                        
+                        </li>                      
+                      </ul>                      
+                      <!-- End Unordered List 'list-icon' -->                      
+                      <div class="clear">                      
+                      </div>                      
+                      <div class="clear">                      
+                      </div>                      
+                      <div class="clear">                      
+                      </div>                      
+                      <div class="clear">                      
+                      </div>                    
+                    </div>                    
+                    <!-- End Division *5* 'footer-col' -->                    
+                    <div class="clear">                    
+                    </div>                  
+                  </div>                  
+                  <!-- End Division 'footer-cols-wrapper' -->                
+                </div>                
+                <!-- End Division 'footer' -->              
+              </div>              
+              <!-- End Division 'col-xs-12' -->            
+            </div>            
+            <!-- End Division 'row' -->          
+          </div>          
+          <!-- End Division 'container' -->        
+        </div>        
+        <!-- End Division 'footer-container' -->      
+      </div>      
+      <div class="bluefooter" style=" width: 100%; background: #315a82;">        
+        <p>          
+          <!-- Begin Address -->          
+          <address> Custom Designed for Nowak Dental Supplies Copyright &copy; 2017 The Systems House, Inc.              
+            <a href="mailto:support@tshinc.com">                
+              <em>Problems? Click here to email the Webmaster               
+              </em> </a>          
+          </address>          
+          <!-- End Address -->        
+        </p>      
+      </div>      
+      <!-- End Page -->    
+    </div>    
+    <!-- End Wrapper -->    
+<script type="text/javascript">
+var _ss = _ss || [];
+_ss.push(['_setDomain', 'https://koi-3QNBXXG37G.marketingautomation.services/net']);
+_ss.push(['_setAccount', 'KOI-3XIIQC5CIQ']);
+_ss.push(['_trackPageView']);
+(function() {
+    var ss = document.createElement('script');
+    ss.type = 'text/javascript'; ss.async = true;
+ 
+    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNBXXG37G.marketingautomation.services/client/ss.js?ver=1.1.1';
+    var scr = document.getElementsByTagName('script')[0];
+    scr.parentNode.insertBefore(ss, scr);
+})();
+</script> 
+ <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '373628673059558'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=373628673059558&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->      
+  </body>  
+  <!-- End Body -->
+</HTML>

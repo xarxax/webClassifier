@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Utility Garments Inc.</title>
+        <meta Name="keywords" content="uniform, uniforms, career apparel, work clothes, work clothing, garment manufacturers, corporate apparel, corporate identity, healthcare, Simon Chang, design, emblems, embroidery, labcoats, outerwear, formal wear, scrubs, nursing, healthcare, food service, restaurant, hospitality, industrial, quality garments, custom uniforms, casino uniforms, hospitality uniforms, security uniforms, maintenance uniforms, Utility Garments Inc., Montreal, Quebec, Canada">
+        <meta name="description" content="Utility Garments Inc. - Manufacturing uniforms and career apparel for over 60 yrs. Les V&ecirc;tements Utility - Dans la confection d'uniformes et de v&ecirc;tements de travail depuis de 60 ans.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- favicon.ico  -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body onload="getCustomerLogin()">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="navbar-wrapper">
+          <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="img/ug-logo-white.png" alt="Utility Garments logo" class="logo-sml" title="Utility Garments Inc."></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="about-en.html">About</a></li>
+                        <li><a href="proactive-approach-en.html">Proactive Approach to Business</a></li>
+                        <li><a href="inventory-management-en.html">Inventory Management</a></li>
+                        <li><a href="special-order-en.html">Special Order Management</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="partners-en.html">Partners</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Divisions <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="http://dg-uniforms.com" target="_new">DG Uniforms</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="life-cycle-en.html">Life Cycle</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
+                    <li><a href="#"  id="customerLogin">Client Log-in</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+
+        <!-- Language button -->
+
+        <div class="lang-button">
+          <a class="btn btn-primary btn-xs" href="home-fr.html">Français</a>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="img/slide-server.jpg" alt="First slide" width="1600" height="566">
+              <div class="container">
+                <div class="carousel-caption">
+                  <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+                  <h1>Utility Garments Inc. </h1>
+                  <p>Manufacturing uniforms and career apparel since 1935</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="second-slide" src="img/slide-pharmacy.jpg" alt="Second slide" width="1600" height="566">
+              <div class="container">
+                <div class="carousel-caption">
+                  <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+                  <h1>On-site cutting, manufacturing and shipping</h1>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="third-slide" src="img/slide-marker.jpg" alt="Third slide" width="1600" height="566">
+              <div class="container">
+                <div class="carousel-caption">
+                  <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+                  <h1>Utility Garments Inc. </h1>
+                  <p>Established reputation as leader in design, service, and quality</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="fourth-slide" src="img/slide-super.jpg" alt="Fourth slide" width="1600" height="566">
+              <div class="container">
+                <div class="carousel-caption">
+                  <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+                  <h1>Utility Garments Inc. </h1>
+                  <p>Manufacturing uniforms and career apparel since 1935</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="fifth-slide" src="img/slide-security.jpg" alt="Fifth slide" width="1600" height="566">
+              <div class="container">
+                <div class="carousel-caption">
+                  <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+                  <h1>Utility Garments Inc. </h1>
+                  <p>Established reputation as leader in design, service, and quality</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- Current client button -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 current-customers"  id="currentCustomers">
+              <div class="col-xs-4 current-customers-icon">
+                <p><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></p>
+              </div>
+              <div class="col-xs-8 current-customers-txt">
+                <p>Current Clients who order online, please click here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- About Us -->
+
+        <div class="container aboutus">
+          <div class="row">
+            <div class="col-md-4">
+              <h1><img src="img/ug-logo-white.png" alt="Utility Garments logo" class="logo-sml aboutus-logo" title="Utility Garments Inc.">About Us</h1>
+              <p>
+                We would like to take this&nbsp;moment to introduce Utility&nbsp;Garments Inc. which has been manufacturing uniforms and career apparel since 1935.
+              </p>
+              <p>
+                Utility&nbsp;Garments Inc. is a private company. It occupies 80,000 square feet in its own multi-level buildings, it employs 160 people. Cutting, manufacturing and shipping are on-site. Our factory is fully automated and all systems are integrated with a large computer center.
+              </p>
+            </div>
+            <div class="col-md-8">
+              <iframe class="utilityvideo" width="640" height="360" src="https://www.youtube-nocookie.com/embed/gcD4oo8cF8E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+              <!-- <img src="img/utilitygarments-09-reception.jpg" alt="Utility Garments reception photo" class="img-responsive"/> -->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container marketing">
+
+          <!-- What Makes Us Different -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <h1>What Makes Us Different</h1>
+            </div>
+            <div class="col-sm-4 marketingSection">
+              <img class="img-circle" src="img/icon-01-hand.png" alt="Generic placeholder image" width="140" height="140">
+              <h2>Proactive Approach <br />To Business</h2>
+              <p>We must be competitive and of good value if we are to attract customers.</p>
+              <p><a class="btn btn-default" href="proactive-approach-en.html" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-sm-4 marketingSection">
+              <img class="img-circle" src="img/icon-02-binders.png" alt="Generic placeholder image" width="140" height="140">
+              <h2>Inventory <br />Management</h2>
+              <p>Minimum inventory levels are set based upon the lead time.</p>
+              <p><a class="btn btn-default" href="inventory-management-en.html" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-sm-4 marketingSection">
+              <img class="img-circle" src="img/icon-03-star.png" alt="Generic placeholder image" width="140" height="140">
+              <h2>Special Order <br />Management</h2>
+              <p>Custom items are processed through our sample department in our own cut & sew facility.</p>
+              <p><a class="btn btn-default" href="special-order-en.html" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+
+          <hr class="featurette-divider">
+
+          <!-- CUSTOMER SERVICE -->
+
+          <div class="row featurette">
+            <div class="col-sm-7 col-md-push-5">
+              <h2 class="featurette-heading">CUSTOMER SERVICE</h2>
+              <p class="lead">To maximize business performance, our Utility “team” always focuses on its most valuable asset– OUR CUSTOMERS.</p>
+              <p>
+                “PUTTING CUSTOMERS FIRST” strategy to effectively meet customer requirements and build successful working partnerships is our priority.
+              </p>
+            </div>
+            <div class="col-sm-5 col-md-pull-7">
+              <img class="img-responsive center-block" alt="Customer Service photo" src="img/custserv.jpg" width="640" height="303">
+            </div>
+          </div>
+
+
+          <!-- WHY CHOOSE UTILITY? -->
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-sm-7">
+              <h2 class="featurette-heading">WHY CHOOSE UTILITY? <br /><span class="text-muted">Our service guarantee!</span></h2>
+              <p class="lead">Building your business means creating a first and lasting impression with customers. You want them to enjoy the products and services you offer – but more importantly you need to stand out from your competition and create a brand that will convey who your company is and how you want your story told for years to come.</p>
+              <p>
+                Utility’s corporate career apparel is the key ingredient. Your employees are important to your success and what they wear may be the key element to building a successful brand. Your employees say something about who you are. They are the first person your client sees when they step inside your business and how they present themselves and your products will have a positive image of your brand and a lasting impression with customers.
+              </p>
+            </div>
+            <div class="col-sm-5">
+              <img class="service-image img-responsive center-block" src="img/Service-Guarantee.jpg" alt="Service Guarantee photo" width="300" height="303">
+            </div>
+          </div>
+          <hr class="featurette-divider">
+
+          <!-- CRITICAL ELEMENTS -->
+
+          <div class="row featurette section-critical">
+            <div class="col-sm-12">
+              <h2 class="featurette-heading">CRITICAL ELEMENTS TO OUR PARTNERSHIP VISUAL 2000 ERP/WEB ACCESS TO LIVE INFORMATION</h2>
+            </div>
+            <div class="col-sm-3">
+              <img src="img/banner-img1.jpg" alt="illustration photo" class="img-responsive" width="270" height="197" />
+              <p>Employee level <br />uniform allotment</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="img/banner-img2.jpg" alt="illustration photo" class="img-responsive" width="270" height="197" />
+              <p>Multi vendor <br />purchase tracking</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="img/banner-img3.jpg" alt="illustration photo" class="img-responsive" width="270" height="197" />
+              <p>Multi location<br />inventory management</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="img/banner-img4.jpg" alt="illustration photo" class="img-responsive" width="270" height="197" />
+              <p>Secure reliable <br />data management</p>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+
+          <!-- OUR TECHNICAL TEAM -->
+
+          <div class="row featurette section-technical">
+            <div class="col-sm-12">
+              <h2 class="featurette-heading">OUR TECHNICAL TEAM IS AVAILABLE TO CUSTOMIZE OUR SOFTWARE TO MEET YOUR COMPANY'S SPECIFIC REQUIREMENTS</h2>
+              <h3>SERVICE YOU CAN TRUST</h3>
+              <h4>3 Reasons to choose us</h4>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/icon5.png" alt="illustration photo" class="img-responsive img-technical" />
+              <h3>Our Philosophy</h3>
+              <p>To maximize business performance, our Utility “team” always focuses on its most valuable asset– our customers. “PUTTING CUSTOMERS FIRST” strategy to effectively meet customer requirements and build successful working partnerships is our priority.</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/icon6.png" alt="illustration photo" class="img-responsive img-technical" />
+              <h3>Our Commitment</h3>
+              <p>Just as the fabric of every garment is different, so is the make-up of every supplier. Where we differ is in our passion for what we do and how we do it. At Utility we take our role as your partner very seriously. We are committed to providing you with unbeatable service and pricing. We have developed tools and resources to manage your program efficiently and effectively.</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/icon7.png" alt="illustration photo" class="img-responsive img-technical" />
+              <h3>Your Success Is Our Success</h3>
+              <p>Transparency is a key element of making the transition from one program to another. Communication is the key to handling and delivering a successful program!</p>
+            </div>
+          </div>
+
+
+
+          <!-- FOOTER -->
+          <footer>
+            <div class="row">
+              <div class="col-xs-5 footer-left">
+                <h1>CONTACT</h1>
+                <p><strong>Telephone:</strong> 1-888-668-8489<br /><strong>FAX:</strong> 1-800-668-8488</p>
+              </div>
+
+              <div class="col-xs-2 footer-mid">
+                <img src="img/ug-logo-white.png" alt="Utility Garments logo" class="ug-logo"/>
+              </div>
+
+              <div class="col-xs-5 footer-right">
+                <h1>HEADQUARTERS</h1>
+                <p>666 Montée-de-Liesse <br />St-Laurent, Quebec<br />Canada, H4T 1P2</p>
+              </div>
+              <div class="col-xs-12">
+                <p>&copy; 2016 Les Vêtements Utility Garments Inc.</p>
+              </div>
+
+            </div>
+            <p class="pull-right btn btn-default btn-xs"><a href="#">Back to top</a></p>
+
+          </footer>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

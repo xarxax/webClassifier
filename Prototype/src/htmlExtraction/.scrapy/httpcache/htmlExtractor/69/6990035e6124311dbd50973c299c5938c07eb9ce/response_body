@@ -1,0 +1,6 @@
+# http://www.schock-metall.de/robots.txt
+Sitemap: http://www.schock-metall.de/?eID=dd_googlesitemap
+
+User-Agent: *
+Allow: /  # Allow bot to enter
+Disallow: /typo3conf/   # Nothing to see here

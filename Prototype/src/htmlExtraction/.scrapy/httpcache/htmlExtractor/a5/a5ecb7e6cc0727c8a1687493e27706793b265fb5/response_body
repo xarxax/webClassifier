@@ -1,0 +1,167 @@
+# Robots.txt file
+
+# Disallow cgi-bin
+User-agent: *
+Disallow: /cgi-bin/
+
+# Disallow test folder
+User-agent: *
+Disallow: /test/
+
+# Disallow dev folder
+User-agent: *
+Disallow: /dev/
+
+# Disallow forms folder
+User-agent: *
+Disallow: /forms/
+
+# Disallow template
+User-agent: *
+Disallow: /template.html
+
+# Disallow docx folder
+User-agent: *
+Disallow: /wp/wp-content/themes/thpp/docx/
+Disallow: /wp/wp-content/themes/thpp/docx/$
+
+# Disallow WordPress admin
+User-agent: *
+Disallow: /wp/wp-admin
+Disallow: /trackback/
+Disallow: /search/
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /feed/$
+Disallow: /*/feed/$
+Disallow: /*/feed/rss/$
+Disallow: /*/trackback/$
+
+
+# Disallow Collectors and Spam
+User-agent: atSpider
+Disallow: /
+
+User-agent: cherrypicker
+Disallow: /
+
+User-agent: DSurf
+Disallow: /
+
+User-agent: EliteSys Entry
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: Mail Sweeper
+Disallow: /
+
+User-agent: munky
+Disallow: /
+
+User-agent: Roverbot
+Disallow: /
+
+User-agent: WebEmailExtrac
+Disallow: /
+
+# Disallow Offline Browsers
+User-agent: xGet
+Disallow: /
+
+User-agent: wGet
+Disallow: /
+
+User-agent: WebWalk
+Disallow: /
+
+User-agent: webvac
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebMirror
+Disallow: /
+
+User-agent: WebFetcher
+Disallow: /
+
+User-agent: WebCopy
+Disallow: /
+
+User-agent: webcopier
+Disallow: /
+
+User-agent: WebCatcher
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: w3mir
+Disallow: /
+
+User-agent: vobsub
+Disallow: /
+
+User-agent: Templeton
+Disallow: /
+
+User-agent: ssearcher100
+Disallow: /
+
+User-agent: SpiderBot
+Disallow: /
+
+User-agent: Shai'Hulud
+Disallow: /
+
+User-agent: PBWF
+Disallow: /
+
+User-agent: LightningDownload
+Disallow: /
+
+User-agent: KDD Exploror
+Disallow: /
+
+User-agent: Jeeves
+Disallow: /
+
+User-agent: Internet Explore
+Disallow: /
+
+User-agent: InfoSpiders
+Disallow: /
+
+User-agent: httrack
+Disallow: /
+
+User-agent: HavIndex
+Disallow: /
+
+User-agent: GetUrl
+Disallow: /
+
+User-agent: GetBot
+Disallow: /
+
+User-agent: ESIRover
+Disallow: /
+
+User-agent: Download Wonder
+Disallow: /
+
+User-agent: Collage
+Disallow: /
+
+User-agent: Mozilla/2.0 (compatible; MS FrontPage 4.0)
+Disallow: /

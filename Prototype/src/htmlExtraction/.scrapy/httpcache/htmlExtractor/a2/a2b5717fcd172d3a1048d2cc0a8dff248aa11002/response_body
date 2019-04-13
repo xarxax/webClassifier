@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>.dwg Tooling Technologies</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript">
+function loginec() {
+	if(document.l.username.value=='') { alert('Please input an email address.'); document.l.username.focus(); return false; }
+	else if(document.l.pass.value=='') { alert('Please input a password.'); document.l.pass.focus(); return false; }
+	else { return true; }
+}
+function showHide(id) {
+	var div = document.getElementById(id);
+	if(div.style.display=='block')
+	{
+		div.style.display='none';
+		if(id=="logindiv") { document.getElementById('loginimg').src='images/login.jpg'; }
+	}
+	else
+	{
+		div.style.display='block';
+		if(id=="logindiv") { document.getElementById('loginimg').src='images/close.jpg'; document.l.username.focus(); }
+	}
+}
+</script>
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+  <tr>
+    <td>
+	<div><a href="http://www.dwgservices.com/"><img src="/images/logo.jpg" border="0" /></a></div>
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="691" height="250" title="Header">
+      <param name="movie" value="header-new.swf" />
+      <param name="quality" value="high" />
+      <embed src="header-new.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="691" height="250"></embed>
+    </object>
+	</td>
+  </tr>
+  <tr>
+    <td>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<form action="login.php" method="post" onsubmit="return loginec();" name="l">
+	<input type="hidden" name="task" value="login" />
+	<input type="hidden" name="loc" value="/index.php" />        <tr>
+		<td align="right" colspan="2">
+		<div class="content1"><a href="" onclick="this.blur(); showHide('logindiv'); return false;"><img id="loginimg" src="images/login.jpg" alt="login" border="0" /></a></div>
+		</td>
+		</tr>
+		<tr>
+		<td align="right" colspan="2">
+		<div id="logindiv" class="content1">Email: <input type="text" name="username" /> Password: <input type="password" name="pass" /> <input type="submit" value="Login!" /><br /><a href="member-registration.php">Click here to Register</a></div>
+		</td>
+		</tr>
+	</form>
+	<tr>
+		<td>	  <table align="center"><tr>
+        <td width="61%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="4">
+            <tr>
+              <td><img src="images/circle.jpg" width="48" height="48" align="middle" /><img src="images/dwg-title.gif" width="168" height="28" align="middle" alt=".dwg Die Tooling Technologies" /></td>
+            </tr>
+            <tr>
+              <td><p align="justify"><span class="index_content_highlight">.<strong>dwg Tooling Technologies</strong></span><span class="content1">&nbsp;</span><span class="index_content">is a premier design & engineering services company specializing in the design and build of metal stamping dies and plastic injection molds for the automotive, appliance, HVAC and lawn & garden industries. With our five full-time design engineers, we have over 125 years of combined die design & mold design experience.</span></p>
+                <p class="index_content" align="justify"><span class="index_content_highlight">Our Mission</span> is to Provide Industry-Leading   Design, Engineering &amp; Build Services to the Metalworking  &amp; Plastic   Injection Mold Industries.&nbsp; We strive for excellence in everything   we do: in our efforts to built long-lasting partnership-like relationships   with our customers, in the professionalism &amp; expertise we demonstrate   through our work and in the value we give our customers by providing   them with the information they expect in a timely manner.&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td><img src="images/dotted_line_2.jpg" width="387" height="1" /></td>
+            </tr>
+            <tr>
+              <td><span class="index_content"><a href="services.php"><img src="images/read-more-button.gif" width="72" height="17" border="0" alt="Tooling Technologies" /></a></span></td>
+            </tr>
+          </table>          <p class="index_content">&nbsp;</p></td>
+        <td width="39%" valign="top"><div align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td valign="top"><div align="left">
+                <p><img src="images/circle.jpg" width="48" height="48" align="middle" /><img src="images/featured-services.gif" width="168" height="28" align="middle" alt="Featured Services" /></p>
+                </div></td>
+            </tr>
+            <tr>
+              <td class="index_content"><table width="92%" border="0" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td width="45%" valign="top"><a href="services.php"><img src="images/die-design-thumb.jpg" width="117" height="85" border="0" alt="Die Design" /></a></td>
+                  <td width="55%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="4" valign="top">
+                      <tr>
+                        <td><b>Die Tooling Technologies</b></td>
+                      </tr>
+                      <tr>
+                        <td><a href="services.php"><img src="images/read-more-button.gif" width="72" height="17" border="0" alt="Die Tooling Technologies" /></a></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td colspan="2" valign="top"><img src="images/dotted-line-1.gif" width="255" height="1" /></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td class="index_content"><table width="92%" border="0" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td width="45%" valign="top"><a href="sheet-metal.php"><img src="images/sheet-metal-part.gif" width="117" height="85" border="0" alt="Incremental Draw Simulation Analysis" /></a></td>
+                  <td width="55%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="4" valign="top">
+                      <tr>
+                        <td><b>Incremental Draw Simulation Analysis</b></td>
+                      </tr>
+                      <tr>
+                        <td><a href="sheet-metal.php"><img src="images/read-more-button.gif" width="72" height="17" border="0" alt="Sheet Metal Services" /></a></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td colspan="2" valign="top"><img src="images/dotted-line-1.gif" width="255" height="1" /></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td class="index_content"><table width="92%" border="0" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td width="45%" valign="top"><a href="plastic-injection-mold.php"><img src="images/mold base website a.jpg" width="118" height="85" border="0" alt="Plastic Injection Mold" /></a></td>
+                  <td width="55%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="4">
+                      <tr>
+                        <td><b>Plastic Injection Mold Services</b></td>
+                      </tr>
+                      <tr>
+                        <td><a href="plastic-injection-mold.php"><img src="images/read-more-button.gif" width="72" height="17" border="0" alt="Plastic Injection Mold" /></a></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td colspan="2" valign="top"><img src="images/dotted-line-1.gif" width="255" height="1" /></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+        </div>
+        </td>
+		</tr>
+      </table>      
+    <p>&nbsp;</p>
+    </td>
+  </tr>
+	<tr>
+		<td>
+		<table width="90%" align="center" style="font-size: 11px;">
+		<tr>
+		<td align="center"><a href="http://www.dwgservices.com/">Die Design Home</a></td>
+		<td align="center">|</td>
+		<td align="center"><a href="http://www.dwgservices.com/services.php">Services</a></td>
+		<td align="center">|</td>
+		<td align="center"><a href="http://www.dwgservices.com/news.php">Company News</a></td>
+		<td align="center">|</td>
+		<td align="center"><a href="http://www.dwgservices.com/location.php">Location</a></td>
+		<td align="center">|</td>
+		<td align="center"><a href="http://www.dwgservices.com/contact.php">Contact Us</a></td>
+		<td align="center">|</td>
+		<td align="center"><a href="http://www.dwgservices.com/member-registration.php">Member Registration</a></td>
+		</tr>
+		</table>
+		<table width="100%" align="center" style="font-size: 11px;">
+		<tr>
+		<td><a href="http://www.dwgservices.com/sheet-metal.php">Sheet Metal Services</a></td>
+		<td>|</td>
+		<td><a href="http://www.dwgservices.com/plastic-injection-mold.php">Plastic Injection Mold</a></td>
+		<td>|</td>
+		<td><a href="http://www.dwgservices.com/sales-quoting.php">Sales &amp; Quoting</a></td>
+		<td>|</td>
+		<td><a href="http://www.dwgservices.com/advanced-development.php">Advanced Product Development</a></td>
+		<td>|</td>
+		<td><a href="http://www.dwgservices.com/launch-production.php">Launch &amp; Production</a></td>
+		<td>|</td>
+		<td><a href="http://www.dwgservices.com/file-translation.php">File Translation</a></td>
+		</tr>
+		</table>
+		</td>
+	  </tr>
+</table>
+<div align="center" style="font-size:12px;"><b>&copy; 2019 .dwg Tooling Technologies</b></div>
+<script type="text/javascript">
+document.getElementById('logindiv').style.display='none';
+</script>
+<script type="text/javascript" src="ieupdate.js"></script>
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28889241-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+</body>
+</html>

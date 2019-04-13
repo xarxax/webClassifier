@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<title>Zen Cart!, The Art of E-commerce</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Clinical Supplies Cold Therapy Massage Therapy Traction Therapy Laser & Light Therapy Electrotherapy & Ultrasound Treatment Therapy Tables Storage Racks & Cabinets Recovery Evaluation / Measurement / FCE Heat Therapy Lifts Compression Therapy Fluidotherapy Iontophoresis Popular Items Biofreeze Hydrotherapy Orthopedic Supports Physical Rehab Trainning Pillows & Cushions Clinical Equipment Biofeedback Chiropractic Tables & Equipment Work Tables ecommerce, open source, shop, online shopping, store " />
+<meta name="description" content="Zen Cart! :  - Clinical Supplies Cold Therapy Massage Therapy Traction Therapy Laser & Light Therapy Electrotherapy & Ultrasound Treatment Therapy Tables Storage Racks & Cabinets Recovery Evaluation / Measurement / FCE Heat Therapy Lifts Compression Therapy Fluidotherapy Iontophoresis Popular Items Biofreeze Hydrotherapy Orthopedic Supports Physical Rehab Trainning Pillows & Cushions Clinical Equipment Biofeedback Chiropractic Tables & Equipment Work Tables ecommerce, open source, shop, online shopping, store Call Us 800-279-0833" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="The Zen Cart&trade; Team and others" />
+<meta name="generator" content="shopping cart program by Zen Cart&trade;, http://www.zen-cart.com eCommerce" />
+
+<base href="http://www.shelton-dehaan.com/" />
+
+<link rel="stylesheet" type="text/css" href="includes/templates/theme313/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/theme313/css/stylesheet_boxes.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/theme313/css/stylesheet_css_buttons.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/theme313/css/stylesheet_main.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/theme313/css/stylesheet_tm.css" />
+<link rel="stylesheet" type="text/css" media="print" href="includes/templates/theme313/css/print_stylesheet.css" />
+<script type="text/javascript"><!--//<![CDATA[
+if (typeof zcJS == "undefined" || !zcJS) {
+  window.zcJS = { name: 'zcJS', version: '0.1.0.0' };
+};
+
+zcJS.ajax = function (options) {
+  options.url = options.url.replace("&amp;", "&");
+  var deferred = $.Deferred(function (d) {
+      var securityToken = '3122ad99d6043a97e310567ff3233baf';
+      var defaults = {
+          cache: false,
+          type: 'POST',
+          traditional: true,
+          dataType: 'json',
+          timeout: 5000,
+          data: $.extend(true,{
+            securityToken: securityToken
+        }, options.data)
+      },
+      settings = $.extend(true, {}, defaults, options);
+
+      d.done(settings.success);
+      d.fail(settings.error);
+      d.done(settings.complete);
+      var jqXHRSettings = $.extend(true, {}, settings, {
+          success: function (response, textStatus, jqXHR) {
+            d.resolve(response, textStatus, jqXHR);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              console.log(jqXHR);
+              d.reject(jqXHR, textStatus, errorThrown);
+          },
+          complete: d.resolve
+      });
+      $.ajax(jqXHRSettings);
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+   var response = jqXHR.getResponseHeader('status');
+   var responseHtml = jqXHR.responseText;
+   var contentType = jqXHR.getResponseHeader("content-type");
+   switch (response)
+     {
+       case '403 Forbidden':
+         var jsonResponse = JSON.parse(jqXHR.responseText);
+         var errorType = jsonResponse.errorType;
+         switch (errorType)
+         {
+           case 'ADMIN_BLOCK_WARNING':
+           break;
+           case 'AUTH_ERROR':
+           break;
+           case 'SECURITY_TOKEN':
+           break;
+
+           default:
+             alert('An Internal Error of type '+errorType+' was received while processing an ajax call. The action you requested could not be completed.');
+         }
+       break;
+       default:
+        if (jqXHR.status === 200 && contentType.toLowerCase().indexOf("text/html") >= 0) {
+         document.open();
+         document.write(responseHtml);
+         document.close();
+         }
+     }
+   });
+
+  var promise = deferred.promise();
+  return promise;
+};
+zcJS.timer = function (options) {
+  var defaults = {
+    interval: 10000,
+    startEvent: null,
+    intervalEvent: null,
+    stopEvent: null
+
+},
+  settings = $.extend(true, {}, defaults, options);
+
+  var enabled = new Boolean(false);
+  var timerId = 0;
+  var mySelf;
+  this.Start = function()
+  {
+      this.enabled = new Boolean(true);
+
+      mySelf = this;
+      mySelf.settings = settings;
+      if (mySelf.enabled)
+      {
+          mySelf.timerId = setInterval(
+          function()
+          {
+              if (mySelf.settings.intervalEvent)
+              {
+                mySelf.settings.intervalEvent(mySelf);
+              }
+          }, mySelf.settings.interval);
+          if (mySelf.settings.startEvent)
+          {
+            mySelf.settings.startEvent(mySelf);
+          }
+      }
+  };
+  this.Stop = function()
+  {
+    mySelf.enabled = new Boolean(false);
+    clearInterval(mySelf.timerId);
+    if (mySelf.settings.stopEvent)
+    {
+      mySelf.settings.stopEvent(mySelf);
+    }
+  };
+};
+//]] --></script>
+
+
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="includes/templates/theme313/jscript/DD_belatedPNG.js"></script>
+   <script type="text/javascript">
+        DD_belatedPNG.fix('.png');
+   </script>
+<![endif]-->
+	<script type="text/javascript" src="js/mootools.js"></script>
+	<script type="text/javascript" src="js/slimbox.js"></script>
+	<link rel="stylesheet" href="css/slimbox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-21784483-14']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+</head>
+
+
+
+<body id="indexBody">
+
+
+
+<!-- ========== IMAGE BORDER TOP ========== -->
+
+<div class="main-bg">
+<div class="bot-tail">
+<div class="bot-bg">
+
+<div id="main-width">
+
+<!-- ====================================== -->
+
+
+
+<!-- ========== HEADER ========== -->
+
+
+
+    <div id="header">
+			<div class="top">
+
+				<div class="fleft">
+					<!-- ========== MENU ========== -->
+						<div class="menu">
+							<div class="left-bg">
+								<div class="right-bg">
+															<div id="navEZPagesTop">
+	<ul>
+	
+  <li class="first"><a href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Home Page</a></li>
+    
+	
+  <li><a href="http://www.shelton-dehaan.com/index.php?main_page=products_new&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">New Products</a></li>
+    
+	
+  <li><a href="http://www.shelton-dehaan.com/index.php?main_page=specials&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Specials</a></li>
+    
+	
+  <li><a href="http://www.shelton-dehaan.com/index.php?main_page=products_all&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Products All</a></li>
+    
+	
+  <li><a href="http://www.shelton-dehaan.com/index.php?main_page=contact_us&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Contact Us</a></li>
+    
+	
+  <li><a href="http://www.shelton-dehaan.com/index.php?main_page=site_map&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Site Map</a></li>
+    
+
+    </ul>
+</div>
+															</div>
+							</div>
+						</div>
+					<!-- ========================== -->
+					<div class="alignright">
+						<span class="navigation-links">
+							<span class="left-bg">
+								<span class="right-bg">
+									<!-- ========== NAVIGATION LINKS ========== -->
+											<a href="http://www.shelton-dehaan.com/">Home</a>
+											
+																					&nbsp;&nbsp;|&nbsp; &nbsp;<a href="http://www.shelton-dehaan.com/index.php?main_page=login&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Log In</a>  
+										  
+										
+																			<!-- ====================================== -->
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="logo">
+					<!-- ========== LOGO ========== -->
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/images/logo.gif" alt="" width="356" height="90" /></a>
+					<!-- ========================== -->
+				</div>
+				<!-- BOF- BANNER #1 display -->
+								<!-- EOF- BANNER #1 display -->
+			</div>
+			
+							   
+				<!-- ========== CATEGORIES TABS ========= -->
+									<!-- ==================================== -->
+			
+			
+			<div class="wrapper">
+				<div class="search-form">
+					<div class="top-tail">
+						<div class="left-bg">
+							<div class="right-bg">
+								<!-- ========== SEARCH ========== -->
+									<form name="quick_find_header" action="http://www.shelton-dehaan.com/index.php?main_page=advanced_search_result" method="get">										<div><span>
+									<input type="hidden" name="main_page" value="advanced_search_result" /><input type="hidden" name="search_in_description" value="1" /><input type="hidden" name="zenid" value="fhleo6hge7umnfqqvmtptd8kq3" />									<input type="text" name="keyword" value="Search..." class="input1" onblur="if(this.value=='') this.value='Search...'" onfocus="if(this.value =='Search...' ) this.value=''" /></span><input type="image" src="includes/templates/theme313/buttons/english/search.gif" alt="Search" title=" Search " />										</div>
+									</form>
+								<!-- ============================ -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currency-form">
+					<div class="top-tail">
+						<div class="left-bg">
+							<div class="right-bg">
+								<!-- ========== CURRENCIES ========= -->
+									<form name="currencies" action="http://www.shelton-dehaan.com/index.php?main_page=index" method="get">										<div>
+											Currencies: 
+									
+											<?
+												if (isset($currencies) && is_object($currencies)) {
+											
+												  reset($currencies->currencies);
+												  $currencies_array = array();
+												  while (list($key, $value) = each($currencies->currencies)) {
+													$currencies_array[] = array('id' => $key, 'text' => $value['title']);
+												  }
+											
+												  $hidden_get_variables = '';
+												  reset($_GET);
+												  while (list($key, $value) = each($_GET)) {
+													if ( ($key != 'currency') && ($key != zen_session_name()) && ($key != 'x') && ($key != 'y') ) {
+													  $hidden_get_variables .= zen_draw_hidden_field($key, $value);
+													}
+												  }
+												}
+											?>
+											<select id="select-currency" name="currency" class="select" onchange="this.form.submit();">
+</select>
+<input type="hidden" name="zenid" value="fhleo6hge7umnfqqvmtptd8kq3" />										</div>
+									</form>
+								<!-- ====================================== -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    
+         
+    
+<!-- ============================ -->
+
+
+<div id="content">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" id="contentMainWrapper">
+	<tr>
+    
+				
+            <td id="column-left" style="width:248px;">
+				<div style="width:248px;">
+				
+				<div class="tie1">
+						<div class="left-top png">
+							<div class="right-top png">
+								<div class="top-tail png">&nbsp;</div>
+							</div>
+						</div>
+				<div class="column-left-bg">
+					<div class="left-tail png">
+						<div class="right-tail png">
+							<div class="content" style="padding-top:15px">
+								<div class="main-indent">
+									<div class="indent">
+										&nbsp;
+										<div class="margin1">
+				
+																						<!--// bof: manufacturers //-->
+        <div class="box" id="manufacturers" style="width:206px;">
+			
+			<div class="left-top">
+				<div class="right-top">
+					<div class="right-bot">
+						<div class="left-bot">
+													<div class="indent">
+															<div class="box-head">Manufacturers</div>
+								<div class="box-body">
+									<div id="manufacturersContent" class="sideBoxContent centeredContent"><form name="manufacturers_form" action="http://www.shelton-dehaan.com/index.php?main_page=index" method="get"><input type="hidden" name="main_page" value="index" /><select id="select-manufacturers_id" name="manufacturers_id" onchange="this.form.submit();" size="0" style="width: 90%; margin: auto;">
+  <option value="" selected="selected">Please Select</option>
+  <option value="41">Armedica</option>
+  <option value="38">Bailey</option>
+  <option value="34">Biofreeze</option>
+  <option value="39">Chattanooga</option>
+  <option value="36">Core Products</option>
+  <option value="43">Earthlite</option>
+  <option value="35">Flex Support</option>
+  <option value="40">Ideal Products</option>
+  <option value="45">Lloyd Tables</option>
+  <option value="37">Mettler</option>
+  <option value="44">Richmar</option>
+  <option value="42">Thera-Band</option>
+</select>
+<input type="hidden" name="zenid" value="fhleo6hge7umnfqqvmtptd8kq3" /></form></div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			            
+        </div>
+<!--// eof: manufacturers //-->
+<!--// bof: unwishlist //-->
+        <div class="box" id="unwishlist" style="width:206px;">
+			
+			<div class="left-top">
+				<div class="right-top">
+					<div class="right-bot">
+						<div class="left-bot">
+													<div class="indent">
+															<div class="box-head">Quotes</div>
+								<div class="box-body">
+									<div><a href="http://www.shelton-dehaan.com/index.php?main_page=login&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Log In</a> to create or manage your quotes.</div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			            
+        </div>
+<!--// eof: unwishlist //-->
+ <!--// bof: categories //-->
+        <div class="box" id="categories" style="width:206px;">
+			
+			<div class="left-top">
+				<div class="right-top">
+					<div class="right-bot">
+						<div class="left-bot">
+													<div class="cat-indent">
+															<div class="box-head">Categories</div>
+								<div class="box-body">
+									<div id="categoriesContent" class="sideBoxContent">
+<ul>
+<li class="category-top_un"><span class="top-span"><a class="category-top_un" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=268&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Popular Items</a>&nbsp;(9)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=432&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Biofeedback</a>&nbsp;(1)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=269&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Biofreeze</a>&nbsp;(8)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=434&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Chiropractic Tables & Equipment-&gt;</a>&nbsp;(80)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Clinical Equipment-&gt;</a>&nbsp;(74)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=37&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Clinical Supplies-&gt;</a>&nbsp;(62)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=57&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Cold Therapy-&gt;</a>&nbsp;(44)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=178&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Compression Therapy</a>&nbsp;(27)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=77&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Electrotherapy & Ultrasound-&gt;</a>&nbsp;(175)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=129&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Evaluation / Measurement / FCE-&gt;</a>&nbsp;(39)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=188&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Fluidotherapy-&gt;</a>&nbsp;(4)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=150&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Heat Therapy-&gt;</a>&nbsp;(47)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=322&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Hydrotherapy-&gt;</a>&nbsp;(20)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=262&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Iontophoresis</a>&nbsp;(16)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=76&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Laser & Light Therapy</a>&nbsp;(22)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=161&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Lifts</a>&nbsp;(12)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=60&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Massage Therapy-&gt;</a>&nbsp;(140)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=329&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Orthopedic Supports-&gt;</a>&nbsp;(205)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Physical Rehab Trainning-&gt;</a>&nbsp;(356)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=354&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Pillows & Cushions-&gt;</a>&nbsp;(172)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=121&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Recovery-&gt;</a>&nbsp;(7)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=100&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Storage Racks & Cabinets-&gt;</a>&nbsp;(72)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=68&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Traction Therapy-&gt;</a>&nbsp;(107)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=88&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Treatment Therapy Tables-&gt;</a>&nbsp;(360)</span></li><li class="category-top"><span class="top-span"><a class="category-top" href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;cPath=516&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Work Tables</a>&nbsp;(30)</span></li></ul>
+</div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			            
+        </div>
+<!--// eof: categories //-->
+<!--// bof: featured //-->
+        <div class="box" id="featured" style="width:206px;">
+			
+			<div class="left-top">
+				<div class="right-top">
+					<div class="right-bot">
+						<div class="left-bot">
+													<div class="indent">
+															<div class="box-head"><a href="http://www.shelton-dehaan.com/index.php?main_page=featured_products&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Featured</a></div>
+								<div class="box-body">
+									<div class="sideBoxContent centeredContent"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_475_479&amp;products_id=2344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Richmar Multi-Stim Cloth  Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)</a><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_475_479&amp;products_id=2344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/8/84eb69475295b0b854cfab90819ecd50.image.80x80.jpg" alt="Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)" title=" Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK) " width="80" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/c/c2ffd00a59361d0e5e9f5b8740ca2979.image.120x120.jpg','Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)',80,80,120,120,this,0,0,80,80);" onmouseout="hidetrail();"  /></a><br /><div class="price">Price Unavailable</div></div><div class="sideBoxContent centeredContent"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_78_80&amp;products_id=2358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Richmar Autosound 9.6 Four Channel Combo Unit With Laser</a><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_78_80&amp;products_id=2358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/3/3461b78250e1678f6cd869903407c683.image.100x67.jpg" alt="Richmar Autosound 9.6 Four Channel Combo Unit With Laser" title=" Richmar Autosound 9.6 Four Channel Combo Unit With Laser " width="100" height="67" style="position:relative" onmouseover="showtrail('bmz_cache/0/0327c73ecbc7830a453e63ff145f2b96.image.150x100.jpg','Richmar Autosound 9.6 Four Channel Combo Unit With Laser',100,67,150,100,this,0,0,100,67);" onmouseout="hidetrail();"  /></a><br /><div class="price">Price Unavailable</div></div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			            
+        </div>
+<!--// eof: featured //-->
+<!--// bof: shoppingcart //-->
+        <div class="box" id="shoppingcart" style="width:206px;">
+			
+			<div class="left-top">
+				<div class="right-top">
+					<div class="right-bot">
+						<div class="left-bot">
+													<div class="indent">
+															<div class="box-head"><a href="http://www.shelton-dehaan.com/index.php?main_page=shopping_cart&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Shopping Cart</a></div>
+								<div class="box-body">
+									<div id="shoppingcartContent" class="sideBoxContent"><div id="cartBoxEmpty">now in your cart <a href="http://www.shelton-dehaan.com/index.php?main_page=shopping_cart&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">0 items</a></div></div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			            
+        </div>
+<!--// eof: shoppingcart //-->
+											<div class="cards">
+												<!-- ========== CARDS ========== -->
+													<img src="includes/templates/theme313/images/paypal.gif" alt="" width="147" height="22" />												<!-- =========================== -->
+											</div>
+										</div>												
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!--END BACKGROUND-->
+				
+						<div class="left-bot png">
+							<div class="right-bot png">
+								<div class="bot-tail png">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					
+					
+                </div>
+            </td>
+            
+			
+            <td id="column-center" valign="top">
+            														<div class="banners">
+								<!-- BOF- BANNER #2 display -->
+																		<!--<div id="bannerTwo"><img src="/catalog/includes/templates/theme313/images/left-promo.png" border="0"></div>-->
+
+								<!-- EOF- BANNER #2 display -->
+								<!-- BOF- BANNER #3 display -->
+																		<!--<div id="bannerThree"><img src="/catalog/includes/templates/theme313/images/right-promo.png" border="0"></div>-->
+
+								<!-- EOF- BANNER #3 display -->
+								 <!-- BOF- BANNER #4 display -->
+																<!-- EOF- BANNER #4 display -->
+								<!-- BOF- BANNER #5 display -->
+																<!-- EOF- BANNER #5 display -->
+							</div>
+											<div class="tie2">
+					<div class="left-top png">
+						<div class="right-top png">
+							<div class="top-tail png">&nbsp;</div>
+						</div>
+					</div>
+					<div class="left-tail png">
+						<div class="right-tail png">
+							<div class="main-content">
+							
+								<div class="main-indent">
+								
+			               
+            
+               
+                
+                    <!--content_center-->
+                
+                
+                        <!-- bof breadcrumb -->
+                                                <!-- eof breadcrumb -->
+                    
+    
+                        <!-- bof upload alerts -->
+                                                <!-- eof upload alerts -->
+    
+                    
+						<div class="centerColumn" id="indexDefault">
+
+<!--alexvp -->
+<h2><a href='pdfcatalogues/Shelton-Dehaan-Catalog.pdf' target=_blank>Download PDF Catalog</a></h2>
+<!--alexvp end-->
+
+
+
+<!-- deprecated - to use uncomment this section
+<div id="" class="content">This is the main define statement for the page for english when no template defined file exists. It is located in: <strong>/includes/languages/english/index.php</strong></div>
+-->
+
+<!-- deprecated - to use uncomment this section
+<div id="" class="content">
+<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%%">
+	<tr>
+		<td class="main" align="center"><img width=16 height=16 src="images/adobe_pdf.gif" align=middle border=0>&nbsp;<a href="%s" target="_blank">%s</a> (%s) </td>
+	</tr>
+	<tr>
+		<td class="main" align="center"><br />With free Acrobat Reader&reg; software, you can view and print Adobe PDF files.<br />
+		If you don't have it, <strong>get it here:</strong><br /><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">
+		<img src="images/getacro.gif" align=middle border=0></a></td>
+	</tr>
+</table></div>
+-->
+
+<div id="indexDefaultMainContent" class="content"></div>
+
+
+
+
+
+<!-- bof: whats_new -->
+<div class="centerBoxWrapper" id="whatsNew">
+ <h2 class="centerBoxHeading">New Products For January</h2>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" >
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1134&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 1/2# Cuff Weight, Walnut</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1134&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 1/2# Cuff Weight, Walnut" title=" 1 each, 1/2# Cuff Weight, Walnut " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 1/2# Cuff Weight, Walnut',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1866</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1134&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1137&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 2# Cuff Weight, White</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1137&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 2# Cuff Weight, White" title=" 1 each, 2# Cuff Weight, White " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 2# Cuff Weight, White',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1870</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1137&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1135&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 1# Cuff Weight, Blue</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1135&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 1# Cuff Weight, Blue" title=" 1 each, 1# Cuff Weight, Blue " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 1# Cuff Weight, Blue',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1868</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1135&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+<br class="clearBoth" />
+
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" >
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1133&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 pair, 45# Adjustable Dumbbells With Speed Lock</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1133&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/2/22ba4688f835013a5d7c2a5683a5b6dc.image.99x80.jpg" alt="1 pair, 45# Adjustable Dumbbells With Speed Lock" title=" 1 pair, 45# Adjustable Dumbbells With Speed Lock " width="99" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/3/34db4c5c21f6eda895204d7ec1a5f411.image.148x120.jpg','1 pair, 45# Adjustable Dumbbells With Speed Lock',99,80,148,120,this,0,0,99,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1860</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1133&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1136&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 1 1/2# Cuff Weight, Olive</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1136&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 1 1/2# Cuff Weight, Olive" title=" 1 each, 1 1/2# Cuff Weight, Olive " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 1 1/2# Cuff Weight, Olive',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1869</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1136&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1138&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 2 1/2# Cuff Weight, Red</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1138&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 2 1/2# Cuff Weight, Red" title=" 1 each, 2 1/2# Cuff Weight, Red " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 2 1/2# Cuff Weight, Red',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1871</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1138&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+<br class="clearBoth" />
+
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" >
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1132&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 Ea., 10# Cast Iron Dumbbells</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1132&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/c/cf50026bf6d8b6c1489f438706f137c6.image.51x80.gif" alt="1 Ea., 10# Cast Iron Dumbbells" title=" 1 Ea., 10# Cast Iron Dumbbells " width="51" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/6/6a5d2f3dd02c3aecb04f81acdf3ec8ec.image.76x120.gif','1 Ea., 10# Cast Iron Dumbbells',51,80,76,120,this,0,0,51,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1840</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1132&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1139&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 3# Cuff Weight, Gold</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1139&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 3# Cuff Weight, Gold" title=" 1 each, 3# Cuff Weight, Gold " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 3# Cuff Weight, Gold',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1872</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1139&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsNew centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1140&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">1 each, 4# Cuff Weight, Turquoise</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1140&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/d/da64b9db6b829a8bb7df02e9291712dc.image.100x75.jpg" alt="1 each, 4# Cuff Weight, Turquoise" title=" 1 each, 4# Cuff Weight, Turquoise " width="100" height="75" style="position:relative" onmouseover="showtrail('bmz_cache/9/99b0c3806170e39476e563f132a79d63.image.150x112.jpg','1 each, 4# Cuff Weight, Turquoise',100,75,150,112,this,0,0,100,75);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="product-model">Model: BLY1873</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=344_416&amp;products_id=1140&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+<br class="clearBoth" />
+</div>
+<!-- eof: whats_new -->
+
+
+
+
+
+<!-- bof: featured products  -->
+<div class="centerBoxWrapper" id="featuredProducts">
+
+	  <h2 class="centerBoxHeading">Featured Products</h2>
+	  
+    <div class="centerBoxContentsFeatured centeredContent back" style="width:33%;"><div class="product-col" >
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2239&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">BIOFREEZEÂ® Topical Pain Reliever  - 3 fl oz Roll On</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2239&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/e/e70615605b4f4eb9086bf821f41e05e7.image.28x80.jpg" alt="BIOFREEZEÂ® Topical Pain Reliever - 3 fl oz Roll On" title=" BIOFREEZEÂ® Topical Pain Reliever - 3 fl oz Roll On " width="28" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/d/d50edaa148b12eae984fe57eaaf4c83b.image.42x120.jpg','BIOFREEZEÂ® Topical Pain Reliever - 3 fl oz Roll On',28,80,42,120,this,0,0,28,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2239&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsFeatured centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=354_371_509&amp;products_id=4462&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">MEDIFLOW WATER PILLOW (CHIROFLOW)</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=354_371_509&amp;products_id=4462&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/3/3383787b2796b84ed84b111010a3806c.image.80x80.jpg" alt="MEDIFLOW WATER PILLOW (CHIROFLOW)" title=" MEDIFLOW WATER PILLOW (CHIROFLOW) " width="80" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/c/c1a4b415a5a11090fc901c91110d297a.image.119x120.jpg','MEDIFLOW WATER PILLOW (CHIROFLOW)',80,80,119,120,this,0,0,80,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=354_371_509&amp;products_id=4462&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsFeatured centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2237&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">BIOFREEZEÂ® Topical Pain Reliever  - 4 fl oz Gel Tubes</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2237&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/a/acfde79f5d642ab31647b94fb604f2ff.image.38x80.jpg" alt="BIOFREEZEÂ® Topical Pain Reliever - 4 fl oz Gel Tubes" title=" BIOFREEZEÂ® Topical Pain Reliever - 4 fl oz Gel Tubes " width="38" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/e/e55c5557225b37986497309d94cdbd50.image.57x120.jpg','BIOFREEZEÂ® Topical Pain Reliever - 4 fl oz Gel Tubes',38,80,57,120,this,0,0,38,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=37_38&amp;products_id=2237&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+<br class="clearBoth" />
+
+    <div class="centerBoxContentsFeatured centeredContent back" style="width:33%;"><div class="product-col" >
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_475_479&amp;products_id=2344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Richmar Multi-Stim Cloth  Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_475_479&amp;products_id=2344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/8/84eb69475295b0b854cfab90819ecd50.image.80x80.jpg" alt="Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)" title=" Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK) " width="80" height="80" style="position:relative" onmouseover="showtrail('bmz_cache/c/c2ffd00a59361d0e5e9f5b8740ca2979.image.120x120.jpg','Richmar Multi-Stim Cloth Electrodes, 2 x 2 inch Square Case of 10 (4/PACK)',80,80,120,120,this,0,0,80,80);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_475_479&amp;products_id=2344&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+    <div class="centerBoxContentsFeatured centeredContent back" style="width:33%;"><div class="product-col" style="margin-left:5px;">
+					<div class="name-padding"><a class="name" href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_78_80&amp;products_id=2358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Richmar Autosound 9.6 Four Channel Combo Unit With Laser</a></div>
+					<div class="image">
+						<a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_78_80&amp;products_id=2358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="bmz_cache/3/3461b78250e1678f6cd869903407c683.image.100x67.jpg" alt="Richmar Autosound 9.6 Four Channel Combo Unit With Laser" title=" Richmar Autosound 9.6 Four Channel Combo Unit With Laser " width="100" height="67" style="position:relative" onmouseover="showtrail('bmz_cache/0/0327c73ecbc7830a453e63ff145f2b96.image.150x100.jpg','Richmar Autosound 9.6 Four Channel Combo Unit With Laser',100,67,150,100,this,0,0,100,67);" onmouseout="hidetrail();"  /></a>
+					</div>
+					<div class="button-price">
+						<div class="button"><a href="http://www.shelton-dehaan.com/index.php?main_page=product_info&amp;cPath=77_78_80&amp;products_id=2358&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3"><img src="includes/templates/theme313/buttons/english/button_goto_prod_details.gif" alt="Go To This Product's Details" title=" Go To This Product's Details " width="89" height="23" /></a></div><div class="price"><strong>Price Unavailable</strong></div>
+					</div>
+			</div></div>
+<br class="clearBoth" />
+</div>
+<!-- eof: featured products  -->
+
+
+
+
+
+</div>                    
+                
+                	<div class="clear"></div>
+                    
+                    <!--eof content_center-->
+                
+               
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left-bot png">
+						<div class="right-bot png">
+							<div class="bot-tail png">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+                
+               
+				<!-- ========== FOOTER ========== -->
+				
+
+
+
+    <div id="footer">
+		<div class="left-top png">
+			<div class="right-top png">
+				<div class="bg1">&nbsp;</div>
+			</div>
+		</div>
+		<div class="bg">
+			<div class="indent">
+				<div class="menu">
+					<!-- ========== MENU ========== -->
+												
+							<a href="http://www.shelton-dehaan.com/">Home</a>&nbsp;::&nbsp;
+  <a href="http://www.shelton-dehaan.com/index.php?main_page=contact_us&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Contact Us</a>
+&nbsp;::&nbsp;
+  <a href="http://www.shelton-dehaan.com/index.php?main_page=account&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">My Account</a>
+&nbsp;::&nbsp;
+  <a href="http://www.shelton-dehaan.com/index.php?main_page=site_map&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Site Map</a>
+&nbsp;::&nbsp;
+  <a href="http://www.shelton-dehaan.com/index.php?main_page=privacy&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Privacy Notice</a>
+&nbsp;::&nbsp;
+  <a href="http://www.shelton-dehaan.com/index.php?main_page=page&amp;id=6&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Shared</a>
+					
+											<!-- ========================== -->
+				</div>
+				<p>
+					<!-- ========== COPYRIGHT ========== -->
+						Copyright &copy; 2019 <a href="http://www.shelton-dehaan.com/index.php?main_page=index&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3" target="_blank">Shelton-DeHaan Co.</a>. Powered by <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a> <a href="http://www.shelton-dehaan.com/index.php?main_page=privacy&amp;zenid=fhleo6hge7umnfqqvmtptd8kq3">Privacy Notice</a>
+				
+											<!-- =============================== -->
+				</p>
+			</div>
+		</div>
+		<div class="left-bot png">
+			<div class="right-bot png">
+				<div class="bg1">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+
+
+
+				<!-- ============================ -->
+                    
+                
+            </td>
+			
+		        
+    </tr>
+</table>
+
+</div>
+
+<!--bof- parse time display -->
+<!--eof- parse time display -->
+
+
+
+<!-- BOF- BANNER #6 display -->
+<!-- EOF- BANNER #6 display -->
+
+
+
+
+<!-- ========== IMAGE BORDER BOTTOM ========== -->
+
+    </div>
+
+</div>
+</div>
+</div>
+<!-- ========================================= -->
+
+</body></html>

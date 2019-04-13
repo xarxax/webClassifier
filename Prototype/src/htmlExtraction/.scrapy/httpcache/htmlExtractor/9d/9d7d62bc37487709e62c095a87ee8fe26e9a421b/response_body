@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Welcome To Herr's</title>
+  <link rel="icon" type="image/ico" href="Favicon.ico" />
+  <style type="text/css">
+	/* used for the menu machine */
+	@import 'css/mm.css';
+	/* used for classes or styles that are used on geneal pages */
+	@import 'css/base.css';
+</style>
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css"
+href="css/ie7adjust.css">
+<![endif]-->  <style type="text/css">
+  .flash-frame {
+    height: 350px;
+    position: relative;
+    overflow: visible;
+  }
+  .flash-file {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+  }
+  .custom-row {
+    position: relative;
+
+    height: 280px;
+    width: 100%;
+  }
+
+  .couponslideshow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 175px;
+    height: 200px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .coupon {
+    position: absolute;
+
+    left: 20px;
+    top: 10px;
+    width: 180px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .coupon-btn {
+    display: block;
+    width: 175px;
+    height: 121px;
+    background-image:url('images/btns/coupon-button.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+  .coupon-btn:hover {
+    background-position: 0px -121px;
+  }
+  .coupon-btn:active {
+    background-position: 0px 0px;
+  }
+
+
+  .sft {
+    z-index: 1;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+  }
+  .sft a {
+    display: block;
+
+    width: 500px;
+    height: 294px;
+    background-image:url('images/snack_factory_tour-2016.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    overflow: hidden;
+  }
+  .sft a:hover {
+    background-position: 0px -295px;
+  }
+
+  .sft a:active {
+    background-position: 0px -590px;
+
+  }
+
+
+
+
+  .jsherr {
+    position:absolute;
+    left: -165px;
+    top: -50px;
+  }
+
+  .email {
+    position: absolute;
+    left:-190px;
+    top: -60px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .email img {
+    width: 160px;
+    position: relative;
+    z-index: 1;
+    top: 10px;
+  }
+
+  .email .createsend-button {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .book {
+    position: absolute;
+    left: -180px;
+
+    top: 10px;
+    width: 180px;
+  }
+  .book p {
+    font-size: 11px;
+    line-height: 13px;
+    text-align:center;
+  }
+  .socialmedia {
+    /*
+    width: 110px;
+    z-index: 2;
+    position: absolute;
+    top: 220px;
+    right: -20px;
+    */
+    z-index: 3;
+    position: relative;
+    left: 40px;
+    bottom: 130px;
+    width: 110px;
+    float: left;
+  }
+  .socialmedia table {border: 0; border-collapse:collapse; margin: 0 auto;}
+  .socialmedia table td {width: 35px; height: 35px; text-align: center; vertical-align: bottom;}
+  .socialmedia table td a {border: 0;}
+  .socialmedia table td a img {width: 20px; border: 0;}
+  .socialmedia table td a img:hover {width: 25px;}
+
+
+  .holiday-treat-shoppe img {
+    width: 190px;
+  }
+
+  .holiday-treat-shoppe {
+    z-index: 9;
+    position: absolute;
+    left: 175px;
+    top: 10px;
+  }
+
+  .holiday-treat-shoppe:hover {
+    left: 176;
+    top: 11px;
+  }
+
+  .holiday-treat-shoppe:active {
+    left: 176;
+    top: 12px;
+  }
+
+  #treatshoppebtn {
+    position: absolute;
+    left: -200px;
+    top: -10px;
+  }
+
+  #treatshoppebtn a img {
+    display: block;
+    width: 200px;
+
+  }
+
+  #soccerball {
+    display: none;
+    position: absolute;
+
+    z-index: 9999;
+    width: 165px;
+    height: 165px;
+    background-image:url(images/btns/soccerball.png);
+    background-size: contain;
+  }
+
+  #unionbtn {
+    position: absolute;
+    left: -180px;
+    top: 10px;
+  }
+
+  #unionbtn a {
+    display: block;
+    width: 175px;
+    height: 175px;
+    background-image:url(images/btns/union-sweepstakes-btn.png);
+    background-position: 0px 0px;
+  }
+  #unionbtn a.state2,
+  #unionbtn a:hover {
+    background-position: 0px -175px;
+  }
+
+  #unionbtn a.state3,
+  #unionbtn a:active {
+    background-position: 0px -350px;
+  }
+
+
+
+  
+
+  </style>
+  <!--[if IE 7]>
+  <style type="text/css">
+  .flash-frame {
+  position: relative;
+  left: -22px;
+  top: 6px;
+  z-index: 0;
+}
+.custom-row {
+position: relative;
+left: -22px;
+top: 1px;
+}
+.navContainer {
+z-index: 99;
+position: relative;
+}
+</style>
+<![endif]-->
+<!-- Google Analytics -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(
+		['_setAccount', 'UA-1510806-31'],
+		['_trackPageview'],
+		['b._setAccount', 'UA-6098953-34'],
+		['b._trackPageview']
+	);
+	(function(){
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+		<script language="javascript">AC_FL_RunContent = 0;</script>
+		<script src="AC_RunActiveContent.js" language="javascript"></script>
+		<script type="text/javascript">
+			<!--
+			function MM_swapImgRestore() { //v3.0
+				var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+			}
+			function MM_preloadImages() { //v3.0
+				var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+				var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+				if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+			}
+			function MM_findObj(n, d) { //v4.01
+				var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+				d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+				if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+				for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+				if(!x && d.getElementById) x=d.getElementById(n); return x;
+			}
+			function MM_swapImage() { //v3.0
+				var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+				if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+			}
+			//-->
+		</script>
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
+
+
+<!-- include Cycle2 -->
+<script src="js/jquery.cycle2.min.js"></script>
+<!-- include one or more optional Cycle2 plugins -->
+<script src="js/jquery.cycle2.carousel.min.js"></script>
+<script src="js/jquery.cycle2.swipe.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript">
+/*
+$( document ).ready(function() {
+moveSoccerball();
+// loop soccerball animation
+setInterval(function() {
+moveSoccerball();
+},12000);
+});
+
+
+function resetBtn() {
+$( "#unionbtn a" ).removeClass( "state2 state3" );
+}
+
+function moveSoccerball() {
+
+resetBtn();
+
+// get coordinates of button
+var btnposition_x = $('#unionbtn').offset().left;
+var btnposition_y = $('#unionbtn').offset().top;
+
+var btn_width = 175;
+var btn_height = 175;
+
+var ball_width = 165;
+var ball_height = 165;
+
+var window_width = $(window).width();
+
+$('#overlay').css('height' , btnposition_y + btn_height);
+
+
+// move ball horizontally in line with button and off screen
+
+$('#soccerball').css('top' , btnposition_y + 15);
+$('#soccerball').css('left', window_width);
+
+$('#soccerball').css('width' , '165px');
+$('#soccerball').css('height' , '165px');
+
+$('#soccerball').show();
+
+
+
+var rotateCCW = function (){
+
+$("#soccerball").rotate({
+angle:0,
+animateTo:-350,
+callback: rotateCCW,
+easing: function (x,t,b,c,d){        // t: current time, b: begInnIng value, c: change In value, d: duration
+return c*(t/d)+b;
+}
+});
+}
+
+var rotateCW = function (){
+$("#soccerball").rotate({
+angle:0,
+animateTo:360,
+callback: rotateCW,
+easing: function (x,t,b,c,d){        // t: current time, b: begInnIng value, c: change In value, d: duration
+return c*(t/d)+b;
+}
+});
+}
+
+
+rotateCCW();
+
+$("#soccerball").animate(
+{
+left: (btnposition_x + btn_width - 15) +'px',
+top: btnposition_y,
+},
+1500,
+"linear",
+function() {
+$( "#unionbtn a" ).addClass( "state2" );
+rotateCW();
+}
+);
+
+
+$("#soccerball").animate(
+{
+top: '-' + ball_height +'px',
+left: window_width +'px',
+width: '0px',
+height: '0px'
+},
+1600,
+'linear',
+function() {
+$( "#unionbtn a" ).removeClass( "state2" );
+$( "#unionbtn a" ).addClass( "state3" );
+rotateCCW();
+}
+);
+
+
+*/
+
+}
+
+
+</script>
+
+
+</head>
+<body>
+  <!--
+  Start of DoubleClick Floodlight Tag: Please do not remove
+  Activity name of this tag: Landging Page
+  URL of the webpage where the tag is expected to be placed: http://www.herrs.com
+  This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+  Creation Date: 07/14/2015
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="http://4967432.fls.doubleclick.net/activityi;src=4967432;type=herrs0;cat=landg0;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+  <iframe src="http://4967432.fls.doubleclick.net/activityi;src=4967432;type=herrs0;cat=landg0;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+
+
+<div class="siteContainer">
+  <div class="header" style="background-image:url('images/herrs-site-header-home.jpg');">
+    <a href="http://www.herrs.com" class="link"></a>  </div>
+  			<div class="navContainer">
+				<div class="navMenumachineContainer">
+					<menumachine name="home_page_menu" id="m18mskfw">
+						<csobj t="Component" csref="menumachine/home_page_menu/menuspecs.menudata"><noscript>
+							<p><a class="mm_no_js_link" href="menumachine/home_page_menu/navigation.html">Site Navigation</a></p>
+						</noscript> </csobj> 
+						<script type="text/javascript">
+							<!--
+							var mmfolder=/*URL*/"menumachine/",zidx=1000;
+							//-->
+						</script>
+						<script type="text/javascript" src="menumachine/menumachine3.js"></script>
+						<script type="text/javascript" src="menumachine/home_page_menu/menuspecs.js"></script>
+					</menumachine>
+				</div>
+				<form action="http://www.herrs.com/search/search.html" id="cse-search-box">
+					<input type="hidden" name="cx" value="002917210964988222795:plajajchry0" />
+					<input type="hidden" name="cof" value="FORID:11" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<div class="navSearch">
+						<div id="navSearchButton"><input type="IMAGE" src="images/searchBoxButton.jpg" alt="Submit button" width="60" height="26" border="0" /></div>
+						<div id="navSearch"><input type="text" name="q" size="12" /></div>
+					</div>
+				</form>
+                			</div>
+  <div class="main">
+    <!-- this is where the content goes -->
+    <div class="flash-frame">
+            <div class="flash-file">
+        <a  href="http://www.herrsstore.com/neheblcotose.html" target="_blank"><img src="images/homepage/blue-corn-tortillas.png" alt="Herr's"  /></a>        </div>
+      </div>
+
+
+      
+
+
+            <div style="height: 30px;">&nbsp;</div>
+
+
+
+
+      <!-- <div class="custom-row" style="height:160px !important;">
+        <div style="    width: 700px;
+          float: right;
+          padding: 10px;
+          margin-right: 0px;
+          color: red;
+          font-size: 16px;
+          text-align: center;
+          background: red;
+          color: white;
+          border-radius: 10px;">
+          <h2 style="color:white;margin-bottom:20px;">Visitor Center</h2>
+          <p style="color:white;">
+            The Visitor Center will be closed on August 31st.
+          </p>
+        </div>
+
+      </div> -->
+
+
+
+      <div class="custom-row" style="height:160px !important;">
+        <div style="    width: 700px;
+          float: right;
+          padding: 10px;
+          margin-right: 0px;
+          color: red;
+          font-size: 16px;
+          text-align: center;
+          background: #17bee9;
+          color: white;
+          border-radius: 10px;">
+          <h2 style="color:white;margin-bottom:20px;">Herr's Holiday Lights</h2>
+          <p style="color:white;font-size:16px">
+            Check Out Herr’s Holiday Lights From Nov. 21st through Jan. 2nd!
+          </p>
+        </div>
+
+      </div>
+
+      <div class="custom-row" style="height:160px !important;">
+        <div style="    width: 700px;
+          float: right;
+          padding: 10px;
+          margin-right: 0px;
+          color: red;
+          font-size: 16px;
+          text-align: center;
+          background: #17bee9;
+          color: white;
+          border-radius: 10px;">
+          <h2 style="color:white;margin-bottom:20px;">Herr's Snack Factory Tour Holiday Hours</h2>
+          <p style="color:white;font-size:16px">
+            We are currently operating under special <a href="SnackFactoryTours.html">Holiday Hours</a>.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="custom-row">
+
+        
+
+
+        <div class="book">
+          
+            <p align="center">
+            <a href="shopholiday/"><img src="shopholiday/images/herrs-treat-shoppe-2018-callout.png" alt="Shop Our Holiday Treat Shoppe" style="width: 100%;" /></a><br />
+          </p>
+
+            </div>
+    <div class="coupon">
+      <a href="coupons.html" class="coupon-btn"></a>
+      <small>Having trouble printing coupons?<br /> Try the <a href="http://server.iad.liveperson.net/hc/s-44296948/cmd/kbresource/kb-5544738037445706481/front_page!PAGETYPE?category=22" target="_blank">Knowledgebase Troubleshooting Guide</a>.</small>
+    </div>
+    
+
+
+
+  
+
+  <div class="sft">
+    <a href="SnackFactoryTours.html"></a>
+  </div>
+
+  
+
+</div>
+</div>
+
+
+
+
+
+<div class="siteContainerBottom"></div>
+<!-- keep footer padding(delete when you add a real footer -->
+<div class="footer"></div>
+<!--
+<div class="footer">
+    <div class="links">
+        <a href="index.php">Home</a>
+        <a href="about.php">About Herr's</a>
+        <a href="news.php">News</a>
+        <a href="products.php">Product Info &amp; Recipes</a>
+        <a href="shopping.php">Shopping</a><br />
+        <a href="snack-factory-tours.php">Snack Factory Tours</a>
+        <a href="employment.php">Employment</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="customer-surveys.php">Customer Surveys</a>
+    </div>
+    <div class="social">
+        <a href="http://www.facebook.com/herrs" target="_blank"><img src="images/social/facebook.png" alt="Facebook" width="25px" /></a>
+        <a href="http://www.youtube.com/herrfoodsinc" target="_blank"><img src="images/social/youtube.png" alt="You Tube" width="25px" /></a>
+        <a href="https://foursquare.com/venue/646217" target="_blank"><img src="images/social/foursquare.png" alt="4Square" width="25px" /></a>
+        <a href="http://www.linkedin.com/company/134760?trk=tyah" target="_blank"><img src="images/social/linkedin.png" alt="Linked In" width="25px" /></a>
+    </div>
+    <div class="copyright">Copyright: 2019</div>
+</div>
+-->
+
+
+
+<div class="socialmedia">
+  <table>
+    <tr>
+      <td><a href="http://www.facebook.com/herrs" target="_blank"><img src="images/icn-fb.gif" alt="Facebook" /></a>   </td>
+      <td><a href="http://www.youtube.com/herrfoodsinc" target="_blank"><img src="images/icn-youtube.gif" alt="You Tube" /></a>   </td>
+      <td><a href="https://foursquare.com/venue/646217" target="_blank"><img src="images/icn-foursquare.gif"alt="Four Square"  /></a>   </td>
+      <td><a href="http://www.linkedin.com/company/134760?trk=tyah" target="_blank"><img src="images/icn-linkedin.gif" alt="LinkedIn" /></a></td>
+      <td><a href="http://www.twitter.com/herrfoods" target="_blank"><img src="images/icn-twitter.gif" alt="Twitter" /></a></td>
+    </tr>
+  </table>
+</div>
+
+
+
+  </div>
+
+    <script type="text/javascript">
+  swfobject.registerObject("FlashID");
+  swfobject.registerObject("FlashID2");
+  </script>
+</body>
+</html>

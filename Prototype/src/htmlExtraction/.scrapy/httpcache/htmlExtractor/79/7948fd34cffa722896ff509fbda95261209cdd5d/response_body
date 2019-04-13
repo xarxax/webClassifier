@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />        <title>AllVenues.com</title>
+        <link href="images/favicon.ico" type="images/x-icon" rel="icon" />
+		<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+			 <link rel="stylesheet" href="/app/css/reset.css" type="text/css" />
+         <link href="/favicon.ico" type="image/x-icon" rel="icon" /><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />		 		          <meta name="keywords" content="All Venues.Com is a Global Online Venue Directory" />         <meta name="description" content="Showcasing over1Venues, Conference and Convention Centers, Hotels, Airports, Amusement &amp; Theme Parks, Aquariums &amp; Zoos, Arenas &amp; Stadiums, Banquet Rooms, Bed &amp; Breakfasts, Casinos ,Castles, Churches, Colleges &amp; Universities, Country Clubs, Cruise Ships, Eco-Properties, Entertainment Venues, Golf Courses, Government Properties , High Schools, Historical Sites, Museums &amp; Galleries, Parks , Planetarium, Private Clubs, Resorts, Restaurants , Salons, Theaters, Tourist Attractions and special event locations." />        <link rel="stylesheet" type="text/css" href="/css/style.css" />        <link rel="stylesheet" type="text/css" href="/css/home.css" />        <link rel="stylesheet" type="text/css" href="/css/global.css" />		
+		  <script src="/js/general.js" type="text/javascript"></script>
+        <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="/js/jquery.tools.scrollable.min.js" type="text/javascript"></script>
+        <script src="/js/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
+        <script src="/js/conferences.js" type="text/javascript"></script>
+        <script src="/js/jquery.carouFredSel.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/app/css/jquery-ui-1.8.10.custom.css" type="text/css" />
+        <!--[if IE 9]>
+       <link rel="stylesheet" type="text/css" href="/css/styleIe9.css" />		<![endif]-->
+        <!--[if IE 8]>
+		<link href="/css/styleIe8.css" type="text/css" rel="stylesheet">
+		<![endif]-->
+        <!--[if lte IE 7]>
+		<link href="/css/styleIe7.css" type="text/css" rel="stylesheet">
+		<![endif]-->
+         <!--in order to show calendar-->
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33016865-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+    'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+    })();
+</script>		
+		</head>
+    <body class="page-home">
+        <div id="popup"></div>
+     <!-- header start --> <!--END HEADER--> 
+	   
+
+   <div id="header" class="wrapped">
+	<div class="logo">
+		<a href="/"><img src="/img/logo_top.png" alt="AllVenues.com" /></a>
+		
+	</div>
+    <div class="login">
+                <a id="login_link" href="/login">Login</a> or <a href="/signup">Sign up</a>
+            </div>
+   <div id="bannerDIV" class="bannerad">
+        		<iframe class="bannerIframe" scrolling="no" frameborder="0" src="/banners.php?p=1&amp;t=d124beba2e0a0cacca2ac2c976158065" width="470" height="62" ></iframe>
+        	</div>
+	<div id="betaLabel"></div>
+</div>
+<!--END HEADER-->        <div id="nav">
+
+    <div id="menu" class="wrapped">
+	<ul class="defaultMainMenu ">
+            
+   <li class="active"><a href="/">Home</a></li>
+   <li ><a href="/venues">Venues</a></li>
+   <!-- <li ><a href="/advertise">Advertise</a></li> -->
+   <li ><a href="/venues/add">Submit a Venue</a></li>
+   <li ><a href="http://www.allconferences.com/services/online-registrations" target="_blank">Free Event Registrations</a></li>
+   <li ><a href="http://www.allconferences.com/services/conference-notifications" target="_blank">Conference Notifications</a></li>
+     
+      
+	<li >
+	
+	<a href="http://www.allvenues.com/signup"><img src="/img/free_icon.png" title="Free sign up" alt="Free sign up" class="free-icon" />Sign Up</a></li>
+            
+   
+</ul>
+ <div class="loginnav">
+  <a href="/home/login" id="login_link">Login</a>  </div>
+</div><!--END MENU-->
+
+
+</div><!--END NAV-->		
+
+        <div id="container" class="wide-block bghome">
+            <div id="maincontent" class="wrapped ">
+                              <script>
+function empty_state_city()
+{
+	var drop	=	'<select class="select-city" size="1" name="data[Search][state]">';
+    var countryName	=	$('#VenueCountry').val();
+	if($.trim(countryName)	==	'United States')
+	{
+		drop	+=	$("#EEUU_states").html();
+		drop	+=	'</select>'
+	}
+	else if($.trim(countryName)	==	'Canada')
+	{
+		//
+		drop	+=	$("#CANADA_states").html();
+		drop	+=	'</select>'
+	}
+	else
+	{
+		drop	=	'<input type="text" style="width:122px;" name="data[Search][city]" class="textinput venueSearchCity" id="data[Search][city]" value="">';
+	}
+	
+	$("#states_div").html(drop);
+/*    $('input[name="data[Search][city]"]').attr('value','');
+    $('[name="data[Search][state]"]').attr('value','');
+    $('select[name="data[Search][city]"]').attr('value','');
+    $('#searchConferenceCategoryForm').submit();*/
+}
+function submit_form_search()
+{
+    var url='http://www.allvenues.com/venues/index';
+    country=$('select[name="data[Search][country]"]').val();
+    state=$('[name="data[Search][state]"]').val();
+    city=$('input[name="data[Search][city]"]').val();
+    name=$('input[name="data[Search][name]"]').val();
+
+    if(country != ''){
+        url=url+'/country:'+country;
+    }
+    if(state != '' && typeof  state != 'undefined'){
+        url=url+'/state:'+state;
+    }
+    if(city != '' && typeof  state != 'undefined'){
+        url=url+'/city:'+city;
+    }
+    $('#searchConferenceCategoryForm').attr('action',url);
+}
+</script>
+  <div id="SearchContent">
+<div class="clear" ></div>
+     <h2>All Venues.Com is a Global Online Venue Directory</h2>
+     <h3> <p>Showcasing over <a>251020 </a> <a href="/T/1-Airports" class="home_venue">Airports</a>, <a href="/T/2-Amusement-&amp;-Theme-Parks" class="home_venue">Amusement &amp; Theme Parks</a>, <a href="/T/3-Aquariums-&amp;-Zoos" class="home_venue">Aquariums &amp; Zoos</a>, <a href="/T/4-Arenas-&amp;-Stadiums" class="home_venue">Arenas &amp; Stadiums</a>, <a href="/T/5-Banquet-Rooms" class="home_venue">Banquet Rooms</a>, <a href="/T/6-Bed-&amp;-Breakfasts" class="home_venue">Bed &amp; Breakfasts</a>, <a href="/T/7-Cafeterias" class="home_venue">Cafeterias</a>, <a href="/T/8-Casinos" class="home_venue">Casinos</a>, <a href="/T/9-Castles" class="home_venue">Castles</a>, <a href="/T/10-Churches" class="home_venue">Churches</a>, <a href="/T/11-Conference-Centers" class="home_venue">Conference Centers</a>, <a href="/T/12-Convention-Centers" class="home_venue">Convention Centers</a>, <a href="/T/13-Country-Clubs" class="home_venue">Country Clubs</a>, <a href="/T/14-Cruise-Ships" class="home_venue">Cruise Ships</a>, <a href="/T/15-Dancing-Ballrooms" class="home_venue">Dancing Ballrooms</a>, <a href="/T/16-Eco-Properties" class="home_venue">Eco-Properties</a>, <a href="/T/17-Entertainment-Venues" class="home_venue">Entertainment Venues</a>, <a href="/T/18-Golf-Courses" class="home_venue">Golf Courses</a>, <a href="/T/19-Government-Properties" class="home_venue">Government Properties</a>, <a href="/T/20-High-Schools" class="home_venue">High Schools</a>, <a href="/T/21-Historical-Sites" class="home_venue">Historical Sites</a>, <a href="/T/22-Hotels" class="home_venue">Hotels</a>, <a href="/T/23-Inns" class="home_venue">Inns</a>, <a href="/T/24-Motels" class="home_venue">Motels</a>, <a href="/T/25-Museums-&amp;-Galleries" class="home_venue">Museums &amp; Galleries</a>, <a href="/T/26-Other-Lodgings" class="home_venue">Other Lodgings</a>, <a href="/T/27-Parks" class="home_venue">Parks</a>, <a href="/T/28-Planetarium" class="home_venue">Planetarium</a>, <a href="/T/29-Private-Clubs" class="home_venue">Private Clubs</a>, <a href="/T/30-Resorts" class="home_venue">Resorts</a>, <a href="/T/31-Restaurants" class="home_venue">Restaurants</a>, <a href="/T/32-Salons" class="home_venue">Salons</a>, <a href="/T/33-Theaters" class="home_venue">Theaters</a>, <a href="/T/34-Tourist-Attractions" class="home_venue">Tourist Attractions</a></p></h3>
+	 
+<form  onSubmit="submit_form_search();" id="searchConferenceCategoryForm" class="mb10" method="post">
+
+	 <input type="text" value="" id="data[Search][name]" class="searchvenues" name="data[Search][name]" style="width:440px;"	placeholder="Search Venues here.."  size="450" maxlength="100" />
+					
+    <h3><a>Search by:</a></h3>
+     <div class="search-items"> 
+	 
+     <!-- VENUE COUNTRY-->
+            <select name="data[Search][country]" id="VenueCountry" size="1" onchange="empty_state_city();" class="select-city" style="width:122px !important;">
+<option value=""></option>
+<option value="United States">United States</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Congo, the Democratic Republic of the">Congo, the Democratic Republic of the</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Côte d'lvoire">Côte d&#039;lvoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haití">Haití</option>
+<option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+<option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran (Islamic Republic of)">Iran (Islamic Republic of)</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea, Democratic Peoples Republic of (North Korea)">Korea, Democratic Peoples Republic of (North Korea)</option>
+<option value="Korea, Republic of (South Korea)">Korea, Republic of (South Korea)</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Lao People's Democratic Republic">Lao People&#039;s Democratic Republic</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia, Republic of">Macedonia, Republic of</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+<option value="Moldova, Republic of">Moldova, Republic of</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar, Republic of the Union of (Burma)">Myanmar, Republic of the Union of (Burma)</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn Islands">Pitcairn Islands</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Réunion">Réunion</option>
+<option value="Romania">Romania</option>
+<option value="Russian Federation">Russian Federation</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="São Tomé and Príncipe">São Tomé and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Saint Helena">Saint Helena</option>
+<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syrian Arab Republic">Syrian Arab Republic</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States ">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Virgin Islands (British)">Virgin Islands (British)</option>
+<option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Yugoslavia">Yugoslavia</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>       <!-- VENUE STATE -->
+                                <span id="states_div">
+                    <label for="SearchStates">State</label><input name="data[Search][state]" type="text" id="SearchStates" size="1" class="textinput" style="width:122px" />                    </span>
+	 <input type="text" value="" id="data[Search][city]" class="textinput venueSearchCity" name="data[Search][city]" style="width:122px;">
+     <div><input type="submit" src="" class="mainsearch hover_cursor" value="" onclick="$('#searchConferenceCategoryForm').submit();" /></div>
+      <div><a href="/venues/advanced_search" class="advancedsearch hover_cursor"></a></div>
+	       <a href="/venues/add"><div class="add-a-venue">
+     	<img src="/img/add-a-venue.jpg" width="161" height="33" alt="" /></div>
+		     <div class="add-venue-free"><img src="/img/free.png" width="46" height="43" alt="" /></div></a>
+	 <div style="display:none;">
+		 <div id="canadaState">
+			<label for="CANADA_states">State</label><select name="data[CANADA_states]" id="CANADA_states" label="State: *" size="1" class="select-city">
+<option value=""></option>
+<option value="Alberta">Alberta</option>
+<option value="British Columbia">British Columbia</option>
+<option value="Manitoba">Manitoba</option>
+<option value="New Brunswick">New Brunswick</option>
+<option value="Newfoundland">Newfoundland</option>
+<option value="Northwest Territories">Northwest Territories</option>
+<option value="Nova Scotia">Nova Scotia</option>
+<option value="Nunavut">Nunavut</option>
+<option value="Ontario">Ontario</option>
+<option value="Prince Edward Island">Prince Edward Island</option>
+<option value="Quebec">Quebec</option>
+<option value="Saskatchewan">Saskatchewan</option>
+<option value="Yukon Territory">Yukon Territory</option>
+</select>		 </div>
+		 <div id="usaStatte">
+			  <label for="EEUU_states">State</label><select name="data[EEUU_states]" id="EEUU_states" size="1" class="select-city">
+<option value=""></option>
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option value="Virginia">Virginia</option>
+<option value="Washington">Washington</option>
+<option value="Washington DC">Washington DC</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+</select>		 </div>
+	 </div>
+     </div>
+     </form>
+</div><!--END SearchContent--> 
+<script>empty_state_city();</script>			 
+<div id="venues1">
+	<h2>Venues <a>by City</a></h2>
+    <ul><li>
+	<a href="/venues/index/country:United-States/state:New-York/city:New-York">New York</a><a href="/venues/index/country:United-States/state:New-York/city:New-York"> New York</a></li><li>
+			<a href="/venues/index/country:United-States/state:Illinois/city:Chicago"> Chicago</a><a href="/venues/index/country:United-States/state:Alaska/city:Los-Angeles"> Los Angeles</a></li><li>
+			<a href="/venues/index/country:United-States/state:Texas/city:Houston"> Houston</a><a href="/venues/index/country:United-States/state:Washington/city:Washington">Washington</a></li><li>
+			<a href="/venues/index/country:United-States/state:Texas/city:Dallas"> Dallas</a><a href="/venues/index/country:United-States/state:Illinois/city:Chicago">Chicago</a></li><li>
+			<a href="/venues/index/country:United-States/state:Georgia/city:Atlanta"> Atlanta</a><a href="/venues/index/country:United-States/state:Minnesota/city:Austin"> Austin</a></li><li>
+			<a href="/venues/index/country:United-States/state:Oregon/city:Portland">Portland</a><a href="/venues/index/country:United-States/state:Massachusetts/city:Boston">Boston</a></li><li>
+			<a href="/venues/index/country:United-States/state:California/city:San-Francisco">San Francisco</a><a href="/venues/index/country:United-States/state:Indiana/city:Indianapolis"> Indianapolis</a></li><li>
+			<a href="/venues/index/country:United-States/state:New-York/city:Brooklyn"> Brooklyn</a><a href="/venues/index/country:United-States/state:Pennsylvania/city:Philadelphia">Philadelphia</a></li><li>
+			<a href="/venues/index/country:United-States/state:Texas/city:Houston">Houston</a><a href="/venues/index/country:United-States/state:Kansas/city:Kansas-City"> Kansas City</a></li><li>
+			<li><a href="/venues/index/country:France/state:/city:Paris">Paris</a><a href="/venues/index/country:Canada/state:Ontario/city:London">London</a></li>    </ul>
+   <h3><a href="/venues/seeall/city">See All</a></h3>
+</div>
+<div id="venues2">
+	<h2>Venues <a>by State</a></h2>
+    <ul>
+	<li><a href="/venues/index/country:United-States/state:California">California</a><li><a href="/venues/index/country:United-States/state:Texas">Texas</a><li><a href="/venues/index/country:United-States/state:New-York">New York</a><li><a href="/venues/index/country:United-States/state:Massachusetts">Massachusetts</a><li><a href="/venues/index/country:United-States/state:Ohio">Ohio</a><li><a href="/venues/index/country:United-States/state:Illinois">Illinois</a><li><a href="/venues/index/country:United-States/state:Georgia">Georgia</a><li><a href="/venues/index/country:United-States/state:Florida">Florida</a><li><a href="/venues/index/country:United-States/state:Pennsylvania">Pennsylvania</a><li><a href="/venues/index/country:United-States/state:North-Carolina">North Carolina</a>    </ul>
+    <h3><a href="/venues/seeall/state">See All</a></h3>
+</div>
+<div id="venues2">
+	<h2>Venues <a>by Country</a></h2>
+    <ul>
+	<li><a href="/venues/index/country:United-States">United States</a><li><a href="/venues/index/country:Canada">Canada</a><li><a href="/venues/index/country:France">France</a><li><a href="/venues/index/country:Italy">Italy</a><li><a href="/venues/index/country:China">China</a><li><a href="/venues/index/country:Spain">Spain</a><li><a href="/venues/index/country:United-Kingdom">United Kingdom</a><li><a href="/venues/index/country:Germany">Germany</a><li><a href="/venues/index/country:India">India</a><li><a href="/venues/index/country:Mexico">Mexico</a>    </ul>
+   <h3><a href="/venues/seeall/country">See All</a></h3>
+</div>
+<div id="recentlyadded">
+	<h2>Recently <a>Added Venues</a></h2>
+    <ul>
+				<li><a href="/v/United-States/Nevada/Las-Vegas/858021-Las-Vegas-Convention-Center" title="Las Vegas Convention Center">Las Vegas Convention Cent...</a></li>
+						<li><a href="/v/United-States/California/San-Diego/858026-San-Diego-Convention-Center" title="San Diego Convention Center">San Diego Convention Cent...</a></li>
+						<li><a href="/v/Canada/Quebec/Montreal/858039-Centre-Bell" title="Centre Bell">Centre Bell</a></li>
+						<li><a href="/v/United-States/Illinois/Chicago/858038-United-Center" title="United Center">United Center</a></li>
+						<li><a href="/v/United-States/California/Los-Angeles/858037-J-Paul-Getty-Museum" title="J.Paul Getty Museum">J.Paul Getty Museum</a></li>
+						<li><a href="/v/United-States/New-York/New-York/858036-The-Metropolitan-Museum-of-Art" title="The Metropolitan Museum of Art">The Metropolitan Museum o...</a></li>
+						<li><a href="/v/United-States/Georgia/Atlanta/858035-Fox-Theater" title="Fox Theater">Fox Theater</a></li>
+						<li><a href="/v/United-States/New-York/New-York/858034-Radio-City-Music-Hall" title="Radio City Music Hall">Radio City Music Hall</a></li>
+						<li><a href="/v/United-States/Nevada/Las-Vegas/858033-Luxor-Las-Vegas" title="Luxor Las Vegas">Luxor Las Vegas</a></li>
+						<li><a href="/v/United-States/Nevada/Las-Vegas/858032-MGM-Grand-Las-Vegas" title="MGM Grand Las Vegas">MGM Grand Las Vegas</a></li>
+			  
+    </ul>
+	  <h3><a href="/venues/view_all">See All</a></h3>
+</div>
+                <div class="clear"></div>
+            </div>
+        </div><!--END CONTAINER-->
+		  <div id="footer" class="wrapped">
+        <div id="bottomframe">
+		
+		<a href="/"><img src="/img/allvenues-bot.jpg" width="151" height="23" class="all-logo" alt="Allvenues.com" /></a>	<a href="http://www.allconferences.com/" target="_blank"><img src="/img/allconferences-bot.jpg" width="193" height="23" class="all-logo" alt="AllConferences.com" /></a>	<a href="http://www.allsuppliers.com" target="_blank"><img src="/img/allsuppliers-bot.jpg" width="174" height="23" class="all-logo" alt="allsuppliers.com" /></a>            <div id="bottom-nav">
+            	<ul>
+                	<li><a href="/contact">About Us</a></li>
+                    <li>|</li>
+                    
+                    <li><a href="/site-map">Sitemap</a></li>
+                     <li>|</li>
+                    <li><a href="/contact/about">Contact Us</a></li>
+				</ul>
+            </div>
+                 </div>
+        
+        <div class="footer-nav">
+           	<ul>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Cruises</a></li>
+            <li><a href="#">River Cruises</a></li>
+            <li><a href="#">Resorts</a></li>
+            <li><a href="#">Travel Guide</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-nav2">
+        	<ul>
+        	<li><a  href="#">Globus Tours</a></li>
+            <li><a  href="#">Trafalgal Tours</a></li>
+            <li><a  href="#">Insight Tours</a></li>
+            <li><a  href="#">Tauck Tours</a></li>
+            <li><a  href="#">Carnival Cruises</a></li>
+            <li><a  href="#">Celebrity Cruises</a></li>
+            <li><a  href="#">Holland America Cruises</a></li>
+            <li><a  href="#">Norwegian Cruises</a></li>
+            <li><a href="#">Princess Cruises</a></li>
+            <li><a href="#">Royal Caribbean Cruises</a></li>
+            <li><a href="#">Cunard Cruises</a></li>
+            <li><a href="#">Italy Tours</a></li>
+            <li><a href=-"#">Europe Tours</a></li>
+            </ul>
+        </div>
+		<div class="banner-bottom">
+		<a href="http://www.allconferences.com/services/conference-notifications"><img src="/img/banner-bottom.jpg" width="691" height="86" alt="" /></a></div>
+		
+		          </div>		  <div id="message-container" style="display: none;"></div>        <div id="login_from_popup" style="display:none">
+    <script type="text/javascript">
+    $(document).ready(function() {
+		$("#popup #UserFormPopup").validate();
+	});
+</script>
+<div class="clear"></div>
+<div class="users form">
+    <h1>Sign In</h1>
+    <form id="UserFormPopup" method="post" action="/login" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>    <fieldset>
+         <div class="input text required"><label for="UserEmailPopup"> Email Address</label><input name="data[User][email]" type="text" class="textinput required email" id="UserEmailPopup" maxlength="120" /></div><div class="input password required"><label for="UserPasswordPopup">Password</label><input type="password" name="data[User][password]" class="textinput required" id="UserPasswordPopup" /></div><input type="hidden" name="data[User][remember]" id="UserRememberPopup_" value="0" /><input type="checkbox" name="data[User][remember]" value="1" id="UserRememberPopup" /> Remember me<input type="hidden" name="data[User][login_from]" value="/" id="UserLoginFromPopup" />        
+   </fieldset>
+   <div class="submit"><input type="submit" value="Sign In" /></div></form>   <div class="links">
+<a href="/users/resetPassword">Forgot Password?</a>	<br /><p> Not yet signed up<a class="buttonSignup" href="/signup" >Sign up</a></p>
+	</div>
+</div></div>
+
+        <div id="popupHelp"></div>
+        <script src="/js/jquery.autocompleteSolr.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/app/css/jquery.autocomplete.css" type="text/css" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#searchModuleInput").autocompleteSolr('URLSOLRSEARCH', {"width":460,"extraParams":{"wt":"json","group":"true","group.field":"entity","group.limit":5}});
+            });
+        </script>
+
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c9ccbac009a993b"></script>
+
+        <script>
+            /** Init the date picker calendar */
+            function initDatePicker(){
+                $(".datepicker").datepicker(
+                {
+                    buttonImageOnly: true ,
+                    changeYear: true ,
+                    changeMonth: true,
+                    duration: 'slow' ,
+                    showOn: 'both' ,
+                    dateFormat: 'yy-mm-dd',
+                    dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                    dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa                        '],
+                        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                        monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        buttonText: '',
+                        showButtonPanel: true,
+                        closeText: 'Close',
+                        currentText: 'Now',
+                        firstDay: 0,//Sunday
+                        minDate: new Date(2019,02 - 1,05),//first selectable day
+                        yearRange:'2010:2015',
+                        buttonImage:'/img/calendar.png'
+                    }
+                );
+                }
+
+                $(document).ready(function() {
+                    $.ajaxSetup ({ cache: false});
+if($("#popup").html() != ''){
+    $("#popup").dialog({
+        autoOpen: true,
+        show: 'blind',
+        width: 600,
+        height: 450,
+        modal: true
+    });
+}else{
+    $("#popup").dialog({
+        autoOpen: false,
+        show: 'blind',
+        width: 600,
+        height: 450,
+        modal: true
+    });
+}$("a[id^=login_link]").click(function(){
+$('#popup').dialog({width:400});
+$('#popup').dialog({height:300});
+$('#popup').html($('#login_from_popup').html());
+$('#popup').dialog('open');
+return false;
+});
+            initMenus();//from general.js
+            initHelp();//from general.js
+        });
+
+        </script>
+        <script>
+function viewFeedbackFormAjax() {
+	$.ajax({
+		type:"GET",
+		url: '/users/feedbackFormAjax',
+		success: function(html){
+	               $('#popup').html(html);
+	               $("#popup").dialog({
+				        title: 'Feedback' 
+				    });
+			       $('#popup').dialog('open');
+	    },
+		error: function(){
+			        showMessageError("Sorry, there was a problem loading this form, please try again. ");
+	    }
+	});
+}
+
+function postFeedbackFormData(idForm) {
+    $('#loading_feedback').html("<img src='/img/loading.gif'/>");
+	$.ajax({
+		type:"POST",
+		url: '/users/feedbackPostFormAjax',
+		data: $("#feedbackForm").serialize(),
+		success: function(html){
+					if ( (html.length != 0) && (html.indexOf("Word not allowed: " > -1) )) {
+						showMessageError(html);
+					} else {
+	               	showMessageSucess("Your feedback was sent successfully");
+	               }
+				   $('#popup').dialog('close');
+	    },
+		error: function(){
+	               showMessageError("There was an error in the feedback process. ");
+				   $('#popup').dialog('close');
+	    }
+	});
+
+}
+</script>
+<a class="feedback" href="javascript: viewFeedbackFormAjax();" ></a>
+<br/>
+<a href="/contact/about" class="contactus" title="Contact Us"></a><script type="text/javascript">
+//<![CDATA[
+var datepicker6 =  $('#datepicker6').datepicker({dateFormat:'m-d-y', onSelect:function(event, ui) {window.location.href = "/calendar/generalCalendar/Conference__start_date__from:"+event+"/from:home";}});
+//]]>
+</script>
+      </body>
+</html>

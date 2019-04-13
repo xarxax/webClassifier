@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ranpak</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="g5I4h7nAgDqcHou8720bbuLJKSbTEk/V+Cb6l7PQ6wDjLIh+hfawSWGIIhdk7DnFbRDmHNFoUG8XM0YvJCgg0g==" />
+<link rel="shortcut icon" type="image/png" href="https://d3vozmj15s8x1v.cloudfront.net/assets/favicon-ranpak-507a48fcbc03fdb7842225ac3c79c58f8b959459c6aa8f98bfeb768637319ae4.png" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-26974550-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script src="https://d3vozmj15s8x1v.cloudfront.net/assets/application-b222a494d0781370925ad91bb6bf882299688666f83dbdd9849b685727687e74.js"></script>
+<link rel="stylesheet" media="all" href="https://d3vozmj15s8x1v.cloudfront.net/assets/application-d2037c405ceee8061a402d0503e42e0a08222435f4bb32018ea1c875f0b6ae5a.css" />
+<script>
+  window.Settings = {}
+  Settings.region = 'na'
+  Settings.language = 'en'
+  Settings.isMultiLingual = true
+  Settings.Messages = {}
+  Settings.Messages.cookieConsentMessage = "This website uses cookies to enhance your online experience."
+  Settings.Messages.cookieConsentLearnMore = "Learn more"
+  Settings.Messages.cookieConsentAcceptText = "I Understand"
+</script>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='tmZ03VLxU-gzrNS14kW8JYePIbSI709PMbw3zGJOPI8' name='google-site-verification'>
+<link href='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css' rel='stylesheet' type='text/css'>
+<!-- /%script{:type => "text/javascript", :src  => "//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"} -->
+</head>
+<body>
+<div class='site-wrap'>
+<script>
+  social_padding();
+  
+  $(document).ready(function() {
+    social_padding();
+  });
+  
+  $(window).resize(function() {
+    social_padding();
+  });
+  
+  function social_padding() {
+    var padding = ($('.site-wrap').width()) + 'px';
+    if ($('.site-wrap').width() <= 992) {
+      padding = ($('.site-wrap').width() - 28) + 'px';
+    }
+    $('.social-media-bar__icon').css('padding-left', padding);
+  }
+</script>
+<div class='social-media-bar__wrap'>
+<div class='social-media-bar__icon'>
+<div class='social-media-bar__icon-wrap'>
+<a href="https://www.facebook.com/ranpakcorp/"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/ranpakcorp"><i class="fa fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/ranpak-north-america"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.instagram.com/ranpak_na/"><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/channel/UCT_mBUpUbRhtHD0a8vKYuOA"><i class="fa fa-youtube-play"></i></a>
+<a href="mailto:inquiries@ranpak.com"><i class="fa fa-envelope"></i>
+</a><a onClick="window.print()" href="#"><i class="fa fa-print"></i>
+</a></div>
+</div>
+</div>
+
+<script>
+  button_padding();
+  
+  $(document).ready(function() {
+    button_padding();
+  });
+  
+  $(window).resize(function() {
+    button_padding();
+  });
+  
+  function button_padding() {
+    var padding = ($('.site-wrap').width() - 192) + 'px';
+    $('.contact-button').css('margin-left', padding);
+  }
+</script>
+<div class='contact-button__wrapper'>
+<div class='contact-button'>
+<a class="button__rp-wrap-center-mobile" href="#"><button class='button__button type-orange js-modal-launcher' data-modal='#js__modal-contact_submission'>
+<span class='contact-button__label'>CONTACT RANPAK</span>
+</button>
+</a></div>
+</div>
+
+<div class='modal__modal-background js-modal__close' id='js-modal-background'></div>
+<div class='header'>
+<div class='header__logo'>
+<!-- / Eventually this sould be an SVG -->
+<a href="/"><img alt="Ranpak Logo" src="https://d3vozmj15s8x1v.cloudfront.net/assets/RanpakGlobal_logo-8b8684129be1a502b3f9392994a289be72244d17accf354a038a362e5dc6e760.svg" /></a>
+</div>
+<script>
+  function setActive() {
+    activeButton = document.getElementById('js-nav').getElementsByTagName('a');
+    for(i=0; i < activeButton.length; i++) {
+      if(document.location.href.indexOf(activeButton[i].href) >= 0) {
+        activeButton[i].className = 'active';
+      }
+    }
+  }
+  
+  $(document).ready(function () {
+  setActive();
+  });
+</script>
+<button aria-expanded='false' class='menu__mobile-toggle' id='js__menu-mobile-toggle' type='button'>
+<svg class='inline-svg' height='30px' space='preserve' version='1.1' viewbox='0 0 21 12' width='40px' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'>
+<title>Mobile Menu</title>
+<g class='svg-menu-toggle'>
+<rect class='bar' height='1' width='20' x='0' y='0'></rect>
+<rect class='bar' height='1' width='20' x='0' y='6'></rect>
+<rect class='bar' height='1' width='20' x='0' y='12'></rect>
+<!-- needs to be here as a 'hit area' -->
+<rect fill='none' height='15' width='20'></rect>
+</g>
+</svg>
+
+</button>
+<nav class='menu' id='js-nav'>
+<div class='language-dropdown__wrap'>
+<div class='dropdown-band__menu'>
+<span class='dropdown__button' data-id='LanguageDropdown' data-options='#js-language-options'>
+<span class='dropdown__selected'>English</span>
+<i class="fa fa-angle-down"></i>
+</span>
+<ul class='dropdown__content' id='js-language-options'>
+<li data-locale='en'>
+<a href="/settings/change_locale?locale=en">English</a>
+</li>
+<li data-locale='es-MX'>
+<a href="/settings/change_locale?locale=es-MX">Spanish</a>
+</li>
+</ul>
+</div>
+</div>
+
+<ul class='menu__list'>
+<li class='menu__list-item'>
+<a href="/products">Products</a>
+</li>
+<li class='menu__list-item'>
+<a href="/industries">Industries</a>
+</li>
+<li class='menu__list-item'>
+<a href="/ecommerce">E-Commerce</a>
+</li>
+<li class='menu__list-item'>
+<a href="/sustainability">Sustainability</a>
+</li>
+<li class='menu__list-item'>
+<a href="/engineering">Engineering</a>
+</li>
+<li class='menu__list-item'>
+<a href="/about">About</a>
+</li>
+<li class='menu__list-item'>
+<a class="js-modal-launcher" data-modal="#js__modal-contact_submission" href="#">Contact</a>
+</li>
+</ul>
+</nav>
+
+</div>
+
+<main>
+<section class='main'>
+<header class='lead__wrap homepage-lead'>
+<div class='lead__wrap-row'>
+<div class='lead__txt'>
+<h2 class='lead__title'>
+Personalized packaging solutions for every product.
+</h2>
+<div class='lead__desc'>
+<p>Ranpak&#39;s paper-based packaging systems offer eco-friendly, cost-effective
+          solutions. Tailored to your needs, we ensure that your packing operation works
+          smoothly and your products arrive safely at their destination.</p>
+<a class="button__rp-wrap-center-mobile" href="/products"><button class='homepage-lead__button button__button'>
+<span>
+Find the product for your packaging needs
+</span>
+</button>
+</a></div>
+</div>
+</div>
+</header>
+
+<section class='homepage-marketing'>
+<div class='homepage-marketing__column'>
+<div class='homepage-marketing__column-left'>
+<div class='swiper-container' id='js__homepage-marketing-slider'>
+<div class='swiper-wrapper'>
+<div class='swiper-slide'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/4/image/original-faef4d89e4ae03aaa2636d55a401f230.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cb131b111e5cafabf22fec59005c7bb28d75bbde3fcb65668c68cad2248654da 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/4/image/original-faef4d89e4ae03aaa2636d55a401f230.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cb131b111e5cafabf22fec59005c7bb28d75bbde3fcb65668c68cad2248654da' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/4/image/original-faef4d89e4ae03aaa2636d55a401f230.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cb131b111e5cafabf22fec59005c7bb28d75bbde3fcb65668c68cad2248654da 2x'>
+
+</picture>
+<div class='homepage-marketing__text'>
+<h3 class='homepage-experiences__heading'>
+<a href="https://vimeo.com/237447247">Ranpak Feature on Worldwide Business with Kathy Ireland</a>
+</h3>
+<p>Ranpak had the honor of being featured on Worldwide Business with Kathy Ireland. In case you missed it or forgot to set your DVR, here it is!</p>
+</div>
+</div>
+<div class='swiper-slide'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/2/image/original-5594059230770bfb274828868bebce15.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d89e745bf3a1f23fa429eabc01aad3d71c6e15ebed42eebb8bfdbf6b04411f10 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/2/image/original-5594059230770bfb274828868bebce15.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d89e745bf3a1f23fa429eabc01aad3d71c6e15ebed42eebb8bfdbf6b04411f10' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/2/image/original-5594059230770bfb274828868bebce15.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d89e745bf3a1f23fa429eabc01aad3d71c6e15ebed42eebb8bfdbf6b04411f10 2x'>
+
+</picture>
+<div class='homepage-marketing__text'>
+<h3 class='homepage-experiences__heading'>
+<a href="/blog/how-to-optimize-your-customers-unboxing-experience-9084050c-37c8-4906-adef-69a944e9a2d6">How to optimize your customers’ unboxing experience</a>
+</h3>
+<p>With the increase in online stores, you need the ability to stand out among the rest. How can Ranpak help? </p>
+</div>
+</div>
+<div class='swiper-slide'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/1/image/original-d60872d3c34b45b060e5947971b14c0a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2d823be491c4dda68fcc159574cd46ee1da0e09a95ceb9895146df1ea3f95330 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/1/image/original-d60872d3c34b45b060e5947971b14c0a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2d823be491c4dda68fcc159574cd46ee1da0e09a95ceb9895146df1ea3f95330' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/1/image/original-d60872d3c34b45b060e5947971b14c0a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2d823be491c4dda68fcc159574cd46ee1da0e09a95ceb9895146df1ea3f95330 2x'>
+
+</picture>
+<div class='homepage-marketing__text'>
+<h3 class='homepage-experiences__heading'>
+<a href="/pages/a-packaging-material-with-a-future">The perfect product for the ultimate unboxing experience: Geami WrapPak</a>
+</h3>
+<p>Geami WrapPak offers faster packing, solid protection and perfect presentation. Learn more about this innovative packaging material.</p>
+</div>
+</div>
+<div class='swiper-slide'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/3/image/original-775cd2b3e153ae23f8727ae3fe6bfb1c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1967d6abd085f7ae87e6969fb0d0ff2e9f69da55a090eb80264dd1013300cee3 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/3/image/original-775cd2b3e153ae23f8727ae3fe6bfb1c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1967d6abd085f7ae87e6969fb0d0ff2e9f69da55a090eb80264dd1013300cee3' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagehighlight/3/image/original-775cd2b3e153ae23f8727ae3fe6bfb1c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1967d6abd085f7ae87e6969fb0d0ff2e9f69da55a090eb80264dd1013300cee3 2x'>
+
+</picture>
+<div class='homepage-marketing__text'>
+<h3 class='homepage-experiences__heading'>
+<a href="http://www.e3neo.net/en/home/"> Ranpak Automated packaging solutions by E3NEO </a>
+</h3>
+<p>On February 28th 2017 Ranpak has acquired E3NEO in a move to expand its capabilities and offering for high-volume packaging environments. </p>
+</div>
+</div>
+</div>
+<div class='swiper-pagination'></div>
+</div>
+</div>
+</div>
+<div class='homepage-marketing__column'>
+<div class='homepage-marketing__column-right'>
+<picture>
+<source srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/ecommerce_homepage-8bd9a269be730886bb58a7dd074ca3395a45bdb3da13ca0b1dcec3ec2557101a.jpg 2x'>
+<img src='https://d3vozmj15s8x1v.cloudfront.net/assets/external/ecommerce_homepage-8bd9a269be730886bb58a7dd074ca3395a45bdb3da13ca0b1dcec3ec2557101a.jpg' srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/ecommerce_homepage-8bd9a269be730886bb58a7dd074ca3395a45bdb3da13ca0b1dcec3ec2557101a.jpg 2x'>
+
+</picture>
+<div class='homepage-marketing__text'>
+<h3 class='homepage-marketing__heading'>
+<a href="/ecommerce">E-COMMERCE PACKAGING SOLUTIONS</a>
+</h3>
+<p>Increased speed, happy unboxing experiences. We can
+          help you find the right solution for your packaging needs.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class='homepage-testimonials'>
+<h2>We help customers solve their biggest in the box packaging
+          issues</h2>
+<div class='swiper-container' id='js__homepage-testimonials-slider'>
+<div class='swiper-wrapper'>
+<div class='swiper-slide'>
+<div class='homepage-testimonials__icon'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/1/image/original-adbba599e67ce5ccc88bfe2d27af3f5d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d03f9b12ea704198e8d5beeb39d2a887f00ed08865d1b3b26e14f7a4bfa8167 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/1/image/original-adbba599e67ce5ccc88bfe2d27af3f5d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d03f9b12ea704198e8d5beeb39d2a887f00ed08865d1b3b26e14f7a4bfa8167' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/1/image/original-adbba599e67ce5ccc88bfe2d27af3f5d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d03f9b12ea704198e8d5beeb39d2a887f00ed08865d1b3b26e14f7a4bfa8167 2x'>
+
+</picture>
+</div>
+<div class='homepage-testimonials__desc'>
+<h4><a href="/case_studies/vacuum-cleaners-accessories">I use Ranpak paper packaging solutions because their products align with our brand&#39;s core value of working to sustain our environment.</a></h4>
+<p></p>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='homepage-testimonials__icon'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/2/image/original-d56bd176c57170506dfa8ebc42d46dbf.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9b9373c1cabc50919b532b034a73c8c1b4ec221797a72a4834f46cd6056bfb1a 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/2/image/original-d56bd176c57170506dfa8ebc42d46dbf.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9b9373c1cabc50919b532b034a73c8c1b4ec221797a72a4834f46cd6056bfb1a' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/2/image/original-d56bd176c57170506dfa8ebc42d46dbf.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9b9373c1cabc50919b532b034a73c8c1b4ec221797a72a4834f46cd6056bfb1a 2x'>
+
+</picture>
+</div>
+<div class='homepage-testimonials__desc'>
+<h4><a href="/case_studies/music-store-fast-packaging-with-optimal-protection">Ranpak’s customized packing solutions helped us to significantly decrease damage rates to our products during shipping.</a></h4>
+<p></p>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='homepage-testimonials__icon'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/3/image/original-d0295a3e080ba6ad555355ab70824380.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fba1f807aea799ece10ad0e4711c821574eecfe0f5afc469ff82dc1ed806d636 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/3/image/original-d0295a3e080ba6ad555355ab70824380.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fba1f807aea799ece10ad0e4711c821574eecfe0f5afc469ff82dc1ed806d636' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/3/image/original-d0295a3e080ba6ad555355ab70824380.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fba1f807aea799ece10ad0e4711c821574eecfe0f5afc469ff82dc1ed806d636 2x'>
+
+</picture>
+</div>
+<div class='homepage-testimonials__desc'>
+<h4><a href="/case_studies/decathlon-significantly-lower-costs-ultimate-flexibility">Ranpak helped me significantly reduce my packaging costs.</a></h4>
+<p></p>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='homepage-testimonials__icon'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/4/image/original-c2a3572987108808e95b59d3e8676795.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d44cb6e887ecba33737aa5a79494c83a21c854883ad12f1e292fe21fe7b04c6 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/4/image/original-c2a3572987108808e95b59d3e8676795.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d44cb6e887ecba33737aa5a79494c83a21c854883ad12f1e292fe21fe7b04c6' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/4/image/original-c2a3572987108808e95b59d3e8676795.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9d44cb6e887ecba33737aa5a79494c83a21c854883ad12f1e292fe21fe7b04c6 2x'>
+
+</picture>
+</div>
+<div class='homepage-testimonials__desc'>
+<h4><a href="/case_studies/savannah-bee">Ranpak enabled me to convey my brand to my customers by creating a unique unboxing experience.</a></h4>
+<p></p>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='homepage-testimonials__icon'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/5/image/original-21f997ea01d4348ab5eb2dbf345abf33.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=718db0dee39deb89dbcdd0eb0871a498edd7d41dd3c7262a305216e0395e6f9c 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/5/image/original-21f997ea01d4348ab5eb2dbf345abf33.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=718db0dee39deb89dbcdd0eb0871a498edd7d41dd3c7262a305216e0395e6f9c' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/homepagecasestudyquote/5/image/original-21f997ea01d4348ab5eb2dbf345abf33.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=718db0dee39deb89dbcdd0eb0871a498edd7d41dd3c7262a305216e0395e6f9c 2x'>
+
+</picture>
+</div>
+<div class='homepage-testimonials__desc'>
+<h4><a href="/case_studies/third-party-logistics">Ranpak’s paper packaging solutions take the guess work out of packaging. They&#39;re fast, easy to use and greatly increased our throughput.</a></h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class='swiper-pagination'></div>
+<div class='homepage-testimonials__pagination'>
+<p>SUSTAINABILITY</p>
+<p>DAMAGE REDUCTION</p>
+<p>COST REDUCTION</p>
+<p>UNBOXING EXPERIENCE</p>
+<p>INCREASED SPEED</p>
+</div>
+</div>
+</section>
+
+<section class='product-groups'>
+<h2 class='product-groups__heading'>
+APPLICATION TYPES
+</h2>
+<div class='swiper-container' id='js__product-groups-slider'>
+<div class='swiper-pagination'></div>
+<div class='product-groups__pagination'>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/thumb-35e423d9a34591bf9968b2a27dfb198a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a10ba6def1b3ea7d801996bc1d4a37af5c13c0ba14531a30efb69a63edd6d529 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/thumb-35e423d9a34591bf9968b2a27dfb198a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a10ba6def1b3ea7d801996bc1d4a37af5c13c0ba14531a30efb69a63edd6d529' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/thumb-35e423d9a34591bf9968b2a27dfb198a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a10ba6def1b3ea7d801996bc1d4a37af5c13c0ba14531a30efb69a63edd6d529 2x'>
+
+</picture>
+<p>
+VOID FILL
+</p>
+</div>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/thumb-faca768ba028415fad29e10d8ed9a120.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4cde35850e1c09e854078230131ed67329be9a5dae391268c6c93e77c51c2d53 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/thumb-faca768ba028415fad29e10d8ed9a120.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4cde35850e1c09e854078230131ed67329be9a5dae391268c6c93e77c51c2d53' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/thumb-faca768ba028415fad29e10d8ed9a120.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4cde35850e1c09e854078230131ed67329be9a5dae391268c6c93e77c51c2d53 2x'>
+
+</picture>
+<p>
+CUSHIONING
+</p>
+</div>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/thumb-aca1c834f09d9631db1ca8c2c7cca9d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fb72628b8f8ab60396f15fa3122591c74688806d1fb33183f6afced379339f78 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/thumb-aca1c834f09d9631db1ca8c2c7cca9d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fb72628b8f8ab60396f15fa3122591c74688806d1fb33183f6afced379339f78' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/thumb-aca1c834f09d9631db1ca8c2c7cca9d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fb72628b8f8ab60396f15fa3122591c74688806d1fb33183f6afced379339f78 2x'>
+
+</picture>
+<p>
+WRAPPING
+</p>
+</div>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/thumb-b2f70b3dd2b88237642b5c9b506079e0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=937377c714ebc0818462d2f23659c3ef0103093c9686c0241827f2eb1d2b6865 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/thumb-b2f70b3dd2b88237642b5c9b506079e0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=937377c714ebc0818462d2f23659c3ef0103093c9686c0241827f2eb1d2b6865' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/thumb-b2f70b3dd2b88237642b5c9b506079e0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=937377c714ebc0818462d2f23659c3ef0103093c9686c0241827f2eb1d2b6865 2x'>
+
+</picture>
+<p>
+COLD CHAIN SOLUTIONS
+</p>
+</div>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/thumb-e042e808a30c907a780169f731502528.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=54dfa446f151dfbc624a8029e3b70a7b34b767c2be9507a4919689274739b4d0 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/thumb-e042e808a30c907a780169f731502528.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=54dfa446f151dfbc624a8029e3b70a7b34b767c2be9507a4919689274739b4d0' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/thumb-e042e808a30c907a780169f731502528.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=54dfa446f151dfbc624a8029e3b70a7b34b767c2be9507a4919689274739b4d0 2x'>
+
+</picture>
+<p>
+AUTOMATION SOLUTIONS
+</p>
+</div>
+<div class='product-groups__pagination-item'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/thumb-b0c19667900c041c7b4690ec1ccd2dd4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d5ec74a00eb18a2aee4bc857d2d84206055acda5dd9b4573f2ccf9772237e93e 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/thumb-b0c19667900c041c7b4690ec1ccd2dd4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d5ec74a00eb18a2aee4bc857d2d84206055acda5dd9b4573f2ccf9772237e93e' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/thumb-b0c19667900c041c7b4690ec1ccd2dd4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d5ec74a00eb18a2aee4bc857d2d84206055acda5dd9b4573f2ccf9772237e93e 2x'>
+
+</picture>
+<p>
+BOX LINING
+</p>
+</div>
+</div>
+<div class='swiper-wrapper'>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Void Fill
+</h2>
+<p>
+Void fill is used to protect products from damages by filling the excess space in the shipping box. This prevents the items inside from moving or breaking during shipping.
+</p>
+<a href="/products?product_group_id=26">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/original-e6db8787d600e80256f864142d6a90ec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=528c1a4fe956c91b17e1b25045b30fac92ae25c9fcf483c59298b027a1636d8f 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/original-e6db8787d600e80256f864142d6a90ec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=528c1a4fe956c91b17e1b25045b30fac92ae25c9fcf483c59298b027a1636d8f' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/26/image/original-e6db8787d600e80256f864142d6a90ec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=528c1a4fe956c91b17e1b25045b30fac92ae25c9fcf483c59298b027a1636d8f 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Cushioning
+</h2>
+<p>
+Cushioning is used to protect fragile items during shipping. It is common for a package to be handled with little care during transport. Shock and vibration are controlled by cushioning, significantly reducing the chance of product damage.
+
+</p>
+<a href="/products?product_group_id=27">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/original-a494b2dc7d2e6d08efff21098d4ea1c3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a24f0dd87fe9f14fb176aaf944d2cb4555564e1230492b1ff2b9fd37d3c01466 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/original-a494b2dc7d2e6d08efff21098d4ea1c3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a24f0dd87fe9f14fb176aaf944d2cb4555564e1230492b1ff2b9fd37d3c01466' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/27/image/original-a494b2dc7d2e6d08efff21098d4ea1c3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a24f0dd87fe9f14fb176aaf944d2cb4555564e1230492b1ff2b9fd37d3c01466 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Wrapping
+</h2>
+<p>
+Wrapping provides protection against surface abrasion and minor handling incidents. It also prevents damages caused by internal impact when multiple items are packed together. 
+
+</p>
+<a href="/products?product_group_id=28">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/original-a4877661f4f0e42d4d7fe984bfbd84ea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9e7d8b10cf6df5d04993734094f960bd13f9773f5013a1254762fa5758ee627d 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/original-a4877661f4f0e42d4d7fe984bfbd84ea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9e7d8b10cf6df5d04993734094f960bd13f9773f5013a1254762fa5758ee627d' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/28/image/original-a4877661f4f0e42d4d7fe984bfbd84ea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9e7d8b10cf6df5d04993734094f960bd13f9773f5013a1254762fa5758ee627d 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Cold Chain Solutions
+</h2>
+<p>
+Ranpak Thermal utilizes 100% paper based on-demand insulating pads to protect packages from temperature deviations and physical damages. We provide the only solutions which are curbside recyclable without any additional/harmful chemicals or plastics.
+</p>
+<a href="/products?product_group_id=29">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/original-986ce8943664f8ccfa2604a9979b4905.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a092e0567cf483d1ceaf0d578462117c20c9a22d152acd439111435ff199d2af 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/original-986ce8943664f8ccfa2604a9979b4905.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a092e0567cf483d1ceaf0d578462117c20c9a22d152acd439111435ff199d2af' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/29/image/original-986ce8943664f8ccfa2604a9979b4905.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a092e0567cf483d1ceaf0d578462117c20c9a22d152acd439111435ff199d2af 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Automation Solutions
+</h2>
+<p>
+Ranpak Automation is a collection of Automated technologies to improve and streamline packing operations to get the most effective use of labor. Whether a Ranpak Fully Automated Void fill System or E3NEO box sizing system we have the solution to automate your processes, improve throughput, and reduce downtime while providing superior product protection.
+<a href="https://www.e3neo.net/en/home/">Visit e3neo to learn more.</a>
+</p>
+<a href="/products?product_group_id=30">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/original-dbf911a06f61e22f1af8f8ccce4f3412.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=53e0de65eac24a28c844c68c3ecba78bfc90dd371713d5e98a847a16dccfb4f4 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/original-dbf911a06f61e22f1af8f8ccce4f3412.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=53e0de65eac24a28c844c68c3ecba78bfc90dd371713d5e98a847a16dccfb4f4' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/30/image/original-dbf911a06f61e22f1af8f8ccce4f3412.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=53e0de65eac24a28c844c68c3ecba78bfc90dd371713d5e98a847a16dccfb4f4 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+<div class='swiper-slide'>
+<div class='product-groups__solution'>
+<div class='product-groups__solution-column'>
+<div class='product-groups__solution-desc'>
+<h2>
+Box Lining
+</h2>
+<p>
+Box lining provides a protective cushioning layer between the box and products inside. WrapPak offers an environmentally friendly option to line the box as opposed to bubble wrap.
+</p>
+<a href="/products?product_group_id=31">Find your packaging solution</a>
+</div>
+</div>
+<div class='product-groups__solution-column'>
+<picture>
+<source srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/original-83c6b8dcdc685deaaf1b647a77233fcc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=892d36d92bc3e2843e2a05937669cfa8817583b7019fcbcac3614793364ab5ff 2x'>
+<img src='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/original-83c6b8dcdc685deaaf1b647a77233fcc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=892d36d92bc3e2843e2a05937669cfa8817583b7019fcbcac3614793364ab5ff' srcset='https://website-prod-01-rails.s3.amazonaws.com/store/productgroup/31/image/original-83c6b8dcdc685deaaf1b647a77233fcc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKWXDBA4JQQPI3GA%2F20190202%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190202T214013Z&amp;X-Amz-Expires=900&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=892d36d92bc3e2843e2a05937669cfa8817583b7019fcbcac3614793364ab5ff 2x'>
+
+</picture>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class='homepage-marketing homepage-marketing__sec'>
+<div class='homepage-marketing__column'>
+<div class='homepage-marketing__column-left'>
+<picture>
+<source srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/sustainability_home-ceae4987320288c5cff54a9d6555dc7b69b80e501274399f3344b9c97cf2d45b.jpg 2x'>
+<img src='https://d3vozmj15s8x1v.cloudfront.net/assets/external/sustainability_home-ceae4987320288c5cff54a9d6555dc7b69b80e501274399f3344b9c97cf2d45b.jpg' srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/sustainability_home-ceae4987320288c5cff54a9d6555dc7b69b80e501274399f3344b9c97cf2d45b.jpg 2x'>
+
+</picture>
+<div class='homepage-marketing__text homepage-marketing__sec-text'>
+<h3 class='homepage-experiences__heading'>
+<a href="/sustainability">THE GREEN CHOICE</a>
+</h3>
+<p>Ranpak adheres to high standards for its packaging
+          products. In addition to providing personalized shipping solutions, we only
+          use environmentally friendly packaging materials.</p>
+</div>
+</div>
+</div>
+<div class='homepage-marketing__column'>
+<div class='homepage-marketing__column-right'>
+<picture>
+<source srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/home_engineering-1c747c333e20006bcfb0610730bf5be980357a467267b8810958dd314cfb8e3e.jpg 2x'>
+<img src='https://d3vozmj15s8x1v.cloudfront.net/assets/external/home_engineering-1c747c333e20006bcfb0610730bf5be980357a467267b8810958dd314cfb8e3e.jpg' srcset='https://d3vozmj15s8x1v.cloudfront.net/assets/external/home_engineering-1c747c333e20006bcfb0610730bf5be980357a467267b8810958dd314cfb8e3e.jpg 2x'>
+
+</picture>
+<div class='homepage-marketing__text homepage-marketing__sec-text'>
+<h3 class='homepage-marketing__heading'>
+<a href="/engineering">OUR ENGINEERING</a>
+</h3>
+<p>Our engineers know what works. They will help
+          you find the best design and the right paper packaging system to suit your specific
+          packaging environment – all at no cost to you.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class='blog-slider'>
+<div class='blog-slider__heading'>
+<h2>
+THE RANPAK BLOG
+</h2>
+</div>
+<div class='swiper-container' id='js__blog-slider'>
+<div class='swiper-wrapper'>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>01/15/19</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/cool-has-never-been-so-green">Cool has never been so green!</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>Ranpak presents a simple and more sustainable thermal packaging solution that reduces costs, saves space and minimizes overall handling requirements, compared with traditional systems. WrapPak Protector uses waved papers that suit many different box sizes and packaging configurations, for a truly flexible packaging environment. We are offering standard solutions with 1, 2 or 3 layers of paper, to reflect the requirements of ambient, chilled and frozen stored products – anything from chocolate and groceries to frozen food.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/cool-has-never-been-so-green">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>05/02/18</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/ecofriendly-paper-and-its-super-powers">Ecofriendly paper and its super powers</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>You must have heard the news: plastic is done! The time of this highly polluting, toxic material is almost over, especially now that organizations worldwide are getting more and more aware of the urgency to ban plastic.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/ecofriendly-paper-and-its-super-powers">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>04/17/18</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/the-greatest-thing-about-paper">The Greatest Thing about Paper</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>What’s not to love about paper? This packaging material is versatile, ecofriendly and of course very classy. When you switch from plastic to paper packaging, the advantages are ample. Not convinced yet? Let’s see if our favorite qualities of paper will get you there.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/the-greatest-thing-about-paper">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>02/27/18</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/the-simple-and-sustainable-alternative-to-bubble-wrap">The simple and sustainable alternative to bubble wrap</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>Just imagine….You have a start-up website which is starting to pick up. You want to offer the best shipments on every level in order to keep your customers satisfied and loyal.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/the-simple-and-sustainable-alternative-to-bubble-wrap">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>01/30/18</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/smart-engineering-to-solve-your-space-constraints">Smart engineering to solve your space constraints</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>Space constraints are a big concern these days in warehouse environments. Furthermore, also 3PL organizations want to offer as many possibilities to as many different vendors as possible. Therefore space savings are becoming more and more important.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/smart-engineering-to-solve-your-space-constraints">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>05/05/17</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/how-to-optimize-your-customers-unboxing-experience">How to optimize your customers’ unboxing experience</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>Online retailers are struggling more and more to stand out in the growing clutter of e-commerce sites. Furthermore, in a world of social sharing, the need to create an experience for the customer that exceeds their expectations is critical. </p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/how-to-optimize-your-customers-unboxing-experience">Read More</a>
+</div>
+</div>
+</div>
+<div class='swiper-slide swiper-slider__specific-height'>
+<div class='blog-slider__date'>
+<p>01/01/17</p>
+</div>
+<div class='blog-slider__text'>
+<div class='blog-slider__title'>
+<p><a href="/blog/geami-wrappak-ex-is-the-ideal-solution-for-smaller-online-retailers">Geami WrapPak® EX is the ideal solution for smaller online retailers</a></p>
+</div>
+<div class='blog-slider__content'>
+<p>Today, consumers are changing the way they select and buy products. Online shopping is convenient, fast and offers a wide range of products and product reviews at the consumers’ fingertips. Ranpak now offers the perfect solution for smaller online retailers: the Geami WrapPak EX.</p>
+</div>
+<div class='blog-slider__read-more'>
+<a href="/blog/geami-wrappak-ex-is-the-ideal-solution-for-smaller-online-retailers">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class='swiper-pagination'>
+<div class='slider-arrow'>
+<img class="slider-arrow__left" src="https://d3vozmj15s8x1v.cloudfront.net/assets/icons/arrow-big-left-b8866877d0a54a6df86282a1ee59cae98f4ac218313b164347c8ace09f692a32.svg" alt="Arrow big left" />
+<img class="slider-arrow__right" src="https://d3vozmj15s8x1v.cloudfront.net/assets/icons/arrow-big-right-e133735ee5ffa8bcf9fc2d654f91e80325b2bd8bc0e87cbc84a7f9f4c5527d47.svg" alt="Arrow big right" />
+</div>
+</div>
+<div class='blog-slider__bullets'></div>
+</div>
+</section>
+
+
+<div class='modal__modal-content type-region' id='js__modal-region_selection'>
+<div class='region-selection__world-map'>
+<img alt="World Map" src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/world_map-e76391397ce4582e6ebb1a41ae79e98eb50fdf329b0aea6562548bb2dfe7f350.png" />
+</div>
+<form id="js-region_selection_form" action="/settings/region_selection.json" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><p class='region-selection__title'>Select Region Below</p>
+<div class='region-selection__region-wrap' id='js-region_selection__links'>
+<p>
+<input type="hidden" name="region" id="js-region_selection_input" />
+<div class='region-selection__region'>
+<a data-region="na" class="region-selection__region-link" href="#"><div class='region_img_wrap'>
+<img src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/north_america-9021145dbfc9cf05653d6af843c4e7ecb7aa14c8b9f7e2842b6671e844006da2.png" alt="North america" />
+</div>
+<span class='option__label'>North America</span>
+</a></div>
+<div class='region-selection__region'>
+<a data-region="sa" class="region-selection__region-link" href="#"><div class='region_img_wrap'>
+<img src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/south_america-fd88ddb9e9372ca63380a231aea14837b58276cfbefe40f7b80e87a083f4eddd.png" alt="South america" />
+</div>
+<span class='option__label'>South America</span>
+</a></div>
+<div class='region-selection__region'>
+<a data-region="eu" class="region-selection__region-link" href="#"><div class='region_img_wrap'>
+<img src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/europe-4d1491cf4f214bf0488ea17955c6ed2d4f1d8e9b44dab55360da02be46562695.png" alt="Europe" />
+</div>
+<span class='option__label'>Europe</span>
+</a></div>
+<div class='region-selection__region'>
+<a data-region="ap" class="region-selection__region-link" href="#"><div class='region_img_wrap'>
+<img src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/asia_pacific-d60250fa3bff7b8433352c2d3d53f9b49da291d2734fed315e4cff8dc9cc816b.png" alt="Asia pacific" />
+</div>
+<span class='option__label'>Asia Pacific</span>
+</a></div>
+</p>
+</div>
+
+</form>
+</div>
+
+<div class='modal__modal-content type-region' id='js__modal-language_selection'>
+<div class='region-selection__back'>
+< Back
+</div>
+<div class='region-selection__selected-region-wrap' id='js-region_selection__selected'>
+<img data-region="na" src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/north_america-9021145dbfc9cf05653d6af843c4e7ecb7aa14c8b9f7e2842b6671e844006da2.png" alt="North america" />
+<img data-region="sa" src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/south_america-fd88ddb9e9372ca63380a231aea14837b58276cfbefe40f7b80e87a083f4eddd.png" alt="South america" />
+<img data-region="eu" src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/europe-4d1491cf4f214bf0488ea17955c6ed2d4f1d8e9b44dab55360da02be46562695.png" alt="Europe" />
+<img data-region="ap" src="https://d3vozmj15s8x1v.cloudfront.net/assets/maps/asia_pacific-d60250fa3bff7b8433352c2d3d53f9b49da291d2734fed315e4cff8dc9cc816b.png" alt="Asia pacific" />
+</div>
+<form data-type="json" id="js-language_selection_form" action="/settings/change_locale" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><p class='region-selection__title'>Select Language</p>
+<div class='region-selection__region-wrap' id='js-language_selection__links'>
+<p>
+<input type="hidden" name="locale" id="js-language_selection_input" />
+<div class='region-selection__region type-language'></div>
+</p>
+</div>
+
+</form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    window.USER_SELECTED_LOCALE = '';
+    window.USER_SELECTED_REGION = '';
+    window.USER_SELECTED_LOCALE = window.Settings.isMultiLingual ? window.USER_SELECTED_LOCALE : window.USER_SELECTED_REGION;
+    if (!window.USER_SELECTED_LOCALE) {
+      var region_modal = $("#js__modal-region_selection");
+      var modalBinder = App.Modal.binder;
+      modalBinder.toggleAllBg();
+      modalBinder.modalTransaction(region_modal);
+    }
+  });
+</script>
+</section>
+
+</main>
+<div class='footer-top'>
+<div class='footer-top__search'>
+<div class='button__button type-search'>
+<a href="/search">Search ranpak.com</a>
+</div>
+</div>
+<div class='footer-top__left'>
+<h2>Quick Links</h2>
+<nav class='links'>
+<ul class='links__list'>
+<li class='links__list-item'>
+<a href="/products">Product Finder</a>
+</li>
+<li class='links__list-item'>
+<a href="/industries">Industries</a>
+</li>
+<li class='links__list-item'>
+<a href="/ecommerce">E-Commerce</a>
+</li>
+<li class='links__list-item'>
+<a href="/sustainability">Sustainability</a>
+</li>
+<li class='links__list-item'>
+<a href="/engineering">Engineering</a>
+</li>
+<li class='links__list-item'>
+<a href="/about">About</a>
+</li>
+<li class='links__list-item'>
+<a href="https://www.linkedin.com/showcase/10991900/">Careers</a>
+</li>
+<li class='links__list-item'>
+<a class="js-modal-launcher" data-modal="#js__modal-contact_submission" href="#">Contact</a>
+</li>
+<li class='links__list-item'>
+<a href="/blog">Our Blog</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class='footer-top__right'>
+<h2>Ranpak Login</h2>
+<div class='footer-top__form'>
+<div class='login-inputs'>
+<a href="https://distributors.ranpak.com">Distributor Portal</a>
+</div>
+</div>
+</div>
+<div class='footer-top__right'>
+<h2>Change Region</h2>
+<div class='footer-top__form'>
+Current Region:
+North America
+|
+<a href="/reset_region">Change Region</a>
+</div>
+</div>
+</div>
+<div class='footer-bottom'>
+<nav class='privacy-terms'>
+<ul class='privacy-terms__list'>
+<li class='privacy-terms__list-item'>
+<a href="/privacy">Privacy Policy</a>
+</li>
+<li class='privacy-terms__list-item'>
+<a href="/terms_of_use">Terms of Use</a>
+</li>
+</ul>
+<div class='footer-bottom__dropdown-lang'>
+<div class='language-dropdown__wrap'>
+<div class='dropdown-band__menu'>
+<span class='dropdown__button' data-id='LanguageDropdown' data-options='#js-language-options'>
+<span class='dropdown__selected'>English</span>
+<i class="fa fa-angle-down"></i>
+</span>
+<ul class='dropdown__content' id='js-language-options'>
+<li data-locale='en'>
+<a href="/settings/change_locale?locale=en">English</a>
+</li>
+<li data-locale='es-MX'>
+<a href="/settings/change_locale?locale=es-MX">Spanish</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+</nav>
+<div class='copyright'>
+<p>Copyright © 2016 Ranpak Inc. All rights reserved.</p>
+</div>
+</div>
+<div class='footer-blue-bar'></div>
+
+<div class='modal__modal-content type__contact-submission' id='js__modal-contact_submission'>
+<div class='modal__close-wrap'>
+<div class='modal__close js-modal__close'>
+<span>X</span>
+</div>
+</div>
+<div class='modal__modal-title'>
+Contact Ranpak
+</div>
+<div class='modal__modal-lead'>
+Are you interested in learning more about Ranpak?  Please fill out the form
+          below and a Ranpak representative will get back to you as soon as possible.
+          For immediate inquiries, please call 1 (800) RANPAK 7.
+</div>
+<form id="js-contact_submission_form" class="new_contact_submission" action="/contact_submissions" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div class='contact-form__row type-half'>
+<div class='contact-form__field'>
+<label for="contact_submission_first_name">First Name</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[first_name]" id="contact_submission_first_name" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_last_name">Last Name</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[last_name]" id="contact_submission_last_name" />
+</div>
+</div>
+<div class='contact-form__row type-half'>
+<div class='contact-form__field'>
+<label for="contact_submission_title">Title</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[title]" id="contact_submission_title" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_company_name">Company Name</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[company_name]" id="contact_submission_company_name" />
+</div>
+</div>
+<div class='contact-form__row type-2col-2to1'>
+<div class='contact-form__field'>
+<label for="contact_submission_street_address">Street Address</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[street_address]" id="contact_submission_street_address" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_country">Country</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[country]" id="contact_submission_country" />
+</div>
+</div>
+<div class='contact-form__row type-3col-1to1to1'>
+<div class='contact-form__field'>
+<label for="contact_submission_city">City</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[city]" id="contact_submission_city" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_state">State</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[state]" id="contact_submission_state" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_postal_code">Zip Code</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[postal_code]" id="contact_submission_postal_code" />
+</div>
+</div>
+<div class='contact-form__row type-half'>
+<div class='contact-form__field'>
+<label for="contact_submission_phone_number">Phone Number</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[phone_number]" id="contact_submission_phone_number" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_email">Email</label>
+<input class="contact-form__text-field" required="required" type="text" name="contact_submission[email]" id="contact_submission_email" />
+</div>
+</div>
+<div class='contact-form__row type-half'>
+<div class='contact-form__field'>
+<label for="contact_submission_number_of_boxes">Number of boxes shipped per day</label>
+<input class="contact-form__text-field" type="text" name="contact_submission[number_of_boxes]" id="contact_submission_number_of_boxes" />
+</div>
+<div class='contact-form__field'>
+<label for="contact_submission_current_packaging">Current in-the-box packaging material</label>
+<input class="contact-form__text-field" type="text" name="contact_submission[current_packaging]" id="contact_submission_current_packaging" />
+</div>
+</div>
+<div class='contact-form__row'>
+<div class='contact-form__field type-inline'>
+<input name="contact_submission[premium_packaging]" type="hidden" value="0" /><input type="checkbox" value="1" name="contact_submission[premium_packaging]" id="contact_submission_premium_packaging" />
+<label for="contact_submission_premium_packaging">I am interested in premium branding and marketing opportunities
+          on my packaging including printed logos and/or coupon codes.</label>
+</div>
+</div>
+<div class='contact-form__row'>
+<div class='contact-form__field type-inline'>
+<input name="contact_submission[thermal_packaging]" type="hidden" value="0" /><input type="checkbox" value="1" name="contact_submission[thermal_packaging]" id="contact_submission_thermal_packaging" />
+<label for="contact_submission_thermal_packaging">I am shipping temperature sensitive or cold chain products
+          and would like to learn more about Ranpak Thermal.</label>
+</div>
+</div>
+<div class='contact-form__row'>
+<label for="contact_submission_comment">Comment</label>
+<textarea class="contact-form__text-field" name="contact_submission[comment]" id="contact_submission_comment">
+</textarea>
+</div>
+<div class='contact-form__row'>
+<input type="submit" name="commit" value="Submit" class="button__button type-green type-center" data-disable-with="Submit" />
+</div>
+</form>
+</div>
+
+<div class='modal__modal-content type__contact-submission' id='js__modal-contact_confirm'>
+<div class='modal__close-wrap'>
+<div class='modal__close js-modal__close'>
+<span>X</span>
+</div>
+</div>
+<div class='modal__modal-title'>
+Thank You!
+</div>
+<div class='modal__modal-lead'>
+Thank you for getting in touch! Your message has been received
+          and a Ranpak representative will get back with you shortly.
+</div>
+<p></p>
+<button class='button__button type-green type-center' id='js-confirmation_close'>
+Got It!
+</button>
+</div>
+
+</div>
+</body>
+</html>

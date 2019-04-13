@@ -1,0 +1,1286 @@
+<html xmlns="http://www.w3.org/TR/REC-html40" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word">
+	<head>
+		<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+		<meta content="Word.Document" name="ProgId" />
+		<meta content="Microsoft Word 12" name="Generator" />
+		<meta content="Microsoft Word 12" name="Originator" />
+		<link href="index_files/filelist.xml" rel="File-List" />
+		<link href="index_files/editdata.mso" rel="Edit-Time-Data" />
+		<!--[if !mso]>
+<style>
+v:* {behavior:url(#default#VML);}
+o:* {behavior:url(#default#VML);}
+w:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+		<title>Modal Mechanics</title>
+		<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>David Wuchinich</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor> </o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>743</o:TotalTime>
+  <o:LastPrinted>2003-05-06T16:46:00Z</o:LastPrinted>
+  <o:Created>2012-05-10T18:52:00Z</o:Created>
+  <o:LastSaved>2012-05-10T18:52:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>686</o:Words>
+  <o:Characters>3912</o:Characters>
+  <o:Company>David Wuchinich</o:Company>
+  <o:Lines>32</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4589</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+		<link href="index_files/themedata.thmx" rel="themeData" />
+		<link href="index_files/colorschememapping.xml" rel="colorSchemeMapping" />
+		<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+		<style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610611985 1073750091 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h4
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h5
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-style-next:Normal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:20.0pt;
+	mso-bidi-font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:normal;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-priority:35;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-noshow:yes;
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+address
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Address Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-style:italic;}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.HTMLAddressChar
+	{mso-style-name:"HTML Address Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Address";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#243F60;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.7in 1.25in .7in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:200748792;
+	mso-list-template-ids:1678934002;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:581329083;
+	mso-list-template-ids:1992297152;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1002077754;
+	mso-list-template-ids:-1284865846;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1633904578;
+	mso-list-template-ids:-1561064650;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1780946712;
+	mso-list-template-ids:1816547382;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1915890631;
+	mso-list-template-ids:1983969748;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->		</style>
+		<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+	</head>
+	<body lang="EN-US" link="blue" style="tab-interval:.5in" vlink="blue">
+		<div class="WordSection1">
+			<h1 align="center" style="text-align:center"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;">Modal Mechanics<o:p></o:p></span></h1>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:13.5pt">David <span class="SpellE">Wuchinich</span></span></b></p>
+			<h2 align="center" style="text-align:center"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;">Ultrasonic device development<o:p></o:p></span></h2>
+			<div align="center" class="MsoNormal" style="text-align:center">
+				<hr align="center" size="2" width="100%" />
+			</div>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Equipment and Instruments<sup><o:p></o:p></sup></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_0" o:spid="_x0000_i1041" type="#_x0000_t75"
+ alt="L-T tip.jpg" style='width:420pt;height:270.75pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image001.jpg" o:title="L-T tip"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="L-T tip.jpg" height="361" src="/index_files/image001.jpg" v:shapes="Picture_x0020_0" width="560" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b>Longitudinal-<span class="SpellE">Torsional</span> (L/T) tip<sup>*</sup> for bone dissection<o:p></o:p></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_15"
+ o:spid="_x0000_i1040" type="#_x0000_t75" alt="Annotated_angle_view_of_rotary_horn.jpg"
+ style='width:420.75pt;height:320.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image002.jpg" o:title="Annotated_angle_view_of_rotary_horn"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Annotated_angle_view_of_rotary_horn.jpg" height="427" src="/index_files/image003.jpg" v:shapes="Picture_x0020_15" width="561" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Rolling Pin Horn<sup>*<o:p></o:p></sup></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_16"
+ o:spid="_x0000_i1039" type="#_x0000_t75" alt="Axya.jpg" style='width:276pt;
+ height:210pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image004.jpg" o:title="Axya"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Axya.jpg" height="280" src="/index_files/image004.jpg" v:shapes="Picture_x0020_16" width="368" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Suture welding transducer and generator<o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><o:p>&nbsp;</o:p></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_17"
+ o:spid="_x0000_i1038" type="#_x0000_t75" alt="TiNi and Ti tips.jpg" style='width:360.75pt;
+ height:1in;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image005.jpg" o:title="TiNi and Ti tips"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="TiNi and Ti tips.jpg" height="96" src="/index_files/image006.jpg" v:shapes="Picture_x0020_17" width="481" />
+			<!--[endif]--></span><span style="mso-bidi-font-weight:bold"><o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Temperature sensing <span class="SpellE">phaco</span>-emulsifier tip<sup>*</sup><o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt"><o:p>&nbsp;</o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_18"
+ o:spid="_x0000_i1037" type="#_x0000_t75" alt="Parkell.jpg" style='width:119.25pt;
+ height:42.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image007.jpg" o:title="Parkell"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Parkell.jpg" height="57" src="/index_files/image007.jpg" v:shapes="Picture_x0020_18" width="159" />
+			<!--[endif]--><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_19" o:spid="_x0000_i1036" type="#_x0000_t75" alt="Parkell2.jpg"
+ style='width:122.25pt;height:44.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image008.jpg" o:title="Parkell2"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Parkell2.jpg" height="59" src="/index_files/image008.jpg" v:shapes="Picture_x0020_19" width="163" />
+			<!--[endif]--></span><span style="mso-bidi-font-weight:bold"><o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span class="SpellE"><b><span style="font-size:14.0pt">Magnetostrictive</span></b></span><b><span style="font-size:14.0pt"> ultrasonic dental transducer<sup>*<o:p></o:p></sup></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><o:p>&nbsp;</o:p></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_20"
+ o:spid="_x0000_i1035" type="#_x0000_t75" alt="Acryl-X.jpg" style='width:435pt;
+ height:326.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image009.jpg" o:title="Acryl-X"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Acryl-X.jpg" height="435" src="/index_files/image010.jpg" v:shapes="Picture_x0020_20" width="580" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Acryl-<span class="SpellE">X<sup>tm</sup></span> Ultrasonic Bone Cement Removal System<sup>*<o:p></o:p></sup></span></b></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><br />
+			<span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_23"
+ o:spid="_x0000_i1034" type="#_x0000_t75" alt="handpieces.jpg" style='width:635.25pt;
+ height:425.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image011.jpg" o:title="handpieces"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="handpieces.jpg" height="567" src="/index_files/image012.jpg" v:shapes="Picture_x0020_23" width="847" />
+			<!--[endif]--></span></p>
+			<h3><span style="mso-fareast-font-family:&quot;Times New Roman&quot;">Endoscopic Ultrasonic Aspirator <span class="SpellE">Handpieces</span><sup>*<o:p></o:p></sup></span></h3>
+			<p align="center" class="MsoNormal" style="text-align:center"><a href="/5 minute demo UTEA video.mpg">Ultrasonic Prostatectomy Video</a></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_24"
+ o:spid="_x0000_i1033" type="#_x0000_t75" alt="EUA generator.jpg" style='width:639.75pt;
+ height:480pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image013.jpg" o:title="EUA generator"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="EUA generator.jpg" border="0" height="640" src="/index_files/image014.jpg" v:shapes="Picture_x0020_24" width="853" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt">Endoscopic Ultrasonic Aspirator Generator<o:p></o:p></span></b></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_25"
+ o:spid="_x0000_i1032" type="#_x0000_t75" alt="CUSA function.jpg" style='width:576.75pt;
+ height:378pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image015.jpg" o:title="CUSA function"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="CUSA function.jpg" border="0" height="504" src="/index_files/image016.jpg" v:shapes="Picture_x0020_25" width="769" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span class="SpellE"><b><span style="font-size:14.0pt">CUSA<sup>tm</sup></span></b></span><b><span style="font-size:14.0pt"> Function<o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b><span style="font-size:14.0pt"><o:p>&nbsp;</o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_26" o:spid="_x0000_i1031" type="#_x0000_t75" alt="CUSA.jpg"
+ style='width:320.25pt;height:453pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image017.jpg" o:title="CUSA"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="CUSA.jpg" border="0" height="604" src="/index_files/image018.jpg" v:shapes="Picture_x0020_26" width="427" />
+			<!--[endif]--></span></b><b><span style="font-size:14.0pt"><o:p></o:p></span></b></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span class="SpellE"><b><span style="font-size:14.0pt">CUSA<sup>tm</sup></span></b></span><b><span style="font-size:14.0pt"> <span class="SpellE">Handpiece</span><sup>*<o:p></o:p></sup></span></b></p>
+			<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+			<p align="center" class="MsoCaption" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_27"
+ o:spid="_x0000_i1030" type="#_x0000_t75" alt="test_specimen.jpg" style='width:384pt;
+ height:512.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image019.jpg" o:title="test_specimen"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="test_specimen.jpg" border="0" height="683" src="/index_files/image020.jpg" v:shapes="Picture_x0020_27" width="512" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoCaption" style="text-align:center"><span style="font-size:14.0pt">Dynamic ultrasonic fatigue stress measurement<o:p></o:p></span></p>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in"><b><span style="font-size:13.5pt">Ultrasonic aspirating surgical and industrial <span class="SpellE">handpieces</span> and tips, <span class="SpellE">piezo</span>-electric and <span class="SpellE">magnetostrictive</span> transducers, horn and generator design. 10 to 2,000 Watts, 15 to 100 kHz, self tuning, pulse width modulated and sinusoidal amplitude controlled regenerative power limited generators.</span></b></li>
+			</ul>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l5 level1 lfo2;tab-stops:list .5in"><b><span style="font-size:13.5pt">Integral endoscopic ultrasonic aspirators for urologic, gynecologic, orthopedic and minimally invasive surgery having irrigation, aspiration, illuminated glass relay lens or <span class="SpellE">fiberoptic</span> telescope and isolated electro-<span class="SpellE">cautery</span> capable ultrasonic tip connection.</span></b></li>
+			</ul>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l3 level1 lfo3;tab-stops:list .5in"><span class="SpellE"><b><span style="font-size:13.5pt">Autoclavable</span></b></span><b><span style="font-size:13.5pt">, hermetic transducers and seamless, cavity free aspiration channels with true motionless acoustic terminations for tubing connections.</span></b></li>
+			</ul>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l2 level1 lfo4;tab-stops:list .5in"><b><span style="font-size:13.5pt">Temperature sensitive tips and temperature control.</span></b></li>
+			</ul>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l1 level1 lfo5;tab-stops:list .5in"><b><span style="font-size:13.5pt">Existing system compatible components or complete system designs, including rotary, mixed mode and high amplitude titanium and stainless steel Gaussian horns. Prototype <span class="SpellE">fabication</span>, <span class="SpellE">manufacturable</span> designs and documentation.</span></b></li>
+			</ul>
+			<ul style="margin-top:0in" type="disc"><li class="MsoNormal" style="mso-list:l4 level1 lfo6;tab-stops:list .5in"><b><span style="font-size:13.5pt">Analysis of existing systems and material analysis for correction of operational or production problems.</span></b></li>
+			</ul>
+			<p class="MsoNormal"><b><span style="font-size:13.5pt"><o:p>&nbsp;</o:p></span></b></p>
+			<h4><span style="font-size:16.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Video - <span class="SpellE">Invitro</span> ultrasonic surgical aspiration of porcine muscle tissue<o:p></o:p></span></h4>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_29"
+ o:spid="_x0000_i1029" type="#_x0000_t75" alt="ultrasonic aspiration.jpg"
+ style='width:303pt;height:224.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image021.jpg" o:title="ultrasonic aspiration"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="ultrasonic aspiration.jpg" border="0" height="299" src="/index_files/image021.jpg" v:shapes="Picture_x0020_29" width="404" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:13.5pt"><a href="/Ultrasonic aspiration clip.avi">Video clip - high speed connection recommended</a><o:p></o:p></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:13.5pt"><o:p>&nbsp;</o:p></span></p>
+			<h5><b><span style="font-size:16.0pt;font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;">Video  Ultrasonic Carpet Cleaning<o:p></o:p></span></b></h5>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_28"
+ o:spid="_x0000_i1028" type="#_x0000_t75" alt="Ultrasonic carpet cleaning.jpg"
+ style='width:479.25pt;height:354.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image022.jpg" o:title="Ultrasonic carpet cleaning"/>
+</v:shape><![endif]--><!--[if !vml]--><img alt="Ultrasonic carpet cleaning.jpg" border="0" height="473" src="/index_files/image022.jpg" v:shapes="Picture_x0020_28" width="639" />
+			<!--[endif]--></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:13.5pt"><a href="/carpet cleaning - clip3.avi">Video clip - high speed connection recommended</a><o:p></o:p></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:13.5pt"><o:p>&nbsp;</o:p></span></p>
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:13.5pt"><a href="/TV broadcasts - Ultrasonic Prostatectomy.mpg">Television news broadcasts - Ultrasonic Prostatectomy</a><o:p></o:p></span></p>
+			<p><o:p>&nbsp;</o:p></p>
+			<p class="MsoBodyTextIndent"><b><span style="font-size:20.0pt">&nbsp; Recent publications<o:p></o:p></span></b></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&amp;Sect2=HITOFF&amp;p=1&amp;u=/netahtml/PTO/search-bool.html&amp;r=0&amp;f=S&amp;l=50&amp;TERM1=wuchinich&amp;FIELD1=INNM&amp;co1=AND&amp;TERM2=&amp;FIELD2=&amp;d=PTXT">U.S. Patents</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/Acoustic properties of selected high strength thermosetting plastic composites at ultrasonic frequencies.htm">Acoustic properties of selected high strength thermosetting plastic composites at ultrasonic frequencies</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/Ultrasonic vitrectomy - Complete paper submission.htm">Ultrasonic <span class="SpellE">vitrectomy</span></a></p>
+			<p align="center" style="margin-left:.5in;text-align:center">&nbsp;<a href="/Bladder_outlet_obstruction_treated_with_transurethral_ultrasonic_aspiration.htm">Bladder outlet obstruction treated with transurethral ultrasonic aspiration</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/UIA_1998_presentation.htm">Elastic Loss in Harmonically Strained Structures</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center">&nbsp;<a href="/UIA_2002_presentation_Poisson&amp;Young's.htm">FEA Assisted Measurement of Young's Modulus and Poisson's Constant in Stout Horn Blanks</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center">&nbsp;<a href="/UIA_2002_presentation_Q_stainless_steels.htm">The acoustic performance of selected precipitation hardened stainless steels and heat-treated titanium under substantial dynamic stress at ultrasonic frequencies</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/Reconstructive.htm">Ultrasonic Surgical Aspiration:&nbsp; Instrumentation, Clinical Experience and Safety</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/1961-1975 patent list.htm">Seminal development of high power ultrasonic industrial and medical ultrasonic devices in the United States</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/Acoustic_loss_at_substantial_ultrasonic_strain_in_6Al-6V-2Sn_and_sintered_6Al-4V_Titanium.htm">Acoustic loss at substantial ultrasonic strain in 6Al-6V-2Sn and sintered 6Al-4V Titanium</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/EDN_DESIGN_IDEA.HTML">Current mode instrumentation amplifier enhances piezoelectric accelerometer (Electronic Design News)</a></p>
+			<p align="center" style="margin-left:.5in;text-align:center"><a href="/EDN-White LED power supply.bmp">White LED driver operates down to 1.2 volts (Electronic Design News)</a></p>
+			<p align="center" class="MsoNormal" style="text-align:center">Client <span class="GramE">company</span> and publication list upon request.</p>
+			<p align="center" style="text-align:center"><b>David <span class="SpellE">Wuchinich</span></b><br />
+			Modal Mechanics<br />
+			3614 Johnson Avenue, Suite 7A, Bronx, NY 10463</p>
+			<p align="center" style="text-align:center">Telephone 718-432-1320<br />
+			<span class="SpellE">Telefacsimile</span> 718-432-1320</p>
+			<p align="center" style="text-align:center">(c) D. <span class="SpellE">Wuchinich</span> 2001</p>
+			<p style="margin-left:.5in;text-indent:-.25in"><sup>* </sup><span class="GramE">patents</span> held by D. <span class="SpellE">Wuchinich</span></p>
+			<p style="margin-left:.5in;text-indent:-.25in">Trademarks and products are those of <span class="SpellE">Valleylab</span> (CUSA, Endoscopic Ultrasonic Aspirator), Acryl-X (<span class="SpellE">Omnisonics</span>), <span class="SpellE">Parkell</span> (Ultrasonic dental transducer) and <span class="SpellE">Axya</span> Medical (Suture Welding System)</p>
+			<div align="center" class="MsoNormal" style="text-align:center">
+				<hr align="center" size="1" width="100%" />
+			</div>
+			<p align="center" class="MsoNormal" style="text-align:center"><a href="/mailto:dwuchinich@modalmechanics.com">mailto:dwuchinich@modalmechanics.com</a></p>
+			<div align="center" class="MsoNormal" style="text-align:center">
+				<hr align="center" size="2" width="100%" />
+			</div>
+		</div>
+		<div>
+			&nbsp;
+		</div>
+	<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type='text/javascript' src='https://count.carrierzone.com/app/count_server/count.js'></script>
+<script type='text/javascript'><!--
+wm_custnum='083e4a6325936b95';
+wm_page_name='index.html';
+wm_group_name='/services/webpages/m/o/modalmechanics.com/public';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+</html>

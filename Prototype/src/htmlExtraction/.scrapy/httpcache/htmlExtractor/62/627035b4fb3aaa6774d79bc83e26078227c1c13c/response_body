@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7]>     <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]>     <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>     <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 9]>  <html lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" xmlns:wb="http://open.weibo.com/wb"> <!--<![endif]-->
+	<head>
+		<title>STC </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<meta name="description" content="Hong Kong Standards and Testing Centre (STC) is the first independent, not-for-profit testing, inspection and certification organisation in Hong Kong. Since its establishment in 1963, STC has been dedicated in providing professional, reliable and comprehensive testing and inspection services, and issuing accurate reports to ensure compliance with relevant technical and safety requirements while keeping pace with the development of trade and industry."/>
+		<meta name="keywords" content="STC, Testing, Inspection, Certification, Calibration"/>
+		 <link type="image/x-icon" rel="shortcut icon" href="https://www.stc.group/favicon.ico" />
+		<meta property="og:title" content="STC "/> 
+		<meta property="og:description" content="Hong Kong Standards and Testing Centre (STC) is the first independent, not-for-profit testing, inspection and certification organisation in Hong Kong. Since its establishment in 1963, STC has been dedicated in providing professional, reliable and comprehensive testing and inspection services, and issuing accurate reports to ensure compliance with relevant technical and safety requirements while keeping pace with the development of trade and industry."/> 
+		<meta property="og:image" content=""/> 
+		
+     <link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/bootstrap-responsive.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/website.css"/>
+		<link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/alertify.core.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/alertify.bootstrap.css"/>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.min.js"></script> <!--1.8.1-->
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery-ui.min.js"></script> <!--1.9.2-->
+		
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/common.js"></script>
+        
+		<!--<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.waitforimages.js"></script>
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.jscrollpane.min.js"></script>-->
+
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.js"></script>
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/shuffle/shuffle.min.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/website.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/ios-orientationchange-fix.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.unveil.min.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/alertify.js"></script>
+    <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.fancybox-1.3.4.min.js"></script>
+        
+		<link rel="stylesheet" type="text/css" href="https://www.stc.group/resources/website/common/css/jquery.fancybox-1.3.4.css"/>
+		<script type="text/javascript">
+			var base_url = 'https://www.stc.group/';
+			var isTouch = !!("undefined" != typeof document.documentElement.ontouchstart);
+			
+			//jQuery.easing.def = "easeInOutExpo";
+		</script>
+		                
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="https://www.stc.group/resources/website/common/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <!--[if IE 8]>     <script type="text/javascript" src="https://www.stc.group/resources/website/common/js/respond.min.js"></script>  <![endif]-->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-120927151-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+			</head>
+
+	<body>
+		<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+    	<div class="content_container">
+			
+
+<link rel="stylesheet" href="https://www.stc.group/resources/website/common/css/font-awesome.min.css">
+
+<div id="header" class="header">
+	<div class="container">
+		<div class="logo logo_box">
+			<a href="https://www.stc.group/en">
+				<img src="https://www.stc.group/resources/website/common/images/stclogo.png" alt="">
+			</a>
+		</div>
+		<div class="menu_search_box">
+			<div id="lang_box">
+				<a href="https://www.stc.group/en" class="we"><img src="https://www.stc.group/resources/website/common/images/common/search.png" alt=""></a>
+				<span id="lang" class="">
+					<a href="https://www.stc.group/en" >EN</a>					<a href="https://www.stc.group/en" >EN</a>
+					<a href="https://www.stc.group/tc" >繁</a>
+					<a href="https://www.stc.group/sc" >简</a>
+					<a href="https://www.stc.group/jp" >JP</a>
+					<a href="https://www.stc.group/vn" >VN</a>
+					<a href="http://www.pkm-testlabs.com/Deutsch/index.php" target="_blank" >DE</a>
+				</span>
+			</div>
+			<div id="header_menu" class="header_menu">
+				<ul>
+					<li><a class="fontsize1   "  href="https://www.stc.group/en/about">About Us</a>
+						<ul class="dropdown-menu">
+							<li class=" container-inner">
+								<ul>
+									<li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/STC-Profile'>Our Profile</a></h2></div></li><li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/Management-Team'>Management Team</a></h2></div></li><li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/recognition-international-alliance-cooperation'>Recognition, International Alliance / Cooperation</a></h2></div></li><li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/milestones'>Milestones</a></h2></div></li><li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/Global-Network'>Global Network</a></h2></div></li><li class='about_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/about/index/corporate-social-responsibility'>Corporate Social Responsibility</a></h2></div></li>								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="fontsize1 " href="https://www.stc.group/en/services">Services</a>
+						<ul class="dropdown-menu">
+							<li class=" container-inner">
+								<div class="tab-row">
+									<ul>
+										<li class="active">
+											<a class="fontsize2" href="https://www.stc.group/en/services/testing">
+												Testing											</a>
+										</li>
+										<li>
+											<a class="fontsize2" href="https://www.stc.group/en/services/index/3">
+												Inspection											</a>
+										</li>
+										<li>
+											<a class="fontsize2" href="https://www.stc.group/en/services/index/4">
+												Certification											</a>
+										</li>
+										<li>
+											<a class="fontsize2" href="https://www.stc.group/en/services/index/5">
+												Other Services											</a>
+										</li>
+									</ul>
+									<div style="clear:both"></div>
+								</div>
+
+								<div class="content-row">
+									<ul>
+										<li class="services_tab_content"><div class="row shuffle"><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/Chemical-Food-Pharmaceutical-Products-Testing'>Chemical, Food & Pharmaceutical Products</a></h2><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/chemical-products-testing'>Chemical Products</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/consumer-products'>Consumer Products</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/DNA-Food-Testing-GMO-Testing'>DNA Food Testing & GMO Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/environmental-chemical-analysis'>Environmental Analysis</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/kitchenware'>Food Contact Materials & Kitchenware</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/food-products'>Food Quality Testing & Food Nutrition Analysis</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Microbiology-Sanitation-Antimicrobial-Testing'>Microbiology & Sanitation</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/pharmaceutical-products'>Pharmaceutical Testing</a></div></div><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/Electrical-Products-Testing'>Electrical Products</a></h2><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Automobiles-Automotive-Component-Testing'>Automobiles & Automotive Component Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/battery-testing-CE-UL-GB'>Battery Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/CCC-China-Testing-Electrical-Products'>CCC for China Electrical Products</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/electrical-and-electronic'>Electrical & Electronic</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Electromagnetic-Fields-Radiation-EMF-EMR'>Electromagnetic Fields / Radiation (EMF / EMR)</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/energy-efficiency-labeling-scheme'>Energy Efficiency Labeling</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Low-Voltage-Directive-LVD-testing-EU'>Low Voltage Directive (LVD) testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/electric-motor-electrical-machine-testing-GB'>Micro-Motors Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Power-tool-testing-GB-safety-performance-EMC'>Power Tools Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/radio-requency-and-electromagnetic-compatibility'>Radio Frequency & Electromagnetic Compatibility</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Smart-Toilet-testing'>Smart Toilet Testing</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/usb-testing'>USB Testing</a></div></div><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/Textiles-Footwear-Furniture-Materials-Testing'>Textiles, Footwear, Furniture & Materials</a></h2><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/textile-garment'>Apparel & Textiles</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Bags-Luggage-Accessories-testing'>Bags, Luggage & Accessories</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/construction-building-materials-test'>Construction & Building Materials</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Down-Feather-Testing'>Down & Feather</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Eco-Textile-Biodegradability-Materials-testing'>Eco-Textiles & Biodegradable Materials</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Flammability-fire-testing'>Flammability</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/footwear-leather'>Footwear & Leather</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/furniture-flammability-home-textiles'>Furniture & Home Textiles</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/High-Performance-Textiles-testing'>High Performance Textiles</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/materials-hardware-tests'>Paper, Packing & Product Materials</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Personal-Protective-Equipment-PPE-testing'>Personal Protective Equipment (PPE)</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Tapware-Water-WC-testing'>Tapware & WC</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/buyer-guide-textile-apparel'>Buyer Guide (Apparel & Textiles)</a></div></div><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/Toys-Children-Products-Testing'>Toys & Children's Products</a></h2><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/ccc-certification-for-toys'>CCC for China Toys Safety</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/childrens-juvenile-products'>Children’s & Baby Products</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/children-jewelry'>Children's Jewelry</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/european-toy-safety'>European Toy Safety</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/gifts-premiums'>Gifts & Premiums</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/japan-toy-safety'>Japan Toy Safety</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/sporting-goods'>Sporting Goods</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/stationery-school-items'>Stationery & School Items</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/toys'>Toys</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/us-toy-safety'>US Toy Safety</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/buyer-guide-toy-children-products'>Buyer Guide (Toys & Children's Products)</a></div></div><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/Medical-Devices-Testing'>Medical Devices</a></h2><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Biocompatibility-Testing'>Biocompatibility</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Microbiological-Testing'>Microbiological</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Chemical-Testing'>Chemical</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Safety-Performance-Testing'>Safety & Performance</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Electromagnetic-Compatibility-EMC-Testing'>Electromagnetic Compatibility</a></div><div><a class='services_inner_link  ' href='https://www.stc.group/en/services/detail/Medical-Device-Optics-Environmental-Reliability-Testing'>Optics & Environmental Reliability</a></div></div></div></li><li class="services_tab_content"><div class="row shuffle"><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/inspection'>Inspection</a></h2></div></div></li><li class="services_tab_content"><div class="row shuffle"><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/certification'>Certification</a></h2><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/CCC-China-Compulsory-Certification-Mark'>China Compulsory Certification (CCC)</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/Japan-SG-Mark-Certification'>Japan Safe Goods (SG) Mark</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/Japan-PSE-Mark-Certification-Electrical'>Japan PSE Mark Certification</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/stc-tested-mark'>"STC Tested" Mark</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/hong-kong-safety-mark'>Hong Kong Safety Mark</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/estrogen-safe-mark'>Estrogen Safe Mark</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/telecom-equipment-certification-scheme-for-hk'>Telecom Equipment Certification Scheme</a></div><div><a class='services_inner_link' href='https://www.stc.group/en/services/detail/safety-mark'></a></div></div></div></li><li class="services_tab_content"><div class="row shuffle"><div class='col-xs-12 col-sm-6 shuffle_item'><h2><a class='services_inner_link fontsize2' href='https://www.stc.group/en/services/detail/calibration'>Calibration</a></h2></div></div></li>									</ul>
+									<div style="clear:both"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li><a class="fontsize1 " href="https://www.stc.group/en/media/corporate-news-events">Media Centre</a>
+						<ul class="dropdown-menu">
+							<li class=" container-inner">
+									<ul>
+										<li class='news_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2 ' href='https://www.stc.group/en/media/corporate-news-events'>Corporate News & Events</a></h2></div></li><li class='news_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2 ' href='https://www.stc.group/en/media/latest-promotions'>Latest Promotions</a></h2></div></li><li class='news_tab_content'><div class='row'><h2><a class='services_inner_link fontsize2 ' href='https://www.stc.group/en/media/market-industry-info'>Market & Industry Info</a></h2></div></li>									</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="fontsize1 " href="https://www.stc.group/en/media/download">
+							Download Area						</a>
+						<ul class="dropdown-menu">
+							<li class=" container-inner">
+									<ul>
+										<li class="news_tab_content">
+											<div class="row">
+												<br>
+												<a href="https://www.stc.group/en/media/download/type/application">
+													Application Form												</a>
+												<br>
+											</div>
+										</li>
+										<li class="news_tab_content">
+											<div class="row">
+
+												<a href="https://www.stc.group/en/media/download/type/guide">
+													Reference Guide												</a>
+
+											</div>
+										</li>
+										<li class="news_tab_content">
+											<div class="row">
+												<br>
+												<a href="https://www.stc.group/en/media/download/type/leaflets">
+													Brochures and Leaflets												</a>
+
+											</div>
+										</li>
+									</ul>
+							</li>
+						</ul>
+
+					</li>
+					<li>
+						<a  class="fontsize1 " href="https://www.stc.group/en/contact">Contact Us</a>
+					</li>
+					<li><a class="fontsize1" target="_blank" href="http://crms.stc.group:8808/css/ ">Report Status</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mobile_header" class="mobile_header">
+	<div>
+		<div class="col-xs-6 mobile_header_logo">
+			<a href="https://www.stc.group/en">
+				<img src="https://www.stc.group/resources/website/common/images/stclogo.png" alt="">
+				<!-- <img src="https://www.stc.group/resources/website/common/images/common/STCLogo.png" alt=""> -->
+			</a>
+		</div>
+		<div class="col-xs-6 mobile_header_menu">
+			<ul id="mobile_icon_open" class="mobile_icon_menu"><li></li><li></li><li></li></ul>
+		</div>
+	</div>
+
+</div>
+<style>
+</style>
+<div id="desktop_search">
+	
+	<div class="mobile_menu_search destop_search_input">
+		
+			<input type="text" name="keyword" placeholder="Search..." >
+		
+	</div>
+	
+	<div class="close"><img src="https://www.stc.group/resources/website/common/images/menu-close.png" alt=""></div>
+	<div class="search_result">
+		<div class="container">
+			
+		</div>
+	</div>
+</div>
+<script>
+	
+	
+	$(function(){
+		$('.mobile_menu_search input').keypress(function(e){
+				input = $(this)
+				 if(e.which == 13) {
+			          	$.ajax({
+			                url: "https://www.stc.group/en/search/search_result",
+			                data: {keyword:input.val()},
+			                type:"POST",
+			                dataType:'text',
+			                success: function(text){
+			                	$('.destop_search_input').addClass('active')
+			                    $('.search_result .container').html(text)
+			                },
+			                complete:function(){
+			                	
+			                	
+			                
+			                		$(".search_result").show()
+			                		$(".mobile_menu_lang ").hide()
+			                		$(".mobile_menu_menu ").hide()
+			                	
+			                }
+
+			            })
+
+
+			    }
+		})
+	})
+</script><div id="mobile_menu">
+	<div  class="mobile_header">
+		<div class="col-xs-6 mobile_header_logo">
+			<a href="https://www.stc.group/en"><img src="https://www.stc.group/resources/website/common/images/stclogo.png" alt=""></a>
+		</div>
+		<div class="col-xs-6 mobile_header_menu">
+				<div id="mobile_icon_close"></div>
+				<!-- <ul id="mobile_icon_close" class="mobile_icon_menu"><li></li><li></li><li></li></ul> -->
+
+		</div>
+	</div>
+	<div class="mobile_menu_search in_mobile_search">
+		<input type="text" placeholder='Search...'>
+	</div>
+	<div class="search_result">
+		<div class="container">
+
+		</div>
+	</div>
+	<script>
+	$(function(){
+		$('.in_mobile_search input').keypress(function(e){
+				input = $(this)
+				 if(e.which == 13) {
+			          	$.ajax({
+			                url: "https://www.stc.group/en/search/search_result",
+			                data: {keyword:input.val()},
+			                type:"POST",
+			                dataType:'text',
+			                success: function(text){
+			                	$('.destop_search_input').addClass('active')
+			                    $('.search_result .container').html(text)
+			                },
+			                complete:function(){
+			                	// $('#mobile_menu, #desktop_search').height($(document).height());
+			                }
+			            })
+			    }
+		})
+	})
+	</script>
+	<div class="mobile_menu_lang">
+		<ul>
+			<li style="text-align:left"><a href="https://www.stc.group/en">EN</a></li>
+			<li><a href="https://www.stc.group/tc">繁</a></li>
+			<li style="text-align:right"><a href="https://www.stc.group/sc">簡</a></li>
+			<li style="text-align:left"><a href="https://www.stc.group/jp">JP</a></li>
+			<li><a href="https://www.stc.group/vn">VN</a></li>
+			<li style="text-align:right"><a href="http://www.pkm-testlabs.com/Deutsch/index.php" target="_blank" >DE</a></li>
+		</ul>
+	</div>
+	<div class="mobile_menu_menu">
+		<ul>
+			<li><a href="https://www.stc.group/en/about">About Us</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/STC-Profile">
+					Our Profile				</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/Management-Team">
+					Management Team				</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/recognition-international-alliance-cooperation">
+					Recognition, International Alliance / Cooperation				</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/milestones">
+					Milestones				</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/Global-Network">
+					Global Network				</a></li>
+						<li class="mobile-menu-sub">
+				<a href="https://www.stc.group/en/about/index/corporate-social-responsibility">
+					Corporate Social Responsibility				</a></li>
+						<li><a href="https://www.stc.group/en/services">Services</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/services/testing">Testing</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/services/index/3">Inspection</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/services/index/4">Certification</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/services/index/5">Other Services</a></li>
+			<li><a href="https://www.stc.group/en/media/corporate-news-events">Media Centre</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/corporate-news-events">Corporate News & Events</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/latest-promotions">Latest Promotions</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/market-industry-info">Market & Industry Info</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/media-coverage">Media Coverage</a></li>
+
+			<li><a href="https://www.stc.group/en/media/download">Download Area</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/download/type/application">Application Form</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/download/type/guide">Reference Guide</a></li>
+			<li class="mobile-menu-sub"><a href="https://www.stc.group/en/media/download/type/leaflets">Brochures And Leaflets</a></li>
+
+			<li><a href="https://www.stc.group/en/contact">Contact Us</a></li>
+			<li><a target="_blank" href="http://crms.stc.group:8808/css/">Report Status</a></li>
+			<li><a href="https://www.stc.group/en/career">Career Opportunities</a></li>
+			<li><a href="https://www.stc.group/en/terms">Terms of Use</a></li>
+			<li><a href="https://www.stc.group/en/privacy">Privacy Statement</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(window).load(function(){
+
+
+
+	})
+	$(function(){
+		$(window).scroll(function(){
+	      if($(window).scrollTop() > 10){
+	           $('#header').addClass('scrolldown');
+	      }else{
+	        $('#header').removeClass('scrolldown');
+	      }
+
+		});
+
+		$(".tab-row li").hover(function(){
+			_index = $(this).index()
+			$('.tab-row li').removeClass("active")
+			$(this).addClass("active")
+			$(".services_tab_content").hide()
+			$(".services_tab_content").eq(_index).show()
+
+		})
+
+		$(".header_menu li").hover(function(){
+			update_shuffle();    // in /resources/website/common/js/website.js
+		});
+
+
+
+		$('#lang_box a.we').on('click',function(e){
+			e.preventDefault();
+			$('#desktop_search').fadeToggle();
+		})
+
+		$('.close').click(function(){
+			$('#desktop_search').fadeOut();
+		});
+
+		$(window).resize(function(){
+			if($(window).width()>992){
+				// $('#mobile_header').css('display','none');
+				$('#mobile_menu').hide();
+			}else{
+				// $('#mobile_header').css('display','none');
+
+			}
+		});
+
+
+		$('#mobile_icon_open').click(function(){
+			$('#mobile_menu').show();
+			$('#mobile_header').css('display','none');
+
+			$("#mobile_header,#footer,.content_holder").hide()
+		});
+		$('#mobile_icon_close').click(function(){
+			$('#mobile_menu').hide();
+			$('#mobile_header').css('display','block');
+
+
+			$("#mobile_header,#footer,.content_holder").show()
+
+			$(".search_result").hide();
+			$(".mobile_menu_lang,.mobile_menu_menu").show()
+
+		});
+
+		$(window).resize(function(){
+			if($(window).width()>992)
+			{
+				$("#footer,.content_holder").show()
+				$("#mobile_header").hide()
+			}else
+			{
+				$("#mobile_header").show()
+			}
+		})
+
+
+		$('#lang').click(function(e){
+
+			if($(this).hasClass('active')){
+				$(this).stop().animate({'height':'40px','background-color':'rgba(255,255,255,0)'}).removeClass('active');
+			}else{
+				e.preventDefault();
+				$(this).stop().animate({'height':'290px', 'background-color':'rgba(255,255,255,0.5)'}).addClass('active');
+			}
+
+		});
+
+
+	})
+
+</script>
+            <div class="content_holder">
+				<link rel="stylesheet" href="https://www.stc.group/resources/website/common/js/jquery.bxslider/jquery.bxslider.css">
+<link rel="stylesheet" href="https://www.stc.group/resources/website/common/css/services.css">
+<script type="text/javascript" src="https://www.stc.group/resources/website/common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<script>
+	$(function(){
+		$('.bxslider').bxSlider({
+  			auto:true,
+  			captions: true,
+  			pagerCustom: '#bx-pager',
+  			pause:10000
+		});
+		$('.banner').click(function(e){
+			if(!$(this).hasClass('active')) e.preventDefault()
+			$('.banner').removeClass('active');
+			$(this).addClass('active');
+		});
+	})
+</script>
+<style>
+	#banner_box li{
+		cursor: pointer;
+	}
+	.inner_childs{
+		margin-top: 60px;
+	}
+	.inner_child{
+		width: 100%;
+		height: 267px;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+	.inner_childs .col-xs-6.col-sm-12:nth-child(even) .inner_child{
+		text-align: right;
+	}
+	@media (max-width: 992px){
+		.inner_childs{
+			width : 100%;
+		}
+	}
+	@media (max-width:768px){
+		.inner_child{
+			height: 150px;
+		}
+		.inner_child_text{
+			width: 100%;
+		}
+	}
+</style>
+
+<div id="banner_box">
+	<ul class="bxslider">
+							<li id="banner1" style="background-image: url(../getimage/index/action/images/name/5c2487e8d192b.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/en/services/detail/DNA-Food-Testing-GMO-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+							<li id="banner2" style="background-image: url(../getimage/index/action/images/name/5bbc27dc82679.jpg);background-size: 100%;">
+					 	<div class="box">
+					 		<a href="https://www.stc.group/en/about#video">
+						 									</a>
+					  	</div>
+				 	</li>
+							<li id="banner3" style="background-image: url(../getimage/index/action/images/name/5b9a2ec1ccae3.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/en/services/detail/Chemical-Food-Pharmaceutical-Products-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+							<li id="banner4" style="background-image: url(../getimage/index/action/images/name/5b9a28983be68.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/en/services/detail/Textiles-Footwear-Furniture-Materials-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+							<li id="banner5" style="background-image: url(../getimage/index/action/images/name/5b9a28a6132da.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/en/services/detail/Electrical-Products-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+							<li id="banner6" style="background-image: url(../getimage/index/action/images/name/5b9a28ae6445f.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/en/services/detail/Toys-Children-Products-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+							<li id="banner7" style="background-image: url(../getimage/index/action/images/name/5b9a28610209d.jpg);background-size: 100%;">
+					  	<a href="https://www.stc.group/https://www.stc.group/en/services/detail/Medical-Devices-Testing">
+						  	<div class="inner_box">
+															</div>
+						</a>
+				  	</li>
+			</ul>
+</div>
+<div id="mobile_banner" >
+<!-- 	<div  class="banner banner1 active">
+		<span>
+			<h1> HONG KONG  STANDARDS <br> AND TESTING CENTRE</h1>
+		  	<div class="banner_text">
+		  		Your Global Testing, Inspection & Certification Partner
+		  	</div>
+		  	<div style="text-align:center; padding:20px 0;">
+		  		<button class="banner_video_btn">Explore the corporate video</button>
+		  	</div>		</span>
+	</div> -->
+	<!-- 			<div class="col-xs-6 col-sm-12"><a href="https://www.stc.group/en/services/detail/CFD" class="banner banner2"><span>CHEMICAL, FOOD AND <br> PHARMACEUTICAL <br> PRODUCTS   </span></a></div>
+				<div class="col-xs-6 col-sm-12"><a href="https://www.stc.group/en/services/detail/EP" class="banner banner3"><span>ELECTRICAL <br>  PRODUCTS</span></a></div>
+				<div class="col-xs-6 col-sm-12"><a href="https://www.stc.group/en/services/detail/TMD" class="banner banner4"><span>TEXTILES, <br> FOOTWEAR, <br> FURNITURE AND  <br>  MATERIAL   </span></a></div>
+				<div class="col-xs-6 col-sm-12"><a href="https://www.stc.group/en/services/detail/TCD" class="banner banner5"><span>TOYS AND <br> CHILDREN'S <br> PRODUCTS </span></a></div>
+ -->
+
+	<div class="inner_childs">
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/services/detail/DNA-Food-Testing-GMO-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5c2487e8d192b.jpg')">
+					<div class="inner_child_text" >
+						<span>AFRICAN SWINE FEVER VIRUS TESTING</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/about#video"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5bbc27dc82679.jpg')">
+					<div class="inner_child_text" >
+						<span>ABOUT US</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/services/detail/Chemical-Food-Pharmaceutical-Products-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5b9a2ec1ccae3.jpg')">
+					<div class="inner_child_text" >
+						<span>CHEMICAL, FOOD AND PHARMACEUTICAL PRODUCTS</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/services/detail/Textiles-Footwear-Furniture-Materials-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5b9a28983be68.jpg')">
+					<div class="inner_child_text" >
+						<span>TEXTILES, FOOTWEAR, FURNITURE AND MATERIALS</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/services/detail/Electrical-Products-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5b9a28a6132da.jpg')">
+					<div class="inner_child_text" >
+						<span>ELECTRICAL PRODUCTS</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-6 col-sm-12">
+				<div class="inner_child" data-link="en/services/detail/Toys-Children-Products-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5b9a28ae6445f.jpg')">
+					<div class="inner_child_text" >
+						<span>TOYS AND CHILDREN'S PRODUCTS</span></div>
+				</div>
+			</div>
+
+				 <div class="col-xs-12 col-sm-12">
+				<div class="inner_child" data-link="https://www.stc.group/en/services/detail/Medical-Devices-Testing"
+					style="background-image:url('https://www.stc.group/../getimage/index/action/images/name/5b9a28610209d.jpg')">
+					<div class="inner_child_text" >
+						<span>MEDICAL DEVICE</span></div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+<div class="event_box">
+	<h2 class="event_box_h2">Corporate News & Events</h2>
+	<div class="index_tabs index_tabs1">
+						<span data-index='10'>Chemical, Food & Pharmaceutical Products</span>
+							<span data-index='58'>Electrical Products</span>
+							<span data-index='144'>Medical Devices</span>
+							<span data-index='65'>Textiles, Footwear, Furniture & Materials</span>
+							<span data-index='15'>Toys & Children's Products</span>
+			
+	</div>
+	<!-- <a href="https://www.stc.group/en/media/index/2" class="event_box_a">View All Promotions</a> -->
+	<div class="event_each  event_content">
+	</div>
+</div>
+
+<div class="news_box">
+	<h2 class="event_box_h2 ">
+		 Latest Promotions	</h2>
+	<div class="index_tabs index_tabs2">
+						<span data-index='10'>Chemical, Food & Pharmaceutical Products</span>
+							<span data-index='58'>Electrical Products</span>
+							<span data-index='144'>Medical Devices</span>
+							<span data-index='65'>Textiles, Footwear, Furniture & Materials</span>
+							<span data-index='15'>Toys & Children's Products</span>
+				</div>
+
+	<a href="https://www.stc.group/en/media/latest-promotions" class="event_box_a">View All Promotion</a>
+
+	<div class="container promotion_content" style=""></div>
+</div>
+
+<script>
+	$(window).load(function(){
+		event_each_a_height= 0
+		$('.event_each a').each(function(){
+			event_each_a_height = Math.max(event_each_a_height,$(this).height())
+		}).height(event_each_a_height)
+	})
+	$(function(){
+		$('#banner_box li').click(function(e){
+			e.preventDefault()
+			 href = $(this).find('a').attr('href')
+			 if(href != undefined) window.location.href = href;
+
+		})
+
+		$('.banner_video_btn').click(function(e){
+			e.preventDefault()
+			// window.location.href="https://www.stc.group/en/about#video"
+			window.location.href=$(this).data('url')
+		})
+		$('.inner_child').click(function(){
+			window.location.href = $(this).data('link');
+		});
+
+		$('.index_tabs1 span:first-child').addClass('active');
+
+
+		news_events = {
+			init: function (){
+					var news_events = this
+					$('.index_tabs1 span').click(function(){
+						$('.index_tabs1 span').removeClass('active')
+						that = $(this)
+						that.addClass('active')
+						news_events.update(that.data('index'))
+
+					})
+
+					news_events.update(155) // ALL
+			},
+
+			update: function(index){
+					 $.ajax({
+			                url: 'https://www.stc.group/en/index/get_news_event/1'+'/'+index,
+			                type:"GET",
+			                dataType:'text',
+			                beforeSend: function(text){
+								$('.event_content').html('loading...')
+							},
+
+			                success: function(text){
+			                	if(text!='') $('.event_content').html(text)
+			                	else  $('.event_content').html('No Records')
+
+			                },
+			            	complete: function (){
+			            		$("#desktop_search").css("min-height",$(document).height());
+			            		// $('#mobile_menu, #desktop_search').height($(document).height());
+			            		// $("head").append("<style>.search_result .container{min-height:"+$(document).height()+"px}</style>")
+
+			            	}
+
+			          })
+			}
+
+
+
+		}
+
+		news_events.init();
+
+
+		promotions = {
+
+			init: function(){
+					var promotions = this
+					$('.index_tabs2 span').click(function(){
+						$('.index_tabs2 span').removeClass('active')
+						that = $(this)
+						that.addClass('active')
+						promotions.update(that.data('index'))
+					})
+					$('.index_tabs2 span:nth-child(1)').addClass('active')
+					promotions.update(155)  // ALL
+			},
+			update : function (index){
+					$.ajax({
+			                url: 'https://www.stc.group/en/index/get_promotion'+'/'+index,
+			                type:"GET",
+			                dataType:'text',
+			                beforeSend: function(text){
+								$('.promotion_content').html('loading...')
+							},
+
+			                success: function(text){
+			                	if(text!='') $('.promotion_content').html(text)
+			                	else  $('.promotion_content').html('No Records')
+			                	news_listingHeight = 0;
+			                	$('.news_listing').each(function(){
+			                		_this = $(this)
+			                		news_listingHeight = Math.max(news_listingHeight,_this.height());
+
+			                	}).height(news_listingHeight)
+			                },
+			            	complete: function (){
+			            		$("#desktop_search").css("min-height",$(document).height());
+			            		// $('#mobile_menu, #desktop_search').height($(document).height());
+			            	}
+
+			          })
+			}
+
+		}
+
+		promotions.init()
+
+		// $('.news_listing').each(function(){
+		// 		if($(this).data('webpage_id')==$('.index_tabs2 span:first-child').data('index'))$(this).show()
+		// 		else $(this).hide()
+		// })
+
+
+
+
+
+	})
+</script>
+            </div>
+            
+<link rel="stylesheet" href="https://www.stc.group/resources/website/common/css/font-awesome.min.css">
+<script type="text/javascript" src="https://www.stc.group/resources/admin/js/jquery.validate.min.js"></script>
+<style>
+	.fa-weibo{
+		text-align: center;
+	    line-height: 32px;
+	    width: 32px;
+	    height: 32px;
+	    vertical-align: middle;
+	    background-color: #4C77AC;
+	}
+	.fa-weibo:before{
+		display: block;
+	    font-size: 20px;
+	    color: #fff;
+	}
+	.footer_bottom_right a:hover,.footer_bottom_right a.active{
+		color: #4C77AC !important;
+	}
+	.footer_right a:hover{
+		opacity: 0.5;
+	}
+	.wechat{
+		position: relative;
+	}
+	.wechat-hidden{
+		background-image:url("https://www.stc.group/resources/website/common/images/common/wechat.jpg");
+		-webkit-background-size: cover;
+		background-size: cover;
+		width:150px;
+		height:150px;
+		position:absolute;
+		bottom: 32px;
+	    left: -115px;
+		display: none;
+	}
+	a.wechat:hover{
+		opacity: 1;
+	}
+	.wechat:hover .wechat-hidden{
+		display: block;
+	}
+</style>
+<div id="footer">
+	<div class="container footer_top">
+
+		<div class="footer_right">
+			<a href="https://www.linkedin.com/company/hong-kong-standards-and-testing-centre-?trk=company" target="_blank"><img src="https://www.stc.group/resources/website/common/images/common/linkin.jpg" alt=""></a>
+			<a href="https://www.youtube.com/user/HKSTCMCD/" target="_blank"><img src="https://www.stc.group/resources/website/common/images/common/yt.jpg" alt=""></a>
+			<a href="https://twitter.com/stcgroup" target="_blank"><img src="https://www.stc.group/resources/website/common/images/common/tw.jpg" alt=""></a>
+			<a href="https://www.facebook.com/stcgroup" target="_blank"><img src="https://www.stc.group/resources/website/common/images/common/fb.jpg" alt=""></a>
+			<a href="http://weibo.com/dgstc" target="_blank"><i class="fa fa-weibo"></i></a>
+			<a href="https://www.stc.group/resources/website/common/images/common/wechat.jpg" class="wechat" target='_blank'>
+				<i>
+				<svg style="display:inline-block; vertical-align:middle" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 300 300" >
+					<path fill="#4c77ac" d="M300 255c0 24.854-20.147 45-45 45H45c-24.854 0-45-20.146-45-45V45C0 20.147 20.147 0 45 0h210c24.853 0 45 20.147 45 45v210z"/>
+					<g fill="#FFF"><path d="M200.803 111.88c-24.213 1.265-45.268 8.605-62.362 25.188-17.271 16.754-25.154 37.284-23 62.734-9.464-1.172-18.084-2.462-26.753-3.192-2.994-.252-6.547.106-9.083 1.537-8.418 4.75-16.487 10.113-26.053 16.093 1.755-7.938 2.891-14.89 4.902-21.575 1.479-4.914.794-7.648-3.733-10.85-29.066-20.521-41.318-51.231-32.149-82.85 8.483-29.25 29.315-46.989 57.621-56.236 38.636-12.62 82.055.253 105.547 30.927 8.485 11.08 13.688 23.516 15.063 38.224zm-111.437-9.852c.223-5.783-4.788-10.993-10.74-11.167-6.094-.179-11.106 4.478-11.284 10.483-.18 6.086 4.475 10.963 10.613 11.119 6.085.154 11.186-4.509 11.411-10.435zm58.141-11.171c-5.974.11-11.022 5.198-10.916 11.004.109 6.018 5.061 10.726 11.204 10.652 6.159-.074 10.83-4.832 10.771-10.977-.05-6.032-4.98-10.79-11.059-10.679z"/><path d="M255.201 262.83c-7.667-3.414-14.7-8.536-22.188-9.318-7.459-.779-15.3 3.524-23.104 4.322-23.771 2.432-45.067-4.193-62.627-20.432-33.397-30.891-28.625-78.254 10.014-103.568 34.341-22.498 84.704-14.998 108.916 16.219 21.129 27.24 18.646 63.4-7.148 86.284-7.464 6.623-10.149 12.073-5.36 20.804.883 1.612.984 3.653 1.497 5.689zm-87.274-84.499c4.881.005 8.9-3.815 9.085-8.636.195-5.104-3.91-9.385-9.021-9.406-5.061-.023-9.3 4.318-9.123 9.346.166 4.804 4.213 8.69 9.059 8.696zm56.261-18.022c-4.735-.033-8.76 3.844-8.953 8.629-.205 5.117 3.772 9.319 8.836 9.332 4.898.017 8.769-3.688 8.946-8.562.19-5.129-3.789-9.364-8.829-9.399z"/></g>
+				</svg>
+				</i>
+				<div class="wechat-hidden"></div>
+			</a>
+		</div>
+	</div>
+	<div class="container footer_bottom">
+		<div class="col-xs-12 col-sm-6  footer_bottom_left">
+			©Copyright. The Hong Kong Standards and Testing Centre Limited 2011-2019. All rights reserved.
+		</div>
+
+
+		<div class="col-xs-12 col-sm-6  footer_bottom_right" >
+			<a class="" href="https://www.stc.group/en/career">Career Opportunities</a>
+			|  <a class="" href="https://www.stc.group/en/terms">Terms of Use</a>
+			|  <a class="" href="https://www.stc.group/en/privacy">Privacy Statement</a>
+			|  <a class="" href="https://www.stc.group/en/cookie">Cookie Policy</a>
+			|  <a class="footer_contact_us " href="https://www.stc.group/en/contact">Contact Us</a>
+		</div>
+	</div>
+
+	<div class="container footer_bottom footer_bottom_mobile">
+
+		<div class="col-xs-12 col-sm-6  footer_bottom_right" >
+			<a href="">Career Opportunities</a>   |   <a href="https://www.stc.group/en/terms">Terms of Use</a>   |  <a href="https://www.stc.group/en/privacy">Privacy Statement</a>
+			   <span class="footer_contact_us">|</span>   <a class="footer_contact_us" href="https://www.stc.group/en/contact">Contact Us</a>
+		</div>
+
+		<div class="col-xs-12 col-sm-6  footer_bottom_left">
+			©Copyright. The Hong Kong Standards and Testing Centre Limited 2011-2019. All rights reserved.		</div>
+
+	</div>
+
+</div>
+<div class="subscribe_section close en">
+	<div class="subscribe_sticky_icon">
+		<img src="https://www.stc.group/resources/website/common/images/icon-subscription.svg" />
+		<span class="icon_text">eNewsletter</span>
+	</div>
+	<div class="subscribe_content">
+		<div class="subscribe_content_title">
+			<span class="subscribe_content_h2">E-NEWSLETTER SUBSCRIPTION FORM</span>
+			<span class="subscribe_content_close">Close <img src="https://www.stc.group/resources/website/common/images/btn-close.svg"/></span>
+		</div>
+
+		<form id="subscribe_form" method="post" action="https://www.stc.group/en/index/subscribe">
+		    <div class="form_row"><input type="text" name="first_name" placeholder="FIRST NAME *" required></div>
+		    <div class="form_row"><input type="text" name="last_name" placeholder="LAST NAME *" required></div>
+            <div class="form_row"><input type="text" name="job_title" placeholder="JOB TITLE"></div>
+            <div class="form_row"><input type="text" name="company" placeholder="COMPANY"></div>
+            <div class="form_row"><input type="email" name="email" placeholder="EMAIL *" required></div>
+            <div class="form_row">
+            	            	<select name="country">
+                   <option value="">COUNTRY / REGION...</option>
+                  <option value="AX">Aland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua and Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia, Plurinational State of</option>
+                  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                  <option value="BA">Bosnia and Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Island</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">British Indian Ocean Territory</option>
+                  <option value="BN">Brunei Darussalam</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CA">Canada</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Central African Republic</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CX">Christmas Island</option>
+                  <option value="CC">Cocos (Keeling) Islands</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, the Democratic Republic of the</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="CI">Côte d'Ivoire</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CU">Cuba</option>
+                  <option value="CW">Curaçao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica</option>
+                  <option value="DO">Dominican Republic</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equatorial Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands (Malvinas)</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="PF">French Polynesia</option>
+                  <option value="TF">French Southern Territories</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="DE">Germany</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard Island and McDonald Islands</option>
+                  <option value="VA">Holy See (Vatican City State)</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IR">Iran, Islamic Republic of</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japan</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KP">Korea, Democratic People's Republic of</option>
+                  <option value="KR">Korea, Republic of</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Lao People's Democratic Republic</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macao</option>
+                  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="MD">Moldova, Republic of</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Territory, Occupied</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="RE">Réunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russian Federation</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthélemy</option>
+                  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KN">Saint Kitts and Nevis</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin (French part)</option>
+                  <option value="PM">Saint Pierre and Miquelon</option>
+                  <option value="VC">Saint Vincent and the Grenadines</option>
+                  <option value="WS">Samoa</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome and Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SX">Sint Maarten (Dutch part)</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="GS">South Georgia and the South Sandwich Islands</option>
+                  <option value="SS">South Sudan</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="SD">Sudan</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard and Jan Mayen</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="SY">Syrian Arab Republic</option>
+                  <option value="TW">Taiwan, Province of China</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TL">Timor-Leste</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad and Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos Islands</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US">United States</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela, Bolivarian Republic of</option>
+                  <option value="VN">Viet Nam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, U.S.</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>                </select>
+            </div>
+
+	        <div><span class="subscribe_content_h3">Your interested topic</span>
+	        	<span class="subscribe_content_h4">(multiple selections)</span></div>
+
+	        <div class="subscribe_multiple">
+	        		            <div>
+	            	<label>
+				      <input type="checkbox" name="insterest_topic_1[]" value="Chemical_Food_and_Pharmaceutical_Products"><span>Chemical, Food and Pharmaceutical Products</span>
+				   </label>
+	            </div>
+	            <div>
+	            	<label>
+				      <input type="checkbox" name="insterest_topic_1[]" value="Textiles_Footwear_Furnitur_and_Material_Products"><span>Textiles, Footwear, Furniture and Material Products</span>
+				   </label>
+	            </div>
+	            <div>
+	            	<label>
+				      <input type="checkbox" name="insterest_topic_1[]" value="Electrical_Products"><span>Electrical Products</span>
+				   </label>
+	            </div>
+	            <div>
+	            	<label>
+				      <input type="checkbox" name="insterest_topic_1[]" value="Toys_and_Children's_Products"><span>Toys and Children's Products</span>
+				   </label>
+	            </div>
+	            <div>
+	            	<label>
+				      <input type="checkbox" name="insterest_topic_1[]" value="Medical_devices"><span>Medical devices</span>
+				   </label>
+	            </div>
+
+			</div>
+
+			<div>
+				<label>
+					<input type="checkbox" name="agree" value="1" required>
+					<span>I agree that STC can use my data for the purposes of dealing with my request, in accordance with the <a href="https://www.stc.group/en/privacy">STC Privacy Statement</a>.*</span>
+				</label>
+				<br><br>
+			</div>
+
+	       	<div class="subscribe_success_msg">Submit Success!</div>
+	        <div class="subscribe_error_msg">Submit Fail! Please Try Again Later!</div>
+
+	        <button type="reset" class="subscribe_button">RESET</button>
+	        <input id="subscribe_submit" class="subscribe_button" type="submit" value="SUBMIT">
+        </form>
+	</div>
+</div>
+
+
+<script src="http://www.googleadservices.com/pagead/conversion_async.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function(){
+		$('.subscribe_sticky_icon').click(function(e){
+			if($('.subscribe_section').hasClass('close')){
+				$('.subscribe_section').removeClass('close').addClass('open');
+				$('.subscribe_section').css("top", $(window).scrollTop()+100 + 'px');
+			} else {
+				$('.subscribe_section').removeClass('open').addClass('close');
+				$('.subscribe_section').css("top", '100px');
+			}
+		});
+		$('.subscribe_content_close').click(function(e){
+			$('.subscribe_section').removeClass('open').addClass('close');
+			$('.subscribe_section').css("top", '100px');
+		});
+
+		$("#subscribe_form").validate({
+			submitHandler: function(form) {
+				$.ajax({
+					url: 'https://www.stc.group/en/index/subscribe',
+					type: 'POST',
+					data: $('#subscribe_form').serialize(),
+					dataType: 'json',
+					success: function(r){
+						$('.subscribe_success_msg').css("display", 'block');
+						$('.subscribe_error_msg').css("display", 'none');
+						$('.subscribe_button').css("display", 'none');
+
+						window.google_trackConversion({
+							google_conversion_id: 998089407,
+							google_conversion_label: "-ypTCI-SlYQBEL_F9tsD",
+							google_conversion_format : "3",
+							google_remarketing_only: true
+						});
+					},
+					error: function(e){
+						// console.log('error', e);
+						$('.subscribe_error_msg').css("display", 'block');
+						$('.subscribe_success_msg').css("display", 'none');
+					}
+		    });
+			}
+		});
+	})
+</script>        </div>
+        <div class="addthis_box">
+	<!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
+<!-- <a href="https://www.facebook.com/stcgroup" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
+<a href="https://www.linkedin.com/company/hong-kong-standards-and-testing-centre-?trk=company" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/linkedin.png" border="0" alt="LinkedIn"/></a>
+<a href="https://twitter.com/stcgroup" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
+<a href="https://api.addthis.com/oexchange/0.8/forward/pinterest/offer?url=http%3A%2F%2Fwww.stc-group.org&pubid=ra-55bacec56fd86382&ct=1&title=%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/pinterest.png" border="0" alt="Pinterest"/></a>
+<a href="https://api.addthis.com/oexchange/0.8/forward/sinaweibo/offer?url=http%3A%2F%2Fwww.stc-group.org&pubid=ra-55bacec56fd86382&ct=1&title=%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/sinaweibo.png" border="0" alt="Sina Weibo"/></a>
+<a href="https://api.addthis.com/oexchange/0.8/forward/print/offer?url=http%3A%2F%2Fwww.stc-group.org&pubid=ra-55bacec56fd86382&ct=1&title=%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/print.png" border="0" alt="Print"/></a>
+<a href="https://api.addthis.com/oexchange/0.8/forward/cleanprint/offer?url=http%3A%2F%2Fwww.stc-group.org&pubid=ra-55bacec56fd86382&ct=1&title=%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/cleanprint.png" border="0" alt="CleanPrint"/></a>
+<a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Fwww.stc-group.org&pubid=ra-55bacec56fd86382&ct=1&title=%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a> -->
+</div>
+			<style type="text/css">
+		.cookie_pop {position: fixed;bottom: 0;width: 100%;padding: 20px;    background-color: #fff;    text-align: center;    box-shadow: 0px -5px 20px 0px rgba(0,0,0,.1);display: none;}
+		.btn_cookie_accept {line-height: 36px;height: 36px;display: inline-block;text-align: center;color: #9cbcdc;border: 1px solid;border-radius: 5px;background: #fff;margin-top: 10px;cursor: pointer;padding: 0 20px;}
+	</style>
+	<div class="cookie_pop">
+		<div>This website uses cookies. For more information, please view our <a href="https://www.stc.group/en/cookie">Cookie Policy</a>.</div>
+		<div><button type="button" class="btn_cookie_accept">Accept Cookies</button></div>
+	</div>
+	<script type="text/javascript">
+
+	(function($) {
+
+		function setCookie(cname, cvalue, exdays) {
+		    var d = new Date();
+		    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		    var expires = "expires="+ d.toUTCString();
+		    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+
+		function updateBodyOffset() {
+			document.body.style.transition = 'all 500ms ease-in-out';
+			document.body.style.paddingBottom = parseFloat($('.cookie_pop:visible').outerHeight() || 0) + 'px';
+		}
+
+		$(document).on('click', '.btn_cookie_accept', function() {
+			setCookie('cookie_accept', 1, 3650);
+			$('.cookie_pop').fadeOut(function() {
+				updateBodyOffset();
+			});
+		});
+
+		$(window).on('resize', function() {
+			updateBodyOffset();
+		});
+
+		$(function(){
+			$('.cookie_pop').fadeIn(function() {
+				updateBodyOffset();
+			});
+		});
+
+	})(jQuery);
+
+	</script>	</body>
+</html>
+
+<script>
+$(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp', // Element ID
+        scrollDistance: 300, // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top', // 'top' or 'bottom'
+        scrollSpeed: 300, // Speed back to top (ms)
+        easingType: 'easeInOutExpo', // Scroll to top easing (see http://easings.net/)
+        animation: 'fade', // Fade, slide, none
+        animationInSpeed: 200, // Animation in speed (ms)
+        animationOutSpeed: 200, // Animation out speed (ms)
+        scrollText: 'Top' // Text for element, can contain HTML
+    });
+});
+</script>

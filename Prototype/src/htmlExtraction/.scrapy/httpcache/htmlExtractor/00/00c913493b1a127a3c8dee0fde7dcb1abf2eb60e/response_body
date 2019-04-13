@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /mahout_cms/core/
+Disallow: /mahout/

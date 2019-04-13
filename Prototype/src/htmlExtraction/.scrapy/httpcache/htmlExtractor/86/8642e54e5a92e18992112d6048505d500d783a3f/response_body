@@ -1,0 +1,352 @@
+<html>
+
+<head>
+<title>AutoDave!  The automated Dave Barry column generator</title>
+</head>
+
+<body bgcolor = #FFFFFF>
+
+<table border=0 cellpadding = 20 width = 100%>
+<tr><td width=50%>
+<font size = +10>AutoDave!</font>
+<h3>The automated Dave Barry column generator</h3>
+&nbsp;&nbsp;<font size=-1><i>- <a href = "mailto:bennett@peacefire.org">Bennett Haselton</a></i></font>
+</td>
+<td bgcolor = #EEEEEE>
+<table><td>
+<table><td><a href = "http://www.amused.com"><img border=0 src = "cea.gif"></a></td>
+<td><i>Listed by the "Center for the Easily Amused"</i></td>
+</table>
+<!--</td>
+<td>&nbsp;&nbsp;
+</td>
+<td>-->
+<img src = "picks.gif"><br>
+<i>Listed in Yahoo!'s Picks of the Week for September 20, 1999</i>
+</td>
+</table>
+</td>
+</tr>
+</table>
+
+<!--log the HTTP_REFERER variable-->
+<!--exec cgi = "referer-logger.cgi"-->
+<!--end redirector code-->
+
+<!--<p>
+<table border=1 cellpadding=10 cellspacing=0><tr><td>
+<b>Update 10/20/2004:</b> Welcome Dave fans!  I just heard the announcement about Dave
+taking a break from writing his weekly column.  While his writings will be sorely missed,
+he's already written more funny stuff than most of us could write in ten lifetimes so he's
+earned a break :)  <B>BUT</B> -- I know for a fact that many of Dave's columns from the 80's
+and 90's have never been published in his books, although they must be archived somewhere.
+I'm sure many of us would be willing to pay for a book of Dave's material that had never
+before been collected in books.  If you would like to consider adding your name to a petition
+to get Dave's previously unpublished columns compiled and published as a new book,
+<a href = "mailto:bennett@peacefire.org">email me</a> (put "Dave petition" in the subject)
+and I'll try to find out who to contact.
+</td></tr></table>
+</p>
+-->
+
+<p>
+
+Dave Barry's columns are published every Friday on
+<a href = "http://www.herald.com/davebarry/">his Web site</a> at the Miami
+Herald.  But if you can't wait
+that long, you can use this page to generate one instead.
+
+Read <a href = "about.shtml">"About AutoDave"</a> for more information about Dave and this site.
+
+<p>
+
+
+<table width=100%><tr><td bgcolor = #EEEEEE>
+<form action = "autodavelite.cgi" method = "POST">
+<table border =1 cellpadding = 10>
+<tr>
+<td colspan=2>
+The full version of AutoDave requires you to fill in 20 blank spaces in order to
+generate a column.  To try "AutoDave Lite", fill in the following five blank spaces,
+which will be enough to generate the first paragraph to give you an idea of how it works.
+Then you can scroll down to try the full version
+of AutoDave.
+</td>
+</tr>
+<tr>
+<td>
+1. Enter the name of a town:
+</td>
+<td>
+<input type=text size=30 name="townname">
+</td>
+</tr>
+
+<tr>
+<td>
+2. Enter something you'd say to someone that would make them want to leave:
+</td>
+<td>
+<input type=text size=30 name="townmotto">
+</td>
+</tr>
+
+<tr>
+<td>
+3. Enter a plural noun:
+</td>
+<td>
+<input type=text size=30 name="stuffname">
+</td>
+</tr>
+
+<tr>
+<td>
+4. Enter an insult:
+</td>
+<td>
+<input type=text size=30 name="insult">
+</td>
+</tr>
+
+<tr>
+<td>
+5. Enter the name of one of your friends:
+</td>
+<td>
+<input type=text size=30 name="friendsname">
+</td>
+</tr>
+<tr>
+<td colspan=2>
+<center>
+<input type="submit" value="Click here to try AutoDave Lite!">
+</center>
+</td>
+</tr>
+</table>
+</form>
+</td></tr></table>
+
+<hr>
+
+<p>If you liked that, try the full version:</p>
+
+
+
+<form action = "autodave.cgi" method = "POST">
+
+<table border = 1 cellpadding = 15>
+
+	<tr>
+		<td>
+		<b>1.</b> Enter the name of a town:
+		</td>
+		<td>
+		<input type = "text" name = "townname">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>2.</b> Enter a plural noun, the weirder the better:
+		</td>
+		<td>
+		<input type = "text" name = "stuffname">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>3.</b> What does your answer to (2) do that makes them
+		so weird?
+		</td>
+		<td>
+		They <input type = "text" name = "stuffverb" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>4.</b> Something you'd say to someone to make them want to
+		leave
+		</td>
+		<td>
+		<font size = +2>"</font><input type = "text" name = "townmotto" size = 50><font size = +2>"</font>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>5.</b> Give me an insult:
+		</td>
+		<td>
+<textarea name = "insult" cols = 40 rows = 2>
+</textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>6.</b> Enter one of your friend's names:
+		</td>
+		<td>
+		<input type = "text" name = "friendsname">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>7.</b> Enter a really stuffy, formal (male) name:
+		</td>
+		<td>
+		<input type = "text" name = "stuffyname">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>8.</b> Enter a slang (male) nickname:
+		</td>
+		<td>
+		<input type = "text" name = "nickname">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>9.</b> Enter four things that always go together:
+		</td>
+		<td>
+		<input type = "text" name = "quartet1"><br>
+		<input type = "text" name = "quartet2"><br>
+		<input type = "text" name = "quartet3"><br>
+		<input type = "text" name = "quartet4">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>10.</b> What would you say to your boss if you won the lottery:
+		</td>
+		<td>
+		<input type = "text" name = "line1" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>11.</b> What do you say when someone cuts you off in traffic:
+		</td>
+		<td>
+		<input type = "text" name = "line2" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>12.</b> What do you say to someone when you recognize them as the person who cut you off:
+		</td>
+		<td>
+		<input type = "text" name = "line3" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>13.</b> You are female, your husband cheated on you, and the court rules that you can
+		do only one thing to him, so: 
+		</td>
+		<td>
+		You <input type = "text" name = "meanness1" size = 50> his <input type = "text" size = 20 name = "meanness2">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>14.</b> Complete the sentence:
+		</td>
+		<td>
+		<center>
+		I would really enjoy<br>
+<textarea name = "meanness3" cols = 40 rows = 2>
+</textarea>
+		<br>
+		the bullies who used to beat me up in high school
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>15.</b> How do you plan to spend your retirement:
+		<font size = -1>(Note: your answer must be
+		a phrase containing at least one space)</font>
+		</td>
+		<td>
+		<input type = "text" name = "splitphrase" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>16.</b> What should we do to solve the garbage crisis?
+		</td>
+		<td>
+		<input type = "text" name = "proc1" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>17.</b> What is your standard procedure for unclogging toilets?
+		</td>
+		<td>
+		<input type = "text" name = "proc2" size = 50>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>18.</b> Complete the sentence:
+		</td>
+		<td>
+		Governments are supposed to <input type = "text" size = 40 name = "govtjob">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>19.</b> Complete the sentence:
+		</td>
+		<td>
+		Desk-bound employees spend a great deal of time typing with one
+		hand and holding a 
+		<input type = "text" name = "prything"> in the other...
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<b>20.</b>What would be a good bumper sticker for someone that
+		you hate? 
+		</td>
+		<td>
+<textarea name = "message" cols = 60 rows = 4>
+</textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan = 2>
+		<input type = "submit" value = "Click here to view your column!">
+		</td>
+	</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
+

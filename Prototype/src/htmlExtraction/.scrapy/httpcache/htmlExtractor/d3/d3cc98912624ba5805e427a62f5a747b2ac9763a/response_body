@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><link rel="stylesheet" type="text/css" href="/logon2/CSS/logon2styles.css" />
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="/logon2/CSS/logon2styles_ie.css" />
+	<![endif]-->
+	<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="/logon2/CSS/logon2styles_ie6.css" />
+	<![endif]-->
+	<script type="text/javascript" src="/includes/CDN/code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/includes/CDN/code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="/includes/formChecker.js"></script>
+	<title>
+	On Call Medical & Physician Staff Scheduling Software | DOCS Scheduler™
+</title><meta name="charset" content="ISO-8859-1" /><meta name="description" content="DOCS scheduler is a flexible and easy to use solution for all your on-call Physician scheduling and communication needs. #1 Medical Scheduling Software." /><meta name="keywords" content="Medical Scheduling Software, medical staff scheduling software, physician on call scheduling software, on call medical scheduling software, on call scheduling software, anesthesia, block scheduling, call schedules, call scheduling, cardiology, Docs 2000, DOCS Scheduler, Docs2000, doctor scheduling, emergency medicine, family practice, Hospital wide scheduling, hospitalists, internal medicine, Medical Staff Scheduling, on-call, on-call software, on call, on call software, OnCall, OnCall software, physician scheduling, pulmonary, radiology, rotation scheduling, vacation manager, web schedule" /><meta name="copyright" content="DOCS Scheduler&trade; &copy;1987-2019 acmex.com" /><meta name="author" content="Acme Express, Inc." /><meta name="email" content="info@docsscheduler.net" /><meta name="robots" content="index, follow" /><meta name="googlebot" content="index, follow" /><meta http-equiv="pragma" content="no-cache" /><meta name="language" content="English" /><meta name="web_author" content="acmex.com" /><link rel='shortcut icon' href='/images/icons/v3.docsscheduler.net.ico?ts=1528713699000' />
+	<!-- Meta Tags Created by: www.MetaTagGenerator.org -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-108920910-1"></script>
+	<script type="text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push( arguments ); }
+		gtag( 'js', new Date() );
+		gtag( 'config', 'UA-108920910-1' );
+	</script>
+	<meta name="google-site-verification" content="YGnTd-tQWhPTWnQVUxGyWcvFklTA7kKCct3vkN7UiQw" />
+
+	<script type="text/javascript">
+		'use strict';
+
+		function frmSubmit( frmAction )
+		{
+			var objForm = document.getElementById( "form1" );
+			if ( objForm )
+			{
+				if ( navigator.cookieEnabled )
+					objForm.submit();
+				else
+					ShowCookieWarning( true );
+			}
+		}
+
+		function ShowLogonError( bShow )
+		{
+			var objElement = document.getElementById( "ctl00_LogonError" );
+			if ( objElement )
+			{
+				if ( bShow )
+					objElement.style.visibility = "visible";
+				else
+					objElement.style.visibility = "hidden";
+			}
+		}
+
+		function ShowCookieWarning( bShow )
+		{
+			if ( typeof ( bshow ) == "boolean" )
+			{
+				if ( bShow )
+				{
+					$( "#BlackOut" ).css( "display", "block" );
+					$( "#NoCookie" ).css( "display", "block" );
+				}
+				else
+				{
+					$( "#BlackOut" ).css( "display", "none" );
+					$( "#NoCookie" ).css( "display", "none" );
+				}
+			}
+		}
+
+		$( function ()
+		{
+			$( 'body' ).on( 'keydown', function ( e )
+			{
+				ShowLogonError( false );
+				if ( e.keyCode == 13 )
+				{
+					var objUser = document.getElementById( "userName" );
+					var objPW = document.getElementById( "Password" );
+					var objBtn = document.getElementById( "btnLogon" );
+					if ( objUser && objPW && objBtn )
+					{
+						if ( objUser.value.length > 0 && objPW.value.length > 0 )
+							objBtn.click();
+					}
+				}
+			} );
+		} );
+	</script>
+</head>
+<body>
+	<form method="post" action="./workspace.aspx?area=security&amp;goto=%2fworkspace.ASPX" id="form1" onsubmit="return Validate()">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="zmYEjOa7o1tFTHo6QCXAcN9Aj0NdILbDqkxI6C/4aU9AeKwbQlN77skFRnk5C+WrVcvvIORHCYUVoNY7wy0zqUCbNgQGm9bDEyLYZ3hV2aOYj1/26R1EMEsf4cPBYLBLyngUi3Z2KovBWNAWgLAQNHVywrh69jXmN5l1tQM5hTFWZL9niaapNAZ+spdyoXYAhvM6yLAurnXzHvvZqwhX4wSBEHzL9ctVPOVf+dhXMDQ=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOHii1HhNGQLwBqWwCsQF7dQrIpJ9-4RGkwG4SVBKPKyxvEPgbfluLsx4mNSY_z1vQ2&amp;t=636776544783889403" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYn6QWD5umb8pbVkIyFmMBD6IelTueudeLz_2nxHW_Iccme8M_mCTMcXpIBu8gyDjCw2&amp;t=636776544783889403" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90003F25" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="VuYuqYE4deGiVPiv8+1lXhgTjNu6aqouC83qvcBeSHDymzrIA3o8J3UHqJ9u9jKcMUbW9yVxCnnUHQQXAN+m8j97YKRDLR8kTDDbMY2nmstFFt304DPmXEYS1mYc2/kxF2TjLvvyOWQemOWdJyZZ9J6yeIY15BOjXQssuU6ji56DSb7W4Y/+7bZNxymma99k" />
+</div>
+		<div id="wrapper">
+			<div id="BlackOut">
+				<fieldset id="NoCookie">
+					<div id="CookieWarningHeader">
+						<span>Error</span>
+						<img id="CloseBtn" alt="close" src="/images/icons/DismissButton.gif" onclick="ShowCookieWarning(false);" />
+					</div>
+					<div id="CookieWarningText" style="padding: 12px;">
+						DOCS scheduler requires cookies. Enable cookies in your
+					
+						<br />
+						browser, then try logging on again.
+					
+						<br />
+						<input id="dismissCookieWarning" type="button" onclick="ShowCookieWarning( false );" value="Close" style="margin-top: 12px;" />
+					</div>
+				</fieldset>
+			</div>
+			<div id="header-main">
+				<input type="hidden" name="ctl00$UserGUID" id="ctl00_UserGUID" />
+				<div id="header-right-main">
+					<div id="header-right-orange">
+						<div id="header-right-dark">
+							<table cellpadding="0" style="width: 100%; height: 100%; padding-right: 3px;">
+								<tr>
+									<td valign="top" rowspan="3" style="width: 30%; height: 100%;">
+										<h2 style="line-height: 100%; padding: 0px; margin-top: 17px;">On Call?</h2>
+									</td>
+									<td rowspan="3" valign="top" style="width: 60%;">
+										
+									</td>
+									<td align="right">
+										<span id="ctl00_lblUserName">username </span>
+									</td>
+									<td>
+										<input name="ctl00$userName" type="text" id="userName" class="logon-part" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<span id="ctl00_lblPassword">password </span>
+									</td>
+									<td>
+										<input name="ctl00$Password" type="password" size="20" id="Password" class="logon-part" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="right">
+										<input type="submit" name="ctl00$btnLogon" value="" onclick="frmSubmit(&#39;logon&#39;);" id="btnLogon" class="Login" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div>
+						<ul class="nav">
+							<li class="product"><a href="/logon2/Default.aspx">Home</a></li>
+							<li class="demo"><a href="/logon2/DemoRequest.aspx">Demo</a></li>
+							<li class="casestudies"><a href="/logon2/CaseStudies.aspx">Case Studies</a></li>
+							<li class="testimonials"><a href="/logon2/Testimonials.aspx">Testimonials</a></li>
+							<li class="contact"><a href="/logon2/Contact.aspx">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="header-left-main">
+					<div id="header-left-orange">
+						<div id="header-left-dark">
+							<h2>Who's</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="body-main">
+				<div class="content">
+					
+	
+	<h2></h2>
+	<p>
+		DOCS scheduler is a flexible and easy to use solution for all your on-call scheduling
+		and communication needs.
+	</p>
+	<p>
+		We offer solution implementation, training, and ongoing support. You can feel confident
+		knowing that your technology needs will be met today and in the future.
+	</p>
+	<p>
+		Contact us for a brief ten minute demo. You will be amazed by how easy DOCS Scheduler
+		is to use.
+	</p>
+	<img src="/logon2/Images/DOCS_Render3b_small_b.png" alt="" style="width: 90%; height: 90%; position: relative; margin-top: -24px;" />
+	<div>
+		<div class="home-right-column" style="margin-top: -12px;">
+			<h4>Benefits to You:</h4>
+			<ul>
+				<li class="default">Always accurate, consolidated call schedules</li>
+				<li class="default">One click to provider contact information</li>
+				<li class="default">Synchronize with Outlook</li>
+				<li class="default">Helps meet EMTALA regulations</li>
+				<li class="default"><a target="_blank" class="default" href="http://azure.microsoft.com/en-us/support/trust-center/compliance/">Industry-verified conformity<br />
+					with global standards</a></li>
+				<li class="default">Cloud-based application, use with<br />
+					any browser</li>
+				<li class="default">Simple and fast implementation</li>
+				<li class="default">No hardware needed</li>
+				<li class="default">Minimal IT resources required</li>
+			</ul>
+			<div style="position: relative; padding: 6px 12px 12px 60px;">
+				<script type='text/javascript'>
+	//-- Change Log ---------------------------------------------------------------------
+	//
+	//	08/31/2017	- Crowd reviews badge - received code from DSS
+	//-----------------------------------------------------------------------------------
+
+	var cssid = "csscr-573", t = String( Date.now() ).substring( 0, 10 );
+	if ( !document.getElementById( cssid ) )
+	{
+		var dm = "https://www.crowdreviews.com/", head = document.getElementsByTagName( "head" )[0], link = document.createElement( "link" ), linkm = document.createElement( "link" ), j = document.createElement( "script" );
+		link.id = cssid, link.rel = "stylesheet", link.type = "text/css", link.href = dm + "br." + t + ".css", link.media = "all";
+		linkm.rel = "stylesheet", linkm.href = "//fonts.googleapis.com/css?family=Roboto:500,100|Montserrat:700";
+		j.setAttribute( "type", "text/javascript" ), j.setAttribute( "data-id", "66763" ), j.setAttribute( "data-c", "573" ), j.setAttribute( "src", dm + "brs." + t + ".js?id=573" ), j.id = "j-AjPfd6UAR-573", head.appendChild( link ), head.appendChild( linkm ), head.appendChild( j )
+	}
+</script>
+<div id="crowdreviews-badge-AjPfd6UAR"><div id="crowdreviews-badge-AjPfd6UAR-573"><div class="crowdreviews-badge-bg "><img src="https://www.crowdreviews.com/themes/camo/images/crowd-badge-logo.png" alt="CrowdReviews.com Logo" style="width:80%;height:80%;" /><div class="t ">Top 5</div><div class="st ">Based On Client Reviews</div><div class="ct "><a href="https://www.crowdreviews.com/best-medical-scheduling-software" target="_blank">Medical Scheduling Software</a></div><p class=""><a href="https://www.crowdreviews.com/docs-scheduler#reviews" target="_blank">Read all 3 Reviews</a> / <a href="https://www.crowdreviews.com/docs-scheduler" target="_blank">Write A Review</a></p></div></div></div>
+
+			</div>
+		</div>
+		<div class="home-left-column">
+			<h3>BUILT ON MICROSOFT PLATFORM TECHNOLOGIES</h3>
+			<p style="line-height: 140%;">
+				DOCS scheduler is built on Microsoft platform technologies to give you unified<br />
+				and comprehensive solutions that are cost&#8209;efficient, reliable, and secure.
+			</p>
+			<h4>Enabling Technologies</h4>
+			<ul>
+				<li class="default">Microsoft Azure</li>
+				<li class="default">Windows Server 2012 R2</li>
+				<li class="default">SQL Server 2014</li>
+				<li class="default">Office 2016, 365, 2013, 2010, 2007</li>
+				<li class="default">Outlook 2016, 365, 2013, 2010, 2007</li>
+				<li class="default">Silverlight 5.0</li>
+			</ul>
+			<p class="Microsoft-disclaimer">
+				Microsoft Azure, Windows, Windows Server, SQL Server, Office, Outlook, and Silverlight<br />
+				are trademarks or registered trademarks of Microsoft Corporation.
+			</p>
+		</div>
+	</div>
+
+				</div>
+				<div id="left-bar">
+					<div id="colored-left-bar">
+						<div id="docs-logo">
+							<img src="/logon2/Images/DOCS_Scheduler_Vector_ForPrint_edit.png" alt="Docs Scheduler" />
+						</div>
+						<br />
+						<h4>COMPLETE</h4>
+						<p>
+							Doctors, residents, fellows, nurses, technologists<span>...</span> From simple manual on-call scheduling,
+						to vacation management, to fully automated scheduling.<br />
+							<br />
+							<!--[if IE]><br /><![endif}-->
+						</p>
+						<h4>PRACTICAL</h4>
+						<p>
+							Easiest way to schedule and find who&#39;s on call.<br />
+							<br />
+							<!--[if IE]><br /><![endif}-->
+						</p>
+						<h4>CLOUD BASED</h4>
+						<p>
+							Always available. Can be accessed anywhere, anytime.<br />
+							<br />
+							<!--[if IE]><br /><![endif}-->
+						</p>
+						<h4>SECURE</h4>
+						<p>
+							Rugged security and fail-safe infrastructure.
+						
+							<br />
+							<!--[if IE]><br /><![endif}-->
+						</p>
+					</div>
+					<img src="/logon2/Images/iStock_000009911035Small_scaled_210.png" alt="" />
+					<img src="/images/logos/microsoft/ms-partner-logo-small.png" alt="Microsoft Partner - Silver Application Development" style="padding-top: 18px; padding-left: 3px; padding-bottom: 6px;" />
+					<table cellpadding="3" style="margin-left: 6px; margin-top: 6px;">
+						<tr>
+							<td>
+								<img src="/images/logos/microsoft/WindowsAzure-cloud.png" style="height: 100px; width: 100px;" alt="" />
+							</td>
+							<td valign="middle"><font class="poweredBy" style="color: darkgray; line-height: 200%;">Powered by</font>
+								<br />
+								<font class="poweredBy" style="font-weight: bold; font-size: 14pt;">Microsoft<br />
+									Azure
+								</font>
+							</td>
+						</tr>
+					</table>
+					<br />
+					<div class="Acme-logo">
+						Acme Express, Inc.
+					
+						<br />
+						3821 Prospect Avenue<br />
+						Cleveland, OH 44115-2707<br />
+						216-346-6955
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="footer">
+				<p>
+					Â© 1987-2019 Acme Express Inc. All rights reserved.
+			
+				</p>
+			</div>
+		</div>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+WebForm_AutoFocus('userName');//]]>
+</script>
+</form>
+	<noscript>
+		<div id="NoScriptBlack">
+		</div>
+		<fieldset id="NoScript">
+			<div id="NoScriptWarningHeader">
+				<span>Error</span>
+			</div>
+			<div id="NoScriptWarning" style="padding: 12px;">
+				DOCS scheduler requires Javascript. Enable Javascript in your
+			
+				<br />
+				browser, then try logging on again.
+			
+				<br />
+			</div>
+		</fieldset>
+	</noscript>
+</body>
+</html>

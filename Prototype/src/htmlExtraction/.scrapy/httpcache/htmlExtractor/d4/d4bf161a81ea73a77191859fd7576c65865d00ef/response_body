@@ -1,0 +1,250 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<link href="style_hk.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language='JavaScript'>
+<!--
+
+function bluring(){ 
+if(event.srcElement.tagName=="A"||event.srcElement.tagName=="IMG") document.body.focus(); 
+} 
+document.onfocusin=bluring; 
+-->
+</script>
+
+<script language='JavaScript'>
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" onLoad="MM_preloadImages('image/home_on.jpg','image/cont_on.jpg')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="image/t_bg.jpg">
+      <table width="1050" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="240" rowspan="2"><a href="index.php"><img src="image/logo.jpg" width="240" height="92" border="0"></a></td>
+          <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><a href="index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home','','image/home_on.jpg',1)"><img src="image/home_off.jpg" name="home" height="29" border="0" id="home"></a></td>
+                <td width="20">&nbsp;</td>
+                <td><a href="mailto:wntube@paran.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cont','','image/cont_on.jpg',1)"><img src="image/cont_off.jpg" name="cont" height="29" border="0" id="cont"></a></td>
+                <td width="20">&nbsp;</td>
+                <td><a href="index.php"><img src="image/kor.jpg" height="29" border="0"></a></td>
+                <td width="20" align="right">&nbsp;</td>
+                <td><a href="../eng/index.php"><img src="image/eng.jpg" height="29" border="0"></a></td>
+                <td width="20" align="right">&nbsp;</td>
+                <td><a href="http://www.nicepr.com/wtube" target="_blank"><img src="image/world.jpg" height="29" border="0"></a></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="center">
+		    <style>
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{padding:0;margin:0; }
+
+a { text-decoration: none;}
+ul,ol {list-style: none;}
+
+.topMenu1{ width:600px; height:63px; background:#000;}
+
+ul.horizontal-dropdown {
+	margin-top:0px;
+    position: relative;
+    float: left;
+}
+
+ul.horizontal-dropdown a {
+    display: block;
+    padding: 9px 23px;
+    text-decoration: none;
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-size: 15px;
+    color: #fff;
+    
+}
+
+
+ul.horizontal-dropdown li {
+    float: left;
+    padding: 0;
+    
+}
+
+ul.horizontal-dropdown li a:hover {
+   color:#0C0;
+}
+
+/*sub nav*/
+ul.horizontal-dropdown ul {
+    position: absolute;
+	margin:0;
+    left: 0;
+  /*  background: #343434;*/
+    overflow: hidden;
+}
+
+ul.horizontal-dropdown ul li {
+    background: transparent;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+ul.horizontal-dropdown ul li a {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #3fb306;
+    padding: 0;
+    display: block;
+    float: left;
+    padding: 4px 12px;
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-size: 13px;
+}
+
+ul.horizontal-dropdown ul li a:hover {
+    color: #0609b3;
+}
+.sub02 { padding-left:110px;}
+.sub03 { padding-left:125px;}
+.sub04 { padding-left:245px;}
+.sub05 { padding-left:305px;}
+
+</style>
+    <script src="../js/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.hoverIntent.js"></script>
+    <script src="../js/jquery.horizontalnav.js"></script> 
+    <script type="text/javascript" charset="utf-8">
+    $(function(){
+        $('.horizontal-dropdown').animatedHorizontalNav();
+    });
+       
+    </script> 
+    
+    <div class="topMenu1">
+      <ul class="horizontal-dropdown">
+            <li><a href="../com/com_01.htm">회사소개</a>
+               <ul>
+                   <li><a href="../com/com_01.htm">인사말</a></li>
+                   <li><a href="../com/com_02.htm">회사현황</a></li>
+                   <li><a href="../com/com_03.htm">조직도</a></li>
+                   <li><a href="../com/com_04.htm">비전 및 경영이념</a></li>
+                   <li><a href="../com/com_05.htm">조직및 인적자원</a></li>
+                   <li><a href="../com/com_06.htm">오시는길</a></li>
+        
+                </ul>
+            </li>
+            <li><a href="../pro/pro_01.htm">제품소개</a>
+                <ul class="sub02">
+                    <li><a href="../pro/pro_01.htm">Conductive Solution</a></li>
+                    <li><a href="../pro/pro_02.htm">Wrapping Nano Tube</a></li>
+                </ul>    
+            </li>
+            <li><a href="../na/na_01.htm">탄소나노튜브</a>
+                <ul class="sub03">
+                    <li><a href="../na/na_01.htm">What is CNT?</a></li>
+                    <li><a href="../na/na_02.htm">물리/화학적 특성</a></li>
+                    <li><a href="../na/na_03.htm">응용분야</a></li>
+                    <li><a href="../na/na_04.htm">합성방법</a></li>                               
+                </ul>            
+            </li>
+            
+            <li><a href="../bbs/board.php?bo_table=T01">기술현황</a>
+                <ul class="sub04">
+                    <li><a href="../bbs/board.php?bo_table=T01">Conductive Solution</a></li>
+                    <li><a href="../bbs/board.php?bo_table=T02">Wrapping Nano Tube</a></li>
+                </ul>
+            </li>
+            <li><a href="../bbs/board.php?bo_table=cus_notice">고객센터</a>
+                 <ul class="sub05">
+                    <li><a href="../bbs/board.php?bo_table=cus_notice">공지사항</a></li>
+                    <li><a href="../bbs/board.php?bo_table=cus_data">자료실</a></li>
+                    <li><a href="../bbs/board.php?bo_table=cus_gallery">갤러리</a></li>
+                    <li><a href="../cus/est.htm">온라인상담</a></li>
+                </ul>
+            </li>
+        </ul>
+
+     
+     
+     </div></td>
+        </tr>
+      </table>
+      <table width="1120" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="644"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="1120" height="670">
+            <param name="movie" value="flash/main.swf">
+            <param name="wmode" value="transparent">
+            <embed src="flash/main.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1120" height="670"></embed>
+          </object></td>
+        </tr>
+      </table>
+      <table width="1120" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="35" align="center">          제품소개 : cnt, carbonnanotube, mwnt, cnt liquid solution, cnt solid[pellet], carbonnanotube dispersed solution.</td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td background="image/copy_bg.jpg"><img src="image/copy.jpg" width="1050" height="64"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#FCFCFC"><table width="860" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="right"><a href="ivycount/_admin/index.php" target="_blank"><font color="#FCFCFC"><b>LOG</b></font></a></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>	</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+  <!-- Basic Page Needs rrr
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Brusters</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="https://brusters.com/wp-content/themes/brusters-child/favicon.png">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	
+<!--––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    
+	<style type="text/css">
+		#fancybox-close{right:-15px;top:-15px}
+		div#fancybox-content{border-color:#FFFFFF}
+		div#fancybox-title{background-color:#FFFFFF}
+		div#fancybox-outer{background-color:#FFFFFF}
+		div#fancybox-title-inside{color:#333333}
+	</style>
+
+	<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/brusters.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='easingslider-css'  href='https://brusters.com/wp-content/plugins/easing-slider/assets/css/public.min.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://brusters.com/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsl-styles-css'  href='https://brusters.com/wp-content/plugins/wp-store-locator/css/styles.min.css?ver=2.2.11' type='text/css' media='all' />
+<link rel='stylesheet' id='style.css-css'  href='https://brusters.com/wp-content/themes/brusters-child/style.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize.css-css'  href='https://brusters.com/wp-content/themes/brusters-child/css/normalize.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='et-googleFonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C800%2C700%2C600%2C300&#038;ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='Font Awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.9.3' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script type='text/javascript' src='https://brusters.com/wp-content/plugins/easing-slider/assets/js/public.min.js?ver=3.0.8'></script>
+<script type='text/javascript' src='https://brusters.com/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var FlowFlowOpts = {"streams":{"id1":{"id":"1","name":"Bruster's Social Media","feeds":"[{\"timeline-type\":\"home_timeline\",\"content\":\"BrustersFresh\",\"list-name\":\"\",\"retweets\":\"yep\",\"replies\":\"yep\",\"id\":\"a80037\",\"type\":\"twitter\",\"filter-by-words\":\"\"},{\"timeline-type\":\"user_timeline\",\"content\":\"BrustersFresh\",\"id\":\"q42476\",\"type\":\"youtube\",\"filter-by-words\":\"\"},{\"content\":\"brustersic\",\"hide-text\":\"yep\",\"id\":\"y96825\",\"type\":\"pinterest\",\"filter-by-words\":\"\"},{\"timeline-type\":\"page_timeline\",\"content\":\"BrustersRealIceCream\",\"hide-attachment\":\"nope\",\"id\":\"q38304\",\"type\":\"facebook\",\"filter-by-words\":\"\"},{\"timeline-type\":\"user_timeline\",\"content\":\"brustersfresh\",\"hide-text\":\"nope\",\"id\":\"q94560\",\"type\":\"instagram\",\"filter-by-words\":\"\"}]","order":"randomCompare","posts":"20","days":"","page-posts":"20","cache":"yep","cache-lifetime":"10","gallery":"yep","private":"nope","hide-on-desktop":"nope","hide-on-mobile":"nope","heading":"Bruster's Social Media","headingcolor":"rgb(90, 64, 153)","subheading":"","subheadingcolor":"rgb(114, 112, 114)","hhalign":"center","bgcolor":"rgb(255, 255, 255)","filter":"yep","filtercolor":"rgb(204, 204, 204)","mobileslider":"nope","viewportin":"yep","layout":"grid","width":"260","margin":"20","theme":"classic","gc-style":"style-1","cardcolor":"rgb(255, 255, 255)","namecolor":"rgb(154, 78, 141)","textcolor":"rgb(85, 85, 85)","linkscolor":"rgb(94, 159, 202)","restcolor":"rgb(132, 118, 129)","shadow":"rgba(0, 0, 0, 0.22)","bcolor":"rgba(240, 237, 231, 0.4)","talign":"left","gf-style":"style-3","fcardcolor":"rgb(64, 68, 71)","fscardcolor":"rgb(44, 45, 46)","ftextcolor":"rgb(255, 255, 255)","fnamecolor":"rgb(94, 191, 255)","frestcolor":"rgb(175, 195, 208)","fbcolor":"rgba(255, 255, 255, 0.4)","mborder":"nope","ftalign":"center","compact-style":"c-style-1","cnamecolor":"rgb(154, 78, 141)","ctextcolor":"rgb(85, 85, 85)","clinkscolor":"rgb(94, 159, 202)","crestcolor":"rgb(132, 118, 129)","cbcolor":"rgb(226, 226, 226)","cmeta":"upic","calign":"left","cards-num":"3","scrolltop":"yep","css":""}},"open_in_new":"nope","filter_all":"All","filter_search":"Search","expand_text":"Expand","collapse_text":"Collapse","posted_on":"Posted on","show_more":"Show more","date_style":"agoStyleDate","dates":{"Yesterday":"Yesterday","s":"s","m":"m","h":"h","ago":"ago"},"server_time":"1548723974"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://brusters.com/wp-content/plugins/flow-flow/js/require-utils.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://brusters.com/wp-content/themes/brusters-child/js/main.js?ver=20141010'></script>
+<script type='text/javascript' src='https://brusters.com/wp-content/themes/brusters-child/js/jquery.flexslider.js?ver=20141010'></script>
+<link rel='https://api.w.org/' href='https://brusters.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://brusters.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://brusters.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.3" />
+
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+	var arr = jQuery("a.fancybox");
+	jQuery.each(arr, function() {
+		var title = jQuery(this).children("img").attr("title");
+		jQuery(this).attr('title',title);
+	})
+}
+
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+	'cyclic': false,
+	'autoScale': false,
+	'padding': 0,
+	'opacity': true,
+	'speedIn': 0,
+	'speedOut': 0,
+	'changeSpeed': false,
+	'overlayShow': true,
+	'overlayOpacity': "0.3",
+	'overlayColor': "#666666",
+	'titleShow': true,
+	'titlePosition': 'inside',
+	'enableEscapeButton': true,
+	'showCloseButton': true,
+	'showNavArrows': true,
+	'hideOnOverlayClick': false,
+	'hideOnContentClick': false,
+	'width': 'auto',
+	'height': 'auto',
+	'transitionIn': "fade",
+	'transitionOut': "fade",
+	'centerOnScroll': true
+});
+
+jQuery("a.fancybox").fancybox({
+  'transitionIn': 'elastic',
+  'transitionOut': 'elastic',
+  'speedIn': 600,
+  'speedOut': 200,
+  'titleShow': 'false',
+  'autoScale': 'false',
+}); 
+
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NTJT32L');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="home blog">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTJT32L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header class="homepage">
+	
+	<div class="bg-slider-wrapper">
+		<div class="bg-slider active" style="background-image:url(https://brusters.com/wp-content/uploads/2018/03/NewApp_HPBackground.jpg) !important;"></div>
+		
+						<div class="bg-slider" style="background-image:url(https://brusters.com/wp-content/uploads/2018/12/Jan19_HPBackground.jpg) !important;"></div>
+			
+						<div class="bg-slider" style="background-image:url(https://brusters.com/wp-content/uploads/2018/12/Jan19_HPBackground.jpg) !important;"></div>
+			
+
+		<!-- <div class="bg-slider" style="background-image:url(/images/header-background-1.jpg) !important;"></div> -->
+	</div>
+	
+	
+	
+	<div class="container">
+		<div class="inner">
+			<div class="row">
+				<div class="headline left">
+					
+						<!-- Allows Logo to be uploaded from the main theme settings -------->
+													<div class='logo'>
+								<a href='https://brusters.com/' title='Brusters' rel='home'><img src='https://brusters.com/wp-content/uploads/2015/01/Logo-copy.png' alt='Brusters'></a>
+							</div>
+												<!-- End Logo Upload -------->
+					
+					<div class="tagline">
+						<img class="tagline__image" src="https://brusters.com/wp-content/themes/brusters-child/images/tagline-white.png" alt="A Scoop above the rest.">
+					</div>
+					
+				</div>
+				<div class="location right">
+					<p>FIND A  LOCATION</p><form class="zip" method="get" action="https://brusters.com/location-finder"><input type='text' placeholder='Zip Code or City, State' name="zip"></input></form>
+				</div>
+			</div>	
+			<div class="row">
+				<nav class="desktop">
+					<!-- Pulls the Primary Navigation For Desktop Widths -------->
+					<div id="cssmenu" class="menu-header-menu-container"><ul id="menu-header-menu" class="menu"><li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children first has-sub"><a href="https://brusters.com/flavors/"><span>Flavors</span></a>
+<ul>
+	<li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/ice-cream-flavors/"><span>Ice Cream</span></a></li>
+	<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/frozen-yogurt-flavors/"><span>Frozen Yogurt</span></a></li>
+	<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/italian-ice-sherbet-sorbet-flavors/"><span>Ice/Sherbet/Sorbet</span></a></li>
+	<li id="menu-item-670" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/favorite-flavor/"><span>Favorite Flavor</span></a></li>
+</ul>
+</li>
+<li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub"><a href="https://brusters.com/menu/"><span>Menu</span></a>
+<ul>
+	<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/waffle-cones/"><span>Waffle Cones</span></a></li>
+	<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/sundaes-splits/"><span>Sundaes &#038; Splits</span></a></li>
+	<li id="menu-item-264" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/cakes-pies/"><span>Cakes &#038; Pies</span></a></li>
+	<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/blasts/"><span>Blasts</span></a></li>
+	<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/shakes/"><span>Shakes</span></a></li>
+	<li id="menu-item-642" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/drinks/"><span>Drinks</span></a></li>
+	<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/specialty/"><span>Specialty Items</span></a></li>
+	<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/to-go/"><span>To-Go</span></a></li>
+	<li id="menu-item-4400" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/nutritional-information-main/"><span>Nutritional Info</span></a></li>
+</ul>
+</li>
+<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/fundraising/"><span>Fundraising</span></a></li>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/catering/"><span>Catering</span></a></li>
+<li id="menu-item-4842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="http://www.brusterssweetrewards.com/"><span>Sweet Rewards</span></a>
+<ul>
+	<li id="menu-item-799" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/community/promotions/"><span>Promotions</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1927" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://brusters.com/contact-form/"><span>Contact Us</span></a></li>
+<li id="menu-item-250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://brusters.com/own-a-brusters/why-brusters/"><span>Own A Bruster&#8217;s</span></a>
+<ul>
+	<li id="menu-item-852" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/own-a-brusters/investment-facts-figures/"><span>Investment Facts &#038; Figures</span></a></li>
+	<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/own-a-brusters/become-a-brusters-franchisee/"><span>Become A Bruster&#8217;s Franchisee</span></a></li>
+	<li id="menu-item-854" class="menu-item menu-item-type-post_type menu-item-object-page last"><a href="https://brusters.com/own-a-brusters/testimonials/"><span>Testimonials</span></a></li>
+</ul>
+</li>
+</ul></div>				</nav>
+				<nav class="tablet">
+					<div class="dropdown-menu">
+						<button id="nav-button"><span>&#9776;</span> MENU</button>
+					</div>	
+					<!-- Pulls the Primary Navigation For Tablet/Mobile Widths -------->
+					<div id="cssmenu" class="menu-header-menu-container"><ul id="menu-header-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children first has-sub"><a href="https://brusters.com/flavors/"><span>Flavors</span></a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/ice-cream-flavors/"><span>Ice Cream</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/frozen-yogurt-flavors/"><span>Frozen Yogurt</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/italian-ice-sherbet-sorbet-flavors/"><span>Ice/Sherbet/Sorbet</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/flavors/favorite-flavor/"><span>Favorite Flavor</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub"><a href="https://brusters.com/menu/"><span>Menu</span></a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/waffle-cones/"><span>Waffle Cones</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/sundaes-splits/"><span>Sundaes &#038; Splits</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/cakes-pies/"><span>Cakes &#038; Pies</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/blasts/"><span>Blasts</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/shakes/"><span>Shakes</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/drinks/"><span>Drinks</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/specialty/"><span>Specialty Items</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/menu/to-go/"><span>To-Go</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/nutritional-information-main/"><span>Nutritional Info</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/fundraising/"><span>Fundraising</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/catering/"><span>Catering</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="http://www.brusterssweetrewards.com/"><span>Sweet Rewards</span></a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/community/promotions/"><span>Promotions</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://brusters.com/contact-form/"><span>Contact Us</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://brusters.com/own-a-brusters/why-brusters/"><span>Own A Bruster&#8217;s</span></a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/own-a-brusters/investment-facts-figures/"><span>Investment Facts &#038; Figures</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://brusters.com/own-a-brusters/become-a-brusters-franchisee/"><span>Become A Bruster&#8217;s Franchisee</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page last"><a href="https://brusters.com/own-a-brusters/testimonials/"><span>Testimonials</span></a></li>
+</ul>
+</li>
+</ul></div>				</nav>
+			</div>		
+			
+			
+			
+			<div class="headline-image row">
+															<a href="https://brusters.com/sweet-rewards/">
+										
+			
+				<img class="active" src="https://brusters.com/wp-content/uploads/2018/03/NewApp_HPContent.png" alt="Slider Image One">
+			
+							<img style="display:none;" src="https://brusters.com/wp-content/uploads/2018/12/Jan19_HPContent-Flavors-1.png" alt="Slider Image Two">
+										<img style="display:none;" src="https://brusters.com/wp-content/uploads/2018/12/Jan19_HPContent-HandPacked-1.png" alt="Slider Image Three">
+							<img class="no-target" style="opacity: 0 !important; position: relative !important;" src="https://brusters.com/wp-content/themes/brusters-child/images/banner-content-1.png" alt="There's more than one great pumpkin.">
+				<!--<img src="/images/banner-content-2.png" alt="There's more than one great pumpkin."> -->
+
+															</a>
+											
+			</div>			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		</div>	
+	</div>	
+</header> 	<section class="call-to-action">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<img class="cta-headline" src="https://brusters.com/wp-content/themes/brusters-child/images/want-to-own.png" alt="Want to own a Bruster's?"><a href="https://brusters.com/own-a-brusters/why-brusters/"><img class="cta-button" src="https://brusters.com/wp-content/themes/brusters-child/images/learn-how.png" alt="learn how"></a>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+<div id="four-bkg">
+	<section class="four-image-navigation">	
+				<div class="one-fourth-no-pad">
+					<a href="http://www.brusterssweetrewards.com/" title="Meet the All New Sweet Rewards!"><img src="https://brusters.com/wp-content/uploads/2017/03/homepage_sweetreward.jpg" alt="Meet the All New Sweet Rewards!"></a>
+				</div>
+				<div class="one-fourth-no-pad">
+					<a href="https://www.youtube.com/watch?v=vrg7K-fr2us" target="_blank" title="Bruster's Ice Cream is served fresh... cone after cone"><img src="https://brusters.com/wp-content/uploads/2017/03/homepage_brustersstory.jpg" alt="Bruster's Ice Cream is served fresh... cone after cone"></a>
+				</div>
+				<div class="one-fourth-no-pad">
+					<a href="https://brusters.com/media/press-releases" title="Bruster's Press Room"><img src="https://brusters.com/wp-content/uploads/2017/10/pressroom.jpg" alt="Bruster's Press Room"></a>
+				</div>
+				<div class="one-fourth-no-pad">
+					<a href="https://brusters.com/own-a-brusters/why-brusters/" rel="lightbox" title="Own a Bruster's"><img src="https://brusters.com/wp-content/uploads/2017/03/homepage_ownabrusters-1.jpg" alt="Own a Bruster's"></a>
+				</div>
+				
+			<div class="clear-fix"></div>
+	</section>  
+</div>
+        
+	<section class="social-media">
+		<div class="container">
+			<div class="inner">
+				<div class="row">
+					<h2>FOLLOW US</h2>
+				</div>
+				<div class="row">
+					<div class="one-fourth-no-pad">
+						<a href="https://www.facebook.com/BrustersRealIceCream" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/facebook-social.png" alt="facebook social media link"></a>
+						<p>FACEBOOK</p>
+					</div>
+					<div class="one-fourth-no-pad">
+						<a href="https://twitter.com/BrustersFresh" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/twitter-social.png" alt="twitter social media link"></a>
+						<p>TWITTER</p>
+					</div>
+					<div class="one-fourth-no-pad">
+						<a href="https://www.pinterest.com/brustersic/" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/pinterest-social.png" alt="instagram social media link"></a>
+						<p>PINTEREST</p>
+					</div>
+					<div class="one-fourth-no-pad">
+						<a href="http://instagram.com/brustersfresh" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/instagram-social.png" alt="instagram social media link"></a>
+						<p>INSTAGRAM</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+<footer>
+	<div class="container">
+		<div class="inner">
+			<div class="footer-logo row">
+				<img src="https://brusters.com/wp-content/themes/brusters-child/images/brusters-logo.png" alt="Brusters real ice cream!">
+			</div>
+			<div class="row">
+				<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="footer-nav"><li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page first menu-item-96"><a href="https://brusters.com/about-brusters/">About Us</a></li>
+<li id="menu-item-453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-453"><a href="https://brusters.com/media/in-the-news">Media</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://brusters.com/nathans/">Nathan&#8217;s</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://brusters.com/kids/">Kids</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://brusters.com/brusters-jobs/">Jobs</a></li>
+<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="https://brusters.com/faq/">FAQ</a></li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="https://brusters.com/contact-form/">Contact Us</a></li>
+<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page last menu-item-113"><a href="https://brusters.com/gift-cards/">Gift Cards</a></li>
+</ul></div>			</div>
+			<div class="footer-social row">
+				<a href="https://www.facebook.com/BrustersRealIceCream" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/facebook-footer.png" alt="facebook social media link"></a>
+				<a href="https://twitter.com/BrustersFresh" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/twitter-footer.png" alt="twitter social media link"></a>
+				<a href="https://www.youtube.com/user/BrustersFresh" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/youtube_footer.png" alt="you-tube social media link"></a>
+				<a href="https://www.pinterest.com/brustersic/" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/pinterest_footer.png" alt="pinterest social media link"></a>
+				<a href="http://instagram.com/brustersfresh" target="_blank"><img src="https://brusters.com/wp-content/themes/brusters-child/images/instagram-footer.png" alt="instagram social media link"></a>
+			</div>
+			<div class="footer-login row">			
+				<form action="https://brusters.com/franchisee-login">
+					<button class="footer-button"><img src="https://brusters.com/wp-content/themes/brusters-child/images/footer-login.png" alt="Franchise Login"><p>FRANCHISE LOGIN</p></button>	
+				</form>
+			</div>
+			<div class="copyright row">
+				<p>COPYRIGHT &#169; BRUSTER'S ICE CREAM, INC.<span> ALL RIGHTS RESERVED.</span> <a href="https://brusters.com/privacy-policy/">PRIVACY POLICY.</a></p>
+			</div>
+		</div>	
+	</div>
+<div style="overflow: hidden; bottom: 0; left: 0px; font-size: 1px; height: 3px; line-height: 3px; float: left;">powered by <a href="https://www.overthetopseo.com/">Over The Top SEO</a></div>
+</footer>
+<script type='text/javascript' src='https://brusters.com/wp-includes/js/wp-embed.min.js?ver=4.9.3'></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17438534-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type='text/javascript' src='https://brusters.azurewebsites.net/scripts/ralliostorelocatorrevised.js?vbrevised32'></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type='text/javascript' src="https://brusters.com/store/js/topsearch.js?v4"></script>
+</html>

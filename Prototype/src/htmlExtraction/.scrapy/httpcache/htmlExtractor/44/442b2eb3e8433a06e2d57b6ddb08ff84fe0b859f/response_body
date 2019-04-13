@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HMCA - Health Management Company of America</title>
+	<meta name="description" content="HMCA's Open MRI centers deliver excellent patient care and provide state-of-the-art diagnostics. Offices located in New York and Florida" />
+	<meta name="keywords" content="open mri,hmca,hmca.com,standup mri,stand-up mri,radiology,cancer,testing,MRI,magnetic resonance imaging,nuclear medicine,diagnostic,imaging,damadian,fonar,cat scanner,x-ray,new york,florida,tallahassee,jacksonville,daytona beach,orlando,west palm beach,deerfield beach,pompano beach,canarsie,bensonhurst,bronx,yonkers,elmhurst,astoria,bayside,forest hills,staten island,melville,islandia, manhattan" />
+	<meta name='viewport' content='width=device-width' />
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-device-width: 320px)" />
+	<link rel="stylesheet" href="css/styles_hmca_home2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/menu2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/print.css" type="text/css"  media="print" />
+	<link rel="stylesheet" href="css/jq-tabs.css"  type="text/css"/>
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>	
+	<script type="text/javascript" src="scripts/jquery-ui.js"></script>
+	<script type="text/javascript" src="scripts/jquery.cycle.all.latest.js"></script>
+	
+	<script type="text/javascript">
+// Executes the function when DOM will be loaded fully
+$(document).ready(function () {
+// hover property will help us set the events for mouse enter and mouse leave
+$('#cssmenu li').hover(
+// When mouse enters the .navigation element
+function () {
+//Fade in the navigation submenu
+$('ul', this).fadeIn(); // fadeIn will show the sub cat menu
+},
+// When mouse leaves the .navigation element
+function () {
+//Fade out the navigation submenu
+$('ul', this).fadeOut(); // fadeOut will hide the sub cat menu
+}
+);
+});
+</script>
+	
+	<script type="text/javascript">
+	$(function() {
+	$( "#tabs" ).tabs();
+	});
+	</script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+    $('.slideshow').cycle({
+		autostop: 0,
+		fx: 'turnDown', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed:1200
+	});
+});
+	</script>
+	
+<style type="text/css">
+
+.copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	letter-spacing: 0.7px;
+	background-color:#F1F5FA;
+	margin-top: -20px;
+	padding-bottom: 24px
+	}
+.slideshow {
+	z-index:-1;
+	}
+.hometabs {
+	margin-left: 200px;
+	}
+	
+.pros{
+	border-color:#444444;
+	margin-left:5px;
+	}
+
+#tabs-1 ul {
+margin-bottom: 24px;
+margin-left: 120px;
+}
+
+			
+-->
+</style>
+	
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+			<a href="index.php"><img src="images/hmca_logo.gif" alt="HMCA logo" width="309" height="80" border="0" align="left"/></a>
+			
+    <div class="cornerNav"><img src="images/physician-and-diagnostic-services.jpg" alt="Diagnostic Imaging Management Services" width="359" height="21" border="0" /></div>
+  </div>
+	
+<div id="content">			
+		                                   <!-- BEGIN MAIN HORIZONTAL MENU -->
+
+    <div id="cssmenu"> 
+      <ul>
+        <li><a href="index.php" title="Home" target="_self"><img src="images/home-button.gif" id="homeicon" alt="homepage" border="0" /></a></li>
+        <li><a href="about.php" title="About Us" target="_self">About Us</a></li>
+        <li class="has-sub"><a href="services.php" title="Management Services" target="_self">Management 
+          Services</a> 
+          <ul>
+            <li><a href="services.php#FS">Facility Staffing</a></li>
+            <li><a href="services.php#RS">Radiology Support</a></li>
+            <li><a href="services.php#T">Transcription</a></li>
+            <li><a href="services.php#BC">Billing and Collections</a></li>
+            <li><a href="services.php#CC">Credentialing &amp; Contracting</a></li>
+            <li><a href="services.php#HR">Human Resources</a></li>
+            <li><a href="services.php#M">Marketing</a></li>
+            <li><a href="services.php#C">Compliance</a></li>
+            <li><a href="services.php#P">Purchasing</a></li>
+            <li><a href="services.php#A">Accounting</a></li>
+            <li><a href="services.php#OM">Office Management </a></li>
+            <li><a href="services.php#R">Reporting</a></li>
+            <li><a href="services.php#IT">Information Technology (IT) </a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="stand-up-mri.php" title="Stand-Up MRI" target="_self" >Stand-Up<span class="reg">&reg;</span> 
+          MRI</a> 
+          <ul>
+            <li><a href="stand-up-mri.php" title="Stand-Up MRI" target="_self" >Stand-Up<span class="reg">&reg;</span> 
+              MRI</a></li>
+            <li><a href="mri-exam-prep.php" title="MRI Exam Prep" target="_self" >MRI 
+              Exam Prep</a></li>
+            <li><a href="mri-faqs.php" title="MRI FAQ's" target="_self" >MRI FAQ's</a></li>
+          </ul>
+        </li>
+        <li><a href="locations.php" title="Locations" target="_self">Locations</a></li>
+        <li><a href="employment.php" title="Employment" target="_self">Employment</a></li>
+        <li><a href="contact.php" title="Contact Us" target="_self">Contact Us</a></li>
+      </ul>
+    </div>        
+<!-- END MAIN MENU -->
+
+    <div class="splash"> 
+      <div class="slideshow"> <img src="images/multi-position-mri.jpg" width="990" height="253" alt="HMCA" /> 
+        <img src="images/hmca-building.jpg" width="990" height="253" alt="HMCA" /> 
+        <img src="images/mri-images.jpg" width="990" height="254" alt="HMCA" /> 
+        <img src="images/hmca-marketing.jpg" width="990" height="253" alt="HMCA" /> 
+        <img src="images/position-imaging.jpg" width="990" height="253" alt="HMCA" /> 
+        <img src="images/your-business-partner.jpg" width="990" height="253" alt="HMCA" />	
+      </div>
+    </div>
+	
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1"><b>About Us</b></a></li>
+<li class="ui-tabs-active"><a href="#tabs-2"><b>For Prospective Clients</b></a></li>
+<li><a href="#tabs-3"><b>Stand-Up<span class="reg">&reg;</span>MRI</b></a></li>
+</ul>
+<div id="tabs-1">
+<h1>About HMCA</h1>
+<p></p>Health Management Company of America (HMCA), majority-owned by FONAR Corporation, provides non-medical management 
+        services for diagnostic imaging centers. At present, HMCA employs approximately 
+        300 full-time employees and manages 26 centers in New York and Florida. 
+        The 26 centers are collectively equipped with 34 MRI scanners, most of 
+        them with FONAR Stand-Up&reg; MRIs. (The FONAR Stand-Up&reg; MRI is also 
+        known as the UPRIGHT&reg; Multi-Position&#8482; MRI). Several Stand-Up&reg; 
+        MRI centers also offer complementary diagnostic equipment, such as High-Field 
+        1.5T MRIs, 3.0T Whole-Body MRIs, 1.5T Extremity MRIs, and X-ray.</p>
+
+<p>HMCA&acute;s predecessors originated in Melville, Long Island, New York in 1989.  Experienced in every aspect of non-medical office management, 
+the Company&acute;s <a href="services.php">Centralized Management Services include</a>: </p>
+ 
+ <ul class="about">
+ <li>Facility Staffing</li>
+ <li>Radiology Support </li>
+ <li>Billing and Collections</li>
+ <li>Credentialing and Contracting </li>
+ <li>Human Resources</li>
+ <li>Marketing</li>
+ <li>Compliance</li>
+ <li>Purchasing</li>
+ <li>Accounting</li>
+ <li>Office Management</li>
+ <li>Reporting</li>
+ <li>Information Technology (IT) Support</li>
+ <li>Transcription</li>
+ </ul>
+ 
+   
+<h1>Stand-Up MRI Locations</h1> 
+<p><b>Florida Locations</b><br />
+<a href="http://www.standupmriofbocaraton.com" target="_blank">Stand-Up MRI of Boca Raton, FL</a><br />
+<a href="http://www.standupmrioformondbeach.com" target="_blank">Stand-Up MRI &amp; Diagnostic Center, Ormond Beach, FL</a><br /> 	
+<a href="http://standupmriofftlauderdale.com" target="_blank">Stand-Up MRI of Ft. Lauderdale, FL</a><br />   	 
+<a href="http://www.standupmriofmiami.com" target="_blank">Stand-Up MRI of Miami, FL</a><br />      
+<a href="http://www.standupmriofswflorida.com" target="_blank">Stand-Up MRI of South West Florida, Naples, FL</a><br />																	 	<a href="http://www.standupmrioforlando.com" target="_blank">Stand-Up MRI of Orlando, FL  </a><br />    	<a href="http://www.standupmrioftallahassee.com" target="_blank">Stand-Up MRI of Tallahassee, FL</a></p>  	<p><b>New York Locations<br /></b> 	 <a href="http://www.standupmriofbronx.com" target="_blank">Stand-Up MRI of the Bronx, NY</a><br />
+     
+<a href="http://www.standupmriofbrooklyn.com" target="_blank">Stand-Up MRI of Brooklyn,   (Park Slope) NY</a><br />     
+<a href="http://www.standupmriofcarleplace.com" target="_blank">Stand-Up MRI of Carle Place, NY</a><br />       
+<a href="http://www.standupmriofdeerpark.com" target="_blank">Stand-Up MRI of Deer Park, NY</a><br /> 
+<a href="http://www.standupmriofeastelmhurst.com" target="_blank">Stand-Up MRI of East Elmhurst, NY</a><br />         
+<a href="http://www.standupmriofeastsetauket.com" target="_blank">Stand-Up MRI of East Setauket, NY</a><br />
+<a href="http://standupmriofgreatneck.com" target="_blank">Stand-Up MRI of Great Neck, NY</a><br />         
+<a href="http://www.standupmriofislandia.com" target="_blank">Stand-Up MRI of Islandia, NY</a><br />         
+<a href="Http://www.capitalregionuprightmri.com" target="_blank">Capital Region Upright MRI, Latham, NY</a><br />       
+<a href="http://www.standupmrioflynbrook.com" target="_blank">Stand-Up MRI of Lynbrook, NY</a><br />       
+<a href="http://www.standupmriofmanhattan.com/downtown" target="_blank">Stand-Up MRI of Manhattan, NY (Downtown)</a><br />    
+<a href="http://www.standupmriofmanhattan.com/uptown" target="_blank">Stand-Up MRI of Manhattan, NY (Uptown)</a><br />         
+<a href="http://www.standupmriofmelville.com" target="_blank">Stand-Up MRI of Melville, NY</a><br />       
+<a href="http://www.standupmriofqueens.com" target="_blank">Stand-Up MRI of Queens, (Flushing) NY</a><br />         
+<a href="http://www.standupmriofstatenisland.com" target="_blank">Stand-Up MRI of Staten Island, NY</a><br />         
+<a href="http://www.standupmriofwantagh.com" target="_blank">Stand-Up MRI of Wantagh, NY<br /></a>
+<a href="http://www.standupmriofyonkers.com" target="_blank">Stand-Up MRI of Yonkers, NY</a></p>
+<h1>Other HMCA-Managed Centers</h1>
+<p><a href="http://www.openmriofcanarsie.com/" target="_blank">Open MRI of Canarsie, Canarsie, NY</a><br /> 
+<a href="http://www.comprehensivemriofwhiteplains.com/" target="_blank">Comprehensive MRI of White Plains, White Plains, NY</a><br /> </p> 
+ 
+</div>
+<div id="tabs-2">
+<p><b>For MRI diagnostic Imaging centers interested in outsourcing the management of the non-medical aspects of their practices, HMCA may be their solution.</b></p>
+<p>By engaging HMCA, physicians/radiologists can spend more time and energy focusing on the medical side of their practices rather than contending with certain administrative tasks that they may find mundane or simply prefer not to deal with. </p>
+<p>HMCA has the staff, expertise, organization, experience and tools necessary to assume the responsibility of all non-medical services, including facility staffing, radiology support, billing and collections, credentialing and contracting, human resources, marketing, compliance, purchasing, accounting, office management, reporting, transcription, and IT. </p>
+<p>Besides relieving physicians of the unwanted managerial burdens, practices stand to benefit from HMCA&acute;s strengths in other ways, including improved operational efficiency at the offices; cost savings attributable to economies of scale, high-volume purchasing discounts, national accounts, and participation with GPO&acute;s;  long-standing working relationships with many health care organizations and payors; proven marketing strategies; and access to state-of-the-art equipment, systems and software solutions &#8212; each with the very real potential of improving profitability.</p>
+<p>It is important to point out that HMCA, in full recognition and support of physician autonomy, has neither input nor any responsibility regarding medical matters. </p>
+
+
+</div>
+<div id="tabs-3">
+<h2>HMCA specializes in the management of diagnostic imaging centers that feature the FONAR Stand-Up&reg; MRI with POSITION&reg; Imaging, also known as the FONAR UPRIGHT&reg; Multi-Position&#8482; MRI.</h2>
+<img src="images/upright_28a.jpg" alt="Patient in the FONAR Stand-Up MRI" align="right" />
+
+<p>The Stand-Up&reg; MRI is the only MRI scanner that allows patients to be scanned with the patient in any position, including standing, sitting, bending or lying down.</p>
+<p>As a result of its unique ability to scan patients in weight-bearing positions the Stand-Up&reg; MRI has detected problems that would have gone undetected on conventional lie-down scanners.</p>
+<p>The Stand-Up&reg; is the only true Open MRI. Patients typically sit and watch a big-screen TV throughout their scans. Claustrophobic reactions are nearly non-existent.</p>
+
+<p> All Stand-Up&reg; MRI centers managed by HMCA feature:</p>
+<ul class="hometabs">
+<li>"Non-Claustrophobic," Quiet and Comfortable MRI Scanners</li>
+<li>No "Tunnel," No "Tube"</li>
+<li>High-Quality Diagnostic Imaging</li>
+<li>Board-Certified Radiologists</li>
+<li>ACR-Accredited Facilities</li>
+<li>Quick Report Turnaround</li>
+<li>Same-Day Reads Upon Request</li>
+<li>Easy and Convenient Scheduling</li>
+<li>Early Morning, Late Evening and Weekend Appointments Available</li>
+<li>A Courteous and Competent Staff</li>
+<li>Medicare, Workers' Compensation, No-Fault, PIP</li>
+<li>Most Insurances and HMO's Accepted</li>
+<li>Payment Plans Available for Qualified Patients</li>
+<li>Transportation for Qualified Patients</li>
+</ul>
+</div>
+	</div>
+		</div>
+                                                       <!-- global footer -->
+<div id="dropshadow">&nbsp;</div>
+														
+<div id="globalfooter">
+	
+	<div class="gf-home"> 
+      <ul>
+        <li><b><a href="index.php">Home</a></b></li>
+      </ul>
+    </div>
+	
+	<div class="gf-about"> 
+      <ul>
+        <li><b><a href="about.php">About Us</a></b></li>
+      </ul>
+    </div>
+	 
+	<div class="gf-services"> 
+      <ul>
+        <li><b><a href="services.php">Services</a></b></li>
+      </ul>
+    </div>
+	
+	<div class="gf-standup"> 
+      <ul>
+        <li><b><a href="stand-up-mri.php">Stand-Up&reg; MRI</a></b></li>
+      </ul>
+    </div>
+	
+    <div class="gf-locations"> 
+      <ul>
+        <li><b><a href="locations.php">Locations</a></b></li>
+      </ul>
+    </div>
+	
+	
+    <div class="gf-careers"> 
+      <ul>
+        <li><b><a href="employment.php">Employment</a></b></li>
+      </ul>
+    </div>
+
+    <div class="gf-contacts"> 
+      <ul>
+        <li><b><a href="contact.php">Contact Us</a></b></li>
+      </ul>
+    </div>		
+	
+	
+	<div class="gf-address"> 
+      <ul>
+        <li><b><b>Health Management Company of America</b></b></li>
+      </ul>
+      110 Marcus Drive<br />
+      Melville,&nbsp;New York&nbsp;11747<br />
+      631-694-2816<br />
+      631-694-4051 - Fax<br />
+      Email:&nbsp;<a href="mailto:info@hmca.com">info@hmca.com</a> </div>
+  </div>
+		 
+	<div class="copyright" align="center"><a href="tou.php">Terms of Use</a><br />
+	Copyright &copy; 2018 - All Rights Reserved	</div>
+    </div>
+												<!--  end global footer-->	
+	 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
+
+
