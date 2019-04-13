@@ -94,7 +94,29 @@ y_train=numpy.array(categories)
 
 #exit()
 
+def plotModel(model,history,extra):
+    plt.plot(history.history['f1'])
+    plt.plot(history.history['val_f1'])
+    plt.title('Model F1')
+    plt.ylabel('F1')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Validation'], loc='upper left')
 
+    plt.savefig( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ extra +'F1.png')
+
+    plt.clf()
+
+
+    # Plot training & validation loss values
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('Model loss')
+    plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Validation'], loc='upper left')
+    plt.savefig( 'models/' + inputDataset + 'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+extra+'Loss.png')
+    plt.clf()
+    return 0
 
 
 def createModelL2categ(l2value=0.001,lr=0.01):
@@ -108,45 +130,14 @@ def createModelL2categ(l2value=0.001,lr=0.01):
                   metrics=[f1])
     print('Training the model.')
     history = model.fit(x_train, y_train,validation_split=0.10, epochs=epochs, batch_size=32)
-    return model,history,history.history['val_f1'][-10:]
+    return model,history
 
-modelData=createModelL2categ(0.001,1.)
-bestlr=1.
-for i in [0.5,0.1,0.05,0.01,0.05,0.01,0.005,0.001,0.0005,0.0001]:
+
+
+for i in [0.1,0.05,0.01,0.05,0.01,0.005,0.001,0.0005,0.0001]:
     curModelData = createModelL2categ(0.001,i)
-    if sum(curModelData[2]) > sum(modelData[2]):
-        modelData = curModelData #we keep theone with the best average results
-        bestlr=i
-print(bestlr)
-model=modelData[0]
-history=modelData[1]
+    plotModel(curModelData[0],curModelData[1],('lr'+str(i)))
 
 
-model.save( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+  '.h5')  # creates a HDF5 file 'my_model.h5'
+#model.save( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+  '.h5')  # creates a HDF5 file 'my_model.h5'
 
-
-#plot_model(model, to_file=  'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ '.png')
-
-
-# Plot training & validation accuracy values
-plt.plot(history.history['f1'])
-plt.plot(history.history['val_f1'])
-plt.title('Model F1')
-plt.ylabel('F1')
-plt.xlabel('Epoch')
-plt.legend(['Train', 'Validation'], loc='upper left')
-#plt.show()
-plt.savefig( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ 'bestlr'+str(bestlr) +'F1.png')
-
-plt.clf()
-
-
-# Plot training & validation loss values
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('Model loss')
-plt.ylabel('Loss')
-plt.xlabel('Epoch')
-plt.legend(['Train', 'Validation'], loc='upper left')
-#plt.show()
-plt.savefig( 'models/' + inputDataset + 'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ 'bestlr'+str(bestlr)+'Loss.png')
