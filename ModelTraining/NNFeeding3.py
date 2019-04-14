@@ -74,10 +74,9 @@ for folderPath in glob.iglob(inputDataset + '/*'):
 #print(categories)
 print(Counter(categories))
 
-#all_categories = ['Arts' ,'Business','Computers','Games','Health','Home','Recreation'
-#,'Reference','Science','Shopping','Society','Sports']
+all_categories = list(set(categories))
 
-#print(all_categories)
+print(all_categories)
 #
 
 if not os.path.exists('models'):
