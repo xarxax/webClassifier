@@ -74,7 +74,7 @@ for folderPath in glob.iglob(inputDataset + '/*'):
 #print(categories)
 print(Counter(categories))
 
-all_categories = ['Arts' ,'Business','Computers','Games','Health','Home','News','Recreation'
+all_categories = ['Arts' ,'Business','Computers','Games','Health','Home','Recreation'
 ,'Reference','Science','Shopping','Society','Sports']
 
 print(all_categories)
@@ -130,7 +130,7 @@ def createModelL2categ(l2value=0.001,lr=0.01):
     for _ in range(layers):
         model.add(Dense(units=units, activation='relu',kernel_regularizer=l2(l2value)))
         model.add(Dropout(0.2))
-    model.add(Dense(units=13, activation='softmax'))
+    model.add(Dense(units=12, activation='softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer=optimizers.SGD(lr=lr),
                   metrics=[f1])
