@@ -46,6 +46,7 @@ inputDataset = str(sys.argv[2])
 layers = int(sys.argv[3])
 units = int(sys.argv[4])
 epochs = int(sys.argv[5])
+dropoutval = float(sys.argv[6])
 
 documents = []
 categories = []
@@ -126,9 +127,10 @@ def plotModel(model,history,extra):
 def createModelL2categ(l2value=0.001,lr=0.01):
     model = Sequential()
     model.add(Dense(units=units, activation='relu', input_dim=300))
+    model.add(Dropout(0.3))
     for _ in range(layers):
         model.add(Dense(units=units, activation='relu',kernel_regularizer=l2(l2value)))
-        model.add(Dropout(0.2))
+        model.add(Dropout(dropoutval))
     model.add(Dense(units=len(all_categories), activation='softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer=optimizers.SGD(lr=lr),
@@ -143,7 +145,7 @@ import numpy as np
 
 curModelData = createModelL2categ(0.001,0.01)
 
-plotModel(curModelData[0],curModelData[1],'lambda0.001lr0.01')
+plotModel(curModelData[0],curModelData[1],'lambda0.001lr0.01dropout' +str(dropoutval))
 y_true= np.argmax(y_train,axis=1)
 y_pred = curModelData[0].predict_classes(x_train)
 print(classification_report(y_true, y_pred))
