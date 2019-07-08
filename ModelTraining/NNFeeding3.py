@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 from keras import backend as K
 from keras.regularizers import l2
 from keras import optimizers
+from sklearn.model_selection import train_test_split
+
+
 
 def f1(y_true, y_pred):
     def recall(y_true, y_pred):
@@ -90,14 +93,20 @@ categories = [list(map( lambda x: float(x==i),all_categories )) for i in categor
 #print(len(documents[0]))
 #x_train =[numpy.array(i) for i in documents]
 #print(categories)
-x_train =numpy.array(documents)
+#x_train =numpy.array(documents)
 #print(x_train[0].shape)
-y_train=numpy.array(categories)
+#y_train=numpy.array(categories)
 #print(y_train)
 
+x_train, x_test, y_train, y_test = train_test_split(documents, categories, test_size=0.1, shuffle= True)
+x_train =numpy.array(x_train)
+x_test=numpy.array(x_test)
+y_train=numpy.array(y_train)
+y_test=numpy.array(y_test)
+print(y_train)
 #exit()
 
-def plotModel(model,history,extra):
+def plotModel(model,history):
     plt.plot(history.history['f1'])
     plt.plot(history.history['val_f1'])
     plt.title('Model F1')
@@ -105,7 +114,7 @@ def plotModel(model,history,extra):
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'], loc='upper left')
 
-    plt.savefig( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ extra +'F1.png')
+    plt.savefig( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs) +'F1.png')
 
     plt.clf()
 
@@ -117,10 +126,10 @@ def plotModel(model,history,extra):
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'], loc='upper left')
-    plt.savefig( 'models/' + inputDataset + 'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+extra+'Loss.png')
+    plt.savefig( 'models/' + inputDataset + 'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+'Loss.png')
     plt.clf()
 
-    model.save( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ extra +'.h5')  # creates a HDF5 file 'my_model.h5'
+    #model.save( 'models/' + inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs)+ extra +'.h5')  # creates a HDF5 file 'my_model.h5'
     return 0
 
 
@@ -145,10 +154,12 @@ import numpy as np
 
 curModelData = createModelL2categ(0.001,0.01)
 
-plotModel(curModelData[0],curModelData[1],'lambda0.001lr0.01dropout' +str(dropoutval))
-y_true= np.argmax(y_train,axis=1)
-y_pred = curModelData[0].predict_classes(x_train)
+plotModel(curModelData[0],curModelData[1])
+y_true= np.argmax(y_test,axis=1)
+y_pred = curModelData[0].predict_classes(x_test)
 print(classification_report(y_true, y_pred))
-
+with open('models/tables','a') as f:
+	f.write(str(inputDataset +'l' +str(layers) +'u'+str(units)+ 'e'+ str(epochs) + '\n'))
+	f.write(str(classification_report(y_true, y_pred)))
 
 

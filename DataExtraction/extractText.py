@@ -1,7 +1,9 @@
 import glob,os,sys
 from bs4 import BeautifulSoup
+import pandas as pd 
 
-#gets property property from the soup's meta
+
+
 #gets property property from the soup's meta
 def getMetaContent(soup,property):
     cssQuery='meta[property="og:' + property+'"]'
@@ -31,10 +33,17 @@ def addMetas(soup,text):
 ####MAIN SCRIPT
 #we create the folder where we will have our features
 #text.txt images and urls.txt
-if not os.path.exists('datasetFeatures'):
-    os.makedirs('datasetFeatures')
+if not os.path.exists('datasets'):
+    os.makedirs('datasets')
+
+
+
 
 i = int(sys.argv[1])
+cwd = os.getcwd()
+catAndText= []
+
+
 
 for filePath in glob.iglob('dataset/*'):
     if i <=0:
@@ -43,11 +52,6 @@ for filePath in glob.iglob('dataset/*'):
     i-=1
     print(filePath)
     file = open(filePath,'r')
-    newFilePath = filePath.replace('dataset/','datasetFeatures/',1)
-    if os.path.exists(newFilePath):
-        i+=1#effectively skip the iteratio
-        print('File already processed. Skipping.')
-        continue
     #split the 3 important informations
     try:
         [cat,url,htmlDoc] = file.read().split('\n',2)
@@ -67,11 +71,20 @@ for filePath in glob.iglob('dataset/*'):
     if relevantText=='':
         print('UNABLE TO EXTRACT ANY TEXT')
         continue
-    #saving text now
-    #we create a folder for the web features
-    if not os.path.exists(newFilePath):
-        os.makedirs(newFilePath)
-    #write text
-    relevantText =relevantText
-    with open(newFilePath+'/text.txt', 'w') as f:
-        f.write(str(relevantText))
+
+
+    relevantText = (' '.join(relevantText.replace('\n',' ').replace('\\n',' ').replace('\\t',' ').replace('\\r',' ').replace('\t','').split())).encode('utf-16','surrogatepass').decode('utf-16')
+        #print(relevantText)
+    catAndText+=[cat + '\t'+str(relevantText)]
+
+
+frow= ['CAT\tTEXT']
+with open(cwd + '/datasets/catwebs.csv','w') as f:
+	f.write('\n'.join(frow + catAndText))
+
+
+
+
+
+
+

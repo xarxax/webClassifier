@@ -1,51 +1,40 @@
 
-import glob,os,sys,re,itertools
-from nltk import word_tokenize
+import glob,os,sys,re,itertools,random
+import nltk
+import pandas as pd 
+from math import isnan
 
 
-if not os.path.exists('tokenizedDataset'):
-    os.makedirs('tokenizedDataset')
+
+DATAFOLDER= '/datasets/'
+FILENAME= 'catwebs.csv'
+STOPWORDS = set(nltk.corpus.stopwords.words('english'))
+STOPWORDS.add("n\'t")
 
 
-i = int(sys.argv[1])
-total =i
-counter=0
-skipped =0
-for folderPath in glob.iglob('datasetFeatures/*'):
-    if i <=0:
-        print('Reached limit established')
-        break
-    i-=1
-    print(folderPath)
-    file = open(folderPath +'/text.txt','r')
-    if os.path.exists(folderPath.replace('datasetFeatures/','tokenizedDataset/',1)):
-        #i+=1#effectively skip the iteration
-        print('Skipped.')
-        continue
-    #urlfile= open(folderPath+'/url.txt')
-    content = file.read()
-    print('File read')
-    content =word_tokenize(content)
-    print('Tokenize')
-    #leave only alfanumerical symbols
-    content = [re.sub(r'[^A-Za-z0-9]+', '', x) for x in content]
-    print('Substringed')
-    content = [x for x in content if x != '' and len(x) > 1 and len(x) < 16]
-    content = [re.findall(r'[a-zA-Z][A-Z]*[^A-Z]*',x) for x in content]
-    content = sum(content,[])
-    #content = [x.lower() for x in content]
-    #print(content)
 
-    newFilePath = folderPath.replace('datasetFeatures/','tokenizedDataset/',1)
-    if not os.path.exists(newFilePath):
-        counter+=1
-        os.makedirs(newFilePath)
-    #write text
-    with open(newFilePath+'/text.txt', 'w') as f:
-        for word in content:
-            f.write(str(word) + ' ')
-    #with open(newFilePath + '/url.txt','w') as f:
-    #    f.write(urlfile.read())
-    #we must also write the urls
-print('Total websites:' + str(total-i) )
-print(str(counter) + ' documents generated' )
+
+cwd = os.getcwd()
+data = pd.read_csv(cwd+DATAFOLDER + FILENAME,sep='\t')
+cleanData=[]
+
+for _,(cat,text) in data.iterrows():
+	#print(cat)	
+	if type(text) != type('pancake'):
+		continue
+	#exit()
+	text =' '.join([w for w in nltk.word_tokenize(text.lower()) if w not in STOPWORDS])
+    #content = [re.sub(r'[^A-Za-z0-9]+', '', x) for x in content]
+    #content = [x for x in content if x != '' and len(x) > 1 and len(x) < 16]
+    #content = [re.findall(r'[a-zA-Z][A-Z]*[^A-Z]*',x) for x in content]
+	if text == '':
+		print('skipped nan')
+		continue
+	
+	cleanData+=[cat + '\t'+ text]
+
+
+frow= ['CAT\tTEXT']
+with open(cwd + DATAFOLDER+ 'clean'+FILENAME,'w') as f:
+	f.write('\n'.join(frow + cleanData))
+

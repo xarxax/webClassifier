@@ -1,5 +1,11 @@
 #######################DOCS####DATASET##################LAYERS####UNITS##EPOCHS ###dropout
-python3 NNFeeding3.py 200000 unitizedgloveDatasetNoNewsRefShop  5  10 30 0.2
+python3 NNFeeding3.py 200000 unitizedgloveDatasetNoNews  5  150 30 0.2
+python3 NNFeeding3.py 200000 unitizedlexvecDatasetNoNews  5  150 30 0.2
+python3 NNFeeding3.py 200000 unitizedword2vecDatasetNoNews  5  150 30 0.2
+
+python3 NNFeeding3.py 200000 unitizedgloveDatasetNoNews  5  200 30 0.2
+python3 NNFeeding3.py 200000 unitizedlexvecDatasetNoNews  5  200 30 0.2
+python3 NNFeeding3.py 200000 unitizedword2vecDatasetNoNews  5  200 30 0.2
 
 #python3 NNFeeding3.py 300000 unitizedgloveDatasetNoNewsRefShop  5  300 100 0.8
 #python3 NNFeeding3.py 300000 unitizedgloveDatasetNoNewsRefShop  5  300 100 0.4
